@@ -1,0 +1,38 @@
+@import "../../../src/pages/variables.scss";
+@import "../../../src/pages/breakpoints.scss";
+
+.featured {
+  background: $dark-grey;
+  padding: 120px 0px 40px 0px;
+  @include bp-tablet-sm {
+    padding: 30px 0px 10px 0px;
+  }
+  h2 {
+    @include bp-tablet-sm {
+      text-align: left;
+    }
+  }
+  p {
+    &#sub {
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      @include bp-tablet-sm {
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.home-feat {
+  h2,
+  p {
+    @include bp-tablet-sm {
+      text-align: left;
+    }
+  }
+  h2 {
+    margin-top: -20px;
+  }
+}

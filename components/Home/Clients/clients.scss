@@ -1,0 +1,45 @@
+@import "../../../src/pages/variables.scss";
+@import "../../../src/pages/breakpoints.scss";
+
+.clients {
+  background: $dark-grey;
+  padding: 120px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 70px 0px 30px 0px;
+  }
+  h2,
+  p {
+    color: $white;
+  }
+  hr {
+    @include bp-tablet-sm {
+      display: none;
+    }
+  }
+  h2 {
+    font-size: 40px;
+    @include bp-tablet-sm {
+      text-align: left;
+      margin-top: -30px;
+      margin-bottom: 30px;
+    }
+  }
+  span {
+    background: linear-gradient(
+      to top,
+      rgba($light-blue, 0.4) 40%,
+      transparent 40%
+    );
+    padding: 0px 5px 0px 5px;
+  }
+  hr {
+    border: 1px solid $purple;
+    width: 75px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include bp-tablet-sm {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}

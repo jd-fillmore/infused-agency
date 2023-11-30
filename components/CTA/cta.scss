@@ -1,0 +1,138 @@
+@import "../../src/pages/variables.scss";
+@import "../../src/pages/breakpoints.scss";
+
+.cta {
+  background-image: linear-gradient(to right, #0f74b1, #6d75e3);
+  padding: 120px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 60px 0px 60px 0px;
+    text-align: center;
+  }
+  button {
+    margin-top: 20px;
+  }
+  .heading {
+    background: $light-blue;
+    @include bp-tablet-sm {
+      padding: 20px;
+      margin-top: 20px;
+    }
+    p {
+      color: $dark-grey;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+  }
+  .popular {
+    background: green;
+    @include bp-tablet-sm {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  }
+  .card {
+    padding: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 0;
+    p {
+      margin-top: -30px;
+      margin-bottom: 0px;
+      &.pages {
+        @include bp-tablet-sm {
+          margin-top: 0px;
+        }
+      }
+      &.benefits {
+        @include bp-tablet-sm {
+          text-align: left;
+          margin-top: 0px;
+        }
+      }
+      &.pages,
+      &.small {
+        text-align: center;
+      }
+      &.small {
+        margin-top: -20px;
+        @include bp-tablet-sm {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    h3 {
+      text-align: center;
+      span {
+        font-size: 20px;
+      }
+      @include bp-tablet-sm {
+        font-size: 46px !important;
+      }
+    }
+    ul {
+      list-style: none; /* Remove default bullets */
+      @include bp-tablet-sm {
+        text-align: left;
+      }
+    }
+
+    ul li::before {
+      content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: $light-blue; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+  }
+  h2 {
+    color: $dark-grey !important;
+    font-size: 40px;
+  }
+  p {
+    color: rgba($white, 0.8);
+    padding: 20px 0px 20px 0px;
+    &#sub {
+      color: rgba($dark-grey, 0.8);
+    }
+    @include bp-tablet-sm {
+      margin-top: 0px;
+      min-height: auto;
+      padding: 0px;
+    }
+  }
+  a {
+    color: $dark-grey;
+    border-bottom: none;
+    &:focus,
+    &:hover {
+      border-bottom: none;
+    }
+  }
+  button {
+    color: $dark-blue;
+    border-bottom: 2px solid $purple;
+    @include bp-tablet-sm {
+      margin-top: 10px;
+    }
+  }
+  form {
+    background: rgba($glow-blue, 0.8);
+    padding: 20px;
+  }
+  h4 {
+    &.consult {
+      text-align: center;
+      color: $dark-blue !important;
+      margin-bottom: 0px;
+      background: $dark-purple;
+      padding: 20px;
+      @include bp-tablet-sm {
+        margin-top: 20px;
+      }
+    }
+  }
+}

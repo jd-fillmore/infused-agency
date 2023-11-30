@@ -1,0 +1,82 @@
+@import "../../src/pages/breakpoints.scss";
+@import "../../src/pages/variables.scss";
+
+.inner-hero {
+  background-image: linear-gradient(to right, $light-blue, $purple);
+  background-size: cover;
+  background-position: center center;
+  padding: 220px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 120px 0px 60px 0px;
+  }
+  .row {
+    align-items: center;
+  }
+  .card {
+    padding: 30px;
+    background: $light-blue !important;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    p {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      color: $dark-blue;
+      font-family: $body;
+      font-size: 18px;
+    }
+    button {
+      background: $dark-purple;
+      border: 1px solid $dark-purple;
+    }
+  }
+  p {
+    color: rgba($dark-grey, 0.7);
+  }
+  h1 {
+    color: $dark-grey !important;
+    font-size: 60px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    @include bp-tablet-sm {
+      font-size: 34px;
+    }
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  hr {
+    border-bottom: 1px solid $dark-grey;
+    width: 50px;
+  }
+  span {
+    background: linear-gradient(
+      to top,
+      rgba($light-blue, 0.4) 40%,
+      transparent 40%
+    );
+    padding: 0px 5px 0px 5px;
+  }
+  form {
+    background: rgba($glow-blue, 0.8);
+    padding: 20px;
+  }
+  h4 {
+    &.consult {
+      text-align: center;
+      color: $dark-blue !important;
+      margin-bottom: 0px;
+      background: $dark-purple;
+      padding: 20px;
+      @include bp-tablet-sm {
+        margin-top: 20px;
+      }
+    }
+  }
+  button {
+    color: $dark-blue;
+    border-bottom: 2px solid $purple;
+  }
+}

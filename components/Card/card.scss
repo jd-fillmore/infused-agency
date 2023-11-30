@@ -1,0 +1,30 @@
+@import "../../src/pages/variables.scss";
+@import "../../src/pages/breakpoints.scss";
+
+.card {
+  background: $dark-blue !important;
+  border-radius: 0;
+  padding: 100px;
+  margin-bottom: 40px;
+  @include bp-tablet-sm {
+    padding: 50px;
+  }
+  p {
+    margin-top: 30px;
+  }
+}
+
+.post {
+  .card {
+    padding: 40px;
+    a {
+      line-height: 1;
+      color: $white;
+      font-size: 46px;
+      font-family: $heading;
+      @include bp-tablet-sm {
+        font-size: 22px;
+      }
+    }
+  }
+}

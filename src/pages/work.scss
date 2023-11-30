@@ -1,0 +1,23 @@
+@import "../pages/breakpoints.scss";
+@import "../pages/variables.scss";
+
+.work {
+  background-position: center center;
+  .card {
+    padding: 20px;
+    h3 {
+      color: $white;
+      margin-bottom: -20px;
+      font-size: 22px;
+    }
+    p {
+      &.things-done {
+        color: rgba($white, 0.8);
+        margin-bottom: 10px;
+      }
+    }
+  }
+  a {
+    width: 32%;
+  }
+}

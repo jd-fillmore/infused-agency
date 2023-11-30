@@ -1,0 +1,204 @@
+@import "../../src/pages/variables.scss";
+@import "../../src/pages/breakpoints.scss";
+
+.fixed-top {
+  background: $dark-blue;
+  box-shadow: 0 1px 3px rgba(189, 189, 189, 0.12),
+    0 1px 2px rgba(201, 201, 201, 0.24);
+}
+
+.nav-link {
+  &:focus,
+  &:hover {
+    color: $light-blue;
+    border-bottom: 2px solid $purple;
+    text-decoration: none;
+  }
+}
+
+.navbar-nav {
+  align-items: center;
+  @include bp-tablet-sm {
+    align-items: initial;
+  }
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(61,151,205, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  &:focus,
+  &:hover {
+    border: none !important;
+  }
+}
+
+.custom-toggler.navbar-toggler {
+  border: none;
+  border-radius: 0px !important;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  &:hover,
+  &:focus {
+    border: none !important;
+  }
+}
+
+.logo {
+  font-size: 24px !important;
+  color: $white !important;
+}
+
+.navbar-brand,
+.logo {
+  border-bottom: none !important;
+  &:focus,
+  &:hover {
+    border-bottom: none !important;
+  }
+}
+
+.navbar {
+  padding: 1.5rem 2rem !important;
+  @include bp-tablet-sm {
+    margin-top: 0px !important;
+    padding: 0.5rem 1rem !important;
+    background: $dark-blue !important;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    z-index: 1030 !important;
+  }
+  a {
+    color: $light-blue;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    @include bp-tablet-sm {
+      border-bottom: none !important;
+    }
+    // &:hover,
+    // &:focus {
+    //   border-bottom: none;
+    // }
+  }
+  .dropdown {
+    a {
+      @include bp-tablet-sm {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  background: $dark-blue !important;
+  transition: 0.2s;
+  box-shadow: 0px 8px 15px rgba($white, 0.1);
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-top: 10px !important;
+  a {
+    color: $light-blue;
+    border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
+  }
+  button {
+    transform: none !important;
+    border-left: 3px solid #fff !important;
+    &:hover {
+      transform: none !important;
+      color: $dark-grey !important;
+      border-left: 3px solid $light-blue !important;
+    }
+  }
+  .dropdown-item {
+    border: none;
+    box-shadow: none;
+    color: $light-blue;
+    font-size: 16px !important;
+    letter-spacing: 0.5px !important;
+    &:hover,
+    &:focus {
+      background: $dark-grey;
+      color: $purple !important;
+    }
+  }
+}
+
+.nav-item {
+  .btn {
+    padding: 15px 25px 15px 25px !important;
+    border: none;
+    background: $purple;
+    border-radius: 0px !important;
+    color: $dark-blue;
+    border: 2px solid $purple;
+    transition: 0.2s;
+    &:focus,
+    &:hover {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      background: $glow-blue;
+      color: $dark-blue;
+    }
+    @include bp-tablet-sm {
+      background: $purple;
+      margin-bottom: 10px;
+      text-align: left;
+      width: 183px;
+    }
+  }
+  @media (min-width: 992px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/* Dropdown animation */
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
