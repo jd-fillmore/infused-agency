@@ -16,6 +16,9 @@
     &.serv-intro {
       width: 75%;
       margin: 0 auto;
+      a {
+        text-decoration: underline;
+      }
       @include bp-tablet-sm {
         text-align: left;
         margin: initial;
