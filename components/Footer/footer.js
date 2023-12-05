@@ -1,7 +1,7 @@
-import React from "react"
-import { Container, Row, Col } from "reactstrap"
-import Link from "next/link"
-import Industries from "../Footer/industries-modal"
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import Link from "next/link";
+import Industries from "../Footer/industries-modal";
 
 const pages = [
   {
@@ -20,7 +20,7 @@ const pages = [
     name: "Blog",
     link: "/posts",
   },
-]
+];
 
 const Footer = () => {
   return (
@@ -31,23 +31,18 @@ const Footer = () => {
             <Col lg="4">
               <h3>About</h3>
               <p>
-                Infused is a Niagara web design &amp; St. Catharines SEO
-                company. We help local and non-local businesses build their
-                credibility online, as well as help bring in more sales.
+                Infused is a Niagara web design &amp; St. Catharines SEO company. We help local and non-local businesses
+                build their credibility online, as well as help bring in more sales.
               </p>
               Follow us on{" "}
-              <a
-                rel="noreferrer"
-                href="https://www.instagram.com/infusedweb/"
-                target="_blank"
-              >
+              <a rel="noreferrer" href="https://www.instagram.com/infusedweb/" target="_blank">
                 Instagram
               </a>
             </Col>
             <Col lg="2">
               <h3>Pages</h3>
               <ul>
-                {pages.map(page => (
+                {pages.map((page) => (
                   <li>
                     <Link href={`${page.link}`}>{page.name}</Link>
                   </li>
@@ -61,14 +56,10 @@ const Footer = () => {
                   <Link href="/web-design">Web Design & Development</Link>
                 </li>
                 <li>
-                  <Link href="/wordpress-developer-niagara">
-                    WordPress Development
-                  </Link>
+                  <Link href="/wordpress-developer-niagara">WordPress Development</Link>
                 </li>
                 <li>
-                  <Link href="/ecommerce-web-design-niagara">
-                    E-Commerce Development
-                  </Link>
+                  <Link href="/ecommerce-web-design-niagara">E-Commerce Development</Link>
                 </li>
                 <li>
                   <Link href="/niagara-seo-company">SEO</Link>
@@ -77,11 +68,7 @@ const Footer = () => {
             </Col>
             <Col lg="3">
               <h3>Contact</h3>
-              <a
-                href="https://calendly.com/infused-agency/project-discovery/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://calendly.com/infused-agency/project-discovery/" target="_blank" rel="noreferrer">
                 <strong>Get Free Quote</strong>
               </a>
               <br />
@@ -99,25 +86,23 @@ const Footer = () => {
             <Col lg="8">
               <h3>Areas Served</h3>
               <p className="subtitle">SEO</p>
-              <Link href="/beamsville-seo-company">Beamsville, ON</Link>,{" "}
-              <Link href="/crystal-beach-seo-company">Crystal Beach, ON</Link>,{" "}
-              <Link href="/fonthill-seo-company">Fonthill, ON</Link>,{" "}
-              <Link href="/fort-erie-seo-company">Fort Erie, ON</Link>,{" "}
-              <Link href="/grimsby-seo-company">Grimsby, ON</Link>,{" "}
-              <Link href="/niagara-seo-company">Niagara, ON</Link>,{" "}
-              <Link href="/port-colborne-seo-company">Port Colborne, ON</Link>,{" "}
-              <Link href="/st-catharines-seo-company">St. Catharines, ON</Link>,{" "}
-              <Link href="/thorold-seo-company">Thorold, ON</Link>,{" "}
-              <Link href="/welland-seo-company">Welland, ON</Link>.
-              <p className="subtitle">Web Design</p>
-              <Link href="/beamsville-web-design">Beamsville, ON</Link>,{" "}
-              <Link href="/crystal-beach-web-design">Crystal Beach, ON</Link>,{" "}
-              <Link href="/fonthill-web-design">Fonthill, ON</Link>,{" "}
-              <Link href="/fort-erie-web-design">Fort Erie, ON</Link>,{" "}
-              <Link href="/grimsby-web-design">Grimsby, ON</Link>,{" "}
-              <Link href="/port-colborne-web-design">Port Colborne, ON</Link>,{" "}
-              <Link href="/thorold-web-design">Thorold, ON</Link>,{" "}
-              <Link href="/welland-web-design">Welland, ON</Link>.
+              <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
+              <Link href="/crystal-beach-seo-company">Crystal Beach SEO</Link>,{" "}
+              <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
+              <Link href="/fort-erie-seo-company">Fort Erie SEO</Link>,{" "}
+              <Link href="/grimsby-seo-company">Grimsby SEO</Link>, <Link href="/niagara-seo-company">Niagara SEO</Link>
+              , <Link href="/port-colborne-seo-company">Port Colborne SEO</Link>,{" "}
+              <Link href="/st-catharines-seo-company">St. Catharines SEO</Link>,{" "}
+              <Link href="/thorold-seo-company">Thorold SEO</Link>, <Link href="/welland-seo-company">Welland SEO</Link>
+              .<p className="subtitle">Web Design</p>
+              <Link href="/beamsville-web-design">Beamsville Web Design</Link>,{" "}
+              <Link href="/crystal-beach-web-design">Crystal Beach Web Design</Link>,{" "}
+              <Link href="/fonthill-web-design">Fonthill Web Design</Link>,{" "}
+              <Link href="/fort-erie-web-design">Fort Erie Web Design</Link>,{" "}
+              <Link href="/grimsby-web-design">Grimsby Web Design</Link>,{" "}
+              <Link href="/port-colborne-web-design">Port Colborne Web Design</Link>,{" "}
+              <Link href="/thorold-web-design">Thorold Web Design</Link>,{" "}
+              <Link href="/welland-web-design">Welland Web Design</Link>.
               <br />
               <br />
               <h3>Industries Served</h3>
@@ -139,7 +124,7 @@ const Footer = () => {
         </Container>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
