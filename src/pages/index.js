@@ -109,10 +109,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Niagara Web Design | St. Catharines Website Design Company</title>
+        <title>Niagara Web Design | St. Catharines Website Development</title>
         <meta
           name="description"
-          content="Niagara Web Design company with unmatched quality and superior websites. Our St. Catharines website experts will elevate your brand. Get a free quote today!"
+          content="Niagara Web Design company with unmatched quality and superior websites. Our St. Catharines website developers will elevate your brand. Get a free quote today!"
         />
         <meta name="google-site-verification" content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8" />
         <link rel="canonical" href="https://infused.agency" />
@@ -120,7 +120,7 @@ const Home = () => {
       </Helmet>
       <Nav />
       <Hero
-        title="Niagara Web Design | St. Catharines Website Design Company"
+        title="Niagara Web Design | St. Catharines Website Development"
         titleTwo="Web design and SEO done right."
         subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
       />
