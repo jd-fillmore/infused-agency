@@ -1,38 +1,37 @@
-import React from "react"
-import Nav from "../../components/Nav/nav"
-import Hero from "../../components/Home/Hero/hero"
-import Fade from "react-reveal/Fade"
-import PortfolioSlider from "../../components/Home/PortfolioSlider/portfolioSlider"
-import Results from "../../components/Home/Results/results"
-import WhatWeDo from "../../components/Home/WhatWeDo/whatWeDo"
-import Clients from "../../components/Home/Clients/clients"
-import FAQ from "../../components/Home/FAQ/faq"
-import About from "../../components/Home/About/about"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
+import React from "react";
+import Nav from "../../components/Nav/nav";
+import Hero from "../../components/Home/Hero/hero";
+import Fade from "react-reveal/Fade";
+import PortfolioSlider from "../../components/Home/PortfolioSlider/portfolioSlider";
+import Results from "../../components/Home/Results/results";
+import WhatWeDo from "../../components/Home/WhatWeDo/whatWeDo";
+import Clients from "../../components/Home/Clients/clients";
+import FAQ from "../../components/Home/FAQ/faq";
+import About from "../../components/Home/About/about";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
 
-import { Helmet } from "react-helmet"
-import Link from "next/link"
-import Image from "next/image"
+import { Helmet } from "react-helmet";
+import Link from "next/link";
+import Image from "next/image";
 
-import webImg from "../../src/img/responsive.svg"
-import seoImg from "../../src/img/seoo.svg"
-import dmImg from "../../src/img/dm.svg"
-import ecommImg from "../../src/img/add-to-cart.png"
-import wpImg from "../../src/img/wordpress.png"
-import clientLmc from "../../src/img/client-lmc.png"
-import clientKd from "../../src/img/client-kd.png"
-import clientTr from "../../src/img/client-tr.png"
-import clientGgs from "../../src/img/client-ggs.png"
+import webImg from "../../src/img/responsive.svg";
+import seoImg from "../../src/img/seoo.svg";
+import dmImg from "../../src/img/dm.svg";
+import ecommImg from "../../src/img/add-to-cart.png";
+import wpImg from "../../src/img/wordpress.png";
+import clientLmc from "../../src/img/client-lmc.png";
+import clientKd from "../../src/img/client-kd.png";
+import clientTr from "../../src/img/client-tr.png";
+import clientGgs from "../../src/img/client-ggs.png";
 
-import ClientLogos from "../../components/Home/ClientLogos/clientLogos"
+import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 
 const schema = {
   "@context": "http://schema.org",
   "@type": "LocalBusiness",
   name: "Infused Agency",
-  image:
-    "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
+  image: "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
   telephone: "(905) 933-3115",
   address: {
     "@type": "PostalAddress",
@@ -48,10 +47,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Monday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -59,10 +56,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Tuesday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -70,10 +65,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Wednesday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -81,10 +74,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Thursday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -92,10 +83,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Friday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -103,8 +92,7 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Saturday",
       },
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -112,31 +100,27 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Sunday",
       },
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
   ],
-}
+};
 
 const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Niagara Web Design | Website Designers St. Catharines</title>
+        <title>Niagara Web Design | St. Catharines Web Design Company</title>
         <meta
           name="description"
-          content="Niagara Web Design company with unmatched speed and quality for superior websites. Elevate your online presence—get a free quote today!"
+          content="Niagara Web Design company with unmatched quality and superior websites. Our St. Catharines website experts will elevate your brand. Get a free quote today!"
         />
-        <meta
-          name="google-site-verification"
-          content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8"
-        />
+        <meta name="google-site-verification" content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8" />
         <link rel="canonical" href="https://infused.agency" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
       <Nav />
       <Hero
-        title="Niagara Web Design | Website Designers St. Catharines"
+        title="Niagara Web Design | St. Catharines Web Design Company"
         titleTwo="Web design and SEO done right."
         subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
       />
@@ -157,10 +141,8 @@ const Home = () => {
             <div className="col-lg-12 text-center">
               <h2>Niagara Web Design Company</h2>
               <p className="serv-intro">
-                We design{" "}
-                <Link href="/web-design">mobile-friendly websites</Link> that
-                help grow your business. From our initial discovery meeting to
-                post-launch support, we're always here to help.
+                We design <Link href="/web-design">mobile-friendly websites</Link> that help grow your business. From
+                our initial discovery meeting to post-launch support, we're always here to help.
               </p>
             </div>
           </div>
@@ -168,11 +150,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="card">
-                <Image
-                  className="img-fluid"
-                  src={webImg}
-                  alt="Niagara web design company"
-                />
+                <Image className="img-fluid" src={webImg} alt="Niagara web design company" />
                 <h2>Web Design &amp; Development</h2>
                 <p>We create websites to help attract more customers.</p>
                 <Link href="/web-design">
@@ -194,11 +172,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <div className="card">
-                <Image
-                  className="img-fluid"
-                  src={wpImg}
-                  alt="Niagara WordPress website development"
-                />
+                <Image className="img-fluid" src={wpImg} alt="Niagara WordPress website development" />
                 <h2>WordPress Development</h2>
                 <p>Update your website without the need of a developer.</p>
                 <Link href="/wordpress-developer-niagara/">
@@ -245,11 +219,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <div className="card">
-                <Image
-                  className="img-fluid"
-                  src={ecommImg}
-                  alt="e-commerce website wordpress development niagara"
-                />
+                <Image className="img-fluid" src={ecommImg} alt="e-commerce website wordpress development niagara" />
                 <h2>E-Commerce Development</h2>
                 <p>Robust e-commerce systems to help your sell online.</p>
                 <Link href="/ecommerce-web-design-niagara/">
@@ -281,9 +251,8 @@ const Home = () => {
                 <Fade>
                   <h2>Featured Web Design Projects</h2>
                   <p id="sub">
-                    Take a look and see the huge difference we've made to our
-                    Niagara & St. Catharines client's online existences, using
-                    modern web design practices.
+                    Take a look and see the huge difference we've made to our Niagara & St. Catharines client's online
+                    existences, using modern web design practices.
                   </p>
                 </Fade>
               </div>
@@ -322,9 +291,7 @@ const Home = () => {
           "Does your current ",
           <Link href="/services">web design</Link>,
           " not bring in new Niagara or St. Catharines leads? Sometimes web design problems are obvious like when a website is not mobile-friendly or if a web design doesn't have a modern design. Other times, a closer inspection into your web design practices are required in order to identify issues. Most issues relating to any Niagara or St. Catharines ",
-          <Link href="/why-is-my-website-not-bringing-in-new-business/">
-            web design
-          </Link>,
+          <Link href="/why-is-my-website-not-bringing-in-new-business/">web design</Link>,
           " can be a web design that doesn't rank on the first page of Google, which means it's SEO isn't up to par. A web design message that doesn't align with your customers, or a web design that doesn't convert users into paying customers.",
         ]}
         servicesTitle="Why Is Hiring a Good Web Design Company Important?"
@@ -374,7 +341,7 @@ const Home = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
