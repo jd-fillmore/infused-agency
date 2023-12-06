@@ -120,7 +120,7 @@ const Home = () => {
       </Helmet>
       <Nav />
       <Hero
-        title="Web Design Niagara, St. Catharines"
+        title="Niagara Web Design | Web Design St. Catharines"
         titleTwo="Web design and SEO done right."
         subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
       />
