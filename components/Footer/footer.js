@@ -103,10 +103,6 @@ const Footer = () => {
               <Link href="/port-colborne-web-design">Port Colborne Web Design</Link>,{" "}
               <Link href="/thorold-web-design">Thorold Web Design</Link>,{" "}
               <Link href="/welland-web-design">Welland Web Design</Link>.
-              <br />
-              <br />
-              <h3>Industries Served</h3>
-              <Industries />
             </Col>
             <Col lg="4">
               <h3>Hours</h3>
