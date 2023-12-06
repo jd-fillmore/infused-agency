@@ -79,7 +79,7 @@ const SEO = () => {
                     <h4>TreeReports</h4>
                     <p>
                       "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
-                      highly recommend their company if you are thinking of needing their Fort Erie SEO services."
+                      highly recommend their company if you are thinking of needing their Port Colborne SEO services."
                     </p>
                     <ul>
                       <li>
@@ -163,8 +163,8 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
-                      SEO for your Fort Erie business I do recommend Infused Agency for their services. JD keep up the
-                      great work. Thank you."
+                      SEO for your Port Colborne business I do recommend Infused Agency for their services. JD keep up
+                      the great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -419,7 +419,7 @@ const SEO = () => {
             qTwo="What is it like to live in Port Colborne?"
             qTwoAns="Port Colborne truly has a local area feel and this is a direct result of the extraordinary individuals of this city and how curious the midtown is and every one of the little exceptional, privately possessed shops. You will find WAY MORE mother and pop shops than enormous box stores in Port Colborne! There are likewise some truly incredible eating and eateries!"
             qThree="Where does the friendship trail start in Port Colborne?"
-            qThreeAns="The path starts at Port Colborne Seaway Park and finishes at Historic Fort Erie where it gets together with the Niagara Parks Commission Recreation Trail."
+            qThreeAns="The path starts at Port Colborne Seaway Park and finishes at Historic Port Colborne where it gets together with the Niagara Parks Commission Recreation Trail."
             qFour="Where is the shrinking mill in Port Colborne?"
             qFourAns="Nearby us here in Port Colborne, Ontario, is a superb fascination that a great many people have hardly any familiarity with. It is known as the extraordinary contracting plant."
             mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.2721219696!2d-79.33834971138214!3d42.82854362231943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1653053896754!5m2!1sen!2sca"
