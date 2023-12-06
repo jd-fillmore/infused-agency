@@ -1,35 +1,35 @@
-import React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Container, Row, Col } from "reactstrap"
-import { Helmet } from "react-helmet"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import website from "../img/fort-erie-seo-company.webp"
-import treeImg from "../img/tree-reports.png"
-import kdImg from "../img/niagara-web-design.png"
-import cassImg from "../img/featured-seo.png"
-import bgImage from "../img/inner-seo.jpg"
-import about from "../img/about.jpg"
-import About from "../../components/Home/About/about"
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Container, Row, Col } from "reactstrap";
+import { Helmet } from "react-helmet";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import website from "../img/fort-erie-seo-company.webp";
+import treeImg from "../img/tree-reports.png";
+import kdImg from "../img/niagara-web-design.png";
+import cassImg from "../img/featured-seo.png";
+import bgImage from "../img/inner-seo.jpg";
+import about from "../img/about.jpg";
+import About from "../../components/Home/About/about";
 
 const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Fort Erie SEO Company | Top SEO Services - Infused Agency</title>
+        <title>Fort Erie SEO Company | Leading SEO Services - Infused Agency</title>
         <meta
           name="description"
-          content="Fort Erie's Best SEO Company. We deliver measurable impact for our clients through our search engine optimization services, bringing you more leads."
+          content="Explore the excellence of Infused Agency, recognized as the top SEO company in Fort Erie. We deliver impactful SEO services, increasing leads and enhancing online visibility."
         />
       </Helmet>
       <Nav />
       <InnerHero
         title="Fort Erie SEO Company"
-        description="Infused Agency is an award-winning SEO company in Fort Erie. We help businesses bring in more revenue through their websites."
+        description="Discover the award-winning SEO prowess of Infused Agency in Fort Erie. Our mission is to elevate businesses by optimizing websites for increased revenue."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -45,25 +45,19 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Fort Erie SEO services</strong> that our{" "}
-                  <strong>Fort Erie SEO company</strong> provides are pretty
-                  impeccable. We consistently provide great SEO services to our
-                  clients with pretty awesome results. There are a lot of
-                  benefits as to why SEO services are so important for any local
-                  company:
+                  Immerse yourself in the impeccable <strong>Fort Erie SEO services</strong> offered by our dedicated{" "}
+                  <strong>Fort Erie SEO company</strong>. Consistently delivering outstanding results, we bring numerous
+                  benefits to local companies through our exceptional SEO services:
                 </p>
                 <ul>
-                  <li>Bring in more customers through organic search.</li>
-                  <li>
-                    Creates a trustworthy experience for potential customers.
-                  </li>
-                  <li>Improves your Fort Erie brand's awareness.</li>
-                  <li>It's trackable.</li>
+                  <li>Expand your customer base organically.</li>
+                  <li>Establish trust for potential customers.</li>
+                  <li>Elevate Fort Erie brand awareness.</li>
+                  <li>Experience trackable outcomes.</li>
                 </ul>
                 <p>
-                  When you utilize SEO services from our company and end up
-                  ranking on the first of Google, it's a great way to increase
-                  your company's revenue.
+                  When you engage with our SEO services and achieve a top Google ranking, you're on the path to
+                  significant revenue growth for your company.
                 </p>
               </Col>
             </Row>
@@ -73,24 +67,18 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Fort Erie SEO Clients <span>Get Results</span>
+                    Our Fort Erie SEO Clients See <span>Real Results</span>
                   </h2>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={treeImg}
-                      alt="treereports"
-                    />
+                    <Image className="img-fluid" src={treeImg} alt="treereports" />
                     <h4>TreeReports</h4>
                     <p>
-                      "Fantastic experience from start to end. Infused Agency is
-                      organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Fort
-                      Erie SEO services."
+                      "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
+                      highly recommend their company if you are thinking of needing their Fort Erie SEO services."
                     </p>
                     <ul>
                       <li>
@@ -105,8 +93,7 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>1,500% increase</span> in Google rankings for
-                          multiple keywords
+                          <span>1,500% increase</span> in Google rankings for multiple keywords
                         </strong>
                       </li>
                     </ul>
@@ -132,10 +119,8 @@ const SEO = () => {
                     <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                     <h4>KD Flowers</h4>
                     <p>
-                      "Infused Agency drastically improved my online presence.
-                      By using their SEO services, my Fort Erie company went
-                      from not ranking at all to the first page of Google for
-                      tons of keywords."
+                      "Infused Agency drastically improved my online presence. By using their SEO services, my Fort Erie
+                      company went from not ranking at all to the first page of Google for tons of keywords."
                     </p>
                     <ul>
                       <li>
@@ -145,14 +130,12 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>20,000% increase</span> in new leads in the
-                          first 6 months
+                          <span>20,000% increase</span> in new leads in the first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>5,800 new people</span> discovering website per
-                          month
+                          <span>5,800 new people</span> discovering website per month
                         </strong>
                       </li>
                     </ul>
@@ -175,17 +158,12 @@ const SEO = () => {
                 </Col>
                 <Col lg="4">
                   <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={cassImg}
-                      alt="Cass-A-Bella Construction"
-                    />
+                    <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your Fort
-                      Erie business I do recommend Infused Agency for their
-                      services. JD keep up the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
+                      SEO for your Fort Erie business I do recommend Infused Agency for their services. JD keep up the
+                      great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -195,14 +173,12 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>13,000% increase</span> in new leads in first 6
-                          months
+                          <span>13,000% increase</span> in new leads in first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>2,500 new people</span> discovering website per
-                          month
+                          <span>2,500 new people</span> discovering website per month
                         </strong>
                       </li>
                     </ul>
@@ -230,15 +206,9 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>
-                    Ready to grow your business with top Fort Erie SEO services?
-                  </h3>
+                  <h3>Ready to elevate your business with premier Fort Erie SEO services?</h3>
                   <p>Click the button below to get your free quote.</p>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                  >
+                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -250,80 +220,67 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Fort Erie <span>SEO</span> Services
+                    Fort Erie <span>SEO</span> Solutions
                   </h2>
-                  <p>
-                    Solutions That Bring In Qualified Leads And Boost Your Sales
-                  </p>
+                  <p>Effective Strategies for Generating Qualified Leads and Amplifying Your Sales</p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Keyword Research &amp; Strategy</h5>
+                  <h5>Strategic Keyword Research</h5>
                   <p>
-                    Infused Agency's SEO company in Fort Erie conducts specific
-                    keyword research that covers specifically what your users
-                    are searching for. We look at keywords as the main
-                    foundation to your SEO project. Beyond this, we dive into
-                    the technicalities to further deliver value to your
+                    Our Fort Erie SEO company, Infused Agency, conducts targeted keyword research to understand exactly
+                    what your users are searching for. We consider keywords as the fundamental building blocks of your
+                    SEO project. Additionally, we delve into technical aspects to provide enhanced value to your
                     customers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Link Building</h5>
+                  <h5>Effective Link Building</h5>
                   <p>
-                    Off of your website, our Fort Erie SEO exports utilize
-                    efforts to build links to your website, to help your site
-                    rise in search rankings. When other websites link back to
-                    your own, you can be seen as authoratative and rank for
-                    relevant keyword searche. We can also help filter out
-                    certain backlinks that Google may refer to as spammy.
+                    Our Fort Erie SEO experts, at Infused Agency, employ strategies to build links to your website from
+                    external sources, contributing to improved search rankings. When other websites link back to yours,
+                    it enhances your authority and ranking for relevant keyword searches. Additionally, we assist in
+                    filtering out potentially spammy backlinks flagged by Google.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Content Writing</h5>
+                  <h5>Strategic Content Creation</h5>
                   <p>
-                    Our Fort Erie SEO services are conducted by a highly trained
-                    group of marketers, which includes content writers. At
-                    Infused, you can take advantage of our content writing
-                    skills to create content that attracts highly qualified
-                    leads. We help mix keywords and your brand voice together,
-                    to help bring in more leads to your website.
+                    Within our Fort Erie SEO services, a skilled team of marketers, including content writers, is
+                    dedicated to crafting compelling content. Leveraging our expertise at Infused, you can benefit from
+                    content that not only incorporates relevant keywords but also aligns seamlessly with your brand
+                    voice. This synergy is designed to attract highly qualified leads and drive increased traffic to
+                    your website.
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
-                  <h5>On-Page SEO</h5>
+                  <h5>Optimized On-Page SEO Strategies</h5>
                   <p>
-                    It's very important that your on-page work is done well, as
-                    it can signal to Google that you may give your users a poor
-                    user experience. This is why our Fort Erie SEO agency looks
-                    for and fixes these issues for you. We conduct on-page SEO
-                    to help bolster your online presence, amplify your lead
-                    generation and help boost sales.
+                    Ensuring excellence in your on-page elements is crucial, as it communicates to Google the quality of
+                    user experience you provide. Our Fort Erie SEO agency is dedicated to identifying and rectifying any
+                    issues in this domain. Through meticulous on-page SEO efforts, we aim to enhance your online
+                    presence, supercharge lead generation, and contribute to increased sales.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Local SEO</h5>
+                  <h5>Targeted Local SEO</h5>
                   <p>
-                    For a more local approach, our Fort Erie SEO specialists can
-                    leverage the power of local SEO. We help local customers
-                    find your website in local search engine rankings. We do
-                    this by employing on and off page search engine optimization
-                    best practices, to help raise your local website in Google's
-                    rankings.
+                    Our Fort Erie SEO specialists adopt a localized strategy through expert local SEO techniques. We
+                    facilitate the discovery of your website by local customers in regional search engine rankings.
+                    Leveraging both on and off-page search engine optimization best practices, we work to elevate your
+                    local website in Google's rankings.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Technical SEO</h5>
+                  <h5>Comprehensive Technical SEO</h5>
                   <p>
-                    If you find out about some technical mishaps on your
-                    website, our Fort Erie SEO experts are here to help. We'll
-                    dive into your website by conducting a site-wide audit to
-                    check for problems related to website speed, content and
-                    optimization. Our team will fix these issues, helping your
-                    website get back on the right track.
+                    Discovering technical issues on your website? Our Fort Erie SEO experts are ready to assist. We
+                    conduct a thorough site-wide audit to identify and address problems related to website speed,
+                    content, and optimization. Our team is dedicated to resolving these issues, ensuring your website
+                    gets back on the right track.
                   </p>
                 </Col>
               </Row>
@@ -333,13 +290,9 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Fort Erie SEO Experts Help Today</h3>
+                  <h3>Empower Your Business with Our Fort Erie SEO Experts</h3>
                   <p>Click the button below to get your free quote.</p>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                  >
+                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -351,45 +304,28 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Fort Erie</span> SEO
-                    Agency
+                    Elevate Your Online Presence with Infused Agency, Your <span>Fort Erie</span> SEO Partner
                   </h2>
-                  <p>Increase Your Website's Rankings With Our SEO Experts</p>
+                  <p>Boost Your Website's Rankings with Our Team of SEO Experts</p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Fort Erie
-                    businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Fort Erie businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Fort Erie">
-                      digital marketing
-                    </Link>
-                    , search engine optimization (SEO) ,{" "}
-                    <Link href="/wordpress-developer-Fort Erie">
-                      WordPress development
-                    </Link>{" "}
-                    and{" "}
-                    <Link href="/ecommerce-web-design-Fort Erie">
-                      e-commerce website development
-                    </Link>
-                    .
+                    <Link href="/digital-marketing-Fort Erie">digital marketing</Link>, search engine optimization (SEO)
+                    , <Link href="/wordpress-developer-Fort Erie">WordPress development</Link> and{" "}
+                    <Link href="/ecommerce-web-design-Fort Erie">e-commerce website development</Link>.
                   </p>
                   <p>
-                    We've been able to help small, local businesses all the way
-                    to large enterprise companies with increasing traffic to
-                    their websites, build modern websites for them and
-                    ultimately bringing them more revenue through digital
-                    channels.
+                    We've been able to help small, local businesses all the way to large enterprise companies with
+                    increasing traffic to their websites, build modern websites for them and ultimately bringing them
+                    more revenue through digital channels.
                   </p>
                 </Col>
                 <Col lg="6">
-                  <Image
-                    className="img-fluid"
-                    src={about}
-                    alt="business needs"
-                  />
+                  <Image className="img-fluid" src={about} alt="business needs" />
                 </Col>
               </Row>
             </Container>
@@ -397,71 +333,48 @@ const SEO = () => {
           <Container>
             <Row className="pd-top-80 pd-btm-60">
               <Col lg="12">
-                <h3>What is SEO?</h3>
+                <h3>Unlocking the Power of SEO</h3>
                 <p>
-                  Search Engine Optimization (SEO) is the process of increasing
-                  your <Link href="/websites">websites</Link> visibility within
-                  Google's search results. If your website is on the first page
-                  of Google with our SEO services versus your website being on
-                  the 10th page, you will get a lot more customers.
+                  Search Engine Optimization (SEO) is the process of enhancing your{" "}
+                  <Link href="/websites">website's</Link> visibility in Google's search results. Securing a spot on the
+                  first page, courtesy of our SEO services, can significantly increase your customer base.
                 </p>
-                <h3>Do I need SEO?</h3>
+                <h3>Is SEO Essential for My Business?</h3>
                 <p>
-                  Does your business depend on attracting new customers? Then
-                  absolutely you need a Fort Erie SEO company to help you with
-                  SEO services. It's important that our Fort Erie SEO experts
-                  help your website rank where your customers are looking - on
-                  the first page of Google.
+                  If your business relies on attracting new customers, then partnering with a Fort Erie SEO company is
+                  crucial. Our Fort Erie SEO experts ensure your website ranks on the first page of Google, right where
+                  your customers are searching.
                 </p>
-                <h3>What's important when it comes to SEO?</h3>
+                <h3>Key Aspects of SEO</h3>
                 <p>
-                  There's about 200 ranking signals that Google evaluates a
-                  website on when it comes to SEO. The top factors here are
-                  domain authority (how old your website's domain is), the
-                  quality SEO content of your website, SEO backlinks going to
-                  your website, technical SEO coding on your site and more. We
-                  will clearly identify the strengths and weaknesses in terms of
-                  SEO that your current website has, and come up with a game
-                  plan to improve.
+                  Google considers around 200 ranking signals for SEO. Critical factors include domain authority, the
+                  quality of SEO content, backlinks, technical SEO coding, and more. We meticulously assess your
+                  website's strengths and weaknesses to develop a tailored strategy for improvement.
                 </p>
-                <h3>How long does SEO take?</h3>
+                <h3>Timeline for SEO Results</h3>
                 <p>
-                  There are many variables and depends on the website. For
-                  example - a brand new website can take upwards to a year to
-                  start seeing any meaningful results. A website that has been
-                  around for a longer amount of time could start seeing movement
-                  within 2-3 months. It all depends on your website's standing
-                  when it comes to SEO.
+                  The timeframe for SEO results varies based on factors like website age. A new website may take up to a
+                  year for meaningful results, while an established one could see changes in 2-3 months. Success hinges
+                  on your website's SEO standing.
                 </p>
-                <h3>How do I get on the Google Map Pack?</h3>
+                <h3>Navigating the Google Map Pack</h3>
                 <p>
-                  The Google Map Pack is great for local SEO. This is the area
-                  where when someone searches, local companies pop up with 5
-                  star reviews. If you do local SEO and get in the top 3 of this
-                  map pack, you're golden. The best way to get there is to
-                  optimize your Google My Business profile. We specialize in
-                  doing so and can help you rise up in the local SEO map pack
-                  rankings.
+                  Local SEO's gem, the Google Map Pack, showcases businesses with 5-star reviews. Securing a top-3 spot
+                  requires optimizing your Google My Business profile. Our expertise can propel you to the pinnacle of
+                  local SEO rankings.
                 </p>
                 <ul>
                   <li>E-commerce company logo</li>
                   <li>
-                    All e-commerce product details - things like product titles,
-                    images, descriptions, pricing, etc.
+                    Comprehensive e-commerce product details, covering titles, images, descriptions, pricing, etc.
                   </li>
-                  <li>Any shipping charges you'd like customers to pay.</li>
+                  <li>Specify any shipping charges for customers.</li>
                 </ul>
-                <h3>Our Fort Erie SEO company is ready to help.</h3>
+                <h3>Your Fort Erie SEO Journey Begins Now</h3>
                 <p>
-                  If you need our Fort Erie SEO company to help your company
-                  rise in Google with our expert SEO services, click below to
-                  get your free SEO quote.
+                  For expert SEO services that elevate your Google presence, click below to receive your free SEO quote.
                 </p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://calendly.com/infused-agency/project-discovery/"
-                >
+                <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                   <button>Get Free Quote</button>
                 </a>
               </Col>
@@ -471,9 +384,7 @@ const SEO = () => {
             city="Fort Erie"
             intro={[
               "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Fort_Erie,_Ontario">
-                Fort Erie
-              </a>,
+              <a href="https://en.wikipedia.org/wiki/Fort_Erie,_Ontario">Fort Erie</a>,
               " is a town on the Niagara River in the Niagara Region, Ontario, Canada. It is straightforwardly across the waterway from Buffalo, New York and is the site of Old Fort Erie which assumed a conspicuous part in the War of 1812.",
             ]}
             area="166"
@@ -506,7 +417,7 @@ const SEO = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;
