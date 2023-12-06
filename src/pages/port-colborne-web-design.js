@@ -20,17 +20,17 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Port Colborne Web Design Company | Best Web Designers - Infused Agency</title>
+        <title>Port Colborne Web Design Experts | Top-Tier Web Design Services - Infused Agency</title>
         <meta
           name="description"
-          content="Port Colborne's Best Web Design Company. We design websites aimted to bolster your brand's reputation and increase company sales. Click here for your free quote!"
+          content="Discover the top-rated Web Design Company in Port Colborne. Our expert team crafts websites dedicated to enhancing your brand's image and driving up sales. Get your complimentary quote now!"
         />
         <link rel="canonical" href="https://infused.agency/port-colborne-web-design" />
       </Helmet>
       <Nav />
       <InnerHero
-        title="Port Colborne Web Design Company"
-        description="Infused Agency is an award-winning web design company in Port Colborne. We help businesses bring in more revenue through their websites."
+        title="Port Colborne Web Design Firm"
+        description="Infused Agency, recognized with awards, excels as a web design company in Port Colborne. Our mission is to assist businesses in generating increased revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -46,19 +46,19 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Port Colborne web design services</strong> that our{" "}
-                  <strong>Port Colborne web design company</strong> provides are pretty impeccable. We consistently
-                  provide great web design services to our clients with pretty awesome results. There are a lot of
-                  benefits as to why web design services are so important for any local company:
+                  The <strong>Port Colborne web design services</strong> offered by our{" "}
+                  <strong>Port Colborne web design firm</strong> are exceptionally commendable. We consistently deliver
+                  outstanding web design solutions to our clients, yielding impressive results. The importance of web
+                  design services for any local company is manifold:
                 </p>
                 <ul>
-                  <li>Helps bolster company branding.</li>
-                  <li>Improves your Port Colborne company's reputation and trustworthiness.</li>
-                  <li>Leads to more leads and company revenue.</li>
+                  <li>Enhances company branding.</li>
+                  <li>Elevates your Port Colborne company's reputation and trustworthiness.</li>
+                  <li>Generates more leads and company revenue.</li>
                 </ul>
                 <p>
-                  When you utilize web design services from our company and end up bolstering your company's reputation,
-                  it's a great way to gain more customers.
+                  Opting for web design services from our company not only enhances your company's reputation but also
+                  serves as an effective strategy for attracting more customers.
                 </p>
               </Col>
             </Row>
@@ -67,9 +67,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center pd-btm-40">
-                  <h2>
-                    Our Port Colborne Web Design Clients <span>Get Results</span>
-                  </h2>
+                  <h2>Achieve Results with Our Port Colborne Web Design Services</h2>
                 </Col>
               </Row>
               <Row>
@@ -209,8 +207,8 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Ready to grow your business with top Port Colborne web design services?</h3>
-                  <p>Click the button below to get your free quote.</p>
+                  <h3>Prepared to Expand Your Business with Premier Port Colborne Web Design Services?</h3>
+                  <p>Simply click the button below to request your complimentary quote.</p>
                   <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
                   </a>
@@ -223,65 +221,69 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Port Colborne <span>Web Design</span> Services
+                    Tailored Port Colborne <span>Web Design</span> Solutions
                   </h2>
-                  <p>Websites That Help Your Company Bring In More Customers</p>
+                  <p>Creating Websites That Drive Customer Acquisition for Your Company</p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Search Engine Optimization (SEO)</h5>
+                  <h5>Advanced Search Engine Optimization (SEO)</h5>
                   <p>
-                    We make sure that your websites are indexed and show up for certain keywords in Google. Search
-                    engine optimization is a key part of our Port Colborne web design services to help make sure that
-                    your customers can find your website. When using our Port Colborne web design experts and{" "}
-                    <Link href="/port-colborne-seo-company/">Port Colborne SEO services</Link>, your website should help
-                    bring in new company revenue and customers.
+                    We prioritize the indexing and prominent visibility of your websites for targeted Google keywords.
+                    Search engine optimization stands as a crucial element within our Port Colborne web design services,
+                    guaranteeing the easy discovery of your website by your customers. With the expertise of our Port
+                    Colborne web design specialists and engaging{" "}
+                    <Link href="/port-colborne-seo">Port Colborne SEO services</Link>, your website transforms into a
+                    driving force for acquiring new revenue and customers for your company.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Web Design &amp; Development</h5>
+                  <h5>Innovative Web Design &amp; Development</h5>
                   <p>
-                    Our Port Colborne web designers create websites that bolster your brand's reputation, which help
-                    bring in more customers. Our websites not only attract customers, our award-winning web designs take
-                    into account search engine optimization and responsive web design best practices to help increase
-                    brand awareness.
+                    Crafting websites that enhance your brand's reputation and attract more customers is the forte of
+                    our Port Colborne web designers. Our award-winning web designs go beyond customer attraction by
+                    incorporating best practices in search engine optimization and responsive web design, contributing
+                    to an amplified brand awareness.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Custom Web Design</h5>
+                  <h5>Bespoke Web Design Solutions</h5>
                   <p>
-                    Every client website we design is custom. Our Port Colborne web designers will create a modern
-                    website design for you, taking into consideration your business goals. We make sure to plug in your
-                    vision that factors into our Port Colborne web design experts’ design process.{" "}
+                    Each website we design for our clients is tailored to their unique needs. Our Port Colborne web
+                    designers specialize in creating modern website designs that align with your business goals. We
+                    ensure to incorporate your vision seamlessly into the design process, guided by the expertise of our
+                    Port Colborne web design professionals.
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
-                  <h5>Responsive Web Design</h5>
+                  <h5>Adaptive Web Design</h5>
                   <p>
-                    We conduct responsive web design as part of our Port Colborne web design services to help your users
-                    navigate your website on any device. Our Port Colborne web design experts specifically develop with
-                    custom code to allow your website to look great on any device or computer.
+                    As an integral element of our Port Colborne web design services, we prioritize responsive web design
+                    to ensure seamless navigation for your users across any device. Our Port Colborne web design experts
+                    employ custom coding techniques to guarantee your website looks exceptional on every device or
+                    computer.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>WordPress Web Design</h5>
+                  <h5>WordPress-Centric Web Design</h5>
                   <p>
-                    Our web design company in Port Colborne uses WordPress for all website projects that require a
-                    content management system (CMS). Since WordPress powers nearly 50% of the web, it's a clear winner
-                    when it comes to choosing a CMS. We choose WordPress as it's easy to develop with and easy for our
-                    clients to use.
+                    In our Port Colborne web design company, we exclusively utilize WordPress for all website projects
+                    requiring a content management system (CMS). Given that WordPress powers nearly 50% of the web, it
+                    unequivocally emerges as the preferred choice for a CMS. Our preference for WordPress stems from its
+                    ease of development and user-friendly interface, ensuring a seamless experience for our clients.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>E-Commerce Web Design</h5>
+                  <h5>Empowering E-Commerce Web Design</h5>
                   <p>
-                    In the post-covid world, it's especially important as a product or subscription-based business to
-                    have an e-commerce website. With the help of our Port Colborne web design agency, your e-commerce
-                    website can help sell your products online, expanding your reach drastically. Leave it to our Port
-                    Colborne web designers to help design and develop a beautiful, modern online store.
+                    In the post-COVID era, establishing an online presence is paramount, particularly for product or
+                    subscription-based businesses. Our Port Colborne web design agency specializes in creating
+                    e-commerce websites that facilitate online product sales, significantly broadening your reach. Trust
+                    our Port Colborne web designers to skillfully design and develop a beautiful, modern online store
+                    tailored to your business needs.
                   </p>
                 </Col>
               </Row>
@@ -291,8 +293,8 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Port Colborne Web Design Experts Help Today</h3>
-                  <p>Click the button below to get your free quote.</p>
+                  <h3>Consult with Our Port Colborne Web Design Professionals Today</h3>
+                  <p>Simply click the button below to receive your complimentary quote.</p>
                   <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
                   </a>
@@ -305,9 +307,9 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Port Colborne</span> Web Design Agency
+                    Select Infused Agency as Your <span>Port Colborne</span> Web Design Partner
                   </h2>
-                  <p>Increase Your Brand's Reputation With Our Web Design Experts</p>
+                  <p>Elevate Your Brand's Standing with the Expertise of Our Web Design Professionals</p>
                 </Col>
               </Row>
               <Row>
@@ -316,7 +318,7 @@ const SEO = () => {
                     Since 2013 we've been able to help countless local Port Colborne businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
-                    <Link href="/Port-Colborne-seo-company/">search engine optimization (SEO)</Link> ,{" "}
+                    <Link href="/port-colborne-seo">search engine optimization (SEO)</Link> ,{" "}
                     <Link href="/wordpress-developer-niagara">WordPress development</Link> and{" "}
                     <Link href="/ecommerce-web-design-niagara">e-commerce website development</Link>.
                   </p>
