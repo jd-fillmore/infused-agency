@@ -25,6 +25,7 @@ const SEO = () => {
           name="description"
           content="Explore the excellence of Infused Agency, recognized as the top SEO company in Fort Erie. We deliver impactful SEO services, increasing leads and enhancing online visibility."
         />
+        <link rel="canonical" href="https://infused.agency/fort-erie-seo-company" />
       </Helmet>
       <Nav />
       <InnerHero

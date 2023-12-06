@@ -25,6 +25,7 @@ const SEO = () => {
           name="description"
           content="Top SEO Services in Port Colborne. We provide quantifiable results for our clients with our SEO services, generating increased leads for your business."
         />
+        <link rel="canonical" href="https://infused.agency/port-colborne-seo" />
       </Helmet>
       <Nav />
       <InnerHero
