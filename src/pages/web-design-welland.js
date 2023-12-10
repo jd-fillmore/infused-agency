@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/thorold-web-design-company.webp";
+import website from "../img/welland-web-design-company.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -20,20 +20,20 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Thorold Web Design | Infused Agency</title>
+        <title>Welland Web Design | Infused Agency</title>
         <meta
           name="description"
-          content="Discover Thorold's Premier Web Design Company. Our expert team specializes in crafting websites designed to elevate your brand's reputation and drive increased sales for your business. Click here to get your free quote and take the first step toward a visually stunning and high-performing online presence!"
+          content="Discover Welland's Premier Web Design Company. Our expert team specializes in crafting websites designed to elevate your brand's reputation and drive increased sales for your business. Click here to get your free quote and take the first step toward a visually stunning and high-performing online presence!"
         />
         <link
           rel="canonical"
-          href="https://infused.agency/thorold-web-design"
+          href="https://infused.agency/welland-web-design"
         />
       </Helmet>
       <Nav />
       <InnerHero
-        title="Thorold Web Design Company"
-        description="Discover Thorold's Premier Web Design Company. Our expert team specializes in crafting websites designed to elevate your brand's reputation and drive increased sales for your business. Click here to get your free quote and take the first step toward a visually stunning and high-performing online presence!"
+        title="Welland Web Design Company"
+        description="Discover Welland's Premier Web Design Company. Our expert team specializes in crafting websites designed to elevate your brand's reputation and drive increased sales for your business. Click here to get your free quote and take the first step toward a visually stunning and high-performing online presence!"
         bgImage={bgImage}
       />
       <InnerContent>
@@ -44,14 +44,14 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Thorold web design company, Thorold web design agency, Thorold web design services"
+                  alt="Welland web design company, Welland web design agency, Welland web design services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
                   Explore the exceptional{" "}
-                  <strong>Thorold web design services</strong> offered by our
-                  dedicated <strong>Thorold web design company</strong>. We
+                  <strong>Welland web design services</strong> offered by our
+                  dedicated <strong>Welland web design company</strong>. We
                   pride ourselves on consistently delivering outstanding web
                   design solutions that yield impressive results for our
                   clients. Discover the myriad benefits of investing in
@@ -61,7 +61,7 @@ const SEO = () => {
                   <li>Enhances and fortifies your company's branding</li>
                   <li>
                     Elevates the reputation and credibility of your
-                    Thorold-based business
+                    Welland-based business
                   </li>
                   <li>
                     Generates increased leads and revenue for your company
@@ -80,7 +80,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Unlock Success with Our Thorold Web Design Services{" "}
+                    Unlock Success with Our Welland Web Design Services{" "}
                     <span>See Real Results</span>
                   </h2>
                 </Col>
@@ -97,7 +97,7 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Thorold
+                      their company if you are thinking of needing their Welland
                       web design services."
                     </p>
                     <ul>
@@ -141,7 +141,7 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their web design services, my Thorold company
+                      By using their web design services, my Welland company
                       went from having no website at all to one that brings in
                       new customers every week."
                     </p>
@@ -192,7 +192,7 @@ const SEO = () => {
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
                       on my new web site. If you ever need a web design for your
-                      Thorold business I do recommend Infused Agency for their
+                      Welland business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -239,7 +239,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Elevate Your Business with Premier Thorold Web Design
+                    Elevate Your Business with Premier Welland Web Design
                     Services
                   </h3>
                   <p>
@@ -262,7 +262,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Leading Thorold <span>Web Design</span> Services
+                    Leading Welland <span>Web Design</span> Services
                   </h2>
                   <p>
                     Create websites that drive customer acquisition for your
@@ -279,21 +279,21 @@ const SEO = () => {
                     We ensure your websites are effectively indexed and
                     prominently appear for targeted keywords on Google. Search
                     engine optimization is an integral aspect of our
-                    comprehensive Thorold web design services, ensuring that
+                    comprehensive Welland web design services, ensuring that
                     your website is easily discoverable by your potential
-                    customers. Collaborating with our Thorold web design experts
+                    customers. Collaborating with our Welland web design experts
                     and leveraging our dedicated{" "}
-                    <Link href="/Thorold-seo-company/">
-                      Thorold SEO services
+                    <Link href="/welland-seo-company/">
+                      Welland SEO services
                     </Link>
                     , your website becomes a powerful tool for driving new
                     company revenue and attracting customers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Comprehensive Web Design &amp; Development in Thorold</h5>
+                  <h5>Comprehensive Web Design &amp; Development in Welland</h5>
                   <p>
-                    Experience the expertise of our Thorold web designers who
+                    Experience the expertise of our Welland web designers who
                     craft websites to enhance your brand's reputation,
                     ultimately driving customer acquisition. Our award-winning
                     web designs not only attract customers but also prioritize
@@ -302,25 +302,25 @@ const SEO = () => {
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Tailored Excellence with Custom Web Design in Thorold</h5>
+                  <h5>Tailored Excellence with Custom Web Design in Welland</h5>
                   <p>
                     Experience the uniqueness of our approach – every website we
-                    design is fully customized. Our Thorold web designers craft
+                    design is fully customized. Our Welland web designers craft
                     modern designs with a keen understanding of your business
                     goals. Your vision is at the heart of our process,
-                    seamlessly integrated by our expert Thorold web design team.
+                    seamlessly integrated by our expert Welland web design team.
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
                   <h5>
-                    Seamless Experience with Responsive Web Design in Thorold
+                    Seamless Experience with Responsive Web Design in Welland
                   </h5>
                   <p>
-                    As an integral part of our Thorold web design services, we
+                    As an integral part of our Welland web design services, we
                     prioritize responsive web design to ensure optimal user
-                    navigation on every device. Our dedicated Thorold web design
+                    navigation on every device. Our dedicated Welland web design
                     experts employ custom coding, guaranteeing that your website
                     not only looks great but functions seamlessly across various
                     devices and computers.
@@ -329,10 +329,10 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>
                     Empowering Your Online Presence with WordPress Web Design in
-                    Thorold
+                    Welland
                   </h5>
                   <p>
-                    Experience the versatility of our Thorold web design
+                    Experience the versatility of our Welland web design
                     company, where we exclusively leverage WordPress for all
                     projects requiring a content management system (CMS).
                     Powering nearly 50% of the web, WordPress stands out as the
@@ -343,13 +343,13 @@ const SEO = () => {
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Thrive Online with E-Commerce Web Design in Thorold</h5>
+                  <h5>Thrive Online with E-Commerce Web Design in Welland</h5>
                   <p>
                     In the post-COVID era, establishing an online presence is
                     crucial for product or subscription-based businesses. Our
-                    Thorold web design agency specializes in crafting e-commerce
+                    Welland web design agency specializes in crafting e-commerce
                     websites that serve as powerful sales platforms, enabling
-                    you to reach a broader audience. Trust our Thorold web
+                    you to reach a broader audience. Trust our Welland web
                     designers to create and develop a stunning, modern online
                     store that showcases your products and expands your market
                     presence.
@@ -363,7 +363,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Elevate Your Online Presence with Thorold Web Design Experts
+                    Elevate Your Online Presence with Welland Web Design Experts
                   </h3>
                   <p>
                     Take the first step towards success. Click the button below
@@ -385,25 +385,26 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Thorold</span> Web
-                    Design Agency
+                    Choose Excellence with Infused Agency - Your Premier{" "}
+                    <span>Welland</span> Web Design Partner
                   </h2>
                   <p>
-                    Increase Your Brand's Reputation With Our Web Design Experts
+                    Elevate your brand's reputation with the expertise of our
+                    web design professionals.
                   </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Thorold
+                    Since 2013 we've been able to help countless local Welland
                     businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Thorold-seo-company/">
+                    <Link href="/Welland-seo-company/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     ,{" "}
@@ -521,36 +522,32 @@ const SEO = () => {
             </Row>
           </Container>
           <About
-            city="Thorold"
+            city="Welland"
             intro={[
               "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Thorold">Thorold</a>,
-              " is a city in Ontario, Canada, situated on the Niagara Escarpment. It is likewise the seat of the Regional Municipality of Niagara.",
+              <a href="https://www.welland.ca/">Welland</a>,
+              " is located directly in the centre of the heart of the Niagara region, within a half-hour distance of driving to Niagara Falls. Traditionally it's known to be the place 'where rails and water meet'. This is referring toe the waterways of the Welland Canal and the Welland River.",
             ]}
-            area="83"
-            population="18,003"
+            area="81.04"
+            population="52,293"
             topSights={[
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01k_14&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20thorold&sa=X&ved=2ahUKEwigoaL1n-73AhWBMM0KHaKVDksQ69EBKAF6BAghEAk">
-                Henry of Pelham Winery in Thorold
-              </a>,
+              <a href="http://www.niagarawellandcanal.com/">Welland Canal</a>,
               ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01k_14&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20thorold&sa=X&ved=2ahUKEwigoaL1n-73AhWBMM0KHaKVDksQ69EBKAF6BAghEAk">
-                Niagara College Teaching in Thorold
-              </a>,
+              <a href="https://www.wellandmuseum.ca/">Welland Museum</a>,
               ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01k_14&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20thorold&sa=X&ved=2ahUKEwigoaL1n-73AhWBMM0KHaKVDksQ69EBKAN6BAghEA0">
-                Short Hills Provincial Park in Thorold
+              <a href="https://www.tripadvisor.ca/Attraction_Review-g181735-d11753746-Reviews-Chippawa_Park-Welland_Ontario.html">
+                Welland Park
               </a>,
             ]}
-            qOne="What is Thorold, Ontario known for?"
-            qOneAns="The City of Thorold includes the longest submerged burrow for Ontario known as Thorold Tunnel, is developed late 1960s empowering great many vehicles to cross the Thorold Canal."
-            qTwo="Is Thorold a nice place to live?"
-            qTwoAns="Thorold is a seriously sensible spot to live, even by the principles of this somewhat cheap piece of Ontario. Lodging costs are about the most reduced in the area, and it holds a generally common populace - yet it's as yet conceivable to track down an overrated espresso or distinctive cupcake assuming that you truly need one!"
-            qThree="Is Thorold, Ontario considered St. Catharines?"
-            qThreeAns="Catharines—Thorold consisted of the southern part of the City of St. Catharines, the City of Thorold and the northern part of the City of Thorold."
-            qFour="When did Thorold, Ontario become a city?"
-            qFourAns="John's and Thorold South, was integrated in 1798, while the Town of Thorold was consolidated as a town in 1850 and afterward as a Town in 1875. In 1970, the new Town of Thorold was made by consolidating the previous Township of Thorold and the previous Town of Thorold."
-            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93247.40821488337!2d-79.2978682967711!3d43.08388414322303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34ff27154bc97%3A0x3b0d481719e3e990!2sThorold%2C%20ON!5e0!3m2!1sen!2sca!4v1653055803124!5m2!1sen!2sca"
+            qOne="What is Welland known for?"
+            qOneAns="It's been historically known as the place where rails and water meet, which refers to the railways from Buffalo to Toronto and the waterways of Welland Canal the Welland River."
+            qTwo="Is Welland a good place to live?"
+            qTwoAns="Welland had made MacLean's 2021 list of the best places to live in Canada. The ability to work from home was heavily taken into account."
+            qThree="Is Welland poor?"
+            qThreeAns="Although it's stereotypical, most people that live in Welland are above the low-income cut off area. The majority of people living in Welland are above the 2016 national median income."
+            qFour="Why is Welland called the Rose City?"
+            qFourAns="There's an abunance of roses grown locally within the Welland area. This is the reason why Welland is referred to as the Rose City."
+            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93404.86381712716!2d-79.29982875026296!3d42.980338098531114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d349cb1aaf497d%3A0xb6a05855226db6e6!2sWelland%2C%20ON!5e0!3m2!1sen!2sca!4v1652793794737!5m2!1sen!2sca"
           />
         </section>
       </InnerContent>
