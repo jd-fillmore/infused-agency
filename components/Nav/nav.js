@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import Link from "next/link"
+import React, { useState } from "react";
+import Link from "next/link";
 import {
   Collapse,
   Navbar,
@@ -11,12 +11,12 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from "reactstrap"
+} from "reactstrap";
 
-const Example = props => {
-  const [isOpen, setIsOpen] = useState(false)
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
@@ -46,14 +46,16 @@ const Example = props => {
                 <Link href="/wordpress-developer-niagara/">
                   <DropdownItem>WordPress Development</DropdownItem>
                 </Link>
-                <Link href="/ecommerce-web-design-niagara/">
-                  <DropdownItem>E-Commerce Development</DropdownItem>
-                </Link>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
               <Link href="/work" className="nav-link">
                 Work
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/pricing" className="nav-link">
+                Pricing
               </Link>
             </NavItem>
             <NavItem>
@@ -92,7 +94,7 @@ const Example = props => {
         </Collapse>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
-export default Example
+export default Example;
