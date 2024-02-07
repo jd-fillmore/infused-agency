@@ -82,7 +82,7 @@ const Pricing = () => {
                   <div className="top">
                     <h4>Modern Website</h4>
                     <h3>
-                      <sup>$</sup>4,500
+                      <sup>$</sup>4,000
                     </h3>
                   </div>
                   <div className="bg">
