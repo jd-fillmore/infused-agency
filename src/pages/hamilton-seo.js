@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/fort-erie-seo-company.webp";
+import website from "../img/hamilton-seo-company.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -20,22 +20,17 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Fort Erie SEO Company | Leading SEO Services - Infused Agency
-        </title>
+        <title>Hamilton SEO | Leading SEO Company | Infused Agency</title>
         <meta
           name="description"
-          content="Explore the excellence of Infused Agency, recognized as the top SEO company in Fort Erie. We deliver impactful SEO services, increasing leads and enhancing online visibility."
+          content="Hamilton's premier SEO experts. Elevate your online presence, boost leads, and increase visibility with our impactful SEO services."
         />
-        <link
-          rel="canonical"
-          href="https://infused.agency/fort-erie-seo-company"
-        />
+        <link rel="canonical" href="https://infused.agency/hamilton-seo" />
       </Helmet>
       <Nav />
       <InnerHero
-        title="Fort Erie SEO Company"
-        description="Discover the award-winning SEO prowess of Infused Agency in Fort Erie. Our mission is to elevate businesses by optimizing websites for increased revenue."
+        title="Hamilton SEO Company"
+        description="Explore the acclaimed SEO expertise of Infused Agency in Hamilton. Our goal is to enhance businesses by optimizing websites to boost revenue."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -46,27 +41,28 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Fort Erie seo company, Fort Erie seo agency, Fort Erie seo services"
+                  alt="Hamilton seo company, Hamilton seo agency, Hamilton seo services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  Immerse yourself in the impeccable{" "}
-                  <strong>Fort Erie SEO services</strong> offered by our
-                  dedicated <strong>Fort Erie SEO company</strong>. Consistently
-                  delivering outstanding results, we bring numerous benefits to
-                  local companies through our exceptional SEO services:
+                  Dive into the exceptional{" "}
+                  <strong>Hamilton SEO services</strong> offered by our
+                  committed <strong>Hamilton-based SEO firm</strong>.
+                  Consistently delivering outstanding results, we provide a
+                  multitude of benefits to local businesses through our
+                  exceptional SEO services.
                 </p>
                 <ul>
-                  <li>Expand your customer base organically.</li>
-                  <li>Establish trust for potential customers.</li>
-                  <li>Elevate Fort Erie brand awareness.</li>
-                  <li>Experience trackable outcomes.</li>
+                  <li>Grow your customer base naturally.</li>
+                  <li>Build trust with prospective customers.</li>
+                  <li>Enhance Hamilton brand awareness.</li>
+                  <li>Witness measurable results.</li>
                 </ul>
                 <p>
-                  When you engage with our SEO services and achieve a top Google
-                  ranking, you're on the path to significant revenue growth for
-                  your company.
+                  By availing yourself of our SEO services and attaining a
+                  prominent Google ranking, you set the stage for substantial
+                  revenue expansion for your company.
                 </p>
               </Col>
             </Row>
@@ -76,7 +72,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Fort Erie SEO Clients See <span>Real Results</span>
+                    Our Hamilton SEO clients experience <span>real result</span>
+                    s.
                   </h2>
                 </Col>
               </Row>
@@ -92,8 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Fort
-                      Erie SEO services."
+                      their company if you are thinking of needing their
+                      Hamilton SEO services."
                     </p>
                     <ul>
                       <li>
@@ -136,9 +133,9 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their SEO services, my Fort Erie company went
-                      from not ranking at all to the first page of Google for
-                      tons of keywords."
+                      By using their SEO services, my Hamilton company went from
+                      not ranking at all to the first page of Google for tons of
+                      keywords."
                     </p>
                     <ul>
                       <li>
@@ -186,8 +183,8 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your Fort
-                      Erie business I do recommend Infused Agency for their
+                      on my new web site. If you ever need a SEO for your
+                      Hamilton business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -234,7 +231,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to elevate your business with premier Fort Erie SEO
+                    Ready to boost your business with top-notch Hamilton SEO
                     services?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
@@ -254,11 +251,11 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Fort Erie <span>SEO</span> Solutions
+                    Hamilton <span>SEO</span> Solutions
                   </h2>
                   <p>
-                    Effective Strategies for Generating Qualified Leads and
-                    Amplifying Your Sales
+                    Strategies for Generating Leads and Boosting Sales
+                    Effectively
                   </p>
                 </Col>
               </Row>
@@ -266,37 +263,34 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Strategic Keyword Research</h5>
                   <p>
-                    Our Fort Erie SEO company, Infused Agency, conducts targeted
-                    keyword research to understand exactly what your users are
-                    searching for. We consider keywords as the fundamental
-                    building blocks of your SEO project. Additionally, we delve
-                    into technical aspects to provide enhanced value to your
-                    customers.
+                    Infused Agency, our Hamilton SEO company, performs precise
+                    keyword research to comprehend your users' search intent.
+                    Keywords are the foundational elements of your SEO strategy,
+                    and we delve into technical aspects to deliver added value
+                    to your customers.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Effective Link Building</h5>
                   <p>
-                    Our Fort Erie SEO experts, at Infused Agency, employ
-                    strategies to build links to your website from external
-                    sources, contributing to improved search rankings. When
-                    other websites link back to yours, it enhances your
-                    authority and ranking for relevant keyword searches.
-                    Additionally, we assist in filtering out potentially spammy
-                    backlinks flagged by Google.
+                    Our team of Hamilton SEO experts, utilizes strategies to
+                    establish external links to your website, enhancing search
+                    rankings. This link-building approach boosts your authority
+                    and ranking in relevant keyword searches. We also aid in
+                    filtering out potentially spammy backlinks flagged by
+                    Google.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Strategic Content Creation</h5>
                   <p>
-                    Within our Fort Erie SEO services, a skilled team of
-                    marketers, including content writers, is dedicated to
-                    crafting compelling content. Leveraging our expertise at
-                    Infused, you can benefit from content that not only
-                    incorporates relevant keywords but also aligns seamlessly
-                    with your brand voice. This synergy is designed to attract
-                    highly qualified leads and drive increased traffic to your
-                    website.
+                    Using our Hamilton SEO services, a proficient team,
+                    including content writers, at Infused Agency is committed to
+                    creating compelling content. By leveraging our expertise,
+                    you can enjoy content that not only integrates pertinent
+                    keywords but also aligns seamlessly with your brand voice.
+                    This synergy aims to attract highly qualified leads and
+                    boost traffic to your website.
                   </p>
                 </Col>
               </Row>
@@ -305,33 +299,33 @@ const SEO = () => {
                   <h5>Optimized On-Page SEO Strategies</h5>
                   <p>
                     Ensuring excellence in your on-page elements is crucial, as
-                    it communicates to Google the quality of user experience you
-                    provide. Our Fort Erie SEO agency is dedicated to
-                    identifying and rectifying any issues in this domain.
-                    Through meticulous on-page SEO efforts, we aim to enhance
-                    your online presence, supercharge lead generation, and
-                    contribute to increased sales.
+                    it signals to Google the quality of user experience you
+                    offer. Our Hamilton SEO agency is committed to identifying
+                    and addressing any issues in this domain. Through detailed
+                    on-page SEO efforts, our goal is to elevate your online
+                    presence, boost lead generation, and contribute to increased
+                    sales.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Targeted Local SEO</h5>
                   <p>
-                    Our Fort Erie SEO specialists adopt a localized strategy
-                    through expert local SEO techniques. We facilitate the
-                    discovery of your website by local customers in regional
-                    search engine rankings. Leveraging both on and off-page
-                    search engine optimization best practices, we work to
-                    elevate your local website in Google's rankings.
+                    Our Hamilton SEO specialists implement a localized strategy
+                    using expert local SEO techniques. We enable local customers
+                    to discover your website in regional search engine rankings.
+                    Through a combination of on and off-page SEO best practices,
+                    we strive to enhance your local website's position in
+                    Google's rankings.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Comprehensive Technical SEO</h5>
                   <p>
-                    Discovering technical issues on your website? Our Fort Erie
-                    SEO experts are ready to assist. We conduct a thorough
-                    site-wide audit to identify and address problems related to
+                    Encountering technical issues on your website? Our Hamilton
+                    SEO experts are here to help. We perform a comprehensive
+                    site-wide audit to pinpoint and address problems related to
                     website speed, content, and optimization. Our team is
-                    dedicated to resolving these issues, ensuring your website
+                    committed to resolving these issues, ensuring your website
                     gets back on the right track.
                   </p>
                 </Col>
@@ -342,7 +336,10 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Empower Your Business with Our Fort Erie SEO Experts</h3>
+                  <h3>
+                    Elevate Your Business with the Expertise of Our Hamilton SEO
+                    Company
+                  </h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -360,8 +357,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Elevate Your Online Presence with Infused Agency, Your{" "}
-                    <span>Fort Erie</span> SEO Partner
+                    Enhance Your Digital Presence with Infused Agency, Your SEO
+                    Partner in Hamilton
                   </h2>
                   <p>
                     Boost Your Website's Rankings with Our Team of SEO Experts
@@ -371,21 +368,10 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Fort Erie
-                    businesses (and beyond!) with their{" "}
-                    <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Fort Erie">
-                      digital marketing
-                    </Link>
-                    , search engine optimization (SEO) ,{" "}
-                    <Link href="/wordpress-developer-Fort Erie">
-                      WordPress development
-                    </Link>{" "}
-                    and{" "}
-                    <Link href="/ecommerce-web-design-Fort Erie">
-                      e-commerce website development
-                    </Link>
-                    .
+                    Since 2013 we've been able to help countless local Hamilton
+                    businesses (and beyond!) with their website design, digital
+                    marketing, search engine optimization (SEO), WordPress
+                    development, and e-commerce website development. .
                   </p>
                   <p>
                     We've been able to help small, local businesses all the way
@@ -419,7 +405,7 @@ const SEO = () => {
                 <h3>Is SEO Essential for My Business?</h3>
                 <p>
                   If your business relies on attracting new customers, then
-                  partnering with a Fort Erie SEO company is crucial. Our Fort
+                  partnering with a Hamilton SEO company is crucial. Our Fort
                   Erie SEO experts ensure your website ranks on the first page
                   of Google, right where your customers are searching.
                 </p>
@@ -453,7 +439,7 @@ const SEO = () => {
                   </li>
                   <li>Specify any shipping charges for customers.</li>
                 </ul>
-                <h3>Your Fort Erie SEO Journey Begins Now</h3>
+                <h3>Your Hamilton SEO Journey Begins Now</h3>
                 <p>
                   For expert SEO services that elevate your Google presence,
                   click below to receive your free SEO quote.
@@ -469,38 +455,38 @@ const SEO = () => {
             </Row>
           </Container>
           <About
-            city="Fort Erie"
+            city="Hamilton"
             intro={[
               "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Fort_Erie,_Ontario">
-                Fort Erie
+              <a href="https://en.wikipedia.org/wiki/Hamilton,_Ontario">
+                Hamilton
               </a>,
-              " is a town on the Niagara River in the Niagara Region, Ontario, Canada. It is straightforwardly across the waterway from Buffalo, New York and is the site of Old Fort Erie which assumed a conspicuous part in the War of 1812.",
+              " Situated in the Canadian province of Ontario, Hamilton is a port city with a population of 569,353. The broader census metropolitan area, encompassing Burlington and Grimsby, has a total population of 785,184. Located approximately 45 kilometers (28 miles) southwest of Toronto, it is part of the Greater Toronto and Hamilton Area (GTHA).",
             ]}
             area="166"
             population="30,710"
             topSights={[
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzhs&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20fort%20erie&sa=X&ved=2ahUKEwjriMzPi-73AhWOWc0KHQblCS8Q69EBKAB6BAgIEAc">
-                Safari Niagara in Fort Erie
+              <a href="https://www.google.com/search?sca_esv=87ccfbe49ac67335&sxsrf=ACQVn0-MAM9xS3ayz_YQChuoFkErrbVJXg:1707270785561&q=Canadian+Warplane+Heritage+Museum&stick=H4sIAAAAAAAAAONgFuLQz9U3MC6oSlPiBLEsk8qSDbUUs5Ot9HPykxNLMvPz4AyrxJKSosRkELN4Eauic2JeYkpmYp5CeGJRQU5iXqqCR2pRZklieqqCb2lxamkuAC4gOu5eAAAA&sa=X&ved=2ahUKEwjEsNWlj5iEAxXvtokEHd3FBK0Q2coHegQIExAB&biw=1288&bih=959&dpr=1.33">
+                Canadian Warplane Heritage Museum in Hamilton
               </a>,
               ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzhs&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20fort%20erie&sa=X&ved=2ahUKEwjriMzPi-73AhWOWc0KHQblCS8Q69EBKAB6BAgIEAc">
-                Niagara Parkway in Fort Erie
+              <a href="https://www.google.com/search?sca_esv=87ccfbe49ac67335&sxsrf=ACQVn0-MAM9xS3ayz_YQChuoFkErrbVJXg:1707270785561&q=Bayfront+Park&stick=H4sIAAAAAAAAAONgFuLQz9U3MC6oSlPiArFMcuNzq4q1FLOTrfRz8pMTSzLz8-AMq8SSkqLEZBCzeBErr1NiZVpRfl6JQkBiUTYAmgg9MEsAAAA&sa=X&ved=2ahUKEwjEsNWlj5iEAxXvtokEHd3FBK0Q2coHegQIFBAB&biw=1288&bih=959&dpr=1.33">
+                Bayfront Park in Hamilton
               </a>,
               ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzhs&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20fort%20erie&sa=X&ved=2ahUKEwjriMzPi-73AhWOWc0KHQblCS8Q69EBKAB6BAgIEAc">
-                Old Fort Erie in Fort Erie
+              <a href="https://www.google.com/search?sca_esv=87ccfbe49ac67335&sxsrf=ACQVn0-MAM9xS3ayz_YQChuoFkErrbVJXg:1707270785561&q=Art+Gallery+of+Hamilton&stick=H4sIAAAAAAAAAONgFuLQz9U3MC6oSlPiArFM0gwrDUu0FLOTrfRz8pMTSzLz8-AMq8SSkqLEZBCzeBGruGNRiYJ7Yk5OalGlQn6agkdibmZOSX4eAH1erTVVAAAA&sa=X&ved=2ahUKEwjEsNWlj5iEAxXvtokEHd3FBK0Q2coHegQIEhAB&biw=1288&bih=959&dpr=1.33">
+                Art Gallery of Hamilton
               </a>,
             ]}
-            qOne="Is Fort Erie a nice place to live?"
-            qOneAns="Offering an intriguing blend of unassuming community esteems, a powerful workplace and simple admittance to large city conveniences and culture, Fort Erie gives a personal satisfaction unrivaled in the territory. No big surprise such countless individuals are making it their home!"
-            qTwo="What is Fort Erie, Ontario known for?"
-            qTwoAns="Fort Erie, the nearby site of the War of 1812, is one of the main notable milestones nearby. Post Erie saw significant activity in the War of 1812 including the catch of two American ships, the 'Ohio' and the 'Somers'."
-            qThree="What happened in Fort Erie?"
-            qThreeAns="The post, worked by the British in 1764, was caught by American soldiers during the War of 1812. English endeavors at recover were rebuffed, and the fortress was deserted (1814) and exploded. The post was reestablished (1937-39) and was integrated as a town in 1857."
-            qFour="Is Fort Erie growing?"
-            qFourAns="This is a 6.3% expansion over the last Census (2001), and makes Fort Erie the quickest developing region in the St. Catharines-Niagara CMA (Census Metropolitan Area), and the third quickest developing district in the Region of Niagara."
-            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187141.48056112576!2d-79.15433070551377!3d42.87103666280323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33e24e7337d03%3A0x885d5008ef9ad9d1!2sFort%20Erie%2C%20ON!5e0!3m2!1sen!2sca!4v1653050333135!5m2!1sen!2sca"
+            qOne="What is Hamilton Ontario known for?"
+            qOneAns="Renowned for its industrial heritage, Hamilton boasts a distinctive urban atmosphere, a lively arts community, and a thriving downtown. Positioned between Lake Ontario and the Niagara Escarpment, Hamilton provides exceptional access to nature trails, parks, waterfalls, museums, art galleries, as well as remarkable dining and shopping opportunities."
+            qTwo="Is Hamilton Ontario a good place to live?"
+            qTwoAns="Hamilton emerges as a favored destination for newcomers to Canada, with its close proximity to Toronto and a relatively lower cost of living being just a couple of the factors that contribute to making it one of the prime cities to reside in within Canada."
+            qThree="How far is Hamilton from the US border?"
+            qThreeAns="Positioned midway between Toronto and Niagara Falls, Hamilton is conveniently located, with less than an hour's drive from each and just over an hour from the US border. If arriving from Toronto, it takes approximately 1 hour via 401 and 403, while coming from Niagara involves a 1-hour journey via QEW and 403."
+            qFour="Why is Hamilton so important to Ontario?"
+            qFourAns="Presently, Hamilton stands as one of Canada's prominent industrial hubs. Originating in the mid-19th century, its iron and steel industry has flourished into the nation's largest, playing a significant role in Canada's overall steel production."
+            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743844.4440140255!2d-80.59253202442173!3d43.258916745813835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c986c27de778f%3A0x2b6aee56d8df0e21!2sHamilton%2C%20ON!5e0!3m2!1sen!2sca!4v1707271142845!5m2!1sen!2sca"
           />
         </section>
       </InnerContent>
