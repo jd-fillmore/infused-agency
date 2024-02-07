@@ -80,7 +80,7 @@ const Pricing = () => {
                     <h3>Most Popular</h3>
                   </div>
                   <div className="top">
-                    <h4>Modern Website</h4>
+                    <h4>Modern CMS Website</h4>
                     <h3>
                       <sup>$</sup>4,000
                     </h3>
@@ -88,13 +88,18 @@ const Pricing = () => {
                   <div className="bg">
                     <ul>
                       <li>
-                        <strong>15 pages</strong>
+                        <strong>10 pages</strong>
                       </li>
                       <li>
-                        <strong>2 rounds of revisions</strong>
+                        <strong>Content Management System</strong>
                       </li>
-                      <li>Hosting included</li>
-                      <li>SSL Certificate included</li>
+                      <li>
+                        <strong>Ability to edit pages without code knowledge</strong>
+                      </li>
+                      <li>
+                        <strong>SEO Optimized for Google</strong>
+                      </li>
+                      <li>1 round of revisions</li>
                       <li>Mobile-Friendly</li>
                       <li>Google Sitemap</li>
                     </ul>
