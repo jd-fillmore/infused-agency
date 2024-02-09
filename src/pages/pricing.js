@@ -58,7 +58,7 @@ const Pricing = () => {
               <Col lg="4">
                 <div className="card text-center">
                   <div className="top">
-                    <h4>Starter Website</h4>
+                    <h4>Three Page Website</h4>
                     <h3>
                       <sup>$</sup>2,000
                     </h3>
@@ -85,7 +85,7 @@ const Pricing = () => {
                     <h3>Most Popular</h3>
                   </div>
                   <div className="top">
-                    <h4>Professional Website</h4>
+                    <h4>Five Page Website</h4>
                     <h3>
                       <sup>$</sup>3,000
                     </h3>
@@ -108,7 +108,7 @@ const Pricing = () => {
               <Col lg="4">
                 <div className="card text-center">
                   <div className="top">
-                    <h4>Premium Website</h4>
+                    <h4>Ten Page CMS Website</h4>
                     <h3>
                       <sup>$</sup>4,000
                     </h3>
