@@ -31,20 +31,9 @@ const Pricing = () => {
                   Our pricing is based on the <strong>value and results</strong>{" "}
                   we continue give our clients over the past 10+ years. If your
                   company needs oustanding web design or SEO services, you've
-                  come to the right place.
+                  come to the right place. <br />
                   <br />
-                  <br />
-                  <strong>All prices are tax included.</strong> These packages
-                  are not set in stone - they serve as a general guideline to
-                  give a rough idea on investments. To book your free
-                  consultation to talk about your project, please visit our{" "}
-                  <a
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                    target="_blank"
-                  >
-                    Calendly link
-                  </a>{" "}
-                  and fill out the form to book a free consult.
+                  <strong>All prices are tax included.</strong>
                 </p>
               </Col>
             </Row>
@@ -55,7 +44,7 @@ const Pricing = () => {
               </Col>
             </Row>
             <Row className="pd-top-40">
-              <Col lg="4">
+              <Col lg="3">
                 <div className="card text-center">
                   <div className="top">
                     <h4>Three Page Website</h4>
@@ -79,11 +68,8 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg="4">
+              <Col lg="3">
                 <div className="card text-center">
-                  <div className="popular">
-                    <h3>Most Popular</h3>
-                  </div>
                   <div className="top">
                     <h4>Five Page Website</h4>
                     <h3>
@@ -105,7 +91,37 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg="4">
+              <Col lg="3">
+                <div className="card text-center">
+                  <div className="top">
+                    <h4>Five Page CMS Website</h4>
+                    <h3>
+                      <sup>$</sup>3,500
+                    </h3>
+                  </div>
+                  <div className="bg">
+                    <ul>
+                      <li>
+                        <strong>5 pages</strong>
+                      </li>
+                      <li>
+                        <strong>
+                          Content Management System
+                          <br />
+                          (edit website on your own)
+                        </strong>
+                      </li>
+                      <li>SEO Optimized for Google</li>
+                      <li>1 round of revisions</li>
+                      <li>Hosting included</li>
+                      <li>SSL Certificate included</li>
+                      <li>Mobile-Friendly</li>
+                      <li>Google Sitemap</li>
+                    </ul>
+                  </div>
+                </div>
+              </Col>
+              <Col lg="3">
                 <div className="card text-center">
                   <div className="top">
                     <h4>Ten Page CMS Website</h4>
@@ -120,7 +136,9 @@ const Pricing = () => {
                       </li>
                       <li>
                         <strong>
-                          Content Management System (edit website your own)
+                          Content Management System
+                          <br />
+                          (edit website on your own)
                         </strong>
                       </li>
                       <li>SEO Optimized for Google</li>
@@ -141,12 +159,8 @@ const Pricing = () => {
               </Col>
             </Row>
             <Row className="pd-top-40">
-              <Col lg="4">&nbsp;</Col>
               <Col lg="4">
                 <div className="card text-center">
-                  <div className="popular">
-                    <h3>Most Popular</h3>
-                  </div>
                   <div className="top">
                     <h4>Boosted SEO</h4>
                     <h3>
@@ -177,6 +191,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
+              <Col lg="4">&nbsp;</Col>
               <Col lg="4">&nbsp;</Col>
             </Row>
           </Container>
