@@ -28,12 +28,14 @@ const Pricing = () => {
             <Row>
               <Col lg="12">
                 <p>
-                  Our pricing is based on the <strong>value and results</strong>{" "}
-                  we continue give our clients over the past 10+ years. If your
-                  company needs oustanding web design or SEO services, you've
-                  come to the right place. <br />
-                  <br />
-                  <strong>All prices are tax included.</strong>
+                  Is your online presence not bringing in new revenue? Not
+                  growing your business? Not showing off your brand in a
+                  reputable way? It's time to change that.
+                </p>
+                <p>
+                  Investing in your online presence is just that - an
+                  investment. Invest upfront with one of our effective solutions
+                  below, so you can reap the benefits.
                 </p>
               </Col>
             </Row>
