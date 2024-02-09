@@ -28,15 +28,20 @@ const Pricing = () => {
             <Row>
               <Col lg="12">
                 <p>
-                  Our pricing is based on the <strong>value and results</strong> we continue give our clients over the
-                  past 10+ years. If your company needs oustanding web design or SEO services, you've come to the right
-                  place.
+                  Our pricing is based on the <strong>value and results</strong>{" "}
+                  we continue give our clients over the past 10+ years. If your
+                  company needs oustanding web design or SEO services, you've
+                  come to the right place.
                   <br />
                   <br />
-                  <strong>All prices are tax included.</strong> These packages are not set in stone - they serve as a
-                  general guideline to give a rough idea on investments. To book your free consultation to talk about
-                  your project, please visit our{" "}
-                  <a href="https://calendly.com/infused-agency/project-discovery/" target="_blank">
+                  <strong>All prices are tax included.</strong> These packages
+                  are not set in stone - they serve as a general guideline to
+                  give a rough idea on investments. To book your free
+                  consultation to talk about your project, please visit our{" "}
+                  <a
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                    target="_blank"
+                  >
                     Calendly link
                   </a>{" "}
                   and fill out the form to book a free consult.
@@ -55,13 +60,13 @@ const Pricing = () => {
                   <div className="top">
                     <h4>Starter Website</h4>
                     <h3>
-                      <sup>$</sup>3,500
+                      <sup>$</sup>2,000
                     </h3>
                   </div>
                   <div className="bg">
                     <ul>
                       <li>
-                        <strong>5 pages</strong>
+                        <strong>3 pages</strong>
                       </li>
                       <li>
                         <strong>1 round of revisions</strong>
@@ -80,21 +85,15 @@ const Pricing = () => {
                     <h3>Most Popular</h3>
                   </div>
                   <div className="top">
-                    <h4>Modern CMS Website</h4>
+                    <h4>Professional Website</h4>
                     <h3>
-                      <sup>$</sup>4,000
+                      <sup>$</sup>3,000
                     </h3>
                   </div>
                   <div className="bg">
                     <ul>
                       <li>
-                        <strong>10 pages</strong>
-                      </li>
-                      <li>
-                        <strong>Content Management System</strong>
-                      </li>
-                      <li>
-                        <strong>Ability to edit pages without code knowledge</strong>
+                        <strong>5 pages</strong>
                       </li>
                       <li>
                         <strong>SEO Optimized for Google</strong>
@@ -109,22 +108,23 @@ const Pricing = () => {
               <Col lg="4">
                 <div className="card text-center">
                   <div className="top">
-                    <h4>Enterprise Website</h4>
+                    <h4>Premium Website</h4>
                     <h3>
-                      <sup>$</sup>5,000+
+                      <sup>$</sup>4,000
                     </h3>
                   </div>
                   <div className="bg">
                     <ul>
                       <li>
-                        <strong>20+ pages</strong>
+                        <strong>10 pages</strong>
                       </li>
                       <li>
-                        <strong>2 rounds of revisions</strong>
+                        <strong>
+                          Content Management System (edit website your own)
+                        </strong>
                       </li>
-                      <li>
-                        <strong>Extended programming functionality</strong>
-                      </li>
+                      <li>SEO Optimized for Google</li>
+                      <li>1 round of revisions</li>
                       <li>Hosting included</li>
                       <li>SSL Certificate included</li>
                       <li>Mobile-Friendly</li>
@@ -141,23 +141,7 @@ const Pricing = () => {
               </Col>
             </Row>
             <Row className="pd-top-40">
-              <Col lg="4">
-                <div className="card text-center">
-                  <div className="top">
-                    <h4>Starter SEO</h4>
-                    <h3>
-                      <sup>$</sup>1,000
-                    </h3>
-                    per month for 1 month
-                  </div>
-                  <div className="bg">
-                    <ul>
-                      <li>Optimize Google My Business Listing</li>
-                      <li>Optimize website home page</li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
+              <Col lg="4">&nbsp;</Col>
               <Col lg="4">
                 <div className="card text-center">
                   <div className="popular">
@@ -193,28 +177,7 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg="4">
-                <div className="card text-center">
-                  <div className="top">
-                    <h4>Enterprise SEO</h4>
-                    <h3>
-                      <sup>$</sup>1,000
-                    </h3>
-                    per month for 6 months
-                  </div>
-                  <div className="bg">
-                    <ul>
-                      <li>Backlink building</li>
-                      <li>Custom SEO strategy</li>
-                      <li>Keyword research</li>
-                      <li>On-page SEO</li>
-                      <li>Optimize Google My Business Listing</li>
-                      <li>Optimize website home page</li>
-                      <li>Campaign reporting</li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
+              <Col lg="4">&nbsp;</Col>
             </Row>
           </Container>
         </section>
