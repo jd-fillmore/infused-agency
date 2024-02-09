@@ -87,6 +87,8 @@ const Pricing = () => {
                         <strong>SEO Optimized for Google</strong>
                       </li>
                       <li>1 round of revisions</li>
+                      <li>Hosting included</li>
+                      <li>SSL Certificate included</li>
                       <li>Mobile-Friendly</li>
                       <li>Google Sitemap</li>
                     </ul>
@@ -115,8 +117,6 @@ const Pricing = () => {
                       </li>
                       <li>SEO Optimized for Google</li>
                       <li>1 round of revisions</li>
-                      <li>Hosting included</li>
-                      <li>SSL Certificate included</li>
                       <li>Mobile-Friendly</li>
                       <li>Google Sitemap</li>
                     </ul>
@@ -145,8 +145,6 @@ const Pricing = () => {
                       </li>
                       <li>SEO Optimized for Google</li>
                       <li>1 round of revisions</li>
-                      <li>Hosting included</li>
-                      <li>SSL Certificate included</li>
                       <li>Mobile-Friendly</li>
                       <li>Google Sitemap</li>
                     </ul>
