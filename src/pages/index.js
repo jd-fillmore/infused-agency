@@ -124,7 +124,8 @@ const Home = () => {
     <>
       <Helmet>
         <title>
-          Top Niagara Web Designers | Best St. Catharines Web Developers
+          Infused Agency | Niagara Web Design | Local Web Designer St.
+          Catharines
         </title>
         <meta
           name="description"
