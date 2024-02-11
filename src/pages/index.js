@@ -123,7 +123,9 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Niagara Web Design | Website Developer St. Catharines</title>
+        <title>
+          Top Niagara Web Designers | Best St. Catharines Web Developers
+        </title>
         <meta
           name="description"
           content="Infused Agency is a leading Niagara Web Design company specialized in affordable and results-driven website design."
