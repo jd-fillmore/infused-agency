@@ -129,7 +129,7 @@ const Home = () => {
         </title>
         <meta
           name="description"
-          content="Infused Agency is a leading Niagara Web Design company specialized in affordable and results-driven website design."
+          content="Infused Agency is a leading Niagara web design company specialized in results-driven website design. Your trusted local web designer in St. Catharines."
         />
         <meta
           name="google-site-verification"
