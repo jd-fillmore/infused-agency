@@ -24,6 +24,7 @@ import clientLmc from "../../src/img/client-lmc.png";
 import clientKd from "../../src/img/client-kd.png";
 import clientTr from "../../src/img/client-tr.png";
 import clientGgs from "../../src/img/client-ggs.png";
+import introImg from "../../src/img/person-coding.webp";
 
 import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 
@@ -122,10 +123,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Niagara Web Design | Website Designers St. Catharines</title>
+        <title>Niagara Web Design | Web Design St. Catharines</title>
         <meta
           name="description"
-          content="Niagara Web Design company with unmatched speed and quality for superior websites. Elevate your online presence—get a free quote today!"
+          content="Infused Agency is a leading Niagara Web Design company specialized in affordable and results-driven website design."
         />
         <meta
           name="google-site-verification"
@@ -136,26 +137,48 @@ const Home = () => {
       </Helmet>
       <Nav />
       <Hero
-        title="Niagara Web Design Company, Web Design St. Catharines"
-        titleTwo="Web design and SEO done right."
+        title="Niagara Web Design, St. Catharines"
+        titleTwo="We build websites that help grow your business."
         subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
       />
-      <ClientLogos
-        title="We work with awesome, local clients"
-        logoOne={clientLmc}
-        logoOneAlt="lincoln medical centre - web design"
-        logoTwo={clientKd}
-        logoTwoAlt="kd flowers - web design"
-        logoThree={clientTr}
-        logoThreeAlt="tree reports - web design"
-        logoFour={clientGgs}
-        logoFourAlt="ggs landscaping niagara - web design"
-      />
+
       <section className="home-services">
         <div className="container">
           <div className="row pd-btm-80">
+            <div className="col-lg-7">
+              <h2>Niagara Web Design Experts</h2>
+              <p>
+                Are you <em>tired</em> of your website <em>not</em> working for
+                you? We get it. It's frustrating when, what should be your 24/7
+                salesperson online, is not doing it's only job it's meant to do.
+                A Wix or Squarespace website, even though cheap and pretty, more
+                often than not isn't actually effective at growing a business.
+                That's where our websites differ.
+                <br />
+                <br />
+                Over the years with our Niagara web design services, we've
+                helped countless local business in Niagara, St. Catharines and
+                beyond with creating affordable yet modern websites that
+                actually help bring in new revenue and grow their businesses.
+                <br />
+                <br />
+                We help local businesses by invigorating life into their online
+                presence, get their websites to work <em>for them</em> instead
+                of <em>against them</em> and we can do the same for you.
+              </p>
+              <p></p>
+            </div>
+            <div className="col-lg-5">
+              <Image
+                className="img-fluid"
+                src={introImg}
+                alt="person coding website"
+              />
+            </div>
+          </div>
+          <div className="row pd-btm-80">
             <div className="col-lg-12 text-center">
-              <h2>Niagara Web Design Company</h2>
+              <h2>Our Web Design &amp; Marketing Services</h2>
               <p className="serv-intro">
                 We design{" "}
                 <Link href="/web-design">mobile-friendly websites</Link> that
@@ -171,7 +194,7 @@ const Home = () => {
                 <Image
                   className="img-fluid"
                   src={webImg}
-                  alt="Niagara web design company"
+                  alt="web designer niagara"
                 />
                 <h2>Web Design &amp; Development</h2>
                 <p>We create websites to help attract more customers.</p>
@@ -203,17 +226,28 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <ClientLogos
+        title="We work with awesome, local clients"
+        logoOne={clientLmc}
+        logoOneAlt="lincoln medical centre - web design"
+        logoTwo={clientKd}
+        logoTwoAlt="kd flowers - web design"
+        logoThree={clientTr}
+        logoThreeAlt="tree reports - web design"
+        logoFour={clientGgs}
+        logoFourAlt="ggs landscaping niagara - web design"
+      />
       <section className="home-feat">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="text-center pd-top-120 pd-btm-80">
                 <Fade>
-                  <h2>Featured Web Design Projects</h2>
+                  <h2>Featured Projects</h2>
                   <p id="sub">
                     Take a look and see the huge difference we've made to our
-                    Niagara & St. Catharines client's online existences, using
-                    modern web design practices.
+                    client's online existences, with our Niagara web design
+                    services.
                   </p>
                 </Fade>
               </div>
@@ -226,50 +260,44 @@ const Home = () => {
         <button>View More Work</button>
       </Link>
       <Results
-        title="Featured Web Design Results"
-        subTitle="We create web designs that rank our clients well in Google and help them beat out their competition."
+        title="Featured Results"
+        subTitle="We create websites that rank our clients well in Google and help them beat out their competition."
       />
       <WhatWeDo
-        title="Web Design Services in Niagara, St. Catharines"
+        title="Web Design Services in Niagara"
         subTitle={[
-          "As a small business in St. Catharines, Niagara ourselves, we understand that your small business in Niagara or St. Catharines cannot fork out upfront thousands of dollars for a ",
-          <Link href="/services">web design</Link>,
-          ". That's why we offer local and affordable Niagara web design & St. Catharines ",
+          "As a small business ourselves, we understand that your small business cannot fork out upfront tens of thousands of dollars for a ",
+          <Link href="/services">website</Link>,
+          ". That's why we offer local and affordable ",
           <Link href="/work">website design</Link>,
-          " solutions to fit your small business budget. Our web designs are secure and modern, which helps bring in more local Niagara or St. Catharines leads near you and revenue through your new web design.",
+          " solutions to fit your small business budget. Our websites are secure and modern, which helps bring in more local leads near you and revenue through your new website.",
         ]}
         boxOneTitle="Responsive"
-        boxOneDesc="Your web design will respond and adapt to any device - phone, tablet, desktop computer, you name it."
+        boxOneDesc="Your website will respond and adapt to any device - phone, tablet, desktop computer, you name it."
         boxOneImgAlt="web design"
         boxTwoTitle="Optimized"
-        boxTwoDesc="Every web design is hand-coded and optimized, which leads to much better security and website performance."
+        boxTwoDesc="Every website is hand-coded and optimized, which leads to much better security and website performance."
         boxTwoImgAlt="Optimized"
         boxThreeTitle="Secure"
-        boxThreeDesc="Our web designs are secure. You can sleep well at night knowing it won't be compromised."
+        boxThreeDesc="Our websites are secure. You can sleep well at night knowing it won't be compromised."
         boxThreeImgAlt="Optimized"
-        whatTitle="What Makes A Good Web Design?"
+        whatTitle="What Makes A Good Website?"
         whatText={[
           "Does your current ",
-          <Link href="/services">web design</Link>,
-          " not bring in new Niagara or St. Catharines leads? Sometimes web design problems are obvious like when a website is not mobile-friendly or if a web design doesn't have a modern design. Other times, a closer inspection into your web design practices are required in order to identify issues. Most issues relating to any Niagara or St. Catharines ",
-          <Link href="/why-is-my-website-not-bringing-in-new-business/">
-            web design
-          </Link>,
-          " can be a web design that doesn't rank on the first page of Google, which means it's SEO isn't up to par. A web design message that doesn't align with your customers, or a web design that doesn't convert users into paying customers.",
+          <Link href="/services">website</Link>,
+          " not bring in new leads? Sometimes website problems are obvious like when a website is not mobile-friendly or if a website doesn't have a modern design. Other times, a closer inspection into your website's practices are required in order to identify issues. Most issues relating to any website are that it doesn't rank on the first page of Google, which means it's SEO isn't up to par. A website's message that doesn't align with your customers, or a website that doesn't convert users into paying customers.",
         ]}
-        servicesTitle="Why Is Hiring a Good Web Design Company Important?"
+        servicesTitle="Why Is Hiring a Good Web Development Company Important?"
         servicesText={[
-          "Your Niagara or St. Catharines ",
-          <Link href="/tree-reports">web design</Link>,
-          " acts as the main hub on the internet. The fact that your web design is the first stop to any new customers is absolutely vital to your business, in terms of gaining new revenue from your web design. This means that you need the best web design company in Niagara & St. Catharines to deliver great web design results to your business. Infused Agency makes sure that we do a custom-tailored web design job right from the start, to ensure your web design is a success and is optimized. Not only do we create a modern web design for your business, we're the only web design business in St. Catharines and Niagara that offers monthly web design packages to help alleviate any financial strain.",
+          "Your website acts as your brand's central hub on the internet. The fact that your website is the first stop to any new customers is absolutely vital to your business, in terms of gaining new revenue from your business. This means that you need the best local web development company to deliver great website results to your business. Infused Agency makes sure that we do a custom-tailored website job right from the start, to ensure your website is a success and is optimized.",
         ]}
-        whatKindTitle="What Type of Web Design Services Do You Need?"
+        whatKindTitle="What Type of Services Do You Need?"
         whatKindText={[
-          "Whether you want to update the look of your website with a custom web design or need to manage your current website, we can do it all. We strive to create a quality web design that helps bring in new Niagara or St. Catharines clients to your business. You will have a highly professional and skilled web designer and WordPress web developer who can answer any web design questions you may have when it comes to your new Niagara or St. Catharines web design. For web design and WordPress web development, call on our trusted professionals. We're here to assess your current web design and provide our own web design & WordPress solutions to help your Niagara or St. Catharines business.",
+          "Whether you want to update the look of your website or need to manage your current website, we can do it all. We strive to create a quality website that helps bring in new revenue to your business. You will have a highly professional and skilled web developer who can answer any website-related questions you may have when it comes to your new website. For the best local web development services, call on our trusted professionals. We're here to assess your current website and provide our own website solutions to help your business grow.",
         ]}
       />
 
-      <Clients title="Our happy Niagara &amp; St. Catharines clients" />
+      <Clients title="Our happy clients" />
       <FAQ />
       <About
         city="Niagara"

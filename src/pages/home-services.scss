@@ -2,7 +2,8 @@
 @import "../pages/breakpoints.scss";
 
 .home-services {
-  padding: 160px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
+  background: $dark-grey;
   h2 {
     font-size: 60px;
     @include bp-tablet-sm {

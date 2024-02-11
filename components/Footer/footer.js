@@ -13,6 +13,10 @@ const pages = [
     link: "/work",
   },
   {
+    name: "Pricing",
+    link: "/pricing",
+  },
+  {
     name: "About",
     link: "/about",
   },
@@ -63,11 +67,6 @@ const Footer = () => {
                 <li>
                   <Link href="/wordpress-developer-niagara">
                     WordPress Development
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/ecommerce-web-design-niagara">
-                    E-Commerce Development
                   </Link>
                 </li>
                 <li>

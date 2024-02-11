@@ -1,9 +1,9 @@
-import React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Container, Row, Col } from "reactstrap"
-import heroImg from "../../../src/img/hero.webp"
-import reviews from "../../../src/img/infused-reviews.jpg"
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Container, Row, Col } from "reactstrap";
+import heroImg from "../../../src/img/niagara-web-design.webp";
+import reviews from "../../../src/img/infused-reviews.jpg";
 
 const Hero = ({ title, titleTwo }) => {
   return (
@@ -12,7 +12,7 @@ const Hero = ({ title, titleTwo }) => {
         <Container>
           <div className="bg">
             <Row>
-              <Col lg="12" className="text-center">
+              <Col lg="6">
                 <h1 className="intro">{title}</h1>
                 <h2>{titleTwo}</h2>
                 <Link href="/work">
@@ -38,24 +38,37 @@ const Hero = ({ title, titleTwo }) => {
                   src={reviews}
                   alt="infused agency reviews"
                 />
-                <p>Reliable. Credible. Dependable.</p>
                 <br />
               </Col>
-              {/* <Col lg="5" className="text-center">
-                  <Image src={reviews} alt="infused agency reviews" />
-                  <p>Reliable. Credible. Dependable.</p>
-                </Col> */}
+              <Col lg="6" className="text-center">
+                <Image
+                  className="img-fluid showcase"
+                  src={heroImg}
+                  alt="niagara web design"
+                />
+                <br />
+                <br />
+                <p>
+                  <strong>
+                    Latest launch -{" "}
+                    <a target="_blank" href="https://viscaelectric.ca">
+                      Visca Electric
+                    </a>{" "}
+                  </strong>
+                </p>
+                <em>
+                  "Working with Infused Agency was a pleasure. They were
+                  extremely responsive and informative from start to finish.
+                  They are creative, efficient, and very knowledgeable in their
+                  field."
+                </em>
+              </Col>
             </Row>
           </div>
-          <Image
-            className="img-fluid showcase"
-            src={heroImg}
-            alt="niagara web design"
-          />
         </Container>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

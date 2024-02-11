@@ -1,7 +1,7 @@
-import React from "react"
-import Fade from "react-reveal/Fade"
-import { Container, Row, Col } from "reactstrap"
-import TestimonialCard from "./../../testimonialCard/testimonialCard"
+import React from "react";
+import Fade from "react-reveal/Fade";
+import { Container, Row, Col } from "reactstrap";
+import TestimonialCard from "./../../testimonialCard/testimonialCard";
 
 const Clients = ({ title, subTitle }) => {
   return (
@@ -25,8 +25,7 @@ const Clients = ({ title, subTitle }) => {
                     <p>
                       "Fantastic experience from start to end. JD is organized,
                       thorough and professional. I highly recommend his company
-                      if you are thinking of needing his Niagara or St.
-                      Catharines web design services."
+                      if you are thinking of needing his services."
                     </p>
                     <em>Harry Althorpe, TreeReports</em>
                   </TestimonialCard>
@@ -34,11 +33,10 @@ const Clients = ({ title, subTitle }) => {
                 <Fade>
                   <TestimonialCard>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the web
-                      design of my new web site. If you ever need a new web
-                      design for your Niagara or St. Catharines business I do
-                      recommend Infused Agency for their services. JD keep up
-                      the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with my new
+                      website. If you ever need a new website for your business
+                      I do recommend Infused Agency for their services. JD keep
+                      up the great work. Thank you."
                     </p>
                     <em>Mr. Duarte, Cass-A-Bella Construction</em>
                   </TestimonialCard>
@@ -50,7 +48,7 @@ const Clients = ({ title, subTitle }) => {
                     <p>
                       "Amazing experience, really helped to elevate my business
                       and I would highly recommend working with them for all of
-                      your Niagara web design needs!!"
+                      your online marketing needs!!"
                     </p>
                     <em>Lauren Emberson, Lauren Emberson Photography</em>
                   </TestimonialCard>
@@ -61,7 +59,7 @@ const Clients = ({ title, subTitle }) => {
         </Container>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;
