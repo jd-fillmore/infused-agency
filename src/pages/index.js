@@ -123,7 +123,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Niagara Web Design | Web Developer St. Catharines</title>
+        <title>Niagara Web Design | Web Designer St. Catharines</title>
         <meta
           name="description"
           content="Infused Agency is a leading Niagara Web Design company specialized in affordable and results-driven website design."
@@ -137,7 +137,7 @@ const Home = () => {
       </Helmet>
       <Nav />
       <Hero
-        title="Web Design Niagara, St. Catharines Web Developer"
+        title="Niagara Web Design, Website Designer St. Catharines"
         titleTwo="We build websites that help grow your business."
         subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
       />
