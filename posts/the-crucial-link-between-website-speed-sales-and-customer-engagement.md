@@ -1,5 +1,6 @@
 ---
 title: Mastering the Art of Keyword Research
+date: 2024-02-16T16:33:00.000Z
 slug: /posts/mastering-art-keyword-research
 excerpt: In the dynamic realm of digital marketing, keyword research stands as the cornerstone of any successful SEO strategy.
 ---
