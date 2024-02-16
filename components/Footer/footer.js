@@ -103,7 +103,6 @@ const Footer = () => {
               <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
               <Link href="/fort-erie-seo-company">Fort Erie SEO</Link>,{" "}
               <Link href="/grimsby-seo-company">Grimsby SEO</Link>,{" "}
-              <Link href="/hamilton-seo">Hamilton SEO</Link>,{" "}
               <Link href="/niagara-seo-company">Niagara SEO</Link>,{" "}
               <Link href="/port-colborne-seo">Port Colborne SEO</Link>,{" "}
               <Link href="/seo-st-catharines">St. Catharines SEO</Link>,{" "}

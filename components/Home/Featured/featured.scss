@@ -26,6 +26,9 @@
 }
 
 .home-feat {
+  @include bp-tablet-sm {
+    padding-top: 20px;
+  }
   h2,
   p {
     @include bp-tablet-sm {

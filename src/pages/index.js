@@ -25,6 +25,7 @@ import clientKd from "../../src/img/client-kd.png";
 import clientTr from "../../src/img/client-tr.png";
 import clientGgs from "../../src/img/client-ggs.png";
 import introImg from "../../src/img/person-coding.webp";
+import featureImg from "../../src/img/visca.webp";
 
 import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 
@@ -142,40 +143,53 @@ const Home = () => {
         subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
       />
 
+      <div className="container">
+        <div className="row pd-top-80 pd-btm-80">
+          <div className="col-lg-7">
+            <h2>Niagara Web Design Experts</h2>
+            <p>
+              Are you <em>tired</em> of your website <em>not</em> working for
+              you? We get it. It's frustrating when, what should be your 24/7
+              salesperson online, is not doing it's only job it's meant to do. A
+              Wix or Squarespace website, even though cheap and pretty, more
+              often than not isn't actually effective at growing a business.
+              That's where our websites differ.
+              <br />
+              <br />
+              Over the years with our Niagara web design services, we've helped
+              countless local business in Niagara, St. Catharines and beyond
+              with creating affordable yet modern websites that actually help
+              bring in new revenue and grow their businesses.
+              <br />
+              <br />
+              We help local businesses by invigorating life into their online
+              presence, get their websites to work <em>for them</em> instead of{" "}
+              <em>against them</em> and we can do the same for you.
+            </p>
+            <p></p>
+          </div>
+          <div className="col-lg-5">
+            <Image
+              className="img-fluid"
+              src={introImg}
+              alt="person coding website"
+            />
+          </div>
+        </div>
+      </div>
+      <ClientLogos
+        title="We work with awesome, local clients"
+        logoOne={clientLmc}
+        logoOneAlt="lincoln medical centre - web design"
+        logoTwo={clientKd}
+        logoTwoAlt="kd flowers - web design"
+        logoThree={clientTr}
+        logoThreeAlt="tree reports - web design"
+        logoFour={clientGgs}
+        logoFourAlt="ggs landscaping niagara - web design"
+      />
       <section className="home-services">
         <div className="container">
-          <div className="row pd-btm-80">
-            <div className="col-lg-7">
-              <h2>Niagara Web Design Experts</h2>
-              <p>
-                Are you <em>tired</em> of your website <em>not</em> working for
-                you? We get it. It's frustrating when, what should be your 24/7
-                salesperson online, is not doing it's only job it's meant to do.
-                A Wix or Squarespace website, even though cheap and pretty, more
-                often than not isn't actually effective at growing a business.
-                That's where our websites differ.
-                <br />
-                <br />
-                Over the years with our Niagara web design services, we've
-                helped countless local business in Niagara, St. Catharines and
-                beyond with creating affordable yet modern websites that
-                actually help bring in new revenue and grow their businesses.
-                <br />
-                <br />
-                We help local businesses by invigorating life into their online
-                presence, get their websites to work <em>for them</em> instead
-                of <em>against them</em> and we can do the same for you.
-              </p>
-              <p></p>
-            </div>
-            <div className="col-lg-5">
-              <Image
-                className="img-fluid"
-                src={introImg}
-                alt="person coding website"
-              />
-            </div>
-          </div>
           <div className="row pd-btm-80">
             <div className="col-lg-12 text-center">
               <h2>Our Web Design &amp; Marketing Services</h2>
@@ -187,6 +201,8 @@ const Home = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="container">
           {/* Row One */}
           <div className="row">
             <div className="col-lg-4">
@@ -226,43 +242,48 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <ClientLogos
-        title="We work with awesome, local clients"
-        logoOne={clientLmc}
-        logoOneAlt="lincoln medical centre - web design"
-        logoTwo={clientKd}
-        logoTwoAlt="kd flowers - web design"
-        logoThree={clientTr}
-        logoThreeAlt="tree reports - web design"
-        logoFour={clientGgs}
-        logoFourAlt="ggs landscaping niagara - web design"
-      />
       <section className="home-feat">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="text-center pd-top-120 pd-btm-80">
                 <Fade>
-                  <h2>Featured Projects</h2>
+                  <h2>Featured Project</h2>
                   <p id="sub">
                     Take a look and see the huge difference we've made to our
                     client's online existences, with our Niagara web design
                     services.
                   </p>
+                  <br />
+                  <Image
+                    className="img-fluid"
+                    src={featureImg}
+                    alt="visca electric web design"
+                  />
+                  <br />
+                  <p className="text-center">
+                    <strong>
+                      Latest Launch -{" "}
+                      <a target="_blank" href="https://viscaelectric.ca">
+                        Visca Electric
+                      </a>
+                    </strong>
+                  </p>
+                  <em>
+                    "Working with Infused Agency was a pleasure. They were
+                    extremely responsive and informative from start to finish.
+                    They are creative, efficient, and very knowledgeable in
+                    their field."
+                  </em>
+                  <Link className="d-block text-center pd-top-40" href="/work">
+                    <button>View More Work</button>
+                  </Link>
                 </Fade>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <PortfolioSlider />
-      <Link className="d-block text-center pd-top-80" href="/work">
-        <button>View More Work</button>
-      </Link>
-      <Results
-        title="Featured Results"
-        subTitle="We create websites that rank our clients well in Google and help them beat out their competition."
-      />
       <WhatWeDo
         title="Web Design Services in Niagara"
         subTitle={[
