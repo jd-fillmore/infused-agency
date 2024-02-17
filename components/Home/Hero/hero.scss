@@ -2,7 +2,7 @@
 @import "../../../src/pages/breakpoints.scss";
 
 .hero {
-  padding: 350px 0px 250px 0px;
+  padding: 250px 0px 150px 0px;
   background: url("../../../src/img/hero.webp") no-repeat;
   background-size: cover;
   @include bp-tablet-sm {
@@ -83,7 +83,7 @@
     }
   }
   h2 {
-    font-size: 66px;
+    font-size: 56px;
     padding: 0px 0px 30px 0px;
     @include bp-tablet-sm {
       line-height: 1.3;
