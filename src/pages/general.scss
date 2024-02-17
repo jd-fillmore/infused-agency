@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 50px;
   @include bp-tablet-sm {
     font-size: 28px !important;
   }
@@ -232,4 +232,10 @@ form {
       border: none !important;
     }
   }
+}
+
+span {
+  background: linear-gradient(0deg, rgba($light-blue, 0.15) 35%, transparent 0);
+  padding: 0 0px;
+  margin-right: 5px;
 }
