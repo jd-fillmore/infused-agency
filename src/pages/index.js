@@ -33,8 +33,7 @@ const schema = {
   "@context": "http://schema.org",
   "@type": "LocalBusiness",
   name: "Infused Agency",
-  image:
-    "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
+  image: "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
   telephone: "(905) 933-3115",
   address: {
     "@type": "PostalAddress",
@@ -50,10 +49,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Monday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -61,10 +58,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Tuesday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -72,10 +67,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Wednesday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -83,10 +76,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Thursday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -94,10 +85,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Friday",
       },
-      opens:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -105,8 +94,7 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Saturday",
       },
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -114,8 +102,7 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Sunday",
       },
-      closes:
-        "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
     },
   ],
 };
@@ -129,10 +116,7 @@ const Home = () => {
           name="description"
           content="Infused Agency is a leading Niagara Web Design company specialized in affordable and results-driven website design."
         />
-        <meta
-          name="google-site-verification"
-          content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8"
-        />
+        <meta name="google-site-verification" content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8" />
         <link rel="canonical" href="https://infused.agency" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
@@ -148,32 +132,24 @@ const Home = () => {
           <div className="col-lg-7">
             <h2>Niagara Web Design Experts</h2>
             <p>
-              Are you <em>tired</em> of your website <em>not</em> working for
-              you? We get it. It's frustrating when, what should be your 24/7
-              salesperson online, is not doing it's only job it's meant to do. A
-              Wix or Squarespace website, even though cheap and pretty, more
-              often than not isn't actually effective at growing a business.
-              That's where our websites differ.
+              Are you <em>tired</em> of your website <em>not</em> working for you? We get it. It's frustrating when,
+              what should be your 24/7 salesperson online, is not doing it's only job it's meant to do. A Wix or
+              Squarespace website, even though cheap and pretty, more often than not isn't actually effective at growing
+              a business. That's where our websites differ.
               <br />
               <br />
-              Over the years with our Niagara web design services, we've helped
-              countless local business in Niagara, St. Catharines and beyond
-              with creating affordable yet modern websites that actually help
-              bring in new revenue and grow their businesses.
+              Over the years with our Niagara web design services, we've helped countless local business in Niagara, St.
+              Catharines and beyond with creating affordable yet modern websites that actually help bring in new revenue
+              and grow their businesses.
               <br />
               <br />
-              We help local businesses by invigorating life into their online
-              presence, get their websites to work <em>for them</em> instead of{" "}
-              <em>against them</em> and we can do the same for you.
+              We help local businesses by invigorating life into their online presence, get their websites to work{" "}
+              <em>for them</em> instead of <em>against them</em> and we can do the same for you.
             </p>
             <p></p>
           </div>
           <div className="col-lg-5">
-            <Image
-              className="img-fluid"
-              src={introImg}
-              alt="person coding website"
-            />
+            <Image className="img-fluid" src={introImg} alt="niagara web design" />
           </div>
         </div>
       </div>
@@ -194,10 +170,8 @@ const Home = () => {
             <div className="col-lg-12 text-center">
               <h2>Our Web Design &amp; Marketing Services</h2>
               <p className="serv-intro">
-                We design{" "}
-                <Link href="/web-design">mobile-friendly websites</Link> that
-                help grow your business. From our initial discovery meeting to
-                post-launch support, we're always here to help.
+                We design <Link href="/web-design">mobile-friendly websites</Link> that help grow your business. From
+                our initial discovery meeting to post-launch support, we're always here to help.
               </p>
             </div>
           </div>
@@ -207,11 +181,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="card">
-                <Image
-                  className="img-fluid"
-                  src={webImg}
-                  alt="web designer niagara"
-                />
+                <Image className="img-fluid" src={webImg} alt="web designer niagara" />
                 <h2>Web Design &amp; Development</h2>
                 <p>We create websites to help attract more customers.</p>
                 <Link href="/web-design">Hand-Coded Websites</Link>
@@ -219,21 +189,15 @@ const Home = () => {
             </div>
             <div className="col-lg-4">
               <div className="card">
-                <Image
-                  className="img-fluid"
-                  src={wpImg}
-                  alt="Niagara WordPress website development"
-                />
+                <Image className="img-fluid" src={wpImg} alt="niagara web design company" />
                 <h2>WordPress Development</h2>
                 <p>Update your website without the need of a developer.</p>
-                <Link href="/wordpress-developer-niagara/">
-                  WordPress Websites
-                </Link>
+                <Link href="/wordpress-developer-niagara/">WordPress Websites</Link>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="card">
-                <Image className="img-fluid" src={seoImg} alt="seo Niagara" />
+                <Image className="img-fluid" src={seoImg} alt="best web designer niagara" />
                 <h2>SEO</h2>
                 <p>We help rank your website on the first page of Google.</p>
                 <Link href="/seo-niagara/">SEO Services</Link>
@@ -250,16 +214,11 @@ const Home = () => {
                 <Fade>
                   <h2>Featured Project</h2>
                   <p id="sub">
-                    Take a look and see the huge difference we've made to our
-                    client's online existences, with our Niagara web design
-                    services.
+                    Take a look and see the huge difference we've made to our client's online existences, with our
+                    Niagara web design services.
                   </p>
                   <br />
-                  <Image
-                    className="img-fluid"
-                    src={featureImg}
-                    alt="visca electric web design"
-                  />
+                  <Image className="img-fluid" src={featureImg} alt="web design niagara" />
                   <br />
                   <p className="text-center">
                     <strong>
@@ -270,10 +229,8 @@ const Home = () => {
                     </strong>
                   </p>
                   <em>
-                    "Working with Infused Agency was a pleasure. They were
-                    extremely responsive and informative from start to finish.
-                    They are creative, efficient, and very knowledgeable in
-                    their field."
+                    "Working with Infused Agency was a pleasure. They were extremely responsive and informative from
+                    start to finish. They are creative, efficient, and very knowledgeable in their field."
                   </em>
                   <Link className="d-block text-center pd-top-40" href="/work">
                     <button>View More Work</button>
