@@ -128,9 +128,11 @@ const Home = () => {
       />
 
       <div className="container">
-        <div className="row pd-top-80 pd-btm-80">
+        <div className="row pd-top-120 pd-btm-80">
           <div className="col-lg-7">
-            <h2>Niagara Web Design Experts</h2>
+            <h2>
+              Niagara's Top <span>Web Design Agency</span>
+            </h2>
             <p>
               Niagara's leading web design company. We design and build affordable and effective websites for local
               Niagara & St. Catharines businesses.
@@ -152,7 +154,7 @@ const Home = () => {
         </div>
       </div>
       <ClientLogos
-        title="Our Featured Niagara Web Design Clients"
+        title="We work with awesome, local clients"
         logoOne={clientLmc}
         logoOneAlt="lincoln medical centre - web design"
         logoTwo={clientKd}
