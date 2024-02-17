@@ -122,9 +122,9 @@ const Home = () => {
       </Helmet>
       <Nav />
       <Hero
-        title="Niagara Web Design, Website Designer St. Catharines"
+        title="Niagara Web Design Company"
         titleTwo="We build websites that help grow your business."
-        subTitle="Infused Agency is a top web design agency hand-crafting beautiful website design since 2013."
+        subTitle="Infused Agency is a top Niagara web design agency hand-crafting beautiful website design since 2013."
       />
 
       <div className="container">
@@ -132,10 +132,8 @@ const Home = () => {
           <div className="col-lg-7">
             <h2>Niagara Web Design Experts</h2>
             <p>
-              Are you <em>tired</em> of your website <em>not</em> working for you? We get it. It's frustrating when,
-              what should be your 24/7 salesperson online, is not doing it's only job it's meant to do. A Wix or
-              Squarespace website, even though cheap and pretty, more often than not isn't actually effective at growing
-              a business. That's where our websites differ.
+              Niagara's leading web design company. We design and build affordable and effective websites for local
+              Niagara & St. Catharines businesses.
               <br />
               <br />
               Over the years with our Niagara web design services, we've helped countless local business in Niagara, St.
@@ -154,7 +152,7 @@ const Home = () => {
         </div>
       </div>
       <ClientLogos
-        title="We work with awesome, local clients"
+        title="Our Featured Niagara Web Design Clients"
         logoOne={clientLmc}
         logoOneAlt="lincoln medical centre - web design"
         logoTwo={clientKd}

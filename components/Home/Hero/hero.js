@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 
-const Hero = ({ title, titleTwo }) => {
+const Hero = ({ title, titleTwo, subTitle }) => {
   return (
     <>
       <section className="hero">
@@ -12,6 +12,7 @@ const Hero = ({ title, titleTwo }) => {
               <Col lg="12 text-center">
                 <h1 className="intro">{title}</h1>
                 <h2>{titleTwo}</h2>
+                <p>{subTitle}</p>
                 <Link href="/work">
                   <button>
                     View Portfolio{" "}
