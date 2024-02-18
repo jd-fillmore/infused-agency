@@ -246,6 +246,11 @@ span {
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
+  .testimonial {
+    background: $yellow;
+    color: $white;
+    padding: 10px;
+  }
   .card {
     padding: 30px;
     text-align: center;
@@ -254,11 +259,6 @@ span {
     }
     p {
       margin-top: 0px;
-    }
-    .testimonial {
-      background: $yellow;
-      color: $white;
-      padding: 20px;
     }
     .highlight {
       background: $dark-purple;

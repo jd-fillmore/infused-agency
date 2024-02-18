@@ -30,6 +30,7 @@ import treeImg from "../../src/img/tree-reports.png";
 import kdImg from "../../src/img/niagara-web-design.png";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/infused-reviews.jpg";
+import viscaTestimonial from "../../src/img/visca-niagara-web-design-testimonial.png";
 
 import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 
@@ -275,6 +276,50 @@ const Home = () => {
                     </button>
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <div className="row pd-top-40">
+              <div className="col-lg-12 text-center">
+                <h2>
+                  Take <span>Their Word</span> For It
+                </h2>
+              </div>
+            </div>
+            <div className="row text-center pd-top-40">
+              <div className="col-lg-4">
+                <Image className="img-fluid" src={viscaTestimonial} alt="visca electric - web design niagara testimonial"/>
+                <h3>Sandro Visca</h3>
+                <p>Owner - VISCA electric</p>
+                <p className="testimonial">
+                  "The design and development process was smooth and easy."
+                </p>
+                <p className="full-testimonial">
+                Working with Infused Agency was a pleasure. He was extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field. They helped me and my team create a new website for my business: VISCA electric. Check it out! viscaelectric.ca. The design and development process was smooth and easy. I would absolutely recommend Infused Agency to anyone looking for a new or updated website for their business!
+                  </p>   
+              </div>
+              <div className="col-lg-4">
+                <Image className="img-fluid" src={clientGgs} alt="ggs landscaping - website design niagara testimonial"/>
+                <h3>Graham Boaretti</h3>
+                <p>Owner - GGS Landscaping</p>
+                <p className="testimonial">
+                  "They did a fantastic job."
+                </p>
+                <p className="full-testimonial">
+                They did a fantastic job on my website. They were easy to work with, always very quick to respond and made designing the page very simple. I would highly recommend Infused Agency for all of your web design and development needs!
+                  </p>   
+              </div>
+              <div className="col-lg-4">
+                <Image className="img-fluid" src={clientTr} alt="visca electric - web design niagara testimonial"/>
+                <h3>Harry Althorpe</h3>
+                <p>Owner - TreeReports</p>
+                <p className="testimonial">
+                  "They are highly organized, thorough and professional."
+                </p>
+                <p className="full-testimonial">
+                "Fantastic experience from start to end. They are highly organized, thorough and professional.  I highly recommend his company and services if you are thinking of building a website."
+                  </p>   
               </div>
             </div>
           </div>
