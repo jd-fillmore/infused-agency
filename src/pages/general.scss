@@ -246,6 +246,15 @@ span {
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
+  button {
+    margin-top: 0 !important;
+    background: $purple !important;
+    color: $dark-blue !important;
+    &:hover {
+      background: $light-blue !important;
+      border-color: $light-blue !important;
+    }
+  }
   .testimonial {
     background: $yellow;
     color: $white;
@@ -283,5 +292,29 @@ span {
   h3 {
     font-size: 24px;
     margin-top: 20px;
+  }
+}
+
+.home-cta {
+  p {
+    color: rgba($dark-blue, .7) !important;
+    padding: 0 !important;
+  }
+  button {
+    margin-top: 0 !important;
+    background: $purple !important;
+    &:hover {
+      background: $light-blue !important;
+      border-color: $light-blue !important;
+    }
+  }
+  span {
+    background: linear-gradient(0deg, rgba($yellow, 0.15) 35%, transparent 0);
+  }
+}
+.why-infused {
+  padding: 120px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
   }
 }
