@@ -21,7 +21,7 @@ const Example = (props) => {
   return (
     <div>
       <Navbar className="fixed-top" id="nav" expand="lg">
-        <NavbarBrand href="/" className="logo">
+        <NavbarBrand href="/" className="logo" name="Niagara Web Design Company Infused Agency">
           infused
         </NavbarBrand>
         <NavbarToggler className="custom-toggler" onClick={toggle} />

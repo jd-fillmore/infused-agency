@@ -13,7 +13,11 @@ const Hero = ({ title, titleTwo, subTitle }) => {
                 <h1 className="intro">{title}</h1>
                 <h2>{titleTwo}</h2>
                 <p>{subTitle}</p>
-                <Link href="/work">
+                <a
+                  name="niagara web design company free quote"
+                  href="https://calendly.com/infused-agency/project-discovery/"
+                  target="_blank"
+                >
                   <button>
                     Get My Free Quote
                     <svg

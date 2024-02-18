@@ -239,3 +239,49 @@ span {
   padding: 0 0px;
   margin-right: 5px;
 }
+
+.home-client-results {
+  background: $dark-grey;
+  padding: 120px 0px 0px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
+  }
+  .card {
+    padding: 30px;
+    text-align: center;
+    button {
+      width: 100%;
+    }
+    p {
+      margin-top: 0px;
+    }
+    .testimonial {
+      background: $yellow;
+      color: $white;
+      padding: 20px;
+    }
+    .highlight {
+      background: $dark-purple;
+      margin-bottom: 20px;
+      h3 {
+        color: $dark-blue;
+        font-size: 50px;
+      }
+      p {
+        color: rgba($dark-blue, 0.7);
+      }
+    }
+    a {
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}

@@ -2,13 +2,10 @@
 @import "../../../src/pages/breakpoints.scss";
 
 .client-logos {
-  padding: 60px 0px 120px 0px;
-  background: $dark-blue;
-  h2 {
-    font-size: 60px;
-  }
+  padding: 120px 0px 120px 0px;
+  background: $dark-grey;
   @include bp-tablet-sm {
-    padding: 0px 0px 40px 0px;
+    padding: 40px 0px 40px 0px;
   }
   img {
     filter: grayscale(1);
