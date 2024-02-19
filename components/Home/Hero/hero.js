@@ -13,7 +13,7 @@ const Hero = () => {
             <Row>
               <Col lg="6">
                 <h1 className="intro">
-                  <span>Best Niagara Web Design</span> & Development Company
+                  <span>Niagara Web Design</span> & Development Company
                 </h1>
                 <p>
                   We build clean, simple, lead-generating websites for that help
