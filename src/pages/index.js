@@ -50,8 +50,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Monday",
       },
-      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "09:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -59,8 +59,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Tuesday",
       },
-      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "09:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -68,8 +68,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Wednesday",
       },
-      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "09:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -77,8 +77,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Thursday",
       },
-      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "09:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -86,8 +86,8 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Friday",
       },
-      opens: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      opens: "09:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -95,7 +95,7 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Saturday",
       },
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "13:00",
     },
     {
       "@type": "OpeningHoursSpecification",
@@ -103,7 +103,7 @@ const schema = {
         "@type": "DayOfWeek",
         name: "Sunday",
       },
-      closes: "Please insert valid ISO 8601 date/time here. Examples: 2015-07-27 or 2015-07-27T15:30",
+      closes: "15:00",
     },
   ],
 };
@@ -540,7 +540,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-lg-6">
-            <h3>Will my website be mobile-friendly?</h3>
+              <h3>Will my website be mobile-friendly?</h3>
               <p>
                 Of course. Responsive design, aka mobile websites, are a big part of today's society. We make sure to
                 adhere to that so your customers have a pleasant experience on your website.
