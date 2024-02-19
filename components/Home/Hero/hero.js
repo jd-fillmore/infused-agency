@@ -12,8 +12,13 @@ const Hero = () => {
           <div className="bg">
             <Row>
               <Col lg="6">
-                <h1 className="intro"><span>Best Niagara Web Design</span> & Development Company</h1>
-                <p>We build clean, simple, lead-generating websites for that help bring more in more revenue for your Niagara business.</p>
+                <h1 className="intro">
+                  <span>Best Niagara Web Design</span> & Development Company
+                </h1>
+                <p>
+                  We build clean, simple, lead-generating websites for that help
+                  bring in more revenue for your Niagara business.
+                </p>
                 <a
                   name="niagara web design company free quote"
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -37,24 +42,28 @@ const Hero = () => {
                 </a>
               </Col>
               <Col lg="6" className="text-center">
-                <Image className="img-fluid" src={heroImg} alt="niagara web design client"/>
+                <Image
+                  className="img-fluid"
+                  src={heroImg}
+                  alt="niagara web design client"
+                />
                 <Link href="/kd-florist">
-                    <button className="kd">
-                      KD Flowers - Case Study
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </button>
-                  </Link>
+                  <button className="kd">
+                    KD Flowers - Case Study
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
               </Col>
             </Row>
           </div>
