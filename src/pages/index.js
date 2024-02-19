@@ -33,80 +33,81 @@ import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 const schema = {
   "@context": "http://schema.org",
   "@type": "LocalBusiness",
-  name: "Infused Agency",
-  image: "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
-  telephone: "(905) 933-3115",
-  address: {
+  "name": "Infused Agency",
+  "image": "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
+  "telephone": "(905) 933-3115",
+  "address": {
     "@type": "PostalAddress",
-    streetAddress: "73 Alexandra Blvd",
-    addressLocality: "St. Catharines",
-    addressRegion: "ON",
-    postalCode: "L2P 1K2",
+    "streetAddress": "73 Alexandra Blvd",
+    "addressLocality": "St. Catharines",
+    "addressRegion": "ON",
+    "postalCode": "L2P 1K2",
   },
-  openingHoursSpecification: [
+  "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Monday",
+        "name": "Monday",
       },
-      opens: "09:00",
-      closes: "18:00",
+      "opens": "09:00",
+      "closes": "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Tuesday",
+        "name": "Tuesday",
       },
-      opens: "09:00",
-      closes: "18:00",
+      "opens": "09:00",
+      "closes": "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Wednesday",
+        "name": "Wednesday",
       },
-      opens: "09:00",
-      closes: "18:00",
+      "opens": "09:00",
+      "closes": "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Thursday",
+        "name": "Thursday",
       },
-      opens: "09:00",
-      closes: "18:00",
+      "opens": "09:00",
+      "closes": "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Friday",
+        "name": "Friday",
       },
-      opens: "09:00",
-      closes: "18:00",
+      "opens": "09:00",
+      "closes": "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Saturday",
+        "name": "Saturday",
       },
-      closes: "13:00",
+      "closes": "13:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: {
+      "dayOfWeek": {
         "@type": "DayOfWeek",
-        name: "Sunday",
+        "name": "Sunday",
       },
-      closes: "15:00",
+      "closes": "15:00",
     },
   ],
 };
+
 
 const Home = () => {
   return (
