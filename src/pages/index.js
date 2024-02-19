@@ -32,6 +32,7 @@ import kdImg from "../../src/img/niagara-web-design.png";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/infused-reviews.jpg";
 import viscaTestimonial from "../../src/img/visca-niagara-web-design-testimonial.png";
+import check from "../../src/img/check.png";
 
 import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 
@@ -127,13 +128,9 @@ const Home = () => {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
       <Nav />
-      <Hero
-        title="Niagara Web Design Company"
-        titleTwo="We build lead-generating websites for Niagara businesses."
-        subTitle="Infused Agency is a top Niagara web design agency hand-crafting beautiful website design since 2013."
-      />
+      <Hero />
       <ClientLogos
-        title="Featured Niagara Web Design Clients"
+        title={[<span>Featured</span>, "Niagara Web Design Clients"]}
         logoOne={clientLmc}
         logoOneAlt="lincoln medical centre - web design"
         logoTwo={clientKd}
@@ -290,127 +287,251 @@ const Home = () => {
             </div>
             <div className="row text-center pd-top-40 pd-btm-120">
               <div className="col-lg-4">
-                <Image className="img-fluid" src={viscaTestimonial} alt="visca electric - web design niagara testimonial"/>
+                <Image
+                  className="img-fluid"
+                  src={viscaTestimonial}
+                  alt="visca electric - web design niagara testimonial"
+                />
                 <h3>Sandro Visca</h3>
                 <p>Owner - VISCA electric</p>
-                <p className="testimonial">
-                  "The design and development process was smooth & easy."
-                </p>
+                <p className="testimonial">"The design and development process was smooth."</p>
                 <p className="full-testimonial">
-                Working with Infused Agency was a pleasure. He was extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field. They helped me and my team create a new website for my business: VISCA electric. Check it out! viscaelectric.ca. The design and development process was smooth and easy. I would absolutely recommend Infused Agency to anyone looking for a new or updated website for their business!
-                  </p>   
+                  "Working with Infused Agency was a pleasure. He was extremely responsive and informative from start to
+                  finish. Infused Agency is creative, efficient, and very knowledgeable in their field. They helped me
+                  and my team create a new website for my business: VISCA electric. Check it out! viscaelectric.ca. The
+                  design and development process was smooth and easy. I would absolutely recommend Infused Agency to
+                  anyone looking for a new or updated website for their business!"
+                </p>
               </div>
               <div className="col-lg-4">
-                <Image className="img-fluid" src={clientGgs} alt="ggs landscaping - website design niagara testimonial"/>
+                <Image
+                  className="img-fluid"
+                  src={clientGgs}
+                  alt="ggs landscaping - website design niagara testimonial"
+                />
                 <h3>Graham Boaretti</h3>
                 <p>Owner - GGS Landscaping</p>
-                <p className="testimonial">
-                  "They did a fantastic job."
-                </p>
+                <p className="testimonial">"They did a fantastic job."</p>
                 <p className="full-testimonial">
-                They did a fantastic job on my website. They were easy to work with, always very quick to respond and made designing the page very simple. I would highly recommend Infused Agency for all of your web design and development needs!
-                  </p>   
+                  "They did a fantastic job on my website. They were easy to work with, always very quick to respond and
+                  made designing the page very simple. I would highly recommend Infused Agency for all of your web
+                  design and development needs!"
+                </p>
               </div>
               <div className="col-lg-4">
-                <Image className="img-fluid" src={clientTr} alt="visca electric - web design niagara testimonial"/>
+                <Image className="img-fluid" src={clientTr} alt="visca electric - web design niagara testimonial" />
                 <h3>Harry Althorpe</h3>
                 <p>Owner - TreeReports</p>
-                <p className="testimonial">
-                  "They are highly organized, thorough and professional."
-                </p>
+                <p className="testimonial">"Highly organized, thorough and professional."</p>
                 <p className="full-testimonial">
-                "Fantastic experience from start to end. They are highly organized, thorough and professional.  I highly recommend his company and services if you are thinking of building a website."
-                  </p>   
+                  "Fantastic experience from start to end. They are highly organized, thorough and professional. I
+                  highly recommend his company and services if you are thinking of building a website."
+                </p>
               </div>
             </div>
           </div>
         </section>
       </Fade>
       <Fade>
-      <section className="cta home-cta">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12">
-              <h2>Ready to <span>Grow Your Business</span> With
-Niagara Web Design Services?</h2>
-<p>Click the button below for a free quote</p>
-              <a
-                href="https://calendly.com/infused-agency/project-discovery/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>
-                  Get Free Quote
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 512 512"
-                    class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                    height="20px"
-                    width="20px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                  </svg>
-                </Button>
-              </a>
+        <section className="cta home-cta">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-lg-12">
+                <h2>
+                  Ready to <span>Grow Your Business</span> With Our Niagara Web Design Services?
+                </h2>
+                <p>Click the button below for a free quote</p>
+                <a href="https://calendly.com/infused-agency/project-discovery/" target="_blank" rel="noreferrer">
+                  <Button>
+                    Get Free Quote
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </Fade>
       <Fade>
-      <section className="home-services">
-        <div className="container">
-          <div className="row pd-btm-80">
-            <div className="col-lg-12 text-center">
-              <h2>Niagara Web Design &amp; SEO Services <span>That Work</span></h2>
-              <p className="serv-intro">
-                We Provide Custom Web Design &amp; SEO Solutions For Your Unique Business Needs
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          {/* Row One */}
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="card">
-                <Image className="img-fluid" src={webImg} alt="web designer niagara" />
-                <Link href="/web-design"><h2>Web Design &amp; Development</h2></Link>
-                <p>Your business and online image are reflected in your website. At Infused Agency, our Niagara web design services elevate brands by creating impactful websites that excel in turning visitors into customers. Our skilled web designers and website developers deliver top-notch mockups and websites, ensuring that your site aligns perfectly with your brand. With our versatile web development team, we embrace the latest design trends to provide your customers with a smooth browsing experience.</p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="card">
-                <Image className="img-fluid" src={wpImg} alt="niagara web design company" />
-                <Link href="/wordpress-developer-niagara"><h2>WordPress Development</h2></Link>
-                <p>Your business and online identity shine through your website, and at Infused Agency, we leverage the unparalleled benefits of WordPress to elevate your brand. Our Niagara web design services specialize in harnessing the power of the content management system WordPress, creating impactful websites that not only reflect your brand essence but also offer exceptional advantages. With WordPress, you'll have the ability to update your website without our help. Our skilled team of web designers and developers ensures that your WordPress site is not just visually appealing but also fully optimized for performance.</p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="card">
-                <Image className="img-fluid" src={seoImg} alt="best web designer niagara" />
-                <Link href="/niagara-seo-company"><h2>SEO</h2></Link>
-                <p>The #1 goal of SEO is to place your website at the top of the search engine results page (SERP). Infused Agency's Niagara web design company is skilled in search engine optimization well-versed in creating SEO strategies. We understand what it takes to move the needle, placing your website to the top of the search results for relevant keyword. We start with a full SEO audit, extensive custom keyword research and implement proper SEO strategies from there.</p>
+        <section className="home-services">
+          <div className="container">
+            <div className="row pd-btm-80">
+              <div className="col-lg-12 text-center">
+                <h2>
+                  Niagara Web Design &amp; SEO Services <span>That Work</span>
+                </h2>
+                <p className="serv-intro">
+                  We Provide Custom Web Design &amp; SEO Solutions For Your Unique Business Needs
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div className="container">
+            {/* Row One */}
+            <div className="row">
+              <div className="col-lg-4">
+                <div className="card">
+                  <Image className="img-fluid" src={webImg} alt="web designer niagara" />
+                  <Link href="/web-design">
+                    <h2>Web Design &amp; Development</h2>
+                  </Link>
+                  <p>
+                    Your business and online image are reflected in your website. At Infused Agency, our Niagara web
+                    design services elevate brands by creating responsive, user friendly websites that excel in turning
+                    visitors into customers. Our skilled web designers and website developers deliver top-notch mockups
+                    and websites, ensuring that your site aligns perfectly with your brand. With our versatile web
+                    development team, we embrace the latest design trends to provide your customers with a smooth
+                    browsing experience.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card">
+                  <Image className="img-fluid" src={wpImg} alt="niagara web design company" />
+                  <Link href="/wordpress-developer-niagara">
+                    <h2>WordPress Development</h2>
+                  </Link>
+                  <p>
+                    Your business and online identity shine through your website, and at Infused Agency, we leverage the
+                    unparalleled benefits of WordPress to elevate your brand. Our Niagara web design services specialize
+                    in harnessing the power of the content management system WordPress, creating impactful websites that
+                    not only reflect your brand essence but also offer exceptional advantages. With WordPress, you'll
+                    have the ability to update your website without our help. Our skilled team of web designers and
+                    developers ensures that your WordPress site is not just visually appealing but also fully optimized
+                    for performance.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card">
+                  <Image className="img-fluid" src={seoImg} alt="best web designer niagara" />
+                  <Link href="/niagara-seo-company">
+                    <h2>SEO</h2>
+                  </Link>
+                  <p>
+                    The #1 goal of SEO is to place your website at the top of the search engine results page (SERP).
+                    Infused Agency's Niagara web design company is skilled in search engine optimization well-versed in
+                    creating SEO strategies. We understand what it takes to move the needle, placing your website to the
+                    top of the search results for relevant keyword. We start with a full SEO audit, extensive custom
+                    keyword research and implement proper SEO strategies from there.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </Fade>
       <Fade>
-      <section className="why-infused">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12">
-              <h2>Why <span>Choose Us</span> As Your Niagara Web Design Company</h2>
-              <p>We Grow Businesses Through Lead-Generating Website Designs &amp; SEO Strategies</p>
+        <section className="why-infused">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <h2 className="text-center">
+                  Why <span>Choose Us</span> As Your Niagara Web Design Company
+                </h2>
+                <p className="text-center">
+                  We Grow Businesses Through Lead-Generating Website Designs &amp; SEO Strategies
+                </p>
+                <p className="pd-top-40">
+                  Infused Agency is a full-service web design company in St Catharines, Niagara Region. We specialize in
+                  creating website designs that are actually effective, impacting your business' online credibility and
+                  it's ability to generate new customers. Through our services - from web design and devlopment to
+                  search engine optimization (SEO), we develop and sustain a variety of businesses every day.
+                </p>
+                <p>
+                  Our web design experts in Niagara have a great track record. We know exactly how to build web designs
+                  that are <em>actually effective</em>, improving your credibility and bringing you in more customers.
+                </p>
+                <p className="pd-btm-40">
+                  Some key reasons why Infused Agency is different from other Niagara web design companies:
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4">
+                <Image width="50" height="50" className="img-fluid" src={check} alt="performance focused" />
+                <h4>Proven Track Record</h4>
+                <p>
+                  Why toss away your hard-earned capital on a website company that doesn't deliver results? When you
+                  work with Infused Agency, you're choosing an agency that has a demonstrated history of success. Your
+                  company will have a competitive advantage through the websites and search engine optimization work
+                  that we do for you. We've helped many local clients grow their revenues, increase conversions and
+                  boost profits through the work we've done for them. Our Niagara web design company uses proven methods
+                  that help convert users into customers through the websites we build our clients. We've been in the
+                  industry since 2013 and stand behind the work we do.
+                </p>
+              </div>
+              <div className="col-lg-4">
+                <Image width="50" height="50" className="img-fluid" src={check} alt="proven track record" />
+                <h4>Web Design Experts</h4>
+                <p>
+                  There are a <em>lot</em> of web design services in Niagara that provide local businesses with website
+                  design solutions. So - what makes us different? The answer is simple. The websites we build are built{" "}
+                  <em>with care.</em> Most web designers in Niagara tend to use pre-made, drag and drop templates that
+                  bloat website code and negatively affect your website's health and page speed. On the other hand, we
+                  craft our websites by hand to ensure security, blazing fast speeds, and a custom website design you
+                  won't get anywhere else. Not only that, but our websites are built with modern website frameworks - so
+                  you know that the product you're getting is more than top-notch.
+                </p>
+              </div>
+              <div className="col-lg-4">
+                <Image width="50" height="50" className="img-fluid" src={check} alt="prompt delivery" />
+                <h4>Prompt Delivery</h4>
+                <p>
+                  We understand that your Niagara business doesn't want to waste time - we get it. That's why our
+                  Niagara web design agency makes sure that the website we build for you, is done promptly and
+                  effectively. From our initial discovery call, to sending over the web design, to linking you to final
+                  website design built and finally the website's launch, we make sure that our communication between us
+                  and you is top priority. We will answer any questions that you may have along the way, and we will
+                  ensure that you will have the best website that your business needs at the finish line. Making sure
+                  your website is delivered on time is our main goal.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Fade>
+      <Fade>
+        <section className="cta home-cta">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-lg-12">
+                <h2>
+                  Ready to <span>Expand Your Business</span> With Our Niagara Web Design Agency?
+                </h2>
+                <p>Click the button below for a free quote</p>
+                <a href="https://calendly.com/infused-agency/project-discovery/" target="_blank" rel="noreferrer">
+                  <Button>
+                    Get Free Quote
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </Fade>
       <Footer />
     </>

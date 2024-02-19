@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
+  Container
 } from "reactstrap";
 
 const Example = (props) => {
@@ -21,6 +22,7 @@ const Example = (props) => {
   return (
     <div>
       <Navbar className="fixed-top" id="nav" expand="lg">
+        <Container>
         <NavbarBrand href="/" className="logo" name="Niagara Web Design Company Infused Agency">
           infused
         </NavbarBrand>
@@ -92,6 +94,7 @@ const Example = (props) => {
             </NavItem>
           </Nav>
         </Collapse>
+        </Container>
       </Navbar>
     </div>
   );

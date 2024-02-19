@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 1600px !important;
+  max-width: 1400px !important;
 }
 
 h1,
@@ -16,7 +16,7 @@ h4,
 h5,
 h6 {
   font-family: $heading;
-  font-weight: bold !important;
+  font-weight: 300;
   color: $grey;
   @include bp-tablet-sm {
     line-height: 1.6;
@@ -238,6 +238,7 @@ span {
   background: linear-gradient(0deg, rgba($light-blue, 0.15) 35%, transparent 0);
   padding: 0 0px;
   margin-right: 5px;
+  font-weight: bold;
 }
 
 .home-client-results {
@@ -291,7 +292,9 @@ span {
   }
   h3 {
     font-size: 24px;
+    font-weight: bold;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -316,5 +319,10 @@ span {
   padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
+  }
+  h4 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 16px;
   }
 }
