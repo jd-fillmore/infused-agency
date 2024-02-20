@@ -354,6 +354,9 @@ span {
     font-weight: bold;
     margin-bottom: 30px;
   }
+  img {
+    margin-bottom: 30px;
+  }
 }
 
 .feat-articles {
@@ -373,5 +376,8 @@ span {
     &:hover {
       color: $purple;
     }
+  }
+  .card {
+    padding: 60px;
   }
 }

@@ -725,6 +725,17 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2>Featured Articles</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="card">
+                <Link href="/effective-web-design-steps">
+                  <h3>Your Friendly 7-Step Guide to Effective Web Design</h3>
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-6">
               <div className="card">
                 <Link href="/cost-canada-website">
                   <h3>How much does a website cost in 2024 in Canada?</h3>
