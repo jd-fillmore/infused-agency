@@ -17,7 +17,11 @@ const EffectiveWebDesignSteps = () => {
         <title>Your Friendly 7-Step Guide to Effective Web Design</title>
         <meta
           name="description"
-          content="Discover the key ingredients for a successful website with our guide on the 7 steps to effective web design. Elevate user experience, boost engagement, and achieve online excellence effortlessly."
+          content="Unlock website success! Follow our 7-step guide for effective web design. Elevate user experience, boost engagement, and achieve online excellence with ease."
+        />
+        <link
+          rel="canonical"
+          href="https://infused.agency/effective-web-design-steps"
         />
       </Head>
       <Nav />
