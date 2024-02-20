@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Playfair_Display, Lato } from "@next/font/google";
+import { Poppins, Lato } from "@next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -40,9 +40,10 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import "../../components/Home/Process/process.scss";
 import "../../components/websiteFAQ/website-faq.scss";
 
-export const playfairDisplay = Playfair_Display({
+export const poppinsFont = Poppins({
   subsets: ["latin"],
   display: "swap",
+  weight: "400",
 });
 
 export const lato = Lato({
@@ -61,7 +62,7 @@ export default function App({ Component, pageProps }) {
         h4,
         h5,
         h6 {
-          font-family: ${playfairDisplay.style.fontFamily};
+          font-family: ${poppinsFont.style.fontFamily};
         }
         a,
         ul,
