@@ -205,6 +205,33 @@ const Home = () => {
           </div>
         </section>
       </Fade>
+      <Fade>
+        <section className="feat-articles">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <h2>Featured Articles</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="card">
+                  <Link href="/effective-web-design-steps">
+                    <h3>Your Friendly 7-Step Guide to Effective Web Design</h3>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="card">
+                  <Link href="/cost-canada-website">
+                    <h3>How much does a website cost in 2024 in Canada?</h3>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </Fade>
       <section className="home-client-results">
         <div className="container">
           <div className="row">
@@ -716,31 +743,6 @@ const Home = () => {
                 We're only an email away! Contact us any time and we can help
                 you with whatever you need.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="feat-articles">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2>Featured Articles</h2>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="card">
-                <Link href="/effective-web-design-steps">
-                  <h3>Your Friendly 7-Step Guide to Effective Web Design</h3>
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="card">
-                <Link href="/cost-canada-website">
-                  <h3>How much does a website cost in 2024 in Canada?</h3>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
