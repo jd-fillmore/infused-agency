@@ -150,28 +150,19 @@ const Home = () => {
                   <span>Niagara businesses trust.</span>
                 </h2>
                 <p>
-                  Niagara's leading web design company. We design and build
-                  affordable and effective websites for local Niagara & St.
-                  Catharines businesses.
+                  Hi there! We're really good at making websites in St.
+                  Catharines, Niagara. We create websites that are good for
+                  local businesses and don't cost too much.
                   <br />
                   <br />
-                  Over the years with our Niagara web design services, we've
-                  helped countless local business in Niagara, St. Catharines and
-                  beyond with crafting user-friendly, hand-coded and content
-                  management system websites that actually help bring in new
-                  revenue and grow their businesses. Alongside our Niagara web
-                  designers, our SEO specialists also offer seach engine
-                  optimization services that ensure your website is easily
-                  discoverable by potential clients within Google Maps and
-                  Google Search.
+                  We've been helping lots of nearby businesses with our
+                  website-making skills. Our websites are easy to use and help
+                  businesses grow and make more money. We also have experts who
+                  make sure your website can be easily found on Google.
                   <br />
                   <br />
-                  We help local businesses by invigorating life into their
-                  online presence, get their websites to work <em>
-                    for them
-                  </em>{" "}
-                  instead of <em>against them</em> and we can do the same for
-                  you.
+                  We love making websites and helping local businesses do well
+                  online. We can do that for you too!
                 </p>
                 <Image
                   className="img-fluid"
@@ -219,8 +210,8 @@ const Home = () => {
                   Businesses
                 </h2>
                 <p className="serv-intro">
-                  We Provide Custom Web Design &amp; SEO Solutions For Your
-                  Unique Business Needs
+                  We make great websites and help people find them on the
+                  internet.
                 </p>
               </div>
             </div>
@@ -239,15 +230,15 @@ const Home = () => {
                     <h2>Web Design &amp; Development</h2>
                   </Link>
                   <p>
-                    Your business and online image are reflected in your
-                    website. At Infused Agency, our Niagara web design services
-                    elevate brands by creating responsive, user friendly
-                    websites that excel in turning visitors into customers. Our
-                    skilled web designers and website developers deliver
-                    top-notch mockups and websites, ensuring that your site
-                    aligns perfectly with your brand. With our versatile web
-                    development team, we embrace the latest design trends to
-                    provide your customers with a smooth browsing experience.
+                    Your business and how it looks online are shown on your
+                    website. At Infused Agency, we help make brands stand out
+                    with our special Niagara web design services. We create
+                    websites that are easy for people to use and make them want
+                    to become customers. Our talented designers and developers
+                    create great designs and websites that match your brand
+                    perfectly. Our team keeps up with the latest styles to make
+                    sure your customers have a really nice time when they visit
+                    your site.
                   </p>
                 </div>
               </div>
@@ -262,17 +253,16 @@ const Home = () => {
                     <h2>WordPress Development</h2>
                   </Link>
                   <p>
-                    Your business and online identity shine through your
-                    website, and at Infused Agency, we leverage the unparalleled
-                    benefits of WordPress to elevate your brand. Our Niagara web
-                    design services specialize in harnessing the power of the
-                    content management system WordPress, creating impactful
-                    websites that not only reflect your brand essence but also
-                    offer exceptional advantages. With WordPress, you'll have
-                    the ability to update your website without our help. Our
-                    skilled team of web designers and developers ensures that
-                    your WordPress site is not just visually appealing but also
-                    fully optimized for performance.
+                    Your business and how it looks online are all seen on your
+                    website. At Infused Agency, we use something called
+                    WordPress to make your brand really special. Our Niagara web
+                    design services focus on using WordPress, which is like a
+                    super tool for making websites. We create awesome websites
+                    that show off what your brand is all about and give you some
+                    really cool benefits. With WordPress, you can even change
+                    your website by yourself, you don't need our help! Our
+                    talented team of designers and developers makes sure your
+                    WordPress website looks great and works really well.
                   </p>
                 </div>
               </div>
@@ -287,15 +277,16 @@ const Home = () => {
                     <h2>SEO</h2>
                   </Link>
                   <p>
-                    The #1 goal of SEO is to place your website at the top of
-                    the search engine results page (SERP). Infused Agency's
-                    Niagara web design company is skilled in search engine
-                    optimization well-versed in creating SEO strategies. We
-                    understand what it takes to move the needle, placing your
-                    website to the top of the search results for relevant
-                    keyword. We start with a full SEO audit, extensive custom
-                    keyword research and implement proper SEO strategies from
-                    there.
+                    The main aim of SEO is to put your website at the very top
+                    when people search on the internet. At Infused Agency, our
+                    Niagara web design company is really good at this search
+                    engine stuff and knows how to make your website show up
+                    first. We have special skills in making plans for SEO. We
+                    know how to make sure your website comes up first when
+                    people search for certain words. We begin by checking
+                    everything about SEO, doing special research for the best
+                    words, and then using smart plans to make your website the
+                    first one people see.
                   </p>
                 </div>
               </div>
@@ -560,23 +551,13 @@ const Home = () => {
                   &amp; SEO Strategies
                 </p>
                 <p className="pd-top-40">
-                  Infused Agency is a full-service web design company in St
-                  Catharines, Niagara Region. We specialize in creating website
-                  designs that are actually effective, impacting your business'
-                  online credibility and it's ability to generate new customers.
-                  Through our services - from web design and devlopment to
-                  search engine optimization (SEO), we develop and sustain a
-                  variety of businesses every day.
-                </p>
-                <p>
-                  Our web design experts in Niagara have a great track record.
-                  We know exactly how to build web designs that are{" "}
-                  <em>actually effective</em>, improving your credibility and
-                  bringing you in more customers.
-                </p>
-                <p className="pd-btm-40">
-                  Some key reasons why Infused Agency is different from other
-                  Niagara web design companies:
+                  We are a web design company in St. Catharines, Niagara called
+                  Infused Agency. We make websites that really work and help
+                  businesses get more customers. Our team is awesome at web
+                  design, and we do cool things like making sure your website
+                  shows up when people search on the internet. We've helped lots
+                  of businesses in Niagara, and here are some reasons why we're
+                  different from other web design companies:
                 </p>
               </div>
             </div>
@@ -591,17 +572,13 @@ const Home = () => {
                 />
                 <h3>Proven Track Record</h3>
                 <p>
-                  Why toss away your hard-earned capital on a website company
-                  that doesn't deliver results? When you work with Infused
-                  Agency, you're choosing an agency that has a demonstrated
-                  history of success. Your company will have a competitive
-                  advantage through the websites and search engine optimization
-                  work that we do for you. We've helped many local clients grow
-                  their revenues, increase conversions and boost profits through
-                  the work we've done for them. Our Niagara web design company
-                  uses proven methods that help convert users into customers
-                  through the websites we build our clients. We've been in the
-                  industry since 2013 and stand behind the work we do.
+                  Why spend money on a website company that doesn't make things
+                  better for your business? Choose Infused Agency, and we'll
+                  make your company stand out. Our Niagara web design agency is
+                  really good at making websites and using tricks to help your
+                  business grow. We've been doing this since 2013, and we've
+                  made lots of businesses successful. Trust us, we know what
+                  we're doing.
                 </p>
               </div>
               <div className="col-lg-4">
@@ -614,18 +591,12 @@ const Home = () => {
                 />
                 <h3>Web Design Experts</h3>
                 <p>
-                  There are a <em>lot</em> of web design services in Niagara
-                  that provide local businesses with website design solutions.
-                  So - what makes us different? The answer is simple. The
-                  websites we build are built <em>with care.</em> Most web
-                  designers in Niagara tend to use pre-made, drag and drop
-                  templates that bloat website code and negatively affect your
-                  website's health and page speed. On the other hand, we craft
-                  our websites by hand to ensure security, blazing fast speeds,
-                  and a custom website design you won't get anywhere else. Not
-                  only that, but our websites are built with modern website
-                  frameworks - so you know that the product you're getting is
-                  more than top-notch.
+                  There are a lot of web designers in Niagara that make websites
+                  for businesses. But we're special because we make our websites
+                  with care. Some other places use ready-made templates, but not
+                  us! We make our websites by hand to make sure they're safe,
+                  super fast, and look really unique. Our websites are made with
+                  the newest techniques, so you know they're the best!
                 </p>
               </div>
               <div className="col-lg-4">
@@ -638,17 +609,13 @@ const Home = () => {
                 />
                 <h3>Prompt Delivery</h3>
                 <p>
-                  We understand that your Niagara business doesn't want to waste
-                  time - we get it. That's why our Niagara web design agency
-                  makes sure that the website we build for you, is done promptly
-                  and effectively. From our initial discovery call, to sending
-                  over the web design, to linking you to final website design
-                  built and finally the website's launch, we make sure that our
-                  communication between us and you is top priority. We will
-                  answer any questions that you may have along the way, and we
-                  will ensure that you will have the best website that your
-                  business needs at the finish line. Making sure your website is
-                  delivered on time is our main goal.
+                  We know your Niagara business is busy, so we make sure to
+                  build your website quickly and well. From our first talk to
+                  showing you the design and then launching the website, we keep
+                  talking with you to make sure everything is just right. We'll
+                  answer your questions and make sure your website is ready when
+                  you need it. Getting your website done on time is what we aim
+                  for!
                 </p>
               </div>
             </div>
@@ -670,85 +637,78 @@ const Home = () => {
             <div className="col-lg-6">
               <h3>How much does a new website cost?</h3>
               <p>
-                There's no single answer to this question. It entirely depends
-                on the needs of the project. Every web design and development
-                project is unique in it's design, purpose, functionality and
-                more. However, visit our{" "}
-                <Link href="/pricing">pricing page</Link> for a general ballpark
-                figure of what you're looking for. In our free consultation
-                sessions we'll ask lots of questions, assess your needs and then
-                give you a quote based on our findings.
+                Every project is different, so there's no one-size-fits-all
+                answer. It depends on what your project needs. You can check our
+                <Link href="/pricing">pricing page</Link> for a general idea. In
+                our free talks, we'll ask you lots of questions, figure out what
+                you need, and then tell you how much it might cost.
               </p>
               <h3>How long will it take to get a new website?</h3>
               <p>
-                Typically between 6 and 8 weeks. Keep in mind this completely
-                depends on the client, though. For example - if we need content
-                or approval from you and there are potential delays, this could
-                delay the launch. However if you send over content / approval
-                for things along the way quickly, the more quick your website
-                will launch.
+                It usually takes about 6 to 8 weeks, but it can change based on
+                what you need. If we need stuff from you, like content or
+                approval, and there are delays, it might take longer. But if you
+                send things quickly, your website will be ready faster.
               </p>
               <h3>Do you only create WordPress websites?</h3>
               <p>
-                No! WordPress is great for a lot of use cases. You can update
-                your website on your own without needing a developer (we teach
-                you). There's a rich ecosystem of plugins we utilize to speed up
-                development. However, sometimes a hand-coded website far
-                outperforms a WordPress site depending on the situation,
-                especially when you don't desire to update the website yourself.
+                No! WordPress is good for many things. You can change your
+                website by yourself, and we'll show you how. We use special
+                tools to make things faster. But sometimes, a website made by
+                hand works even better than a WordPress one, especially if you
+                don't want to change it yourself.
               </p>
               <h3>Do I have to be local to work with you?</h3>
               <p>
-                Nope! We have clients locally but have also served clients all
-                across the world.
+                No way! We help people nearby and also people from all over the
+                world.
               </p>
               <h3>Will I be able to update the website when it's finished?</h3>
               <p>
-                If it's a WordPress website, yes. If it's not, our team of
-                developers can update the website for you.
+                Yes, if it's a WordPress website. If not, our team of experts
+                can update it for you.
               </p>
               <h3>Can you maintain my website for me?</h3>
               <p>
-                Absolutely. We understand that business owners are busy a lot of
-                the time. We can take that stress off of you by updating your
-                website for you.
+                Of course! We know business owners are often busy. We can help
+                by updating your website for you.
               </p>
             </div>
             <div className="col-lg-6">
               <h3>Will my website be mobile-friendly?</h3>
               <p>
-                Of course. Responsive design, aka mobile websites, are a big
-                part of today's society. We make sure to adhere to that so your
-                customers have a pleasant experience on your website.
+                Yep! We make sure our websites work nicely on phones so that
+                when people visit, it's fun and easy for them.
               </p>
               <h3>When do I pay?</h3>
               <p>
-                Milestone payments are split throughout the project. Iniital
-                deposit upfront, web design stage, web development stage and at
-                the end of the project. We accept e-transfer, cash or credit
-                card payments.
+                We get money in parts during the project. First, you give us
+                some money at the start. Then, more when we're designing and
+                building the website. The last bit comes at the end. You can pay
+                with e-transfer, cash, or a credit card.
               </p>
               <h3>How much input do I have?</h3>
               <p>
-                Lots! We work with our clients very closely. We make sure that
-                based on our conversations, there are no surprises when it comes
-                to how your website looks or functions.
+                We talk a lot with you and make sure everything we do for their
+                website is just what you want. We don't want any surprises, so
+                we make sure it looks and works just the way you like.
               </p>
               <h3>Do I provide the content for my website?</h3>
               <p>
-                Yes. You're the expert of your business so typically it's you
-                that provides it. If you don't want to or can't, we will happily
-                write the content at an additional cost.
+                ep! You know the most about your business, so usually, you give
+                us the words for the website. But if you don't want to or can't,
+                we can write it for you, but that might cost a bit more.
               </p>
               <h3>What about website hosting?</h3>
               <p>
-                We have a list of favourites hosting providers that we use.
-                During our free consultation we can talk about these providers.
+                We have some favourite places where we put websites so they can
+                be seen by everyone. We can chat about these special places
+                during our free talk.
               </p>
               <h3>What if I need help after my site is live?</h3>
               <p>
-                We're only an email away! Contact us any time and we can help
-                you with whatever you need.
+                Send us an email anytime! We're here to help you with anything
+                you need.
               </p>
             </div>
           </div>

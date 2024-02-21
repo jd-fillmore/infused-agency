@@ -19,9 +19,8 @@ const Hero = () => {
                   <span>We're Infused</span>, a Niagara web design company.
                 </h2>
                 <p>
-                  Infused Agency is a top web design agency that makes
-                  effective, credible and lead-generating website designs for
-                  Niagara businesses.
+                  Infused Agency is a top web design firm. We make websites that
+                  work well and help Niagara businesses get more customers.
                 </p>
                 <a
                   name="niagara web design company free quote"
