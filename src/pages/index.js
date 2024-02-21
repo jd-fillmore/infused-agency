@@ -120,9 +120,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>
-          Niagara Web Design, Website Designer St Catharines | Infused
-        </title>
+        <title>Niagara Web Design | Website Designers St. Catharines</title>
         <meta
           name="description"
           content="Leading Niagara Web Design company located in the heart of St. Catharines. Specializing in web design &amp; website development. Get your free quote now!"
