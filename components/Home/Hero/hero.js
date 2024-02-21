@@ -13,11 +13,15 @@ const Hero = () => {
             <Row>
               <Col lg="6">
                 <h1 className="intro">
-                  <span>Niagara Web Design</span> & Development Company
+                  Niagara Web Design, St. Catharines Website Designers
                 </h1>
+                <h2>
+                  <span>We're Infused</span>, a Niagara web design company.
+                </h2>
                 <p>
-                  We build clean, simple, lead-generating websites for that help
-                  bring in more revenue for your Niagara business.
+                  Infused Agency is a top web design agency that makes
+                  effective, credible and lead-generating website designs for
+                  Niagara businesses.
                 </p>
                 <a
                   name="niagara web design company free quote"
@@ -45,7 +49,7 @@ const Hero = () => {
                 <Image
                   className="img-fluid"
                   src={heroImg}
-                  alt="niagara web design client"
+                  alt="niagara web design"
                 />
                 <Link href="/kd-florist">
                   <button className="kd">

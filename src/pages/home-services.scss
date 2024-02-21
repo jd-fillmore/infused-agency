@@ -2,10 +2,9 @@
 @import "../pages/breakpoints.scss";
 
 .home-services {
-  padding: 150px 0px 120px 0px;
+  padding: 0px 0px 120px 0px;
   background: $dark-grey;
   h2 {
-    font-size: 60px;
     @include bp-tablet-sm {
       text-align: left;
     }
@@ -35,7 +34,7 @@
       width: 50%;
     }
     h2 {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 10px;
