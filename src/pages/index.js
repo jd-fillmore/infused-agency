@@ -505,8 +505,7 @@ const Home = () => {
             <div className="row text-center">
               <div className="col-lg-12">
                 <h2>
-                  Ready to <span>Grow Your Business</span> With Our Niagara Web
-                  Design Services?
+                  Ready to <span>Grow Your Business</span>?
                 </h2>
                 <p>Click the button below for a free quote</p>
                 <a
