@@ -153,10 +153,12 @@ const Home = () => {
                   businesses and don't cost too much.
                   <br />
                   <br />
-                  We've been helping lots of nearby businesses with our
-                  website-making skills. Our websites are easy to use and help
-                  businesses grow and make more money. We also have experts who
-                  make sure your website can be easily found on Google.
+                  We've been helping lots of nearby businesses in the Niagara
+                  region like St. Catharines, Niagara Falls, Niagara-on-the-Lake
+                  and other areas with our website-making skills. Our websites
+                  are easy to use and help businesses grow and make more money.
+                  We also have experts who make sure your website can be easily
+                  found on Google.
                   <br />
                   <br />
                   We love making websites and helping local businesses do well
