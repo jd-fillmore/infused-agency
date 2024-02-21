@@ -622,7 +622,7 @@ const Home = () => {
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Niagara Website Design Services <span>Common Questions</span>
+                <span>Frequently Asked</span>Questions
               </h2>
             </div>
           </div>
