@@ -148,9 +148,9 @@ const Home = () => {
                   <span>businesses trust.</span>
                 </h2>
                 <p>
-                  Hi there! We're really good at making websites in St.
-                  Catharines, Niagara. We create websites that are good for
-                  local businesses and don't cost too much.
+                  Hi there! Our Niagara web design agency is really good at
+                  making websites. We create websites that are good for local
+                  businesses and don't cost too much.
                   <br />
                   <br />
                   We've been helping lots of nearby businesses with our
@@ -180,7 +180,7 @@ const Home = () => {
         </section>
       </Fade>
       <ClientLogos
-        title={[<span>Featured</span>, "Website Design Clients In Niagara"]}
+        title={[<span>Featured</span>, "Niagara Web Design Clients"]}
         logoOne={clientLmc}
         logoOneAlt="website designers st catharines"
         logoTwo={clientKd}
