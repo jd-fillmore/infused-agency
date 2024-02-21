@@ -144,8 +144,8 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-7">
                 <h2>
-                  We’re the web design company{" "}
-                  <span>Niagara businesses trust.</span>
+                  Leading Niagara web design company{" "}
+                  <span>businesses trust.</span>
                 </h2>
                 <p>
                   Hi there! We're really good at making websites in St.
@@ -253,10 +253,10 @@ const Home = () => {
                   <p>
                     Your business and how it looks online are all seen on your
                     website. At Infused Agency, we use something called
-                    WordPress to make your brand really special. Our Niagara web
-                    design services focus on using WordPress, which is like a
-                    super tool for making websites. We create awesome websites
-                    that show off what your brand is all about and give you some
+                    WordPress to make your brand really special. Our web design
+                    services focus on using WordPress, which is like a super
+                    tool for making websites. We create awesome websites that
+                    show off what your brand is all about and give you some
                     really cool benefits. With WordPress, you can even change
                     your website by yourself, you don't need our help! Our
                     talented team of designers and developers makes sure your
@@ -277,14 +277,13 @@ const Home = () => {
                   <p>
                     The main aim of SEO is to put your website at the very top
                     when people search on the internet. At Infused Agency, our
-                    Niagara web design company is really good at this search
-                    engine stuff and knows how to make your website show up
-                    first. We have special skills in making plans for SEO. We
-                    know how to make sure your website comes up first when
-                    people search for certain words. We begin by checking
-                    everything about SEO, doing special research for the best
-                    words, and then using smart plans to make your website the
-                    first one people see.
+                    web design company is really good at this search engine
+                    stuff and knows how to make your website show up first. We
+                    have special skills in making plans for SEO. We know how to
+                    make sure your website comes up first when people search for
+                    certain words. We begin by checking everything about SEO,
+                    doing special research for the best words, and then using
+                    smart plans to make your website the first one people see.
                   </p>
                 </div>
               </div>
@@ -326,7 +325,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2>
-                Our Niagara Web Design Clients <span>Get Results</span>
+                Our Clients <span>Get Results</span>
               </h2>
             </div>
           </div>
@@ -542,7 +541,7 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-12">
                 <h2 className="text-center">
-                  Why <span>Choose Us</span> As Your Niagara Web Design Company
+                  Why <span>Choose Us</span>
                 </h2>
                 <p className="text-center">
                   We Grow Businesses Through Lead-Generating Website Designs
@@ -572,11 +571,10 @@ const Home = () => {
                 <p>
                   Why spend money on a website company that doesn't make things
                   better for your business? Choose Infused Agency, and we'll
-                  make your company stand out. Our Niagara web design agency is
-                  really good at making websites and using tricks to help your
-                  business grow. We've been doing this since 2013, and we've
-                  made lots of businesses successful. Trust us, we know what
-                  we're doing.
+                  make your company stand out. Our web design agency is really
+                  good at making websites and using tricks to help your business
+                  grow. We've been doing this since 2013, and we've made lots of
+                  businesses successful. Trust us, we know what we're doing.
                 </p>
               </div>
               <div className="col-lg-4">
@@ -718,8 +716,7 @@ const Home = () => {
             <div className="row text-center">
               <div className="col-lg-12">
                 <h2>
-                  Ready to <span>Expand Your Business</span> With Our Niagara
-                  Web Design Agency?
+                  Ready to <span>Grow Your Business</span>?
                 </h2>
                 <p>Click the button below for a free quote</p>
                 <a

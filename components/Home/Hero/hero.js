@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="bg">
             <Row>
               <Col lg="6">
-                <h1 className="intro">Web Design in Niagara, St. Catharines</h1>
+                <h1 className="intro">Niagara Web Design Company</h1>
                 <h2>
                   Web Design That Elevates <span>Your Business</span>.
                 </h2>
