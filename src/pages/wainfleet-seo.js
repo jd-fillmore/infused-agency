@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/Wainfleet-seo.webp";
+import website from "../img/wainfleet-seo.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -324,13 +324,13 @@ const SEO = () => {
                     more revenue through digital channels.
                   </p>
                   <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23370.59753975929!2d-79.39260922032638!3d42.92928135329211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d334b202bdff43%3A0xf2051a5eb1cbc6c8!2sWainfleet%2C%20ON!5e0!3m2!1sen!2sca!4v1708799264570!5m2!1sen!2sca"
-                  width="600"
-                  height="450"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23370.59753975929!2d-79.39260922032638!3d42.92928135329211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d334b202bdff43%3A0xf2051a5eb1cbc6c8!2sWainfleet%2C%20ON!5e0!3m2!1sen!2sca!4v1708799264570!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </Col>
                 <Col lg="6">
                   <Image className="img-fluid" src={about} alt="business needs" />
