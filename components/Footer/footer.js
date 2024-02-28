@@ -98,6 +98,7 @@ const Footer = () => {
             <Col lg="8">
               <h3>Areas Served</h3>
               <p className="subtitle">SEO</p>
+              <Link href="/ancaster-seo">Ancaster SEO</Link>,{" "}
               <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
               <Link href="/crystal-beach-seo-company">Crystal Beach SEO</Link>,{" "}
               <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
@@ -112,9 +113,8 @@ const Footer = () => {
               <Link href="/waterdown-seo">Waterdown SEO</Link>,{" "}
               <Link href="/welland-seo-company">Welland SEO</Link>.
               <p className="subtitle">Web Design</p>
-              <Link href="/beamsville-web-design">
-                Beamsville Web Design
-              </Link>,{" "}
+              <Link href="ancaster-web-design">Ancaster Web Design</Link>,{" "}
+              <Link href="/beamsville-web-design">Beamsville Web Design</Link>,{" "}
               <Link href="/crystal-beach-web-design">
                 Crystal Beach Web Design
               </Link>
