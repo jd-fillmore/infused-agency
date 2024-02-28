@@ -363,17 +363,17 @@ const SEO = () => {
                     Since 2013 we've been able to help countless local Stoney
                     Creek businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Dundas">
+                    <Link href="/digital-marketing-niagara">
                       digital marketing
                     </Link>
-                    , search engine optimization (SEO) ,{" "}
-                    <Link href="/wordpress-developer-Dundas">
-                      WordPress development
+                    ,{" "}
+                    <Link href="/niagara-seo-company">
+                      search engine optimization (SEO)
                     </Link>{" "}
                     and{" "}
-                    <Link href="/ecommerce-web-design-Dundas">
-                      e-commerce website development
-                    </Link>
+                    <Link href="/wordpress-developer-niagara">
+                      WordPress development
+                    </Link>{" "}
                     .
                   </p>
                   <p>
