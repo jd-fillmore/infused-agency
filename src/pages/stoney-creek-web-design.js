@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Stoney Creek Web Design | Infused Agency</title>
+        <title>Stoney Creek Web Design | Affordable Website Development</title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Stoney Creek web design services. Affordable, stunning websites that capture attention. Drive growth now!"

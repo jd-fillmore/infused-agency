@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Stoney Creek SEO | Infused Agency</title>
+        <title>Stoney Creek SEO | Affordable Search Engine Optimization</title>
         <meta
           name="description"
           content="Unleash the potential of Stoney Creek SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"

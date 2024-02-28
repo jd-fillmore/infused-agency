@@ -20,7 +20,9 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Wainfleet Web Design | Infused Agency</title>
+        <title>
+          Wainfleet Web Design | Affordable Local Website Development
+        </title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Wainfleet web design services. Affordable, stunning websites that capture attention. Drive growth now!"
