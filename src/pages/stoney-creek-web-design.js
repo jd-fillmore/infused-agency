@@ -268,7 +268,7 @@ const SEO = () => {
                     key part of our Stoney Creek web design services to help
                     make sure that your customers can find your website. When
                     using our Stoney Creek web design experts and{" "}
-                    <Link href="/Stoney Creek-seo-company/">
+                    <Link href="/Stoney-Creek-seo/">
                       Stoney Creek SEO services
                     </Link>
                     , your website should help bring in new company revenue and
@@ -374,7 +374,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Stoney Creek-seo-company/">
+                    <Link href="/Stoney-Creek-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}
@@ -492,14 +492,6 @@ const SEO = () => {
                   We're only an email away! Contact us any time and we can help
                   you with whatever you need.
                 </p>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23370.59753975929!2d-79.39260922032638!3d42.92928135329211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d334b202bdff43%3A0xf2051a5eb1cbc6c8!2sStoney Creek%2C%20ON!5e0!3m2!1sen!2sca!4v1708799264570!5m2!1sen!2sca"
-                  width="600"
-                  height="450"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
               </Col>
             </Row>
           </Container>

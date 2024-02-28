@@ -109,6 +109,7 @@ const Footer = () => {
               <Link href="/seo-st-catharines">St. Catharines SEO</Link>,{" "}
               <Link href="/thorold-seo-company">Thorold SEO</Link>,{" "}
               <Link href="/wainfleet-seo">Wainfleet SEO</Link>,{" "}
+              <Link href="/waterdown-seo">Waterdown SEO</Link>,{" "}
               <Link href="/welland-seo-company">Welland SEO</Link>.
               <p className="subtitle">Web Design</p>
               <Link href="/beamsville-web-design">
@@ -129,6 +130,7 @@ const Footer = () => {
               </Link>
               , <Link href="/thorold-web-design">Thorold Web Design</Link>,{" "}
               <Link href="/wainfleet-web-design">Wainfleet Web Design</Link>,{" "}
+              <Link href="/waterdown-web-design">Waterdown Web Design</Link>,{" "}
               <Link href="/web-design-welland">Welland Web Design</Link>.
               <br />
               <br />

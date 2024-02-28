@@ -8,32 +8,33 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/wainfleet-web-design.webp";
+import website from "../img/waterdown-web-design.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
-import About from "../../components/Home/About/about";
 
 const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>Wainfleet Web Design | Infused Agency</title>
+        <title>
+          Waterdown Web Design | Affordable Local Website Development
+        </title>
         <meta
           name="description"
-          content="Elevate your brand with top-notch Wainfleet web design services. Affordable, stunning websites that capture attention. Drive growth now!"
+          content="Elevate your brand with top-notch Waterdown web design services. Affordable, stunning websites that capture attention. Drive growth now!"
         />
         <link
           rel="canonical"
-          href="https://infused.agency/wainfleet-web-design"
+          href="https://infused.agency/waterdown-web-design"
         />
       </Helmet>
       <Nav />
       <InnerHero
-        title="Wainfleet Web Design Company"
-        description="Infused Agency is an award-winning web design company that serves Wainfleet. We help businesses bring in more revenue through their websites."
+        title="Waterdown Web Design Company"
+        description="Infused Agency is an award-winning web design company that serves Waterdown. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -44,13 +45,13 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Wainfleet web design company, Wainfleet web design agency, Wainfleet web design services"
+                  alt="Waterdown web design company, Waterdown web design agency, Waterdown web design services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Wainfleet web design services</strong> that our{" "}
-                  <strong>Wainfleet web design company</strong> provides are
+                  The <strong>Waterdown web design services</strong> that our{" "}
+                  <strong>Waterdown web design company</strong> provides are
                   pretty impeccable. We consistently provide great web design
                   services to our clients with pretty awesome results. There are
                   a lot of benefits as to why web design services are so
@@ -59,7 +60,7 @@ const SEO = () => {
                 <ul>
                   <li>Helps bolster company branding.</li>
                   <li>
-                    Improves your Wainfleet company's reputation and
+                    Improves your Waterdown company's reputation and
                     trustworthiness.
                   </li>
                   <li>Leads to more leads and company revenue.</li>
@@ -77,7 +78,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Wainfleet Web Design Clients <span>Get Results</span>
+                    Our Waterdown Web Design Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -93,8 +94,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their
-                      Wainfleet web design services."
+                      their company if you are thinking of needing their Stoney
+                      Creek web design services."
                     </p>
                     <ul>
                       <li>
@@ -137,7 +138,7 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their web design services, my Wainfleet company
+                      By using their web design services, my Waterdown company
                       went from having no website at all to one that brings in
                       new customers every week."
                     </p>
@@ -188,7 +189,7 @@ const SEO = () => {
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
                       on my new web site. If you ever need a web design for your
-                      Wainfleet business I do recommend Infused Agency for their
+                      Waterdown business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -235,7 +236,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with top Wainfleet web design
+                    Ready to grow your business with top Waterdown web design
                     services?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
@@ -255,7 +256,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Wainfleet <span>Web Design</span> Services
+                    Waterdown <span>Web Design</span> Services
                   </h2>
                   <p>Websites That Help Your Company Bring In More Customers</p>
                 </Col>
@@ -266,10 +267,10 @@ const SEO = () => {
                   <p>
                     We make sure that your websites are indexed and show up for
                     certain keywords in Google. Search engine optimization is a
-                    key part of our Wainfleet web design services to help make
+                    key part of our Waterdown web design services to help make
                     sure that your customers can find your website. When using
-                    our Wainfleet web design experts and{" "}
-                    <Link href="/Wainfleet-seo/">Wainfleet SEO services</Link>,
+                    our Waterdown web design experts and{" "}
+                    <Link href="/Waterdown-seo/">Waterdown SEO services</Link>,
                     your website should help bring in new company revenue and
                     customers.
                   </p>
@@ -277,7 +278,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Web Design &amp; Development</h5>
                   <p>
-                    Our Wainfleet web designers create websites that bolster
+                    Our Waterdown web designers create websites that bolster
                     your brand's reputation, which help bring in more customers.
                     Our websites not only attract customers, our award-winning
                     web designs take into account search engine optimization and
@@ -288,10 +289,10 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Custom Web Design</h5>
                   <p>
-                    Every client website we design is custom. Our Wainfleet web
+                    Every client website we design is custom. Our Waterdown web
                     designers will create a modern website design for you,
                     taking into consideration your business goals. We make sure
-                    to plug in your vision that factors into our Wainfleet web
+                    to plug in your vision that factors into our Waterdown web
                     design experts’ design process.{" "}
                   </p>
                 </Col>
@@ -300,9 +301,9 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Responsive Web Design</h5>
                   <p>
-                    We conduct responsive web design as part of our Wainfleet
+                    We conduct responsive web design as part of our Waterdown
                     web design services to help your users navigate your website
-                    on any device. Our Wainfleet web design experts specifically
+                    on any device. Our Waterdown web design experts specifically
                     develop with custom code to allow your website to look great
                     on any device or computer.
                   </p>
@@ -310,7 +311,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>WordPress Web Design</h5>
                   <p>
-                    Our web design company in Wainfleet uses WordPress for all
+                    Our web design company in Waterdown uses WordPress for all
                     website projects that require a content management system
                     (CMS). Since WordPress powers nearly 50% of the web, it's a
                     clear winner when it comes to choosing a CMS. We choose
@@ -323,9 +324,9 @@ const SEO = () => {
                   <p>
                     In the post-covid world, it's especially important as a
                     product or subscription-based business to have an e-commerce
-                    website. With the help of our Wainfleet web design agency,
+                    website. With the help of our Waterdown web design agency,
                     your e-commerce website can help sell your products online,
-                    expanding your reach drastically. Leave it to our Wainfleet
+                    expanding your reach drastically. Leave it to our Waterdown
                     web designers to help design and develop a beautiful, modern
                     online store.
                   </p>
@@ -337,7 +338,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Wainfleet Web Design Experts Help Today</h3>
+                  <h3>Have Our Waterdown Web Design Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -355,7 +356,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Wainfleet</span> Web
+                    Why Choose Infused Agency As Your <span>Waterdown</span> Web
                     Design Agency
                   </h2>
                   <p>
@@ -366,14 +367,14 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Wainfleet
-                    businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Stoney
+                    Creek businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Wainfleet-seo/">
+                    <Link href="/Waterdown-seo-company/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}
@@ -389,6 +390,14 @@ const SEO = () => {
                     ultimately bringing them more revenue through digital
                     channels.
                   </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23217.92605508206!2d-79.92191371897613!3d43.33015085160213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c822053c0952d%3A0x3e3333f63e059c70!2sWaterdown%2C%20Hamilton%2C%20ON!5e0!3m2!1sen!2sca!4v1709080538125!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </Col>
                 <Col lg="6">
                   <Image
@@ -483,14 +492,6 @@ const SEO = () => {
                   We're only an email away! Contact us any time and we can help
                   you with whatever you need.
                 </p>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23370.59753975929!2d-79.39260922032638!3d42.92928135329211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d334b202bdff43%3A0xf2051a5eb1cbc6c8!2sWainfleet%2C%20ON!5e0!3m2!1sen!2sca!4v1708799264570!5m2!1sen!2sca"
-                  width="600"
-                  height="450"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
               </Col>
             </Row>
           </Container>
