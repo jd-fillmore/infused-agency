@@ -89,8 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Stoney
-                      Creek web design services."
+                      their company if you are thinking of needing their Dundas
+                      web design services."
                     </p>
                     <ul>
                       <li>

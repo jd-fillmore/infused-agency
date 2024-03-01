@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/ancaster-web-design.webp";
+import website from "../img/ajax-seo.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -19,22 +19,17 @@ const SEO = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Ancaster Web Design | Affordable Local Website Development
-        </title>
+        <title>Ajax SEO | Best SEO Company in Ajax ON</title>
         <meta
           name="description"
-          content="Elevate your brand with top-notch Ancaster web design services. Affordable, stunning websites that capture attention. Drive growth now!"
+          content="Unleash the potential of Ajax SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
-        <link
-          rel="canonical"
-          href="https://infused.agency/Ancaster-web-design"
-        />
+        <link rel="canonical" href="https://infused.agency/ajax-seo" />
       </Helmet>
       <Nav />
       <InnerHero
-        title="Ancaster Web Design Company"
-        description="Infused Agency is an award-winning web design company that serves Ancaster. We help businesses bring in more revenue through their websites."
+        title="Ajax SEO Company"
+        description="Infused Agency is an award-winning SEO company in Ajax. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -45,30 +40,30 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Ancaster web design company, Ancaster web design agency, Ancaster web design services"
+                  alt="Ajax seo company, Ajax seo agency, Ajax seo services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Ancaster web design services</strong> that our{" "}
-                  <strong>Ancaster web design company</strong> provides are
-                  pretty impeccable. We consistently provide great web design
-                  services to our clients with pretty awesome results. There are
-                  a lot of benefits as to why web design services are so
-                  important for any local company:
+                  The <strong>Ajax SEO services</strong> that our{" "}
+                  <strong>Ajax SEO company</strong> provides are pretty
+                  impeccable. We consistently provide great SEO services to our
+                  clients with pretty awesome results. There are a lot of
+                  benefits as to why SEO services are so important for any local
+                  company:
                 </p>
                 <ul>
-                  <li>Helps bolster company branding.</li>
+                  <li>Bring in more customers through organic search.</li>
                   <li>
-                    Improves your Ancaster company's reputation and
-                    trustworthiness.
+                    Creates a trustworthy experience for potential customers.
                   </li>
-                  <li>Leads to more leads and company revenue.</li>
+                  <li>Improves your Ajax brand's awareness.</li>
+                  <li>It's trackable.</li>
                 </ul>
                 <p>
-                  When you utilize web design services from our company and end
-                  up bolstering your company's reputation, it's a great way to
-                  gain more customers.
+                  When you utilize SEO services from our company and end up
+                  ranking on the first of Google, it's a great way to increase
+                  your company's revenue.
                 </p>
               </Col>
             </Row>
@@ -78,7 +73,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Ancaster Web Design Clients <span>Get Results</span>
+                    Our Ajax SEO Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -94,8 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their
-                      Ancaster web design services."
+                      their company if you are thinking of needing their Stoney
+                      Creek SEO services."
                     </p>
                     <ul>
                       <li>
@@ -138,9 +133,9 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their web design services, my Ancaster company
-                      went from having no website at all to one that brings in
-                      new customers every week."
+                      By using their SEO services, my Ajax company went from not
+                      ranking at all to the first page of Google for tons of
+                      keywords."
                     </p>
                     <ul>
                       <li>
@@ -188,8 +183,8 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a web design for your
-                      Ancaster business I do recommend Infused Agency for their
+                      on my new web site. If you ever need a SEO for your Stoney
+                      Creek business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -236,8 +231,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with top Ancaster web design
-                    services?
+                    Ready to grow your business with top Ajax SEO services?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
@@ -256,79 +250,80 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Ancaster <span>Web Design</span> Services
+                    Ajax <span>SEO</span> Services
                   </h2>
-                  <p>Websites That Help Your Company Bring In More Customers</p>
+                  <p>
+                    Solutions That Bring In Qualified Leads And Boost Your Sales
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Search Engine Optimization (SEO)</h5>
+                  <h5>Keyword Research &amp; Strategy</h5>
                   <p>
-                    We make sure that your websites are indexed and show up for
-                    certain keywords in Google. Search engine optimization is a
-                    key part of our Ancaster web design services to help make
-                    sure that your customers can find your website. When using
-                    our Ancaster web design experts and{" "}
-                    <Link href="/Ancaster-seo/">Ancaster SEO services</Link>,
-                    your website should help bring in new company revenue and
+                    Infused Agency's SEO company in Ajax conducts specific
+                    keyword research that covers specifically what your users
+                    are searching for. We look at keywords as the main
+                    foundation to your SEO project. Beyond this, we dive into
+                    the technicalities to further deliver value to your
                     customers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Web Design &amp; Development</h5>
+                  <h5>Link Building</h5>
                   <p>
-                    Our Ancaster web designers create websites that bolster your
-                    brand's reputation, which help bring in more customers. Our
-                    websites not only attract customers, our award-winning web
-                    designs take into account search engine optimization and
-                    responsive web design best practices to help increase brand
-                    awareness.
+                    Off of your website, our Ajax SEO exports utilize efforts to
+                    build links to your website, to help your site rise in
+                    search rankings. When other websites link back to your own,
+                    you can be seen as authoratative and rank for relevant
+                    keyword searche. We can also help filter out certain
+                    backlinks that Google may refer to as spammy.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Custom Web Design</h5>
+                  <h5>Content Writing</h5>
                   <p>
-                    Every client website we design is custom. Our Ancaster web
-                    designers will create a modern website design for you,
-                    taking into consideration your business goals. We make sure
-                    to plug in your vision that factors into our Ancaster web
-                    design experts’ design process.{" "}
+                    Our Ajax SEO services are conducted by a highly trained
+                    group of marketers, which includes content writers. At
+                    Infused, you can take advantage of our content writing
+                    skills to create content that attracts highly qualified
+                    leads. We help mix keywords and your brand voice together,
+                    to help bring in more leads to your website.
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
-                  <h5>Responsive Web Design</h5>
+                  <h5>On-Page SEO</h5>
                   <p>
-                    We conduct responsive web design as part of our Ancaster web
-                    design services to help your users navigate your website on
-                    any device. Our Ancaster web design experts specifically
-                    develop with custom code to allow your website to look great
-                    on any device or computer.
+                    It's very important that your on-page work is done well, as
+                    it can signal to Google that you may give your users a poor
+                    user experience. This is why our Ajax SEO agency looks for
+                    and fixes these issues for you. We conduct on-page SEO to
+                    help bolster your online presence, amplify your lead
+                    generation and help boost sales.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>WordPress Web Design</h5>
+                  <h5>Local SEO</h5>
                   <p>
-                    Our web design company in Ancaster uses WordPress for all
-                    website projects that require a content management system
-                    (CMS). Since WordPress powers nearly 50% of the web, it's a
-                    clear winner when it comes to choosing a CMS. We choose
-                    WordPress as it's easy to develop with and easy for our
-                    clients to use.
+                    For a more local approach, our Ajax SEO specialists can
+                    leverage the power of local SEO. We help local customers
+                    find your website in local search engine rankings. We do
+                    this by employing on and off page search engine optimization
+                    best practices, to help raise your local website in Google's
+                    rankings.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>E-Commerce Web Design</h5>
+                  <h5>Technical SEO</h5>
                   <p>
-                    In the post-covid world, it's especially important as a
-                    product or subscription-based business to have an e-commerce
-                    website. With the help of our Ancaster web design agency,
-                    your e-commerce website can help sell your products online,
-                    expanding your reach drastically. Leave it to our Ancaster
-                    web designers to help design and develop a beautiful, modern
-                    online store.
+                    If you find out about some technical mishaps on your
+                    website, our Ajax SEO experts are here to help. We'll dive
+                    into your website by conducting a site-wide audit to check
+                    for problems related to website speed, content and
+                    optimization. Our team will fix these issues, helping your
+                    website get back on the right track.
                   </p>
                 </Col>
               </Row>
@@ -338,7 +333,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Ancaster Web Design Experts Help Today</h3>
+                  <h3>Have Our Ajax SEO Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -356,12 +351,10 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Ancaster</span> Web
-                    Design Agency
+                    Why Choose Infused Agency As Your <span>Ajax</span> SEO
+                    Agency
                   </h2>
-                  <p>
-                    Increase Your Brand's Reputation With Our Web Design Experts
-                  </p>
+                  <p>Increase Your Website's Rankings With Our SEO Experts</p>
                 </Col>
               </Row>
               <Row>
@@ -374,13 +367,13 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Ancaster-seo/">
+                    <Link href="/niagara-seo-company">
                       search engine optimization (SEO)
                     </Link>{" "}
-                    and {""}
+                    and{" "}
                     <Link href="/wordpress-developer-niagara">
                       WordPress development
-                    </Link>
+                    </Link>{" "}
                     .
                   </p>
                   <p>
@@ -391,7 +384,7 @@ const SEO = () => {
                     channels.
                   </p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93048.1322853147!2d-80.06672651857882!3d43.2146459810691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c889872f6aa3d%3A0x3accdb9f1bf8d9dc!2sAncaster%2C%20Hamilton%2C%20ON!5e0!3m2!1sen!2sca!4v1709125231676!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92043.9411119778!2d-79.1111699823227!3d43.86881954667419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4e7b441ad15d1%3A0xfb77e101d380bece!2sAjax%2C%20ON!5e0!3m2!1sen!2sca!4v1709336330706!5m2!1sen!2sca"
                     width="600"
                     height="450"
                     allowfullscreen=""
@@ -412,86 +405,73 @@ const SEO = () => {
           <Container>
             <Row className="pd-top-80 pd-btm-60">
               <Col lg="12">
-                <h3>How much does a new website cost?</h3>
+                <h3>What is SEO?</h3>
                 <p>
-                  There's no single answer to this question. It entirely depends
-                  on the needs of the project. Every web design and development
-                  project is unique in it's design, purpose, functionality and
-                  more. In our free consultation sessions we'll ask lots of
-                  questions, assess your needs and then give you a quote based
-                  on our findings.
+                  Search Engine Optimization (SEO) is the process of increasing
+                  your <Link href="/websites">websites</Link> visibility within
+                  Google's search results. If your website is on the first page
+                  of Google with our SEO services versus your website being on
+                  the 10th page, you will get a lot more customers.
                 </p>
-                <h3>How long will it take to get a new website?</h3>
+                <h3>Do I need SEO?</h3>
                 <p>
-                  Typically between 6 and 8 weeks. Keep in mind this completely
-                  depends on the client, though. For example - if we need
-                  content or approval from you and there are potential delays,
-                  this could delay the launch. However if you send over content
-                  / approval for things along the way quickly, the more quick
-                  your website will launch.
+                  Does your business depend on attracting new customers? Then
+                  absolutely you need a Ajax SEO company to help you with SEO
+                  services. It's important that our Ajax SEO experts help your
+                  website rank where your customers are looking - on the first
+                  page of Google.
                 </p>
-                <h3>Do you only create WordPress websites?</h3>
+                <h3>What's important when it comes to SEO?</h3>
                 <p>
-                  No. WordPress is great for a lot of use cases. You can update
-                  your website on your own without needing a developer (we teach
-                  you). There's a rich ecosystem of plugins we utilize to speed
-                  up development. However, sometimes a hand-coded website far
-                  outperforms a WordPress site depending on the situation.
+                  There's about 200 ranking signals that Google evaluates a
+                  website on when it comes to SEO. The top factors here are
+                  domain authority (how old your website's domain is), the
+                  quality SEO content of your website, SEO backlinks going to
+                  your website, technical SEO coding on your site and more. We
+                  will clearly identify the strengths and weaknesses in terms of
+                  SEO that your current website has, and come up with a game
+                  plan to improve.
                 </p>
-                <h3>Do I have to be local to work with you?</h3>
+                <h3>How long does SEO take?</h3>
                 <p>
-                  Nope! We have clients locally but have also served clients all
-                  across the world.
+                  There are many variables and depends on the website. For
+                  example - a brand new website can take upwards to a year to
+                  start seeing any meaningful results. A website that has been
+                  around for a longer amount of time could start seeing movement
+                  within 2-3 months. It all depends on your website's standing
+                  when it comes to SEO.
                 </p>
-                <h3>
-                  Will I be able to update the website when it's finished?
-                </h3>
+                <h3>How do I get on the Google Map Pack?</h3>
                 <p>
-                  If it's a WordPress website, yes. If it's not, our team of
-                  developers can update the website for you.
+                  The Google Map Pack is great for local SEO. This is the area
+                  where when someone searches, local companies pop up with 5
+                  star reviews. If you do local SEO and get in the top 3 of this
+                  map pack, you're golden. The best way to get there is to
+                  optimize your Google My Business profile. We specialize in
+                  doing so and can help you rise up in the local SEO map pack
+                  rankings.
                 </p>
-                <h3>Can you maintain my website for me?</h3>
+                <ul>
+                  <li>Company logo</li>
+                  <li>
+                    Business details - things like product titles, images,
+                    descriptions, pricing, etc.
+                  </li>
+                  <li>and more</li>
+                </ul>
+                <h3>Our Ajax SEO company is ready to help.</h3>
                 <p>
-                  Absolutely. We understand that business owners are busy a lot
-                  of the time. We can take that stress off of you by updating
-                  your website for you.
+                  If you need our Ajax SEO company to help your company rise in
+                  Google with our expert SEO services, click below to get your
+                  free SEO quote.
                 </p>
-                <h3>Will my website be mobile-friendly?</h3>
-                <p>
-                  Of course. Responsive design, aka mobile websites, are a big
-                  part of today's society. We make sure to adhere to that so
-                  your customers have a pleasant experience on your website.
-                </p>
-                <h3>When do I pay?</h3>
-                <p>
-                  Equal payments are made at the start, midway through and at
-                  the end of the project.However we can accomodate with smaller
-                  monthly payments if need be. We accept e-transfer, cash or
-                  credit card payments.
-                </p>
-                <h3>How much input do I have?</h3>
-                <p>
-                  Lots! We work with our clients very closely. We make sure that
-                  based on our conversations, there are no surprises when it
-                  comes to how your website looks or functions.
-                </p>
-                <h3>Do I provide the content for my website?</h3>
-                <p>
-                  Yes. You're the expert of your business so typically it's you
-                  that provides it. If you don't want to or can't, we will
-                  happily write the content at an additional cost.
-                </p>
-                <h3>What about website hosting?</h3>
-                <p>
-                  We have a list of favourites hosting providers that we use.
-                  During our free consultation we can talk about these
-                  providers.
-                </p>
-                <h3>What if I need help after my site is live?</h3>
-                <p>
-                  We're only an email away! Contact us any time and we can help
-                  you with whatever you need.
-                </p>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://calendly.com/infused-agency/project-discovery/"
+                >
+                  <button>Get Free Quote</button>
+                </a>
               </Col>
             </Row>
           </Container>

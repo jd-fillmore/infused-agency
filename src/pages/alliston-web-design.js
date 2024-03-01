@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/ancaster-web-design.webp";
+import website from "../img/alliston-web-design.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -20,21 +20,21 @@ const SEO = () => {
     <>
       <Helmet>
         <title>
-          Ancaster Web Design | Affordable Local Website Development
+          Alliston Web Design | Best Web Design Services In Alliston
         </title>
         <meta
           name="description"
-          content="Elevate your brand with top-notch Ancaster web design services. Affordable, stunning websites that capture attention. Drive growth now!"
+          content="Elevate your brand with top-notch Alliston web design services. Affordable, stunning websites that capture attention. Drive growth now!"
         />
         <link
           rel="canonical"
-          href="https://infused.agency/Ancaster-web-design"
+          href="https://infused.agency/alliston-web-design"
         />
       </Helmet>
       <Nav />
       <InnerHero
-        title="Ancaster Web Design Company"
-        description="Infused Agency is an award-winning web design company that serves Ancaster. We help businesses bring in more revenue through their websites."
+        title="Alliston Web Design Company"
+        description="Infused Agency is an award-winning web design company that serves Alliston. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -45,13 +45,13 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Ancaster web design company, Ancaster web design agency, Ancaster web design services"
+                  alt="Alliston web design company, Alliston web design agency, Alliston web design services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Ancaster web design services</strong> that our{" "}
-                  <strong>Ancaster web design company</strong> provides are
+                  The <strong>Alliston web design services</strong> that our{" "}
+                  <strong>Alliston web design company</strong> provides are
                   pretty impeccable. We consistently provide great web design
                   services to our clients with pretty awesome results. There are
                   a lot of benefits as to why web design services are so
@@ -60,7 +60,7 @@ const SEO = () => {
                 <ul>
                   <li>Helps bolster company branding.</li>
                   <li>
-                    Improves your Ancaster company's reputation and
+                    Improves your Alliston company's reputation and
                     trustworthiness.
                   </li>
                   <li>Leads to more leads and company revenue.</li>
@@ -78,7 +78,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Ancaster Web Design Clients <span>Get Results</span>
+                    Our Alliston Web Design Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -95,7 +95,7 @@ const SEO = () => {
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
                       their company if you are thinking of needing their
-                      Ancaster web design services."
+                      Alliston web design services."
                     </p>
                     <ul>
                       <li>
@@ -138,7 +138,7 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their web design services, my Ancaster company
+                      By using their web design services, my Alliston company
                       went from having no website at all to one that brings in
                       new customers every week."
                     </p>
@@ -189,7 +189,7 @@ const SEO = () => {
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
                       on my new web site. If you ever need a web design for your
-                      Ancaster business I do recommend Infused Agency for their
+                      Alliston business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -236,7 +236,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with top Ancaster web design
+                    Ready to grow your business with top Alliston web design
                     services?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
@@ -256,7 +256,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Ancaster <span>Web Design</span> Services
+                    Alliston <span>Web Design</span> Services
                   </h2>
                   <p>Websites That Help Your Company Bring In More Customers</p>
                 </Col>
@@ -267,10 +267,10 @@ const SEO = () => {
                   <p>
                     We make sure that your websites are indexed and show up for
                     certain keywords in Google. Search engine optimization is a
-                    key part of our Ancaster web design services to help make
+                    key part of our Alliston web design services to help make
                     sure that your customers can find your website. When using
-                    our Ancaster web design experts and{" "}
-                    <Link href="/Ancaster-seo/">Ancaster SEO services</Link>,
+                    our Alliston web design experts and{" "}
+                    <Link href="/alliston-seo/">Alliston SEO services</Link>,
                     your website should help bring in new company revenue and
                     customers.
                   </p>
@@ -278,7 +278,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Web Design &amp; Development</h5>
                   <p>
-                    Our Ancaster web designers create websites that bolster your
+                    Our Alliston web designers create websites that bolster your
                     brand's reputation, which help bring in more customers. Our
                     websites not only attract customers, our award-winning web
                     designs take into account search engine optimization and
@@ -289,10 +289,10 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Custom Web Design</h5>
                   <p>
-                    Every client website we design is custom. Our Ancaster web
+                    Every client website we design is custom. Our Alliston web
                     designers will create a modern website design for you,
                     taking into consideration your business goals. We make sure
-                    to plug in your vision that factors into our Ancaster web
+                    to plug in your vision that factors into our Alliston web
                     design experts’ design process.{" "}
                   </p>
                 </Col>
@@ -301,9 +301,9 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Responsive Web Design</h5>
                   <p>
-                    We conduct responsive web design as part of our Ancaster web
+                    We conduct responsive web design as part of our Alliston web
                     design services to help your users navigate your website on
-                    any device. Our Ancaster web design experts specifically
+                    any device. Our Alliston web design experts specifically
                     develop with custom code to allow your website to look great
                     on any device or computer.
                   </p>
@@ -311,7 +311,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>WordPress Web Design</h5>
                   <p>
-                    Our web design company in Ancaster uses WordPress for all
+                    Our web design company in Alliston uses WordPress for all
                     website projects that require a content management system
                     (CMS). Since WordPress powers nearly 50% of the web, it's a
                     clear winner when it comes to choosing a CMS. We choose
@@ -324,9 +324,9 @@ const SEO = () => {
                   <p>
                     In the post-covid world, it's especially important as a
                     product or subscription-based business to have an e-commerce
-                    website. With the help of our Ancaster web design agency,
+                    website. With the help of our Alliston web design agency,
                     your e-commerce website can help sell your products online,
-                    expanding your reach drastically. Leave it to our Ancaster
+                    expanding your reach drastically. Leave it to our Alliston
                     web designers to help design and develop a beautiful, modern
                     online store.
                   </p>
@@ -338,7 +338,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Ancaster Web Design Experts Help Today</h3>
+                  <h3>Have Our Alliston Web Design Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -356,7 +356,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Ancaster</span> Web
+                    Why Choose Infused Agency As Your <span>Alliston</span> Web
                     Design Agency
                   </h2>
                   <p>
@@ -374,7 +374,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Ancaster-seo/">
+                    <Link href="/alliston-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}
@@ -391,7 +391,7 @@ const SEO = () => {
                     channels.
                   </p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93048.1322853147!2d-80.06672651857882!3d43.2146459810691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c889872f6aa3d%3A0x3accdb9f1bf8d9dc!2sAncaster%2C%20Hamilton%2C%20ON!5e0!3m2!1sen!2sca!4v1709125231676!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147543.67621139876!2d-79.9698791966394!3d44.14644732503007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aee959752d931%3A0xfc15dcf9cd95e410!2sAlliston%2C%20New%20Tecumseth%2C%20ON!5e0!3m2!1sen!2sca!4v1709336720106!5m2!1sen!2sca"
                     width="600"
                     height="450"
                     allowfullscreen=""
