@@ -303,8 +303,15 @@ const Home = () => {
                 </h2>
               </div>
             </div>
-            <div className="row text-center">
-              <div className="col-lg-12">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="card">
+                  <Link href="/website-speed-seo-impact">
+                    <h3>How much does website speed affect SEO?</h3>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-6">
                 <div className="card">
                   <Link href="/website-effectiveness-customer-attraction">
                     <h3>
