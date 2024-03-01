@@ -89,8 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Stoney
-                      Creek SEO services."
+                      their company if you are thinking of needing their Dundas
+                      SEO services."
                     </p>
                     <ul>
                       <li>
@@ -183,9 +183,9 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your Stoney
-                      Creek business I do recommend Infused Agency for their
-                      services. JD keep up the great work. Thank you."
+                      on my new web site. If you ever need a SEO for your Dundas
+                      business I do recommend Infused Agency for their services.
+                      JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -360,8 +360,8 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Stoney
-                    Creek businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Dundas
+                    businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing

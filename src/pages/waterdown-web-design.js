@@ -94,8 +94,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Stoney
-                      Creek web design services."
+                      their company if you are thinking of needing their
+                      Waterdown web design services."
                     </p>
                     <ul>
                       <li>
@@ -367,8 +367,8 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Stoney
-                    Creek businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Waterdown
+                    businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing

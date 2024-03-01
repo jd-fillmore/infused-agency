@@ -367,8 +367,8 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Stoney
-                    Creek businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Ancaster
+                    businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing
