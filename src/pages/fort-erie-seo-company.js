@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -19,19 +19,17 @@ import About from "../../components/Home/About/about";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Fort Erie SEO Company | Leading SEO Services - Infused Agency
-        </title>
+      <Head>
+        <title>Fort Erie SEO | Best SEO Services in Fort Erie ON</title>
         <meta
           name="description"
-          content="Explore the excellence of Infused Agency, recognized as the top SEO company in Fort Erie. We deliver impactful SEO services, increasing leads and enhancing online visibility."
+          content="xplore the power of Fort Erie SEO to elevate your website's visibility. Proven tactics for higher rankings and increased traffic. Unleash success today!"
         />
         <link
           rel="canonical"
           href="https://infused.agency/fort-erie-seo-company"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Fort Erie SEO Company"

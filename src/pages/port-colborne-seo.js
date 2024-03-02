@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
@@ -19,14 +20,14 @@ import About from "../../components/Home/About/about";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>Port Colborne SEO Firm | Premier SEO Solutions - Infused Agency</title>
+      <Head>
+        <title>Port Colborne SEO | Best SEO Services in Port Colborne ON</title>
         <meta
           name="description"
-          content="Top SEO Services in Port Colborne. We provide quantifiable results for our clients with our SEO services, generating increased leads for your business."
+          content="Elevate your business with effective Port Colborne SEO. Boost visibility, attract customers, and dominate search results. Discover the path to online triumph!"
         />
         <link rel="canonical" href="https://infused.agency/port-colborne-seo" />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Port Colborne SEO Services"
@@ -46,19 +47,24 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The SEO solutions provided by our Port Colborne-based company are exceptionally effective. We
-                  consistently deliver outstanding SEO services to our clients, yielding remarkable results. There are
-                  several advantages to highlight the importance of SEO for local businesses:
+                  The SEO solutions provided by our Port Colborne-based company
+                  are exceptionally effective. We consistently deliver
+                  outstanding SEO services to our clients, yielding remarkable
+                  results. There are several advantages to highlight the
+                  importance of SEO for local businesses:
                 </p>
                 <ul>
                   <li>Attract more customers through organic search.</li>
-                  <li>Create a trustworthy experience for potential customers.</li>
+                  <li>
+                    Create a trustworthy experience for potential customers.
+                  </li>
                   <li>Improve awareness of your Port Colborne brand.</li>
                   <li>Provide trackable outcomes.</li>
                 </ul>
                 <p>
-                  Utilizing SEO services from our company and achieving a top-ranking on Google is a great strategy to
-                  significantly increase your company's revenue."
+                  Utilizing SEO services from our company and achieving a
+                  top-ranking on Google is a great strategy to significantly
+                  increase your company's revenue."
                 </p>
               </Col>
             </Row>
@@ -75,11 +81,17 @@ const SEO = () => {
               <Row>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={treeImg} alt="treereports" />
+                    <Image
+                      className="img-fluid"
+                      src={treeImg}
+                      alt="treereports"
+                    />
                     <h4>TreeReports</h4>
                     <p>
-                      "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
-                      highly recommend their company if you are thinking of needing their Port Colborne SEO services."
+                      "Fantastic experience from start to end. Infused Agency is
+                      organized, thorough and professional. I highly recommend
+                      their company if you are thinking of needing their Port
+                      Colborne SEO services."
                     </p>
                     <ul>
                       <li>
@@ -94,7 +106,8 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>1,500% increase</span> in Google rankings for multiple keywords
+                          <span>1,500% increase</span> in Google rankings for
+                          multiple keywords
                         </strong>
                       </li>
                     </ul>
@@ -120,8 +133,10 @@ const SEO = () => {
                     <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                     <h4>KD Flowers</h4>
                     <p>
-                      "Infused Agency drastically improved my online presence. By using their SEO services, my Port
-                      Colborne company went from not ranking at all to the first page of Google for tons of keywords."
+                      "Infused Agency drastically improved my online presence.
+                      By using their SEO services, my Port Colborne company went
+                      from not ranking at all to the first page of Google for
+                      tons of keywords."
                     </p>
                     <ul>
                       <li>
@@ -131,12 +146,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>20,000% increase</span> in new leads in the first 6 months
+                          <span>20,000% increase</span> in new leads in the
+                          first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>5,800 new people</span> discovering website per month
+                          <span>5,800 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -159,12 +176,17 @@ const SEO = () => {
                 </Col>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
+                    <Image
+                      className="img-fluid"
+                      src={cassImg}
+                      alt="Cass-A-Bella Construction"
+                    />
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
-                      SEO for your Port Colborne business I do recommend Infused Agency for their services. JD keep up
-                      the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with the SEO work
+                      on my new web site. If you ever need a SEO for your Port
+                      Colborne business I do recommend Infused Agency for their
+                      services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -174,12 +196,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>13,000% increase</span> in new leads in first 6 months
+                          <span>13,000% increase</span> in new leads in first 6
+                          months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>2,500 new people</span> discovering website per month
+                          <span>2,500 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -207,11 +231,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Unlock Business Growth with Premier Port Colborne SEO Services</h3>
+                  <h3>
+                    Unlock Business Growth with Premier Port Colborne SEO
+                    Services
+                  </h3>
                   <p>
-                    Take the first step toward success by clicking the button below to receive your complimentary quote.
+                    Take the first step toward success by clicking the button
+                    below to receive your complimentary quote.
                   </p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -223,39 +255,50 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Elevate Your Presence with Port Colborne <span>SEO</span> Services
+                    Elevate Your Presence with Port Colborne <span>SEO</span>{" "}
+                    Services
                   </h2>
-                  <p>Strategic Solutions That Attract Qualified Leads and Skyrocket Your Sales</p>
+                  <p>
+                    Strategic Solutions That Attract Qualified Leads and
+                    Skyrocket Your Sales
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <h5>Strategic Keyword Research &amp; Planning</h5>
                   <p>
-                    At Infused Agency, our Port Colborne SEO company specializes in meticulous keyword research, honing
-                    in on precisely what your audience is actively searching for. We consider keywords as the
-                    cornerstone of your SEO initiative. Going beyond the basics, we delve into the technical aspects to
+                    At Infused Agency, our Port Colborne SEO company specializes
+                    in meticulous keyword research, honing in on precisely what
+                    your audience is actively searching for. We consider
+                    keywords as the cornerstone of your SEO initiative. Going
+                    beyond the basics, we delve into the technical aspects to
                     enhance the overall value delivered to your customers.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Strategic Link Building</h5>
                   <p>
-                    Our Port Colborne SEO experts at Infused Agency employ targeted efforts to establish valuable links
-                    leading to your website, elevating your site's search rankings. By securing backlinks from other
-                    reputable sites, you gain authority and visibility for relevant keyword searches. Additionally, we
-                    excel at filtering out potentially spammy backlinks, ensuring a clean and reputable online presence
-                    for your business.
+                    Our Port Colborne SEO experts at Infused Agency employ
+                    targeted efforts to establish valuable links leading to your
+                    website, elevating your site's search rankings. By securing
+                    backlinks from other reputable sites, you gain authority and
+                    visibility for relevant keyword searches. Additionally, we
+                    excel at filtering out potentially spammy backlinks,
+                    ensuring a clean and reputable online presence for your
+                    business.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Strategic Content Creation</h5>
                   <p>
-                    Within our comprehensive Port Colborne SEO services, a team of highly skilled marketers, including
-                    proficient content writers at Infused, is dedicated to delivering excellence. Leverage our content
-                    writing expertise to craft compelling content that draws in highly qualified leads. We adeptly blend
-                    targeted keywords with your brand voice, ensuring a harmonious mix that attracts more leads to your
-                    website.
+                    Within our comprehensive Port Colborne SEO services, a team
+                    of highly skilled marketers, including proficient content
+                    writers at Infused, is dedicated to delivering excellence.
+                    Leverage our content writing expertise to craft compelling
+                    content that draws in highly qualified leads. We adeptly
+                    blend targeted keywords with your brand voice, ensuring a
+                    harmonious mix that attracts more leads to your website.
                   </p>
                 </Col>
               </Row>
@@ -263,28 +306,37 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Strategic On-Page SEO</h5>
                   <p>
-                    Ensuring meticulous on-page optimization is crucial, as it signals to Google the quality of user
-                    experience your site provides. Our Port Colborne SEO agency diligently identifies and addresses
-                    these issues on your behalf. Through our expert on-page SEO efforts, we aim to strengthen your
-                    online presence, enhance lead generation, and ultimately drive increased sales for your business.
+                    Ensuring meticulous on-page optimization is crucial, as it
+                    signals to Google the quality of user experience your site
+                    provides. Our Port Colborne SEO agency diligently identifies
+                    and addresses these issues on your behalf. Through our
+                    expert on-page SEO efforts, we aim to strengthen your online
+                    presence, enhance lead generation, and ultimately drive
+                    increased sales for your business.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Strategic Local SEO</h5>
                   <p>
-                    For a localized strategy, our Port Colborne SEO specialists harness the potential of local SEO to
-                    ensure your business is easily discoverable by local customers. Utilizing both on-page and off-page
-                    search engine optimization best practices, we work to elevate your local website in Google's
-                    rankings, making it more prominent in local search engine results.
+                    For a localized strategy, our Port Colborne SEO specialists
+                    harness the potential of local SEO to ensure your business
+                    is easily discoverable by local customers. Utilizing both
+                    on-page and off-page search engine optimization best
+                    practices, we work to elevate your local website in Google's
+                    rankings, making it more prominent in local search engine
+                    results.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Technical SEO</h5>
                   <p>
-                    Should you discover technical issues on your website, our Port Colborne SEO experts stand ready to
-                    assist. Conducting a comprehensive site-wide audit, we scrutinize aspects such as website speed,
-                    content, and optimization. Our dedicated team swiftly addresses and rectifies these issues, ensuring
-                    your website is optimized for peak performance and on the path to sustained success.
+                    Should you discover technical issues on your website, our
+                    Port Colborne SEO experts stand ready to assist. Conducting
+                    a comprehensive site-wide audit, we scrutinize aspects such
+                    as website speed, content, and optimization. Our dedicated
+                    team swiftly addresses and rectifies these issues, ensuring
+                    your website is optimized for peak performance and on the
+                    path to sustained success.
                   </p>
                 </Col>
               </Row>
@@ -294,11 +346,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Empower Your Business with Assistance from Our Port Colborne SEO Experts</h3>
+                  <h3>
+                    Empower Your Business with Assistance from Our Port Colborne
+                    SEO Experts
+                  </h3>
                   <p>
-                    Take the first step toward success by clicking the button below to receive your complimentary quote.
+                    Take the first step toward success by clicking the button
+                    below to receive your complimentary quote.
                   </p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -310,28 +370,48 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Elevate Your Success with Infused Agency, Your Premier <span>Port Colborne</span> SEO Partner
+                    Elevate Your Success with Infused Agency, Your Premier{" "}
+                    <span>Port Colborne</span> SEO Partner
                   </h2>
-                  <p>Boost Your Website's Rankings with the Expertise of Our SEO Professionals</p>
+                  <p>
+                    Boost Your Website's Rankings with the Expertise of Our SEO
+                    Professionals
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Port Colborne businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Port
+                    Colborne businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Port Colborne">digital marketing</Link>, search engine optimization
-                    (SEO) , <Link href="/wordpress-developer-Port Colborne">WordPress development</Link> and{" "}
-                    <Link href="/ecommerce-web-design-Port Colborne">e-commerce website development</Link>.
+                    <Link href="/digital-marketing-Port Colborne">
+                      digital marketing
+                    </Link>
+                    , search engine optimization (SEO) ,{" "}
+                    <Link href="/wordpress-developer-Port Colborne">
+                      WordPress development
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="/ecommerce-web-design-Port Colborne">
+                      e-commerce website development
+                    </Link>
+                    .
                   </p>
                   <p>
-                    We've been able to help small, local businesses all the way to large enterprise companies with
-                    increasing traffic to their websites, build modern websites for them and ultimately bringing them
-                    more revenue through digital channels.
+                    We've been able to help small, local businesses all the way
+                    to large enterprise companies with increasing traffic to
+                    their websites, build modern websites for them and
+                    ultimately bringing them more revenue through digital
+                    channels.
                   </p>
                 </Col>
                 <Col lg="6">
-                  <Image className="img-fluid" src={about} alt="business needs" />
+                  <Image
+                    className="img-fluid"
+                    src={about}
+                    alt="business needs"
+                  />
                 </Col>
               </Row>
             </Container>
@@ -341,52 +421,69 @@ const SEO = () => {
               <Col lg="12">
                 <h3>What is SEO?</h3>
                 <p>
-                  Search Engine Optimization (SEO) is the process of increasing your{" "}
-                  <Link href="/websites">websites</Link> visibility within Google's search results. If your website is
-                  on the first page of Google with our SEO services versus your website being on the 10th page, you will
-                  get a lot more customers.
+                  Search Engine Optimization (SEO) is the process of increasing
+                  your <Link href="/websites">websites</Link> visibility within
+                  Google's search results. If your website is on the first page
+                  of Google with our SEO services versus your website being on
+                  the 10th page, you will get a lot more customers.
                 </p>
                 <h3>Do I need SEO?</h3>
                 <p>
-                  Does your business depend on attracting new customers? Then absolutely you need a Port Colborne SEO
-                  company to help you with SEO services. It's important that our Port Colborne SEO experts help your
-                  website rank where your customers are looking - on the first page of Google.
+                  Does your business depend on attracting new customers? Then
+                  absolutely you need a Port Colborne SEO company to help you
+                  with SEO services. It's important that our Port Colborne SEO
+                  experts help your website rank where your customers are
+                  looking - on the first page of Google.
                 </p>
                 <h3>What's important when it comes to SEO?</h3>
                 <p>
-                  There's about 200 ranking signals that Google evaluates a website on when it comes to SEO. The top
-                  factors here are domain authority (how old your website's domain is), the quality SEO content of your
-                  website, SEO backlinks going to your website, technical SEO coding on your site and more. We will
-                  clearly identify the strengths and weaknesses in terms of SEO that your current website has, and come
-                  up with a game plan to improve.
+                  There's about 200 ranking signals that Google evaluates a
+                  website on when it comes to SEO. The top factors here are
+                  domain authority (how old your website's domain is), the
+                  quality SEO content of your website, SEO backlinks going to
+                  your website, technical SEO coding on your site and more. We
+                  will clearly identify the strengths and weaknesses in terms of
+                  SEO that your current website has, and come up with a game
+                  plan to improve.
                 </p>
                 <h3>How long does SEO take?</h3>
                 <p>
-                  There are many variables and depends on the website. For example - a brand new website can take
-                  upwards to a year to start seeing any meaningful results. A website that has been around for a longer
-                  amount of time could start seeing movement within 2-3 months. It all depends on your website's
-                  standing when it comes to SEO.
+                  There are many variables and depends on the website. For
+                  example - a brand new website can take upwards to a year to
+                  start seeing any meaningful results. A website that has been
+                  around for a longer amount of time could start seeing movement
+                  within 2-3 months. It all depends on your website's standing
+                  when it comes to SEO.
                 </p>
                 <h3>How do I get on the Google Map Pack?</h3>
                 <p>
-                  The Google Map Pack is great for local SEO. This is the area where when someone searches, local
-                  companies pop up with 5 star reviews. If you do local SEO and get in the top 3 of this map pack,
-                  you're golden. The best way to get there is to optimize your Google My Business profile. We specialize
-                  in doing so and can help you rise up in the local SEO map pack rankings.
+                  The Google Map Pack is great for local SEO. This is the area
+                  where when someone searches, local companies pop up with 5
+                  star reviews. If you do local SEO and get in the top 3 of this
+                  map pack, you're golden. The best way to get there is to
+                  optimize your Google My Business profile. We specialize in
+                  doing so and can help you rise up in the local SEO map pack
+                  rankings.
                 </p>
                 <ul>
                   <li>E-commerce company logo</li>
                   <li>
-                    All e-commerce product details - things like product titles, images, descriptions, pricing, etc.
+                    All e-commerce product details - things like product titles,
+                    images, descriptions, pricing, etc.
                   </li>
                   <li>Any shipping charges you'd like customers to pay.</li>
                 </ul>
                 <h3>Our Port Colborne SEO company is ready to help.</h3>
                 <p>
-                  If you need our Port Colborne SEO company to help your company rise in Google with our expert SEO
-                  services, click below to get your free SEO quote.
+                  If you need our Port Colborne SEO company to help your company
+                  rise in Google with our expert SEO services, click below to
+                  get your free SEO quote.
                 </p>
-                <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://calendly.com/infused-agency/project-discovery/"
+                >
                   <button>Get Free Quote</button>
                 </a>
               </Col>
@@ -396,7 +493,9 @@ const SEO = () => {
             city="Port Colborne"
             intro={[
               "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Port_Colborne">Port Colborne</a>,
+              <a href="https://en.wikipedia.org/wiki/Port_Colborne">
+                Port Colborne
+              </a>,
               " (the end of the Welland Canal, which in 2016 had a populace 18,306) is a city in Ontario, Canada. It is situated on Lake Erie, at the southern finish of the Welland Canal, in the Niagara Region of Southern Ontario.",
             ]}
             area="121"
