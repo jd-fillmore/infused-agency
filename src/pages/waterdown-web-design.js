@@ -19,9 +19,9 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Head>
+      <Helmet>
         <title>
-          Waterdown Web Design | Best Web Design Company in Waterdown
+          Waterdown Web Design | Affordable Local Website Development
         </title>
         <meta
           name="description"
@@ -31,7 +31,7 @@ const SEO = () => {
           rel="canonical"
           href="https://infused.agency/waterdown-web-design"
         />
-      </Head>
+      </Helmet>
       <Nav />
       <InnerHero
         title="Waterdown Web Design Company"
