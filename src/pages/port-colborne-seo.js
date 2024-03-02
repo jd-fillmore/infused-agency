@@ -47,24 +47,25 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The SEO solutions provided by our Port Colborne-based company
-                  are exceptionally effective. We consistently deliver
-                  outstanding SEO services to our clients, yielding remarkable
-                  results. There are several advantages to highlight the
-                  importance of SEO for local businesses:
+                  The <strong>Port Colborne SEO services</strong> that our{" "}
+                  <strong>Port Colborne SEO company</strong> provides are pretty
+                  impeccable. We consistently provide great SEO services to our
+                  clients with pretty awesome results. There are a lot of
+                  benefits as to why SEO services are so important for any local
+                  company:
                 </p>
                 <ul>
-                  <li>Attract more customers through organic search.</li>
+                  <li>Bring in more customers through organic search.</li>
                   <li>
-                    Create a trustworthy experience for potential customers.
+                    Creates a trustworthy experience for potential customers.
                   </li>
-                  <li>Improve awareness of your Port Colborne brand.</li>
-                  <li>Provide trackable outcomes.</li>
+                  <li>Improves your Port Colborne brand's awareness.</li>
+                  <li>It's trackable.</li>
                 </ul>
                 <p>
-                  Utilizing SEO services from our company and achieving a
-                  top-ranking on Google is a great strategy to significantly
-                  increase your company's revenue."
+                  When you utilize SEO services from our company and end up
+                  ranking on the first of Google, it's a great way to increase
+                  your company's revenue.
                 </p>
               </Col>
             </Row>
@@ -74,7 +75,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Port Colborne SEO Clients See <span>Real Results</span>
+                    Our Port Colborne SEO Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -90,8 +91,7 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Port
-                      Colborne SEO services."
+                      their company if you are thinking of needing their ces."
                     </p>
                     <ul>
                       <li>
@@ -232,13 +232,10 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Unlock Business Growth with Premier Port Colborne SEO
-                    Services
+                    Ready to grow your business with top Port Colborne SEO
+                    services?
                   </h3>
-                  <p>
-                    Take the first step toward success by clicking the button
-                    below to receive your complimentary quote.
-                  </p>
+                  <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -255,88 +252,80 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Elevate Your Presence with Port Colborne <span>SEO</span>{" "}
-                    Services
+                    Port Colborne <span>SEO</span> Services
                   </h2>
                   <p>
-                    Strategic Solutions That Attract Qualified Leads and
-                    Skyrocket Your Sales
+                    Solutions That Bring In Qualified Leads And Boost Your Sales
                   </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Strategic Keyword Research &amp; Planning</h5>
+                  <h5>Keyword Research &amp; Strategy</h5>
                   <p>
-                    At Infused Agency, our Port Colborne SEO company specializes
-                    in meticulous keyword research, honing in on precisely what
-                    your audience is actively searching for. We consider
-                    keywords as the cornerstone of your SEO initiative. Going
-                    beyond the basics, we delve into the technical aspects to
-                    enhance the overall value delivered to your customers.
+                    Infused Agency's SEO company in Port Colborne conducts
+                    specific keyword research that covers specifically what your
+                    users are searching for. We look at keywords as the main
+                    foundation to your SEO project. Beyond this, we dive into
+                    the technicalities to further deliver value to your
+                    customers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Strategic Link Building</h5>
+                  <h5>Link Building</h5>
                   <p>
-                    Our Port Colborne SEO experts at Infused Agency employ
-                    targeted efforts to establish valuable links leading to your
-                    website, elevating your site's search rankings. By securing
-                    backlinks from other reputable sites, you gain authority and
-                    visibility for relevant keyword searches. Additionally, we
-                    excel at filtering out potentially spammy backlinks,
-                    ensuring a clean and reputable online presence for your
-                    business.
+                    Off of your website, our Port Colborne SEO exports utilize
+                    efforts to build links to your website, to help your site
+                    rise in search rankings. When other websites link back to
+                    your own, you can be seen as authoratative and rank for
+                    relevant keyword searche. We can also help filter out
+                    certain backlinks that Google may refer to as spammy.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Strategic Content Creation</h5>
+                  <h5>Content Writing</h5>
                   <p>
-                    Within our comprehensive Port Colborne SEO services, a team
-                    of highly skilled marketers, including proficient content
-                    writers at Infused, is dedicated to delivering excellence.
-                    Leverage our content writing expertise to craft compelling
-                    content that draws in highly qualified leads. We adeptly
-                    blend targeted keywords with your brand voice, ensuring a
-                    harmonious mix that attracts more leads to your website.
+                    Our Port Colborne SEO services are conducted by a highly
+                    trained group of marketers, which includes content writers.
+                    At Infused, you can take advantage of our content writing
+                    skills to create content that attracts highly qualified
+                    leads. We help mix keywords and your brand voice together,
+                    to help bring in more leads to your website.
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
-                  <h5>Strategic On-Page SEO</h5>
+                  <h5>On-Page SEO</h5>
                   <p>
-                    Ensuring meticulous on-page optimization is crucial, as it
-                    signals to Google the quality of user experience your site
-                    provides. Our Port Colborne SEO agency diligently identifies
-                    and addresses these issues on your behalf. Through our
-                    expert on-page SEO efforts, we aim to strengthen your online
-                    presence, enhance lead generation, and ultimately drive
-                    increased sales for your business.
+                    It's very important that your on-page work is done well, as
+                    it can signal to Google that you may give your users a poor
+                    user experience. This is why our Port Colborne SEO agency
+                    looks for and fixes these issues for you. We conduct on-page
+                    SEO to help bolster your online presence, amplify your lead
+                    generation and help boost sales.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Strategic Local SEO</h5>
+                  <h5>Local SEO</h5>
                   <p>
-                    For a localized strategy, our Port Colborne SEO specialists
-                    harness the potential of local SEO to ensure your business
-                    is easily discoverable by local customers. Utilizing both
-                    on-page and off-page search engine optimization best
-                    practices, we work to elevate your local website in Google's
-                    rankings, making it more prominent in local search engine
-                    results.
+                    For a more local approach, our Port Colborne SEO specialists
+                    can leverage the power of local SEO. We help local customers
+                    find your website in local search engine rankings. We do
+                    this by employing on and off page search engine optimization
+                    best practices, to help raise your local website in Google's
+                    rankings.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Technical SEO</h5>
                   <p>
-                    Should you discover technical issues on your website, our
-                    Port Colborne SEO experts stand ready to assist. Conducting
-                    a comprehensive site-wide audit, we scrutinize aspects such
-                    as website speed, content, and optimization. Our dedicated
-                    team swiftly addresses and rectifies these issues, ensuring
-                    your website is optimized for peak performance and on the
-                    path to sustained success.
+                    If you find out about some technical mishaps on your
+                    website, our Port Colborne SEO experts are here to help.
+                    We'll dive into your website by conducting a site-wide audit
+                    to check for problems related to website speed, content and
+                    optimization. Our team will fix these issues, helping your
+                    website get back on the right track.
                   </p>
                 </Col>
               </Row>
@@ -346,14 +335,8 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>
-                    Empower Your Business with Assistance from Our Port Colborne
-                    SEO Experts
-                  </h3>
-                  <p>
-                    Take the first step toward success by clicking the button
-                    below to receive your complimentary quote.
-                  </p>
+                  <h3>Have Our Port Colborne SEO Experts Help Today</h3>
+                  <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -370,13 +353,10 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Elevate Your Success with Infused Agency, Your Premier{" "}
-                    <span>Port Colborne</span> SEO Partner
+                    Why Choose Infused Agency As Your <span>Port Colborne</span>{" "}
+                    SEO Agency
                   </h2>
-                  <p>
-                    Boost Your Website's Rankings with the Expertise of Our SEO
-                    Professionals
-                  </p>
+                  <p>Increase Your Website's Rankings With Our SEO Experts</p>
                 </Col>
               </Row>
               <Row>
@@ -385,17 +365,17 @@ const SEO = () => {
                     Since 2013 we've been able to help countless local Port
                     Colborne businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Port Colborne">
+                    <Link href="/digital-marketing-niagara">
                       digital marketing
                     </Link>
-                    , search engine optimization (SEO) ,{" "}
-                    <Link href="/wordpress-developer-Port Colborne">
-                      WordPress development
+                    ,{" "}
+                    <Link href="/niagara-seo-company">
+                      search engine optimization (SEO)
                     </Link>{" "}
                     and{" "}
-                    <Link href="/ecommerce-web-design-Port Colborne">
-                      e-commerce website development
-                    </Link>
+                    <Link href="/wordpress-developer-niagara">
+                      WordPress development
+                    </Link>{" "}
                     .
                   </p>
                   <p>
@@ -405,6 +385,14 @@ const SEO = () => {
                     ultimately bringing them more revenue through digital
                     channels.
                   </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.37148726318!2d-79.36307399436933!3d42.82851082495693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1709346195143!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </Col>
                 <Col lg="6">
                   <Image
@@ -466,12 +454,12 @@ const SEO = () => {
                   rankings.
                 </p>
                 <ul>
-                  <li>E-commerce company logo</li>
+                  <li>Company logo</li>
                   <li>
-                    All e-commerce product details - things like product titles,
-                    images, descriptions, pricing, etc.
+                    Business details - things like product titles, images,
+                    descriptions, pricing, etc.
                   </li>
-                  <li>Any shipping charges you'd like customers to pay.</li>
+                  <li>and more</li>
                 </ul>
                 <h3>Our Port Colborne SEO company is ready to help.</h3>
                 <p>
@@ -489,40 +477,6 @@ const SEO = () => {
               </Col>
             </Row>
           </Container>
-          <About
-            city="Port Colborne"
-            intro={[
-              "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Port_Colborne">
-                Port Colborne
-              </a>,
-              " (the end of the Welland Canal, which in 2016 had a populace 18,306) is a city in Ontario, Canada. It is situated on Lake Erie, at the southern finish of the Welland Canal, in the Niagara Region of Southern Ontario.",
-            ]}
-            area="121"
-            population="18,603"
-            topSights={[
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4515404,4524133,4597339,4649665,4722900,4723331,4733969,4738545,4757164,4758493,4762561,4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=/m/01kzjk&dest_state_type=sattd&dest_src=ts&q=things+to+do+in+Port Colborne+ontario&poi_mid=/g/1thxr8jc&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Welland Canal in Port Colborne
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzz6&dest_state_type=sattd&dest_src=ts&q=top%20things%20to%20do%20in%20port%20colborne&sa=X&ved=2ahUKEwj-hevkke73AhUMHM0KHRj6BBUQ69EBKAB6BAgIEAc">
-                Nickel Beach in Port Colborne
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzz6&dest_state_type=sattd&dest_src=ts&q=top%20things%20to%20do%20in%20port%20colborne&sa=X&ved=2ahUKEwj-hevkke73AhUMHM0KHRj6BBUQ69EBKAB6BAgIEAc">
-                Friendship Beach in Port Colborne
-              </a>,
-            ]}
-            qOne="Is Port Colborne a nice place to live?"
-            qOneAns="The City of Port Colborne is an incredible spot to live, work and raise a family."
-            qTwo="What is it like to live in Port Colborne?"
-            qTwoAns="Port Colborne truly has a local area feel and this is a direct result of the extraordinary individuals of this city and how curious the midtown is and every one of the little exceptional, privately possessed shops. You will find WAY MORE mother and pop shops than enormous box stores in Port Colborne! There are likewise some truly incredible eating and eateries!"
-            qThree="Where does the friendship trail start in Port Colborne?"
-            qThreeAns="The path starts at Port Colborne Seaway Park and finishes at Historic Port Colborne where it gets together with the Niagara Parks Commission Recreation Trail."
-            qFour="Where is the shrinking mill in Port Colborne?"
-            qFourAns="Nearby us here in Port Colborne, Ontario, is a superb fascination that a great many people have hardly any familiarity with. It is known as the extraordinary contracting plant."
-            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.2721219696!2d-79.33834971138214!3d42.82854362231943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1653053896754!5m2!1sen!2sca"
-          />
         </section>
       </InnerContent>
       <CTA />
