@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
@@ -18,19 +19,17 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Niagara-on-the-Lake Web Design | Affordable Local Website Development
-        </title>
+      <Head>
+        <title>Niagara-on-the-Lake Web Design | Best Web Design in NOTL</title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Niagara-on-the-Lake web design services. Affordable, stunning websites that capture attention. Drive growth now!"
         />
         <link
           rel="canonical"
-          href="https://infused.agency/Niagara-on-the-Lake-web-design"
+          href="https://infused.agency/niagara-on-the-lake-web-design"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Niagara-on-the-Lake Web Design Company"
