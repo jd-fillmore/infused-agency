@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
@@ -18,16 +19,14 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>
-          Waterdown SEO | Affordable Local Search Engine Optimization
-        </title>
+      <Head>
+        <title>Waterdown SEO | Best SEO Services In Waterdown ON</title>
         <meta
           name="description"
           content="Unleash the potential of Waterdown SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
         <link rel="canonical" href="https://infused.agency/waterdown-seo" />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Waterdown SEO Company"
