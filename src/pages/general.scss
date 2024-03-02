@@ -390,3 +390,9 @@ span {
     padding: 60px;
   }
 }
+
+iframe {
+  @include bp-tablet-sm {
+    width: 100%;
+  }
+}
