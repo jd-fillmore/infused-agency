@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
@@ -18,9 +19,9 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>
-          Lockport NY Web Design | Affordable Local Website Development
+          Lockport Web Design | Affordable Local Website Development
         </title>
         <meta
           name="description"
@@ -30,7 +31,7 @@ const SEO = () => {
           rel="canonical"
           href="https://infused.agency/lockport-web-design"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Lockport NY Web Design Company"
