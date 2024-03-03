@@ -19,7 +19,9 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Alliston SEO | Infused Agency</title>
+        <title>
+          Alliston SEO | Affordable Local Search Engine Optimization
+        </title>
         <meta
           name="description"
           content="Unleash the potential of Alliston SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"

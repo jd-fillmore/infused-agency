@@ -19,7 +19,9 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Alliston Web Design | Infused Agency</title>
+        <title>
+          Alliston Web Design | Affordable Local Website Development
+        </title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Alliston web design services. Affordable, stunning websites that capture attention. Drive growth now!"
