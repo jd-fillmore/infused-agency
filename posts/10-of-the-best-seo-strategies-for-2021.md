@@ -87,7 +87,7 @@ You can still rank <a href="https://www.searchenginejournal.com/increase-seo-tra
 
 What is link-building?
 
-In a very small nutshell, lets say we design and build a website for a client, and we place a link at the bottom of their page that says, "web design by <a href="https://infused.agency/websites">Infused</a>."
+In a very small nutshell, lets say we design and build a website for a client, and we place a link at the bottom of their page that says, "web design by <a href="https://infused.agency/web-design">Infused</a>."
 
 And as you can see, with the word Infused, there's a link back to our website.
 

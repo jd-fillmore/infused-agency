@@ -34,7 +34,7 @@ You can use a free tool like <a href="https://tools.pingdom.com/" target="_blank
 
 <h2>2. Understand the best ways to optimize your website</h2>
 
-When we talk about optimizing your web design, a big part of how that ties in is through <a href="https://infused.agency/seo">SEO</a> (search engine optimization). One of the best ways to optimize your website is through making sure that all pages are optimized for search engines. If they're optimized for search engines, you have a much higher chance ranking your website for keywords that people search for in Google. And with an amazing, user-friendly <a href="https://infused.agency/websites/">web design</a>, you'll be able to convert those passively browsing users, into paying customers.
+When we talk about optimizing your web design, a big part of how that ties in is through <a href="https://infused.agency/seo">SEO</a> (search engine optimization). One of the best ways to optimize your website is through making sure that all pages are optimized for search engines. If they're optimized for search engines, you have a much higher chance ranking your website for keywords that people search for in Google. And with an amazing, user-friendly <a href="https://infused.agency/web-design/">web design</a>, you'll be able to convert those passively browsing users, into paying customers.
 
 The biggest part in how to improve your company website through SEO, and getting your web design prepared for Google, lets go over some key checklist items:
 

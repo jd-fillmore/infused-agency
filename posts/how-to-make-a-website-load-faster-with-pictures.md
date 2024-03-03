@@ -5,21 +5,22 @@ slug: /posts/make-website-load-faster-pictures/
 excerpt: In this post, we'll cover how to make a website load faster with
   pictures. Click here to learn more.
 ---
+
 One of the biggest ranking factors in Google is [page speed](https://cognitiveseo.com/blog/22865/page-speed-seo/). The slower your [website](https://infused.agency), the quicker people leave. The faster your website loads, the happier your users are. So if you have a website that has a little or a lot of pictures, I'll tell you in this post how to make a website load faster with pictures.
 
 ## So... How Do I Make My Website With Pictures Load Faster?
 
-It's pretty easy, at least from a [developer's perspective](https://infused.agency/websites). But for the non-devs out there, I'll tell you how.
+It's pretty easy, at least from a [developer's perspective](https://infused.agency/web-design). But for the non-devs out there, I'll tell you how.
 
 ## Decrease File Size of Pictures To Make Website Load Faster
 
 How does file size of a picture affect your website's ability to load faster?
 
-The short of it is, if you have a large picture, it takes longer for your website's browser to render out the photo. The reason for this, is that there's a lot more data to load to the page if your file size is larger. 
+The short of it is, if you have a large picture, it takes longer for your website's browser to render out the photo. The reason for this, is that there's a lot more data to load to the page if your file size is larger.
 
 Ever try opening a super big file on your computer and it takes forever to load? You know how frustrating that is? Well, it's the same for your users.
 
-I can't tell you how many times I've seen websites with pictures that are absolutely massive in file size. We're taking anything about 200kb in size. Some pictures I've seen are well over 1 megabyte, which is a huge no no. 
+I can't tell you how many times I've seen websites with pictures that are absolutely massive in file size. We're taking anything about 200kb in size. Some pictures I've seen are well over 1 megabyte, which is a huge no no.
 
 ## Use Photoshop To Reduce Picture Size To Make Your Website Load Faster
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
@@ -18,14 +19,14 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>Alliston SEO | Best SEO Company in Alliston ON</title>
+      <Head>
+        <title>Alliston SEO | Infused Agency</title>
         <meta
           name="description"
           content="Unleash the potential of Alliston SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
         <link rel="canonical" href="https://infused.agency/alliston-seo" />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Alliston SEO Company"
@@ -45,25 +46,19 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Alliston SEO services</strong> that our{" "}
-                  <strong>Alliston SEO company</strong> provides are pretty
-                  impeccable. We consistently provide great SEO services to our
-                  clients with pretty awesome results. There are a lot of
-                  benefits as to why SEO services are so important for any local
-                  company:
+                  The <strong>Alliston SEO services</strong> that our <strong>Alliston SEO company</strong> provides are
+                  pretty impeccable. We consistently provide great SEO services to our clients with pretty awesome
+                  results. There are a lot of benefits as to why SEO services are so important for any local company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
-                  <li>
-                    Creates a trustworthy experience for potential customers.
-                  </li>
+                  <li>Creates a trustworthy experience for potential customers.</li>
                   <li>Improves your Alliston brand's awareness.</li>
                   <li>It's trackable.</li>
                 </ul>
                 <p>
-                  When you utilize SEO services from our company and end up
-                  ranking on the first of Google, it's a great way to increase
-                  your company's revenue.
+                  When you utilize SEO services from our company and end up ranking on the first of Google, it's a great
+                  way to increase your company's revenue.
                 </p>
               </Col>
             </Row>
@@ -80,17 +75,11 @@ const SEO = () => {
               <Row>
                 <Col lg="4">
                   <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={treeImg}
-                      alt="treereports"
-                    />
+                    <Image className="img-fluid" src={treeImg} alt="treereports" />
                     <h4>TreeReports</h4>
                     <p>
-                      "Fantastic experience from start to end. Infused Agency is
-                      organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their
-                      Alliston SEO services."
+                      "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
+                      highly recommend their company if you are thinking of needing their Alliston SEO services."
                     </p>
                     <ul>
                       <li>
@@ -105,8 +94,7 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>1,500% increase</span> in Google rankings for
-                          multiple keywords
+                          <span>1,500% increase</span> in Google rankings for multiple keywords
                         </strong>
                       </li>
                     </ul>
@@ -132,10 +120,8 @@ const SEO = () => {
                     <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                     <h4>KD Flowers</h4>
                     <p>
-                      "Infused Agency drastically improved my online presence.
-                      By using their SEO services, my Alliston company went from
-                      not ranking at all to the first page of Google for tons of
-                      keywords."
+                      "Infused Agency drastically improved my online presence. By using their SEO services, my Alliston
+                      company went from not ranking at all to the first page of Google for tons of keywords."
                     </p>
                     <ul>
                       <li>
@@ -145,14 +131,12 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>20,000% increase</span> in new leads in the
-                          first 6 months
+                          <span>20,000% increase</span> in new leads in the first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>5,800 new people</span> discovering website per
-                          month
+                          <span>5,800 new people</span> discovering website per month
                         </strong>
                       </li>
                     </ul>
@@ -175,17 +159,12 @@ const SEO = () => {
                 </Col>
                 <Col lg="4">
                   <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={cassImg}
-                      alt="Cass-A-Bella Construction"
-                    />
+                    <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your
-                      Alliston business I do recommend Infused Agency for their
-                      services. JD keep up the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
+                      SEO for your Alliston business I do recommend Infused Agency for their services. JD keep up the
+                      great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -195,14 +174,12 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>13,000% increase</span> in new leads in first 6
-                          months
+                          <span>13,000% increase</span> in new leads in first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>2,500 new people</span> discovering website per
-                          month
+                          <span>2,500 new people</span> discovering website per month
                         </strong>
                       </li>
                     </ul>
@@ -230,15 +207,9 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>
-                    Ready to grow your business with top Alliston SEO services?
-                  </h3>
+                  <h3>Ready to grow your business with top Alliston SEO services?</h3>
                   <p>Click the button below to get your free quote.</p>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                  >
+                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -252,43 +223,34 @@ const SEO = () => {
                   <h2>
                     Alliston <span>SEO</span> Services
                   </h2>
-                  <p>
-                    Solutions That Bring In Qualified Leads And Boost Your Sales
-                  </p>
+                  <p>Solutions That Bring In Qualified Leads And Boost Your Sales</p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <h5>Keyword Research &amp; Strategy</h5>
                   <p>
-                    Infused Agency's SEO company in Alliston conducts specific
-                    keyword research that covers specifically what your users
-                    are searching for. We look at keywords as the main
-                    foundation to your SEO project. Beyond this, we dive into
-                    the technicalities to further deliver value to your
-                    customers.
+                    Infused Agency's SEO company in Alliston conducts specific keyword research that covers specifically
+                    what your users are searching for. We look at keywords as the main foundation to your SEO project.
+                    Beyond this, we dive into the technicalities to further deliver value to your customers.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Link Building</h5>
                   <p>
-                    Off of your website, our Alliston SEO exports utilize
-                    efforts to build links to your website, to help your site
-                    rise in search rankings. When other websites link back to
-                    your own, you can be seen as authoratative and rank for
-                    relevant keyword searche. We can also help filter out
-                    certain backlinks that Google may refer to as spammy.
+                    Off of your website, our Alliston SEO exports utilize efforts to build links to your website, to
+                    help your site rise in search rankings. When other websites link back to your own, you can be seen
+                    as authoratative and rank for relevant keyword searche. We can also help filter out certain
+                    backlinks that Google may refer to as spammy.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Content Writing</h5>
                   <p>
-                    Our Alliston SEO services are conducted by a highly trained
-                    group of marketers, which includes content writers. At
-                    Infused, you can take advantage of our content writing
-                    skills to create content that attracts highly qualified
-                    leads. We help mix keywords and your brand voice together,
-                    to help bring in more leads to your website.
+                    Our Alliston SEO services are conducted by a highly trained group of marketers, which includes
+                    content writers. At Infused, you can take advantage of our content writing skills to create content
+                    that attracts highly qualified leads. We help mix keywords and your brand voice together, to help
+                    bring in more leads to your website.
                   </p>
                 </Col>
               </Row>
@@ -296,34 +258,28 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>On-Page SEO</h5>
                   <p>
-                    It's very important that your on-page work is done well, as
-                    it can signal to Google that you may give your users a poor
-                    user experience. This is why our Alliston SEO agency looks
-                    for and fixes these issues for you. We conduct on-page SEO
-                    to help bolster your online presence, amplify your lead
+                    It's very important that your on-page work is done well, as it can signal to Google that you may
+                    give your users a poor user experience. This is why our Alliston SEO agency looks for and fixes
+                    these issues for you. We conduct on-page SEO to help bolster your online presence, amplify your lead
                     generation and help boost sales.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Local SEO</h5>
                   <p>
-                    For a more local approach, our Alliston SEO specialists can
-                    leverage the power of local SEO. We help local customers
-                    find your website in local search engine rankings. We do
-                    this by employing on and off page search engine optimization
-                    best practices, to help raise your local website in Google's
+                    For a more local approach, our Alliston SEO specialists can leverage the power of local SEO. We help
+                    local customers find your website in local search engine rankings. We do this by employing on and
+                    off page search engine optimization best practices, to help raise your local website in Google's
                     rankings.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Technical SEO</h5>
                   <p>
-                    If you find out about some technical mishaps on your
-                    website, our Alliston SEO experts are here to help. We'll
-                    dive into your website by conducting a site-wide audit to
-                    check for problems related to website speed, content and
-                    optimization. Our team will fix these issues, helping your
-                    website get back on the right track.
+                    If you find out about some technical mishaps on your website, our Alliston SEO experts are here to
+                    help. We'll dive into your website by conducting a site-wide audit to check for problems related to
+                    website speed, content and optimization. Our team will fix these issues, helping your website get
+                    back on the right track.
                   </p>
                 </Col>
               </Row>
@@ -335,11 +291,7 @@ const SEO = () => {
                 <Col lg="12 text-center">
                   <h3>Have Our Alliston SEO Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                  >
+                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -351,8 +303,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Alliston</span> SEO
-                    Agency
+                    Why Choose Infused Agency As Your <span>Alliston</span> SEO Agency
                   </h2>
                   <p>Increase Your Website's Rankings With Our SEO Experts</p>
                 </Col>
@@ -360,28 +311,16 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Alliston
-                    businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Alliston businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-niagara">
-                      digital marketing
-                    </Link>
-                    ,{" "}
-                    <Link href="/niagara-seo-company">
-                      search engine optimization (SEO)
-                    </Link>{" "}
-                    and{" "}
-                    <Link href="/wordpress-developer-niagara">
-                      WordPress development
-                    </Link>{" "}
-                    .
+                    <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
+                    <Link href="/niagara-seo-company">search engine optimization (SEO)</Link> and{" "}
+                    <Link href="/wordpress-developer-niagara">WordPress development</Link> .
                   </p>
                   <p>
-                    We've been able to help small, local businesses all the way
-                    to large enterprise companies with increasing traffic to
-                    their websites, build modern websites for them and
-                    ultimately bringing them more revenue through digital
-                    channels.
+                    We've been able to help small, local businesses all the way to large enterprise companies with
+                    increasing traffic to their websites, build modern websites for them and ultimately bringing them
+                    more revenue through digital channels.
                   </p>
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147543.67621139876!2d-79.9698791966394!3d44.14644732503007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aee959752d931%3A0xfc15dcf9cd95e410!2sAlliston%2C%20New%20Tecumseth%2C%20ON!5e0!3m2!1sen!2sca!4v1709336720106!5m2!1sen!2sca"
@@ -393,11 +332,7 @@ const SEO = () => {
                   ></iframe>
                 </Col>
                 <Col lg="6">
-                  <Image
-                    className="img-fluid"
-                    src={about}
-                    alt="business needs"
-                  />
+                  <Image className="img-fluid" src={about} alt="business needs" />
                 </Col>
               </Row>
             </Container>
@@ -407,69 +342,50 @@ const SEO = () => {
               <Col lg="12">
                 <h3>What is SEO?</h3>
                 <p>
-                  Search Engine Optimization (SEO) is the process of increasing
-                  your <Link href="/websites">websites</Link> visibility within
-                  Google's search results. If your website is on the first page
-                  of Google with our SEO services versus your website being on
-                  the 10th page, you will get a lot more customers.
+                  Search Engine Optimization (SEO) is the process of increasing your{" "}
+                  <Link href="/web-design">websites</Link> visibility within Google's search results. If your website is
+                  on the first page of Google with our SEO services versus your website being on the 10th page, you will
+                  get a lot more customers.
                 </p>
                 <h3>Do I need SEO?</h3>
                 <p>
-                  Does your business depend on attracting new customers? Then
-                  absolutely you need a Alliston SEO company to help you with
-                  SEO services. It's important that our Alliston SEO experts
-                  help your website rank where your customers are looking - on
-                  the first page of Google.
+                  Does your business depend on attracting new customers? Then absolutely you need a Alliston SEO company
+                  to help you with SEO services. It's important that our Alliston SEO experts help your website rank
+                  where your customers are looking - on the first page of Google.
                 </p>
                 <h3>What's important when it comes to SEO?</h3>
                 <p>
-                  There's about 200 ranking signals that Google evaluates a
-                  website on when it comes to SEO. The top factors here are
-                  domain authority (how old your website's domain is), the
-                  quality SEO content of your website, SEO backlinks going to
-                  your website, technical SEO coding on your site and more. We
-                  will clearly identify the strengths and weaknesses in terms of
-                  SEO that your current website has, and come up with a game
-                  plan to improve.
+                  There's about 200 ranking signals that Google evaluates a website on when it comes to SEO. The top
+                  factors here are domain authority (how old your website's domain is), the quality SEO content of your
+                  website, SEO backlinks going to your website, technical SEO coding on your site and more. We will
+                  clearly identify the strengths and weaknesses in terms of SEO that your current website has, and come
+                  up with a game plan to improve.
                 </p>
                 <h3>How long does SEO take?</h3>
                 <p>
-                  There are many variables and depends on the website. For
-                  example - a brand new website can take upwards to a year to
-                  start seeing any meaningful results. A website that has been
-                  around for a longer amount of time could start seeing movement
-                  within 2-3 months. It all depends on your website's standing
-                  when it comes to SEO.
+                  There are many variables and depends on the website. For example - a brand new website can take
+                  upwards to a year to start seeing any meaningful results. A website that has been around for a longer
+                  amount of time could start seeing movement within 2-3 months. It all depends on your website's
+                  standing when it comes to SEO.
                 </p>
                 <h3>How do I get on the Google Map Pack?</h3>
                 <p>
-                  The Google Map Pack is great for local SEO. This is the area
-                  where when someone searches, local companies pop up with 5
-                  star reviews. If you do local SEO and get in the top 3 of this
-                  map pack, you're golden. The best way to get there is to
-                  optimize your Google My Business profile. We specialize in
-                  doing so and can help you rise up in the local SEO map pack
-                  rankings.
+                  The Google Map Pack is great for local SEO. This is the area where when someone searches, local
+                  companies pop up with 5 star reviews. If you do local SEO and get in the top 3 of this map pack,
+                  you're golden. The best way to get there is to optimize your Google My Business profile. We specialize
+                  in doing so and can help you rise up in the local SEO map pack rankings.
                 </p>
                 <ul>
                   <li>Company logo</li>
-                  <li>
-                    Business details - things like product titles, images,
-                    descriptions, pricing, etc.
-                  </li>
+                  <li>Business details - things like product titles, images, descriptions, pricing, etc.</li>
                   <li>and more</li>
                 </ul>
                 <h3>Our Alliston SEO company is ready to help.</h3>
                 <p>
-                  If you need our Alliston SEO company to help your company rise
-                  in Google with our expert SEO services, click below to get
-                  your free SEO quote.
+                  If you need our Alliston SEO company to help your company rise in Google with our expert SEO services,
+                  click below to get your free SEO quote.
                 </p>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://calendly.com/infused-agency/project-discovery/"
-                >
+                <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                   <button>Get Free Quote</button>
                 </a>
               </Col>

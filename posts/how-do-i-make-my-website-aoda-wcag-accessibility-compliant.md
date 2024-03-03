@@ -7,7 +7,8 @@ excerpt: A lot our Niagara-based web design clients and prospective clients from
   accessible?". They also pose the same sort of question like, "how do I make my
   website abide by AODA accessibility compliance?".
 ---
-A lot our [Niagara-based web design](https://infused.agency/) clients and prospective clients from other areas tend to ask us, "how do I make my [website](https://infused.agency/websites) AODA & WCAG accessible?". They also pose the same sort of question like, "how do I make my website abide by [AODA accessibility compliance](https://www.aoda.ca/)?".
+
+A lot our [Niagara-based web design](https://infused.agency/) clients and prospective clients from other areas tend to ask us, "how do I make my [website](https://infused.agency/web-design) AODA & WCAG accessible?". They also pose the same sort of question like, "how do I make my website abide by [AODA accessibility compliance](https://www.aoda.ca/)?".
 
 **TL;DR - In order to make your website pass AODA & WCAG accessibility compliance, you must do a few things. Make your website text and media consumable for everyone. Make sure everyone, no matter the disability, can navigate your website easily. Make your media and text understandable for all. Maximize compatibility - make sure your website can be used by screen readers. If you're in the legal area to comply with AODA compliance, and if you don't make your site compliant, you may be subject to legal fines.**
 
@@ -15,7 +16,7 @@ A lot our [Niagara-based web design](https://infused.agency/) clients and prospe
 
 You may have heard of the buzz regarding making your website accessible for all users, and for good reason.
 
-AODA stands for the [Accessibility for Ontarians with Disabilities Act](https://www.ontario.ca/page/about-accessibility-laws), which was passed in 2005. The idea originally back in 2005 was to make sure that all public, private and non-profit companies were to become more accessible in many different ways to people with different forms of disabilities. 
+AODA stands for the [Accessibility for Ontarians with Disabilities Act](https://www.ontario.ca/page/about-accessibility-laws), which was passed in 2005. The idea originally back in 2005 was to make sure that all public, private and non-profit companies were to become more accessible in many different ways to people with different forms of disabilities.
 
 The goal of the Accessibility for Ontarians with Disabilities Act is to aim for a barrier-free Ontario by the year 2025.
 
@@ -27,16 +28,17 @@ These disabilities can be sustained from an accident, be sustained at birth, or 
 
 Some of these disabilities include but are not limited to:
 
-* Mental health obstacles
-* Blindness or impaired visually
-* Deafness or impaired hearing
-* Problems with speech (speech impairment)
-* Any mobility or physical challenges
+- Mental health obstacles
+- Blindness or impaired visually
+- Deafness or impaired hearing
+- Problems with speech (speech impairment)
+- Any mobility or physical challenges
 
-  * Any sort of amputation, paralysis or difficulty with coordination or balance
-* Injury to the brain
-* Epilepsy
-* Any sort of learning or intellectual disabilities
+  - Any sort of amputation, paralysis or difficulty with coordination or balance
+
+- Injury to the brain
+- Epilepsy
+- Any sort of learning or intellectual disabilities
 
 All of the disabilities listed above can absolutely impact the way a person with said disabilities can navigate not just your website, but any website period.
 
@@ -52,8 +54,8 @@ As mentioned above, Apple already has been sued. All it takes is one person to r
 
 According to Ontario law, all new or refreshed public websites need to be AODA compliant if:
 
-* You are a private or non-profit company that has 50 or more people, then you must comply with AODA compliance. However - if your company has 49 people or less, legally you do not have to.
-* You're a public-sector business
+- You are a private or non-profit company that has 50 or more people, then you must comply with AODA compliance. However - if your company has 49 people or less, legally you do not have to.
+- You're a public-sector business
 
 What's considered a 'new' website?
 
@@ -67,7 +69,7 @@ That would be a website that is the same website as always, but that website its
 
 ## What is WCAG accessibility compliance?
 
-WCAG is a bit different. 
+WCAG is a bit different.
 
 Web Content Accessibility Guidelines outlines how to make content on a website more accessible to people with disabilities, in general.
 
@@ -88,90 +90,90 @@ The general criteria that the specifics fall under, are as follows:
 **Level A**\
 Guideline 1.1: Provide text alternatives for non-text content
 
-* 1.1 Non-text content
+- 1.1 Non-text content
 
 Guideline 1.2: Provide alternatives for time-based media
 
-* 2.1 Audio only and video only (Prerecorded)
-* 2.2 Captions (Prerecorded)
-* 2.3 Audio Description or Media Alternative (Prerecorded)
+- 2.1 Audio only and video only (Prerecorded)
+- 2.2 Captions (Prerecorded)
+- 2.3 Audio Description or Media Alternative (Prerecorded)
 
 Guideline 1.3 Adaptable Content
 
-* 3.1 Info and relationships
-* 3.2 Meaningful sequence
-* 3.3 Sensory characteristics
+- 3.1 Info and relationships
+- 3.2 Meaningful sequence
+- 3.3 Sensory characteristics
 
 Guideline 1.4 Distinguishable content
 
-* 4.1 Use of color
-* 4.2 Audio control
+- 4.1 Use of color
+- 4.2 Audio control
 
 Guideline 2.1 Keyboard accessible
 
-* 1.1 Keyboard
-* 1.2 No Keyboard trap
+- 1.1 Keyboard
+- 1.2 No Keyboard trap
 
 Guideline 2.2 Provide users enough time to read and use content
 
-* 2.1 Timing adjustable
-* 2.2 Pause, stop, hide
+- 2.1 Timing adjustable
+- 2.2 Pause, stop, hide
 
 Guideline 2.3 Don’t design content in a way that is known to cause seizures
 
-* 3.1 Three flashes or below threshold
+- 3.1 Three flashes or below threshold
 
 Guideline 2.4 Navigable content
 
-* 4.1 Bypass blocks
-* 4.2 Page titled
-* 4.3 Focus order
-* 4.4 Link purpose (in context)
+- 4.1 Bypass blocks
+- 4.2 Page titled
+- 4.3 Focus order
+- 4.4 Link purpose (in context)
 
 Guideline 3.1 Readable text content
 
-* 1.1 Language of page
+- 1.1 Language of page
 
 Guideline 3.2 Predictable web pages
 
-* 2.1 On focus
-* 2.2 On input
+- 2.1 On focus
+- 2.2 On input
 
 Guideline 3.3 Input assistance
 
-* 3.1 Error identification
-* 3.2 Labels or instructions
+- 3.1 Error identification
+- 3.2 Labels or instructions
 
 Guideline 4.1 Compatible
 
-* 1.1 Parsing
-* 1.2 Name, role, value
+- 1.1 Parsing
+- 1.2 Name, role, value
 
 **Level AA**
 
 Guideline 1.4 Distinguishable content
 
-* 4.3 Contrast (Minimum)
-* 4.4 Resize text
-* 4.5 Images of text
+- 4.3 Contrast (Minimum)
+- 4.4 Resize text
+- 4.5 Images of text
 
 Guideline 2.4 Navigable content
 
-* 4.5 Multiple ways
-* 4.6 Headings and labels
-* 4.7 Focus visible
+- 4.5 Multiple ways
+- 4.6 Headings and labels
+- 4.7 Focus visible
 
 Guideline 3.1 Readable text content
 
-* 1.2 Language of parts
+- 1.2 Language of parts
 
 Guidelines 3.2 Predictable web pages
 
-* 2.4 Consistent identification
+- 2.4 Consistent identification
 
 Guideline 3.3 Input assistance
 
-* 3.3 Error suggestion
+- 3.3 Error suggestion
 
   3.3.4 Error prevention (Legal, financial, data)
 
@@ -183,7 +185,7 @@ There a few key benefits of making your website AODA & WCAG accessible:
 
 This of course is the primary goal when it comes to AODA & WCAG accessibility compliance.
 
-People with disabilities will now be able to easily your website. With a screen reader, with a keyboard, or by any other means. 
+People with disabilities will now be able to easily your website. With a screen reader, with a keyboard, or by any other means.
 
 This directly translates to more subscribers, more traffic and ultimately more revenue for you.
 
@@ -209,7 +211,7 @@ That's a huge win and you should take pride in making your website fully accessi
 
 ## Are there any drawbacks to making my website AODA & WCAG accessibility compliant?
 
-Personally I believe the benefits outweigh the disadvantages when it comes to making your website compliant. 
+Personally I believe the benefits outweigh the disadvantages when it comes to making your website compliant.
 
 However, there are a few disadvantages to making your website AODA & WCAG accessible:
 
@@ -223,7 +225,7 @@ Is it worth it though? Of course.
 
 ### It costs more
 
-More development times means more money. 
+More development times means more money.
 
 This goes without saying that adding the additional major task of making many parts of a website AODA & WCAG compliant is daunting and time consuming.
 
@@ -245,7 +247,7 @@ It's not uncommon for it to take 6-8+ months to make a current website AODA comp
 
 Does your website have 5-10 pages? It'll take far less time. Maybe 1-2 months.
 
-Does that same 5-10 page website have a lot of interactivity, that needs to be accessible by a keyboard (for example, dropdown navigation, sliders, accordions, etc.)? Maybe 2-3 months. 
+Does that same 5-10 page website have a lot of interactivity, that needs to be accessible by a keyboard (for example, dropdown navigation, sliders, accordions, etc.)? Maybe 2-3 months.
 
 The time entirely depends on what functionality is included in your website and if you have to make it accessible to screen-readers and / or keyboards.
 
@@ -261,9 +263,9 @@ Some agencies charge $80 / hour. Others charge $125+/hour.
 
 For 6-8+ months of work, if someone is working on making your website fully compliant full time, it may cost tens of thousands of dollars to make it work.
 
-However as touched on above, if you get caught with a website that isn't compliant and you're an individual, fines are up to $50,000 / day before it's compliant.
+However as touched on above, if you get caught with a website that isn't compliant and you're an individual, fines are up to \$50,000 / day before it's compliant.
 
-If you're a company, that jumps to $100,000 each day until the website is compliant.
+If you're a company, that jumps to \$100,000 each day until the website is compliant.
 
 Would you rather pay $10,000 - $20,000 once to make your website AODA compliant, versus getting charged between $50,000 - $100,000 per day?
 

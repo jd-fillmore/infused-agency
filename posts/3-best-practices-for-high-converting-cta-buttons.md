@@ -7,7 +7,7 @@ excerpt: Click here to find out the 3 best practices for high-converting CTA but
 
 As a [Niagara web design](https://infused.agency/) company, we've had a few [local companies](https://infused.agency/kd-florist) come to us that have already a bit of call-to-action button knowledge and ask, "what are some of the best practices for high-converting CTA buttons?"
 
-We've had other local companies with less [web design](/websites) knowledge instead ask us, "how can high-converting call-to-action buttons bring us more revenue?"
+We've had other local companies with less [web design](/web-design) knowledge instead ask us, "how can high-converting call-to-action buttons bring us more revenue?"
 
 **TL;DR - 3 best practices for high-converting CTA (call-to-action) buttons:**
 

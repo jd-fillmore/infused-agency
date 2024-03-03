@@ -322,8 +322,8 @@ const SEO = () => {
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
                     <Link href="/Grimsby-seo-company/">search engine optimization (SEO)</Link> ,{" "}
-                    <Link href="/wordpress-developer-niagara">WordPress development</Link> and{" "}
-                    <Link href="/ecommerce-web-design-niagara">e-commerce website development</Link>.
+                    <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
+                    development.
                   </p>
                   <p>
                     We've been able to help small, local businesses all the way to large enterprise companies with

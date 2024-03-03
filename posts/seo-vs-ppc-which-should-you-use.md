@@ -9,7 +9,7 @@ excerpt: As a Niagara web design company, we've had a few [local
 
 As a [Niagara web design](https://infused.agency/) company, we've had a few [local companies](https://infused.agency/kd-florist) come to us that have already a bit of SEO / PPC knowledge and ask, "what's better - SEO or PPC?"
 
-We've had other local companies with less [](/websites)[SEO](https://infused.agency/seo) knowledge instead ask us, "are paid ads better? or is ranking organically in Google results better?"
+We've had other local companies with less [](/web-design)[SEO](https://infused.agency/seo) knowledge instead ask us, "are paid ads better? or is ranking organically in Google results better?"
 
 **TL;DR - SEO vs PPC: Which Should You Use?**
 

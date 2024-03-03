@@ -314,9 +314,9 @@ const SEO = () => {
                   <p>
                     Since 2013 we've been able to help countless local Wainfleet businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Wainfleet">digital marketing</Link>, search engine optimization (SEO)
-                    , <Link href="/wordpress-developer-Wainfleet">WordPress development</Link> and{" "}
-                    <Link href="/ecommerce-web-design-Wainfleet">e-commerce website development</Link>.
+                    <Link href="/digital-marketing-niagara">digital marketing</Link>, search engine optimization (SEO) ,{" "}
+                    <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
+                    development.
                   </p>
                   <p>
                     We've been able to help small, local businesses all the way to large enterprise companies with
@@ -344,7 +344,7 @@ const SEO = () => {
                 <h3>What is SEO?</h3>
                 <p>
                   Search Engine Optimization (SEO) is the process of increasing your{" "}
-                  <Link href="/websites">websites</Link> visibility within Google's search results. If your website is
+                  <Link href="/web-design">websites</Link> visibility within Google's search results. If your website is
                   on the first page of Google with our SEO services versus your website being on the 10th page, you will
                   get a lot more customers.
                 </p>

@@ -69,7 +69,7 @@ const SEO = () => {
                 <p>
                   Digital marketing is the process of a company leverage digital channels to bring in new business
                   directly through your
-                  <Link href="/websites">website</Link>. Companies can leverage things like{" "}
+                  <Link href="/web-design">website</Link>. Companies can leverage things like{" "}
                   <Link href="/seo">search engine optimization</Link>, Facebook ads, Instagram ads,
                 </p>
                 <h3>Is digital marketing important?</h3>

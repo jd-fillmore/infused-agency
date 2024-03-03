@@ -7,17 +7,18 @@ excerpt: As a Niagara web design company, we've had many landscaping companies
   knowledge and ask, "what are the best SEO (search engine optimization)
   techniques that I can use for my landscaping business?"
 ---
-As a [Niagara web design company](https://infused.agency), we've had many landscaping companies come to us that have already a bit of search engine optimization general knowledge and ask, "what are the best SEO (search engine optimization) techniques that I can use for my landscaping business?" 
+
+As a [Niagara web design company](https://infused.agency), we've had many landscaping companies come to us that have already a bit of search engine optimization general knowledge and ask, "what are the best SEO (search engine optimization) techniques that I can use for my landscaping business?"
 
 We've had other landscapers with less SEO knowledge instead ask us, "how can effective [search engine optimization](https://infused.agency/seo) help my landscaping business?"
 
 **TL;DR - 5 effective search engine optimization (SEO) techniques for landscaping companies and landscapers are:**
 
-* **Improve your landscaping website's user experience**
-* **Build a performant landscaping website**
-* **Target local areas with local landing pages and listings for your landscaping company**
-* **Get relevant, landscaping-based backlinks**
-* **Implement local schema into your landscaping website**
+- **Improve your landscaping website's user experience**
+- **Build a performant landscaping website**
+- **Target local areas with local landing pages and listings for your landscaping company**
+- **Get relevant, landscaping-based backlinks**
+- **Implement local schema into your landscaping website**
 
 ## So.. what are the 5 most effective SEO (search engine optimization) techniques for landscaping companies?
 
@@ -41,8 +42,8 @@ SEO - not only for for landscapers or landscaping companies, but just in general
 
 Two main reasons why SEO is important, especially [local SEO](/posts/how-can-i-improve-my-local-seo-results/)
 
-* Having good search engine optimization for your landscaping company builds trust, credibility and authority in your local area
-* Good SEO means you attract local customers, consistently
+- Having good search engine optimization for your landscaping company builds trust, credibility and authority in your local area
+- Good SEO means you attract local customers, consistently
 
 Let's run a quick scenario here.
 
@@ -52,11 +53,11 @@ What are you going to do first?
 
 **You're going to Google "Niagara landscaping company", "landscapers near me", "landscaping company Niagara".**
 
-The first thing you're going to do is Google your city + whatever you need. Because that's what people do now. 
+The first thing you're going to do is Google your city + whatever you need. Because that's what people do now.
 
 You, me, everyone.
 
-We recently helped out a company in the landscaping niche, specifically custom home building. They wanted a brand new [website](https://infused.agency/websites), and they wanted to [rank high in Google](https://infused.agency/seo) for some local keywords.
+We recently helped out a company in the landscaping niche, specifically custom home building. They wanted a brand new [website](https://infused.agency/web-design), and they wanted to [rank high in Google](https://infused.agency/seo) for some local keywords.
 
 They knew how valuable ranking on the first page of Google was, because they knew that's where their customers were searching for their services.
 
@@ -78,13 +79,13 @@ The content is scattered. There's not enough content. The navigation is confusin
 
 And that's just the tip of the ice berg.
 
-Users want one thing from your website - the want to get in, find the information they need, and get out. 
+Users want one thing from your website - the want to get in, find the information they need, and get out.
 
 Or - instead of get out, contact you.
 
 But having a landscaping website that is not easy to navigate or use, or doesn't impress - in which case creates roadblocks for your potential customers.. that's a really bad thing.
 
-So bad, that they may just.. leave your website and go somewhere else. And that somewhere else is - you guessed it - 
+So bad, that they may just.. leave your website and go somewhere else. And that somewhere else is - you guessed it -
 
 Your competitors.
 
@@ -104,7 +105,7 @@ This is actually - in my opinion - one of the most important SEO techniques that
 
 You can do all the other SEO techniques to help your landscaping company's website rank on the first page of Google. But if the actual code - the actual foundation of your website is garbage (looking at your WordPress, Wix and Squarespace), then all those efforts will be wasted.
 
-Before you embark on any other search engine optimization techniques, you need to make sure your website is built properly. 
+Before you embark on any other search engine optimization techniques, you need to make sure your website is built properly.
 
 And by that I mean, not using a website builder like Wix, Squarespace or WordPress.
 
@@ -160,7 +161,7 @@ But what if a large, landscaping supply company wrote about my landscaping compa
 
 That's an amazing thing for your SEO.
 
-Why? Well, it's a large, prominent company - and it's a large, landscaping supply company. 
+Why? Well, it's a large, prominent company - and it's a large, landscaping supply company.
 
 It's relevant, and it's quality.
 
@@ -212,7 +213,7 @@ Entirely depends on the SEO company you decide to work with.
 
 However, I will repeat the old-age saying of, "you get what you pay for".
 
-We've inherited clients where someone charged them $200 for SEO. The results were not only lackluster (they weren't found at all in Google's search engine), but they also damaged the reputation of the company.
+We've inherited clients where someone charged them \$200 for SEO. The results were not only lackluster (they weren't found at all in Google's search engine), but they also damaged the reputation of the company.
 
 So, usually when a company charges more for a service, you get better quality and better results.
 

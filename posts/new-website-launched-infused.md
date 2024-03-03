@@ -6,7 +6,7 @@ excerpt: We have some exciting news! As we're going into 2021, we've decided to
   completely re-vamp our website using a modern website framework.
 ---
 
-We have some exciting news! As we're going into 2021, we've decided to completely [re-vamp our website](https://infused.agency/websites) using a modern website framework.
+We have some exciting news! As we're going into 2021, we've decided to completely [re-vamp our website](https://infused.agency/web-design) using a modern website framework.
 
 ## Why We Re-Designed Our Website
 
@@ -61,7 +61,7 @@ If you have a website that's very fast, compared to one of more of your competit
 
 You!
 
-The platform that we've built not only our own website on, but our client's websites as well is not only [modern](https://infused.agency/websites) but also tends to rank very well in Google.
+The platform that we've built not only our own website on, but our client's websites as well is not only [modern](https://infused.agency/web-design) but also tends to rank very well in Google.
 
 The reason for this is that the website platform is very fast, which ranks high scores in Google's Page Speed test.
 

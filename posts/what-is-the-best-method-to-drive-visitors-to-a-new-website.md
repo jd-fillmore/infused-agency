@@ -15,7 +15,7 @@ So, lets get to it. Here’s the checklist below:
 <ul>
  	<li>Google My Business</li>
  	<li><a href="https://infused.agency/search-engine-optimization/">Search Engine Optimization</a></li>
- 	<li>List Your <a href="https://infused.agency/websites/">Website</a> On Relevant and Local Directories</li>
+ 	<li>List Your <a href="https://infused.agency/web-design/">Website</a> On Relevant and Local Directories</li>
  	<li>Post To Social Media (Don't Forget Hashtags!)</li>
  	<li>Email Marketing</li>
  	<li>Engage Your Audience Online</li>

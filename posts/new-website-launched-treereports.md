@@ -7,6 +7,7 @@ excerpt: TreeReports found us locally through Google. They were starting up
   professional website to go along with it. They showed us sites they like in
   terms of design and functionality. Also discussing what they didn't want.
 ---
+
 Brand new website launched for TreeReports, check it out at <https://treereports.ca>.
 
 TreeReports found us locally through Google. They were starting up their own business as an arborist in the Niagara region and wanted a modern, professional website to go along with it. They showed us sites they like in terms of design and functionality. Also discussing what they didn't want.
@@ -17,6 +18,6 @@ They're very happy with the end result and we loved working with them!
 
 > "Fantastic experience from start to end. JD is organized, thorough and professional. I highly recommend his company and services if you are thinking of building a website." - Harry Althorpe, Owner of TreeReports
 
-Need a [website](https://infused.agency/websites) or [SEO](https://infused.agency/seo) services? [Contact us today](https://infused.agency/get-started)!
+Need a [website](https://infused.agency/web-design) or [SEO](https://infused.agency/seo) services? [Contact us today](https://infused.agency/get-started)!
 
 <!--EndFragment-->

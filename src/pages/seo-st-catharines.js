@@ -337,7 +337,7 @@ const SEO = () => {
                 <h3>What is SEO?</h3>
                 <p>
                   Search Engine Optimization (SEO) is the process of increasing your{" "}
-                  <Link href="/websites">websites</Link> visibility within Google's search results. If your website is
+                  <Link href="/web-design">websites</Link> visibility within Google's search results. If your website is
                   on the first page of Google with our SEO services versus your website being on the 10th page, you will
                   get a lot more customers.
                 </p>
