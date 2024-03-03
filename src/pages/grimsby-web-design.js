@@ -20,9 +20,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-          Grimsby Web Design Firm | Local Web Designers - Infused Agency
-        </title>
+        <title>Grimsby Web Design | Affordable Local Website Development</title>
         <meta
           name="description"
           content="Discover the excellence of Grimsby's premier web design company. Our website designs are crafted to enhance your brand's standing and drive increased sales for your company. Click here to request your free quote!"
