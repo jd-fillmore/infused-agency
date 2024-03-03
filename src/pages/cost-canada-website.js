@@ -14,7 +14,7 @@ const WebsiteCostCanada = () => {
   return (
     <>
       <Head>
-        <title>How much does a website cost in Canada in 2024?</title>
+        <title>Unlocking the Cost of Your Website: Canada 2024 Guide</title>
         <meta
           name="description"
           content="Discover the current website cost in Canada. Explore the factors influencing prices and get insights for budgeting."

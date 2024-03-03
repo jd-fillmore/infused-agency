@@ -1,31 +1,31 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { Container, Row, Col } from "reactstrap"
-import Link from "next/link"
-import Image from "next/image"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import Card from "../../components/Card/card"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import treeImg from "../img/tree-reports.png"
-import kdImg from "../img/niagara-web-design.png"
-import cassImg from "../img/featured-seo.png"
-import bgImage from "../img/inner-work.jpg"
+import React from "react";
+import Head from "next/head";
+import { Container, Row, Col } from "reactstrap";
+import Link from "next/link";
+import Image from "next/image";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import Card from "../../components/Card/card";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import treeImg from "../img/tree-reports.png";
+import kdImg from "../img/niagara-web-design.png";
+import cassImg from "../img/featured-seo.png";
+import bgImage from "../img/inner-work.jpg";
 
-import PortfolioSlider from "../../components/PortfolioSlider/portfolioSlider"
+import PortfolioSlider from "../../components/PortfolioSlider/portfolioSlider";
 
 const OurWork = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Our Work - Infused</title>
         <meta
           name="description"
           content="We're passionate about putting in the work to deliver to our client's needs. Check out the results we've got for our clients"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Our Work"
@@ -141,7 +141,7 @@ const OurWork = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default OurWork
+export default OurWork;

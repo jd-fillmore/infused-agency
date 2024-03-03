@@ -1,23 +1,23 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { Container, Row, Col } from "reactstrap"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import bgImage from "../img/inner-about.jpg"
+import React from "react";
+import Head from "next/head";
+import { Container, Row, Col } from "reactstrap";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import bgImage from "../img/inner-about.jpg";
 
 const KDFlowers = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>KD Flowers - Infused</title>
         <meta
           name="description"
           content="Check out how Infused help KD Flowers with a new website, and bring in more local clients through Google than she ever had before."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="KD Flowers"
@@ -80,7 +80,7 @@ const KDFlowers = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default KDFlowers
+export default KDFlowers;

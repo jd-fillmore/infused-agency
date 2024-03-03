@@ -14,7 +14,7 @@ const WebsiteSpeed = () => {
   return (
     <>
       <Head>
-        <title>How much does website speed affect SEO?</title>
+        <title>Need for Speed: Impact of Website Speed on SEO Unveiled</title>
         <meta
           name="description"
           content="urious about the influence of website speed on SEO? Learn why it matters and discover simple tips to supercharge your site's performance. Drive traffic and climb the ranks"

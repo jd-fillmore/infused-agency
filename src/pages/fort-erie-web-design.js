@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -19,14 +19,19 @@ import About from "../../components/Home/About/about";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>Fort Erie Web Design Firm | Premier Web Designers - Infused Agency</title>
+      <Head>
+        <title>
+          Fort Erie Web Design Firm | Premier Web Designers - Infused Agency
+        </title>
         <meta
           name="description"
           content="Discover the top-rated Web Design Company in Fort Erie. Our expert team crafts websites dedicated to enhancing your brand's image and driving up sales. Get your complimentary quote now!"
         />
-        <link rel="canonical" href="https://infused.agency/fort-erie-web-design" />
-      </Helmet>
+        <link
+          rel="canonical"
+          href="https://infused.agency/fort-erie-web-design"
+        />
+      </Head>
       <Nav />
       <InnerHero
         title="Leading Fort Erie Web Design Firm"
@@ -47,18 +52,25 @@ const SEO = () => {
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
                   Our <strong>Fort Erie web design services</strong> at our{" "}
-                  <strong>Fort Erie Web Design Company</strong> are exceptionally high-quality. We consistently deliver
-                  outstanding web design solutions to our clients, yielding impressive results. The significance of web
-                  design services for any local company cannot be overstated, offering numerous advantages:
+                  <strong>Fort Erie Web Design Company</strong> are
+                  exceptionally high-quality. We consistently deliver
+                  outstanding web design solutions to our clients, yielding
+                  impressive results. The significance of web design services
+                  for any local company cannot be overstated, offering numerous
+                  advantages:
                 </p>
                 <ul>
                   <li>Enhances company branding.</li>
-                  <li>Elevates the reputation and trustworthiness of your Fort Erie company.</li>
+                  <li>
+                    Elevates the reputation and trustworthiness of your Fort
+                    Erie company.
+                  </li>
                   <li>Generates more leads and increases company revenue.</li>
                 </ul>
                 <p>
-                  Employing our web design services not only enhances your company's reputation but also serves as an
-                  effective strategy for attracting more customers.
+                  Employing our web design services not only enhances your
+                  company's reputation but also serves as an effective strategy
+                  for attracting more customers.
                 </p>
               </Col>
             </Row>
@@ -67,18 +79,25 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center pd-btm-40">
-                  <h2>Achieve Results with Our Fort Erie Web Design Services</h2>
+                  <h2>
+                    Achieve Results with Our Fort Erie Web Design Services
+                  </h2>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={treeImg} alt="treereports" />
+                    <Image
+                      className="img-fluid"
+                      src={treeImg}
+                      alt="treereports"
+                    />
                     <h4>TreeReports</h4>
                     <p>
-                      "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
-                      highly recommend their company if you are thinking of needing their Fort Erie web design
-                      services."
+                      "Fantastic experience from start to end. Infused Agency is
+                      organized, thorough and professional. I highly recommend
+                      their company if you are thinking of needing their Fort
+                      Erie web design services."
                     </p>
                     <ul>
                       <li>
@@ -93,7 +112,8 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>1,500% increase</span> in Google rankings for multiple keywords
+                          <span>1,500% increase</span> in Google rankings for
+                          multiple keywords
                         </strong>
                       </li>
                     </ul>
@@ -119,9 +139,10 @@ const SEO = () => {
                     <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                     <h4>KD Flowers</h4>
                     <p>
-                      "Infused Agency drastically improved my online presence. By using their web design services, my
-                      Fort Erie company went from having no website at all to one that brings in new customers every
-                      week."
+                      "Infused Agency drastically improved my online presence.
+                      By using their web design services, my Fort Erie company
+                      went from having no website at all to one that brings in
+                      new customers every week."
                     </p>
                     <ul>
                       <li>
@@ -131,12 +152,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>20,000% increase</span> in new leads in the first 6 months
+                          <span>20,000% increase</span> in new leads in the
+                          first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>5,800 new people</span> discovering website per month
+                          <span>5,800 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -159,12 +182,17 @@ const SEO = () => {
                 </Col>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
+                    <Image
+                      className="img-fluid"
+                      src={cassImg}
+                      alt="Cass-A-Bella Construction"
+                    />
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
-                      web design for your Fort Erie business I do recommend Infused Agency for their services. JD keep
-                      up the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with the SEO work
+                      on my new web site. If you ever need a web design for your
+                      Fort Erie business I do recommend Infused Agency for their
+                      services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -174,12 +202,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>13,000% increase</span> in new leads in first 6 months
+                          <span>13,000% increase</span> in new leads in first 6
+                          months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>2,500 new people</span> discovering website per month
+                          <span>2,500 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -207,9 +237,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Ready to elevate your business with premier Fort Erie web design services?</h3>
-                  <p>Take the next step by clicking the button below to receive your complimentary quote.</p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <h3>
+                    Ready to elevate your business with premier Fort Erie web
+                    design services?
+                  </h3>
+                  <p>
+                    Take the next step by clicking the button below to receive
+                    your complimentary quote.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -221,39 +261,58 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Elevate Your Business with Fort Erie <span>Web Design</span> Services
+                    Elevate Your Business with Fort Erie <span>Web Design</span>{" "}
+                    Services
                   </h2>
-                  <p>Crafting Websites That Attract and Engage, Driving Customer Growth for Your Company</p>
+                  <p>
+                    Crafting Websites That Attract and Engage, Driving Customer
+                    Growth for Your Company
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Enhance Visibility with Search Engine Optimization (SEO)</h5>
+                  <h5>
+                    Enhance Visibility with Search Engine Optimization (SEO)
+                  </h5>
                   <p>
-                    Ensuring your websites are properly indexed and prominently appear for targeted keywords on Google
-                    is a crucial aspect of our Fort Erie web design services. Our focus on search engine optimization is
-                    designed to ensure that your customers can easily discover your website. By leveraging the expertise
-                    of our Fort Erie web design professionals and engaging our{" "}
-                    <Link href="/fort-erie-seo-company/">Fort Erie SEO services</Link>, your website becomes a powerful
-                    tool for attracting new company revenue and customers.
+                    Ensuring your websites are properly indexed and prominently
+                    appear for targeted keywords on Google is a crucial aspect
+                    of our Fort Erie web design services. Our focus on search
+                    engine optimization is designed to ensure that your
+                    customers can easily discover your website. By leveraging
+                    the expertise of our Fort Erie web design professionals and
+                    engaging our{" "}
+                    <Link href="/fort-erie-seo-company/">
+                      Fort Erie SEO services
+                    </Link>
+                    , your website becomes a powerful tool for attracting new
+                    company revenue and customers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Crafting Distinctive Web Design &amp; Development Solutions</h5>
+                  <h5>
+                    Crafting Distinctive Web Design &amp; Development Solutions
+                  </h5>
                   <p>
-                    At Fort Erie Web Design Company, our team of skilled designers goes beyond creating websites—they
-                    build digital experiences that enhance your brand's standing and attract a broader customer base.
-                    Our award-winning web designs not only draw in customers but also integrate search engine
-                    optimization and responsive web design best practices, contributing to heightened brand awareness.
+                    At Fort Erie Web Design Company, our team of skilled
+                    designers goes beyond creating websites—they build digital
+                    experiences that enhance your brand's standing and attract a
+                    broader customer base. Our award-winning web designs not
+                    only draw in customers but also integrate search engine
+                    optimization and responsive web design best practices,
+                    contributing to heightened brand awareness.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Tailored Solutions with Custom Web Design</h5>
                   <p>
-                    Each website we design for our clients is uniquely crafted. Our Fort Erie web designers specialize
-                    in creating modern designs that align with your business objectives. We prioritize incorporating
-                    your vision into the design process, ensuring a personalized and thoughtful approach by our Fort
-                    Erie web design experts.
+                    Each website we design for our clients is uniquely crafted.
+                    Our Fort Erie web designers specialize in creating modern
+                    designs that align with your business objectives. We
+                    prioritize incorporating your vision into the design
+                    process, ensuring a personalized and thoughtful approach by
+                    our Fort Erie web design experts.
                   </p>
                 </Col>
               </Row>
@@ -261,29 +320,35 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Optimized for All Devices with Responsive Web Design</h5>
                   <p>
-                    As an integral component of our Fort Erie web design services, we prioritize responsive web design
-                    to ensure seamless navigation for your users across all devices. Our Fort Erie web design experts
-                    employ custom coding techniques to ensure that your website not only functions flawlessly but also
-                    looks impressive on any device or computer.
+                    As an integral component of our Fort Erie web design
+                    services, we prioritize responsive web design to ensure
+                    seamless navigation for your users across all devices. Our
+                    Fort Erie web design experts employ custom coding techniques
+                    to ensure that your website not only functions flawlessly
+                    but also looks impressive on any device or computer.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Harnessing the Power of WordPress for Web Design</h5>
                   <p>
-                    In Fort Erie Web Design Company, we exclusively employ WordPress for projects requiring a content
-                    management system (CMS). With WordPress commanding nearly 50% of the web, it stands out as the
-                    preferred choice for CMS solutions. We opt for WordPress due to its user-friendly development
+                    In Fort Erie Web Design Company, we exclusively employ
+                    WordPress for projects requiring a content management system
+                    (CMS). With WordPress commanding nearly 50% of the web, it
+                    stands out as the preferred choice for CMS solutions. We opt
+                    for WordPress due to its user-friendly development
                     environment and its ease of use for our clients.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Empower Your Business with E-Commerce Web Design</h5>
                   <p>
-                    In the post-COVID era, establishing an online presence is crucial, especially for product or
-                    subscription-based businesses. Our Fort Erie web design agency specializes in creating e-commerce
-                    websites that enable you to sell your products online, significantly broadening your reach. Trust
-                    our Fort Erie web designers to craft and develop a stunning, modern online store tailored to your
-                    business needs.
+                    In the post-COVID era, establishing an online presence is
+                    crucial, especially for product or subscription-based
+                    businesses. Our Fort Erie web design agency specializes in
+                    creating e-commerce websites that enable you to sell your
+                    products online, significantly broadening your reach. Trust
+                    our Fort Erie web designers to craft and develop a stunning,
+                    modern online store tailored to your business needs.
                   </p>
                 </Col>
               </Row>
@@ -293,9 +358,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Get Assistance from Our Fort Erie Web Design Professionals Today</h3>
-                  <p>Take the first step by clicking the button below to receive your complimentary quote.</p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <h3>
+                    Get Assistance from Our Fort Erie Web Design Professionals
+                    Today
+                  </h3>
+                  <p>
+                    Take the first step by clicking the button below to receive
+                    your complimentary quote.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -307,30 +382,48 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Discover the Advantages of Selecting Infused Agency as Your <span>Fort Erie</span> Web Design
-                    Partner
+                    Discover the Advantages of Selecting Infused Agency as Your{" "}
+                    <span>Fort Erie</span> Web Design Partner
                   </h2>
-                  <p>Elevate Your Brand's Standing with the Expertise of Our Web Design Professionals</p>
+                  <p>
+                    Elevate Your Brand's Standing with the Expertise of Our Web
+                    Design Professionals
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Fort Erie businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Fort Erie
+                    businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
-                    <Link href="/Fort-Erie-seo-company/">search engine optimization (SEO)</Link> ,{" "}
-                    <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
-                    development.
+                    <Link href="/digital-marketing-niagara">
+                      digital marketing
+                    </Link>
+                    ,{" "}
+                    <Link href="/Fort-Erie-seo-company/">
+                      search engine optimization (SEO)
+                    </Link>{" "}
+                    ,{" "}
+                    <Link href="/wordpress-developer-niagara">
+                      WordPress development
+                    </Link>{" "}
+                    and e-commerce website development.
                   </p>
                   <p>
-                    We've been able to help small, local businesses all the way to large enterprise companies with
-                    increasing traffic to their websites, build modern websites for them and ultimately bringing them
-                    more revenue through digital channels.
+                    We've been able to help small, local businesses all the way
+                    to large enterprise companies with increasing traffic to
+                    their websites, build modern websites for them and
+                    ultimately bringing them more revenue through digital
+                    channels.
                   </p>
                 </Col>
                 <Col lg="6">
-                  <Image className="img-fluid" src={about} alt="business needs" />
+                  <Image
+                    className="img-fluid"
+                    src={about}
+                    alt="business needs"
+                  />
                 </Col>
               </Row>
             </Container>
@@ -340,63 +433,84 @@ const SEO = () => {
               <Col lg="12">
                 <h3>How much does a new website cost?</h3>
                 <p>
-                  There's no single answer to this question. It entirely depends on the needs of the project. Every web
-                  design and development project is unique in it's design, purpose, functionality and more. In our free
-                  consultation sessions we'll ask lots of questions, assess your needs and then give you a quote based
+                  There's no single answer to this question. It entirely depends
+                  on the needs of the project. Every web design and development
+                  project is unique in it's design, purpose, functionality and
+                  more. In our free consultation sessions we'll ask lots of
+                  questions, assess your needs and then give you a quote based
                   on our findings.
                 </p>
                 <h3>How long will it take to get a new website?</h3>
                 <p>
-                  Typically between 6 and 8 weeks. Keep in mind this completely depends on the client, though. For
-                  example - if we need content or approval from you and there are potential delays, this could delay the
-                  launch. However if you send over content / approval for things along the way quickly, the more quick
+                  Typically between 6 and 8 weeks. Keep in mind this completely
+                  depends on the client, though. For example - if we need
+                  content or approval from you and there are potential delays,
+                  this could delay the launch. However if you send over content
+                  / approval for things along the way quickly, the more quick
                   your website will launch.
                 </p>
                 <h3>Do you only create WordPress websites?</h3>
                 <p>
-                  No. WordPress is great for a lot of use cases. You can update your website on your own without needing
-                  a developer (we teach you). There's a rich ecosystem of plugins we utilize to speed up development.
-                  However, sometimes a hand-coded website far outperforms a WordPress site depending on the situation.
+                  No. WordPress is great for a lot of use cases. You can update
+                  your website on your own without needing a developer (we teach
+                  you). There's a rich ecosystem of plugins we utilize to speed
+                  up development. However, sometimes a hand-coded website far
+                  outperforms a WordPress site depending on the situation.
                 </p>
                 <h3>Do I have to be local to work with you?</h3>
-                <p>Nope! We have clients locally but have also served clients all across the world.</p>
-                <h3>Will I be able to update the website when it's finished?</h3>
                 <p>
-                  If it's a WordPress website, yes. If it's not, our team of developers can update the website for you.
+                  Nope! We have clients locally but have also served clients all
+                  across the world.
+                </p>
+                <h3>
+                  Will I be able to update the website when it's finished?
+                </h3>
+                <p>
+                  If it's a WordPress website, yes. If it's not, our team of
+                  developers can update the website for you.
                 </p>
                 <h3>Can you maintain my website for me?</h3>
                 <p>
-                  Absolutely. We understand that business owners are busy a lot of the time. We can take that stress off
-                  of you by updating your website for you.
+                  Absolutely. We understand that business owners are busy a lot
+                  of the time. We can take that stress off of you by updating
+                  your website for you.
                 </p>
                 <h3>Will my website be mobile-friendly?</h3>
                 <p>
-                  Of course. Responsive design, aka mobile websites, are a big part of today's society. We make sure to
-                  adhere to that so your customers have a pleasant experience on your website.
+                  Of course. Responsive design, aka mobile websites, are a big
+                  part of today's society. We make sure to adhere to that so
+                  your customers have a pleasant experience on your website.
                 </p>
                 <h3>When do I pay?</h3>
                 <p>
-                  Equal payments are made at the start, midway through and at the end of the project.However we can
-                  accomodate with smaller monthly payments if need be. We accept e-transfer, cash or credit card
-                  payments.
+                  Equal payments are made at the start, midway through and at
+                  the end of the project.However we can accomodate with smaller
+                  monthly payments if need be. We accept e-transfer, cash or
+                  credit card payments.
                 </p>
                 <h3>How much input do I have?</h3>
                 <p>
-                  Lots! We work with our clients very closely. We make sure that based on our conversations, there are
-                  no surprises when it comes to how your website looks or functions.
+                  Lots! We work with our clients very closely. We make sure that
+                  based on our conversations, there are no surprises when it
+                  comes to how your website looks or functions.
                 </p>
                 <h3>Do I provide the content for my website?</h3>
                 <p>
-                  Yes. You're the expert of your business so typically it's you that provides it. If you don't want to
-                  or can't, we will happily write the content at an additional cost.
+                  Yes. You're the expert of your business so typically it's you
+                  that provides it. If you don't want to or can't, we will
+                  happily write the content at an additional cost.
                 </p>
                 <h3>What about website hosting?</h3>
                 <p>
-                  We have a list of favourites hosting providers that we use. During our free consultation we can talk
-                  about these providers.
+                  We have a list of favourites hosting providers that we use.
+                  During our free consultation we can talk about these
+                  providers.
                 </p>
                 <h3>What if I need help after my site is live?</h3>
-                <p>We're only an email away! Contact us any time and we can help you with whatever you need.</p>
+                <p>
+                  We're only an email away! Contact us any time and we can help
+                  you with whatever you need.
+                </p>
               </Col>
             </Row>
           </Container>
@@ -404,7 +518,9 @@ const SEO = () => {
             city="Fort Erie"
             intro={[
               "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Fort_Erie,_Ontario">Fort Erie</a>,
+              <a href="https://en.wikipedia.org/wiki/Fort_Erie,_Ontario">
+                Fort Erie
+              </a>,
               " is a town on the Niagara River in the Niagara Region, Ontario, Canada. It is straightforwardly across the waterway from Buffalo, New York and is the site of Old Fort Erie which assumed a conspicuous part in the War of 1812.",
             ]}
             area="166"

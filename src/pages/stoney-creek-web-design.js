@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -18,7 +18,7 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Stoney Creek Web Design | Affordable Website Development</title>
         <meta
           name="description"
@@ -28,7 +28,7 @@ const SEO = () => {
           rel="canonical"
           href="https://infused.agency/stoney-creek-web-design"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Stoney Creek Web Design Company"

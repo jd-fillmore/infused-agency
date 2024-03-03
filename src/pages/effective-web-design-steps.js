@@ -14,7 +14,9 @@ const EffectiveWebDesignSteps = () => {
   return (
     <>
       <Head>
-        <title>Your Friendly 7-Step Guide to Effective Web Design</title>
+        <title>
+          Crafting a Stunning Website: Your 7-Step Guide to Effective Web Design
+        </title>
         <meta
           name="description"
           content="Unlock website success! Follow our 7-step guide for effective web design. Elevate user experience, boost engagement, and achieve online excellence with ease."

@@ -1,29 +1,29 @@
-import React from "react"
-import { Container, Row, Col } from "reactstrap"
-import { Helmet } from "react-helmet"
-import Image from "next/image"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import website from "../img/responsive.svg"
-import seo from "../img/seoo.svg"
-import dm from "../img/dm.svg"
-import wp from "../img/wordpress.png"
-import ecomm from "../img/add-to-cart.png"
-import wm from "../img/maintenance.png"
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import Head from "next/head";
+import Image from "next/image";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import website from "../img/responsive.svg";
+import seo from "../img/seoo.svg";
+import dm from "../img/dm.svg";
+import wp from "../img/wordpress.png";
+import ecomm from "../img/add-to-cart.png";
+import wm from "../img/maintenance.png";
 
 const About = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Services - Infused</title>
         <meta
           name="description"
           content="Learn more about services that Infused offers to help small businesses. Web design, development, SEO and digital marketing."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Services"
@@ -195,7 +195,7 @@ const About = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

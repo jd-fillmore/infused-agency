@@ -39,6 +39,7 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import "../../components/Home/Process/process.scss";
 import "../../components/websiteFAQ/website-faq.scss";
+import Script from "next/script";
 
 export const poppinsFont = Poppins({
   subsets: ["latin"],
@@ -72,6 +73,21 @@ export default function App({ Component, pageProps }) {
           font-family: ${lato.style.fontFamily} !important;
         }
       `}</style>
+
+      <Script
+        strategy="afterInteractive"
+        src="https://googletagmanager.com/gtag/js?id=G-9R67WGJ9RB"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9R67WGJ9RB');
+    `}
+      </Script>
+
       <Component {...pageProps} />
     </>
   );

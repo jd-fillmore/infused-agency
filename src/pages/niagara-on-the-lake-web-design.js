@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";

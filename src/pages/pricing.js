@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Nav from "../../components/Nav/nav";
@@ -13,13 +13,13 @@ import about from "../img/about.jpeg";
 const Pricing = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Pricing - Infused</title>
         <meta
           name="description"
           content="Check out the premium pricing for Infused Ageny's web design, SEO and digital marketing services."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero title="Pricing" description="Our Website & SEO Pricing" />
       <InnerContent>

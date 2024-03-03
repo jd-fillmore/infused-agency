@@ -1,23 +1,23 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { Container, Row, Col } from "reactstrap"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import bgImage from "../img/inner-about.jpg"
+import React from "react";
+import Head from "next/head";
+import { Container, Row, Col } from "reactstrap";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import bgImage from "../img/inner-about.jpg";
 
 const CassABella = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Cass-A-Bella Construction - Infused</title>
         <meta
           name="description"
           content="Check out how Infused help Cass-A-Bella Construction with a new website, and helped their online presence with new views and leads."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Cass-A-Bella Construction"
@@ -86,7 +86,7 @@ const CassABella = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default CassABella
+export default CassABella;

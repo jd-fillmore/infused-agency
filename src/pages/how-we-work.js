@@ -1,22 +1,22 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { Container, Row, Col } from "reactstrap"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
+import React from "react";
+import Head from "next/head";
+import { Container, Row, Col } from "reactstrap";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
 
 const HowWeWork = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>How We Work - Infused</title>
         <meta
           name="description"
           content="Check out to see the process of how Infused kicks off projects, and works closely with their clients to achieve their online business goals."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="How We Work"
@@ -99,7 +99,7 @@ const HowWeWork = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default HowWeWork
+export default HowWeWork;

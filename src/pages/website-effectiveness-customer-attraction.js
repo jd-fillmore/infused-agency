@@ -14,7 +14,10 @@ const WebsiteEffectiveness = () => {
   return (
     <>
       <Head>
-        <title>What Makes a Website Effective for Attracting Customers?</title>
+        <title>
+          Boost Your Business: Unveiling the Secrets of an Effective
+          Customer-Attracting Website
+        </title>
         <meta
           name="description"
           content="Discover the secrets behind websites that captivate customers. Learn simple, effective strategies for online success."

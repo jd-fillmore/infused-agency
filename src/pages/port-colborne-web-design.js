@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -19,14 +19,20 @@ import About from "../../components/Home/About/about";
 const SEO = () => {
   return (
     <>
-      <Helmet>
-        <title>Port Colborne Web Design Experts | Top-Tier Web Design Services - Infused Agency</title>
+      <Head>
+        <title>
+          Port Colborne Web Design Experts | Top-Tier Web Design Services -
+          Infused Agency
+        </title>
         <meta
           name="description"
           content="Discover the top-rated Web Design Company in Port Colborne. Our expert team crafts websites dedicated to enhancing your brand's image and driving up sales. Get your complimentary quote now!"
         />
-        <link rel="canonical" href="https://infused.agency/port-colborne-web-design" />
-      </Helmet>
+        <link
+          rel="canonical"
+          href="https://infused.agency/port-colborne-web-design"
+        />
+      </Head>
       <Nav />
       <InnerHero
         title="Port Colborne Web Design Firm"
@@ -46,19 +52,25 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Port Colborne web design services</strong> offered by our{" "}
-                  <strong>Port Colborne web design firm</strong> are exceptionally commendable. We consistently deliver
-                  outstanding web design solutions to our clients, yielding impressive results. The importance of web
-                  design services for any local company is manifold:
+                  The <strong>Port Colborne web design services</strong> offered
+                  by our <strong>Port Colborne web design firm</strong> are
+                  exceptionally commendable. We consistently deliver outstanding
+                  web design solutions to our clients, yielding impressive
+                  results. The importance of web design services for any local
+                  company is manifold:
                 </p>
                 <ul>
                   <li>Enhances company branding.</li>
-                  <li>Elevates your Port Colborne company's reputation and trustworthiness.</li>
+                  <li>
+                    Elevates your Port Colborne company's reputation and
+                    trustworthiness.
+                  </li>
                   <li>Generates more leads and company revenue.</li>
                 </ul>
                 <p>
-                  Opting for web design services from our company not only enhances your company's reputation but also
-                  serves as an effective strategy for attracting more customers.
+                  Opting for web design services from our company not only
+                  enhances your company's reputation but also serves as an
+                  effective strategy for attracting more customers.
                 </p>
               </Col>
             </Row>
@@ -67,18 +79,25 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center pd-btm-40">
-                  <h2>Achieve Results with Our Port Colborne Web Design Services</h2>
+                  <h2>
+                    Achieve Results with Our Port Colborne Web Design Services
+                  </h2>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={treeImg} alt="treereports" />
+                    <Image
+                      className="img-fluid"
+                      src={treeImg}
+                      alt="treereports"
+                    />
                     <h4>TreeReports</h4>
                     <p>
-                      "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
-                      highly recommend their company if you are thinking of needing their Port Colborne web design
-                      services."
+                      "Fantastic experience from start to end. Infused Agency is
+                      organized, thorough and professional. I highly recommend
+                      their company if you are thinking of needing their Port
+                      Colborne web design services."
                     </p>
                     <ul>
                       <li>
@@ -93,7 +112,8 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>1,500% increase</span> in Google rankings for multiple keywords
+                          <span>1,500% increase</span> in Google rankings for
+                          multiple keywords
                         </strong>
                       </li>
                     </ul>
@@ -119,9 +139,10 @@ const SEO = () => {
                     <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                     <h4>KD Flowers</h4>
                     <p>
-                      "Infused Agency drastically improved my online presence. By using their web design services, my
-                      Port Colborne company went from having no website at all to one that brings in new customers every
-                      week."
+                      "Infused Agency drastically improved my online presence.
+                      By using their web design services, my Port Colborne
+                      company went from having no website at all to one that
+                      brings in new customers every week."
                     </p>
                     <ul>
                       <li>
@@ -131,12 +152,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>20,000% increase</span> in new leads in the first 6 months
+                          <span>20,000% increase</span> in new leads in the
+                          first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>5,800 new people</span> discovering website per month
+                          <span>5,800 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -159,12 +182,17 @@ const SEO = () => {
                 </Col>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
+                    <Image
+                      className="img-fluid"
+                      src={cassImg}
+                      alt="Cass-A-Bella Construction"
+                    />
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
-                      web design for your Port Colborne business I do recommend Infused Agency for their services. JD
-                      keep up the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with the SEO work
+                      on my new web site. If you ever need a web design for your
+                      Port Colborne business I do recommend Infused Agency for
+                      their services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -174,12 +202,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>13,000% increase</span> in new leads in first 6 months
+                          <span>13,000% increase</span> in new leads in first 6
+                          months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>2,500 new people</span> discovering website per month
+                          <span>2,500 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -207,9 +237,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Prepared to Expand Your Business with Premier Port Colborne Web Design Services?</h3>
-                  <p>Simply click the button below to request your complimentary quote.</p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <h3>
+                    Prepared to Expand Your Business with Premier Port Colborne
+                    Web Design Services?
+                  </h3>
+                  <p>
+                    Simply click the button below to request your complimentary
+                    quote.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -223,37 +263,50 @@ const SEO = () => {
                   <h2>
                     Tailored Port Colborne <span>Web Design</span> Solutions
                   </h2>
-                  <p>Creating Websites That Drive Customer Acquisition for Your Company</p>
+                  <p>
+                    Creating Websites That Drive Customer Acquisition for Your
+                    Company
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <h5>Advanced Search Engine Optimization (SEO)</h5>
                   <p>
-                    We prioritize the indexing and prominent visibility of your websites for targeted Google keywords.
-                    Search engine optimization stands as a crucial element within our Port Colborne web design services,
-                    guaranteeing the easy discovery of your website by your customers. With the expertise of our Port
-                    Colborne web design specialists and engaging{" "}
-                    <Link href="/port-colborne-seo">Port Colborne SEO services</Link>, your website transforms into a
-                    driving force for acquiring new revenue and customers for your company.
+                    We prioritize the indexing and prominent visibility of your
+                    websites for targeted Google keywords. Search engine
+                    optimization stands as a crucial element within our Port
+                    Colborne web design services, guaranteeing the easy
+                    discovery of your website by your customers. With the
+                    expertise of our Port Colborne web design specialists and
+                    engaging{" "}
+                    <Link href="/port-colborne-seo">
+                      Port Colborne SEO services
+                    </Link>
+                    , your website transforms into a driving force for acquiring
+                    new revenue and customers for your company.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Innovative Web Design &amp; Development</h5>
                   <p>
-                    Crafting websites that enhance your brand's reputation and attract more customers is the forte of
-                    our Port Colborne web designers. Our award-winning web designs go beyond customer attraction by
-                    incorporating best practices in search engine optimization and responsive web design, contributing
-                    to an amplified brand awareness.
+                    Crafting websites that enhance your brand's reputation and
+                    attract more customers is the forte of our Port Colborne web
+                    designers. Our award-winning web designs go beyond customer
+                    attraction by incorporating best practices in search engine
+                    optimization and responsive web design, contributing to an
+                    amplified brand awareness.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Bespoke Web Design Solutions</h5>
                   <p>
-                    Each website we design for our clients is tailored to their unique needs. Our Port Colborne web
-                    designers specialize in creating modern website designs that align with your business goals. We
-                    ensure to incorporate your vision seamlessly into the design process, guided by the expertise of our
-                    Port Colborne web design professionals.
+                    Each website we design for our clients is tailored to their
+                    unique needs. Our Port Colborne web designers specialize in
+                    creating modern website designs that align with your
+                    business goals. We ensure to incorporate your vision
+                    seamlessly into the design process, guided by the expertise
+                    of our Port Colborne web design professionals.
                   </p>
                 </Col>
               </Row>
@@ -261,29 +314,37 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Adaptive Web Design</h5>
                   <p>
-                    As an integral element of our Port Colborne web design services, we prioritize responsive web design
-                    to ensure seamless navigation for your users across any device. Our Port Colborne web design experts
-                    employ custom coding techniques to guarantee your website looks exceptional on every device or
-                    computer.
+                    As an integral element of our Port Colborne web design
+                    services, we prioritize responsive web design to ensure
+                    seamless navigation for your users across any device. Our
+                    Port Colborne web design experts employ custom coding
+                    techniques to guarantee your website looks exceptional on
+                    every device or computer.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>WordPress-Centric Web Design</h5>
                   <p>
-                    In our Port Colborne web design company, we exclusively utilize WordPress for all website projects
-                    requiring a content management system (CMS). Given that WordPress powers nearly 50% of the web, it
-                    unequivocally emerges as the preferred choice for a CMS. Our preference for WordPress stems from its
-                    ease of development and user-friendly interface, ensuring a seamless experience for our clients.
+                    In our Port Colborne web design company, we exclusively
+                    utilize WordPress for all website projects requiring a
+                    content management system (CMS). Given that WordPress powers
+                    nearly 50% of the web, it unequivocally emerges as the
+                    preferred choice for a CMS. Our preference for WordPress
+                    stems from its ease of development and user-friendly
+                    interface, ensuring a seamless experience for our clients.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Empowering E-Commerce Web Design</h5>
                   <p>
-                    In the post-COVID era, establishing an online presence is paramount, particularly for product or
-                    subscription-based businesses. Our Port Colborne web design agency specializes in creating
-                    e-commerce websites that facilitate online product sales, significantly broadening your reach. Trust
-                    our Port Colborne web designers to skillfully design and develop a beautiful, modern online store
-                    tailored to your business needs.
+                    In the post-COVID era, establishing an online presence is
+                    paramount, particularly for product or subscription-based
+                    businesses. Our Port Colborne web design agency specializes
+                    in creating e-commerce websites that facilitate online
+                    product sales, significantly broadening your reach. Trust
+                    our Port Colborne web designers to skillfully design and
+                    develop a beautiful, modern online store tailored to your
+                    business needs.
                   </p>
                 </Col>
               </Row>
@@ -293,9 +354,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Consult with Our Port Colborne Web Design Professionals Today</h3>
-                  <p>Simply click the button below to receive your complimentary quote.</p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <h3>
+                    Consult with Our Port Colborne Web Design Professionals
+                    Today
+                  </h3>
+                  <p>
+                    Simply click the button below to receive your complimentary
+                    quote.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -307,29 +378,48 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Select Infused Agency as Your <span>Port Colborne</span> Web Design Partner
+                    Select Infused Agency as Your <span>Port Colborne</span> Web
+                    Design Partner
                   </h2>
-                  <p>Elevate Your Brand's Standing with the Expertise of Our Web Design Professionals</p>
+                  <p>
+                    Elevate Your Brand's Standing with the Expertise of Our Web
+                    Design Professionals
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Port Colborne businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Port
+                    Colborne businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
-                    <Link href="/port-colborne-seo">search engine optimization (SEO)</Link> ,{" "}
-                    <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
-                    development.
+                    <Link href="/digital-marketing-niagara">
+                      digital marketing
+                    </Link>
+                    ,{" "}
+                    <Link href="/port-colborne-seo">
+                      search engine optimization (SEO)
+                    </Link>{" "}
+                    ,{" "}
+                    <Link href="/wordpress-developer-niagara">
+                      WordPress development
+                    </Link>{" "}
+                    and e-commerce website development.
                   </p>
                   <p>
-                    We've been able to help small, local businesses all the way to large enterprise companies with
-                    increasing traffic to their websites, build modern websites for them and ultimately bringing them
-                    more revenue through digital channels.
+                    We've been able to help small, local businesses all the way
+                    to large enterprise companies with increasing traffic to
+                    their websites, build modern websites for them and
+                    ultimately bringing them more revenue through digital
+                    channels.
                   </p>
                 </Col>
                 <Col lg="6">
-                  <Image className="img-fluid" src={about} alt="business needs" />
+                  <Image
+                    className="img-fluid"
+                    src={about}
+                    alt="business needs"
+                  />
                 </Col>
               </Row>
             </Container>
@@ -339,63 +429,84 @@ const SEO = () => {
               <Col lg="12">
                 <h3>How much does a new website cost?</h3>
                 <p>
-                  There's no single answer to this question. It entirely depends on the needs of the project. Every web
-                  design and development project is unique in it's design, purpose, functionality and more. In our free
-                  consultation sessions we'll ask lots of questions, assess your needs and then give you a quote based
+                  There's no single answer to this question. It entirely depends
+                  on the needs of the project. Every web design and development
+                  project is unique in it's design, purpose, functionality and
+                  more. In our free consultation sessions we'll ask lots of
+                  questions, assess your needs and then give you a quote based
                   on our findings.
                 </p>
                 <h3>How long will it take to get a new website?</h3>
                 <p>
-                  Typically between 6 and 8 weeks. Keep in mind this completely depends on the client, though. For
-                  example - if we need content or approval from you and there are potential delays, this could delay the
-                  launch. However if you send over content / approval for things along the way quickly, the more quick
+                  Typically between 6 and 8 weeks. Keep in mind this completely
+                  depends on the client, though. For example - if we need
+                  content or approval from you and there are potential delays,
+                  this could delay the launch. However if you send over content
+                  / approval for things along the way quickly, the more quick
                   your website will launch.
                 </p>
                 <h3>Do you only create WordPress websites?</h3>
                 <p>
-                  No. WordPress is great for a lot of use cases. You can update your website on your own without needing
-                  a developer (we teach you). There's a rich ecosystem of plugins we utilize to speed up development.
-                  However, sometimes a hand-coded website far outperforms a WordPress site depending on the situation.
+                  No. WordPress is great for a lot of use cases. You can update
+                  your website on your own without needing a developer (we teach
+                  you). There's a rich ecosystem of plugins we utilize to speed
+                  up development. However, sometimes a hand-coded website far
+                  outperforms a WordPress site depending on the situation.
                 </p>
                 <h3>Do I have to be local to work with you?</h3>
-                <p>Nope! We have clients locally but have also served clients all across the world.</p>
-                <h3>Will I be able to update the website when it's finished?</h3>
                 <p>
-                  If it's a WordPress website, yes. If it's not, our team of developers can update the website for you.
+                  Nope! We have clients locally but have also served clients all
+                  across the world.
+                </p>
+                <h3>
+                  Will I be able to update the website when it's finished?
+                </h3>
+                <p>
+                  If it's a WordPress website, yes. If it's not, our team of
+                  developers can update the website for you.
                 </p>
                 <h3>Can you maintain my website for me?</h3>
                 <p>
-                  Absolutely. We understand that business owners are busy a lot of the time. We can take that stress off
-                  of you by updating your website for you.
+                  Absolutely. We understand that business owners are busy a lot
+                  of the time. We can take that stress off of you by updating
+                  your website for you.
                 </p>
                 <h3>Will my website be mobile-friendly?</h3>
                 <p>
-                  Of course. Responsive design, aka mobile websites, are a big part of today's society. We make sure to
-                  adhere to that so your customers have a pleasant experience on your website.
+                  Of course. Responsive design, aka mobile websites, are a big
+                  part of today's society. We make sure to adhere to that so
+                  your customers have a pleasant experience on your website.
                 </p>
                 <h3>When do I pay?</h3>
                 <p>
-                  Equal payments are made at the start, midway through and at the end of the project.However we can
-                  accomodate with smaller monthly payments if need be. We accept e-transfer, cash or credit card
-                  payments.
+                  Equal payments are made at the start, midway through and at
+                  the end of the project.However we can accomodate with smaller
+                  monthly payments if need be. We accept e-transfer, cash or
+                  credit card payments.
                 </p>
                 <h3>How much input do I have?</h3>
                 <p>
-                  Lots! We work with our clients very closely. We make sure that based on our conversations, there are
-                  no surprises when it comes to how your website looks or functions.
+                  Lots! We work with our clients very closely. We make sure that
+                  based on our conversations, there are no surprises when it
+                  comes to how your website looks or functions.
                 </p>
                 <h3>Do I provide the content for my website?</h3>
                 <p>
-                  Yes. You're the expert of your business so typically it's you that provides it. If you don't want to
-                  or can't, we will happily write the content at an additional cost.
+                  Yes. You're the expert of your business so typically it's you
+                  that provides it. If you don't want to or can't, we will
+                  happily write the content at an additional cost.
                 </p>
                 <h3>What about website hosting?</h3>
                 <p>
-                  We have a list of favourites hosting providers that we use. During our free consultation we can talk
-                  about these providers.
+                  We have a list of favourites hosting providers that we use.
+                  During our free consultation we can talk about these
+                  providers.
                 </p>
                 <h3>What if I need help after my site is live?</h3>
-                <p>We're only an email away! Contact us any time and we can help you with whatever you need.</p>
+                <p>
+                  We're only an email away! Contact us any time and we can help
+                  you with whatever you need.
+                </p>
               </Col>
             </Row>
           </Container>
@@ -403,7 +514,9 @@ const SEO = () => {
             city="Port Colborne"
             intro={[
               "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Port_Colborne">Port Colborne</a>,
+              <a href="https://en.wikipedia.org/wiki/Port_Colborne">
+                Port Colborne
+              </a>,
               " (the end of the Welland Canal, which in 2016 had a populace 18,306) is a city in Ontario, Canada. It is situated on Lake Erie, at the southern finish of the Welland Canal, in the Niagara Region of Southern Ontario.",
             ]}
             area="121"

@@ -1,25 +1,25 @@
-import React from "react"
-import { Container, Row, Col } from "reactstrap"
-import { Helmet } from "react-helmet"
-import Image from 'next/image'
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import InnerContent from "../../components/innerContent/innerContent"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import website from "../img/responsive.svg"
-import bgImage from "../img/inner-web-design.jpg"
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import Head from "next/head";
+import Image from "next/image";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import InnerContent from "../../components/innerContent/innerContent";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import website from "../img/responsive.svg";
+import bgImage from "../img/inner-web-design.jpg";
 
 const WebDesign = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Web Design &amp; Development - Infused</title>
         <meta
           name="description"
           content="Infused Agency offers web design and development services for companies in St. Catharines and Niagara. Click here to get your free quote."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Web Design &amp; Development"
@@ -151,7 +151,7 @@ const WebDesign = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default WebDesign
+export default WebDesign;

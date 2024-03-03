@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -19,7 +18,7 @@ import about from "../img/about.jpg";
 const SEO = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>
           Waterdown Web Design | Affordable Local Website Development
         </title>
@@ -31,7 +30,7 @@ const SEO = () => {
           rel="canonical"
           href="https://infused.agency/waterdown-web-design"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Waterdown Web Design Company"

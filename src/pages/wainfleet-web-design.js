@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -19,7 +19,7 @@ import About from "../../components/Home/About/about";
 const SEO = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>
           Wainfleet Web Design | Affordable Local Website Development
         </title>
@@ -31,7 +31,7 @@ const SEO = () => {
           rel="canonical"
           href="https://infused.agency/wainfleet-web-design"
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Wainfleet Web Design Company"

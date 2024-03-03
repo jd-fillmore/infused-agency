@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -19,14 +19,17 @@ import About from "../../components/Home/About/about";
 const SEO = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Thorold Web Design | Infused Agency</title>
         <meta
           name="description"
           content="Discover Thorold's Premier Web Design Company. Our expert team specializes in crafting websites designed to elevate your brand's reputation and drive increased sales for your business. Click here to get your free quote and take the first step toward a visually stunning and high-performing online presence!"
         />
-        <link rel="canonical" href="https://infused.agency/thorold-web-design" />
-      </Helmet>
+        <link
+          rel="canonical"
+          href="https://infused.agency/thorold-web-design"
+        />
+      </Head>
       <Nav />
       <InnerHero
         title="Thorold Web Design Company"
@@ -46,19 +49,28 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  Explore the exceptional <strong>Thorold web design services</strong> offered by our dedicated{" "}
-                  <strong>Thorold web design company</strong>. We pride ourselves on consistently delivering outstanding
-                  web design solutions that yield impressive results for our clients. Discover the myriad benefits of
-                  investing in professional web design services for your local company:
+                  Explore the exceptional{" "}
+                  <strong>Thorold web design services</strong> offered by our
+                  dedicated <strong>Thorold web design company</strong>. We
+                  pride ourselves on consistently delivering outstanding web
+                  design solutions that yield impressive results for our
+                  clients. Discover the myriad benefits of investing in
+                  professional web design services for your local company:
                 </p>
                 <ul>
                   <li>Enhances and fortifies your company's branding</li>
-                  <li>Elevates the reputation and credibility of your Thorold-based business</li>
-                  <li>Generates increased leads and revenue for your company</li>
+                  <li>
+                    Elevates the reputation and credibility of your
+                    Thorold-based business
+                  </li>
+                  <li>
+                    Generates increased leads and revenue for your company
+                  </li>
                 </ul>
                 <p>
-                  Partnering with our company for web design services not only strengthens your company's reputation but
-                  also serves as a powerful catalyst for attracting a larger customer base.
+                  Partnering with our company for web design services not only
+                  strengthens your company's reputation but also serves as a
+                  powerful catalyst for attracting a larger customer base.
                 </p>
               </Col>
             </Row>
@@ -68,18 +80,25 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Unlock Success with Our Thorold Web Design Services <span>See Real Results</span>
+                    Unlock Success with Our Thorold Web Design Services{" "}
+                    <span>See Real Results</span>
                   </h2>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={treeImg} alt="treereports" />
+                    <Image
+                      className="img-fluid"
+                      src={treeImg}
+                      alt="treereports"
+                    />
                     <h4>TreeReports</h4>
                     <p>
-                      "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
-                      highly recommend their company if you are thinking of needing their Thorold web design services."
+                      "Fantastic experience from start to end. Infused Agency is
+                      organized, thorough and professional. I highly recommend
+                      their company if you are thinking of needing their Thorold
+                      web design services."
                     </p>
                     <ul>
                       <li>
@@ -94,7 +113,8 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>1,500% increase</span> in Google rankings for multiple keywords
+                          <span>1,500% increase</span> in Google rankings for
+                          multiple keywords
                         </strong>
                       </li>
                     </ul>
@@ -120,9 +140,10 @@ const SEO = () => {
                     <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                     <h4>KD Flowers</h4>
                     <p>
-                      "Infused Agency drastically improved my online presence. By using their web design services, my
-                      Thorold company went from having no website at all to one that brings in new customers every
-                      week."
+                      "Infused Agency drastically improved my online presence.
+                      By using their web design services, my Thorold company
+                      went from having no website at all to one that brings in
+                      new customers every week."
                     </p>
                     <ul>
                       <li>
@@ -132,12 +153,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>20,000% increase</span> in new leads in the first 6 months
+                          <span>20,000% increase</span> in new leads in the
+                          first 6 months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>5,800 new people</span> discovering website per month
+                          <span>5,800 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -160,12 +183,17 @@ const SEO = () => {
                 </Col>
                 <Col lg="4">
                   <div className="card">
-                    <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
+                    <Image
+                      className="img-fluid"
+                      src={cassImg}
+                      alt="Cass-A-Bella Construction"
+                    />
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
-                      web design for your Thorold business I do recommend Infused Agency for their services. JD keep up
-                      the great work. Thank you."
+                      "Great Job, WELL DONE. I'm very pleased with the SEO work
+                      on my new web site. If you ever need a web design for your
+                      Thorold business I do recommend Infused Agency for their
+                      services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>
@@ -175,12 +203,14 @@ const SEO = () => {
                       </li>
                       <li>
                         <strong>
-                          <span>13,000% increase</span> in new leads in first 6 months
+                          <span>13,000% increase</span> in new leads in first 6
+                          months
                         </strong>
                       </li>
                       <li>
                         <strong>
-                          <span>2,500 new people</span> discovering website per month
+                          <span>2,500 new people</span> discovering website per
+                          month
                         </strong>
                       </li>
                     </ul>
@@ -208,9 +238,19 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Elevate Your Business with Premier Thorold Web Design Services</h3>
-                  <p>Take the first step towards growth. Click the button below to secure your free quote.</p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <h3>
+                    Elevate Your Business with Premier Thorold Web Design
+                    Services
+                  </h3>
+                  <p>
+                    Take the first step towards growth. Click the button below
+                    to secure your free quote.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -224,67 +264,95 @@ const SEO = () => {
                   <h2>
                     Leading Thorold <span>Web Design</span> Services
                   </h2>
-                  <p>Create websites that drive customer acquisition for your company.</p>
+                  <p>
+                    Create websites that drive customer acquisition for your
+                    company.
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Enhance Visibility with Search Engine Optimization (SEO)</h5>
+                  <h5>
+                    Enhance Visibility with Search Engine Optimization (SEO)
+                  </h5>
                   <p>
-                    We ensure your websites are effectively indexed and prominently appear for targeted keywords on
-                    Google. Search engine optimization is an integral aspect of our comprehensive Thorold web design
-                    services, ensuring that your website is easily discoverable by your potential customers.
-                    Collaborating with our Thorold web design experts and leveraging our dedicated{" "}
-                    <Link href="/Thorold-seo-company/">Thorold SEO services</Link>, your website becomes a powerful tool
-                    for driving new company revenue and attracting customers.
+                    We ensure your websites are effectively indexed and
+                    prominently appear for targeted keywords on Google. Search
+                    engine optimization is an integral aspect of our
+                    comprehensive Thorold web design services, ensuring that
+                    your website is easily discoverable by your potential
+                    customers. Collaborating with our Thorold web design experts
+                    and leveraging our dedicated{" "}
+                    <Link href="/Thorold-seo-company/">
+                      Thorold SEO services
+                    </Link>
+                    , your website becomes a powerful tool for driving new
+                    company revenue and attracting customers.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Comprehensive Web Design &amp; Development in Thorold</h5>
                   <p>
-                    Experience the expertise of our Thorold web designers who craft websites to enhance your brand's
-                    reputation, ultimately driving customer acquisition. Our award-winning web designs not only attract
-                    customers but also prioritize search engine optimization and responsive web design best practices,
-                    contributing to increased brand awareness.
+                    Experience the expertise of our Thorold web designers who
+                    craft websites to enhance your brand's reputation,
+                    ultimately driving customer acquisition. Our award-winning
+                    web designs not only attract customers but also prioritize
+                    search engine optimization and responsive web design best
+                    practices, contributing to increased brand awareness.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Tailored Excellence with Custom Web Design in Thorold</h5>
                   <p>
-                    Experience the uniqueness of our approach – every website we design is fully customized. Our Thorold
-                    web designers craft modern designs with a keen understanding of your business goals. Your vision is
-                    at the heart of our process, seamlessly integrated by our expert Thorold web design team.
+                    Experience the uniqueness of our approach – every website we
+                    design is fully customized. Our Thorold web designers craft
+                    modern designs with a keen understanding of your business
+                    goals. Your vision is at the heart of our process,
+                    seamlessly integrated by our expert Thorold web design team.
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
-                  <h5>Seamless Experience with Responsive Web Design in Thorold</h5>
+                  <h5>
+                    Seamless Experience with Responsive Web Design in Thorold
+                  </h5>
                   <p>
-                    As an integral part of our Thorold web design services, we prioritize responsive web design to
-                    ensure optimal user navigation on every device. Our dedicated Thorold web design experts employ
-                    custom coding, guaranteeing that your website not only looks great but functions seamlessly across
-                    various devices and computers.
+                    As an integral part of our Thorold web design services, we
+                    prioritize responsive web design to ensure optimal user
+                    navigation on every device. Our dedicated Thorold web design
+                    experts employ custom coding, guaranteeing that your website
+                    not only looks great but functions seamlessly across various
+                    devices and computers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Empowering Your Online Presence with WordPress Web Design in Thorold</h5>
+                  <h5>
+                    Empowering Your Online Presence with WordPress Web Design in
+                    Thorold
+                  </h5>
                   <p>
-                    Experience the versatility of our Thorold web design company, where we exclusively leverage
-                    WordPress for all projects requiring a content management system (CMS). Powering nearly 50% of the
-                    web, WordPress stands out as the clear choice for its ease of development and user-friendly
-                    interface. We choose WordPress to seamlessly develop websites that are not only technically robust
-                    but also effortlessly manageable for our clients.
+                    Experience the versatility of our Thorold web design
+                    company, where we exclusively leverage WordPress for all
+                    projects requiring a content management system (CMS).
+                    Powering nearly 50% of the web, WordPress stands out as the
+                    clear choice for its ease of development and user-friendly
+                    interface. We choose WordPress to seamlessly develop
+                    websites that are not only technically robust but also
+                    effortlessly manageable for our clients.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Thrive Online with E-Commerce Web Design in Thorold</h5>
                   <p>
-                    In the post-COVID era, establishing an online presence is crucial for product or subscription-based
-                    businesses. Our Thorold web design agency specializes in crafting e-commerce websites that serve as
-                    powerful sales platforms, enabling you to reach a broader audience. Trust our Thorold web designers
-                    to create and develop a stunning, modern online store that showcases your products and expands your
-                    market presence.
+                    In the post-COVID era, establishing an online presence is
+                    crucial for product or subscription-based businesses. Our
+                    Thorold web design agency specializes in crafting e-commerce
+                    websites that serve as powerful sales platforms, enabling
+                    you to reach a broader audience. Trust our Thorold web
+                    designers to create and develop a stunning, modern online
+                    store that showcases your products and expands your market
+                    presence.
                   </p>
                 </Col>
               </Row>
@@ -294,9 +362,18 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Elevate Your Online Presence with Thorold Web Design Experts</h3>
-                  <p>Take the first step towards success. Click the button below to secure your free quote today.</p>
-                  <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
+                  <h3>
+                    Elevate Your Online Presence with Thorold Web Design Experts
+                  </h3>
+                  <p>
+                    Take the first step towards success. Click the button below
+                    to secure your free quote today.
+                  </p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                  >
                     <button>Get Free Quote</button>
                   </a>
                 </Col>
@@ -308,29 +385,47 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Thorold</span> Web Design Agency
+                    Why Choose Infused Agency As Your <span>Thorold</span> Web
+                    Design Agency
                   </h2>
-                  <p>Increase Your Brand's Reputation With Our Web Design Experts</p>
+                  <p>
+                    Increase Your Brand's Reputation With Our Web Design Experts
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Thorold businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Thorold
+                    businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
-                    <Link href="/Thorold-seo-company/">search engine optimization (SEO)</Link> ,{" "}
-                    <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
-                    development .
+                    <Link href="/digital-marketing-niagara">
+                      digital marketing
+                    </Link>
+                    ,{" "}
+                    <Link href="/Thorold-seo-company/">
+                      search engine optimization (SEO)
+                    </Link>{" "}
+                    ,{" "}
+                    <Link href="/wordpress-developer-niagara">
+                      WordPress development
+                    </Link>{" "}
+                    and e-commerce website development .
                   </p>
                   <p>
-                    We've been able to help small, local businesses all the way to large enterprise companies with
-                    increasing traffic to their websites, build modern websites for them and ultimately bringing them
-                    more revenue through digital channels.
+                    We've been able to help small, local businesses all the way
+                    to large enterprise companies with increasing traffic to
+                    their websites, build modern websites for them and
+                    ultimately bringing them more revenue through digital
+                    channels.
                   </p>
                 </Col>
                 <Col lg="6">
-                  <Image className="img-fluid" src={about} alt="business needs" />
+                  <Image
+                    className="img-fluid"
+                    src={about}
+                    alt="business needs"
+                  />
                 </Col>
               </Row>
             </Container>
@@ -340,63 +435,84 @@ const SEO = () => {
               <Col lg="12">
                 <h3>How much does a new website cost?</h3>
                 <p>
-                  There's no single answer to this question. It entirely depends on the needs of the project. Every web
-                  design and development project is unique in it's design, purpose, functionality and more. In our free
-                  consultation sessions we'll ask lots of questions, assess your needs and then give you a quote based
+                  There's no single answer to this question. It entirely depends
+                  on the needs of the project. Every web design and development
+                  project is unique in it's design, purpose, functionality and
+                  more. In our free consultation sessions we'll ask lots of
+                  questions, assess your needs and then give you a quote based
                   on our findings.
                 </p>
                 <h3>How long will it take to get a new website?</h3>
                 <p>
-                  Typically between 6 and 8 weeks. Keep in mind this completely depends on the client, though. For
-                  example - if we need content or approval from you and there are potential delays, this could delay the
-                  launch. However if you send over content / approval for things along the way quickly, the more quick
+                  Typically between 6 and 8 weeks. Keep in mind this completely
+                  depends on the client, though. For example - if we need
+                  content or approval from you and there are potential delays,
+                  this could delay the launch. However if you send over content
+                  / approval for things along the way quickly, the more quick
                   your website will launch.
                 </p>
                 <h3>Do you only create WordPress websites?</h3>
                 <p>
-                  No. WordPress is great for a lot of use cases. You can update your website on your own without needing
-                  a developer (we teach you). There's a rich ecosystem of plugins we utilize to speed up development.
-                  However, sometimes a hand-coded website far outperforms a WordPress site depending on the situation.
+                  No. WordPress is great for a lot of use cases. You can update
+                  your website on your own without needing a developer (we teach
+                  you). There's a rich ecosystem of plugins we utilize to speed
+                  up development. However, sometimes a hand-coded website far
+                  outperforms a WordPress site depending on the situation.
                 </p>
                 <h3>Do I have to be local to work with you?</h3>
-                <p>Nope! We have clients locally but have also served clients all across the world.</p>
-                <h3>Will I be able to update the website when it's finished?</h3>
                 <p>
-                  If it's a WordPress website, yes. If it's not, our team of developers can update the website for you.
+                  Nope! We have clients locally but have also served clients all
+                  across the world.
+                </p>
+                <h3>
+                  Will I be able to update the website when it's finished?
+                </h3>
+                <p>
+                  If it's a WordPress website, yes. If it's not, our team of
+                  developers can update the website for you.
                 </p>
                 <h3>Can you maintain my website for me?</h3>
                 <p>
-                  Absolutely. We understand that business owners are busy a lot of the time. We can take that stress off
-                  of you by updating your website for you.
+                  Absolutely. We understand that business owners are busy a lot
+                  of the time. We can take that stress off of you by updating
+                  your website for you.
                 </p>
                 <h3>Will my website be mobile-friendly?</h3>
                 <p>
-                  Of course. Responsive design, aka mobile websites, are a big part of today's society. We make sure to
-                  adhere to that so your customers have a pleasant experience on your website.
+                  Of course. Responsive design, aka mobile websites, are a big
+                  part of today's society. We make sure to adhere to that so
+                  your customers have a pleasant experience on your website.
                 </p>
                 <h3>When do I pay?</h3>
                 <p>
-                  Equal payments are made at the start, midway through and at the end of the project.However we can
-                  accomodate with smaller monthly payments if need be. We accept e-transfer, cash or credit card
-                  payments.
+                  Equal payments are made at the start, midway through and at
+                  the end of the project.However we can accomodate with smaller
+                  monthly payments if need be. We accept e-transfer, cash or
+                  credit card payments.
                 </p>
                 <h3>How much input do I have?</h3>
                 <p>
-                  Lots! We work with our clients very closely. We make sure that based on our conversations, there are
-                  no surprises when it comes to how your website looks or functions.
+                  Lots! We work with our clients very closely. We make sure that
+                  based on our conversations, there are no surprises when it
+                  comes to how your website looks or functions.
                 </p>
                 <h3>Do I provide the content for my website?</h3>
                 <p>
-                  Yes. You're the expert of your business so typically it's you that provides it. If you don't want to
-                  or can't, we will happily write the content at an additional cost.
+                  Yes. You're the expert of your business so typically it's you
+                  that provides it. If you don't want to or can't, we will
+                  happily write the content at an additional cost.
                 </p>
                 <h3>What about website hosting?</h3>
                 <p>
-                  We have a list of favourites hosting providers that we use. During our free consultation we can talk
-                  about these providers.
+                  We have a list of favourites hosting providers that we use.
+                  During our free consultation we can talk about these
+                  providers.
                 </p>
                 <h3>What if I need help after my site is live?</h3>
-                <p>We're only an email away! Contact us any time and we can help you with whatever you need.</p>
+                <p>
+                  We're only an email away! Contact us any time and we can help
+                  you with whatever you need.
+                </p>
               </Col>
             </Row>
           </Container>

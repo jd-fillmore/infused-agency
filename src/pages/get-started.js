@@ -1,21 +1,21 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import Nav from "../../components/Nav/nav"
-import InnerHero from "../../components/innerHero/innerHero"
-import CTA from "../../components/CTA/cta"
-import Footer from "../../components/Footer/footer"
-import bgImage from "../img/inner-work.jpg"
+import React from "react";
+import Head from "next/head";
+import Nav from "../../components/Nav/nav";
+import InnerHero from "../../components/innerHero/innerHero";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import bgImage from "../img/inner-work.jpg";
 
 const GetEvaluation = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>Get Started - Infused</title>
         <meta
           name="description"
           content="Ready to start your project? Click here to fill out the form and we'll be in contact as soon as possible."
         />
-      </Helmet>
+      </Head>
       <Nav />
       <InnerHero
         title="Get Started"
@@ -34,7 +34,7 @@ const GetEvaluation = () => {
       <CTA />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default GetEvaluation
+export default GetEvaluation;
