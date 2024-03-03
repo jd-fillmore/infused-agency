@@ -31,7 +31,7 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Lockport NY SEO Company"
+        title="Lockport SEO Company"
         description="Infused Agency is an award-winning SEO company in Lockport NY. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
