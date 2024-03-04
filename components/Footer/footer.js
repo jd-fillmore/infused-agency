@@ -103,6 +103,7 @@ const Footer = () => {
               <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
               <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
               <Link href="/crystal-beach-seo-company">Crystal Beach SEO</Link>,{" "}
+              <Link href="/depew-seo">Depew NY SEO</Link>,{" "}
               <Link href="/dundas-seo">Dundas SEO</Link>,{" "}
               <Link href="/east-aurora-seo">East Aurora NY SEO</Link>,{" "}
               <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
@@ -129,7 +130,8 @@ const Footer = () => {
               <Link href="/crystal-beach-web-design">
                 Crystal Beach Web Design
               </Link>
-              , <Link href="/dundas-web-design">Dundas Web Design</Link>,{" "}
+              , <Link href="/depew-web-design">Depew NY Web Design</Link>,{" "}
+              <Link href="/dundas-web-design">Dundas Web Design</Link>,{" "}
               <Link href="/east-aurora-web-design">
                 East Aurora NY Web Design
               </Link>
