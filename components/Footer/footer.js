@@ -138,11 +138,7 @@ const Footer = () => {
               , <Link href="/fonthill-web-design">Fonthill Web Design</Link>,{" "}
               <Link href="/fort-erie-web-design">Fort Erie Web Design</Link>,{" "}
               <Link href="/grimsby-web-design">Grimsby Web Design</Link>,{" "}
-              <Link href="/lockport-web-design">Lockport NY Web Design</Link>,{" "}
-              <Link href="/niagara-on-the-lake-web-design">
-                Niagara-on-the-Lake Web Design
-              </Link>
-              ,{" "}
+              <Link href="/lockport-web-design">Lockport NY Web Design</Link>, ,{" "}
               <Link href="/port-colborne-web-design">
                 Port Colborne Web Design
               </Link>
