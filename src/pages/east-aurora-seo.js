@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/caledonia-seo.webp";
+import website from "../img/east-aurora-seo-ny.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -19,19 +19,17 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-          Caledonia SEO | Affordable Local Search Engine Optimization
-        </title>
+        <title>East Aurora SEO | NY Search Engine Optimization</title>
         <meta
           name="description"
-          content="Unleash the potential of Caledonia SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
+          content="Unleash the potential of East Aurora SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
-        <link rel="canonical" href="https://infused.agency/Caledonia-seo" />
+        <link rel="canonical" href="https://infused.agency/east-aurora-seo" />
       </Head>
       <Nav />
       <InnerHero
-        title="Caledonia SEO Company"
-        description="Infused Agency is an award-winning SEO company in Caledonia. We help businesses bring in more revenue through their websites."
+        title="East Aurora SEO Company"
+        description="Infused Agency is an award-winning SEO company in East Aurora. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -42,13 +40,13 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Caledonia seo company, Caledonia seo agency, Caledonia seo services"
+                  alt="East Aurora seo company, East Aurora seo agency, East Aurora seo services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Caledonia SEO services</strong> that our{" "}
-                  <strong>Caledonia SEO company</strong> provides are pretty
+                  The <strong>East Aurora SEO services</strong> that our{" "}
+                  <strong>East Aurora SEO company</strong> provides are pretty
                   impeccable. We consistently provide great SEO services to our
                   clients with pretty awesome results. There are a lot of
                   benefits as to why SEO services are so important for any local
@@ -59,7 +57,7 @@ const SEO = () => {
                   <li>
                     Creates a trustworthy experience for potential customers.
                   </li>
-                  <li>Improves your Caledonia brand's awareness.</li>
+                  <li>Improves your East Aurora brand's awareness.</li>
                   <li>It's trackable.</li>
                 </ul>
                 <p>
@@ -75,7 +73,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Nearby Caledonia SEO Clients <span>Get Results</span>
+                    Our Nearby East Aurora SEO Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -91,8 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their
-                      Caledonia SEO services."
+                      their company if you are thinking of needing their East
+                      Aurora SEO services."
                     </p>
                     <ul>
                       <li>
@@ -135,7 +133,7 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their SEO services, my Caledonia company went
+                      By using their SEO services, my East Aurora company went
                       from not ranking at all to the first page of Google for
                       tons of keywords."
                     </p>
@@ -185,8 +183,8 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your
-                      Caledonia business I do recommend Infused Agency for their
+                      on my new web site. If you ever need a SEO for your East
+                      Aurora business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -233,7 +231,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with top Caledonia SEO services?
+                    Ready to grow your business with top East Aurora SEO
+                    services?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
@@ -252,7 +251,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Caledonia <span>SEO</span> Services
+                    East Aurora <span>SEO</span> Services
                   </h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
@@ -263,9 +262,9 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Keyword Research &amp; Strategy</h5>
                   <p>
-                    Infused Agency's SEO company in Caledonia conducts specific
-                    keyword research that covers specifically what your users
-                    are searching for. We look at keywords as the main
+                    Infused Agency's SEO company in East Aurora conducts
+                    specific keyword research that covers specifically what your
+                    users are searching for. We look at keywords as the main
                     foundation to your SEO project. Beyond this, we dive into
                     the technicalities to further deliver value to your
                     customers.
@@ -274,7 +273,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Link Building</h5>
                   <p>
-                    Off of your website, our Caledonia SEO exports utilize
+                    Off of your website, our East Aurora SEO exports utilize
                     efforts to build links to your website, to help your site
                     rise in search rankings. When other websites link back to
                     your own, you can be seen as authoratative and rank for
@@ -285,9 +284,9 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Content Writing</h5>
                   <p>
-                    Our Caledonia SEO services are conducted by a highly trained
-                    group of marketers, which includes content writers. At
-                    Infused, you can take advantage of our content writing
+                    Our East Aurora SEO services are conducted by a highly
+                    trained group of marketers, which includes content writers.
+                    At Infused, you can take advantage of our content writing
                     skills to create content that attracts highly qualified
                     leads. We help mix keywords and your brand voice together,
                     to help bring in more leads to your website.
@@ -300,17 +299,17 @@ const SEO = () => {
                   <p>
                     It's very important that your on-page work is done well, as
                     it can signal to Google that you may give your users a poor
-                    user experience. This is why our Caledonia SEO agency looks
-                    for and fixes these issues for you. We conduct on-page SEO
-                    to help bolster your online presence, amplify your lead
+                    user experience. This is why our East Aurora SEO agency
+                    looks for and fixes these issues for you. We conduct on-page
+                    SEO to help bolster your online presence, amplify your lead
                     generation and help boost sales.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Local SEO</h5>
                   <p>
-                    For a more local approach, our Caledonia SEO specialists can
-                    leverage the power of local SEO. We help local customers
+                    For a more local approach, our East Aurora SEO specialists
+                    can leverage the power of local SEO. We help local customers
                     find your website in local search engine rankings. We do
                     this by employing on and off page search engine optimization
                     best practices, to help raise your local website in Google's
@@ -321,7 +320,7 @@ const SEO = () => {
                   <h5>Technical SEO</h5>
                   <p>
                     If you find out about some technical mishaps on your
-                    website, our Caledonia SEO experts are here to help. We'll
+                    website, our East Aurora SEO experts are here to help. We'll
                     dive into your website by conducting a site-wide audit to
                     check for problems related to website speed, content and
                     optimization. Our team will fix these issues, helping your
@@ -335,7 +334,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Caledonia SEO Experts Help Today</h3>
+                  <h3>Have Our East Aurora SEO Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -353,8 +352,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Caledonia</span> SEO
-                    Agency
+                    Why Choose Infused Agency As Your <span>East Aurora</span>{" "}
+                    SEO Agency
                   </h2>
                   <p>Increase Your Website's Rankings With Our SEO Experts</p>
                 </Col>
@@ -362,8 +361,8 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Caledonia
-                    businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local East
+                    Aurora businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing
@@ -386,7 +385,7 @@ const SEO = () => {
                     channels.
                   </p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23317.16169759943!2d-79.97051033818059!3d43.06992890347828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c8d111e300985%3A0x56dca00405cb2d0c!2sCaledonia%2C%20ON!5e0!3m2!1sen!2sca!4v1709126757822!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23431.52946810655!2d-78.63700442934338!3d42.76844915407924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3a6ee1f4499a3%3A0xd3ca79492e0afaf6!2sEast%20Aurora%2C%20NY%2014052%2C%20USA!5e0!3m2!1sen!2sca!4v1709573071675!5m2!1sen!2sca"
                     width="600"
                     height="450"
                     allowfullscreen=""
@@ -418,8 +417,8 @@ const SEO = () => {
                 <h3>Do I need SEO?</h3>
                 <p>
                   Does your business depend on attracting new customers? Then
-                  absolutely you need a Caledonia SEO company to help you with
-                  SEO services. It's important that our Caledonia SEO experts
+                  absolutely you need a East Aurora SEO company to help you with
+                  SEO services. It's important that our East Aurora SEO experts
                   help your website rank where your customers are looking - on
                   the first page of Google.
                 </p>
@@ -461,9 +460,9 @@ const SEO = () => {
                   </li>
                   <li>and more</li>
                 </ul>
-                <h3>Our Caledonia SEO company is ready to help.</h3>
+                <h3>Our East Aurora SEO company is ready to help.</h3>
                 <p>
-                  If you need our Caledonia SEO company to help your company
+                  If you need our East Aurora SEO company to help your company
                   rise in Google with our expert SEO services, click below to
                   get your free SEO quote.
                 </p>

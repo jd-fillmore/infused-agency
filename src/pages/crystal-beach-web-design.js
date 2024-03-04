@@ -79,7 +79,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Crystal Beach Web Design Clients{" "}
+                    Our Nearby Crystal Beach Web Design Clients{" "}
                     <span>Get Results</span>
                   </h2>
                 </Col>

@@ -73,7 +73,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Dundas Web Design Clients <span>Get Results</span>
+                    Our Nearby Dundas Web Design Clients{" "}
+                    <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>

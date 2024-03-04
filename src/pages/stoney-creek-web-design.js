@@ -76,7 +76,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Stoney Creek Web Design Clients <span>Get Results</span>
+                    Our Nearby Stoney Creek Web Design Clients{" "}
+                    <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>

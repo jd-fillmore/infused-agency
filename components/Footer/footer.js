@@ -104,6 +104,7 @@ const Footer = () => {
               <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
               <Link href="/crystal-beach-seo-company">Crystal Beach SEO</Link>,{" "}
               <Link href="/dundas-seo">Dundas SEO</Link>,{" "}
+              <Link href="/east-aurora-seo">East Aurora NY SEO</Link>,{" "}
               <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
               <Link href="/fort-erie-seo-company">Fort Erie SEO</Link>,{" "}
               <Link href="/grimsby-seo-company">Grimsby SEO</Link>,{" "}
@@ -128,7 +129,10 @@ const Footer = () => {
                 Crystal Beach Web Design
               </Link>
               , <Link href="/dundas-web-design">Dundas Web Design</Link>,{" "}
-              <Link href="/fonthill-web-design">Fonthill Web Design</Link>,{" "}
+              <Link href="/east-aurora-web-design">
+                East Aurora NY Web Design
+              </Link>
+              , <Link href="/fonthill-web-design">Fonthill Web Design</Link>,{" "}
               <Link href="/fort-erie-web-design">Fort Erie Web Design</Link>,{" "}
               <Link href="/grimsby-web-design">Grimsby Web Design</Link>,{" "}
               <Link href="/lockport-web-design">Lockport NY Web Design</Link>,{" "}
