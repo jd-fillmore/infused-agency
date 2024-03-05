@@ -209,51 +209,6 @@ const Home = () => {
                   <AccordionItem>
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        Will you review my existing website prior to building my
-                        new website?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      Absolutely! We'd be happy to review your existing website
-                      as part of our initial consultation. Understanding your
-                      current online presence helps us tailor our approach to
-                      building a new website that aligns with your goals and
-                      addresses any specific improvements or enhancements you're
-                      looking for. Let's discuss your current site during our
-                      free consultation to ensure we create a website that meets
-                      your needs and exceeds your expectations.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        What do you need from me before we start my website
-                        design project?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      <ul>
-                        <li>
-                          Clear understanding of your specific requirements and
-                          business needs. Don't worry, we'll go over this in our
-                          discovery call!
-                        </li>
-                        <li>
-                          Any specific preferences or design elements you'd like
-                          us to incorporate.
-                        </li>
-                        <li>
-                          Access to relevant content, such as images, logos, and
-                          textual information.
-                        </li>
-                      </ul>
-                      That's it! It's a pretty smooth process to get your
-                      website design project going.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
                         How much does a new website cost?
                       </AccordionItemButton>
                     </AccordionItemHeading>
@@ -362,20 +317,7 @@ const Home = () => {
                       our process, feel free to ask!
                     </AccordionItemPanel>
                   </AccordionItem>
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Will I have a project manager or one central contact?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      Yes, you'll have a project manager who will work directly
-                      with you. They will be your main point of contact
-                      throughout the whole process, making sure everything runs
-                      smoothly and addressing any questions or concerns you
-                      might have.
-                    </AccordionItemPanel>
-                  </AccordionItem>
+
                   <AccordionItem>
                     <AccordionItemHeading>
                       <AccordionItemButton>
@@ -385,19 +327,6 @@ const Home = () => {
                     <AccordionItemPanel>
                       Yep! We make sure our websites work nicely on phones so
                       that when people visit, it's fun and easy for them.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>When do I pay?</AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      We get money in parts during the project. First, you give
-                      us some money at the start. Then, more when we're
-                      designing and building the website. The last bit comes at
-                      the end. You can pay with e-transfer, cash, or a credit
-                      card.
                     </AccordionItemPanel>
                   </AccordionItem>
 
@@ -624,70 +553,6 @@ const Home = () => {
         </div>
       </section>
 
-      <Fade>
-        <section className="why-infused">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <h2 className="text-center">
-                  Why <span>Choose Us</span>
-                </h2>
-                <p className="text-center">
-                  We Grow Businesses Through Lead-Generating Website Designs
-                  &amp; SEO Strategies
-                </p>
-              </div>
-            </div>
-            <div className="row pd-top-40">
-              <div className="col-lg-4">
-                <Image
-                  width="50"
-                  height="50"
-                  className="img-fluid"
-                  src={check}
-                  alt="performance focused"
-                />
-                <h3>Proven Track Record</h3>
-                <p>
-                  Our skilled web design agency team has been making successful
-                  websites since 2013, using tricks to help your business grow.
-                  Trust us – we know what we're doing.
-                </p>
-              </div>
-              <div className="col-lg-4">
-                <Image
-                  width="50"
-                  height="50"
-                  className="img-fluid"
-                  src={check}
-                  alt="proven track record"
-                />
-                <h3>Web Design Experts</h3>
-                <p>
-                  Our Niagara web designers create unique, handcrafted websites
-                  for businesses, prioritizing safety, speed, and the latest
-                  techniques.
-                </p>
-              </div>
-              <div className="col-lg-4">
-                <Image
-                  width="50"
-                  height="50"
-                  className="img-fluid"
-                  src={check}
-                  alt="prompt delivery"
-                />
-                <h3>Prompt Delivery</h3>
-                <p>
-                  We understand your busy Niagara business. We build your
-                  website quickly, communicate at every step, and ensure it's
-                  ready on time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Fade>
       <Fade>
         <section className="cta home-cta">
           <div className="container">
