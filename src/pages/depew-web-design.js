@@ -89,8 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their East
-                      Aurora web design services."
+                      their company if you are thinking of needing their Depew
+                      web design services."
                     </p>
                     <ul>
                       <li>
@@ -321,9 +321,9 @@ const SEO = () => {
                     product or subscription-based business to have an e-commerce
                     website. With the help of our Depew web design agency, your
                     e-commerce website can help sell your products online,
-                    expanding your reach drastically. Leave it to our East
-                    Aurora web designers to help design and develop a beautiful,
-                    modern online store.
+                    expanding your reach drastically. Leave it to our Depew web
+                    designers to help design and develop a beautiful, modern
+                    online store.
                   </p>
                 </Col>
               </Row>
@@ -362,8 +362,8 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local East
-                    Aurora businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Depew
+                    businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing
