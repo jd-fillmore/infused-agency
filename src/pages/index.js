@@ -120,10 +120,12 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design | St. Catharines Web Developer</title>
+        <title>
+          Niagara Web Design | St. Catharines Website Creation Company
+        </title>
         <meta
           name="description"
-          content="Leading Niagara Web Design & Website Developer company located in St. Catharines. Specializing in web design &amp; website development. Get your free quote now!"
+          content="Niagara's top web design agency. As a leading website creation company in St. Catharines, we specialize in crafting stunning websites. Get a free quote now!"
         />
         <meta
           name="keywords"
@@ -148,23 +150,24 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-7">
                 <h2>
-                  Leading Niagara web design company{" "}
+                  Web Design Niagara - a website company{" "}
                   <span>businesses trust.</span>
                 </h2>
                 <p>
-                  Hi there! Our Niagara web design agency is really good at
-                  making websites. We create websites that are good for local
-                  businesses and don't cost too much.
+                  Our Niagara web design agency is really good at making
+                  websites. Our web design Niagara company does website creation
+                  that is good for local businesses and don't cost too much.
                   <br />
                   <br />
-                  We've been helping lots of nearby businesses in the Niagara
-                  region like St. Catharines, Niagara Falls and other areas with
-                  our website-making skills. Our websites are easy to use and
-                  help businesses grow and make more money. We also have experts
-                  who make sure your website can be easily found on Google.
+                  We've been offering Niagara website design to lots of nearby
+                  businesses in the Niagara region like St. Catharines, Niagara
+                  Falls and other areas with our website-making skills. Our
+                  websites are easy to use and help businesses grow and make
+                  more money. We also have experts who make sure your website
+                  can be easily found on Google.
                   <br />
                   <br />
-                  We love making websites and helping local businesses do well
+                  We love creating websites and helping local businesses do well
                   online. We can do that for you too!
                 </p>
                 <Image
@@ -209,8 +212,7 @@ const Home = () => {
             <div className="row pd-btm-80">
               <div className="col-lg-12 text-center">
                 <h2>
-                  <span>Web Design Services</span> We Offer To Niagara
-                  Businesses
+                  <span>Web Design Niagara</span> Services We Offer
                 </h2>
                 <p className="serv-intro">
                   We make great websites and help people find them on the
@@ -237,11 +239,11 @@ const Home = () => {
                     website. At Infused Agency, we help make brands stand out
                     with our special Niagara web design services. We create
                     websites that are easy for people to use and make them want
-                    to become customers. Our talented designers and developers
-                    create great designs and websites that match your brand
-                    perfectly. Our team keeps up with the latest styles to make
-                    sure your customers have a really nice time when they visit
-                    your site.
+                    to become customers. Our talented Niagara website designers
+                    and developers create great designs and websites that match
+                    your brand perfectly. Our team keeps up with the latest
+                    styles to make sure your customers have a really nice time
+                    when they visit your site.
                   </p>
                 </div>
               </div>
@@ -259,13 +261,14 @@ const Home = () => {
                     Your business and how it looks online are all seen on your
                     website. At Infused Agency, we use something called
                     WordPress to make your brand really special. Our web design
-                    services focus on using WordPress, which is like a super
-                    tool for making websites. We create awesome websites that
-                    show off what your brand is all about and give you some
+                    Niagara services focus on using WordPress, which is like a
+                    super tool for making websites. We create awesome websites
+                    that show off what your brand is all about and give you some
                     really cool benefits. With WordPress, you can even change
                     your website by yourself, you don't need our help! Our
-                    talented team of designers and developers makes sure your
-                    WordPress website looks great and works really well.
+                    talented team of Niagara website designers and developers
+                    makes sure your WordPress website looks great and works
+                    really well.
                   </p>
                 </div>
               </div>

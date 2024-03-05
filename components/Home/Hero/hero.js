@@ -12,15 +12,17 @@ const Hero = () => {
           <div className="bg">
             <Row>
               <Col lg="6">
-                <h1 className="intro">
-                  Niagara Web Design Company | St. Catharines Website Developer
-                </h1>
+                <h1 className="intro">Web Design Niagara</h1>
                 <h2>
-                  Web Design That Elevates <span>Your Business</span>.
+                  Niagara Web Design Agency That Elevates{" "}
+                  <span>Your Business</span>.
                 </h2>
-                <h3>Niagara &amp; St. Catharines premier website designers</h3>
+                <h3>
+                  Infused Agency is a top-tier Niagara website design company
+                  handcrafting stunning website design since 2013.
+                </h3>
                 <a
-                  name="niagara web design company free quote"
+                  name="web design niagara free quote"
                   href="https://calendly.com/infused-agency/project-discovery/"
                   target="_blank"
                 >

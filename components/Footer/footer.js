@@ -33,7 +33,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col lg="4">
-              <h3>About</h3>
+              <h3>Niagara Website Design</h3>
               <p>
                 Infused is a Niagara web design &amp; St. Catharines SEO
                 company. We help local and non-local businesses build their
