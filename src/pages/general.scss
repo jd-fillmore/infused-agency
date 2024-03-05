@@ -243,9 +243,9 @@ span {
 
 .home-client-results {
   background: $dark-grey;
-  padding: 120px 0px 120px 0px;
+  padding: 0px 0px 120px 0px;
   @include bp-tablet-sm {
-    padding: 40px 0px 40px 0px;
+    padding: 0px 0px 20px 0px;
   }
   button {
     margin-top: 0 !important;
