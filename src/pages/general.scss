@@ -243,7 +243,7 @@ span {
 
 .home-client-results {
   background: $dark-grey;
-  padding: 120px 0px 0px 0px;
+  padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
@@ -271,14 +271,15 @@ span {
       margin-top: 0px;
     }
     .highlight {
-      background: $dark-purple;
+      background: $dark-grey;
       margin-bottom: 20px;
       h3 {
-        color: $dark-blue;
+        color: $grey;
         font-size: 50px;
+        margin-bottom: 0px;
       }
       p {
-        color: rgba($dark-blue, 0.7);
+        color: rgba($grey, 0.8);
       }
     }
     a {
@@ -332,7 +333,7 @@ span {
 }
 
 .home-top-web {
-  padding: 120px 0px 120px 0px;
+  padding: 120px 0px 40px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
@@ -342,14 +343,10 @@ span {
 }
 
 .home-faq {
-  padding: 120px 0px 120px 0px;
+  padding: 0px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
-}
-
-.home-faq {
-  background: $dark-grey;
   h2 {
     margin-bottom: 30px;
   }
@@ -394,5 +391,20 @@ span {
 iframe {
   @include bp-tablet-sm {
     width: 100%;
+  }
+}
+
+.accordion__button {
+  background-color: $light-blue !important;
+  color: $dark-blue !important;
+  transition: 0.2s;
+  &:hover {
+    background-color: $glow-blue !important;
+  }
+}
+
+.accordion__panel {
+  ul {
+    font-size: 16px !important;
   }
 }

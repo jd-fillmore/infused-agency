@@ -1,7 +1,13 @@
 import React from "react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
-import Industries from "../Footer/industries-modal";
 
 const pages = [
   {
@@ -97,63 +103,105 @@ const Footer = () => {
           <Row>
             <Col lg="8">
               <h3>Areas Served</h3>
-              <p className="subtitle">SEO</p>
-              <Link href="/alliston-seo">Alliston SEO</Link>,{" "}
-              <Link href="/ancaster-seo">Ancaster SEO</Link>,{" "}
-              <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
-              <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
-              <Link href="/crystal-beach-seo-company">Crystal Beach SEO</Link>,{" "}
-              <Link href="/depew-seo">Depew NY SEO</Link>,{" "}
-              <Link href="/dundas-seo">Dundas SEO</Link>,{" "}
-              <Link href="/east-aurora-seo">East Aurora NY SEO</Link>,{" "}
-              <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
-              <Link href="/fort-erie-seo-company">Fort Erie SEO</Link>,{" "}
-              <Link href="/grimsby-seo-company">Grimsby SEO</Link>,{" "}
-              <Link href="/lockport-seo">Lockport NY SEO</Link>,{" "}
-              <Link href="/niagara-seo-company">Niagara SEO</Link>,{" "}
-              <Link href="/niagara-on-the-lake-seo">
-                Niagara-on-the-Lake SEO
-              </Link>
-              , <Link href="/port-colborne-seo">Port Colborne SEO</Link>,{" "}
-              <Link href="/stoney-creek-seo">Stoney Creek SEO</Link>,{" "}
-              <Link href="/seo-st-catharines">St. Catharines SEO</Link>,{" "}
-              <Link href="/thorold-seo-company">Thorold SEO</Link>,{" "}
-              <Link href="/wainfleet-seo">Wainfleet SEO</Link>,{" "}
-              <Link href="/warsaw-seo">Warsaw NY SEO</Link>,{" "}
-              <Link href="/waterdown-seo">Waterdown SEO</Link>,{" "}
-              <Link href="/welland-seo-company">Welland SEO</Link>.
-              <p className="subtitle">Web Design</p>
-              <Link href="/alliston-web-design">Alliston Web Design</Link>,{" "}
-              <Link href="/ancaster-web-design">Ancaster Web Design</Link>,{" "}
-              <Link href="/beamsville-web-design">Beamsville Web Design</Link>,{" "}
-              <Link href="/caledonia-web-design">Caledonia Web Design</Link>,{" "}
-              <Link href="/crystal-beach-web-design">
-                Crystal Beach Web Design
-              </Link>
-              , <Link href="/depew-web-design">Depew NY Web Design</Link>,{" "}
-              <Link href="/dundas-web-design">Dundas Web Design</Link>,{" "}
-              <Link href="/east-aurora-web-design">
-                East Aurora NY Web Design
-              </Link>
-              , <Link href="/fonthill-web-design">Fonthill Web Design</Link>,{" "}
-              <Link href="/fort-erie-web-design">Fort Erie Web Design</Link>,{" "}
-              <Link href="/grimsby-web-design">Grimsby Web Design</Link>,{" "}
-              <Link href="/lockport-web-design">Lockport NY Web Design</Link>, ,{" "}
-              <Link href="/port-colborne-web-design">
-                Port Colborne Web Design
-              </Link>
-              ,{" "}
-              <Link href="/stoney-creek-web-design">
-                Stoney Creek Web Design
-              </Link>
-              , <Link href="/thorold-web-design">Thorold Web Design</Link>,{" "}
-              <Link href="/wainfleet-web-design">Wainfleet Web Design</Link>,{" "}
-              <Link href="/warsaw-web-design">Warsaw NY Web Design</Link>,{" "}
-              <Link href="/waterdown-web-design">Waterdown Web Design</Link>,{" "}
-              <Link href="/web-design-welland">Welland Web Design</Link>.
+              <Accordion>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>SEO</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <Link href="/alliston-seo">Alliston SEO</Link>,{" "}
+                    <Link href="/ancaster-seo">Ancaster SEO</Link>,{" "}
+                    <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
+                    <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
+                    <Link href="/crystal-beach-seo-company">
+                      Crystal Beach SEO
+                    </Link>
+                    , <Link href="/depew-seo">Depew NY SEO</Link>,{" "}
+                    <Link href="/dundas-seo">Dundas SEO</Link>,{" "}
+                    <Link href="/east-aurora-seo">East Aurora NY SEO</Link>,{" "}
+                    <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
+                    <Link href="/fort-erie-seo-company">Fort Erie SEO</Link>,{" "}
+                    <Link href="/grimsby-seo-company">Grimsby SEO</Link>,{" "}
+                    <Link href="/lockport-seo">Lockport NY SEO</Link>,{" "}
+                    <Link href="/niagara-seo-company">Niagara SEO</Link>,{" "}
+                    <Link href="/niagara-on-the-lake-seo">
+                      Niagara-on-the-Lake SEO
+                    </Link>
+                    , <Link href="/port-colborne-seo">Port Colborne SEO</Link>,{" "}
+                    <Link href="/stoney-creek-seo">Stoney Creek SEO</Link>,{" "}
+                    <Link href="/seo-st-catharines">St. Catharines SEO</Link>,{" "}
+                    <Link href="/thorold-seo-company">Thorold SEO</Link>,{" "}
+                    <Link href="/wainfleet-seo">Wainfleet SEO</Link>,{" "}
+                    <Link href="/warsaw-seo">Warsaw NY SEO</Link>,{" "}
+                    <Link href="/waterdown-seo">Waterdown SEO</Link>,{" "}
+                    <Link href="/welland-seo-company">Welland SEO</Link>.
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>Web Design</AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <Link href="/alliston-web-design">Alliston Web Design</Link>
+                    ,{" "}
+                    <Link href="/ancaster-web-design">Ancaster Web Design</Link>
+                    ,{" "}
+                    <Link href="/beamsville-web-design">
+                      Beamsville Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/caledonia-web-design">
+                      Caledonia Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/crystal-beach-web-design">
+                      Crystal Beach Web Design
+                    </Link>
+                    , <Link href="/depew-web-design">Depew NY Web Design</Link>,{" "}
+                    <Link href="/dundas-web-design">Dundas Web Design</Link>,{" "}
+                    <Link href="/east-aurora-web-design">
+                      East Aurora NY Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/fonthill-web-design">Fonthill Web Design</Link>
+                    ,{" "}
+                    <Link href="/fort-erie-web-design">
+                      Fort Erie Web Design
+                    </Link>
+                    , <Link href="/grimsby-web-design">Grimsby Web Design</Link>
+                    ,{" "}
+                    <Link href="/lockport-web-design">
+                      Lockport NY Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/port-colborne-web-design">
+                      Port Colborne Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/stoney-creek-web-design">
+                      Stoney Creek Web Design
+                    </Link>
+                    , <Link href="/thorold-web-design">Thorold Web Design</Link>
+                    ,{" "}
+                    <Link href="/wainfleet-web-design">
+                      Wainfleet Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/warsaw-web-design">Warsaw NY Web Design</Link>,{" "}
+                    <Link href="/waterdown-web-design">
+                      Waterdown Web Design
+                    </Link>
+                    , <Link href="/web-design-welland">Welland Web Design</Link>
+                    .
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+
               <br />
               <br />
               <iframe
+                title="niagara web design"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.712155786024!2d-79.21034682336128!3d43.152573384665175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2sInfused%20Agency%20%7C%20SEO%2C%20Web%20Design%20%26%20Development%2C%20Digital%20Marketing%20in%20Niagara%2C%20St.%20Catharines!5e0!3m2!1sen!2sca!4v1708489639093!5m2!1sen!2sca"
                 width="100%"
                 height="450"

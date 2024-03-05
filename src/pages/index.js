@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import "react-accessible-accordion/dist/fancy-example.css";
 import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import Hero from "../../components/Home/Hero/hero";
@@ -186,6 +194,396 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className="home-faq">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-lg-12">
+                <h2>
+                  <span>Frequently Asked</span> Website Design Questions
+                </h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-6">
+                <Accordion>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Will you review my existing website prior to building my
+                        new website?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Absolutely! We'd be happy to review your existing website
+                      as part of our initial consultation. Understanding your
+                      current online presence helps us tailor our approach to
+                      building a new website that aligns with your goals and
+                      addresses any specific improvements or enhancements you're
+                      looking for. Let's discuss your current site during our
+                      free consultation to ensure we create a website that meets
+                      your needs and exceeds your expectations.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        What do you need from me before we start my website
+                        design project?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <ul>
+                        <li>
+                          Clear understanding of your specific requirements and
+                          business needs. Don't worry, we'll go over this in our
+                          discovery call!
+                        </li>
+                        <li>
+                          Any specific preferences or design elements you'd like
+                          us to incorporate.
+                        </li>
+                        <li>
+                          Access to relevant content, such as images, logos, and
+                          textual information.
+                        </li>
+                      </ul>
+                      That's it! It's a pretty smooth process to get your
+                      website design project going.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        How much does a new website cost?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Every project is different, so there's no
+                      one-size-fits-all answer. It depends on what your project
+                      needs. You can check our pricing page for a general idea.
+                      In our free consultation, we'll ask you lots of questions,
+                      figure out what you need, and then tell you how much it
+                      might cost.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Can you design a website that fits my budget?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Absolutely! We can create a website that fits your budget
+                      perfectly. We have different options, and we can customize
+                      everything based on what you need and how much you want to
+                      spend. Let's talk about your budget and what you're
+                      looking for, and we'll find the perfect solution for you!
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        How long will it take to get a new website?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      It usually takes about 6 to 8 weeks, but it can change
+                      based on what you need. If we need stuff from you, like
+                      content or approval, and there are delays, it might take
+                      longer. But if you send things quickly, your website will
+                      be ready faster.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        What is your website design process?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <ul>
+                        <li>
+                          We start with a discovery call to understand your
+                          specific requirements and business needs.
+                        </li>
+                        <li>
+                          Next, we design the home page based on the gathered
+                          information and share it with you for review.
+                        </li>
+                        <li>
+                          Once the home page design is approved, we proceed to
+                          develop the full website and share it with you for
+                          another review.
+                        </li>
+                        <li>
+                          Finally, after making any necessary adjustments, we
+                          launch your website for the world to see.
+                        </li>
+                      </ul>
+                      Throughout the process, we value your input and
+                      collaboration to ensure the final result aligns perfectly
+                      with your vision and goals.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Which content management system do you use?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We exclusively use WordPress as our content management
+                      system. It offers a user-friendly interface, robust
+                      features, and flexibility to meet diverse website needs.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do you only create WordPress websites?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      No! WordPress is good for many things. You can change your
+                      website by yourself, and we'll show you how. We use
+                      special tools to make things faster. But sometimes, a
+                      website made by hand works even better than a WordPress
+                      one, especially if you don't want to change it yourself.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do I have to be local to work with you?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      No way! We help people nearby and also people from all
+                      over the world.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Will I be able to update the website when it's finished?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Yes, if it's a WordPress website. If not, our team of
+                      experts can update it for you.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Can you maintain my website for me?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Of course! We know business owners are often busy. We can
+                      help by updating your website for you.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do you follow SEO best practices when building the site?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We prioritize basic SEO best practices in our website
+                      development process to ensure optimal visibility and
+                      performance. If you have advanced SEO goals or features
+                      you'd like to emphasize, feel free to let us know, and we
+                      can discuss incorporating them!
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+              <div className="col-lg-6">
+                <Accordion>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do you build custom sites or use templates?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We specialize in custom-built websites for greater
+                      flexibility in functionality and design. This approach
+                      allows us to tailor the site to your specific needs,
+                      ensuring a unique and effective online presence. If you
+                      have any specific preferences or features you'd like to
+                      discuss, feel free to share, and we'll incorporate them
+                      into the custom design!
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do you work in-house or outsource your projects?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We do all the work ourselves, right here in our own
+                      office. So, you can be sure that the people you talk to
+                      and the ones who build your website are all part of our
+                      team. If you have any questions or want to know more about
+                      our process, feel free to ask!
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Will I have a project manager or one central contact?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Yes, you'll have a project manager who will work directly
+                      with you. They will be your main point of contact
+                      throughout the whole process, making sure everything runs
+                      smoothly and addressing any questions or concerns you
+                      might have.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Will my website be mobile-friendly?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Yep! We make sure our websites work nicely on phones so
+                      that when people visit, it's fun and easy for them.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>When do I pay?</AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We get money in parts during the project. First, you give
+                      us some money at the start. Then, more when we're
+                      designing and building the website. The last bit comes at
+                      the end. You can pay with e-transfer, cash, or a credit
+                      card.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        How much input do I have?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We talk a lot with you and make sure everything we do for
+                      their website is just what you want. We don't want any
+                      surprises, so we make sure it looks and works just the way
+                      you like.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do I provide the content for my website?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Yep! You know the most about your business, so usually,
+                      you give us the words for the website. But if you don't
+                      want to or can't, we can write it for you, but that might
+                      cost a bit more.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Should I provide the images for my website?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      While we can search for free relevant images, providing
+                      specific ones aligned with your brand and vision is ideal.
+                      If you can't, no worries – we have access to high-quality
+                      stock photos and can guide you to websites where you can
+                      choose images. Our goal is to create a visually stunning
+                      and cohesive website that represents your brand
+                      accurately.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        What about website hosting?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      We have some favourite places where we put websites so
+                      they can be seen by everyone. We can chat about these
+                      special places during our free talk.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        What if I need help after my site is live?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Send us an email anytime! We're here to help you with
+                      anything you need.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Do you offer services other than web design?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      In addition to web design, we also offer SEO services to
+                      enhance your online visibility and improve search engine
+                      rankings. Our comprehensive approach ensures that your
+                      website not only looks great but also performs well in
+                      search results, attracting organic traffic to boost your
+                      online presence.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        Will my website secure?
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      Absolutely! For both non-CMS and WordPress websites, we
+                      prioritize security. We implement HTTPS to secure data
+                      transmission, and for WordPress sites, we go the extra
+                      mile by installing additional security plugins. This
+                      comprehensive approach ensures your website is
+                      well-protected.
+                    </AccordionItemPanel>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+            </div>
+          </div>
+        </section>
       </Fade>
       <ClientLogos
         title={[<span>Featured</span>, "Niagara Web Design Clients"]}
@@ -235,15 +633,9 @@ const Home = () => {
                     <h2>Web Design &amp; Development</h2>
                   </Link>
                   <p>
-                    Your business and how it looks online are shown on your
-                    website. At Infused Agency, we help make brands stand out
-                    with our special Niagara web design services. We create
-                    websites that are easy for people to use and make them want
-                    to become customers. Our talented Niagara website designers
-                    and developers create great designs and websites that match
-                    your brand perfectly. Our team keeps up with the latest
-                    styles to make sure your customers have a really nice time
-                    when they visit your site.
+                    Our Niagara website designers create compelling web designs
+                    that are fully responsive, effectively conveying your
+                    message.
                   </p>
                 </div>
               </div>
@@ -258,17 +650,8 @@ const Home = () => {
                     <h2>WordPress Development</h2>
                   </Link>
                   <p>
-                    Your business and how it looks online are all seen on your
-                    website. At Infused Agency, we use something called
-                    WordPress to make your brand really special. Our web design
-                    Niagara services focus on using WordPress, which is like a
-                    super tool for making websites. We create awesome websites
-                    that show off what your brand is all about and give you some
-                    really cool benefits. With WordPress, you can even change
-                    your website by yourself, you don't need our help! Our
-                    talented team of Niagara website designers and developers
-                    makes sure your WordPress website looks great and works
-                    really well.
+                    Our web design Niagara services offer WordPress to allow you
+                    to update your website without knowledge of code.
                   </p>
                 </div>
               </div>
@@ -283,15 +666,8 @@ const Home = () => {
                     <h2>SEO</h2>
                   </Link>
                   <p>
-                    The main aim of SEO is to put your website at the very top
-                    when people search on the internet. At Infused Agency, our
-                    web design company is really good at this search engine
-                    stuff and knows how to make your website show up first. We
-                    have special skills in making plans for SEO. We know how to
-                    make sure your website comes up first when people search for
-                    certain words. We begin by checking everything about SEO,
-                    doing special research for the best words, and then using
-                    smart plans to make your website the first one people see.
+                    Our Niagara web designers help make sure the best websites
+                    are easy to find on Google and other search engines.
                   </p>
                 </div>
               </div>
@@ -458,108 +834,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="row pd-top-40">
-            <div className="col-lg-12 text-center">
-              <h2>
-                Take <span>Their Word</span> For It
-              </h2>
-            </div>
-          </div>
-          <div className="row text-center pd-top-40 pd-btm-120">
-            <div className="col-lg-4">
-              <Image
-                className="img-fluid"
-                src={viscaTestimonial}
-                alt="visca electric - web design niagara testimonial"
-              />
-              <h3>Sandro Visca</h3>
-              <p>Owner - VISCA electric</p>
-              <p className="testimonial">
-                "The design and development process was smooth."
-              </p>
-              <p className="full-testimonial">
-                "Working with Infused Agency was a pleasure. He was extremely
-                responsive and informative from start to finish. Infused Agency
-                is creative, efficient, and very knowledgeable in their field.
-                They helped me and my team create a new website for my business:
-                VISCA electric. Check it out! viscaelectric.ca. The design and
-                development process was smooth and easy. I would absolutely
-                recommend Infused Agency to anyone looking for a new or updated
-                website for their business!"
-              </p>
-            </div>
-            <div className="col-lg-4">
-              <Image
-                className="img-fluid"
-                src={clientGgs}
-                alt="ggs landscaping - website design niagara testimonial"
-              />
-              <h3>Graham Boaretti</h3>
-              <p>Owner - GGS Landscaping</p>
-              <p className="testimonial">"They did a fantastic job."</p>
-              <p className="full-testimonial">
-                "They did a fantastic job on my website. They were easy to work
-                with, always very quick to respond and made designing the page
-                very simple. I would highly recommend Infused Agency for all of
-                your web design and development needs!"
-              </p>
-            </div>
-            <div className="col-lg-4">
-              <Image
-                className="img-fluid"
-                src={clientTr}
-                alt="visca electric - web design niagara testimonial"
-              />
-              <h3>Harry Althorpe</h3>
-              <p>Owner - TreeReports</p>
-              <p className="testimonial">
-                "Highly organized, thorough and professional."
-              </p>
-              <p className="full-testimonial">
-                "Fantastic experience from start to end. They are highly
-                organized, thorough and professional. I highly recommend his
-                company and services if you are thinking of building a website."
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
-      <Fade>
-        <section className="cta home-cta">
-          <div className="container">
-            <div className="row text-center">
-              <div className="col-lg-12">
-                <h2>
-                  Ready to <span>Grow Your Business</span>?
-                </h2>
-                <p>Click the button below for a free quote</p>
-                <a
-                  href="https://calendly.com/infused-agency/project-discovery/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button>
-                    Get Free Quote
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Fade>
+
       <Fade>
         <section className="why-infused">
           <div className="container">
@@ -572,18 +848,9 @@ const Home = () => {
                   We Grow Businesses Through Lead-Generating Website Designs
                   &amp; SEO Strategies
                 </p>
-                <p className="pd-top-40">
-                  We are a web design company in St. Catharines, Niagara called
-                  Infused Agency. We make websites that really work and help
-                  businesses get more customers. Our team is awesome at web
-                  design, and we do cool things like making sure your website
-                  shows up when people search on the internet. We've helped lots
-                  of businesses in Niagara, and here are some reasons why we're
-                  different from other web design companies:
-                </p>
               </div>
             </div>
-            <div className="row">
+            <div className="row pd-top-40">
               <div className="col-lg-4">
                 <Image
                   width="50"
@@ -594,12 +861,9 @@ const Home = () => {
                 />
                 <h3>Proven Track Record</h3>
                 <p>
-                  Why spend money on a website company that doesn't make things
-                  better for your business? Choose Infused Agency, and we'll
-                  make your company stand out. Our web design agency is really
-                  good at making websites and using tricks to help your business
-                  grow. We've been doing this since 2013, and we've made lots of
-                  businesses successful. Trust us, we know what we're doing.
+                  Our skilled web design agency team has been making successful
+                  websites since 2013, using tricks to help your business grow.
+                  Trust us – we know what we're doing.
                 </p>
               </div>
               <div className="col-lg-4">
@@ -612,12 +876,9 @@ const Home = () => {
                 />
                 <h3>Web Design Experts</h3>
                 <p>
-                  There are a lot of web designers in Niagara that make websites
-                  for businesses. But we're special because we make our websites
-                  with care. Some other places use ready-made templates, but not
-                  us! We make our websites by hand to make sure they're safe,
-                  super fast, and look really unique. Our websites are made with
-                  the newest techniques, so you know they're the best!
+                  Our Niagara web designers create unique, handcrafted websites
+                  for businesses, prioritizing safety, speed, and the latest
+                  techniques.
                 </p>
               </div>
               <div className="col-lg-4">
@@ -630,111 +891,15 @@ const Home = () => {
                 />
                 <h3>Prompt Delivery</h3>
                 <p>
-                  We know your Niagara business is busy, so we make sure to
-                  build your website quickly and well. From our first talk to
-                  showing you the design and then launching the website, we keep
-                  talking with you to make sure everything is just right. We'll
-                  answer your questions and make sure your website is ready when
-                  you need it. Getting your website done on time is what we aim
-                  for!
+                  We understand your busy Niagara business. We build your
+                  website quickly, communicate at every step, and ensure it's
+                  ready on time.
                 </p>
               </div>
             </div>
           </div>
         </section>
       </Fade>
-      <section className="home-faq">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12">
-              <h2>
-                <span>Frequently Asked</span>Questions
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <h3>How much does a new website cost?</h3>
-              <p>
-                Every project is different, so there's no one-size-fits-all
-                answer. It depends on what your project needs. You can check our
-                <Link href="/pricing">pricing page</Link> for a general idea. In
-                our free talks, we'll ask you lots of questions, figure out what
-                you need, and then tell you how much it might cost.
-              </p>
-              <h3>How long will it take to get a new website?</h3>
-              <p>
-                It usually takes about 6 to 8 weeks, but it can change based on
-                what you need. If we need stuff from you, like content or
-                approval, and there are delays, it might take longer. But if you
-                send things quickly, your website will be ready faster.
-              </p>
-              <h3>Do you only create WordPress websites?</h3>
-              <p>
-                No! WordPress is good for many things. You can change your
-                website by yourself, and we'll show you how. We use special
-                tools to make things faster. But sometimes, a website made by
-                hand works even better than a WordPress one, especially if you
-                don't want to change it yourself.
-              </p>
-              <h3>Do I have to be local to work with you?</h3>
-              <p>
-                No way! We help people nearby and also people from all over the
-                world.
-              </p>
-              <h3>Will I be able to update the website when it's finished?</h3>
-              <p>
-                Yes, if it's a WordPress website. If not, our team of experts
-                can update it for you.
-              </p>
-              <h3>Can you maintain my website for me?</h3>
-              <p>
-                Of course! We know business owners are often busy. We can help
-                by updating your website for you.
-              </p>
-            </div>
-            <div className="col-lg-6">
-              <h3>Will my website be mobile-friendly?</h3>
-              <p>
-                Yep! We make sure our websites work nicely on phones so that
-                when people visit, it's fun and easy for them.
-              </p>
-              <h3>When do I pay?</h3>
-              <p>
-                We get money in parts during the project. First, you give us
-                some money at the start. Then, more when we're designing and
-                building the website. The last bit comes at the end. You can pay
-                with e-transfer, cash, or a credit card.
-              </p>
-              <h3>How much input do I have?</h3>
-              <p>
-                We talk a lot with you and make sure everything we do for their
-                website is just what you want. We don't want any surprises, so
-                we make sure it looks and works just the way you like.
-              </p>
-              <h3>Do I provide the content for my website?</h3>
-              <p>
-                ep! You know the most about your business, so usually, you give
-                us the words for the website. But if you don't want to or can't,
-                we can write it for you, but that might cost a bit more.
-              </p>
-              <h3>What about website hosting?</h3>
-              <p>
-                We have some favourite places where we put websites so they can
-                be seen by everyone. We can chat about these special places
-                during our free talk.
-              </p>
-              <h3>What if I need help after my site is live?</h3>
-              <p>
-                Send us an email anytime! We're here to help you with anything
-                you need.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <Fade>
         <section className="cta home-cta">
           <div className="container">
