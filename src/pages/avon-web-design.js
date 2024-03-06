@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/warsaw-web-design-ny.webp";
+import website from "../img/avon-web-design-ny.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -19,17 +19,17 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Warsaw Web Design | NY Website Developer</title>
+        <title>Avon Web Design | NY Website Developer</title>
         <meta
           name="description"
-          content="Elevate your brand with top-notch Warsaw web design services. Affordable, stunning websites that capture attention. Drive growth now!"
+          content="Elevate your brand with top-notch Avon web design services. Affordable, stunning websites that capture attention. Drive growth now!"
         />
-        <link rel="canonical" href="https://infused.agency/warsaw-web-design" />
+        <link rel="canonical" href="https://infused.agency/avon-web-design" />
       </Head>
       <Nav />
       <InnerHero
-        title="Warsaw Web Design Company"
-        description="Infused Agency is an award-winning web design company that serves Warsaw. We help businesses bring in more revenue through their websites."
+        title="Avon Web Design Company"
+        description="Infused Agency is an award-winning web design company that serves Avon. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -40,13 +40,13 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Warsaw web design company, Warsaw web design agency, Warsaw web design services"
+                  alt="Avon web design company, Avon web design agency, Avon web design services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Warsaw web design services</strong> that our{" "}
-                  <strong>Warsaw web design company</strong> provides are pretty
+                  The <strong>Avon web design services</strong> that our{" "}
+                  <strong>Avon web design company</strong> provides are pretty
                   impeccable. We consistently provide great web design services
                   to our clients with pretty awesome results. There are a lot of
                   benefits as to why web design services are so important for
@@ -55,8 +55,7 @@ const SEO = () => {
                 <ul>
                   <li>Helps bolster company branding.</li>
                   <li>
-                    Improves your Warsaw company's reputation and
-                    trustworthiness.
+                    Improves your Avon company's reputation and trustworthiness.
                   </li>
                   <li>Leads to more leads and company revenue.</li>
                 </ul>
@@ -73,8 +72,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Nearby Warsaw Web Design Clients{" "}
-                    <span>Get Results</span>
+                    Our Nearby Avon Web Design Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -90,8 +88,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their East
-                      Aurora web design services."
+                      their company if you are thinking of needing their Avon
+                      web design services."
                     </p>
                     <ul>
                       <li>
@@ -134,7 +132,7 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence.
-                      By using their web design services, my Warsaw company went
+                      By using their web design services, my Avon company went
                       from having no website at all to one that brings in new
                       customers every week."
                     </p>
@@ -185,7 +183,7 @@ const SEO = () => {
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
                       on my new web site. If you ever need a web design for your
-                      Warsaw business I do recommend Infused Agency for their
+                      Avon business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>
@@ -232,7 +230,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with top Warsaw web design
+                    Ready to grow your business with top Avon web design
                     services?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
@@ -252,7 +250,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Warsaw <span>Web Design</span> Services
+                    Avon <span>Web Design</span> Services
                   </h2>
                   <p>Websites That Help Your Company Bring In More Customers</p>
                 </Col>
@@ -263,10 +261,10 @@ const SEO = () => {
                   <p>
                     We make sure that your websites are indexed and show up for
                     certain keywords in Google. Search engine optimization is a
-                    key part of our Warsaw web design services to help make sure
+                    key part of our Avon web design services to help make sure
                     that your customers can find your website. When using our
-                    Warsaw web design experts and{" "}
-                    <Link href="/warsaw-seo/">Warsaw SEO services</Link>, your
+                    Avon web design experts and{" "}
+                    <Link href="/avon-seo/">Avon SEO services</Link>, your
                     website should help bring in new company revenue and
                     customers.
                   </p>
@@ -274,7 +272,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Web Design &amp; Development</h5>
                   <p>
-                    Our Warsaw web designers create websites that bolster your
+                    Our Avon web designers create websites that bolster your
                     brand's reputation, which help bring in more customers. Our
                     websites not only attract customers, our award-winning web
                     designs take into account search engine optimization and
@@ -285,11 +283,11 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Custom Web Design</h5>
                   <p>
-                    Every client website we design is custom. Our Warsaw web
+                    Every client website we design is custom. Our Avon web
                     designers will create a modern website design for you,
                     taking into consideration your business goals. We make sure
-                    to plug in your vision that factors into our Warsaw web
-                    design experts’ design process.{" "}
+                    to plug in your vision that factors into our Avon web design
+                    experts’ design process.{" "}
                   </p>
                 </Col>
               </Row>
@@ -297,17 +295,17 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Responsive Web Design</h5>
                   <p>
-                    We conduct responsive web design as part of our Warsaw web
+                    We conduct responsive web design as part of our Avon web
                     design services to help your users navigate your website on
-                    any device. Our Warsaw web design experts specifically
-                    develop with custom code to allow your website to look great
-                    on any device or computer.
+                    any device. Our Avon web design experts specifically develop
+                    with custom code to allow your website to look great on any
+                    device or computer.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>WordPress Web Design</h5>
                   <p>
-                    Our web design company in Warsaw uses WordPress for all
+                    Our web design company in Avon uses WordPress for all
                     website projects that require a content management system
                     (CMS). Since WordPress powers nearly 50% of the web, it's a
                     clear winner when it comes to choosing a CMS. We choose
@@ -320,11 +318,11 @@ const SEO = () => {
                   <p>
                     In the post-covid world, it's especially important as a
                     product or subscription-based business to have an e-commerce
-                    website. With the help of our Warsaw web design agency, your
+                    website. With the help of our Avon web design agency, your
                     e-commerce website can help sell your products online,
-                    expanding your reach drastically. Leave it to our East
-                    Aurora web designers to help design and develop a beautiful,
-                    modern online store.
+                    expanding your reach drastically. Leave it to our Avon web
+                    designers to help design and develop a beautiful, modern
+                    online store.
                   </p>
                 </Col>
               </Row>
@@ -334,7 +332,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Warsaw Web Design Experts Help Today</h3>
+                  <h3>Have Our Avon Web Design Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -352,7 +350,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Warsaw</span> Web
+                    Why Choose Infused Agency As Your <span>Avon</span> Web
                     Design Agency
                   </h2>
                   <p>
@@ -363,14 +361,14 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Warsaw
+                    Since 2013 we've been able to help countless local Avon
                     businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/warsaw-seo/">
+                    <Link href="/avon-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}
@@ -387,7 +385,7 @@ const SEO = () => {
                     channels.
                   </p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23441.23381582374!2d-78.161998479412!3d42.742789104209024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3c51a68b5f731%3A0xc19652e02d11ccc3!2sWarsaw%2C%20NY%2014569%2C%20USA!5e0!3m2!1sen!2sca!4v1709573778355!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46751.97600209933!2d-77.79050305034983!3d42.91507261328722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d14354ebcec887%3A0xd70eebcc692fc442!2sAvon%2C%20NY%2014414%2C%20USA!5e0!3m2!1sen!2sca!4v1709747620567!5m2!1sen!2sca"
                     width="600"
                     height="450"
                     allowfullscreen=""

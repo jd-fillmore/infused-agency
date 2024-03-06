@@ -111,6 +111,8 @@ const Footer = () => {
                   <AccordionItemPanel>
                     <Link href="/alliston-seo">Alliston SEO</Link>,{" "}
                     <Link href="/ancaster-seo">Ancaster SEO</Link>,{" "}
+                    <Link href="/avon-seo">Avon NY SEO</Link>,{" "}
+                    <Link href="/batavia-seo">Batavia NY SEO</Link>,{" "}
                     <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
                     <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
                     <Link href="/crystal-beach-seo-company">
@@ -146,6 +148,10 @@ const Footer = () => {
                     <Link href="/alliston-web-design">Alliston Web Design</Link>
                     ,{" "}
                     <Link href="/ancaster-web-design">Ancaster Web Design</Link>
+                    , <Link href="/avon-web-design">Avon NY Web Design</Link>,{" "}
+                    <Link href="/batavia-web-design">
+                      Batavia NY Web Design
+                    </Link>
                     ,{" "}
                     <Link href="/beamsville-web-design">
                       Beamsville Web Design
