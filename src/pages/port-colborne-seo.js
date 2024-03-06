@@ -1,36 +1,35 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
+import Head from "next/head";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/port-colborne-seo-company.webp";
+import website from "../img/port-colborne-seo.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
-import About from "../../components/Home/About/about";
 
 const SEO = () => {
   return (
     <>
       <Head>
-        <title>Port Colborne SEO | Affordable Search Engine Optimization</title>
+        <title>Port Colborne SEO | Search Engine Optimization Company</title>
         <meta
           name="description"
-          content="Elevate your business with effective Port Colborne SEO. Boost visibility, attract customers, and dominate search results. Discover the path to online triumph!"
+          content="Unleash the potential of Port Colborne SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
         <link rel="canonical" href="https://infused.agency/port-colborne-seo" />
       </Head>
       <Nav />
       <InnerHero
-        title="Port Colborne SEO Services"
-        description="Infused Agency, a recognized SEO company in Port Colborne, specializes in enhancing businesses' website performance to drive increased revenue."
+        title="Port Colborne SEO Agency"
+        description="Infused Agency is an award-winning SEO company in Port Colborne. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -91,7 +90,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their ces."
+                      their company if you are thinking of needing their Port
+                      Colborne SEO services."
                     </p>
                     <ul>
                       <li>
@@ -386,7 +386,7 @@ const SEO = () => {
                     channels.
                   </p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.37148726318!2d-79.36307399436933!3d42.82851082495693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1709346195143!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.37148726318!2d-79.36307399436933!3d42.82851082495693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1709689891355!5m2!1sen!2sca"
                     width="600"
                     height="450"
                     allowfullscreen=""
