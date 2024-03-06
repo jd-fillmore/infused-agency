@@ -8,33 +8,27 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/grimsby-seo-company.webp";
+import website from "../img/grimsby-seo.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
-import About from "../../components/Home/About/about";
 
 const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-          Grimsby SEO Company | Premium SEO Services - Infused Agency
-        </title>
+        <title>Grimsby SEO | Search Engine Optimization Company</title>
         <meta
           name="description"
-          content="Grimsby's Best SEO Company. We deliver measurable impact for our clients through our search engine optimization services, bringing you more leads."
+          content="Unleash the potential of Grimsby SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
-        <link
-          rel="canonical"
-          href="https://infused.agency/grimsby-seo-company"
-        />
+        <link rel="canonical" href="https://infused.agency/grimsby-seo" />
       </Head>
       <Nav />
       <InnerHero
-        title="Grimsby SEO Company"
+        title="Grimsby SEO Agency"
         description="Infused Agency is an award-winning SEO company in Grimsby. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
@@ -369,17 +363,17 @@ const SEO = () => {
                     Since 2013 we've been able to help countless local Grimsby
                     businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-Grimsby">
+                    <Link href="/digital-marketing-niagara">
                       digital marketing
                     </Link>
-                    , search engine optimization (SEO) ,{" "}
-                    <Link href="/wordpress-developer-Grimsby">
-                      WordPress development
+                    ,{" "}
+                    <Link href="/niagara-seo-company">
+                      search engine optimization (SEO)
                     </Link>{" "}
                     and{" "}
-                    <Link href="/ecommerce-web-design-Grimsby">
-                      e-commerce website development
-                    </Link>
+                    <Link href="/wordpress-developer-niagara">
+                      WordPress development
+                    </Link>{" "}
                     .
                   </p>
                   <p>
@@ -389,6 +383,14 @@ const SEO = () => {
                     ultimately bringing them more revenue through digital
                     channels.
                   </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93092.63290802295!2d-79.66322367018574!3d43.18547293296224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf79ccfea3dd%3A0x9566109eba2a4656!2sGrimsby%2C%20ON!5e0!3m2!1sen!2sca!4v1709690807529!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </Col>
                 <Col lg="6">
                   <Image
@@ -450,12 +452,12 @@ const SEO = () => {
                   rankings.
                 </p>
                 <ul>
-                  <li>E-commerce company logo</li>
+                  <li>Company logo</li>
                   <li>
-                    All e-commerce product details - things like product titles,
-                    images, descriptions, pricing, etc.
+                    Business details - things like product titles, images,
+                    descriptions, pricing, etc.
                   </li>
-                  <li>Any shipping charges you'd like customers to pay.</li>
+                  <li>and more</li>
                 </ul>
                 <h3>Our Grimsby SEO company is ready to help.</h3>
                 <p>
@@ -473,40 +475,6 @@ const SEO = () => {
               </Col>
             </Row>
           </Container>
-          <About
-            city="Grimsby"
-            intro={[
-              "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Grimsby,_Ontario">
-                Grimsby
-              </a>,
-              " is a town on Lake Ontario in the Niagara Region, Ontario, Canada. Grimsby is a piece of the Hamilton Census Metropolitan Area.It is named after the English fishing town of Grimsby in north-east Lincolnshire. Most of occupants live in the space limited by Lake Ontario and the Niagara Escarpment, home to a part of the Bruce Trail.",
-            ]}
-            area="68.93"
-            population="27,693"
-            topSights={[
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4515404,4524133,4597339,4649665,4722900,4723331,4733969,4738545,4757164,4758493,4762561,4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=/m/01kzjk&dest_state_type=sattd&dest_src=ts&q=things+to+do+in+grimsby+ontario&poi_mid=/g/1thxr8jc&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Fielding Estate Winery in Grimsby
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzjk&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20grimsby%20ontario&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Rosewood Estates Winery in Grimsby
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzjk&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20grimsby%20ontario&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Angels Gate Winery in Grimsby
-              </a>,
-            ]}
-            qOne="Is Grimsby a nice place to live?"
-            qOneAns="Inhabitants of Grimsby appreciate admittance to the locale's solid economy and fast driving times to the line as well as the advantages of life in a more modest town on the waterfront. Ottawa sits at No. 3, because of its steady, government-fuelled economy and reasonable cost for many everyday items."
-            qTwo="What is Grimsby, Ontario known for?"
-            qTwoAns="Grimsby is known as the entryway among Hamilton and Niagara. In the mid 1900's, Grimsby was known as an event congregation, with a thrill ride, a cinema, and lodges on the lake. One of Grimsby's grade schools, Grand Avenue Public School, used to be the carnival for the entertainment mecca."
-            qThree="What are some top things to do in Grimsby?"
-            qThreeAns="Grimsby, Ontario is known mostly for it's wineries. Some of the best Grimsby wineries include thirty bench, vieni estates, bench brewing, fielding estates and more."
-            qFour="How is living in Grimsby, Ontario?"
-            qFourAns="The town positions in the main quarter of Canadian urban areas with excellent of the wellbeing and school system. This is something to remember whether and when you choose to move to Grimsby. It is a phenomenal decision for both you and your family, assuming you have one."
-            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93092.62039499919!2d-79.65086279333853!3d43.18548113828605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf79ccfea3dd%3A0x9566109eba2a4656!2sGrimsby%2C%20ON!5e0!3m2!1sen!2sca!4v1653051039062!5m2!1sen!2sca"
-          />
         </section>
       </InnerContent>
       <CTA />

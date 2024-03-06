@@ -8,24 +8,22 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/grimsby-web-design-company.webp";
+import website from "../img/grimsby-web-design.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
-import About from "../../components/Home/About/about";
 
 const SEO = () => {
   return (
     <>
       <Head>
-        <title>Grimsby Web Design | Affordable Local Website Development</title>
+        <title>Grimsby Web Design | Best Website Development Company</title>
         <meta
           name="description"
-          content="Discover the excellence of Grimsby's premier web design company. Our website designs are crafted to enhance your brand's standing and drive increased sales for your company. Click here to request your free quote!"
+          content="Elevate your brand with top-notch Grimsby web design services. Affordable, stunning websites that capture attention. Drive growth now!"
         />
-
         <link
           rel="canonical"
           href="https://infused.agency/grimsby-web-design"
@@ -33,8 +31,8 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Leading Grimsby Web Design Experts"
-        description="Experience excellence with Infused Agency, an acclaimed web design company in Grimsby. We specialize in assisting businesses in generating increased revenue through expertly crafted websites."
+        title="Grimsby Web Design Company"
+        description="Infused Agency is an award-winning web design company that serves Grimsby. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -50,25 +48,25 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  Discover the exceptional{" "}
-                  <strong>Grimsby web design services</strong> provided by our{" "}
-                  <strong>Grimsby web design firm</strong>. We consistently
-                  deliver outstanding web design solutions, producing remarkable
-                  results for our clients. The significance of web design
-                  services for any local company is profound:
+                  The <strong>Grimsby web design services</strong> that our{" "}
+                  <strong>Grimsby web design company</strong> provides are
+                  pretty impeccable. We consistently provide great web design
+                  services to our clients with pretty awesome results. There are
+                  a lot of benefits as to why web design services are so
+                  important for any local company:
                 </p>
                 <ul>
-                  <li>Enhances company branding.</li>
+                  <li>Helps bolster company branding.</li>
                   <li>
-                    Elevates your Grimsby company's reputation and
+                    Improves your Grimsby company's reputation and
                     trustworthiness.
                   </li>
-                  <li>Generates more leads and company revenue.</li>
+                  <li>Leads to more leads and company revenue.</li>
                 </ul>
                 <p>
-                  Embracing web design services from our company not only
-                  enhances your company's reputation but also serves as an
-                  effective strategy for attracting more customers.
+                  When you utilize web design services from our company and end
+                  up bolstering your company's reputation, it's a great way to
+                  gain more customers.
                 </p>
               </Col>
             </Row>
@@ -78,8 +76,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Achieve Results with Our{" "}
-                    <span>Grimsby Web Design Services</span>
+                    Our Nearby Grimsby Web Design Clients{" "}
+                    <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -237,13 +235,10 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to Elevate Your Business with Premier Grimsby Web
-                    Design Services?
+                    Ready to grow your business with top Grimsby web design
+                    services?
                   </h3>
-                  <p>
-                    Take the next step by clicking the button below to receive
-                    your complimentary quote.
-                  </p>
+                  <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -260,87 +255,79 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Tailored Grimsby <span>Web Design</span> Solutions
+                    Grimsby <span>Web Design</span> Services
                   </h2>
-                  <p>
-                    Crafting Websites That Drive Customer Acquisition for Your
-                    Company
-                  </p>
+                  <p>Websites That Help Your Company Bring In More Customers</p>
                 </Col>
               </Row>
               <Row>
                 <Col lg="4">
-                  <h5>Elevated Search Engine Optimization (SEO)</h5>
+                  <h5>Search Engine Optimization (SEO)</h5>
                   <p>
-                    We meticulously ensure that your websites are not only
-                    indexed but prominently displayed for specific Google
-                    keywords. In our Grimsby web design services, search engine
-                    optimization plays a pivotal role in ensuring your customers
-                    easily discover your website. By harnessing the expertise of
-                    our Grimsby web design professionals and engaging in our{" "}
-                    <Link href="/grimsby-seo-company/">
-                      Grimsby SEO services
-                    </Link>
-                    , your website becomes a catalyst for attracting new revenue
-                    and customers to your company.
+                    We make sure that your websites are indexed and show up for
+                    certain keywords in Google. Search engine optimization is a
+                    key part of our Grimsby web design services to help make
+                    sure that your customers can find your website. When using
+                    our Grimsby web design experts and{" "}
+                    <Link href="/Grimsby-seo/">Grimsby SEO services</Link>, your
+                    website should help bring in new company revenue and
+                    customers.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Innovative Web Design &amp; Development</h5>
+                  <h5>Web Design &amp; Development</h5>
                   <p>
-                    Crafting websites that not only enhance your brand's
-                    reputation but also attract more customers is the expertise
-                    of our Grimsby web designers. Our award-winning web designs
-                    go beyond customer attraction by incorporating best
-                    practices in search engine optimization and responsive web
-                    design, contributing to an amplified brand awareness.
+                    Our Grimsby web designers create websites that bolster your
+                    brand's reputation, which help bring in more customers. Our
+                    websites not only attract customers, our award-winning web
+                    designs take into account search engine optimization and
+                    responsive web design best practices to help increase brand
+                    awareness.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Bespoke Web Design Solutions</h5>
+                  <h5>Custom Web Design</h5>
                   <p>
-                    Tailoring every client website to be unique is our
-                    commitment. Our Grimsby web designers specialize in creating
-                    modern website designs tailored to your business goals. We
-                    ensure to integrate your vision seamlessly into the design
-                    process, guided by the expertise of our Grimsby web design
-                    professionals.
+                    Every client website we design is custom. Our Grimsby web
+                    designers will create a modern website design for you,
+                    taking into consideration your business goals. We make sure
+                    to plug in your vision that factors into our Grimsby web
+                    design experts’ design process.{" "}
                   </p>
                 </Col>
               </Row>
               <Row className="pd-btm-80">
                 <Col lg="4">
-                  <h5>Adaptive Web Design Excellence</h5>
+                  <h5>Responsive Web Design</h5>
                   <p>
-                    Implementing responsive web design is a core component of
-                    our Grimsby web design services, ensuring seamless
-                    navigation for your users across any device. Our Grimsby web
-                    design experts employ custom coding techniques to guarantee
-                    that your website not only functions flawlessly but also
-                    looks exceptional on any device or computer.
+                    We conduct responsive web design as part of our Grimsby web
+                    design services to help your users navigate your website on
+                    any device. Our Grimsby web design experts specifically
+                    develop with custom code to allow your website to look great
+                    on any device or computer.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Harnessing the Power of WordPress in Web Design</h5>
+                  <h5>WordPress Web Design</h5>
                   <p>
-                    Within our Grimsby web design company, we exclusively employ
-                    WordPress for all website projects demanding a content
-                    management system (CMS). With WordPress commanding nearly
-                    50% of the web, it undeniably emerges as the top choice for
-                    a CMS. We opt for WordPress due to its user-friendly
-                    development environment and its ease of use for our clients.
+                    Our web design company in Grimsby uses WordPress for all
+                    website projects that require a content management system
+                    (CMS). Since WordPress powers nearly 50% of the web, it's a
+                    clear winner when it comes to choosing a CMS. We choose
+                    WordPress as it's easy to develop with and easy for our
+                    clients to use.
                   </p>
                 </Col>
                 <Col lg="4">
-                  <h5>Empowering Your Business with E-Commerce Web Design</h5>
+                  <h5>E-Commerce Web Design</h5>
                   <p>
-                    In the post-COVID era, establishing an online presence is
-                    paramount, particularly for product or subscription-based
-                    businesses. Our Grimsby web design agency specializes in
-                    creating e-commerce websites that facilitate online product
-                    sales, significantly expanding your reach. Trust our Grimsby
-                    web designers to expertly design and develop a beautiful,
-                    modern online store tailored to your business needs.
+                    In the post-covid world, it's especially important as a
+                    product or subscription-based business to have an e-commerce
+                    website. With the help of our Grimsby web design agency,
+                    your e-commerce website can help sell your products online,
+                    expanding your reach drastically. Leave it to our Grimsby
+                    web designers to help design and develop a beautiful, modern
+                    online store.
                   </p>
                 </Col>
               </Row>
@@ -350,13 +337,8 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>
-                    Consult with Our Grimsby Web Design Professionals Today
-                  </h3>
-                  <p>
-                    Click the button below to receive your complimentary quote.
-                  </p>
-
+                  <h3>Have Our Grimsby Web Design Experts Help Today</h3>
+                  <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -373,12 +355,11 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Opt for Infused Agency as Your <span>Grimsby</span> Web
-                    Design Partner
+                    Why Choose Infused Agency As Your <span>Grimsby</span> Web
+                    Design Agency
                   </h2>
                   <p>
-                    Elevate Your Brand's Standing with Our Expert Web Design
-                    Services
+                    Increase Your Brand's Reputation With Our Web Design Experts
                   </p>
                 </Col>
               </Row>
@@ -392,14 +373,14 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Grimsby-seo-company/">
+                    <Link href="/Grimsby-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
-                    ,{" "}
+                    and {""}
                     <Link href="/wordpress-developer-niagara">
                       WordPress development
-                    </Link>{" "}
-                    and e-commerce website development.
+                    </Link>
+                    .
                   </p>
                   <p>
                     We've been able to help small, local businesses all the way
@@ -408,6 +389,14 @@ const SEO = () => {
                     ultimately bringing them more revenue through digital
                     channels.
                   </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93092.63290802295!2d-79.66322367018574!3d43.18547293296224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf79ccfea3dd%3A0x9566109eba2a4656!2sGrimsby%2C%20ON!5e0!3m2!1sen!2sca!4v1709690807529!5m2!1sen!2sca"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </Col>
                 <Col lg="6">
                   <Image
@@ -505,40 +494,6 @@ const SEO = () => {
               </Col>
             </Row>
           </Container>
-          <About
-            city="Grimsby"
-            intro={[
-              "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Grimsby,_Ontario">
-                Grimsby
-              </a>,
-              " is a town on Lake Ontario in the Niagara Region, Ontario, Canada. Grimsby is a piece of the Hamilton Census Metropolitan Area.It is named after the English fishing town of Grimsby in north-east Lincolnshire. Most of occupants live in the space limited by Lake Ontario and the Niagara Escarpment, home to a part of the Bruce Trail.",
-            ]}
-            area="68.93"
-            population="27,693"
-            topSights={[
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4515404,4524133,4597339,4649665,4722900,4723331,4733969,4738545,4757164,4758493,4762561,4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=/m/01kzjk&dest_state_type=sattd&dest_src=ts&q=things+to+do+in+grimsby+ontario&poi_mid=/g/1thxr8jc&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Fielding Estate Winery
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzjk&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20grimsby%20ontario&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Rosewood Estates Winery
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01kzjk&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20grimsby%20ontario&sa=X&ved=2ahUKEwjnxaf6je73AhUWG80KHdB5CXoQ69EBKAB6BAgIEAc">
-                Angels Gate Winery
-              </a>,
-            ]}
-            qOne="Is Grimsby a nice place to live?"
-            qOneAns="Inhabitants of Grimsby appreciate admittance to the locale's solid economy and fast driving times to the line as well as the advantages of life in a more modest town on the waterfront. Ottawa sits at No. 3, because of its steady, government-fuelled economy and reasonable cost for many everyday items."
-            qTwo="What is Grimsby, Ontario known for?"
-            qTwoAns="Grimsby is known as the entryway among Hamilton and Niagara. In the mid 1900's, Grimsby was known as an event congregation, with a thrill ride, a cinema, and lodges on the lake. One of Grimsby's grade schools, Grand Avenue Public School, used to be the carnival for the entertainment mecca."
-            qThree="What are some top things to do in Grimsby?"
-            qThreeAns="Grimsby, Ontario is known mostly for it's wineries. Some of the best Grimsby wineries include thirty bench, vieni estates, bench brewing, fielding estates and more."
-            qFour="How is living in Grimsby, Ontario?"
-            qFourAns="The town positions in the main quarter of Canadian urban areas with excellent of the wellbeing and school system. This is something to remember whether and when you choose to move to Grimsby. It is a phenomenal decision for both you and your family, assuming you have one."
-            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93092.62039499919!2d-79.65086279333853!3d43.18548113828605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf79ccfea3dd%3A0x9566109eba2a4656!2sGrimsby%2C%20ON!5e0!3m2!1sen!2sca!4v1653051039062!5m2!1sen!2sca"
-          />
         </section>
       </InnerContent>
       <CTA />
