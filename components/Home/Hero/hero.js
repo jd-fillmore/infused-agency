@@ -45,6 +45,7 @@ const Hero = () => {
               </Col>
               <Col lg="6" className="text-center">
                 <Image
+                  priority={true}
                   className="img-fluid"
                   src={heroImg}
                   alt="niagara web design"
