@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Head from "next/head";
+import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import Nav from "../../../components/Nav/nav";
 import InnerHero from "../../../components/innerHero/innerHero";
@@ -26,7 +27,15 @@ export default function PostPage({ frontmatter: { title }, content }) {
         <Container>
           <Row>
             <Col lg="12">
-              <ReactMarkdown>{content}</ReactMarkdown>
+              <ReactMarkdown
+                components={{
+                  img: ({ src, alt }) => (
+                    <Image src={src} alt={alt} width={1400} height={400} />
+                  ),
+                }}
+              >
+                {content}
+              </ReactMarkdown>
             </Col>
           </Row>
         </Container>

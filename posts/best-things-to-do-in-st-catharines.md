@@ -10,7 +10,7 @@ St. Catharines, a hidden gem in Ontario, offers a plethora of experiences that c
 
 ## Discovering Local Artistry
 
-![st catharines artistry](../src/img/st-catharines-artistry.webp)
+![st catharines artistry](/img/about.jpg)
 
 St. Catharines boasts a vibrant arts scene. Head to the downtown area to explore numerous art galleries showcasing local talents. The blend of traditional and contemporary art will leave you inspired. Stroll along St. Paul Street, where each gallery tells a unique story through its exhibits. Marvel at the brushstrokes, sculptures, and installations that define the artistic soul of St. Catharines.
 
