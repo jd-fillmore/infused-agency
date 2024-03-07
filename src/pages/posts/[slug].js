@@ -22,7 +22,7 @@ export default function PostPage({ frontmatter: { title }, content }) {
       </Head>
       <Nav />
       <InnerHero title={title} />
-      <section className="inner-content">
+      <section className="inner-content single-blog">
         <Container>
           <Row>
             <Col lg="12">
