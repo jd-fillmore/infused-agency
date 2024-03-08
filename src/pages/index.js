@@ -36,6 +36,7 @@ import google from "../../src/img/web-design-niagara.webp";
 import viscaTestimonial from "../../src/img/visca-niagara-web-design-testimonial.png";
 import check from "../../src/img/check.png";
 import visca from "../../src/img/web-design-st-catharines-visca.webp";
+import infusedImg from "../img/infused-agency-computer.webp";
 
 import ClientLogos from "../../components/Home/ClientLogos/clientLogos";
 
@@ -152,203 +153,421 @@ const Home = () => {
       </Head>
       <Nav />
       <Hero />
-      <Fade>
-        <section className="home-top-web">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-7">
-                <h2>
-                  Web Design Niagara - a website company{" "}
-                  <span>businesses trust.</span>
-                </h2>
+
+      <section className="home-top-web">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-7">
+              <h2>
+                Web Design Niagara - a website company{" "}
+                <span>businesses trust.</span>
+              </h2>
+              <p>
+                As a leading web design company in Niagara, we specialize in
+                creating user-friendly websites that seamlessly blend creativity
+                with functionality. From website design that speak to your
+                branding to mobile-responsive interfaces, targeted search engine
+                optimization digital marketing and more, we bring your vision to
+                life.
+                <br />
+                <br />
+                We've been offering Niagara website design to lots of nearby
+                businesses in the Niagara region like St. Catharines, Niagara
+                Falls and other areas with our website-making skills. Our
+                websites are easy to use and help businesses grow and make more
+                money. We also have experts who make sure your website can be
+                easily found on Google.
+                <br />
+                <br />
+                We love creating websites and helping local businesses do well
+                online. We can do that for you too!
+              </p>
+
+              <Image
+                className="img-fluid"
+                src={google}
+                alt="web design niagara"
+              />
+            </div>
+            <div className="col-lg-5">
+              <Image
+                className="img-fluid"
+                src={visca}
+                alt="web design st catharines"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="infused-callout">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <Image
+                className="img-fluid"
+                src={infusedImg}
+                alt="website design niagara infused agency"
+              />
+            </div>
+            <div className="col-lg-6">
+              <h2>
+                Fueled by <span>Infused Agency Web Design</span>
+              </h2>
+              <p>
+                Over 10 years of <strong>local Niagara experience</strong> |
+                Consistently <strong>5-Star</strong> Rated | Numerous{" "}
+                <strong>Successful Website Design</strong> Launches
+              </p>
+              <p>
+                At Infused Agency, we take pride in our journey of over ten
+                years in the web design and search engine optimization
+                landscape. With a wealth of expertise and extensive knowledge,
+                we are dedicated to elevating your brand's digital presence and
+                refining communication strategies. Our commitment is centered on
+                creating unique and tailored digital experiences for each of our
+                valued clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="infused-benefits">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-lg-12">
+              <h2>Benefits To Working With Infused Agency</h2>
+            </div>
+          </div>
+          <div className="row pd-top-40">
+            <div className="col-lg-6">
+              <h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#0bb98b"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  width="40"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#0bb98b"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 18 21 6l-1.4-1.4L9 16.2z" />
+                </svg>
+                {""} User-Friendly and Mobile-Responsive Designs
+              </h3>
+              <p>
+                Our commitment to user experience goes beyond aesthetics. We
+                build websites that are not only visually appealing but also
+                highly intuitive, user-friendly with search engine optimization
+                basics and catering to your branding's needs. Whether on desktop
+                or mobile, your website will captivate and convert.
+              </p>
+              <h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#0bb98b"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  width="40"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#0bb98b"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 18 21 6l-1.4-1.4L9 16.2z" />
+                </svg>
+                {""} CMS Expertise for Easy Management
+              </h3>
+              <p>
+                Take control of your content effortlessly with our Content
+                Management System (CMS) solutions. Update, modify, and expand
+                your website with ease using a CMS, no technical expertise
+                required.
+              </p>
+            </div>
+            <div className="col-lg-6">
+              <h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#0bb98b"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  width="40"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#0bb98b"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 18 21 6l-1.4-1.4L9 16.2z" />
+                </svg>
+                {""} Websites That Infuse Your Branding
+              </h3>
+              <p>
+                Craft a distinctive branding identity that resonates with your
+                audience. Our experts understand the essence of your business,
+                creating a unique and memorable online presence that sets you
+                apart.
+              </p>
+              <h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#0bb98b"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  width="40"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#0bb98b"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 18 21 6l-1.4-1.4L9 16.2z" />
+                </svg>
+                {""} Targeted SEO Digital Marketing
+              </h3>
+              <p>
+                Unlock the full potential of your online visibility. Our
+                strategic search engine optimization digital marketing tactics
+                are tailored to attract and engage your target audience, driving
+                traffic and ensuring your business shines in search results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="home-faq">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-lg-12">
+              <h2>
+                <span>Frequently Asked</span> Website Design Questions
+              </h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6">
+              <Accordion>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How much does a new website cost?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    Every project is different, so there's no one-size-fits-all
+                    answer. It depends on what your project needs. You can check
+                    our pricing page for a general idea. In our free
+                    consultation, we'll ask you lots of questions, figure out
+                    what you need, and then tell you how much it might cost.
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Can you design a website that fits my budget?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    Absolutely! We can create a website that fits your budget
+                    perfectly. We have different options, and we can customize
+                    everything based on what you need and how much you want to
+                    spend. Let's talk about your budget and what you're looking
+                    for, and we'll find the perfect solution for you!
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How long will it take to get a new website?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    It usually takes about 6 to 8 weeks, but it can change based
+                    on what you need. If we need stuff from you, like content or
+                    approval, and there are delays, it might take longer. But if
+                    you send things quickly, your website will be ready faster.
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      What is your website design process?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <ul>
+                      <li>
+                        We start with a discovery call to understand your
+                        specific requirements and business needs.
+                      </li>
+                      <li>
+                        Next, we design the home page based on the gathered
+                        information and share it with you for review.
+                      </li>
+                      <li>
+                        Once the home page design is approved, we proceed to
+                        develop the full website and share it with you for
+                        another review.
+                      </li>
+                      <li>
+                        Finally, after making any necessary adjustments, we
+                        launch your website for the world to see.
+                      </li>
+                    </ul>
+                    Throughout the process, we value your input and
+                    collaboration to ensure the final result aligns perfectly
+                    with your vision and goals.
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </div>
+            <div className="col-lg-6">
+              <Accordion>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Do you build custom sites or use templates?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    We specialize in custom-built websites for greater
+                    flexibility in functionality and design. This approach
+                    allows us to tailor the site to your specific needs,
+                    ensuring a unique and effective online presence. If you have
+                    any specific preferences or features you'd like to discuss,
+                    feel free to share, and we'll incorporate them into the
+                    custom design!
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Do you work in-house or outsource your projects?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    We do all the work ourselves, right here in our own office.
+                    So, you can be sure that the people you talk to and the ones
+                    who build your website are all part of our team. If you have
+                    any questions or want to know more about our process, feel
+                    free to ask!
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Will my website be mobile-friendly?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    Yep! We make sure our websites work nicely on phones so that
+                    when people visit, it's fun and easy for them.
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How much input do I have?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    We talk a lot with you and make sure everything we do for
+                    their website is just what you want. We don't want any
+                    surprises, so we make sure it looks and works just the way
+                    you like.
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-services" title="web design niagara">
+        <div className="container">
+          <div className="row pd-btm-80">
+            <div className="col-lg-12 text-center">
+              <h2>
+                <span>Web Design Niagara</span> Services We Offer
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          {/* Row One */}
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="card">
+                <Image
+                  className="img-fluid"
+                  src={webImg}
+                  alt="web designer niagara"
+                />
+                <Link href="/web-design">
+                  <h2>Web Design &amp; Development</h2>
+                </Link>
                 <p>
-                  Our Niagara web design agency is really good at making
-                  websites. Our web design Niagara company does website creation
-                  that is good for local businesses and don't cost too much.
-                  <br />
-                  <br />
-                  We've been offering Niagara website design to lots of nearby
-                  businesses in the Niagara region like St. Catharines, Niagara
-                  Falls and other areas with our website-making skills. Our
-                  websites are easy to use and help businesses grow and make
-                  more money. We also have experts who make sure your website
-                  can be easily found on Google.
-                  <br />
-                  <br />
-                  We love creating websites and helping local businesses do well
-                  online. We can do that for you too!
+                  Our Niagara website designers create compelling web designs
+                  that are fully responsive, effectively conveying your message.
                 </p>
-                <Image
-                  className="img-fluid"
-                  src={google}
-                  alt="web design niagara"
-                />
               </div>
-              <div className="col-lg-5">
+            </div>
+            <div className="col-lg-4">
+              <div className="card">
                 <Image
                   className="img-fluid"
-                  src={visca}
-                  alt="web design st catharines"
+                  src={wpImg}
+                  alt="niagara web design company"
                 />
+                <Link href="/wordpress-developer-niagara">
+                  <h2>WordPress Development</h2>
+                </Link>
+                <p>
+                  Our web design Niagara services offer WordPress to allow you
+                  to update your website without knowledge of code.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="card">
+                <Image
+                  className="img-fluid"
+                  src={seoImg}
+                  alt="best web designer niagara"
+                />
+                <Link href="/niagara-seo-company">
+                  <h2>SEO</h2>
+                </Link>
+                <p>
+                  Our Niagara web designers help make sure the best websites are
+                  easy to find on Google and other search engines.
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <section className="home-faq">
-          <div className="container">
-            <div className="row text-center">
-              <div className="col-lg-12">
-                <h2>
-                  <span>Frequently Asked</span> Website Design Questions
-                </h2>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6">
-                <Accordion>
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        How much does a new website cost?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      Every project is different, so there's no
-                      one-size-fits-all answer. It depends on what your project
-                      needs. You can check our pricing page for a general idea.
-                      In our free consultation, we'll ask you lots of questions,
-                      figure out what you need, and then tell you how much it
-                      might cost.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Can you design a website that fits my budget?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      Absolutely! We can create a website that fits your budget
-                      perfectly. We have different options, and we can customize
-                      everything based on what you need and how much you want to
-                      spend. Let's talk about your budget and what you're
-                      looking for, and we'll find the perfect solution for you!
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        How long will it take to get a new website?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      It usually takes about 6 to 8 weeks, but it can change
-                      based on what you need. If we need stuff from you, like
-                      content or approval, and there are delays, it might take
-                      longer. But if you send things quickly, your website will
-                      be ready faster.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        What is your website design process?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      <ul>
-                        <li>
-                          We start with a discovery call to understand your
-                          specific requirements and business needs.
-                        </li>
-                        <li>
-                          Next, we design the home page based on the gathered
-                          information and share it with you for review.
-                        </li>
-                        <li>
-                          Once the home page design is approved, we proceed to
-                          develop the full website and share it with you for
-                          another review.
-                        </li>
-                        <li>
-                          Finally, after making any necessary adjustments, we
-                          launch your website for the world to see.
-                        </li>
-                      </ul>
-                      Throughout the process, we value your input and
-                      collaboration to ensure the final result aligns perfectly
-                      with your vision and goals.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-              <div className="col-lg-6">
-                <Accordion>
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Do you build custom sites or use templates?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      We specialize in custom-built websites for greater
-                      flexibility in functionality and design. This approach
-                      allows us to tailor the site to your specific needs,
-                      ensuring a unique and effective online presence. If you
-                      have any specific preferences or features you'd like to
-                      discuss, feel free to share, and we'll incorporate them
-                      into the custom design!
-                    </AccordionItemPanel>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Do you work in-house or outsource your projects?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      We do all the work ourselves, right here in our own
-                      office. So, you can be sure that the people you talk to
-                      and the ones who build your website are all part of our
-                      team. If you have any questions or want to know more about
-                      our process, feel free to ask!
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Will my website be mobile-friendly?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      Yep! We make sure our websites work nicely on phones so
-                      that when people visit, it's fun and easy for them.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem>
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        How much input do I have?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      We talk a lot with you and make sure everything we do for
-                      their website is just what you want. We don't want any
-                      surprises, so we make sure it looks and works just the way
-                      you like.
-                    </AccordionItemPanel>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Fade>
+        </div>
+      </section>
       <ClientLogos
         title={[<span>Featured</span>, "Niagara Web Design Clients"]}
         logoOne={clientLmc}
@@ -368,83 +587,13 @@ const Home = () => {
         logoEight={clientJerry}
         logoEightAlt="niagara website developers"
       />
-      <Fade>
-        <section className="home-services">
-          <div className="container">
-            <div className="row pd-btm-80">
-              <div className="col-lg-12 text-center">
-                <h2>
-                  <span>Web Design Niagara</span> Services We Offer
-                </h2>
-                <p className="serv-intro">
-                  We make great websites and help people find them on the
-                  internet.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            {/* Row One */}
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={webImg}
-                    alt="web designer niagara"
-                  />
-                  <Link href="/web-design">
-                    <h2>Web Design &amp; Development</h2>
-                  </Link>
-                  <p>
-                    Our Niagara website designers create compelling web designs
-                    that are fully responsive, effectively conveying your
-                    message.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={wpImg}
-                    alt="niagara web design company"
-                  />
-                  <Link href="/wordpress-developer-niagara">
-                    <h2>WordPress Development</h2>
-                  </Link>
-                  <p>
-                    Our web design Niagara services offer WordPress to allow you
-                    to update your website without knowledge of code.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={seoImg}
-                    alt="best web designer niagara"
-                  />
-                  <Link href="/niagara-seo-company">
-                    <h2>SEO</h2>
-                  </Link>
-                  <p>
-                    Our Niagara web designers help make sure the best websites
-                    are easy to find on Google and other search engines.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Fade>
+
       <section className="home-client-results">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2>
-                Our Clients <span>Get Results</span>
+                Our Local Niagara Clients <span>Get Results</span>
               </h2>
             </div>
           </div>

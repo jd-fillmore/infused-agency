@@ -2,8 +2,11 @@
 @import "../../../src/pages/breakpoints.scss";
 
 .hero {
-  padding: 270px 0px 150px 0px;
-  background-image: linear-gradient(to right, #005c97, #363795);
+  padding: 170px 0px 100px 0px;
+  background: url("../../../src/img/niagara-web-design-bg.webp") center center
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   @include bp-tablet-sm {
     background-position: center center;
     text-align: center;
@@ -80,7 +83,6 @@
   }
   h2 {
     font-size: 40px;
-    font-weight: bold;
     color: $dark-blue;
     margin-bottom: 20px;
     line-height: 1.4;
@@ -96,11 +98,7 @@
     line-height: 1.6;
     @include bp-tablet-sm {
       font-size: inherit !important;
-    }
-  }
-  img {
-    @include bp-tablet-sm {
-      margin-top: 20px;
+      margin-bottom: inherit;
     }
   }
   ul {
@@ -117,9 +115,14 @@
   }
   a {
     border-bottom: none;
+    margin: 0 auto;
+    display: block;
     &:hover,
     &:focus {
       border-bottom: none;
+    }
+    @include bp-tablet-sm {
+      margin-bottom: 20px;
     }
   }
   button {
@@ -142,12 +145,19 @@
   .kd {
     margin-top: 20px;
     font-size: 16px !important;
-    background: rgba(0, 0, 0, 0) !important;
-    border: none;
-    color: $dark-blue !important;
-    &:hover {
-      background: $dark-purple !important;
-    }
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+.cities {
+  padding-left: 60px;
+  @include bp-tablet-sm {
+    padding-left: inherit;
+  }
+  h3 {
+    color: $dark-blue;
   }
 }
 

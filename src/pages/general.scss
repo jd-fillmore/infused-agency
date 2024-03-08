@@ -242,10 +242,13 @@ span {
 }
 
 .home-client-results {
-  background: $dark-grey;
-  padding: 0px 0px 120px 0px;
+  background: url("../img/niagara-website-design-bg.webp") center center
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
-    padding: 0px 0px 20px 0px;
+    padding: 40px 0px 40px 0px;
   }
   button {
     margin-top: 0 !important;
@@ -290,6 +293,7 @@ span {
   }
   h2 {
     margin-bottom: 30px;
+    color: $dark-blue;
   }
   h3 {
     font-size: 24px;
@@ -343,7 +347,7 @@ span {
 }
 
 .home-faq {
-  padding: 0px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
@@ -413,5 +417,41 @@ iframe {
   h2,
   h3 {
     margin-top: 60px;
+  }
+}
+
+.infused-benefits {
+  padding: 170px 0px 100px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
+  }
+  background: url("../img/niagara-web-design-decew.webp") center center
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  h2,
+  h3 {
+    color: $dark-blue;
+  }
+  p {
+    color: rgba($dark-blue, 0.7);
+  }
+}
+
+.infused-callout {
+  padding: 40px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    @include bp-tablet-sm {
+      margin-bottom: 10px;
+    }
+  }
+  img {
+    @include bp-tablet-sm {
+      margin-bottom: 20px;
+    }
   }
 }
