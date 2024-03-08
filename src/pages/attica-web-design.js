@@ -8,7 +8,7 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/grimsby-web-design.webp";
+import website from "../img/attica-web-design-ny.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -19,17 +19,17 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Grimsby Web Design | ON Website Developer</title>
+        <title>Attica Web Design | NY Website Developer</title>
         <meta
           name="description"
-          content="Elevate your brand with top-notch Grimsby web design services. Affordable, stunning websites that capture attention. Drive growth now!"
+          content="Elevate your brand with top-notch Attica web design services. Affordable, stunning websites that capture attention. Drive growth now!"
         />
-        <link rel="canonical" href="https://infused.agency/grimsby-web-design" />
+        <link rel="canonical" href="https://infused.agency/attica-web-design" />
       </Head>
       <Nav />
       <InnerHero
-        title="Grimsby Web Design Company"
-        description="Infused Agency is an award-winning web design company that serves Grimsby. We help businesses bring in more revenue through their websites."
+        title="Attica Web Design Company"
+        description="Infused Agency is an award-winning web design company that serves Attica. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -40,19 +40,19 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Grimsby web design company, Grimsby web design agency, Grimsby web design services"
+                  alt="Attica web design company, Attica web design agency, Attica web design services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Grimsby web design services</strong> that our <strong>Grimsby web design company</strong>{" "}
+                  The <strong>Attica web design services</strong> that our <strong>Attica web design company</strong>{" "}
                   provides are pretty impeccable. We consistently provide great web design services to our clients with
                   pretty awesome results. There are a lot of benefits as to why web design services are so important for
                   any local company:
                 </p>
                 <ul>
                   <li>Helps bolster company branding.</li>
-                  <li>Improves your Grimsby company's reputation and trustworthiness.</li>
+                  <li>Improves your Attica company's reputation and trustworthiness.</li>
                   <li>Leads to more leads and company revenue.</li>
                 </ul>
                 <p>
@@ -67,7 +67,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Nearby Grimsby Web Design Clients <span>Get Results</span>
+                    Our Nearby Attica Web Design Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -78,7 +78,7 @@ const SEO = () => {
                     <h4>TreeReports</h4>
                     <p>
                       "Fantastic experience from start to end. Infused Agency is organized, thorough and professional. I
-                      highly recommend their company if you are thinking of needing their Grimsby web design services."
+                      highly recommend their company if you are thinking of needing their Attica web design services."
                     </p>
                     <ul>
                       <li>
@@ -120,8 +120,7 @@ const SEO = () => {
                     <h4>KD Flowers</h4>
                     <p>
                       "Infused Agency drastically improved my online presence. By using their web design services, my
-                      Grimsby company went from having no website at all to one that brings in new customers every
-                      week."
+                      Attica company went from having no website at all to one that brings in new customers every week."
                     </p>
                     <ul>
                       <li>
@@ -163,7 +162,7 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work on my new web site. If you ever need a
-                      web design for your Grimsby business I do recommend Infused Agency for their services. JD keep up
+                      web design for your Attica business I do recommend Infused Agency for their services. JD keep up
                       the great work. Thank you."
                     </p>
                     <ul>
@@ -207,7 +206,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Ready to grow your business with top Grimsby web design services?</h3>
+                  <h3>Ready to grow your business with top Attica web design services?</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
@@ -221,7 +220,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Grimsby <span>Web Design</span> Services
+                    Attica <span>Web Design</span> Services
                   </h2>
                   <p>Websites That Help Your Company Bring In More Customers</p>
                 </Col>
@@ -231,16 +230,16 @@ const SEO = () => {
                   <h5>Search Engine Optimization (SEO)</h5>
                   <p>
                     We make sure that your websites are indexed and show up for certain keywords in Google. Search
-                    engine optimization is a key part of our Grimsby web design services to help make sure that your
-                    customers can find your website. When using our Grimsby web design experts and{" "}
-                    <Link href="/Grimsby-seo/">Grimsby SEO services</Link>, your website should help bring in new
-                    company revenue and customers.
+                    engine optimization is a key part of our Attica web design services to help make sure that your
+                    customers can find your website. When using our Attica web design experts and{" "}
+                    <Link href="/attica-seo/">Attica SEO services</Link>, your website should help bring in new company
+                    revenue and customers.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>Web Design &amp; Development</h5>
                   <p>
-                    Our Grimsby web designers create websites that bolster your brand's reputation, which help bring in
+                    Our Attica web designers create websites that bolster your brand's reputation, which help bring in
                     more customers. Our websites not only attract customers, our award-winning web designs take into
                     account search engine optimization and responsive web design best practices to help increase brand
                     awareness.
@@ -249,9 +248,9 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Custom Web Design</h5>
                   <p>
-                    Every client website we design is custom. Our Grimsby web designers will create a modern website
+                    Every client website we design is custom. Our Attica web designers will create a modern website
                     design for you, taking into consideration your business goals. We make sure to plug in your vision
-                    that factors into our Grimsby web design experts’ design process.{" "}
+                    that factors into our Attica web design experts’ design process.{" "}
                   </p>
                 </Col>
               </Row>
@@ -259,15 +258,15 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Responsive Web Design</h5>
                   <p>
-                    We conduct responsive web design as part of our Grimsby web design services to help your users
-                    navigate your website on any device. Our Grimsby web design experts specifically develop with custom
+                    We conduct responsive web design as part of our Attica web design services to help your users
+                    navigate your website on any device. Our Attica web design experts specifically develop with custom
                     code to allow your website to look great on any device or computer.
                   </p>
                 </Col>
                 <Col lg="4">
                   <h5>WordPress Web Design</h5>
                   <p>
-                    Our web design company in Grimsby uses WordPress for all website projects that require a content
+                    Our web design company in Attica uses WordPress for all website projects that require a content
                     management system (CMS). Since WordPress powers nearly 50% of the web, it's a clear winner when it
                     comes to choosing a CMS. We choose WordPress as it's easy to develop with and easy for our clients
                     to use.
@@ -277,8 +276,8 @@ const SEO = () => {
                   <h5>E-Commerce Web Design</h5>
                   <p>
                     In the post-covid world, it's especially important as a product or subscription-based business to
-                    have an e-commerce website. With the help of our Grimsby web design agency, your e-commerce website
-                    can help sell your products online, expanding your reach drastically. Leave it to our Grimsby web
+                    have an e-commerce website. With the help of our Attica web design agency, your e-commerce website
+                    can help sell your products online, expanding your reach drastically. Leave it to our Attica web
                     designers to help design and develop a beautiful, modern online store.
                   </p>
                 </Col>
@@ -289,7 +288,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Grimsby Web Design Experts Help Today</h3>
+                  <h3>Have Our Attica Web Design Experts Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a target="_blank" rel="noreferrer" href="https://calendly.com/infused-agency/project-discovery/">
                     <button>Get Free Quote</button>
@@ -303,7 +302,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Grimsby</span> Web Design Agency
+                    Why Choose Infused Agency As Your <span>Attica</span> Web Design Agency
                   </h2>
                   <p>Increase Your Brand's Reputation With Our Web Design Experts</p>
                 </Col>
@@ -311,10 +310,10 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Grimsby businesses (and beyond!) with their{" "}
+                    Since 2013 we've been able to help countless local Attica businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
-                    <Link href="/Grimsby-seo/">search engine optimization (SEO)</Link> and {""}
+                    <Link href="/attica-seo/">search engine optimization (SEO)</Link> and {""}
                     <Link href="/wordpress-developer-niagara">WordPress development</Link>.
                   </p>
                   <p>
@@ -323,7 +322,7 @@ const SEO = () => {
                     more revenue through digital channels.
                   </p>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93092.63290802295!2d-79.66322367018574!3d43.18547293296224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf79ccfea3dd%3A0x9566109eba2a4656!2sGrimsby%2C%20ON!5e0!3m2!1sen!2sca!4v1709690807529!5m2!1sen!2sca"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23394.107857022762!2d-78.29835196782021!3d42.86728259587871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3bf628582c82f%3A0x51fb31738202553a!2sAttica%2C%20NY%2014011%2C%20USA!5e0!3m2!1sen!2sca!4v1709935938939!5m2!1sen!2sca"
                     width="600"
                     height="450"
                     allowfullscreen=""
