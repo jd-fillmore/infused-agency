@@ -28,7 +28,7 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Free Attractions in Niagara Falls, Ontario: Exploring Budget-Friendly Delights"
+        title="Free Attractions in Niagara Falls, Ontario, Canada in 2024: Exploring Budget-Friendly Delights"
         bgImage={bgImage}
       />
       <InnerContent>
@@ -36,11 +36,11 @@ const SEO = () => {
           <Container>
             <Row>
               <Col lg="12">
-                <h2>Free Activities in Niagara Falls, Ontario, Canada</h2>
+                <h2>Free Activities in Niagara Falls, Ontario, Canada (2024)</h2>
                 <p>
                   Niagara Falls, where nature's spectacle meets budget-friendly exploration. Just like our{" "}
                   <Link href="/best-things-to-do-in-st-catharines">Best Free Things To Do In St. Catharines Guide</Link>
-                  , this guide is your key to unlock the treasure trove of free attractions in Niagara Falls, Ontario,
+                  , this guide is your key to unlock the treasure trove of free attractions in Niagara Falls, Ontario, in 2024,
                   providing an affordable and unforgettable experience for all.
                 </p>
 
