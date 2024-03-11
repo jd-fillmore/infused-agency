@@ -53,6 +53,7 @@ const SEO = () => {
                 <h2>Discovering Local Artistry</h2>
 
                 <Image
+                  className="img-fluid"
                   width="1400"
                   height="400"
                   src={imgArtist}
@@ -71,6 +72,7 @@ const SEO = () => {
 
                 <h2>Exploring Nature's Beauty</h2>
                 <Image
+                  className="img-fluid"
                   width="1400"
                   height="400"
                   src={imgMont}
@@ -89,6 +91,7 @@ const SEO = () => {
 
                 <h2>Indulging in Culinary Delights</h2>
                 <Image
+                  className="img-fluid"
                   width="1400"
                   height="400"
                   src={imgRest}
@@ -107,6 +110,7 @@ const SEO = () => {
 
                 <h2>Dive into St. Catharines History</h2>
                 <Image
+                  className="img-fluid"
                   width="1400"
                   height="400"
                   src={imgHist}
@@ -125,6 +129,7 @@ const SEO = () => {
 
                 <h2>Enjoying Family-Friendly Activities</h2>
                 <Image
+                  className="img-fluid"
                   width="1400"
                   height="400"
                   src={imgDal}
