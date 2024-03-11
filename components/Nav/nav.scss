@@ -43,8 +43,12 @@
 }
 
 .logo {
-  font-size: 24px !important;
-  color: $white !important;
+  height: 35% !important;
+  width: 35% !important;
+  @include bp-tablet-sm {
+    height: 60% !important;
+    width: 60% !important;
+  }
 }
 
 .navbar-brand,

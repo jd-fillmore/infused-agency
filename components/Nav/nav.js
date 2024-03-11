@@ -31,6 +31,7 @@ const Example = (props) => {
             name="Niagara Web Design Company Infused Agency"
           >
             <Image
+              className="logo"
               src={logo}
               alt="niagara website design company"
               title="niagara website design company"
