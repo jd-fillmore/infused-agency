@@ -32,8 +32,8 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Niagara SEO Company"
-        description="Infused Agency is an award-winning SEO company in Niagara. We help businesses bring in more revenue through their websites."
+        title="Niagara SEO &amp; Digital Marketing Company"
+        description="Infused Agency is an award-winning SEO &amp; Digital Marketing company in Niagara. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -50,11 +50,11 @@ const SEO = () => {
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
                   The <strong>Niagara SEO services</strong> that our{" "}
-                  <strong>Niagara SEO company</strong> provides are pretty
-                  impeccable. We consistently provide great SEO services to our
-                  clients with pretty awesome results. There are a lot of
-                  benefits as to why SEO services are so important for any local
-                  company:
+                  <strong>Niagara SEO &amp; digital marketing company</strong>{" "}
+                  provides are pretty impeccable. We consistently provide great
+                  SEO &amp; digital marketing services to our clients with
+                  pretty awesome results. There are a lot of benefits as to why
+                  SEO services are so important for any local company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
@@ -254,7 +254,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Niagara <span>SEO</span> Services
+                    Niagara <span>SEO</span> &amp; Digital Marketing Services
                   </h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
@@ -337,7 +337,10 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Niagara SEO Experts Help Today</h3>
+                  <h3>
+                    Have Our Niagara SEO &amp; Digital Marketing Experts Help
+                    Today
+                  </h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"

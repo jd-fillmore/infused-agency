@@ -51,7 +51,7 @@ const Example = (props) => {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <Link href="/niagara-seo-company/">
-                    <DropdownItem>SEO</DropdownItem>
+                    <DropdownItem>SEO &amp; Digital Marketing</DropdownItem>
                   </Link>
                   <Link href="/web-design/">
                     <DropdownItem>Web Design &amp; Development</DropdownItem>
