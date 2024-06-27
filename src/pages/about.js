@@ -84,7 +84,7 @@ const About = () => {
               <Col lg="6">
                 <ul>
                   <li>Outrank my competitors in Google Search</li>
-                  <li>Make my website mobile-frienly</li>
+                  <li>Make my website mobile-friendly</li>
                   <li>Increase my online presence</li>
                   <li>Create and run Facebook &amp; Instagram ads for me</li>
                 </ul>
