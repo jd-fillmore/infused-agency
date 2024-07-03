@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Poppins, Lato } from "@next/font/google";
+import { Playfair_Display, Poppins } from "@next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -41,13 +41,13 @@ import "../../components/Home/Process/process.scss";
 import "../../components/websiteFAQ/website-faq.scss";
 import Script from "next/script";
 
-export const poppinsFont = Poppins({
+export const playfairFont = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
 });
 
-export const lato = Lato({
+export const poppins = Poppins({
   subsets: ["latin"],
   weight: "400",
   display: "swap",
@@ -63,14 +63,14 @@ export default function App({ Component, pageProps }) {
         h4,
         h5,
         h6 {
-          font-family: ${poppinsFont.style.fontFamily};
+          font-family: ${playfairFont.style.fontFamily};
         }
         a,
         ul,
         ol,
         p,
         button {
-          font-family: ${lato.style.fontFamily} !important;
+          font-family: ${poppins.style.fontFamily} !important;
         }
       `}</style>
 

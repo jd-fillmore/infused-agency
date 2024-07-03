@@ -3,11 +3,10 @@
 
 .home-services {
   padding: 120px 0px 120px 0px;
-  background: url("../img/web-design-niagara-bg.webp") center center/cover fixed
-    no-repeat;
+  background: $dark-grey;
 
   h2 {
-    color: $dark-blue;
+    color: $grey;
     @include bp-tablet-sm {
       text-align: left;
     }

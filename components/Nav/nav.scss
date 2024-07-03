@@ -1,6 +1,20 @@
 @import "../../src/pages/variables.scss";
 @import "../../src/pages/breakpoints.scss";
 
+.top-nav {
+  background: $dark-purple;
+  padding: 10px 0px 10px 0px;
+  a {
+    color: $dark-blue;
+    &:hover {
+      border-bottom: 2px solid $dark-blue;
+    }
+  }
+  @include bp-tablet-sm {
+    display: none;
+  }
+}
+
 .fixed-top {
   background: $dark-blue;
   box-shadow: 0 1px 3px rgba(189, 189, 189, 0.12),

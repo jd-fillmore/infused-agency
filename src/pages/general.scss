@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 28px;
   @include bp-tablet-sm {
     font-size: 24px !important;
   }
@@ -133,6 +133,13 @@ form {
   padding-bottom: 60px;
   @include bp-tablet-sm {
     padding-bottom: 20px;
+  }
+}
+
+.pd-top-40 {
+  padding-top: 40px;
+  @include bp-tablet-sm {
+    padding-top: 20px;
   }
 }
 
@@ -272,6 +279,7 @@ span {
     }
     p {
       margin-top: 0px;
+      font-size: 16px;
     }
     .highlight {
       background: $dark-grey;
@@ -337,7 +345,7 @@ span {
 }
 
 .home-top-web {
-  padding: 120px 0px 40px 0px;
+  padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
@@ -352,11 +360,16 @@ span {
     padding: 40px 0px 40px 0px;
   }
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   h3 {
     font-size: 28px;
   }
+}
+
+.accordion__panel,
+.accordion__button {
+  font-family: "Poppins", sans-serif;
 }
 
 .blog {
@@ -423,20 +436,17 @@ iframe {
 }
 
 .infused-benefits {
-  padding: 170px 0px 100px 0px;
+  padding: 120px 0px 120px 0px;
+  background: $dark-grey;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
-  background: url("../img/niagara-web-design-decew.webp") center center
-    no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   h2,
   h3 {
-    color: $dark-blue;
+    color: $glow-blue;
   }
   p {
-    color: rgba($dark-blue, 0.7);
+    color: rgba($glow-blue, 0.7);
   }
 }
 
