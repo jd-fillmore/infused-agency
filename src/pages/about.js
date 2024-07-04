@@ -21,7 +21,10 @@ const About = () => {
         />
       </Head>
       <Nav />
-      <InnerHero title="About Us" description="A bit about the company" />
+      <InnerHero
+        title="About Us"
+        description="Whether you aim to generate more leads, establish credibility, or boost sales, Infused Agency is here to navigate your business through the complexities of the digital landscape."
+      />
       <InnerContent>
         <section className="about">
           <Container>
@@ -30,34 +33,22 @@ const About = () => {
                 <Image className="img-fluid" src={about} alt="business needs" />
                 <br />
                 <p className="text-center">
-                  <em>
-                    JD (Owner) and his daughter (side-kick) hiking in Banff
-                  </em>
+                  <em>JD (Owner) and his daughter (side-kick) hiking in Banff</em>
                 </p>
               </Col>
               <Col lg="6">
                 <p>
-                  Since 2013 we've been able to help countless local St.
-                  Catharines, Niagara businesses (and beyond!) with their{" "}
-                  <Link href="/web-design">website design</Link>,{" "}
-                  <Link href="/digital-marketing-niagara">
-                    digital marketing
-                  </Link>
-                  ,{" "}
-                  <Link href="/niagara-seo-company">
-                    search engine optimization (SEO)
-                  </Link>
-                  ,{" "}
-                  <Link href="/wordpress-developer-niagara">
-                    WordPress development
-                  </Link>{" "}
-                  and e-commerce website development.
+                  Since 2013 we've been able to help countless local St. Catharines, Niagara businesses (and beyond!)
+                  with their <Link href="/web-design">website design</Link>,{" "}
+                  <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
+                  <Link href="/niagara-seo-company">search engine optimization (SEO)</Link>,{" "}
+                  <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
+                  development.
                 </p>
                 <p>
-                  We've been able to help small, local businesses all the way to
-                  large enterprise companies with increasing traffic to their
-                  websites, build modern websites for them and ultimately
-                  bringing them more revenue through digital channels.
+                  We've been able to help small, local businesses all the way to large enterprise companies with
+                  increasing traffic to their websites, build modern websites for them and ultimately bringing them more
+                  revenue through digital channels.
                 </p>
               </Col>
             </Row>
@@ -65,9 +56,11 @@ const About = () => {
               <Col lg="12">
                 <h2>How we can help you</h2>
                 <p>
-                  If you're looking for help in any of the areas below, please
-                  head over to our <Link href="/get-started">Get Started</Link>{" "}
-                  page and a member from our team will respond to you promptly.
+                  If you're looking for help in any of the areas below,{" "}
+                  <a href="https://calendly.com/infused-agency/project-discovery/" target="_blank">
+                    book a free consultation
+                  </a>
+                  . We're looking forward to meeting you!
                 </p>
               </Col>
             </Row>

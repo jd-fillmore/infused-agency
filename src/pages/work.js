@@ -29,32 +29,18 @@ const OurWork = () => {
       <Nav />
       <InnerHero
         title="Our Work"
-        description="Our work is our passion. See what we've created for our clients."
+        description="Tailored Design, SEO, and Digital Marketing Strategies for Aspiring Businesses"
         bgImage={bgImage}
       />
       <InnerContent>
         <section className="work">
           <Container>
             <Row>
-              <Col lg="12 text-center pd-btm-80">
-                <h3>Featured Case Studies</h3>
-              </Col>
-            </Row>
-          </Container>
-          <Container>
-            <Row>
               <Col lg="4">
                 <Card>
-                  <Image
-                    className="img-fluid"
-                    src={treeImg}
-                    alt="treereports"
-                  />
+                  <Image className="img-fluid" src={treeImg} alt="treereports" />
                   <h3>TreeReports</h3>
-                  <p>
-                    A local certified consulting arborist specializing in
-                    reports, planning and consulting.
-                  </p>
+                  <p>A local certified consulting arborist specializing in reports, planning and consulting.</p>
                   <Link href="/tree-reports">
                     Discover
                     <svg
@@ -76,10 +62,7 @@ const OurWork = () => {
                 <Card>
                   <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
                   <h3>KD Flowers</h3>
-                  <p>
-                    A boutique affordable wedding flower business in the heart
-                    of St. Catharines.
-                  </p>
+                  <p>A boutique affordable wedding flower business in the heart of St. Catharines.</p>
                   <Link href="/kd-florist">
                     Discover
                     <svg
@@ -99,16 +82,9 @@ const OurWork = () => {
               </Col>
               <Col lg="4">
                 <Card>
-                  <Image
-                    className="img-fluid"
-                    src={cassImg}
-                    alt="Cass-A-Bella Construction"
-                  />
+                  <Image className="img-fluid" src={cassImg} alt="Cass-A-Bella Construction" />
                   <h3>Cass-A-Bella Construction</h3>
-                  <p>
-                    A contracting company focused on custom home building and
-                    renovation in Toronto.
-                  </p>
+                  <p>A contracting company focused on custom home building and renovation in Toronto.</p>
                   <Link href="/cass-a-bella-construction">
                     Discover
                     <svg

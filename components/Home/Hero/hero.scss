@@ -2,7 +2,7 @@
 @import "../../../src/pages/breakpoints.scss";
 
 .hero {
-  padding: 300px 0px 200px 0px;
+  padding: 240px 0px 100px 0px;
   background: linear-gradient(to right, $light-blue, $purple);
 
   @include bp-tablet-sm {
@@ -64,6 +64,7 @@
       color: $glow-blue;
       font-size: 16px;
       margin-top: 0;
+      line-height: 1.4;
     }
     @include bp-tablet-sm {
       margin-top: 20px;
@@ -152,6 +153,10 @@
   .kd {
     font-size: 16px !important;
   }
+}
+
+.cards {
+  margin-top: -120px;
 }
 
 .cities {

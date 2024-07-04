@@ -25,12 +25,12 @@ const Example = (props) => {
 
   return (
     <div className="fixed-top">
-      {/* <section className="top-nav text-center">
+      <section className="top-nav text-center">
         <Container>
           <Row>
             <Col lg="12">
               <Link href="/website-audit/">
-                Maximize your website's potential. Get a free audit now!
+                Boost leads, credibility, and sales. Get a free website audit now!
                 <svg
                   stroke="#005c97"
                   fill="currentColor"
@@ -47,14 +47,10 @@ const Example = (props) => {
             </Col>
           </Row>
         </Container>
-      </section> */}
+      </section>
       <Navbar id="nav" expand="lg">
         <Container>
-          <NavbarBrand
-            href="/"
-            className="logo"
-            name="Niagara Web Design Company Infused Agency"
-          >
+          <NavbarBrand href="/" className="logo" name="Niagara Web Design Company Infused Agency">
             <Image
               className="logo"
               src={logo}

@@ -30,6 +30,11 @@
   }
   p {
     color: rgba($dark-grey, 0.7);
+    width: 50%;
+    margin: 0 auto;
+    @include bp-tablet-sm {
+      width: 100%;
+    }
   }
   h1 {
     color: $dark-grey !important;

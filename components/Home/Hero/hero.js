@@ -14,14 +14,11 @@ const Hero = () => {
             <Row className="d-flex align-items-center">
               <Col lg="6">
                 <Fade duration={2000}>
-                  <h1 className="intro">
-                    Niagara Web Design &amp; Business Strategy
-                  </h1>
+                  <h1 className="intro">Niagara Web Design &amp; Business Strategy</h1>
                 </Fade>
                 <Fade delay={300} duration={2000}>
                   <h2>
-                    We help local businesses boost <span>leads</span>, drive{" "}
-                    <span>sales</span>
+                    We help local businesses boost <span>leads</span>, drive <span>sales</span>
                     and enhance <span>credibility</span>.
                   </h2>
                 </Fade>
@@ -45,27 +42,29 @@ const Hero = () => {
                   </Link>
                 </Fade>
               </Col>
+
               <Col lg="6">
                 <Fade duration={2000}>
-                  <Image
-                    priority={true}
-                    className="img-fluid"
-                    src={heroImg}
-                    alt="niagara web design"
-                  />
-                  <div className="d-block d-md-flex">
-                    <div className="card">
-                      <h3>10,700</h3>
-                      <p>monthly website views</p>
-                    </div>
-                    <div className="card">
-                      <h3>20,000%</h3>
-                      <p>in leads over 6 months</p>
-                    </div>
-                    <div className="card">
-                      <h3>5,800</h3>
-                      <p>new monthly visitors</p>
-                    </div>
+                  <Image priority={true} className="img-fluid" src={heroImg} alt="niagara web design" />
+                  <div className="d-block d-md-flex cards">
+                    <Fade duration={1000} delay={300}>
+                      <div className="card">
+                        <h3>10,700</h3>
+                        <p>monthly website views</p>
+                      </div>
+                    </Fade>
+                    <Fade duration={1000} delay={600}>
+                      <div className="card">
+                        <h3>20,000%</h3>
+                        <p>in leads over 6 months</p>
+                      </div>
+                    </Fade>
+                    <Fade duration={1000} delay={900}>
+                      <div className="card">
+                        <h3>5,800</h3>
+                        <p>new monthly visitors</p>
+                      </div>
+                    </Fade>
                   </div>
                 </Fade>
               </Col>

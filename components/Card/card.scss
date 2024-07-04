@@ -4,8 +4,10 @@
 .card {
   background: $dark-blue !important;
   border-radius: 0;
+  border: none;
   padding: 100px;
   margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   @include bp-tablet-sm {
     padding: 50px;
   }

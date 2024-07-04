@@ -2,6 +2,11 @@
 @import "../../src/pages/variables.scss";
 
 .inner-content {
+  .w-75 {
+    @include bp-tablet-sm {
+      width: 100%;
+    }
+  }
   background: $dark-grey;
   padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
@@ -29,5 +34,45 @@
   }
   label {
     color: $white;
+  }
+  .card {
+    padding: 30px;
+  }
+  .number {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text horizontally */
+    line-height: 30px; /* Center text vertically */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+  }
+  .audit {
+    .card {
+      .number {
+        margin-right: 10px;
+      }
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.review {
+  .card {
+    svg {
+      margin: 0 auto;
+    }
+    h3 {
+      font-size: 22px;
+      margin-top: -15px;
+      @include bp-tablet-sm {
+        margin-top: 0px;
+      }
+    }
   }
 }
