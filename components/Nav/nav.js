@@ -30,7 +30,8 @@ const Example = (props) => {
           <Row>
             <Col lg="12">
               <Link href="/website-audit/">
-                Boost leads, credibility, and sales. Get a free website audit now!
+                Boost leads, credibility, and sales. Get a free website audit
+                now!
                 <svg
                   stroke="#005c97"
                   fill="currentColor"
@@ -50,7 +51,11 @@ const Example = (props) => {
       </section>
       <Navbar id="nav" expand="lg">
         <Container>
-          <NavbarBrand href="/" className="logo" name="Niagara Web Design Company Infused Agency">
+          <NavbarBrand
+            href="/"
+            className="logo"
+            name="Niagara Web Design Company Infused Agency"
+          >
             <Image
               className="logo"
               src={logo}
@@ -87,21 +92,21 @@ const Example = (props) => {
                   Work
                 </Link>
               </NavItem>
-              {/* <NavItem>
-                <Link href="/pricing" className="nav-link">
-                  Pricing
+              <NavItem>
+                <Link href="/reviews" className="nav-link">
+                  Reviews
                 </Link>
-              </NavItem> */}
+              </NavItem>
               <NavItem>
                 <Link href="/about" className="nav-link">
                   About
                 </Link>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <Link href="/posts" className="nav-link">
                   Blog
                 </Link>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <a
                   className="nav-link btn"

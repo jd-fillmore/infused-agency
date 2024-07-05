@@ -76,3 +76,19 @@
     }
   }
 }
+
+.reviews {
+  .card {
+    .d-flex {
+      margin-left: -5px;
+    }
+    .author {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .desc {
+      margin-top: 10px;
+    }
+  }
+}

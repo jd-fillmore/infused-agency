@@ -33,22 +33,34 @@ const About = () => {
                 <Image className="img-fluid" src={about} alt="business needs" />
                 <br />
                 <p className="text-center">
-                  <em>JD (Owner) and his daughter (side-kick) hiking in Banff</em>
+                  <em>
+                    JD (Owner) and his daughter (side-kick) hiking in Banff
+                  </em>
                 </p>
               </Col>
               <Col lg="6">
                 <p>
-                  Since 2013 we've been able to help countless local St. Catharines, Niagara businesses (and beyond!)
-                  with their <Link href="/web-design">website design</Link>,{" "}
-                  <Link href="/digital-marketing-niagara">digital marketing</Link>,{" "}
-                  <Link href="/niagara-seo-company">search engine optimization (SEO)</Link>,{" "}
-                  <Link href="/wordpress-developer-niagara">WordPress development</Link> and e-commerce website
-                  development.
+                  Since 2013 we've been able to help countless local St.
+                  Catharines, Niagara businesses (and beyond!) with their{" "}
+                  <Link href="/web-design">website design</Link>,{" "}
+                  <Link href="/digital-marketing-niagara">
+                    digital marketing
+                  </Link>
+                  ,{" "}
+                  <Link href="/niagara-seo-company">
+                    search engine optimization (SEO)
+                  </Link>
+                  ,{" "}
+                  <Link href="/wordpress-developer-niagara">
+                    WordPress development
+                  </Link>{" "}
+                  and e-commerce website development.
                 </p>
                 <p>
-                  We've been able to help small, local businesses all the way to large enterprise companies with
-                  increasing traffic to their websites, build modern websites for them and ultimately bringing them more
-                  revenue through digital channels.
+                  We've been able to help small, local businesses all the way to
+                  large enterprise companies with increasing traffic to their
+                  websites, build modern websites for them and ultimately
+                  bringing them more revenue through digital channels.
                 </p>
               </Col>
             </Row>
@@ -57,7 +69,10 @@ const About = () => {
                 <h2>How we can help you</h2>
                 <p>
                   If you're looking for help in any of the areas below,{" "}
-                  <a href="https://calendly.com/infused-agency/project-discovery/" target="_blank">
+                  <a
+                    href="https://calendly.com/infused-agency/project-discovery/"
+                    target="_blank"
+                  >
                     book a free consultation
                   </a>
                   . We're looking forward to meeting you!

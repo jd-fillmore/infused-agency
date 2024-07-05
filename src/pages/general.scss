@@ -249,7 +249,8 @@ span {
 }
 
 .home-client-results {
-  background: url("../img/niagara-website-design-bg.webp") center center no-repeat;
+  background: url("../img/niagara-website-design-bg.webp") center center
+    no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 120px 0px 120px 0px;
@@ -278,7 +279,7 @@ span {
     }
     p {
       margin-top: 0px;
-      font-size: 16px;
+      font-size: 15px;
     }
     .highlight {
       background: $dark-grey;
