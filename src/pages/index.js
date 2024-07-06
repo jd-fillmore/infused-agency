@@ -287,7 +287,7 @@ const Home = () => {
           <div className="container">
             <div className="row text-center">
               <div className="col-lg-12">
-                <h2>Our Niagara Web Design, SEO &amp; Strategies Excel Your Business</h2>
+                <h2>Our Niagara Web Design &amp; SEO Excel Your Business</h2>
               </div>
             </div>
             <div className="row pd-top-40">
@@ -503,7 +503,7 @@ const Home = () => {
                   </div>
                 </Fade>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 d-flex">
                 <Fade delay={600} duration={1000}>
                   <div className="card">
                     <Image className="img-fluid" src={wpImg} alt="niagara web design company" />
@@ -517,7 +517,7 @@ const Home = () => {
                   </div>
                 </Fade>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 d-flex">
                 <Fade delay={900} duration={1000}>
                   <div className="card">
                     <Image className="img-fluid" src={seoImg} alt="best web designer niagara" />

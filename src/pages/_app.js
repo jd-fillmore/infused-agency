@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Playfair_Display, Poppins } from "@next/font/google";
+import { Poppins } from "@next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -41,11 +41,11 @@ import "../../components/Home/Process/process.scss";
 import "../../components/websiteFAQ/website-faq.scss";
 import Script from "next/script";
 
-export const playfairFont = Playfair_Display({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "400",
-});
+// export const playfairFont = Playfair_Display({
+//   subsets: ["latin"],
+//   display: "swap",
+//   weight: "400",
+// });
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -63,7 +63,7 @@ export default function App({ Component, pageProps }) {
         h4,
         h5,
         h6 {
-          font-family: ${playfairFont.style.fontFamily};
+          font-family: ${poppins.style.fontFamily};
         }
         a,
         ul,
