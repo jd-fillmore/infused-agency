@@ -14,7 +14,7 @@ const Hero = () => {
             <Row className="d-flex align-items-center">
               <Col lg="6">
                 <Fade duration={2000}>
-                  <h1 className="intro">Niagara Web Design &amp; Business Strategy</h1>
+                  <h1 className="intro">Niagara Web Design, SEO &amp; Business Strategy</h1>
                 </Fade>
                 <Fade delay={300} duration={2000}>
                   <h2>
@@ -25,7 +25,7 @@ const Hero = () => {
                 <Fade bottom delay={600} duration={2000}>
                   <Link href="/work">
                     <button>
-                      View Portfolio
+                      View Niagara Web Design &amp; SEO Portfolio
                       <svg
                         stroke="#005c97"
                         fill="currentColor"

@@ -144,6 +144,7 @@
     @include bp-tablet-sm {
       z-index: 1;
       margin-top: 0px;
+      font-size: 12px !important;
     }
   }
   form {
