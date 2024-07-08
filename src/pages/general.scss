@@ -159,6 +159,91 @@ form {
   }
 }
 
+.w-80 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  @include bp-tablet-sm {
+    width: 100%;
+  }
+}
+
+.niche-pages {
+  .arborist-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/Ontario-Arborist-Tree-Removal-Services-Website-Design.jpg")
+        center center;
+  }
+  .niche-inner-hero {
+    background-size: cover;
+    padding: 300px 0px 160px 0px;
+    .stars {
+      margin: 0 auto;
+      display: block;
+    }
+    h1,
+    h2,
+    h3,
+    p {
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    }
+    h2 {
+      padding: 30px 0px 30px 0px;
+      font-size: 38px;
+      color: rgba(#fff, 0.8);
+    }
+    h3 {
+      color: rgba(#fff, 0.8);
+    }
+    p {
+      margin-bottom: 0px;
+      margin-top: 30px;
+    }
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .card {
+    h3 {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .author {
+      margin-top: 20px;
+    }
+    .desc {
+      margin-top: 10px;
+    }
+  }
+  .niche-cta {
+    background: $light-blue;
+    padding: 120px 0px 120px 0px;
+    p,
+    h2 {
+      color: #fff;
+    }
+    h2 {
+      font-size: 80px;
+      @include bp-tablet-sm {
+        font-size: inherit;
+      }
+    }
+    button {
+      background: $dark-purple;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+
 .seo-page {
   h2,
   h3 {

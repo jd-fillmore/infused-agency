@@ -35,7 +35,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col lg="4">
-              <h3>Niagara Website Design</h3>
+              <h3>Infused Agency</h3>
               <p>
                 Infused is a Niagara web design &amp; St. Catharines SEO
                 company. We help local and non-local businesses build their
@@ -203,6 +203,10 @@ const Footer = () => {
                       Waterdown Web Design
                     </Link>
                     , <Link href="/web-design-welland">Welland Web Design</Link>
+                    ,{" "}
+                    <Link href="/ontario-arborist-tree-removal-websites">
+                      Ontario Arborist Tree Removal Websites
+                    </Link>
                     .
                   </AccordionItemPanel>
                 </AccordionItem>
