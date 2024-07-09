@@ -35,6 +35,10 @@ const OntarioArborist = () => {
           name="description"
           content="Boost your Ontario arborist business with custom website design for tree removal services. Showcase expertise, attract clients. Contact us for a free quote!"
         />
+        <link
+          rel="canonical"
+          href="https://infused.agency/ontario-arborist-tree-removal-websites"
+        />
       </Head>
       <Nav />
       <div className="niche-pages">
