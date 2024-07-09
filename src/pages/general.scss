@@ -562,3 +562,12 @@ iframe {
     }
   }
 }
+
+.phone {
+  color: $dark-blue;
+  &:hover {
+    color: $dark-blue;
+    border-bottom: none !important;
+    cursor: none;
+  }
+}

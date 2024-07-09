@@ -37,9 +37,9 @@ const Footer = () => {
             <Col lg="4">
               <h3>Infused Agency</h3>
               <p>
-                Infused is a Niagara web design &amp; St. Catharines SEO
-                company. We help local and non-local businesses build their
-                credibility online, as well as help bring in more sales.
+                Infused is a boutique web design &amp; SEO company. We help
+                local and non-local businesses build their credibility online,
+                as well as help bring in more sales.
               </p>
               Follow us on{" "}
               <a
@@ -88,12 +88,10 @@ const Footer = () => {
               <br />
               <a href="mailto:hello@infused.agency">hello@infused.agency</a>
               <br />
-              <a class="phone" href="tel:(905) 933-3115">
+              {/* <a class="phone" href="tel:(905) 933-3115">
                 (905) 933-3115
               </a>
-              <br />
-              <br />
-              <p>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</p>
+              <p>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</p> */}
             </Col>
           </Row>
           <Row>
@@ -207,26 +205,18 @@ const Footer = () => {
                     <Link href="/ontario-arborist-tree-removal-websites">
                       Ontario Arborist Tree Removal Websites
                     </Link>
-                    ,
+                    ,{" "}
                     <Link href="/alberta-arborist-tree-removal-websites">
                       Alberta Arborist Tree Removal Websites
+                    </Link>
+                    ,{" "}
+                    <Link href="/british-columbia-arborist-tree-removal-websites">
+                      British Columbia Arborist Tree Removal Websites
                     </Link>
                     .
                   </AccordionItemPanel>
                 </AccordionItem>
               </Accordion>
-
-              <br />
-              <br />
-              <iframe
-                title="niagara web design"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.712155786024!2d-79.21034682336128!3d43.152573384665175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2sInfused%20Agency%20%7C%20SEO%2C%20Web%20Design%20%26%20Development%2C%20Digital%20Marketing%20in%20Niagara%2C%20St.%20Catharines!5e0!3m2!1sen!2sca!4v1708489639093!5m2!1sen!2sca"
-                width="100%"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
             </Col>
             <Col lg="4">
               <h3>Hours</h3>
