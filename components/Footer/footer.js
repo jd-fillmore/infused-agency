@@ -213,6 +213,10 @@ const Footer = () => {
                     <Link href="/british-columbia-arborist-tree-removal-websites">
                       British Columbia Arborist Tree Removal Websites
                     </Link>
+                    , {""}
+                    <Link href="/new-york-arborist-tree-removal-websites">
+                      New York Arborist Tree Removal Websites
+                    </Link>
                     .
                   </AccordionItemPanel>
                 </AccordionItem>
