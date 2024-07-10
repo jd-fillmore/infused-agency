@@ -134,7 +134,7 @@ const OntarioArborist = () => {
             </Row>
           </Container>
         </section>
-        <InnerContent>
+        <div className="inner-content">
           <div className="intro">
             <Container>
               <Row>
@@ -691,7 +691,7 @@ const OntarioArborist = () => {
               </Row>
             </Container>
           </div>
-        </InnerContent>
+        </div>
         <div className="niche-cta">
           <Container>
             <Row className="text-center">
