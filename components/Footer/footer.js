@@ -214,6 +214,10 @@ const Footer = () => {
                       British Columbia Arborist Tree Removal Websites
                     </Link>
                     , {""}
+                    <Link href="/los-angeles-arborist-tree-removal-websites">
+                      Los Angeles Arborist Tree Removal Websites
+                    </Link>
+                    , {""}
                     <Link href="/new-york-arborist-tree-removal-websites">
                       New York Arborist Tree Removal Websites
                     </Link>
