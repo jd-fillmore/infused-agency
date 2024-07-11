@@ -14,18 +14,20 @@ const Hero = () => {
             <Row className="d-flex align-items-center">
               <Col lg="6">
                 <Fade duration={2000}>
-                  <h1 className="intro">Niagara Web Design, SEO &amp; Business Strategy</h1>
+                  <h1 className="intro">
+                    Niagara Web Design | St. Catharines Website Designers
+                  </h1>
                 </Fade>
                 <Fade delay={300} duration={2000}>
                   <h2>
-                    We help local businesses boost <span>leads</span>, drive <span>sales</span>
-                    and enhance <span>credibility</span>.
+                    We help businesses <span>boost leads</span> and{" "}
+                    <span>drive sales</span> through their websites.
                   </h2>
                 </Fade>
                 <Fade bottom delay={600} duration={2000}>
                   <Link href="/work">
                     <button>
-                      View Niagara Web Design &amp; SEO Portfolio
+                      View Portfolio
                       <svg
                         stroke="#005c97"
                         fill="currentColor"
@@ -45,7 +47,12 @@ const Hero = () => {
 
               <Col lg="6">
                 <Fade duration={2000}>
-                  <Image priority={true} className="img-fluid" src={heroImg} alt="niagara web design" />
+                  <Image
+                    priority={true}
+                    className="img-fluid"
+                    src={heroImg}
+                    alt="niagara web design"
+                  />
                   <div className="d-block d-md-flex cards">
                     <Fade duration={1000} delay={300}>
                       <div className="card">

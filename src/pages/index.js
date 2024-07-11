@@ -147,8 +147,13 @@ const Home = () => {
             <div className="col-lg-7">
               <Fade duration={2000}>
                 <h2>
-                  A Niagara Web Design Company <span>Businesses Trust</span>.
+                  A Niagara Web Design Company That Makes Your Website{" "}
+                  <span>Work For You</span>.
                 </h2>
+                <h3>
+                  More <strong>Optimized</strong> | More <strong>Leads</strong>{" "}
+                  | More <strong>Sales</strong>
+                </h3>
               </Fade>
               <Fade duration={2000}>
                 <p>
@@ -156,21 +161,23 @@ const Home = () => {
                   crafting user-friendly websites that seamlessly blend
                   creativity and functionality. From branding-aligned designs
                   and mobile-responsive interfaces to targeted SEO and digital
-                  marketing, our Niagara web design services bring your vision
-                  to life.
+                  marketing, our Niagara web design services are designed to
+                  drive sales and generate leads.
                   <br />
                   <br />
                   We've empowered numerous businesses in the Niagara region and
                   beyond, including St. Catharines and Niagara Falls, with
-                  websites that are not only easy to use but also drive leads,
-                  boost sales, and enhance credibility. Our expert Niagara web
-                  design team ensures your site ranks well on Google, making it
-                  easy for potential customers to find you.
+                  websites that are not only visually appealing and easy to use
+                  but also optimized to increase leads, boost sales, and enhance
+                  credibility. Our expert Niagara web design team ensures your
+                  site ranks well on Google, making it easy for potential
+                  customers to find you and take action.
                   <br />
                   <br />
                   We love creating websites that help local businesses succeed
-                  online, and our Niagara web design services are ready to do
-                  the same for you!
+                  online. Let our Niagara web design services transform your
+                  website into a powerful tool for driving sales and generating
+                  leads!
                 </p>
 
                 <Image
@@ -329,6 +336,82 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="home-services" title="web design niagara">
+        <Fade duration={2000}>
+          <div className="container">
+            <div className="row pd-btm-40">
+              <div className="col-lg-12 text-center">
+                <h2>
+                  Our <span>Strategic</span> Niagara Web Design Business
+                  Solutions
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            {/* Row One */}
+            <div className="row">
+              <div className="col-lg-4">
+                <Fade delay={300} duration={1000}>
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={webImg}
+                      alt="web designer niagara"
+                    />
+                    <Link href="/web-design">
+                      <h2>Web Design &amp; Development</h2>
+                    </Link>
+                    <p>
+                      Our Niagara website designers create web designs that are
+                      fully responsive and incorporate conversion rate
+                      optimization, fully conveying your message
+                    </p>
+                  </div>
+                </Fade>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <Fade delay={600} duration={1000}>
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={wpImg}
+                      alt="niagara web design company"
+                    />
+                    <Link href="/wordpress-developer-niagara">
+                      <h2>WordPress Development</h2>
+                    </Link>
+                    <p>
+                      Our web design Niagara services offer WordPress to allow
+                      you to update your website without knowledge of code.
+                    </p>
+                  </div>
+                </Fade>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <Fade delay={900} duration={1000}>
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={seoImg}
+                      alt="best web designer niagara"
+                    />
+                    <Link href="/niagara-seo-company">
+                      <h2>SEO</h2>
+                    </Link>
+                    <p>
+                      Our Niagara web designers help make sure the best websites
+                      are easy to find on Google and other search engines
+                      through effective conversion rate optimization.
+                    </p>
+                  </div>
+                </Fade>
+              </div>
+            </div>
+          </div>
+        </Fade>
       </section>
 
       <section className="infused-benefits">
@@ -610,80 +693,6 @@ const Home = () => {
                     </AccordionItemPanel>
                   </AccordionItem>
                 </Accordion>
-              </div>
-            </div>
-          </div>
-        </Fade>
-      </section>
-
-      <section className="home-services" title="web design niagara">
-        <Fade duration={2000}>
-          <div className="container">
-            <div className="row pd-btm-40">
-              <div className="col-lg-12 text-center">
-                <h2>
-                  Our <span>Strategic</span> Niagara Web Design Business
-                  Solutions
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            {/* Row One */}
-            <div className="row">
-              <div className="col-lg-4">
-                <Fade delay={300} duration={1000}>
-                  <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={webImg}
-                      alt="web designer niagara"
-                    />
-                    <Link href="/web-design">
-                      <h2>Web Design &amp; Development</h2>
-                    </Link>
-                    <p>
-                      Our Niagara website designers create web designs that are
-                      fully responsive, fully conveying your message.
-                    </p>
-                  </div>
-                </Fade>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Fade delay={600} duration={1000}>
-                  <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={wpImg}
-                      alt="niagara web design company"
-                    />
-                    <Link href="/wordpress-developer-niagara">
-                      <h2>WordPress Development</h2>
-                    </Link>
-                    <p>
-                      Our web design Niagara services offer WordPress to allow
-                      you to update your website without knowledge of code.
-                    </p>
-                  </div>
-                </Fade>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Fade delay={900} duration={1000}>
-                  <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={seoImg}
-                      alt="best web designer niagara"
-                    />
-                    <Link href="/niagara-seo-company">
-                      <h2>SEO</h2>
-                    </Link>
-                    <p>
-                      Our Niagara web designers help make sure the best websites
-                      are easy to find on Google and other search engines.
-                    </p>
-                  </div>
-                </Fade>
               </div>
             </div>
           </div>
