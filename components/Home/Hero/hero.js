@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
 import heroImg from "./../../../src/img/niagara-web-design-marketing-agency.png";
+import best from "../../../src/img/best-rated.png";
+import goog from "../../../src/img/google-reviews.png";
 
 const Hero = () => {
   return (
@@ -13,6 +15,7 @@ const Hero = () => {
           <div className="bg">
             <Row className="d-flex align-items-center">
               <Col lg="6">
+                <Image src={best} alt="niagara best rated web design company" />
                 <h1 className="intro">
                   Niagara Web Design | St. Catharines Website Designers
                 </h1>
