@@ -23,7 +23,7 @@ const About = () => {
       <Nav />
       <InnerHero
         title="Client Reviews"
-        description="We pride ourselves on delivering exceptional web design, development, and SEO services. Hear from our satisfied clients who have experienced firsthand the transformative power of our expertise."
+        description="Real relationships, real results."
       />
       <InnerContent>
         <section className="reviews">

@@ -54,7 +54,7 @@ const Example = (props) => {
                   href="/services"
                   className="nav-link"
                 >
-                  Services
+                  Solutions
                 </Link>
               </NavItem>
               <NavItem>

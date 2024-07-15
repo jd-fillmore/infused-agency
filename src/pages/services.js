@@ -27,7 +27,7 @@ const Services = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Services"
+        title="Solutions That Drive Growth"
         description="Online marketing services for business who strive to grow their revenue."
       />
       <InnerContent>

@@ -28,8 +28,8 @@ const OurWork = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Our Featured Work"
-        description="Tailored Design, SEO, and Digital Marketing Strategies for Aspiring Businesses"
+        title="Featured Work"
+        description="Our business solutions grow our client's businesses."
         bgImage={bgImage}
       />
       <InnerContent>
