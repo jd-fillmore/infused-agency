@@ -1,6 +1,21 @@
 @import "../pages/breakpoints.scss";
 @import "../pages/variables.scss";
 
+.web-design {
+  img {
+    border-radius: 10px;
+  }
+  .card {
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 .websites {
   margin-bottom: -140px;
   @include bp-tablet-sm {

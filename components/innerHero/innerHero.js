@@ -1,6 +1,6 @@
-import React from "react"
-import Fade from "react-reveal/Fade"
-import { Container, Row, Col } from "reactstrap"
+import React from "react";
+import Fade from "react-reveal/Fade";
+import { Container, Row, Col } from "reactstrap";
 
 const InnerHero = ({ title, description, bgImage }) => {
   return (
@@ -9,17 +9,15 @@ const InnerHero = ({ title, description, bgImage }) => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <Fade>
-                <h1>{title}</h1>
-                <hr />
-                <p>{description}</p>
-              </Fade>
+              <h1>{title}</h1>
+              <hr />
+              <p>{description}</p>
             </Col>
           </Row>
         </Container>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default InnerHero
+export default InnerHero;

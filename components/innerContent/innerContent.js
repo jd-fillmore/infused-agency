@@ -1,14 +1,12 @@
-import React from "react"
-import Fade from "react-reveal/Fade"
+import React from "react";
+import Fade from "react-reveal/Fade";
 
-const InnerContent = props => {
+const InnerContent = (props) => {
   return (
     <>
-      <Fade>
-        <section className="inner-content">{props.children}</section>
-      </Fade>
+      <section className="inner-content">{props.children}</section>
     </>
-  )
-}
+  );
+};
 
-export default InnerContent
+export default InnerContent;

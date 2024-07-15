@@ -28,27 +28,32 @@ const Example = (props) => {
       <Navbar id="nav" expand="lg">
         <Container>
           <NavbarBrand
-            href="/"
             className="logo"
             name="Niagara Web Design Company Infused Agency"
           >
-            <Image
-              className="logo"
-              src={logo}
-              alt="niagara website design company"
-              title="niagara website design company"
-            />
+            <Link href="/">
+              <Image
+                className="logo"
+                src={logo}
+                alt="niagara website design company"
+                title="niagara website design company"
+              />
+            </Link>
           </NavbarBrand>
           <NavbarToggler className="custom-toggler" onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              {/* <NavItem>
                 <Link href="/" title="Niagara Web Design" className="nav-link">
                   Home
                 </Link>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
-                <Link href="/services" className="nav-link">
+                <Link
+                  title="Niagara Web Design"
+                  href="/services"
+                  className="nav-link"
+                >
                   Services
                 </Link>
               </NavItem>
