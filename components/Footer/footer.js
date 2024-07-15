@@ -11,20 +11,16 @@ import Link from "next/link";
 
 const pages = [
   {
-    name: "Home",
-    link: "/",
+    name: "Services",
+    link: "/services",
   },
   {
     name: "Work",
     link: "/work",
   },
   {
-    name: "About",
-    link: "/about",
-  },
-  {
-    name: "Blog",
-    link: "/posts",
+    name: "Reviews",
+    link: "/reviews",
   },
 ];
 
@@ -64,15 +60,17 @@ const Footer = () => {
               <h3>Services</h3>
               <ul>
                 <li>
-                  <Link href="/web-design">Web Design & Development</Link>
+                  <Link href="/web-design">Lead-Generating Web Design</Link>
                 </li>
                 <li>
-                  <Link href="/wordpress-developer-niagara">
-                    WordPress Development
+                  <Link href="/website-conversion-optimization">
+                    Website Conversion Optimization
                   </Link>
                 </li>
                 <li>
-                  <Link href="/niagara-seo-company">SEO</Link>
+                  <Link href="/niagara-seo-company">
+                    Search Engine Optimization
+                  </Link>
                 </li>
               </ul>
             </Col>

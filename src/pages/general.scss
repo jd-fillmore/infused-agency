@@ -237,6 +237,7 @@ form {
     }
     .author {
       margin-top: 20px;
+      font-weight: bold;
     }
     .desc {
       margin-top: 10px;
@@ -585,4 +586,13 @@ iframe {
     border-bottom: none !important;
     cursor: none;
   }
+}
+
+.author {
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+
+.desc {
+  margin-top: 10px !important;
 }
