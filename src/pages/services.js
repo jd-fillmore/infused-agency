@@ -39,9 +39,9 @@ const Services = () => {
                   <Image src={leadGenImg} alt="web designer niagara" />
                   <h2>Lead-Generating Web Design</h2>
                   <p>
-                    Is your Niagara website not bringing you customers? We
-                    create lead-generating websites, for the purpose of
-                    converting visitors into customers.
+                    Is your website not bringing you customers? We create
+                    lead-generating websites, for the purpose of converting
+                    visitors into customers.
                   </p>
                   <Link href="/web-design">
                     <button>
