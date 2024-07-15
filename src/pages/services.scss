@@ -2,6 +2,39 @@
 @import "../pages/breakpoints.scss";
 
 .services {
+  h2 {
+    margin-bottom: 30px;
+  }
+  .card {
+    // text-align: center;
+    padding: 30px;
+    border-radius: 0px;
+    img {
+      width: 50%;
+    }
+    h2 {
+      font-size: 26px;
+      font-weight: bold;
+      color: $glow-blue;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      &:hover {
+        color: $light-blue;
+      }
+      @include bp-tablet-sm {
+        font-size: 22px !important;
+      }
+    }
+    p {
+      margin-top: 0px;
+      line-height: 1.6;
+    }
+    a {
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
   .seo,
   .dm {
     margin-top: 60px;
