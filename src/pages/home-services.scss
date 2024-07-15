@@ -7,9 +7,6 @@
 
   h2 {
     color: $grey;
-    @include bp-tablet-sm {
-      text-align: left;
-    }
   }
   span {
     background: linear-gradient(
@@ -39,20 +36,14 @@
     // text-align: center;
     padding: 30px;
     border-radius: 0px;
-    img {
-      width: 50%;
-    }
     h2 {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: bold;
       color: $glow-blue;
       margin-top: 20px;
       margin-bottom: 10px;
-      &:hover {
-        color: $light-blue;
-      }
       @include bp-tablet-sm {
-        font-size: 22px !important;
+        font-size: 18px !important;
       }
     }
     p {

@@ -48,7 +48,7 @@
 .custom-toggler.navbar-toggler {
   border: none;
   border-radius: 0px !important;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !important;
   box-shadow: none;
   &:hover,
   &:focus {
@@ -166,7 +166,7 @@
       background: $purple;
       margin-bottom: 10px;
       text-align: left;
-      width: 183px;
+      width: 210px;
     }
   }
   @media (min-width: 992px) {
