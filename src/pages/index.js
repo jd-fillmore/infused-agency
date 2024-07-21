@@ -106,7 +106,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design | Website Design St. Catharines</title>
+        <title>
+          Niagara Web Design | St. Catharines' Best Website Designers | Fast,
+          Reliable, Award-Winning
+        </title>
         <meta
           name="description"
           content="Niagara's top web design agency. As a leading website creation company in St. Catharines, we specialize in crafting stunning websites. Get a free quote now!"
