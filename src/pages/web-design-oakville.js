@@ -155,9 +155,8 @@ const WebDesign = () => {
                     <Image src={img1} alt="lead capture" />
                     <h3>Lead Capture</h3>
                     <p>
-                      Use pre-built web forms to attract, capture, and nurture
-                      arborist &amp; tree service leads from various sections of
-                      your site.
+                      Utilize pre-built web forms to attract, capture, and
+                      nurture leads from different areas of your site.
                     </p>
                   </div>
                 </Col>
@@ -166,9 +165,9 @@ const WebDesign = () => {
                     <Image src={img2} alt="mobile friendly" />
                     <h3>Mobile-Friendly</h3>
                     <p>
-                      Our arborist &amp; tree service sites are designed to be
-                      compatible with today's modern browsers and mobile
-                      devices, ensuring you always look your best.
+                      Our sites are designed to be fully compatible with modern
+                      browsers and mobile devices, ensuring you always present
+                      your best.
                     </p>
                   </div>
                 </Col>
@@ -177,9 +176,8 @@ const WebDesign = () => {
                     <Image src={img3} alt="increase conversions" />
                     <h3>Increase Conversions</h3>
                     <p>
-                      Build trust and generate interest in your arborist &amp;
-                      tree service services. We help you distinguish yourself
-                      from the competition.
+                      Establish trust and spark interest in your services. We
+                      help you stand out from the competition.
                     </p>
                   </div>
                 </Col>
@@ -190,9 +188,9 @@ const WebDesign = () => {
                     <Image src={img4} alt="Easily Update Content" />
                     <h3>Easily Update Content</h3>
                     <p>
-                      You can easily update your arborist &amp; tree service
-                      removal website content, add new pages, upload images,
-                      adjust meta-tags, add new team members, and more.
+                      Easily update your website content, add new pages, upload
+                      images, adjust meta-tags, and add new team members, among
+                      other tasks.
                     </p>
                   </div>
                 </Col>
@@ -201,9 +199,9 @@ const WebDesign = () => {
                     <Image src={img5} alt="Website Analytics" />
                     <h3>Website Analytics</h3>
                     <p>
-                      View monthly website traffic, page visits, leads to your
-                      site, and more. Need Google Analytics? We can install that
-                      on your arborist &amp; tree service removal website too.
+                      Monitor monthly website traffic, page visits, leads, and
+                      more. Need Google Analytics? We can install it on your
+                      website as well.
                     </p>
                   </div>
                 </Col>
@@ -212,9 +210,8 @@ const WebDesign = () => {
                     <Image src={img6} alt="security built in" />
                     <h3>Security Built In</h3>
                     <p>
-                      We set up SSL for your arborist &amp; tree service removal
-                      site from day one, providing the green lock in browsers
-                      that your clients expect.
+                      From day one, we implement SSL on your website, ensuring
+                      the green lock icon in browsers that your clients expect.
                     </p>
                   </div>
                 </Col>
