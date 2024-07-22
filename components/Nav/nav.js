@@ -31,23 +31,21 @@ const Example = (props) => {
             className="logo"
             name="Niagara Web Design Company Infused Agency"
           >
-            <Link href="/">
-              <Image
-                className="logo"
-                src={logo}
-                alt="niagara website design company"
-                title="niagara website design company"
-              />
-            </Link>
+            <Image
+              className="logo"
+              src={logo}
+              alt="niagara website design company"
+              title="niagara website design company"
+            />
           </NavbarBrand>
           <NavbarToggler className="custom-toggler" onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              {/* <NavItem>
+              <NavItem>
                 <Link href="/" title="Niagara Web Design" className="nav-link">
                   Home
                 </Link>
-              </NavItem> */}
+              </NavItem>
               <NavItem>
                 <Link
                   title="Niagara Web Design"
