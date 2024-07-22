@@ -175,6 +175,8 @@ const Footer = () => {
                     </Link>
                     , <Link href="/grimsby-web-design">Grimsby Web Design</Link>
                     ,{" "}
+                    <Link href="/web-design-hamilton">Hamilton Web Design</Link>
+                    ,{" "}
                     <Link href="/lancaster-web-design">
                       Lancaster NY Web Design
                     </Link>

@@ -8,7 +8,7 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 
-import intro from "../img/web-design-oakville.png";
+import intro from "../img/web-design-hamilton.png";
 import ui from "../img/ui-design.png";
 import build from "../img/build.png";
 import grow from "../img/grow.png";
@@ -45,12 +45,12 @@ const addJsonLd = () => {
     "@type": "ServiceAreaBusiness",
     name: "Infused Agency",
     description:
-      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Oakville, Canada.",
+      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Hamilton, Canada.",
     serviceArea: {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Oakville",
+        addressLocality: "Hamilton",
         addressCountry: "Canada",
       },
     },
@@ -68,22 +68,22 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Web Design Oakville | Infused Agency</title>
+        <title>Hamilton Web Design | Infused Agency</title>
         <meta
           name="description"
-          content="Infused Agency in Oakville excels in lead generation web design, boosting sales and leads through custom web design, development, and online marketing."
+          content="Top Hamilton web design by Infused Agency. Expert website design services to enhance your online presence. Get a free quote today!"
         />
         <meta
           property="og:title"
-          content="Web Design Oakville | Infused Agency"
+          content="Web Design Hamilton | Infused Agency"
         />
         <meta
           name="twitter:title"
-          content="Web Design Oakville | Infused Agency"
+          content="Web Design Hamilton | Infused Agency"
         />
         <link
           rel="canonical"
-          href="https://infused.agency/web-design-oakville"
+          href="https://infused.agency/web-design-hamilton"
         />
         <script
           type="application/ld+json"
@@ -93,9 +93,9 @@ const WebDesign = () => {
       </Head>
       <Nav />
       <CityHero
-        city="Oakville"
-        alt="web design oakville"
-        desc="From driving traffic to generating leads and enhancing sales, we are your trusted digital partner for achieving success."
+        city="Hamilton"
+        alt="web design hamilton"
+        desc="From attracting visitors to converting leads and boosting sales, we are your go-to digital partner for achieving outstanding success."
       />
       <InnerContent>
         <section className="web-design">
@@ -104,7 +104,7 @@ const WebDesign = () => {
             <Row>
               <Col md="6">
                 <h2>
-                  Oakville website design made to <span>engage</span>,{" "}
+                  Hamilton website design crafted to <span>engage</span>,{" "}
                   <span>capture</span> and <span>convert</span>.
                 </h2>
               </Col>
@@ -115,22 +115,23 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={intro}
-                  alt="web design oakville conversion"
+                  alt="web design hamilton conversion"
                 />
               </Col>
               <Col lg="6">
                 <p>
-                  At Infused Agency, our Oakville website design services are
-                  crafted to engage, capture, and convert. We specialize in
-                  creating stunning, user-friendly websites tailored
-                  specifically for businesses in Oakville. Our expert team of
-                  website designers in Oakville focuses on developing
-                  high-performing sites that not only attract visitors but also
-                  drive meaningful interactions and conversions. Whether you
-                  need a fresh design or a strategic overhaul, our goal is to
-                  enhance your online presence and help your business thrive in
-                  the competitive Oakville market. Choose Infused Agency for
-                  innovative web design solutions that deliver results.
+                  At Infused Agency, our Hamilton web design services are
+                  designed to <span>engage</span>, <span>capture</span>, and{" "}
+                  <span>convert</span>. We excel in crafting visually stunning,
+                  user-friendly websites that are specifically tailored for
+                  Hamilton-based businesses. Our team of expert designers is
+                  dedicated to creating high-performing sites that not only
+                  attract visitors but also foster meaningful interactions and
+                  drive conversions. Whether you’re seeking a brand-new design
+                  or a strategic update, our goal is to elevate your online
+                  presence and help your business thrive in the competitive
+                  Hamilton market. Choose Infused Agency for cutting-edge web
+                  design solutions that truly deliver results
                 </p>
               </Col>
             </Row>
@@ -138,7 +139,7 @@ const WebDesign = () => {
               <Row className="text-center w-80">
                 <Col lg="12">
                   <h2>
-                    Our Oakville Web Design Company Will
+                    Our Hamilton Web Design Company Will
                     <br />
                     <span>Get You Results</span>.
                   </h2>
@@ -155,8 +156,8 @@ const WebDesign = () => {
                     <Image src={img1} alt="lead capture" />
                     <h3>Lead Capture</h3>
                     <p>
-                      Utilize pre-built web forms to attract, capture, and
-                      nurture leads from different areas of your site.
+                      Leverage pre-built web forms to attract, capture, and
+                      nurture leads from different sections of your site.
                     </p>
                   </div>
                 </Col>
@@ -165,9 +166,9 @@ const WebDesign = () => {
                     <Image src={img2} alt="mobile friendly" />
                     <h3>Mobile-Friendly</h3>
                     <p>
-                      Our sites are designed to be fully compatible with modern
-                      browsers and mobile devices, ensuring you always present
-                      your best.
+                      Our sites are built to be fully compatible with the latest
+                      browsers and mobile devices, ensuring you always present a
+                      polished and professional appearance.
                     </p>
                   </div>
                 </Col>
@@ -176,8 +177,8 @@ const WebDesign = () => {
                     <Image src={img3} alt="increase conversions" />
                     <h3>Increase Conversions</h3>
                     <p>
-                      Establish trust and spark interest in your services. We
-                      help you stand out from the competition.
+                      Foster trust and create interest in your services. We
+                      assist in setting you apart from the competition.
                     </p>
                   </div>
                 </Col>
@@ -188,20 +189,20 @@ const WebDesign = () => {
                     <Image src={img4} alt="Easily Update Content" />
                     <h3>Easily Update Content</h3>
                     <p>
-                      Easily update your website content, add new pages, upload
-                      images, adjust meta-tags, and add new team members, among
-                      other tasks.
+                      Effortlessly update your website content, add new pages,
+                      upload images, adjust meta-tags, and incorporate new team
+                      members, among other tasks
                     </p>
                   </div>
                 </Col>
-                <Col lg="4">
+                <Col lg="4" className="d-flex">
                   <div className="card">
                     <Image src={img5} alt="Website Analytics" />
                     <h3>Website Analytics</h3>
                     <p>
-                      Monitor monthly website traffic, page visits, leads, and
-                      more. Need Google Analytics? We can install it on your
-                      website as well.
+                      Track monthly website traffic, page visits, leads, and
+                      more. Need Google Analytics? We can install that on your
+                      website too.
                     </p>
                   </div>
                 </Col>
@@ -210,8 +211,8 @@ const WebDesign = () => {
                     <Image src={img6} alt="security built in" />
                     <h3>Security Built In</h3>
                     <p>
-                      From day one, we implement SSL on your website, ensuring
-                      the green lock icon in browsers that your clients expect.
+                      We set up SSL for your site from day one, ensuring the
+                      green lock icon in browsers that your clients expect.
                     </p>
                   </div>
                 </Col>
@@ -349,28 +350,28 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={growth}
-                  alt="web design oakville"
+                  alt="web design hamilton"
                 />
               </Col>
               <Col lg="6" className="order-1 order-lg-2">
                 <h2>
                   <span>Lead-Generating</span> <br />
-                  Oakville Web Design
+                  Hamilton Web Design
                 </h2>
                 <p>
-                  At Infused Agency, we’re committed to driving business growth
-                  in Oakville with our exceptional lead-generation design
-                  services. From concept to launch, our Oakville web design
-                  experts craft bespoke digital experiences that deliver
-                  outstanding results. Leveraging cutting-edge platforms like
+                  At Infused Agency, we're dedicated to fueling business growth
+                  in Hamilton through our outstanding lead-generation design
+                  services. From initial concept to final launch, our Hamilton
+                  web design experts create custom digital experiences that
+                  yield remarkable results. Utilizing advanced platforms such as
                   NextJS, WordPress, React, and Shopify, we ensure your
-                  Oakville-based website not only looks stunning but also
-                  performs optimally. Our team combines strategic design with
-                  innovative technology to create high-converting websites that
-                  captivate your audience and accelerate your business success.
-                  Partner with Infused Agency for top-notch lead-generation
-                  design and Oakville web design solutions, and see your online
-                  presence thrive.
+                  Hamilton-based website is not only visually appealing but also
+                  highly functional. Our team blends strategic design with
+                  cutting-edge technology to develop high-converting websites
+                  that engage your audience and drive your business forward.
+                  Choose Infused Agency for superior lead-generation design and
+                  Hamilton web design solutions, and watch your online presence
+                  flourish.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -398,7 +399,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={growth}
-                  alt="website design company in oakville"
+                  alt="website design company in hamilton"
                 />
               </Col>
             </Row>
@@ -408,7 +409,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid pd-btm-40"
                   src={funnel}
-                  alt="oakville web designers"
+                  alt="hamilton web designers"
                 />
               </Col>
               <Col lg="6">
@@ -417,14 +418,14 @@ const WebDesign = () => {
                   That Convert
                 </h2>
                 <p>
-                  Ready to transform your website visitors into loyal customers?
-                  At Infused Agency, our expertly designed sales funnels are
-                  crafted to achieve just that. We create powerful,
-                  conversion-focused funnels that guide your prospects smoothly
-                  from initial interest to decisive action. With a strategic
-                  blend of engaging design, persuasive copy, and effective
-                  calls-to-action, we ensure your funnels not only capture leads
-                  but also drive significant, measurable results.
+                  Here's a unique rephrasing: "Ready to convert your website
+                  visitors into loyal customers? At Infused Agency, we
+                  specialize in designing sales funnels that achieve this goal.
+                  Our expertly crafted funnels guide your prospects seamlessly
+                  from initial interest to decisive action. By combining
+                  engaging design, persuasive copy, and effective
+                  calls-to-action, we create funnels that not only capture leads
+                  but also deliver significant, measurable results."
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -452,7 +453,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={funnel}
-                  alt="website design oakville"
+                  alt="website design hamilton"
                 />
               </Col>
             </Row>
@@ -461,7 +462,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid pd-btm-40"
                   src={convert}
-                  alt="web designers oakville"
+                  alt="web designers hamilton"
                 />
               </Col>
               <Col lg="6">
@@ -470,18 +471,18 @@ const WebDesign = () => {
                   Web Design
                 </h2>
                 <p>
-                  Ready to transform your Oakville online presence into a
-                  conversion powerhouse? Our expertly crafted Conversion-Driven
-                  Web Design is designed to achieve just that. At Infused
-                  Agency, we create stunning Oakville web design solutions that
-                  not only captivate your audience but also deliver real,
-                  measurable results. With a strategic focus on user experience,
+                  Ready to transform your Hamilton online presence into a
+                  conversion powerhouse? Our Conversion-Driven Web Design is
+                  expertly crafted to do just that. At Infused Agency, we
+                  develop stunning Hamilton web design solutions that not only
+                  captivate your audience but also deliver real, measurable
+                  results. By strategically focusing on user experience,
                   engaging visuals, and optimized design elements, we ensure
-                  your website isn’t just eye-catching—it’s a powerful tool for
-                  converting visitors into loyal customers. From intuitive
-                  navigation to compelling calls-to-action, our Oakville web
-                  design experts craft designs that seamlessly guide your
-                  prospects from interest to action.
+                  your website becomes a powerful tool for converting visitors
+                  into loyal customers. From intuitive navigation to compelling
+                  calls-to-action, our Hamilton web design experts create
+                  designs that smoothly guide your prospects from interest to
+                  action.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -525,23 +526,23 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={discover}
-                    alt="website design discovery oakville"
+                    alt="website design discovery hamilton"
                   />
                   <h2>
                     1. <span>Discover</span>
                   </h2>
                   <p>
                     At Infused Agency, we believe that achieving your ultimate
-                    goal starts with discovering the right path. Our process
-                    begins with understanding every intricate detail about your
-                    business, enabling us to build a road to success. Our team
-                    at Infused Agency follows a meticulous methodology, ensuring
-                    each step is executed with precision. We delve deep into
-                    your business to understand the purpose behind creating the
+                    goal starts with finding the right path. Our process begins
+                    by thoroughly understanding every intricate detail about
+                    your business, allowing us to pave the way to success. Our
+                    team at Infused Agency follows a meticulous methodology,
+                    ensuring each step is executed with precision. We dive deep
+                    into your business to comprehend the purpose behind your
                     website, your expectations, ultimate goals, and target
                     audience. Additionally, we analyze your competitors, their
                     websites, and your budget plan. These detailed insights
-                    allow us to craft a fantastic strategy to guarantee your
+                    enable us to craft a robust strategy that ensures your
                     business's success.
                   </p>
                 </div>
@@ -553,22 +554,22 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={design}
-                    alt="website design process oakville"
+                    alt="website design process hamilton"
                   />
                   <h2>
                     2. <span>Plan</span>
                   </h2>
                   <p>
-                    We are expert planners. At Infused Agency, our professional
-                    team understands that a well-executed master plan is key to
-                    success. We start by deeply researching your vision for the
-                    website, ensuring we fully grasp your plan and value your
-                    time. Our planning phase includes sketching wireframes,
-                    drafting content layouts, creating the graphical structure
-                    of the website, and designing detailed flowcharts. This
-                    comprehensive approach provides us with the roadmap to
-                    develop the website, manage its content, and implement
-                    effective hyperlinking.
+                    We excel at planning. At Infused Agency, our professional
+                    team knows that a well-executed master plan is essential for
+                    success. We begin by thoroughly researching your vision for
+                    the website, ensuring we fully understand your plan and
+                    respect your time. During the planning phase, we create
+                    wireframe sketches, draft content layouts, design the
+                    website's graphical structure, and develop detailed
+                    flowcharts. This comprehensive approach gives us a clear
+                    roadmap to build the website, manage its content, and
+                    implement effective hyperlinking.
                   </p>
                 </div>
               </Col>
@@ -580,7 +581,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={realdesign}
-                    alt="website design agency oakville"
+                    alt="website design agency hamilton"
                   />
                   <h2>
                     3. <span>Design</span>
@@ -588,14 +589,14 @@ const WebDesign = () => {
                   <p>
                     We are innovative and adaptable. Our exceptional team of web
                     designers at Infused Agency has been internationally
-                    recognized for their excellence and follows high-quality
-                    steps to complete every project. After thoroughly
-                    investigating current trends and conducting brainstorming
-                    sessions with your team, we select the most captivating
-                    color combinations, typography, videos, animations, images,
-                    and content layout. We guarantee an outstanding UX design
-                    that is easy to navigate, user-centered, and developed to
-                    the highest standards.
+                    recognized for their excellence and adheres to high-quality
+                    standards in every project. After thoroughly investigating
+                    current trends and conducting brainstorming sessions with
+                    your team, we select the most captivating color
+                    combinations, typography, videos, animations, images, and
+                    content layouts. We guarantee an outstanding UX design that
+                    is user-centered, easy to navigate, and developed to the
+                    highest standards.
                   </p>
                 </div>
               </Col>
@@ -607,25 +608,25 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={dev}
-                    alt="website development oakville"
+                    alt="website development hamilton"
                   />
                   <h2>
                     4. <span>Develop</span>
                   </h2>
                   <p>
-                    We are both planners and designers. Our renowned team at
+                    We excel in both planning and design. Our renowned team at
                     Infused Agency, with extensive experience in developing
-                    top-tier websites, creates flawless dream projects for our
+                    top-tier websites, creates flawless projects for our
                     clients. They go above and beyond, utilizing their skills
                     efficiently. By leveraging cutting-edge technology and
                     innovative techniques, we ensure our tasks are completed
-                    properly. Once the design phase is finished, our highly
-                    skilled content writers fill the web pages with fresh
-                    content and refine existing material. Adding new videos,
-                    slideshows, and other media elements makes the website
-                    captivating. We then develop a prototype, testing it across
-                    major web browsers and getting your approval before the
-                    official launch.
+                    with precision. Once the design phase is finished, our
+                    highly skilled content writers populate the web pages with
+                    fresh content and refine existing material. Adding new
+                    videos, slideshows, and other media elements makes the
+                    website captivating. We then develop a prototype, testing it
+                    across major web browsers and obtaining your approval before
+                    the official launch.
                   </p>
                 </div>
               </Col>
@@ -637,21 +638,21 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={launch}
-                    alt="website development launch oakville"
+                    alt="website development launch hamilton"
                   />
                   <h2>
                     5. <span>Launch</span>
                   </h2>
                   <p>
-                    Your approval of the prototype is crucial to us. Once
-                    approved, the website is ready for search engine
+                    Your approval of the prototype is essential to us. Once we
+                    have your go-ahead, we move forward with search engine
                     optimization. Our content development team ensures that all
-                    content is unique and meticulously checked for grammar,
-                    spelling, and punctuation errors. We also manage Google
-                    Analytics and search engine rankings from day one. Our
-                    top-notch experts thoroughly test the functionality of the
-                    website. The Infused Agency team guarantees exceptional
-                    websites that pave a direct path to your company's growth.
+                    content is unique and meticulously proofread for grammar,
+                    spelling, and punctuation errors. We also handle Google
+                    Analytics and search engine rankings from the outset. Our
+                    experts rigorously test the website’s functionality. The
+                    Infused Agency team guarantees exceptional websites that
+                    create a direct path to your company’s growth.
                   </p>
                 </div>
               </Col>
@@ -663,22 +664,21 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={promote}
-                    alt="website design promotion oakville"
+                    alt="website design promotion hamilton"
                   />
                   <h2>
                     6. <span>Promote</span>
                   </h2>
                   <p>
-                    Our industry-leading digital marketing experts ensure your
-                    website is marketed effectively online. At Infused Agency,
-                    our services extend beyond the launch of your website. Our
-                    world-class team includes experts in SEO and digital
-                    marketing, all with extensive experience. We have a
-                    dedicated investigative team that thoroughly examines your
-                    needs and implements top-tier digital strategies to help
-                    your business thrive in today’s competitive market. We
-                    firmly believe that your company’s success is our success
-                    too.
+                    Our top-tier digital marketing experts ensure your website
+                    is effectively promoted online. At Infused Agency, our
+                    services go beyond just launching your website. Our
+                    world-class team includes seasoned specialists in SEO and
+                    digital marketing. We have a dedicated team that thoroughly
+                    assesses your needs and implements premium digital
+                    strategies to help your business excel in today's
+                    competitive landscape. We believe that your success is our
+                    success as well.
                   </p>
                 </div>
               </Col>
@@ -832,7 +832,7 @@ const WebDesign = () => {
             <Row className="pd-top-80">
               <Col md="6">
                 <h2>
-                  Our Oakville website designs are <span>fast</span>,{" "}
+                  Our Hamilton website designs are <span>fast</span>,{" "}
                   <span>optimized</span> and <span>drive leads</span>.
                 </h2>
               </Col>
@@ -841,39 +841,39 @@ const WebDesign = () => {
             <Row className="pd-top-40">
               <Col lg="4" className="d-flex">
                 <div className="card">
-                  <Image src={fast} alt="fast website design oakville" />
+                  <Image src={fast} alt="fast website design hamilton" />
                   <h3>Lightning-Fast Speed</h3>
                   <p>
-                    Experience unmatched website speed with Infused Agency’s web
-                    design services in Oakville. Our websites are engineered to
-                    load almost instantly, ensuring a seamless user experience
-                    and increased engagement.
+                    Enjoy unparalleled website speed with Infused Agency’s web
+                    design services in Hamilton. Our websites are crafted to
+                    load almost instantly, providing a smooth user experience
+                    and boosting engagement.
                   </p>
                 </div>
               </Col>
               <Col lg="4" className="d-flex">
                 <div className="card">
-                  <Image src={build} alt="web designers in oakville" />
+                  <Image src={build} alt="web designers in hamilton" />
                   <h3>Mobile Performance</h3>
                   <p>
-                    Enjoy a website that excels on every device with Infused
-                    Agency’s Oakville web development. We ensure your site is
-                    flawlessly optimized for mobile, providing a smooth and
-                    engaging experience that turns visitors into loyal
-                    customers.
+                    Experience a website that performs exceptionally across all
+                    devices with Infused Agency’s Hamilton web development. We
+                    ensure your site is perfectly optimized for mobile,
+                    delivering a seamless and engaging experience that converts
+                    visitors into loyal customers.
                   </p>
                 </div>
               </Col>
               <Col lg="4">
                 <div className="card">
-                  <Image src={grow} alt="web design company in oakville" />
+                  <Image src={grow} alt="web design company in hamilton" />
                   <h3>Rank On Google</h3>
                   <p>
-                    Maximize your website’s potential with Infused Agency’s
-                    top-notch SEO strategies. Our Oakville SEO services are
-                    crafted to elevate your site’s position in Google rankings.
-                    Attract more visitors and boost targeted traffic with a site
-                    optimized for success in Oakville web design.
+                    Unlock your website's full potential with Infused Agency’s
+                    premier SEO strategies. Our Hamilton SEO services are
+                    designed to boost your site’s position in Google rankings.
+                    Draw in more visitors and increase targeted traffic with a
+                    site optimized for success in Hamilton web design.
                   </p>
                 </div>
               </Col>
@@ -882,7 +882,7 @@ const WebDesign = () => {
             <Row className="pd-top-40">
               <Col md="6">
                 <h2>
-                  How to <span>increase conversions</span> through Oakville
+                  How to <span>increase conversions</span> through Hamilton
                   website design.
                 </h2>
               </Col>
@@ -895,25 +895,25 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={speed}
-                    alt="website design speed oakville"
+                    alt="website design speed hamilton"
                   />
                   <h2>
                     1. <span>Improve Website Speed</span>
                   </h2>
                   <p>
-                    Website speed is a critical factor influencing user
-                    experience and conversion rates. A slow-loading website can
-                    frustrate visitors, leading to higher bounce rates and fewer
-                    conversions. To enhance your website’s speed, start by
+                    Website speed significantly impacts user experience and
+                    conversion rates. A slow-loading site can frustrate
+                    visitors, leading to higher bounce rates and fewer
+                    conversions. To boost your website’s speed, start by
                     optimizing images, which are often the largest files on a
                     page. Use image compression tools to reduce file sizes
-                    without compromising quality. Additionally, minimize HTTP
-                    requests by reducing the number of elements on your page,
-                    such as scripts and stylesheets. Implement browser caching
-                    to store static resources, so they don’t have to be reloaded
-                    with each visit. Tools like Google PageSpeed Insights can
-                    provide valuable recommendations for improving page speed,
-                    helping you create a smoother, faster experience for your
+                    without sacrificing quality. Also, cut down on HTTP requests
+                    by minimizing the number of elements on your page, such as
+                    scripts and stylesheets. Implement browser caching to store
+                    static resources, so they don’t need to be reloaded with
+                    every visit. Utilize tools like Google PageSpeed Insights to
+                    gain valuable insights and recommendations for enhancing
+                    page speed, ensuring a smoother, faster experience for your
                     users.
                   </p>
                 </div>
@@ -926,26 +926,25 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={ux}
-                    alt="website design user experience oakville"
+                    alt="website design user experience hamilton"
                   />
                   <h2>
                     2. <span>Enhance User Experience (UX)</span>
                   </h2>
                   <p>
-                    A well-designed user experience is crucial for converting
-                    visitors into customers. Start by ensuring that your website
-                    is mobile-friendly, as an increasing number of users browse
-                    and shop on their smartphones. Simplify your website’s
-                    navigation to make it easy for users to find information
-                    quickly and intuitively. Clear, prominent call-to-action
-                    (CTA) buttons are essential for guiding users toward desired
-                    actions, such as making a purchase or signing up for a
-                    newsletter. Use contrasting colors and compelling language
-                    to make CTAs stand out. Additionally, focus on creating a
-                    clean, visually appealing design that aligns with your brand
-                    and meets the needs of your target audience. By prioritizing
-                    user experience, you can create a more engaging and
-                    effective website that encourages conversions.
+                    A well-crafted user experience is key to converting visitors
+                    into customers. Start by ensuring your website is
+                    mobile-friendly, as more users browse and shop on
+                    smartphones. Simplify your site’s navigation to help users
+                    find information quickly and intuitively. Use clear,
+                    prominent call-to-action (CTA) buttons to direct users
+                    toward actions like making a purchase or subscribing to a
+                    newsletter. Employ contrasting colors and compelling text to
+                    make CTAs stand out. Additionally, focus on a clean,
+                    visually appealing design that reflects your brand and
+                    caters to your target audience. By prioritizing user
+                    experience, you’ll create a more engaging and effective
+                    website that drives conversions.
                   </p>
                 </div>
               </Col>
@@ -957,27 +956,26 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={opt}
-                    alt="website design optimize landing page oakville"
+                    alt="website design optimize landing page hamilton"
                   />
                   <h2>
                     3. <span>Optimize Landing Pages</span>
                   </h2>
                   <p>
-                    Landing pages play a vital role in converting visitors into
-                    leads or customers. To optimize these pages, ensure that the
-                    content is highly relevant to the traffic source, whether
-                    it’s an ad, email, or social media post. The messaging and
-                    offers should align with what users expect to find when they
-                    arrive on the landing page. Minimize distractions by
-                    removing unnecessary elements that might divert attention
-                    from the primary goal, such as signing up for a service or
-                    making a purchase. Use compelling headlines, persuasive
-                    copy, and strong CTAs to drive action. Additionally,
-                    consider adding trust signals, such as customer testimonials
-                    or security badges, to reassure visitors and build
-                    credibility. An optimized landing page can significantly
-                    boost conversion rates by providing a focused and persuasive
-                    user experience.
+                    Landing pages are crucial for converting visitors into leads
+                    or customers. To optimize these pages, ensure the content is
+                    highly relevant to the traffic source, whether it's an ad,
+                    email, or social media post. The messaging and offers should
+                    match users' expectations when they arrive. Reduce
+                    distractions by eliminating unnecessary elements that could
+                    divert attention from the main objective, such as signing up
+                    for a service or making a purchase. Employ compelling
+                    headlines, persuasive copy, and strong CTAs to encourage
+                    action. Also, incorporate trust signals, like customer
+                    testimonials or security badges, to build credibility and
+                    reassure visitors. An optimized landing page can greatly
+                    enhance conversion rates by delivering a focused and
+                    convincing user experience.
                   </p>
                 </div>
               </Col>
@@ -989,27 +987,27 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={testing}
-                    alt="website design a/b testing oakville"
+                    alt="website design a/b testing hamilton"
                   />
                   <h2>
                     4. <span>Implement A/B Testing</span>
                   </h2>
                   <p>
-                    A/B testing, or split testing, is a powerful method for
-                    optimizing website elements to improve conversion rates.
-                    This process involves creating two or more variations of a
-                    webpage and comparing their performance to determine which
-                    version produces the best results. You can test various
+                    A/B testing, also known as split testing, is a powerful
+                    technique for enhancing website elements to boost conversion
+                    rates. This method involves creating two or more versions of
+                    a webpage and comparing their performance to determine which
+                    one delivers the best results. You can test various
                     elements, such as headlines, images, CTAs, or overall
-                    design, to see which changes resonate most with your
-                    audience. By analyzing user behavior and engagement metrics,
-                    you can identify which version of a page is more effective
-                    in achieving your conversion goals. Tools like Google
-                    Optimize or Optimizely can help you set up and manage A/B
-                    tests, providing insights that enable you to make
-                    data-driven decisions. Continuous A/B testing ensures that
-                    your website evolves based on real user feedback, leading to
-                    higher conversion rates over time.
+                    design, to see what resonates most with your audience. By
+                    analyzing user behavior and engagement metrics, you can
+                    pinpoint which version of a page is more effective in
+                    meeting your conversion goals. Tools like Google Optimize or
+                    Optimizely assist in setting up and managing A/B tests,
+                    offering insights that drive data-informed decisions.
+                    Ongoing A/B testing allows your website to adapt based on
+                    real user feedback, leading to improved conversion rates
+                    over time.
                   </p>
                 </div>
               </Col>
@@ -1021,28 +1019,27 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={social}
-                    alt="website design social proof oakville"
+                    alt="website design social proof hamilton"
                   />
                   <h2>
                     5. <span>Leverage Social Proof</span>
                   </h2>
                   <p>
-                    Social proof is a psychological phenomenon where people rely
-                    on the actions and opinions of others to make decisions. By
-                    incorporating social proof elements into your website, you
-                    can build trust and credibility, which are crucial for
-                    increasing conversions. Display customer testimonials
-                    prominently on your site, showcasing positive experiences
-                    and feedback from previous clients. Including case studies
-                    with detailed success stories can further demonstrate the
-                    value of your products or services. Reviews and ratings also
-                    play a significant role in influencing potential customers,
-                    as they provide evidence of your business’s reputation and
-                    reliability. Additionally, highlight any awards or
-                    certifications your company has received to reinforce your
-                    credibility. By leveraging social proof, you can create a
-                    more persuasive and trustworthy website that encourages
-                    visitors to take action.
+                    Social proof is a psychological concept where individuals
+                    look to others’ actions and opinions to guide their own
+                    decisions. By integrating social proof elements into your
+                    website, you can build trust and credibility, which are
+                    essential for boosting conversions. Feature customer
+                    testimonials prominently, showcasing positive feedback and
+                    experiences from past clients. Adding case studies with
+                    detailed success stories can further illustrate the value of
+                    your products or services. Reviews and ratings significantly
+                    influence potential customers by providing evidence of your
+                    business’s reputation and reliability. Additionally,
+                    highlight any awards or certifications your company has
+                    received to strengthen your credibility. Leveraging social
+                    proof helps create a more persuasive and trustworthy website
+                    that motivates visitors to take action.
                   </p>
                 </div>
               </Col>
@@ -1052,7 +1049,7 @@ const WebDesign = () => {
               <Col lg="12">
                 <div className="card">
                   <img
-                    alt="oakville web design client"
+                    alt="hamilton web design client"
                     width="48"
                     height="48"
                     src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
