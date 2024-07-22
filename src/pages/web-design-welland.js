@@ -27,7 +27,7 @@ const SEO = () => {
         />
         <link
           rel="canonical"
-          href="https://infused.agency/welland-web-design"
+          href="https://infused.agency/web-design-welland"
         />
       </Head>
       <Nav />
@@ -404,7 +404,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Welland-seo-company/">
+                    <Link href="/welland-seo-company/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     ,{" "}

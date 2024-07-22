@@ -164,7 +164,6 @@ const Footer = () => {
                       Crystal Beach Web Design
                     </Link>
                     , <Link href="/depew-web-design">Depew NY Web Design</Link>,{" "}
-                    <Link href="/dundas-web-design">Dundas Web Design</Link>,{" "}
                     <Link href="/east-aurora-web-design">
                       East Aurora NY Web Design
                     </Link>
@@ -183,6 +182,8 @@ const Footer = () => {
                     <Link href="/lockport-web-design">
                       Lockport NY Web Design
                     </Link>
+                    ,{" "}
+                    <Link href="/web-design-oakville">Web Design Oakville</Link>
                     ,{" "}
                     <Link href="/port-colborne-web-design">
                       Port Colborne Web Design

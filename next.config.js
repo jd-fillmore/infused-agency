@@ -147,8 +147,43 @@ const nextConfig = {
           "/posts/what-is-the-best-method-to-drive-visitors-to-a-new-website",
         permanent: true,
       },
-    ]
+      {
+        source: "/Ancaster-web-design",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/Ancaster-seo",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/Dundas-web-design",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/ecommerce-web-design-St. Catharines",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/ecommerce-web-design-st-catharines",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wordpress-developer-St. Catharines",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wordpress-developer-st-catharines",
+        destination: "/",
+        permanent: true,
+      },
+    ];
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

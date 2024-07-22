@@ -621,3 +621,13 @@ iframe {
 .desc {
   margin-top: 10px !important;
 }
+
+.intro-web-design {
+  img {
+    margin-top: 40px;
+    @include bp-tablet-sm {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

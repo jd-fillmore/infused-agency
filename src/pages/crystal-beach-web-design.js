@@ -378,7 +378,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Crystal-Beach-seo-company/">
+                    <Link href="/crystal-Beach-seo-company/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     ,{" "}

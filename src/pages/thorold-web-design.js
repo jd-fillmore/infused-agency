@@ -283,7 +283,7 @@ const SEO = () => {
                     your website is easily discoverable by your potential
                     customers. Collaborating with our Thorold web design experts
                     and leveraging our dedicated{" "}
-                    <Link href="/Thorold-seo-company/">
+                    <Link href="/thorold-seo-company/">
                       Thorold SEO services
                     </Link>
                     , your website becomes a powerful tool for driving new
@@ -403,7 +403,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Thorold-seo-company/">
+                    <Link href="/thorold-seo-company/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     ,{" "}

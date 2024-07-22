@@ -26,7 +26,7 @@ const SEO = () => {
         />
         <link
           rel="canonical"
-          href="https://infused.agency/niagara-on-the-Lake-seo"
+          href="https://infused.agency/niagara-on-the-lake-seo"
         />
       </Head>
       <Nav />

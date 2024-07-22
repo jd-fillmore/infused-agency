@@ -401,7 +401,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Fort-Erie-seo-company/">
+                    <Link href="/fort-Erie-seo-company/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     ,{" "}

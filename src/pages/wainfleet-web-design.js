@@ -272,7 +272,7 @@ const SEO = () => {
                     key part of our Wainfleet web design services to help make
                     sure that your customers can find your website. When using
                     our Wainfleet web design experts and{" "}
-                    <Link href="/Wainfleet-seo/">Wainfleet SEO services</Link>,
+                    <Link href="/wainfleet-seo/">Wainfleet SEO services</Link>,
                     your website should help bring in new company revenue and
                     customers.
                   </p>
@@ -376,7 +376,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Wainfleet-seo/">
+                    <Link href="/wainfleet-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}

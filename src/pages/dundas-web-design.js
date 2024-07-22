@@ -266,7 +266,7 @@ const SEO = () => {
                     key part of our Dundas web design services to help make sure
                     that your customers can find your website. When using our
                     Dundas web design experts and{" "}
-                    <Link href="/Dundas-seo/">Dundas SEO services</Link>, your
+                    <Link href="/dundas-seo/">Dundas SEO services</Link>, your
                     website should help bring in new company revenue and
                     customers.
                   </p>
@@ -370,7 +370,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Dundas-seo/">
+                    <Link href="/dundas-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}

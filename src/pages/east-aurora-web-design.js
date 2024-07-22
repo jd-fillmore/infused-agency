@@ -26,7 +26,7 @@ const SEO = () => {
         />
         <link
           rel="canonical"
-          href="https://infused.agency/East-Aurora-web-design"
+          href="https://infused.agency/east-aurora-web-design"
         />
       </Head>
       <Nav />

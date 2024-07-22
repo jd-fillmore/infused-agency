@@ -271,7 +271,7 @@ const SEO = () => {
                     key part of our Waterdown web design services to help make
                     sure that your customers can find your website. When using
                     our Waterdown web design experts and{" "}
-                    <Link href="/Waterdown-seo/">Waterdown SEO services</Link>,
+                    <Link href="/waterdown-seo/">Waterdown SEO services</Link>,
                     your website should help bring in new company revenue and
                     customers.
                   </p>
@@ -375,7 +375,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Waterdown-seo/">
+                    <Link href="/waterdown-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}

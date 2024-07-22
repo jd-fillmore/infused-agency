@@ -28,7 +28,7 @@ const SEO = () => {
         />
         <link
           rel="canonical"
-          href="https://infused.agency/Caledonia-web-design"
+          href="https://infused.agency/caledonia-web-design"
         />
       </Head>
       <Nav />
@@ -271,7 +271,7 @@ const SEO = () => {
                     key part of our Caledonia web design services to help make
                     sure that your customers can find your website. When using
                     our Caledonia web design experts and{" "}
-                    <Link href="/Caledonia-seo/">Caledonia SEO services</Link>,
+                    <Link href="/caledonia-seo/">Caledonia SEO services</Link>,
                     your website should help bring in new company revenue and
                     customers.
                   </p>
@@ -375,7 +375,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Caledonia-seo/">
+                    <Link href="/caledonia-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}

@@ -24,7 +24,10 @@ const SEO = () => {
           name="description"
           content="Unleash the potential of Grimsby SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
-        <link rel="canonical" href="https://infused.agency/grimsby-seo" />
+        <link
+          rel="canonical"
+          href="https://infused.agency/grimsby-seo-company"
+        />
       </Head>
       <Nav />
       <InnerHero
