@@ -20,10 +20,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Niagara SEO | ON Search Engine Optimization</title>
+        <title>Niagara SEO | Best SEO Agency in St. Catharines</title>
         <meta
           name="description"
-          content="Unleash the potential of Niagara SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
+          content="Unleash the potential of Niagara &amp; St. Catharines SEO to amplify your online visibility. Draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
         <link
           rel="canonical"
@@ -32,8 +32,8 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Niagara SEO &amp; Digital Marketing Company"
-        description="Infused Agency is an award-winning SEO &amp; Digital Marketing company in Niagara. We help businesses bring in more revenue through their websites."
+        title="Niagara SEO | St. Catharines SEO Agency"
+        description="Infused Agency is an award-winning SEO &amp; company in Niagara &amp St. Catharines. We help businesses bring in more revenue through their websites."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -44,17 +44,17 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="niagara seo company, niagara seo agency, niagara seo services"
+                  alt="niagara seo company, st. catharines seo agency, niagara seo services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Niagara SEO services</strong> that our{" "}
-                  <strong>Niagara SEO &amp; digital marketing company</strong>{" "}
-                  provides are pretty impeccable. We consistently provide great
-                  SEO &amp; digital marketing services to our clients with
-                  pretty awesome results. There are a lot of benefits as to why
-                  SEO services are so important for any local company:
+                  The <strong>Niagara &amp; St. Catharines SEO services</strong>{" "}
+                  that our <strong>Niagara SEO company</strong> provides are
+                  pretty impeccable. We consistently provide great SEO &amp;
+                  digital marketing services to our clients with pretty awesome
+                  results. There are a lot of benefits as to why SEO services
+                  are so important for any local company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
@@ -77,7 +77,8 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Nearby Niagara SEO Clients <span>Get Results</span>
+                    Our St. Catharines &amp; Niagara SEO Clients{" "}
+                    <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -254,7 +255,7 @@ const SEO = () => {
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
                   <h2>
-                    Niagara <span>SEO</span> &amp; Digital Marketing Services
+                    Niagara <span>SEO</span> &amp; St. Catharines SEO Services
                   </h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
