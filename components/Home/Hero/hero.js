@@ -13,14 +13,14 @@ const Hero = () => {
       <section className="hero" title="Niagara web design">
         <Container>
           <div className="bg">
-            <Row className="d-flex align-items-center">
-              <Col lg="6">
+            <Row className="text-center">
+              <Col lg="12">
                 <Image src={best} alt="niagara best rated web design company" />
                 <h1 className="intro">
                   Niagara Web Design | St. Catharines Website Designers
                 </h1>
                 <h2>
-                  We help businesses <span>boost leads</span> and{" "}
+                  We help businesses <span>boost leads</span> and <br />
                   <span>drive sales</span> through their websites.
                 </h2>
                 <p>
@@ -39,7 +39,7 @@ const Hero = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -48,29 +48,6 @@ const Hero = () => {
                     </svg>
                   </button>
                 </a>
-              </Col>
-
-              <Col lg="6">
-                <Image
-                  priority={true}
-                  className="img-fluid"
-                  src={heroImg}
-                  alt="niagara web design"
-                />
-                <div className="d-block d-md-flex cards">
-                  <div className="card">
-                    <h3>10,700</h3>
-                    <p>monthly website views</p>
-                  </div>
-                  <div className="card">
-                    <h3>20,000%</h3>
-                    <p>in leads over 6 months</p>
-                  </div>
-                  <div className="card">
-                    <h3>5,800</h3>
-                    <p>new monthly visitors</p>
-                  </div>
-                </div>
               </Col>
             </Row>
           </div>

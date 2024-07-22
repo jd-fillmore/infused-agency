@@ -451,12 +451,36 @@ span {
   padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
-    .col-lg-5 {
-      display: none;
-    }
   }
   h2 {
     margin-bottom: 30px;
+  }
+  .card {
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    h3 {
+      color: $dark-purple;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      color: $glow-blue;
+      font-size: 16px;
+      margin-top: 0;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    @include bp-tablet-sm {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+  #card-result {
+    margin-bottom: 0px;
+    background: rgba($glow-blue, 0.4) !important;
   }
 }
 

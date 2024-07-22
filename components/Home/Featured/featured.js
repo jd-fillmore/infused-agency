@@ -1,11 +1,11 @@
-import React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import Fade from "react-reveal/Fade"
-import Card from "../../Card/card"
-import featuredImg from "../../../src/img/niagara-web-design-1.webp"
-import treeImg from "../../../src/img/web-design-st-catharines.webp"
-import cassImg from "../../../src/img/niagara-digital-marketing.webp"
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Fade from "react-reveal/Fade";
+import Card from "../../Card/card";
+import featuredImg from "../../../src/img/niagara-web-design-1.webp";
+import treeImg from "../../../src/img/web-design-st-catharines.webp";
+import cassImg from "../../../src/img/niagara-digital-marketing.webp";
 
 const projects = [
   {
@@ -29,7 +29,7 @@ const projects = [
     link: "/cass-a-bella-construction",
     pic: cassImg,
   },
-]
+];
 
 const Featured = ({ title, subTitle }) => {
   return (
@@ -46,7 +46,7 @@ const Featured = ({ title, subTitle }) => {
               </div>
             </div>
           </div>
-          {projects.map(project => (
+          {projects.map((project) => (
             <div class="container">
               <Fade>
                 <Card>
@@ -61,7 +61,7 @@ const Featured = ({ title, subTitle }) => {
                           fill="currentColor"
                           strokeWidth="0"
                           viewBox="0 0 512 512"
-                          class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                           height="20px"
                           width="20px"
                           xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ const Featured = ({ title, subTitle }) => {
         </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Featured
+export default Featured;

@@ -16,6 +16,7 @@ import treeImg from "../../src/img/tree-reports.png";
 import kdImg from "../../src/img/kd-flowers.webp";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/web-design-niagara.webp";
+import heroImg from "../../src/img/niagara-web-design-marketing-agency.png";
 
 const addJsonLd = () => {
   const schema = {
@@ -106,10 +107,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>
-          Niagara Web Design | St. Catharines' Best Website Designers | Fast,
-          Reliable, Award-Winning
-        </title>
+        <title>Niagara Web Designers | St. Catharines Website Design</title>
         <meta
           name="description"
           content="Niagara's top web design agency. As a leading website creation company in St. Catharines, we specialize in crafting stunning websites. Get a free quote now!"
@@ -122,6 +120,7 @@ const Home = () => {
           name="google-site-verification"
           content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8"
         />
+        <meta property="og:site_name" content="Infused Agency" />
         <link rel="canonical" href="https://infused.agency" />
         <script
           type="application/ld+json"
@@ -164,7 +163,7 @@ const Home = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +194,7 @@ const Home = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +225,7 @@ const Home = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -280,15 +279,28 @@ const Home = () => {
               />
             </div>
             <div className="col-lg-5">
-              <iframe
-                title="niagara web design"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.712155786024!2d-79.21034682336128!3d43.152573384665175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2sInfused%20Agency%20%7C%20SEO%2C%20Web%20Design%20%26%20Development%2C%20Digital%20Marketing%20in%20Niagara%2C%20St.%20Catharines!5e0!3m2!1sen!2sca!4v1708489639093!5m2!1sen!2sca"
-                width="100%"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <Image
+                width="503"
+                height="343"
+                priority={true}
+                className="img-fluid"
+                src={heroImg}
+                alt="niagara web design"
+              />
+              <br />
+              <br />
+              <div className="card">
+                <h3>10,700</h3>
+                <p>monthly website views</p>
+              </div>
+              <div className="card">
+                <h3>20,000%</h3>
+                <p>increase in leads over 6 months</p>
+              </div>
+              <div className="card">
+                <h3>5,800</h3>
+                <p>new monthly visitors</p>
+              </div>
               <p className="phone">
                 73 Alexandra Blvd, St. Catharines, ON L2P 1K2
               </p>
@@ -299,7 +311,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="home-client-results">
         <div className="container">
           <div className="row">
@@ -335,7 +346,7 @@ const Home = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -368,7 +379,7 @@ const Home = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -400,7 +411,7 @@ const Home = () => {
                       fill="currentColor"
                       strokeWidth="0"
                       viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                       height="20px"
                       width="20px"
                       xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +427,7 @@ const Home = () => {
       </section>
 
       <section className="home-reviews">
-        <div class="container">
+        <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
@@ -428,6 +439,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="card">
                 <img
+                  alt="visca electric niagara web design"
                   width="48"
                   height="48"
                   src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
@@ -442,8 +454,8 @@ const Home = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
                       fill="#FFD700"
                     />
@@ -456,8 +468,8 @@ const Home = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
                       fill="#FFD700"
                     />
@@ -470,8 +482,8 @@ const Home = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
                       fill="#FFD700"
                     />
@@ -484,8 +496,8 @@ const Home = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
                       fill="#FFD700"
                     />
@@ -498,8 +510,8 @@ const Home = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
                       fill="#FFD700"
                     />
@@ -519,6 +531,7 @@ const Home = () => {
             <div className="col-lg-6  d-flex">
               <div className="card">
                 <img
+                  alt="ggs website design niagara"
                   width="48"
                   height="48"
                   src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
@@ -609,6 +622,7 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="card">
                 <img
+                  alt="cassabella web design st catharines"
                   width="48"
                   height="48"
                   src="https://lh3.googleusercontent.com/a/ACg8ocK7n2huRETLbFAnVB-Yq-Mt4VECcxfE9PfP_dzle024Afradg=w48-h48-p-rp-mo-br100"
@@ -697,6 +711,7 @@ const Home = () => {
             <div className="col-lg-6 d-flex">
               <div className="card">
                 <img
+                  alt="treereports website design niagara"
                   width="48"
                   height="48"
                   src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
@@ -811,7 +826,7 @@ const Home = () => {
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 512 512"
-                    class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                    className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                     height="20px"
                     width="20px"
                     xmlns="http://www.w3.org/2000/svg"

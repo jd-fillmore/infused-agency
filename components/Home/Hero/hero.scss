@@ -4,7 +4,6 @@
 .hero {
   padding: 220px 0px 100px 0px;
   background: linear-gradient(to right, $light-blue, $purple);
-
   @include bp-tablet-sm {
     background-position: center center;
     text-align: center;
@@ -47,6 +46,13 @@
       margin-bottom: 0px;
       background: $dark-purple;
       padding: 20px;
+    }
+  }
+  .bg {
+    width: 75%;
+    margin: 0 auto;
+    @include bp-tablet-sm {
+      width: inherit;
     }
   }
   .card {
@@ -141,8 +147,11 @@
     position: relative;
     background: $purple;
     color: $dark-blue;
+    background: $dark-purple !important;
+    border-color: $dark-purple;
     &:hover {
-      background: $glow-blue;
+      background: $glow-blue !important;
+      border-color: $glow-blue !important;
     }
     @include bp-tablet-sm {
       z-index: 1;

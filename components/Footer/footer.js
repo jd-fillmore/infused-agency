@@ -11,14 +11,17 @@ import Link from "next/link";
 
 const pages = [
   {
+    id: 1,
     name: "Services",
     link: "/services",
   },
   {
+    id: 2,
     name: "Work",
     link: "/work",
   },
   {
+    id: 3,
     name: "Reviews",
     link: "/reviews",
   },
@@ -50,8 +53,8 @@ const Footer = () => {
               <h3>Pages</h3>
               <ul>
                 {pages.map((page) => (
-                  <li>
-                    <Link href={`${page.link}`}>{page.name}</Link>
+                  <li key={page.id}>
+                    <Link href={page.link}>{page.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -83,9 +86,9 @@ const Footer = () => {
               >
                 <strong>Get Free Quote</strong>
               </a>
-              <br />
+              {/* <br />
               <a href="mailto:hello@infused.agency">hello@infused.agency</a>
-              <br />
+              <br /> */}
               {/* <a class="phone" href="tel:(905) 933-3115">
                 (905) 933-3115
               </a>
