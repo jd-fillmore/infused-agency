@@ -8,7 +8,7 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 
-import intro from "../img/Barrie-web-design.webp";
+import intro from "../img/barrie-web-design.webp";
 import ui from "../img/ui-design.png";
 import build from "../img/build.png";
 import grow from "../img/grow.png";
