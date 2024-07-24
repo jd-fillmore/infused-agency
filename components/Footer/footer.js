@@ -148,16 +148,31 @@ const Footer = () => {
                     ,{" "}
                     <Link href="/attica-web-design">Attica NY Web Design</Link>,{" "}
                     <Link href="/avon-web-design">Avon NY Web Design</Link>,{" "}
+                    <Link href="/barrie-web-design">
+                      Barrie Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/batavia-web-design">
                       Batavia NY Web Design
                     </Link>
                     ,{" "}
                     <Link href="/beamsville-web-design">
                       Beamsville Web Design
+                    </Link>,{" "}
+                    <Link href="/burlington-web-design">
+                      Burlington Web Design
                     </Link>
                     ,{" "}
                     <Link href="/caledonia-web-design">
                       Caledonia Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/cambridge-web-design">
+                      Cambridge Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/collingwood-web-design">
+                      Collingwood Web Design
                     </Link>
                     ,{" "}
                     <Link href="/crystal-beach-web-design">
@@ -175,7 +190,15 @@ const Footer = () => {
                     </Link>
                     , <Link href="/grimsby-web-design">Grimsby Web Design</Link>
                     ,{" "}
+                    <Link href="/guelph-web-design">
+                      Guelph Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/web-design-hamilton">Hamilton Web Design</Link>
+                    ,{" "}
+                    <Link href="/kitchener-web-design">
+                      Kitchener Web Design
+                    </Link>
                     ,{" "}
                     <Link href="/lancaster-web-design">
                       Lancaster NY Web Design
@@ -185,7 +208,35 @@ const Footer = () => {
                       Lockport NY Web Design
                     </Link>
                     ,{" "}
+                    <Link href="/markham-web-design">
+                      Markham Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/milton-web-design">
+                      Milton Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/newmarket-web-design">
+                      Newmarket Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/web-design-oakville">Web Design Oakville</Link>
+                    ,{" "}
+                    <Link href="/oshawa-web-design">
+                      Oshawa Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/ottawa-web-design">
+                      Ottawa Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/peterborough-web-design">
+                      Peterborough Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/pickering-web-design">
+                      Pickering Web Design
+                    </Link>
                     ,{" "}
                     <Link href="/port-colborne-web-design">
                       Port Colborne Web Design
@@ -196,8 +247,16 @@ const Footer = () => {
                     </Link>
                     , <Link href="/thorold-web-design">Thorold Web Design</Link>
                     ,{" "}
+                    <Link href="/vaughan-web-design">
+                      Vaughan Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/wainfleet-web-design">
                       Wainfleet Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/waterloo-web-design">
+                      Waterloo Web Design
                     </Link>
                     ,{" "}
                     <Link href="/warsaw-web-design">Warsaw NY Web Design</Link>,{" "}
@@ -205,6 +264,10 @@ const Footer = () => {
                       Waterdown Web Design
                     </Link>
                     , <Link href="/web-design-welland">Welland Web Design</Link>
+                    ,{" "}
+                    <Link href="/windsor-web-design">
+                      Windsor Web Design
+                    </Link>
                     ,{" "}
                     <Link href="/ontario-arborist-tree-removal-websites">
                       Ontario Arborist Tree Removal Websites

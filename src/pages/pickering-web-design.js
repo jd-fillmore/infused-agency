@@ -8,7 +8,7 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 
-import intro from "../img/web-design-hamilton.png";
+import intro from "../img/pickering-web-design.webp";
 import ui from "../img/ui-design.png";
 import build from "../img/build.png";
 import grow from "../img/grow.png";
@@ -45,12 +45,12 @@ const addJsonLd = () => {
     "@type": "ServiceAreaBusiness",
     name: "Infused Agency",
     description:
-      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Hamilton, Canada.",
+      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Pickering, Canada.",
     serviceArea: {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Hamilton",
+        addressLocality: "Pickering",
         addressCountry: "Canada",
       },
     },
@@ -68,22 +68,22 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Hamilton Web Design | Infused Agency</title>
+        <title>Pickering Web Design | Infused Agency</title>
         <meta
           name="description"
-          content="Top Hamilton web design by Infused Agency. Expert website design services to enhance your online presence. Get a free quote today!"
+          content="Top Pickering web design by Infused Agency. Expert website design services to enhance your online presence. Get a free quote today!"
         />
         <meta
           property="og:title"
-          content="Web Design Hamilton | Infused Agency"
+          content="Web Design Pickering | Infused Agency"
         />
         <meta
           name="twitter:title"
-          content="Web Design Hamilton | Infused Agency"
+          content="Web Design Pickering | Infused Agency"
         />
         <link
           rel="canonical"
-          href="https://infused.agency/web-design-hamilton"
+          href="https://infused.agency/pickering-web-design"
         />
         <script
           type="application/ld+json"
@@ -93,8 +93,8 @@ const WebDesign = () => {
       </Head>
       <Nav />
       <CityHero
-        city="Hamilton"
-        alt="web design hamilton"
+        city="Pickering"
+        alt="web design Pickering"
         desc="From attracting visitors to converting leads and boosting sales, we are your go-to digital partner for achieving outstanding success."
       />
       <InnerContent>
@@ -104,7 +104,7 @@ const WebDesign = () => {
             <Row>
               <Col md="6">
                 <h2>
-                  Hamilton website design crafted to <span>engage</span>,{" "}
+                  Pickering website design crafted to <span>engage</span>,{" "}
                   <span>capture</span> and <span>convert</span>.
                 </h2>
               </Col>
@@ -115,22 +115,22 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={intro}
-                  alt="web design hamilton conversion"
+                  alt="web design Pickering conversion"
                 />
               </Col>
               <Col lg="6">
                 <p>
-                  At Infused Agency, our Hamilton web design services are
+                  At Infused Agency, our Pickering web design services are
                   designed to <span>engage</span>, <span>capture</span>, and{" "}
                   <span>convert</span>. We excel in crafting visually stunning,
                   user-friendly websites that are specifically tailored for
-                  Hamilton-based businesses. Our team of expert designers is
+                  Pickering-based businesses. Our team of expert web designers is
                   dedicated to creating high-performing sites that not only
                   attract visitors but also foster meaningful interactions and
-                  drive conversions. Whether you’re seeking a brand-new design
+                  drive conversions. Whether you’re seeking a brand-new web design
                   or a strategic update, our goal is to elevate your online
                   presence and help your business thrive in the competitive
-                  Hamilton market. Choose Infused Agency for cutting-edge web
+                  Pickering market. Choose Infused Agency for cutting-edge web
                   design solutions that truly deliver results
                 </p>
               </Col>
@@ -139,13 +139,13 @@ const WebDesign = () => {
               <Row className="text-center w-80">
                 <Col lg="12">
                   <h2>
-                    Our Hamilton Web Design Company Will
+                    Our Pickering Web Design Company Will
                     <br />
                     <span>Get You Results</span>.
                   </h2>
                   <br />
                   <h3>
-                    Your website will be equipped with everything needed to
+                    Your web design will be equipped with everything needed to
                     attract attention and generate more leads.
                   </h3>
                 </Col>
@@ -166,7 +166,7 @@ const WebDesign = () => {
                     <Image src={img2} alt="mobile friendly" />
                     <h3>Mobile-Friendly</h3>
                     <p>
-                      Our sites are built to be fully compatible with the latest
+                      Our web designs are built to be fully compatible with the latest
                       browsers and mobile devices, ensuring you always present a
                       polished and professional appearance.
                     </p>
@@ -189,7 +189,7 @@ const WebDesign = () => {
                     <Image src={img4} alt="Easily Update Content" />
                     <h3>Easily Update Content</h3>
                     <p>
-                      Effortlessly update your website content, add new pages,
+                      Effortlessly update your web design's content, add new pages,
                       upload images, adjust meta-tags, and incorporate new team
                       members, among other tasks
                     </p>
@@ -202,7 +202,7 @@ const WebDesign = () => {
                     <p>
                       Track monthly website traffic, page visits, leads, and
                       more. Need Google Analytics? We can install that on your
-                      website too.
+                      web design too.
                     </p>
                   </div>
                 </Col>
@@ -350,27 +350,27 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={growth}
-                  alt="web design hamilton"
+                  alt="web design Pickering"
                 />
               </Col>
               <Col lg="6" className="order-1 order-lg-2">
                 <h2>
                   <span>Lead-Generating</span> <br />
-                  Hamilton Web Design
+                  Pickering Web Design
                 </h2>
                 <p>
                   At Infused Agency, we're dedicated to fueling business growth
-                  in Hamilton through our outstanding lead-generation design
-                  services. From initial concept to final launch, our Hamilton
+                  in Pickering through our outstanding lead-generation web design
+                  services. From initial concept to final launch, our Pickering
                   web design experts create custom digital experiences that
-                  yield remarkable results. Utilizing advanced platforms such as
+                  yield remarkable results. Utilizing advanced web design platforms such as
                   NextJS, WordPress, React, and Shopify, we ensure your
-                  Hamilton-based website is not only visually appealing but also
-                  highly functional. Our team blends strategic design with
+                  Pickering-based website is not only visually appealing but also
+                  highly functional. Our team blends strategic web design with
                   cutting-edge technology to develop high-converting websites
                   that engage your audience and drive your business forward.
-                  Choose Infused Agency for superior lead-generation design and
-                  Hamilton web design solutions, and watch your online presence
+                  Choose Infused Agency for superior lead-generation web design and
+                  Pickering web design solutions, and watch your online presence
                   flourish.
                 </p>
                 <a
@@ -399,7 +399,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={growth}
-                  alt="website design company in hamilton"
+                  alt="website design company in Pickering"
                 />
               </Col>
             </Row>
@@ -409,7 +409,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid pd-btm-40"
                   src={funnel}
-                  alt="hamilton web designers"
+                  alt="Pickering web designers"
                 />
               </Col>
               <Col lg="6">
@@ -418,12 +418,12 @@ const WebDesign = () => {
                   That Convert
                 </h2>
                 <p>
-                  Ready to convert your website
+                  Ready to convert your website design
                   visitors into loyal customers? At Infused Agency, we
-                  specialize in designing sales funnels that achieve this goal.
+                  specialize in designing web design sales funnels that achieve this goal.
                   Our expertly crafted funnels guide your prospects seamlessly
                   from initial interest to decisive action. By combining
-                  engaging design, persuasive copy, and effective
+                  engaging website design, persuasive copy, and effective
                   calls-to-action, we create funnels that not only capture leads
                   but also deliver significant, measurable results.
                 </p>
@@ -453,7 +453,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid"
                   src={funnel}
-                  alt="website design hamilton"
+                  alt="website design Pickering"
                 />
               </Col>
             </Row>
@@ -462,7 +462,7 @@ const WebDesign = () => {
                 <Image
                   className="img-fluid pd-btm-40"
                   src={convert}
-                  alt="web designers hamilton"
+                  alt="web designers Pickering"
                 />
               </Col>
               <Col lg="6">
@@ -471,16 +471,16 @@ const WebDesign = () => {
                   Web Design
                 </h2>
                 <p>
-                  Ready to transform your Hamilton online presence into a
+                  Ready to transform your Pickering web design into a
                   conversion powerhouse? Our Conversion-Driven Web Design is
                   expertly crafted to do just that. At Infused Agency, we
-                  develop stunning Hamilton web design solutions that not only
+                  develop stunning Pickering web design solutions that not only
                   captivate your audience but also deliver real, measurable
                   results. By strategically focusing on user experience,
                   engaging visuals, and optimized design elements, we ensure
-                  your website becomes a powerful tool for converting visitors
+                  your website design becomes a powerful tool for converting visitors
                   into loyal customers. From intuitive navigation to compelling
-                  calls-to-action, our Hamilton web design experts create
+                  calls-to-action, our Pickering web design experts create
                   designs that smoothly guide your prospects from interest to
                   action.
                 </p>
@@ -526,7 +526,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={discover}
-                    alt="website design discovery hamilton"
+                    alt="website design discovery Pickering"
                   />
                   <h2>
                     1. <span>Discover</span>
@@ -539,7 +539,7 @@ const WebDesign = () => {
                     team at Infused Agency follows a meticulous methodology,
                     ensuring each step is executed with precision. We dive deep
                     into your business to comprehend the purpose behind your
-                    website, your expectations, ultimate goals, and target
+                    web design, your expectations, ultimate goals, and target
                     audience. Additionally, we analyze your competitors, their
                     websites, and your budget plan. These detailed insights
                     enable us to craft a robust strategy that ensures your
@@ -554,7 +554,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={design}
-                    alt="website design process hamilton"
+                    alt="website design process Pickering"
                   />
                   <h2>
                     2. <span>Plan</span>
@@ -563,7 +563,7 @@ const WebDesign = () => {
                     We excel at planning. At Infused Agency, our professional
                     team knows that a well-executed master plan is essential for
                     success. We begin by thoroughly researching your vision for
-                    the website, ensuring we fully understand your plan and
+                    the web design, ensuring we fully understand your plan and
                     respect your time. During the planning phase, we create
                     wireframe sketches, draft content layouts, design the
                     website's graphical structure, and develop detailed
@@ -581,7 +581,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={realdesign}
-                    alt="website design agency hamilton"
+                    alt="website design agency Pickering"
                   />
                   <h2>
                     3. <span>Design</span>
@@ -608,20 +608,20 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={dev}
-                    alt="website development hamilton"
+                    alt="website development Pickering"
                   />
                   <h2>
                     4. <span>Develop</span>
                   </h2>
                   <p>
-                    We excel in both planning and design. Our renowned team at
+                    We excel in both planning and web design. Our renowned team at
                     Infused Agency, with extensive experience in developing
                     top-tier websites, creates flawless projects for our
                     clients. They go above and beyond, utilizing their skills
                     efficiently. By leveraging cutting-edge technology and
                     innovative techniques, we ensure our tasks are completed
                     with precision. Once the design phase is finished, our
-                    highly skilled content writers populate the web pages with
+                    highly skilled content writers populate the web design pages with
                     fresh content and refine existing material. Adding new
                     videos, slideshows, and other media elements makes the
                     website captivating. We then develop a prototype, testing it
@@ -638,7 +638,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={launch}
-                    alt="website development launch hamilton"
+                    alt="website development launch Pickering"
                   />
                   <h2>
                     5. <span>Launch</span>
@@ -651,7 +651,7 @@ const WebDesign = () => {
                     spelling, and punctuation errors. We also handle Google
                     Analytics and search engine rankings from the outset. Our
                     experts rigorously test the website’s functionality. The
-                    Infused Agency team guarantees exceptional websites that
+                    Infused Agency team guarantees exceptional web designs that
                     create a direct path to your company’s growth.
                   </p>
                 </div>
@@ -664,13 +664,13 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={promote}
-                    alt="website design promotion hamilton"
+                    alt="website design promotion Pickering"
                   />
                   <h2>
                     6. <span>Promote</span>
                   </h2>
                   <p>
-                    Our top-tier digital marketing experts ensure your website
+                    Our top-tier web design experts ensure your website
                     is effectively promoted online. At Infused Agency, our
                     services go beyond just launching your website. Our
                     world-class team includes seasoned specialists in SEO and
@@ -832,7 +832,7 @@ const WebDesign = () => {
             <Row className="pd-top-80">
               <Col md="6">
                 <h2>
-                  Our Hamilton website designs are <span>fast</span>,{" "}
+                  Our Pickering website designs are <span>fast</span>,{" "}
                   <span>optimized</span> and <span>drive leads</span>.
                 </h2>
               </Col>
@@ -841,11 +841,11 @@ const WebDesign = () => {
             <Row className="pd-top-40">
               <Col lg="4" className="d-flex">
                 <div className="card">
-                  <Image src={fast} alt="fast website design hamilton" />
+                  <Image src={fast} alt="fast website design Pickering" />
                   <h3>Lightning-Fast Speed</h3>
                   <p>
                     Enjoy unparalleled website speed with Infused Agency’s web
-                    design services in Hamilton. Our websites are crafted to
+                    design services in Pickering. Our websites are crafted to
                     load almost instantly, providing a smooth user experience
                     and boosting engagement.
                   </p>
@@ -853,11 +853,11 @@ const WebDesign = () => {
               </Col>
               <Col lg="4" className="d-flex">
                 <div className="card">
-                  <Image src={build} alt="web designers in hamilton" />
+                  <Image src={build} alt="web designers in Pickering" />
                   <h3>Mobile Performance</h3>
                   <p>
                     Experience a website that performs exceptionally across all
-                    devices with Infused Agency’s Hamilton web development. We
+                    devices with Infused Agency’s Pickering web development. We
                     ensure your site is perfectly optimized for mobile,
                     delivering a seamless and engaging experience that converts
                     visitors into loyal customers.
@@ -866,14 +866,14 @@ const WebDesign = () => {
               </Col>
               <Col lg="4">
                 <div className="card">
-                  <Image src={grow} alt="web design company in hamilton" />
+                  <Image src={grow} alt="web design company in Pickering" />
                   <h3>Rank On Google</h3>
                   <p>
                     Unlock your website's full potential with Infused Agency’s
-                    premier SEO strategies. Our Hamilton SEO services are
+                    premier SEO strategies. Our Pickering SEO services are
                     designed to boost your site’s position in Google rankings.
                     Draw in more visitors and increase targeted traffic with a
-                    site optimized for success in Hamilton web design.
+                    site optimized for success in Pickering web design.
                   </p>
                 </div>
               </Col>
@@ -882,7 +882,7 @@ const WebDesign = () => {
             <Row className="pd-top-40">
               <Col md="6">
                 <h2>
-                  How to <span>increase conversions</span> through Hamilton
+                  How to <span>increase conversions</span> through Pickering
                   website design.
                 </h2>
               </Col>
@@ -895,7 +895,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={speed}
-                    alt="website design speed hamilton"
+                    alt="website design speed Pickering"
                   />
                   <h2>
                     1. <span>Improve Website Speed</span>
@@ -926,7 +926,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={ux}
-                    alt="website design user experience hamilton"
+                    alt="website design user experience Pickering"
                   />
                   <h2>
                     2. <span>Enhance User Experience (UX)</span>
@@ -956,7 +956,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={opt}
-                    alt="website design optimize landing page hamilton"
+                    alt="website design optimize landing page Pickering"
                   />
                   <h2>
                     3. <span>Optimize Landing Pages</span>
@@ -987,7 +987,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={testing}
-                    alt="website design a/b testing hamilton"
+                    alt="website design a/b testing Pickering"
                   />
                   <h2>
                     4. <span>Implement A/B Testing</span>
@@ -1019,7 +1019,7 @@ const WebDesign = () => {
                   <Image
                     className="img-fluid"
                     src={social}
-                    alt="website design social proof hamilton"
+                    alt="website design social proof Pickering"
                   />
                   <h2>
                     5. <span>Leverage Social Proof</span>
@@ -1049,7 +1049,7 @@ const WebDesign = () => {
               <Col lg="12">
                 <div className="card">
                   <img
-                    alt="hamilton web design client"
+                    alt="Pickering web design client"
                     width="48"
                     height="48"
                     src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
