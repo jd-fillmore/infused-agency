@@ -158,6 +158,14 @@ const Footer = () => {
                     <Link href="/beamsville-web-design">
                       Beamsville Web Design
                     </Link>,{" "}
+                    <Link href="/brantford-web-design">
+                      Brantford Web Design
+                    </Link>
+                    ,{" "}
+                    <Link href="/belleville-web-design">
+                      Belleville Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/burlington-web-design">
                       Burlington Web Design
                     </Link>
@@ -194,6 +202,10 @@ const Footer = () => {
                     </Link>
                     ,{" "}
                     <Link href="/web-design-hamilton">Hamilton Web Design</Link>
+                    ,{" "}
+                    <Link href="/kanata-web-design">
+                      Kanata Web Design
+                    </Link>
                     ,{" "}
                     <Link href="/kitchener-web-design">
                       Kitchener Web Design
