@@ -517,10 +517,10 @@ const OntarioArborist = () => {
                     Since 2013 we've been able to help countless arborist &amp;
                     tree removal service companies with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/niagara-seo">
+                    <Link href="/niagara-seo-company">
                       search engine optimization (SEO)
                     </Link>{" "}
-                    and <Link href="/niagara-seo">WordPress development</Link>.
+                    and <Link href="/niagara-seo-company">WordPress development</Link>.
                   </p>
                   <p>
                     We've been able to help small, local arborist &amp; tree
