@@ -737,7 +737,7 @@ const WebDesign = () => {
                     <Image
                       className="img-fluid"
                       src={kdImg}
-                      alt="web designers niagara"
+                      alt="web designers pickering"
                     />
                     <h3>KD Flowers</h3>
                     <p className="testimonial">
@@ -771,7 +771,7 @@ const WebDesign = () => {
                     <Image
                       className="img-fluid"
                       src={cassImg}
-                      alt="website design niagara"
+                      alt="website design pickering"
                     />
                     <h3>Cass-A-Bella Construction</h3>
                     <p className="testimonial">"Great job, WELL DONE!"</p>
