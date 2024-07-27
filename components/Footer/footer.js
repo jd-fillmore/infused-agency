@@ -231,6 +231,10 @@ const Footer = () => {
                       Newmarket Web Design
                     </Link>
                     ,{" "}
+                    <Link href="/north-bay-web-design">
+                      North Bay Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/web-design-oakville">Web Design Oakville</Link>
                     ,{" "}
                     <Link href="/oshawa-web-design">
@@ -253,10 +257,18 @@ const Footer = () => {
                       Port Colborne Web Design
                     </Link>
                     ,{" "}
+                    <Link href="/sault-ste-marie-web-design">
+                      Sault Ste. Marie Web Design
+                    </Link>
+                    ,{" "}
                     <Link href="/stoney-creek-web-design">
                       Stoney Creek Web Design
                     </Link>
                     , <Link href="/thorold-web-design">Thorold Web Design</Link>
+                    ,{" "}
+                    <Link href="/thunder-bay-web-design">
+                      Thunder Bay Web Design
+                    </Link>
                     ,{" "}
                     <Link href="/vaughan-web-design">
                       Vaughan Web Design
