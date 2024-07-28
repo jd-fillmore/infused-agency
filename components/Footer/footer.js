@@ -108,6 +108,8 @@ const Footer = () => {
                     <Link href="/ancaster-seo">Ancaster SEO</Link>,{" "}
                     <Link href="/attica-seo">Attica NY SEO</Link>,{" "}
                     <Link href="/avon-seo">Avon NY SEO</Link>,{" "}
+                    <Link href="/barrie-seo">Barrie SEO</Link>,{" "}
+                    <Link href="/belleville-seo">Belleville SEO</Link>,{" "}
                     <Link href="/batavia-seo">Batavia NY SEO</Link>,{" "}
                     <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
                     <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
