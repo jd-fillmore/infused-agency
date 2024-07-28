@@ -131,7 +131,7 @@ const WebDesign = () => {
                   or a strategic update, our goal is to elevate your online
                   presence and help your business thrive in the competitive
                   Barrie market. Choose Infused Agency for cutting-edge web
-                  design solutions that truly deliver results
+                  design solutions and <Link href="/barrie-seo">Barrie SEO</Link> that truly deliver results.
                 </p>
               </Col>
             </Row>
