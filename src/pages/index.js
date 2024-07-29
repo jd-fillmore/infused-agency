@@ -124,7 +124,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design | Website Design St. Catharines</title>
+        <title>Niagara Web Designers | Website Design St. Catharines</title>
         <meta
           name="description"
           content="Niagara web design company specializing in award-winning, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
@@ -259,7 +259,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-7">
               <h2>
-                Leading Niagara Web Design Company That Makes Your Website Your{" "}
+                Leading Niagara Website Design Company That Makes Your Website Your{" "}
                 <span>Best Sales Manager</span>.
               </h2>
               <p>
@@ -447,7 +447,7 @@ const Home = () => {
         <Row className="pd-top-120">
               <Col md="6">
                 <h2>
-                  Niagara web design crafted to <span>engage</span>,{" "}
+                  Website design Niagara crafted to <span>engage</span>,{" "}
                   <span>capture</span> and <span>convert</span>.
                 </h2>
               </Col>
@@ -482,7 +482,7 @@ const Home = () => {
               <Row className="text-center w-80">
                 <Col lg="12">
                   <h2>
-                    Our Web Design Agency Will
+                    Our Niagara Website Design Agency Will
                     <br />
                     <span>Get You Results</span>.
                   </h2>
@@ -574,7 +574,7 @@ const Home = () => {
               <Col lg="6" className="order-1 order-lg-2">
                 <h2>
                   <span>Lead-Generating</span> <br />
-                  Niagara Web Design
+                  Web Design in Niagara
                 </h2>
                 <p>
                   At Infused Agency, we're dedicated to fueling business growth
