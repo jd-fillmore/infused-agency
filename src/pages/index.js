@@ -155,7 +155,7 @@ const Home = () => {
                 Our <span>Strategic</span> Niagara Business Solutions
               </h2>
               <p>
-                Our lead-generating web design solutions help bring you more Niagara leads through your website
+                Our lead-generating web design, optimiziation and SEO solutions help bring you more Niagara leads through your website
               </p>
             </div>
           </div>
@@ -168,7 +168,7 @@ const Home = () => {
                 <Image src={leadGenImg} alt="web designer niagara" />
                 <h2>Lead-Generating Web Design</h2>
                 <p>
-                  Is your Niagara website not bringing you customers? We create
+                  Is your <strong>Niagara website design</strong> not bringing you customers? We create
                   lead-generating websites, for the purpose of converting
                   visitors into customers.
                 </p>
@@ -199,7 +199,7 @@ const Home = () => {
                 />
                 <h2>Website Conversion Optimization</h2>
                 <p>
-                  Is your Niagara web design not bringing you leads? Our team will fix conversion barriers, optimizing your web design to convert more.
+                  Is your <strong>Niagara web design</strong> not bringing you leads? Our team will fix conversion barriers, optimizing your web design to convert more.
                 </p>
                 <Link href="/web-design">
                   <button>
@@ -259,11 +259,11 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-7">
               <h2>
-                Leading Niagara Website Design Company That Makes Your Website Your{" "}
+                Leading <strong>Niagara Website Design</strong> Company That Makes Your Website Your{" "}
                 <span>Best Sales Manager</span>.
               </h2>
               <p>
-                As a leading Niagara web design company, we specialize in
+                As a leading <strong>Niagara web design</strong> company, we specialize in
                 crafting user-friendly web designs that seamlessly blend
                 creativity and functionality. From branding-aligned designs and
                 mobile-responsive interfaces to targeted SEO and digital
@@ -331,7 +331,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2>
-                Our Local Clients <span>Get Results</span>
+                Our Local <strong>Niagara Web Design</strong> Clients <span>Get Results</span>
               </h2>
             </div>
           </div>
@@ -447,7 +447,7 @@ const Home = () => {
         <Row className="pd-top-120">
               <Col md="6">
                 <h2>
-                  Website design Niagara crafted to <span>engage</span>,{" "}
+                  <strong>Website design Niagara</strong> crafted to <span>engage</span>,{" "}
                   <span>capture</span> and <span>convert</span>.
                 </h2>
               </Col>
@@ -463,7 +463,7 @@ const Home = () => {
               </Col>
               <Col lg="6">
                 <p>
-                  At Infused Agency, our Niagara web design services are
+                  At Infused Agency, our <strong>Niagara web design</strong> services are
                   designed to <span>engage</span>, <span>capture</span>, and{" "}
                   <span>convert</span>. We excel in crafting visually stunning,
                   user-friendly websites that are specifically tailored for
@@ -482,7 +482,7 @@ const Home = () => {
               <Row className="text-center w-80">
                 <Col lg="12">
                   <h2>
-                    Our Niagara Website Design Agency Will
+                    Our <strong>Niagara Website Design</strong> Agency Will
                     <br />
                     <span>Get You Results</span>.
                   </h2>
@@ -574,7 +574,7 @@ const Home = () => {
               <Col lg="6" className="order-1 order-lg-2">
                 <h2>
                   <span>Lead-Generating</span> <br />
-                  Web Design in Niagara
+                  <strong>Web Design in Niagara</strong>
                 </h2>
                 <p>
                   At Infused Agency, we're dedicated to fueling business growth
@@ -588,7 +588,7 @@ const Home = () => {
                   cutting-edge technology to develop high-converting websites
                   that engage your audience and drive your business forward.
                   Choose Infused Agency for superior lead-generation website design and
-                  Niagara web design solutions, and watch your online presence
+                  <strong>Niagara web design</strong> solutions, and watch your online presence
                   flourish.
                 </p>
                 <a
@@ -689,16 +689,16 @@ const Home = () => {
                   Web Design
                 </h2>
                 <p>
-                  Ready to transform your Niagara web design into a
+                  Ready to transform your <strong>Niagara web design</strong> into a
                   conversion powerhouse? Our Conversion-Driven Web Design is
                   expertly crafted to do just that. At Infused Agency, we
-                  develop stunning Niagara web design solutions that not only
+                  develop stunning <strong>Niagara web design</strong> solutions that not only
                   captivate your audience but also deliver real, measurable
                   results. By strategically focusing on user experience,
                   engaging visuals, and optimized design elements, we ensure
                   your web design becomes a powerful tool for converting visitors
                   into loyal customers. From intuitive navigation to compelling
-                  calls-to-action, our Niagara web design experts create
+                  calls-to-action, our <strong>Niagara web design</strong> experts create
                   designs that smoothly guide your prospects from interest to
                   action.
                 </p>
@@ -733,7 +733,7 @@ const Home = () => {
                   Design Process.
                 </h2>
                 <h3>
-                  Our Niagara web design process is designed to be smooth, fast and
+                  Our <strong>Niagara web design</strong> process is designed to be smooth, fast and
                   reliable.
                 </h3>
               </Col>
@@ -806,8 +806,8 @@ const Home = () => {
                     3. <span>Design</span>
                   </h2>
                   <p>
-                    We are innovative and adaptable. Our exceptional team of Niagara web
-                    designers at Infused Agency has been internationally
+                    We are innovative and adaptable. Our exceptional team of <strong>Niagara web
+                    designers</strong> at Infused Agency has been internationally
                     recognized for their excellence and adheres to high-quality
                     standards in every project. After thoroughly investigating
                     current trends and conducting brainstorming sessions with
@@ -835,7 +835,7 @@ const Home = () => {
                   <p>
                     We excel in both planning and design. Our renowned team at
                     Infused Agency, with extensive experience in developing
-                    top-tier Niagara website designs, creates flawless projects for our
+                    top-tier <strong>Niagara website designs</strong>, creates flawless projects for our
                     clients. They go above and beyond, utilizing their skills
                     efficiently. By leveraging cutting-edge technology and
                     innovative techniques, we ensure our tasks are completed
@@ -865,7 +865,7 @@ const Home = () => {
                   <p>
                     Your approval of the prototype is essential to us. Once we
                     have your go-ahead, we move forward with search engine
-                    optimization. Our Niagara web design team ensures that all
+                    optimization. Our <strong>Niagara web design</strong> team ensures that all
                     content is unique and meticulously proofread for grammar,
                     spelling, and punctuation errors. We also handle Google
                     Analytics and search engine rankings from the outset. Our
