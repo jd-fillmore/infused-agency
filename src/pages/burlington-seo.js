@@ -7,7 +7,7 @@ import Nav from "../../components/Nav/nav";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/belleville-seo.webp";
+import website from "../img/burlington-seo.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
@@ -25,12 +25,12 @@ const addJsonLd = () => {
     "@type": "ServiceAreaBusiness",
     name: "Infused Agency",
     description:
-      "Infused Agency provides expert Belleville SEO services, including lead generation, development, and online marketing in Belleville, Canada.",
+      "Infused Agency provides expert Burlington SEO services, including lead generation, development, and online marketing in Burlington, Canada.",
     serviceArea: {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Belleville",
+        addressLocality: "Burlington",
         addressCountry: "Canada",
       },
     },
@@ -48,14 +48,14 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Belleville SEO | ON Search Engine Optimization</title>
+        <title>Burlington SEO | ON Search Engine Optimization</title>
         <meta
           name="description"
-          content="Belleville SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"
+          content="Burlington SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"
         />
-        <meta property="og:title" content="Belleville SEO | Infused Agency" />
-        <meta name="twitter:title" content="Belleville SEO | Infused Agency" />
-        <link rel="canonical" href="https://infused.agency/belleville-seo" />
+        <meta property="og:title" content="Burlington SEO | Infused Agency" />
+        <meta name="twitter:title" content="Burlington SEO | Infused Agency" />
+        <link rel="canonical" href="https://infused.agency/burlington-seo" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={addJsonLd()}
@@ -64,8 +64,8 @@ const SEO = () => {
       </Head>
       <Nav />
       <CityHeroSEO
-        city="Belleville"
-        alt="Belleville SEO Agency"
+        city="Burlington"
+        alt="Burlington SEO Agency"
         desc="From attracting visitors to converting leads and boosting sales, we are your go-to digital partner for achieving outstanding success."
       />
       <InnerContent>
@@ -74,7 +74,7 @@ const SEO = () => {
             <Row>
               <Col md="6">
                 <h2>
-                  Belleville SEO crafted to <span>engage</span>,{" "}
+                  Burlington SEO crafted to <span>engage</span>,{" "}
                   <span>capture</span> and <span>convert</span>.
                 </h2>
               </Col>
@@ -85,13 +85,13 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Belleville seo company, Belleville seo services"
+                  alt="Burlington seo company, Burlington seo services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Belleville SEO services</strong> that our{" "}
-                  <strong>Belleville SEO company</strong> provides are pretty
+                  The <strong>Burlington SEO services</strong> that our{" "}
+                  <strong>Burlington SEO company</strong> provides are pretty
                   impeccable. We consistently provide great SEO &amp; digital
                   marketing services to our clients with pretty awesome results.
                   There are a lot of benefits as to why SEO services are so
@@ -102,13 +102,13 @@ const SEO = () => {
                   <li>
                     Creates a trustworthy experience for potential customers.
                   </li>
-                  <li>Improves your Belleville brand's awareness.</li>
+                  <li>Improves your Burlington brand's awareness.</li>
                   <li>It's trackable.</li>
                 </ul>
                 <p>
                   When you utilize SEO services from our company or use our{" "}
-                  <Link href="/belleville-web-design">
-                    Belleville web design
+                  <Link href="/burlington-web-design">
+                    Burlington web design
                   </Link>{" "}
                   services and end up ranking on the first of Google, it's a
                   great way to increase your company's revenue.
@@ -168,7 +168,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={kdImg}
-                      alt="seo services in Belleville"
+                      alt="seo services in Burlington"
                     />
                     <h3>KD Flowers</h3>
                     <p className="testimonial">
@@ -202,7 +202,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={cassImg}
-                      alt="Belleville seo agency firm"
+                      alt="Burlington seo agency firm"
                     />
                     <h3>Cass-A-Bella Construction</h3>
                     <p className="testimonial">"Great job, WELL DONE!"</p>
@@ -237,7 +237,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with our Belleville SEO Firm?
+                    Ready to grow your business with our Burlington SEO Firm?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
@@ -255,7 +255,7 @@ const SEO = () => {
             <Container>
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
-                  <h2>Belleville SEO Services</h2>
+                  <h2>Burlington SEO Services</h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
                   </p>
@@ -265,7 +265,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Keyword Research &amp; Strategy</h5>
                   <p>
-                    Infused Agency's Belleville SEO services conducts specific
+                    Infused Agency's Burlington SEO services conducts specific
                     keyword research that covers specifically what your users
                     are searching for. We look at keywords as the main
                     foundation to your SEO project. Beyond this, we dive into
@@ -276,7 +276,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Link Building</h5>
                   <p>
-                    Off of your website, our Belleville SEO experts utilize
+                    Off of your website, our Burlington SEO experts utilize
                     efforts to build links to your website, to help your site
                     rise in search rankings. When other websites link back to
                     your own, you can be seen as authoratative and rank for
@@ -287,7 +287,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Content Writing</h5>
                   <p>
-                    Our Belleville SEO services are conducted by a highly
+                    Our Burlington SEO services are conducted by a highly
                     trained group of marketers, which includes content writers.
                     At Infused, you can take advantage of our content writing
                     skills to create content that attracts highly qualified
@@ -302,7 +302,7 @@ const SEO = () => {
                   <p>
                     It's very important that your on-page work is done well, as
                     it can signal to Google that you may give your users a poor
-                    user experience. This is why our Belleville SEO agency looks
+                    user experience. This is why our Burlington SEO agency looks
                     for and fixes these issues for you. We conduct on-page SEO
                     to help bolster your online presence, amplify your lead
                     generation and help boost sales.
@@ -311,7 +311,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Local SEO</h5>
                   <p>
-                    For a more local approach, our Belleville SEO specialists
+                    For a more local approach, our Burlington SEO specialists
                     can leverage the power of local SEO. We help local customers
                     find your website in local search engine rankings. We do
                     this by employing on and off page search engine optimization
@@ -323,7 +323,7 @@ const SEO = () => {
                   <h5>Technical SEO</h5>
                   <p>
                     If you find out about some technical mishaps on your
-                    website, our Belleville SEO experts are here to help. We'll
+                    website, our Burlington SEO experts are here to help. We'll
                     dive into your website by conducting a site-wide audit to
                     check for problems related to website speed, content and
                     optimization. Our team will fix these issues, helping your
@@ -337,7 +337,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Belleville SEO Company Help Today</h3>
+                  <h3>Have Our Burlington SEO Company Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -355,7 +355,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Why Choose Infused Agency As Your <span>Belleville</span>{" "}
+                    Why Choose Infused Agency As Your <span>Burlington</span>{" "}
                     SEO Agency
                   </h2>
                   <p>Increase Your Website's Rankings With Our SEO Experts</p>
@@ -408,8 +408,8 @@ const SEO = () => {
                 <h3>Do I need SEO?</h3>
                 <p>
                   Does your business depend on attracting new customers? Then
-                  absolutely you need a Belleville SEO company to help you with
-                  SEO services. It's important that our Belleville SEO experts
+                  absolutely you need a Burlington SEO company to help you with
+                  SEO services. It's important that our Burlington SEO experts
                   help your website rank where your customers are looking - on
                   the first page of Google.
                 </p>
@@ -444,9 +444,9 @@ const SEO = () => {
                   rankings.
                 </p>
 
-                <h3>Our Belleville SEO company is ready to help.</h3>
+                <h3>Our Burlington SEO company is ready to help.</h3>
                 <p>
-                  If you need our Belleville SEO company to help your company
+                  If you need our Burlington SEO company to help your company
                   rise in Google with our expert SEO services, click below to
                   get your free SEO quote.
                 </p>
@@ -462,7 +462,7 @@ const SEO = () => {
             <Row className="pd-top-40">
               <Col md="6">
                 <h2>
-                  How to <span>increase conversions</span> using our Belleville
+                  How to <span>increase conversions</span> using our Burlington
                   SEO Company.
                 </h2>
               </Col>
@@ -476,7 +476,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={speed}
-                      alt="Belleville seo agency speed"
+                      alt="Burlington seo agency speed"
                     />
                     <h2>
                       1. <span>Improve Website Speed</span>
@@ -507,7 +507,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={ux}
-                      alt="Belleville seo firm"
+                      alt="Burlington seo firm"
                     />
                     <h2>
                       2. <span>Enhance User Experience (UX)</span>
@@ -537,7 +537,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={opt}
-                      alt="seo in Belleville"
+                      alt="seo in Burlington"
                     />
                     <h2>
                       3. <span>Optimize Landing Pages</span>
@@ -568,7 +568,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={testing}
-                      alt="Belleville seo company services"
+                      alt="Burlington seo company services"
                     />
                     <h2>
                       4. <span>Implement A/B Testing</span>
@@ -600,7 +600,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={social}
-                      alt="search engine optimization Belleville"
+                      alt="search engine optimization Burlington"
                     />
                     <h2>
                       5. <span>Leverage Social Proof</span>
@@ -632,7 +632,7 @@ const SEO = () => {
               <Col lg="12">
                 <div className="card">
                   <img
-                    alt="Belleville seo client"
+                    alt="Burlington seo client"
                     width="48"
                     height="48"
                     src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
@@ -722,7 +722,7 @@ const SEO = () => {
                   </p>
                 </div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91467.92863185698!2d-77.4435389963519!3d44.240570434484084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d628959475af49%3A0x5037b28c7231730!2sBelleville%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1722450871975!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92793.56914773799!2d-79.9223195845663!3d43.38122592133118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b63d2965d93b7%3A0xa44a27764c2b554f!2sBurlington%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1722451029010!5m2!1sen!2sus"
                   width="100%"
                   height="450"
                   allowfullscreen=""

@@ -48,27 +48,14 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Barrie SEO</title>
+        <title>Barrie SEO | ON Search Engine Optimization</title>
         <meta
           name="description"
           content="Barrie SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"
         />
-        <link
-          rel="canonical"
-          href="https://infused.agency/barrie-seo"
-        />
-        <meta
-          property="og:title"
-          content="Barrie SEO | Infused Agency"
-        />
-        <meta
-          name="twitter:title"
-          content="Barrie SEO | Infused Agency"
-        />
-        <link
-          rel="canonical"
-          href="https://infused.agency/barrie-seo"
-        />
+        <meta property="og:title" content="Barrie SEO | Infused Agency" />
+        <meta name="twitter:title" content="Barrie SEO | Infused Agency" />
+        <link rel="canonical" href="https://infused.agency/barrie-seo" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={addJsonLd()}
@@ -84,7 +71,7 @@ const SEO = () => {
       <InnerContent>
         <section className="seo-page">
           <Container>
-          <Row>
+            <Row>
               <Col md="6">
                 <h2>
                   Barrie SEO crafted to <span>engage</span>,{" "}
@@ -103,12 +90,12 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Barrie SEO services</strong>{" "}
-                  that our <strong>Barrie SEO company</strong> provides are
-                  pretty impeccable. We consistently provide great SEO &amp;
-                  digital marketing services to our clients with pretty awesome
-                  results. There are a lot of benefits as to why SEO services
-                  are so important for any local company:
+                  The <strong>Barrie SEO services</strong> that our{" "}
+                  <strong>Barrie SEO company</strong> provides are pretty
+                  impeccable. We consistently provide great SEO &amp; digital
+                  marketing services to our clients with pretty awesome results.
+                  There are a lot of benefits as to why SEO services are so
+                  important for any local company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
@@ -119,9 +106,10 @@ const SEO = () => {
                   <li>It's trackable.</li>
                 </ul>
                 <p>
-                  When you utilize SEO services from our company or use our <Link href="/barrie-web-design">Barrie web design</Link> services and end up
-                  ranking on the first of Google, it's a great way to increase
-                  your company's revenue.
+                  When you utilize SEO services from our company or use our{" "}
+                  <Link href="/barrie-web-design">Barrie web design</Link>{" "}
+                  services and end up ranking on the first of Google, it's a
+                  great way to increase your company's revenue.
                 </p>
               </Col>
             </Row>
@@ -246,9 +234,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>
-                    Ready to grow your business with our Barrie SEO Firm?
-                  </h3>
+                  <h3>Ready to grow your business with our Barrie SEO Firm?</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -265,9 +251,7 @@ const SEO = () => {
             <Container>
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
-                  <h2>
-                    Barrie SEO Services
-                  </h2>
+                  <h2>Barrie SEO Services</h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
                   </p>
@@ -314,9 +298,9 @@ const SEO = () => {
                   <p>
                     It's very important that your on-page work is done well, as
                     it can signal to Google that you may give your users a poor
-                    user experience. This is why our Barrie SEO agency looks
-                    for and fixes these issues for you. We conduct on-page SEO
-                    to help bolster your online presence, amplify your lead
+                    user experience. This is why our Barrie SEO agency looks for
+                    and fixes these issues for you. We conduct on-page SEO to
+                    help bolster your online presence, amplify your lead
                     generation and help boost sales.
                   </p>
                 </Col>
@@ -335,9 +319,9 @@ const SEO = () => {
                   <h5>Technical SEO</h5>
                   <p>
                     If you find out about some technical mishaps on your
-                    website, our Barrie SEO experts are here to help. We'll
-                    dive into your website by conducting a site-wide audit to
-                    check for problems related to website speed, content and
+                    website, our Barrie SEO experts are here to help. We'll dive
+                    into your website by conducting a site-wide audit to check
+                    for problems related to website speed, content and
                     optimization. Our team will fix these issues, helping your
                     website get back on the right track.
                   </p>
@@ -349,10 +333,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>
-                    Have Our Barrie SEO Company Help
-                    Today
-                  </h3>
+                  <h3>Have Our Barrie SEO Company Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -424,9 +405,9 @@ const SEO = () => {
                 <p>
                   Does your business depend on attracting new customers? Then
                   absolutely you need a Barrie SEO company to help you with SEO
-                  services. It's important that our Barrie SEO experts help
-                  your website rank where your customers are looking - on the
-                  first page of Google.
+                  services. It's important that our Barrie SEO experts help your
+                  website rank where your customers are looking - on the first
+                  page of Google.
                 </p>
                 <h3>What's important when it comes to SEO?</h3>
                 <p>
@@ -458,7 +439,7 @@ const SEO = () => {
                   doing so and can help you rise up in the local SEO map pack
                   rankings.
                 </p>
-                
+
                 <h3>Our Barrie SEO company is ready to help.</h3>
                 <p>
                   If you need our Barrie SEO company to help your company rise
@@ -477,168 +458,170 @@ const SEO = () => {
             <Row className="pd-top-40">
               <Col md="6">
                 <h2>
-                  How to <span>increase conversions</span> using our Barrie SEO Company.
+                  How to <span>increase conversions</span> using our Barrie SEO
+                  Company.
                 </h2>
               </Col>
               <Col md="6">&nbsp;</Col>
             </Row>
 
             <section className="seo-conversions">
-            <Row className="pd-top-40">
-              <Col lg="12">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={speed}
-                    alt="barrie seo agency speed"
-                  />
-                  <h2>
-                    1. <span>Improve Website Speed</span>
-                  </h2>
-                  <p>
-                    Website speed significantly impacts user experience and
-                    conversion rates. A slow-loading site can frustrate
-                    visitors, leading to higher bounce rates and fewer
-                    conversions. To boost your website’s speed, start by
-                    optimizing images, which are often the largest files on a
-                    page. Use image compression tools to reduce file sizes
-                    without sacrificing quality. Also, cut down on HTTP requests
-                    by minimizing the number of elements on your page, such as
-                    scripts and stylesheets. Implement browser caching to store
-                    static resources, so they don’t need to be reloaded with
-                    every visit. Utilize tools like Google PageSpeed Insights to
-                    gain valuable insights and recommendations for enhancing
-                    page speed, ensuring a smoother, faster experience for your
-                    users.
-                  </p>
-                </div>
-              </Col>
-            </Row>
+              <Row className="pd-top-40">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={speed}
+                      alt="barrie seo agency speed"
+                    />
+                    <h2>
+                      1. <span>Improve Website Speed</span>
+                    </h2>
+                    <p>
+                      Website speed significantly impacts user experience and
+                      conversion rates. A slow-loading site can frustrate
+                      visitors, leading to higher bounce rates and fewer
+                      conversions. To boost your website’s speed, start by
+                      optimizing images, which are often the largest files on a
+                      page. Use image compression tools to reduce file sizes
+                      without sacrificing quality. Also, cut down on HTTP
+                      requests by minimizing the number of elements on your
+                      page, such as scripts and stylesheets. Implement browser
+                      caching to store static resources, so they don’t need to
+                      be reloaded with every visit. Utilize tools like Google
+                      PageSpeed Insights to gain valuable insights and
+                      recommendations for enhancing page speed, ensuring a
+                      smoother, faster experience for your users.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
 
-            <Row className="pd-top-20">
-              <Col lg="12">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={ux}
-                    alt="barrie seo firm"
-                  />
-                  <h2>
-                    2. <span>Enhance User Experience (UX)</span>
-                  </h2>
-                  <p>
-                    A well-crafted user experience is key to converting visitors
-                    into customers. Start by ensuring your website is
-                    mobile-friendly, as more users browse and shop on
-                    smartphones. Simplify your site’s navigation to help users
-                    find information quickly and intuitively. Use clear,
-                    prominent call-to-action (CTA) buttons to direct users
-                    toward actions like making a purchase or subscribing to a
-                    newsletter. Employ contrasting colors and compelling text to
-                    make CTAs stand out. Additionally, focus on a clean,
-                    visually appealing design that reflects your brand and
-                    caters to your target audience. By prioritizing user
-                    experience, you’ll create a more engaging and effective
-                    website that drives conversions.
-                  </p>
-                </div>
-              </Col>
-            </Row>
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={ux}
+                      alt="barrie seo firm"
+                    />
+                    <h2>
+                      2. <span>Enhance User Experience (UX)</span>
+                    </h2>
+                    <p>
+                      A well-crafted user experience is key to converting
+                      visitors into customers. Start by ensuring your website is
+                      mobile-friendly, as more users browse and shop on
+                      smartphones. Simplify your site’s navigation to help users
+                      find information quickly and intuitively. Use clear,
+                      prominent call-to-action (CTA) buttons to direct users
+                      toward actions like making a purchase or subscribing to a
+                      newsletter. Employ contrasting colors and compelling text
+                      to make CTAs stand out. Additionally, focus on a clean,
+                      visually appealing design that reflects your brand and
+                      caters to your target audience. By prioritizing user
+                      experience, you’ll create a more engaging and effective
+                      website that drives conversions.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
 
-            <Row className="pd-top-20">
-              <Col lg="12">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={opt}
-                    alt="seo in Barrie"
-                  />
-                  <h2>
-                    3. <span>Optimize Landing Pages</span>
-                  </h2>
-                  <p>
-                    Landing pages are crucial for converting visitors into leads
-                    or customers. To optimize these pages, ensure the content is
-                    highly relevant to the traffic source, whether it's an ad,
-                    email, or social media post. The messaging and offers should
-                    match users' expectations when they arrive. Reduce
-                    distractions by eliminating unnecessary elements that could
-                    divert attention from the main objective, such as signing up
-                    for a service or making a purchase. Employ compelling
-                    headlines, persuasive copy, and strong CTAs to encourage
-                    action. Also, incorporate trust signals, like customer
-                    testimonials or security badges, to build credibility and
-                    reassure visitors. An optimized landing page can greatly
-                    enhance conversion rates by delivering a focused and
-                    convincing user experience.
-                  </p>
-                </div>
-              </Col>
-            </Row>
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={opt}
+                      alt="seo in Barrie"
+                    />
+                    <h2>
+                      3. <span>Optimize Landing Pages</span>
+                    </h2>
+                    <p>
+                      Landing pages are crucial for converting visitors into
+                      leads or customers. To optimize these pages, ensure the
+                      content is highly relevant to the traffic source, whether
+                      it's an ad, email, or social media post. The messaging and
+                      offers should match users' expectations when they arrive.
+                      Reduce distractions by eliminating unnecessary elements
+                      that could divert attention from the main objective, such
+                      as signing up for a service or making a purchase. Employ
+                      compelling headlines, persuasive copy, and strong CTAs to
+                      encourage action. Also, incorporate trust signals, like
+                      customer testimonials or security badges, to build
+                      credibility and reassure visitors. An optimized landing
+                      page can greatly enhance conversion rates by delivering a
+                      focused and convincing user experience.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
 
-            <Row className="pd-top-20">
-              <Col lg="12">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={testing}
-                    alt="barrie seo company services"
-                  />
-                  <h2>
-                    4. <span>Implement A/B Testing</span>
-                  </h2>
-                  <p>
-                    A/B testing, also known as split testing, is a powerful
-                    technique for enhancing website elements to boost conversion
-                    rates. This method involves creating two or more versions of
-                    a webpage and comparing their performance to determine which
-                    one delivers the best results. You can test various
-                    elements, such as headlines, images, CTAs, or overall
-                    design, to see what resonates most with your audience. By
-                    analyzing user behavior and engagement metrics, you can
-                    pinpoint which version of a page is more effective in
-                    meeting your conversion goals. Tools like Google Optimize or
-                    Optimizely assist in setting up and managing A/B tests,
-                    offering insights that drive data-informed decisions.
-                    Ongoing A/B testing allows your website to adapt based on
-                    real user feedback, leading to improved conversion rates
-                    over time.
-                  </p>
-                </div>
-              </Col>
-            </Row>
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={testing}
+                      alt="barrie seo company services"
+                    />
+                    <h2>
+                      4. <span>Implement A/B Testing</span>
+                    </h2>
+                    <p>
+                      A/B testing, also known as split testing, is a powerful
+                      technique for enhancing website elements to boost
+                      conversion rates. This method involves creating two or
+                      more versions of a webpage and comparing their performance
+                      to determine which one delivers the best results. You can
+                      test various elements, such as headlines, images, CTAs, or
+                      overall design, to see what resonates most with your
+                      audience. By analyzing user behavior and engagement
+                      metrics, you can pinpoint which version of a page is more
+                      effective in meeting your conversion goals. Tools like
+                      Google Optimize or Optimizely assist in setting up and
+                      managing A/B tests, offering insights that drive
+                      data-informed decisions. Ongoing A/B testing allows your
+                      website to adapt based on real user feedback, leading to
+                      improved conversion rates over time.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
 
-            <Row className="pd-top-20">
-              <Col lg="12">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={social}
-                    alt="search engine optimization barrie"
-                  />
-                  <h2>
-                    5. <span>Leverage Social Proof</span>
-                  </h2>
-                  <p>
-                    Social proof is a psychological concept where individuals
-                    look to others’ actions and opinions to guide their own
-                    decisions. By integrating social proof elements into your
-                    website, you can build trust and credibility, which are
-                    essential for boosting conversions. Feature customer
-                    testimonials prominently, showcasing positive feedback and
-                    experiences from past clients. Adding case studies with
-                    detailed success stories can further illustrate the value of
-                    your products or services. Reviews and ratings significantly
-                    influence potential customers by providing evidence of your
-                    business’s reputation and reliability. Additionally,
-                    highlight any awards or certifications your company has
-                    received to strengthen your credibility. Leveraging social
-                    proof helps create a more persuasive and trustworthy website
-                    that motivates visitors to take action.
-                  </p>
-                </div>
-              </Col>
-            </Row>
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={social}
+                      alt="search engine optimization barrie"
+                    />
+                    <h2>
+                      5. <span>Leverage Social Proof</span>
+                    </h2>
+                    <p>
+                      Social proof is a psychological concept where individuals
+                      look to others’ actions and opinions to guide their own
+                      decisions. By integrating social proof elements into your
+                      website, you can build trust and credibility, which are
+                      essential for boosting conversions. Feature customer
+                      testimonials prominently, showcasing positive feedback and
+                      experiences from past clients. Adding case studies with
+                      detailed success stories can further illustrate the value
+                      of your products or services. Reviews and ratings
+                      significantly influence potential customers by providing
+                      evidence of your business’s reputation and reliability.
+                      Additionally, highlight any awards or certifications your
+                      company has received to strengthen your credibility.
+                      Leveraging social proof helps create a more persuasive and
+                      trustworthy website that motivates visitors to take
+                      action.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
             </section>
 
             <Row>
@@ -734,10 +717,17 @@ const SEO = () => {
                     updated website for their business!
                   </p>
                 </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182567.9856401767!2d-79.96103753918736!3d44.358758812769715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa3371ad7206d%3A0x1d2e0f00a84b535a!2sBarrie%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1722450532675!5m2!1sen!2sus"
+                  width="100%"
+                  height="450"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </Col>
             </Row>
           </Container>
-          
         </section>
       </InnerContent>
       <CTA />
