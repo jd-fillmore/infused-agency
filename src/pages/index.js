@@ -125,7 +125,7 @@ const Home = () => {
     <>
       <Head>
         <title>
-          Niagara Web Design | Best Website Design Company in St. Catharines
+          Niagara Web Design &amp; St. Catharines Digital Marketing Agency
         </title>
         <meta
           name="description"
