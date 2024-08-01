@@ -124,7 +124,9 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Niagara Web Designers | Website Design St. Catharines</title>
+        <title>
+          Niagara Web Design | Best Website Design Company in St. Catharines
+        </title>
         <meta
           name="description"
           content="Niagara web design company specializing in award-winning, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
@@ -192,7 +194,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 d-flex">
               <div className="card">
                 <Image
                   src={webConvImg}
