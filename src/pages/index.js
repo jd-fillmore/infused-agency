@@ -125,12 +125,11 @@ const Home = () => {
     <>
       <Head>
         <title>
-          Niagara Web Design | Best St. Catharines Website Design &amp;
-          Development Agency
+          Niagara Web Design | Affordable Website Design in St. Catharines
         </title>
         <meta
           name="description"
-          content="Niagara web design company specializing in award-winning, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
+          content="Niagara web design company specializing in affordable, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
         />
         <meta
           name="keywords"
