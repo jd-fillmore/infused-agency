@@ -124,9 +124,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>
-          Niagara Web Design | Affordable Website Design in St. Catharines
-        </title>
+        <title>Niagara Web Design | Website Design St. Catharines</title>
         <meta
           name="description"
           content="Niagara web design company specializing in affordable, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
