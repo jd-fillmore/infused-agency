@@ -124,7 +124,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design | Affordable Website Design St. Catharines... | Web Design Niagara | Website Design Niagara | Niagara Falls Web Design | Website Developer Niagara | Web Development Niagara | Web Design Agency Niagara | Website Design Agency Niagara | Web Design Company Niagara | Web Development Companies in Niagara | Web Design Firms in Niagara | Website Development Company Niagara</title>
+        <title>Niagara Web Design, Affordable Website Design St. Catharines | Infused Agency</title>
         <meta
           name="description"
           content="Niagara web design company specializing in affordable, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
