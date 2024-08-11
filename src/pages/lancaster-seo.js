@@ -48,9 +48,9 @@ const SEO = () => {
                   The <strong>Lancaster SEO services</strong> that our{" "}
                   <strong>Lancaster SEO company</strong> provides are pretty
                   impeccable. We consistently provide great SEO services &amp;{" "}
-                  <Link href="/">web design services</Link> to our clients with
-                  pretty awesome results. There are a lot of benefits as to why
-                  SEO services are so important for any local company:
+                  <Link href="/">website design services</Link> to our clients
+                  with pretty awesome results. There are a lot of benefits as to
+                  why SEO services are so important for any local company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
