@@ -61,13 +61,14 @@ const SEO = () => {
                 />
 
                 <p>
-                  St. Catharines boasts a vibrant arts scene. Head to the
-                  downtown area to explore numerous art galleries showcasing
-                  local talents. The blend of traditional and contemporary art
-                  will leave you inspired. Stroll along St. Paul Street, where
-                  each gallery tells a unique story through its exhibits. Marvel
-                  at the brushstrokes, sculptures, and installations that define
-                  the artistic soul of St. Catharines.
+                  As <Link href="/">St. Catharines web design</Link>{" "}
+                  professionals, we know that St. Catharines boasts a vibrant
+                  arts scene. Head to the downtown area to explore numerous art
+                  galleries showcasing local talents. The blend of traditional
+                  and contemporary art will leave you inspired. Stroll along St.
+                  Paul Street, where each gallery tells a unique story through
+                  its exhibits. Marvel at the brushstrokes, sculptures, and
+                  installations that define the artistic soul of St. Catharines.
                 </p>
 
                 <h2>Exploring Nature's Beauty</h2>

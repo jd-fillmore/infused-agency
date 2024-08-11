@@ -49,12 +49,13 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Niagara SEO services</strong>{" "}
-                  that our <strong>Niagara SEO company</strong> provides are
-                  pretty impeccable. We consistently provide great SEO &amp;
-                  digital marketing services to our clients with pretty awesome
-                  results. There are a lot of benefits as to why SEO services
-                  are so important for any local company:
+                  The <strong>Niagara SEO services</strong> that our{" "}
+                  <strong>Niagara SEO company</strong> provides are pretty
+                  impeccable. We consistently provide great SEO &amp;{" "}
+                  <Link href="/">web design services in Niagara</Link> to our
+                  clients with pretty awesome results. There are a lot of
+                  benefits as to why SEO services are so important for any local
+                  company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
@@ -77,8 +78,7 @@ const SEO = () => {
               <Row>
                 <Col lg="12 text-center pd-btm-40">
                   <h2>
-                    Our Niagara SEO Clients{" "}
-                    <span>Get Results</span>
+                    Our Niagara SEO Clients <span>Get Results</span>
                   </h2>
                 </Col>
               </Row>
@@ -254,9 +254,7 @@ const SEO = () => {
             <Container>
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
-                  <h2>
-                    Niagara SEO Services
-                  </h2>
+                  <h2>Niagara SEO Services</h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
                   </p>

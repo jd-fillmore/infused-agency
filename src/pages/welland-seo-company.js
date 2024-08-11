@@ -51,7 +51,8 @@ const SEO = () => {
                 <p>
                   The <strong>Welland SEO services</strong> that our{" "}
                   <strong>Welland SEO company</strong> provides are pretty
-                  impeccable. We consistently provide great SEO services to our
+                  impeccable. We consistently provide great SEO services &amp;{" "}
+                  <Link href="/">Niagara web design services</Link> to our
                   clients with pretty awesome results. There are a lot of
                   benefits as to why SEO services are so important for any local
                   company:

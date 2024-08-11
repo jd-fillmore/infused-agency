@@ -13,7 +13,7 @@ A big part in finding the best SEO keywords for interior designers comes down to
 - What are your customers searching for, in terms of your specific service?
 - What city are you located in?
 
-Since local [search engine optimization](https://infused.agency/seo/) is going to be so huge for you interior design firm (since you offer a local service), it's super important to build an SEO keyword [strategy](https://infused.agency/) for your business. The entire point of SEO is inbound marketing - that is, to bring clients that are looking for what you offer, directly to you.
+Since local [search engine optimization](https://infused.agency/niagara-seo-company/) is going to be so huge for you interior design firm (since you offer a local service), it's super important to build an SEO keyword [strategy](https://infused.agency/) for your business. The entire point of SEO is inbound marketing - that is, to bring clients that are looking for what you offer, directly to you.
 
 SEO for interior designers works so well because even when times are tough - recessions, slow times - it doesn't matter. You're tapping into a market that's outside of your network (people you don't know), who are looking for exactly what you offer.
 
