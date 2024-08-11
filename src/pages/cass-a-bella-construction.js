@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import Nav from "../../components/Nav/nav";
@@ -32,12 +33,13 @@ const CassABella = () => {
                 <h2>Challenge</h2>
                 <p>
                   Fernando of Cass-A-Bella Construction came seeking our
-                  expertise initially because his website's design was very out
-                  of date. The user navigation on the website wasn't easy to
-                  follow, the colours were all over the place and the website's
-                  direction was lacking. Fernando then mentioned to us that his
-                  SEO needed a lot of work, as he would like some new leads
-                  coming in consistently from Google.
+                  expertise initially because his{" "}
+                  <Link href="/">website design</Link> was very out of date. The
+                  user navigation on the website wasn't easy to follow, the
+                  colours were all over the place and the website's direction
+                  was lacking. Fernando then mentioned to us that his SEO needed
+                  a lot of work, as he would like some new leads coming in
+                  consistently from Google.
                 </p>
               </Col>
             </Row>

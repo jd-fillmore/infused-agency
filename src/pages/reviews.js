@@ -111,14 +111,14 @@ const About = () => {
                   </div>
                   <p className="desc">
                     After searching for some time for someone to help me revise
-                    my website and improve the SEO ranking I connected with JD.
-                    He responded very promptly to my initial query, and was
-                    extremely professional in his dealings with me. I especially
-                    appreciated the details in his contract around how the work
-                    would be completed, and what he could and couldn’t do for
-                    me. Being offered different pricing options was unique and
-                    helped in prioritizing my requirements within a tight
-                    timeframe.
+                    my website design and improve the SEO ranking I connected
+                    with JD. He responded very promptly to my initial query, and
+                    was extremely professional in his dealings with me. I
+                    especially appreciated the details in his contract around
+                    how the work would be completed, and what he could and
+                    couldn’t do for me. Being offered different pricing options
+                    was unique and helped in prioritizing my requirements within
+                    a tight timeframe.
                     <br />
                     <br />
                     Despite living some distance away JD communicated with me
@@ -218,10 +218,11 @@ const About = () => {
                     Working with JD was a pleasure. He was extremely responsive
                     and informative from start to finish. JD is creative,
                     efficient, and very knowledgeable in his field. He helped me
-                    and my team create a new website for my business. The design
-                    and development process was smooth and easy. I would
-                    absolutely recommend JD to anyone looking for a new or
-                    updated website for their business!
+                    and my team create a new{" "}
+                    <Link href="/">Niagara website design</Link> for my
+                    business. The design and development process was smooth and
+                    easy. I would absolutely recommend JD to anyone looking for
+                    a new or updated website for their business!
                   </p>
                 </div>
               </Col>

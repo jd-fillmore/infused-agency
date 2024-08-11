@@ -39,9 +39,9 @@ const Services = () => {
                   <Image src={leadGenImg} alt="web designer niagara" />
                   <h2>Lead-Generating Web Design</h2>
                   <p>
-                    Is your website not bringing you customers? We create
-                    lead-generating websites, for the purpose of converting
-                    visitors into customers.
+                    Is your <Link href="/">Niagara website design</Link> not
+                    bringing you customers? We create lead-generating websites,
+                    to convert visitors into customers.
                   </p>
                   <Link href="/web-design">
                     <button>
@@ -62,7 +62,7 @@ const Services = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 d-flex">
                 <div className="card">
                   <Image
                     src={webConvImg}
@@ -93,7 +93,7 @@ const Services = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 d-flex">
                 <div className="card">
                   <Image
                     className="img-fluid"

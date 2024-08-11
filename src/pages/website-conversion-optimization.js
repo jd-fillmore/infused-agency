@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
 import Image from "next/image";
@@ -55,9 +56,10 @@ const WebDesign = () => {
                   <h3>Analyze &amp; Understand</h3>
                   <p>
                     We start with a deep dive into your website's performance
-                    and user behavior. Through comprehensive audits and user
-                    research, we identify key areas for improvement and set
-                    clear goals tailored to your business objectives.
+                    and user behavior. Through comprehensive website design
+                    audits and user research, we identify key areas for
+                    improvement and set clear goals tailored to your business
+                    objectives.
                   </p>
                 </div>
               </Col>
@@ -100,12 +102,13 @@ const WebDesign = () => {
                   Data-Driven Insights for <span>Conversion Optimization</span>
                 </h2>
                 <p>
-                  At Infused Agency, we start with a deep dive into your
-                  website's performance and user behavior. Our comprehensive
-                  audits and user research help us identify key areas for
-                  improvement and set clear, actionable goals tailored to your
-                  business objectives. This foundational analysis ensures we
-                  understand your audience and how best to engage them.
+                  At Infused Agency, we start with a deep dive into your{" "}
+                  <Link href="/">Niagara website design</Link>'s performance and
+                  user behavior. Our comprehensive audits and user research help
+                  us identify key areas for improvement and set clear,
+                  actionable goals tailored to your business objectives. This
+                  foundational analysis ensures we understand your audience and
+                  how best to engage them.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"

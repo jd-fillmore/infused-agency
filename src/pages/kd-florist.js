@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import Nav from "../../components/Nav/nav";
@@ -32,10 +33,12 @@ const KDFlowers = () => {
                 <h2>Challenge</h2>
                 <p>
                   KD Flowers came to us seeking our expertise for two main
-                  reason. They wanted a modern website to professionally reflect
-                  their brand, and they wanted local customers that were
-                  interested in wedding flowers and bridal boutiques, to find
-                  them in Google when they searched for those specific terms.
+                  reason. They wanted a modern{" "}
+                  <Link href="/">web design for their Niagara business</Link> to
+                  professionally reflect their brand, and they wanted local
+                  customers that were interested in wedding flowers and bridal
+                  boutiques, to find them in Google when they searched for those
+                  specific terms.
                 </p>
               </Col>
             </Row>
