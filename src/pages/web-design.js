@@ -99,16 +99,16 @@ const WebDesign = () => {
                 <p>
                   At Infused Agency, we’re dedicated to fueling your business
                   growth through exceptional lead-generation for our{" "}
-                  <Link href="/website-design">website design Niagara</Link>{" "}
-                  clients &amp; beyond. From the initial concept to the final
-                  launch, we craft bespoke digital experiences that drive
-                  results. Leveraging cutting-edge platforms like NextJS,
-                  WordPress, React, and Shopify, we ensure your website not only
-                  looks stunning but also performs optimally. Our expert team
-                  combines strategic design with innovative technology to create
-                  high-converting websites that captivate your audience and
-                  accelerate your business success. Partner with us to transform
-                  your online presence and watch your business thrive.
+                  <Link href="/">website design Niagara</Link> clients &amp;
+                  beyond. From the initial concept to the final launch, we craft
+                  bespoke digital experiences that drive results. Leveraging
+                  cutting-edge platforms like NextJS, WordPress, React, and
+                  Shopify, we ensure your website not only looks stunning but
+                  also performs optimally. Our expert team combines strategic
+                  design with innovative technology to create high-converting
+                  websites that captivate your audience and accelerate your
+                  business success. Partner with us to transform your online
+                  presence and watch your business thrive.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
