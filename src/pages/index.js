@@ -124,14 +124,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design | Website Design St. Catharines</title>
+        <title>Web Design Niagara | Website Design St. Catharines</title>
         <meta
           name="description"
-          content="Niagara web design company specializing in affordable, lead-generating websites to boost sales and leads. Located in St. Catharines. Get a free quote now!"
-        />
-        <meta
-          name="keywords"
-          content="Niagara Web Design, Web Design St. Catharines, Web Designer Niagara, Web Designer St. Catharines, Website Developer Niagara, Website Developer St. Catharines"
+          content="An award-winning boutique Niagara web design company located in St. Catharines. Stand out with our custom website designs. Get a free quote now!"
         />
         <meta
           name="google-site-verification"
@@ -147,12 +143,85 @@ const Home = () => {
       </Head>
       <Nav />
       <Hero />
+
+      <section className="home-top-web">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-7">
+              <h2>
+                Website Design Niagara - <br /> We Make Your Website Your{" "}
+                <span>Best Sales Manager</span>.
+              </h2>
+              <p>
+                Infuse Agency is a renowned Niagara-based web design company,
+                specializing in crafting user-friendly websites that seamlessly
+                blend creativity and functionality. From branding-aligned
+                Niagara web design services and mobile-responsive interfaces to
+                targeted SEO and digital marketing, our digital growth services
+                are designed to drive sales and generate leads through an
+                incorporated modern web design.
+                <br />
+                <br />
+                We've empowered numerous businesses in the Niagara region and
+                beyond, including St. Catharines and Niagara Falls, with
+                websites that are not only visually appealing and easy to use
+                but also optimized to increase leads, boost sales, and enhance
+                credibility. Our team ensures your site ranks well on Google,
+                making it easy for potential customers to find you and take
+                action.
+                <br />
+                <br />
+                We love creating websites with effective elements that help
+                local businesses succeed online. Let our firm transform your
+                website into a powerful tool for driving sales and generating
+                leads!
+              </p>
+
+              <Image
+                className="img-fluid"
+                src={google}
+                alt="web design niagara"
+              />
+            </div>
+            <div className="col-lg-5">
+              <Image
+                width="503"
+                height="343"
+                priority={true}
+                className="img-fluid"
+                src={heroImg}
+                alt="niagara web design"
+              />
+              <br />
+              <br />
+              <div className="card">
+                <h3>10,700</h3>
+                <p>monthly website views</p>
+              </div>
+              <div className="card">
+                <h3>20,000%</h3>
+                <p>increase in leads over 6 months</p>
+              </div>
+              <div className="card">
+                <h3>5,800</h3>
+                <p>new monthly visitors</p>
+              </div>
+              <p className="phone">
+                73 Alexandra Blvd, St. Catharines, ON L2P 1K2
+              </p>
+              <a className="phone" href="tel:(905) 933-3115">
+                (905) 933-3115
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="home-services" title="web design niagara">
         <div className="container">
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                Our <span>Strategic</span> Business Solutions
+                Most <span>Reliable</span> Web Design Niagara Services
               </h2>
               <p>
                 Our lead-generating web design, optimiziation and SEO solutions
@@ -166,11 +235,11 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <Image src={leadGenImg} alt="web designer niagara" />
+                <Image src={leadGenImg} alt="website design niagara" />
                 <h2>Lead-Generating Web Design</h2>
                 <p>
-                  Is your website not bringing you customers? We
-                  create lead-generating websites, for the purpose of converting
+                  Is your website not bringing you customers? We create
+                  lead-generating websites, for the purpose of converting
                   visitors into customers.
                 </p>
                 <Link href="/web-design">
@@ -200,9 +269,8 @@ const Home = () => {
                 />
                 <h2>Website Conversion Optimization</h2>
                 <p>
-                  Is your website not bringing you leads? Our team
-                  will fix conversion barriers, optimizing your website to
-                  convert more.
+                  Is your website not bringing you leads? Our team will fix
+                  conversion barriers, optimizing your website to convert more.
                 </p>
                 <Link href="/web-design">
                   <button>
@@ -253,77 +321,6 @@ const Home = () => {
                   </button>
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="home-top-web">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-7">
-              <h2>
-                Niagara Web Design Company That Makes Your Website
-                Your <span>Best Sales Manager</span>.
-              </h2>
-              <p>
-                As a leading web design company in Niagara, we specialize in
-                crafting user-friendly websites that seamlessly blend
-                creativity and functionality. From branding-aligned designs and
-                mobile-responsive interfaces to targeted SEO and digital
-                marketing, our digital growth services are designed to drive
-                sales and generate leads through an incorporated modern web
-                design.
-                <br />
-                <br />
-                We've empowered numerous businesses in the Niagara region and
-                beyond, including St. Catharines and Niagara Falls, with websites that are not only visually appealing and easy to use but
-                also optimized to increase leads, boost sales, and enhance
-                credibility. Our team ensures your site ranks well on Google,
-                making it easy for potential customers to find you and take
-                action.
-                <br />
-                <br />
-                We love creating websites with effective elements
-                that help local businesses succeed online. Let our firm
-                transform your website into a powerful tool for driving sales
-                and generating leads!
-              </p>
-
-              <Image
-                className="img-fluid"
-                src={google}
-                alt="web design niagara"
-              />
-            </div>
-            <div className="col-lg-5">
-              <Image
-                width="503"
-                height="343"
-                priority={true}
-                className="img-fluid"
-                src={heroImg}
-                alt="niagara web design"
-              />
-              <br />
-              <br />
-              <div className="card">
-                <h3>10,700</h3>
-                <p>monthly website views</p>
-              </div>
-              <div className="card">
-                <h3>20,000%</h3>
-                <p>increase in leads over 6 months</p>
-              </div>
-              <div className="card">
-                <h3>5,800</h3>
-                <p>new monthly visitors</p>
-              </div>
-              <p className="phone">
-                73 Alexandra Blvd, St. Catharines, ON L2P 1K2
-              </p>
-              <a className="phone" href="tel:(905) 933-3115">
-                (905) 933-3115
-              </a>
             </div>
           </div>
         </div>
@@ -446,8 +443,8 @@ const Home = () => {
         <Row className="pd-top-120">
           <Col md="6">
             <h2>
-              Web design crafted to <span>engage</span>,{" "}
-              <span>capture</span> and <span>convert</span>.
+              Web design crafted to <span>engage</span>, <span>capture</span>{" "}
+              and <span>convert</span>.
             </h2>
           </Col>
           <Col md="6">&nbsp;</Col>
@@ -481,14 +478,14 @@ const Home = () => {
           <Row className="text-center w-80">
             <Col lg="12">
               <h2>
-                Our Web Design Agency Will
+                Our Niagara Web Design Agency Will
                 <br />
                 <span>Get You Results</span>.
               </h2>
               <br />
               <h3>
-                Your website will be equipped with everything needed to
-                attract attention and generate more leads.
+                Your website will be equipped with everything needed to attract
+                attention and generate more leads.
               </h3>
             </Col>
           </Row>
@@ -544,7 +541,8 @@ const Home = () => {
                   <h3>Website Analytics</h3>
                   <p>
                     Track monthly website traffic, page visits, leads, and more.
-                    Need Google Analytics? We can install that on your website too.
+                    Need Google Analytics? We can install that on your website
+                    too.
                   </p>
                 </div>
               </Col>
@@ -654,13 +652,14 @@ const Home = () => {
                   </svg>
                 </div>
                 <p className="desc">
-                  Working with Infused Agency was a pleasure. They were extremely
-                  responsive and informative from start to finish. Infused
-                  Agency is creative, efficient, and very knowledgeable in their
-                  field. They helped me and my team create a new website for my
-                  business. The design and development process was smooth and
-                  easy. I would absolutely recommend Infused Agency to anyone
-                  looking for a new or updated website for their business!
+                  Working with Infused Agency was a pleasure. They were
+                  extremely responsive and informative from start to finish.
+                  Infused Agency is creative, efficient, and very knowledgeable
+                  in their field. They helped me and my team create a new
+                  website for my business. The design and development process
+                  was smooth and easy. I would absolutely recommend Infused
+                  Agency to anyone looking for a new or updated website for
+                  their business!
                 </p>
               </div>
             </div>
@@ -746,10 +745,11 @@ const Home = () => {
                   </svg>
                 </div>
                 <p className="desc">
-                  Infused Agency did a fantastic job on my website. They were easy
-                  to work with, always very quick to respond and made designing
-                  the page very simple. I would highly recommend Infused Agency
-                  for all of your web design and development needs!
+                  Infused Agency did a fantastic job on my website. They were
+                  easy to work with, always very quick to respond and made
+                  designing the page very simple. I would highly recommend
+                  Infused Agency for all of your web design and development
+                  needs!
                 </p>
               </div>
             </div>

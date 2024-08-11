@@ -16,12 +16,11 @@ const Hero = () => {
             <Row className="text-center">
               <Col lg="12">
                 <Image src={best} alt="niagara best rated web design company" />
-                <h1 className="intro">
-                  Niagara Web Design | St. Catharines Website Designers
-                </h1>
+                <h1 className="intro">Web Design Niagara</h1>
                 <h2>
-                  We help businesses <span>boost leads</span> and <br />
-                  <span>drive sales</span> through their websites.
+                  We help Niagara businesses <span>boost leads</span> and{" "}
+                  <span>drive sales</span> through custom &amp; affordable
+                  website designs.
                 </h2>
                 <p>
                   From increasing traffic to generating leads and boosting
