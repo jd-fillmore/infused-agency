@@ -16,7 +16,7 @@ const Hero = () => {
             <Row className="text-center">
               <Col lg="12">
                 <Image src={best} alt="niagara best rated web design company" />
-                <h1 className="intro">Web Design Niagara</h1>
+                <h1 className="intro">Niagara Web Design</h1>
                 <h2>
                   We help Niagara businesses <span>boost leads</span> and{" "}
                   <span>drive sales</span> through custom &amp; affordable
