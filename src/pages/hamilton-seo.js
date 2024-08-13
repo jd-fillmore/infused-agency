@@ -53,7 +53,6 @@ const SEO = () => {
           name="description"
           content="Hamilton SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"
         />
-        <link rel="canonical" href="https://infused.agency/hamilton-seo" />
         <meta property="og:title" content="Hamilton SEO | Infused Agency" />
         <meta name="twitter:title" content="Hamilton SEO | Infused Agency" />
         <link rel="canonical" href="https://infused.agency/hamilton-seo" />

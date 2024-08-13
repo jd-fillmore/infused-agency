@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
 import Nav from "../../components/Nav/nav";
-import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
@@ -12,49 +11,94 @@ import website from "../img/thorold-seo-company.webp";
 import treeImg from "../img/tree-reports.png";
 import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
-import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
-import About from "../../components/Home/About/about";
+import CityHeroSEO from "../../components/Home/Hero/cities-hero-seo";
+import speed from "../img/website-speed.webp";
+import ux from "../img/ux.webp";
+import opt from "../img/landing-page.webp";
+import testing from "../img/testing.webp";
+import social from "../img/social.webp";
+
+const addJsonLd = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ServiceAreaBusiness",
+    name: "Infused Agency",
+    description:
+      "Infused Agency provides expert Thorold SEO services, including lead generation, development, and online marketing in Thorold, Canada.",
+    serviceArea: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Thorold",
+        addressCountry: "Canada",
+      },
+    },
+    url: "https://www.infused.agency",
+    logo:
+      "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+  };
+
+  return {
+    __html: JSON.stringify(schema),
+  };
+};
 
 const SEO = () => {
   return (
     <>
       <Head>
-        <title>Thorold SEO Company | Best SEO Services - Infused Agency</title>
+        <title>Thorold SEO | Best SEO Agency in Thorold, ON</title>
         <meta
           name="description"
-          content="Thorold's Best SEO Company. We deliver measurable impact for our clients through our search engine optimization services, bringing you more leads."
+          content="Thorold SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"
         />
+        <meta property="og:title" content="Thorold SEO | Infused Agency" />
+        <meta name="twitter:title" content="Thorold SEO | Infused Agency" />
         <link
           rel="canonical"
           href="https://infused.agency/thorold-seo-company"
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
+        />
       </Head>
       <Nav />
-      <InnerHero
-        title="Thorold SEO Company"
-        description="Infused Agency is an award-winning SEO company in Thorold. We help businesses bring in more revenue through their websites."
-        bgImage={bgImage}
+      <CityHeroSEO
+        city="Thorold"
+        alt="Thorold SEO Agency"
+        desc="From attracting visitors to converting leads and boosting sales, we are your go-to digital partner for achieving outstanding success."
       />
       <InnerContent>
         <section className="seo-page">
           <Container>
+            <Row>
+              <Col md="6">
+                <h2>
+                  Thorold SEO crafted to <span>engage</span>,{" "}
+                  <span>capture</span> and <span>convert</span>.
+                </h2>
+              </Col>
+              <Col md="6">&nbsp;</Col>
+            </Row>
             <Row className="web pd-btm-80">
               <Col md="4">
                 <Image
                   className="img-fluid"
                   src={website}
-                  alt="Thorold seo company, Thorold seo agency, Thorold seo services"
+                  alt="Thorold seo company, Thorold seo services"
                 />
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
                   The <strong>Thorold SEO services</strong> that our{" "}
                   <strong>Thorold SEO company</strong> provides are pretty
-                  impeccable. We consistently provide great SEO services to our
-                  clients with pretty awesome results. There are a lot of
-                  benefits as to why SEO services are so important for any local
-                  company:
+                  impeccable. We consistently provide great SEO &amp; digital
+                  marketing services to our clients with pretty awesome results.
+                  There are a lot of benefits as to why SEO services are so
+                  important for any local company:
                 </p>
                 <ul>
                   <li>Bring in more customers through organic search.</li>
@@ -65,177 +109,136 @@ const SEO = () => {
                   <li>It's trackable.</li>
                 </ul>
                 <p>
-                  When you utilize SEO services from our company and end up
-                  ranking on the first of Google, it's a great way to increase
-                  your company's revenue.
+                  When you utilize SEO services from our company or use our{" "}
+                  <Link href="/thorold-web-design">Thorold web design</Link>{" "}
+                  services and end up ranking on the first of Google, it's a
+                  great way to increase your company's revenue.
                 </p>
               </Col>
             </Row>
           </Container>
-          <section className="results">
-            <Container>
-              <Row>
-                <Col lg="12 text-center pd-btm-40">
+          <section className="home-client-results">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12 text-center">
                   <h2>
-                    Our Nearby Thorold SEO Clients <span>Get Results</span>
+                    Our Local Clients <span>Get Results</span>
                   </h2>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg="4">
+                </div>
+              </div>
+            </div>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-4">
                   <div className="card">
                     <Image
                       className="img-fluid"
                       src={treeImg}
-                      alt="treereports"
+                      alt="website design st catharines"
                     />
-                    <h4>TreeReports</h4>
-                    <p>
-                      "Fantastic experience from start to end. Infused Agency is
-                      organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Thorold
-                      SEO services."
+                    <h3>TreeReports</h3>
+                    <p className="testimonial">
+                      "Fantastic experience from start to end."
                     </p>
-                    <ul>
-                      <li>
-                        <strong>
-                          <span>385% increase</span> in being found online
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>4,000% increase</span> in new website visits
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>1,500% increase</span> in Google rankings for
-                          multiple keywords
-                        </strong>
-                      </li>
-                    </ul>
+                    <div className="highlight">
+                      <h3>385%</h3>
+                      <p>increase in being found online</p>
+                    </div>
                     <Link href="/tree-reports">
-                      Learn More
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
+                      <button>
+                        Case Study
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          height="20px"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                        </svg>
+                      </button>
                     </Link>
                   </div>
-                </Col>
-                <Col lg="4">
+                </div>
+
+                <div className="col-lg-4">
                   <div className="card">
-                    <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
-                    <h4>KD Flowers</h4>
-                    <p>
-                      "Infused Agency drastically improved my online presence.
-                      By using their SEO services, my Thorold company went from
-                      not ranking at all to the first page of Google for tons of
-                      keywords."
+                    <Image
+                      className="img-fluid"
+                      src={kdImg}
+                      alt="seo services in Thorold"
+                    />
+                    <h3>KD Flowers</h3>
+                    <p className="testimonial">
+                      "My business has grown so much!"
                     </p>
-                    <ul>
-                      <li>
-                        <strong>
-                          <span>10,700 website views</span> per month
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>20,000% increase</span> in new leads in the
-                          first 6 months
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>5,800 new people</span> discovering website per
-                          month
-                        </strong>
-                      </li>
-                    </ul>
+                    <div className="highlight">
+                      <h3>5,800</h3>
+                      <p>new people discovering website per month</p>
+                    </div>
                     <Link href="/kd-florist">
-                      Learn More
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
+                      <button>
+                        Case Study
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          height="20px"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                        </svg>
+                      </button>
                     </Link>
                   </div>
-                </Col>
-                <Col lg="4">
+                </div>
+                <div className="col-lg-4 d-flex">
                   <div className="card">
                     <Image
                       className="img-fluid"
                       src={cassImg}
-                      alt="Cass-A-Bella Construction"
+                      alt="Thorold seo agency firm"
                     />
-                    <h4>Cass-A-Bella Construction</h4>
-                    <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your
-                      Thorold business I do recommend Infused Agency for their
-                      services. JD keep up the great work. Thank you."
-                    </p>
-                    <ul>
-                      <li>
-                        <strong>
-                          <span>12,000 photo views</span> per month
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>13,000% increase</span> in new leads in first 6
-                          months
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>2,500 new people</span> discovering website per
-                          month
-                        </strong>
-                      </li>
-                    </ul>
+                    <h3>Cass-A-Bella Construction</h3>
+                    <p className="testimonial">"Great job, WELL DONE!"</p>
+                    <div className="highlight">
+                      <h3>13,000%</h3>
+                      <p>increase in new leads in first 6 months</p>
+                    </div>
                     <Link href="/cass-a-bella-construction">
-                      Learn More
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
+                      <button>
+                        Case Study
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          height="20px"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                        </svg>
+                      </button>
                     </Link>
                   </div>
-                </Col>
-              </Row>
-            </Container>
+                </div>
+              </div>
+            </div>
           </section>
           <section className="call-out">
             <Container>
               <Row>
                 <Col lg="12 text-center">
                   <h3>
-                    Ready to grow your business with top Thorold SEO services?
+                    Ready to grow your business with our Thorold SEO Firm?
                   </h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
@@ -253,9 +256,7 @@ const SEO = () => {
             <Container>
               <Row className="pd-top-80 pd-btm-40">
                 <Col lg="12 text-center">
-                  <h2>
-                    Thorold <span>SEO</span> Services
-                  </h2>
+                  <h2>Thorold SEO Services</h2>
                   <p>
                     Solutions That Bring In Qualified Leads And Boost Your Sales
                   </p>
@@ -265,7 +266,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Keyword Research &amp; Strategy</h5>
                   <p>
-                    Infused Agency's SEO company in Thorold conducts specific
+                    Infused Agency's Thorold SEO services conducts specific
                     keyword research that covers specifically what your users
                     are searching for. We look at keywords as the main
                     foundation to your SEO project. Beyond this, we dive into
@@ -276,7 +277,7 @@ const SEO = () => {
                 <Col lg="4">
                   <h5>Link Building</h5>
                   <p>
-                    Off of your website, our Thorold SEO exports utilize efforts
+                    Off of your website, our Thorold SEO experts utilize efforts
                     to build links to your website, to help your site rise in
                     search rankings. When other websites link back to your own,
                     you can be seen as authoratative and rank for relevant
@@ -337,7 +338,7 @@ const SEO = () => {
             <Container>
               <Row>
                 <Col lg="12 text-center">
-                  <h3>Have Our Thorold SEO Experts Help Today</h3>
+                  <h3>Have Our Thorold SEO Company Help Today</h3>
                   <p>Click the button below to get your free quote.</p>
                   <a
                     target="_blank"
@@ -364,7 +365,7 @@ const SEO = () => {
               <Row>
                 <Col lg="6">
                   <p>
-                    Since 2013 we've been able to help countless local Thorold
+                    Since 2013 we've been able to help countless local
                     businesses (and beyond!) with their{" "}
                     <Link href="/web-design">website design</Link>,{" "}
                     <Link href="/digital-marketing-niagara">
@@ -443,14 +444,7 @@ const SEO = () => {
                   doing so and can help you rise up in the local SEO map pack
                   rankings.
                 </p>
-                <ul>
-                  <li>E-commerce company logo</li>
-                  <li>
-                    All e-commerce product details - things like product titles,
-                    images, descriptions, pricing, etc.
-                  </li>
-                  <li>Any shipping charges you'd like customers to pay.</li>
-                </ul>
+
                 <h3>Our Thorold SEO company is ready to help.</h3>
                 <p>
                   If you need our Thorold SEO company to help your company rise
@@ -466,39 +460,279 @@ const SEO = () => {
                 </a>
               </Col>
             </Row>
+            <Row className="pd-top-40">
+              <Col md="6">
+                <h2>
+                  How to <span>increase conversions</span> using our Thorold SEO
+                  Company.
+                </h2>
+              </Col>
+              <Col md="6">&nbsp;</Col>
+            </Row>
+
+            <section className="seo-conversions">
+              <Row className="pd-top-40">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={speed}
+                      alt="Thorold seo agency speed"
+                    />
+                    <h2>
+                      1. <span>Improve Website Speed</span>
+                    </h2>
+                    <p>
+                      Website speed significantly impacts user experience and
+                      conversion rates. A slow-loading site can frustrate
+                      visitors, leading to higher bounce rates and fewer
+                      conversions. To boost your website’s speed, start by
+                      optimizing images, which are often the largest files on a
+                      page. Use image compression tools to reduce file sizes
+                      without sacrificing quality. Also, cut down on HTTP
+                      requests by minimizing the number of elements on your
+                      page, such as scripts and stylesheets. Implement browser
+                      caching to store static resources, so they don’t need to
+                      be reloaded with every visit. Utilize tools like Google
+                      PageSpeed Insights to gain valuable insights and
+                      recommendations for enhancing page speed, ensuring a
+                      smoother, faster experience for your users.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={ux}
+                      alt="Thorold seo firm"
+                    />
+                    <h2>
+                      2. <span>Enhance User Experience (UX)</span>
+                    </h2>
+                    <p>
+                      A well-crafted user experience is key to converting
+                      visitors into customers. Start by ensuring your website is
+                      mobile-friendly, as more users browse and shop on
+                      smartphones. Simplify your site’s navigation to help users
+                      find information quickly and intuitively. Use clear,
+                      prominent call-to-action (CTA) buttons to direct users
+                      toward actions like making a purchase or subscribing to a
+                      newsletter. Employ contrasting colors and compelling text
+                      to make CTAs stand out. Additionally, focus on a clean,
+                      visually appealing design that reflects your brand and
+                      caters to your target audience. By prioritizing user
+                      experience, you’ll create a more engaging and effective
+                      website that drives conversions.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={opt}
+                      alt="seo in Thorold"
+                    />
+                    <h2>
+                      3. <span>Optimize Landing Pages</span>
+                    </h2>
+                    <p>
+                      Landing pages are crucial for converting visitors into
+                      leads or customers. To optimize these pages, ensure the
+                      content is highly relevant to the traffic source, whether
+                      it's an ad, email, or social media post. The messaging and
+                      offers should match users' expectations when they arrive.
+                      Reduce distractions by eliminating unnecessary elements
+                      that could divert attention from the main objective, such
+                      as signing up for a service or making a purchase. Employ
+                      compelling headlines, persuasive copy, and strong CTAs to
+                      encourage action. Also, incorporate trust signals, like
+                      customer testimonials or security badges, to build
+                      credibility and reassure visitors. An optimized landing
+                      page can greatly enhance conversion rates by delivering a
+                      focused and convincing user experience.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={testing}
+                      alt="Thorold seo company services"
+                    />
+                    <h2>
+                      4. <span>Implement A/B Testing</span>
+                    </h2>
+                    <p>
+                      A/B testing, also known as split testing, is a powerful
+                      technique for enhancing website elements to boost
+                      conversion rates. This method involves creating two or
+                      more versions of a webpage and comparing their performance
+                      to determine which one delivers the best results. You can
+                      test various elements, such as headlines, images, CTAs, or
+                      overall design, to see what resonates most with your
+                      audience. By analyzing user behavior and engagement
+                      metrics, you can pinpoint which version of a page is more
+                      effective in meeting your conversion goals. Tools like
+                      Google Optimize or Optimizely assist in setting up and
+                      managing A/B tests, offering insights that drive
+                      data-informed decisions. Ongoing A/B testing allows your
+                      website to adapt based on real user feedback, leading to
+                      improved conversion rates over time.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+
+              <Row className="pd-top-20">
+                <Col lg="12">
+                  <div className="card">
+                    <Image
+                      className="img-fluid"
+                      src={social}
+                      alt="search engine optimization Thorold"
+                    />
+                    <h2>
+                      5. <span>Leverage Social Proof</span>
+                    </h2>
+                    <p>
+                      Social proof is a psychological concept where individuals
+                      look to others’ actions and opinions to guide their own
+                      decisions. By integrating social proof elements into your
+                      website, you can build trust and credibility, which are
+                      essential for boosting conversions. Feature customer
+                      testimonials prominently, showcasing positive feedback and
+                      experiences from past clients. Adding case studies with
+                      detailed success stories can further illustrate the value
+                      of your products or services. Reviews and ratings
+                      significantly influence potential customers by providing
+                      evidence of your business’s reputation and reliability.
+                      Additionally, highlight any awards or certifications your
+                      company has received to strengthen your credibility.
+                      Leveraging social proof helps create a more persuasive and
+                      trustworthy website that motivates visitors to take
+                      action.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </section>
+
+            <Row>
+              <Col lg="12">
+                <div className="card">
+                  <img
+                    alt="Thorold seo client"
+                    width="48"
+                    height="48"
+                    src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
+                  />
+                  <p className="author">VISCA Electric</p>
+                  <div className="d-flex">
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                        fill="#FFD700"
+                      />
+                    </svg>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                        fill="#FFD700"
+                      />
+                    </svg>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                        fill="#FFD700"
+                      />
+                    </svg>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                        fill="#FFD700"
+                      />
+                    </svg>
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                        fill="#FFD700"
+                      />
+                    </svg>
+                  </div>
+                  <p className="desc">
+                    Working with Infused Agency was a pleasure. They were
+                    extremely responsive and informative from start to finish.
+                    Infused Agency is creative, efficient, and very
+                    knowledgeable in their field. They helped me and my team
+                    create a new website for my business. The design and
+                    development process was smooth and easy. I would absolutely
+                    recommend Infused Agency to anyone looking for a new or
+                    updated website for their business!
+                  </p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93247.42070136285!2d-79.31022917577538!3d43.083875939794495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34ff27154bc97%3A0x3b0d481719e3e990!2sThorold%2C%20ON!5e0!3m2!1sen!2sca!4v1723569122559!5m2!1sen!2sca"
+                  width="100%"
+                  height="450"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </Col>
+            </Row>
           </Container>
-          <About
-            city="Thorold"
-            intro={[
-              "The Regional Municipality of ",
-              <a href="https://en.wikipedia.org/wiki/Thorold">Thorold</a>,
-              " is a city in Ontario, Canada, situated on the Niagara Escarpment. It is likewise the seat of the Regional Municipality of Niagara.",
-            ]}
-            area="83"
-            population="18,003"
-            topSights={[
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01k_14&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20thorold&sa=X&ved=2ahUKEwigoaL1n-73AhWBMM0KHaKVDksQ69EBKAF6BAghEAk">
-                Henry of Pelham Winery in Thorold
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01k_14&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20thorold&sa=X&ved=2ahUKEwigoaL1n-73AhWBMM0KHaKVDksQ69EBKAF6BAghEAk">
-                Niagara College Teaching in Thorold
-              </a>,
-              ", ",
-              <a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4515404%2C4524133%2C4597339%2C4649665%2C4722900%2C4723331%2C4733969%2C4738545%2C4757164%2C4758493%2C4762561%2C4779393&hl=en-CA&gl=ca&ssta=1&dest_mid=%2Fm%2F01k_14&dest_state_type=sattd&dest_src=ts&q=things%20to%20do%20in%20thorold&sa=X&ved=2ahUKEwigoaL1n-73AhWBMM0KHaKVDksQ69EBKAN6BAghEA0">
-                Short Hills Provincial Park in Thorold
-              </a>,
-            ]}
-            qOne="What is Thorold, Ontario known for?"
-            qOneAns="The City of Thorold includes the longest submerged burrow for Ontario known as Thorold Tunnel, is developed late 1960s empowering great many vehicles to cross the Welland Canal."
-            qTwo="Is Thorold a nice place to live?"
-            qTwoAns="Thorold is a seriously sensible spot to live, even by the principles of this somewhat cheap piece of Ontario. Lodging costs are about the most reduced in the area, and it holds a generally common populace - yet it's as yet conceivable to track down an overrated espresso or distinctive cupcake assuming that you truly need one!"
-            qThree="Is Thorold, Ontario considered St. Catharines?"
-            qThreeAns="Catharines—Thorold consisted of the southern part of the City of St. Catharines, the City of Thorold and the northern part of the City of Welland."
-            qFour="When did Thorold, Ontario become a city?"
-            qFourAns="John's and Thorold South, was integrated in 1798, while the Town of Thorold was consolidated as a town in 1850 and afterward as a Town in 1875. In 1970, the new Town of Thorold was made by consolidating the previous Township of Thorold and the previous Town of Thorold."
-            mapURL="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93247.40821488337!2d-79.2978682967711!3d43.08388414322303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34ff27154bc97%3A0x3b0d481719e3e990!2sThorold%2C%20ON!5e0!3m2!1sen!2sca!4v1653055803124!5m2!1sen!2sca"
-          />
         </section>
       </InnerContent>
       <CTA />
