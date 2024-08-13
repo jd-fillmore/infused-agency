@@ -149,20 +149,20 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-7">
               <h2>
-                Website Design Niagara - <br /> We Make Your Website Your{" "}
+                Niagara Web Design Company That Makes Your Website Your{" "}
                 <span>Best Sales Manager</span>.
               </h2>
               <p>
                 Infuse Agency is a renowned Niagara-based web design company,
                 specializing in crafting user-friendly websites that seamlessly
-                blend creativity and functionality. From branding-aligned
-                Niagara web design services and mobile-responsive interfaces to
-                targeted SEO and digital marketing, our digital growth services
-                are designed to drive sales and generate leads through an
-                incorporated modern web design.
+                blend creativity and functionality. From branding-aligned web
+                design services and mobile-responsive interfaces to targeted SEO
+                and digital marketing, our digital growth services are designed
+                to drive sales and generate leads through an incorporated modern
+                web design.
                 <br />
                 <br />
-                We've empowered numerous businesses in the Niagara region and
+                We've empowered numerous local businesses in the area and
                 beyond, including St. Catharines and Niagara Falls, with
                 websites that are not only visually appealing and easy to use
                 but also optimized to increase leads, boost sales, and enhance
@@ -221,11 +221,11 @@ const Home = () => {
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                Most <span>Reliable</span> Web Design Niagara Services
+                Our <span>Strategic</span> Business Solutions
               </h2>
               <p>
                 Our lead-generating web design, optimiziation and SEO solutions
-                help bring you more Niagara leads through your website
+                help bring you more leads through your website
               </p>
             </div>
           </div>
@@ -462,15 +462,14 @@ const Home = () => {
               At Infused Agency, our services are designed to{" "}
               <span>engage</span>, <span>capture</span>, and{" "}
               <span>convert</span>. We excel in crafting visually stunning,
-              user-friendly websites that are specifically tailored for
-              Niagara-based businesses. Our team of expert designers is
-              dedicated to creating high-performing sites that not only attract
-              visitors but also foster meaningful interactions and drive
-              conversions. Whether you’re seeking a brand-new design or a
-              strategic update, our goal is to elevate your online presence and
-              help your business thrive in the competitive Niagara market.
-              Choose Infused Agency for cutting-edge web design solutions that
-              truly deliver results
+              user-friendly websites that are specifically tailored for local
+              businesses. Our team of expert designers is dedicated to creating
+              high-performing sites that not only attract visitors but also
+              foster meaningful interactions and drive conversions. Whether
+              you’re seeking a brand-new design or a strategic update, our goal
+              is to elevate your online presence and help your business thrive
+              in the competitive market. Choose Infused Agency for cutting-edge
+              web design solutions that truly deliver results
             </p>
           </Col>
         </Row>
@@ -478,7 +477,7 @@ const Home = () => {
           <Row className="text-center w-80">
             <Col lg="12">
               <h2>
-                Our Niagara Web Design Agency Will
+                Our Web Design Agency Will
                 <br />
                 <span>Get You Results</span>.
               </h2>

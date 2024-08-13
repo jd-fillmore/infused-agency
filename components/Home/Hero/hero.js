@@ -18,9 +18,8 @@ const Hero = () => {
                 <Image src={best} alt="niagara best rated web design company" />
                 <h1 className="intro">Niagara Web Design</h1>
                 <h2>
-                  We help Niagara businesses <span>boost leads</span> and{" "}
-                  <span>drive sales</span> through custom &amp; affordable
-                  website designs.
+                  We help businesses <span>boost leads</span> and{" "}
+                  <span>drive sales</span> through their websites.
                 </h2>
                 <p>
                   From increasing traffic to generating leads and boosting
