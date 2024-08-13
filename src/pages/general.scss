@@ -273,7 +273,8 @@ form {
   }
   .home-client-results {
     padding-bottom: 0px;
-    h2, span {
+    h2,
+    span {
       color: #fff;
     }
   }
@@ -634,6 +635,18 @@ iframe {
 
 .desc {
   margin-top: 10px !important;
+}
+
+.inner-cities {
+  svg {
+    margin-right: 5px;
+  }
+  button {
+    line-height: 1.4;
+    @include bp-tablet-sm {
+      margin-top: 20px;
+    }
+  }
 }
 
 .intro-web-design {

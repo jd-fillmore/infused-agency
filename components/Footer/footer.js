@@ -25,6 +25,11 @@ const pages = [
     name: "Reviews",
     link: "/reviews",
   },
+  {
+    id: 4,
+    name: "Cities",
+    link: "/cities",
+  },
 ];
 
 const Footer = () => {
@@ -40,14 +45,16 @@ const Footer = () => {
                 local and non-local businesses build their credibility online,
                 as well as help bring in more sales.
               </p>
-              Follow us on{" "}
-              <a
-                rel="noreferrer"
-                href="https://www.instagram.com/infusedweb/"
-                target="_blank"
-              >
-                Instagram
-              </a>
+              <p>
+                Follow us on{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://www.instagram.com/infusedweb/"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </p>
             </Col>
             <Col lg="2">
               <h3>Pages</h3>
@@ -86,216 +93,8 @@ const Footer = () => {
               >
                 <strong>Get Free Quote</strong>
               </a>
-              {/* <br />
-              <a href="mailto:hello@infused.agency">hello@infused.agency</a>
-              <br /> */}
-              {/* <a class="phone" href="tel:(905) 933-3115">
-                (905) 933-3115
-              </a>
-              <p>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</p> */}
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="8">
-              <h3>Areas Served</h3>
-              <Accordion>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>SEO</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <Link href="/alliston-seo">Alliston SEO</Link>,{" "}
-                    <Link href="/ancaster-seo">Ancaster SEO</Link>,{" "}
-                    <Link href="/attica-seo">Attica NY SEO</Link>,{" "}
-                    <Link href="/avon-seo">Avon NY SEO</Link>,{" "}
-                    <Link href="/barrie-seo">Barrie SEO</Link>,{" "}
-                    <Link href="/belleville-seo">Belleville SEO</Link>,{" "}
-                    <Link href="/batavia-seo">Batavia NY SEO</Link>,{" "}
-                    <Link href="/beamsville-seo-company">Beamsville SEO</Link>,{" "}
-                    <Link href="/brantford-seo">Brantford SEO</Link>,{" "}
-                    <Link href="/burlington-seo">Burlington SEO</Link>,{" "}
-                    <Link href="/caledonia-seo">Caledonia SEO</Link>,{" "}
-                    <Link href="/cambridge-seo">Cambridge SEO</Link>,{" "}
-                    <Link href="/collingwood-seo">Collingwood SEO</Link>,{" "}
-                    <Link href="/crystal-beach-seo-company">
-                      Crystal Beach SEO
-                    </Link>
-                    , <Link href="/depew-seo">Depew NY SEO</Link>,{" "}
-                    <Link href="/dundas-seo">Dundas SEO</Link>,{" "}
-                    <Link href="/east-aurora-seo">East Aurora NY SEO</Link>,{" "}
-                    <Link href="/fonthill-seo-company">Fonthill SEO</Link>,{" "}
-                    <Link href="/fort-erie-seo-company">Fort Erie SEO</Link>,{" "}
-                    <Link href="/grimsby-seo-company">Grimsby SEO</Link>,{" "}
-                    <Link href="/guelph-seo">Guelph SEO</Link>,{" "}
-                    <Link href="/lancaster-seo">Lancaster NY SEO</Link>,{" "}
-                    <Link href="/lockport-seo">Lockport NY SEO</Link>,{" "}
-                    <Link href="/niagara-seo-company">Niagara SEO</Link>,{" "}
-                    <Link href="/niagara-on-the-lake-seo">
-                      Niagara-on-the-Lake SEO
-                    </Link>
-                    , <Link href="/port-colborne-seo">Port Colborne SEO</Link>,{" "}
-                    <Link href="/stoney-creek-seo">Stoney Creek SEO</Link>,{" "}
-                    <Link href="/thorold-seo-company">Thorold SEO</Link>,{" "}
-                    <Link href="/wainfleet-seo">Wainfleet SEO</Link>,{" "}
-                    <Link href="/warsaw-seo">Warsaw NY SEO</Link>,{" "}
-                    <Link href="/waterdown-seo">Waterdown SEO</Link>,{" "}
-                    <Link href="/welland-seo-company">Welland SEO</Link>.
-                  </AccordionItemPanel>
-                </AccordionItem>
-
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>Web Design</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <Link href="/alliston-web-design">Alliston Web Design</Link>
-                    ,{" "}
-                    <Link href="/ancaster-web-design">Ancaster Web Design</Link>
-                    ,{" "}
-                    <Link href="/attica-web-design">Attica NY Web Design</Link>,{" "}
-                    <Link href="/avon-web-design">Avon NY Web Design</Link>,{" "}
-                    <Link href="/barrie-web-design">Barrie Web Design</Link>,{" "}
-                    <Link href="/batavia-web-design">
-                      Batavia NY Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/beamsville-web-design">
-                      Beamsville Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/brantford-web-design">
-                      Brantford Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/belleville-web-design">
-                      Belleville Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/burlington-web-design">
-                      Burlington Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/caledonia-web-design">
-                      Caledonia Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/cambridge-web-design">
-                      Cambridge Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/collingwood-web-design">
-                      Collingwood Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/crystal-beach-web-design">
-                      Crystal Beach Web Design
-                    </Link>
-                    , <Link href="/depew-web-design">Depew NY Web Design</Link>,{" "}
-                    <Link href="/east-aurora-web-design">
-                      East Aurora NY Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/fonthill-web-design">Fonthill Web Design</Link>
-                    ,{" "}
-                    <Link href="/fort-erie-web-design">
-                      Fort Erie Web Design
-                    </Link>
-                    , <Link href="/grimsby-web-design">Grimsby Web Design</Link>
-                    , <Link href="/guelph-web-design">Guelph Web Design</Link>,{" "}
-                    <Link href="/web-design-hamilton">Hamilton Web Design</Link>
-                    , <Link href="/kanata-web-design">Kanata Web Design</Link>,{" "}
-                    <Link href="/kitchener-web-design">
-                      Kitchener Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/lancaster-web-design">
-                      Lancaster NY Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/lockport-web-design">
-                      Lockport NY Web Design
-                    </Link>
-                    , <Link href="/markham-web-design">Markham Web Design</Link>
-                    , <Link href="/milton-web-design">Milton Web Design</Link>,{" "}
-                    <Link href="/newmarket-web-design">
-                      Newmarket Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/north-bay-web-design">
-                      North Bay Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/web-design-oakville">Web Design Oakville</Link>
-                    , <Link href="/oshawa-web-design">Oshawa Web Design</Link>,{" "}
-                    <Link href="/ottawa-web-design">Ottawa Web Design</Link>,{" "}
-                    <Link href="/peterborough-web-design">
-                      Peterborough Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/pickering-web-design">
-                      Pickering Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/port-colborne-web-design">
-                      Port Colborne Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/sault-ste-marie-web-design">
-                      Sault Ste. Marie Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/stoney-creek-web-design">
-                      Stoney Creek Web Design
-                    </Link>
-                    , <Link href="/thorold-web-design">Thorold Web Design</Link>
-                    ,{" "}
-                    <Link href="/thunder-bay-web-design">
-                      Thunder Bay Web Design
-                    </Link>
-                    , <Link href="/vaughan-web-design">Vaughan Web Design</Link>
-                    ,{" "}
-                    <Link href="/wainfleet-web-design">
-                      Wainfleet Web Design
-                    </Link>
-                    ,{" "}
-                    <Link href="/waterloo-web-design">Waterloo Web Design</Link>
-                    ,{" "}
-                    <Link href="/warsaw-web-design">Warsaw NY Web Design</Link>,{" "}
-                    <Link href="/waterdown-web-design">
-                      Waterdown Web Design
-                    </Link>
-                    , <Link href="/web-design-welland">Welland Web Design</Link>
-                    , <Link href="/windsor-web-design">Windsor Web Design</Link>
-                    ,{" "}
-                    <Link href="/ontario-arborist-tree-removal-websites">
-                      Ontario Arborist Tree Removal Websites
-                    </Link>
-                    ,{" "}
-                    <Link href="/alberta-arborist-tree-removal-websites">
-                      Alberta Arborist Tree Removal Websites
-                    </Link>
-                    ,{" "}
-                    <Link href="/british-columbia-arborist-tree-removal-websites">
-                      British Columbia Arborist Tree Removal Websites
-                    </Link>
-                    , {""}
-                    <Link href="/los-angeles-arborist-tree-removal-websites">
-                      Los Angeles Arborist Tree Removal Websites
-                    </Link>
-                    , {""}
-                    <Link href="/new-york-arborist-tree-removal-websites">
-                      New York Arborist Tree Removal Websites
-                    </Link>
-                    , {""}
-                    <Link href="/ontario-dental-medical-clinic-websites">
-                      Ontario Dental Medical Clinic Websites
-                    </Link>
-                    .
-                  </AccordionItemPanel>
-                </AccordionItem>
-              </Accordion>
-            </Col>
-            <Col lg="4">
+              <br />
+              <br />
               <h3>Hours</h3>
               <ul>
                 <li>Monday - 9a.m.-6p.m.</li>
