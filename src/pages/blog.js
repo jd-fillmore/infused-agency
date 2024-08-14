@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import { getPaginatedPostsData } from "./lib/posts";
+import { getPaginatedPostsData } from "../lib/posts";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import Head from "next/head";

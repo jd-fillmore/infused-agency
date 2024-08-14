@@ -1,5 +1,5 @@
 import React from "react";
-import { getLatestPosts } from "./lib/posts";
+import { getLatestPosts } from "../lib/posts";
 import { Container, Row, Col } from "reactstrap";
 import { format } from "date-fns";
 import Button from "../../components/Button/button";
