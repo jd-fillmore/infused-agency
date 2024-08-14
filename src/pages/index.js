@@ -20,22 +20,6 @@ import kdImg from "../../src/img/kd-flowers.webp";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/web-design-niagara.webp";
 import heroImg from "../../src/img/niagara-web-design-marketing-agency.png";
-import intro from "../../src/img/web-design-niagara-website.webp";
-import img1 from "../../src/img/lead-capture.png";
-import img2 from "../../src/img/mb-friend.png";
-import img3 from "../../src/img/inc.png";
-import img4 from "../../src/img/easy.png";
-import img5 from "../../src/img/anal.png";
-import img6 from "../../src/img/sec.png";
-import design from "../../src/img/1-design.webp";
-import growth from "../../src/img/lead-gen-website-design.webp";
-import funnel from "../../src/img/lead-gen-convert.jpg";
-import convert from "../../src/img/conversion-web.jpg";
-import discover from "../../src/img/1-discover.webp";
-import realdesign from "../../src/img/3-design.webp";
-import dev from "../../src/img/4-develop.webp";
-import launch from "../../src/img/5-launch.webp";
-import promote from "../../src/img/5-promote.webp";
 
 const addJsonLd = () => {
   const schema = {

@@ -1,9 +1,15 @@
+// lib/posts.js
+
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
+/**
+ * Gets sorted posts data.
+ * @returns {Array} Array of sorted posts data.
+ */
 export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -23,6 +29,12 @@ export function getSortedPostsData() {
   return allPostsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+/**
+ * Gets paginated posts data.
+ * @param {number} page - The page number.
+ * @param {number} limit - The number of posts per page.
+ * @returns {Object} An object containing paginated posts and total count.
+ */
 export function getPaginatedPostsData(page = 1, limit = 5) {
   const allPosts = getSortedPostsData();
   const start = (page - 1) * limit;
@@ -33,6 +45,11 @@ export function getPaginatedPostsData(page = 1, limit = 5) {
   };
 }
 
+/**
+ * Gets latest posts data.
+ * @param {number} limit - The number of latest posts to retrieve.
+ * @returns {Array} Array of latest posts data.
+ */
 export function getLatestPosts(limit = 3) {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPosts = fileNames.map((fileName) => {
@@ -43,7 +60,7 @@ export function getLatestPosts(limit = 3) {
       id: fileName.replace(/\.md$/, ""),
       ...matterResult.data,
       content: matterResult.content,
-      date: matterResult.data.date ? matterResult.data.date.toString() : "", // Ensure date is a string
+      date: matterResult.data.date ? matterResult.data.date.toString() : "",
     };
   });
   const sortedPosts = allPosts
