@@ -30,6 +30,11 @@ const pages = [
     name: "Cities",
     link: "/cities",
   },
+  {
+    id: 5,
+    name: "Blog",
+    link: "/blog",
+  },
 ];
 
 const Footer = () => {

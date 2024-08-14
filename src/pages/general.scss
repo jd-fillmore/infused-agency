@@ -523,12 +523,44 @@ span {
   font-family: "Poppins", sans-serif;
 }
 
-.blog {
-  h2 {
-    font-weight: bold;
-    margin-top: 60px;
-    margin-bottom: 30px;
+.home-blog {
+  padding: 120px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
   }
+  h2 {
+    font-size: inherit;
+    text-align: center;
+    margin-bottom: 30px;
+    &.title {
+      font-size: 44px;
+    }
+  }
+  a {
+    font-size: 26px;
+    transition: 0s;
+    line-height: 1.4;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+
+.blog-overview {
+  h2 {
+    font-size: inherit;
+  }
+  a {
+    font-size: 26px;
+    transition: 0s;
+    line-height: 1.4;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+
+.blog {
   img {
     margin-bottom: 30px;
   }

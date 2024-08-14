@@ -1,5 +1,7 @@
 import React from "react";
+import { getLatestPosts } from "./lib/posts";
 import { Container, Row, Col } from "reactstrap";
+import { format } from "date-fns";
 import Button from "../../components/Button/button";
 import "react-accessible-accordion/dist/fancy-example.css";
 import Head from "next/head";
@@ -120,7 +122,7 @@ const addJsonLd = () => {
   };
 };
 
-const Home = () => {
+const Home = ({ latestPosts }) => {
   return (
     <>
       <Head>
@@ -439,501 +441,40 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Container>
-        <Row className="pd-top-120">
-          <Col md="6">
-            <h2>
-              Web design crafted to <span>engage</span>, <span>capture</span>{" "}
-              and <span>convert</span>.
-            </h2>
-          </Col>
-          <Col md="6">&nbsp;</Col>
-        </Row>
-        <Row className="pd-top-80 pd-btm-80">
-          <Col lg="6">
-            <Image
-              className="img-fluid"
-              src={intro}
-              alt="web design Niagara conversion"
-            />
-          </Col>
-          <Col lg="6">
-            <p>
-              At Infused Agency, our services are designed to{" "}
-              <span>engage</span>, <span>capture</span>, and{" "}
-              <span>convert</span>. We excel in crafting visually stunning,
-              user-friendly websites that are specifically tailored for local
-              businesses. Our team of expert designers is dedicated to creating
-              high-performing sites that not only attract visitors but also
-              foster meaningful interactions and drive conversions. Whether
-              you’re seeking a brand-new design or a strategic update, our goal
-              is to elevate your online presence and help your business thrive
-              in the competitive market. Choose Infused Agency for cutting-edge
-              web design solutions that truly deliver results
-            </p>
-          </Col>
-        </Row>
-        <div className="niche-services pd-top-40">
-          <Row className="text-center w-80">
+      <section className="home-blog">
+        <Container>
+          <Row>
             <Col lg="12">
-              <h2>
-                Our Web Design Agency Will
-                <br />
-                <span>Get You Results</span>.
-              </h2>
-              <br />
-              <h3>
-                Your website will be equipped with everything needed to attract
-                attention and generate more leads.
-              </h3>
+              <h2 className="title">Latest Blog Posts</h2>
+              <Row>
+                {latestPosts.map(({ id, date, title, excerpt, image }) => (
+                  <Col lg="4" md="6" sm="12" key={id} className="mb-4">
+                    <Link href={`/posts/${id}`}>
+                      {image && (
+                        <Image
+                          src={image}
+                          className="img-fluid"
+                          alt={`Preview image for ${title}`}
+                          width={600}
+                          height={400}
+                        />
+                      )}
+                    </Link>
+                    <div className="post-card card">
+                      <h3>
+                        <Link href={`/posts/${id}`}>{title}</Link>
+                      </h3>
+                      <small>
+                        {format(new Date(date), "eeee, MMMM d, yyyy")}
+                      </small>
+                      <p>{excerpt}</p>
+                    </div>
+                  </Col>
+                ))}
+              </Row>
             </Col>
           </Row>
-          <section className="home-cards">
-            <Row className="pd-top-40">
-              <Col lg="4" className="d-flex">
-                <div className="card">
-                  <Image src={img1} alt="lead capture" />
-                  <h3>Lead Capture</h3>
-                  <p>
-                    Leverage pre-built web forms to attract, capture, and
-                    nurture leads from different sections of your website.
-                  </p>
-                </div>
-              </Col>
-              <Col lg="4">
-                <div className="card">
-                  <Image src={img2} alt="mobile friendly" />
-                  <h3>Mobile-Friendly</h3>
-                  <p>
-                    Our websites are built to be fully compatible with the
-                    latest browsers and mobile devices, ensuring you always
-                    present a polished and professional appearance.
-                  </p>
-                </div>
-              </Col>
-              <Col lg="4" className="d-flex">
-                <div className="card">
-                  <Image src={img3} alt="increase conversions" />
-                  <h3>Increase Conversions</h3>
-                  <p>
-                    Foster trust and create interest in your services. We assist
-                    in setting you apart from the competition.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="4">
-                <div className="card">
-                  <Image src={img4} alt="Easily Update Content" />
-                  <h3>Easily Update Content</h3>
-                  <p>
-                    Effortlessly update your website content, add new pages,
-                    upload images, adjust meta-tags, and incorporate new team
-                    members, among other tasks.
-                  </p>
-                </div>
-              </Col>
-              <Col lg="4" className="d-flex">
-                <div className="card">
-                  <Image src={img5} alt="Website Analytics" />
-                  <h3>Website Analytics</h3>
-                  <p>
-                    Track monthly website traffic, page visits, leads, and more.
-                    Need Google Analytics? We can install that on your website
-                    too.
-                  </p>
-                </div>
-              </Col>
-              <Col lg="4" className="d-flex">
-                <div className="card">
-                  <Image src={img6} alt="security built in" />
-                  <h3>Security Built In</h3>
-                  <p>
-                    We set up SSL for your website from day one, ensuring the
-                    green lock icon in browsers that your clients expect.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-          </section>
-        </div>
-      </Container>
-      <section className="home-reviews">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-lg-12">
-              <h2>
-                Take Our <span>Client's Word</span> For It
-              </h2>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="card">
-                <img
-                  alt="visca electric niagara web design"
-                  width="48"
-                  height="48"
-                  src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
-                />
-                <p className="author">VISCA Electric</p>
-                <div className="d-flex">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-                <p className="desc">
-                  Working with Infused Agency was a pleasure. They were
-                  extremely responsive and informative from start to finish.
-                  Infused Agency is creative, efficient, and very knowledgeable
-                  in their field. They helped me and my team create a new
-                  website for my business. The design and development process
-                  was smooth and easy. I would absolutely recommend Infused
-                  Agency to anyone looking for a new or updated website for
-                  their business!
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6  d-flex">
-              <div className="card">
-                <img
-                  alt="ggs website design niagara"
-                  width="48"
-                  height="48"
-                  src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
-                />
-                <p className="author">GGS Niagara Landscaping</p>
-                <div className="d-flex">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-                <p className="desc">
-                  Infused Agency did a fantastic job on my website. They were
-                  easy to work with, always very quick to respond and made
-                  designing the page very simple. I would highly recommend
-                  Infused Agency for all of your web design and development
-                  needs!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="card">
-                <img
-                  alt="cassabella web design st catharines"
-                  width="48"
-                  height="48"
-                  src="https://lh3.googleusercontent.com/a/ACg8ocK7n2huRETLbFAnVB-Yq-Mt4VECcxfE9PfP_dzle024Afradg=w48-h48-p-rp-mo-br100"
-                />
-                <p className="author">Cass-A-Bella Construction</p>
-                <div className="d-flex">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-                <p className="desc">
-                  Great Job, WELL DONE! I'm very pleased with the service and
-                  the design of my new website. If you ever need a new website I
-                  do recommend INFUSED AGENCY for there services. Infused Agency
-                  keep up the great work. Thank you.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6 d-flex">
-              <div className="card">
-                <img
-                  alt="treereports website design niagara"
-                  width="48"
-                  height="48"
-                  src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
-                />
-                <p className="author">TreeReports</p>
-                <div className="d-flex">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-                <p className="desc">
-                  Fantastic experience from start to end. Infused Agency is
-                  organized, thorough and professional. I highly recommend their
-                  company and services if you are thinking of building a
-                  website.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Container>
       </section>
 
       <section className="cta home-cta">
@@ -975,3 +516,12 @@ const Home = () => {
 };
 
 export default Home;
+
+export async function getStaticProps() {
+  const latestPosts = getLatestPosts(3);
+  return {
+    props: {
+      latestPosts,
+    },
+  };
+}

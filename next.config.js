@@ -182,6 +182,33 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source:
+          "/posts/how-can-i-generate-website-traffic-with-0-marketing-budget",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source:
+          "/posts/how-can-i-generate-website-traffic-with-0-marketing-budget",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/posts/how-to-build-a-website-with-good-seo-in-mind/",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/posts/best-seo-keywords-for-interior-designers/",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/5-effective-seo-techniques-for-landscaping-companies/",
+        destination: "/",
+        permanent: true,
+      },
     ];
   },
 };
