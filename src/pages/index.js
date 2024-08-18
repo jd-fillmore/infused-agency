@@ -143,18 +143,24 @@ const Home = ({ latestPosts }) => {
               <p>
                 Infused Agency is a renowned Niagara-based web design company,
                 specializing in crafting user-friendly websites that seamlessly
-                blend creativity and functionality. From branding-aligned web
-                design services and mobile-responsive interfaces to targeted SEO
-                and digital marketing, our digital growth services are designed
-                to drive sales and generate leads through an incorporated modern
-                web design.
+                blend creativity and functionality. From concept to conversion,
+                we craft bespoke digital experiences that merge your brand's
+                essence with cutting-edge design. Our comprehensive suite of
+                services - spanning responsive web development, strategic SEO,
+                and targeted digital marketing - is engineered to transform your
+                online presence into a powerful lead generation and sales
+                acceleration engine. By seamlessly integrating modern design
+                principles with growth-driven strategies, we create websites
+                that not only captivate visitors but also drive measurable
+                business results.
                 <br />
                 <br />
-                We've empowered numerous local businesses in the area and
-                beyond, including St. Catharines, Niagara Falls, Welland, Fort
-                Erie, Thorold, and Niagara-on-the-Lake, with websites that are
-                not only visually appealing and easy to use but also optimized
-                to increase leads, boost sales, and enhance credibility.
+                Our portfolio showcases a diverse array of success stories,
+                including businesses in St. Catharines, Niagara Falls, Welland,
+                Fort Erie, Thorold, and Niagara-on-the-Lake, with websites that
+                are not only visually appealing and easy to use but also
+                optimized to increase leads, boost sales, and enhance
+                credibility.
                 <br />
                 <br />
                 With over a decade of experience and a team of seasoned experts,
