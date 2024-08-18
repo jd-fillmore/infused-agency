@@ -20,6 +20,8 @@ import kdImg from "../../src/img/kd-flowers.webp";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/web-design-niagara.webp";
 import heroImg from "../../src/img/niagara-web-design-marketing-agency.png";
+import tech from "../../src/img/web-design-technologies.webp";
+import process from "../../src/img/web-design-process.webp";
 
 const addJsonLd = () => {
   const schema = {
@@ -113,7 +115,7 @@ const Home = ({ latestPosts }) => {
         <title>Niagara Web Design | Website Design St. Catharines</title>
         <meta
           name="description"
-          content="An award-winning boutique Niagara web design company located in St. Catharines. Stand out with our custom website designs. Get a free quote now!"
+          content="Award-winning Niagara web design company in St. Catharines. We create custom, lead-generating websites for businesses across the Niagara region. Get your free quote today!"
         />
         <meta
           name="google-site-verification"
@@ -139,7 +141,7 @@ const Home = ({ latestPosts }) => {
                 <span>Best Sales Manager</span>.
               </h2>
               <p>
-                Infuse Agency is a renowned Niagara-based web design company,
+                Infused Agency is a renowned Niagara-based web design company,
                 specializing in crafting user-friendly websites that seamlessly
                 blend creativity and functionality. From branding-aligned web
                 design services and mobile-responsive interfaces to targeted SEO
@@ -149,18 +151,19 @@ const Home = ({ latestPosts }) => {
                 <br />
                 <br />
                 We've empowered numerous local businesses in the area and
-                beyond, including St. Catharines and Niagara Falls, with
-                websites that are not only visually appealing and easy to use
-                but also optimized to increase leads, boost sales, and enhance
-                credibility. Our team ensures your site ranks well on Google,
-                making it easy for potential customers to find you and take
-                action.
+                beyond, including St. Catharines, Niagara Falls, Welland, Fort
+                Erie, Thorold, and Niagara-on-the-Lake, with websites that are
+                not only visually appealing and easy to use but also optimized
+                to increase leads, boost sales, and enhance credibility.
                 <br />
                 <br />
-                We love creating websites with effective elements that help
-                local businesses succeed online. Let our firm transform your
-                website into a powerful tool for driving sales and generating
-                leads!
+                With over a decade of experience and a team of seasoned experts,
+                we bring unparalleled knowledge and skill to every project. Our
+                team ensures your site ranks well on Google, making it easy for
+                potential customers to find you and take action. We love
+                creating websites with effective elements that help local
+                businesses succeed online. Let our firm transform your website
+                into a powerful tool for driving sales and generating leads!
               </p>
 
               <Image
@@ -309,6 +312,62 @@ const Home = ({ latestPosts }) => {
               </div>
             </div>
           </div>
+          <div className="row pd-top-80">
+            <div className="col-lg-12 text-center">
+              <h2>
+                Our <span>Web Design</span> Process &amp; Technologies
+              </h2>
+              <p>
+                We blend advanced tech with proven methods to build websites
+                that grow your business.
+              </p>
+            </div>
+          </div>
+          <Row className="pd-top-40">
+            <Col lg="6">
+              <p>
+                At Infused Agency, we leverage cutting-edge technologies to
+                deliver high-performance websites tailored to your business
+                needs. For static sites, we utilize Next.js, a powerful React
+                framework that ensures lightning-fast load times and excellent
+                SEO performance. For content-rich, dynamic websites, we harness
+                the flexibility of WordPress, the world's most popular content
+                management system.
+              </p>
+            </Col>
+            <Col lg="6">
+              <div className="card">
+                <Image
+                  className="img-fluid"
+                  src={tech}
+                  alt="web design technologies"
+                />
+              </div>
+            </Col>
+          </Row>
+          <Row className="pd-top-40 align-items-center">
+            <Col lg="6">
+              <div className="card">
+                <Image
+                  className="img-fluid"
+                  src={process}
+                  alt="web design process"
+                />
+              </div>
+            </Col>
+            <Col lg="6">
+              <p>
+                Our process begins with a thorough consultation to understand
+                your goals, followed by meticulous planning and design. We then
+                move to development, where our expert team brings your vision to
+                life using these advanced technologies. Throughout the process,
+                we prioritize responsive design, ensuring your site looks and
+                functions flawlessly across all devices. Before launch, we
+                conduct rigorous testing and optimization to guarantee a smooth
+                user experience and strong search engine performance.
+              </p>
+            </Col>
+          </Row>
         </div>
       </section>
       <section className="home-client-results">
