@@ -26,7 +26,7 @@ const Example = (props) => {
   return (
     <div className="fixed-top">
       <Navbar id="nav" expand="lg">
-        <Container>
+        <Container fluid>
           <NavbarBrand
             className="logo"
             name="Niagara Web Design Company Infused Agency"
@@ -66,28 +66,27 @@ const Example = (props) => {
                 </Link>
               </NavItem>
               <NavItem>
+                <Link href="/process" className="nav-link">
+                  Process
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link href="/about" className="nav-link">
+                  About
+                </Link>
+              </NavItem>
+              <NavItem>
                 <Link href="/blog" className="nav-link">
                   Blog
                 </Link>
               </NavItem>
-              {/* <NavItem>
-                <Link href="/about" className="nav-link">
-                  About
-                </Link>
-              </NavItem> */}
-              {/* <NavItem>
-                <Link href="/posts" className="nav-link">
-                  Blog
-                </Link>
-              </NavItem> */}
               <NavItem>
                 <a
                   className="nav-link btn"
-                  href="https://calendly.com/infused-agency/project-discovery/"
-                  target="_blank"
+                  href="/get-a-quote"
                   rel="noreferrer"
                 >
-                  Get Free Quote
+                  Get A Quote
                   <svg
                     stroke="currentColor"
                     fill="currentColor"

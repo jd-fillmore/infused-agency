@@ -12,28 +12,43 @@ import Link from "next/link";
 const pages = [
   {
     id: 1,
-    name: "Services",
-    link: "/services",
+    name: "Home",
+    link: "/",
   },
   {
     id: 2,
+    name: "Solutions",
+    link: "/services",
+  },
+  {
+    id: 3,
     name: "Work",
     link: "/work",
   },
   {
-    id: 3,
+    id: 4,
     name: "Reviews",
     link: "/reviews",
   },
   {
-    id: 4,
-    name: "Cities",
-    link: "/cities",
+    id: 5,
+    name: "Process",
+    link: "/process",
   },
   {
-    id: 5,
+    id: 6,
+    name: "About",
+    link: "/about",
+  },
+  {
+    id: 7,
     name: "Blog",
     link: "/blog",
+  },
+  {
+    id: 7,
+    name: "Get A Quote",
+    link: "/get-a-quote",
   },
 ];
 
@@ -110,6 +125,10 @@ const Footer = () => {
                 <li>Saturday - Closed</li>
                 <li>Sunday - Closed</li>
               </ul>
+              <p>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</p>
+              <a className="phone" href="tel:(905) 933-3115">
+                (905) 933-3115
+              </a>
             </Col>
           </Row>
         </Container>

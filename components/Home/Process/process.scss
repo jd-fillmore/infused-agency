@@ -7,19 +7,17 @@
   @include bp-tablet-sm {
     padding: 60px 0px 0px 0px;
   }
+  .card {
+    p {
+      margin-top: 0px;
+    }
+  }
   h2,
   h3 {
     color: $white;
   }
   .subtitle {
     color: rgba($white, 0.8);
-  }
-  .row {
-    margin-top: 40px;
-    align-items: center;
-    &:first-child {
-      margin-top: 0px;
-    }
   }
   hr {
     border: 1px solid $purple;
