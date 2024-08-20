@@ -115,7 +115,7 @@ const Home = ({ latestPosts }) => {
         <title>Niagara Web Design | Website Design St. Catharines</title>
         <meta
           name="description"
-          content="Award-winning Niagara web design company in St. Catharines. We create custom, lead-generating websites for businesses across the Niagara region. Get your free quote today!"
+          content="Award-winning Niagara web design in St. Catharines. We create custom, lead-generating websites for companies across Niagara. Get your free quote today!"
         />
         <meta
           name="google-site-verification"
