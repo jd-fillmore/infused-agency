@@ -10,7 +10,7 @@ import goog from "../../../src/img/google-reviews.png";
 const Hero = () => {
   return (
     <>
-      <section className="hero" title="Niagara web design">
+      <section className="hero">
         <Container>
           <div className="bg">
             <Row className="text-center">

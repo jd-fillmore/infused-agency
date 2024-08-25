@@ -27,16 +27,8 @@ const Example = (props) => {
     <div className="fixed-top">
       <Navbar id="nav" expand="lg">
         <Container fluid>
-          <NavbarBrand
-            className="logo"
-            name="Niagara Web Design Company Infused Agency"
-          >
-            <Image
-              className="logo"
-              src={logo}
-              alt="niagara website design company"
-              title="niagara website design company"
-            />
+          <NavbarBrand className="logo" name="Infused Agency">
+            <Image className="logo" src={logo} alt="Infused Agency Logo" />
           </NavbarBrand>
           <NavbarToggler className="custom-toggler" onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
