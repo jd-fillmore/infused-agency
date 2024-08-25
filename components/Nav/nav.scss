@@ -58,7 +58,6 @@
 
 .logo {
   height: 35% !important;
-  width: 35% !important;
   @include bp-tablet-sm {
     height: 60% !important;
     width: 60% !important;
@@ -170,8 +169,8 @@
     }
   }
   @media (min-width: 992px) {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
 
