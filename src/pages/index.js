@@ -38,6 +38,26 @@ const addJsonLd = () => {
       addressRegion: "ON",
       postalCode: "L2P 1K2",
     },
+    serviceArea: [
+      {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "St. Catharines",
+          addressRegion: "ON",
+          addressCountry: "Canada",
+        },
+      },
+      {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Niagara",
+          addressRegion: "ON",
+          addressCountry: "Canada",
+        },
+      },
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -112,7 +132,7 @@ const Home = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design | Website Design St. Catharines</title>
+        <title>Niagara Web Design 🥇 Website Design St. Catharines</title>
         <meta
           name="description"
           content="Award-winning Niagara web design in St. Catharines. We create custom, lead-generating websites for companies across Niagara. Get your free quote today!"
