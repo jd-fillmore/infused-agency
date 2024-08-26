@@ -15,18 +15,53 @@ import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
 
+const addJsonLd = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Infused Agency",
+    description:
+      "Infused Agency provides expert SEO services, including lead generation, search engine optimization, and online marketing in Alliston, NY.",
+    serviceArea: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Alliston",
+        addressRegion: "NY",
+        addressCountry: "US",
+      },
+    },
+    url: "https://www.infused.agency",
+    logo:
+      "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
+  };
+
+  return {
+    __html: JSON.stringify(schema),
+  };
+};
+
 const SEO = () => {
   return (
     <>
       <Head>
         <title>
-          Alliston SEO | Affordable Local Search Engine Optimization
+          Alliston SEO | Best SEO Company in Alliston, NY | Infused Agency
         </title>
         <meta
           name="description"
           content="Unleash the potential of Alliston SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
         />
         <link rel="canonical" href="https://infused.agency/alliston-seo" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
+        />
       </Head>
       <Nav />
       <InnerHero

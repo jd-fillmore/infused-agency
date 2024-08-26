@@ -157,16 +157,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/Ancaster-web-design",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/Ancaster-seo",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/Dundas-web-design",
         destination: "/",
         permanent: true,

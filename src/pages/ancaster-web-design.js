@@ -15,12 +15,42 @@ import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
 
+const addJsonLd = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Infused Agency",
+    description:
+      "Infused Agency provides expert web design services, including lead generation, website development, and online marketing in Ancaster, Canada.",
+    serviceArea: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Ancaster",
+        addressRegion: "ON",
+        addressCountry: "Canada",
+      },
+    },
+    url: "https://www.infused.agency",
+    logo:
+      "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
+  };
+
+  return {
+    __html: JSON.stringify(schema),
+  };
+};
+
 const SEO = () => {
   return (
     <>
       <Head>
         <title>
-          Ancaster Web Design | Affordable Local Website Development
+          Ancaster Web Design | Best Web Design Company in Ancaster | Infused Agency
         </title>
         <meta
           name="description"
@@ -28,7 +58,12 @@ const SEO = () => {
         />
         <link
           rel="canonical"
-          href="https://infused.agency/Ancaster-web-design"
+          href="https://infused.agency/ancaster-web-design"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
         />
       </Head>
       <Nav />
@@ -271,7 +306,7 @@ const SEO = () => {
                     key part of our Ancaster web design services to help make
                     sure that your customers can find your website. When using
                     our Ancaster web design experts and{" "}
-                    <Link href="/Ancaster-seo/">Ancaster SEO services</Link>,
+                    <Link href="/ancaster-seo/">Ancaster SEO services</Link>,
                     your website should help bring in new company revenue and
                     customers.
                   </p>
@@ -375,7 +410,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/Ancaster-seo/">
+                    <Link href="/ancaster-seo/">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}

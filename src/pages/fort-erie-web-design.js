@@ -16,12 +16,42 @@ import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
 import About from "../../components/Home/About/about";
 
+const addJsonLd = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Infused Agency",
+    description:
+      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Fort Erie, ON.",
+    serviceArea: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Fort Erie",
+        addressRegion: "ON",
+        addressCountry: "Canada",
+      },
+    },
+    url: "https://www.infused.agency",
+    logo:
+      "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
+  };
+
+  return {
+    __html: JSON.stringify(schema),
+  };
+};
+
 const SEO = () => {
   return (
     <>
       <Head>
         <title>
-          Fort Erie Web Design Firm | Premier Web Designers - Infused Agency
+        Fort Erie Web Design 🥇 Best Web Design Company in Fort Erie, ON | Infused Agency
         </title>
         <meta
           name="description"
@@ -34,7 +64,7 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Leading Fort Erie Web Design Firm"
+        title="Fort Erie Web Design"
         description="Infused Agency, a distinguished web design company in Fort Erie, has garnered accolades for its exceptional services. We specialize in assisting businesses in boosting their revenue through expertly crafted websites."
         bgImage={bgImage}
       />

@@ -68,7 +68,7 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Guelph Web Design | Infused Agency</title>
+        <title>Guelph Web Design 🥇 Best Web Design Company in Guelph, ON | Infused Agency</title>
         <meta
           name="description"
           content="Top Guelph web design by Infused Agency. Expert website design services to enhance your online presence. Get a free quote today!"

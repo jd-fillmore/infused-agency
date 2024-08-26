@@ -42,21 +42,26 @@ import social from "../img/social.webp";
 const addJsonLd = () => {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "ServiceAreaBusiness",
+    "@type": "LocalBusiness",
     name: "Infused Agency",
     description:
-      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Oakville, Canada.",
+      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Oakville, ON.",
     serviceArea: {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Oakville",
+        addressRegion: "ON",
         addressCountry: "Canada",
       },
     },
     url: "https://www.infused.agency",
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
   };
 
   return {
@@ -68,7 +73,7 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Web Design Oakville | Infused Agency</title>
+        <title>Oakville Web Design 🥇 Best Web Design Company in Oakville, ON | Infused Agency</title>
         <meta
           name="description"
           content="Infused Agency in Oakville excels in lead generation web design, boosting sales and leads through custom web design, development, and online marketing."

@@ -22,21 +22,26 @@ import social from "../img/social.webp";
 const addJsonLd = () => {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "ServiceAreaBusiness",
+    "@type": "LocalBusiness",
     name: "Infused Agency",
     description:
-      "Infused Agency provides expert Port Colborne SEO services, including lead generation, development, and online marketing in Port Colborne, Canada.",
+      "Infused Agency provides expert SEO services, including lead generation, search engine optimization, and online marketing in Port Colborne, ON.",
     serviceArea: {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Port Colborne",
+        addressRegion: "ON",
         addressCountry: "Canada",
       },
     },
     url: "https://www.infused.agency",
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
   };
 
   return {
@@ -48,7 +53,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Port Colborne SEO | Best SEO Agency in Port Colborne, ON</title>
+        <title>Port Colborne SEO 🥇 Best SEO Company in Port Colborne, ON | Infused Agency</title>
         <meta
           name="description"
           content="Port Colborne SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"

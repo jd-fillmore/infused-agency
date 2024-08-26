@@ -15,12 +15,42 @@ import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
 
+const addJsonLd = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Infused Agency",
+    description:
+      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Caledonia, ON.",
+    serviceArea: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Caledonia",
+        addressRegion: "ON",
+        addressCountry: "Canada",
+      },
+    },
+    url: "https://www.infused.agency",
+    logo:
+      "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
+  };
+
+  return {
+    __html: JSON.stringify(schema),
+  };
+};
+
 const SEO = () => {
   return (
     <>
       <Head>
         <title>
-          Caledonia Web Design | Affordable Local Website Development
+          Caledonia Web Design 🥇 Best Web Design Company in Caledonia, ON | Infused Agency
         </title>
         <meta
           name="description"
@@ -29,6 +59,11 @@ const SEO = () => {
         <link
           rel="canonical"
           href="https://infused.agency/caledonia-web-design"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
         />
       </Head>
       <Nav />

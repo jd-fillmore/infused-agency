@@ -22,21 +22,26 @@ import social from "../img/social.webp";
 const addJsonLd = () => {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "ServiceAreaBusiness",
+    "@type": "LocalBusiness",
     name: "Infused Agency",
     description:
-      "Infused Agency provides expert Niagara-on-the-Lake SEO services, including lead generation, development, and online marketing in Niagara-on-the-Lake, Canada.",
+      "Infused Agency provides expert SEO services, including lead generation, search engine optimization, and online marketing in Niagara-on-the-Lake, ON.",
     serviceArea: {
       "@type": "Place",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Niagara-on-the-Lake",
+        addressRegion: "ON",
         addressCountry: "Canada",
       },
     },
     url: "https://www.infused.agency",
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
+    sameAs: [
+      "https://www.instagram.com/infusedweb", 
+      "https://www.facebook.com/infused.agency",
+    ],
   };
 
   return {
@@ -49,7 +54,7 @@ const SEO = () => {
     <>
       <Head>
         <title>
-          Niagara-on-the-Lake SEO | Best SEO Agency in Niagara-on-the-Lake, ON
+          Niagara-on-the-Lake SEO 🥇 Best SEO Company in Niagara-on-the-Lake, ON | Infused Agency
         </title>
         <meta
           name="description"
