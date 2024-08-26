@@ -486,7 +486,7 @@ const About = () => {
             </Row>
             <Row className="pd-top-40">
               <Col lg="3">
-                <Link href="/hamilton-web-design">
+                <Link href="/web-design-hamilton">
                   <button>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1200,6 +1200,30 @@ const About = () => {
                       <circle cx="12" cy="10" r="3" />
                     </svg>
                     Dental Medical Clinic Web Design
+                  </button>
+                </Link>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg="3">
+              <Link href="/web-design-welland">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="feather feather-map-pin"
+                    >
+                      <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Welland Web Design
                   </button>
                 </Link>
               </Col>
