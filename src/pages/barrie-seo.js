@@ -39,7 +39,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -53,7 +53,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Barrie SEO 🥇 Best SEO Company in Barrie, ON | Infused Agency</title>
+        <title>Barrie SEO | Grow Your Business with Expert Optimization</title>
         <meta
           name="description"
           content="Barrie SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"

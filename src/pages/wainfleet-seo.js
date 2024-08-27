@@ -20,7 +20,9 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Wainfleet SEO | Infused Agency</title>
+        <title>
+          Wainfleet SEO | Rural Digital Marketing Experts for Growth
+        </title>
         <meta
           name="description"
           content="Unleash the potential of Wainfleet SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"

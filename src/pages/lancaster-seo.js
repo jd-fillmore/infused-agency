@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Lancaster SEO | NY Search Engine Optimization</title>
+        <title>Lancaster SEO NY | Erie County's Top SEO Professionals</title>
         <meta
           name="description"
           content="Unleash the potential of Lancaster SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"

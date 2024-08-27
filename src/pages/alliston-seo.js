@@ -35,7 +35,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -49,9 +49,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-          Alliston SEO | Best SEO Company in Alliston, NY | Infused Agency
-        </title>
+        <title>Alliston SEO NY | Boost Your Local Business Visibility</title>
         <meta
           name="description"
           content="Unleash the potential of Alliston SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"

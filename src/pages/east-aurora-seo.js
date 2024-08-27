@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>East Aurora SEO | NY Search Engine Optimization</title>
+        <title>East Aurora SEO | WNY's Trusted Digital Marketing Team</title>
         <meta
           name="description"
           content="Unleash the potential of East Aurora SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"

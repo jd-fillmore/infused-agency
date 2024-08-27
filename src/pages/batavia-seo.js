@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Batavia SEO | NY Search Engine Optimization</title>
+        <title>Batavia SEO NY | Unlock Your Business Potential Online</title>
         <meta
           name="description"
           content="Unleash the potential of Batavia SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
@@ -89,7 +89,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Batavia SEO services."
+                      their company if you are thinking of needing their Batavia
+                      SEO services."
                     </p>
                     <ul>
                       <li>
@@ -182,7 +183,8 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your Batavia business I do recommend Infused Agency for their
+                      on my new web site. If you ever need a SEO for your
+                      Batavia business I do recommend Infused Agency for their
                       services. JD keep up the great work. Thank you."
                     </p>
                     <ul>

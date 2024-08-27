@@ -20,7 +20,7 @@ const SEO = () => {
     <>
       <Head>
         <title>
-          Lockport SEO | Affordable Local Search Engine Optimization
+          Lockport SEO NY | Canal City's Premier Digital Strategists
         </title>
         <meta
           name="description"

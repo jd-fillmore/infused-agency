@@ -39,7 +39,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -53,7 +53,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Markham SEO 🥇 Best SEO Company in Markham, ON | Infused Agency</title>
+        <title>Markham SEO | High-Tech City's SEO Professionals</title>
         <meta
           name="description"
           content="Markham SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"

@@ -35,7 +35,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -49,7 +49,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Avon SEO | Best SEO Company in Avon, NY | Infused Agency</title>
+        <title>Avon SEO NY | Targeted Strategies for Local Success</title>
         <meta
           name="description"
           content="Unleash the potential of Avon SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
@@ -124,7 +124,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Avon SEO services."
+                      their company if you are thinking of needing their Avon
+                      SEO services."
                     </p>
                     <ul>
                       <li>
@@ -217,8 +218,9 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your Avon business I do recommend Infused Agency for their
-                      services. JD keep up the great work. Thank you."
+                      on my new web site. If you ever need a SEO for your Avon
+                      business I do recommend Infused Agency for their services.
+                      JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>

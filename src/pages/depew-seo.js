@@ -19,7 +19,9 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Depew SEO | NY Search Engine Optimization</title>
+        <title>
+          Depew SEO NY | Leading Search Engine Optimization Specialists
+        </title>
         <meta
           name="description"
           content="Unleash the potential of Depew SEO to amplify your online visibility. Command search outcomes, draw in a surge of visitors. Kickstart your optimization journey right now!"
@@ -89,7 +91,8 @@ const SEO = () => {
                     <p>
                       "Fantastic experience from start to end. Infused Agency is
                       organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Depew SEO services."
+                      their company if you are thinking of needing their Depew
+                      SEO services."
                     </p>
                     <ul>
                       <li>
@@ -182,8 +185,9 @@ const SEO = () => {
                     <h4>Cass-A-Bella Construction</h4>
                     <p>
                       "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a SEO for your Depew business I do recommend Infused Agency for their
-                      services. JD keep up the great work. Thank you."
+                      on my new web site. If you ever need a SEO for your Depew
+                      business I do recommend Infused Agency for their services.
+                      JD keep up the great work. Thank you."
                     </p>
                     <ul>
                       <li>

@@ -48,7 +48,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Hamilton SEO 🥇 Best SEO Company in Hamilton, ON | Infused Agency</title>
+        <title>Hamilton SEO | Steel City's Premier Digital Marketers</title>
         <meta
           name="description"
           content="Hamilton SEO Company that will amplify your online visibility. Get more traffic, leads and sales. Get a free quote!"
