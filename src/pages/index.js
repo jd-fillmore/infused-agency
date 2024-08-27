@@ -132,7 +132,9 @@ const Home = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Niagara Web Design 🥇 Website Design St. Catharines</title>
+        <title>
+          Niagara Web Design | Website Design St. Catharines - Infused Agency
+        </title>
         <meta
           name="description"
           content="Award-winning Niagara web design in St. Catharines. We create custom, lead-generating websites for companies across Niagara. Get your free quote today!"
