@@ -36,7 +36,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -50,9 +50,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-        Fort Erie Web Design 🥇 Best Web Design Company in Fort Erie, ON | Infused Agency
-        </title>
+        <title>Fort Erie Web Design | Custom Sites for Local Success</title>
         <meta
           name="description"
           content="Discover the top-rated Web Design Company in Fort Erie. Our expert team crafts websites dedicated to enhancing your brand's image and driving up sales. Get your complimentary quote now!"

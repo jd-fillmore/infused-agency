@@ -59,7 +59,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -73,7 +73,7 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Ottawa Web Design 🥇 Best Web Design Company in Ottawa, ON | Infused Agency</title>
+        <title>Ottawa Web Design | Capital City's Premier Web Developers</title>
         <meta
           name="description"
           content="Top Ottawa web design by Infused Agency. Expert website design services to enhance your online presence. Get a free quote today!"
@@ -86,10 +86,7 @@ const WebDesign = () => {
           name="twitter:title"
           content="Web Design Ottawa | Infused Agency"
         />
-        <link
-          rel="canonical"
-          href="https://infused.agency/ottawa-web-design"
-        />
+        <link rel="canonical" href="https://infused.agency/ottawa-web-design" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={addJsonLd()}
@@ -125,18 +122,18 @@ const WebDesign = () => {
               </Col>
               <Col lg="6">
                 <p>
-                  At Infused Agency, our Ottawa web design services are
-                  designed to <span>engage</span>, <span>capture</span>, and{" "}
+                  At Infused Agency, our Ottawa web design services are designed
+                  to <span>engage</span>, <span>capture</span>, and{" "}
                   <span>convert</span>. We excel in crafting visually stunning,
                   user-friendly websites that are specifically tailored for
                   Ottawa-based businesses. Our team of expert web designers is
                   dedicated to creating high-performing sites that not only
                   attract visitors but also foster meaningful interactions and
-                  drive conversions. Whether you’re seeking a brand-new web design
-                  or a strategic update, our goal is to elevate your online
-                  presence and help your business thrive in the competitive
-                  Ottawa market. Choose Infused Agency for cutting-edge web
-                  design solutions that truly deliver results
+                  drive conversions. Whether you’re seeking a brand-new web
+                  design or a strategic update, our goal is to elevate your
+                  online presence and help your business thrive in the
+                  competitive Ottawa market. Choose Infused Agency for
+                  cutting-edge web design solutions that truly deliver results
                 </p>
               </Col>
             </Row>
@@ -171,9 +168,9 @@ const WebDesign = () => {
                     <Image src={img2} alt="mobile friendly" />
                     <h3>Mobile-Friendly</h3>
                     <p>
-                      Our web designs are built to be fully compatible with the latest
-                      browsers and mobile devices, ensuring you always present a
-                      polished and professional appearance.
+                      Our web designs are built to be fully compatible with the
+                      latest browsers and mobile devices, ensuring you always
+                      present a polished and professional appearance.
                     </p>
                   </div>
                 </Col>
@@ -194,9 +191,9 @@ const WebDesign = () => {
                     <Image src={img4} alt="Easily Update Content" />
                     <h3>Easily Update Content</h3>
                     <p>
-                      Effortlessly update your web design's content, add new pages,
-                      upload images, adjust meta-tags, and incorporate new team
-                      members, among other tasks
+                      Effortlessly update your web design's content, add new
+                      pages, upload images, adjust meta-tags, and incorporate
+                      new team members, among other tasks
                     </p>
                   </div>
                 </Col>
@@ -366,17 +363,17 @@ const WebDesign = () => {
                 <p>
                   At Infused Agency, we're dedicated to fueling business growth
                   in Ottawa through our outstanding lead-generation web design
-                  services. From initial concept to final launch, our Ottawa
-                  web design experts create custom digital experiences that
-                  yield remarkable results. Utilizing advanced web design platforms such as
-                  NextJS, WordPress, React, and Shopify, we ensure your
+                  services. From initial concept to final launch, our Ottawa web
+                  design experts create custom digital experiences that yield
+                  remarkable results. Utilizing advanced web design platforms
+                  such as NextJS, WordPress, React, and Shopify, we ensure your
                   Ottawa-based website is not only visually appealing but also
                   highly functional. Our team blends strategic web design with
                   cutting-edge technology to develop high-converting websites
                   that engage your audience and drive your business forward.
-                  Choose Infused Agency for superior lead-generation web design and
-                  Ottawa web design solutions, and watch your online presence
-                  flourish.
+                  Choose Infused Agency for superior lead-generation web design
+                  and Ottawa web design solutions, and watch your online
+                  presence flourish.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -423,14 +420,14 @@ const WebDesign = () => {
                   That Convert
                 </h2>
                 <p>
-                  Ready to convert your website design
-                  visitors into loyal customers? At Infused Agency, we
-                  specialize in designing web design sales funnels that achieve this goal.
-                  Our expertly crafted funnels guide your prospects seamlessly
-                  from initial interest to decisive action. By combining
-                  engaging website design, persuasive copy, and effective
-                  calls-to-action, we create funnels that not only capture leads
-                  but also deliver significant, measurable results.
+                  Ready to convert your website design visitors into loyal
+                  customers? At Infused Agency, we specialize in designing web
+                  design sales funnels that achieve this goal. Our expertly
+                  crafted funnels guide your prospects seamlessly from initial
+                  interest to decisive action. By combining engaging website
+                  design, persuasive copy, and effective calls-to-action, we
+                  create funnels that not only capture leads but also deliver
+                  significant, measurable results.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -476,18 +473,17 @@ const WebDesign = () => {
                   Web Design
                 </h2>
                 <p>
-                  Ready to transform your Ottawa web design into a
-                  conversion powerhouse? Our Conversion-Driven Web Design is
-                  expertly crafted to do just that. At Infused Agency, we
-                  develop stunning Ottawa web design solutions that not only
-                  captivate your audience but also deliver real, measurable
-                  results. By strategically focusing on user experience,
-                  engaging visuals, and optimized design elements, we ensure
-                  your website design becomes a powerful tool for converting visitors
-                  into loyal customers. From intuitive navigation to compelling
-                  calls-to-action, our Ottawa web design experts create
-                  designs that smoothly guide your prospects from interest to
-                  action.
+                  Ready to transform your Ottawa web design into a conversion
+                  powerhouse? Our Conversion-Driven Web Design is expertly
+                  crafted to do just that. At Infused Agency, we develop
+                  stunning Ottawa web design solutions that not only captivate
+                  your audience but also deliver real, measurable results. By
+                  strategically focusing on user experience, engaging visuals,
+                  and optimized design elements, we ensure your website design
+                  becomes a powerful tool for converting visitors into loyal
+                  customers. From intuitive navigation to compelling
+                  calls-to-action, our Ottawa web design experts create designs
+                  that smoothly guide your prospects from interest to action.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -543,8 +539,8 @@ const WebDesign = () => {
                     your business, allowing us to pave the way to success. Our
                     team at Infused Agency follows a meticulous methodology,
                     ensuring each step is executed with precision. We dive deep
-                    into your business to comprehend the purpose behind your
-                    web design, your expectations, ultimate goals, and target
+                    into your business to comprehend the purpose behind your web
+                    design, your expectations, ultimate goals, and target
                     audience. Additionally, we analyze your competitors, their
                     websites, and your budget plan. These detailed insights
                     enable us to craft a robust strategy that ensures your
@@ -619,15 +615,15 @@ const WebDesign = () => {
                     4. <span>Develop</span>
                   </h2>
                   <p>
-                    We excel in both planning and web design. Our renowned team at
-                    Infused Agency, with extensive experience in developing
+                    We excel in both planning and web design. Our renowned team
+                    at Infused Agency, with extensive experience in developing
                     top-tier websites, creates flawless projects for our
                     clients. They go above and beyond, utilizing their skills
                     efficiently. By leveraging cutting-edge technology and
                     innovative techniques, we ensure our tasks are completed
                     with precision. Once the design phase is finished, our
-                    highly skilled content writers populate the web design pages with
-                    fresh content and refine existing material. Adding new
+                    highly skilled content writers populate the web design pages
+                    with fresh content and refine existing material. Adding new
                     videos, slideshows, and other media elements makes the
                     website captivating. We then develop a prototype, testing it
                     across major web browsers and obtaining your approval before
@@ -675,15 +671,14 @@ const WebDesign = () => {
                     6. <span>Promote</span>
                   </h2>
                   <p>
-                    Our top-tier web design experts ensure your website
-                    is effectively promoted online. At Infused Agency, our
-                    services go beyond just launching your website. Our
-                    world-class team includes seasoned specialists in SEO and
-                    digital marketing. We have a dedicated team that thoroughly
-                    assesses your needs and implements premium digital
-                    strategies to help your business excel in today's
-                    competitive landscape. We believe that your success is our
-                    success as well.
+                    Our top-tier web design experts ensure your website is
+                    effectively promoted online. At Infused Agency, our services
+                    go beyond just launching your website. Our world-class team
+                    includes seasoned specialists in SEO and digital marketing.
+                    We have a dedicated team that thoroughly assesses your needs
+                    and implements premium digital strategies to help your
+                    business excel in today's competitive landscape. We believe
+                    that your success is our success as well.
                   </p>
                 </div>
               </Col>
@@ -850,9 +845,9 @@ const WebDesign = () => {
                   <h3>Lightning-Fast Speed</h3>
                   <p>
                     Enjoy unparalleled website speed with Infused Agency’s web
-                    design services in Ottawa. Our websites are crafted to
-                    load almost instantly, providing a smooth user experience
-                    and boosting engagement.
+                    design services in Ottawa. Our websites are crafted to load
+                    almost instantly, providing a smooth user experience and
+                    boosting engagement.
                   </p>
                 </div>
               </Col>
@@ -875,10 +870,10 @@ const WebDesign = () => {
                   <h3>Rank On Google</h3>
                   <p>
                     Unlock your website's full potential with Infused Agency’s
-                    premier SEO strategies. Our Ottawa SEO services are
-                    designed to boost your site’s position in Google rankings.
-                    Draw in more visitors and increase targeted traffic with a
-                    site optimized for success in Ottawa web design.
+                    premier SEO strategies. Our Ottawa SEO services are designed
+                    to boost your site’s position in Google rankings. Draw in
+                    more visitors and increase targeted traffic with a site
+                    optimized for success in Ottawa web design.
                   </p>
                 </div>
               </Col>

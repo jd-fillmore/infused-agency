@@ -35,7 +35,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -49,9 +49,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-          Waterdown Web Design 🥇 Best Web Design Company in Waterdown, ON | Infused Agency
-        </title>
+        <title>Waterdown Web Design | Custom Sites for Local Businesses</title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Waterdown web design services. Affordable, stunning websites that capture attention. Drive growth now!"
@@ -59,6 +57,11 @@ const SEO = () => {
         <link
           rel="canonical"
           href="https://infused.agency/waterdown-web-design"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
         />
       </Head>
       <Nav />

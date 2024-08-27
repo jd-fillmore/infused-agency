@@ -133,7 +133,7 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Niagara Web Design | Website Design St. Catharines - Infused Agency
+          Niagara Web Design | Trusted Website Design St. Catharines
         </title>
         <meta
           name="description"

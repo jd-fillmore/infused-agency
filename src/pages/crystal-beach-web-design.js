@@ -36,7 +36,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -50,9 +50,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-        Crystal Beach Web Design 🥇 Best Web Design Company in Crystal Beach, ON | Infused Agency
-        </title>
+        <title>Crystal Beach Web Design | Bespoke Websites & E-Commerce</title>
         <meta
           name="description"
           content="Crystal Beach's Best Web Design Company. We design websites aimted to bolster your brand's reputation and increase company sales. Click here for your free quote!"

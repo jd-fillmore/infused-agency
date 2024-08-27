@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Batavia Web Design | NY Website Developer</title>
+        <title>Batavia Web Design | Tailored Websites for Your Success</title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Batavia web design services. Affordable, stunning websites that capture attention. Drive growth now!"

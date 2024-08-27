@@ -19,7 +19,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Avon Web Design | NY Website Developer</title>
+        <title>Avon Web Design | Crafting Stunning Online Presence</title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Avon web design services. Affordable, stunning websites that capture attention. Drive growth now!"

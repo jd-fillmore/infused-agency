@@ -59,7 +59,7 @@ const addJsonLd = () => {
     logo:
       "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
     sameAs: [
-      "https://www.instagram.com/infusedweb", 
+      "https://www.instagram.com/infusedweb",
       "https://www.facebook.com/infused.agency",
     ],
   };
@@ -73,7 +73,7 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Hamilton Web Design 🥇 Best Web Design Company in Hamilton, ON | Infused Agency</title>
+        <title>Hamilton Web Design | Powerful Sites for Local Businesses</title>
         <meta
           name="description"
           content="Top Hamilton web design by Infused Agency. Expert website design services to enhance your online presence. Get a free quote today!"
@@ -423,14 +423,14 @@ const WebDesign = () => {
                   That Convert
                 </h2>
                 <p>
-                  Ready to convert your website
-                  visitors into loyal customers? At Infused Agency, we
-                  specialize in designing sales funnels that achieve this goal.
-                  Our expertly crafted funnels guide your prospects seamlessly
-                  from initial interest to decisive action. By combining
-                  engaging design, persuasive copy, and effective
-                  calls-to-action, we create funnels that not only capture leads
-                  but also deliver significant, measurable results.
+                  Ready to convert your website visitors into loyal customers?
+                  At Infused Agency, we specialize in designing sales funnels
+                  that achieve this goal. Our expertly crafted funnels guide
+                  your prospects seamlessly from initial interest to decisive
+                  action. By combining engaging design, persuasive copy, and
+                  effective calls-to-action, we create funnels that not only
+                  capture leads but also deliver significant, measurable
+                  results.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
