@@ -46,9 +46,14 @@ const pages = [
     link: "/blog",
   },
   {
-    id: 7,
+    id: 8,
     name: "Get A Quote",
     link: "/get-a-quote",
+  },
+  {
+    id: 9,
+    name: "Cities Served",
+    link: "/cities",
   },
 ];
 
