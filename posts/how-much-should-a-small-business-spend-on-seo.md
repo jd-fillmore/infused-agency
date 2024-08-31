@@ -1,6 +1,6 @@
 ---
 title: How Much Should a Small Business Spend on SEO
-date: 2024-08-24T13:08:47.634Z
+date: 2024-08-30T13:08:47.634Z
 slug: /posts/how-much-should-a-small-business-spend-on-seo/
 excerpt: Discover how much your small business should invest in SEO. Learn about budget ranges, factors affecting costs, and tips to maximize your SEO investment.
 image: "/img/how-much-should-a-small-business-spend-on-seo.webp"
