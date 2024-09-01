@@ -19,7 +19,7 @@ import treeImg from "../../src/img/tree-reports.png";
 import kdImg from "../../src/img/kd-flowers.webp";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/web-design-niagara.webp";
-import heroImg from "../../src/img/niagara-web-design-marketing-agency.png";
+import heroImg from "../../src/img/niagara-web-design-marketing-agency.webp";
 import tech from "../../src/img/web-design-technologies.webp";
 import process from "../../src/img/web-design-process.webp";
 
@@ -143,6 +143,11 @@ const Home = ({ latestPosts }) => {
           name="google-site-verification"
           content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8"
         />
+        <meta name="geo.region" content="CA-ON" />
+        <meta name="geo.placename" content="Niagara" />
+        <meta name="geo.position" content="43.0896;-79.0849" />
+        <meta name="ICBM" content="43.0896, -79.0849" />
+
         <meta property="og:site_name" content="Infused Agency" />
         <link rel="canonical" href="https://infused.agency" />
         <script
