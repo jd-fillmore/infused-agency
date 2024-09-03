@@ -16,7 +16,7 @@ h4,
 h5,
 h6 {
   font-family: $heading;
-  font-weight: 300;
+  font-weight: bold;
   color: $grey;
   @include bp-tablet-sm {
     line-height: 1.6;
@@ -742,6 +742,13 @@ iframe {
 .home-niagara-info {
   padding: 120px 0px 120px 0px;
 
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+.home-work {
+  padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }

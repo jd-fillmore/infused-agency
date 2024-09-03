@@ -3,29 +3,28 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
-import heroImg from "./../../../src/img/niagara-web-design-marketing-agency.png";
+import heroImg from "./../../../src/img/niagara-web-design-website.webp";
 import best from "../../../src/img/best-rated.png";
-import goog from "../../../src/img/google-reviews.png";
 
 const Hero = () => {
   return (
     <>
       <section className="hero">
         <Container>
-          <div className="bg">
-            <Row className="text-center">
-              <Col lg="12">
+          <div>
+            <Row className="align-items-center">
+              <Col lg="6">
                 <Image src={best} alt="niagara best rated web design company" />
                 <h1 className="intro">
                   Niagara Web Design | Website Designers St. Catharines
                 </h1>
                 <h2>
-                  We help Niagara businesses <span>boost leads</span> and{" "}
-                  <span>drive sales</span> through their websites.
+                  We're <span>Infused Agency</span>, a Niagara web design &amp;
+                  SEO company.
                 </h2>
                 <p>
-                  From increasing traffic to generating leads and boosting
-                  sales, we are your digital partner for success.
+                  Award-winning web design agency that helps businesses boost
+                  leads and drive sales through their websites.
                 </p>
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
@@ -48,6 +47,21 @@ const Hero = () => {
                     </svg>
                   </button>
                 </a>
+              </Col>
+              <Col lg="6">
+                <div className="card">
+                  <Image
+                    className="img-fluid"
+                    src={heroImg}
+                    alt="niagara web design website"
+                  />
+                  <div className="text-center">
+                    <p>Recent Work | Custom Web Design/Development</p>
+                    <h2>
+                      <span>Jerry's Insulating</span>
+                    </h2>
+                  </div>
+                </div>
               </Col>
             </Row>
           </div>
