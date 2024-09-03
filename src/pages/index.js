@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { getLatestPosts } from "../lib/posts";
 import {
-  UncontrolledCollapse,
-  AccordionItem,
-  AccordionHeader,
+  Accordion,
   AccordionBody,
+  AccordionHeader,
+  AccordionItem,
   Col,
   Container,
   Row,
@@ -24,8 +24,6 @@ import kdImg from "../../src/img/kd-flowers.webp";
 import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/web-design-niagara.webp";
 import heroImg from "../../src/img/niagara-web-design-marketing-agency.webp";
-import tech from "../../src/img/web-design-technologies.webp";
-import process from "../../src/img/web-design-process.webp";
 import clients from "../../src/img/web-design-niagara-clients.png";
 import workVisca from "../../src/img/work-visca.webp";
 import workJerrys from "../../src/img/work-jerrys.webp";
@@ -132,6 +130,99 @@ const addJsonLd = () => {
         closes: "15:00",
       },
     ],
+    "@type": "Article",
+    headline: "FAQs About Our Niagara Web Design and SEO Services",
+    description:
+      "Answers to common questions about our web design and SEO services in Niagara.",
+    articleBody: "Here are some frequently asked questions about our services:",
+    mainEntity: [
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Where is your team based?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Our Niagara-based web design agency has thrived on our local expertise and commitment to the region. Our dedicated team, based exclusively in Niagara, is deeply familiar with the local market and its unique needs. This focused approach allows us to deliver highly personalized and effective web design solutions tailored to businesses right here in Niagara. Operating solely within Niagara enables us to provide exceptional support and attention to detail for our clients. We take pride in offering hands-on, localized service that ensures every project benefits from our in-depth understanding of the area. Our virtual model allows us to work flexibly and efficiently, making sure that your mobile-friendly website design project receives the dedication and care it deserves. Check out our web design portfolio to see the exceptional work we've done for businesses in Niagara.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is your web design process like?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "At Infused Agency, our experienced website designers have honed a proven web strategy over nearly two decades. While we’ve streamlined our process to be efficient and effective, our commitment remains the same: we value your active involvement in the marketing strategy. Our goal is to ensure that the final product design is a shared success. No one knows your business and customers better than you do. The insights and experience you provide are crucial to our workflow, particularly during the discovery and strategy phases. We utilize Google Analytics and other data to guide our UX/UI design, ensuring that our approach aligns with your goals and enhances your online presence. Discover our process web design in Niagara to help Niagara businesses like yours thrive online.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What will my project cost?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Determining the cost of a website design project for a Niagara business can be challenging as each project is unique, involving various factors such as design complexity, functionality, and the range of services required. At Infused Agency, we offer a range of pricing options based on your needs:\n\nNiagara Website Design Pricing Tiers\n\nThree Page Website - $2,000\n- 3 pages\n- 1 round of revisions\n- Hosting included\n- SSL Certificate included\n- Mobile-Friendly\n- Google Sitemap\n\nFive Page Website - $3,000\n- 5 pages\n- SEO Optimized for Google\n- 1 round of revisions\n- Hosting included\n- SSL Certificate included\n- Mobile-Friendly\n- Google Sitemap\n\nFive Page CMS Website - $3,500\n- 5 pages\n- Content Management System (edit website on your own)\n- SEO Optimized for Google\n- 1 round of revisions\n- Mobile-Friendly\n- Google Sitemap\n\nTen Page CMS Website - $4,000\n- 10 pages\n- Content Management System (edit website on your own)\n- SEO Optimized for Google\n- 1 round of revisions\n- Mobile-Friendly\n- Google Sitemap\n\nE-Commerce / Advanced Functionality Website - $5,000 - $20,000+\n- 20 pages\n- Content Management System (edit website on your own)\n- E-Commerce Functionality\n- Chat Functionality\n- Member Section Functionality\n- Other Custom Functionality",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How can I get a quote for my project?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We’d love to chat if you’ve reviewed our Niagara website design portfolio and have questions about our Niagara web design services or development expertise. If you’re looking for professional marketing services or web design in Niagara, please inquire about a quote for your project. Feel free to contact the best web designers in Niagara by completing our online quote form for a free consultation.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you fix my existing website?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Our web developers no longer take on projects to fix website designs or software development created by Niagara web design agencies. While this decision was challenging and we regret having to turn potential clients away, it's essential for us to deliver the results our clients expect. We believe in following the entire process from strategy through development to ensure the highest quality of work. Accepting a project of this nature would involve significant discovery by our team to analyze the existing website, understand its functionality, and assess all connected components. For custom e-commerce sites, this often means dealing with multiple third-party integrations that require extra attention. Ultimately, the cost of fixing an existing site is often comparable to designing a new custom website, but with potentially limited improvements. This does not align with the level of customer service and quality we pride ourselves on. We’ve earned our reputation as one of the best web designers in Niagara by adhering to this guiding principle.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Who will be working on my project?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "In most cases, you will work directly with the owner, who brings over a decade of experience in digital marketing campaigns, website design in Niagara, and other web development services for small businesses. We avoid the 'broken telephone' game and strive to streamline our workflow and communication process as professional service providers. This approach ensures that your project progresses smoothly and efficiently, with minimal miscommunication.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you offer SEO (search engine optimization) services?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Yes, we offer comprehensive search engine optimization (SEO) services designed to enhance your online visibility and drive more traffic to your business. At Infused Agency, we specialize in both general and local SEO, focusing specifically on serving businesses in Niagara. As a leading web design company based in Niagara, we personally manage all aspects of SEO to ensure that our clients benefit from top-notch strategies. Our extensive expertise in SEO, combined with a deep understanding of search engines and their evolving algorithms, enables me to deliver high-performing web designs that increase your business’s online presence.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you use templates or custom web design?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "At Infused Agency, we specialize in custom web design in Niagara. We do not use pre-made templates for our projects. Every website we create is developed from scratch to ensure that it meets the unique needs and goals of our clients. Using templates can limit the creativity and functionality of a website, which is why we avoid them. Instead, we focus on delivering tailored solutions that fully utilize screen real estate and provide a seamless user experience. Our approach allows us to integrate advanced SEO strategies effectively, enhancing both your website's performance and visibility. For a website that stands out and performs well, you need a custom solution that reflects your business’s individuality. Our Niagara web design services are crafted to deliver outstanding results, without the constraints of templates.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What website platforms do you work with?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We specialize in building high-quality websites using two primary platforms: WordPress and Next.js. As a leading Niagara web design agency, we choose these platforms to deliver exceptional performance and flexibility for your online presence. WordPress is ideal for clients who need a user-friendly content management system, allowing you to easily update and manage your website. It is also highly customizable, making it perfect for local SEO and enhancing your site's visibility in search results. On the other hand, Next.js is our go-to choice for clients looking for a modern, fast, and scalable web solution. This platform is particularly well-suited for building high-performance sites with advanced features and optimal SEO capabilities, aligning with our goal of providing top-notch web design in Niagara. Whether you need a custom WordPress site or a cutting-edge Next.js application, Infused Agency has the expertise to create a website that meets your needs and drives results.",
+            },
+          },
+        ],
+      },
+    ],
   };
 
   return {
@@ -140,6 +231,14 @@ const addJsonLd = () => {
 };
 
 const Home = ({ latestPosts }) => {
+  const [open, setOpen] = useState("0");
+  const toggle = (id) => {
+    if (open === id) {
+      setOpen();
+    } else {
+      setOpen(id);
+    }
+  };
   return (
     <>
       <Head>
@@ -523,6 +622,519 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
+      <section className="home-faq">
+        <Container>
+          <Row className="text-center pd-btm-40">
+            <Col lg="12">
+              <h2>
+                <span>Frequently Asked</span> Web Design &amp; SEO Questions{" "}
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="12">
+              <Accordion open={open} toggle={toggle}>
+                <AccordionItem>
+                  <AccordionHeader targetId="1">
+                    Why work with Infused Agency?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="1">
+                    <h2>Why Work with Infused Agency?</h2>
+                    <p>
+                      As a leading Niagara web design company, Infused Agency is
+                      dedicated to helping businesses in St. Catharines and
+                      beyond boost leads and drive sales through their websites.
+                      With over a decade of experience, we’ve become known for
+                      creating websites that not only look great but also
+                      function as powerful sales and lead generation tools.
+                    </p>
+
+                    <h3>Top Reasons to Choose Infused Agency</h3>
+                    <br />
+                    <h4>Comprehensive Niagara Web Design Services</h4>
+                    <p>
+                      We offer a full suite of services, including responsive
+                      web development, strategic SEO, and targeted digital
+                      marketing. Our team crafts bespoke digital experiences
+                      that merge your brand’s essence with cutting-edge design,
+                      turning your website into a powerful lead generation and
+                      sales acceleration engine.
+                    </p>
+
+                    <h4>Results-Driven Design</h4>
+                    <p>
+                      We specialize in creating lead-generating websites that
+                      convert visitors into customers. By blending creativity
+                      with functionality, we ensure that your website not only
+                      stands out visually but also performs effectively to grow
+                      your business.
+                    </p>
+
+                    <h4>Clear Communication</h4>
+                    <p>
+                      We prioritize clear communication and responsiveness,
+                      setting realistic expectations and delivering on our
+                      promises. Our strategic approach to web design ensures
+                      that every project aligns with your business goals.
+                    </p>
+
+                    <h4>Experienced Team</h4>
+                    <p>
+                      With over a decade of experience and a team of seasoned
+                      experts, we bring unparalleled knowledge and skill to
+                      every project. Our team is dedicated to ensuring your site
+                      ranks well on Google, making it easy for potential
+                      customers to find you and take action.
+                    </p>
+
+                    <h4>Proven Success Across Niagara</h4>
+                    <p>
+                      Our portfolio includes a diverse array of success stories
+                      from businesses in St. Catharines, Niagara Falls, Welland,
+                      Fort Erie, Thorold, and Niagara-on-the-Lake. We have
+                      helped local businesses enhance their credibility,
+                      increase leads, and drive sales through well-optimized and
+                      visually appealing websites.
+                    </p>
+
+                    <h4>Tailored Solutions for Your Business</h4>
+                    <p>
+                      From custom web design and development to conversion
+                      optimization and local SEO, we offer solutions that are
+                      specifically tailored to meet the needs of your business.
+                      Whether you need a modern, fast, and responsive website or
+                      a custom WordPress solution, we’ve got you covered.
+                    </p>
+
+                    <h4>Hosting and Maintenance</h4>
+                    <p>
+                      We offer managed web hosting and ongoing maintenance
+                      services to ensure your website remains up-to-date,
+                      secure, and performing at its best. Let us handle the
+                      technical details so you can focus on running your
+                      business.
+                    </p>
+
+                    <h4>Consistent Partnership</h4>
+                    <p>
+                      When you work with us, you’ll have a dedicated project
+                      manager and designer from start to finish, ensuring a
+                      seamless and consistent experience. We’re here to support
+                      you every step of the way.
+                    </p>
+
+                    <h4>Customer Support</h4>
+                    <p>
+                      Our clients consistently praise our commitment to
+                      excellent customer support. We make your experience with
+                      us smooth and stress-free, so you can focus on what
+                      matters most—growing your business.
+                    </p>
+
+                    <h4>Local SEO Expertise</h4>
+                    <p>
+                      Are local customers missing out on your services? We
+                      specialize in optimizing your website for local search,
+                      increasing your visibility and driving more leads to your
+                      business.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="2">
+                    Where is your team based?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="2">
+                    <h2>Where is your team based?</h2>
+                    <p>
+                      Our Niagara-based web design agency has thrived on our
+                      local expertise and commitment to the region. Our
+                      dedicated team, based exclusively in Niagara, is deeply
+                      familiar with the local market and its unique needs. This
+                      focused approach allows us to deliver highly personalized
+                      and effective web design solutions tailored to businesses
+                      right here in Niagara.
+                    </p>
+                    <p>
+                      Operating solely within Niagara enables us to provide
+                      exceptional support and attention to detail for our
+                      clients. We take pride in offering hands-on, localized
+                      service that ensures every project benefits from our
+                      in-depth understanding of the area. Our virtual model
+                      allows us to work flexibly and efficiently, making sure
+                      that your mobile-friendly website design project receives
+                      the dedication and care it deserves.
+                    </p>
+                    <p>
+                      Check out our{" "}
+                      <Link href="/work">web design portfolio</Link> to see the
+                      exceptional work we've done for businesses in Niagara.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="3">
+                    What is your web design process like?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="3">
+                    <h2>What is your web design process like?</h2>
+                    <p>
+                      At Infused Agency, our experienced website designers have
+                      honed a proven web strategy over nearly two decades. While
+                      we’ve streamlined our process to be efficient and
+                      effective, our commitment remains the same: we value your
+                      active involvement in the marketing strategy. Our goal is
+                      to ensure that the final product design is a shared
+                      success.
+                    </p>
+                    <p>
+                      No one knows your business and customers better than you
+                      do. The insights and experience you provide are crucial to
+                      our workflow, particularly during the discovery and
+                      strategy phases. We utilize Google Analytics and other
+                      data to guide our UX/UI design, ensuring that our approach
+                      aligns with your goals and enhances your online presence.
+                    </p>
+                    <p>
+                      Discover our <Link href="/process">process</Link> web
+                      design in Niagara to help Niagara businesses like yours
+                      thrive online.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="4">
+                    What will my project cost?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="4">
+                    <h2>What will my project cost?</h2>
+                    <p>
+                      Determining the cost of a website design project for a
+                      Niagara business can be challenging as each project is
+                      unique, involving various factors such as design
+                      complexity, functionality, and the range of services
+                      required. At Infused Agency, we offer a range of pricing
+                      options based on your needs:
+                    </p>
+
+                    <h3>Niagara Website Design Pricing Tiers</h3>
+                    <ul>
+                      <li>
+                        <strong>Three Page Website</strong> - $2,000
+                        <ul>
+                          <li>3 pages</li>
+                          <li>1 round of revisions</li>
+                          <li>Hosting included</li>
+                          <li>SSL Certificate included</li>
+                          <li>Mobile-Friendly</li>
+                          <li>Google Sitemap</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>Five Page Website</strong> - $3,000
+                        <ul>
+                          <li>5 pages</li>
+                          <li>SEO Optimized for Google</li>
+                          <li>1 round of revisions</li>
+                          <li>Hosting included</li>
+                          <li>SSL Certificate included</li>
+                          <li>Mobile-Friendly</li>
+                          <li>Google Sitemap</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>Five Page CMS Website</strong> - $4,000
+                        <ul>
+                          <li>5 pages</li>
+                          <li>
+                            Content Management System (edit website on your own)
+                          </li>
+                          <li>SEO Optimized for Google</li>
+                          <li>1 round of revisions</li>
+                          <li>Mobile-Friendly</li>
+                          <li>Google Sitemap</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>Ten Page CMS Website</strong> - $4,500
+                        <ul>
+                          <li>10 pages</li>
+                          <li>
+                            Content Management System (edit website on your own)
+                          </li>
+                          <li>SEO Optimized for Google</li>
+                          <li>1 round of revisions</li>
+                          <li>Mobile-Friendly</li>
+                          <li>Google Sitemap</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>
+                          E-Commerce / Advanced Functionality Website
+                        </strong>{" "}
+                        - $5,000 - $20,000+
+                        <ul>
+                          <li>20 pages</li>
+                          <li>
+                            Content Management System (edit website on your own)
+                          </li>
+                          <li>E-Commerce Functionality</li>
+                          <li>Chat Functionality</li>
+                          <li>Member Section Functionality</li>
+                          <li>Other Custom Functionality</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <h3>Search Engine Optimization</h3>
+                    <p>
+                      <strong>Boosted SEO</strong> - $1,000 per month for 3
+                      months
+                      <ul>
+                        <li>Backlink building</li>
+                        <li>Custom SEO strategy</li>
+                        <li>Keyword research</li>
+                        <li>On-page SEO</li>
+                        <li>Campaign reporting</li>
+                        <li>Optimize Google My Business Listing</li>
+                        <li>Optimize website home page</li>
+                      </ul>
+                    </p>
+
+                    <p>
+                      <Link href="/get-a-quote">Book a call today</Link> to
+                      discuss your goals, learn more about our experience, and
+                      get detailed information about website prices, timelines,
+                      and budget ranges.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="5">
+                    How can I get a quote for my project?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="5">
+                    <h2>How can I get a quote for my project?</h2>
+                    <p>
+                      We’d love to chat if you’ve reviewed our Niagara website
+                      design portfolio and have questions about our Niagara web
+                      design services or development expertise.
+                    </p>
+
+                    <p>
+                      If you’re looking for professional marketing services or
+                      web design in Niagara, please inquire about a quote for
+                      your project. Feel free to contact the best web designers
+                      in Niagara by completing our{" "}
+                      <Link href="/get-a-quote">online quote form</Link> for a
+                      free consultation.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="6">
+                    Can you fix my existing website?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="6">
+                    <h2>Can you fix my existing website?</h2>
+                    <p>
+                      Our web developers no longer take on projects to fix
+                      website designs or software development created by Niagara
+                      web design agency.
+                    </p>
+
+                    <p>
+                      While this decision was challenging and we regret having
+                      to turn potential clients away, it's essential for us to
+                      deliver the results our clients expect. We believe in
+                      following the entire process from strategy through
+                      development to ensure the highest quality of work.
+                    </p>
+
+                    <p>
+                      Accepting a project of this nature would involve
+                      significant discovery by our team to analyze the existing
+                      website, understand its functionality, and assess all
+                      connected components. For custom e-commerce sites, this
+                      often means dealing with multiple third-party integrations
+                      that require extra attention.
+                    </p>
+
+                    <p>
+                      Ultimately, the cost of fixing an existing site is often
+                      comparable to designing a new custom website, but with
+                      potentially limited improvements. This does not align with
+                      the level of customer service and quality we pride
+                      ourselves on. We’ve earned our reputation as one of the
+                      best web designers in Niagara by adhering to this guiding
+                      principle.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="7">
+                    Who will be working on my project?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="7">
+                    <h2>Who will be working on my project?</h2>
+                    <p>
+                      In most cases, you will work directly with the owner, who
+                      brings over a decade of experience in digital marketing
+                      campaigns, website design in Niagara, and other web
+                      development services for small businesses.
+                    </p>
+
+                    <p>
+                      We avoid the "broken telephone" game and strive to
+                      streamline our workflow and communication process as
+                      professional service providers. This approach ensures that
+                      your project progresses smoothly and efficiently, with
+                      minimal miscommunication.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="8">
+                    Do you offer SEO (search engine optimization) services?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="8">
+                    <h2>
+                      Do you offer SEO (search engine optimization) services?
+                    </h2>
+                    <p>
+                      Yes, we offer comprehensive search engine optimization
+                      (SEO) services designed to enhance your online visibility
+                      and drive more traffic to your business. At Infused
+                      Agency, we specialize in both general and local SEO,
+                      focusing specifically on serving businesses in Niagara.
+                    </p>
+
+                    <p>
+                      As a leading web design company based in Niagara, we
+                      personally manage all aspects of SEO to ensure that our
+                      clients benefit from top-notch strategies. Our extensive
+                      expertise in SEO, combined with a deep understanding of
+                      search engines and their evolving algorithms, enables me
+                      to deliver high-performing web designs that increase your
+                      business’s online presence.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="9">
+                    Do you use templates or custom web design?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="9">
+                    <h2>Do you use templates or custom web design?</h2>
+                    <p>
+                      At Infused Agency, we specialize in custom web design in
+                      Niagara. We do not use pre-made templates for our
+                      projects. Every website we create is developed from
+                      scratch to ensure that it meets the unique needs and goals
+                      of our clients.
+                    </p>
+
+                    <p>
+                      Using templates can limit the creativity and functionality
+                      of a website, which is why we avoid them. Instead, we
+                      focus on delivering tailored solutions that fully utilize
+                      screen real estate and provide a seamless user experience.
+                      Our approach allows us to integrate advanced SEO
+                      strategies effectively, enhancing both your website's
+                      performance and visibility.
+                    </p>
+
+                    <p>
+                      For a website that stands out and performs well, you need
+                      a custom solution that reflects your business’s
+                      individuality. Our Niagara web design services are crafted
+                      to deliver outstanding results, without the constraints of
+                      templates.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="10">
+                    What website platforms do you work with?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="10">
+                    <h2>What website platforms do you work with?</h2>
+                    <p>
+                      We specialize in building high-quality websites using two
+                      primary platforms: WordPress and Next.js . As a leading
+                      Niagara web design agency, we choose these platforms to
+                      deliver exceptional performance and flexibility for your
+                      online presence.
+                    </p>
+
+                    <p>
+                      WordPress is ideal for clients who need a user-friendly
+                      content management system, allowing you to easily update
+                      and manage your website. It is also highly customizable,
+                      making it perfect for local SEO and enhancing your site's
+                      visibility in search results.
+                    </p>
+
+                    <p>
+                      On the other hand, Next.js is our go-to choice for clients
+                      looking for a modern, fast, and scalable web solution.
+                      This platform is particularly well-suited for building
+                      high-performance sites with advanced features and optimal
+                      SEO capabilities, aligning with our goal of providing
+                      top-notch web design in Niagara.
+                    </p>
+
+                    <p>
+                      Whether you need a custom WordPress site or a cutting-edge
+                      Next.js application, Infused Agency has the expertise to
+                      create a website that meets your needs and drives results.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="11">
+                    What website platforms do you work with?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="11">
+                    <h2>What website platforms do you work with?</h2>
+                    <p>
+                      We specialize in building high-quality websites using two
+                      primary platforms: WordPress and Next.js . As a leading
+                      Niagara web design agency, we choose these platforms to
+                      deliver exceptional performance and flexibility for your
+                      online presence.
+                    </p>
+
+                    <p>
+                      WordPress is ideal for clients who need a user-friendly
+                      content management system, allowing you to easily update
+                      and manage your website. It is also highly customizable,
+                      making it perfect for local SEO and enhancing your site's
+                      visibility in search results.
+                    </p>
+
+                    <p>
+                      On the other hand, Next.js is our go-to choice for clients
+                      looking for a modern, fast, and scalable web solution.
+                      This platform is particularly well-suited for building
+                      high-performance sites with advanced features and optimal
+                      SEO capabilities, aligning with our goal of providing
+                      top-notch web design in Niagara.
+                    </p>
+
+                    <p>
+                      Whether you need a custom WordPress site or a cutting-edge
+                      Next.js application, Infused Agency has the expertise to
+                      create a website that meets your needs and drives results.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <section className="home-blog">
         <Container>
           <Row>
@@ -558,18 +1170,6 @@ const Home = ({ latestPosts }) => {
           </Row>
         </Container>
       </section>
-
-      {/* <section className="home-faq">
-        <Container>
-          <Row className="text-center pd-btm-40">
-            <Col lg="12">
-              <h2>
-                <span>Frequently Asked</span> Web Design &amp; SEO Questions{" "}
-              </h2>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
 
       <section className="cta home-cta">
         <div className="container">

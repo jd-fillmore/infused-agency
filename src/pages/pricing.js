@@ -28,14 +28,16 @@ const Pricing = () => {
             <Row>
               <Col lg="12">
                 <p>
-                  Is your online presence not bringing in new revenue? Not
-                  growing your business? Not showing off your brand in a
-                  reputable way? It's time to change that.
+                  <strong>
+                    The pricing tiers below serve as a general guideline
+                  </strong>{" "}
+                  based on the clients we've worked with currently and in the
+                  past.
                 </p>
                 <p>
-                  Investing in your online presence is just that - an
-                  investment. Invest upfront with one of our effective solutions
-                  below, so you can reap the benefits.
+                  If you're unsure where you fit,{" "}
+                  <Link href="/get-a-quote">send us an inquiry</Link> and we can
+                  help with the process.
                 </p>
               </Col>
             </Row>
@@ -46,10 +48,13 @@ const Pricing = () => {
               </Col>
             </Row>
             <Row className="pd-top-40">
-              <Col lg="3">
+              <Col lg="3" className="d-flex">
                 <div className="card text-center">
                   <div className="top">
-                    <h4>Three Page Website</h4>
+                    <h4>
+                      Three Page <br />
+                      Website
+                    </h4>
                     <h3>
                       <sup>$</sup>2,000
                     </h3>
@@ -70,10 +75,13 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg="3">
+              <Col lg="3" className="d-flex">
                 <div className="card text-center">
                   <div className="top">
-                    <h4>Five Page Website</h4>
+                    <h4>
+                      Five Page
+                      <br /> Website
+                    </h4>
                     <h3>
                       <sup>$</sup>3,000
                     </h3>
@@ -95,12 +103,12 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg="3">
+              <Col lg="3" className="d-flex">
                 <div className="card text-center">
                   <div className="top">
                     <h4>Five Page CMS Website</h4>
                     <h3>
-                      <sup>$</sup>3,500
+                      <sup>$</sup>4,000
                     </h3>
                   </div>
                   <div className="bg">
@@ -109,11 +117,7 @@ const Pricing = () => {
                         <strong>5 pages</strong>
                       </li>
                       <li>
-                        <strong>
-                          Content Management System
-                          <br />
-                          (edit website on your own)
-                        </strong>
+                        <strong>(you can edit content)</strong>
                       </li>
                       <li>SEO Optimized for Google</li>
                       <li>1 round of revisions</li>
@@ -123,12 +127,12 @@ const Pricing = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg="3">
+              <Col lg="3" className="d-flex">
                 <div className="card text-center">
                   <div className="top">
                     <h4>Ten Page CMS Website</h4>
                     <h3>
-                      <sup>$</sup>4,000
+                      <sup>$</sup>4,500
                     </h3>
                   </div>
                   <div className="bg">
@@ -137,11 +141,7 @@ const Pricing = () => {
                         <strong>10 pages</strong>
                       </li>
                       <li>
-                        <strong>
-                          Content Management System
-                          <br />
-                          (edit website on your own)
-                        </strong>
+                        <strong>(you can edit content)</strong>
                       </li>
                       <li>SEO Optimized for Google</li>
                       <li>1 round of revisions</li>

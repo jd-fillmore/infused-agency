@@ -53,6 +53,11 @@ const Example = (props) => {
                 </Link>
               </NavItem>
               <NavItem>
+                <Link href="/pricing" className="nav-link">
+                  Pricing
+                </Link>
+              </NavItem>
+              <NavItem>
                 <Link href="/reviews" className="nav-link">
                   Reviews
                 </Link>
@@ -67,6 +72,7 @@ const Example = (props) => {
                   About
                 </Link>
               </NavItem>
+
               <NavItem>
                 <Link href="/blog" className="nav-link">
                   Blog
