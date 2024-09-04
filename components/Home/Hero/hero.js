@@ -16,7 +16,7 @@ const Hero = () => {
               <Col lg="6">
                 <Image src={best} alt="niagara best rated web design company" />
                 <h1 className="intro">
-                  Niagara Web Design | Website Designers St. Catharines
+                  Niagara Web Design | Website Developer St. Catharines
                 </h1>
                 <h2>
                   We're <span>Infused Agency</span>, a Niagara web design &amp;

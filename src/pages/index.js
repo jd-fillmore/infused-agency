@@ -242,12 +242,10 @@ const Home = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          Niagara Web Design | Trusted Website Design St. Catharines
-        </title>
+        <title>Niagara Web Design | Website Developer St. Catharines</title>
         <meta
           name="description"
-          content="Award-winning Niagara web design in St. Catharines. We create custom, lead-generating websites for companies across Niagara. Get your free quote today!"
+          content="Award-winning Niagara web design in St. Catharines. Our website developers create modern websites for companies across Niagara. Get your free quote today!"
         />
         <meta
           name="google-site-verification"
@@ -274,7 +272,7 @@ const Home = ({ latestPosts }) => {
           <div className="row">
             <div className="col-lg-7">
               <h2>
-                Niagara Web Design Company That Makes Your Website Your{" "}
+                Our Niagara Website Developers Make Your Website Your{" "}
                 <span>Best Sales Manager</span>.
               </h2>
               <p>
