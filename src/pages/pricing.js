@@ -207,8 +207,8 @@ const Pricing = () => {
             </Row>
 
             {/* SEO */}
-            <Row className="pd-top-40">
-              <Col lg="4">
+            <Row className="pd-top-40 pd-btm-120">
+              <Col lg="4" className="d-flex">
                 <div className="card">
                   <h3>SEO Audit</h3>
                   <h4>
@@ -260,7 +260,8 @@ const Pricing = () => {
                     <p className="popular">Popular</p>
                   </div>
                   <h4>
-                    <span>$999</span> per month for 4 months
+                    One time SEO audit fee of $999 + <span>$999</span> / month
+                    for 3 months
                   </h4>
                   <p>
                     Accelerated SEO package for enhanced rankings and traffic
@@ -305,7 +306,8 @@ const Pricing = () => {
                 <div className="card">
                   <h3>SEO Elite</h3>
                   <h4>
-                    <span>$1,499</span> per month for 6 months
+                    One time SEO audit fee of $999 <span>$1,499</span> per month
+                    for 6 months
                   </h4>
                   <p>
                     Premium SEO service with comprehensive optimization over six
