@@ -3,6 +3,7 @@ import { InlineWidget } from "react-calendly";
 import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
@@ -32,7 +33,7 @@ const About = () => {
           <Container>
             <Row className="d-flex align-items-center">
               <Col lg="6">
-                <h2>Let's Elevate Your Digital Presence</h2>
+                <h2>Let's Elevate Your Brand</h2>
 
                 <p>
                   At Infused Agency, we're passionate about crafting websites
@@ -47,20 +48,12 @@ const About = () => {
                   next level. Reach out today, and let's start your journey to
                   online success!
                 </p>
+                <Link href="/pricing">
+                  <button>View pricing packages here.</button>
+                </Link>
 
                 <br />
-                <div className="card d-flex align-items-center">
-                  <Image
-                    src={best}
-                    className="img-fluid"
-                    alt="best rated web design agency niagara"
-                  />
-                  <Image
-                    src={rated}
-                    className="img-fluid"
-                    alt="best rated web design agency niagara"
-                  />
-                </div>
+                <br />
               </Col>
               <Col lg="6">
                 <InlineWidget url="https://calendly.com/infused-agency/project-discovery/" />

@@ -50,7 +50,7 @@ const Pricing = () => {
                 <div className="card">
                   <h3>Starter</h3>
                   <h4>
-                    Starting at <span>$2,999</span>
+                    Starting at <span>$3,499</span>
                   </h4>
                   <p>
                     For startups and solo entrepreneurs seeking to build their
@@ -102,7 +102,7 @@ const Pricing = () => {
                     <p className="popular">Popular</p>
                   </div>
                   <h4>
-                    Starting at <span>$3,999</span>
+                    Starting at <span>$6,999</span>
                   </h4>
                   <p>
                     For small businesses seeking to refresh and improve their
@@ -151,7 +151,7 @@ const Pricing = () => {
                 <div className="card">
                   <h3>Commerce</h3>
                   <h4>
-                    Starting at <span>$7,999</span>
+                    Starting at <span>$12,999</span>
                   </h4>
                   <p>
                     For growing businesses seeking to sell products and expand
@@ -260,8 +260,7 @@ const Pricing = () => {
                     <p className="popular">Popular</p>
                   </div>
                   <h4>
-                    One time SEO audit fee of $999 + <span>$999</span> / month
-                    for 3 months
+                    <span>$1,499</span> / month for 3 months
                   </h4>
                   <p>
                     Accelerated SEO package for enhanced rankings and traffic
@@ -306,8 +305,7 @@ const Pricing = () => {
                 <div className="card">
                   <h3>SEO Elite</h3>
                   <h4>
-                    One time SEO audit fee of $999 <span>$1,499</span> per month
-                    for 6 months
+                    <span>$2,499</span> per month for 6 months
                   </h4>
                   <p>
                     Premium SEO service with comprehensive optimization over six
