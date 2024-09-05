@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Poppins } from "@next/font/google";
+import { DM_Sans } from "@next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -47,9 +47,9 @@ import Script from "next/script";
 //   weight: "400",
 // });
 
-export const poppins = Poppins({
+export const dmsans = DM_Sans({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
@@ -63,14 +63,14 @@ export default function App({ Component, pageProps }) {
         h4,
         h5,
         h6 {
-          font-family: ${poppins.style.fontFamily};
+          font-family: ${dmsans.style.fontFamily};
         }
         a,
         ul,
         ol,
         p,
         button {
-          font-family: ${poppins.style.fontFamily} !important;
+          font-family: ${dmsans.style.fontFamily} !important;
         }
       `}</style>
 

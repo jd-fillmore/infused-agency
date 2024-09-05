@@ -310,15 +310,102 @@ const Home = ({ latestPosts }) => {
                 alt="web design niagara"
               />
             </div>
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-lg-7">
-                  <h2>
-                    Powered by Infused Agency -{" "}
-                    <span>Web Design &amp; Digital Marketing</span>
-                  </h2>
+            <div className="container pd-top-40">
+              <div className="row text-center">
+                <div className="col-lg-12">
+                  <h2>Powered by Infused Agency</h2>
                 </div>
-                <div className="col-lg-5">
+              </div>
+              <div className="row align-items-center">
+                <div className="col-lg-6">
+                  <div className="card">
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
+                    />
+                    <p className="author">GGS Niagara Landscaping</p>
+                    <div className="d-flex">
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                          fill="#FFD700"
+                        />
+                      </svg>
+                    </div>
+                    <p className="desc">
+                      They did a fantastic job on my website. They were easy to
+                      work with, always very quick to respond and made designing
+                      the page very simple. I would highly recommend them for
+                      all of your web design and development needs!
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-6">
                   <p>
                     With over a <Link href="/about">decade of experience</Link>{" "}
                     and a team of seasoned experts, we bring unparalleled
@@ -353,74 +440,77 @@ const Home = ({ latestPosts }) => {
           {/* Row One */}
           <div className="row">
             <div className="col-lg-4 d-flex">
-              <div className="card">
-                <Link href="/web-design">
+              <Link href="/web-design">
+                <div className="card">
                   <h2>Web Design</h2>
-                </Link>
-                <p>
-                  Is your website not bringing you customers? We create
-                  lead-generating websites, for the purpose of converting
-                  visitors into customers.
-                </p>
-              </div>
+                  <p>
+                    Is your website not bringing you customers? We create
+                    lead-generating websites, for the purpose of converting
+                    visitors into customers.
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className="col-lg-4 d-flex">
-              <div className="card">
-                <Link href="/website-conversion-optimization">
+              <Link href="/website-conversion-optimization">
+                <div className="card">
                   <h2>Conversion Optimization</h2>
-                </Link>
-                <p>
-                  Is your website not bringing you leads? Our team will fix
-                  conversion barriers, optimizing your website to convert more.
-                </p>
-              </div>
+                  <p>
+                    Is your website not bringing you leads? Our team will fix
+                    conversion barriers, optimizing your website to convert
+                    more.
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className="col-lg-4 d-flex">
-              <div className="card">
-                <Link href="/niagara-seo-company">
+              <Link href="/niagara-seo-company">
+                <div className="card">
                   <h2>Search Engine Optimization</h2>
-                </Link>
-                <p>
-                  Are your customers not finding your website in Google? Lets
-                  help get your website found, and drive more leads to you.
-                </p>
-              </div>
+                  <p>
+                    Are your customers not finding your website in Google? Lets
+                    help get your website found, and drive more leads to you.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-4 d-flex">
-              <div className="card">
-                <Link href="/web-design">
+              <Link href="/web-design">
+                <div className="card">
                   <h2>Website Development</h2>
-                </Link>
-                <p>
-                  Is your website outdated or lacking functionality? We
-                  specialize in building modern, fast, and responsive websites.
-                </p>
-              </div>
+                  <p>
+                    Is your website outdated or lacking functionality? We
+                    specialize in building modern, fast, and responsive
+                    websites.
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className="col-lg-4 d-flex">
-              <div className="card">
-                <Link href="/wordpress-developer-niagara">
+              <Link href="/wordpress-developer-niagara">
+                <div className="card">
                   <h2>WordPress Development</h2>
-                </Link>
-                <p>
-                  Struggling with a generic or outdated WordPress site? We craft
-                  custom WordPress solutions tailored to your business needs.
-                </p>
-              </div>
+                  <p>
+                    Struggling with a generic or outdated WordPress site? We
+                    craft custom WordPress solutions tailored to your business
+                    needs.
+                  </p>
+                </div>
+              </Link>
             </div>
             <div className="col-lg-4 d-flex">
-              <div className="card">
-                <Link href="/niagara-seo-company">
+              <Link href="/niagara-seo-company">
+                <div className="card">
                   <h2>Local SEO</h2>
-                </Link>
-                <p>
-                  Are local customers missing out on your services? We focus on
-                  optimizing your site for local search, getting you more
-                  visibility.
-                </p>
-              </div>
+                  <p>
+                    Are local customers missing out on your services? We focus
+                    on optimizing your site for local search, getting you more
+                    visibility.
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
           <section className="our-clients pd-top-80">
@@ -620,6 +710,338 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
+      <section className="pricing pd-top-120">
+        <Container>
+          <Row className="text-center">
+            <Col lg="12">
+              <h2>
+                Website Design &amp; SEO Pricing For{" "}
+                <span>All Business Sizes</span>
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="12">
+              <p className="w-75 text-center">
+                High-quality web design shouldn't be reserved for large
+                companies. We help small to medium businesses and alike build a
+                strong online presence at an affordable price.
+              </p>
+            </Col>
+          </Row>
+          {/* Websites */}
+          <Row className="pd-top-40 text-center">
+            <Col lg="12">
+              <h2>
+                <span>Website Design</span> Pricing
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="4" className="d-flex">
+              <div className="card">
+                <h3>Starter</h3>
+                <h4>
+                  Starting at <span>$2,999</span>
+                </h4>
+                <p>
+                  For startups and solo entrepreneurs seeking to build their
+                  online presence.
+                </p>
+                <div className="bg">
+                  <li className="check">5 Pages</li>
+                  <li className="check">1 Round of Revisions</li>
+                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Mobile-Friendly Design</li>
+                  <li className="check">SSL Certificate Included</li>
+                  <li className="xmark">Edit Content On Your Own</li>
+                  <li className="xmark">Blog</li>
+                  <li className="xmark">Photo Galleries</li>
+                  <li className="xmark">Memberships</li>
+                  <li className="xmark">Appointment Booking</li>
+                  <li className="xmark">Lead Form</li>
+                  <li className="xmark">Social Media Integration</li>
+                  <li className="xmark">Quote/Fee Calculator</li>
+                  <li className="xmark">SEO-Indexable Pages</li>
+                  <li className="xmark">Google Analytics Setup</li>
+                  <li className="xmark">Google Search Console Setup</li>
+                  <li className="xmark">Product Purchase (E-Commerce)</li>
+                  <li className="xmark">Payment Integration</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+            <Col lg="4" className="d-flex">
+              <div className="card">
+                <div className="d-flex align-items-center">
+                  <h3>Business</h3>
+                  <p className="popular">Popular</p>
+                </div>
+                <h4>
+                  Starting at <span>$3,999</span>
+                </h4>
+                <p>
+                  For small businesses seeking to refresh and improve their
+                  online presence.
+                </p>
+                <div className="bg">
+                  <li className="check">10 Pages</li>
+                  <li className="check">1 Round of Revisions</li>
+                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Mobile-Friendly Design</li>
+                  <li className="check">SSL Certificate Included</li>
+                  <li className="check">Edit Content On Your Own</li>
+                  <li className="check">Blog</li>
+                  <li className="check">Photo Galleries</li>
+                  <li className="check">Memberships</li>
+                  <li className="check">Appointment Booking</li>
+                  <li className="check">Lead Form</li>
+                  <li className="check">Social Media Integration</li>
+                  <li className="check">Quote/Fee Calculator</li>
+                  <li className="check">SEO-Indexable Pages</li>
+                  <li className="check">Google Analytics Setup</li>
+                  <li className="check">Google Search Console Setup</li>
+                  <li className="xmark">Product Purchase (E-Commerce)</li>
+                  <li className="xmark">Payment Integration</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+            <Col lg="4" className="d-flex">
+              <div className="card">
+                <h3>Commerce</h3>
+                <h4>
+                  Starting at <span>$7,999</span>
+                </h4>
+                <p>
+                  For growing businesses seeking to sell products and expand
+                  their brand online.
+                </p>
+                <div className="bg">
+                  <li className="check">15 Pages</li>
+                  <li className="check">1 Round of Revisions</li>
+                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Mobile-Friendly Design</li>
+                  <li className="check">SSL Certificate Included</li>
+                  <li className="check">Edit Content On Your Own</li>
+                  <li className="check">Blog</li>
+                  <li className="check">Photo Galleries</li>
+                  <li className="check">Memberships</li>
+                  <li className="check">Appointment Booking</li>
+                  <li className="check">Lead Form</li>
+                  <li className="check">Social Media Integration</li>
+                  <li className="check">Quote/Fee Calculator</li>
+                  <li className="check">SEO-Indexable Pages</li>
+                  <li className="check">Google Analytics Setup</li>
+                  <li className="check">Google Search Console Setup</li>
+                  <li className="check">Product Purchase (E-Commerce)</li>
+                  <li className="check">Payment Integration</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+          </Row>
+          {/* SEO*/}
+          <Row className="pd-top-40 text-center">
+            <Col lg="12">
+              <h2>
+                <span>SEO (Search Engine Optimization)</span> Pricing
+              </h2>
+            </Col>
+          </Row>
+
+          {/* SEO */}
+          <Row className="pd-top-40 pd-btm-120">
+            <Col lg="4">
+              <div className="card">
+                <h3>SEO Audit</h3>
+                <h4>
+                  One time fee of <span>$999</span>
+                </h4>
+                <p>
+                  Detailed analysis of your website’s SEO, highlighting areas
+                  for improvement.
+                </p>
+                <div className="bg">
+                  <li className="check">SEO Website Audit</li>
+                  <li className="check">SEO Audit Report</li>
+                  <li className="xmark">3 month SEO Campaign</li>
+                  <li className="xmark">Custom SEO Strategy</li>
+                  <li className="xmark">In-Depth Keyword Research</li>
+                  <li className="xmark">SEO Content Optimization</li>
+                  <li className="xmark">Optimize Image Alt Tags</li>
+                  <li className="xmark">Optimize Google Sitemap</li>
+                  <li className="xmark">Optimize Meta Descriptions</li>
+                  <li className="xmark">Optimize Meta Titles</li>
+                  <li className="xmark">On-page SEO Optimization</li>
+                  <li className="xmark">Optimize Google Map Listing</li>
+                  <li className="xmark">Link Building</li>
+                  <li className="xmark">2 SEO Blog Posts / Month</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+            <Col lg="4">
+              <div className="card">
+                <div className="d-flex align-items-center">
+                  <h3>SEO Boost</h3>
+                  <p className="popular">Popular</p>
+                </div>
+                <h4>
+                  <span>$999</span> per month for 4 months
+                </h4>
+                <p>
+                  Accelerated SEO package for enhanced rankings and traffic over
+                  four months.
+                </p>
+                <div className="bg">
+                  <li className="check">SEO Website Audit</li>
+                  <li className="check">SEO Audit Report</li>
+                  <li className="check">3 month SEO Campaign</li>
+                  <li className="check">Custom SEO Strategy</li>
+                  <li className="check">In-Depth Keyword Research</li>
+                  <li className="check">SEO Content Optimization</li>
+                  <li className="check">Optimize Image Alt Tags</li>
+                  <li className="check">Optimize Google Sitemap</li>
+                  <li className="check">Optimize Meta Descriptions</li>
+                  <li className="check">Optimize Meta Titles</li>
+                  <li className="check">On-page SEO Optimization</li>
+                  <li className="check">Optimize Google Map Listing</li>
+                  <li className="check">Link Building</li>
+                  <li className="xmark">2 SEO Blog Posts / Month</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+            <Col lg="4">
+              <div className="card">
+                <h3>SEO Elite</h3>
+                <h4>
+                  <span>$1,499</span> per month for 6 months
+                </h4>
+                <p>
+                  Premium SEO service with comprehensive optimization over six
+                  months.
+                </p>
+                <div className="bg">
+                  <li className="check">SEO Website Audit</li>
+                  <li className="check">SEO Audit Report</li>
+                  <li className="check">3 month SEO Campaign</li>
+                  <li className="check">Custom SEO Strategy</li>
+                  <li className="check">In-Depth Keyword Research</li>
+                  <li className="check">SEO Content Optimization</li>
+                  <li className="check">Optimize Image Alt Tags</li>
+                  <li className="check">Optimize Google Sitemap</li>
+                  <li className="check">Optimize Meta Descriptions</li>
+                  <li className="check">Optimize Meta Titles</li>
+                  <li className="check">On-page SEO Optimization</li>
+                  <li className="check">Optimize Google Map Listing</li>
+                  <li className="check">Link Building</li>
+                  <li className="check">2 SEO Blog Posts / Month</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <section className="home-faq">
         <Container>
           <Row className="text-center pd-btm-40">
@@ -811,94 +1233,12 @@ const Home = ({ latestPosts }) => {
                       Niagara business can be challenging as each project is
                       unique, involving various factors such as design
                       complexity, functionality, and the range of services
-                      required. At Infused Agency, we offer a range of pricing
-                      options based on your needs:
+                      required.
                     </p>
-
-                    <h3>Niagara Website Design Pricing Tiers</h3>
-                    <ul>
-                      <li>
-                        <strong>Three Page Website</strong> - $2,000
-                        <ul>
-                          <li>3 pages</li>
-                          <li>1 round of revisions</li>
-                          <li>Hosting included</li>
-                          <li>SSL Certificate included</li>
-                          <li>Mobile-Friendly</li>
-                          <li>Google Sitemap</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>Five Page Website</strong> - $3,000
-                        <ul>
-                          <li>5 pages</li>
-                          <li>SEO Optimized for Google</li>
-                          <li>1 round of revisions</li>
-                          <li>Hosting included</li>
-                          <li>SSL Certificate included</li>
-                          <li>Mobile-Friendly</li>
-                          <li>Google Sitemap</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>Five Page CMS Website</strong> - $4,000
-                        <ul>
-                          <li>5 pages</li>
-                          <li>
-                            Content Management System (edit website on your own)
-                          </li>
-                          <li>SEO Optimized for Google</li>
-                          <li>1 round of revisions</li>
-                          <li>Mobile-Friendly</li>
-                          <li>Google Sitemap</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>Ten Page CMS Website</strong> - $4,500
-                        <ul>
-                          <li>10 pages</li>
-                          <li>
-                            Content Management System (edit website on your own)
-                          </li>
-                          <li>SEO Optimized for Google</li>
-                          <li>1 round of revisions</li>
-                          <li>Mobile-Friendly</li>
-                          <li>Google Sitemap</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <strong>
-                          E-Commerce / Advanced Functionality Website
-                        </strong>{" "}
-                        - $5,000 - $20,000+
-                        <ul>
-                          <li>20 pages</li>
-                          <li>
-                            Content Management System (edit website on your own)
-                          </li>
-                          <li>E-Commerce Functionality</li>
-                          <li>Chat Functionality</li>
-                          <li>Member Section Functionality</li>
-                          <li>Other Custom Functionality</li>
-                        </ul>
-                      </li>
-                    </ul>
-
-                    <h3>Search Engine Optimization</h3>
                     <p>
-                      <strong>Boosted SEO</strong> - $1,000 per month for 3
-                      months
-                      <ul>
-                        <li>Backlink building</li>
-                        <li>Custom SEO strategy</li>
-                        <li>Keyword research</li>
-                        <li>On-page SEO</li>
-                        <li>Campaign reporting</li>
-                        <li>Optimize Google My Business Listing</li>
-                        <li>Optimize website home page</li>
-                      </ul>
+                      <Link href="/pricing">View our pricing</Link> for both
+                      website design and SEO services within the Niagara region.
                     </p>
-
                     <p>
                       <Link href="/get-a-quote">Book a call today</Link> to
                       discuss your goals, learn more about our experience, and

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import Nav from "../../components/Nav/nav";
@@ -8,6 +9,7 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 import bgImage from "../img/inner-about.jpg";
+import portImg from "../img/work-tree.png";
 
 const KDFlowers = () => {
   return (
@@ -29,7 +31,7 @@ const KDFlowers = () => {
         <section className="work-specific">
           <Container>
             <Row>
-              <Col lg="12">
+              <Col lg="6">
                 <h2>Challenge</h2>
                 <p>
                   TreeReports came to us seeking our expertise for two main
@@ -39,10 +41,6 @@ const KDFlowers = () => {
                   interested in an arborist consultant to find them in Google
                   when they searched for specific terms.
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="12">
                 <h2>Solution</h2>
                 <p>
                   We sat down with TreeReports and discussed her business
@@ -50,6 +48,9 @@ const KDFlowers = () => {
                   online presence. They wanted a website that was not only
                   modern, but brought in new local customers.
                 </p>
+              </Col>
+              <Col lg="6">
+                <Image className="img-fluid" src={portImg} alt="tree reports" />
               </Col>
             </Row>
             <Row>

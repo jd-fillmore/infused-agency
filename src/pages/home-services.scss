@@ -30,9 +30,13 @@
     }
   }
   .card {
-    // text-align: center;
     padding: 30px;
     border-radius: 0px;
+    border-top: 3px solid $light-blue;
+    transition: 0.2s;
+    &:hover {
+      box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+    }
     h2 {
       font-size: 22px;
       font-weight: bold;
@@ -50,6 +54,11 @@
       &:hover {
         border-bottom: none;
       }
+    }
+  }
+  a {
+    &:hover {
+      border-bottom: none !important;
     }
   }
 }

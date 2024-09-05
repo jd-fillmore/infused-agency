@@ -16,8 +16,9 @@ h4,
 h5,
 h6 {
   font-family: $heading;
-  font-weight: bold;
-  color: $grey;
+  font-weight: 700;
+  color: #1e3841 !important;
+  letter-spacing: -0.065em;
   @include bp-tablet-sm {
     line-height: 1.6;
   }
@@ -68,7 +69,7 @@ h1 {
 }
 
 h2 {
-  font-size: 44px;
+  font-size: 54px;
   line-height: 1.4;
   @include bp-tablet-sm {
     font-size: 28px !important;
@@ -419,7 +420,7 @@ span {
   }
   h2 {
     margin-bottom: 30px;
-    color: $dark-blue;
+    color: $dark-blue !important;
   }
   h3 {
     font-size: 24px;
@@ -469,29 +470,11 @@ span {
   }
   h2 {
     margin-bottom: 30px;
+    font-size: 52px;
+    line-height: 1.2;
   }
   .card {
-    padding: 10px;
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    h3 {
-      color: $dark-purple;
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 0;
-    }
-    p {
-      color: $glow-blue;
-      font-size: 16px;
-      margin-top: 0;
-      line-height: 1.4;
-      margin-bottom: 10px;
-    }
-    @include bp-tablet-sm {
-      margin-top: 20px;
-      margin-bottom: 0;
-    }
+    padding: 20px;
   }
   #card-result {
     margin-bottom: 0px;
@@ -771,4 +754,16 @@ iframe {
   @include bp-tablet-sm {
     padding-bottom: 40px;
   }
+}
+
+.check::before {
+  content: "✔"; /* Green check mark */
+  color: green;
+  margin-right: 10px;
+}
+
+.xmark::before {
+  content: "✘"; /* Grey X mark */
+  color: grey;
+  margin-right: 19px;
 }

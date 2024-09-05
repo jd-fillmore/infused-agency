@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import Nav from "../../components/Nav/nav";
@@ -8,6 +9,7 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 import bgImage from "../img/inner-about.jpg";
+import portImg from "../img/work-kd.png";
 
 const KDFlowers = () => {
   return (
@@ -29,7 +31,7 @@ const KDFlowers = () => {
         <section className="work-specific">
           <Container>
             <Row>
-              <Col lg="12">
+              <Col lg="6">
                 <h2>Challenge</h2>
                 <p>
                   KD Flowers came to us seeking our expertise for two main
@@ -40,10 +42,6 @@ const KDFlowers = () => {
                   boutiques, to find them in Google when they searched for those
                   specific terms.
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="12">
                 <h2>Solution</h2>
                 <p>
                   We sat down with KD Flowers and discussed her business vision,
@@ -51,6 +49,9 @@ const KDFlowers = () => {
                   presence. They wanted a website that was not only modern, but
                   brought in new local customers.
                 </p>
+              </Col>
+              <Col lg="6">
+                <Image className="img-fluid" src={portImg} alt="kd flowers" />
               </Col>
             </Row>
             <Row>

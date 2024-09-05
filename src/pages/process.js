@@ -56,7 +56,7 @@ const About = () => {
             <Row>
               <Col lg="6">
                 <div className="card">
-                  <h2>Our Web Design Process</h2>
+                  <h2>Web Design Process</h2>
 
                   <h3>Initial Consultation</h3>
                   <p>
@@ -121,7 +121,7 @@ const About = () => {
               </Col>
               <Col lg="6">
                 <div className="card">
-                  <h2>Our SEO Process</h2>
+                  <h2>SEO Process</h2>
 
                   <h3>Keyword Research</h3>
                   <p>

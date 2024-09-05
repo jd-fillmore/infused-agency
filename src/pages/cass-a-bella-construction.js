@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 import Nav from "../../components/Nav/nav";
@@ -8,6 +9,7 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 import bgImage from "../img/inner-about.jpg";
+import portImg from "../img/work-cass.png";
 
 const CassABella = () => {
   return (
@@ -29,7 +31,7 @@ const CassABella = () => {
         <section className="work-specific">
           <Container>
             <Row>
-              <Col lg="12">
+              <Col lg="6">
                 <h2>Challenge</h2>
                 <p>
                   Fernando of Cass-A-Bella Construction came seeking our
@@ -41,10 +43,6 @@ const CassABella = () => {
                   a lot of work, as he would like some new leads coming in
                   consistently from Google.
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="12">
                 <h2>Solution</h2>
                 <p>
                   We sat down with Cass-A-Bella Construction and discussed how
@@ -55,6 +53,9 @@ const CassABella = () => {
                   once people found their site, a great impression would be had
                   due to the modern design.
                 </p>
+              </Col>
+              <Col lg="6">
+                <Image className="img-fluid" src={portImg} alt="cass" />
               </Col>
             </Row>
             <Row>
