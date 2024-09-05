@@ -53,8 +53,8 @@ const Pricing = () => {
                     Starting at <span>$3,499</span>
                   </h4>
                   <p>
-                    For startups and solo entrepreneurs seeking to build their
-                    online presence.
+                    For small businesses and startups seeking to build or
+                    refresh their online presence.
                   </p>
                   <div className="bg">
                     <li className="check">5 Pages</li>
@@ -105,7 +105,7 @@ const Pricing = () => {
                     Starting at <span>$6,999</span>
                   </h4>
                   <p>
-                    For small businesses seeking to refresh and improve their
+                    For small businesses seeking to upgrade and improve their
                     online presence.
                   </p>
                   <div className="bg">
@@ -314,7 +314,7 @@ const Pricing = () => {
                   <div className="bg">
                     <li className="check">SEO Website Audit</li>
                     <li className="check">SEO Audit Report</li>
-                    <li className="check">3 month SEO Campaign</li>
+                    <li className="check">6 month SEO Campaign</li>
                     <li className="check">Custom SEO Strategy</li>
                     <li className="check">In-Depth Keyword Research</li>
                     <li className="check">SEO Content Optimization</li>
