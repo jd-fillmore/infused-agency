@@ -35,10 +35,19 @@ const Pricing = () => {
                   We help small to medium businesses and alike build a strong
                   online presence at an affordable price.
                 </p>
+                <h3 className="pd-top-40">
+                  <strong>
+                    <span>These prices are a general guideline only.</span>{" "}
+                    <br />
+                    <br />
+                    Depending on your specific project scope, whether it's
+                    reducing or adding to the scope, the prices may fluctuate.
+                  </strong>
+                </h3>
               </Col>
             </Row>
             {/* Websites */}
-            <Row className="pd-btm-40">
+            <Row className="pd-top-40 pd-btm-40">
               <Col lg="12">
                 <h2>
                   <span>Website Design &amp; Development</span> Pricing

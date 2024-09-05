@@ -28,7 +28,9 @@ const Example = (props) => {
       <Navbar id="nav" expand="lg">
         <Container fluid>
           <NavbarBrand className="logo" name="Infused Agency">
-            <Image className="logo" src={logo} alt="Infused Agency Logo" />
+            <Link href="/">
+              <Image className="logo" src={logo} alt="Infused Agency Logo" />
+            </Link>
           </NavbarBrand>
           <NavbarToggler className="custom-toggler" onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
