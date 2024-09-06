@@ -743,7 +743,7 @@ const Home = ({ latestPosts }) => {
             </Col>
           </Row>
           {/* Websites */}
-          <Row className="pd-top-40 text-center">
+          <Row className="pd-top-40 pd-btm-40 text-center">
             <Col lg="12">
               <h2>
                 <span>Website Design</span> Pricing
@@ -751,20 +751,21 @@ const Home = ({ latestPosts }) => {
             </Col>
           </Row>
           <Row>
-            <Col lg="4" className="d-flex">
+            <Col lg="3" className="d-flex">
               <div className="card">
                 <h3>Starter</h3>
                 <h4>
-                  Starting at <span>$3,499</span>
+                  Starting at <span>$1,499</span>
                 </h4>
                 <p>
-                  For small businesses and startups seeking to build or refresh
-                  their online presence.
+                  For budget-conscious small businesses and individuals seeking
+                  a basic, <span>templated</span> online presence.
                 </p>
                 <div className="bg">
-                  <li className="check">5 Pages</li>
+                  <li className="check">1-3 Pages</li>
                   <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Templated Build</li>
+                  <li className="xmark">Custom, Template-Free Design</li>
                   <li className="check">Mobile-Friendly Design</li>
                   <li className="check">SSL Certificate Included</li>
                   <li className="xmark">Edit Content On Your Own</li>
@@ -800,7 +801,56 @@ const Home = ({ latestPosts }) => {
                 </Link>
               </div>
             </Col>
-            <Col lg="4" className="d-flex">
+            <Col lg="3" className="d-flex">
+              <div className="card">
+                <h3>Growth</h3>
+                <h4>
+                  Starting at <span>$3,499</span>
+                </h4>
+                <p>
+                  For small businesses looking to enhance their online presence
+                  with more features and customization options.
+                </p>
+                <div className="bg">
+                  <li className="check">5 Pages</li>
+                  <li className="check">1 Round of Revisions</li>
+                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Mobile-Friendly Design</li>
+                  <li className="check">SSL Certificate Included</li>
+                  <li className="check">Edit Content On Your Own</li>
+                  <li className="check">Blog</li>
+                  <li className="xmark">Photo Galleries</li>
+                  <li className="xmark">Memberships</li>
+                  <li className="xmark">Appointment Booking</li>
+                  <li className="check">Lead Form</li>
+                  <li className="xmark">Social Media Integration</li>
+                  <li className="xmark">Quote/Fee Calculator</li>
+                  <li className="check">SEO-Indexable Pages</li>
+                  <li className="xmark">Google Analytics Setup</li>
+                  <li className="xmark">Google Search Console Setup</li>
+                  <li className="xmark">Product Purchase (E-Commerce)</li>
+                  <li className="xmark">Payment Integration</li>
+                </div>
+                <Link href="/get-a-quote">
+                  <button>
+                    Choose Package
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 512 512"
+                      className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                      height="20px"
+                      width="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                    </svg>
+                  </button>
+                </Link>
+              </div>
+            </Col>
+            <Col lg="3" className="d-flex">
               <div className="card">
                 <div className="d-flex align-items-center">
                   <h3>Business</h3>
@@ -810,8 +860,8 @@ const Home = ({ latestPosts }) => {
                   Starting at <span>$6,999</span>
                 </h4>
                 <p>
-                  For small businesses seeking to upgrade and improve their
-                  online presence.
+                  For established businesses that require advanced functionality
+                  and custom design elements.
                 </p>
                 <div className="bg">
                   <li className="check">10 Pages</li>
@@ -852,7 +902,7 @@ const Home = ({ latestPosts }) => {
                 </Link>
               </div>
             </Col>
-            <Col lg="4" className="d-flex">
+            <Col lg="3" className="d-flex">
               <div className="card">
                 <h3>Commerce</h3>
                 <h4>

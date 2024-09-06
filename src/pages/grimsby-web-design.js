@@ -14,6 +14,7 @@ import kdImg from "../img/niagara-web-design.png";
 import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
+import PricingTiers from "../../components/Pricing/pricing";
 
 const addJsonLd = () => {
   const schema = {
@@ -49,7 +50,15 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Grimsby Web Design | Innovative Digital Presence</title>
+        <title>
+          Grimsby Web Design | Website Design Grimsby, Ontario - Infused Agency
+          | Website Developer Grimsby, Website Development Grimsby, Web
+          Developers Grimsby, Web Development Grimsby, Web Page Design Grimsby,
+          Web Design Agency Grimsby, Website Design Company Grimsby, Web Design
+          Company Grimsby, Website Development Company Grimsby, Website Design
+          Agency Grimsby, Web Design Firm Grimsby, Web Design Agency in Grimsby,
+          Website Designer Grimsby, Web Design Services Grimsby
+        </title>
         <meta
           name="description"
           content="Elevate your brand with top-notch Grimsby web design services. Affordable, stunning websites that capture attention. Drive growth now!"
@@ -57,6 +66,11 @@ const SEO = () => {
         <link
           rel="canonical"
           href="https://infused.agency/grimsby-web-design"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
         />
       </Head>
       <Nav />
@@ -440,6 +454,35 @@ const SEO = () => {
               </Row>
             </Container>
           </section>
+          <Container>
+            <Row className="text-center">
+              <Col lg="12">
+                <h2>
+                  Website Design &amp; SEO Pricing For{" "}
+                  <span>All Business Sizes</span>
+                </h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg="12">
+                <p className="w-75 text-center">
+                  High-quality web design shouldn't be reserved for large
+                  companies. We help small to medium businesses and alike build
+                  a strong online presence at an affordable price.
+                </p>
+                <h3 className="w-75 pd-top-40 text-center">
+                  <strong>
+                    <span>These prices are a general guideline only.</span>{" "}
+                    <br />
+                    <br />
+                    Depending on your specific project scope, whether it's
+                    reducing or adding to the scope, the prices may fluctuate.
+                  </strong>
+                </h3>
+              </Col>
+            </Row>
+            <PricingTiers />
+          </Container>
           <Container>
             <Row className="pd-top-80 pd-btm-60">
               <Col lg="12">
