@@ -26,7 +26,7 @@ const About = () => {
       <Nav />
       <InnerHero
         title="Get Your Free Quote"
-        description="Transform your online presence with a tailored Niagara web and SEO solution."
+        description="Transform your online presence with a tailored web and SEO solution."
       />
       <InnerContent>
         <section className="about">

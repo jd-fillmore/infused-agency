@@ -185,6 +185,31 @@ form {
       margin-bottom: 20px;
     }
   }
+  .hero {
+    background-image: linear-gradient(to right, #005c97, #363795);
+    button {
+      box-shadow: none;
+    }
+    h1 {
+      font-size: 70px;
+      font-weight: 800;
+      padding-top: 0px;
+    }
+    h2 {
+      &.intro {
+        font-size: 24px;
+      }
+      &.sub {
+        font-size: 28px;
+      }
+    }
+    h1,
+    h2,
+    h3,
+    p {
+      color: #fff !important;
+    }
+  }
   .niche-inner-hero {
     background-size: cover;
     padding: 300px 0px 160px 0px;
@@ -250,7 +275,7 @@ form {
     padding: 120px 0px 120px 0px;
     p,
     h2 {
-      color: #fff;
+      color: #fff !important;
     }
     h2 {
       font-size: 80px;
