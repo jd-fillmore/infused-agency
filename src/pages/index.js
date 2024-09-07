@@ -150,7 +150,7 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Niagara Web Design | Website Developer St. Catharines - Infused Agency
+          Niagara Web Design | Website Developer St. Catharines | Award Winning | Affordable | Infused Agency
           Web Design Niagara, Website Design Niagara, Niagara Falls Web Design
           Company, Niagara Web Designer, Web Design Niagara Falls Ontario, Web
           Design St. Catharines, Website Design St. Catharines
@@ -184,28 +184,18 @@ const Home = ({ latestPosts }) => {
           <div className="row">
             <div className="col-lg-7">
               <h2>
-                Our Niagara Website Developers Make Your Website Your{" "}
-                <span>Best Sales Manager</span>.
+                Your Website, Your <span>Best Sales Manager</span>.
               </h2>
               <p>
-                Infused Agency is a renowned Niagara-based web design company,
-                specializing in crafting user-friendly websites that seamlessly
-                blend creativity and functionality. From concept to conversion,
-                we craft bespoke digital experiences that merge your brand's
-                essence with cutting-edge design. Our comprehensive suite of
-                services - spanning responsive web development, strategic SEO,
-                and targeted digital marketing - is engineered to transform your
-                online presence into a powerful lead generation and sales
-                acceleration engine.
-                <br />
-                <br />
-                Our portfolio showcases a diverse array of success stories,
-                including businesses in St. Catharines, Niagara Falls, Welland,
-                Fort Erie, Thorold, and Niagara-on-the-Lake, with websites that
-                are not only visually appealing and easy to use but also
-                optimized to increase leads, boost sales, and enhance
-                credibility.
-              </p>
+              At Infused Agency, we make websites that are easy to use and look great. From the first idea to the final product, we create custom websites that show off your brand and use the latest designs.</p>
+              <p>We have helped businesses in St. Catharines, Niagara Falls, Welland, Fort Erie, Thorold, Niagara-on-the-Lake, Grimsby, Beamsville, Lincoln and beyond.</p>
+              <h2>Our Services Include:</h2>
+              <ul>
+                <li>Making websites that work on all devices</li>
+                <li>Helping Your Website Show Up on Search Engines</li>
+                <li>Online marketing to reach more people</li>
+              </ul>
+              <p>These services help turn your website into a strong tool to get more leads and sales. We make websites that are not only nice to look at and easy to use but also help increase leads, boost sales, and build trust in your business.</p>
             </div>
             <div className="col-lg-5">
               <Image
@@ -221,8 +211,8 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-top-40 align-items-center">
             <div className="col-lg-6">
               <h2>Why Choose Infused Agency?</h2>
-              <p>It's simple. We've been helping Niagara businesses flourish with their <Link href="/web-design">website designs</Link> and <Link href="/niagara-seo-company">SEO projects</Link> for over a decade.</p>
-              <p>With our <Link href="/blog">authoritative knowledge</Link>, <Link href="/work">quality of work</Link>, and <Link href="/reviews">awesome customer relationships</Link>, we've become a top web design company that Niagara businesses can trusts.</p>
+              <p>It's simple. We have been helping Niagara businesses with their websites and SEO for over ten years.</p>
+              <p>With our <Link href="/blog">great knowledge</Link>, <Link href="/work">high quality work</Link>, and <Link href="/reviews">friendly customer service</Link>, we've become a top web design company that Niagara businesses trust.</p>
             </div>
             <div className="col-lg-6">
             <Image
@@ -328,8 +318,7 @@ const Home = ({ latestPosts }) => {
                 Web Design That Makes An <span>Impact</span>
               </h2>
               <p>
-                Our lead-generating web design, optimization and SEO solutions
-                help bring you more leads through your website
+              Our web design, optimization, and SEO solutions help bring you more leads through your website.
               </p>
             </div>
           </div>
@@ -342,9 +331,7 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Web Design</h2>
                   <p>
-                    Is your website not bringing you customers? We create
-                    lead-generating websites, for the purpose of converting
-                    visitors into customers.
+                  Is your website not bringing you customers? We make websites that turn visitors into customers.
                   </p>
                 </div>
               </Link>
@@ -354,9 +341,7 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Conversion Optimization</h2>
                   <p>
-                    Is your website not bringing you leads? Our team will fix
-                    conversion barriers, optimizing your website to convert
-                    more.
+                  Is your website not bringing you leads? Our team will fix problems so your website can get more leads.
                   </p>
                 </div>
               </Link>
@@ -366,8 +351,7 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Search Engine Optimization</h2>
                   <p>
-                    Are your customers not finding your website in Google? Lets
-                    help get your website found, and drive more leads to you.
+                  Are your customers not finding your website on Google? We can help your website get found and bring you more leads.
                   </p>
                 </div>
               </Link>
@@ -379,9 +363,7 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Website Development</h2>
                   <p>
-                    Is your website outdated or lacking functionality? We
-                    specialize in building modern, fast, and responsive
-                    websites.
+                  Is your website old or not working well? We build modern, fast, and responsive websites.
                   </p>
                 </div>
               </Link>
@@ -391,9 +373,7 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>WordPress Development</h2>
                   <p>
-                    Struggling with a generic or outdated WordPress site? We
-                    craft custom WordPress solutions tailored to your business
-                    needs.
+                  Is your WordPress site outdated or not good enough? We create custom WordPress sites just for your business needs.
                   </p>
                 </div>
               </Link>
@@ -403,9 +383,7 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Local SEO</h2>
                   <p>
-                    Are local customers missing out on your services? We focus
-                    on optimizing your site for local search, getting you more
-                    visibility.
+                  Are local customers not finding your services? We optimize your site for local searches to get you more visibility.
                   </p>
                 </div>
               </Link>
@@ -415,12 +393,10 @@ const Home = ({ latestPosts }) => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <h2>
-                  Clients We've Helped <span>Flourish</span>
+                  Clients We've <span>Helped</span>
                 </h2>
                 <p>
-                  For over a decade, we've built valuable partnerships with
-                  numerous brands and businesses throughout Niagara &amp;
-                  beyond.
+                For over ten years, we have built strong partnerships with many brands and businesses in Niagara and beyond.
                 </p>
               </div>
               <Col lg="6">
