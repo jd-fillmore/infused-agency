@@ -221,7 +221,7 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-top-40 align-items-center">
             <div className="col-lg-6">
               <h2>Why Choose Infused Agency?</h2>
-              <p>It's simple. We've been helping Niagara businesses flourish with their <Link href="/web-design">website designs</Link> and <Link href="/niagara-seo-projects">SEO projects</Link> for over a decade.</p>
+              <p>It's simple. We've been helping Niagara businesses flourish with their <Link href="/web-design">website designs</Link> and <Link href="/niagara-seo-company">SEO projects</Link> for over a decade.</p>
               <p>With our <Link href="/blog">authoritative knowledge</Link>, <Link href="/work">quality of work</Link>, and <Link href="/reviews">awesome customer relationships</Link>, we've become a top web design company that Niagara businesses can trusts.</p>
             </div>
             <div className="col-lg-6">
