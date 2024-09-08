@@ -138,22 +138,15 @@ const addJsonLd = () => {
 };
 
 const Home = ({ latestPosts }) => {
-  const [open, setOpen] = useState("0");
-  const toggle = (id) => {
-    if (open === id) {
-      setOpen();
-    } else {
-      setOpen(id);
-    }
-  };
   return (
     <>
       <Head>
         <title>
-          Niagara Web Design | Website Developer St. Catharines | Award Winning | Affordable | Infused Agency
-          Web Design Niagara, Website Design Niagara, Niagara Falls Web Design
-          Company, Niagara Web Designer, Web Design Niagara Falls Ontario, Web
-          Design St. Catharines, Website Design St. Catharines
+          Niagara Web Design | Website Developer St. Catharines | Award Winning
+          | Affordable | Infused Agency Web Design Niagara, Website Design
+          Niagara, Niagara Falls Web Design Company, Niagara Web Designer, Web
+          Design Niagara Falls Ontario, Web Design St. Catharines, Website
+          Design St. Catharines
         </title>
         <meta
           name="description"
@@ -187,15 +180,28 @@ const Home = ({ latestPosts }) => {
                 Your Website, Your <span>Best Sales Manager</span>.
               </h2>
               <p>
-              At Infused Agency, we make websites that are easy to use and look great. From the first idea to the final product, we create custom websites that show off your brand and use the latest designs.</p>
-              <p>We have helped businesses in St. Catharines, Niagara Falls, Welland, Fort Erie, Thorold, Niagara-on-the-Lake, Grimsby, Beamsville, Lincoln and beyond.</p>
+                At Infused Agency, we make websites that are easy to use and
+                look great. From the first idea to the final product, we create
+                custom websites that show off your brand and use the latest
+                designs.
+              </p>
+              <p>
+                We have helped businesses in St. Catharines, Niagara Falls,
+                Welland, Fort Erie, Thorold, Niagara-on-the-Lake, Grimsby,
+                Beamsville, Lincoln and beyond.
+              </p>
               <h2>Our Services Include:</h2>
               <ul>
                 <li>Making websites that work on all devices</li>
                 <li>Helping Your Website Show Up on Search Engines</li>
                 <li>Online marketing to reach more people</li>
               </ul>
-              <p>These services help turn your website into a strong tool to get more leads and sales. We make websites that are not only nice to look at and easy to use but also help increase leads, boost sales, and build trust in your business.</p>
+              <p>
+                These services help turn your website into a strong tool to get
+                more leads and sales. We make websites that are not only nice to
+                look at and easy to use but also help increase leads, boost
+                sales, and build trust in your business.
+              </p>
             </div>
             <div className="col-lg-5">
               <Image
@@ -211,101 +217,109 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-top-40 align-items-center">
             <div className="col-lg-6">
               <h2>Why Choose Infused Agency?</h2>
-              <p>It's simple. We have been helping Niagara businesses with their websites and SEO for over ten years.</p>
-              <p>With our <Link href="/blog">great knowledge</Link>, <Link href="/work">high quality work</Link>, and <Link href="/reviews">friendly customer service</Link>, we've become a top web design company that Niagara businesses trust.</p>
+              <p>
+                It's simple. We have been helping Niagara businesses with their
+                websites and SEO for over ten years.
+              </p>
+              <p>
+                With our <Link href="/blog">great knowledge</Link>,{" "}
+                <Link href="/work">high quality work</Link>, and{" "}
+                <Link href="/reviews">friendly customer service</Link>, we've
+                become a top web design company that Niagara businesses trust.
+              </p>
             </div>
             <div className="col-lg-6">
-            <Image
+              <Image
                 className="img-fluid"
                 src={google}
                 alt="web design niagara"
               />
               <div className="card">
-                  <img
-                    width="48"
-                    height="48"
-                    src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
-                  />
-                  <p className="author">GGS Niagara Landscaping</p>
-                  <div className="d-flex">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                  </div>
-                  <p className="desc">
-                    JD did a fantastic job on my website. He was easy to work
-                    with, always very quick to respond and made designing the
-                    page very simple. I would highly recommend JD for all of
-                    your web design and development needs!
-                  </p>
+                <img
+                  width="48"
+                  height="48"
+                  src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
+                />
+                <p className="author">GGS Niagara Landscaping</p>
+                <div className="d-flex">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
                 </div>
+                <p className="desc">
+                  JD did a fantastic job on my website. He was easy to work
+                  with, always very quick to respond and made designing the page
+                  very simple. I would highly recommend JD for all of your web
+                  design and development needs!
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -318,7 +332,8 @@ const Home = ({ latestPosts }) => {
                 Web Design That Makes An <span>Impact</span>
               </h2>
               <p>
-              Our web design, optimization, and SEO solutions help bring you more leads through your website.
+                Our web design, optimization, and SEO solutions help bring you
+                more leads through your website.
               </p>
             </div>
           </div>
@@ -331,7 +346,8 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Web Design</h2>
                   <p>
-                  Is your website not bringing you customers? We make websites that turn visitors into customers.
+                    Is your website not bringing you customers? We make websites
+                    that turn visitors into customers.
                   </p>
                 </div>
               </Link>
@@ -341,7 +357,8 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Conversion Optimization</h2>
                   <p>
-                  Is your website not bringing you leads? Our team will fix problems so your website can get more leads.
+                    Is your website not bringing you leads? Our team will fix
+                    problems so your website can get more leads.
                   </p>
                 </div>
               </Link>
@@ -351,7 +368,8 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Search Engine Optimization</h2>
                   <p>
-                  Are your customers not finding your website on Google? We can help your website get found and bring you more leads.
+                    Are your customers not finding your website on Google? We
+                    can help your website get found and bring you more leads.
                   </p>
                 </div>
               </Link>
@@ -363,7 +381,8 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Website Development</h2>
                   <p>
-                  Is your website old or not working well? We build modern, fast, and responsive websites.
+                    Is your website old or not working well? We build modern,
+                    fast, and responsive websites.
                   </p>
                 </div>
               </Link>
@@ -373,7 +392,8 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>WordPress Development</h2>
                   <p>
-                  Is your WordPress site outdated or not good enough? We create custom WordPress sites just for your business needs.
+                    Is your WordPress site outdated or not good enough? We
+                    create custom WordPress sites just for your business needs.
                   </p>
                 </div>
               </Link>
@@ -383,7 +403,8 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Local SEO</h2>
                   <p>
-                  Are local customers not finding your services? We optimize your site for local searches to get you more visibility.
+                    Are local customers not finding your services? We optimize
+                    your site for local searches to get you more visibility.
                   </p>
                 </div>
               </Link>
@@ -396,7 +417,8 @@ const Home = ({ latestPosts }) => {
                   Clients We've <span>Helped</span>
                 </h2>
                 <p>
-                For over ten years, we have built strong partnerships with many brands and businesses in Niagara and beyond.
+                  For over ten years, we have built strong partnerships with
+                  many brands and businesses in Niagara and beyond.
                 </p>
               </div>
               <Col lg="6">
