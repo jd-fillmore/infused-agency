@@ -236,6 +236,7 @@ const Home = ({ latestPosts }) => {
               />
               <div className="card">
                 <img
+                  alt="ggs niagara landscaping testimonial"
                   width="48"
                   height="48"
                   src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
