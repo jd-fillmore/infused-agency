@@ -31,6 +31,7 @@ import workGGS from "../../src/img/work-ggs.webp";
 import workKD from "../../src/img/work-kd.webp";
 import workCass from "../../src/img/work-cass.webp";
 import workTree from "../../src/img/work-tree.webp";
+import best from "../../src/img/best-rated.png";
 
 const addJsonLd = () => {
   const schema = {
@@ -233,6 +234,11 @@ const Home = ({ latestPosts }) => {
                 className="img-fluid"
                 src={google}
                 alt="web design niagara"
+              />
+              <Image
+                className="img-fluid"
+                src={best}
+                alt="web design company niagara, web design agency niagara"
               />
               <div className="card">
                 <img

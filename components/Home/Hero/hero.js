@@ -15,7 +15,6 @@ const Hero = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg="12">
-              <Image src={best} alt="niagara web design company" />
               <h1 className="intro">
                 Niagara Web Design | Website Developer St. Catharines
               </h1>

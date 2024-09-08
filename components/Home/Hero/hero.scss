@@ -7,14 +7,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Cover the entire viewport height */
+  height: 900px; /* Cover the entire viewport height */
   object-fit: cover;
   z-index: 0; /* Send video behind the content */
 }
 
 .main-hero {
   padding: 220px 0px 120px 0px;
-  background: $dark-grey;
   position: relative;
   overflow: hidden;
   display: flex;
