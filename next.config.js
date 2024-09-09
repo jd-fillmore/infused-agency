@@ -28,6 +28,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/digital-marketing-niagara",
+        destination: "/digital-marketing-agency-niagara",
+        permanent: true,
+      },
+      {
         source: "/posts/best-practices-cta-buttons",
         destination: "/posts/3-best-practices-for-high-converting-cta-buttons",
         permanent: true,

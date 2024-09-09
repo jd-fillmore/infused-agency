@@ -17,12 +17,10 @@ const Services = () => {
   return (
     <>
       <Head>
-        <title>
-          Niagara Digital Marketing Services | St. Catharines Marketing Company
-        </title>
+        <title>Services | Infused Agency</title>
         <meta
           name="description"
-          content="Boost your business with Niagara digital marketing services. St. Catharines' top marketing company for SEO, web design, and more. Drive results today!"
+          content="Boost your business with our digital marketing, SEO and web design services today. Get a free quote!"
         />
       </Head>
       <Nav />

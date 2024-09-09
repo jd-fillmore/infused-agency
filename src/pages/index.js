@@ -181,10 +181,10 @@ const Home = ({ latestPosts }) => {
                 Your Website, Your <span>Best Sales Manager</span>.
               </h2>
               <p>
-                At Infused Agency, we make websites that are easy to use and
-                look great. From the first idea to the final product, we create
-                custom websites that show off your brand and use the latest
-                designs.
+                At Infused Agency, we make websites that are{" "}
+                <strong>easy to use and look great</strong>. From the first idea
+                to the final product, we create custom websites that show off
+                your brand and use the latest designs.
               </p>
               <p>
                 We have helped businesses in St. Catharines, Niagara Falls,
@@ -194,14 +194,25 @@ const Home = ({ latestPosts }) => {
               <h2>Our Services Include:</h2>
               <ul>
                 <li>Making websites that work on all devices</li>
-                <li>Helping Your Website Show Up on Search Engines</li>
-                <li>Online marketing to reach more people</li>
+                <li>
+                  Helping Your Website{" "}
+                  <Link href="/niagara-seo-company">
+                    Show Up on Search Engines
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/digital-marketing-agency-niagara">
+                    Digital marketing
+                  </Link>{" "}
+                  to reach more people
+                </li>
               </ul>
               <p>
-                These services help turn your website into a strong tool to get
-                more leads and sales. We make websites that are not only nice to
-                look at and easy to use but also help increase leads, boost
-                sales, and build trust in your business.
+                These services help turn your website into a strong tool to{" "}
+                <strong>get more leads and sales</strong>. We make websites that
+                are not only nice to look at and easy to use but also help
+                increase leads, boost sales, and{" "}
+                <strong>build trust in your business</strong>.
               </p>
             </div>
             <div className="col-lg-5">
