@@ -20,7 +20,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>Niagara SEO</title>
+        <title>Niagara SEO | Niagara Falls SEO - Infused Agency</title>
         <meta
           name="description"
           content="Unleash the potential of Niagara SEO to amplify your online visibility. Draw in a surge of visitors. Kickstart your optimization journey right now!"
