@@ -412,6 +412,7 @@ const SEO = () => {
                   >
                     <div className="card">
                       <img
+                        alt="digital marketing agency niagara client review"
                         width="48"
                         height="48"
                         src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
@@ -605,6 +606,7 @@ const SEO = () => {
                     </h2>
                     <div className="card">
                       <img
+                        alt="niagara digital marketing agency client testimonial"
                         width="48"
                         height="48"
                         src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
