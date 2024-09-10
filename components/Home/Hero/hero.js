@@ -25,7 +25,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}>
-              <h2>Creating Web Design Niagara Solutions That Get More Customers <span>For Your Business</span></h2>
+              <h2>Web Design Niagara Solutions to <span>Get More Customers</span></h2>
              </motion.div>
              <motion.div
             initial={{ opacity: 0, x: -50 }}
