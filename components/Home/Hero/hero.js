@@ -12,7 +12,7 @@ const Hero = () => {
           <Row className="align-items-center">
             <Col lg="12">
               <h1 className="intro">
-                Niagara Web Design | Website Developer St. Catharines
+                Niagara Web Design | Web Design Niagara | Website Developer St. Catharines
               </h1>
               <h2>Creating Web Design Niagara Solutions That Get More Customers <span>For Your Business</span></h2>
               <p>

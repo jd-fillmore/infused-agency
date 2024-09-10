@@ -196,7 +196,7 @@ const Home = ({ latestPosts }) => {
                 to the final product, we create custom <strong>Niagara web designs</strong> that show off
                 your brand and use the latest designs.
               </p>
-              <p>We start the process by working with your team to figure out your business and website goals. Once we know what you want, our team starts designing your new website. <strong>This is a team effort</strong>, so your ideas will help make your new website awesome!</p>
+              <p>Our web design Niagara teams starts the process by working with your team to figure out your business and website goals. Once we know what you want, our team starts designing your new website. <strong>This is a team effort</strong>, so your ideas will help make your new website awesome!</p>
 
               <p>We know that our clients are not website designers or builders, so we make sure your site is very easy to update. We use <strong>content management systems</strong> (CMS) that are common and simple to use, even for people who aren't tech-savvy.</p>
 
@@ -227,7 +227,7 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="col-lg-7">
             <h2>A Web Design Niagara Agency With Integrity</h2>
-            <p>Whether it's website design for a big company or a small local business, we handle the process the same way. Your website is often the first thing a potential customer sees, and it should <strong>show how great your business is</strong>. Our modern designs are beautiful, easy to navigate, and <strong>made to get you more customers.</strong></p>
+            <p>Whether it's a Niagara website design for a big company or a small local business, we handle the process the same way. Your website is often the first thing a potential customer sees, and it should <strong>show how great your business is</strong>. Our modern designs are beautiful, easy to navigate, and <strong>made to get you more customers.</strong></p>
 
 <p>Our process goes beyond just designing websites. We make sure your website meets all of Google's Core Web Vitals standards. Plus, we give every CMS clients ongoing website backups and advanced security measures to <strong>keep your online presence safe</strong>.</p>
 
@@ -515,7 +515,7 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2>Featured Results</h2>
+              <h2>Featured Web Design Niagara Results</h2>
             </div>
           </div>
         </div>
