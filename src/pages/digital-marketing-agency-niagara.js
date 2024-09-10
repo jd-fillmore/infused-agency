@@ -144,7 +144,7 @@ const SEO = () => {
         <title>Digital Marketing Agency Niagara | Infused Agency</title>
         <meta
           name="description"
-          content="Our digital marketing Niagara team can help your business boost sales, leads and revenue. Get your free consultation today!"
+          content="Our digital marketing agency Niagara team can help your business boost sales, leads and revenue. Get your free consultation today!"
         />
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Niagara" />
