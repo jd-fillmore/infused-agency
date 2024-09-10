@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
+import best from "../../src/img/best-rated.png";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { Container, Row, Col } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "reactstrap";
 import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
@@ -12,6 +22,7 @@ import img3 from "../img/seo-content-writing.webp";
 import Link from "next/link";
 
 import results from "../img/digital-marketing-agency-niagara-results.png";
+import integ from "../img/niagara-digital-marketing-agency.webp";
 
 const addJsonLd = () => {
   const schema = {
@@ -119,16 +130,21 @@ const addJsonLd = () => {
 };
 
 const SEO = () => {
+  const [open, setOpen] = useState("0");
+  const toggle = (id) => {
+    if (open === id) {
+      setOpen();
+    } else {
+      setOpen(id);
+    }
+  };
   return (
     <>
       <Head>
-        <title>
-          Digital Marketing Agency in Niagara | Infused Agency | Social Media
-          Marketing Niagara
-        </title>
+        <title>Digital Marketing Agency Niagara | Infused Agency</title>
         <meta
           name="description"
-          content="Boost your online presence with our Niagara-based digital marketing agency. We specialize in local SEO & social media marketing. Get your free consultation today!"
+          content="Our digital marketing Niagara team can help your business boost sales, leads and revenue. Get your free consultation today!"
         />
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Niagara" />
@@ -150,15 +166,28 @@ const SEO = () => {
           <Container>
             <Row>
               <Col lg="12">
-                <h2 className="intro">Grow your brand with the</h2>
-                <h1>Best Digital Marketing Agency in Niagara</h1>
-                <h2 className="sub">
-                  Boost revenue, drive leads and get more sales for your Niagara
-                  company today!
-                </h2>
-                <Link href="/get-a-quote">
-                  <button>Get Your Free Quote Now!</button>
-                </Link>
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                >
+                  <h1 className="intro">Digital Marketing Agency Niagara</h1>
+                  <h2 className="sub">
+                    Boost revenue, drive leads and get more sales for your
+                    Niagara company today!
+                  </h2>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                >
+                  <Link href="/get-a-quote">
+                    <button>Get Your Free Quote Now!</button>
+                  </Link>
+                </motion.div>
               </Col>
             </Row>
           </Container>
@@ -167,283 +196,695 @@ const SEO = () => {
           <div className="intro">
             <Container>
               <Row>
-                <Col lg="6">
-                  <div className="card">
+                <Col lg="7">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
                     <h2>
-                      Importance of Digital &amp; Social Media Marketing in
-                      Niagara
+                      A Digital Marketing Agency Niagara Team That <br />
+                      <span>Gets Results</span>
                     </h2>
                     <p>
-                      Digital marketing is really important for businesses in
-                      Niagara. As more people shop and look for services online,
-                      it’s essential for local companies to be visible on the
-                      internet. With billions of people using the internet every
-                      day, having a strong online presence helps businesses
-                      connect with customers in their area.
+                      At Infused Agency, our digital marketing agency Niagara
+                      team helps businesses in Niagara grow through digital
+                      marketing. Our team creates custom plans to improve your
+                      brand using the latest marketing strategies.
                     </p>
-                    <br />
+                    <ol>
+                      <li>
+                        <strong>Understanding Your Business</strong>: We start
+                        by learning about your business and what you want to
+                        achieve. Your ideas are important to us!
+                      </li>
+                      <li>
+                        <strong>Creating a Marketing Plan</strong>: After
+                        understanding your needs, we work together to develop a
+                        new marketing plan. We make everything easy to
+                        understand, so you don’t need to be a marketing expert.
+                      </li>
+                      <li>
+                        <strong>Using Simple Tools</strong>: We use easy tools
+                        for things like{" "}
+                        <Link href="/niagara-seo-company">SEO</Link> (making
+                        your website show up on Google), local SEO, and ads on
+                        Instagram and Facebook. This way, anyone can use them.
+                      </li>
+                    </ol>
                     <p>
-                      By using tools like social media,{" "}
-                      <Link href="/">web design for Niagara</Link> businesses,
-                      and online ads and our{" "}
-                      <Link href="/niagara-seo-company">
-                        Niagara SEO services
-                      </Link>
-                      , businesses can reach more people and turn them into
-                      loyal customers. This not only helps them grow but also
-                      makes them a bigger part of the Niagara community. In
-                      short, digital marketing helps businesses succeed by
-                      making it easier for people to find and trust them online.
+                      We have helped many businesses in places like St.
+                      Catharines, Niagara Falls, Welland, and more. Our goal is
+                      to create websites that look good and help attract more
+                      customers.
                     </p>
-                  </div>
+
+                    <p>
+                      If you want to grow your business online, Infused Agency
+                      is here to help!
+                    </p>
+                  </motion.div>
                 </Col>
-                <Col lg="6">
-                  <Image
-                    className="img-fluid"
-                    src={intro}
-                    alt="digital marketing agency niagara"
-                  />
+                <Col lg="5">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      className="img-fluid"
+                      src={intro}
+                      alt="digital marketing agency niagara"
+                    />
+                    <br />
+                    <br />
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746188.552481925!2d-80.00600478031573!3d43.06669410655857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1725975677322!5m2!1sen!2sca"
+                      width="100%"
+                      height="450"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </motion.div>
                 </Col>
               </Row>
+              <Row className="pd-top-80">
+                <div className="col-lg-5">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      className="img-fluid"
+                      src={integ}
+                      alt="niagara digital marketing agency"
+                    />
+                  </motion.div>
+                </div>
+                <div className="col-lg-7">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>A Niagara Digital Marketing Agency With Integrity</h2>
+                    <p>
+                      At Infused Agency, our Niagara digital marketing agency
+                      helps all kinds of businesses with digital marketing,
+                      whether they’re big companies or small local shops. Your
+                      online presence is often the first thing a potential
+                      customer sees, and it should show how great your business
+                      is. Our modern Niagara digital marketing strategies are
+                      designed to get you more customers and are easy to
+                      understand.
+                    </p>
+
+                    <p>
+                      We focus on three key areas to help your Niagara business
+                      succeed:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>SEO and Local SEO</strong>: We make sure your
+                        Niagara website shows up in search results so more
+                        people can find you.
+                      </li>
+                      <li>
+                        <strong>Social Media Ads</strong>: We create ads for
+                        Instagram and Facebook to reach more people and attract
+                        new customers in Niagara.
+                      </li>
+                      <li>
+                        <strong>Digital Marketing</strong>: We use smart
+                        strategies to boost your online presence and turn your
+                        website into a strong tool for getting Niagara leads and
+                        sales.
+                      </li>
+                    </ul>
+
+                    <p>
+                      These services help make your online presence effective
+                      and easy to manage, helping you get more leads, increase
+                      sales, and build trust with your customers.
+                    </p>
+                  </motion.div>
+                </div>
+              </Row>
+              <div className="row pd-top-80 align-items-center">
+                <div className="col-lg-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>Why Choose Infused?</h2>
+                    <h3>Our Digital Marketing Agency Niagara Team</h3>
+                    <p>
+                      We have been helping businesses in Niagara with our
+                      digital marketing and SEO services{" "}
+                      <strong>for over ten years</strong>. This experience means
+                      we know what works best for local companies. Our goal is
+                      to help businesses <strong>attract more customers</strong>{" "}
+                      through effective marketing strategies.
+                    </p>
+
+                    <p>
+                      When you choose us, you get a team that{" "}
+                      <strong>understands the Niagara area</strong>. We know how
+                      to make your marketing efforts stand out to both locals
+                      and tourists. Our mission is to help your business grow by{" "}
+                      <strong>bringing more visitors to your site</strong>.
+                    </p>
+
+                    <p>
+                      With our skills in SEO, we can{" "}
+                      <strong>help your business appear on Google</strong> when
+                      people search for services in Niagara. This means more
+                      people will discover your business, which can lead to more
+                      sales. We love <strong>seeing our clients succeed</strong>
+                      , and we work hard to make that happen!
+                    </p>
+
+                    <p>
+                      We also focus on social media marketing, creating
+                      eye-catching ads for platforms like Facebook and
+                      Instagram. Our team targets the right audience in your
+                      area, ensuring your ads reach potential customers
+                      interested in what you offer.
+                    </p>
+
+                    <p>
+                      By using our local SEO services, we ensure your business
+                      shows up in local search results. When someone looks for a
+                      restaurant, shop, or service nearby, we make sure your
+                      business is one of the first they see. This helps attract
+                      more customers from your community.
+                    </p>
+
+                    <p>
+                      With our <a href="/blog">great knowledge</a>,{" "}
+                      <a href="/work">high-quality work</a>, and{" "}
+                      <a href="/reviews">friendly customer service</a>, we've
+                      become a trusted digital marketing company for Niagara
+                      businesses. If you're looking to grow your business
+                      online, we're here to help!
+                    </p>
+                    <Image
+                      className="img-fluid"
+                      src={best}
+                      alt="digital marketing company niagara"
+                    />
+                  </motion.div>
+                </div>
+                <div className="col-lg-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="card">
+                      <img
+                        width="48"
+                        height="48"
+                        src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
+                      />
+                      <p className="author">KD Flowers</p>
+                      <div className="d-flex">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                      </div>
+                      <p className="desc">
+                        In just one month, my business's website made it to the
+                        first page of Google! I was so surprised! After that, I
+                        started getting emails from people interested in my
+                        services right away, and I've been busy ever since!
+                        Thanks a lot to Infused Agency for helping my business
+                        grow!
+                      </p>
+                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746188.552481925!2d-80.00600478031573!3d43.06669410655857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1725930892210!5m2!1sen!2sca"
+                      width="100%"
+                      height="450"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </motion.div>
+                </div>
+              </div>
             </Container>
           </div>
           <div className="niche-services pd-top-80">
             <Container>
               <Row className="text-center">
                 <Col lg="12">
-                  <h2>
-                    Our <span>Digital Marketing Services</span> in Niagara
-                  </h2>
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>
+                      Our <span>Digital Marketing Services</span> in Niagara
+                    </h2>
+                  </motion.div>
                 </Col>
               </Row>
-              <Row className="pd-top-40">
-                <Col lg="4" className="d-flex">
-                  <div className="card">
-                    <Image src={img1} alt="social media marketing niagara" />
-                    <h3>Social Media Ads Marketing</h3>
-                    <p>
-                      We offer social media ads marketing to help your business
-                      get noticed on platforms like Facebook and Instagram. Our
-                      team creates fun and eye-catching ads that target the
-                      right people in your area. This way, we can make sure that
-                      your ads reach potential customers who are interested in
-                      what you offer. With our help, you can connect with more
-                      people and grow your business through social media!
-                    </p>
-                  </div>
-                </Col>
-                <Col lg="4" className="d-flex">
-                  <div className="card">
-                    <Image src={img2} alt="local seo marketing niagara" />
-                    <h3>Local SEO Marketing</h3>
-                    <p>
-                      Our local SEO marketing service is all about helping your
-                      business show up when people in Niagara search for
-                      services like yours. We make sure your website is
-                      optimized so that it appears in local search results. This
-                      means when someone looks for a restaurant, shop, or
-                      service nearby, your business will be one of the first
-                      they see. By improving your local visibility, we help you
-                      attract more customers from your community.
-                    </p>
-                  </div>
-                </Col>
-                <Col lg="4" className="d-flex">
-                  <div className="card">
-                    <Image src={img3} alt="search engine marketing niagara" />
-                    <h3>General SEO Marketing</h3>
-                    <p>
-                      With our general SEO marketing, we focus on improving your
-                      website's visibility on search engines like Google. We use
-                      special techniques to make your website more attractive to
-                      search engines, which helps it rank higher in search
-                      results. This means more people will find your site when
-                      they search for products or services you offer. Our goal
-                      is to drive more organic traffic to your website, helping
-                      you reach more potential customers and grow your business!
-                    </p>
-                  </div>
-                </Col>
-              </Row>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Row className="pd-top-40">
+                  <Col lg="4" className="d-flex">
+                    <div className="card">
+                      <Image src={img1} alt="social media marketing niagara" />
+                      <h3>Social Media Ads Marketing</h3>
+                      <p>
+                        Our digital marketing agency Niagara team offers social
+                        media ads marketing to help your business get noticed on
+                        platforms like Facebook and Instagram. Our team creates
+                        fun and eye-catching ads that target the right people in
+                        your area. This way, we can make sure that your ads
+                        reach potential customers who are interested in what you
+                        offer. With our help, you can connect with more people
+                        and grow your business through social media!
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="4" className="d-flex">
+                    <div className="card">
+                      <Image src={img2} alt="local seo marketing niagara" />
+                      <h3>Local SEO Marketing</h3>
+                      <p>
+                        Our local SEO marketing service is all about helping
+                        your business show up when people in Niagara search for
+                        services like yours. Our digital marketing agency
+                        Niagara team makes sure your website is optimized so
+                        that it appears in local search results. This means when
+                        someone looks for a restaurant, shop, or service nearby,
+                        your business will be one of the first they see. By
+                        improving your local visibility, we help you attract
+                        more customers from your community.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="4" className="d-flex">
+                    <div className="card">
+                      <Image src={img3} alt="search engine marketing niagara" />
+                      <h3>General SEO Marketing</h3>
+                      <p>
+                        With our general SEO marketing, we focus on improving
+                        your website's visibility on search engines like Google.
+                        Our digital marketing agency Niagara team uses special
+                        techniques to make your website more attractive to
+                        search engines, which helps it rank higher in search
+                        results. This means more people will find your site when
+                        they search for products or services you offer. Our goal
+                        is to drive more organic traffic to your website,
+                        helping you reach more potential customers and grow your
+                        business!
+                      </p>
+                    </div>
+                  </Col>
+                </Row>
+              </motion.div>
             </Container>
           </div>
           <div className="niche-featured pd-top-80">
             <Container>
               <Row>
                 <Col lg="6">
-                  <h2 className="pd-btm-40">
-                    Featured Client of Our{" "}
-                    <span>Niagara Digital Marketing Agency</span>
-                  </h2>
-                  <div className="card">
-                    <img
-                      width="48"
-                      height="48"
-                      src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
-                    />
-                    <p className="author">KD Flowers</p>
-                    <div className="d-flex">
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                          fill="#FFD700"
-                        />
-                      </svg>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                          fill="#FFD700"
-                        />
-                      </svg>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                          fill="#FFD700"
-                        />
-                      </svg>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                          fill="#FFD700"
-                        />
-                      </svg>
-                      <svg
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                          fill="#FFD700"
-                        />
-                      </svg>
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2 className="pd-btm-40">
+                      Featured Client of Our{" "}
+                      <span>Niagara Digital Marketing Agency</span>
+                    </h2>
+                    <div className="card">
+                      <img
+                        width="48"
+                        height="48"
+                        src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
+                      />
+                      <p className="author">KD Flowers</p>
+                      <div className="d-flex">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                      </div>
+                      <p className="desc">
+                        In just one month, my business's website made it to the
+                        first page of Google! I was so surprised! After that, I
+                        started getting emails from people interested in my
+                        services right away, and I've been busy ever since!
+                        Thanks a lot to Infused Agency for helping my business
+                        grow!
+                      </p>
                     </div>
-                    <p className="desc">
-                      In just one month, my business's website made it to the
-                      first page of Google! I was so surprised! After that, I
-                      started getting emails from people interested in my
-                      services right away, and I've been busy ever since! Thanks
-                      a lot to Infused Agency for helping my business grow!
-                    </p>
-                  </div>
+                  </motion.div>
                 </Col>
                 <Col lg="6">
-                  <Image
-                    className="img-fluid"
-                    src={results}
-                    alt="niagara digital marketing agency case study"
-                  />{" "}
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      className="img-fluid"
+                      src={results}
+                      alt="niagara digital marketing agency case study"
+                    />
+                  </motion.div>
                 </Col>
               </Row>
               <Row>
-                <Col lg="4">
-                  <div className="card">
-                    <h3>10,700</h3>
-                    <p>website views / month</p>
-                  </div>
-                </Col>
-                <Col lg="4">
-                  <div className="card">
-                    <h3>20,000%</h3>
-                    <p>increase in new leads in 6 months</p>
-                  </div>
-                </Col>
-                <Col lg="4">
-                  <div className="card">
-                    <h3>5,800</h3>
-                    <p>new users discovering website / month</p>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </div>
-          <div className="niche-why pd-top-80">
-            <Container>
-              <Row className="text-center w-80">
                 <Col lg="12">
-                  <h2>
-                    Why Choose <span>Infused Agency</span> As Your Niagara
-                    Digital Marketing Agency
-                  </h2>
-                  <h3>
-                    Increase Your Revenue With Our Niagara Digital Marketing
-                    Experts
-                  </h3>
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>The Problem</h2>
+                    <p>
+                      KD Flowers didn't have a website or any way for people to
+                      find them online. They wanted to grow their business and
+                      get new customers from Google searches.
+                    </p>
+
+                    <h2>How We Helped</h2>
+                    <p>
+                      We built KD Flowers a cool new website that's easy for
+                      people to use. We made sure it looked modern and worked
+                      well on phones and computers.
+                    </p>
+
+                    <p>
+                      After we finished the website, we helped more people find
+                      it. We used something called "local SEO" to make sure KD
+                      Flowers showed up when people in their area searched for
+                      flower shops on Google.
+                    </p>
+
+                    <h2>What Happened Next</h2>
+                    <p>
+                      Since we launched the new website, KD Flowers has gotten
+                      lots of new customers! This is because their new website
+                      looks great, and they now appear at the top of Google
+                      searches in their area.
+                    </p>
+                  </motion.div>
                 </Col>
               </Row>
-              <Row className="pd-top-40 align-items-center">
-                <Col lg="6">
-                  <p>
-                    Choosing Infused Agency as your Niagara digital marketing
-                    agency is a smart decision for many reasons! First, we work
-                    <strong>exclusively with businesses in Niagara</strong>, so
-                    we really understand the local market and what it needs.
-                    With <strong>over a decade of experience</strong>, our team
-                    knows how to help businesses succeed online. We are proud to
-                    say that every business we help grows, which shows how
-                    effective our strategies are. In fact, we were named the
-                    <strong>
-                      best digital marketing business of 2024
-                    </strong>{" "}
-                    according to Three Best Rated, which is a big honor!
-                    <br />
-                    <br />
-                    Plus, we have{" "}
-                    <strong>over 30 five-star Google reviews</strong>, proving
-                    that our clients are really happy with our work. With us,
-                    you can trust that your business will be in great hands!
-                  </p>
-                  <Link href="/get-a-quote">
-                    <button>Get Your Free Quote Now!</button>
-                  </Link>
-                </Col>
-                <Col lg="6">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746188.552481925!2d-80.00600478031573!3d43.06669410655857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1725896468079!5m2!1sen!2sca"
-                    width="100%"
-                    height="450"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Row>
+                  <Col lg="4">
+                    <div className="card">
+                      <h3>10,700</h3>
+                      <p>website views / month</p>
+                    </div>
+                  </Col>
+                  <Col lg="4">
+                    <div className="card">
+                      <h3>20,000%</h3>
+                      <p>increase in new leads in 6 months</p>
+                    </div>
+                  </Col>
+                  <Col lg="4">
+                    <div className="card">
+                      <h3>5,800</h3>
+                      <p>new users discovering website / month</p>
+                    </div>
+                  </Col>
+                </Row>
+              </motion.div>
+              <Row className="text-center pd-top-80">
+                <Col lg="12">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>
+                      <span>Frequently Asked</span> Niagara Digital Marketing
+                      Agency Questions{" "}
+                    </h2>
+                  </motion.div>
                 </Col>
               </Row>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Row>
+                  <Col lg="12">
+                    <Accordion open={open} toggle={toggle}>
+                      <AccordionItem>
+                        <AccordionHeader targetId="1">
+                          What is digital marketing?
+                        </AccordionHeader>
+                        <AccordionBody accordionId="1">
+                          <h2>What is digital marketing?</h2>
+                          <p>
+                            Digital marketing is how businesses promote
+                            themselves online. This includes things like social
+                            media, websites, and ads on Google. It helps people
+                            find and learn about a business on the internet.
+                          </p>
+                        </AccordionBody>
+                      </AccordionItem>
+                      <AccordionItem>
+                        <AccordionHeader targetId="2">
+                          How can your Niagara digital marketing services help
+                          my Niagara business?
+                        </AccordionHeader>
+                        <AccordionBody accordionId="2">
+                          <h2>
+                            How can your Niagara digital marketing services help
+                            my Niagara business?
+                          </h2>
+                          <p>
+                            Digital marketing can help your business by reaching
+                            more people. It can attract new customers and keep
+                            existing ones interested. With the right strategies,
+                            you can get more visitors to your website and
+                            increase sales.
+                          </p>
+                        </AccordionBody>
+                      </AccordionItem>
+                      <AccordionItem>
+                        <AccordionHeader targetId="3">
+                          What is SEO, and why is it important?
+                        </AccordionHeader>
+                        <AccordionBody accordionId="3">
+                          <h2>What is SEO, and why is it important?</h2>
+                          <p>
+                            SEO stands for Search Engine Optimization. It helps
+                            your website show up higher in Google searches. This
+                            is important because the higher your website
+                            appears, the more people will see it and visit your
+                            site.
+                          </p>
+                        </AccordionBody>
+                      </AccordionItem>
+                      <AccordionItem>
+                        <AccordionHeader targetId="4">
+                          How long does it take to see results from digital
+                          marketing?
+                        </AccordionHeader>
+                        <AccordionBody accordionId="4">
+                          <h2>
+                            How long does it take to see results from digital
+                            marketing?
+                          </h2>
+                          <p>
+                            Seeing results can take time. Some people might
+                            notice changes in a few weeks, while others might
+                            take a few months. It depends on what strategies we
+                            use and how competitive your market is.
+                          </p>
+                        </AccordionBody>
+                      </AccordionItem>
+                      <AccordionItem>
+                        <AccordionHeader targetId="5">
+                          How will I know if my digital marketing is working?
+                        </AccordionHeader>
+                        <AccordionBody accordionId="5">
+                          <h2>
+                            How will I know if my digital marketing is working?
+                          </h2>
+                          <p>
+                            You can know if your digital marketing is working by
+                            looking at the number of visitors to your website,
+                            how many people are contacting you, and if your
+                            sales are increasing. We can provide reports to show
+                            you how well things are going!
+                          </p>
+                        </AccordionBody>
+                      </AccordionItem>
+                    </Accordion>
+                  </Col>
+                </Row>
+              </motion.div>
             </Container>
           </div>
         </div>
@@ -451,10 +892,24 @@ const SEO = () => {
           <Container>
             <Row className="text-center">
               <Col lg="12">
-                <h2>Need Niagara Digital Marketing Services?</h2>
-                <Link href="/get-a-quote">
-                  <button>Get Your Free Quote Now!</button>
-                </Link>
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <h2>Need Niagara Digital Marketing Services?</h2>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <Link href="/get-a-quote">
+                    <button>Get Your Free Quote Now!</button>
+                  </Link>
+                </motion.div>
               </Col>
             </Row>
           </Container>

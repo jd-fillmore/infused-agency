@@ -107,6 +107,11 @@ const Footer = () => {
                     Search Engine Optimization
                   </Link>
                 </li>
+                <li>
+                  <Link href="/digital-marketing-agency-niagara">
+                    Digital Marketing
+                  </Link>
+                </li>
               </ul>
             </Col>
             <Col lg="3">

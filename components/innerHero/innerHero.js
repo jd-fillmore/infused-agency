@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 import { Container, Row, Col } from "reactstrap";
 
 const InnerHero = ({ title, description, bgImage }) => {
@@ -9,9 +9,16 @@ const InnerHero = ({ title, description, bgImage }) => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <h1>{title}</h1>
-              <hr />
-              <p>{description}</p>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
+                <h1>{title}</h1>
+                <hr />
+                <p>{description}</p>
+              </motion.div>
             </Col>
           </Row>
         </Container>
