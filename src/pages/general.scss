@@ -152,6 +152,13 @@ form {
   }
 }
 
+.pd-btm-20 {
+  padding-bottom: 20px;
+  @include bp-tablet-sm {
+    padding-bottom: 20px;
+  }
+}
+
 .w-75 {
   width: 75%;
   display: block;
@@ -506,6 +513,9 @@ span {
     margin-bottom: 30px;
     font-size: 52px;
     line-height: 1.2;
+    @include bp-tablet-sm {
+      margin-bottom: 20px;
+    }
   }
   .card {
     padding: 20px;
@@ -551,10 +561,10 @@ span {
 }
 
 .home-blog {
-  padding: 120px 0px 0px 0px;
+  padding: 80px 0px 0px 0px;
   background: $dark-grey;
   @include bp-tablet-sm {
-    padding: 40px 0px 40px 0px;
+    padding: 0px 0px 40px 0px;
   }
   h2 {
     font-size: inherit;

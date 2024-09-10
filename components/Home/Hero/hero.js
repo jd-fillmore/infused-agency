@@ -14,10 +14,9 @@ const Hero = () => {
               <h1 className="intro">
                 Niagara Web Design | Website Developer St. Catharines
               </h1>
-              <h2>You Deserve A Great Website For Your Niagara Business</h2>
+              <h2>Creating Web Design Niagara Solutions That Get More Customers <span>For Your Business</span></h2>
               <p>
-                Infused Agency is an award-winning company that makes web
-                designs to help Niagara businesses get more customers and sales.
+                Infused Agency is an award-winning web design Niagara company that makes websites that bring in more customers.
               </p>
               <Link href="/work">
                 <button>Check Out Our Work</button>

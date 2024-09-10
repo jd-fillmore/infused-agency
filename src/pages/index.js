@@ -33,6 +33,8 @@ import workCass from "../../src/img/work-cass.webp";
 import workTree from "../../src/img/work-tree.webp";
 import best from "../../src/img/best-rated.png";
 
+import rated from "../../src/img/niagara-website-design.png";
+
 const addJsonLd = () => {
   const schema = {
     "@context": "http://schema.org",
@@ -139,6 +141,14 @@ const addJsonLd = () => {
 };
 
 const Home = ({ latestPosts }) => {
+  const [open, setOpen] = useState('0');
+  const toggle = (id) => {
+    if (open === id) {
+      setOpen();
+    } else {
+      setOpen(id);
+    }
+  };
   return (
     <>
       <Head>
@@ -178,41 +188,22 @@ const Home = ({ latestPosts }) => {
           <div className="row">
             <div className="col-lg-7">
               <h2>
-                Your Website, Your <span>Best Sales Manager</span>.
+                Your Niagara Web Design, Your <span>Best Sales Manager</span>.
               </h2>
               <p>
-                At Infused Agency, we make websites that are{" "}
+                At Infused Agency, we make <strong>Niagara website designs</strong> that are{" "}
                 <strong>easy to use and look great</strong>. From the first idea
-                to the final product, we create custom websites that show off
+                to the final product, we create custom <strong>Niagara web designs</strong> that show off
                 your brand and use the latest designs.
               </p>
+              <p>We start the process by working with your team to figure out your business and website goals. Once we know what you want, our team starts designing your new website. <strong>This is a team effort</strong>, so your ideas will help make your new website awesome!</p>
+
+              <p>We know that our clients are not website designers or builders, so we make sure your site is very easy to update. We use <strong>content management systems</strong> (CMS) that are common and simple to use, even for people who aren't tech-savvy.</p>
+
               <p>
-                We have helped businesses in St. Catharines, Niagara Falls,
+                We have helped Niagara businesses in St. Catharines, Niagara Falls,
                 Welland, Fort Erie, Thorold, Niagara-on-the-Lake, Grimsby,
                 Beamsville, Lincoln and beyond.
-              </p>
-              <h2>Our Services Include:</h2>
-              <ul>
-                <li>Making websites that work on all devices</li>
-                <li>
-                  Helping Your Website{" "}
-                  <Link href="/niagara-seo-company">
-                    Show Up on Search Engines
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/digital-marketing-agency-niagara">
-                    Digital marketing
-                  </Link>{" "}
-                  to reach more people
-                </li>
-              </ul>
-              <p>
-                These services help turn your website into a strong tool to{" "}
-                <strong>get more leads and sales</strong>. We make websites that
-                are not only nice to look at and easy to use but also help
-                increase leads, boost sales, and{" "}
-                <strong>build trust in your business</strong>.
               </p>
             </div>
             <div className="col-lg-5">
@@ -226,31 +217,60 @@ const Home = ({ latestPosts }) => {
               />
             </div>
           </div>
+          <div className="row pd-top-80 align-items-center">
+            <div className="col-lg-5">
+              <Image
+                className="img-fluid pd-btm-20"
+                src={google}
+                alt="web design niagara"
+              />
+            </div>
+            <div className="col-lg-7">
+            <h2>A Web Design Niagara Agency With Integrity</h2>
+            <p>Whether it's website design for a big company or a small local business, we handle the process the same way. Your website is often the first thing a potential customer sees, and it should <strong>show how great your business is</strong>. Our modern designs are beautiful, easy to navigate, and <strong>made to get you more customers.</strong></p>
+
+<p>Our process goes beyond just designing websites. We make sure your website meets all of Google's Core Web Vitals standards. Plus, we give every CMS clients ongoing website backups and advanced security measures to <strong>keep your online presence safe</strong>.</p>
+
+              <ul>
+                <li>Making sure your web design Niagara works on all devices</li>
+                <li>
+                  Helping your website show up in Google with our <Link href="/niagara-seo-company">
+                    Niagara SEO services
+                  </Link>
+                </li>
+                <li>Awesome <Link href="/digital-marketing-agency-niagara">digital marketing Niagara</Link>{" "} services to reach more people
+                </li>
+              </ul>
+              <p>
+                These services help turn your website into a strong tool to{" "}
+                <strong>get more leads and sales</strong>. We make websites that
+                are not only nice to look at and easy to use but also help
+                increase leads, boost sales, and{" "}
+                <strong>build trust in your business</strong>.
+              </p>
+            </div>
+          </div>
           <div className="row pd-top-40 align-items-center">
             <div className="col-lg-6">
-              <h2>Why Choose Infused Agency?</h2>
-              <p>
-                It's simple. We have been helping Niagara businesses with their
-                websites and SEO for over ten years.
-              </p>
+              <h2>Why Choose Infused Agency? The Niagara Advantage in Web Design</h2>
+              <p>It's simple. We have been helping businesses with their Niagara web designs and SEO <strong>for over ten years</strong>. This means we know what works best for local companies. Our experience allows us to create websites that not only look amazing but also <strong>help businesses get more customers</strong>.</p>
+
+<p>When you choose us, you're getting a team that <strong>understands the Niagara area</strong>. We know how to make your website stand out to both locals and tourists. Our goal is to help your business grow by <strong>attracting more visitors to your site</strong>.</p>
+
+<p>With our skills in SEO, we can <strong>help your website show up on Google</strong> when people search for services in Niagara. This means more people will find you, which can lead to more sales. We love <strong>seeing our clients succeed</strong>, and we work hard to make that happen!</p>
               <p>
                 With our <Link href="/blog">great knowledge</Link>,{" "}
                 <Link href="/work">high quality work</Link>, and{" "}
                 <Link href="/reviews">friendly customer service</Link>, we've
                 become a top web design company that Niagara businesses trust.
               </p>
-            </div>
-            <div className="col-lg-6">
-              <Image
-                className="img-fluid"
-                src={google}
-                alt="web design niagara"
-              />
               <Image
                 className="img-fluid"
                 src={best}
                 alt="web design company niagara, web design agency niagara"
               />
+            </div>
+            <div className="col-lg-6">
               <div className="card">
                 <img
                   alt="ggs niagara landscaping testimonial"
@@ -338,6 +358,7 @@ const Home = ({ latestPosts }) => {
                   design and development needs!
                 </p>
               </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746188.552481925!2d-80.00600478031573!3d43.06669410655857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1725930892210!5m2!1sen!2sca" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -347,7 +368,7 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                Web Design That Makes An <span>Impact</span>
+                Niagara Website Design That Makes An <span>Impact</span>
               </h2>
               <p>
                 Our web design, optimization, and SEO solutions help bring you
@@ -364,19 +385,18 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <h2>Web Design</h2>
                   <p>
-                    Is your website not bringing you customers? We make websites
+                    Is your Niagara website design not bringing you customers? We make responsive design websites
                     that turn visitors into customers.
                   </p>
                 </div>
               </Link>
             </div>
             <div className="col-lg-4 d-flex">
-              <Link href="/website-conversion-optimization">
+              <Link href="/digital-marketing-agency-niagara">
                 <div className="card">
-                  <h2>Conversion Optimization</h2>
+                  <h2>Digital Marketing</h2>
                   <p>
-                    Is your website not bringing you leads? Our team will fix
-                    problems so your website can get more leads.
+                    Is your Niagara web design not driving sales? We design and build effective digital marketing campaigns.
                   </p>
                 </div>
               </Link>
@@ -395,12 +415,11 @@ const Home = ({ latestPosts }) => {
           </div>
           <div className="row">
             <div className="col-lg-4 d-flex">
-              <Link href="/web-design">
+              <Link href="/digital-marketing-agency-niagara">
                 <div className="card">
-                  <h2>Website Development</h2>
+                  <h2>Digital Marketing</h2>
                   <p>
-                    Is your website old or not working well? We build modern,
-                    fast, and responsive websites.
+                    Is your website not driving sales? We design and build effective digital marketing campaigns.
                   </p>
                 </div>
               </Link>
@@ -456,56 +475,37 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center pd-btm-40">
             <Col lg="12">
               <h2>
-                Featured Web Design <span>Projects</span>
+                <span>Featured</span> Niagara Web Design Project
               </h2>
+              <h3>Jerry's Insulating</h3>
             </Col>
           </Row>
-          <Row>
+          <Row className="align-items-center">
             <Col lg="6">
-              <Image
-                className="img-fluid"
-                src={workVisca}
-                alt="website design niagara visca electric"
-              />
-            </Col>
-            <Col lg="6">
-              <Image
+            <Image
                 className="img-fluid"
                 src={workJerrys}
                 alt="web design niagara jerrys insulating"
               />
             </Col>
-          </Row>
-          <Row className="pd-top-40">
             <Col lg="6">
-              <Image
-                className="img-fluid"
-                src={workGGS}
-                alt="niagara website design ggs landscaping"
-              />
-            </Col>
-            <Col lg="6">
-              <Image
-                className="img-fluid"
-                src={workKD}
-                alt="niagara web design kd flowers"
-              />
+              <p>Jerry's Insulating approached us because there current website was not responsive mobile-friendly, and also had a very outdated website design.</p>
+              <p>They wanted a modern Niagara web design that was fresh, fast, secure and grew their reputation.</p>
+              <p>They also wanted a web design that would help their Niagara business bring in more sales.</p>
             </Col>
           </Row>
           <Row className="pd-top-40">
-            <Col lg="6">
-              <Image
-                className="img-fluid"
-                src={workCass}
-                alt="st catharines website design cass construction"
-              />
-            </Col>
-            <Col lg="6">
-              <Image
-                className="img-fluid"
-                src={workTree}
-                alt="st catharines web design treereports"
-              />
+            <Col lg="12">
+            <h2>The Challenge</h2>
+<p>Jerry's Insulating had a problem: their website wasn't working well anymore. It was old, and even their customers didn't like it anymore.</p>
+
+<h2>Our Niagara Website Design Solution</h2>
+<p>We knew they wanted their customers to find things easily on their site. So, we made a modern website that looks good and works well on both phones and computers.</p>
+<p>We added a lead form, made the site secure, and made sure it loads super fast.</p>
+
+<h2>The Result</h2>
+<p>Since we launched the new website, they've gotten a lot of new customers. This happened because the new design is better, the site is faster, and it's more secure.</p>
+
             </Col>
           </Row>
         </Container>
@@ -624,6 +624,140 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
+      <section className="home-faq">
+        <Container>
+          <Row className="text-center pd-btm-40">
+            <Col lg="12">
+              <h2>
+                <span>Frequently Asked</span> Web Design Niagara Questions{" "}
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="12">
+              <Accordion open={open} toggle={toggle}>
+                <AccordionItem>
+                  <AccordionHeader targetId="1">
+                    Why work with Infused Agency?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="1">
+                    <h2>Why Work with Infused Agency?</h2>
+                    <p>
+                    As a top web design company in Niagara, Infused Agency helps businesses in St. Catharines and nearby areas get more customers through their websites. With over ten years of experience, we are known for creating websites that not only look fantastic but also work really well to bring in sales and new leads.
+                    </p>
+                    <h2>Awesome Web Design for Niagara Businesses</h2>
+
+<h3>Cool Websites That Work Great</h3>
+<p>At Infused Agency, we create amazing websites for businesses in Niagara. Our sites look great on all devices and help you show up on Google, bringing more customers to you!</p>
+
+<h3>Websites That Bring in Customers</h3>
+<p>We design websites that not only look good but also help turn visitors into real customers.</p>
+
+<h3>Clear Communication</h3>
+<p>We keep you updated and make sure your website helps your business grow.</p>
+
+<h3>Experienced Team</h3>
+<p>With over 10 years of experience, we know how to get your website found on Google.</p>
+
+<h3>Success in Niagara</h3>
+<p>We've helped many businesses in St. Catharines and Niagara Falls look professional and attract more customers.</p>
+
+<h3>Custom Solutions</h3>
+<p>We create websites that fit your unique needs, whether simple or complex.</p>
+
+<h3>Website Care</h3>
+<p>We provide ongoing support to keep your website safe and running smoothly.</p>
+
+<h3>Always Here to Help</h3>
+<p>You’ll have a friendly team supporting you from start to finish.</p>
+
+<h3>Boosting Local Visibility</h3>
+<p>We help local customers find your business online with our special SEO strategies.</p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="2">
+                    Where is your team based?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="2">
+                    <h2>Where is your team based?</h2>
+                    <p>
+  Our Niagara-based web design agency is successful because we know the area well. Our team, all from Niagara, understands the local market and its needs. This helps us create personalized and effective web designs for businesses in Niagara.
+</p>
+<p>
+  By working only in Niagara, we provide excellent support and pay close attention to our clients. We are proud to offer local service that benefits from our deep knowledge of the area. Our virtual model allows us to work flexibly and efficiently, ensuring your mobile-friendly website design gets the care it deserves.
+</p>
+<p>
+  Check out our <Link href="/work">web design portfolio</Link> to see the great work we've done for businesses in Niagara.
+</p>
+
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="3">
+                    What is your web design process like?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="3">
+                    <h2>What is your web design process like?</h2>
+                    <p>
+  At Infused Agency, we've been making awesome websites for almost 20 years! We're really good at it now, but we still want you to be part of the process. We think it's important that you love your new website as much as we do.
+</p>
+<p>
+  You know your business and customers best. That's why we need your help, especially when we're first learning about your business and planning your website. We use cool tools like Google Analytics to see how people use websites. This helps us make your website easy to use and great for getting new customers.
+</p>
+<p>
+  Want to see how we make websites? Check out our <Link href="/process">process</Link> to learn how we help businesses in Niagara get more customers online.
+</p>
+
+
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="4">
+                    What will my project cost?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="4">
+                    <h2>What will my project cost?</h2>
+                    <p>
+  Figuring out the cost of a website design project for a Niagara business can be tricky because each project is different. The price depends on things like design complexity, features, and the range of services needed.
+</p>
+<p>
+  <Link href="/pricing">View our pricing</Link> for both website design and SEO services in the Niagara region.
+</p>
+<p>
+  <Link href="/get-a-quote">Book a call today</Link> to discuss your goals, learn more about our experience, and get detailed information about website prices, timelines, and budget ranges.
+</p>
+
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionHeader targetId="5">
+                    How can I get a quote for my project?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="5">
+                    <h2>How can I get a quote for my project?</h2>
+                    <p>
+                      We’d love to chat if you’ve reviewed our Niagara website
+                      design portfolio and have questions about our Niagara web
+                      design services or development expertise.
+                    </p>
+
+                    <p>
+                      If you’re looking for professional marketing services or
+                      web design in Niagara, please inquire about a quote for
+                      your project. Feel free to contact the best web designers
+                      in Niagara by completing our{" "}
+                      <Link href="/get-a-quote">online quote form</Link> for a
+                      free consultation.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
       <section className="home-blog">
         <Container>
           <Row>
@@ -660,6 +794,17 @@ const Home = ({ latestPosts }) => {
         </Container>
       </section>
 
+      <section className="home-areas pd-top-120 pd-btm-120">
+        <Container>
+        <Row>
+          <Col lg="12">
+            <h2>Delivering Web Design Services in Niagara To:</h2>
+            <Link href="/beamsville-web-design">Beamsville, ON</Link> | <Link href="/crystal-beach-web-design">Crystal Beach, ON</Link> | <Link href="/fonthill-web-design">Fonthill, ON</Link> <Link href="/fort-erie-web-design">Fort Erie, ON</Link> | <Link href="/grimsby-web-design">Grimsby, ON</Link> | <Link href="/">Niagara Falls, ON</Link> | <Link href="/">Niagara-on-the-Lake, ON</Link> | <Link href="/port-colbone-web-design">Port Colborne, ON</Link> | <Link href="/">St. Catharines, ON</Link> | <Link href="/thorold-web-design">Thorold, ON</Link> | <Link href="/wainfleet-web-design">Wainfleet, ON</Link> | <Link href="/welland-web-design">Welland, ON</Link>
+          </Col>
+        </Row>
+        </Container>
+      </section>
+
       <section className="cta home-cta">
         <div className="container">
           <div className="row text-center">
@@ -689,6 +834,7 @@ const Home = ({ latestPosts }) => {
           </div>
         </div>
       </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.712155785956!2d-79.21034682429627!3d43.152573384666596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2s%F0%9F%9A%80%20Infused%20Agency%20%7C%20Niagara%20Web%20Design%20%26%20SEO%20Company!5e0!3m2!1sen!2sca!4v1725932520162!5m2!1sen!2sca" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <Footer />
     </>
   );
