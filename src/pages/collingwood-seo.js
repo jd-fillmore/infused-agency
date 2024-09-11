@@ -114,11 +114,9 @@ const SEO = () => {
                 </ul>
                 <p>
                   When you utilize SEO services from our company or use our{" "}
-                  <Link href="/collingwood-web-design">
-                    Collingwood web design
-                  </Link>{" "}
-                  services and end up ranking on the first of Google, it's a
-                  great way to increase your company's revenue.
+                  <Link href="/">web design</Link> services and end up ranking
+                  on the first of Google, it's a great way to increase your
+                  company's revenue.
                 </p>
               </Col>
             </Row>

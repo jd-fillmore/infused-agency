@@ -304,8 +304,8 @@ const SEO = () => {
                     key part of our Caledonia web design services to help make
                     sure that your customers can find your website. When using
                     our Caledonia web design experts and{" "}
-                    <Link href="/caledonia-seo/">Caledonia SEO services</Link>,
-                    your website should help bring in new company revenue and
+                    <Link href="/niagara-seo-company">SEO services</Link>, your
+                    website should help bring in new company revenue and
                     customers.
                   </p>
                 </Col>
@@ -408,7 +408,7 @@ const SEO = () => {
                       digital marketing
                     </Link>
                     ,{" "}
-                    <Link href="/caledonia-seo/">
+                    <Link href="/niagara-seo-company">
                       search engine optimization (SEO)
                     </Link>{" "}
                     and {""}
