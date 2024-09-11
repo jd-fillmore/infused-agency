@@ -37,21 +37,20 @@ const Services = () => {
                   <div className="card">
                     <h2>Web Design</h2>
                     <p>
-                      Is your website not bringing you customers? We create
-                      lead-generating websites, for the purpose of converting
-                      visitors into customers.
+                      Is your Niagara website design not bringing you customers?
+                      We make responsive design websites that turn visitors into
+                      customers.
                     </p>
                   </div>
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/website-conversion-optimization">
+                <Link href="/digital-marketing-agency-niagara">
                   <div className="card">
-                    <h2>Conversion Optimization</h2>
+                    <h2>Digital Marketing</h2>
                     <p>
-                      Is your website not bringing you leads? Our team will fix
-                      conversion barriers, optimizing your website to convert
-                      more.
+                      Is your Niagara web design not driving sales? We design
+                      and build effective digital marketing campaigns.
                     </p>
                   </div>
                 </Link>
@@ -61,9 +60,8 @@ const Services = () => {
                   <div className="card">
                     <h2>Search Engine Optimization</h2>
                     <p>
-                      Are your customers not finding your website in Google?
-                      Lets help get your website found, and drive more leads to
-                      you.
+                      Are your customers not finding your website on Google? We
+                      can help your website get found and bring you more leads.
                     </p>
                   </div>
                 </Link>
@@ -71,13 +69,13 @@ const Services = () => {
             </div>
             <div className="row">
               <div className="col-lg-4 d-flex">
-                <Link href="/web-design">
+                <Link href="/website-conversion-optimization">
                   <div className="card">
-                    <h2>Website Development</h2>
+                    <h2>Conversion Optimization</h2>
                     <p>
-                      Is your website outdated or lacking functionality? We
-                      specialize in building modern, fast, and responsive
-                      websites.
+                      Is your website not getting you new customers? Our team
+                      will fix the problems and make your website better at
+                      turning visitors into customers.
                     </p>
                   </div>
                 </Link>
@@ -87,8 +85,8 @@ const Services = () => {
                   <div className="card">
                     <h2>WordPress Development</h2>
                     <p>
-                      Struggling with a generic or outdated WordPress site? We
-                      craft custom WordPress solutions tailored to your business
+                      Is your WordPress site outdated or not good enough? We
+                      create custom WordPress sites just for your business
                       needs.
                     </p>
                   </div>
@@ -99,9 +97,8 @@ const Services = () => {
                   <div className="card">
                     <h2>Local SEO</h2>
                     <p>
-                      Are local customers missing out on your services? We focus
-                      on optimizing your site for local search, getting you more
-                      visibility.
+                      Are local customers not finding your services? We optimize
+                      your site for local searches to get you more visibility.
                     </p>
                   </div>
                 </Link>

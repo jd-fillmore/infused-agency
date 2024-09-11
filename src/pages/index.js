@@ -260,7 +260,9 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>A Web Design Niagara Agency With Integrity</h2>
+                <h2>
+                  A Web Design Niagara Agency <span>You Can Trust</span>
+                </h2>
                 <p>
                   Whether it's a Niagara website design for a big company or a
                   small local business, we handle the process the same way. Your
@@ -503,7 +505,10 @@ const Home = ({ latestPosts }) => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/digital-marketing-agency-niagara">
+                <Link
+                  href="/digital-marketing-agency-niagara"
+                  className="d-flex"
+                >
                   <div className="card">
                     <h2>Digital Marketing</h2>
                     <p>
@@ -527,12 +532,13 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="row">
               <div className="col-lg-4 d-flex">
-                <Link href="/digital-marketing-agency-niagara">
+                <Link href="/website-conversion-optimization">
                   <div className="card">
-                    <h2>Digital Marketing</h2>
+                    <h2>Conversion Optimization</h2>
                     <p>
-                      Is your website not driving sales? We design and build
-                      effective digital marketing campaigns.
+                      Is your website not getting you new customers? Our team
+                      will fix the problems and make your website better at
+                      turning visitors into customers.
                     </p>
                   </div>
                 </Link>
@@ -550,7 +556,7 @@ const Home = ({ latestPosts }) => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/niagara-seo-company">
+                <Link href="/niagara-seo-company" className="d-flex">
                   <div className="card">
                     <h2>Local SEO</h2>
                     <p>

@@ -28,8 +28,8 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  Web Design Niagara Solutions to{" "}
-                  <span>Get More Customers</span>
+                  <span>Get More Customers</span> with Our Web Design Niagara
+                  Solutions
                 </h2>
               </motion.div>
               <motion.div
