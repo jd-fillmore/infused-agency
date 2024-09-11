@@ -15,119 +15,14 @@ import {
 import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
-import intro from "../img/digital-marketing-agency-niagara.webp";
+import intro from "../img/digital-marketing-agency-port-colborne.webp";
 import img1 from "../img/seo-keyword-research.webp";
 import img2 from "../img/seo-link-building.webp";
 import img3 from "../img/seo-content-writing.webp";
 import Link from "next/link";
 
-import results from "../img/digital-marketing-agency-niagara-results.png";
-import integ from "../img/niagara-digital-marketing-agency.webp";
-
-const addJsonLd = () => {
-  const schema = {
-    "@context": "http://schema.org",
-    "@type": "LocalBusiness",
-    name: "Infused Agency",
-    image:
-      "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
-    telephone: "(905) 933-3115",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "73 Alexandra Blvd",
-      addressLocality: "St. Catharines",
-      addressRegion: "ON",
-      postalCode: "L2P 1K2",
-    },
-    serviceArea: [
-      {
-        "@type": "Place",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "St. Catharines",
-          addressRegion: "ON",
-          addressCountry: "Canada",
-        },
-      },
-      {
-        "@type": "Place",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Niagara",
-          addressRegion: "ON",
-          addressCountry: "Canada",
-        },
-      },
-    ],
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Monday",
-        },
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Tuesday",
-        },
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Wednesday",
-        },
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Thursday",
-        },
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Friday",
-        },
-        opens: "09:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Saturday",
-        },
-        closes: "13:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Sunday",
-        },
-        closes: "15:00",
-      },
-    ],
-  };
-
-  return {
-    __html: JSON.stringify(schema),
-  };
-};
+import results from "../img/digital-marketing-agency-port-colborne-results.webp";
+import integ from "../img/port-colborne-digital-marketing-agency.webp";
 
 const SEO = () => {
   const [open, setOpen] = useState("0");
@@ -141,26 +36,14 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>
-          Digital Marketing Agency Niagara | Infused Agency | Niagara Falls |
-          Niagara-on-the-Lake
-        </title>
+        <title>Digital Marketing Agency Port Colborne | Infused Agency</title>
         <meta
           name="description"
-          content="Our digital marketing agency Niagara team can help your business boost sales, leads and revenue. Get your free consultation today!"
+          content="Our digital marketing agency Port Colborne team can help your business boost sales, leads and revenue. Get your free consultation today!"
         />
-        <meta name="geo.region" content="CA-ON" />
-        <meta name="geo.placename" content="Niagara" />
-        <meta name="geo.position" content="43.0896;-79.0849" />
-        <meta name="ICBM" content="43.0896, -79.0849" />
         <link
           rel="canonical"
-          href="https://infused.agency/digital-marketing-agency-niagara"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addJsonLd()}
-          key="item-jsonld"
+          href="https://infused.agency/digital-marketing-agency-port-colborne"
         />
       </Head>
       <Nav />
@@ -175,10 +58,12 @@ const SEO = () => {
                   transition={{ duration: 1 }}
                   viewport={{ once: true }}
                 >
-                  <h1 className="intro">Digital Marketing Agency Niagara</h1>
+                  <h1 className="intro">
+                    Digital Marketing Agency Port Colborne
+                  </h1>
                   <h2 className="sub">
-                    Boost revenue, drive leads and get more sales for your
-                    Niagara company today!
+                    Boost revenue, drive leads and get more sales for your Port
+                    Colborne company today!
                   </h2>
                 </motion.div>
                 <motion.div
@@ -207,14 +92,15 @@ const SEO = () => {
                     viewport={{ once: true }}
                   >
                     <h2>
-                      A Digital Marketing Agency Niagara Team That <br />
+                      A Digital Marketing Agency Port Colborne Team That <br />
                       <span>Gets Results</span>
                     </h2>
                     <p>
-                      At Infused Agency, our digital marketing agency Niagara
-                      team helps businesses in Niagara grow through digital
-                      marketing. Our team creates custom plans to improve your
-                      brand using the latest marketing strategies.
+                      At Infused Agency, our digital marketing agency Port
+                      Colborne team helps businesses in Port Colborne grow
+                      through digital marketing. Our team creates custom plans
+                      to improve your brand using the latest marketing
+                      strategies.
                     </p>
                     <ol>
                       <li>
@@ -238,9 +124,9 @@ const SEO = () => {
                     </ol>
                     <p>
                       We have helped many businesses in places like St.
-                      Catharines, Niagara Falls, Welland, and more. Our goal is
-                      to create websites that look good and help attract more
-                      customers.
+                      Catharines, Port Colborne Falls, Welland, and more. Our
+                      goal is to create websites that look good and help attract
+                      more customers.
                     </p>
 
                     <p>
@@ -259,12 +145,12 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={intro}
-                      alt="digital marketing agency niagara"
+                      alt="digital marketing agency port colborne"
                     />
                     <br />
                     <br />
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746188.552481925!2d-80.00600478031573!3d43.06669410655857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1725975677322!5m2!1sen!2sca"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.37148726318!2d-79.36307399436933!3d42.82851082495693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1726057629293!5m2!1sen!2sca"
                       width="100%"
                       height="450"
                       allowfullscreen=""
@@ -285,7 +171,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={integ}
-                      alt="niagara digital marketing agency"
+                      alt="port colborne digital marketing agency"
                     />
                   </motion.div>
                 </div>
@@ -296,38 +182,40 @@ const SEO = () => {
                     transition={{ duration: 1, delay: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <h2>A Niagara Digital Marketing Agency With Integrity</h2>
+                    <h2>
+                      A Port Colborne Digital Marketing Agency With Integrity
+                    </h2>
                     <p>
-                      At Infused Agency, our Niagara digital marketing agency
-                      helps all kinds of businesses with digital marketing,
-                      whether they’re big companies or small local shops. Your
-                      online presence is often the first thing a potential
-                      customer sees, and it should show how great your business
-                      is. Our modern Niagara digital marketing strategies are
-                      designed to get you more customers and are easy to
-                      understand.
+                      At Infused Agency, our Port Colborne digital marketing
+                      agency helps all kinds of businesses with digital
+                      marketing, whether they’re big companies or small local
+                      shops. Your online presence is often the first thing a
+                      potential customer sees, and it should show how great your
+                      business is. Our modern Port Colborne digital marketing
+                      strategies are designed to get you more customers and are
+                      easy to understand.
                     </p>
 
                     <p>
-                      We focus on three key areas to help your Niagara business
-                      succeed:
+                      We focus on three key areas to help your Port Colborne
+                      business succeed:
                     </p>
                     <ul>
                       <li>
                         <strong>SEO and Local SEO</strong>: We make sure your
-                        Niagara website shows up in search results so more
+                        Port Colborne website shows up in search results so more
                         people can find you.
                       </li>
                       <li>
                         <strong>Social Media Ads</strong>: We create ads for
                         Instagram and Facebook to reach more people and attract
-                        new customers in Niagara.
+                        new customers in Port Colborne.
                       </li>
                       <li>
                         <strong>Digital Marketing</strong>: We use smart
                         strategies to boost your online presence and turn your
-                        website into a strong tool for getting Niagara leads and
-                        sales.
+                        website into a strong tool for getting Port Colborne
+                        leads and sales.
                       </li>
                     </ul>
 
@@ -348,9 +236,9 @@ const SEO = () => {
                     viewport={{ once: true }}
                   >
                     <h2>Why Choose Infused?</h2>
-                    <h3>Our Digital Marketing Agency Niagara Team</h3>
+                    <h3>Our Digital Marketing Agency Port Colborne Team</h3>
                     <p>
-                      We have been helping businesses in Niagara with our
+                      We have been helping businesses in Port Colborne with our
                       digital marketing and SEO services{" "}
                       <strong>for over ten years</strong>. This experience means
                       we know what works best for local companies. Our goal is
@@ -360,19 +248,21 @@ const SEO = () => {
 
                     <p>
                       When you choose us, you get a team that{" "}
-                      <strong>understands the Niagara area</strong>. We know how
-                      to make your marketing efforts stand out to both locals
-                      and tourists. Our mission is to help your business grow by{" "}
+                      <strong>understands the Port Colborne area</strong>. We
+                      know how to make your marketing efforts stand out to both
+                      locals and tourists. Our mission is to help your business
+                      grow by{" "}
                       <strong>bringing more visitors to your site</strong>.
                     </p>
 
                     <p>
                       With our skills in SEO, we can{" "}
                       <strong>help your business appear on Google</strong> when
-                      people search for services in Niagara. This means more
-                      people will discover your business, which can lead to more
-                      sales. We love <strong>seeing our clients succeed</strong>
-                      , and we work hard to make that happen!
+                      people search for services in Port Colborne. This means
+                      more people will discover your business, which can lead to
+                      more sales. We love{" "}
+                      <strong>seeing our clients succeed</strong>, and we work
+                      hard to make that happen!
                     </p>
 
                     <p>
@@ -395,14 +285,14 @@ const SEO = () => {
                       With our <a href="/blog">great knowledge</a>,{" "}
                       <a href="/work">high-quality work</a>, and{" "}
                       <a href="/reviews">friendly customer service</a>, we've
-                      become a trusted digital marketing company for Niagara
-                      businesses. If you're looking to grow your business
-                      online, we're here to help!
+                      become a trusted digital marketing company for Port
+                      Colborne businesses. If you're looking to grow your
+                      business online, we're here to help!
                     </p>
                     <Image
                       className="img-fluid"
                       src={best}
-                      alt="digital marketing company niagara"
+                      alt="digital marketing company port colborne"
                     />
                   </motion.div>
                 </div>
@@ -415,7 +305,7 @@ const SEO = () => {
                   >
                     <div className="card">
                       <img
-                        alt="digital marketing agency niagara client review"
+                        alt="digital marketing agency port colborne client review"
                         width="48"
                         height="48"
                         src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
@@ -503,7 +393,7 @@ const SEO = () => {
                       </p>
                     </div>
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5821.424311572049!2d-79.21034682335578!3d43.15257338466515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2s%F0%9F%9A%80%20Infused%20Agency%20%7C%20Niagara%20Web%20Design%20%26%20SEO%20Company!5e0!3m2!1sen!2sca!4v1725979720923!5m2!1sen!2sca"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5821.424311572049!2d-79.21034682335578!3d43.15257338466515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2s%F0%9F%9A%80%20Infused%20Agency%20%7C%20Port Colborne%20Web%20Design%20%26%20SEO%20Company!5e0!3m2!1sen!2sca!4v1725979720923!5m2!1sen!2sca"
                       width="100%"
                       height="450"
                       allowfullscreen=""
@@ -526,7 +416,8 @@ const SEO = () => {
                     viewport={{ once: true }}
                   >
                     <h2>
-                      Our <span>Digital Marketing Services</span> in Niagara
+                      Our <span>Digital Marketing Services</span> in Port
+                      Colborne
                     </h2>
                   </motion.div>
                 </Col>
@@ -540,47 +431,57 @@ const SEO = () => {
                 <Row className="pd-top-40">
                   <Col lg="4" className="d-flex">
                     <div className="card">
-                      <Image src={img1} alt="social media marketing niagara" />
+                      <Image
+                        src={img1}
+                        alt="social media marketing port colborne"
+                      />
                       <h3>Social Media Ads Marketing</h3>
                       <p>
-                        Our digital marketing agency Niagara team offers social
-                        media ads marketing to help your business get noticed on
-                        platforms like Facebook and Instagram. Our team creates
-                        fun and eye-catching ads that target the right people in
-                        your area. This way, we can make sure that your ads
-                        reach potential customers who are interested in what you
-                        offer. With our help, you can connect with more people
-                        and grow your business through social media!
+                        Our digital marketing agency Port Colborne team offers
+                        social media ads marketing to help your business get
+                        noticed on platforms like Facebook and Instagram. Our
+                        team creates fun and eye-catching ads that target the
+                        right people in your area. This way, we can make sure
+                        that your ads reach potential customers who are
+                        interested in what you offer. With our help, you can
+                        connect with more people and grow your business through
+                        social media!
                       </p>
                     </div>
                   </Col>
                   <Col lg="4" className="d-flex">
                     <div className="card">
-                      <Image src={img2} alt="local seo marketing niagara" />
+                      <Image
+                        src={img2}
+                        alt="local seo marketing port colborne"
+                      />
                       <h3>Local SEO Marketing</h3>
                       <p>
                         Our local SEO marketing service is all about helping
-                        your business show up when people in Niagara search for
-                        services like yours. Our digital marketing agency
-                        Niagara team makes sure your website is optimized so
-                        that it appears in local search results. This means when
-                        someone looks for a restaurant, shop, or service nearby,
-                        your business will be one of the first they see. By
-                        improving your local visibility, we help you attract
-                        more customers from your community.
+                        your business show up when people in Port Colborne
+                        search for services like yours. Our digital marketing
+                        agency Port Colborne team makes sure your website is
+                        optimized so that it appears in local search results.
+                        This means when someone looks for a restaurant, shop, or
+                        service nearby, your business will be one of the first
+                        they see. By improving your local visibility, we help
+                        you attract more customers from your community.
                       </p>
                     </div>
                   </Col>
                   <Col lg="4" className="d-flex">
                     <div className="card">
-                      <Image src={img3} alt="search engine marketing niagara" />
+                      <Image
+                        src={img3}
+                        alt="search engine marketing port colborne"
+                      />
                       <h3>General SEO Marketing</h3>
                       <p>
                         With our general SEO marketing, we focus on improving
                         your website's visibility on search engines like Google.
-                        Our digital marketing agency Niagara team uses special
-                        techniques to make your website more attractive to
-                        search engines, which helps it rank higher in search
+                        Our digital marketing agency Port Colborne team uses
+                        special techniques to make your website more attractive
+                        to search engines, which helps it rank higher in search
                         results. This means more people will find your site when
                         they search for products or services you offer. Our goal
                         is to drive more organic traffic to your website,
@@ -605,11 +506,11 @@ const SEO = () => {
                   >
                     <h2 className="pd-btm-40">
                       Featured Client of Our{" "}
-                      <span>Niagara Digital Marketing Agency</span>
+                      <span>Port Colborne Digital Marketing Agency</span>
                     </h2>
                     <div className="card">
                       <img
-                        alt="niagara digital marketing agency client testimonial"
+                        alt="port colborne digital marketing agency client testimonial"
                         width="48"
                         height="48"
                         src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
@@ -708,7 +609,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={results}
-                      alt="niagara digital marketing agency case study"
+                      alt="port colborne digital marketing agency case study"
                     />
                   </motion.div>
                 </Col>
@@ -788,8 +689,8 @@ const SEO = () => {
                     viewport={{ once: true }}
                   >
                     <h2>
-                      <span>Frequently Asked</span> Niagara Digital Marketing
-                      Agency Questions{" "}
+                      <span>Frequently Asked</span> Port Colborne Digital
+                      Marketing Agency Questions{" "}
                     </h2>
                   </motion.div>
                 </Col>
@@ -819,13 +720,13 @@ const SEO = () => {
                       </AccordionItem>
                       <AccordionItem>
                         <AccordionHeader targetId="2">
-                          How can your Niagara digital marketing services help
-                          my Niagara business?
+                          How can your Port Colborne digital marketing services
+                          help my Port Colborne business?
                         </AccordionHeader>
                         <AccordionBody accordionId="2">
                           <h2>
-                            How can your Niagara digital marketing services help
-                            my Niagara business?
+                            How can your Port Colborne digital marketing
+                            services help my Port Colborne business?
                           </h2>
                           <p>
                             Digital marketing can help your business by reaching
@@ -903,7 +804,7 @@ const SEO = () => {
                   transition={{ duration: 1, delay: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <h2>Need Niagara Digital Marketing Services?</h2>
+                  <h2>Need Port Colborne Digital Marketing Services?</h2>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
