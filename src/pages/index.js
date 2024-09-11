@@ -831,185 +831,156 @@ const Home = ({ latestPosts }) => {
           >
             <Row>
               <Col lg="12">
-                <Accordion open={open} toggle={toggle}>
-                  <AccordionItem>
-                    <AccordionHeader targetId="1">
-                      Why work with Infused Agency?
-                    </AccordionHeader>
-                    <AccordionBody accordionId="1">
-                      <h2>Why Work with Infused Agency?</h2>
-                      <p>
-                        As a top web design company in Niagara, Infused Agency
-                        helps businesses in St. Catharines and nearby areas get
-                        more customers through their websites. With over ten
-                        years of experience, we are known for creating websites
-                        that not only look fantastic but also work really well
-                        to bring in sales and new leads.
-                      </p>
-                      <h2>Awesome Web Design for Niagara Businesses</h2>
+                <h3>How much does a new website cost?</h3>
+                <p>
+                  A new website can cost anywhere from $1,499 for a simple,
+                  small website to $11,999 or more for a fancy website with lots
+                  of cool features. It's like buying a car - you can get a basic
+                  model or a luxury one with all the extras. Check out our{" "}
+                  <Link href="/pricing">pricing page</Link> to see what fits
+                  your needs!
+                </p>
 
-                      <h3>Cool Websites That Work Great</h3>
-                      <p>
-                        At Infused Agency, we create amazing websites for
-                        businesses in Niagara. Our sites look great on all
-                        devices and help you show up on Google, bringing more
-                        customers to you!
-                      </p>
+                <h3>How much does a custom web design cost?</h3>
+                <p>
+                  A custom web design is like getting a tailor-made suit. It
+                  starts at $3,499 for a simple site and can go up to $11,999 or
+                  more if you want all the bells and whistles. Our{" "}
+                  <Link href="/pricing">pricing page</Link> has all the details.
+                </p>
 
-                      <h3>Websites That Bring in Customers</h3>
-                      <p>
-                        We design websites that not only look good but also help
-                        turn visitors into real customers.
-                      </p>
+                <h3>How much does a templated web design cost?</h3>
+                <p>
+                  Think of a templated design like buying clothes off the rack.
+                  For a small website with 1-3 pages, it's about $1,499. Bigger
+                  sites will cost more. Take a look at our{" "}
+                  <Link href="/pricing">pricing page</Link> to get a better
+                  idea.
+                </p>
 
-                      <h3>Clear Communication</h3>
-                      <p>
-                        We keep you updated and make sure your website helps
-                        your business grow.
-                      </p>
+                <h3>How long will it take to get a new website?</h3>
+                <p>
+                  For simple websites, about 1-2 weeks. For fancier sites, 4-12
+                  weeks. It all depends on how complicated your website needs to
+                  be.
+                </p>
 
-                      <h3>Experienced Team</h3>
-                      <p>
-                        With over 10 years of experience, we know how to get
-                        your website found on Google.
-                      </p>
+                <h3>What are the pros and cons of a custom web design?</h3>
+                <p>
+                  <strong>Pros:</strong>
+                </p>
+                <ul>
+                  <li>It's unique, for your business only</li>
+                  <li>It fits your needs perfectly</li>
+                  <li>You can make it do exactly what you want</li>
+                </ul>
+                <p>
+                  <strong>Cons:</strong>
+                </p>
+                <ul>
+                  <li>It costs more money</li>
+                  <li>It takes longer to make</li>
+                  <li>You might need more help to update it</li>
+                </ul>
 
-                      <h3>Success in Niagara</h3>
-                      <p>
-                        We've helped many businesses in St. Catharines and
-                        Niagara Falls look professional and attract more
-                        customers.
-                      </p>
+                <h3>What are the pros and cons of a template web design?</h3>
+                <p>
+                  <strong>Pros:</strong>
+                </p>
+                <ul>
+                  <li>It costs less money</li>
+                  <li>It's faster to set up</li>
+                  <li>It's easier to update yourself</li>
+                </ul>
+                <p>
+                  <strong>Cons:</strong>
+                </p>
+                <ul>
+                  <li>It might look similar to other websites</li>
+                  <li>It might not have all the features you want</li>
+                  <li>You have less control over how it looks</li>
+                </ul>
 
-                      <h3>Custom Solutions</h3>
-                      <p>
-                        We create websites that fit your unique needs, whether
-                        simple or complex.
-                      </p>
+                <h3>Are your web designs responsive / mobile-friendly?</h3>
+                <p>
+                  Yes! Our websites work great on phones and tablets, just like
+                  they do on computers.
+                </p>
 
-                      <h3>Website Care</h3>
-                      <p>
-                        We provide ongoing support to keep your website safe and
-                        running smoothly.
-                      </p>
+                <h3>Can you build an e-commerce website?</h3>
+                <p>
+                  Absolutely! We can make websites where you can sell stuff
+                  online.
+                </p>
 
-                      <h3>Always Here to Help</h3>
-                      <p>
-                        You’ll have a friendly team supporting you from start to
-                        finish.
-                      </p>
+                <h3>Can you build websites with extra functionalities?</h3>
+                <p>
+                  You bet! We can add cool stuff like member-only areas, blogs,
+                  appointment booking, photo galleries, forms, social media
+                  connections, online stores, and ways to accept payments.
+                </p>
 
-                      <h3>Boosting Local Visibility</h3>
-                      <p>
-                        We help local customers find your business online with
-                        our special SEO strategies.
-                      </p>
-                    </AccordionBody>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionHeader targetId="2">
-                      Where is your team based?
-                    </AccordionHeader>
-                    <AccordionBody accordionId="2">
-                      <h2>Where is your team based?</h2>
-                      <p>
-                        Our Niagara-based web design agency is successful
-                        because we know the area well. Our team, all from
-                        Niagara, understands the local market and its needs.
-                        This helps us create personalized and effective web
-                        designs for businesses in Niagara.
-                      </p>
-                      <p>
-                        By working only in Niagara, we provide excellent support
-                        and pay close attention to our clients. We are proud to
-                        offer local service that benefits from our deep
-                        knowledge of the area. Our virtual model allows us to
-                        work flexibly and efficiently, ensuring your
-                        mobile-friendly website design gets the care it
-                        deserves.
-                      </p>
-                      <p>
-                        Check out our{" "}
-                        <Link href="/work">web design portfolio</Link> to see
-                        the great work we've done for businesses in Niagara.
-                      </p>
-                    </AccordionBody>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionHeader targetId="3">
-                      What is your web design process like?
-                    </AccordionHeader>
-                    <AccordionBody accordionId="3">
-                      <h2>What is your web design process like?</h2>
-                      <p>
-                        At Infused Agency, we've been making awesome websites
-                        for almost 20 years! We're really good at it now, but we
-                        still want you to be part of the process. We think it's
-                        important that you love your new website as much as we
-                        do.
-                      </p>
-                      <p>
-                        You know your business and customers best. That's why we
-                        need your help, especially when we're first learning
-                        about your business and planning your website. We use
-                        cool tools like Google Analytics to see how people use
-                        websites. This helps us make your website easy to use
-                        and great for getting new customers.
-                      </p>
-                      <p>
-                        Want to see how we make websites? Check out our{" "}
-                        <Link href="/process">process</Link> to learn how we
-                        help businesses in Niagara get more customers online.
-                      </p>
-                    </AccordionBody>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionHeader targetId="4">
-                      What will my project cost?
-                    </AccordionHeader>
-                    <AccordionBody accordionId="4">
-                      <h2>What will my project cost?</h2>
-                      <p>
-                        Figuring out the cost of a website design project for a
-                        Niagara business can be tricky because each project is
-                        different. The price depends on things like design
-                        complexity, features, and the range of services needed.
-                      </p>
-                      <p>
-                        <Link href="/pricing">View our pricing</Link> for both
-                        website design and SEO services in the Niagara region.
-                      </p>
-                      <p>
-                        <Link href="/get-a-quote">Book a call today</Link> to
-                        discuss your goals, learn more about our experience, and
-                        get detailed information about website prices,
-                        timelines, and budget ranges.
-                      </p>
-                    </AccordionBody>
-                  </AccordionItem>
-                  <AccordionItem>
-                    <AccordionHeader targetId="5">
-                      How can I get a quote for my project?
-                    </AccordionHeader>
-                    <AccordionBody accordionId="5">
-                      <h2>How can I get a quote for my project?</h2>
-                      <p>
-                        We’d love to chat if you’ve reviewed our Niagara website
-                        design portfolio and have questions about our Niagara
-                        web design services or development expertise.
-                      </p>
+                <h3>How do you approach website design?</h3>
+                <p>
+                  We make websites that are simple, easy to use, modern, and
+                  clean. We focus on making your business look great and work
+                  well for your customers, not just on making it look pretty.
+                </p>
 
-                      <p>
-                        If you’re looking for professional marketing services or
-                        web design in Niagara, please inquire about a quote for
-                        your project. Feel free to contact the best web
-                        designers in Niagara by completing our{" "}
-                        <Link href="/get-a-quote">online quote form</Link> for a
-                        free consultation.
-                      </p>
-                    </AccordionBody>
-                  </AccordionItem>
-                </Accordion>
+                <h3>Do you do website redesigns?</h3>
+                <p>Yes, we can give your old website a makeover!</p>
+
+                <h3>Can I update the website myself?</h3>
+                <p>
+                  Definitely! We'll teach you how to do it, it's pretty easy.
+                </p>
+
+                <h3>Are the websites you build accessible?</h3>
+                <p>
+                  We make sure our websites are easy for everyone to use. If you
+                  need extra special features for accessibility, we can add
+                  those too.
+                </p>
+
+                <h3>Do you build mobile-friendly sites?</h3>
+                <p>Yes, all our sites work great on phones and tablets.</p>
+
+                <h3>Which website builder is best?</h3>
+                <p>
+                  We like to use WordPress. It's like the Swiss Army knife of
+                  website builders.
+                </p>
+
+                <h3>Who hosts the website?</h3>
+                <p>
+                  For simple websites, we take care of it. For bigger sites with
+                  WordPress, you'll need to host it yourself, but we'll help you
+                  set it up.
+                </p>
+
+                <h3>Do you work with everyone?</h3>
+                <p>
+                  We work with all kinds of businesses, especially those in
+                  Niagara.
+                </p>
+
+                <h3>Do I provide the content for my website?</h3>
+                <p>
+                  Yes, you know your business best! But if you need help, we can
+                  lend a hand for an extra fee.
+                </p>
+
+                <h3>How much input do I have?</h3>
+                <p>
+                  Lots! It's like building with Lego - we'll work together to
+                  make sure you love the final product.
+                </p>
+
+                <h3>What if I need help after my website is live?</h3>
+                <p>
+                  Don't worry, we've got your back! We'll be here to help you if
+                  you need us.
+                </p>
               </Col>
             </Row>
           </motion.div>
