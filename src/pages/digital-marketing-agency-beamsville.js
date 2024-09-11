@@ -788,6 +788,72 @@ const SEO = () => {
             </Container>
           </div>
         </div>
+        <section className="home-areas pd-top-120 pd-btm-120">
+          <Container>
+            <Row>
+              <Col lg="12">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <h2>
+                    Delivering Digital Marketing Services surrounding
+                    Beamsville:
+                  </h2>
+                  <Link href="/digital-marketing-agency-beamsville">
+                    Beamsville, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-crystal-beach">
+                    Crystal Beach, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-fonthill">
+                    Fonthill, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-fort-erie">
+                    Fort Erie, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-grimsby">
+                    Grimsby, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-niagara">
+                    Niagara Falls, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-niagara">
+                    Niagara-on-the-Lake, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-port-colborne">
+                    Port Colborne, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-st-catharines">
+                    St. Catharines, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-thorold">
+                    Thorold, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-wainfleet">
+                    Wainfleet, ON
+                  </Link>{" "}
+                  |{" "}
+                  <Link href="/digital-marketing-agency-welland">
+                    Welland, ON
+                  </Link>
+                </motion.div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
         <div className="niche-cta">
           <Container>
             <Row className="text-center">
