@@ -50,11 +50,6 @@ const pages = [
     name: "Get A Quote",
     link: "/get-a-quote",
   },
-  {
-    id: 9,
-    name: "Cities Served",
-    link: "/cities",
-  },
 ];
 
 const Footer = () => {
