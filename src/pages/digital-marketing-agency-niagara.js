@@ -142,8 +142,8 @@ const SEO = () => {
     <>
       <Head>
         <title>
-          Digital Marketing Agency Niagara | Infused Agency | Niagara Falls |
-          Niagara-on-the-Lake
+          Digital Marketing Agency Niagara, Niagara Falls, Niagara-on-the-Lake |
+          Infused Agency
         </title>
         <meta
           name="description"
