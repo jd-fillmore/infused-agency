@@ -1,539 +1,892 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Container, Row, Col } from "reactstrap";
+import { motion } from "framer-motion";
 import Head from "next/head";
+import { Container, Row, Col } from "reactstrap";
 import Nav from "../../components/Nav/nav";
-import InnerHero from "../../components/innerHero/innerHero";
-import InnerContent from "../../components/innerContent/innerContent";
-import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import website from "../img/port-colborne-web-design.webp";
-import treeImg from "../img/tree-reports.png";
-import kdImg from "../img/niagara-web-design.png";
-import cassImg from "../img/featured-seo.png";
-import bgImage from "../img/inner-seo.jpg";
-import about from "../img/about.jpg";
+import intro from "../img/web-design-port-colborne.webp";
+import img1 from "../img/web-design.webp";
+import img2 from "../img/wordpress-web-design.webp";
+import img3 from "../img/web-development.webp";
+import best from "../../src/img/best-rated.png";
 
-const addJsonLd = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Infused Agency",
-    description:
-      "Infused Agency provides expert web design services, including lead generation, development, and online marketing in Port Colborne, ON.",
-    serviceArea: {
-      "@type": "Place",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Port Colborne",
-        addressRegion: "ON",
-        addressCountry: "Canada",
-      },
-    },
-    url: "https://www.infused.agency",
-    logo:
-      "https://infused.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fniagara-web-design-infused-logo.446e8511.webp&w=256&q=75",
-    sameAs: [
-      "https://www.instagram.com/infusedweb",
-      "https://www.facebook.com/infused.agency",
-    ],
-  };
-
-  return {
-    __html: JSON.stringify(schema),
-  };
-};
+import results from "../img/web-design-port-colborne-results.webp";
+import integ from "../img/port-colborne-web-design-agency.webp";
 
 const SEO = () => {
   return (
     <>
       <Head>
-        <title>Port Colborne Web Design | Waterfront-Inspired Websites</title>
+        <title>
+          Web Design Port Colborne | Website Developer Port Colborne | Award
+          Winning | Affordable Port Colborne Web Design | Infused Agency |
+          Website Design Port Colborne, Port Colborne Web Design Company, Port
+          Colborne Web Designer, Web Design Port Colborne Ontario
+        </title>
         <meta
           name="description"
-          content="Elevate your brand with top-notch Port Colborne web design services. Affordable, stunning websites that capture attention. Drive growth now!"
+          content="Our web design Port Colborne team makes websites to increase your company's sales. Click here for your free Port Colborne web design quote!"
         />
         <link
           rel="canonical"
           href="https://infused.agency/port-colborne-web-design"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addJsonLd()}
-          key="item-jsonld"
-        />
       </Head>
       <Nav />
-      <InnerHero
-        title="Port Colborne Web Design Company"
-        description="Infused Agency is an award-winning web design company that serves Port Colborne. We help businesses bring in more revenue through their websites."
-        bgImage={bgImage}
-      />
-      <InnerContent>
-        <section className="seo-page">
+      <div className="niche-pages">
+        <section className="hero">
           <Container>
-            <Row className="web pd-btm-80">
-              <Col md="4">
-                <Image
-                  className="img-fluid"
-                  src={website}
-                  alt="Port Colborne web design company, Port Colborne web design agency, Port Colborne web design services"
-                />
-              </Col>
-              <Col lg={{ size: 7, offset: 1 }}>
-                <p>
-                  The <strong>Port Colborne web design services</strong> that
-                  our <strong>Port Colborne web design company</strong> provides
-                  are pretty impeccable. We consistently provide great web
-                  design services to our clients with pretty awesome results.
-                  There are a lot of benefits as to why web design services are
-                  so important for any local company:
-                </p>
-                <ul>
-                  <li>Helps bolster company branding.</li>
-                  <li>
-                    Improves your Port Colborne company's reputation and
-                    trustworthiness.
-                  </li>
-                  <li>Leads to more leads and company revenue.</li>
-                </ul>
-                <p>
-                  When you utilize web design services from our company and end
-                  up bolstering your company's reputation, it's a great way to
-                  gain more customers.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-          <section className="results">
-            <Container>
-              <Row>
-                <Col lg="12 text-center pd-btm-40">
-                  <h2>
-                    Our Nearby Port Colborne Web Design Clients{" "}
-                    <span>Get Results</span>
-                  </h2>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg="4">
-                  <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={treeImg}
-                      alt="treereports"
-                    />
-                    <h4>TreeReports</h4>
-                    <p>
-                      "Fantastic experience from start to end. Infused Agency is
-                      organized, thorough and professional. I highly recommend
-                      their company if you are thinking of needing their Port
-                      Colborne web design services."
-                    </p>
-                    <ul>
-                      <li>
-                        <strong>
-                          <span>385% increase</span> in being found online
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>4,000% increase</span> in new website visits
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>1,500% increase</span> in Google rankings for
-                          multiple keywords
-                        </strong>
-                      </li>
-                    </ul>
-                    <Link href="/tree-reports">
-                      Learn More
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </Link>
-                  </div>
-                </Col>
-                <Col lg="4">
-                  <div className="card">
-                    <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
-                    <h4>KD Flowers</h4>
-                    <p>
-                      "Infused Agency drastically improved my online presence.
-                      By using their web design services, my Port Colborne
-                      company went from having no website at all to one that
-                      brings in new customers every week."
-                    </p>
-                    <ul>
-                      <li>
-                        <strong>
-                          <span>10,700 website views</span> per month
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>20,000% increase</span> in new leads in the
-                          first 6 months
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>5,800 new people</span> discovering website per
-                          month
-                        </strong>
-                      </li>
-                    </ul>
-                    <Link href="/kd-florist">
-                      Learn More
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </Link>
-                  </div>
-                </Col>
-                <Col lg="4">
-                  <div className="card">
-                    <Image
-                      className="img-fluid"
-                      src={cassImg}
-                      alt="Cass-A-Bella Construction"
-                    />
-                    <h4>Cass-A-Bella Construction</h4>
-                    <p>
-                      "Great Job, WELL DONE. I'm very pleased with the SEO work
-                      on my new web site. If you ever need a web design for your
-                      Port Colborne business I do recommend Infused Agency for
-                      their services. JD keep up the great work. Thank you."
-                    </p>
-                    <ul>
-                      <li>
-                        <strong>
-                          <span>12,000 photo views</span> per month
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>13,000% increase</span> in new leads in first 6
-                          months
-                        </strong>
-                      </li>
-                      <li>
-                        <strong>
-                          <span>2,500 new people</span> discovering website per
-                          month
-                        </strong>
-                      </li>
-                    </ul>
-                    <Link href="/cass-a-bella-construction">
-                      Learn More
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </Link>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="call-out">
-            <Container>
-              <Row>
-                <Col lg="12 text-center">
-                  <h3>
-                    Ready to grow your business with top Port Colborne web
-                    design services?
-                  </h3>
-                  <p>Click the button below to get your free quote.</p>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                  >
-                    <button>Get Free Quote</button>
-                  </a>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="seo-services">
-            <Container>
-              <Row className="pd-top-80 pd-btm-40">
-                <Col lg="12 text-center">
-                  <h2>
-                    Port Colborne <span>Web Design</span> Services
-                  </h2>
-                  <p>Websites That Help Your Company Bring In More Customers</p>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg="4">
-                  <h5>Search Engine Optimization (SEO)</h5>
-                  <p>
-                    We make sure that your websites are indexed and show up for
-                    certain keywords in Google. Search engine optimization is a
-                    key part of our Port Colborne web design services to help
-                    make sure that your customers can find your website. When
-                    using our Port Colborne web design experts and{" "}
-                    <Link href="/port-colborne-seo/">
-                      Port Colborne SEO services
-                    </Link>
-                    , your website should help bring in new company revenue and
-                    customers.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <h5>Web Design &amp; Development</h5>
-                  <p>
-                    Our Port Colborne web designers create websites that bolster
-                    your brand's reputation, which help bring in more customers.
-                    Our websites not only attract customers, our award-winning
-                    web designs take into account search engine optimization and
-                    responsive web design best practices to help increase brand
-                    awareness.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <h5>Custom Web Design</h5>
-                  <p>
-                    Every client website we design is custom. Our Port Colborne
-                    web designers will create a modern website design for you,
-                    taking into consideration your business goals. We make sure
-                    to plug in your vision that factors into our Port Colborne
-                    web design experts’ design process.{" "}
-                  </p>
-                </Col>
-              </Row>
-              <Row className="pd-btm-80">
-                <Col lg="4">
-                  <h5>Responsive Web Design</h5>
-                  <p>
-                    We conduct responsive web design as part of our Port
-                    Colborne web design services to help your users navigate
-                    your website on any device. Our Port Colborne web design
-                    experts specifically develop with custom code to allow your
-                    website to look great on any device or computer.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <h5>WordPress Web Design</h5>
-                  <p>
-                    Our web design company in Port Colborne uses WordPress for
-                    all website projects that require a content management
-                    system (CMS). Since WordPress powers nearly 50% of the web,
-                    it's a clear winner when it comes to choosing a CMS. We
-                    choose WordPress as it's easy to develop with and easy for
-                    our clients to use.
-                  </p>
-                </Col>
-                <Col lg="4">
-                  <h5>E-Commerce Web Design</h5>
-                  <p>
-                    In the post-covid world, it's especially important as a
-                    product or subscription-based business to have an e-commerce
-                    website. With the help of our Port Colborne web design
-                    agency, your e-commerce website can help sell your products
-                    online, expanding your reach drastically. Leave it to our
-                    Port Colborne web designers to help design and develop a
-                    beautiful, modern online store.
-                  </p>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="call-out">
-            <Container>
-              <Row>
-                <Col lg="12 text-center">
-                  <h3>Have Our Port Colborne Web Design Experts Help Today</h3>
-                  <p>Click the button below to get your free quote.</p>
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://calendly.com/infused-agency/project-discovery/"
-                  >
-                    <button>Get Free Quote</button>
-                  </a>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="seo-why pd-top-80">
-            <Container>
-              <Row>
-                <Col lg="12 text-center pd-btm-40">
-                  <h2>
-                    Why Choose Infused Agency As Your <span>Port Colborne</span>{" "}
-                    Web Design Agency
-                  </h2>
-                  <p>
-                    Increase Your Brand's Reputation With Our Web Design Experts
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg="6">
-                  <p>
-                    Since 2013 we've been able to help countless local Port
-                    Colborne businesses (and beyond!) with their{" "}
-                    <Link href="/web-design">website design</Link>,{" "}
-                    <Link href="/digital-marketing-niagara">
-                      digital marketing
-                    </Link>
-                    ,{" "}
-                    <Link href="/port-colborne-seo/">
-                      search engine optimization (SEO)
-                    </Link>{" "}
-                    and {""}
-                    <Link href="/wordpress-developer-niagara">
-                      WordPress development
-                    </Link>
-                    .
-                  </p>
-                  <p>
-                    We've been able to help small, local businesses all the way
-                    to large enterprise companies with increasing traffic to
-                    their websites, build modern websites for them and
-                    ultimately bringing them more revenue through digital
-                    channels.
-                  </p>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.37148726318!2d-79.36307399436933!3d42.82851082495693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1709689891355!5m2!1sen!2sca"
-                    width="600"
-                    height="450"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </Col>
-                <Col lg="6">
-                  <Image
-                    className="img-fluid"
-                    src={about}
-                    alt="business needs"
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <Container>
-            <Row className="pd-top-80 pd-btm-60">
+            <Row>
               <Col lg="12">
-                <h3>How much does a new website cost?</h3>
-                <p>
-                  There's no single answer to this question. It entirely depends
-                  on the needs of the project. Every web design and development
-                  project is unique in it's design, purpose, functionality and
-                  more. In our free consultation sessions we'll ask lots of
-                  questions, assess your needs and then give you a quote based
-                  on our findings.
-                </p>
-                <h3>How long will it take to get a new website?</h3>
-                <p>
-                  Typically between 6 and 8 weeks. Keep in mind this completely
-                  depends on the client, though. For example - if we need
-                  content or approval from you and there are potential delays,
-                  this could delay the launch. However if you send over content
-                  / approval for things along the way quickly, the more quick
-                  your website will launch.
-                </p>
-                <h3>Do you only create WordPress websites?</h3>
-                <p>
-                  No. WordPress is great for a lot of use cases. You can update
-                  your website on your own without needing a developer (we teach
-                  you). There's a rich ecosystem of plugins we utilize to speed
-                  up development. However, sometimes a hand-coded website far
-                  outperforms a WordPress site depending on the situation.
-                </p>
-                <h3>Do I have to be local to work with you?</h3>
-                <p>
-                  Nope! We have clients locally but have also served clients all
-                  across the world.
-                </p>
-                <h3>
-                  Will I be able to update the website when it's finished?
-                </h3>
-                <p>
-                  If it's a WordPress website, yes. If it's not, our team of
-                  developers can update the website for you.
-                </p>
-                <h3>Can you maintain my website for me?</h3>
-                <p>
-                  Absolutely. We understand that business owners are busy a lot
-                  of the time. We can take that stress off of you by updating
-                  your website for you.
-                </p>
-                <h3>Will my website be mobile-friendly?</h3>
-                <p>
-                  Of course. Responsive design, aka mobile websites, are a big
-                  part of today's society. We make sure to adhere to that so
-                  your customers have a pleasant experience on your website.
-                </p>
-                <h3>When do I pay?</h3>
-                <p>
-                  Equal payments are made at the start, midway through and at
-                  the end of the project.However we can accomodate with smaller
-                  monthly payments if need be. We accept e-transfer, cash or
-                  credit card payments.
-                </p>
-                <h3>How much input do I have?</h3>
-                <p>
-                  Lots! We work with our clients very closely. We make sure that
-                  based on our conversations, there are no surprises when it
-                  comes to how your website looks or functions.
-                </p>
-                <h3>Do I provide the content for my website?</h3>
-                <p>
-                  Yes. You're the expert of your business so typically it's you
-                  that provides it. If you don't want to or can't, we will
-                  happily write the content at an additional cost.
-                </p>
-                <h3>What about website hosting?</h3>
-                <p>
-                  We have a list of favourites hosting providers that we use.
-                  During our free consultation we can talk about these
-                  providers.
-                </p>
-                <h3>What if I need help after my site is live?</h3>
-                <p>
-                  We're only an email away! Contact us any time and we can help
-                  you with whatever you need.
-                </p>
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                >
+                  <h1 className="intro">Web Design Port Colborne</h1>
+                  <h2 className="sub">
+                    We create Port Colborne web designs that attract visitors
+                    and turn them into leads, helping your Port Colborne
+                    business grow.
+                  </h2>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                >
+                  <Link href="/get-a-quote">
+                    <button>Get Your Free Quote Now!</button>
+                  </Link>
+                </motion.div>
               </Col>
             </Row>
           </Container>
         </section>
-      </InnerContent>
-      <CTA />
+        <div className="inner-content">
+          <div className="intro">
+            <Container>
+              <Row>
+                <Col lg="7">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>
+                      A Web Design Port Colborne Agency That{" "}
+                      <span>Gets Results</span>
+                    </h2>
+                    <p>
+                      At Infused Agency, our web design Port Colborne team helps
+                      local businesses grow with amazing websites. We create
+                      custom Port Colborne web design websites to boost your
+                      brand and increase sales using the latest web designs.
+                    </p>
+                    <ol>
+                      <li>
+                        <strong>Learning About Your Business</strong>: First, we
+                        learn all about your business and your goals. Your ideas
+                        are super important to us, and we make sure to include
+                        them in our plan.
+                      </li>
+                      <li>
+                        <strong>Making a Custom Web Design Plan</strong>: After
+                        we know what you need, we work with you to make a
+                        special web design plan just for you. We explain
+                        everything clearly, so you don’t need to be a tech
+                        expert.
+                      </li>
+                      <li>
+                        <strong>Using Effective Web Design Tools:</strong>
+                        {""} We use simple yet powerful tools to make your
+                        website look great,{" "}
+                        <Link href="/port colborne-seo-company">
+                          rank higher on Google
+                        </Link>
+                        , and turn visitors into customers. Our goal is to
+                        create websites that help you get more sales.
+                      </li>
+                    </ol>
+                    <p>
+                      We have helped many businesses in the Port Colborne area
+                      with their web design projects. Our goal is to create
+                      websites that look good and help attract more customers.
+                    </p>
+                    <p>
+                      If you want to grow your business online, Infused Agency
+                      is here to help!
+                    </p>
+                  </motion.div>
+                </Col>
+                <Col lg="5">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      className="img-fluid"
+                      src={intro}
+                      alt="web design port colborne"
+                    />
+                    <br />
+                    <br />
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187270.37148726318!2d-79.36307399436933!3d42.82851082495693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33125c46ca209%3A0x8222e76e59ecba10!2sPort%20Colborne%2C%20ON!5e0!3m2!1sen!2sca!4v1726057629293!5m2!1sen!2sca"
+                      width="100%"
+                      height="450"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </motion.div>
+                </Col>
+              </Row>
+              <Row className="pd-top-80 align-items-center">
+                <div className="col-lg-5">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      className="img-fluid"
+                      src={integ}
+                      alt="port colborne web design"
+                    />
+                  </motion.div>
+                </div>
+                <div className="col-lg-7">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>A Port Colborne Web Design Agency With Integrity</h2>
+                    <p>
+                      At Infused Agency, our Port Colborne web design agency
+                      helps all types of businesses, from big companies to small
+                      local shops, create amazing websites. Your website is
+                      often the first thing a potential customer sees, and it
+                      should show how great your business is. Our web design
+                      strategies are easy to understand and help you get more
+                      customers.
+                    </p>
+
+                    <p>
+                      We focus on three key areas to help your Port Colborne
+                      business succeed:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Custom Web Design</strong>: Our web design Port
+                        Colborne team makes great websites just for you. Our
+                        custom web design makes sure your site stands out and
+                        shows off what makes your business unique.
+                      </li>
+                      <li>
+                        <strong>Responsive Mobile-Friendly Web Design</strong>:
+                        We make sure your website looks awesome and works well
+                        on all devices, like phones and tablets. Our responsive
+                        design helps you reach more customers no matter how they
+                        visit your site.
+                      </li>
+                      <li>
+                        <strong>WordPress Web Design</strong>: We build websites
+                        using WordPress, which is a popular and easy-to-use
+                        platform. With our WordPress web design, you can easily
+                        update and manage your site.
+                      </li>
+                    </ul>
+
+                    <p>
+                      These services help make your online presence strong and
+                      easy to handle, helping you get more leads, increase
+                      sales, and build trust with your customers. If you want to
+                      grow your business online, Infused Agency is here to help!
+                    </p>
+                  </motion.div>
+                </div>
+              </Row>
+              <div className="row pd-top-80 align-items-center">
+                <div className="col-lg-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>Why Choose Infused?</h2>
+                    <h3>Our Web Design Port Colborne Team</h3>
+                    <p>
+                      Our web design Port Colborne team has been helping
+                      businesses in Port Colborne with web design for{" "}
+                      <strong>over ten years</strong>. We know what works best
+                      to get more customers. Our main goal is to help your
+                      business <strong>attract more people</strong> and
+                      <strong>make more sales</strong> with our special web
+                      design techniques.
+                    </p>
+
+                    <p>
+                      When you choose us,{" "}
+                      <strong>
+                        you get a team that knows all about Port Colborne
+                      </strong>
+                      . We make sure your website stands out to both locals and
+                      visitors. We want to help your business grow by{" "}
+                      <strong>getting more people to visit your site</strong>.
+                    </p>
+
+                    <p>
+                      We use our SEO skills on your website design to help your
+                      business show up on Google when people search for services
+                      in Port Colborne. This{" "}
+                      <strong>helps more people find your business</strong>,
+                      which can lead to more sales. We love seeing our clients
+                      succeed and work hard to make it happen!
+                    </p>
+
+                    <p>
+                      We also make sure your business appears in local search
+                      results. If someone is looking for a restaurant, shop, or
+                      service nearby, we make sure your business is one of the
+                      first they see.{" "}
+                      <strong>
+                        This helps attract more customers from your area.
+                      </strong>
+                    </p>
+
+                    <p>
+                      With our great knowledge, top-quality work, and friendly
+                      service, we’ve become a{" "}
+                      <strong>trusted web design company</strong> for Port
+                      Colborne businesses. If you want to grow your business
+                      online, we’re here to help!
+                    </p>
+
+                    <Image
+                      className="img-fluid"
+                      src={best}
+                      alt="web design company port colborne"
+                    />
+                  </motion.div>
+                </div>
+                <div className="col-lg-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="card">
+                      <img
+                        alt="web design agency port colborne client review"
+                        width="48"
+                        height="48"
+                        src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
+                      />
+                      <p className="author">KD Flowers</p>
+                      <div className="d-flex">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                      </div>
+                      <p className="desc">
+                        In just one month, my business's website made it to the
+                        first page of Google! I was so surprised! After that, I
+                        started getting emails from people interested in my
+                        services right away, and I've been busy ever since!
+                        Thanks a lot to Infused Agency for helping my business
+                        grow!
+                      </p>
+                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5821.424311572049!2d-79.21034682335578!3d43.15257338466515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2s%F0%9F%9A%80%20Infused%20Agency%20%7C%20Port Colborne%20Web%20Design%20%26%20SEO%20Company!5e0!3m2!1sen!2sca!4v1725979720923!5m2!1sen!2sca"
+                      width="100%"
+                      height="450"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </motion.div>
+                </div>
+              </div>
+            </Container>
+          </div>
+          <div className="niche-services pd-top-80">
+            <Container>
+              <Row className="text-center">
+                <Col lg="12">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>
+                      Our Port Colborne <span>Web Design Services</span>
+                    </h2>
+                  </motion.div>
+                </Col>
+              </Row>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Row className="pd-top-40">
+                  <Col lg="4" className="d-flex">
+                    <div className="card">
+                      <Image
+                        src={img1}
+                        alt="web design port colborne company"
+                      />
+                      <h3>Web Design</h3>
+                      <p>
+                        Our Port Colborne web designs make sure that visitors
+                        have a great time exploring your site. We use smart
+                        ideas to keep people interested and help them find what
+                        they need quickly. This way, everyone can enjoy a smooth
+                        experience, whether they’re on a phone, tablet, or
+                        computer!
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="4" className="d-flex">
+                    <div className="card">
+                      <Image
+                        src={img2}
+                        alt="wordpress web design port colborne"
+                      />
+                      <h3>Custom WordPress Design</h3>
+                      <p>
+                        We create custom WordPress websites to help your
+                        business use the best website system in the world. Our
+                        special way of designing makes sure your website is
+                        unique, easy to use, and just right for you.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="4" className="d-flex">
+                    <div className="card">
+                      <Image src={img3} alt="web development port colborne" />
+                      <h3>Web Development</h3>
+                      <p>
+                        We build custom websites to help your business look
+                        great online. Our special designs make sure your site is
+                        unique, easy to use, and perfect for you. With our
+                        custom websites, you can make a strong online presence
+                        and give your visitors a great experience.
+                      </p>
+                    </div>
+                  </Col>
+                </Row>
+              </motion.div>
+            </Container>
+          </div>
+          <div className="niche-featured pd-top-80">
+            <Container>
+              <Row>
+                <Col lg="6">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2 className="pd-btm-40">
+                      Featured Client of Our{" "}
+                      <span>Port Colborne Web Design Agency</span>
+                    </h2>
+                    <div className="card">
+                      <img
+                        alt="port colborne web design agency client testimonial"
+                        width="48"
+                        height="48"
+                        src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
+                      />
+                      <p className="author">KD Flowers</p>
+                      <div className="d-flex">
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                        <svg
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
+                            fill="#FFD700"
+                          />
+                        </svg>
+                      </div>
+                      <p className="desc">
+                        In just one month, my business's website made it to the
+                        first page of Google! I was so surprised! After that, I
+                        started getting emails from people interested in my
+                        services right away, and I've been busy ever since!
+                        Thanks a lot to Infused Agency for helping my business
+                        grow!
+                      </p>
+                    </div>
+                  </motion.div>
+                </Col>
+                <Col lg="6">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <Image
+                      className="img-fluid"
+                      src={results}
+                      alt="port colborne web design agency case study"
+                    />
+                  </motion.div>
+                </Col>
+              </Row>
+              <Row>
+                <Col lg="12">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>The Problem</h2>
+                    <p>
+                      KD Flowers didn't have a website, so people couldn't find
+                      them online. They wanted to grow their business and get
+                      new customers from Google searches.
+                    </p>
+
+                    <h2>How We Helped</h2>
+                    <p>
+                      We made a cool new website for KD Flowers that's easy for
+                      people to use. It looks great and works on both phones and
+                      computers.
+                    </p>
+
+                    <p>
+                      After we finished the website, we helped more people find
+                      it. We used something called "local SEO" to make sure KD
+                      Flowers showed up when people in their area searched for
+                      flower shops on Google.
+                    </p>
+
+                    <h2>What Happened Next</h2>
+                    <p>
+                      Since we put up the new website, KD Flowers has gotten
+                      lots of new customers! Their website looks amazing, and
+                      now they show up at the top of Google searches in their
+                      area.
+                    </p>
+                  </motion.div>
+                </Col>
+              </Row>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Row>
+                  <Col lg="4">
+                    <div className="card">
+                      <h3>10,700</h3>
+                      <p>website views / month</p>
+                    </div>
+                  </Col>
+                  <Col lg="4">
+                    <div className="card">
+                      <h3>20,000%</h3>
+                      <p>increase in new leads in 6 months</p>
+                    </div>
+                  </Col>
+                  <Col lg="4">
+                    <div className="card">
+                      <h3>5,800</h3>
+                      <p>new users discovering website / month</p>
+                    </div>
+                  </Col>
+                </Row>
+              </motion.div>
+              <Row className="text-center pd-top-80">
+                <Col lg="12">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2>
+                      <span>Frequently Asked</span> Port Colborne Web Design
+                      Agency Questions{" "}
+                    </h2>
+                  </motion.div>
+                </Col>
+              </Row>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Row>
+                  <Col lg="12">
+                    <h3>How much does a new website cost?</h3>
+                    <p>
+                      A new website can range from $1,499 for a basic one to
+                      $11,999 or more for a fancy one with lots of features.
+                      It's like choosing between a basic car and a luxury one.
+                      Check our pricing page to see what works best for you!
+                    </p>
+
+                    <h3>How much does a custom web design cost?</h3>
+                    <p>
+                      A custom web design is like getting a suit made just for
+                      you. It starts at $3,499 for a simple site and can go up
+                      to $11,999 or more if you want lots of special features.
+                      You can find all the details on our pricing page.
+                    </p>
+
+                    <h3>How much does a templated web design cost?</h3>
+                    <p>
+                      A templated design is like buying clothes from a store. A
+                      small site with 1-3 pages costs around $1,499, and bigger
+                      sites cost more. Check out our pricing page for more info.
+                    </p>
+
+                    <h3>How long will it take to get a new website?</h3>
+                    <p>
+                      A simple website usually takes about 1-2 weeks. Fancier
+                      websites can take 4-12 weeks, depending on how complicated
+                      they are.
+                    </p>
+
+                    <h3>What are the pros and cons of a custom web design?</h3>
+                    <p>
+                      <strong>Pros:</strong>
+                    </p>
+                    <ul>
+                      <li>It's made just for your business</li>
+                      <li>It fits your needs perfectly</li>
+                      <li>You can make it do exactly what you want</li>
+                    </ul>
+                    <p>
+                      <strong>Cons:</strong>
+                    </p>
+                    <ul>
+                      <li>It costs more money</li>
+                      <li>It takes longer to create</li>
+                      <li>You might need extra help to update it</li>
+                    </ul>
+
+                    <h3>
+                      What are the pros and cons of a template web design?
+                    </h3>
+                    <p>
+                      <strong>Pros:</strong>
+                    </p>
+                    <ul>
+                      <li>It costs less money</li>
+                      <li>It's quicker to set up</li>
+                      <li>It's easier to update on your own</li>
+                    </ul>
+                    <p>
+                      <strong>Cons:</strong>
+                    </p>
+                    <ul>
+                      <li>It might look like other websites</li>
+                      <li>It might not have all the features you want</li>
+                      <li>You have less control over how it looks</li>
+                    </ul>
+
+                    <h3>Are your web designs responsive / mobile-friendly?</h3>
+                    <p>
+                      Yes! Our websites work well on phones, tablets, and
+                      computers.
+                    </p>
+
+                    <h3>Can you build an e-commerce website?</h3>
+                    <p>
+                      Absolutely! We can create websites where you can sell
+                      things online.
+                    </p>
+
+                    <h3>Can you build websites with extra functionalities?</h3>
+                    <p>
+                      Definitely! We can add features like member-only areas,
+                      blogs, appointment booking, photo galleries, forms, social
+                      media links, online stores, and payment options.
+                    </p>
+
+                    <h3>How do you approach website design?</h3>
+                    <p>
+                      We create websites that are simple, easy to use, modern,
+                      and clean. We focus on making your business look great and
+                      work well for your customers, not just on making it look
+                      nice.
+                    </p>
+
+                    <h3>Do you do website redesigns?</h3>
+                    <p>Yes, we can give your old website a fresh look!</p>
+
+                    <h3>Can I update the website myself?</h3>
+                    <p>
+                      Yes, you can! We'll show you how, and it's pretty easy.
+                    </p>
+
+                    <h3>Are the websites you build accessible?</h3>
+                    <p>
+                      We make sure our websites are easy for everyone to use. If
+                      you need special features for accessibility, we can add
+                      those too.
+                    </p>
+
+                    <h3>Do you build mobile-friendly sites?</h3>
+                    <p>Yes, all our sites work great on phones and tablets.</p>
+
+                    <h3>Which website builder is best?</h3>
+                    <p>
+                      We like using WordPress. It’s like having a Swiss Army
+                      knife for building websites.
+                    </p>
+
+                    <h3>Who hosts the website?</h3>
+                    <p>
+                      For simple websites, we handle it. For larger WordPress
+                      sites, you’ll need to host it yourself, but we’ll help you
+                      set it up.
+                    </p>
+
+                    <h3>Do you work with everyone?</h3>
+                    <p>
+                      We work with all kinds of businesses, especially those in
+                      Niagara.
+                    </p>
+
+                    <h3>Do I provide the content for my website?</h3>
+                    <p>
+                      Yes, you know your business best! But if you need help, we
+                      can assist for an extra fee.
+                    </p>
+
+                    <h3>How much input do I have?</h3>
+                    <p>
+                      A lot! It’s like building with Lego – we’ll work together
+                      to make sure you love the final result.
+                    </p>
+
+                    <h3>What if I need help after my website is live?</h3>
+                    <p>
+                      Don’t worry, we’re here for you! We’ll help you out if you
+                      need anything after your website is up and running.
+                    </p>
+                  </Col>
+                </Row>
+              </motion.div>
+            </Container>
+          </div>
+        </div>
+        <section className="home-areas pd-top-120 pd-btm-120">
+          <Container>
+            <Row>
+              <Col lg="12">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <h2>
+                    Delivering Web Design Services surrounding Port Colborne:
+                  </h2>
+                  <Link href="/beamsville-web-design">Beamsville, ON</Link> |{" "}
+                  <Link href="/crystal-beach-web-design">
+                    Crystal Beach, ON
+                  </Link>{" "}
+                  | <Link href="/fonthill-web-design">Fonthill, ON</Link> |{" "}
+                  <Link href="/fort-erie-web-design">Fort Erie, ON</Link> |{" "}
+                  <Link href="/grimsby-web-design">Grimsby, ON</Link> |{" "}
+                  <Link href="/">Niagara Falls, ON</Link> |{" "}
+                  <Link href="/">Niagara-on-the-Lake, ON</Link> |{" "}
+                  <Link href="/port-colborne-web-design">
+                    Port Colborne, ON
+                  </Link>{" "}
+                  | <Link href="/">St. Catharines, ON</Link> |{" "}
+                  <Link href="/thorold-web-design">Thorold, ON</Link> |{" "}
+                  <Link href="/wainfleet-web-design">Wainfleet, ON</Link> |{" "}
+                  <Link href="/web-design-welland">Welland, ON</Link>
+                </motion.div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <div className="niche-cta">
+          <Container>
+            <Row className="text-center">
+              <Col lg="12">
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <h2>Need Port Colborne Web Design Services?</h2>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <Link href="/get-a-quote">
+                    <button>Get Your Free Quote Now!</button>
+                  </Link>
+                </motion.div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
       <Footer />
     </>
   );

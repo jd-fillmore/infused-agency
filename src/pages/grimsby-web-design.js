@@ -274,7 +274,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={best}
-                      alt="web design company grimsby-lincoln"
+                      alt="web design company grimsby"
                     />
                   </motion.div>
                 </div>

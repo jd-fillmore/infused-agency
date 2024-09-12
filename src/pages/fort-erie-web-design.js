@@ -275,7 +275,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={best}
-                      alt="web design company fort erie-lincoln"
+                      alt="web design company fort erie"
                     />
                   </motion.div>
                 </div>
