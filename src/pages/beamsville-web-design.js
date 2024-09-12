@@ -649,8 +649,8 @@ const SEO = () => {
                     viewport={{ once: true }}
                   >
                     <h2>
-                      <span>Frequently Asked</span> Beamsville Digital Marketing
-                      Agency Questions{" "}
+                      <span>Frequently Asked</span> Beamsville Web Design Agency
+                      Questions{" "}
                     </h2>
                   </motion.div>
                 </Col>
