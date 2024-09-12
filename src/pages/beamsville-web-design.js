@@ -862,7 +862,7 @@ const SEO = () => {
                   transition={{ duration: 1, delay: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <h2>Need Beamsville Digital Marketing Services?</h2>
+                  <h2>Need Beamsville Web Design Services?</h2>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
