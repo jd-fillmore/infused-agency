@@ -27,7 +27,7 @@ const SEO = () => {
         </title>
         <meta
           name="description"
-          content="Beamsville's Best Web Design Company. We design websites aimted to increase company sales. Click here for your free quote!"
+          content="Our web design Beamsville team makes websites to increase your company's sales. Click here for your free Beamsville web design quote!"
         />
         <link
           rel="canonical"
@@ -186,10 +186,10 @@ const SEO = () => {
                     </p>
                     <ul>
                       <li>
-                        <strong>Custom Web Design</strong>: We make special
-                        websites just for you. Our custom web design makes sure
-                        your site stands out and shows off what makes your
-                        business unique.
+                        <strong>Custom Web Design</strong>: Our web design
+                        Beamsville team makes great websites just for you. Our
+                        custom web design makes sure your site stands out and
+                        shows off what makes your business unique.
                       </li>
                       <li>
                         <strong>Responsive Mobile-Friendly Web Design</strong>:
@@ -398,7 +398,7 @@ const SEO = () => {
                     viewport={{ once: true }}
                   >
                     <h2>
-                      Our <span>Web Design Services</span> in Beamsville
+                      Our Beamsville <span>Web Design Services</span>
                     </h2>
                   </motion.div>
                 </Col>
@@ -415,11 +415,12 @@ const SEO = () => {
                       <Image src={img1} alt="web design beamsville company" />
                       <h3>Web Design</h3>
                       <p>
-                        Our designs make sure that visitors have a great time
-                        exploring your site. We use smart ideas to keep people
-                        interested and help them find what they need quickly.
-                        This way, everyone can enjoy a smooth experience,
-                        whether they’re on a phone, tablet, or computer!
+                        Our Beamsville web designs make sure that visitors have
+                        a great time exploring your site. We use smart ideas to
+                        keep people interested and help them find what they need
+                        quickly. This way, everyone can enjoy a smooth
+                        experience, whether they’re on a phone, tablet, or
+                        computer!
                       </p>
                     </div>
                   </Col>
