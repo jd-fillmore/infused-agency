@@ -84,8 +84,8 @@ const SEO = () => {
                     <p>
                       At Infused Agency, our web design Beamsville team helps
                       local businesses grow with amazing websites. We create
-                      custom website designs to boost your brand and increase
-                      sales using the latest web designs.
+                      custom Beamsville web design websites to boost your brand
+                      and increase sales using the latest web designs.
                     </p>
                     <ol>
                       <li>
@@ -226,10 +226,11 @@ const SEO = () => {
                     <h2>Why Choose Infused?</h2>
                     <h3>Our Web Design Beamsville Team</h3>
                     <p>
-                      We’ve been helping businesses in Beamsville with web
-                      design for <strong>over ten years</strong>. We know what
-                      works best to get more customers. Our main goal is to help
-                      your business <strong>attract more people</strong> and
+                      Our web design Beamsville team has been helping businesses
+                      in Beamsville with web design for{" "}
+                      <strong>over ten years</strong>. We know what works best
+                      to get more customers. Our main goal is to help your
+                      business <strong>attract more people</strong> and
                       <strong>make more sales</strong> with our special web
                       design techniques.
                     </p>
