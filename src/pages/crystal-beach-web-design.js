@@ -139,7 +139,7 @@ const SEO = () => {
                     <br />
                     <br />
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23282.936303750226!2d-79.49941746955109!3d43.15981920227602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ca6a63bd9bd41%3A0x22e434fb6db3b5f!2sCrystal Beach%2C%20Lincoln%2C%20ON!5e0!3m2!1sen!2sca!4v1725980490735!5m2!1sen!2sca"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23393.8634638668!2d-79.07496907053216!3d42.867927453582695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33dc989b4ccc5%3A0xb57a249d19dfde0b!2sCrystal%20Beach%2C%20Fort%20Erie%2C%20ON!5e0!3m2!1sen!2sca!4v1726013336184!5m2!1sen!2sca"
                       width="100%"
                       height="450"
                       allowfullscreen=""
