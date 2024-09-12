@@ -12,7 +12,7 @@ import img2 from "../img/wordpress-web-design.webp";
 import img3 from "../img/web-development.webp";
 import best from "../../src/img/best-rated.png";
 
-import results from "../img/digital-marketing-agency-beamsville-results.webp";
+import results from "../img/web-design-beamsville-results.webp";
 import integ from "../img/beamsville-web-design-agency.webp";
 
 const SEO = () => {
@@ -288,7 +288,7 @@ const SEO = () => {
                   >
                     <div className="card">
                       <img
-                        alt="digital marketing agency beamsville client review"
+                        alt="web design agency beamsville client review"
                         width="48"
                         height="48"
                         src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
@@ -470,7 +470,7 @@ const SEO = () => {
                     </h2>
                     <div className="card">
                       <img
-                        alt="beamsville digital marketing agency client testimonial"
+                        alt="beamsville web design agency client testimonial"
                         width="48"
                         height="48"
                         src="https://lh3.googleusercontent.com/a/ACg8ocIKt9X9LSKomYMvAkQn_0673Xwg0EBOP-QigGk1AaAVHdVIvA=w48-h48-p-rp-mo-ba3-br100"
@@ -569,7 +569,7 @@ const SEO = () => {
                     <Image
                       className="img-fluid"
                       src={results}
-                      alt="beamsville digital marketing agency case study"
+                      alt="beamsville web design agency case study"
                     />
                   </motion.div>
                 </Col>
