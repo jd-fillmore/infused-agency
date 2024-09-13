@@ -76,15 +76,15 @@ const PricingTiers = () => {
                   <li className="check">SSL Certificate Included</li>
                   <li className="check">Edit Content On Your Own</li>
                   <li className="check">Blog</li>
-                  <li className="xmark">Photo Galleries</li>
+                  <li className="check">Photo Galleries</li>
                   <li className="xmark">Memberships</li>
                   <li className="xmark">Appointment Booking</li>
                   <li className="check">Lead Form</li>
-                  <li className="xmark">Social Media Integration</li>
+                  <li className="check">Social Media Integration</li>
                   <li className="xmark">Quote/Fee Calculator</li>
                   <li className="check">SEO-Indexable Pages</li>
-                  <li className="xmark">Google Analytics Setup</li>
-                  <li className="xmark">Google Search Console Setup</li>
+                  <li className="check">Google Analytics Setup</li>
+                  <li className="check">Google Search Console Setup</li>
                   <li className="xmark">Product Purchase (E-Commerce)</li>
                   <li className="xmark">Payment Integration</li>
                 </div>
