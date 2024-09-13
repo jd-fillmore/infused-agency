@@ -25,7 +25,7 @@ const Pricing = () => {
           <Row className="text-center">
             <Col lg="12">
               <h2>
-                Website Design &amp; SEO Pricing For{" "}
+                Affordable Website Design &amp; SEO Pricing For <br />
                 <span>All Business Sizes</span>
               </h2>
             </Col>
@@ -35,16 +35,9 @@ const Pricing = () => {
               <p className="w-75 text-center">
                 High-quality web design shouldn't be reserved for large
                 companies. We help small to medium businesses and alike build a
-                strong online presence at an affordable price.
+                strong online presence at an affordable, pay monthly price for
+                one year.
               </p>
-              <h3 className="w-75 pd-top-40 text-center">
-                <strong>
-                  <span>These prices are a general guideline only.</span> <br />
-                  <br />
-                  Depending on your specific project scope, whether it's
-                  reducing or adding to the scope, the prices may fluctuate.
-                </strong>
-              </h3>
             </Col>
           </Row>
         </Container>

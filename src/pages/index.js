@@ -147,11 +147,11 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Niagara Web Design | Website Developer St. Catharines | Award Winning
-          | Affordable | Infused Agency Web Design Niagara, Website Design
-          Niagara, Niagara Falls Web Design Company, Niagara Web Designer, Web
-          Design Niagara Falls Ontario, Web Design St. Catharines, Website
-          Design St. Catharines
+          Niagara Web Design | Affordable Pay Monthly Websites | Award Winning |
+          Website Developer St. Catharines | Infused Agency Web Design Niagara,
+          Website Design Niagara, Niagara Falls Web Design Company, Niagara Web
+          Designer, Web Design Niagara Falls Ontario, Web Design St. Catharines,
+          Website Design St. Catharines
         </title>
         <meta
           name="description"
@@ -839,27 +839,31 @@ const Home = ({ latestPosts }) => {
               <Col lg="12">
                 <h3>How much does a new website cost?</h3>
                 <p>
-                  A new website can cost anywhere from $1,499 for a simple,
-                  small website to $11,999 or more for a fancy website with lots
-                  of cool features. It's like buying a car - you can get a basic
-                  model or a luxury one with all the extras. Check out our{" "}
-                  <Link href="/pricing">pricing page</Link> to see what fits
-                  your needs!
+                  We make high-quality web designs affordable for Niagara
+                  businesses. That's why we offer websites at a{" "}
+                  <strong>monthly price for only one year</strong>, instead of a
+                  big, expensive fee all at once. A new website can cost from
+                  $250 a month for a simple site to $1,000 a month for a fancy
+                  one with lots of cool features. It's like buying a car - you
+                  can get a basic model or a luxury one with all the extras.
+                  Check out our <Link href="/pricing">pricing page</Link> to see
+                  what fits your needs!
                 </p>
 
                 <h3>How much does a custom web design cost?</h3>
                 <p>
                   A custom web design is like getting a tailor-made suit. It
-                  starts at $3,499 for a simple site and can go up to $11,999 or
-                  more if you want all the bells and whistles. Our{" "}
-                  <Link href="/pricing">pricing page</Link> has all the details.
+                  starts at $300 a month for a simple site and can go up to
+                  $1,000 a month or more if you want all the bells and whistles.
+                  Our <Link href="/pricing">pricing page</Link> has all the
+                  details.
                 </p>
 
                 <h3>How much does a templated web design cost?</h3>
                 <p>
                   Think of a templated design like buying clothes off the rack.
-                  For a small website with 1-3 pages, it's about $1,499. Bigger
-                  sites will cost more. Take a look at our{" "}
+                  For a small website with 1-3 pages, it's about $200 a month.
+                  Bigger sites will cost more. Take a look at our{" "}
                   <Link href="/pricing">pricing page</Link> to get a better
                   idea.
                 </p>

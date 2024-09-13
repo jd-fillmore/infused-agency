@@ -9,10 +9,10 @@ const PricingTiers = () => {
       <section className="pricing">
         <Container>
           {/* Websites */}
-          <Row className="pd-top-40 pd-btm-40">
+          <Row className="pd-top-40 pd-btm-40 text-center">
             <Col lg="12">
               <h2>
-                <span>Website Design &amp; Development</span> Pricing
+                <span>Affordable Website Design &amp; Development</span> Pricing
               </h2>
             </Col>
           </Row>
@@ -21,8 +21,9 @@ const PricingTiers = () => {
               <div className="card">
                 <h3>Starter</h3>
                 <h4>
-                  Starting at <span>$1,499</span>
+                  <span>$200 / month</span>
                 </h4>
+                <p>for 1 year</p>
                 <p>
                   For budget-conscious small businesses and individuals seeking
                   a basic, <span>templated</span> online presence.
@@ -60,8 +61,9 @@ const PricingTiers = () => {
                   <p className="popular">Popular</p>
                 </div>
                 <h4>
-                  Starting at <span>$3,499</span>
+                  <span>$300 / month</span>
                 </h4>
+                <p>for 1 year</p>
                 <p>
                   For small businesses looking to enhance their online presence
                   with more features and customization options.
@@ -93,10 +95,14 @@ const PricingTiers = () => {
             </Col>
             <Col lg="3" className="d-flex">
               <div className="card">
-                <h3>Business</h3>
+                <div className="d-flex align-items-center">
+                  <h3>Business</h3>
+                  <p className="popular">Popular</p>
+                </div>
                 <h4>
-                  Starting at <span>$6,999</span>
+                  <span>$600 / month</span>
                 </h4>
+                <p>for 1 year</p>
                 <p>
                   For established businesses that require advanced functionality
                   and custom design elements.
@@ -130,8 +136,9 @@ const PricingTiers = () => {
               <div className="card">
                 <h3>Commerce</h3>
                 <h4>
-                  Starting at <span>$12,999</span>
+                  <span>$1,100 / month</span>
                 </h4>
+                <p>for 1 year</p>
                 <p>
                   For growing businesses seeking to sell products and expand
                   their brand online.
@@ -177,7 +184,7 @@ const PricingTiers = () => {
               <div className="card">
                 <h3>SEO Audit</h3>
                 <h4>
-                  One time fee of <span>$999</span>
+                  One time fee of <span>$1,000</span>
                 </h4>
                 <p>
                   Detailed analysis of your website’s SEO, highlighting areas
@@ -225,7 +232,7 @@ const PricingTiers = () => {
                   <p className="popular">Popular</p>
                 </div>
                 <h4>
-                  <span>$1,499</span> / month for 3 months
+                  <span>$1,000</span> / month for 3 months
                 </h4>
                 <p>
                   Accelerated SEO package for enhanced rankings and traffic over
@@ -270,7 +277,7 @@ const PricingTiers = () => {
               <div className="card">
                 <h3>SEO Elite</h3>
                 <h4>
-                  <span>$2,499</span> per month for 6 months
+                  <span>$1,500</span> / month for 6 months
                 </h4>
                 <p>
                   Premium SEO service with comprehensive optimization over six

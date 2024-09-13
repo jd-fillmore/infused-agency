@@ -39,6 +39,7 @@
   p {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: fit-content;
     @include bp-tablet-sm {
       margin-bottom: 0;
     }
@@ -118,7 +119,7 @@
   }
   h2 {
     font-size: 70px;
-    line-height: 1;
+    line-height: 1.2;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 80%;
