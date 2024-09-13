@@ -802,91 +802,101 @@ const SEO = () => {
               >
                 <Row>
                   <Col lg="12">
-                    <Accordion open={open} toggle={toggle}>
-                      <AccordionItem>
-                        <AccordionHeader targetId="1">
-                          What is digital marketing?
-                        </AccordionHeader>
-                        <AccordionBody accordionId="1">
-                          <h2>What is digital marketing?</h2>
-                          <p>
-                            Digital marketing is how businesses promote
-                            themselves online. This includes things like social
-                            media, websites, and ads on Google. It helps people
-                            find and learn about a business on the internet.
-                          </p>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionHeader targetId="2">
-                          How can your Niagara digital marketing services help
-                          my Niagara business?
-                        </AccordionHeader>
-                        <AccordionBody accordionId="2">
-                          <h2>
-                            How can your Niagara digital marketing services help
-                            my Niagara business?
-                          </h2>
-                          <p>
-                            Digital marketing can help your business by reaching
-                            more people. It can attract new customers and keep
-                            existing ones interested. With the right strategies,
-                            you can get more visitors to your website and
-                            increase sales.
-                          </p>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionHeader targetId="3">
-                          What is SEO, and why is it important?
-                        </AccordionHeader>
-                        <AccordionBody accordionId="3">
-                          <h2>What is SEO, and why is it important?</h2>
-                          <p>
-                            SEO stands for Search Engine Optimization. It helps
-                            your website show up higher in Google searches. This
-                            is important because the higher your website
-                            appears, the more people will see it and visit your
-                            site.
-                          </p>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionHeader targetId="4">
-                          How long does it take to see results from digital
-                          marketing?
-                        </AccordionHeader>
-                        <AccordionBody accordionId="4">
-                          <h2>
-                            How long does it take to see results from digital
-                            marketing?
-                          </h2>
-                          <p>
-                            Seeing results can take time. Some people might
-                            notice changes in a few weeks, while others might
-                            take a few months. It depends on what strategies we
-                            use and how competitive your market is.
-                          </p>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem>
-                        <AccordionHeader targetId="5">
-                          How will I know if my digital marketing is working?
-                        </AccordionHeader>
-                        <AccordionBody accordionId="5">
-                          <h2>
-                            How will I know if my digital marketing is working?
-                          </h2>
-                          <p>
-                            You can know if your digital marketing is working by
-                            looking at the number of visitors to your website,
-                            how many people are contacting you, and if your
-                            sales are increasing. We can provide reports to show
-                            you how well things are going!
-                          </p>
-                        </AccordionBody>
-                      </AccordionItem>
-                    </Accordion>
+                    <h3>What is digital marketing?</h3>
+                    <p>
+                      Digital marketing is how businesses promote themselves
+                      online. This includes things like social media, websites,
+                      and ads on Google. It helps people find and learn about a
+                      business on the internet.
+                    </p>
+                    <h3>How much do your digital marketing services cost?</h3>
+                    <p>
+                      <strong>Websites:</strong> Our websites cost between $250
+                      and $1,000 a month for one year, depending on how complex
+                      they are.
+                    </p>
+
+                    <p>
+                      <strong>SEO Services:</strong> We charge $1,000 a month
+                      for three months to help improve your website's search
+                      ranking.
+                    </p>
+
+                    <p>
+                      <strong>
+                        Social Media Ads (Instagram and Facebook):
+                      </strong>
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>If you spend $500 to $2,000 on ads:</strong>
+                      </li>
+                      <ul>
+                        <li>
+                          There’s a $500 minimum fee plus 20% of what you spend.
+                        </li>
+                        <li>The smallest amount you can spend is $500.</li>
+                      </ul>
+
+                      <li>
+                        <strong>If you spend $2,001 to $5,000 on ads:</strong>
+                      </li>
+                      <ul>
+                        <li>
+                          There’s a $750 minimum fee plus 18% of what you spend.
+                        </li>
+                        <li>The smallest amount you can spend is $2,001.</li>
+                      </ul>
+
+                      <li>
+                        <strong>If you spend $5,001 to $10,000 on ads:</strong>
+                      </li>
+                      <ul>
+                        <li>
+                          There’s a $1,000 minimum fee plus 15% of what you
+                          spend.
+                        </li>
+                        <li>The smallest amount you can spend is $5,001.</li>
+                      </ul>
+                    </ul>
+                    <h3>
+                      How can your Niagara digital marketing services help my
+                      Niagara business?
+                    </h3>
+                    <p>
+                      Digital marketing can help your business by reaching more
+                      people. It can attract new customers and keep existing
+                      ones interested. With the right strategies, you can get
+                      more visitors to your website and increase sales.
+                    </p>
+
+                    <h3>What is SEO, and why is it important?</h3>
+                    <p>
+                      SEO stands for Search Engine Optimization. It helps your
+                      website show up higher in Google searches. This is
+                      important because the higher your website appears, the
+                      more people will see it and visit your site.
+                    </p>
+
+                    <h3>
+                      How long does it take to see results from digital
+                      marketing?
+                    </h3>
+                    <p>
+                      Seeing results can take time. Some people might notice
+                      changes in a few weeks, while others might take a few
+                      months. It depends on what strategies we use and how
+                      competitive your market is.
+                    </p>
+
+                    <h3>How will I know if my digital marketing is working?</h3>
+                    <p>
+                      You can know if your digital marketing is working by
+                      looking at the number of visitors to your website, how
+                      many people are contacting you, and if your sales are
+                      increasing. We can provide reports to show you how well
+                      things are going!
+                    </p>
                   </Col>
                 </Row>
               </motion.div>
