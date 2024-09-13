@@ -28,8 +28,8 @@ const OntarioArborist = () => {
     <>
       <Head>
         <title>
-          Toronto, Ottawa &amp; Ontario Arborist Tree Removal Services Website
-          Design
+          Web Design for Tree Service Companies | Infused Agency | Toronto,
+          Ottawa &amp; Ontario Arborist Website Design
         </title>
         <meta
           name="description"
@@ -520,7 +520,11 @@ const OntarioArborist = () => {
                     <Link href="/niagara-seo-company">
                       search engine optimization (SEO)
                     </Link>{" "}
-                    and <Link href="/niagara-seo-company">WordPress development</Link>.
+                    and{" "}
+                    <Link href="/niagara-seo-company">
+                      WordPress development
+                    </Link>
+                    .
                   </p>
                   <p>
                     We've been able to help small, local arborist &amp; tree
