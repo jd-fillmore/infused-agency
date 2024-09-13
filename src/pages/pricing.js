@@ -38,6 +38,13 @@ const Pricing = () => {
                 strong online presence at an affordable, pay monthly price for
                 one year.
               </p>
+              <br />
+              <br />
+              <h3 className="w-75 text-center">
+                The prices outlined below are{" "}
+                <span>meant to be treated as general guidelines</span>. They are
+                subject to change depending on the work involved.
+              </h3>
             </Col>
           </Row>
         </Container>

@@ -12,7 +12,7 @@ const PricingTiers = () => {
           <Row className="pd-top-40 pd-btm-40 text-center">
             <Col lg="12">
               <h2>
-                <span>Affordable Website Design &amp; Development</span> Pricing
+                <span>Website Design &amp; Development</span> Pricing
               </h2>
             </Col>
           </Row>
@@ -170,7 +170,7 @@ const PricingTiers = () => {
             </Col>
           </Row>
           {/* SEO*/}
-          <Row className="pd-top-40">
+          <Row className="pd-top-40 text-center">
             <Col lg="12">
               <h2>
                 <span>SEO (Search Engine Optimization)</span> Pricing
