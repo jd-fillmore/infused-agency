@@ -843,20 +843,21 @@ const Home = ({ latestPosts }) => {
                   businesses. That's why we offer websites at a{" "}
                   <strong>monthly price for only one year</strong>, instead of a
                   big, expensive fee all at once. A new website can cost from
-                  $250 a month for a simple site to $1,000 a month for a fancy
-                  one with lots of cool features. It's like buying a car - you
-                  can get a basic model or a luxury one with all the extras.
-                  Check out our <Link href="/pricing">pricing page</Link> to see
-                  what fits your needs!
+                  $250 a month (for one year) for a simple site to $1,000 a
+                  month (for one year) for a fancy one with lots of cool
+                  features. It's like buying a car - you can get a basic model
+                  or a luxury one with all the extras. Check out our{" "}
+                  <Link href="/pricing">pricing page</Link> to see what fits
+                  your needs!
                 </p>
 
                 <h3>How much does a custom web design cost?</h3>
                 <p>
                   A custom web design is like getting a tailor-made suit. It
-                  starts at $300 a month for a simple site and can go up to
-                  $1,000 a month or more if you want all the bells and whistles.
-                  Our <Link href="/pricing">pricing page</Link> has all the
-                  details.
+                  starts at $300 a month (for one year) for a simple site and
+                  can go up to $1,000 a month (for one year) or more if you want
+                  all the bells and whistles. Our{" "}
+                  <Link href="/pricing">pricing page</Link> has all the details.
                 </p>
 
                 <h3>How much does a templated web design cost?</h3>

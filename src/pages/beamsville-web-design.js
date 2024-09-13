@@ -665,25 +665,29 @@ const SEO = () => {
                   <Col lg="12">
                     <h3>How much does a new website cost?</h3>
                     <p>
-                      A new website can range from $1,499 for a basic one to
-                      $11,999 or more for a fancy one with lots of features.
-                      It's like choosing between a basic car and a luxury one.
-                      Check our pricing page to see what works best for you!
+                      A new website can range from $250 a month (for one year)
+                      for a basic one to $1,000 a month (for one year) or more
+                      for a fancy one with lots of features. It's like choosing
+                      between a basic car and a luxury one. Check our{" "}
+                      <Link href="/pricing">pricing page</Link> to see what
+                      works best for you!
                     </p>
 
                     <h3>How much does a custom web design cost?</h3>
                     <p>
                       A custom web design is like getting a suit made just for
-                      you. It starts at $3,499 for a simple site and can go up
-                      to $11,999 or more if you want lots of special features.
-                      You can find all the details on our pricing page.
+                      you. It starts at $300 a month (for one year) for a simple
+                      site and can go up to $1,000 a month (for one year) or
+                      more if you want lots of special features. You can find
+                      all the details on our pricing page.
                     </p>
 
                     <h3>How much does a templated web design cost?</h3>
                     <p>
                       A templated design is like buying clothes from a store. A
-                      small site with 1-3 pages costs around $1,499, and bigger
-                      sites cost more. Check out our pricing page for more info.
+                      small site with 1-3 pages costs around $200 a month (for
+                      one year), and bigger sites cost more. Check out our
+                      pricing page for more info.
                     </p>
 
                     <h3>How long will it take to get a new website?</h3>
