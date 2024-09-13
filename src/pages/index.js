@@ -147,15 +147,15 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Niagara Web Design | Affordable Pay Monthly Websites | Award Winning |
-          Website Developer St. Catharines | Infused Agency Web Design Niagara,
-          Website Design Niagara, Niagara Falls Web Design Company, Niagara Web
+          Web Design Niagara | Affordable Pay Monthly Websites | Infused Agency
+          | Website Developer St. Catharines | Niagara Web Design | Website
+          Design Niagara, Niagara Falls Web Design Company, Niagara Web
           Designer, Web Design Niagara Falls Ontario, Web Design St. Catharines,
           Website Design St. Catharines
         </title>
         <meta
           name="description"
-          content="Award-winning Niagara web design in St. Catharines. Our website developers create modern websites for companies across Niagara. Get your free quote today!"
+          content="Award-winning web design Niagara company in St. Catharines. Our Niagara web design agency creates modern websites for companies across Niagara. Get your free quote today!"
         />
         <meta
           name="google-site-verification"
