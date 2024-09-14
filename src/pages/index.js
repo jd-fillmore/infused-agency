@@ -23,11 +23,11 @@ import Image from "next/image";
 import treeImg from "../../src/img/tree-reports.png";
 import kdImg from "../../src/img/kd-flowers.webp";
 import cassImg from "../../src/img/featured-seo.png";
-import google from "../../src/img/web-design-niagara.webp";
-import heroImg from "../../src/img/niagara-web-design-marketing-agency.webp";
+import google from "../../src/img/niagara-web-design-client-two.webp";
+import heroImg from "../../src/img/niagara-web-design-client-one.webp";
 import clients from "../../src/img/web-design-niagara-clients.png";
 import workJerrys from "../../src/img/work-jerrys.webp";
-import best from "../../src/img/best-rated.png";
+import best from "../../src/img/awards.png";
 import traffic from "../../src/img/increase-niagara-web-design-traffic.webp";
 import leads from "../../src/img/web-design-niagara-generate-leads.webp";
 import convert from "../../src/img/website-design-niagara-convert-customers.webp";
@@ -319,7 +319,7 @@ const Home = ({ latestPosts }) => {
                   width="503"
                   height="343"
                   priority={true}
-                  className="img-fluid"
+                  className="img-fluid shadow"
                   src={heroImg}
                   alt="niagara web design"
                 />
@@ -335,13 +335,13 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <Image
-                  className="img-fluid pd-btm-20"
+                  className="img-fluid shadow"
                   src={google}
                   alt="web design niagara"
                 />
               </motion.div>
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-6 offset-lg-1">
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -396,8 +396,8 @@ const Home = ({ latestPosts }) => {
               </motion.div>
             </div>
           </div>
-          <div className="row pd-top-40 align-items-center">
-            <div className="col-lg-6">
+          <div className="row pd-top-80">
+            <div className="col-lg-7">
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -443,7 +443,7 @@ const Home = ({ latestPosts }) => {
                 />
               </motion.div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}

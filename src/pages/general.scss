@@ -1,6 +1,11 @@
 @import "../pages/variables.scss";
 @import "../pages/breakpoints.scss";
 
+.shadow {
+  box-shadow: 10px 10px 20px rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+}
+
 body {
   overflow-x: hidden;
 }
