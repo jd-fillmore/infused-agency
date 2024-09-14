@@ -45,7 +45,10 @@ const Services = () => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/digital-marketing-agency-niagara">
+                <Link
+                  href="/digital-marketing-agency-niagara"
+                  className="d-flex"
+                >
                   <div className="card">
                     <h2>Digital Marketing</h2>
                     <p>
@@ -93,12 +96,13 @@ const Services = () => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/niagara-seo-company">
+                <Link href="/services" className="d-flex">
                   <div className="card">
-                    <h2>Local SEO</h2>
+                    <h2>Shopify &amp; WordPress E-Commerce</h2>
                     <p>
-                      Are local customers not finding your services? We optimize
-                      your site for local searches to get you more visibility.
+                      Is your website not able to sell your products? We can
+                      help you get more sales by setting up online selling for
+                      you.
                     </p>
                   </div>
                 </Link>

@@ -28,6 +28,9 @@ import heroImg from "../../src/img/niagara-web-design-marketing-agency.webp";
 import clients from "../../src/img/web-design-niagara-clients.png";
 import workJerrys from "../../src/img/work-jerrys.webp";
 import best from "../../src/img/best-rated.png";
+import traffic from "../../src/img/increase-niagara-web-design-traffic.webp";
+import leads from "../../src/img/web-design-niagara-generate-leads.webp";
+import convert from "../../src/img/website-design-niagara-convert-customers.webp";
 
 const addJsonLd = () => {
   const schema = {
@@ -176,6 +179,91 @@ const Home = ({ latestPosts }) => {
       </Head>
       <Nav />
       <Hero />
+
+      <section className="home-gen-leads">
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <Row className="text-center stats">
+              <Col lg="3">
+                <div className="card dark">
+                  <h2>10+</h2>
+                  <p>Years in Business</p>
+                </div>
+              </Col>
+              <Col lg="3">
+                <div className="card dark">
+                  <h2>50+</h2>
+                  <p>Clients</p>
+                </div>
+              </Col>
+              <Col lg="3">
+                <div className="card dark">
+                  <h2>30+</h2>
+                  <p>5-Star Reviews</p>
+                </div>
+              </Col>
+              <Col lg="3">
+                <div className="card dark">
+                  <h2>50+</h2>
+                  <p>Websites Created</p>
+                </div>
+              </Col>
+            </Row>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <Row className="text-center">
+              <Col lg="12 pd-top-80 pd-btm-40">
+                <h2>
+                  We'll Take Your Website <span>To The Next Level</span>
+                </h2>
+              </Col>
+            </Row>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <Row className="text-center just-work">
+              <Col lg="4">
+                <div className="card">
+                  <Image
+                    src={traffic}
+                    alt="increase niagara web design traffic"
+                  />
+                  <h3>Increase Traffic</h3>
+                </div>
+              </Col>
+              <Col lg="4">
+                <div className="card">
+                  <Image src={leads} alt="web design niagara generate leads" />
+                  <h3>Generate Leads</h3>
+                </div>
+              </Col>
+              <Col lg="4">
+                <div className="card">
+                  <Image
+                    src={convert}
+                    alt="website design niagara convert customers"
+                  />
+                  <h3>Convert Customers</h3>
+                </div>
+              </Col>
+            </Row>
+          </motion.div>
+        </Container>
+      </section>
 
       <section className="home-top-web">
         <div className="container">
@@ -556,12 +644,13 @@ const Home = ({ latestPosts }) => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/niagara-seo-company" className="d-flex">
+                <Link href="/services" className="d-flex">
                   <div className="card">
-                    <h2>Local SEO</h2>
+                    <h2>Shopify &amp; WordPress E-Commerce</h2>
                     <p>
-                      Are local customers not finding your services? We optimize
-                      your site for local searches to get you more visibility.
+                      Is your website not able to sell your products? We can
+                      help you get more sales by setting up online selling for
+                      you.
                     </p>
                   </div>
                 </Link>

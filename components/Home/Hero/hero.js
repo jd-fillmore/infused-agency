@@ -28,8 +28,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  Get More Customers with Our{" "}
-                  <span>Affordable, Pay Monthly</span> Web Design Niagara
+                  <span>Improve Your Sales</span> With Our Web Design Niagara
                   Solutions
                 </h2>
               </motion.div>
@@ -39,9 +38,8 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <p>
-                  Infused Agency is an award-winning web design Niagara company
-                  that makes high-quality websites, <br />
-                  SEO and digital marketing at a pay monthly, affordable price.
+                  Get More Leads, Better Your Credibility &amp; Get More Sales
+                  with our Niagara Web Design and SEO Firm.
                 </p>
               </motion.div>
               <motion.div

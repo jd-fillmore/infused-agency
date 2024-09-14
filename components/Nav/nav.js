@@ -36,11 +36,6 @@ const Example = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link href="/" title="Niagara Web Design" className="nav-link">
-                  Home
-                </Link>
-              </NavItem>
-              <NavItem>
                 <Link
                   title="Niagara Web Design"
                   href="/services"
@@ -57,11 +52,6 @@ const Example = (props) => {
               <NavItem>
                 <Link href="/pricing" className="nav-link">
                   Pricing
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="/reviews" className="nav-link">
-                  Reviews
                 </Link>
               </NavItem>
               <NavItem>

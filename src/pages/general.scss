@@ -504,6 +504,54 @@ span {
   }
 }
 
+.home-gen-leads {
+  background: $dark-grey;
+  padding: 120px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 20px 0px;
+  }
+  .stats {
+    margin-top: -180px;
+    .card {
+      padding: 20px;
+      h2 {
+        margin-bottom: -40px;
+      }
+    }
+    .dark {
+      background: rgba($light-blue, 0.9) !important;
+      h2 {
+        color: $dark-blue !important;
+      }
+      p {
+        color: rgba($dark-blue, 0.7);
+      }
+    }
+    .light {
+      background: rgba($glow-blue, 0.9) !important;
+      h2 {
+        color: $dark-blue !important;
+      }
+      p {
+        color: rgba($dark-blue, 0.7);
+      }
+    }
+  }
+  .card {
+    padding: 100px;
+  }
+}
+
+.just-work {
+  .card {
+    padding: 60px;
+  }
+  img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
 .home-top-web {
   padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {

@@ -1,13 +1,9 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
+import Image from "next/image";
+
+import awards from "../../src/img/awards.png";
 
 const pages = [
   {
@@ -61,9 +57,9 @@ const Footer = () => {
             <Col lg="4">
               <h3>Infused Agency</h3>
               <p>
-                Infused is a boutique web design &amp; SEO company. We help
-                local and non-local businesses build their credibility online,
-                as well as help bring in more sales.
+                Infused is a boutique web design &amp; SEO company in St.
+                Catharines, Niagara with more than 10 years of experience in web
+                design, web development, WordPress, SEO and digital marketing.
               </p>
               <p>
                 Follow us on{" "}
@@ -75,6 +71,7 @@ const Footer = () => {
                   Instagram
                 </a>
               </p>
+              <Image className="img-fluid" src={awards} />
             </Col>
             <Col lg="2">
               <h3>Pages</h3>
