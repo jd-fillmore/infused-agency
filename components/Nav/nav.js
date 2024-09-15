@@ -16,7 +16,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import logo from "../../src/img/niagara-web-design-infused-logo.webp";
+import logo from "../../src/img/infused-agency.png";
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
