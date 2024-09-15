@@ -29,7 +29,12 @@ const Example = (props) => {
         <Container fluid>
           <NavbarBrand className="logo" name="Infused Agency">
             <Link href="/">
-              <Image className="logo" src={logo} alt="Infused Agency Logo" />
+              <Image
+                unoptimized={true}
+                className="logo"
+                src={logo}
+                alt="Infused Agency Logo"
+              />
             </Link>
           </NavbarBrand>
           <NavbarToggler className="custom-toggler" onClick={toggle} />
