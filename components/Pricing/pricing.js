@@ -21,18 +21,17 @@ const PricingTiers = () => {
               <div className="card">
                 <h3>Starter</h3>
                 <h4>
-                  <span>$200 / month</span>
+                  <span>$250 / month</span>
                 </h4>
                 <p>for 1 year</p>
                 <p>
                   For budget-conscious small businesses and individuals seeking
-                  a basic, <span>templated</span> online presence.
+                  a basic online presence.
                 </p>
                 <div className="bg">
-                  <li className="check">1-3 Pages</li>
+                  <li className="check">3 Pages</li>
                   <li className="check">1 Round of Revisions</li>
-                  <li className="check">Templated Build</li>
-                  <li className="xmark">Custom, Template-Free Design</li>
+                  <li className="check">Custom Design</li>
                   <li className="check">Mobile-Friendly Design</li>
                   <li className="check">SSL Certificate Included</li>
                   <li className="xmark">Edit Content On Your Own</li>
@@ -71,7 +70,7 @@ const PricingTiers = () => {
                 <div className="bg">
                   <li className="check">5 Pages</li>
                   <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Custom Design</li>
                   <li className="check">Mobile-Friendly Design</li>
                   <li className="check">SSL Certificate Included</li>
                   <li className="check">Edit Content On Your Own</li>
@@ -110,7 +109,7 @@ const PricingTiers = () => {
                 <div className="bg">
                   <li className="check">10 Pages</li>
                   <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Custom Design</li>
                   <li className="check">Mobile-Friendly Design</li>
                   <li className="check">SSL Certificate Included</li>
                   <li className="check">Edit Content On Your Own</li>
@@ -146,7 +145,7 @@ const PricingTiers = () => {
                 <div className="bg">
                   <li className="check">15 Pages</li>
                   <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom, Template-Free Design</li>
+                  <li className="check">Custom Design</li>
                   <li className="check">Mobile-Friendly Design</li>
                   <li className="check">SSL Certificate Included</li>
                   <li className="check">Edit Content On Your Own</li>

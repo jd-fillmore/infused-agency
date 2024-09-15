@@ -1,20 +1,18 @@
 import React from "react";
 import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
 import Image from "next/image";
 import Nav from "../../components/Nav/nav";
 import InnerHero from "../../components/innerHero/innerHero";
-import InnerContent from "../../components/innerContent/innerContent";
-import Card from "../../components/Card/card";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import treeImg from "../img/tree-reports.png";
-import kdImg from "../img/niagara-web-design.png";
-import cassImg from "../img/featured-seo.png";
 import bgImage from "../img/inner-work.jpg";
 
-import PortfolioSlider from "../../components/PortfolioSlider/portfolioSlider";
+import visca from "../img/portfolio-visca.png";
+import cass from "../img/portfolio-cass.png";
+import kd from "../img/portfolio-kd.png";
+import cma from "../img/portfolio-cma.png";
+import med from "../img/portfolio-med.png";
 
 const OurWork = () => {
   return (
@@ -32,97 +30,245 @@ const OurWork = () => {
         description="Our business solutions grow our client's businesses."
         bgImage={bgImage}
       />
-      <InnerContent>
-        <section className="work">
+
+      <section className="work">
+        <section className="dark">
           <Container>
             <Row>
-              <Col lg="4">
-                <Card>
-                  <Image
-                    className="img-fluid"
-                    src={treeImg}
-                    alt="treereports"
-                  />
-                  <h3>TreeReports</h3>
-                  <p>
-                    A local certified consulting arborist specializing in
-                    reports, planning and consulting.
-                  </p>
-                  <Link href="/tree-reports">
-                    Discover
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </Link>
-                </Card>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>KD Flowers</h2>
+                <hr />
+                <p>
+                  KD Flowers is a small, boutique wedding florist in the Niagara
+                  Region. They provide custom, gorgeous wedding flower bouqets
+                  and more to brides, grooms and alike.
+                </p>
+                <ul>
+                  <li>Custom Web Design</li>
+                  <li>Custom Website Development</li>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Off-Page SEO Optimization</li>
+                  <li>Local SEO</li>
+                  <li>Responsive &amp; Mobile-Friendly</li>
+                  <li>Portfolio Photo Gallery</li>
+                  <li>Lead Forms</li>
+                  <li>Website Animations</li>
+                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 100%</li>
+                    <li>Google Search Visibility Increased by 600%</li>
+                    <li>Achieved first-page Google rankings within 3 months</li>
+                    <li>
+                      0 leads to massive growth in local leads from Google
+                    </li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
               </Col>
-              <Col lg="4" className="d-flex">
-                <Card>
-                  <Image className="img-fluid" src={kdImg} alt="KD Flowers" />
-                  <h3>KD Flowers</h3>
-                  <p>
-                    A boutique affordable wedding flower business in the heart
-                    of St. Catharines.
-                  </p>
-                  <Link href="/kd-florist">
-                    Discover
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </Link>
-                </Card>
-              </Col>
-              <Col lg="4">
-                <Card>
-                  <Image
-                    className="img-fluid"
-                    src={cassImg}
-                    alt="Cass-A-Bella Construction"
-                  />
-                  <h3>Cass-A-Bella Construction</h3>
-                  <p>
-                    A contracting company focused on custom home building and
-                    renovation in Toronto.
-                  </p>
-                  <Link href="/cass-a-bella-construction">
-                    Discover
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </Link>
-                </Card>
+              <Col lg="7">
+                <Image className="img-fluid" src={kd} alt="kd flowers" />
               </Col>
             </Row>
           </Container>
         </section>
-      </InnerContent>
+
+        <section className="light">
+          <Container>
+            <Row>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>Cass-A-Bella Construction</h2>
+                <hr />
+                <p>
+                  Cass-A-Bella Construction is a custom home builder based in
+                  Toronto, serving areas beyond including Niagara. Specializing
+                  in beautiful custom homes and additions.
+                </p>
+                <ul>
+                  <li>Custom Web Design</li>
+                  <li>Custom Website Development</li>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Off-Page SEO Optimization</li>
+                  <li>Local SEO</li>
+                  <li>Responsive &amp; Mobile-Friendly</li>
+                  <li>Portfolio Photo Gallery</li>
+                  <li>Lead Forms</li>
+                  <li>Website Animations</li>
+                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 90%</li>
+                    <li>Google Search Visibility Increased by 200%</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Leads Increased From 2 to 10 per month in 3 months</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg="7">
+                <Image
+                  className="img-fluid"
+                  src={cass}
+                  alt="cass-a-bella web design"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="dark">
+          <Container>
+            <Row>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>VISCA electric</h2>
+                <hr />
+                <p>
+                  VISCA electric is a premier electrician in Niagara. They offer
+                  residential and commercial electrician services at a great
+                  price point.
+                </p>
+                <ul>
+                  <li>Custom Website Redesign</li>
+                  <li>Custom Website Development</li>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Responsive &amp; Mobile-Friendly</li>
+                  <li>Portfolio Photo Gallery</li>
+                  <li>Lead Forms</li>
+                  <li>Website Animations</li>
+                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 70%</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg="7">
+                <Image
+                  className="img-fluid"
+                  src={visca}
+                  alt="visca electric web design"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="light">
+          <Container>
+            <Row>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>Canadian Mortgage Authority</h2>
+                <hr />
+                <p>
+                  The Canadian Mortgage Authority is a team of premier, local
+                  mortgage brokers that serve the Niagara region and beyond.
+                </p>
+                <ul>
+                  <li>Custom Web Design</li>
+                  <li>Custom Website Development</li>
+                  <li>WordPress Website Development</li>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Off-Page SEO Optimization</li>
+                  <li>Local SEO</li>
+                  <li>Responsive &amp; Mobile-Friendly</li>
+                  <li>Blog Functionality</li>
+                  <li>Lead Forms</li>
+                  <li>Website Animations</li>
+                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 75%</li>
+                    <li>Google Search Visibility Increased by 150%</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg="7">
+                <Image className="img-fluid" src={cma} alt="cma web design" />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="dark">
+          <Container>
+            <Row>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>Lincoln Medical Centre</h2>
+                <hr />
+                <p>
+                  Lincoln Medical Centre is comprised of a team of family
+                  physicians, nurses and support staff that work together to
+                  ensure that excellent quality patient care is provided in a
+                  respectful and compassionate environment.
+                </p>
+                <ul>
+                  <li>Custom Web Design</li>
+                  <li>Custom Website Development</li>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Off-Page SEO Optimization</li>
+                  <li>Local SEO</li>
+                  <li>Responsive &amp; Mobile-Friendly</li>
+                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 85%</li>
+                    <li>Google Search Visibility Increased by 90%</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg="7">
+                <Image
+                  className="img-fluid"
+                  src={med}
+                  alt="lincoln medical centre"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      </section>
+
       <CTA />
       <Footer />
     </>

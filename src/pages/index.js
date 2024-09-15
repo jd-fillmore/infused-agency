@@ -28,9 +28,9 @@ import heroImg from "../../src/img/niagara-web-design-client-one.webp";
 import clients from "../../src/img/web-design-niagara-clients.png";
 import workJerrys from "../../src/img/work-jerrys.webp";
 import best from "../../src/img/awards.png";
-import traffic from "../../src/img/increase-niagara-web-design-traffic.webp";
-import leads from "../../src/img/web-design-niagara-generate-leads.webp";
-import convert from "../../src/img/website-design-niagara-convert-customers.webp";
+import traffic from "../../src/img/increase-niagara-web-design-traffic.jpg";
+import leads from "../../src/img/web-design-niagara-generate-leads.jpg";
+import convert from "../../src/img/website-design-niagara-convert-customers.jpg";
 
 const addJsonLd = () => {
   const schema = {
@@ -138,14 +138,6 @@ const addJsonLd = () => {
 };
 
 const Home = ({ latestPosts }) => {
-  const [open, setOpen] = useState("0");
-  const toggle = (id) => {
-    if (open === id) {
-      setOpen();
-    } else {
-      setOpen(id);
-    }
-  };
   return (
     <>
       <Head>
