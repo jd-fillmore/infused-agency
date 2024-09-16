@@ -38,7 +38,7 @@ const addJsonLd = () => {
     "@type": "LocalBusiness",
     name: "Infused Agency",
     image:
-      "https://infused.agency/static/niagara-web-design-2f828e960c0871169524dbd5886ab097.png",
+      "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
     telephone: "(905) 933-3115",
     address: {
       "@type": "PostalAddress",
@@ -70,64 +70,405 @@ const addJsonLd = () => {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Monday",
-        },
+        dayOfWeek: "http://schema.org/Monday",
         opens: "09:00",
         closes: "18:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Tuesday",
-        },
+        dayOfWeek: "http://schema.org/Tuesday",
         opens: "09:00",
         closes: "18:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Wednesday",
-        },
+        dayOfWeek: "http://schema.org/Wednesday",
         opens: "09:00",
         closes: "18:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Thursday",
-        },
+        dayOfWeek: "http://schema.org/Thursday",
         opens: "09:00",
         closes: "18:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Friday",
-        },
+        dayOfWeek: "http://schema.org/Friday",
         opens: "09:00",
         closes: "18:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Saturday",
-        },
+        dayOfWeek: "http://schema.org/Saturday",
+        opens: "09:00",
         closes: "13:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: {
-          "@type": "DayOfWeek",
-          name: "Sunday",
-        },
+        dayOfWeek: "http://schema.org/Sunday",
+        opens: "10:00",
         closes: "15:00",
+      },
+    ],
+    mainEntity: [
+      {
+        "@type": "Organization",
+        name: "Infused Agency",
+        url: "https://infused.agency",
+        logo:
+          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+1-905-933-3115",
+          contactType: "Customer Service",
+        },
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "How much does a new website cost?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We make high-quality web designs affordable for Niagara businesses. That's why we offer websites at a monthly price for only one year, instead of a big, expensive fee all at once. A new website can cost from $250 a month (for one year) for a simple site to $1,000 a month (for one year) for a fancy one with lots of cool features. It's like buying a car - you can get a basic model or a luxury one with all the extras. Check out our pricing page to see what fits your needs!",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How much does a custom web design cost?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "A custom web design is like getting a tailor-made suit. It starts at $300 a month (for one year) for a simple site and can go up to $1,000 a month (for one year) or more if you want all the bells and whistles. Our pricing page has all the details.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How much does a templated web design cost?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Think of a templated design like buying clothes off the rack. For a small website with 1-3 pages, it's about $200 a month. Bigger sites will cost more. Take a look at our pricing page to get a better idea.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long will it take to get a new website?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "For simple websites, about 1-2 weeks. For fancier sites, 4-12 weeks. It all depends on how complicated your website needs to be.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What are the pros and cons of a custom web design?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Pros:\n\nIt's unique, for your business only\nIt fits your needs perfectly\nYou can make it do exactly what you want\nCons:\n\nIt costs more money\nIt takes longer to make\nYou might need more help to update it",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What are the pros and cons of a template web design?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Pros:\n\nIt costs less money\nIt's faster to set up\nIt's easier to update yourself\nCons:\n\nIt might look similar to other websites\nIt might not have all the features you want\nYou have less control over how it looks",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Are your web designs responsive / mobile-friendly?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Yes! Our websites work great on phones and tablets, just like they do on computers.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you build an e-commerce website?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Absolutely! We can make websites where you can sell stuff online.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you build websites with extra functionalities?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "You bet! We can add cool stuff like member-only areas, blogs, appointment booking, photo galleries, forms, social media connections, online stores, and ways to accept payments.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How do you approach website design?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We make websites that are simple, easy to use, modern, and clean. We focus on making your business look great and work well for your customers, not just on making it look pretty.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you do website redesigns?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, we can give your old website a makeover!",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I update the website myself?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Definitely! We'll teach you how to do it, it's pretty easy.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Are the websites you build accessible?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We make sure our websites are easy for everyone to use. If you need extra special features for accessibility, we can add those too.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you build mobile-friendly sites?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, all our sites work great on phones and tablets.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Which website builder is best?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We like to use WordPress. It's like the Swiss Army knife of website builders.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Who hosts the website?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "For simple websites, we take care of it. For bigger sites with WordPress, you'll need to host it yourself, but we'll help you set it up.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you work with everyone?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We work with all kinds of businesses, especially those in Niagara.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do I provide the content for my website?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Yes, you know your business best! But if you need help, we can lend a hand for an extra fee.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How much input do I have?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Lots! It's like building with Lego - we'll work together to make sure you love the final product.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What if I need help after my website is live?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Don't worry, we've got your back! We'll be here to help you if you need us.",
+            },
+          },
+        ],
+      },
+      {
+        "@type": "Product",
+        name: "Web Design Services",
+        description:
+          "Professional Niagara web design services to help your business stand out online.",
+        image:
+          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+        brand: {
+          "@type": "Brand",
+          name: "Infused Agency",
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "CAD",
+          price: "3000",
+          url: "https://infused.agency/pricing",
+        },
+      },
+      {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "35",
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Sam Visca",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "Working with JD was a pleasure. He was extremely responsive and informative from start to finish. JD is creative, efficient, and very knowledgeable in his field.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Bianca Brews",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "Working with JD is an absolute pleasure. As well as being highly knowledgable in the fields of web design and SEO, he is also a great communicator and always ready to answer any questions you might have about the process. If you are looking for an expert web designer for your business, I couldn’t recommend JD more highly.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Kaitlin Jamieson",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD and the Infused Agency is masterful with his web designs and SEO services. He's professional, knowledgeable, and always there to answer any questions. After working with him, I'd highly recommend him to anyone needing a new or updated site, or wanting to rank up on google searches.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Graham Boaretti",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD did a fantastic job on my website. He was easy to work with, always very quick to respond and made designing the page very simple. I would highly recommend JD for all of your web design and development needs!",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Melissa Cundell",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD did an amazing job creating a seamless website for my aesthetics clinic. He thoroughly went through each aspect of the web design and was extremely easy to talk to about small tweaks and changes I wanted to see. I felt like I had complete control over my content and design and would highly recommend his services to anyone looking for web design and SEO optimization.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Larry Chartier",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD is a talented designer and all around good guy. As an industry colleague, I've had the chance to observe and review JD's methods from a different perspective than that of a client. He brings fresh ideas to the table and helps his clients reach their goals by implementing a well thought through strategy. If you're looking for someone that is reliable, honest and focused on helping you grow your business, definitely give Infused Agency a call.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Shruti Tangirala",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD is a pleasure to work with! He is very prompt with his responses and takes feedback extremely well. I definitely recommend working with Infused Agency.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Gordie Scott",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "I've had the pleasure of meeting up and working with JD in the past. He knows his stuff, is very reliable and is committed to quality. If you're based in Niagara and need any web design or SEO work done, he's your guy.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Stephen White",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "After searching for some time for someone to help me revise my website and improve the SEO ranking I connected with JD.  He responded very promptly to my initial query, and was extremely professional in his dealings with me.  I especially appreciated the details in his contract around how the work would be completed, and what he could and couldn’t do for me.  Being offered different pricing options was unique and helped in prioritizing my requirements within a tight timeframe.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Marlena Riddell",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD and I have worked alongside together for years. As a web designer and developer, he brings innovative ideas to his clients, that ultimately help them prosper in the long run. He's the only Niagara web designer I'd recommend!",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
       },
     ],
   };
