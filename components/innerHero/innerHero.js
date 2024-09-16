@@ -7,7 +7,7 @@ const InnerHero = ({ title, description, bgImage }) => {
     <>
       <section className="inner-hero">
         <Container>
-          <Row className="text-center">
+          <Row>
             <Col lg="12">
               <motion.div
                 initial={{ opacity: 0 }}

@@ -8,7 +8,6 @@ const Hero = () => {
   return (
     <>
       <section className="main-hero">
-        <video className="background-video" src={video} autoPlay loop muted />
         <Container>
           <Row className="align-items-center">
             <Col lg="12">

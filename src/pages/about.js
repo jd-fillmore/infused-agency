@@ -24,7 +24,10 @@ const About = () => {
         />
       </Head>
       <Nav />
-      <InnerHero title="About Us" description="A bit about our company." />
+      <InnerHero
+        title="About Infused Agency"
+        description="The best web design, development and SEO company in the Niagara region."
+      />
       <InnerContent>
         <section className="about">
           <Container>

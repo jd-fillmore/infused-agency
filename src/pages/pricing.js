@@ -19,7 +19,10 @@ const Pricing = () => {
         />
       </Head>
       <Nav />
-      <InnerHero title="Pricing" description="Our Website & SEO Pricing" />
+      <InnerHero
+        title="Affordable, Monthly Pricing"
+        description="Say goodbye to flat-fee pricing. We make it more affordable for you to have an awesome online presence."
+      />
       <InnerContent>
         <Container>
           <Row className="text-center">
@@ -42,8 +45,8 @@ const Pricing = () => {
               <br />
               <h3 className="w-75 text-center">
                 The prices outlined below are{" "}
-                <span>meant to be treated as general guidelines</span>. They are
-                subject to change depending on the work involved.
+                <span>meant to be treated as general guidelines</span>.<br />
+                They are subject to change depending on the work involved.
               </h3>
             </Col>
           </Row>

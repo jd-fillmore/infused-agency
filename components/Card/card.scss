@@ -2,14 +2,18 @@
 @import "../../src/pages/breakpoints.scss";
 
 .card {
-  background: $dark-blue !important;
+  background: none;
   border-radius: 10px;
-  border: none;
+  border: 1px solid rgba(#fff, 0.1);
   padding: 100px;
   margin-bottom: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
   @include bp-tablet-sm {
     padding: 50px;
+  }
+  &:hover {
+    border: 1px solid rgba($light-blue, 0.9);
   }
   p {
     margin-top: 30px;

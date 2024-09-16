@@ -2,19 +2,20 @@
 @import "../../src/pages/variables.scss";
 
 button {
-  padding: 15px 50px 15px 50px;
+  padding: 15px 20px 15px 20px;
   border: none;
-  background: rgba(0, 0, 0, 0);
   color: #fff;
   border-radius: 5px !important;
-  background: #363795 !important;
+  background: rgba($light-blue, 1) !important;
   font-size: 20px !important;
   font-family: $body !important;
   font-weight: bold;
   transition: 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0);
   &:focus,
   &:hover {
-    background: #005c97 !important;
+    background: $main-dark-grey !important;
+    border: 1px solid $light-blue !important;
     color: $dark-blue;
   }
   &.price {

@@ -2,9 +2,9 @@
 @import "../../src/pages/variables.scss";
 
 .inner-hero {
-  background-image: linear-gradient(to right, $light-blue, $purple);
-  background-size: cover;
-  background-position: center center;
+  background: linear-gradient($main-dark-grey, transparent),
+    linear-gradient(to top left, $glow-blue, transparent);
+  background-blend-mode: screen;
   padding: 210px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 120px 0px 60px 0px;
@@ -12,25 +12,8 @@
   .row {
     align-items: center;
   }
-  .card {
-    padding: 30px;
-    background: $light-blue !important;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-    p {
-      margin-top: 0px;
-      margin-bottom: 20px;
-      color: $dark-blue;
-      font-family: $body;
-      font-size: 18px;
-    }
-    button {
-      background: $dark-purple;
-      border: 1px solid $dark-purple;
-    }
-  }
   p {
     color: rgba($dark-grey, 0.7);
-    width: 50%;
     margin: 0 auto;
     @include bp-tablet-sm {
       width: 100%;
@@ -47,14 +30,14 @@
     }
   }
   p {
-    font-size: 16px;
     margin-bottom: 0px;
     margin-top: 20px;
     line-height: 1.6;
   }
   hr {
-    border-bottom: 1px solid $dark-grey;
-    width: 50px;
+    border-bottom: 3px solid $light-blue;
+    width: 10%;
+    margin-left: 0px;
   }
   span {
     background: linear-gradient(

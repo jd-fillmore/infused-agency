@@ -9,10 +9,10 @@ const PricingTiers = () => {
       <section className="pricing">
         <Container>
           {/* Websites */}
-          <Row className="pd-top-40 pd-btm-40 text-center">
+          <Row className="pd-top-40 text-center">
             <Col lg="12">
               <h2>
-                <span>Website Design &amp; Development</span> Pricing
+                <span>Monthly Website Design &amp; Development</span> Pricing
               </h2>
             </Col>
           </Row>
@@ -29,24 +29,26 @@ const PricingTiers = () => {
                   a basic online presence.
                 </p>
                 <div className="bg">
-                  <li className="check">3 Pages</li>
-                  <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom Design</li>
-                  <li className="check">Mobile-Friendly Design</li>
-                  <li className="check">SSL Certificate Included</li>
-                  <li className="xmark">Edit Content On Your Own</li>
-                  <li className="xmark">Blog</li>
-                  <li className="xmark">Photo Galleries</li>
-                  <li className="xmark">Memberships</li>
-                  <li className="xmark">Appointment Booking</li>
-                  <li className="xmark">Lead Form</li>
-                  <li className="xmark">Social Media Integration</li>
-                  <li className="xmark">Quote/Fee Calculator</li>
-                  <li className="xmark">SEO-Indexable Pages</li>
-                  <li className="xmark">Google Analytics Setup</li>
-                  <li className="xmark">Google Search Console Setup</li>
-                  <li className="xmark">Product Purchase (E-Commerce)</li>
-                  <li className="xmark">Payment Integration</li>
+                  <ul>
+                    <li className="check">3 Pages</li>
+                    <li className="check">1 Round of Revisions</li>
+                    <li className="check">Custom Design</li>
+                    <li className="check">Mobile-Friendly Design</li>
+                    <li className="check">SSL Certificate Included</li>
+                    <li className="xmark">Edit Content On Own</li>
+                    <li className="xmark">Blog</li>
+                    <li className="xmark">Photo Galleries</li>
+                    <li className="xmark">Memberships</li>
+                    <li className="xmark">Appointment Booking</li>
+                    <li className="xmark">Lead Form</li>
+                    <li className="xmark">Social Media Integration</li>
+                    <li className="xmark">Quote/Fee Calculator</li>
+                    <li className="xmark">SEO-Indexable Pages</li>
+                    <li className="xmark">Google Analytics</li>
+                    <li className="xmark">Google Search Console</li>
+                    <li className="xmark">Product Purchase (E-Commerce)</li>
+                    <li className="xmark">Payment Integration</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>Choose Package</button>
@@ -68,24 +70,26 @@ const PricingTiers = () => {
                   with more features and customization options.
                 </p>
                 <div className="bg">
-                  <li className="check">5 Pages</li>
-                  <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom Design</li>
-                  <li className="check">Mobile-Friendly Design</li>
-                  <li className="check">SSL Certificate Included</li>
-                  <li className="check">Edit Content On Your Own</li>
-                  <li className="check">Blog</li>
-                  <li className="check">Photo Galleries</li>
-                  <li className="xmark">Memberships</li>
-                  <li className="xmark">Appointment Booking</li>
-                  <li className="check">Lead Form</li>
-                  <li className="check">Social Media Integration</li>
-                  <li className="xmark">Quote/Fee Calculator</li>
-                  <li className="check">SEO-Indexable Pages</li>
-                  <li className="check">Google Analytics Setup</li>
-                  <li className="check">Google Search Console Setup</li>
-                  <li className="xmark">Product Purchase (E-Commerce)</li>
-                  <li className="xmark">Payment Integration</li>
+                  <ul>
+                    <li className="check">5 Pages</li>
+                    <li className="check">1 Round of Revisions</li>
+                    <li className="check">Custom Design</li>
+                    <li className="check">Mobile-Friendly Design</li>
+                    <li className="check">SSL Certificate Included</li>
+                    <li className="check">Edit Content On Own</li>
+                    <li className="check">Blog</li>
+                    <li className="check">Photo Galleries</li>
+                    <li className="xmark">Memberships</li>
+                    <li className="xmark">Appointment Booking</li>
+                    <li className="check">Lead Form</li>
+                    <li className="check">Social Media Integration</li>
+                    <li className="xmark">Quote/Fee Calculator</li>
+                    <li className="check">SEO-Indexable Pages</li>
+                    <li className="check">Google Analytics</li>
+                    <li className="check">Google Search Console</li>
+                    <li className="xmark">Product Purchase (E-Commerce)</li>
+                    <li className="xmark">Payment Integration</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>Choose Package</button>
@@ -107,24 +111,26 @@ const PricingTiers = () => {
                   and custom design elements.
                 </p>
                 <div className="bg">
-                  <li className="check">10 Pages</li>
-                  <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom Design</li>
-                  <li className="check">Mobile-Friendly Design</li>
-                  <li className="check">SSL Certificate Included</li>
-                  <li className="check">Edit Content On Your Own</li>
-                  <li className="check">Blog</li>
-                  <li className="check">Photo Galleries</li>
-                  <li className="check">Memberships</li>
-                  <li className="check">Appointment Booking</li>
-                  <li className="check">Lead Form</li>
-                  <li className="check">Social Media Integration</li>
-                  <li className="check">Quote/Fee Calculator</li>
-                  <li className="check">SEO-Indexable Pages</li>
-                  <li className="check">Google Analytics Setup</li>
-                  <li className="check">Google Search Console Setup</li>
-                  <li className="xmark">Product Purchase (E-Commerce)</li>
-                  <li className="xmark">Payment Integration</li>
+                  <ul>
+                    <li className="check">10 Pages</li>
+                    <li className="check">1 Round of Revisions</li>
+                    <li className="check">Custom Design</li>
+                    <li className="check">Mobile-Friendly Design</li>
+                    <li className="check">SSL Certificate Included</li>
+                    <li className="check">Edit Content On Own</li>
+                    <li className="check">Blog</li>
+                    <li className="check">Photo Galleries</li>
+                    <li className="check">Memberships</li>
+                    <li className="check">Appointment Booking</li>
+                    <li className="check">Lead Form</li>
+                    <li className="check">Social Media Integration</li>
+                    <li className="check">Quote/Fee Calculator</li>
+                    <li className="check">SEO-Indexable Pages</li>
+                    <li className="check">Google Analytics</li>
+                    <li className="check">Google Search Console</li>
+                    <li className="xmark">Product Purchase (E-Commerce)</li>
+                    <li className="xmark">Payment Integration</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>Choose Package</button>
@@ -143,24 +149,26 @@ const PricingTiers = () => {
                   their brand online.
                 </p>
                 <div className="bg">
-                  <li className="check">15 Pages</li>
-                  <li className="check">1 Round of Revisions</li>
-                  <li className="check">Custom Design</li>
-                  <li className="check">Mobile-Friendly Design</li>
-                  <li className="check">SSL Certificate Included</li>
-                  <li className="check">Edit Content On Your Own</li>
-                  <li className="check">Blog</li>
-                  <li className="check">Photo Galleries</li>
-                  <li className="check">Memberships</li>
-                  <li className="check">Appointment Booking</li>
-                  <li className="check">Lead Form</li>
-                  <li className="check">Social Media Integration</li>
-                  <li className="check">Quote/Fee Calculator</li>
-                  <li className="check">SEO-Indexable Pages</li>
-                  <li className="check">Google Analytics Setup</li>
-                  <li className="check">Google Search Console Setup</li>
-                  <li className="check">Product Purchase (E-Commerce)</li>
-                  <li className="check">Payment Integration</li>
+                  <ul>
+                    <li className="check">15 Pages</li>
+                    <li className="check">1 Round of Revisions</li>
+                    <li className="check">Custom Design</li>
+                    <li className="check">Mobile-Friendly Design</li>
+                    <li className="check">SSL Certificate Included</li>
+                    <li className="check">Edit Content On Own</li>
+                    <li className="check">Blog</li>
+                    <li className="check">Photo Galleries</li>
+                    <li className="check">Memberships</li>
+                    <li className="check">Appointment Booking</li>
+                    <li className="check">Lead Form</li>
+                    <li className="check">Social Media Integration</li>
+                    <li className="check">Quote/Fee Calculator</li>
+                    <li className="check">SEO-Indexable Pages</li>
+                    <li className="check">Google Analytics</li>
+                    <li className="check">Google Search Console</li>
+                    <li className="check">Product Purchase (E-Commerce)</li>
+                    <li className="check">Payment Integration</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>Choose Package</button>
@@ -172,13 +180,13 @@ const PricingTiers = () => {
           <Row className="pd-top-40 text-center">
             <Col lg="12">
               <h2>
-                <span>SEO (Search Engine Optimization)</span> Pricing
+                <span>Monthly SEO (Search Engine Optimization)</span> Pricing
               </h2>
             </Col>
           </Row>
 
           {/* SEO */}
-          <Row className="pd-top-40 pd-btm-120">
+          <Row className="pd-top-40">
             <Col lg="4" className="d-flex">
               <div className="card">
                 <h3>SEO Audit</h3>
@@ -190,20 +198,22 @@ const PricingTiers = () => {
                   for improvement.
                 </p>
                 <div className="bg">
-                  <li className="check">SEO Website Audit</li>
-                  <li className="check">SEO Audit Report</li>
-                  <li className="xmark">3 month SEO Campaign</li>
-                  <li className="xmark">Custom SEO Strategy</li>
-                  <li className="xmark">In-Depth Keyword Research</li>
-                  <li className="xmark">SEO Content Optimization</li>
-                  <li className="xmark">Optimize Image Alt Tags</li>
-                  <li className="xmark">Optimize Google Sitemap</li>
-                  <li className="xmark">Optimize Meta Descriptions</li>
-                  <li className="xmark">Optimize Meta Titles</li>
-                  <li className="xmark">On-page SEO Optimization</li>
-                  <li className="xmark">Optimize Google Map Listing</li>
-                  <li className="xmark">Link Building</li>
-                  <li className="xmark">2 SEO Blog Posts / Month</li>
+                  <ul>
+                    <li className="check">SEO Website Audit</li>
+                    <li className="check">SEO Audit Report</li>
+                    <li className="xmark">3 month SEO Campaign</li>
+                    <li className="xmark">Custom SEO Strategy</li>
+                    <li className="xmark">In-Depth Keyword Research</li>
+                    <li className="xmark">SEO Content Optimization</li>
+                    <li className="xmark">Optimize Image Alt Tags</li>
+                    <li className="xmark">Optimize Google Sitemap</li>
+                    <li className="xmark">Optimize Meta Descriptions</li>
+                    <li className="xmark">Optimize Meta Titles</li>
+                    <li className="xmark">On-page SEO Optimization</li>
+                    <li className="xmark">Optimize Google Map Listing</li>
+                    <li className="xmark">Link Building</li>
+                    <li className="xmark">2 SEO Blog Posts / Month</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>
@@ -231,27 +241,29 @@ const PricingTiers = () => {
                   <p className="popular">Popular</p>
                 </div>
                 <h4>
-                  <span>$1,000</span> / month for 3 months
+                  <span>$500</span> / month for 6 months
                 </h4>
                 <p>
                   Accelerated SEO package for enhanced rankings and traffic over
-                  four months.
+                  six months.
                 </p>
                 <div className="bg">
-                  <li className="check">SEO Website Audit</li>
-                  <li className="check">SEO Audit Report</li>
-                  <li className="check">3 month SEO Campaign</li>
-                  <li className="check">Custom SEO Strategy</li>
-                  <li className="check">In-Depth Keyword Research</li>
-                  <li className="check">SEO Content Optimization</li>
-                  <li className="check">Optimize Image Alt Tags</li>
-                  <li className="check">Optimize Google Sitemap</li>
-                  <li className="check">Optimize Meta Descriptions</li>
-                  <li className="check">Optimize Meta Titles</li>
-                  <li className="check">On-page SEO Optimization</li>
-                  <li className="check">Optimize Google Map Listing</li>
-                  <li className="check">Link Building</li>
-                  <li className="xmark">2 SEO Blog Posts / Month</li>
+                  <ul>
+                    <li className="check">SEO Website Audit</li>
+                    <li className="check">SEO Audit Report</li>
+                    <li className="check">3 month SEO Campaign</li>
+                    <li className="check">Custom SEO Strategy</li>
+                    <li className="check">In-Depth Keyword Research</li>
+                    <li className="check">SEO Content Optimization</li>
+                    <li className="check">Optimize Image Alt Tags</li>
+                    <li className="check">Optimize Google Sitemap</li>
+                    <li className="check">Optimize Meta Descriptions</li>
+                    <li className="check">Optimize Meta Titles</li>
+                    <li className="check">On-page SEO Optimization</li>
+                    <li className="check">Optimize Google Map Listing</li>
+                    <li className="check">Link Building</li>
+                    <li className="xmark">2 SEO Blog Posts / Month</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>
@@ -276,27 +288,29 @@ const PricingTiers = () => {
               <div className="card">
                 <h3>SEO Elite</h3>
                 <h4>
-                  <span>$1,500</span> / month for 6 months
+                  <span>$750</span> / month for 12 months
                 </h4>
                 <p>
-                  Premium SEO service with comprehensive optimization over six
+                  Premium SEO service with comprehensive optimization over 12
                   months.
                 </p>
                 <div className="bg">
-                  <li className="check">SEO Website Audit</li>
-                  <li className="check">SEO Audit Report</li>
-                  <li className="check">6 month SEO Campaign</li>
-                  <li className="check">Custom SEO Strategy</li>
-                  <li className="check">In-Depth Keyword Research</li>
-                  <li className="check">SEO Content Optimization</li>
-                  <li className="check">Optimize Image Alt Tags</li>
-                  <li className="check">Optimize Google Sitemap</li>
-                  <li className="check">Optimize Meta Descriptions</li>
-                  <li className="check">Optimize Meta Titles</li>
-                  <li className="check">On-page SEO Optimization</li>
-                  <li className="check">Optimize Google Map Listing</li>
-                  <li className="check">Link Building</li>
-                  <li className="check">2 SEO Blog Posts / Month</li>
+                  <ul>
+                    <li className="check">SEO Website Audit</li>
+                    <li className="check">SEO Audit Report</li>
+                    <li className="check">6 month SEO Campaign</li>
+                    <li className="check">Custom SEO Strategy</li>
+                    <li className="check">In-Depth Keyword Research</li>
+                    <li className="check">SEO Content Optimization</li>
+                    <li className="check">Optimize Image Alt Tags</li>
+                    <li className="check">Optimize Google Sitemap</li>
+                    <li className="check">Optimize Meta Descriptions</li>
+                    <li className="check">Optimize Meta Titles</li>
+                    <li className="check">On-page SEO Optimization</li>
+                    <li className="check">Optimize Google Map Listing</li>
+                    <li className="check">Link Building</li>
+                    <li className="check">2 SEO Blog Posts / Month</li>
+                  </ul>
                 </div>
                 <Link href="/get-a-quote">
                   <button>

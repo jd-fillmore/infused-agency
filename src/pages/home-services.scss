@@ -3,15 +3,8 @@
 
 .home-services {
   padding: 120px 0px 120px 0px;
-  background: $dark-grey;
+  background: $main-dark-grey;
 
-  span {
-    background: linear-gradient(
-      0deg,
-      rgba(226, 192, 68, 0.25) 35%,
-      transparent 0
-    );
-  }
   @include bp-tablet-sm {
     padding: 30px 0px 0px 0px;
   }
@@ -35,7 +28,7 @@
     border-top: 3px solid $light-blue;
     transition: 0.2s;
     &:hover {
-      box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
+      border-top: 3px solid $purple;
     }
     h2 {
       font-size: 22px;

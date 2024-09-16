@@ -16,17 +16,17 @@
 }
 
 .fixed-top {
-  background: $dark-blue;
-  box-shadow: 0 1px 3px rgba(189, 189, 189, 0.12),
-    0 1px 2px rgba(201, 201, 201, 0.24);
+  background: rgba($main-dark-grey, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .nav-link {
+  text-transform: uppercase;
   &:focus,
   &:hover {
-    color: $light-blue;
-    border-bottom: 2px solid $purple;
+    border-bottom: 2px solid $light-blue;
     text-decoration: none;
+    color: $dark-grey;
   }
 }
 
@@ -59,8 +59,8 @@
 .logo {
   height: 35% !important;
   @include bp-tablet-sm {
-    height: 60% !important;
-    width: 60% !important;
+    height: 45% !important;
+    width: 45% !important;
   }
 }
 
@@ -78,7 +78,8 @@
   @include bp-tablet-sm {
     margin-top: 0px !important;
     padding: 0.5rem 1rem !important;
-    background: $dark-blue !important;
+    background: rgba($main-dark-grey, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
     position: fixed !important;
     top: 0 !important;
     right: 0 !important;
@@ -86,9 +87,10 @@
     z-index: 1030 !important;
   }
   a {
-    color: $light-blue;
-    font-size: 18px;
-    letter-spacing: 0px;
+    color: rgba($dark-grey, 0.5);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     @include bp-tablet-sm {
       border-bottom: none !important;
@@ -150,8 +152,7 @@
   .btn {
     padding: 15px 25px 15px 25px !important;
     border: none;
-    background: $purple;
-    border-radius: 0px !important;
+    background: $light-blue;
     color: $dark-blue;
     border: 2px solid $purple;
     transition: 0.2s;
@@ -159,7 +160,7 @@
     &:focus,
     &:hover {
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      background: $glow-blue;
+      background: $main-dark-grey;
       color: $dark-blue;
     }
     @include bp-tablet-sm {

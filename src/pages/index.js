@@ -26,11 +26,11 @@ import cassImg from "../../src/img/featured-seo.png";
 import google from "../../src/img/niagara-web-design-client-two.webp";
 import heroImg from "../../src/img/niagara-web-design-client-one.webp";
 import clients from "../../src/img/web-design-niagara-clients.png";
-import workJerrys from "../../src/img/work-jerrys.webp";
+import workJerrys from "../../src/img/portfolio-kd.png";
 import best from "../../src/img/awards.png";
-import traffic from "../../src/img/increase-niagara-web-design-traffic.jpg";
-import leads from "../../src/img/web-design-niagara-generate-leads.jpg";
-import convert from "../../src/img/website-design-niagara-convert-customers.jpg";
+import traffic from "../../src/img/increase-niagara-web-design-traffic.png";
+import leads from "../../src/img/web-design-niagara-generate-leads.png";
+import convert from "../../src/img/web-design-niagara-convert-customers.png";
 
 const addJsonLd = () => {
   const schema = {
@@ -327,7 +327,7 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <Image
-                  className="img-fluid shadow"
+                  className="img-fluid shadow trust"
                   src={google}
                   alt="web design niagara"
                 />
@@ -690,9 +690,9 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  <span>Featured</span> Niagara Web Design Project
+                  <span>Featured</span> Niagara Web Design & SEO Project
                 </h2>
-                <h3>Jerry's Insulating</h3>
+                <h3>KD Flowers</h3>
               </motion.div>
             </Col>
           </Row>
@@ -707,22 +707,15 @@ const Home = ({ latestPosts }) => {
                 <Image
                   className="img-fluid"
                   src={workJerrys}
-                  alt="web design niagara jerrys insulating"
+                  alt="web design niagara kd flowers"
                 />
               </Col>
               <Col lg="6">
                 <p>
-                  Jerry's Insulating approached us because there current website
-                  was not responsive mobile-friendly, and also had a very
-                  outdated website design.
-                </p>
-                <p>
-                  They wanted a modern Niagara web design that was fresh, fast,
-                  secure and grew their reputation.
-                </p>
-                <p>
-                  They also wanted a web design that would help their Niagara
-                  business bring in more sales.
+                  KD Flowers approached us because they did not have a website.
+                  They wanted a sleek, modern design for their wedding floral
+                  business, and to also rank well enough in Google where they
+                  were start booking weddings.
                 </p>
               </Col>
             </Row>
@@ -737,16 +730,18 @@ const Home = ({ latestPosts }) => {
               <Col lg="12">
                 <h2>The Challenge</h2>
                 <p>
-                  Jerry's Insulating had a problem: their website wasn't working
-                  well anymore. It was old, and even their customers didn't like
-                  it anymore.
+                  KD Flowers had a problem: they had no website, no online
+                  presence, and when people were looking for a wedding florist
+                  in Niagara through Google, their website was nowhere to be
+                  found.
                 </p>
 
                 <h2>Our Niagara Website Design Solution</h2>
                 <p>
                   We knew they wanted their customers to find things easily on
-                  their site. So, we made a modern website that looks good and
-                  works well on both phones and computers.
+                  their site. We also knew that they wanted more customers from
+                  Google. So, we made a modern website that looks great and
+                  ranks well in Google.
                 </p>
                 <p>
                   We added a lead form, made the site secure, and made sure it
@@ -755,143 +750,15 @@ const Home = ({ latestPosts }) => {
 
                 <h2>The Result</h2>
                 <p>
-                  Since we launched the new website, they've gotten a lot of new
-                  customers. This happened because the new design is better, the
-                  site is faster, and it's more secure.
+                  Since we launched their new website, their business has taken
+                  off. This happened because the new design is better, the site
+                  is faster, and it ranks on the first page of Google for many
+                  keyword searches.
                 </p>
               </Col>
             </Row>
           </motion.div>
         </Container>
-      </section>
-
-      <section className="home-client-results">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>Featured Web Design Niagara Results</h2>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={treeImg}
-                    alt="website design st catharines"
-                  />
-                  <h3>TreeReports</h3>
-                  <p className="testimonial">
-                    "Fantastic experience from start to end."
-                  </p>
-                  <div className="highlight">
-                    <h3>385%</h3>
-                    <p>increase in being found online</p>
-                  </div>
-                  <Link href="/tree-reports">
-                    <button>
-                      Case Study
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="col-lg-4">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={kdImg}
-                    alt="web designers niagara"
-                  />
-                  <h3>KD Flowers</h3>
-                  <p className="testimonial">
-                    "My business has grown so much!"
-                  </p>
-                  <div className="highlight">
-                    <h3>5,800</h3>
-                    <p>new people discovering website per month</p>
-                  </div>
-                  <Link href="/kd-florist">
-                    <button>
-                      Case Study
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <div className="card">
-                  <Image
-                    className="img-fluid"
-                    src={cassImg}
-                    alt="website design niagara"
-                  />
-                  <h3>Cass-A-Bella Construction</h3>
-                  <p className="testimonial">"Great job, WELL DONE!"</p>
-                  <div className="highlight">
-                    <h3>13,000%</h3>
-                    <p>increase in new leads in first 6 months</p>
-                  </div>
-                  <Link href="/cass-a-bella-construction">
-                    <button>
-                      Case Study
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                        height="20px"
-                        width="20px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                      </svg>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
       </section>
 
       <section className="home-faq">
@@ -1140,17 +1007,25 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>Delivering Web Design Services in Niagara To:</h2>
-                <Link href="/beamsville-web-design">Beamsville, ON</Link> |{" "}
+                <Link href="/beamsville-web-design">Beamsville, ON</Link>{" "}
+                <span>|</span>{" "}
                 <Link href="/crystal-beach-web-design">Crystal Beach, ON</Link>{" "}
-                | <Link href="/fonthill-web-design">Fonthill, ON</Link>{" "}
-                <Link href="/fort-erie-web-design">Fort Erie, ON</Link> |{" "}
-                <Link href="/grimsby-web-design">Grimsby, ON</Link> |{" "}
-                <Link href="/">Niagara Falls, ON</Link> |{" "}
-                <Link href="/">Niagara-on-the-Lake, ON</Link> |{" "}
-                <Link href="/port-colbone-web-design">Port Colborne, ON</Link> |{" "}
-                <Link href="/">St. Catharines, ON</Link> |{" "}
-                <Link href="/thorold-web-design">Thorold, ON</Link> |{" "}
-                <Link href="/wainfleet-web-design">Wainfleet, ON</Link> |{" "}
+                <span>|</span>{" "}
+                <Link href="/fonthill-web-design">Fonthill, ON</Link>{" "}
+                <span>|</span>{" "}
+                <Link href="/fort-erie-web-design">Fort Erie, ON</Link>{" "}
+                <span>|</span>{" "}
+                <Link href="/grimsby-web-design">Grimsby, ON</Link>{" "}
+                <span>|</span> <Link href="/">Niagara Falls, ON</Link>{" "}
+                <span>|</span> <Link href="/">Niagara-on-the-Lake, ON</Link>{" "}
+                <span>|</span>{" "}
+                <Link href="/port-colbone-web-design">Port Colborne, ON</Link>{" "}
+                <span>|</span> <Link href="/">St. Catharines, ON</Link>{" "}
+                <span>|</span>{" "}
+                <Link href="/thorold-web-design">Thorold, ON</Link>{" "}
+                <span>|</span>{" "}
+                <Link href="/wainfleet-web-design">Wainfleet, ON</Link>{" "}
+                <span>|</span>{" "}
                 <Link href="/welland-web-design">Welland, ON</Link>
               </motion.div>
             </Col>

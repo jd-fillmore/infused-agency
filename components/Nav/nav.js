@@ -16,7 +16,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import logo from "../../src/img/infused-agency.png";
+import logo from "../../src/img/infused-logo.png";
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +69,11 @@ const Example = (props) => {
                   About
                 </Link>
               </NavItem>
-
+              <NavItem>
+                <Link href="/reviews" className="nav-link">
+                  Reviews
+                </Link>
+              </NavItem>
               <NavItem>
                 <Link href="/blog" className="nav-link">
                   Blog

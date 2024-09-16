@@ -9,7 +9,7 @@ const CTA = () => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <h2>Connect with us for your free quote today!</h2>
+              <h2>Ready to Grow Your Business?</h2>
               <Link href="/get-a-quote" rel="noreferrer">
                 <button>
                   Get Started

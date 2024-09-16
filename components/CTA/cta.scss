@@ -2,7 +2,7 @@
 @import "../../src/pages/breakpoints.scss";
 
 .cta {
-  background-image: linear-gradient(to right, #0f74b1, #6d75e3);
+  background: $alt-dark-grey;
   padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 60px 0px 60px 0px;
@@ -109,13 +109,6 @@
     &:focus,
     &:hover {
       border-bottom: none;
-    }
-  }
-  button {
-    color: $dark-blue;
-    border-bottom: 2px solid $purple;
-    @include bp-tablet-sm {
-      margin-top: 10px;
     }
   }
   form {

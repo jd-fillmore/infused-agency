@@ -2,21 +2,11 @@
 @import "../../src/pages/breakpoints.scss";
 
 .footer {
-  background: $dark-blue;
+  background: $main-dark-grey;
   border-top: 1px solid rgba($purple, 0.3);
   padding: 120px 0px 60px 0px;
   @include bp-tablet-sm {
     padding: 30px 0px 0px 0px;
-  }
-  p {
-    &.subtitle {
-      margin-bottom: 0px;
-      margin-top: 10px;
-    }
-  }
-  p,
-  li {
-    color: rgba($white, 0.8);
   }
   h3 {
     font-size: 22px;

@@ -7,18 +7,12 @@
       width: 100%;
     }
   }
-  background: $dark-grey;
+  background: $main-dark-grey;
   padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 60px 0px 60px 0px;
   }
-  h1,
-  h2,
-  h3,
-  ul,
-  p {
-    color: $white;
-  }
+
   hr {
     border-bottom: 1px solid $purple;
     width: 100px;
