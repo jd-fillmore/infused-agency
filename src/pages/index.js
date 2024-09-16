@@ -321,7 +321,7 @@ const addJsonLd = () => {
         offers: {
           "@type": "Offer",
           priceCurrency: "CAD",
-          price: "3000",
+          price: "300",
           url: "https://infused.agency/pricing",
         },
       },
@@ -343,6 +343,20 @@ const addJsonLd = () => {
           "@type": "Rating",
           ratingValue: "5",
         },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
       },
       {
         "@type": "Review",
@@ -356,6 +370,20 @@ const addJsonLd = () => {
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
         },
       },
       {
@@ -371,6 +399,20 @@ const addJsonLd = () => {
           "@type": "Rating",
           ratingValue: "5",
         },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
       },
       {
         "@type": "Review",
@@ -384,6 +426,20 @@ const addJsonLd = () => {
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
         },
       },
       {
@@ -399,6 +455,20 @@ const addJsonLd = () => {
           "@type": "Rating",
           ratingValue: "5",
         },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
       },
       {
         "@type": "Review",
@@ -412,6 +482,20 @@ const addJsonLd = () => {
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
         },
       },
       {
@@ -427,6 +511,20 @@ const addJsonLd = () => {
           "@type": "Rating",
           ratingValue: "5",
         },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
       },
       {
         "@type": "Review",
@@ -440,6 +538,20 @@ const addJsonLd = () => {
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
         },
       },
       {
@@ -455,6 +567,20 @@ const addJsonLd = () => {
           "@type": "Rating",
           ratingValue: "5",
         },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
       },
       {
         "@type": "Review",
@@ -468,6 +594,20 @@ const addJsonLd = () => {
         reviewRating: {
           "@type": "Rating",
           ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
         },
       },
     ],
