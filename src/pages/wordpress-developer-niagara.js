@@ -23,6 +23,10 @@ const WordPress = () => {
           content="Infused Agency has WordPress developers specializing in WordPress development for your business. Click here to get your free quote."
         />
       </Head>
+      <link
+        rel="canonical"
+        href="https://infused.agency/wordpress-developer-niagara"
+      />
       <Nav />
       <InnerHero
         title="Niagara WordPress Developer, St. Catharines"

@@ -1019,14 +1019,14 @@ const Home = ({ latestPosts }) => {
                 <span>|</span> <Link href="/">Niagara Falls, ON</Link>{" "}
                 <span>|</span> <Link href="/">Niagara-on-the-Lake, ON</Link>{" "}
                 <span>|</span>{" "}
-                <Link href="/port-colbone-web-design">Port Colborne, ON</Link>{" "}
+                <Link href="/port-colborne-web-design">Port Colborne, ON</Link>{" "}
                 <span>|</span> <Link href="/">St. Catharines, ON</Link>{" "}
                 <span>|</span>{" "}
                 <Link href="/thorold-web-design">Thorold, ON</Link>{" "}
                 <span>|</span>{" "}
                 <Link href="/wainfleet-web-design">Wainfleet, ON</Link>{" "}
                 <span>|</span>{" "}
-                <Link href="/welland-web-design">Welland, ON</Link>
+                <Link href="/web-design-welland">Welland, ON</Link>
               </motion.div>
             </Col>
           </Row>

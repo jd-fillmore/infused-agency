@@ -22,6 +22,7 @@ const About = () => {
           name="description"
           content="Learn more about the core values, the hardworking team and how we accomplish your business goals at Infused."
         />
+        <link rel="canonical" href="https://infused.agency/about" />
       </Head>
       <Nav />
       <InnerHero

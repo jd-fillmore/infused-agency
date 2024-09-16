@@ -28,6 +28,7 @@ const WebDesign = () => {
           name="description"
           content="Infused Agency offers lead-generating web design and development services for companies in St. Catharines and Niagara. Click here to get your free quote."
         />
+        <link rel="canonical" href="https://infused.agency/web-design" />
       </Head>
       <Nav />
       <InnerHero

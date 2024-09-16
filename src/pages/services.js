@@ -22,6 +22,7 @@ const Services = () => {
           name="description"
           content="Boost your business with our digital marketing, SEO and web design services today. Get a free quote!"
         />
+        <link rel="canonical" href="https://infused.agency/services" />
       </Head>
       <Nav />
       <InnerHero

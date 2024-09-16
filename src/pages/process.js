@@ -22,6 +22,7 @@ const About = () => {
           name="description"
           content="Learn more the web design and SEO process that happens for your business at Infused Agency. Click here to learn more."
         />
+        <link rel="canonical" href="https://infused.agency/process" />
       </Head>
       <Nav />
       <InnerHero

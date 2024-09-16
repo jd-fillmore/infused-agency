@@ -19,6 +19,7 @@ export default function Blog({ posts, currentPage, totalPages }) {
           name="description"
           content="Explore expert insights on web design and SEO, tailored to educate and empower clients. Discover strategies and tips to enhance your online presence and drive business growth."
         />
+        <link rel="canonical" href="https://infused.agency/blog" />
       </Head>
       <Nav />
       <InnerHero

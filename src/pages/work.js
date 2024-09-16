@@ -23,6 +23,7 @@ const OurWork = () => {
           name="description"
           content="We're passionate about putting in the work to deliver to our client's needs. Check out the results we've got for our clients"
         />
+        <link rel="canonical" href="https://infused.agency/work" />
       </Head>
       <Nav />
       <InnerHero

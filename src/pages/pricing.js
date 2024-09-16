@@ -17,6 +17,7 @@ const Pricing = () => {
           name="description"
           content="Check out the premium pricing for Infused Ageny's web design, SEO and digital marketing services."
         />
+        <link rel="canonical" href="https://infused.agency/pricing" />
       </Head>
       <Nav />
       <InnerHero

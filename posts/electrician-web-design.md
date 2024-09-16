@@ -5,11 +5,11 @@ slug: /posts/electrician-web-design/
 excerpt: We build affordable, pay monthly residential & commerical electrician home web designs. Get a free quote now!
 image: "/img/electrician-web-design-niagara.webp"
 meta:
-  canonical: /posts/home-insulation-web-design/
+  canonical: /posts/electrician-web-design/
   robots: index, follow
 ---
 
-# Making Residential & Commercial Electrician Websites Better
+## Making Residential & Commercial Electrician Websites Better
 
 Guess what? Having a super cool website is really important for people who work with electricity! Our [web design team](/) just helped an electrician in Niagara create an awesome electrician website design. Let's talk about how great electrician web design can help spark up more business!
 

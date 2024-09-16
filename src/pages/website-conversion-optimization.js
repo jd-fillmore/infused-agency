@@ -29,6 +29,10 @@ const WebDesign = () => {
           name="description"
           content="Boost your conversions with Niagara's #1 Conversion Rate Optimization Agency. Expert strategies to maximize your website's performance and drive real results. Contact us today!"
         />
+        <link
+          rel="canonical"
+          href="https://infused.agency/website-conversion-optimization"
+        />
       </Head>
       <Nav />
       <InnerHero

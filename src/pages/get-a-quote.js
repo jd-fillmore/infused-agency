@@ -22,6 +22,7 @@ const About = () => {
           name="description"
           content="Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!"
         />
+        <link rel="canonical" href="https://infused.agency/get-a-quote" />
       </Head>
       <Nav />
       <InnerHero
