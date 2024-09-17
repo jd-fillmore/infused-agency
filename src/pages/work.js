@@ -13,6 +13,7 @@ import cass from "../img/portfolio-cass.png";
 import kd from "../img/portfolio-kd.png";
 import cma from "../img/portfolio-cma.png";
 import med from "../img/portfolio-med.png";
+import jerry from "../img/portfolio-jerrys.png";
 
 const OurWork = () => {
   return (
@@ -263,6 +264,52 @@ const OurWork = () => {
                   className="img-fluid"
                   src={med}
                   alt="lincoln medical centre"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="light">
+          <Container>
+            <Row>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>Jerry's Insulating</h2>
+                <hr />
+                <p>
+                  Jerry's Insulating is a family owned and operated full service
+                  insulation contractor. Jerry’s Insulating Co. was established
+                  in 1975. Their service area includes the Niagara Region,
+                  Hamilton/Burlington.
+                </p>
+                <ul>
+                  <li>Custom Website Redesign</li>
+                  <li>Custom Website Development</li>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Responsive &amp; Mobile-Friendly</li>
+                  <li>Portfolio Photo Gallery</li>
+                  <li>Lead Forms</li>
+                  <li>Website Animations</li>
+                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Page 1 Google Rankings</li>
+                    <li>Website Page Speed Increased By 90%</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg="7">
+                <Image
+                  className="img-fluid"
+                  src={jerry}
+                  alt="jerrys insulating"
                 />
               </Col>
             </Row>
