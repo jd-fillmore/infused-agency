@@ -97,6 +97,12 @@ export default function App({ Component, pageProps }) {
       })(window, document, "clarity", "script", "o3vik3tnlf");
   `}
       </Script>
+      <Script
+        src="https://cdn.popupsmart.com/bundle.js"
+        data-id="893567"
+        async
+        defer
+      ></Script>
       <Component {...pageProps} />
     </>
   );
