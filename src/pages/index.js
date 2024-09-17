@@ -767,9 +767,17 @@ const Home = ({ latestPosts }) => {
                 </h2>
                 <p>
                   At Infused Agency, we make{" "}
-                  <strong>Niagara website designs</strong> that are{" "}
-                  <strong>easy to use and look great</strong>. From the first
-                  idea to the final product, we create custom{" "}
+                  <strong>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Regional_Municipality_of_Niagara"
+                      target="_blank"
+                    >
+                      Niagara
+                    </a>{" "}
+                    website designs
+                  </strong>{" "}
+                  that are <strong>easy to use and look great</strong>. From the
+                  first idea to the final product, we create custom{" "}
                   <strong>Niagara web designs</strong> that show off your brand
                   and use the latest designs.
                 </p>
@@ -790,9 +798,15 @@ const Home = ({ latestPosts }) => {
                 </p>
 
                 <p>
-                  We have helped Niagara businesses in St. Catharines, Niagara
-                  Falls, Welland, Fort Erie, Thorold, Niagara-on-the-Lake,
-                  Grimsby, Beamsville, Lincoln and beyond.
+                  We have helped Niagara businesses in{" "}
+                  <a
+                    href="https://en.wikipedia.org/wiki/St._Catharines"
+                    target="_blank"
+                  >
+                    St. Catharines
+                  </a>
+                  , Niagara Falls, Welland, Fort Erie, Thorold,
+                  Niagara-on-the-Lake, Grimsby, Beamsville, Lincoln and beyond.
                 </p>
               </motion.div>
             </div>
