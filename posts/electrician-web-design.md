@@ -2,7 +2,7 @@
 title: Residential & Commercial Electrician Web Design in Niagara, ON
 date: 2024-09-09T13:08:47.634Z
 slug: /posts/electrician-web-design/
-excerpt: We build affordable, pay monthly residential & commerical electrician home web designs. Get a free quote now!
+excerpt: Checkout the latest residential & commercial electrician web design done by Infused Agency.
 image: "/img/electrician-web-design-niagara.webp"
 meta:
   canonical: /posts/electrician-web-design/
