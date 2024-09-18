@@ -16,18 +16,422 @@ import bgImage from "../img/inner-seo.jpg";
 import about from "../img/about.jpg";
 import About from "../../components/Home/About/about";
 
+const addJsonLd = () => {
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    name: "Infused Agency",
+    image:
+      "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+    telephone: "(905) 933-3115",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "73 Alexandra Blvd",
+      addressLocality: "St. Catharines",
+      addressRegion: "ON",
+      postalCode: "L2P 1K2",
+    },
+    serviceArea: [
+      {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "St. Catharines",
+          addressRegion: "ON",
+          addressCountry: "Canada",
+        },
+      },
+      {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Niagara",
+          addressRegion: "ON",
+          addressCountry: "Canada",
+        },
+      },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Monday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Tuesday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Wednesday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Thursday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Friday",
+        opens: "09:00",
+        closes: "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Saturday",
+        opens: "09:00",
+        closes: "13:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "http://schema.org/Sunday",
+        opens: "10:00",
+        closes: "15:00",
+      },
+    ],
+    mainEntity: [
+      {
+        "@type": "Organization",
+        name: "Infused Agency",
+        url: "https://infused.agency",
+        logo:
+          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+1-905-933-3115",
+          contactType: "Customer Service",
+        },
+      },
+      {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "35",
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Sam Visca",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "Working with JD was a pleasure. He was extremely responsive and informative from start to finish. JD is creative, efficient, and very knowledgeable in his field.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Bianca Brews",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "Working with JD is an absolute pleasure. As well as being highly knowledgable in the fields of web design and SEO, he is also a great communicator and always ready to answer any questions you might have about the process. If you are looking for an expert web designer for your business, I couldn’t recommend JD more highly.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Kaitlin Jamieson",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD and the Infused Agency is masterful with his web designs and SEO services. He's professional, knowledgeable, and always there to answer any questions. After working with him, I'd highly recommend him to anyone needing a new or updated site, or wanting to rank up on google searches.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Graham Boaretti",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD did a fantastic job on my website. He was easy to work with, always very quick to respond and made designing the page very simple. I would highly recommend JD for all of your web design and development needs!",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Melissa Cundell",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD did an amazing job creating a seamless website for my aesthetics clinic. He thoroughly went through each aspect of the web design and was extremely easy to talk to about small tweaks and changes I wanted to see. I felt like I had complete control over my content and design and would highly recommend his services to anyone looking for web design and SEO optimization.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Larry Chartier",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD is a talented designer and all around good guy. As an industry colleague, I've had the chance to observe and review JD's methods from a different perspective than that of a client. He brings fresh ideas to the table and helps his clients reach their goals by implementing a well thought through strategy. If you're looking for someone that is reliable, honest and focused on helping you grow your business, definitely give Infused Agency a call.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Shruti Tangirala",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD is a pleasure to work with! He is very prompt with his responses and takes feedback extremely well. I definitely recommend working with Infused Agency.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Gordie Scott",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "I've had the pleasure of meeting up and working with JD in the past. He knows his stuff, is very reliable and is committed to quality. If you're based in Niagara and need any web design or SEO work done, he's your guy.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Stephen White",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "After searching for some time for someone to help me revise my website and improve the SEO ranking I connected with JD.  He responded very promptly to my initial query, and was extremely professional in his dealings with me.  I especially appreciated the details in his contract around how the work would be completed, and what he could and couldn’t do for me.  Being offered different pricing options was unique and helped in prioritizing my requirements within a tight timeframe.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Marlena Riddell",
+        },
+        datePublished: "2024-01-01",
+        reviewBody:
+          "JD and I have worked alongside together for years. As a web designer and developer, he brings innovative ideas to his clients, that ultimately help them prosper in the long run. He's the only Niagara web designer I'd recommend!",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+        },
+        itemReviewed: {
+          "@type": "LocalBusiness",
+          name: "Infused Agency",
+          image:
+            "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+          telephone: "(905) 933-3115",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "73 Alexandra Blvd",
+            addressLocality: "St. Catharines",
+            addressRegion: "ON",
+            postalCode: "L2P 1K2",
+          },
+        },
+      },
+    ],
+  };
+
+  return {
+    __html: JSON.stringify(schema),
+  };
+};
+
 const SEO = () => {
   return (
     <>
       <Head>
-        <title>Niagara SEO | Niagara Falls SEO - Infused Agency</title>
+        <title>SEO Niagara | Niagara Falls SEO</title>
         <meta
           name="description"
-          content="Unleash the potential of Niagara SEO to amplify your online visibility. Draw in a surge of visitors. Kickstart your optimization journey right now!"
+          content="Top Niagara SEO company to help your Niagara business gain visibility. Drive traffic, get more leads. Get a free quote now!"
         />
         <link
           rel="canonical"
           href="https://infused.agency/niagara-seo-company"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={addJsonLd()}
+          key="item-jsonld"
         />
       </Head>
       <Nav />
