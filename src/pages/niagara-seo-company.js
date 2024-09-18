@@ -436,8 +436,8 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHero
-        title="Niagara SEO Agency"
-        description="Infused Agency is an award-winning SEO &amp; company in Niagara &amp St. Catharines. We help businesses bring in more revenue through their websites."
+        title="SEO Niagara"
+        description="Infused Agency is an award-winning SEO Niagara company in St. Catharines. We help businesses bring in more revenue online."
         bgImage={bgImage}
       />
       <InnerContent>
@@ -453,9 +453,19 @@ const SEO = () => {
               </Col>
               <Col lg={{ size: 7, offset: 1 }}>
                 <p>
-                  The <strong>Niagara SEO services</strong> that our{" "}
-                  <strong>Niagara SEO company</strong> provides are pretty
-                  impeccable. We consistently provide great SEO &amp;{" "}
+                  The{" "}
+                  <strong>
+                    Niagara{" "}
+                    <a
+                      href="https://en.wikipedia.org/wiki/Search_engine_optimization"
+                      target="_blank"
+                    >
+                      SEO
+                    </a>{" "}
+                    services
+                  </strong>{" "}
+                  that our <strong>Niagara SEO company</strong> provides are
+                  pretty impeccable. We consistently provide great SEO &amp;{" "}
                   <Link href="/">web design services in Niagara</Link> to our
                   clients with pretty awesome results. There are a lot of
                   benefits as to why SEO services are so important for any local
@@ -796,6 +806,175 @@ const SEO = () => {
                     src={about}
                     alt="business needs"
                   />
+                </Col>
+              </Row>
+            </Container>
+          </section>
+          <section className="pricing">
+            <Container>
+              <Row className="text-center">
+                <Col lg="12">
+                  <h2>
+                    Affordable Website Design &amp; SEO Pricing For <br />
+                    <span>All Business Sizes</span>
+                  </h2>
+                </Col>
+              </Row>
+              {/* SEO*/}
+              <Row className="pd-top-40 text-center">
+                <Col lg="12">
+                  <h2>
+                    <span>Monthly SEO (Search Engine Optimization)</span>{" "}
+                    Pricing
+                  </h2>
+                </Col>
+              </Row>
+
+              {/* SEO */}
+              <Row className="pd-top-40">
+                <Col lg="4" className="d-flex">
+                  <div className="card">
+                    <h3>SEO Audit</h3>
+                    <h4>
+                      One time fee of <span>$1,000</span>
+                    </h4>
+                    <p>
+                      Detailed analysis of your website’s SEO, highlighting
+                      areas for improvement.
+                    </p>
+                    <div className="bg">
+                      <ul>
+                        <li className="check">SEO Website Audit</li>
+                        <li className="check">SEO Audit Report</li>
+                        <li className="xmark">3 month SEO Campaign</li>
+                        <li className="xmark">Custom SEO Strategy</li>
+                        <li className="xmark">In-Depth Keyword Research</li>
+                        <li className="xmark">SEO Content Optimization</li>
+                        <li className="xmark">Optimize Image Alt Tags</li>
+                        <li className="xmark">Optimize Google Sitemap</li>
+                        <li className="xmark">Optimize Meta Descriptions</li>
+                        <li className="xmark">Optimize Meta Titles</li>
+                        <li className="xmark">On-page SEO Optimization</li>
+                        <li className="xmark">Optimize Google Map Listing</li>
+                        <li className="xmark">Link Building</li>
+                        <li className="xmark">2 SEO Blog Posts / Month</li>
+                      </ul>
+                    </div>
+                    <Link href="/get-a-quote">
+                      <button>
+                        Choose Package
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          height="20px"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                        </svg>
+                      </button>
+                    </Link>
+                  </div>
+                </Col>
+                <Col lg="4">
+                  <div className="card">
+                    <div className="d-flex align-items-center">
+                      <h3>SEO Boost</h3>
+                      <p className="popular">Popular</p>
+                    </div>
+                    <h4>
+                      <span>$500</span> / month for 6 months
+                    </h4>
+                    <p>
+                      Accelerated SEO package for enhanced rankings and traffic
+                      over six months.
+                    </p>
+                    <div className="bg">
+                      <ul>
+                        <li className="check">SEO Website Audit</li>
+                        <li className="check">SEO Audit Report</li>
+                        <li className="check">3 month SEO Campaign</li>
+                        <li className="check">Custom SEO Strategy</li>
+                        <li className="check">In-Depth Keyword Research</li>
+                        <li className="check">SEO Content Optimization</li>
+                        <li className="check">Optimize Image Alt Tags</li>
+                        <li className="check">Optimize Google Sitemap</li>
+                        <li className="check">Optimize Meta Descriptions</li>
+                        <li className="check">Optimize Meta Titles</li>
+                        <li className="check">On-page SEO Optimization</li>
+                        <li className="check">Optimize Google Map Listing</li>
+                        <li className="check">Link Building</li>
+                        <li className="xmark">2 SEO Blog Posts / Month</li>
+                      </ul>
+                    </div>
+                    <Link href="/get-a-quote">
+                      <button>
+                        Choose Package
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          height="20px"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                        </svg>
+                      </button>
+                    </Link>
+                  </div>
+                </Col>
+                <Col lg="4">
+                  <div className="card">
+                    <h3>SEO Elite</h3>
+                    <h4>
+                      <span>$750</span> / month for 12 months
+                    </h4>
+                    <p>
+                      Premium SEO service with comprehensive optimization over
+                      12 months.
+                    </p>
+                    <div className="bg">
+                      <ul>
+                        <li className="check">SEO Website Audit</li>
+                        <li className="check">SEO Audit Report</li>
+                        <li className="check">6 month SEO Campaign</li>
+                        <li className="check">Custom SEO Strategy</li>
+                        <li className="check">In-Depth Keyword Research</li>
+                        <li className="check">SEO Content Optimization</li>
+                        <li className="check">Optimize Image Alt Tags</li>
+                        <li className="check">Optimize Google Sitemap</li>
+                        <li className="check">Optimize Meta Descriptions</li>
+                        <li className="check">Optimize Meta Titles</li>
+                        <li className="check">On-page SEO Optimization</li>
+                        <li className="check">Optimize Google Map Listing</li>
+                        <li className="check">Link Building</li>
+                        <li className="check">2 SEO Blog Posts / Month</li>
+                      </ul>
+                    </div>
+                    <Link href="/get-a-quote">
+                      <button>
+                        Choose Package
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          strokeWidth="0"
+                          viewBox="0 0 512 512"
+                          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                          height="20px"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
+                        </svg>
+                      </button>
+                    </Link>
+                  </div>
                 </Col>
               </Row>
             </Container>

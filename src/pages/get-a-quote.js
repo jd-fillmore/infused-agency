@@ -49,12 +49,6 @@ const About = () => {
                   next level. Reach out today, and let's start your journey to
                   online success!
                 </p>
-                <Link href="/pricing">
-                  <button>View pricing packages here.</button>
-                </Link>
-
-                <br />
-                <br />
               </Col>
               <Col lg="6">
                 <InlineWidget url="https://calendly.com/infused-agency/project-discovery/" />
