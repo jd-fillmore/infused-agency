@@ -60,7 +60,7 @@ const Services = () => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/niagara-seo-company">
+                <Link href="/seo">
                   <div className="card">
                     <h2>Search Engine Optimization</h2>
                     <p>
