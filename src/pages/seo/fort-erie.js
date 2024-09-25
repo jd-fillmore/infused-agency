@@ -9,12 +9,11 @@ import InnerContent from "../../../components/innerContent/innerContent";
 import CTA from "../../../components/CTA/cta";
 import Footer from "../../../components/Footer/footer";
 import treeImg from "../../img/tree-reports.png";
-import kdImg from "../../img/niagara-web-design.png";
+import kdImg from "../../img/crystal-beach-web-design.png";
 import cassImg from "../../img/featured-seo.png";
 import about from "../../img/about.jpg";
-import About from "../../../components/Home/About/about";
-import clients from "../../img/seo-niagara-clients.png";
-import hero from "../../img/seo-niagara.webp";
+import clients from "../../img/seo-clients.png";
+import hero from "../../img/seo-crystal-beach.webp";
 
 const addJsonLd = () => {
   const schema = {
@@ -62,14 +61,14 @@ const addJsonLd = () => {
         email: "hello@infused.agency",
         knowsLanguage: ["English", "ASL"],
         knowsAbout: [
-          "SEO niagara",
-          "niagara SEO",
-          "SEO agency niagara",
+          "SEO fort erie",
+          "fort erie SEO",
+          "SEO agency fort erie",
           "SEO agency near me",
           "SEO agency",
         ],
         paymentAccepted: ["cash", "credit card"],
-        location: "Niagara",
+        location: "Fort Erie",
         slogan: "SEO just got a whole lot better",
         hasMap:
           "https://maps.google.com/maps?ll=43.15257,-79.207772&z=16&t=m&hl=en&gl=CA&mapclient=embed&cid=1774727816813218416",
@@ -129,7 +128,7 @@ const addJsonLd = () => {
         name: "SEO",
         description:
           "As an SEO agency, we offer a holistic approach to elevate your website's visibility across major search engines including Google and Bing. Our meticulous SEO or search engine optimization strategies encompass both technical on-page optimization as well as off-page optimization techniques to not only boost your rankings but drive qualified traffic that converts. We start with extensive keyword research and topic clustering to align your pages with high-traffic search terms and buyer intent. This allows us to map out a content plan focused on ranking you for the queries that capture quality visitors in your industry. Our team then optimizes all critical on-page elements - from page titles and meta descriptions to image alt text and internal linking structure - ensuring search engines clearly interpret your pages. Additionally, we execute proven link-building tactics to organically earn placements on reputable, high-authority websites within your sector. This establishes greater trust and authority signals that search algorithms rely on for favorable rankings. On top of this, our local SEO strategies such as optimizing Google My Business listings, citations and reviews build a strong presence to capture nearby traffic. With a keen eye on the latest search algorithm and ranking factor updates, our sustainable strategies even withstand Google shake-ups. Our experts regularly review reports, shifting approaches to maintain optimal rankings long-term. The end goal is not just fleeting wins, but converting search visibility into tangible ROI in the form of leads, sales and long-term success. Backed by data-driven insights, we elevate beyond the expected.",
-        url: "https://infused.agency/seo/niagara",
+        url: "https://infused.agency/seo/fort erie",
       },
     ],
   };
@@ -143,12 +142,12 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Niagara | Best SEO Company in Niagara, ON</title>
+        <title>SEO Fort Erie | Best SEO Company in Fort Erie, ON</title>
         <meta
           name="description"
-          content="Top SEO Niagara services serving the Niagara Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Top SEO Fort Erie services serving the Fort Erie Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
         />
-        <link rel="canonical" href="https://infused.agency/seo/niagara" />
+        <link rel="canonical" href="https://infused.agency/seo/fort-erie" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={addJsonLd()}
@@ -157,21 +156,21 @@ const SEO = () => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Niagara"
-        subTitle="Your Local SEO Company in Niagara"
-        description="We offer top Niagara SEO services, helping businesses appear in Google when people search. Get more traffic, and get more leads."
+        title="SEO Fort Erie"
+        subTitle="Your Local SEO Company in Fort Erie"
+        description="We offer top Fort Erie SEO services, helping businesses appear in Google when people search. Get more traffic, and get more leads."
         image={hero}
-        alt="seo niagara"
+        alt="seo fort erie"
       />
       <InnerContent>
         <Container>
           <Row>
             <Col lg="6">
               <p>
-                At Infused Agency, our SEO Niagara team is really dedicated to
+                At Infused Agency, our SEO Fort Erie team is really dedicated to
                 what we do. You won’t find a more passionate team of{" "}
                 <Link href="/seo">search engine optimization (SEO)</Link>{" "}
-                experts anywhere else in Niagara.
+                experts anywhere else in Fort Erie.
               </p>
               <p>
                 We love SEO and link building so much that we joke with our
@@ -182,26 +181,26 @@ const SEO = () => {
                 We like to work with clients who care about their businesses and
                 understand how{" "}
                 <Link href="/posts/local-seo-tips-niagara">
-                  important their Niagara SEO is
+                  important their Fort Erie SEO is
                 </Link>
                 . We take time to teach our clients and work closely with them
                 to achieve great results together.
               </p>
               <p>
-                We know we’re better than most Niagara SEO companies, and our
+                We know we’re better than most Fort Erie SEO companies, and our
                 success and{" "}
                 <Link href="/reviews">growing list of happy clients</Link> prove
                 it. Infused Agency was created to provide amazing SEO services
-                in Niagara, led by our skilled team.
+                in Fort Erie, led by our skilled team.
               </p>
               <p>
-                Born in Niagara, founded in Niagara, our SEO Niagara team will
-                help your business rank on Google!
+                Born in Fort Erie, founded in Fort Erie, our SEO Fort Erie team
+                will help your business rank on Google!
               </p>
             </Col>
             <Col lg="6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746188.552481925!2d-80.00600478031573!3d43.06669410655857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1727227849786!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93524.12383707895!2d-78.97217448168044!3d42.90177642601466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d33e24e7337d03%3A0x885d5008ef9ad9d1!2sFort%20Erie%2C%20ON!5e0!3m2!1sen!2sca!4v1727292523876!5m2!1sen!2sca"
                 width="100%"
                 height="450"
                 allowfullscreen=""
@@ -220,14 +219,14 @@ const SEO = () => {
                     </h2>
                     <p>
                       For over ten years, we have built strong partnerships with
-                      many brands and businesses in Niagara and beyond.
+                      many brands and businesses in Fort Erie and beyond.
                     </p>
                   </div>
                   <Col lg="6">
                     <Image
                       className="img-fluid"
                       src={clients}
-                      alt="seo niagara clients"
+                      alt="seo fort erie clients"
                     />
                   </Col>
                 </div>
@@ -239,7 +238,7 @@ const SEO = () => {
           <Container>
             <Row className="pd-btm-40">
               <Col lg="12 text-center">
-                <h2>Niagara SEO Services</h2>
+                <h2>Fort Erie SEO Services</h2>
                 <p>
                   Solutions That Bring In Qualified Leads And Boost Your Sales
                 </p>
@@ -249,8 +248,8 @@ const SEO = () => {
               <Col lg="4">
                 <h5>Keyword Research &amp; Strategy</h5>
                 <p>
-                  Infused Agency's SEO Niagara company conducts specific keyword
-                  research that covers specifically what your users are
+                  Infused Agency's SEO Fort Erie company conducts specific
+                  keyword research that covers specifically what your users are
                   searching for. We look at keywords as the main foundation to
                   your SEO project. Beyond this, we dive into the technicalities
                   to further deliver value to your customers.
@@ -325,11 +324,11 @@ const SEO = () => {
                 <p>
                   <strong>
                     To provide affordable, honest, and completely clear SEO
-                    services in Niagara.
+                    services in Fort Erie.
                   </strong>
                 </p>
                 <p>
-                  As one of the top SEO companies in Niagara, we create and
+                  As one of the top SEO companies in Fort Erie, we create and
                   manage custom plans that fit your business needs. Our skilled
                   team uses their expertise to help your business grow by
                   delivering great results.
@@ -377,7 +376,7 @@ const SEO = () => {
                   <p>
                     "Fantastic experience from start to end. Infused Agency is
                     organized, thorough and professional. I highly recommend
-                    their SEO Niagara company if you are thinking of needing
+                    their SEO Fort Erie company if you are thinking of needing
                     their SEO services."
                   </p>
                   <ul>
@@ -527,11 +526,11 @@ const SEO = () => {
                   Since 2013 we've been able to help countless local businesses
                   (and beyond!) with their{" "}
                   <Link href="/web-design">website design</Link>,{" "}
-                  <Link href="/digital-marketing-niagara">
+                  <Link href="/digital-marketing-fort erie">
                     digital marketing
                   </Link>
                   , search engine optimization (SEO) ,{" "}
-                  <Link href="/wordpress-developer-niagara">
+                  <Link href="/wordpress-developer-fort erie">
                     WordPress development
                   </Link>{" "}
                   and e-commerce website development.
@@ -756,7 +755,7 @@ const SEO = () => {
                 can help you rise up in the local SEO map pack rankings.
               </p>
 
-              <h3>Our SEO Niagara Company is ready to help.</h3>
+              <h3>Our SEO Fort Erie Company is ready to help.</h3>
               <p>
                 If you need our SEO company to help your company rise in Google
                 with our expert SEO services, click below to get your free SEO
