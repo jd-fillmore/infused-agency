@@ -862,11 +862,21 @@ iframe {
   }
 }
 
+.dark {
+  background: $main-dark-grey;
+}
+.light {
+  background: $alt-dark-grey;
+}
+
 .home-areas {
   span {
     color: #fff;
     margin-right: 0;
     font-weight: 100;
+  }
+  svg {
+    color: #fff;
   }
 }
 

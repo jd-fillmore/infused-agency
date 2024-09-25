@@ -12,10 +12,7 @@ import bgImage from "../../img/inner-seo.jpg";
 import ui from "../../img/ui-design.png";
 import build from "../../img/build.png";
 import grow from "../../img/grow.png";
-import growth from "../../img/lead-generating-websites-niagara.png";
-import funnel from "../../img/lead-gen-convert.jpg";
-import convert from "../../img/conversion-web.jpg";
-import fast from "../../img/design-fast.png";
+import growth from "../../img/seo-results.webp";
 
 const SEO = () => {
   return (
@@ -35,7 +32,7 @@ const SEO = () => {
         bgImage={bgImage}
       />
       <InnerContent>
-        <section className="web-design">
+        <section>
           <Container>
             <Row>
               <Col md="6">
@@ -45,6 +42,62 @@ const SEO = () => {
                 </h2>
               </Col>
               <Col md="6">&nbsp;</Col>
+            </Row>
+            <br />
+            <Row>
+              <Col lg="12">
+                <p>
+                  Search Engine Optimization (SEO) done by our{" "}
+                  <Link href="/seo/niagara">SEO Niagara</Link> team is your
+                  local business’s secret weapon in today’s digital world.
+                  Imagine your business appearing at the top of Google search
+                  results whenever someone in your area searches for your
+                  services. That’s the power of SEO.
+                </p>
+
+                <p>
+                  Why is SEO crucial for local businesses? Visibility. Higher
+                  search engine rankings mean more people see your business,
+                  leading to increased foot traffic, calls, and inquiries.
+                  Potential customers are searching for businesses like yours,
+                  and SEO ensures they find you first.
+                </p>
+
+                <p>
+                  <Link href="/posts/local-seo-tips-niagara">
+                    Local SEO specifically attracts customers
+                  </Link>{" "}
+                  in your area. By using locally relevant keywords, creating
+                  location-specific content, and keeping your business details
+                  consistent online, you become the top choice for local
+                  searches.
+                </p>
+
+                <p>
+                  This is important because local searches often have high
+                  purchase intent. If someone searches for “best Italian
+                  restaurant near me,” they’re likely planning to dine out soon.
+                  Showing up in these searches means capturing ready-to-buy
+                  customers.
+                </p>
+
+                <p>
+                  SEO also{" "}
+                  <Link href="/posts/how-seo-upgrades-business">
+                    builds trust and credibility
+                  </Link>
+                  . People trust search engines, and top-ranking businesses are
+                  seen as more reliable. Managing online reviews and optimizing
+                  your Google My Business listing further boosts your
+                  trustworthiness.
+                </p>
+
+                <p>
+                  The result? More customers and revenue. SEO drives targeted
+                  traffic that converts into paying customers. Invest in SEO to
+                  boost your visibility, build trust, and grow your business.
+                </p>
+              </Col>
             </Row>
             <Row className="pd-top-40">
               <Col lg="4">
@@ -89,28 +142,27 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={growth}
-                  alt="lead generating websites niagara"
+                  alt="seo kd flowers"
                 />
               </Col>
               <Col lg="6" className="order-1 order-lg-2">
                 <h2>
-                  <span>Local</span> <br />
+                  <span>Real &amp; Local</span> <br />
                   SEO Results
                 </h2>
                 <p>
-                  At Infused Agency, we’re dedicated to fueling your business
-                  growth through exceptional lead-generation for our{" "}
-                  <Link href="/">website design Niagara</Link> clients &amp;
-                  beyond. From the initial concept to the final launch, we craft
-                  bespoke digital experiences that drive results. Leveraging
-                  cutting-edge platforms like NextJS, WordPress, React, and
-                  Shopify, we ensure your website not only looks stunning but
-                  also performs optimally. Our expert team combines strategic
-                  design with innovative technology to create high-converting
-                  websites that captivate your audience and accelerate your
-                  business success. Partner with us to transform your online
-                  presence and watch your business thrive.
+                  At Infused Agency, we deliver real local SEO results for
+                  Niagara businesses. Our expert strategies boost your online
+                  visibility, ensuring your business ranks at the top of local
+                  searches. We focus on driving targeted traffic, which converts
+                  into genuine leads, sales, and increased revenue. By
+                  optimizing your website with locally relevant keywords,
+                  managing your online reviews, and enhancing your Google My
+                  Business listing, we help build trust and attract ready-to-buy
+                  customers. Let us help your Niagara business grow and thrive
+                  with proven SEO techniques tailored to your local market.
                 </p>
+
                 <a
                   href="https://calendly.com/infused-agency/project-discovery/"
                   target="_blank"
@@ -137,276 +189,286 @@ const SEO = () => {
                 <Image
                   className="img-fluid"
                   src={growth}
-                  alt="lead generating websites niagara"
+                  alt="seo kd flowers"
                 />
               </Col>
             </Row>
-
-            <Row className="pd-top-120 d-flex align-items-center">
-              <Col lg="6" className="d-block d-lg-none">
-                <Image
-                  className="img-fluid pd-btm-40"
-                  src={funnel}
-                  alt="sales funnel website niagara"
-                />
-              </Col>
-              <Col lg="6">
-                <h2>
-                  <span>Sales Funnels</span> <br />
-                  That Convert
-                </h2>
-                <p>
-                  Ready to turn your website visitors into loyal customers? Our
-                  expertly crafted sales funnels are designed to do just that.
-                  At Infused Agency, we build powerful, conversion-focused sales
-                  funnels that guide your prospects seamlessly from interest to
-                  action. With a strategic approach that includes captivating
-                  design, compelling copy, and persuasive calls-to-action, we
-                  ensure your funnels don’t just capture leads—they drive real,
-                  measurable results.
-                </p>
-                <a
-                  href="https://calendly.com/infused-agency/project-discovery/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>
-                    Get Started
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </button>
-                </a>
-              </Col>
-              <Col lg="6" className="d-none d-lg-block">
-                <Image
-                  className="img-fluid"
-                  src={funnel}
-                  alt="lead generating websites niagara"
-                />
-              </Col>
-            </Row>
-            <Row className="pd-top-120 d-flex align-items-center">
-              <Col lg="6">
-                <Image
-                  className="img-fluid pd-btm-40"
-                  src={convert}
-                  alt="conversion optimization websites niagara"
-                />
-              </Col>
-              <Col lg="6">
-                <h2>
-                  <span>Conversion-Driven</span> <br />
-                  Web Design
-                </h2>
-                <p>
-                  Ready to transform your online presence into a conversion
-                  powerhouse? Our expertly crafted Conversion-Driven Web Design
-                  is designed to do just that. At Infused Agency, we create
-                  stunning websites that not only captivate your audience but
-                  also drive real, measurable results. With a strategic focus on
-                  user experience, engaging visuals, and optimized design
-                  elements, we ensure your website isn’t just eye-catching—it’s
-                  a powerful tool for converting visitors into loyal customers.
-                  From intuitive navigation to compelling calls-to-action, our
-                  designs are crafted to guide your prospects seamlessly from
-                  interest to action.
-                </p>
-                <a
-                  href="https://calendly.com/infused-agency/project-discovery/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>
-                    Get Started
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </button>
-                </a>
-              </Col>
-            </Row>
-            <Row className="pd-top-80">
-              <Col md="6">
-                <h2>
-                  Our websites are <span>fast</span>, <span>optimized</span> and{" "}
-                  <span>drive leads</span>.
-                </h2>
-              </Col>
-              <Col md="6">&nbsp;</Col>
-            </Row>
-            <Row className="pd-top-40">
-              <Col lg="4">
-                <div className="card">
-                  <Image src={fast} alt="fast website design niagara" />
-                  <h3>Lightning-Fast Speed</h3>
-                  <p>
-                    Experience unparalleled website speed with Infused Agency.
-                    Our websites load in the blink of an eye, ensuring a smooth
-                    user experience and higher engagement. Don't let slow load
-                    times hold you back—contact us for a website that delivers
-                    lightning-fast performance.
-                  </p>
-                </div>
-              </Col>
-              <Col lg="4" className="d-flex">
-                <div className="card">
-                  <Image src={build} alt="web development" />
-                  <h3>Mobile Performance</h3>
-                  <p>
-                    Get a website that looks and performs flawlessly on any
-                    device. Infused Agency ensures your site is perfectly
-                    optimized for mobile, delivering a seamless experience that
-                    keeps users engaged and converts visitors into customers.
-                  </p>
-                </div>
-              </Col>
-              <Col lg="4">
-                <div className="card">
-                  <Image src={grow} alt="web growth" />
-                  <h3>Rank On Google</h3>
-                  <p>
-                    Unlock your website’s potential with Infused Agency’s expert
-                    SEO strategies. Our team designs and optimizes your site to
-                    climb the Google rankings, ensuring you stand out in search
-                    results. Attract more visitors and drive targeted traffic
-                    with a site built for success.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="12">
-                <div className="card">
-                  <img
-                    width="48"
-                    height="48"
-                    src="https://lh3.googleusercontent.com/a-/ALV-UjXrE-pCVt85f0WVdkwxJavD--mFf6VwkCGbIVkEjYt98Qt5ukDYqw=w48-h48-p-rp-mo-ba3-br100"
-                  />
-                  <p className="author">VISCA Electric</p>
-                  <div className="d-flex">
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
-                    <svg
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                        fill="#FFD700"
-                      />
-                    </svg>
+            <section className="services pd-top-120">
+              <Row className="text-center">
+                <Col lg="12">
+                  <h2>SEO Services To Grow Your Business</h2>
+                </Col>
+              </Row>
+              <div className="row">
+                <div className="col-lg-4 d-flex">
+                  <div className="card">
+                    <h2>Keyword Research</h2>
+                    <p>
+                      Keyword research identifies the most effective words and
+                      phrases your potential customers use to find your
+                      services. By targeting these keywords, we ensure your
+                      website appears in relevant searches, increasing traffic
+                      and visibility. This helps attract more customers,
+                      ultimately growing your business.
+                    </p>
                   </div>
-                  <p className="desc">
-                    Working with JD was a pleasure. He was extremely responsive
-                    and informative from start to finish. JD is creative,
-                    efficient, and very knowledgeable in his field. He helped me
-                    and my team create a new website for my business. The design
-                    and development process was smooth and easy. I would
-                    absolutely recommend JD to anyone looking for a new or
-                    updated website for their business!
-                  </p>
                 </div>
-              </Col>
-            </Row>
+                <div className="col-lg-4 d-flex">
+                  <div className="card">
+                    <h2>Link Building</h2>
+                    <p>
+                      Link building involves acquiring high-quality backlinks
+                      from other websites to yours. These links enhance your
+                      website’s authority and improve its search engine
+                      rankings. Increased visibility leads to more traffic and
+                      potential customers, helping your business grow and
+                      establish a stronger online presence.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 d-flex">
+                  <div className="card">
+                    <h2>Content Writing</h2>
+                    <p>
+                      Content writing focuses on creating engaging, relevant,
+                      and keyword-rich content for your website. Well-crafted
+                      content attracts and retains visitors, informs and
+                      educates your audience, and improves search engine
+                      rankings. This drives more traffic, generates leads, and
+                      boosts sales, fostering business growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-lg-4 d-flex">
+                  <div className="card">
+                    <h2>On-Page SEO</h2>
+                    <p>
+                      On-page SEO optimizes individual web pages to rank higher
+                      in search engines. This includes improving meta tags,
+                      headers, images, and internal links. Enhanced on-page SEO
+                      increases your site’s visibility, attracts more traffic,
+                      and converts visitors into customers, driving business
+                      growth.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 d-flex">
+                  <div className="card">
+                    <h2>Local SEO</h2>
+                    <p>
+                      Local SEO targets customers in your specific area by
+                      optimizing your online presence for local searches. This
+                      includes managing your Google My Business listing and
+                      acquiring local citations. Effective local SEO ensures
+                      your business appears in local searches, attracting nearby
+                      customers and increasing sales.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-4 d-flex">
+                  <div className="card">
+                    <h2>Technical SEO</h2>
+                    <p>
+                      Technical SEO improves the backend of your website to
+                      enhance its performance and search engine rankings. This
+                      includes optimizing site speed, mobile-friendliness, and
+                      security. A well-optimized site provides a better user
+                      experience, increases visibility, and attracts more
+                      visitors, driving business growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </Container>
         </section>
-        <section className="home-areas pd-top-120 pd-btm-120">
+        <section className="home-areas pd-top-80">
           <Container>
             <Row>
               <Col lg="12">
                 <h2>Cities We Service</h2>
-                <Link href="/seo/beamsville">SEO in Beamsville, ON</Link> |{" "}
-                <Link href="/seo/crystal-beach">SEO in Crystal Beach, ON</Link>{" "}
-                | <Link href="/seo/fonthill">SEO in Fonthill, ON</Link> |{" "}
-                <Link href="/seo/fort-erie">SEO in Fort Erie, ON</Link> |{" "}
-                <Link href="/seo/grimsby">SEO in Grimsby, ON</Link> |{" "}
-                <Link href="/seo/niagara">SEO in Niagara Falls, ON</Link> |{" "}
-                <Link href="/seo/niagara">SEO in Niagara-on-the-Lake, ON</Link>{" "}
-                |{" "}
-                <Link href="/seo/port-colborne">SEO in Port Colborne, ON</Link>{" "}
-                |{" "}
-                <Link href="/seo/st-catharines">SEO in St. Catharines, ON</Link>{" "}
-                | <Link href="/seo/thorold">SEO in Thorold, ON</Link> |{" "}
-                <Link href="/seo/wainfleet">SEO in Wainfleet, ON</Link> |{" "}
-                <Link href="/seo/welland">SEO in Welland, ON</Link>
+                <Link href="/seo/beamsville">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Beamsville, ON
+                </Link>{" "}
+                <Link href="/seo/crystal-beach">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Crystal Beach, ON
+                </Link>{" "}
+                <Link href="/seo/fonthill">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Fonthill, ON
+                </Link>{" "}
+                <Link href="/seo/fort-erie">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Fort Erie, ON
+                </Link>{" "}
+                <Link href="/seo/grimsby">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Grimsby, ON
+                </Link>{" "}
+                <Link href="/seo/niagara">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Niagara Falls, ON
+                </Link>{" "}
+                <Link href="/seo/niagara">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Niagara-on-the-Lake, ON
+                </Link>{" "}
+                <Link href="/seo/port-colborne">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Port Colborne, ON
+                </Link>{" "}
+                <Link href="/seo/st-catharines">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in St. Catharines, ON
+                </Link>{" "}
+                <Link href="/seo/thorold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Thorold, ON
+                </Link>{" "}
+                <Link href="/seo/wainfleet">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Wainfleet, ON
+                </Link>{" "}
+                <Link href="/seo/welland">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      fill="#ffffff"
+                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  SEO in Welland, ON
+                </Link>
               </Col>
             </Row>
           </Container>

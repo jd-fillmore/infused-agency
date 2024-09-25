@@ -1,6 +1,49 @@
 @import "../../src/pages/breakpoints.scss";
 @import "../../src/pages/variables.scss";
 
+.inner-hero-cities {
+  background: linear-gradient($main-dark-grey, transparent),
+    linear-gradient(to top left, $glow-blue, transparent);
+  background-blend-mode: screen;
+  padding: 210px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 120px 0px 60px 0px;
+  }
+  hr {
+    border-bottom: 3px solid $light-blue;
+    width: 10%;
+    margin-left: 0px;
+  }
+  h1 {
+    font-size: 22px;
+    color: rgba(#fff, 0.5) !important;
+    letter-spacing: 0.5px;
+  }
+  h2 {
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  svg {
+    margin-right: 10px;
+  }
+  ul {
+    list-style: none;
+    margin-left: -45px;
+    li {
+      font-size: 26px;
+      @include bp-tablet-sm {
+        font-size: inherit;
+      }
+    }
+  }
+  img {
+    @include bp-tablet-sm {
+      margin-top: 30px;
+    }
+  }
+}
+
 .inner-hero {
   background: linear-gradient($main-dark-grey, transparent),
     linear-gradient(to top left, $glow-blue, transparent);
