@@ -31,8 +31,53 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/digital-marketing-niagara",
-        destination: "/digital-marketing-agency-niagara",
+        source: "/beamsville-seo-company",
+        destination: "/seo/beamsville",
+        permanent: true,
+      },
+      {
+        source: "/crystal-beach-seo-company",
+        destination: "/seo/crystal-beach",
+        permanent: true,
+      },
+      {
+        source: "/fonthill-seo-company",
+        destination: "/seo/fonthill",
+        permanent: true,
+      },
+      {
+        source: "/fort-erie-seo-company",
+        destination: "/seo/fort-erie",
+        permanent: true,
+      },
+      {
+        source: "/grimsby-seo-company",
+        destination: "/seo/grimsby",
+        permanent: true,
+      },
+      {
+        source: "/niagara-on-the-lake-seo",
+        destination: "/seo/niagara",
+        permanent: true,
+      },
+      {
+        source: "/port-colborne-seo",
+        destination: "/seo/port-colborne",
+        permanent: true,
+      },
+      {
+        source: "/thorold-seo-company",
+        destination: "/seo/thorold",
+        permanent: true,
+      },
+      {
+        source: "/wainfleet-seo",
+        destination: "/seo/wainfleet",
+        permanent: true,
+      },
+      {
+        source: "/welland-seo-company",
+        destination: "/seo/welland",
         permanent: true,
       },
       {
