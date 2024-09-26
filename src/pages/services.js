@@ -38,9 +38,20 @@ const Services = () => {
                   <div className="card">
                     <h2>Web Design</h2>
                     <p>
-                      Is your Niagara website design not bringing you customers?
-                      We make responsive design websites that turn visitors into
+                      Is your website design not bringing you customers? We make
+                      responsive design websites that turn visitors into
                       customers.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <Link href="/seo">
+                  <div className="card">
+                    <h2>Search Engine Optimization (SEO)</h2>
+                    <p>
+                      Are your customers not finding your website on Google? We
+                      can help your website get found and bring you more leads.
                     </p>
                   </div>
                 </Link>
@@ -53,19 +64,8 @@ const Services = () => {
                   <div className="card">
                     <h2>Digital Marketing</h2>
                     <p>
-                      Is your Niagara web design not driving sales? We design
-                      and build effective digital marketing campaigns.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Link href="/seo">
-                  <div className="card">
-                    <h2>Search Engine Optimization</h2>
-                    <p>
-                      Are your customers not finding your website on Google? We
-                      can help your website get found and bring you more leads.
+                      Is your web design not driving sales? We design and build
+                      effective digital marketing campaigns.
                     </p>
                   </div>
                 </Link>

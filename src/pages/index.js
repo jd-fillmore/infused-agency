@@ -1017,6 +1017,17 @@ const Home = ({ latestPosts }) => {
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
+                <Link href="/niagara-seo-company">
+                  <div className="card">
+                    <h2>Search Engine Optimization (SEO)</h2>
+                    <p>
+                      Are your customers not finding your website on Google? We
+                      can help your website get found and bring you more leads.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-lg-4 d-flex">
                 <Link
                   href="/digital-marketing-agency-niagara"
                   className="d-flex"
@@ -1026,17 +1037,6 @@ const Home = ({ latestPosts }) => {
                     <p>
                       Is your Niagara web design not driving sales? We design
                       and build effective digital marketing campaigns.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Link href="/niagara-seo-company">
-                  <div className="card">
-                    <h2>Search Engine Optimization</h2>
-                    <p>
-                      Are your customers not finding your website on Google? We
-                      can help your website get found and bring you more leads.
                     </p>
                   </div>
                 </Link>
