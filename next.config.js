@@ -61,6 +61,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/niagara-seo-company",
+        destination: "/seo/niagara",
+        permanent: true,
+      },
+      {
         source: "/port-colborne-seo",
         destination: "/seo/port-colborne",
         permanent: true,
