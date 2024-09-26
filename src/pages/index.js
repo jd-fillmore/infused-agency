@@ -357,7 +357,7 @@ const addJsonLd = () => {
         name: "SEO",
         description:
           "As an SEO agency, we offer a holistic approach to elevate your website's visibility across major search engines including Google and Bing. Our meticulous SEO or search engine optimization strategies encompass both technical on-page optimization as well as off-page optimization techniques to not only boost your rankings but drive qualified traffic that converts. We start with extensive keyword research and topic clustering to align your pages with high-traffic search terms and buyer intent. This allows us to map out a content plan focused on ranking you for the queries that capture quality visitors in your industry. Our team then optimizes all critical on-page elements - from page titles and meta descriptions to image alt text and internal linking structure - ensuring search engines clearly interpret your pages. Additionally, we execute proven link-building tactics to organically earn placements on reputable, high-authority websites within your sector. This establishes greater trust and authority signals that search algorithms rely on for favorable rankings. On top of this, our local SEO strategies such as optimizing Google My Business listings, citations and reviews build a strong presence to capture nearby traffic. With a keen eye on the latest search algorithm and ranking factor updates, our sustainable strategies even withstand Google shake-ups. Our experts regularly review reports, shifting approaches to maintain optimal rankings long-term. The end goal is not just fleeting wins, but converting search visibility into tangible ROI in the form of leads, sales and long-term success. Backed by data-driven insights, we elevate beyond the expected.",
-        url: "https://infused.agency/niagara-seo-company",
+        url: "https://infused.agency/seo/niagara",
       },
       {
         "@type": "Service",
@@ -800,9 +800,7 @@ const Home = ({ latestPosts }) => {
                   </li>
                   <li>
                     Helping your website show up in Google with our{" "}
-                    <Link href="/niagara-seo-company">
-                      Niagara SEO services
-                    </Link>
+                    <Link href="/seo/niagara">Niagara SEO services</Link>
                   </li>
                   <li>
                     Awesome{" "}
