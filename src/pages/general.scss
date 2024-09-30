@@ -869,6 +869,15 @@ iframe {
   background: $alt-dark-grey;
 }
 
+.different {
+  h3 {
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 0px !important;
+  }
+}
+
 .home-areas {
   span {
     color: #fff;
