@@ -46,6 +46,11 @@ const About = () => {
                   The solution here is to get local traffic, leads, consults and
                   projects booked through your site.
                 </p>
+                <p>
+                  You want potential clients to know that you're more hands on,
+                  you believe in equality, you don't do cookie cutter and you're
+                  with your clients from start to finish.
+                </p>
               </Col>
             </Row>
             <Row className="pd-top-80">
@@ -345,7 +350,6 @@ const About = () => {
           </Container>
         </section>
       </InnerContent>
-      <CTA />
       <Footer />
     </>
   );
