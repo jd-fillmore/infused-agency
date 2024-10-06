@@ -23,7 +23,7 @@ const OurWork = () => {
   return (
     <>
       <Head>
-        <title>Our Work - Infused</title>
+        <title>Infused Agency | Our Work</title>
         <meta
           name="description"
           content="We're passionate about putting in the work to deliver to our client's needs. Check out the results we've got for our clients"

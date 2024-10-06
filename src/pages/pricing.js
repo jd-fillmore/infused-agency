@@ -12,7 +12,10 @@ const Pricing = () => {
   return (
     <>
       <Head>
-        <title>Website Design Pricing for Ontario Businesses | Infused</title>
+        <title>
+          Infused Agency | Website Design Pricing for Ontario for Niagara
+          Businesses
+        </title>
         <meta
           name="description"
           content="Check out the premium pricing for Infused Ageny's web design, SEO and digital marketing services."

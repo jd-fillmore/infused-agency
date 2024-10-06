@@ -14,7 +14,7 @@ export default function Blog({ posts, currentPage, totalPages }) {
   return (
     <div>
       <Head>
-        <title>Web Design &amp; SEO Blog | Infused Agency</title>
+        <title>Infused Agency | Our Educational Blog</title>
         <meta
           name="description"
           content="Explore expert insights on web design and SEO, tailored to educate and empower clients. Discover strategies and tips to enhance your online presence and drive business growth."

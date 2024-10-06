@@ -17,7 +17,7 @@ const Services = () => {
   return (
     <>
       <Head>
-        <title>Services | Infused Agency</title>
+        <title>Infused Agency | Online Marketing Solutions</title>
         <meta
           name="description"
           content="Boost your business with our digital marketing, SEO and web design services today. Get a free quote!"

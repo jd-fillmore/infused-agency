@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Process - Infused</title>
+        <title>Infused Agency | Process</title>
         <meta
           name="description"
           content="Learn more the web design and SEO process that happens for your business at Infused Agency. Click here to learn more."

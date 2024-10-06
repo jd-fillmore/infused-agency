@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Get A Quote - Infused</title>
+        <title>Infused Agency | Get A Custom Quote</title>
         <meta
           name="description"
           content="Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!"
