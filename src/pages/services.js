@@ -34,18 +34,6 @@ const Services = () => {
           <section className="services">
             <div className="row">
               <div className="col-lg-4 d-flex">
-                <Link href="/web-design">
-                  <div className="card">
-                    <h2>Web Design</h2>
-                    <p>
-                      Is your website design not bringing you customers? We make
-                      responsive design websites that turn visitors into
-                      customers.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
                 <Link href="/seo">
                   <div className="card">
                     <h2>Search Engine Optimization (SEO)</h2>
@@ -62,48 +50,23 @@ const Services = () => {
                   className="d-flex"
                 >
                   <div className="card">
-                    <h2>Digital Marketing</h2>
+                    <h2>Social Media Advertising</h2>
                     <p>
-                      Is your web design not driving sales? We design and build
-                      effective digital marketing campaigns.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 d-flex">
-                <Link href="/website-conversion-optimization">
-                  <div className="card">
-                    <h2>Conversion Optimization</h2>
-                    <p>
-                      Is your website not getting you new customers? Our team
-                      will fix the problems and make your website better at
-                      turning visitors into customers.
+                      Is your website not driving sales? We create effective
+                      social media marketing compaigns to drive traffic and
+                      leads to your website.
                     </p>
                   </div>
                 </Link>
               </div>
               <div className="col-lg-4 d-flex">
-                <Link href="/wordpress-developer-niagara">
+                <Link href="/web-design">
                   <div className="card">
-                    <h2>WordPress Development</h2>
+                    <h2>Lead-Generating Web Design</h2>
                     <p>
-                      Is your WordPress site outdated or not good enough? We
-                      create custom WordPress sites just for your business
-                      needs.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Link href="/services" className="d-flex">
-                  <div className="card">
-                    <h2>Shopify &amp; WordPress E-Commerce</h2>
-                    <p>
-                      Is your website not able to sell your products? We can
-                      help you get more sales by setting up online selling for
-                      you.
+                      Is your Niagara website design not bringing you customers?
+                      We make lead-generating websites that turn visitors into
+                      customers.
                     </p>
                   </div>
                 </Link>

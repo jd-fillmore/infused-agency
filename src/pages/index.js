@@ -21,13 +21,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 import google from "../../src/img/niagara-web-design-client-two.webp";
-import heroImg from "../../src/img/niagara-web-design-client-one.webp";
+import heroImg from "../../src/img/digital-marketing-agency-niagara-client.webp";
+import flatImg from "../../src/img/seo-niagara-agency.webp";
 import clients from "../../src/img/web-design-niagara-clients.png";
 import workJerrys from "../../src/img/portfolio-kd.png";
 import best from "../../src/img/awards.png";
-import traffic from "../../src/img/increase-niagara-web-design-traffic.png";
-import leads from "../../src/img/web-design-niagara-generate-leads.png";
-import convert from "../../src/img/web-design-niagara-convert-customers.png";
+import traffic from "../../src/img/digital-marketing-niagara-agency-traffic.png";
+import leads from "../../src/img/seo-niagara-leads.png";
+import convert from "../../src/img/digital-marketing-seo-niagara-agency-convert.png";
 
 const addJsonLd = () => {
   const schema = {
@@ -40,10 +41,10 @@ const addJsonLd = () => {
         legalName: "Infused Agency",
         url: "https:/infused.agency/",
         description:
-          "Infused Agency is a web design agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Contact us today for affordable web design that drives results.",
+          "Infused Agency is a digital marketing and SEO agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Contact us today for affordable web design that drives results.",
         disambiguatingDescription:
           "Infused Agency, a leading website designer and SEO agency based in St. Catharines, Niagara, offers affordable web design services for businesses of all sizes across Ontario and nationwide. With over 10 years of experience helping local and national brands expand their digital presence, we provide custom web design, SEO, digital marketing, and more to drive results for our clients. Our services include website design where we create stunning, conversion-focused websites tailored to your brand and goals, starting at just $499. Our design process emphasizes critical SEO best practices to boost organic traffic. We also offer search engine optimization SEO provided by our experts who develop targeted keyword strategies and on-page optimization to improve your rankings on Google and other search engines. We specialize in local SEO to help St. Catharines and Niagara businesses reach more nearby customers by providing services like listing optimization, review generation, citation building, and other location-based tactics. Additionally, our talented team of writers and designers produce engaging blogs, videos, graphics and more as part of our content creation services which aim to answer customer questions and establish your brand as an industry authority. Finally, we manage and optimize Google Ads and Facebook ad campaigns through our paid ads services which are designed to cost-effectively drive conversions and sales for our clients. Contact us today to schedule a strategy call to discuss how our web design and digital marketing services can help grow your business online. With customized solutions for any budget, Infused Agency is your partner for affordable and effective web design in Niagara!",
-        mainEntityOfPage: "https://en.wikipedia.org/wiki/Web_design",
+        mainEntityOfPage: "https://en.wikipedia.org/wiki/Digital_marketing",
         foundingDate: "2013",
         foundingLocation: {
           "@type": "Place",
@@ -73,15 +74,18 @@ const addJsonLd = () => {
           "Welland, ON",
         ],
         award: [
-          "2024 Best Web Design in St. Catharines",
-          "2024 Best Web Design in Niagara",
-          "2024 Best Website Design",
-          "2024 Best Local Business Web Design",
-          "2024 Best Web Design Agency",
-          "2024 Best Cheap Web Design",
-          "2024 Best SEO Agency",
-          "2024 Best SEO in Niagara",
+          "2024 Best Digital Marketing in St. Catharines",
+          "2024 Best Digital Marketing in Niagara",
+          "2024 Best Digital Marketing",
+          "2024 Best Local Business Digital Marketing",
+          "2024 Best Digital Marketing Agency",
+          "2024 Best Cheap Digital Marketing",
           "2024 Best SEO in St. Catharines",
+          "2024 Best SEO in Niagara",
+          "2024 Best SEO",
+          "2024 Best Local Business SEO",
+          "2024 Best SEO Agency",
+          "2024 Best Cheap SEO",
         ],
         brand: ["Web Design", "Infused Agency"],
         knowsAbout: [
@@ -133,9 +137,9 @@ const addJsonLd = () => {
         "@id": "https://infused.agency/#localbusiness",
         name: "Infused Agency",
         description:
-          "Infused Agency is a web design agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Call us today for affordable web design that drives results.",
+          "Infused Agency is a digital marketing and SEO agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Call us today for affordable web design that drives results.",
         disambiguatingDescription:
-          "Infused Agency, a leading website designer and SEO agency based in Novi, MI, offers affordable web design services for businesses of all sizes across Michigan and nationwide. With over 10 years of experience helping local and national brands expand their digital presence, we provide custom web design, SEO, digital marketing, and more to drive results for our clients. Our services include website design where we create stunning, conversion-focused websites tailored to your brand and goals, starting at just $499. Our design process emphasizes critical SEO best practices to boost organic traffic. We also offer search engine optimization SEO provided by our experts who develop targeted keyword strategies and on-page optimization to improve your rankings on Google and other search engines. We specialize in local SEO to help Michigan businesses reach more nearby customers by providing services like listing optimization, review generation, citation building, and other location-based tactics. Additionally, our talented team of writers and designers produce engaging blogs, videos, graphics and more as part of our content creation services which aim to answer customer questions and establish your brand as an industry authority. Finally, we manage and optimize Google Ads and Facebook ad campaigns through our paid ads services which are designed to cost-effectively drive conversions and sales for our clients. Contact us today to schedule a strategy call to discuss how our web design and digital marketing services can help grow your business online. With customized solutions for any budget, Infused Agency is your partner for affordable and effective web design in Michigan!",
+          "Infused Agency, a leading website designer and SEO agency based in St. Catharines, Niagara, offers affordable web design services for businesses of all sizes across Michigan and nationwide. With over 10 years of experience helping local and national brands expand their digital presence, we provide custom web design, SEO, digital marketing, and more to drive results for our clients. Our services include website design where we create stunning, conversion-focused websites tailored to your brand and goals, starting at just $499. Our design process emphasizes critical SEO best practices to boost organic traffic. We also offer search engine optimization SEO provided by our experts who develop targeted keyword strategies and on-page optimization to improve your rankings on Google and other search engines. We specialize in local SEO to help Michigan businesses reach more nearby customers by providing services like listing optimization, review generation, citation building, and other location-based tactics. Additionally, our talented team of writers and designers produce engaging blogs, videos, graphics and more as part of our content creation services which aim to answer customer questions and establish your brand as an industry authority. Finally, we manage and optimize Google Ads and Facebook ad campaigns through our paid ads services which are designed to cost-effectively drive conversions and sales for our clients. Contact us today to schedule a strategy call to discuss how our web design and digital marketing services can help grow your business online. With customized solutions for any budget, Infused Agency is your partner for affordable and effective web design in Michigan!",
         mainEntityOfPage: "https://infused.agency/",
         sameAs: [
           "https://www.facebook.com/infused.agency",
@@ -170,26 +174,26 @@ const addJsonLd = () => {
         email: "hello@infused.agency",
         knowsLanguage: ["English", "ASL"],
         knowsAbout: [
-          "web design near me",
-          "website designer near me",
-          "web design niagara",
-          "website designer niagara",
-          "web developer niagara",
-          "SEO agency niagara",
-          "web design st. catharines",
-          "website designer st. catharines",
-          "web developer st. catharines",
-          "SEO agency st. catharines",
+          "SEO near me",
+          "SEO specialist near me",
+          "SEO Niagara",
+          "SEO expert Niagara",
+          "digital marketing Niagara",
+          "SEO agency Niagara",
+          "SEO St. Catharines",
+          "SEO expert St. Catharines",
+          "digital marketing St. Catharines",
+          "SEO agency St. Catharines",
           "SEO agency near me",
           "SEO agency",
-          "marketing agency in niagara",
+          "marketing agency in Niagara",
           "marketing agency",
           "digital marketing",
           "internet marketing",
         ],
         paymentAccepted: ["cash", "credit card"],
         location: "Niagara",
-        slogan: "Web Design just got a whole lot better",
+        slogan: "Digital marketing and SEO just got a whole lot better",
         hasMap:
           "https://maps.google.com/maps?ll=43.15257,-79.207772&z=16&t=m&hl=en&gl=CA&mapclient=embed&cid=1774727816813218416",
         openingHoursSpecification: [
@@ -250,11 +254,12 @@ const addJsonLd = () => {
         name: "Infused Agency",
         alternateName: "Infused Agency Niagara",
         description:
-          "Infused Agency is a web design agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Call us today for affordable web design that drives results.",
-        identifier: "https://www.wikidata.org/wiki/Q66783449",
+          "Infused Agency is a digital marketing and SEO agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Call us today for affordable web design that drives results.",
+        identifier: "https://www.wikidata.org/wiki/Q180711",
         image:
           "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-        mainEntityOfPage: "https://en.wikipedia.org/wiki/Web_design",
+        mainEntityOfPage:
+          "https://en.wikipedia.org/wiki/Search_engine_optimization",
         publisher: {
           "@type": "Organization",
           "@id": "https://infused.agency/#organization",
@@ -270,20 +275,22 @@ const addJsonLd = () => {
           "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
         width: 82,
         height: 17,
-        caption: "Best Web Design in Niagara",
+        caption: "Best Digital Marketing and SEO in Niagara",
       },
       {
         "@type": "WebPage",
         "@id": "https://infused.agency/#webpage",
-        headline: "Infused Agency | Web Designer in Novi, MI",
+        headline:
+          "Infused Agency | Digital Marketing and SEO Agency in St. Catharines, Niagara",
         url: "https://infused.agency/",
         lastReviewed: "2023/11/12",
         relatedLink: [
-          "https://www.wikidata.org/wiki/Q190637",
-          "https://www.wikidata.org/wiki/Q113499206",
-          "https://www.wikidata.org/wiki/Q66783449",
           "https://www.wikidata.org/wiki/Q180711",
-          "https://en.wikipedia.org/wiki/Web_design",
+          "https://www.wikidata.org/wiki/Q1323528",
+          "https://www.wikidata.org/wiki/Q56279965",
+          "https://www.wikidata.org/wiki/Q91038239",
+          "https://www.wikidata.org/wiki/Q1369723",
+          "https://www.wikidata.org/wiki/Q189507",
         ],
       },
       {
@@ -309,7 +316,7 @@ const addJsonLd = () => {
         description:
           "Expert Internet Marketer and Strategist, fluent in SEM, SEO, Local Business Optimization, Competitor Research, and creative Web Design.",
         disambiguatingDescription:
-          "Infused Agency is owned by website designer JD Fillmore, who founded the company over 10 years ago in St. Catharines, Niagara. JD draws on his decades of experience crafting custom websites and implementing targeted SEO strategies to help businesses small and large expand their online presence. Through Infused Agency, Plotts offers his expertise in crafting stunning, conversion-driven websites that effectively showcase brands and capture leads. He keeps his finger on the pulse of the latest SEO best practices to maximize organic visibility for his client sites. Beyond web design and SEO, Plotts heads a talented in-house team that produces engaging content across media formats and manages ROI-focused paid advertising campaigns on platforms like Google and Facebook. His personalized approach, coupled with Blue Lake's affordable and customized web solutions catered to each client's unique needs and budget, has fueled the company's expansion beyond Michigan to serve clients nationwide. Business owners can schedule a complimentary web strategy consultation with JD himself to discuss leveraging Infused Agency's full suite of website design, SEO, content production, and digital advertising services to maximize their online growth potential. JD's passion is helping brands harness the power of a well-designed web presence to drive real business results.",
+          "Infused Agency is owned by digital marketing expert JD Fillmore, who founded the company over 10 years ago in St. Catharines, Niagara. JD draws on his decades of experience crafting custom websites and implementing targeted SEO strategies to help businesses small and large expand their online presence. Through Infused Agency, Plotts offers his expertise in crafting stunning, conversion-driven websites that effectively showcase brands and capture leads. He keeps his finger on the pulse of the latest SEO best practices to maximize organic visibility for his client sites. Beyond web design and SEO, Plotts heads a talented in-house team that produces engaging content across media formats and manages ROI-focused paid advertising campaigns on platforms like Google and Facebook. His personalized approach, coupled with Blue Lake's affordable and customized web solutions catered to each client's unique needs and budget, has fueled the company's expansion beyond Michigan to serve clients nationwide. Business owners can schedule a complimentary web strategy consultation with JD himself to discuss leveraging Infused Agency's full suite of website design, SEO, content production, and digital advertising services to maximize their online growth potential. JD's passion is helping brands harness the power of a well-designed web presence to drive real business results.",
         alumniOf: "Durham College",
         birthPlace: "Grimsby",
         birthDate: "1988-08-11",
@@ -317,22 +324,22 @@ const addJsonLd = () => {
         gender: "Male",
         memberOf: "Web Design",
         nationality: "Canadian",
-        award: "Voted Top Website Designer in Niagara",
+        award: "Voted Top Digital Marketing and SEO Agency in Niagara",
         callSign: "Digital Marketer",
         knowsAbout: [
-          "web design near me",
-          "website designer near me",
-          "web design niagara",
-          "website designer niagara",
-          "web developer niagara",
-          "SEO agency niagara",
-          "web design st. catharines",
-          "website designer st. catharines",
-          "web developer st. catharines",
-          "SEO agency st. catharines",
+          "SEO near me",
+          "SEO specialist near me",
+          "SEO Niagara",
+          "SEO expert Niagara",
+          "digital marketing Niagara",
+          "SEO agency Niagara",
+          "SEO St. Catharines",
+          "SEO expert St. Catharines",
+          "digital marketing St. Catharines",
+          "SEO agency St. Catharines",
           "SEO agency near me",
           "SEO agency",
-          "marketing agency in niagara",
+          "marketing agency in Niagara",
           "marketing agency",
           "digital marketing",
           "internet marketing",
@@ -371,180 +378,207 @@ const addJsonLd = () => {
         mainEntity: [
           {
             "@type": "Question",
-            name: "How much does a new website cost?",
+            name: "What are social media ads?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "We make high-quality web designs affordable for Niagara businesses. That's why we offer websites at a monthly price for only one year, instead of a big, expensive fee all at once. A new website can cost from $250 a month (for one year) for a simple site to $1,000 a month (for one year) for a fancy one with lots of cool features. It's like buying a car - you can get a basic model or a luxury one with all the extras. Check out our pricing page to see what fits your needs!",
+                "They are paid promotions on social media that help your business reach more people.",
             },
           },
           {
             "@type": "Question",
-            name: "How much does a custom web design cost?",
+            name: "Why should I use social media ads?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "A custom web design is like getting a tailor-made suit. It starts at $300 a month (for one year) for a simple site and can go up to $1,000 a month (for one year) or more if you want all the bells and whistles. Our pricing page has all the details.",
+                "These ads help you reach a larger audience, target specific groups of people, and get more customers quickly.",
             },
           },
           {
             "@type": "Question",
-            name: "How much does a templated web design cost?",
+            name: "How much do social media ads cost?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Think of a templated design like buying clothes off the rack. For a small website with 1-3 pages, it's about $200 a month. Bigger sites will cost more. Take a look at our pricing page to get a better idea.",
+                "The cost varies based on your budget. Contact us today for a free consult and free quote.",
             },
           },
           {
             "@type": "Question",
-            name: "How long will it take to get a new website?",
+            name: "How do you create effective ads?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "For simple websites, about 1-2 weeks. For fancier sites, 4-12 weeks. It all depends on how complicated your website needs to be.",
+                "We use eye-catching images or videos, write clear and engaging text, and target the right audience to create effective ads.",
             },
           },
           {
             "@type": "Question",
-            name: "What are the pros and cons of a custom web design?",
+            name: "How do you target the right audience with these ads?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Pros:\n\nIt's unique, for your business only\nIt fits your needs perfectly\nYou can make it do exactly what you want\nCons:\n\nIt costs more money\nIt takes longer to make\nYou might need more help to update it",
+                "We use targeting options like age, location, interests, and behaviors to show your ads to people who are most likely to be interested in your business.",
             },
           },
           {
             "@type": "Question",
-            name: "What are the pros and cons of a template web design?",
+            name: "How long does it take to see results from these ads?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Pros:\n\nIt costs less money\nIt's faster to set up\nIt's easier to update yourself\nCons:\n\nIt might look similar to other websites\nIt might not have all the features you want\nYou have less control over how it looks",
+                "You can start seeing results within a few days, but it often takes a few weeks to see the full impact.",
             },
           },
           {
             "@type": "Question",
-            name: "Are your web designs responsive / mobile-friendly?",
+            name: "What should I expect in terms of results?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Yes! Our websites work great on phones and tablets, just like they do on computers.",
+                "Results can include more website visits, more leads or sales, and increased brand awareness.",
             },
           },
           {
             "@type": "Question",
-            name: "Can you build an e-commerce website?",
+            name: "How do you measure the success of the ads?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Absolutely! We can make websites where you can sell stuff online.",
+                "We look at metrics like clicks, conversions, cost per click, and return on ad spend to measure success.",
             },
           },
           {
             "@type": "Question",
-            name: "Can you build websites with extra functionalities?",
+            name: "What is SEO, and why is it important for my website?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "You bet! We can add cool stuff like member-only areas, blogs, appointment booking, photo galleries, forms, social media connections, online stores, and ways to accept payments.",
+                "SEO means making your website better so it appears higher in search engine results. This helps more people find your site.",
             },
           },
           {
             "@type": "Question",
-            name: "How do you approach website design?",
+            name: "What are the main factors that influence SEO rankings?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "We make websites that are simple, easy to use, modern, and clean. We focus on making your business look great and work well for your customers, not just on making it look pretty.",
+                "Important factors include using the right keywords, having a fast website, and getting other websites to link to yours.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you do website redesigns?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, we can give your old website a makeover!",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Can I update the website myself?",
+            name: "How much does SEO cost?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Definitely! We'll teach you how to do it, it's pretty easy.",
+                "This entirely depends on both the length of the SEO campaign, and the work involved. Contact us today for a free consult and free quote.",
             },
           },
           {
             "@type": "Question",
-            name: "Are the websites you build accessible?",
+            name:
+              "How do you perform keyword research, and how do you determine which keywords to target?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "We make sure our websites are easy for everyone to use. If you need extra special features for accessibility, we can add those too.",
+                "We find words people use to search for your type of business and choose ones that can bring you more visitors.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you build mobile-friendly sites?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes, all our sites work great on phones and tablets.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Which website builder is best?",
+            name:
+              "What is on-page SEO, and how does it differ from off-page SEO?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "We like to use WordPress. It's like the Swiss Army knife of website builders.",
+                "On-page SEO means improving things on your website, like text and images. Off-page SEO means getting other websites to link to yours.",
             },
           },
           {
             "@type": "Question",
-            name: "Who hosts the website?",
+            name: "How do you handle technical SEO issues on a website?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "For simple websites, we take care of it. For bigger sites with WordPress, you'll need to host it yourself, but we'll help you set it up.",
+                "We fix problems like slow loading times, broken links, and mobile-friendliness to improve your site’s performance.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you work with everyone?",
+            name: "Can you guarantee my website will rank #1 on Google?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "We work with all kinds of businesses, especially those in Niagara.",
+                "No one can promise a #1 spot, but we can improve your chances with good SEO practices.",
             },
           },
           {
             "@type": "Question",
-            name: "Do I provide the content for my website?",
+            name: "How do backlinks impact my website’s SEO?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Yes, you know your business best! But if you need help, we can lend a hand for an extra fee.",
+                "Backlinks are links from other websites to yours. They show Google your site is trusted.",
             },
           },
           {
             "@type": "Question",
-            name: "How much input do I have?",
+            name:
+              "What tools or software do you use for SEO analysis and reporting?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Lots! It's like building with Lego - we'll work together to make sure you love the final product.",
+                "We use tools like Google Analytics and SEO software to check your website’s performance and give you reports.",
             },
           },
           {
             "@type": "Question",
-            name: "What if I need help after my website is live?",
+            name:
+              "What are the potential risks of SEO, and how do you mitigate them?",
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "Don't worry, we've got your back! We'll be here to help you if you need us.",
+                "Risks include using bad practices that can get your site penalized by Google. We use safe, proven methods to avoid this.",
+            },
+          },
+          {
+            "@type": "Question",
+            name:
+              "How do you approach local SEO, especially for service-based businesses?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We focus on local keywords, get your business listed on Google Maps, and gather positive reviews to improve local rankings.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is your process for auditing a website's SEO?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We check your site’s health, look at keywords, see how it performs, and find areas to improve.",
+            },
+          },
+          {
+            "@type": "Question",
+            name:
+              "What is the role of content in SEO, and how do you create SEO-friendly content?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "Content is key. We write helpful, interesting articles with the right keywords to attract visitors.",
+            },
+          },
+          {
+            "@type": "Question",
+            name:
+              "How do you stay updated with the latest changes in search engine algorithms?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text:
+                "We follow SEO news, read updates from search engines, and test new strategies to keep up.",
             },
           },
         ],
@@ -562,7 +596,65 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Best Digital Marketing & SEO Agency in Niagara | Infused Agency
+          Best Digital Marketing Agency Niagara | SEO Niagara | Infused Agency -
+          Digital Marketing Company Niagara, Digital Marketing Company St.
+          Catharines, Marketing Agencies Niagara, Marketing Agencies St.
+          Catharines, Digital Marketing Agency St. Catharines, Digital Marketing
+          Company Niagara, Digital Marketing Company St. Catharines, Digital
+          Marketing Firms Niagara, Digital Marketing Firms St. Catharines,
+          Digital Advertising Agency Niagara, Digital Advertising Agency St.
+          Catharines, Niagara Digital Marketing Company, St. Catharines Digital
+          Marketing Company, Niagara Digital Marketing Firm, St. Catharines
+          Digital Marketing Firm, Niagara Online Marketing Agency, St.
+          Catharines Online Marketing Agency, Internet Marketing Agencies
+          Niagara, Internet Marketing Agencies St. Catharines, Internet
+          Marketing Companies Niagara, Internet Marketing Companies St.
+          Catharines, Internet Marketing Company in Niagara, Internet Marketing
+          Company in St. Catharines, internet marketing firm Niagara, Niagara
+          internet marketing company, Niagara internet marketing firm, digital
+          marketing Niagara, marketing firm Niagara, Niagara social media
+          marketing, best marketing agencies Niagara, top marketing firms
+          Niagara, best marketing companies Niagara, best marketing firms in
+          Niagara, digital agency Niagara, top marketing agencies in Niagara,
+          social media marketing agency Niagara, internet marketing firm St.
+          Catharines, St. Catharines internet marketing company, St. Catharines
+          internet marketing firm, digital marketing St. Catharines, marketing
+          firm St. Catharines, St. Catharines social media marketing, best
+          marketing agencies St. Catharines, top marketing firms St. Catharines,
+          best marketing companies St. Catharines, best marketing firms in St.
+          Catharines, digital agency St. Catharines, top marketing agencies in
+          St. Catharines, social media marketing agency St. Catharines, Digital
+          Marketing Company Niagara-on-the-Lake, Digital Marketing Company
+          Niagara Falls, Marketing Agencies Niagara-on-the-Lake, Marketing
+          Agencies Niagara Falls, Digital Marketing Agency Niagara Falls,
+          Digital Marketing Company Niagara-on-the-Lake, Digital Marketing
+          Company Niagara Falls, Digital Marketing Firms Niagara-on-the-Lake,
+          Digital Marketing Firms Niagara Falls, Digital Advertising Agency
+          Niagara-on-the-Lake, Digital Advertising Agency Niagara Falls,
+          Niagara-on-the-Lake Digital Marketing Company, Niagara Falls Digital
+          Marketing Company, Niagara-on-the-Lake Digital Marketing Firm, Niagara
+          Falls Digital Marketing Firm, Niagara-on-the-Lake Online Marketing
+          Agency, Niagara Falls Online Marketing Agency, Internet Marketing
+          Agencies Niagara-on-the-Lake, Internet Marketing Agencies Niagara
+          Falls, Internet Marketing Companies Niagara-on-the-Lake, Internet
+          Marketing Companies Niagara Falls, Internet Marketing Company in
+          Niagara-on-the-Lake, Internet Marketing Company in Niagara Falls,
+          internet marketing firm Niagara-on-the-Lake, Niagara-on-the-Lake
+          internet marketing company, Niagara-on-the-Lake internet marketing
+          firm, digital marketing Niagara-on-the-Lake, marketing firm
+          Niagara-on-the-Lake, Niagara-on-the-Lake social media marketing, best
+          marketing agencies Niagara-on-the-Lake, top marketing firms
+          Niagara-on-the-Lake, best marketing companies Niagara-on-the-Lake,
+          best marketing firms in Niagara-on-the-Lake, digital agency
+          Niagara-on-the-Lake, top marketing agencies in Niagara-on-the-Lake,
+          social media marketing agency Niagara-on-the-Lake, internet marketing
+          firm Niagara Falls, Niagara Falls internet marketing company, Niagara
+          Falls internet marketing firm, digital marketing Niagara Falls,
+          marketing firm Niagara Falls, Niagara Falls social media marketing,
+          best marketing agencies Niagara Falls, top marketing firms Niagara
+          Falls, best marketing companies Niagara Falls, best marketing firms in
+          Niagara Falls, digital agency Niagara Falls, top marketing agencies in
+          Niagara Falls, social media marketing agency Niagara Falls
         </title>
         <meta
           name="description"
@@ -676,7 +768,7 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Your Niagara Digital Marketing &amp;{" "}
+                  Your Niagara Digital Marketing Agency &amp;{" "}
                   <span>Growth Partner</span>.
                 </h2>
                 <p>
@@ -696,29 +788,36 @@ const Home = ({ latestPosts }) => {
               </motion.div>
             </div>
           </div>
-          <section className="work">
+          <section className="work pd-btm-120">
             <div className="row pd-top-40">
               <div className="col-lg-6">
-                <h2 className="title">
-                  Recent Digital Marketing & SEO Project
-                </h2>
-                <h2>Cass-A-Bella Construction</h2>
-                <hr />
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 90%</li>
-                    <li>Google Search Visibility Increased by 200%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Leads Increased From 2 to 10 per month in 3 months</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <h2 className="title">Recent Project</h2>
+                  <h2>Cass-A-Bella Construction</h2>
+                  <hr />
+                  <div class="card">
+                    <h3>After working with us:</h3>
+                    <ul>
+                      <li>Google Search Visibility Increased by 200%</li>
+                      <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                      <li>Page 1 Google Rankings for Multiple Keywords</li>
+                      <li>
+                        Leads Increased From 2 to 10 per month in 3 months
+                      </li>
+                      <li>Website Page Speed Increased By 90%</li>
+                      <li>Increased User Experience</li>
+                      <li>Increased Engagement and Conversions</li>
+                      <li>Increased Brand Recognition</li>
+                      <li>Faster Load Times</li>
+                      <li>Streamlined collection of leads</li>
+                    </ul>
+                  </div>
+                </motion.div>
               </div>
               <div className="col-lg-6">
                 <motion.div
@@ -738,76 +837,93 @@ const Home = ({ latestPosts }) => {
               </div>
             </div>
           </section>
+        </div>
+        {/* Container End*/}
+        {/* Container Start*/}
+        <section className="dark pd-top-120">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8">
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                  viewport={{ once: true }}
+                >
+                  <h2>
+                    A SEO Niagara Agency That
+                    <br />
+                    <span>Knows What They're Doing</span>.
+                  </h2>
+                  <p>
+                    At Infused Agency, we are the leading SEO Niagara agency,
+                    helping local businesses get found online. Our expert SEO
+                    Niagara services boost your visibility and attract more
+                    customers from the Niagara region.
+                  </p>
 
-          <div className="row pd-top-120">
-            <div className="col-lg-8">
-              <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>
-                  A SEO Niagara Agency That
-                  <br />
-                  <span>Knows What They're Doing</span>.
-                </h2>
-                <p>
-                  At Infused Agency, we are the leading SEO Niagara agency,
-                  helping local businesses get found online. Our expert SEO
-                  Niagara services boost your visibility and attract more
-                  customers from the Niagara region.
-                </p>
-
-                <p>
-                  We start by understanding your business and local market.
-                  Then, we create a custom SEO strategy tailored to your needs.
-                  Your input is key, and together, we make sure your online
-                  presence is strong.
-                </p>
-              </motion.div>
+                  <p>
+                    We start by understanding your business and local market.
+                    Then, we create a custom SEO strategy tailored to your
+                    needs. Your input is key, and together, we make sure your
+                    online presence is strong.
+                  </p>
+                </motion.div>
+              </div>
             </div>
+
+            <section className="work pd-btm-120">
+              <div className="row pd-top-40">
+                <div className="col-lg-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <h2 className="title">Recent Project</h2>
+                    <h2>Flat Rock Cellars</h2>
+                    <hr />
+                    <div class="card">
+                      <h3>After working with us:</h3>
+                      <ul>
+                        <li>Google Search Visibility Increased by 300%</li>
+                        <li>
+                          Page 1 Google Map Rankings for Multiple Keywords
+                        </li>
+                        <li>Page 1 Google Rankings for Multiple Keywords</li>
+                        <li>Increased User Experience</li>
+                        <li>Increased Engagement and Conversions</li>
+                        <li>Increased Brand Recognition</li>
+                        <li>Streamlined collection of leads</li>
+                      </ul>
+                    </div>
+                  </motion.div>
+                </div>
+                <div className="col-lg-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                  >
+                    <Image
+                      width="503"
+                      height="343"
+                      priority={true}
+                      className="img-fluid shadow"
+                      src={flatImg}
+                      alt="seo niagara agency"
+                    />
+                  </motion.div>
+                </div>
+              </div>
+            </section>
           </div>
-
-          <section className="work">
-            <div className="row pd-top-40">
-              <div className="col-lg-6">
-                <h2 className="title">Recent SEO Project</h2>
-                <h2>Flat Rock Cellars</h2>
-                <hr />
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Google Search Visibility Increased by 300%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                >
-                  <Image
-                    width="503"
-                    height="343"
-                    priority={true}
-                    className="img-fluid shadow"
-                    src={heroImg}
-                    alt="digital marketing agency niagara"
-                  />
-                </motion.div>
-              </div>
-            </div>
-          </section>
-
-          <div className="row pd-top-80">
+        </section>
+        {/* Container End*/}
+        {/* Container Start*/}
+        <div className="container">
+          <div className="row pd-top-120">
             <div className="col-lg-7">
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -844,10 +960,9 @@ const Home = ({ latestPosts }) => {
 
                 <p>
                   With our <Link href="/blog">great knowledge</Link>,{" "}
-                  <Link href="/work">high-quality work</Link>, and{" "}
-                  <Link href="/reviews">friendly customer service</Link>, we've
-                  become a top digital marketing and SEO agency that Niagara
-                  businesses trust.
+                  <Link href="/work">high-quality work</Link>, and friendly
+                  customer service, we've become a top digital marketing and SEO
+                  agency that Niagara businesses trust.
                 </p>
 
                 <Image
@@ -866,12 +981,12 @@ const Home = ({ latestPosts }) => {
               >
                 <div className="card">
                   <img
-                    alt="ggs niagara landscaping testimonial"
+                    alt="ggs niagara SEO landscaping testimonial"
                     width="48"
                     height="48"
                     src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
                   />
-                  <p className="author">GGS Niagara Landscaping</p>
+                  <p className="author">KD Flowers</p>
                   <div className="d-flex">
                     <svg
                       width="30"
@@ -945,10 +1060,11 @@ const Home = ({ latestPosts }) => {
                     </svg>
                   </div>
                   <p className="desc">
-                    Infused did a fantastic job on my website. They were easy to
-                    work with, always very quick to respond and made designing
-                    the page very simple. I would highly recommend them for all
-                    of your web design and development needs!
+                    In just one month, my business's website made it to the
+                    first page of Google! I was so surprised! After that, I
+                    started getting emails from people interested in my services
+                    right away, and I've been busy ever since! Thanks a lot to
+                    Infused Agency for helping my business grow!
                   </p>
                 </div>
                 <iframe
@@ -975,11 +1091,12 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Niagara Website Design That Makes An <span>Impact</span>
+                  Niagara Digital Marketing & SEO That Make An{" "}
+                  <span>Impact</span>
                 </h2>
                 <p>
-                  Our web design, optimization, and SEO solutions help bring you
-                  more leads through your website.
+                  Our digital marketing, SEO and website conversion optimization
+                  solutions help bring you more leads.
                 </p>
               </motion.div>
             </div>
@@ -995,24 +1112,13 @@ const Home = ({ latestPosts }) => {
             {/* Row One */}
             <div className="row">
               <div className="col-lg-4 d-flex">
-                <Link href="/web-design">
-                  <div className="card">
-                    <h2>Web Design</h2>
-                    <p>
-                      Is your Niagara website design not bringing you customers?
-                      We make responsive design websites that turn visitors into
-                      customers.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
                 <Link href="/seo">
                   <div className="card">
                     <h2>Search Engine Optimization (SEO)</h2>
                     <p>
-                      Are your customers not finding your website on Google? We
-                      can help your website get found and bring you more leads.
+                      Are your customers not finding your website on Google? Our
+                      SEO Niagara services help your website get found and bring
+                      you more leads.
                     </p>
                   </div>
                 </Link>
@@ -1023,80 +1129,28 @@ const Home = ({ latestPosts }) => {
                   className="d-flex"
                 >
                   <div className="card">
-                    <h2>Digital Marketing</h2>
+                    <h2>Social Media Advertising</h2>
                     <p>
-                      Is your Niagara web design not driving sales? We design
-                      and build effective digital marketing campaigns.
+                      Is your website not driving sales? We create effective
+                      social media marketing compaigns to drive traffic and
+                      leads to your website.
+                    </p>
+                  </div>
+                </Link>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <Link href="/web-design">
+                  <div className="card">
+                    <h2>Lead-Generating Web Design</h2>
+                    <p>
+                      Is your Niagara website design not bringing you customers?
+                      We make lead-generating websites that turn visitors into
+                      customers.
                     </p>
                   </div>
                 </Link>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-4 d-flex">
-                <Link href="/website-conversion-optimization">
-                  <div className="card">
-                    <h2>Conversion Optimization</h2>
-                    <p>
-                      Is your website not getting you new customers? Our team
-                      will fix the problems and make your website better at
-                      turning visitors into customers.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Link href="/wordpress-developer-niagara">
-                  <div className="card">
-                    <h2>WordPress Development</h2>
-                    <p>
-                      Is your WordPress site outdated or not good enough? We
-                      create custom WordPress sites just for your business
-                      needs.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
-                <Link href="/services" className="d-flex">
-                  <div className="card">
-                    <h2>Shopify &amp; WordPress E-Commerce</h2>
-                    <p>
-                      Is your website not able to sell your products? We can
-                      help you get more sales by setting up online selling for
-                      you.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <section className="our-clients pd-top-80">
-                <div className="row align-items-center">
-                  <div className="col-lg-6">
-                    <h2>
-                      Clients We've <span>Helped</span>
-                    </h2>
-                    <p>
-                      For over ten years, we have built strong partnerships with
-                      many brands and businesses in Niagara and beyond.
-                    </p>
-                  </div>
-                  <Col lg="6">
-                    <Image
-                      className="img-fluid"
-                      src={clients}
-                      alt="web design niagara clients"
-                    />
-                  </Col>
-                </div>
-              </section>
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -1111,11 +1165,7 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>
-                  <span>Frequently Asked</span>
-                  <br />
-                  Niagara Digital Marketing & SEO Questions{" "}
-                </h2>
+                <h2>Frequently Asked Digital Marketing Questions</h2>
               </motion.div>
             </Col>
           </Row>
@@ -1127,160 +1177,168 @@ const Home = ({ latestPosts }) => {
           >
             <Row>
               <Col lg="12">
-                <h3>How much does a new website cost?</h3>
+                <h2>
+                  <span>Social Media Ads</span>
+                </h2>
+                <h3>What are social media ads?</h3>
                 <p>
-                  We make high-quality web designs affordable for Niagara
-                  businesses. That's why we offer websites at a{" "}
-                  <strong>monthly price for only one year</strong>, instead of a
-                  big, expensive fee all at once. A new website can cost from
-                  $250 a month (for one year) for a simple site to $1,000 a
-                  month (for one year) for a fancy one with lots of cool
-                  features. It's like buying a car - you can get a basic model
-                  or a luxury one with all the extras. Check out our{" "}
-                  <Link href="/pricing">pricing page</Link> to see what fits
-                  your needs!
+                  They are paid promotions on social media that help your
+                  business reach more people.
                 </p>
 
-                <h3>How much does a custom web design cost?</h3>
+                <h3>Why should I use social media ads?</h3>
                 <p>
-                  A custom web design is like getting a tailor-made suit. It
-                  starts at $300 a month (for one year) for a simple site and
-                  can go up to $1,000 a month (for one year) or more if you want
-                  all the bells and whistles. Our{" "}
-                  <Link href="/pricing">pricing page</Link> has all the details.
+                  These ads help you reach a larger audience, target specific
+                  groups of people, and get more customers quickly.
                 </p>
 
-                <h3>How much does a templated web design cost?</h3>
+                <h3>How much do social media ads cost?</h3>
                 <p>
-                  Think of a templated design like buying clothes off the rack.
-                  For a small website with 1-3 pages, it's about $200 a month.
-                  Bigger sites will cost more. Take a look at our{" "}
-                  <Link href="/pricing">pricing page</Link> to get a better
-                  idea.
+                  The cost varies based on your budget.{" "}
+                  <Link href="/get-a-quote">Contact us today</Link> for a free
+                  consult and free quote.
                 </p>
 
-                <h3>How long will it take to get a new website?</h3>
+                <h3>How do you create effective ads?</h3>
                 <p>
-                  For simple websites, about 1-2 weeks. For fancier sites, 4-12
-                  weeks. It all depends on how complicated your website needs to
-                  be.
+                  We use eye-catching images or videos, write clear and engaging
+                  text, and target the right audience to create effective ads.
                 </p>
 
-                <h3>What are the pros and cons of a custom web design?</h3>
+                <h3>How do you target the right audience with these ads?</h3>
                 <p>
-                  <strong>Pros:</strong>
-                </p>
-                <ul>
-                  <li>It's unique, for your business only</li>
-                  <li>It fits your needs perfectly</li>
-                  <li>You can make it do exactly what you want</li>
-                </ul>
-                <p>
-                  <strong>Cons:</strong>
-                </p>
-                <ul>
-                  <li>It costs more money</li>
-                  <li>It takes longer to make</li>
-                  <li>You might need more help to update it</li>
-                </ul>
-
-                <h3>What are the pros and cons of a template web design?</h3>
-                <p>
-                  <strong>Pros:</strong>
-                </p>
-                <ul>
-                  <li>It costs less money</li>
-                  <li>It's faster to set up</li>
-                  <li>It's easier to update yourself</li>
-                </ul>
-                <p>
-                  <strong>Cons:</strong>
-                </p>
-                <ul>
-                  <li>It might look similar to other websites</li>
-                  <li>It might not have all the features you want</li>
-                  <li>You have less control over how it looks</li>
-                </ul>
-
-                <h3>Are your web designs responsive / mobile-friendly?</h3>
-                <p>
-                  Yes! Our websites work great on phones and tablets, just like
-                  they do on computers.
+                  We use targeting options like age, location, interests, and
+                  behaviors to show your ads to people who are most likely to be
+                  interested in your business.
                 </p>
 
-                <h3>Can you build an e-commerce website?</h3>
+                <h3>How long does it take to see results from these ads?</h3>
                 <p>
-                  Absolutely! We can make websites where you can sell stuff
-                  online.
+                  You can start seeing results within a few days, but it often
+                  takes a few weeks to see the full impact.
                 </p>
 
-                <h3>Can you build websites with extra functionalities?</h3>
+                <h3>What should I expect in terms of results?</h3>
                 <p>
-                  You bet! We can add cool stuff like member-only areas, blogs,
-                  appointment booking, photo galleries, forms, social media
-                  connections, online stores, and ways to accept payments.
+                  Results can include more website visits, more leads or sales,
+                  and increased brand awareness.
                 </p>
 
-                <h3>How do you approach website design?</h3>
+                <h3>How do you measure the success of the ads?</h3>
                 <p>
-                  We make websites that are simple, easy to use, modern, and
-                  clean. We focus on making your business look great and work
-                  well for your customers, not just on making it look pretty.
+                  We look at metrics like clicks, conversions, cost per click,
+                  and return on ad spend to measure success.
                 </p>
 
-                <h3>Do you do website redesigns?</h3>
-                <p>Yes, we can give your old website a makeover!</p>
-
-                <h3>Can I update the website myself?</h3>
+                <h2>
+                  <span>SEO (Search Engine Optimization)</span>
+                </h2>
+                <h3>What is SEO, and why is it important for my website?</h3>
                 <p>
-                  Definitely! We'll teach you how to do it, it's pretty easy.
+                  SEO means making your website better so it appears higher in
+                  search engine results. This helps more people find your site.
                 </p>
 
-                <h3>Are the websites you build accessible?</h3>
+                <h3>What are the main factors that influence SEO rankings?</h3>
                 <p>
-                  We make sure our websites are easy for everyone to use. If you
-                  need extra special features for accessibility, we can add
-                  those too.
+                  Important factors include using the right keywords, having a
+                  fast website, and getting other websites to link to yours.
                 </p>
 
-                <h3>Do you build mobile-friendly sites?</h3>
-                <p>Yes, all our sites work great on phones and tablets.</p>
-
-                <h3>Which website builder is best?</h3>
+                <h3>How much does SEO cost?</h3>
                 <p>
-                  We like to use WordPress. It's like the Swiss Army knife of
-                  website builders.
+                  This entirely depends on both the length of the SEO campaign,
+                  and the work involved.{" "}
+                  <Link href="/get-a-quote">Contact us today</Link> for a free
+                  consult and free quote.
                 </p>
 
-                <h3>Who hosts the website?</h3>
+                <h3>
+                  How do you perform keyword research, and how do you determine
+                  which keywords to target?
+                </h3>
                 <p>
-                  For simple websites, we take care of it. For bigger sites with
-                  WordPress, you'll need to host it yourself, but we'll help you
-                  set it up.
+                  We find words people use to search for your type of business
+                  and choose ones that can bring you more visitors.
                 </p>
 
-                <h3>Do you work with everyone?</h3>
+                <h3>
+                  What is on-page SEO, and how does it differ from off-page SEO?
+                </h3>
                 <p>
-                  We work with all kinds of businesses, especially those in
-                  Niagara.
+                  On-page SEO means improving things on your website, like text
+                  and images. Off-page SEO means getting other websites to link
+                  to yours.
                 </p>
 
-                <h3>Do I provide the content for my website?</h3>
+                <h3>How do you handle technical SEO issues on a website?</h3>
                 <p>
-                  Yes, you know your business best! But if you need help, we can
-                  lend a hand for an extra fee.
+                  We fix problems like slow loading times, broken links, and
+                  mobile-friendliness to improve your site’s performance.
                 </p>
 
-                <h3>How much input do I have?</h3>
+                <h3>Can you guarantee my website will rank #1 on Google?</h3>
                 <p>
-                  Lots! It's like building with Lego - we'll work together to
-                  make sure you love the final product.
+                  No one can promise a #1 spot, but we can improve your chances
+                  with good SEO practices.
                 </p>
 
-                <h3>What if I need help after my website is live?</h3>
+                <h3>How do backlinks impact my website’s SEO?</h3>
                 <p>
-                  Don't worry, we've got your back! We'll be here to help you if
-                  you need us.
+                  Backlinks are links from other websites to yours. They show
+                  Google your site is trusted.
+                </p>
+
+                <h3>
+                  What tools or software do you use for SEO analysis and
+                  reporting?
+                </h3>
+                <p>
+                  We use tools like Google Analytics and SEO software to check
+                  your website’s performance and give you reports.
+                </p>
+
+                <h3>
+                  What are the potential risks of SEO, and how do you mitigate
+                  them?
+                </h3>
+                <p>
+                  Risks include using bad practices that can get your site
+                  penalized by Google. We use safe, proven methods to avoid
+                  this.
+                </p>
+
+                <h3>
+                  How do you approach local SEO, especially for service-based
+                  businesses?
+                </h3>
+                <p>
+                  We focus on local keywords, get your business listed on Google
+                  Maps, and gather positive reviews to improve local rankings.
+                </p>
+
+                <h3>What is your process for auditing a website's SEO?</h3>
+                <p>
+                  We check your site’s health, look at keywords, see how it
+                  performs, and find areas to improve.
+                </p>
+
+                <h3>
+                  What is the role of content in SEO, and how do you create
+                  SEO-friendly content?
+                </h3>
+                <p>
+                  Content is key. We write helpful, interesting articles with
+                  the right keywords to attract visitors.
+                </p>
+
+                <h3>
+                  How do you stay updated with the latest changes in search
+                  engine algorithms?
+                </h3>
+                <p>
+                  We follow SEO news, read updates from search engines, and test
+                  new strategies to keep up.
                 </p>
               </Col>
             </Row>
@@ -1348,6 +1406,82 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
+                <h2>Delivering Digital Marketing Services in Niagara:</h2>
+                <Link href="/digital-marketing-agency-beamsville">
+                  Beamsville, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-crystal-beach">
+                  Crystal Beach, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-fonthill">
+                  Fonthill, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-fort-erie">
+                  Fort Erie, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-grimsby">
+                  Grimsby, ON
+                </Link>{" "}
+                | <Link href="/">Niagara Falls, ON</Link> |{" "}
+                <Link href="/">Niagara-on-the-Lake, ON</Link> |{" "}
+                <Link href="/digital-marketing-agency-port-colborne">
+                  Port Colborne, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-st-catharines">
+                  St. Catharines, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-thorold">
+                  Thorold, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-wainfleet">
+                  Wainfleet, ON
+                </Link>{" "}
+                |{" "}
+                <Link href="/digital-marketing-agency-welland">
+                  Welland, ON
+                </Link>
+              </motion.div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="12">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <h2>Delivering SEO Services in Niagara:</h2>
+                <Link href="/seo/beamsville">Beamsville, ON</Link> |{" "}
+                <Link href="/seo/crystal-beach">Crystal Beach, ON</Link> |{" "}
+                <Link href="/seo/fonthill">Fonthill, ON</Link> |{" "}
+                <Link href="/seo/fort-erie">Fort Erie, ON</Link> |{" "}
+                <Link href="/seo/grimsby">Grimsby, ON</Link> |{" "}
+                <Link href="/">Niagara Falls, ON</Link> |{" "}
+                <Link href="/">Niagara-on-the-Lake, ON</Link> |{" "}
+                <Link href="/seo/port-colborne">Port Colborne, ON</Link> |{" "}
+                <Link href="/">St. Catharines, ON</Link> |{" "}
+                <Link href="/seo/thorold">Thorold, ON</Link> |{" "}
+                <Link href="/seo/wainfleet">Wainfleet, ON</Link> |{" "}
+                <Link href="/seo/welland">Welland, ON</Link>
+              </motion.div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="12">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <h2>Delivering Web Design Services in Niagara To:</h2>
                 <Link href="/beamsville-web-design">Beamsville, ON</Link>{" "}
                 <span>|</span>{" "}
@@ -1388,7 +1522,7 @@ const Home = ({ latestPosts }) => {
                 <h2>
                   Ready to <span>Grow Your Niagara Business</span>?
                 </h2>
-                <p>Get your free Niagara web design quote below!</p>
+                <p>Get your free quote below!</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}

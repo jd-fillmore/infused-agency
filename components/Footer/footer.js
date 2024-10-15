@@ -22,16 +22,6 @@ const pages = [
     link: "/work",
   },
   {
-    id: 4,
-    name: "Reviews",
-    link: "/reviews",
-  },
-  {
-    id: 5,
-    name: "Process",
-    link: "/process",
-  },
-  {
     id: 6,
     name: "About",
     link: "/about",

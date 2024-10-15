@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import video from "../../../public/img/video.mp4";
-import clients from "../../../src/img/web-design-niagara-clients.png";
+import clients from "../../../src/img/digital-marketing-seo-niagara-agency-clients.png";
 
 const Hero = () => {
   return (

@@ -31,6 +31,26 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/pricing",
+        destination: "/get-a-quote",
+        permanent: true,
+      },
+      {
+        source: "/reviews",
+        destination: "/get-a-quote",
+        permanent: true,
+      },
+      {
+        source: "/digital-marketing-agency-niagara",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/digital-marketing-agency-st-catharines",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/beamsville-seo-company",
         destination: "/seo/beamsville",
         permanent: true,
