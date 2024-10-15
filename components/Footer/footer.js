@@ -47,7 +47,7 @@ const Footer = () => {
             <Col lg="4">
               <h3>Infused Agency</h3>
               <p>
-                Infused is a boutique web design &amp; SEO company in St.
+                Infused is a boutique digital marketing &amp; SEO company in St.
                 Catharines, Niagara with more than 10 years of experience in web
                 design, web development, WordPress, SEO and digital marketing.
               </p>

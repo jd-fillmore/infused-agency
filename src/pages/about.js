@@ -36,11 +36,11 @@ const About = () => {
               <Col lg="6">
                 <p>
                   Welcome to Infused Agency, the leading{" "}
-                  <Link href="/">web design company</Link> in the Niagara
-                  region. With over a decade of experience, we've established
-                  ourselves as the go-to digital partner for businesses looking
-                  to boost their online presence, generate leads, and drive
-                  sales through their websites.
+                  <Link href="/">digital marketing and SEO company</Link> in the
+                  Niagara region. With over a decade of experience, we've
+                  established ourselves as the go-to digital partner for
+                  businesses looking to boost their online presence, generate
+                  leads, and drive sales through their websites.
                 </p>
               </Col>
               <Col lg="6">
@@ -75,105 +75,11 @@ const About = () => {
                   We are a team of seasoned experts passionate about blending
                   creativity with functionality. Our diverse skill set spans
                   across <Link href="/web-design">web design</Link>,{" "}
-                  <Link href="/niagara-seo-company">
-                    search engine optimization (SEO)
-                  </Link>
-                  , and digital marketing. This comprehensive approach allows us
-                  to deliver holistic solutions that address all aspects of your
+                  <Link href="/">search engine optimization (SEO)</Link>, and
+                  digital marketing. This comprehensive approach allows us to
+                  deliver holistic solutions that address all aspects of your
                   online presence.
                 </p>
-                <h2>What We Do</h2>
-                <div className="row services">
-                  <div className="col-lg-4 d-flex">
-                    <div className="card">
-                      <Image src={leadGenImg} alt="web designer niagara" />
-                      <h2>Lead-Generating Web Design</h2>
-                      <p>
-                        We create visually stunning, user-friendly websites that
-                        are engineered to convert visitors into customers.
-                      </p>
-                      <Link href="/web-design">
-                        <button>
-                          Boost Your Leads
-                          <svg
-                            stroke="currentColor"
-                            fill="currentColor"
-                            strokeWidth="0"
-                            viewBox="0 0 512 512"
-                            class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                            height="20px"
-                            width="20px"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                          </svg>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 d-flex">
-                    <div className="card">
-                      <Image
-                        src={webConvImg}
-                        alt="website conversion optimization niagara"
-                      />
-                      <h2>Website Conversion Optimization</h2>
-                      <p>
-                        We analyze and optimize your existing website to remove
-                        conversion barriers and increase lead generation.
-                      </p>
-                      <Link href="/website-conversion-optimization">
-                        <button>
-                          Increase Conversions
-                          <svg
-                            stroke="currentColor"
-                            fill="currentColor"
-                            strokeWidth="0"
-                            viewBox="0 0 512 512"
-                            class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                            height="20px"
-                            width="20px"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                          </svg>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 d-flex">
-                    <div className="card">
-                      <Image
-                        className="img-fluid"
-                        src={seoImg}
-                        alt="best web designer niagara"
-                      />
-                      <h2>Search Engine Optimization</h2>
-                      <p>
-                        We employ proven strategies to improve your website's
-                        visibility on search engines, driving more organic
-                        traffic to your site.
-                      </p>
-                      <Link href="/niagara-seo-company">
-                        <button>
-                          Drive Sales
-                          <svg
-                            stroke="currentColor"
-                            fill="currentColor"
-                            strokeWidth="0"
-                            viewBox="0 0 512 512"
-                            class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                            height="20px"
-                            width="20px"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                          </svg>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
 
                 <h2>Our Approach</h2>
 
@@ -208,10 +114,10 @@ const About = () => {
                     </li>
                     <li>
                       <strong>Comprehensive Solutions:</strong> From{" "}
-                      <Link href="/web-design">web design</Link> to{" "}
-                      <Link href="/niagara-seo-company">SEO</Link> and digital
-                      marketing, we offer end-to-end solutions to elevate your
-                      online presence.
+                      <Link href="/">digital marketing</Link> to{" "}
+                      <Link href="/">SEO</Link> and lead-generating web design,
+                      we offer end-to-end solutions to elevate your online
+                      presence.
                     </li>
                     <li>
                       <strong>Client-Centric Approach:</strong> We view our
