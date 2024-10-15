@@ -80,19 +80,10 @@ const Footer = () => {
                   <Link href="/web-design">Lead-Generating Web Design</Link>
                 </li>
                 <li>
-                  <Link href="/website-conversion-optimization">
-                    Website Conversion Optimization
-                  </Link>
+                  <Link href="/seo">Search Engine Optimization</Link>
                 </li>
                 <li>
-                  <Link href="/niagara-seo-company">
-                    Search Engine Optimization
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/digital-marketing-agency-niagara">
-                    Digital Marketing
-                  </Link>
+                  <Link href="/">Digital Marketing</Link>
                 </li>
               </ul>
             </Col>
