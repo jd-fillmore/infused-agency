@@ -54,11 +54,11 @@ const Example = (props) => {
                   Work
                 </Link>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <Link href="/pricing" className="nav-link">
                   Pricing
                 </Link>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <Link href="/process" className="nav-link">
                   Process

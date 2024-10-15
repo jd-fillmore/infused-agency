@@ -562,15 +562,11 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Web Design Niagara | Affordable Pay Monthly Websites | Infused Agency
-          | Website Developer St. Catharines | Niagara Web Design | Website
-          Design Niagara, Niagara Falls Web Design Company, Niagara Web
-          Designer, Web Design Niagara Falls Ontario, Web Design St. Catharines,
-          Website Design St. Catharines
+          Best Digital Marketing & SEO Agency in Niagara | Infused Agency
         </title>
         <meta
           name="description"
-          content="Award-winning web design Niagara company in St. Catharines. Our Niagara web design agency creates modern websites for companies across Niagara. Get your free quote today!"
+          content="Award-winning Digital Marketing & SEO Niagara Company, based in St. Catharines. Skyrocket your business' revenue. Get your free quote today!"
         />
         <meta
           name="google-site-verification"
@@ -601,28 +597,22 @@ const Home = ({ latestPosts }) => {
             viewport={{ once: true }}
           >
             <Row className="text-center stats">
-              <Col lg="3">
+              <Col lg="4">
                 <div className="card dark">
                   <h2>10+</h2>
                   <p>Years in Business</p>
                 </div>
               </Col>
-              <Col lg="3">
+              <Col lg="4">
                 <div className="card dark">
                   <h2>50+</h2>
                   <p>Clients</p>
                 </div>
               </Col>
-              <Col lg="3">
+              <Col lg="4">
                 <div className="card dark">
                   <h2>30+</h2>
                   <p>5-Star Reviews</p>
-                </div>
-              </Col>
-              <Col lg="3">
-                <div className="card dark">
-                  <h2>50+</h2>
-                  <p>Websites Created</p>
                 </div>
               </Col>
             </Row>
@@ -636,7 +626,8 @@ const Home = ({ latestPosts }) => {
             <Row className="text-center">
               <Col lg="12 pd-top-80 pd-btm-40">
                 <h2>
-                  We'll Take Your Website <span>To The Next Level</span>
+                  Taking Your Digital Marketing &amp; SEO{" "}
+                  <span>To The Next Level</span>
                 </h2>
               </Col>
             </Row>
@@ -650,25 +641,22 @@ const Home = ({ latestPosts }) => {
             <Row className="text-center just-work">
               <Col lg="4">
                 <div className="card">
-                  <Image
-                    src={traffic}
-                    alt="increase niagara web design traffic"
-                  />
+                  <Image src={traffic} alt="increase niagara SEO traffic" />
                   <h3>Increase Traffic</h3>
                 </div>
               </Col>
               <Col lg="4">
                 <div className="card">
-                  <Image src={leads} alt="web design niagara generate leads" />
+                  <Image
+                    src={leads}
+                    alt="digital marketing agency niagara generate leads"
+                  />
                   <h3>Generate Leads</h3>
                 </div>
               </Col>
               <Col lg="4">
                 <div className="card">
-                  <Image
-                    src={convert}
-                    alt="website design niagara convert customers"
-                  />
+                  <Image src={convert} alt="SEO Niagara convert customers" />
                   <h3>Convert Customers</h3>
                 </div>
               </Col>
@@ -680,7 +668,7 @@ const Home = ({ latestPosts }) => {
       <section className="home-top-web">
         <div className="container">
           <div className="row">
-            <div className="col-lg-7">
+            <div className="col-lg-8">
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -688,86 +676,71 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Your Niagara Web Design, Your <span>Best Sales Manager</span>.
+                  Your Niagara Digital Marketing &amp;{" "}
+                  <span>Growth Partner</span>.
                 </h2>
                 <p>
-                  At Infused Agency, we make{" "}
-                  <strong>
-                    <a
-                      href="https://en.wikipedia.org/wiki/Regional_Municipality_of_Niagara"
-                      target="_blank"
-                    >
-                      Niagara
-                    </a>{" "}
-                    website designs
-                  </strong>{" "}
-                  that are <strong>easy to use and look great</strong>. From the
-                  first idea to the final product, we create custom{" "}
-                  <strong>Niagara web designs</strong> that show off your brand
-                  and use the latest designs.
-                </p>
-                <p>
-                  Our web design Niagara teams starts the process by working
-                  with your team to figure out your business and website goals.
-                  Once we know what you want, our team starts designing your new
-                  website. <strong>This is a team effort</strong>, so your ideas
-                  will help make your new website awesome!
+                  At Infused Agency, we are a top digital marketing agency in
+                  Niagara. We help businesses get noticed online with our expert
+                  SEO Niagara services. From creating a plan to making it
+                  happen, we show off your brand and use the latest marketing
+                  tricks.
                 </p>
 
                 <p>
-                  We know that our clients are not website designers or
-                  builders, so we make sure your site is very easy to update. We
-                  use <strong>content management systems</strong> (CMS) that are
-                  common and simple to use, even for people who aren't
-                  tech-savvy.
+                  Our team works with you to understand your business goals.
+                  Then, we create a custom marketing plan just for you. Your
+                  ideas are important, and together, we make sure your marketing
+                  is awesome!
                 </p>
-
-                <p>
-                  We have helped Niagara businesses in{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/St._Catharines"
-                    target="_blank"
-                  >
-                    St. Catharines
-                  </a>
-                  , Niagara Falls, Welland, Fort Erie, Thorold,
-                  Niagara-on-the-Lake, Grimsby, Beamsville, Lincoln and beyond.
-                </p>
-              </motion.div>
-            </div>
-            <div className="col-lg-5">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-              >
-                <Image
-                  width="503"
-                  height="343"
-                  priority={true}
-                  className="img-fluid shadow"
-                  src={heroImg}
-                  alt="niagara web design"
-                />
               </motion.div>
             </div>
           </div>
-          <div className="row pd-top-80 align-items-center">
-            <div className="col-lg-5">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <Image
-                  className="img-fluid shadow trust"
-                  src={google}
-                  alt="web design niagara"
-                />
-              </motion.div>
+          <section className="work">
+            <div className="row pd-top-40">
+              <div className="col-lg-6">
+                <h2 className="title">
+                  Recent Digital Marketing & SEO Project
+                </h2>
+                <h2>Cass-A-Bella Construction</h2>
+                <hr />
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 90%</li>
+                    <li>Google Search Visibility Increased by 200%</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Leads Increased From 2 to 10 per month in 3 months</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Faster Load Times</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                >
+                  <Image
+                    width="503"
+                    height="343"
+                    priority={true}
+                    className="img-fluid shadow"
+                    src={heroImg}
+                    alt="digital marketing agency niagara"
+                  />
+                </motion.div>
+              </div>
             </div>
-            <div className="col-lg-6 offset-lg-1">
+          </section>
+
+          <div className="row pd-top-120">
+            <div className="col-lg-8">
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -775,51 +748,65 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  A Web Design Niagara Agency <span>You Can Trust</span>
+                  A SEO Niagara Agency That
+                  <br />
+                  <span>Knows What They're Doing</span>.
                 </h2>
                 <p>
-                  Whether it's a Niagara website design for a big company or a
-                  small local business, we handle the process the same way. Your
-                  website is often the first thing a potential customer sees,
-                  and it should <strong>show how great your business is</strong>
-                  . Our modern designs are beautiful, easy to navigate, and{" "}
-                  <strong>made to get you more customers.</strong>
+                  At Infused Agency, we are the leading SEO Niagara agency,
+                  helping local businesses get found online. Our expert SEO
+                  Niagara services boost your visibility and attract more
+                  customers from the Niagara region.
                 </p>
 
                 <p>
-                  Our process goes beyond just designing websites. We make sure
-                  your website meets all of Google's Core Web Vitals standards.
-                  Plus, we give every CMS clients ongoing website backups and
-                  advanced security measures to{" "}
-                  <strong>keep your online presence safe</strong>.
-                </p>
-
-                <ul>
-                  <li>
-                    Making sure your web design Niagara works on all devices
-                  </li>
-                  <li>
-                    Helping your website show up in Google with our{" "}
-                    <Link href="/seo/niagara">Niagara SEO services</Link>
-                  </li>
-                  <li>
-                    Awesome{" "}
-                    <Link href="/digital-marketing-agency-niagara">
-                      digital marketing Niagara
-                    </Link>{" "}
-                    services to reach more people
-                  </li>
-                </ul>
-                <p>
-                  These services help turn your website into a strong tool to{" "}
-                  <strong>get more leads and sales</strong>. We make websites
-                  that are not only nice to look at and easy to use but also
-                  help increase leads, boost sales, and{" "}
-                  <strong>build trust in your business</strong>.
+                  We start by understanding your business and local market.
+                  Then, we create a custom SEO strategy tailored to your needs.
+                  Your input is key, and together, we make sure your online
+                  presence is strong.
                 </p>
               </motion.div>
             </div>
           </div>
+
+          <section className="work">
+            <div className="row pd-top-40">
+              <div className="col-lg-6">
+                <h2 className="title">Recent SEO Project</h2>
+                <h2>Flat Rock Cellars</h2>
+                <hr />
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Google Search Visibility Increased by 300%</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.5 }}
+                >
+                  <Image
+                    width="503"
+                    height="343"
+                    priority={true}
+                    className="img-fluid shadow"
+                    src={heroImg}
+                    alt="digital marketing agency niagara"
+                  />
+                </motion.div>
+              </div>
+            </div>
+          </section>
+
           <div className="row pd-top-80">
             <div className="col-lg-7">
               <motion.div
@@ -831,18 +818,18 @@ const Home = ({ latestPosts }) => {
                 <h2>Why Choose Infused?</h2>
                 <p>
                   It's simple. We have been helping businesses with their
-                  Niagara web designs and SEO{" "}
+                  Niagara digital marketing and SEO{" "}
                   <strong>for over ten years</strong>. This means we know what
                   works best for local companies. Our experience allows us to
-                  create websites that not only look amazing but also{" "}
+                  create strategies that not only look amazing but also{" "}
                   <strong>help businesses get more customers</strong>.
                 </p>
 
                 <p>
                   When you choose us, you're getting a team that{" "}
                   <strong>understands the Niagara area</strong>. We know how to
-                  make your website stand out to both locals and tourists. Our
-                  goal is to help your business grow by{" "}
+                  make your online presence stand out to both locals and
+                  tourists. Our goal is to help your business grow by{" "}
                   <strong>attracting more visitors to your site</strong>.
                 </p>
 
@@ -854,16 +841,19 @@ const Home = ({ latestPosts }) => {
                   <strong>seeing our clients succeed</strong>, and we work hard
                   to make that happen!
                 </p>
+
                 <p>
                   With our <Link href="/blog">great knowledge</Link>,{" "}
-                  <Link href="/work">high quality work</Link>, and{" "}
+                  <Link href="/work">high-quality work</Link>, and{" "}
                   <Link href="/reviews">friendly customer service</Link>, we've
-                  become a top web design company that Niagara businesses trust.
+                  become a top digital marketing and SEO agency that Niagara
+                  businesses trust.
                 </p>
+
                 <Image
                   className="img-fluid"
                   src={best}
-                  alt="web design company niagara, web design agency niagara"
+                  alt="digital marketing agency niagara, SEO agency niagara"
                 />
               </motion.div>
             </div>
@@ -1111,88 +1101,6 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
-      <section className="home-work">
-        <Container>
-          <Row className="text-center pd-btm-40">
-            <Col lg="12">
-              <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>
-                  <span>Featured</span> Niagara Web Design & SEO Project
-                </h2>
-                <h3>KD Flowers</h3>
-              </motion.div>
-            </Col>
-          </Row>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Row className="align-items-center">
-              <Col lg="6">
-                <Image
-                  className="img-fluid"
-                  src={workJerrys}
-                  alt="web design niagara kd flowers"
-                />
-              </Col>
-              <Col lg="6">
-                <p>
-                  KD Flowers approached us because they did not have a website.
-                  They wanted a sleek, modern design for their wedding floral
-                  business, and to also rank well enough in Google where they
-                  were start booking weddings.
-                </p>
-              </Col>
-            </Row>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Row className="pd-top-40">
-              <Col lg="12">
-                <h2>The Challenge</h2>
-                <p>
-                  KD Flowers had a problem: they had no website, no online
-                  presence, and when people were looking for a wedding florist
-                  in Niagara through Google, their website was nowhere to be
-                  found.
-                </p>
-
-                <h2>Our Niagara Website Design Solution</h2>
-                <p>
-                  We knew they wanted their customers to find things easily on
-                  their site. We also knew that they wanted more customers from
-                  Google. So, we made a modern website that looks great and
-                  ranks well in Google.
-                </p>
-                <p>
-                  We added a lead form, made the site secure, and made sure it
-                  loads super fast.
-                </p>
-
-                <h2>The Result</h2>
-                <p>
-                  Since we launched their new website, their business has taken
-                  off. This happened because the new design is better, the site
-                  is faster, and it ranks on the first page of Google for many
-                  keyword searches.
-                </p>
-              </Col>
-            </Row>
-          </motion.div>
-        </Container>
-      </section>
-
       <section className="home-faq">
         <Container>
           <Row className="text-center pd-btm-40">
@@ -1204,7 +1112,9 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  <span>Frequently Asked</span> Web Design Niagara Questions{" "}
+                  <span>Frequently Asked</span>
+                  <br />
+                  Niagara Digital Marketing & SEO Questions{" "}
                 </h2>
               </motion.div>
             </Col>

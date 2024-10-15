@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
 import video from "../../../public/img/video.mp4";
+import clients from "../../../src/img/web-design-niagara-clients.png";
 
 const Hero = () => {
   return (
@@ -17,7 +19,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h1 className="intro">
-                  Niagara Web Design | Web Design Niagara
+                  Digital Marketing Niagara | SEO Niagara Agency
                 </h1>
               </motion.div>
               <motion.div
@@ -26,8 +28,8 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  <span>Improve Your Sales</span> With Our Web Design Niagara
-                  Solutions
+                  <span>Grow Your Business</span> With Our Digital Marketing
+                  &amp; SEO Solutions
                 </h2>
               </motion.div>
               <motion.div
@@ -37,7 +39,7 @@ const Hero = () => {
               >
                 <p>
                   Get More Leads, Better Your Credibility &amp; Get More Sales
-                  with our Niagara Web Design and SEO Firm.
+                  with our Niagara Digital Marketing and SEO Firm.
                 </p>
               </motion.div>
               <motion.div
@@ -49,6 +51,14 @@ const Hero = () => {
                   <button>Check Out Our Work</button>
                 </Link>
               </motion.div>
+              <div className="trusted pd-top-80">
+                <h3>We're Trusted By</h3>
+                <Image
+                  className="img-fluid"
+                  src={clients}
+                  alt="digital marketing agency niagara, seo niagara"
+                />
+              </div>
             </Col>
           </Row>
         </Container>
