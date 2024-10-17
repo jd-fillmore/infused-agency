@@ -31,6 +31,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/seo/niagara",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/pricing",
         destination: "/get-a-quote",
         permanent: true,
