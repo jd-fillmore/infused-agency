@@ -2,7 +2,7 @@
 title: 8 Benefits Of Using Digital Marketing
 date: 2024-10-22T13:08:47.634Z
 slug: /posts/benefits-of-using-digital-marketing/
-excerpt: Checkout the latest residential & commercial electrician web design done by Infused Agency.
+excerpt: Discover 8 powerful benefits of digital marketing for your business. Learn how to expand your reach, target precisely, and boost sales in today's digital world.
 image: "/img/benefits-of-digital-marketing.webp"
 meta:
   canonical: /posts/benefits-of-using-digital-marketing/
