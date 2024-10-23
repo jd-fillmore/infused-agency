@@ -24,7 +24,7 @@ export default function Blog({ posts, currentPage, totalPages }) {
       <Nav />
       <InnerHero
         title="Blog"
-        description="Educating clients on web design and SEO best practices."
+        description="Educating clients on digital marketing, SEO & web design best practices."
       />
       <InnerContent>
         <Container>
