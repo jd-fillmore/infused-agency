@@ -142,10 +142,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Grimsby | Best SEO Company in Grimsby, ON</title>
+        <title>SEO Grimsby, ON | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Grimsby services serving the Grimsby Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Since 2013, Grimsby’s leading SEO services. Boost your rankings, attract more leads, and grow revenue with tailored SEO solutions for your business."
         />
         <link rel="canonical" href="https://infused.agency/seo/grimsby" />
         <script

@@ -142,10 +142,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Fort Erie | Best SEO Company in Fort Erie, ON</title>
+        <title>SEO Fort Erie | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Fort Erie services serving the Fort Erie Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Fort Erie's trusted SEO services since 2013. Enhance your rankings, attract more leads, and grow revenue with expert SEO solutions tailored to your business."
         />
         <link rel="canonical" href="https://infused.agency/seo/fort-erie" />
         <script

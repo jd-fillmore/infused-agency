@@ -142,10 +142,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Crystal Beach | Best SEO Company in Crystal Beach, ON</title>
+        <title>SEO Crystal Beach | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Crystal Beach services serving the Crystal Beach Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Boost your business with Crystal Beach's top SEO services since 2013. Elevate your rankings, drive leads, and grow revenue with proven SEO solutions."
         />
         <link rel="canonical" href="https://infused.agency/seo/crystal-beach" />
         <script

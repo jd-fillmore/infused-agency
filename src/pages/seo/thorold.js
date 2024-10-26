@@ -142,10 +142,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Thorold | Best SEO Company in Thorold, ON</title>
+        <title>SEO Thorold | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Thorold services serving the Thorold Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Thorold's trusted SEO services since 2013. Boost your rankings, attract leads, and grow revenue with expert SEO tailored to businesses of all sizes."
         />
         <link rel="canonical" href="https://infused.agency/seo/thorold" />
         <script

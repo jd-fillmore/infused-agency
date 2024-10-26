@@ -142,10 +142,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Welland | Best SEO Company in Welland, ON</title>
+        <title>SEO Welland | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Welland services serving the Welland Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Welland’s premier SEO services since 2013. Increase rankings, attract leads, and grow revenue with expert SEO tailored for businesses of all sizes."
         />
         <link rel="canonical" href="https://infused.agency/seo/welland" />
         <script

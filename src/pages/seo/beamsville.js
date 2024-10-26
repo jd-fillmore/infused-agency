@@ -142,7 +142,7 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Beamsville | Best SEO Company in Beamsville, ON</title>
+        <title>SEO Beamsville, Ontario | Infused Agency</title>
         <meta
           name="description"
           content="Top SEO Beamsville services serving the Beamsville Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."

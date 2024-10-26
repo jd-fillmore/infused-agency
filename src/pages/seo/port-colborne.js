@@ -142,10 +142,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Port Colborne | Best SEO Company in Port Colborne, ON</title>
+        <title>SEO Port Colborne | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Port Colborne services serving the Port Colborne Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Port Colborne's top SEO services since 2013. Elevate your rankings, drive leads, and increase revenue with expert SEO tailored to your business needs."
         />
         <link rel="canonical" href="https://infused.agency/seo/port-colborne" />
         <script

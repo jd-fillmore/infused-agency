@@ -143,10 +143,10 @@ const SEO = () => {
   return (
     <>
       <Head>
-        <title>SEO Fonthill | Best SEO Company in Fonthill, ON</title>
+        <title>SEO Fonthill | Infused Agency</title>
         <meta
           name="description"
-          content="Top SEO Fonthill services serving the Fonthill Region since 2013. We help businesses of all sizes improve their SEO and get higher rankings. Grow your leads &amp; revenue today."
+          content="Drive growth with Fonthill's leading SEO services since 2013. Boost rankings, attract leads, and increase revenue with expert SEO tailored to your business."
         />
         <link rel="canonical" href="https://infused.agency/seo/fonthill" />
         <script
