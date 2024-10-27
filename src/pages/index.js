@@ -596,7 +596,7 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Best Digital Marketing Agency Niagara | SEO Niagara | Infused Agency -
+          Digital Marketing Niagara | SEO Niagara | Infused Agency -
           Digital Marketing Company Niagara, Digital Marketing Company St.
           Catharines, Marketing Agencies Niagara, Marketing Agencies St.
           Catharines, Digital Marketing Agency St. Catharines, Digital Marketing
