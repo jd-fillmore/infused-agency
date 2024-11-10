@@ -10,6 +10,7 @@ import bgImage from "../img/inner-work.jpg";
 
 import visca from "../img/portfolio-visca.png";
 import cass from "../img/portfolio-cass.png";
+import flat from "../img/portfolio-flat.png";
 import kd from "../img/portfolio-kd.png";
 import cma from "../img/portfolio-cma.png";
 import med from "../img/portfolio-med.png";
@@ -38,6 +39,46 @@ const OurWork = () => {
       />
 
       <section className="work">
+        <section className="light">
+          <Container>
+            <Row>
+              <Col lg="5">
+                <h2 className="title">Recent Project</h2>
+                <h2>Flat Rock Cellars</h2>
+                <hr />
+                <p>
+                  Flat Rock Cellars is an award-winning winery based in Jordan,
+                  Ontario. They offer Pinot Noir, Chardonnay, Riesling and
+                  Sparkling wines grown on the Twenty Mile Bench.
+                </p>
+                <ul>
+                  <li>On-Page SEO Optimization</li>
+                  <li>Off-Page SEO Optimization</li>
+                  <li>Local SEO</li>
+                </ul>
+                <div class="card">
+                  <h3>After working with us:</h3>
+                  <ul>
+                    <li>Google Search Visibility Increased by 300%</li>
+                    <li>Achieved first-page Google rankings within 1 month</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased Brand Visibility</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                  </ul>
+                </div>
+              </Col>
+              <Col lg="7">
+                <Image
+                  className="img-fluid"
+                  src={flat}
+                  alt="flatrock cellars"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </section>
         <section className="dark">
           <Container>
             <Row>
