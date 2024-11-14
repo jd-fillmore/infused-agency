@@ -64,11 +64,7 @@ const Quote = () => {
                       name="_subject"
                       value="New submission from Infused Agency"
                     ></input>
-                    <input
-                      type="text"
-                      name="_honey"
-                      style="display:none"
-                    ></input>
+
                     <Row form>
                       <Col md={6}>
                         <FormGroup>
