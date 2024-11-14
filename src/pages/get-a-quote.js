@@ -55,8 +55,20 @@ const Quote = () => {
               </Col>
               <Col lg="6">
                 <Container>
-                  <form name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="contact" value="contact" />
+                  <form
+                    action="https://formsubmit.co/jd@infused.agency"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="New submission from Infused Agency"
+                    ></input>
+                    <input
+                      type="text"
+                      name="_honey"
+                      style="display:none"
+                    ></input>
                     <Row form>
                       <Col md={6}>
                         <FormGroup>
