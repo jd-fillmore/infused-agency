@@ -19,7 +19,6 @@ import Footer from "../../components/Footer/footer";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Quote = () => {
-  const [state, handleSubmit] = useForm("xjvdbweo");
   return (
     <>
       <Head>
@@ -56,192 +55,135 @@ const Quote = () => {
               </Col>
               <Col lg="6">
                 <Container>
-                  {state.succeeded ? (
-                    <p>
-                      Thanks for submitting! You will hear back from us shortly.
-                    </p>
-                  ) : (
-                    <Form onSubmit={handleSubmit}>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="name">Name *</Label>
-                            <Input id="name" type="text" name="name" required />
-                            <ValidationError
-                              prefix="Name"
-                              field="name"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="email">Email *</Label>
-                            <Input
-                              id="email"
-                              type="email"
-                              name="email"
-                              required
-                            />
-                            <ValidationError
-                              prefix="Email"
-                              field="email"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="phoneNumber">Phone Number *</Label>
-                            <Input
-                              id="phoneNumber"
-                              type="tel"
-                              name="phoneNumber"
-                              required
-                            />
-                            <ValidationError
-                              prefix="Phone Number"
-                              field="phoneNumber"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="company">Company *</Label>
-                            <Input
-                              id="company"
-                              type="text"
-                              name="company"
-                              required
-                            />
-                            <ValidationError
-                              prefix="Company"
-                              field="company"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="websiteURL">Website URL</Label>
-                            <Input
-                              id="websiteURL"
-                              type="text"
-                              name="websiteURL"
-                            />
-                            <ValidationError
-                              prefix="Website URL"
-                              field="websiteURL"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="budget">What is your budget? *</Label>
-                            <Input
-                              type="select"
-                              id="budget"
-                              name="budget"
-                              required
-                            >
-                              <option value="">Select an option</option>
-                              <option value="$4,000 - $10,000">
-                                $4,000 - $10,000
-                              </option>
-                              <option value="$10,001 - $20,000">
-                                $10,001 - $20,000
-                              </option>
-                              <option value="$20,001 - $30,000">
-                                $20,001 - $30,000
-                              </option>
-                              <option value="$30,000+">$30,000+</option>
-                            </Input>
-                            <ValidationError
-                              prefix="Budget"
-                              field="budget"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="start">
-                              When would you like to start? *
-                            </Label>
-                            <Input
-                              type="select"
-                              id="start"
-                              name="start"
-                              required
-                            >
-                              <option value="">Select an option</option>
-                              <option value="Next 2 weeks">Next 2 weeks</option>
-                              <option value="in 1 month">In 1 month</option>
-                              <option value="in 2 months">In 2 months</option>
-                              <option value="in 6 months">In 6 months</option>
-                              <option value="I don't know">I don't know</option>
-                            </Input>
-                            <ValidationError
-                              prefix="Start"
-                              field="start"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="referral">How did you find us? *</Label>
-                            <Input
-                              type="select"
-                              id="referral"
-                              name="referral"
-                              required
-                            >
-                              <option value="">Select an option</option>
-                              <option value="Google">Google</option>
-                              <option value="Referral">Referral</option>
-                              <option value="ChatGPT">ChatGPT</option>
-                              <option value="Social Media">Social Media</option>
-                              <option value="Other">Other</option>
-                            </Input>
-                            <ValidationError
-                              prefix="Referral"
-                              field="referral"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <FormGroup>
-                        <Label for="description">
-                          Please describe your needs - the more we know, the
-                          better *
-                        </Label>
-                        <Input
-                          type="textarea"
-                          id="description"
-                          name="description"
-                          required
-                        />
-                        <ValidationError
-                          prefix="Description"
-                          field="description"
-                          errors={state.errors}
-                        />
-                      </FormGroup>
-                      <Button type="submit" disabled={state.submitting}>
-                        Submit
-                      </Button>
-                    </Form>
-                  )}
+                  <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="contact" value="contact" />
+                    <Row form>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="name">Name *</Label>
+                          <Input id="name" type="text" name="name" required />
+                        </FormGroup>
+                      </Col>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="email">Email *</Label>
+                          <Input
+                            id="email"
+                            type="email"
+                            name="email"
+                            required
+                          />
+                        </FormGroup>
+                      </Col>
+                    </Row>
+                    <Row form>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="phoneNumber">Phone Number *</Label>
+                          <Input
+                            id="phoneNumber"
+                            type="tel"
+                            name="phoneNumber"
+                            required
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="company">Company *</Label>
+                          <Input
+                            id="company"
+                            type="text"
+                            name="company"
+                            required
+                          />
+                        </FormGroup>
+                      </Col>
+                    </Row>
+                    <Row form>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="websiteURL">Website URL</Label>
+                          <Input
+                            id="websiteURL"
+                            type="text"
+                            name="websiteURL"
+                          />
+                        </FormGroup>
+                      </Col>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="budget">What is your budget? *</Label>
+                          <Input
+                            type="select"
+                            id="budget"
+                            name="budget"
+                            required
+                          >
+                            <option value="">Select an option</option>
+                            <option value="$4,000 - $10,000">
+                              $4,000 - $10,000
+                            </option>
+                            <option value="$10,001 - $20,000">
+                              $10,001 - $20,000
+                            </option>
+                            <option value="$20,001 - $30,000">
+                              $20,001 - $30,000
+                            </option>
+                            <option value="$30,000+">$30,000+</option>
+                          </Input>
+                        </FormGroup>
+                      </Col>
+                    </Row>
+                    <Row form>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="start">
+                            When would you like to start? *
+                          </Label>
+                          <Input type="select" id="start" name="start" required>
+                            <option value="">Select an option</option>
+                            <option value="Next 2 weeks">Next 2 weeks</option>
+                            <option value="in 1 month">In 1 month</option>
+                            <option value="in 2 months">In 2 months</option>
+                            <option value="in 6 months">In 6 months</option>
+                            <option value="I don't know">I don't know</option>
+                          </Input>
+                        </FormGroup>
+                      </Col>
+                      <Col md={6}>
+                        <FormGroup>
+                          <Label for="referral">How did you find us? *</Label>
+                          <Input
+                            type="select"
+                            id="referral"
+                            name="referral"
+                            required
+                          >
+                            <option value="">Select an option</option>
+                            <option value="Google">Google</option>
+                            <option value="Referral">Referral</option>
+                            <option value="ChatGPT">ChatGPT</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Other">Other</option>
+                          </Input>
+                        </FormGroup>
+                      </Col>
+                    </Row>
+                    <FormGroup>
+                      <Label for="description">
+                        Please describe your needs - the more we know, the
+                        better *
+                      </Label>
+                      <Input
+                        type="textarea"
+                        id="description"
+                        name="description"
+                        required
+                      />
+                    </FormGroup>
+                    <Button type="submit">Submit</Button>
+                  </form>
                 </Container>
               </Col>
             </Row>
