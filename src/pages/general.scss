@@ -906,3 +906,17 @@ iframe {
   color: grey;
   margin-right: 19px;
 }
+
+.quote {
+  label {
+    color: $dark-blue !important;
+  }
+  select {
+    height: 38px;
+    width: 100%;
+    padding-left: 5px;
+  }
+  textarea {
+    height: 150px;
+  }
+}

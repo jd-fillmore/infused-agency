@@ -89,13 +89,10 @@ const Footer = () => {
             </Col>
             <Col lg="3">
               <h3>Contact</h3>
-              <a
-                href="https://calendly.com/infused-agency/project-discovery/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link href="/get-a-quote">
                 <strong>Get Free Quote</strong>
-              </a>
+              </Link>
+
               <br />
               <br />
               <h3>Hours</h3>
