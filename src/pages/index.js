@@ -596,32 +596,34 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          Digital Marketing Niagara | SEO Niagara | Infused Agency -
-          Digital Marketing Company Niagara, Digital Marketing Company St.
-          Catharines, Marketing Agencies Niagara, Marketing Agencies St.
-          Catharines, Digital Marketing Agency St. Catharines, Digital Marketing
-          Company Niagara, Digital Marketing Company St. Catharines, Digital
-          Marketing Firms Niagara, Digital Marketing Firms St. Catharines,
-          Digital Advertising Agency Niagara, Digital Advertising Agency St.
-          Catharines, Niagara Digital Marketing Company, St. Catharines Digital
-          Marketing Company, Niagara Digital Marketing Firm, St. Catharines
-          Digital Marketing Firm, Niagara Online Marketing Agency, St.
-          Catharines Online Marketing Agency, Internet Marketing Agencies
-          Niagara, Internet Marketing Agencies St. Catharines, Internet
-          Marketing Companies Niagara, Internet Marketing Companies St.
-          Catharines, Internet Marketing Company in Niagara, Internet Marketing
-          Company in St. Catharines, internet marketing firm Niagara, Niagara
-          internet marketing company, Niagara internet marketing firm, digital
-          marketing Niagara, marketing firm Niagara, Niagara social media
-          marketing, best marketing agencies Niagara, top marketing firms
-          Niagara, best marketing companies Niagara, best marketing firms in
-          Niagara, digital agency Niagara, top marketing agencies in Niagara,
-          social media marketing agency Niagara, internet marketing firm St.
-          Catharines, St. Catharines internet marketing company, St. Catharines
-          internet marketing firm, digital marketing St. Catharines, marketing
-          firm St. Catharines, St. Catharines social media marketing, best
-          marketing agencies St. Catharines, top marketing firms St. Catharines,
-          best marketing companies St. Catharines, best marketing firms in St.
+          Digital Marketing Niagara | SEO Niagara | Infused Agency - Digital
+          Marketing Company Niagara, Digital Marketing Company St. Catharines,
+          Marketing Agencies Niagara, Marketing Agencies St. Catharines, Digital
+          Marketing Agency St. Catharines, Digital Marketing Company Niagara,
+          Digital Marketing Company St. Catharines, Digital Marketing Firms
+          Niagara, Digital Marketing Firms St. Catharines, Digital Advertising
+          Agency Niagara, Digital Advertising Agency St. Catharines, Web Design
+          Niagara, Niagara Web Design, Web Designer Near Me, Web Design Company
+          Niagara, Niagara Web Design Company, Niagara Web Design Agency,
+          Niagara Digital Marketing Company, St. Catharines Digital Marketing
+          Company, Niagara Digital Marketing Firm, St. Catharines Digital
+          Marketing Firm, Niagara Online Marketing Agency, St. Catharines Online
+          Marketing Agency, Internet Marketing Agencies Niagara, Internet
+          Marketing Agencies St. Catharines, Internet Marketing Companies
+          Niagara, Internet Marketing Companies St. Catharines, Internet
+          Marketing Company in Niagara, Internet Marketing Company in St.
+          Catharines, internet marketing firm Niagara, Niagara internet
+          marketing company, Niagara internet marketing firm, digital marketing
+          Niagara, marketing firm Niagara, Niagara social media marketing, best
+          marketing agencies Niagara, top marketing firms Niagara, best
+          marketing companies Niagara, best marketing firms in Niagara, digital
+          agency Niagara, top marketing agencies in Niagara, social media
+          marketing agency Niagara, internet marketing firm St. Catharines, St.
+          Catharines internet marketing company, St. Catharines internet
+          marketing firm, digital marketing St. Catharines, marketing firm St.
+          Catharines, St. Catharines social media marketing, best marketing
+          agencies St. Catharines, top marketing firms St. Catharines, best
+          marketing companies St. Catharines, best marketing firms in St.
           Catharines, digital agency St. Catharines, top marketing agencies in
           St. Catharines, social media marketing agency St. Catharines, Digital
           Marketing Company Niagara-on-the-Lake, Digital Marketing Company
@@ -718,8 +720,8 @@ const Home = ({ latestPosts }) => {
             <Row className="text-center">
               <Col lg="12 pd-top-80 pd-btm-40">
                 <h2>
-                  Taking Your Digital Marketing &amp; SEO{" "}
-                  <span>To The Next Level</span>
+                  Taking Your Digital Marketing, SEO &amp; Website Design To
+                  <span>The Next Level</span>
                 </h2>
               </Col>
             </Row>
@@ -768,8 +770,8 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Your Niagara Digital Marketing Agency &amp;{" "}
-                  <span>Growth Partner</span>.
+                  Your Niagara Digital Marketing Agency, SEO &amp; Website
+                  Design <span>Growth Partner</span>.
                 </h2>
                 <p>
                   At Infused Agency, we are a top digital marketing agency in
@@ -1091,7 +1093,7 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Niagara Digital Marketing & SEO That Make An{" "}
+                  Niagara Digital Marketing, SEO &amp; Websites That Make An{" "}
                   <span>Impact</span>
                 </h2>
                 <p>
@@ -1177,59 +1179,6 @@ const Home = ({ latestPosts }) => {
           >
             <Row>
               <Col lg="12">
-                <h2>
-                  <span>Social Media Ads</span>
-                </h2>
-                <h3>What are social media ads?</h3>
-                <p>
-                  They are paid promotions on social media that help your
-                  business reach more people.
-                </p>
-
-                <h3>Why should I use social media ads?</h3>
-                <p>
-                  These ads help you reach a larger audience, target specific
-                  groups of people, and get more customers quickly.
-                </p>
-
-                <h3>How much do social media ads cost?</h3>
-                <p>
-                  The cost varies based on your budget.{" "}
-                  <Link href="/get-a-quote">Contact us today</Link> for a free
-                  consult and free quote.
-                </p>
-
-                <h3>How do you create effective ads?</h3>
-                <p>
-                  We use eye-catching images or videos, write clear and engaging
-                  text, and target the right audience to create effective ads.
-                </p>
-
-                <h3>How do you target the right audience with these ads?</h3>
-                <p>
-                  We use targeting options like age, location, interests, and
-                  behaviors to show your ads to people who are most likely to be
-                  interested in your business.
-                </p>
-
-                <h3>How long does it take to see results from these ads?</h3>
-                <p>
-                  You can start seeing results within a few days, but it often
-                  takes a few weeks to see the full impact.
-                </p>
-
-                <h3>What should I expect in terms of results?</h3>
-                <p>
-                  Results can include more website visits, more leads or sales,
-                  and increased brand awareness.
-                </p>
-
-                <h3>How do you measure the success of the ads?</h3>
-                <p>
-                  We look at metrics like clicks, conversions, cost per click,
-                  and return on ad spend to measure success.
-                </p>
-
                 <h2>
                   <span>SEO (Search Engine Optimization)</span>
                 </h2>
@@ -1339,6 +1288,58 @@ const Home = ({ latestPosts }) => {
                 <p>
                   We follow SEO news, read updates from search engines, and test
                   new strategies to keep up.
+                </p>
+                <h2>
+                  <span>Social Media Ads</span>
+                </h2>
+                <h3>What are social media ads?</h3>
+                <p>
+                  They are paid promotions on social media that help your
+                  business reach more people.
+                </p>
+
+                <h3>Why should I use social media ads?</h3>
+                <p>
+                  These ads help you reach a larger audience, target specific
+                  groups of people, and get more customers quickly.
+                </p>
+
+                <h3>How much do social media ads cost?</h3>
+                <p>
+                  The cost varies based on your budget.{" "}
+                  <Link href="/get-a-quote">Contact us today</Link> for a free
+                  consult and free quote.
+                </p>
+
+                <h3>How do you create effective ads?</h3>
+                <p>
+                  We use eye-catching images or videos, write clear and engaging
+                  text, and target the right audience to create effective ads.
+                </p>
+
+                <h3>How do you target the right audience with these ads?</h3>
+                <p>
+                  We use targeting options like age, location, interests, and
+                  behaviors to show your ads to people who are most likely to be
+                  interested in your business.
+                </p>
+
+                <h3>How long does it take to see results from these ads?</h3>
+                <p>
+                  You can start seeing results within a few days, but it often
+                  takes a few weeks to see the full impact.
+                </p>
+
+                <h3>What should I expect in terms of results?</h3>
+                <p>
+                  Results can include more website visits, more leads or sales,
+                  and increased brand awareness.
+                </p>
+
+                <h3>How do you measure the success of the ads?</h3>
+                <p>
+                  We look at metrics like clicks, conversions, cost per click,
+                  and return on ad spend to measure success.
                 </p>
               </Col>
             </Row>

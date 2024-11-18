@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import video from "../../../public/img/video.mp4";
 import clients from "../../../src/img/digital-marketing-seo-niagara-agency-clients.png";
 
 const Hero = () => {
@@ -19,7 +18,8 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h1 className="intro">
-                  Digital Marketing Niagara | SEO Niagara Agency
+                  Digital Marketing Niagara | SEO Niagara Agency | Web Design
+                  Niagara
                 </h1>
               </motion.div>
               <motion.div
@@ -28,8 +28,8 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  <span>Grow Your Business</span> With Our Digital Marketing
-                  &amp; SEO Solutions
+                  <span>Grow Your Business</span> With Our Digital Marketing,
+                  SEO &amp; Website Solutions
                 </h2>
               </motion.div>
               <motion.div
@@ -39,7 +39,8 @@ const Hero = () => {
               >
                 <p>
                   Get More Leads, Better Your Credibility &amp; Get More Sales
-                  with our Niagara Digital Marketing and SEO Firm.
+                  with our Niagara Digital Marketing, SEO &amp; Lead-Generating
+                  Website Design Firm.
                 </p>
               </motion.div>
               <motion.div

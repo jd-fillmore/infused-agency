@@ -157,9 +157,9 @@ const Quote = () => {
                               <option value="$1,200 / mo for 3 months (Local SEO)">
                                 $1,200 / mo for 3 months (Local SEO)
                               </option>
-                              <option value="$2,000 - $3,000 (No CMS - Developer Updates Required)">
-                                $2,000 - $2,500 (No CMS - Developer Updates
-                                Required)
+                              <option value="$2,000 - $3,000 (Basic Website - Developer Updates Required)">
+                                $2,000 - $2,500 (Basic Website - Developer
+                                Updates Required)
                               </option>
                               <option value="$3,001 - $4,500 (Basic WordPress Website)">
                                 $3,000 - $4,500 (Basic WordPress Website)
