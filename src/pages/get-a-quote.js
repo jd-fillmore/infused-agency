@@ -56,15 +56,23 @@ const Quote = () => {
               <Col lg="6">
                 <Container>
                   <form
-                    action="https://formsubmit.co/jd@infused.agency"
+                    name="budget-form"
                     method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
                   >
+                    <input type="hidden" name="form-name" value="budget-form" />
                     <input
                       type="hidden"
                       name="_subject"
                       value="New submission from Infused Agency"
-                    ></input>
-
+                    />
+                    <p style={{ display: "none" }}>
+                      <label>
+                        Don’t fill this out if you’re human:{" "}
+                        <input name="bot-field" />
+                      </label>
+                    </p>
                     <Row form>
                       <Col md={6}>
                         <FormGroup>
@@ -136,11 +144,11 @@ const Quote = () => {
                               $1,200 / mo for 3 months (Local SEO)
                             </option>
                             <option value="$2,000 - $3,000 (No CMS - Developer Updates Required)">
-                              $2,000 - $2,500 (No CMS - Developer Updates
+                              $2,000 - $3,000 (No CMS - Developer Updates
                               Required)
                             </option>
                             <option value="$3,001 - $4,500 (Basic WordPress Website)">
-                              $3,000 - $4,500 (Basic WordPress Website)
+                              $3,001 - $4,500 (Basic WordPress Website)
                             </option>
                             <option value="$7,000 - $9,000 (E-Commerce Site (WordPress/Shopify)">
                               $7,000 - $9,000 (E-Commerce Site
