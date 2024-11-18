@@ -129,16 +129,23 @@ const Quote = () => {
                             required
                           >
                             <option value="">Select an option</option>
-                            <option value="$4,000 - $10,000">
-                              $4,000 - $10,000
+                            <option value="$1,000 (SEO - Website Audit)">
+                              $1,000 (SEO - Website Audit)
                             </option>
-                            <option value="$10,001 - $20,000">
-                              $10,001 - $20,000
+                            <option value="$1,200 / mo for 3 months (Local SEO)">
+                              $1,200 / mo for 3 months (Local SEO)
                             </option>
-                            <option value="$20,001 - $30,000">
-                              $20,001 - $30,000
+                            <option value="$2,000 - $3,000 (No CMS - Developer Updates Required)">
+                              $2,000 - $2,500 (No CMS - Developer Updates
+                              Required)
                             </option>
-                            <option value="$30,000+">$30,000+</option>
+                            <option value="$3,001 - $4,500 (Basic WordPress Website)">
+                              $3,000 - $4,500 (Basic WordPress Website)
+                            </option>
+                            <option value="$7,000 - $9,000 (E-Commerce Site (WordPress/Shopify)">
+                              $7,000 - $9,000 (E-Commerce Site
+                              (WordPress/Shopify)
+                            </option>
                           </Input>
                         </FormGroup>
                       </Col>
