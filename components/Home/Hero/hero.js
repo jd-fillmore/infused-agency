@@ -18,8 +18,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h1 className="intro">
-                  Digital Marketing Niagara | SEO Niagara Agency | Web Design
-                  Niagara
+                  Digital Marketing Niagara | SEO Niagara Agency
                 </h1>
               </motion.div>
               <motion.div
