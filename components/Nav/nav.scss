@@ -18,6 +18,9 @@
 .fixed-top {
   background: rgba($main-dark-grey, 0.1);
   backdrop-filter: blur(10px);
+  // @include bp-tablet-sm {
+  //   margin-top: 50px;
+  // }
 }
 
 .nav-link {
@@ -221,4 +224,20 @@
 .slideIn {
   -webkit-animation-name: slideIn;
   animation-name: slideIn;
+}
+
+.top-bar {
+  background: $purple;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  a {
+    color: #fff;
+  }
+  @include bp-tablet-sm {
+    margin-top: 55px;
+    a {
+      font-size: 16px;
+    }
+  }
 }

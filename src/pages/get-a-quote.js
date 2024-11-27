@@ -16,6 +16,8 @@ import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 
+import { InlineWidget } from "react-calendly";
+
 import { useForm, ValidationError } from "@formspree/react";
 
 const Quote = () => {
@@ -47,209 +49,15 @@ const Quote = () => {
                   digital marketing project.
                   <br />
                   <br />
-                  The first step is to get in touch with us, and within 24 hours
-                  you'll receive your custom, free quote.
+                  The first step is to get in touch with us to book your free
+                  project consultation.
                   <br />
                   <br />
                   Fill out the form to get your project started!
                 </p>
               </Col>
               <Col lg="6">
-                <Container>
-                  {state.succeeded ? (
-                    <p>
-                      Thanks for submitting! You will hear back from us shortly.
-                    </p>
-                  ) : (
-                    <Form onSubmit={handleSubmit}>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="name">Name *</Label>
-                            <Input id="name" type="text" name="name" required />
-                            <ValidationError
-                              prefix="Name"
-                              field="name"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="email">Email *</Label>
-                            <Input
-                              id="email"
-                              type="email"
-                              name="email"
-                              required
-                            />
-                            <ValidationError
-                              prefix="Email"
-                              field="email"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="phoneNumber">Phone Number *</Label>
-                            <Input
-                              id="phoneNumber"
-                              type="tel"
-                              name="phoneNumber"
-                              required
-                            />
-                            <ValidationError
-                              prefix="Phone Number"
-                              field="phoneNumber"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="company">Company *</Label>
-                            <Input
-                              id="company"
-                              type="text"
-                              name="company"
-                              required
-                            />
-                            <ValidationError
-                              prefix="Company"
-                              field="company"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="websiteURL">Website URL</Label>
-                            <Input
-                              id="websiteURL"
-                              type="text"
-                              name="websiteURL"
-                            />
-                            <ValidationError
-                              prefix="Website URL"
-                              field="websiteURL"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="budget">What is your budget? *</Label>
-                            <Input
-                              type="select"
-                              id="budget"
-                              name="budget"
-                              required
-                            >
-                              <option value="">Select an option</option>
-                              <option value="$1,000 (SEO - Website Audit)">
-                                $1,000 (SEO - Website Audit)
-                              </option>
-                              <option value="$1,200 / mo for 3 months (Local SEO)">
-                                $1,200 / mo for 3 months (Local SEO)
-                              </option>
-                              <option value="$2,000 - $3,000 (Basic Website - Developer Updates Required)">
-                                $2,000 - $2,500 (Basic Website - Developer
-                                Updates Required)
-                              </option>
-                              <option value="$3,001 - $4,500 (Basic WordPress Website)">
-                                $3,000 - $4,500 (Basic WordPress Website)
-                              </option>
-                              <option value="$7,000 - $9,000 (E-Commerce Site (WordPress/Shopify)">
-                                $7,000 - $9,000 (E-Commerce Site
-                                (WordPress/Shopify)
-                              </option>
-                            </Input>
-                            <ValidationError
-                              prefix="Budget"
-                              field="budget"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <Row form>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="start">
-                              When would you like to start? *
-                            </Label>
-                            <Input
-                              type="select"
-                              id="start"
-                              name="start"
-                              required
-                            >
-                              <option value="">Select an option</option>
-                              <option value="Next 2 weeks">Next 2 weeks</option>
-                              <option value="in 1 month">In 1 month</option>
-                              <option value="in 2 months">In 2 months</option>
-                              <option value="in 6 months">In 6 months</option>
-                              <option value="I don't know">I don't know</option>
-                            </Input>
-                            <ValidationError
-                              prefix="Start"
-                              field="start"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                        <Col md={6}>
-                          <FormGroup>
-                            <Label for="referral">How did you find us? *</Label>
-                            <Input
-                              type="select"
-                              id="referral"
-                              name="referral"
-                              required
-                            >
-                              <option value="">Select an option</option>
-                              <option value="Google">Google</option>
-                              <option value="Referral">Referral</option>
-                              <option value="ChatGPT">ChatGPT</option>
-                              <option value="Social Media">Social Media</option>
-                              <option value="Other">Other</option>
-                            </Input>
-                            <ValidationError
-                              prefix="Referral"
-                              field="referral"
-                              errors={state.errors}
-                            />
-                          </FormGroup>
-                        </Col>
-                      </Row>
-                      <FormGroup>
-                        <Label for="description">
-                          Please describe your needs - the more we know, the
-                          better *
-                        </Label>
-                        <Input
-                          type="textarea"
-                          id="description"
-                          name="description"
-                          required
-                        />
-                        <ValidationError
-                          prefix="Description"
-                          field="description"
-                          errors={state.errors}
-                        />
-                      </FormGroup>
-                      <Button type="submit" disabled={state.submitting}>
-                        Submit
-                      </Button>
-                    </Form>
-                  )}
-                </Container>
+                <InlineWidget url="https://calendly.com/infused-agency/project-discovery" />
               </Col>
             </Row>
           </Container>
