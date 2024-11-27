@@ -1,16 +1,45 @@
-import Link from "next/link";
+import React from "react";
+import Link from "next/link"; // Adjust import if not using Next.js
+
+const getNextTwoMonths = () => {
+  const currentDate = new Date();
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const nextMonthIndex = (currentDate.getMonth() + 1) % 12;
+  const monthAfterNextIndex = (currentDate.getMonth() + 2) % 12;
+
+  const nextMonth = monthNames[nextMonthIndex];
+  const monthAfterNext = monthNames[monthAfterNextIndex];
+
+  return [nextMonth, monthAfterNext];
+};
 
 const TopBar = () => {
+  const [nextMonth, monthAfterNext] = getNextTwoMonths();
+
   return (
     <div className="top-bar">
       <Link href="/get-a-quote">
-        Now Booking December 2024 & January 2025 - Get A Quote{" "}
+        Now Booking {nextMonth} & {monthAfterNext} - Get A Quote{" "}
         <svg
           stroke="currentColor"
           fill="currentColor"
           strokeWidth="0"
           viewBox="0 0 512 512"
-          class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+          className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
           height="20px"
           width="20px"
           xmlns="http://www.w3.org/2000/svg"
