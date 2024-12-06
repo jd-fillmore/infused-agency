@@ -719,6 +719,7 @@ const Home = ({ latestPosts }) => {
               <Col lg="12 pd-top-80 pd-btm-40">
                 <h2>
                   Taking Your Digital Marketing, SEO &amp; Website To
+                  <br />
                   <span>The Next Level</span>
                 </h2>
               </Col>
@@ -1111,34 +1112,19 @@ const Home = ({ latestPosts }) => {
           >
             {/* Row One */}
             <div className="row">
-              <div className="col-lg-4 d-flex">
+              <div className="col-lg-6 d-flex">
                 <Link href="/seo">
                   <div className="card">
                     <h2>Search Engine Optimization (SEO)</h2>
                     <p>
                       Are your customers not finding your website on Google? Our
-                      SEO Niagara services help your website get found and bring
-                      you more leads.
+                      SEO Niagara services help your website be visible to your
+                      customers.
                     </p>
                   </div>
                 </Link>
               </div>
-              <div className="col-lg-4 d-flex">
-                <Link
-                  href="/digital-marketing-agency-niagara"
-                  className="d-flex"
-                >
-                  <div className="card">
-                    <h2>Social Media Advertising</h2>
-                    <p>
-                      Is your website not driving sales? We create effective
-                      social media marketing compaigns to drive traffic and
-                      leads to your website.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
+              <div className="col-lg-6 d-flex">
                 <Link href="/web-design">
                   <div className="card">
                     <h2>Lead-Generating Web Design</h2>
@@ -1288,56 +1274,97 @@ const Home = ({ latestPosts }) => {
                   new strategies to keep up.
                 </p>
                 <h2>
-                  <span>Social Media Ads</span>
+                  <span>Website Design &amp; Development</span>
                 </h2>
-                <h3>What are social media ads?</h3>
+                <h3>How much does a new website cost?</h3>
                 <p>
-                  They are paid promotions on social media that help your
-                  business reach more people.
-                </p>
-
-                <h3>Why should I use social media ads?</h3>
-                <p>
-                  These ads help you reach a larger audience, target specific
-                  groups of people, and get more customers quickly.
-                </p>
-
-                <h3>How much do social media ads cost?</h3>
-                <p>
-                  The cost varies based on your budget.{" "}
+                  This entirely depends on the websites functionalities, and the
+                  work involved.{" "}
                   <Link href="/get-a-quote">Contact us today</Link> for a free
                   consult and free quote.
                 </p>
 
-                <h3>How do you create effective ads?</h3>
+                <h3>How long will it take to get a new website?</h3>
                 <p>
-                  We use eye-catching images or videos, write clear and engaging
-                  text, and target the right audience to create effective ads.
+                  A simple website usually takes about 1-2 weeks. Fancier
+                  websites can take 4-12 weeks, depending on how complicated
+                  they are.
                 </p>
 
-                <h3>How do you target the right audience with these ads?</h3>
+                <h3>Are your web designs responsive / mobile-friendly?</h3>
                 <p>
-                  We use targeting options like age, location, interests, and
-                  behaviors to show your ads to people who are most likely to be
-                  interested in your business.
+                  Yes! Our websites work well on phones, tablets, and computers.
                 </p>
 
-                <h3>How long does it take to see results from these ads?</h3>
+                <h3>Can you build an e-commerce website?</h3>
                 <p>
-                  You can start seeing results within a few days, but it often
-                  takes a few weeks to see the full impact.
+                  Absolutely! We can create websites where you can sell things
+                  online.
                 </p>
 
-                <h3>What should I expect in terms of results?</h3>
+                <h3>Can you build websites with extra functionalities?</h3>
                 <p>
-                  Results can include more website visits, more leads or sales,
-                  and increased brand awareness.
+                  Definitely! We can add features like member-only areas, blogs,
+                  appointment booking, photo galleries, forms, social media
+                  links, online stores, and payment options.
                 </p>
 
-                <h3>How do you measure the success of the ads?</h3>
+                <h3>How do you approach website design?</h3>
                 <p>
-                  We look at metrics like clicks, conversions, cost per click,
-                  and return on ad spend to measure success.
+                  We create websites that are simple, easy to use, modern, and
+                  clean. We focus on making your business look great and work
+                  well for your customers, not just on making it look nice.
+                </p>
+
+                <h3>Do you do website redesigns?</h3>
+                <p>Yes, we can give your old website a fresh look!</p>
+
+                <h3>Can I update the website myself?</h3>
+                <p>Yes, you can! We'll show you how, and it's pretty easy.</p>
+
+                <h3>Are the websites you build accessible?</h3>
+                <p>
+                  We make sure our websites are easy for everyone to use. If you
+                  need special features for accessibility, we can add those too.
+                </p>
+
+                <h3>Do you build mobile-friendly sites?</h3>
+                <p>Yes, all our sites work great on phones and tablets.</p>
+
+                <h3>Which website builder is best?</h3>
+                <p>
+                  We like using WordPress. It’s like having a Swiss Army knife
+                  for building websites.
+                </p>
+
+                <h3>Who hosts the website?</h3>
+                <p>
+                  For simple websites, we handle it. For larger WordPress sites,
+                  you’ll need to host it yourself, but we’ll help you set it up.
+                </p>
+
+                <h3>Do you work with everyone?</h3>
+                <p>
+                  We work with all kinds of businesses, especially those in
+                  Niagara.
+                </p>
+
+                <h3>Do I provide the content for my website?</h3>
+                <p>
+                  Yes, you know your business best! But if you need help, we can
+                  assist for an extra fee.
+                </p>
+
+                <h3>How much input do I have?</h3>
+                <p>
+                  A lot! It’s like building with Lego – we’ll work together to
+                  make sure you love the final result.
+                </p>
+
+                <h3>What if I need help after my website is live?</h3>
+                <p>
+                  Don’t worry, we’re here for you! We’ll help you out if you
+                  need anything after your website is up and running.
                 </p>
               </Col>
             </Row>

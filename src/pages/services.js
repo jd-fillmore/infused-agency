@@ -33,7 +33,7 @@ const Services = () => {
         <Container>
           <section className="services">
             <div className="row">
-              <div className="col-lg-4 d-flex">
+              <div className="col-lg-6 d-flex">
                 <Link href="/seo">
                   <div className="card">
                     <h2>Search Engine Optimization (SEO)</h2>
@@ -44,22 +44,8 @@ const Services = () => {
                   </div>
                 </Link>
               </div>
-              <div className="col-lg-4 d-flex">
-                <Link
-                  href="/digital-marketing-agency-niagara"
-                  className="d-flex"
-                >
-                  <div className="card">
-                    <h2>Social Media Advertising</h2>
-                    <p>
-                      Is your website not driving sales? We create effective
-                      social media marketing compaigns to drive traffic and
-                      leads to your website.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div className="col-lg-4 d-flex">
+
+              <div className="col-lg-6 d-flex">
                 <Link href="/web-design">
                   <div className="card">
                     <h2>Lead-Generating Web Design</h2>
