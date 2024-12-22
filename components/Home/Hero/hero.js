@@ -18,7 +18,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h1 className="intro">
-                Local SEO Niagara Company | Best Search Engine Optimization Agency Services in St. Catharines
+                  SEO Niagara, Local SEO St. Catharines
                 </h1>
               </motion.div>
               <motion.div

@@ -600,7 +600,7 @@ const Home = ({ latestPosts }) => {
         </title>
         <meta
           name="description"
-          content="Boost your business with expert SEO services in Niagara & St. Catharines. Leading SEO agency offering marketing, optimization, and consulting solutions."
+          content="Expert SEO Niagara services that boost your businesses visibility. Leading St. Catharines SEO agency offering marketing, optimization, and consulting solutions."
         />
         <meta
           name="google-site-verification"
@@ -660,7 +660,7 @@ const Home = ({ latestPosts }) => {
             <Row className="text-center">
               <Col lg="12 pd-top-80 pd-btm-40">
                 <h2>
-                  Top Local Search Engine Optimization (SEO) in Niagara
+                  SEO Niagara Services That Get You Results
                 </h2>
               </Col>
             </Row>
