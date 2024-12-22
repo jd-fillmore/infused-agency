@@ -596,7 +596,7 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
       <title>
-         Leading Local SEO Company in Niagara & St. Catharines | Top Search Engine Optimization Agency Services | SEO Marketing Consultant Specialist Firm
+        SEO Niagara | Local Search Engine Optimization St Catharines
         </title>
         <meta
           name="description"
