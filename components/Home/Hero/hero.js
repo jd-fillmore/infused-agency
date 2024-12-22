@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col } from "reactstrap";
-import clients from "../../../src/img/digital-marketing-seo-niagara-agency-clients.png";
+import clients from "../../../src/img/seo-niagara.search-engine-optimization-agency-st-catharines.png";
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h1 className="intro">
-                  Digital Marketing Niagara | SEO Niagara Agency
+                Local SEO Niagara Company | Best Search Engine Optimization Agency Services in St. Catharines
                 </h1>
               </motion.div>
               <motion.div
@@ -27,8 +27,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  <span>Grow Your Business</span> With Our Digital Marketing,
-                  SEO &amp; Website Solutions
+                  <span>Grow Your Business</span> With Our Local SEO &amp; Web Design Solutions
                 </h2>
               </motion.div>
               <motion.div
@@ -38,7 +37,7 @@ const Hero = () => {
               >
                 <p>
                   Get More Leads, Better Your Credibility &amp; Get More Sales
-                  with our Niagara Digital Marketing, SEO &amp; Lead-Generating
+                  with our SEO Niagara Services &amp; St. Catharines Lead-Generating
                   Website Design Firm.
                 </p>
               </motion.div>
@@ -56,7 +55,7 @@ const Hero = () => {
                 <Image
                   className="img-fluid"
                   src={clients}
-                  alt="digital marketing agency niagara, seo niagara"
+                  alt="seo niagara, search engine optimization company st. catharines"
                 />
               </div>
             </Col>

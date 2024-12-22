@@ -595,70 +595,12 @@ const Home = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          Digital Marketing Niagara | SEO Niagara | Infused Agency - Digital
-          Marketing Company Niagara, Digital Marketing Company St. Catharines,
-          Marketing Agencies Niagara, Marketing Agencies St. Catharines, Digital
-          Marketing Agency St. Catharines, Digital Marketing Company Niagara,
-          Digital Marketing Company St. Catharines, Digital Marketing Firms
-          Niagara, Digital Marketing Firms St. Catharines, Digital Advertising
-          Agency Niagara, Digital Advertising Agency St. Catharines, Niagara
-          Digital Marketing Company, St. Catharines Digital Marketing Company,
-          Niagara Digital Marketing Firm, St. Catharines Digital Marketing Firm,
-          Niagara Online Marketing Agency, St. Catharines Online Marketing
-          Agency, Internet Marketing Agencies Niagara, Internet Marketing
-          Agencies St. Catharines, Internet Marketing Companies Niagara,
-          Internet Marketing Companies St. Catharines, Internet Marketing
-          Company in Niagara, Internet Marketing Company in St. Catharines,
-          internet marketing firm Niagara, Niagara internet marketing company,
-          Niagara internet marketing firm, digital marketing Niagara, marketing
-          firm Niagara, Niagara social media marketing, best marketing agencies
-          Niagara, top marketing firms Niagara, best marketing companies
-          Niagara, best marketing firms in Niagara, digital agency Niagara, top
-          marketing agencies in Niagara, social media marketing agency Niagara,
-          internet marketing firm St. Catharines, St. Catharines internet
-          marketing company, St. Catharines internet marketing firm, digital
-          marketing St. Catharines, marketing firm St. Catharines, St.
-          Catharines social media marketing, best marketing agencies St.
-          Catharines, top marketing firms St. Catharines, best marketing
-          companies St. Catharines, best marketing firms in St. Catharines,
-          digital agency St. Catharines, top marketing agencies in St.
-          Catharines, social media marketing agency St. Catharines, Digital
-          Marketing Company Niagara-on-the-Lake, Digital Marketing Company
-          Niagara Falls, Marketing Agencies Niagara-on-the-Lake, Marketing
-          Agencies Niagara Falls, Digital Marketing Agency Niagara Falls,
-          Digital Marketing Company Niagara-on-the-Lake, Digital Marketing
-          Company Niagara Falls, Digital Marketing Firms Niagara-on-the-Lake,
-          Digital Marketing Firms Niagara Falls, Digital Advertising Agency
-          Niagara-on-the-Lake, Digital Advertising Agency Niagara Falls,
-          Niagara-on-the-Lake Digital Marketing Company, Niagara Falls Digital
-          Marketing Company, Niagara-on-the-Lake Digital Marketing Firm, Niagara
-          Falls Digital Marketing Firm, Niagara-on-the-Lake Online Marketing
-          Agency, Niagara Falls Online Marketing Agency, Internet Marketing
-          Agencies Niagara-on-the-Lake, Internet Marketing Agencies Niagara
-          Falls, Internet Marketing Companies Niagara-on-the-Lake, Internet
-          Marketing Companies Niagara Falls, Internet Marketing Company in
-          Niagara-on-the-Lake, Internet Marketing Company in Niagara Falls,
-          internet marketing firm Niagara-on-the-Lake, Niagara-on-the-Lake
-          internet marketing company, Niagara-on-the-Lake internet marketing
-          firm, digital marketing Niagara-on-the-Lake, marketing firm
-          Niagara-on-the-Lake, Niagara-on-the-Lake social media marketing, best
-          marketing agencies Niagara-on-the-Lake, top marketing firms
-          Niagara-on-the-Lake, best marketing companies Niagara-on-the-Lake,
-          best marketing firms in Niagara-on-the-Lake, digital agency
-          Niagara-on-the-Lake, top marketing agencies in Niagara-on-the-Lake,
-          social media marketing agency Niagara-on-the-Lake, internet marketing
-          firm Niagara Falls, Niagara Falls internet marketing company, Niagara
-          Falls internet marketing firm, digital marketing Niagara Falls,
-          marketing firm Niagara Falls, Niagara Falls social media marketing,
-          best marketing agencies Niagara Falls, top marketing firms Niagara
-          Falls, best marketing companies Niagara Falls, best marketing firms in
-          Niagara Falls, digital agency Niagara Falls, top marketing agencies in
-          Niagara Falls, social media marketing agency Niagara Falls
+      <title>
+         Leading Local SEO Company in Niagara & St. Catharines | Top Search Engine Optimization Agency Services | SEO Marketing Consultant Specialist Firm
         </title>
         <meta
           name="description"
-          content="Award-winning Digital Marketing & SEO Niagara Company, based in St. Catharines. Skyrocket your business' revenue. Get your free quote today!"
+          content="Boost your business with expert SEO services in Niagara & St. Catharines. Leading SEO agency offering marketing, optimization, and consulting solutions."
         />
         <meta
           name="google-site-verification"
@@ -718,9 +660,7 @@ const Home = ({ latestPosts }) => {
             <Row className="text-center">
               <Col lg="12 pd-top-80 pd-btm-40">
                 <h2>
-                  Taking Your Digital Marketing, SEO &amp; Website To
-                  <br />
-                  <span>The Next Level</span>
+                  Top Local Search Engine Optimization (SEO) in Niagara
                 </h2>
               </Col>
             </Row>
@@ -734,7 +674,7 @@ const Home = ({ latestPosts }) => {
             <Row className="text-center just-work">
               <Col lg="4">
                 <div className="card">
-                  <Image src={traffic} alt="increase niagara SEO traffic" />
+                  <Image src={traffic} alt="local search engine marketing niagara st catharines" />
                   <h3>Increase Traffic</h3>
                 </div>
               </Col>
@@ -742,14 +682,14 @@ const Home = ({ latestPosts }) => {
                 <div className="card">
                   <Image
                     src={leads}
-                    alt="digital marketing agency niagara generate leads"
+                    alt="local search engine optimization niagara st catharines"
                   />
                   <h3>Generate Leads</h3>
                 </div>
               </Col>
               <Col lg="4">
                 <div className="card">
-                  <Image src={convert} alt="SEO Niagara convert customers" />
+                  <Image src={convert} alt="local seo agency st catharines niagara" />
                   <h3>Convert Customers</h3>
                 </div>
               </Col>
@@ -769,22 +709,17 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Your Niagara Digital Marketing Agency &amp; SEO{" "}
-                  <span>Growth Partner</span>.
+                  Affordable Local SEO Agency Services in St. Catharines, Niagara that <span>Makes Your Website Visible</span>.
                 </h2>
                 <p>
-                  At Infused Agency, we are a top digital marketing agency in
-                  Niagara. We help businesses get noticed online with our expert
-                  SEO Niagara services. From creating a plan to making it
-                  happen, we show off your brand and use the latest marketing
-                  tricks.
+                  At Infused Agency, we are a top local SEO agency in St. Catharines, 
+                  Niagara. We help businesses get noticed online with our expert Niagara
+                  search engine optimization services. From creating a plan to making it
+                  happen, our SEO firm can make your website more visible, when people search for what you offer.
                 </p>
 
                 <p>
-                  Our team works with you to understand your business goals.
-                  Then, we create a custom marketing plan just for you. Your
-                  ideas are important, and together, we make sure your marketing
-                  is awesome!
+                Our team works closely with you to understand your local business goals. We then develop a customized local SEO strategy to help you rank higher in search results and attract more customers in your area. Your input is essential, and together, we ensure your business gets the online visibility it deserves!
                 </p>
               </motion.div>
             </div>
@@ -798,17 +733,17 @@ const Home = ({ latestPosts }) => {
                   transition={{ duration: 1, delay: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <h2 className="title">Recent Project</h2>
+                  <h2 className="title">Recent Local SEO &amp; Website Project</h2>
                   <h2>Cass-A-Bella Construction</h2>
                   <hr />
                   <div class="card">
-                    <h3>After working with us:</h3>
+                    <h3>After implementing our local SEO services:</h3>
                     <ul>
                       <li>Google Search Visibility Increased by 200%</li>
-                      <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                      <li>Page 1 Google Rankings for Multiple Keywords</li>
+                      <li>Page 1 Local SEO Google Map Rankings for Multiple Keywords</li>
+                      <li>Page 1 Local SEO Google Rankings for Multiple Keywords</li>
                       <li>
-                        Leads Increased From 2 to 10 per month in 3 months
+                        Local Search Engine Optimization Leads Increased From 2 to 10 per month in 3 months
                       </li>
                       <li>Website Page Speed Increased By 90%</li>
                       <li>Increased User Experience</li>
@@ -832,7 +767,7 @@ const Home = ({ latestPosts }) => {
                     priority={true}
                     className="img-fluid shadow"
                     src={heroImg}
-                    alt="digital marketing agency niagara"
+                    alt="seo agency in niagara"
                   />
                 </motion.div>
               </div>
@@ -852,20 +787,18 @@ const Home = ({ latestPosts }) => {
                   viewport={{ once: true }}
                 >
                   <h2>
-                    A SEO Niagara Agency That
-                    <br />
-                    <span>Knows What They're Doing</span>.
+                    A Local SEO Niagara Agency Firm That <span>Knows What They're Doing</span>.
                   </h2>
                   <p>
                     At Infused Agency, we are the leading SEO Niagara agency,
                     helping local businesses get found online. Our expert SEO
                     Niagara services boost your visibility and attract more
-                    customers from the Niagara region.
+                    customers from the Niagara region, including St. Catharines and beyond.
                   </p>
 
                   <p>
                     We start by understanding your business and local market.
-                    Then, we create a custom SEO strategy tailored to your
+                    Then, we create a custom Niagara SEO services strategy tailored to your
                     needs. Your input is key, and together, we make sure your
                     online presence is strong.
                   </p>
@@ -882,17 +815,17 @@ const Home = ({ latestPosts }) => {
                     transition={{ duration: 1, delay: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <h2 className="title">Recent Project</h2>
+                    <h2 className="title">Recent Local SEO Company Project</h2>
                     <h2>Flat Rock Cellars</h2>
                     <hr />
                     <div class="card">
-                      <h3>After working with us:</h3>
+                      <h3>After hiring our local SEO company:</h3>
                       <ul>
-                        <li>Google Search Visibility Increased by 300%</li>
+                        <li>Local Google Search Visibility Increased by 300%</li>
                         <li>
-                          Page 1 Google Map Rankings for Multiple Keywords
+                          Page 1 Local SEOGoogle Map Rankings for Multiple Keywords
                         </li>
-                        <li>Page 1 Google Rankings for Multiple Keywords</li>
+                        <li>Page 1 Local SEO Google Rankings for Multiple Keywords</li>
                         <li>Increased User Experience</li>
                         <li>Increased Engagement and Conversions</li>
                         <li>Increased Brand Recognition</li>
@@ -935,10 +868,10 @@ const Home = ({ latestPosts }) => {
                 <h2>Why Choose Infused?</h2>
                 <p>
                   It's simple. We have been helping businesses with their
-                  Niagara digital marketing and SEO{" "}
-                  <strong>for over ten years</strong>. This means we know what
-                  works best for local companies. Our experience allows us to
-                  create strategies that not only look amazing but also{" "}
+                  Niagara SEO{" "}
+                  <strong>for over ten years</strong>. This means our local SEO expert consultants know what
+                  works best for local companies when it comes to creating local SEO strategies. Our experience allows us to
+                  create local Niagara SEO strategies that not only look amazing but also{" "}
                   <strong>help businesses get more customers</strong>.
                 </p>
 
@@ -951,9 +884,9 @@ const Home = ({ latestPosts }) => {
                 </p>
 
                 <p>
-                  With our skills in SEO, we can{" "}
+                  With our skills in Niagara SEO, we can{" "}
                   <strong>help your website show up on Google</strong> when
-                  people search for services in Niagara. This means more people
+                  people search for services in Niagara, St. Catharines and beyond. This means more people
                   will find you, which can lead to more sales. We love{" "}
                   <strong>seeing our clients succeed</strong>, and we work hard
                   to make that happen!
@@ -962,14 +895,14 @@ const Home = ({ latestPosts }) => {
                 <p>
                   With our <Link href="/blog">great knowledge</Link>,{" "}
                   <Link href="/work">high-quality work</Link>, and friendly
-                  customer service, we've become a top digital marketing and SEO
+                  customer service, we've become a top SEO
                   agency that Niagara businesses trust.
                 </p>
 
                 <Image
                   className="img-fluid"
                   src={best}
-                  alt="digital marketing agency niagara, SEO agency niagara"
+                  alt="search engine optimization company niagara"
                 />
               </motion.div>
             </div>
@@ -1092,12 +1025,10 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Niagara Digital Marketing, SEO &amp; Websites That Make An{" "}
-                  <span>Impact</span>
+                  Leading Niagara Search Engine Optimization Company That <span>Makes An Impact</span>
                 </h2>
                 <p>
-                  Our digital marketing, SEO and website conversion optimization
-                  solutions help bring you more leads.
+                  Our Niagara SEO services and lead-generating website designs help grow your business.
                 </p>
               </motion.div>
             </div>
@@ -1151,7 +1082,7 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>Frequently Asked Digital Marketing Questions</h2>
+                <h2>Frequently Asked Local SEO Questions From St. Catharines, Niagara Businesses</h2>
               </motion.div>
             </Col>
           </Row>
@@ -1164,23 +1095,23 @@ const Home = ({ latestPosts }) => {
             <Row>
               <Col lg="12">
                 <h2>
-                  <span>SEO (Search Engine Optimization)</span>
+                  <span>Local SEO (Search Engine Optimization)</span>
                 </h2>
-                <h3>What is SEO, and why is it important for my website?</h3>
+                <h3>What is Local SEO, and why is it important for my website?</h3>
                 <p>
-                  SEO means making your website better so it appears higher in
-                  search engine results. This helps more people find your site.
+                  Local SEO means making your website better so it appears higher in
+                  local search engine results. This helps more people find your site.
                 </p>
 
-                <h3>What are the main factors that influence SEO rankings?</h3>
+                <h3>What are the main factors that influence Local SEO rankings?</h3>
                 <p>
                   Important factors include using the right keywords, having a
                   fast website, and getting other websites to link to yours.
                 </p>
 
-                <h3>How much does SEO cost?</h3>
+                <h3>How much does Local SEO cost?</h3>
                 <p>
-                  This entirely depends on both the length of the SEO campaign,
+                  This entirely depends on both the length of the local SEO campaign,
                   and the work involved.{" "}
                   <Link href="/get-a-quote">Contact us today</Link> for a free
                   consult and free quote.
@@ -1196,11 +1127,11 @@ const Home = ({ latestPosts }) => {
                 </p>
 
                 <h3>
-                  What is on-page SEO, and how does it differ from off-page SEO?
+                  What is on-page local SEO, and how does it differ from off-page local SEO?
                 </h3>
                 <p>
-                  On-page SEO means improving things on your website, like text
-                  and images. Off-page SEO means getting other websites to link
+                  On-page local SEO means improving things on your website, like text
+                  and images. Off-page local SEO means getting other websites to link
                   to yours.
                 </p>
 
@@ -1213,10 +1144,10 @@ const Home = ({ latestPosts }) => {
                 <h3>Can you guarantee my website will rank #1 on Google?</h3>
                 <p>
                   No one can promise a #1 spot, but we can improve your chances
-                  with good SEO practices.
+                  with good SEO practices, as we have for all of our clients.
                 </p>
 
-                <h3>How do backlinks impact my website’s SEO?</h3>
+                <h3>How do backlinks impact my website’s local SEO?</h3>
                 <p>
                   Backlinks are links from other websites to yours. They show
                   Google your site is trusted.
