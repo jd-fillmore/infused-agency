@@ -471,6 +471,15 @@ const SEO = () => {
                 </Link>
               </Col>
             </Row>
+            <Row>
+              <Col lg="12">
+                <h2>Industries We Service</h2>
+                <Link href="/seo/for-concrete-contractors">
+                  SEO for Concrete Contractors in Canada
+                </Link>
+                <p>(more coming soon!)</p>
+              </Col>
+            </Row>
           </Container>
         </section>
       </InnerContent>
