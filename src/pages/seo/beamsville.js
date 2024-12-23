@@ -9,7 +9,7 @@ import InnerContent from "../../../components/innerContent/innerContent";
 import CTA from "../../../components/CTA/cta";
 import Footer from "../../../components/Footer/footer";
 import treeImg from "../../img/tree-reports.png";
-import kdImg from "../../img/beamsville-web-design.png";
+import kdImg from "../../img/kd-flowers-city-page.png";
 import cassImg from "../../img/featured-seo.png";
 import about from "../../img/about.jpg";
 import clients from "../../img/seo-clients.png";
@@ -402,16 +402,9 @@ const SEO = () => {
               <Col lg="6">
                 <p>
                   Since 2013 we've been able to help countless local businesses
-                  (and beyond!) with their{" "}
-                  <Link href="/web-design">website design</Link>,{" "}
-                  <Link href="/digital-marketing-beamsville">
-                    digital marketing
-                  </Link>
-                  , search engine optimization (SEO) ,{" "}
-                  <Link href="/wordpress-developer-beamsville">
-                    WordPress development
-                  </Link>{" "}
-                  and e-commerce website development.
+                  (and beyond!) with their website design, digital marketing,
+                  search engine optimization (SEO), WordPress development, and
+                  e-commerce website development.
                 </p>
                 <p>
                   We've been able to help small, local businesses all the way to
