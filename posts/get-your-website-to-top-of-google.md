@@ -1,11 +1,11 @@
 ---
 title: How to Get Your Website to the Top of Google Search Results
 date: 2024-12-24T13:08:47.634Z
-slug: /posts/electrician-web-design/
+slug: /posts/get-your-website-to-top-of-google/
 excerpt: We answer the question - how to get your website to the top of google search results.
 image: "/img/how-to-get-your-website-to-the-top-of-google-search-results.webp"
 meta:
-  canonical: /posts/electrician-web-design/
+  canonical: /posts/get-your-website-to-top-of-google/
   robots: index, follow
 ---
 
