@@ -18,7 +18,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h1 className="intro">
-                  SEO Niagara, Local SEO St. Catharines
+                  SEO Niagara | Search Engine Optimization in St. Catharines
                 </h1>
               </motion.div>
               <motion.div
@@ -27,7 +27,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  <span>Grow Your Business</span> With Our Local SEO &amp; Web Design Solutions
+                  <span>Grow Your Business</span> With Our Local SEO Niagara Solutions
                 </h2>
               </motion.div>
               <motion.div
@@ -35,11 +35,6 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
               >
-                <p>
-                  Get More Leads, Better Your Credibility &amp; Get More Sales
-                  with our SEO Niagara Services &amp; St. Catharines Lead-Generating
-                  Website Design Firm.
-                </p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}

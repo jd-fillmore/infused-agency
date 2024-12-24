@@ -36,6 +36,11 @@ const pages = [
     name: "Get A Quote",
     link: "/get-a-quote",
   },
+  {
+    id: 9,
+    name: "Areas We Serve",
+    link: "/areas-we-serve",
+  },
 ];
 
 const Footer = () => {
@@ -81,9 +86,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link href="/seo">Search Engine Optimization</Link>
-                </li>
-                <li>
-                  <Link href="/">Digital Marketing</Link>
                 </li>
               </ul>
             </Col>

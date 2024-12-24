@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { getLatestPosts } from "../lib/posts";
 import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
   Col,
   Container,
   Row,
@@ -19,16 +15,8 @@ import Footer from "../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-
-import google from "../../src/img/niagara-web-design-client-two.webp";
-import heroImg from "../../src/img/digital-marketing-agency-niagara-client.webp";
 import flatImg from "../../src/img/seo-niagara-agency.webp";
-import clients from "../../src/img/web-design-niagara-clients.png";
-import workJerrys from "../../src/img/portfolio-kd.png";
 import best from "../../src/img/awards.png";
-import traffic from "../../src/img/digital-marketing-niagara-agency-traffic.png";
-import leads from "../../src/img/seo-niagara-leads.png";
-import convert from "../../src/img/digital-marketing-seo-niagara-agency-convert.png";
 
 const addJsonLd = () => {
   const schema = {
@@ -151,7 +139,7 @@ const addJsonLd = () => {
           "https://www.crunchbase.com/organization/infused-agency",
           "https://www.yellowpages.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
           "https://www.mapquest.com/ca/ontario/infused-agency-456469990",
-          "https://www.google.com/maps/place/Infused+Agency+%7C+Digital+Marketing,+SEO,+Niagara+Web+Design/@43.1525695,-79.2103468,17z/data=!3m1!4b1!4m6!3m5!1s0x89d3507111975161:0x18a1198be6280a70!8m2!3d43.1525695!4d-79.2077719!16s%2Fg%2F11gfndyfvl?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D",
+          "https://www.google.com/maps/place/Infused+Agency+%7C+Local+SEO+%26+Web+Design/@43.1525734,-79.2103468,16z/data=!3m1!4b1!4m6!3m5!1s0x89d3507111975161:0x18a1198be6280a70!8m2!3d43.1525695!4d-79.2077719!16s%2Fg%2F11gfndyfvl?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
           "https://www.bing.com/maps?q=infused+agency&FORM=HDRSC6&cp=43.152616%7E-79.207799&lvl=16.0",
           "https://professionelle.ca/1774727816813218416/",
           "https://www.goodfirms.co/company/infused-agency",
@@ -596,7 +584,7 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
       <title>
-        SEO Niagara | Local Search Engine Optimization St Catharines
+        SEO Niagara, ON | St. Catharines Search Engine Optimization
         </title>
         <meta
           name="description"
@@ -621,85 +609,8 @@ const Home = ({ latestPosts }) => {
       </Head>
       <Nav />
       <Hero />
-
-      <section className="home-gen-leads">
-        <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Row className="text-center stats">
-              <Col lg="4">
-                <div className="card dark">
-                  <h2>10+</h2>
-                  <p>Years in Business</p>
-                </div>
-              </Col>
-              <Col lg="4">
-                <div className="card dark">
-                  <h2>50+</h2>
-                  <p>Clients</p>
-                </div>
-              </Col>
-              <Col lg="4">
-                <div className="card dark">
-                  <h2>30+</h2>
-                  <p>5-Star Reviews</p>
-                </div>
-              </Col>
-            </Row>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Row className="text-center">
-              <Col lg="12 pd-top-80 pd-btm-40">
-                <h2>
-                  SEO Niagara Services That Get You Results
-                </h2>
-              </Col>
-            </Row>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <Row className="text-center just-work">
-              <Col lg="4">
-                <div className="card">
-                  <Image src={traffic} alt="local search engine marketing niagara st catharines" />
-                  <h3>Increase Traffic</h3>
-                </div>
-              </Col>
-              <Col lg="4">
-                <div className="card">
-                  <Image
-                    src={leads}
-                    alt="local search engine optimization niagara st catharines"
-                  />
-                  <h3>Generate Leads</h3>
-                </div>
-              </Col>
-              <Col lg="4">
-                <div className="card">
-                  <Image src={convert} alt="local seo agency st catharines niagara" />
-                  <h3>Convert Customers</h3>
-                </div>
-              </Col>
-            </Row>
-          </motion.div>
-        </Container>
-      </section>
-
       <section className="home-top-web">
-        <div className="container">
+        <div className="container pd-btm-120">
           <div className="row">
             <div className="col-lg-8">
               <motion.div
@@ -709,103 +620,24 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Affordable Local SEO Agency Services in St. Catharines, Niagara that <span>Makes Your Website Visible</span>.
+                  Local SEO Marketing Services based in St. Catharines
                 </h2>
                 <p>
-                  At Infused Agency, we are a top local SEO agency in St. Catharines, 
-                  Niagara. We help businesses get noticed online with our expert Niagara
+                  At Infused Agency, we provide top <strong>SEO Niagara</strong> services hailing from St. Catharines. We help businesses get noticed online with our expert
                   search engine optimization services. From creating a plan to making it
-                  happen, our SEO firm can make your website more visible, when people search for what you offer.
+                  happen, our SEO marketing services can make your website more visible, when people search for what you offer.
                 </p>
-
                 <p>
-                Our team works closely with you to understand your local business goals. We then develop a customized local SEO strategy to help you rank higher in search results and attract more customers in your area. Your input is essential, and together, we ensure your business gets the online visibility it deserves!
+                Our team works closely with you to understand your local business goals. We then develop a customized local search engine optimization strategy to help you rank higher in search results and attract more customers in your area. Your input is essential, and together, we ensure your business gets the online visibility it deserves!
                 </p>
               </motion.div>
             </div>
           </div>
-          <section className="work pd-btm-120">
-            <div className="row pd-top-40">
-              <div className="col-lg-6">
-                <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  viewport={{ once: true }}
-                >
-                  <h2 className="title">Recent Local SEO &amp; Website Project</h2>
-                  <h2>Cass-A-Bella Construction</h2>
-                  <hr />
-                  <div class="card">
-                    <h3>After implementing our local SEO services:</h3>
-                    <ul>
-                      <li>Google Search Visibility Increased by 200%</li>
-                      <li>Page 1 Local SEO Google Map Rankings for Multiple Keywords</li>
-                      <li>Page 1 Local SEO Google Rankings for Multiple Keywords</li>
-                      <li>
-                        Local Search Engine Optimization Leads Increased From 2 to 10 per month in 3 months
-                      </li>
-                      <li>Website Page Speed Increased By 90%</li>
-                      <li>Increased User Experience</li>
-                      <li>Increased Engagement and Conversions</li>
-                      <li>Increased Brand Recognition</li>
-                      <li>Faster Load Times</li>
-                      <li>Streamlined collection of leads</li>
-                    </ul>
-                  </div>
-                </motion.div>
-              </div>
-              <div className="col-lg-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                >
-                  <Image
-                    width="503"
-                    height="343"
-                    priority={true}
-                    className="img-fluid shadow"
-                    src={heroImg}
-                    alt="seo agency in niagara"
-                  />
-                </motion.div>
-              </div>
-            </div>
-          </section>
         </div>
         {/* Container End*/}
         {/* Container Start*/}
         <section className="dark pd-top-120">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-8">
-                <motion.div
-                  initial={{ opacity: 0, y: -50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                  viewport={{ once: true }}
-                >
-                  <h2>
-                    A Local SEO Niagara Agency Firm That <span>Knows What They're Doing</span>.
-                  </h2>
-                  <p>
-                    At Infused Agency, we are the leading SEO Niagara agency,
-                    helping local businesses get found online. Our expert SEO
-                    Niagara services boost your visibility and attract more
-                    customers from the Niagara region, including St. Catharines and beyond.
-                  </p>
-
-                  <p>
-                    We start by understanding your business and local market.
-                    Then, we create a custom Niagara SEO services strategy tailored to your
-                    needs. Your input is key, and together, we make sure your
-                    online presence is strong.
-                  </p>
-                </motion.div>
-              </div>
-            </div>
-
             <section className="work pd-btm-120">
               <div className="row pd-top-40">
                 <div className="col-lg-6">
@@ -815,17 +647,17 @@ const Home = ({ latestPosts }) => {
                     transition={{ duration: 1, delay: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <h2 className="title">Recent Local SEO Company Project</h2>
+                    <h2 className="title">Recent Project</h2>
                     <h2>Flat Rock Cellars</h2>
                     <hr />
                     <div class="card">
-                      <h3>After hiring our local SEO company:</h3>
+                      <h3>After hiring us:</h3>
                       <ul>
                         <li>Local Google Search Visibility Increased by 300%</li>
                         <li>
-                          Page 1 Local SEOGoogle Map Rankings for Multiple Keywords
+                          Page 1 Google Map Rankings for Multiple Keywords
                         </li>
-                        <li>Page 1 Local SEO Google Rankings for Multiple Keywords</li>
+                        <li>Page 1 Google Rankings for Multiple Keywords</li>
                         <li>Increased User Experience</li>
                         <li>Increased Engagement and Conversions</li>
                         <li>Increased Brand Recognition</li>
@@ -865,30 +697,30 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>Why Choose Infused?</h2>
+                <h2>Why Choose Infused As Your Niagara SEO Agency?</h2>
                 <p>
-                  It's simple. We have been helping businesses with their
-                  Niagara SEO{" "}
-                  <strong>for over ten years</strong>. This means our local SEO expert consultants know what
+                  It's simple. Our <strong>SEO Agency in Niagara</strong> has been helping businesses with their
+                  search engine optimization{" "}
+                  for over ten years. This means our local <strong>SEO Niagara</strong> expert consultants know what
                   works best for local companies when it comes to creating local SEO strategies. Our experience allows us to
-                  create local Niagara SEO strategies that not only look amazing but also{" "}
-                  <strong>help businesses get more customers</strong>.
+                  create local SEO strategies that not only look amazing but also{" "}
+                  help businesses get more customers.
                 </p>
 
                 <p>
                   When you choose us, you're getting a team that{" "}
-                  <strong>understands the Niagara area</strong>. We know how to
+                  understands the area. We know how to
                   make your online presence stand out to both locals and
                   tourists. Our goal is to help your business grow by{" "}
-                  <strong>attracting more visitors to your site</strong>.
+                  attracting more visitors to your site.
                 </p>
 
                 <p>
-                  With our skills in Niagara SEO, we can{" "}
-                  <strong>help your website show up on Google</strong> when
-                  people search for services in Niagara, St. Catharines and beyond. This means more people
+                  With our <strong>SEO Niagara</strong> skills, we can{" "}
+                  help your website show up on Google when
+                  people search for services in St. Catharines and beyond. This means more people
                   will find you, which can lead to more sales. We love{" "}
-                  <strong>seeing our clients succeed</strong>, and we work hard
+                  seeing our clients succeed, and we work hard
                   to make that happen!
                 </p>
 
@@ -896,7 +728,7 @@ const Home = ({ latestPosts }) => {
                   With our <Link href="/blog">great knowledge</Link>,{" "}
                   <Link href="/work">high-quality work</Link>, and friendly
                   customer service, we've become a top SEO
-                  agency that Niagara businesses trust.
+                  agency that businesses trust.
                 </p>
 
                 <Image
@@ -1025,10 +857,10 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Leading Niagara Search Engine Optimization Company That <span>Makes An Impact</span>
+                  Leading Search Engine Optimization Company That <span>Makes An Impact</span>
                 </h2>
                 <p>
-                  Our Niagara SEO services and lead-generating website designs help grow your business.
+                  Our <strong>SEO Niagara</strong> services and lead-generating website designs help grow your business.
                 </p>
               </motion.div>
             </div>
@@ -1049,7 +881,7 @@ const Home = ({ latestPosts }) => {
                     <h2>Search Engine Optimization (SEO)</h2>
                     <p>
                       Are your customers not finding your website on Google? Our
-                      SEO Niagara services help your website be visible to your
+                      <strong>SEO Niagara</strong> services help your website be visible to your
                       customers.
                     </p>
                   </div>
@@ -1060,7 +892,7 @@ const Home = ({ latestPosts }) => {
                   <div className="card">
                     <h2>Lead-Generating Web Design</h2>
                     <p>
-                      Is your Niagara website design not bringing you customers?
+                      Is your website design not bringing you customers?
                       We make lead-generating websites that turn visitors into
                       customers.
                     </p>
@@ -1082,7 +914,7 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>Frequently Asked Local SEO Questions From St. Catharines, Niagara Businesses</h2>
+                <h2>Frequently Asked Local SEO Questions</h2>
               </motion.div>
             </Col>
           </Row>
@@ -1094,24 +926,21 @@ const Home = ({ latestPosts }) => {
           >
             <Row>
               <Col lg="12">
-                <h2>
-                  <span>Local SEO (Search Engine Optimization)</span>
-                </h2>
-                <h3>What is Local SEO, and why is it important for my website?</h3>
+                <h3>What is search engine optimization, and why is it important for my website?</h3>
                 <p>
-                  Local SEO means making your website better so it appears higher in
+                  Local <strong>SEO Niagara</strong> services means making your website better so it appears higher in
                   local search engine results. This helps more people find your site.
                 </p>
 
-                <h3>What are the main factors that influence Local SEO rankings?</h3>
+                <h3>What are the main factors that influence Local search engine optimization rankings?</h3>
                 <p>
                   Important factors include using the right keywords, having a
                   fast website, and getting other websites to link to yours.
                 </p>
 
-                <h3>How much does Local SEO cost?</h3>
+                <h3>How much does Local search engine optimization cost?</h3>
                 <p>
-                  This entirely depends on both the length of the local SEO campaign,
+                  This entirely depends on both the length of the local <strong>SEO Niagara</strong> campaign,
                   and the work involved.{" "}
                   <Link href="/get-a-quote">Contact us today</Link> for a free
                   consult and free quote.
@@ -1127,15 +956,15 @@ const Home = ({ latestPosts }) => {
                 </p>
 
                 <h3>
-                  What is on-page local SEO, and how does it differ from off-page local SEO?
+                  What is on-page local search engine optimization, and how does it differ from off-page local search engine optimization?
                 </h3>
                 <p>
-                  On-page local SEO means improving things on your website, like text
-                  and images. Off-page local SEO means getting other websites to link
+                  On-page local search engine optimization means improving things on your website, like text
+                  and images. Off-page local search engine optimization means getting other websites to link
                   to yours.
                 </p>
 
-                <h3>How do you handle technical SEO issues on a website?</h3>
+                <h3>How do you handle technical search engine optimization issues on a website?</h3>
                 <p>
                   We fix problems like slow loading times, broken links, and
                   mobile-friendliness to improve your site’s performance.
@@ -1144,36 +973,36 @@ const Home = ({ latestPosts }) => {
                 <h3>Can you guarantee my website will rank #1 on Google?</h3>
                 <p>
                   No one can promise a #1 spot, but we can improve your chances
-                  with good SEO practices, as we have for all of our clients.
+                  with good <strong>SEO Niagara</strong> practices, as we have for all of our clients.
                 </p>
 
-                <h3>How do backlinks impact my website’s local SEO?</h3>
+                <h3>How do backlinks impact my website’s local search engine optimization?</h3>
                 <p>
                   Backlinks are links from other websites to yours. They show
                   Google your site is trusted.
                 </p>
 
                 <h3>
-                  What tools or software do you use for SEO analysis and
+                  What tools or software do you use for analysis and
                   reporting?
                 </h3>
                 <p>
-                  We use tools like Google Analytics and SEO software to check
+                  We use tools like Google Analytics and software to check
                   your website’s performance and give you reports.
                 </p>
 
                 <h3>
-                  What are the potential risks of SEO, and how do you mitigate
+                  What are the potential risks of search engine optimization, and how do you mitigate
                   them?
                 </h3>
                 <p>
                   Risks include using bad practices that can get your site
-                  penalized by Google. We use safe, proven methods to avoid
+                  penalized by Google. Our <strong>SEO Niagara</strong> experts use safe, proven methods to avoid
                   this.
                 </p>
 
                 <h3>
-                  How do you approach local SEO, especially for service-based
+                  How do you approach local Ssearch engine optimization, especially for service-based
                   businesses?
                 </h3>
                 <p>
@@ -1181,15 +1010,14 @@ const Home = ({ latestPosts }) => {
                   Maps, and gather positive reviews to improve local rankings.
                 </p>
 
-                <h3>What is your process for auditing a website's SEO?</h3>
+                <h3>What is your process for auditing a website?</h3>
                 <p>
                   We check your site’s health, look at keywords, see how it
                   performs, and find areas to improve.
                 </p>
 
                 <h3>
-                  What is the role of content in SEO, and how do you create
-                  SEO-friendly content?
+                  How ow do you create Google-friendly content?
                 </h3>
                 <p>
                   Content is key. We write helpful, interesting articles with
@@ -1203,99 +1031,6 @@ const Home = ({ latestPosts }) => {
                 <p>
                   We follow SEO news, read updates from search engines, and test
                   new strategies to keep up.
-                </p>
-                <h2>
-                  <span>Website Design &amp; Development</span>
-                </h2>
-                <h3>How much does a new website cost?</h3>
-                <p>
-                  This entirely depends on the websites functionalities, and the
-                  work involved.{" "}
-                  <Link href="/get-a-quote">Contact us today</Link> for a free
-                  consult and free quote.
-                </p>
-
-                <h3>How long will it take to get a new website?</h3>
-                <p>
-                  A simple website usually takes about 1-2 weeks. Fancier
-                  websites can take 4-12 weeks, depending on how complicated
-                  they are.
-                </p>
-
-                <h3>Are your web designs responsive / mobile-friendly?</h3>
-                <p>
-                  Yes! Our websites work well on phones, tablets, and computers.
-                </p>
-
-                <h3>Can you build an e-commerce website?</h3>
-                <p>
-                  Absolutely! We can create websites where you can sell things
-                  online.
-                </p>
-
-                <h3>Can you build websites with extra functionalities?</h3>
-                <p>
-                  Definitely! We can add features like member-only areas, blogs,
-                  appointment booking, photo galleries, forms, social media
-                  links, online stores, and payment options.
-                </p>
-
-                <h3>How do you approach website design?</h3>
-                <p>
-                  We create websites that are simple, easy to use, modern, and
-                  clean. We focus on making your business look great and work
-                  well for your customers, not just on making it look nice.
-                </p>
-
-                <h3>Do you do website redesigns?</h3>
-                <p>Yes, we can give your old website a fresh look!</p>
-
-                <h3>Can I update the website myself?</h3>
-                <p>Yes, you can! We'll show you how, and it's pretty easy.</p>
-
-                <h3>Are the websites you build accessible?</h3>
-                <p>
-                  We make sure our websites are easy for everyone to use. If you
-                  need special features for accessibility, we can add those too.
-                </p>
-
-                <h3>Do you build mobile-friendly sites?</h3>
-                <p>Yes, all our sites work great on phones and tablets.</p>
-
-                <h3>Which website builder is best?</h3>
-                <p>
-                  We like using WordPress. It’s like having a Swiss Army knife
-                  for building websites.
-                </p>
-
-                <h3>Who hosts the website?</h3>
-                <p>
-                  For simple websites, we handle it. For larger WordPress sites,
-                  you’ll need to host it yourself, but we’ll help you set it up.
-                </p>
-
-                <h3>Do you work with everyone?</h3>
-                <p>
-                  We work with all kinds of businesses, especially those in
-                  Niagara.
-                </p>
-
-                <h3>Do I provide the content for my website?</h3>
-                <p>
-                  Yes, you know your business best! But if you need help, we can
-                  assist for an extra fee.
-                </p>
-
-                <h3>How much input do I have?</h3>
-                <p>
-                  A lot! It’s like building with Lego – we’ll work together to
-                  make sure you love the final result.
-                </p>
-
-                <h3>What if I need help after my website is live?</h3>
-                <p>
-                  Don’t worry, we’re here for you! We’ll help you out if you
-                  need anything after your website is up and running.
                 </p>
               </Col>
             </Row>
@@ -1353,119 +1088,6 @@ const Home = ({ latestPosts }) => {
         </Container>
       </section>
 
-      <section className="home-areas pd-top-120 pd-btm-120">
-        <Container>
-          <Row>
-            <Col lg="12">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>Delivering Digital Marketing Services in Niagara:</h2>
-                <Link href="/digital-marketing-agency-beamsville">
-                  Beamsville, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-crystal-beach">
-                  Crystal Beach, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-fonthill">
-                  Fonthill, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-fort-erie">
-                  Fort Erie, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-grimsby">
-                  Grimsby, ON
-                </Link>{" "}
-                | <Link href="/">Niagara Falls, ON</Link> |{" "}
-                <Link href="/">Niagara-on-the-Lake, ON</Link> |{" "}
-                <Link href="/digital-marketing-agency-port-colborne">
-                  Port Colborne, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-st-catharines">
-                  St. Catharines, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-thorold">
-                  Thorold, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-wainfleet">
-                  Wainfleet, ON
-                </Link>{" "}
-                |{" "}
-                <Link href="/digital-marketing-agency-welland">
-                  Welland, ON
-                </Link>
-              </motion.div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="12">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>Delivering SEO Services in Niagara:</h2>
-                <Link href="/seo/beamsville">Beamsville, ON</Link> |{" "}
-                <Link href="/seo/crystal-beach">Crystal Beach, ON</Link> |{" "}
-                <Link href="/seo/fonthill">Fonthill, ON</Link> |{" "}
-                <Link href="/seo/fort-erie">Fort Erie, ON</Link> |{" "}
-                <Link href="/seo/grimsby">Grimsby, ON</Link> |{" "}
-                <Link href="/">Niagara Falls, ON</Link> |{" "}
-                <Link href="/">Niagara-on-the-Lake, ON</Link> |{" "}
-                <Link href="/seo/port-colborne">Port Colborne, ON</Link> |{" "}
-                <Link href="/">St. Catharines, ON</Link> |{" "}
-                <Link href="/seo/thorold">Thorold, ON</Link> |{" "}
-                <Link href="/seo/wainfleet">Wainfleet, ON</Link> |{" "}
-                <Link href="/seo/welland">Welland, ON</Link>
-              </motion.div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="12">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>Delivering Web Design Services in Niagara To:</h2>
-                <Link href="/beamsville-web-design">Beamsville, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/crystal-beach-web-design">Crystal Beach, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/fonthill-web-design">Fonthill, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/fort-erie-web-design">Fort Erie, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/grimsby-web-design">Grimsby, ON</Link>{" "}
-                <span>|</span> <Link href="/">Niagara Falls, ON</Link>{" "}
-                <span>|</span> <Link href="/">Niagara-on-the-Lake, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/port-colborne-web-design">Port Colborne, ON</Link>{" "}
-                <span>|</span> <Link href="/">St. Catharines, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/thorold-web-design">Thorold, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/wainfleet-web-design">Wainfleet, ON</Link>{" "}
-                <span>|</span>{" "}
-                <Link href="/web-design-welland">Welland, ON</Link>
-              </motion.div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
       <section className="cta home-cta">
         <div className="container">
           <div className="row text-center">
@@ -1477,7 +1099,7 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Ready to <span>Grow Your Niagara Business</span>?
+                  Ready to <span>Grow Your Business</span>?
                 </h2>
                 <p>Get your free quote below!</p>
               </motion.div>
