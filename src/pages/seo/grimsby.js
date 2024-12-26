@@ -18,9 +18,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          SEO Marketing Grimsby, ON | Best Search Engine Optimization
-        </title>
+        <title>SEO Grimsby, ON | Best Search Engine Optimization</title>
         <meta
           name="description"
           content="Boost your online presence with top-notch SEO marketing in Grimsby, ON. Get the best search engine optimization services tailored to your business needs."
@@ -29,8 +27,8 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Services in Grimsby"
-        subTitle="Top Search Engine Optimization Agency in Grimsby, ON"
+        title="SEO Grimsby, ON"
+        subTitle="Top SEO Grimsby Company"
         image={hero}
         alt="seo grimsby, ontario"
       />
@@ -346,8 +344,9 @@ const SEO = ({ latestPosts }) => {
 
                 <h3>How do you create content that Google likes?</h3>
                 <p>
-                  We write helpful and interesting content with the right
-                  keywords to attract people who are looking for your services.
+                  Our SEO Grimsby team writes helpful and interesting content
+                  with the right keywords to attract people who are looking for
+                  your services.
                 </p>
 
                 <h3>
