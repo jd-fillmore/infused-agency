@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { getLatestPosts } from "../lib/posts";
 import {
   Col,
   Container,
   Row,
+  Card,
+  CardBody,
+  Collapse,
+  Button,
 } from "reactstrap";
 import { format } from "date-fns";
 import "react-accessible-accordion/dist/fancy-example.css";
@@ -580,11 +584,16 @@ const addJsonLd = () => {
 };
 
 const Home = ({ latestPosts }) => {
+  const [isNiagaraOpen, setIsNiagaraOpen] = useState(false);
+  const [isStCatharinesOpen, setIsStCatharinesOpen] = useState(false);
+
+  const toggleNiagara = () => setIsNiagaraOpen(!isNiagaraOpen);
+  const toggleStCatharines = () => setIsStCatharinesOpen(!isStCatharinesOpen);
   return (
     <>
       <Head>
-      <title>
-        SEO Niagara, ON | St. Catharines Search Engine Optimization
+        <title>
+          SEO Niagara, ON | St. Catharines Search Engine Optimization
         </title>
         <meta
           name="description"
@@ -619,16 +628,22 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>
-                  Local SEO Marketing Services based in St. Catharines
-                </h2>
+                <h2>Local SEO Marketing Services based in St. Catharines</h2>
                 <p>
-                  At Infused Agency, we provide top <strong>SEO Niagara</strong> services hailing from St. Catharines. We help businesses get noticed online with our expert
-                  search engine optimization services. From creating a plan to making it
-                  happen, our SEO marketing services can make your website more visible, when people search for what you offer.
+                  At Infused Agency, we provide top <strong>SEO Niagara</strong>{" "}
+                  services hailing from St. Catharines. We help businesses get
+                  noticed online with our expert search engine optimization
+                  services. From creating a plan to making it happen, our SEO
+                  marketing services can make your website more visible, when
+                  people search for what you offer.
                 </p>
                 <p>
-                Our team works closely with you to understand your local business goals. We then develop a customized local search engine optimization strategy to help you rank higher in search results and attract more customers in your area. Your input is essential, and together, we ensure your business gets the online visibility it deserves!
+                  Our team works closely with you to understand your local
+                  business goals. We then develop a customized local search
+                  engine optimization strategy to help you rank higher in search
+                  results and attract more customers in your area. Your input is
+                  essential, and together, we ensure your business gets the
+                  online visibility it deserves!
                 </p>
               </motion.div>
             </div>
@@ -653,7 +668,9 @@ const Home = ({ latestPosts }) => {
                     <div class="card">
                       <h3>After hiring us:</h3>
                       <ul>
-                        <li>Local Google Search Visibility Increased by 300%</li>
+                        <li>
+                          Local Google Search Visibility Increased by 300%
+                        </li>
                         <li>
                           Page 1 Google Map Rankings for Multiple Keywords
                         </li>
@@ -699,36 +716,36 @@ const Home = ({ latestPosts }) => {
               >
                 <h2>Why Choose Infused As Your Niagara SEO Agency?</h2>
                 <p>
-                  It's simple. Our <strong>SEO Agency in Niagara</strong> has been helping businesses with their
-                  search engine optimization{" "}
-                  for over ten years. This means our local <strong>SEO Niagara</strong> expert consultants know what
-                  works best for local companies when it comes to creating local SEO strategies. Our experience allows us to
-                  create local SEO strategies that not only look amazing but also{" "}
-                  help businesses get more customers.
+                  It's simple. Our <strong>SEO Agency in Niagara</strong> has
+                  been helping businesses with their search engine optimization{" "}
+                  for over ten years. This means our local{" "}
+                  <strong>SEO Niagara</strong> expert consultants know what
+                  works best for local companies when it comes to creating local
+                  SEO strategies. Our experience allows us to create local SEO
+                  strategies that not only look amazing but also help businesses
+                  get more customers.
                 </p>
 
                 <p>
-                  When you choose us, you're getting a team that{" "}
-                  understands the area. We know how to
-                  make your online presence stand out to both locals and
-                  tourists. Our goal is to help your business grow by{" "}
-                  attracting more visitors to your site.
+                  When you choose us, you're getting a team that understands the
+                  area. We know how to make your online presence stand out to
+                  both locals and tourists. Our goal is to help your business
+                  grow by attracting more visitors to your site.
                 </p>
 
                 <p>
-                  With our <strong>SEO Niagara</strong> skills, we can{" "}
-                  help your website show up on Google when
-                  people search for services in St. Catharines and beyond. This means more people
-                  will find you, which can lead to more sales. We love{" "}
-                  seeing our clients succeed, and we work hard
-                  to make that happen!
+                  With our <strong>SEO Niagara</strong> skills, we can help your
+                  website show up on Google when people search for services in
+                  St. Catharines and beyond. This means more people will find
+                  you, which can lead to more sales. We love seeing our clients
+                  succeed, and we work hard to make that happen!
                 </p>
 
                 <p>
                   With our <Link href="/blog">great knowledge</Link>,{" "}
                   <Link href="/work">high-quality work</Link>, and friendly
-                  customer service, we've become a top SEO
-                  agency that businesses trust.
+                  customer service, we've become a top SEO agency that
+                  businesses trust.
                 </p>
 
                 <Image
@@ -857,10 +874,12 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Leading Search Engine Optimization Company That <span>Makes An Impact</span>
+                  Leading Search Engine Optimization Company That{" "}
+                  <span>Makes An Impact</span>
                 </h2>
                 <p>
-                  Our <strong>SEO Niagara</strong> services and lead-generating website designs help grow your business.
+                  Our <strong>SEO Niagara</strong> services and lead-generating
+                  website designs help grow your business.
                 </p>
               </motion.div>
             </div>
@@ -881,8 +900,8 @@ const Home = ({ latestPosts }) => {
                     <h2>Search Engine Optimization (SEO)</h2>
                     <p>
                       Are your customers not finding your website on Google? Our
-                      <strong>SEO Niagara</strong> services help your website be visible to your
-                      customers.
+                      <strong>SEO Niagara</strong> services help your website be
+                      visible to your customers.
                     </p>
                   </div>
                 </Link>
@@ -892,8 +911,8 @@ const Home = ({ latestPosts }) => {
                   <div className="card">
                     <h2>Lead-Generating Web Design</h2>
                     <p>
-                      Is your website design not bringing you customers?
-                      We make lead-generating websites that turn visitors into
+                      Is your website design not bringing you customers? We make
+                      lead-generating websites that turn visitors into
                       customers.
                     </p>
                   </div>
@@ -926,13 +945,20 @@ const Home = ({ latestPosts }) => {
           >
             <Row>
               <Col lg="12">
-                <h3>What is search engine optimization, and why is it important for my website?</h3>
+                <h3>
+                  What is search engine optimization, and why is it important
+                  for my website?
+                </h3>
                 <p>
-                  Local <strong>SEO Niagara</strong> services means making your website better so it appears higher in
-                  local search engine results. This helps more people find your site.
+                  Local <strong>SEO Niagara</strong> services means making your
+                  website better so it appears higher in local search engine
+                  results. This helps more people find your site.
                 </p>
 
-                <h3>What are the main factors that influence Local search engine optimization rankings?</h3>
+                <h3>
+                  What are the main factors that influence Local search engine
+                  optimization rankings?
+                </h3>
                 <p>
                   Important factors include using the right keywords, having a
                   fast website, and getting other websites to link to yours.
@@ -940,8 +966,8 @@ const Home = ({ latestPosts }) => {
 
                 <h3>How much does Local search engine optimization cost?</h3>
                 <p>
-                  This entirely depends on both the length of the local <strong>SEO Niagara</strong> campaign,
-                  and the work involved.{" "}
+                  This entirely depends on both the length of the local{" "}
+                  <strong>SEO Niagara</strong> campaign, and the work involved.{" "}
                   <Link href="/get-a-quote">Contact us today</Link> for a free
                   consult and free quote.
                 </p>
@@ -956,15 +982,20 @@ const Home = ({ latestPosts }) => {
                 </p>
 
                 <h3>
-                  What is on-page local search engine optimization, and how does it differ from off-page local search engine optimization?
+                  What is on-page local search engine optimization, and how does
+                  it differ from off-page local search engine optimization?
                 </h3>
                 <p>
-                  On-page local search engine optimization means improving things on your website, like text
-                  and images. Off-page local search engine optimization means getting other websites to link
-                  to yours.
+                  On-page local search engine optimization means improving
+                  things on your website, like text and images. Off-page local
+                  search engine optimization means getting other websites to
+                  link to yours.
                 </p>
 
-                <h3>How do you handle technical search engine optimization issues on a website?</h3>
+                <h3>
+                  How do you handle technical search engine optimization issues
+                  on a website?
+                </h3>
                 <p>
                   We fix problems like slow loading times, broken links, and
                   mobile-friendliness to improve your site’s performance.
@@ -973,37 +1004,40 @@ const Home = ({ latestPosts }) => {
                 <h3>Can you guarantee my website will rank #1 on Google?</h3>
                 <p>
                   No one can promise a #1 spot, but we can improve your chances
-                  with good <strong>SEO Niagara</strong> practices, as we have for all of our clients.
+                  with good <strong>SEO Niagara</strong> practices, as we have
+                  for all of our clients.
                 </p>
 
-                <h3>How do backlinks impact my website’s local search engine optimization?</h3>
+                <h3>
+                  How do backlinks impact my website’s local search engine
+                  optimization?
+                </h3>
                 <p>
                   Backlinks are links from other websites to yours. They show
                   Google your site is trusted.
                 </p>
 
                 <h3>
-                  What tools or software do you use for analysis and
-                  reporting?
+                  What tools or software do you use for analysis and reporting?
                 </h3>
                 <p>
-                  We use tools like Google Analytics and software to check
-                  your website’s performance and give you reports.
+                  We use tools like Google Analytics and software to check your
+                  website’s performance and give you reports.
                 </p>
 
                 <h3>
-                  What are the potential risks of search engine optimization, and how do you mitigate
-                  them?
+                  What are the potential risks of search engine optimization,
+                  and how do you mitigate them?
                 </h3>
                 <p>
                   Risks include using bad practices that can get your site
-                  penalized by Google. Our <strong>SEO Niagara</strong> experts use safe, proven methods to avoid
-                  this.
+                  penalized by Google. Our <strong>SEO Niagara</strong> experts
+                  use safe, proven methods to avoid this.
                 </p>
 
                 <h3>
-                  How do you approach local Ssearch engine optimization, especially for service-based
-                  businesses?
+                  How do you approach local Ssearch engine optimization,
+                  especially for service-based businesses?
                 </h3>
                 <p>
                   We focus on local keywords, get your business listed on Google
@@ -1016,9 +1050,7 @@ const Home = ({ latestPosts }) => {
                   performs, and find areas to improve.
                 </p>
 
-                <h3>
-                  How ow do you create Google-friendly content?
-                </h3>
+                <h3>How ow do you create Google-friendly content?</h3>
                 <p>
                   Content is key. We write helpful, interesting articles with
                   the right keywords to attract visitors.
@@ -1155,6 +1187,236 @@ const Home = ({ latestPosts }) => {
           </Row>
         </Container>
       </section>
+      <Container>
+        <Row>
+          <Col lg="12">
+            <Button
+              color="primary"
+              onClick={toggleNiagara}
+              style={{ marginBottom: "1rem" }}
+            >
+              Niagara, Ontario
+            </Button>
+            <Collapse isOpen={isNiagaraOpen}>
+              <Card>
+                <CardBody>
+                  <h3>About Niagara, Ontario</h3>
+                  <p>
+                    Niagara, Ontario, is a region known for its stunning
+                    waterfalls, beautiful vineyards, and friendly communities.
+                    It's famous for Niagara Falls, one of the most well-known
+                    natural attractions in the world. The Niagara Region
+                    includes several towns and cities, each with its own charm
+                    and attractions, making it a great place for families and
+                    businesses.
+                  </p>
+
+                  <h3>Niagara's Local Economy</h3>
+                  <p>
+                    The economy in Niagara is diverse, with a strong focus on
+                    tourism, agriculture, and small businesses. The region is
+                    famous for its wineries and vineyards, which attract
+                    visitors from all over. There are also many shops,
+                    restaurants, and other businesses that contribute to the
+                    local economy. The region supports new and existing
+                    businesses, making Niagara a good place to start or grow a
+                    business.
+                  </p>
+
+                  <h3>Attractions and Activities in Niagara</h3>
+                  <p>
+                    There are many fun things to do in Niagara. You can visit
+                    Niagara Falls and enjoy the amazing views and attractions.
+                    The region has beautiful parks, trails, and nature areas
+                    where you can hike, bike, or have a picnic. Niagara is also
+                    home to many festivals and events that celebrate its history
+                    and culture.
+                  </p>
+
+                  <h3>Education and Community Services in Niagara</h3>
+                  <p>
+                    Niagara has good schools, including elementary and secondary
+                    schools, as well as colleges and universities. The region
+                    offers community services like libraries, community centers,
+                    and healthcare facilities. These services help ensure
+                    residents have access to important resources and activities.
+                  </p>
+
+                  <h3>Living in Niagara</h3>
+                  <p>
+                    Living in Niagara offers a mix of natural beauty and modern
+                    conveniences. It's a safe place with friendly people and
+                    good schools, making it great for families. The region is
+                    close to major highways, so you can easily travel to nearby
+                    cities like St. Catharines and Hamilton. The beautiful
+                    landscapes and vibrant community make Niagara a wonderful
+                    place to live.
+                  </p>
+
+                  <h3>Local SEO Services for Niagara Businesses</h3>
+                  <p>
+                    If you own a business in Niagara, having a strong online
+                    presence is important to attract local customers. Our local
+                    SEO services can help your business rank higher in search
+                    results, bringing more visitors to your website and
+                    increasing your customer base. We can optimize your Google
+                    My Business listing and create content specific to Niagara,
+                    helping you get better results.
+                  </p>
+                  <h2>Things to Do in Niagara, Ontario</h2>
+
+                  <h3>1. Visit Niagara Falls</h3>
+                  <p>
+                    The world-famous Niagara Falls is a must-see. You can enjoy
+                    boat tours like the <em>Maid of the Mist</em> or explore the
+                    surrounding trails and viewpoints.
+                  </p>
+                  <a
+                    href="https://www.niagaraparks.com/niagara-falls"
+                    target="_blank"
+                  >
+                    Visit Niagara Falls
+                  </a>
+
+                  <h3>2. Explore Niagara-on-the-Lake</h3>
+                  <p>
+                    A picturesque town known for its wineries and charming
+                    historic district. Stroll through quaint shops and enjoy
+                    local wine tours.
+                  </p>
+                  <a href="https://www.niagaraonthelake.com/" target="_blank">
+                    Explore Niagara-on-the-Lake
+                  </a>
+
+                  <h3>3. Niagara SkyWheel</h3>
+                  <p>
+                    Take a ride on the Niagara SkyWheel for incredible views of
+                    the falls and the surrounding area, a great way to see
+                    Niagara from above.
+                  </p>
+                  <a
+                    href="https://www.cliftonhill.com/attractions/niagara-skywheel"
+                    target="_blank"
+                  >
+                    Visit Niagara SkyWheel
+                  </a>
+                </CardBody>
+              </Card>
+            </Collapse>
+
+            <Button
+              color="primary"
+              onClick={toggleStCatharines}
+              style={{ marginBottom: "1rem" }}
+            >
+              St. Catharines, Ontario
+            </Button>
+            <Collapse isOpen={isStCatharinesOpen}>
+              <Card>
+                <CardBody>
+                  <h3>About St. Catharines, Ontario</h3>
+                  <p>
+                    St. Catharines, Ontario, is a city in the Niagara Region
+                    known as "The Garden City" because of its many parks and
+                    gardens. It's the largest city in the Niagara Region and has
+                    a rich history, beautiful scenery, and a welcoming
+                    community. St. Catharines is a great place for families and
+                    businesses alike.
+                  </p>
+
+                  <h3>St. Catharines' Local Economy</h3>
+                  <p>
+                    The economy in St. Catharines is diverse, with industries
+                    like manufacturing, retail, and services. The city is home
+                    to many businesses and shops that contribute to its growth.
+                    The local government supports business development, making
+                    St. Catharines a good place to start or grow a business. The
+                    city's location near the Welland Canal also helps its
+                    economy.
+                  </p>
+
+                  <h3>Attractions and Activities in St. Catharines</h3>
+                  <p>
+                    There are lots of fun things to do in St. Catharines. You
+                    can visit parks like Montebello Park or take a walk along
+                    the Welland Canal. The city has a vibrant arts community
+                    with galleries, theaters, and events throughout the year.
+                    St. Catharines also hosts festivals and events that
+                    celebrate its culture and history.
+                  </p>
+
+                  <h3>Education and Community Services in St. Catharines</h3>
+                  <p>
+                    St. Catharines has good schools, including Brock University
+                    and several elementary and secondary schools. The city
+                    offers community services like libraries, community centers,
+                    and healthcare facilities. These services help ensure
+                    residents have access to important resources and activities.
+                  </p>
+
+                  <h3>Living in St. Catharines</h3>
+                  <p>
+                    Living in St. Catharines offers a blend of urban and natural
+                    settings. It's a safe place with friendly people and good
+                    schools, making it great for families. The city is close to
+                    major highways, so you can easily travel to nearby cities
+                    like Niagara Falls and Hamilton. The mix of beautiful parks,
+                    cultural events, and community spirit makes St. Catharines a
+                    wonderful place to live.
+                  </p>
+
+                  <h3>Local SEO Services for St. Catharines Businesses</h3>
+                  <p>
+                    If you own a business in St. Catharines, having a strong
+                    online presence is important to attract local customers. Our
+                    local SEO services can help your business rank higher in
+                    search results, bringing more visitors to your website and
+                    increasing your customer base. We can optimize your Google
+                    My Business listing and create content specific to St.
+                    Catharines, helping you get better results.
+                  </p>
+                  <h2>Things to Do in St. Catharines, Ontario</h2>
+
+                  <h3>1. Montebello Park</h3>
+                  <p>
+                    Enjoy the park in the heart of St. Catharines, perfect for
+                    picnics, walks, and outdoor events during the summer months.
+                  </p>
+                  <a
+                    href="https://facilities.stcatharines.ca/Home/Detail?Id=e8ee9fe1-7257-4eae-a4b6-56983dee10a2"
+                    target="_blank"
+                  >
+                    Visit Montebello Park
+                  </a>
+
+                  <h3>2. St. Catharines Farmers' Market</h3>
+                  <p>
+                    Shop for fresh local produce, handmade goods, and more at
+                    the St. Catharines Farmers' Market, a great community
+                    gathering spot.
+                  </p>
+                  <a
+                    href="https://www.stcatharines.ca/en/arts-culture-and-events/farmers-market.aspx"
+                    target="_blank"
+                  >
+                    Explore the Farmers' Market
+                  </a>
+
+                  <h3>3. Rodman Hall Art Centre</h3>
+                  <p>
+                    Visit the Rodman Hall Art Centre for contemporary and
+                    historical art exhibitions, perfect for those who love
+                    exploring art and culture.
+                  </p>
+                  <a href="https://www.brocku.ca/rodman-hall/" target="_blank">
+                    Visit Rodman Hall Art Centre
+                  </a>
+                </CardBody>
+              </Card>
+            </Collapse>
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );
