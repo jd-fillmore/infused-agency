@@ -393,6 +393,70 @@ const SEO = ({ latestPosts }) => {
                 </Row>
               </Col>
             </Row>
+            <Row>
+              <Col lg="12">
+                <h3>About Grimsby, Ontario</h3>
+                <p>
+                  Grimsby, Ontario, is a small town located between Lake Ontario
+                  and the Niagara Escarpment. It's known for its beautiful
+                  landscapes and friendly community. Grimsby has a rich history
+                  dating back to the early 1800s, and it offers a mix of modern
+                  amenities and natural beauty, making it a great place for
+                  families and businesses.
+                </p>
+
+                <h3>Grimsby's Local Economy</h3>
+                <p>
+                  The economy in Grimsby is varied, with a focus on agriculture,
+                  retail, and small businesses. The town is surrounded by farms
+                  and vineyards, which are important to the local economy.
+                  Grimsby also has many shops and businesses that contribute to
+                  its growth. The town supports new and existing businesses,
+                  making it a good place to start or grow a business.
+                </p>
+
+                <h3>Attractions and Activities in Grimsby</h3>
+                <p>
+                  There are many fun things to do in Grimsby. You can visit
+                  local parks like Beamer Memorial Conservation Area, where you
+                  can hike and enjoy the views. Grimsby also has a vibrant arts
+                  community, with galleries and events throughout the year. The
+                  town hosts festivals and events that celebrate its history and
+                  community spirit.
+                </p>
+
+                <h3>Education and Community Services in Grimsby</h3>
+                <p>
+                  Grimsby has good schools, including Grimsby Secondary School
+                  and several elementary schools. The town also offers community
+                  services like libraries, community centers, and healthcare
+                  facilities. These services help make sure residents have
+                  access to important resources and activities.
+                </p>
+
+                <h3>Living in Grimsby</h3>
+                <p>
+                  Living in Grimsby offers a perfect mix of small-town charm and
+                  modern conveniences. It's a safe place with friendly people
+                  and good schools, making it ideal for families. The town is
+                  also close to the QEW highway, so you can easily travel to
+                  nearby cities like Hamilton and St. Catharines. The beautiful
+                  natural surroundings and vibrant community make Grimsby a
+                  wonderful place to live.
+                </p>
+
+                <h3>Local SEO Services for Grimsby Businesses</h3>
+                <p>
+                  If you own a business in Grimsby, having a strong online
+                  presence is important to attract local customers. Our local
+                  SEO services can help your business rank higher in search
+                  results, bringing more visitors to your website and increasing
+                  your customer base. We can optimize your Google My Business
+                  listing and create content specific to Grimsby, helping you
+                  get better results.
+                </p>
+              </Col>
+            </Row>
           </Container>
         </section>
       </section>
