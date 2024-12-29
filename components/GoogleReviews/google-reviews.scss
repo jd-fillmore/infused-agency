@@ -1,0 +1,13 @@
+@import "../../src/pages/breakpoints.scss";
+
+.google-reviews {
+    padding: 60px 0px 40px 0px;
+    text-align: center;
+    .d-flex {
+        justify-content: center;
+    }
+    img {
+        width: 192px;
+        height: 63px;
+    }
+}

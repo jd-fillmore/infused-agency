@@ -45,7 +45,7 @@ const Example = (props) => {
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <Link
-                    title="Niagara Web Design"
+                    title="SEO Niagara"
                     href="/services"
                     className="nav-link"
                   >

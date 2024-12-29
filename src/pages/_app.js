@@ -39,6 +39,7 @@ import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import "../../components/Home/Process/process.scss";
 import "../../components/websiteFAQ/website-faq.scss";
+import "../../components/GoogleReviews/google-reviews.scss";
 import Script from "next/script";
 
 // export const playfairFont = Playfair_Display({

@@ -857,6 +857,7 @@ const Home = ({ latestPosts }) => {
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
+                  title="seo niagara"
                 ></iframe>
               </motion.div>
             </div>
@@ -1174,6 +1175,7 @@ const Home = ({ latestPosts }) => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="infused agency"
               ></iframe>
               <p>
                 <a
