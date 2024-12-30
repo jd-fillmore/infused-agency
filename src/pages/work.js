@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import Nav from "../../components/Nav/nav";
@@ -40,6 +41,23 @@ const OurWork = () => {
 
       <section className="work">
         <section className="light">
+          <Container>
+            <Row className="pd-btm-40">
+              <Col lg="12">
+                <p>
+                  At Infused Agency, we don’t just design websites – we create
+                  powerful online solutions that help businesses grow. From
+                  boosting search engine rankings with expert{" "}
+                  <Link href="/">Niagara SEO</Link> strategies to crafting
+                  stunning, lead-generating web designs, our work speaks for
+                  itself. Explore our featured projects to see how we've helped
+                  our clients achieve real results, increase visibility, and
+                  drive more customers to their businesses. Let our success
+                  stories inspire your next project.
+                </p>
+              </Col>
+            </Row>
+          </Container>
           <Container>
             <Row>
               <Col lg="5">
