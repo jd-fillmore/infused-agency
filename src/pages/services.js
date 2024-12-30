@@ -32,7 +32,19 @@ const Services = () => {
       <InnerContent>
         <Container>
           <section className="services">
-            <div className="row">
+            <Row>
+              <Col lg="12">
+                <p>
+                  At Infused Agency, we help businesses in Niagara grow by
+                  improving their online presence. Whether you need your website
+                  to show up on Google or want a design that brings in more
+                  customers, we’re here to help. Our services include{" "}
+                  <Link href="/">Niagara SEO</Link> to boost your rankings, and
+                  Lead-Generating Web Design that turns visitors into customers.
+                </p>
+              </Col>
+            </Row>
+            <div className="row pd-top-40">
               <div className="col-lg-6 d-flex">
                 <Link href="/seo">
                   <div className="card">

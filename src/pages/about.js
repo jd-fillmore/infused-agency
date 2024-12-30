@@ -36,7 +36,7 @@ const About = () => {
               <Col lg="6">
                 <p>
                   Welcome to Infused Agency, the leading{" "}
-                  <Link href="/">digital marketing and SEO company</Link> in the
+                  <Link href="/">SEO services Niagara</Link> company in the
                   Niagara region. With over a decade of experience, we've
                   established ourselves as the go-to digital partner for
                   businesses looking to boost their online presence, generate

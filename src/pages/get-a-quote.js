@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   Container,
   Row,
@@ -45,8 +46,8 @@ const Quote = () => {
                 <h2>Let's Elevate Your Brand!</h2>
 
                 <p>
-                  Our team is ready to start your next web design, SEO or
-                  digital marketing project.
+                  Our <Link href="/">SEO Niagara</Link> team is ready to start
+                  your next web design, SEO or digital marketing project.
                   <br />
                   <br />
                   The first step is to get in touch with us to book your free

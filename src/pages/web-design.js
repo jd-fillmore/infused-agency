@@ -78,8 +78,9 @@ const WebDesign = () => {
                   <h3>Grow</h3>
                   <p>
                     After launching your lead-generating website, we drive
-                    growth through targeted SEO. Our approach ensures sustained
-                    traffic, higher conversions, and ongoing business success.
+                    growth through targeted <Link href="/">SEO Niagara</Link>{" "}
+                    services. Our approach ensures sustained traffic, higher
+                    conversions, and ongoing business success.
                   </p>
                 </div>
               </Col>
