@@ -19,585 +19,18 @@ import Footer from "../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-import flatImg from "../../src/img/seo-niagara-agency.webp";
 import best from "../../src/img/awards.png";
-
-const addJsonLd = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https:/infused.agency/#organization",
-        name: "Infused Agency",
-        legalName: "Infused Agency",
-        url: "https:/infused.agency/",
-        description:
-          "Infused Agency is a digital marketing and SEO agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Contact us today for affordable web design that drives results.",
-        disambiguatingDescription:
-          "Infused Agency, a leading website designer and SEO agency based in St. Catharines, Niagara, offers affordable web design services for businesses of all sizes across Ontario and nationwide. With over 10 years of experience helping local and national brands expand their digital presence, we provide custom web design, SEO, digital marketing, and more to drive results for our clients. Our services include website design where we create stunning, conversion-focused websites tailored to your brand and goals, starting at just $499. Our design process emphasizes critical SEO best practices to boost organic traffic. We also offer search engine optimization SEO provided by our experts who develop targeted keyword strategies and on-page optimization to improve your rankings on Google and other search engines. We specialize in local SEO to help St. Catharines and Niagara businesses reach more nearby customers by providing services like listing optimization, review generation, citation building, and other location-based tactics. Additionally, our talented team of writers and designers produce engaging blogs, videos, graphics and more as part of our content creation services which aim to answer customer questions and establish your brand as an industry authority. Finally, we manage and optimize Google Ads and Facebook ad campaigns through our paid ads services which are designed to cost-effectively drive conversions and sales for our clients. Contact us today to schedule a strategy call to discuss how our web design and digital marketing services can help grow your business online. With customized solutions for any budget, Infused Agency is your partner for affordable and effective web design in Niagara!",
-        mainEntityOfPage: "https://en.wikipedia.org/wiki/Digital_marketing",
-        foundingDate: "2013",
-        foundingLocation: {
-          "@type": "Place",
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: "43.159537950696716",
-            longitude: "-79.21376319632402",
-          },
-          name: "Infused Agency",
-        },
-        actionableFeedbackPolicy: "https://infused.agency/privacy-policy/",
-        areaServed: [
-          "St. Catharines, ON",
-          "Niagara, ON",
-          "Niagara Region, ON",
-          "Beamsville, ON",
-          "Crystal Beach, ON",
-          "Fonthill, ON",
-          "Fort Erie, ON",
-          "Grimsby, ON",
-          "Niagara Falls, ON",
-          "Niagara-on-the-Lake, ON",
-          "Port Colborne, ON",
-          "St. Catharines, ON",
-          "Thorold, ON",
-          "Wainfleet, ON",
-          "Welland, ON",
-        ],
-        award: [
-          "2024 Best Digital Marketing in St. Catharines",
-          "2024 Best Digital Marketing in Niagara",
-          "2024 Best Digital Marketing",
-          "2024 Best Local Business Digital Marketing",
-          "2024 Best Digital Marketing Agency",
-          "2024 Best Cheap Digital Marketing",
-          "2024 Best SEO in St. Catharines",
-          "2024 Best SEO in Niagara",
-          "2024 Best SEO",
-          "2024 Best Local Business SEO",
-          "2024 Best SEO Agency",
-          "2024 Best Cheap SEO",
-        ],
-        brand: ["Web Design", "Infused Agency"],
-        knowsAbout: [
-          "web design",
-          "website design",
-          "Wordpress",
-          "local websites",
-          "SEO",
-          "digital marketing",
-          "local SEO",
-        ],
-        founder: {
-          "@type": "Person",
-          name: "JD Fillmore",
-        },
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "73 Alexandra Blvd",
-          addressLocality: "St. Catharines",
-          addressRegion: "ON",
-          postalCode: "L2P 1K2",
-          addressCountry: "CAD",
-        },
-        contactPoint: {
-          "@type": "ContactPoint",
-          contactType: "customer support",
-          telephone: "[905-933-3115]",
-          availableLanguage: ["English", "ASL"],
-          email: "hello@infused.agency",
-        },
-        sameAs: [
-          "https://www.facebook.com/infused.agency",
-          "https://www.hotfrog.ca/company/9a5d8745ba57d4499b16df3d144dae56/infused-agency/st-catharines/web-design",
-          "https://x.com/infusedagency",
-          "https://www.instagram.com/infusedweb/",
-          "https://digitalmainstreet.ca/vendor/infused-agency/",
-          "https://about.me/infused0",
-          "https://www.crunchbase.com/organization/infused-agency",
-          "https://www.yellowpages.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
-          "https://www.mapquest.com/ca/ontario/infused-agency-456469990",
-          "https://www.google.com/maps/place/Infused+Agency+%7C+Digital+Marketing,+SEO,+Niagara+Web+Design/@43.1525695,-79.2103468,17z/data=!3m1!4b1!4m6!3m5!1s0x89d3507111975161:0x18a1198be6280a70!8m2!3d43.1525695!4d-79.2077719!16s%2Fg%2F11gfndyfvl?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D",
-          "https://www.bing.com/maps?q=infused+agency&FORM=HDRSC6&cp=43.152616%7E-79.207799&lvl=16.0",
-          "https://professionelle.ca/1774727816813218416/",
-          "https://www.goodfirms.co/company/infused-agency",
-        ],
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://infused.agency/#localbusiness",
-        name: "Infused Agency",
-        description:
-          "Infused Agency is a digital marketing and SEO agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Call us today for affordable web design that drives results.",
-        disambiguatingDescription:
-          "Infused Agency, a leading website designer and SEO agency based in St. Catharines, Niagara, offers affordable web design services for businesses of all sizes across Michigan and nationwide. With over 10 years of experience helping local and national brands expand their digital presence, we provide custom web design, SEO, digital marketing, and more to drive results for our clients. Our services include website design where we create stunning, conversion-focused websites tailored to your brand and goals, starting at just $499. Our design process emphasizes critical SEO best practices to boost organic traffic. We also offer search engine optimization SEO provided by our experts who develop targeted keyword strategies and on-page optimization to improve your rankings on Google and other search engines. We specialize in local SEO to help Michigan businesses reach more nearby customers by providing services like listing optimization, review generation, citation building, and other location-based tactics. Additionally, our talented team of writers and designers produce engaging blogs, videos, graphics and more as part of our content creation services which aim to answer customer questions and establish your brand as an industry authority. Finally, we manage and optimize Google Ads and Facebook ad campaigns through our paid ads services which are designed to cost-effectively drive conversions and sales for our clients. Contact us today to schedule a strategy call to discuss how our web design and digital marketing services can help grow your business online. With customized solutions for any budget, Infused Agency is your partner for affordable and effective web design in Michigan!",
-        mainEntityOfPage: "https://infused.agency/",
-        sameAs: [
-          "https://www.facebook.com/infused.agency",
-          "https://www.hotfrog.ca/company/9a5d8745ba57d4499b16df3d144dae56/infused-agency/st-catharines/web-design",
-          "https://x.com/infusedagency",
-          "https://www.instagram.com/infusedweb/",
-          "https://digitalmainstreet.ca/vendor/infused-agency/",
-          "https://about.me/infused0",
-          "https://www.crunchbase.com/organization/infused-agency",
-          "https://www.yellowpages.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
-          "https://www.mapquest.com/ca/ontario/infused-agency-456469990",
-          "https://www.google.com/maps/place/Infused+Agency+%7C+Local+SEO+%26+Web+Design/@43.1525734,-79.2103468,16z/data=!3m1!4b1!4m6!3m5!1s0x89d3507111975161:0x18a1198be6280a70!8m2!3d43.1525695!4d-79.2077719!16s%2Fg%2F11gfndyfvl?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
-          "https://www.bing.com/maps?q=infused+agency&FORM=HDRSC6&cp=43.152616%7E-79.207799&lvl=16.0",
-          "https://professionelle.ca/1774727816813218416/",
-          "https://www.goodfirms.co/company/infused-agency",
-        ],
-        logo:
-          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "73 Alexandra Blvd",
-          addressLocality: "St. Catharines",
-          addressRegion: "ON",
-          postalCode: "L2P 1K2",
-          addressCountry: "CAD",
-        },
-        image:
-          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-        currenciesAccepted: "CAD",
-        telePhone: "905-933-3115",
-        url: "https://infused.agency/",
-        email: "hello@infused.agency",
-        knowsLanguage: ["English", "ASL"],
-        knowsAbout: [
-          "SEO near me",
-          "SEO specialist near me",
-          "SEO Niagara",
-          "SEO expert Niagara",
-          "digital marketing Niagara",
-          "SEO agency Niagara",
-          "SEO St. Catharines",
-          "SEO expert St. Catharines",
-          "digital marketing St. Catharines",
-          "SEO agency St. Catharines",
-          "SEO agency near me",
-          "SEO agency",
-          "marketing agency in Niagara",
-          "marketing agency",
-          "digital marketing",
-          "internet marketing",
-        ],
-        paymentAccepted: ["cash", "credit card"],
-        location: "Niagara",
-        slogan: "Digital marketing and SEO just got a whole lot better",
-        hasMap:
-          "https://maps.google.com/maps?ll=43.15257,-79.207772&z=16&t=m&hl=en&gl=CA&mapclient=embed&cid=1774727816813218416",
-        openingHoursSpecification: [
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Monday",
-            opens: "09:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Tuesday",
-            opens: "09:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Wednesday",
-            opens: "09:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Thursday",
-            opens: "09:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Friday",
-            opens: "09:00",
-            closes: "18:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Saturday",
-            opens: "09:00",
-            closes: "13:00",
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "http://schema.org/Sunday",
-            opens: "10:00",
-            closes: "15:00",
-          },
-        ],
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: "43.159537950696716",
-          longitude: "-79.21376319632402",
-        },
-        priceRange: "$",
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://infused.agency/#website",
-        url: "https://infused.agency/",
-        name: "Infused Agency",
-        alternateName: "Infused Agency Niagara",
-        description:
-          "Infused Agency is a digital marketing and SEO agency based in St. Catharines, Niagara that utilizes SEO, content creation, and conversion tactics to help businesses succeed online. Call us today for affordable web design that drives results.",
-        identifier: "https://www.wikidata.org/wiki/Q180711",
-        image:
-          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-        mainEntityOfPage:
-          "https://en.wikipedia.org/wiki/Search_engine_optimization",
-        publisher: {
-          "@type": "Organization",
-          "@id": "https://infused.agency/#organization",
-        },
-        inLanguage: "en-US",
-      },
-      {
-        "@type": "ImageObject",
-        "@id":
-          "https://infused.agency/_next/static/media/infused-logo.6971b904.png#image",
-        inLanguage: "en-US",
-        url:
-          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-        width: 82,
-        height: 17,
-        caption: "Best Digital Marketing and SEO in Niagara",
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://infused.agency/#webpage",
-        headline:
-          "Infused Agency | Digital Marketing and SEO Agency in St. Catharines, Niagara",
-        url: "https://infused.agency/",
-        lastReviewed: "2023/11/12",
-        relatedLink: [
-          "https://www.wikidata.org/wiki/Q180711",
-          "https://www.wikidata.org/wiki/Q1323528",
-          "https://www.wikidata.org/wiki/Q56279965",
-          "https://www.wikidata.org/wiki/Q91038239",
-          "https://www.wikidata.org/wiki/Q1369723",
-          "https://www.wikidata.org/wiki/Q189507",
-        ],
-      },
-      {
-        "@type": ["Person"],
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "73 Alexandra Blvd",
-          addressLocality: "St. Catharines",
-          addressRegion: "ON",
-          postalCode: "L2P 1K2",
-          addressCountry: "CAD",
-        },
-        colleague: [
-          "https://www.instagram.com/jfillmore97/",
-          "https://www.facebook.com/jarryd.douglas0988",
-          "https://www.linkedin.com/in/jd-fillmore/",
-        ],
-        email: "hello@infused.agency",
-        image:
-          "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-        jobTitle: "Website designer",
-        name: "JD Fillmore",
-        description:
-          "Expert Internet Marketer and Strategist, fluent in SEM, SEO, Local Business Optimization, Competitor Research, and creative Web Design.",
-        disambiguatingDescription:
-          "Infused Agency is owned by digital marketing expert JD Fillmore, who founded the company over 10 years ago in St. Catharines, Niagara. JD draws on his decades of experience crafting custom websites and implementing targeted SEO strategies to help businesses small and large expand their online presence. Through Infused Agency, Plotts offers his expertise in crafting stunning, conversion-driven websites that effectively showcase brands and capture leads. He keeps his finger on the pulse of the latest SEO best practices to maximize organic visibility for his client sites. Beyond web design and SEO, Plotts heads a talented in-house team that produces engaging content across media formats and manages ROI-focused paid advertising campaigns on platforms like Google and Facebook. His personalized approach, coupled with Blue Lake's affordable and customized web solutions catered to each client's unique needs and budget, has fueled the company's expansion beyond Michigan to serve clients nationwide. Business owners can schedule a complimentary web strategy consultation with JD himself to discuss leveraging Infused Agency's full suite of website design, SEO, content production, and digital advertising services to maximize their online growth potential. JD's passion is helping brands harness the power of a well-designed web presence to drive real business results.",
-        alumniOf: "Durham College",
-        birthPlace: "Grimsby",
-        birthDate: "1988-08-11",
-        height: "69 inches",
-        gender: "Male",
-        memberOf: "Web Design",
-        nationality: "Canadian",
-        award: "Voted Top Digital Marketing and SEO Agency in Niagara",
-        callSign: "Digital Marketer",
-        knowsAbout: [
-          "SEO near me",
-          "SEO specialist near me",
-          "SEO Niagara",
-          "SEO expert Niagara",
-          "digital marketing Niagara",
-          "SEO agency Niagara",
-          "SEO St. Catharines",
-          "SEO expert St. Catharines",
-          "digital marketing St. Catharines",
-          "SEO agency St. Catharines",
-          "SEO agency near me",
-          "SEO agency",
-          "marketing agency in Niagara",
-          "marketing agency",
-          "digital marketing",
-          "internet marketing",
-        ],
-        telephone: "(905) 933-3115",
-        url: "https://infused.agency",
-        sameAs: [
-          "https://www.instagram.com/jfillmore97/",
-          "https://www.facebook.com/jarryd.douglas0988",
-          "https://www.linkedin.com/in/jd-fillmore/",
-        ],
-      },
-      {
-        "@type": "Service",
-        name: "Web Design",
-        description:
-          "Web design services expertly crafted to create visually stunning, user-friendly websites that effectively represent your brand online. Our team specializes in designing custom websites that not only look great but are also optimized for performance and user experience. We understand that a website is a crucial touchpoint for your business, and our approach is to blend aesthetics with functionality, ensuring your site not only captures attention but also facilitates smooth navigation and user engagement. With a focus on responsive design, we ensure your website looks impeccable on all devices, from desktops to smartphones. Our web design process involves a deep understanding of your business goals, target audience, and industry trends, allowing us to create a unique online presence that stands out in the digital landscape. Whether you're a small local business or a large corporation, our web design services are tailored to meet your specific needs, ensuring your website not only drives traffic but also converts visitors into loyal customers. At Infused Agency, we're committed to delivering web solutions that are not just visually appealing but also strategically designed to boost your online visibility and enhance your brand's digital footprint.",
-        url: "https://infused.agency/",
-      },
-      {
-        "@type": "Service",
-        name: "SEO",
-        description:
-          "As an SEO agency, we offer a holistic approach to elevate your website's visibility across major search engines including Google and Bing. Our meticulous SEO or search engine optimization strategies encompass both technical on-page optimization as well as off-page optimization techniques to not only boost your rankings but drive qualified traffic that converts. We start with extensive keyword research and topic clustering to align your pages with high-traffic search terms and buyer intent. This allows us to map out a content plan focused on ranking you for the queries that capture quality visitors in your industry. Our team then optimizes all critical on-page elements - from page titles and meta descriptions to image alt text and internal linking structure - ensuring search engines clearly interpret your pages. Additionally, we execute proven link-building tactics to organically earn placements on reputable, high-authority websites within your sector. This establishes greater trust and authority signals that search algorithms rely on for favorable rankings. On top of this, our local SEO strategies such as optimizing Google My Business listings, citations and reviews build a strong presence to capture nearby traffic. With a keen eye on the latest search algorithm and ranking factor updates, our sustainable strategies even withstand Google shake-ups. Our experts regularly review reports, shifting approaches to maintain optimal rankings long-term. The end goal is not just fleeting wins, but converting search visibility into tangible ROI in the form of leads, sales and long-term success. Backed by data-driven insights, we elevate beyond the expected.",
-        url: "https://infused.agency/seo/niagara",
-      },
-      {
-        "@type": "Service",
-        name: "Website Design",
-        description:
-          "As an award-winning web design agency, we create high-converting custom websites focused on exceptional user experiences with budget-friendly pricing. Our experienced team of designers build websites optimized to effectively represent your brand online and drive measurable results. We immerse ourselves in your industry to develop sites with engaging copy, striking graphics, and easy navigation - appealing to your target demographics. Our mobile-friendly and mobile-responsive design ensures seamless functionality across all devices. We utilize the latest website design trends like parallax scrolling, flat design, and video backgrounds. Our web development expertise includes incorporating website speed optimizations, SSL encryption, and search engine optimization best practices. With on-page SEO including meta tags, schema markup, ALT text we boost organic visibility. Conversion-centric design, calls-to-action, trust signals like testimonials and security badges maximize lead generation. Trusted by startups and Fortune 500 companies alike, we design custom websites that capture attention and drive measurable growth. With solutions scaling from informational sites to advanced platforms offering eCommerce, reservations, and member portals, we deliver stunning websites converting visitors into customers.",
-        url: "https://infused.agency/web-design",
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What are social media ads?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "They are paid promotions on social media that help your business reach more people.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Why should I use social media ads?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "These ads help you reach a larger audience, target specific groups of people, and get more customers quickly.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How much do social media ads cost?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "The cost varies based on your budget. Contact us today for a free consult and free quote.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How do you create effective ads?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We use eye-catching images or videos, write clear and engaging text, and target the right audience to create effective ads.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How do you target the right audience with these ads?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We use targeting options like age, location, interests, and behaviors to show your ads to people who are most likely to be interested in your business.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How long does it take to see results from these ads?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "You can start seeing results within a few days, but it often takes a few weeks to see the full impact.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "What should I expect in terms of results?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Results can include more website visits, more leads or sales, and increased brand awareness.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How do you measure the success of the ads?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We look at metrics like clicks, conversions, cost per click, and return on ad spend to measure success.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "What is SEO, and why is it important for my website?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "SEO means making your website better so it appears higher in search engine results. This helps more people find your site.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "What are the main factors that influence SEO rankings?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Important factors include using the right keywords, having a fast website, and getting other websites to link to yours.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How much does SEO cost?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "This entirely depends on both the length of the SEO campaign, and the work involved. Contact us today for a free consult and free quote.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "How do you perform keyword research, and how do you determine which keywords to target?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We find words people use to search for your type of business and choose ones that can bring you more visitors.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "What is on-page SEO, and how does it differ from off-page SEO?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "On-page SEO means improving things on your website, like text and images. Off-page SEO means getting other websites to link to yours.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How do you handle technical SEO issues on a website?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We fix problems like slow loading times, broken links, and mobile-friendliness to improve your site’s performance.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Can you guarantee my website will rank #1 on Google?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "No one can promise a #1 spot, but we can improve your chances with good SEO practices.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How do backlinks impact my website’s SEO?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Backlinks are links from other websites to yours. They show Google your site is trusted.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "What tools or software do you use for SEO analysis and reporting?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We use tools like Google Analytics and SEO software to check your website’s performance and give you reports.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "What are the potential risks of SEO, and how do you mitigate them?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Risks include using bad practices that can get your site penalized by Google. We use safe, proven methods to avoid this.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "How do you approach local SEO, especially for service-based businesses?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We focus on local keywords, get your business listed on Google Maps, and gather positive reviews to improve local rankings.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "What is your process for auditing a website's SEO?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We check your site’s health, look at keywords, see how it performs, and find areas to improve.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "What is the role of content in SEO, and how do you create SEO-friendly content?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Content is key. We write helpful, interesting articles with the right keywords to attract visitors.",
-            },
-          },
-          {
-            "@type": "Question",
-            name:
-              "How do you stay updated with the latest changes in search engine algorithms?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "We follow SEO news, read updates from search engines, and test new strategies to keep up.",
-            },
-          },
-        ],
-      },
-    ],
-  };
-
-  return {
-    __html: JSON.stringify(schema),
-  };
-};
+import flatRock from "../../src/img/flat-rock-seo-results.png";
+import kd from "../../src/img/kd-flowers-seo-results.png";
 
 const Home = ({ latestPosts }) => {
-  const [isNiagaraOpen, setIsNiagaraOpen] = useState(false);
-  const [isStCatharinesOpen, setIsStCatharinesOpen] = useState(false);
-
-  const toggleNiagara = () => setIsNiagaraOpen(!isNiagaraOpen);
-  const toggleStCatharines = () => setIsStCatharinesOpen(!isStCatharinesOpen);
   return (
     <>
       <Head>
-        <title>
-          SEO Niagara, ON | St. Catharines Search Engine Optimization
-        </title>
+        <title>SEO Niagara | #1 SEO Services in Niagara, Ontario</title>
         <meta
           name="description"
-          content="Expert SEO Niagara services that boost your businesses visibility. Leading St. Catharines SEO agency offering marketing, optimization, and consulting solutions."
+          content="Expert SEO Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
         />
         <meta
           name="google-site-verification"
@@ -610,99 +43,77 @@ const Home = ({ latestPosts }) => {
 
         <meta property="og:site_name" content="Infused Agency" />
         <link rel="canonical" href="https://infused.agency" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={addJsonLd()}
-          key="item-jsonld"
-        />
       </Head>
       <Nav />
       <Hero />
       <section className="home-top-web">
-        <div className="container pd-btm-120">
-          <div className="row">
-            <div className="col-lg-8">
-              <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2>Local SEO Marketing Services based in St. Catharines</h2>
-                <p>
-                  At Infused Agency, we provide top <strong>SEO Niagara</strong>{" "}
-                  services hailing from St. Catharines. We help businesses get
-                  noticed online with our expert search engine optimization
-                  services. From creating a plan to making it happen, our SEO
-                  marketing services can make your website more visible, when
-                  people search for what you offer.
-                </p>
-                <p>
-                  Our team works closely with you to understand your local
-                  business goals. We then develop a customized local search
-                  engine optimization strategy to help you rank higher in search
-                  results and attract more customers in your area. Your input is
-                  essential, and together, we ensure your business gets the
-                  online visibility it deserves!
-                </p>
-              </motion.div>
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-lg-12">
+              <h2>
+                Our Niagara SEO Partners <span>Achieve Great Results</span>
+              </h2>
             </div>
           </div>
-        </div>
-        {/* Container End*/}
-        {/* Container Start*/}
-        <section className="dark pd-top-120">
-          <div className="container">
-            <section className="work pd-btm-120">
-              <div className="row pd-top-40">
-                <div className="col-lg-6">
-                  <motion.div
-                    initial={{ opacity: 0, y: -50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: true }}
-                  >
-                    <h2 className="title">Recent Project</h2>
-                    <h2>Flat Rock Cellars</h2>
-                    <hr />
-                    <div class="card">
-                      <h3>After hiring us:</h3>
-                      <ul>
-                        <li>
-                          Local Google Search Visibility Increased by 300%
-                        </li>
-                        <li>
-                          Page 1 Google Map Rankings for Multiple Keywords
-                        </li>
-                        <li>Page 1 Google Rankings for Multiple Keywords</li>
-                        <li>Increased User Experience</li>
-                        <li>Increased Engagement and Conversions</li>
-                        <li>Increased Brand Recognition</li>
-                        <li>Streamlined collection of leads</li>
-                      </ul>
-                    </div>
-                  </motion.div>
-                </div>
-                <div className="col-lg-6">
-                  <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                  >
-                    <Image
-                      width="503"
-                      height="343"
-                      priority={true}
-                      className="img-fluid shadow"
-                      src={flatImg}
-                      alt="seo niagara agency"
-                    />
-                  </motion.div>
+          <section className="work">
+            <div className="row pd-top-40">
+              <div className="col-lg-6">
+                <h2 className="title">Recent Project</h2>
+                <h2>Flat Rock Cellars</h2>
+                <hr />
+                <Image
+                  className="img-fluid"
+                  src={flatRock}
+                  alt="Flat Rock Cellars SEO Results"
+                />
+                <div class="card">
+                  <h3>After hiring us:</h3>
+                  <ul>
+                    <li>Local Google Search Visibility Increased by 300%</li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased User Experience</li>
+                    <li>Increased Engagement and Conversions</li>
+                    <li>Increased Brand Recognition</li>
+                    <li>Streamlined collection of leads</li>
+                  </ul>
                 </div>
               </div>
-            </section>
-          </div>
-        </section>
+              <div className="col-lg-6">
+                <h2 className="title">Recent Project</h2>
+                <h2>KD Flowers</h2>
+                <hr />
+                <Image
+                  className="img-fluid"
+                  src={kd}
+                  alt="KD Flowers SEO Results"
+                />
+                <div class="card">
+                  <h3>After hiring us:</h3>
+                  <ul>
+                    <li>Website Page Speed Increased By 100%</li>
+                    <li>Google Search Visibility Increased by 600%</li>
+                    <li>Achieved first-page Google rankings within 3 months</li>
+                    <li>
+                      0 leads to massive growth in local leads from Google
+                    </li>
+                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
+                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>Increased User Experience</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <Row className="pd-top-40 text-center">
+              <Col lg="12">
+                <Link href="/work">
+                  <button>View More Results</button>
+                </Link>
+              </Col>
+            </Row>
+          </section>
+        </div>
+
         {/* Container End*/}
         {/* Container Start*/}
         <div className="container">
@@ -721,7 +132,10 @@ const Home = ({ latestPosts }) => {
                   for over ten years. This means our local{" "}
                   <strong>SEO Niagara</strong> expert consultants know what
                   works best for local companies when it comes to creating local
-                  SEO strategies. Our experience allows us to create local SEO
+                  <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
+                    SEO
+                  </a>{" "}
+                  strategies. Our experience allows us to create local SEO
                   strategies that not only look amazing but also help businesses
                   get more customers.
                 </p>
@@ -875,8 +289,7 @@ const Home = ({ latestPosts }) => {
                 viewport={{ once: true }}
               >
                 <h2>
-                  Leading Search Engine Optimization Company That{" "}
-                  <span>Makes An Impact</span>
+                  Leading Niagara SEO Company That <span>Makes An Impact</span>
                 </h2>
                 <p>
                   Our <strong>SEO Niagara</strong> services and lead-generating
@@ -893,31 +306,154 @@ const Home = ({ latestPosts }) => {
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            {/* Row One */}
-            <div className="row">
-              <div className="col-lg-6 d-flex">
-                <Link href="/seo">
-                  <div className="card">
-                    <h2>Search Engine Optimization (SEO)</h2>
-                    <p>
-                      Are your customers not finding your website on Google? Our
-                      <strong>SEO Niagara</strong> services help your website be
-                      visible to your customers.
-                    </p>
-                  </div>
-                </Link>
+            <Row>
+              <Col lg="12">
+                <p>
+                  Are you a business owner in Niagara, Ontario, wanting to boost
+                  your online presence and attract more local customers? Infused
+                  Agency is here to assist you. Our team specializes in custom{" "}
+                  <Link href="/seo">SEO</Link> and{" "}
+                  <Link href="/web-design">web design</Link> services for
+                  businesses in Niagara and surrounding areas.
+                </p>
+
+                <p>
+                  One of the most important things we do is local SEO. By
+                  improving your website and online listings for search engines,
+                  we help your business appear higher in local search results.
+                  This includes things like setting up your Google My Business
+                  profile and adding special coding to your website to help
+                  search engines understand it better.
+                </p>
+
+                <p>
+                  We also offer complete web design services, including
+                  WordPress development. Our team can build a website that works
+                  well on any device and is optimized for search engines. We
+                  understand that it’s essential for your website to look great
+                  and function smoothly on phones, as many people use them to
+                  search online.
+                </p>
+
+                <p>
+                  Don’t let your competitors outrank you in local searches.
+                  Reach out to us today for a{" "}
+                  <Link href="/get-a-quote">free consultation</Link> and find
+                  out how we can help your Niagara business succeed online.
+                </p>
+                <p>
+                  We proudly serve Niagara, ON, including areas like{" "}
+                  <a href="https://www.google.com/maps/place/Niagara+Falls,+ON/@43.089557,-79.066435,13z/data=!4m6!3m5!1s0x882cd695fdfd5e49:0xd7fd08a95b23bbd4!8m2!3d43.089577!4d-79.058923">
+                    Niagara Falls
+                  </a>
+                  ,{" "}
+                  <a href="https://www.google.com/maps/place/Niagara+on+the+Lake,+ON/@43.257835,-79.066229,13z/data=!4m6!3m5!1s0x8827b0ac14c3de73:0xb36734d7e1280be3!8m2!3d43.257722!4d-79.060721">
+                    Niagara-on-the-Lake
+                  </a>
+                  , and{" "}
+                  <a href="https://www.google.com/maps/place/Niagara+Region,+ON/@43.194624,-79.499932,13z/data=!4m6!3m5!1s0x882cc21f7d73e1b3:0xd1c8c5c4b2f836cc!8m2!3d43.194639!4d-79.493822">
+                    Niagara Region
+                  </a>
+                  .
+                </p>
+
+                <p>
+                  <a href="https://www.niagararegion.ca/" target="_blank">
+                    Niagara Region, ON
+                  </a>{" "}
+                  is a beautiful place along the Niagara River, known for its
+                  gorgeous parks, rich history, and thriving local businesses.
+                  With its welcoming communities and popular attractions like
+                  wineries and nature sites, it's a fantastic area to live and
+                  work.
+                </p>
+
+                <p>
+                  Starting a business in Niagara, ON is exciting, but getting
+                  the word out is key. Without a strong online presence, it can
+                  be tough to grow your business. That's where Infused Agency's
+                  team can help—ensuring your business stands out online.
+                </p>
+              </Col>
+            </Row>
+            <div className="row pd-top-40">
+              <div className="col-lg-4 d-flex">
+                <div className="card">
+                  <h2>Keyword Research</h2>
+                  <p>
+                    Our Niagara SEO experts start by looking at your website and
+                    finding the best words to help people find you. This helps
+                    us make a strong SEO plan just for your business. With lots
+                    of experience, the Infused Agency team knows how to do well,
+                    even in tough competition, always getting great results.
+                  </p>
+                </div>
               </div>
-              <div className="col-lg-6 d-flex">
-                <Link href="/web-design">
-                  <div className="card">
-                    <h2>Lead-Generating Web Design</h2>
-                    <p>
-                      Is your website design not bringing you customers? We make
-                      lead-generating websites that turn visitors into
-                      customers.
-                    </p>
-                  </div>
-                </Link>
+              <div className="col-lg-4 d-flex">
+                <div className="card">
+                  <h2>Link Building</h2>
+                  <p>
+                    We help improve your brand’s presence on big search engines
+                    like Google, Yahoo, and Bing by creating quality links and
+                    adding your business to the right online listings. At
+                    Infused Agency, we follow the best SEO rules using safe and
+                    honest methods. We make a plan that fits your business,
+                    whether you're just starting out or already have an
+                    established company.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <div className="card">
+                  <h2>Content Writing</h2>
+                  <p>
+                    Infused Agency’s SEO team in Niagara has a creative content
+                    team. We create smart marketing strategies for your online
+                    campaigns, including SEO-friendly content. Our goal is to
+                    write fun and interesting content that grabs people's
+                    attention and gets them to support your brand.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 d-flex">
+                <div className="card">
+                  <h2>On-Page SEO</h2>
+                  <p>
+                    Bring more people to your website and get better leads with
+                    our proven on-page SEO methods. Our Niagara SEO team looks
+                    at what your competitors are doing and uses that information
+                    to improve your website’s traffic and ranking. We create
+                    custom SEO plans to make your site easier to find and get
+                    the best results.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <div className="card">
+                  <h2>Local SEO</h2>
+                  <p>
+                    Our Niagara local SEO services help your business get
+                    noticed by the right people online. We pick the best local
+                    words to help us find your target audience. This drives more
+                    people to your website and even to your physical store.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 d-flex">
+                <div className="card">
+                  <h2>Technical SEO</h2>
+                  <p>
+                    Google and other search engines look at how well your
+                    website works to decide how high it ranks. Our Niagara SEO
+                    company takes care of your technical web design to make sure
+                    it’s ready for SEO and works properly. We fix any errors on
+                    the back end and keep track of your website’s performance to
+                    make sure it runs smoothly, making it easier for visitors to
+                    use and turn into customers.
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -934,7 +470,7 @@ const Home = ({ latestPosts }) => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h2>Frequently Asked Local SEO Questions</h2>
+                <h2>FAQs for local Niagara SEO Clients</h2>
               </motion.div>
             </Col>
           </Row>
@@ -1037,7 +573,7 @@ const Home = ({ latestPosts }) => {
                 </p>
 
                 <h3>
-                  How do you approach local Ssearch engine optimization,
+                  How do you approach local search engine optimization,
                   especially for service-based businesses?
                 </h3>
                 <p>
@@ -1189,236 +725,6 @@ const Home = ({ latestPosts }) => {
           </Row>
         </Container>
       </section>
-      <Container>
-        <Row>
-          <Col lg="12">
-            <Button
-              color="primary"
-              onClick={toggleNiagara}
-              style={{ marginBottom: "1rem" }}
-            >
-              Niagara, Ontario
-            </Button>
-            <Collapse isOpen={isNiagaraOpen}>
-              <Card>
-                <CardBody>
-                  <h3>About Niagara, Ontario</h3>
-                  <p>
-                    Niagara, Ontario, is a region known for its stunning
-                    waterfalls, beautiful vineyards, and friendly communities.
-                    It's famous for Niagara Falls, one of the most well-known
-                    natural attractions in the world. The Niagara Region
-                    includes several towns and cities, each with its own charm
-                    and attractions, making it a great place for families and
-                    businesses.
-                  </p>
-
-                  <h3>Niagara's Local Economy</h3>
-                  <p>
-                    The economy in Niagara is diverse, with a strong focus on
-                    tourism, agriculture, and small businesses. The region is
-                    famous for its wineries and vineyards, which attract
-                    visitors from all over. There are also many shops,
-                    restaurants, and other businesses that contribute to the
-                    local economy. The region supports new and existing
-                    businesses, making Niagara a good place to start or grow a
-                    business.
-                  </p>
-
-                  <h3>Attractions and Activities in Niagara</h3>
-                  <p>
-                    There are many fun things to do in Niagara. You can visit
-                    Niagara Falls and enjoy the amazing views and attractions.
-                    The region has beautiful parks, trails, and nature areas
-                    where you can hike, bike, or have a picnic. Niagara is also
-                    home to many festivals and events that celebrate its history
-                    and culture.
-                  </p>
-
-                  <h3>Education and Community Services in Niagara</h3>
-                  <p>
-                    Niagara has good schools, including elementary and secondary
-                    schools, as well as colleges and universities. The region
-                    offers community services like libraries, community centers,
-                    and healthcare facilities. These services help ensure
-                    residents have access to important resources and activities.
-                  </p>
-
-                  <h3>Living in Niagara</h3>
-                  <p>
-                    Living in Niagara offers a mix of natural beauty and modern
-                    conveniences. It's a safe place with friendly people and
-                    good schools, making it great for families. The region is
-                    close to major highways, so you can easily travel to nearby
-                    cities like St. Catharines and Hamilton. The beautiful
-                    landscapes and vibrant community make Niagara a wonderful
-                    place to live.
-                  </p>
-
-                  <h3>Local SEO Services for Niagara Businesses</h3>
-                  <p>
-                    If you own a business in Niagara, having a strong online
-                    presence is important to attract local customers. Our local
-                    SEO services can help your business rank higher in search
-                    results, bringing more visitors to your website and
-                    increasing your customer base. We can optimize your Google
-                    My Business listing and create content specific to Niagara,
-                    helping you get better results.
-                  </p>
-                  <h2>Things to Do in Niagara, Ontario</h2>
-
-                  <h3>1. Visit Niagara Falls</h3>
-                  <p>
-                    The world-famous Niagara Falls is a must-see. You can enjoy
-                    boat tours like the <em>Maid of the Mist</em> or explore the
-                    surrounding trails and viewpoints.
-                  </p>
-                  <a
-                    href="https://www.niagaraparks.com/niagara-falls"
-                    target="_blank"
-                  >
-                    Visit Niagara Falls
-                  </a>
-
-                  <h3>2. Explore Niagara-on-the-Lake</h3>
-                  <p>
-                    A picturesque town known for its wineries and charming
-                    historic district. Stroll through quaint shops and enjoy
-                    local wine tours.
-                  </p>
-                  <a href="https://www.niagaraonthelake.com/" target="_blank">
-                    Explore Niagara-on-the-Lake
-                  </a>
-
-                  <h3>3. Niagara SkyWheel</h3>
-                  <p>
-                    Take a ride on the Niagara SkyWheel for incredible views of
-                    the falls and the surrounding area, a great way to see
-                    Niagara from above.
-                  </p>
-                  <a
-                    href="https://www.cliftonhill.com/attractions/niagara-skywheel"
-                    target="_blank"
-                  >
-                    Visit Niagara SkyWheel
-                  </a>
-                </CardBody>
-              </Card>
-            </Collapse>
-
-            <Button
-              color="primary"
-              onClick={toggleStCatharines}
-              style={{ marginBottom: "1rem" }}
-            >
-              St. Catharines, Ontario
-            </Button>
-            <Collapse isOpen={isStCatharinesOpen}>
-              <Card>
-                <CardBody>
-                  <h3>About St. Catharines, Ontario</h3>
-                  <p>
-                    St. Catharines, Ontario, is a city in the Niagara Region
-                    known as "The Garden City" because of its many parks and
-                    gardens. It's the largest city in the Niagara Region and has
-                    a rich history, beautiful scenery, and a welcoming
-                    community. St. Catharines is a great place for families and
-                    businesses alike.
-                  </p>
-
-                  <h3>St. Catharines' Local Economy</h3>
-                  <p>
-                    The economy in St. Catharines is diverse, with industries
-                    like manufacturing, retail, and services. The city is home
-                    to many businesses and shops that contribute to its growth.
-                    The local government supports business development, making
-                    St. Catharines a good place to start or grow a business. The
-                    city's location near the Welland Canal also helps its
-                    economy.
-                  </p>
-
-                  <h3>Attractions and Activities in St. Catharines</h3>
-                  <p>
-                    There are lots of fun things to do in St. Catharines. You
-                    can visit parks like Montebello Park or take a walk along
-                    the Welland Canal. The city has a vibrant arts community
-                    with galleries, theaters, and events throughout the year.
-                    St. Catharines also hosts festivals and events that
-                    celebrate its culture and history.
-                  </p>
-
-                  <h3>Education and Community Services in St. Catharines</h3>
-                  <p>
-                    St. Catharines has good schools, including Brock University
-                    and several elementary and secondary schools. The city
-                    offers community services like libraries, community centers,
-                    and healthcare facilities. These services help ensure
-                    residents have access to important resources and activities.
-                  </p>
-
-                  <h3>Living in St. Catharines</h3>
-                  <p>
-                    Living in St. Catharines offers a blend of urban and natural
-                    settings. It's a safe place with friendly people and good
-                    schools, making it great for families. The city is close to
-                    major highways, so you can easily travel to nearby cities
-                    like Niagara Falls and Hamilton. The mix of beautiful parks,
-                    cultural events, and community spirit makes St. Catharines a
-                    wonderful place to live.
-                  </p>
-
-                  <h3>Local SEO Services for St. Catharines Businesses</h3>
-                  <p>
-                    If you own a business in St. Catharines, having a strong
-                    online presence is important to attract local customers. Our
-                    local SEO services can help your business rank higher in
-                    search results, bringing more visitors to your website and
-                    increasing your customer base. We can optimize your Google
-                    My Business listing and create content specific to St.
-                    Catharines, helping you get better results.
-                  </p>
-                  <h2>Things to Do in St. Catharines, Ontario</h2>
-
-                  <h3>1. Montebello Park</h3>
-                  <p>
-                    Enjoy the park in the heart of St. Catharines, perfect for
-                    picnics, walks, and outdoor events during the summer months.
-                  </p>
-                  <a
-                    href="https://facilities.stcatharines.ca/Home/Detail?Id=e8ee9fe1-7257-4eae-a4b6-56983dee10a2"
-                    target="_blank"
-                  >
-                    Visit Montebello Park
-                  </a>
-
-                  <h3>2. St. Catharines Farmers' Market</h3>
-                  <p>
-                    Shop for fresh local produce, handmade goods, and more at
-                    the St. Catharines Farmers' Market, a great community
-                    gathering spot.
-                  </p>
-                  <a
-                    href="https://www.stcatharines.ca/en/arts-culture-and-events/farmers-market.aspx"
-                    target="_blank"
-                  >
-                    Explore the Farmers' Market
-                  </a>
-
-                  <h3>3. Rodman Hall Art Centre</h3>
-                  <p>
-                    Visit the Rodman Hall Art Centre for contemporary and
-                    historical art exhibitions, perfect for those who love
-                    exploring art and culture.
-                  </p>
-                  <a href="https://www.brocku.ca/rodman-hall/" target="_blank">
-                    Visit Rodman Hall Art Centre
-                  </a>
-                </CardBody>
-              </Card>
-            </Collapse>
-          </Col>
-        </Row>
-      </Container>
       <Footer />
     </>
   );

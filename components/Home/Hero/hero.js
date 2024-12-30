@@ -17,9 +17,7 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
               >
-                <h1 className="intro">
-                  SEO Niagara | Search Engine Optimization in St. Catharines
-                </h1>
+                <h1 className="intro">Niagara SEO Company</h1>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
@@ -27,15 +25,15 @@ const Hero = () => {
                 transition={{ duration: 1 }}
               >
                 <h2>
-                  <span>Grow Your Business</span> With Our Local SEO Niagara Solutions
+                  <span>Grow Your Business</span> With Our Local SEO Niagara
+                  Solutions
                 </h2>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
-              >
-              </motion.div>
+              ></motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
