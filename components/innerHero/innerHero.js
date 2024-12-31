@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Container, Row, Col } from "reactstrap";
 
 const InnerHero = ({ title, description, bgImage }) => {
@@ -9,16 +8,9 @@ const InnerHero = ({ title, description, bgImage }) => {
         <Container>
           <Row>
             <Col lg="12">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-              >
-                <h1>{title}</h1>
-                <hr />
-                <p>{description}</p>
-              </motion.div>
+              <h1>{title}</h1>
+              <hr />
+              <p>{description}</p>
             </Col>
           </Row>
         </Container>
