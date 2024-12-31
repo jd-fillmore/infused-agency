@@ -25,7 +25,6 @@ const Home = ({ latestPosts }) => {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Infused Agency",
-              "@id": "https://www.yourdomain.com/#organization",
               url: "https://infused.agency",
               image:
                 "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
