@@ -88,7 +88,7 @@ const Example = (props) => {
                     href="/get-a-quote"
                     rel="noreferrer"
                   >
-                    Get A Quote
+                    <strong>Get A Quote</strong>
                     <svg
                       stroke="currentColor"
                       fill="currentColor"

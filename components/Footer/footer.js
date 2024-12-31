@@ -66,7 +66,11 @@ const Footer = () => {
                   Instagram
                 </a>
               </p>
-              <Image className="img-fluid" src={awards} />
+              <Image
+                className="img-fluid"
+                src={awards}
+                alt="infused agency awards"
+              />
             </Col>
             <Col lg="2">
               <h3>Pages</h3>

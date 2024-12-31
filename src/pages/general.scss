@@ -47,11 +47,11 @@ ul {
 }
 
 a {
-  color: $light-blue;
+  color: #009cff;
   transition: 0.2s;
   &:focus,
   &:hover {
-    color: lighten($light-blue, 20%);
+    color: lighten(#009cff, 20%);
     text-decoration: none;
   }
   &.d-block {

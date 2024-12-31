@@ -29,7 +29,7 @@ const Home = ({ latestPosts }) => {
               image:
                 "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
               description:
-                "Infused Agency is an SEO company in Niagara, Ontario. We specialize in Local SEO for companies in Niagara, Niagara-on-the-Lake, Niagara Falls and St. Catharines.",
+                "Infused Agency is an SEO company in Niagara, Ontario. We specialize in Local SEO for companies in Niagara, Niagara-on-the-Lake, Niagara Falls, and St. Catharines.",
               priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
@@ -50,19 +50,47 @@ const Home = ({ latestPosts }) => {
                 ratingValue: "4.9",
                 reviewCount: "33",
               },
-              review: {
-                "@type": "Review",
-                reviewRating: {
-                  "@type": "Rating",
-                  ratingValue: "5",
+              review: [
+                {
+                  "@type": "Review",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                  },
+                  author: {
+                    "@type": "Person",
+                    name: "JD Fillmore",
+                  },
+                  reviewBody:
+                    "Excellent SEO service that helped improve our local visibility significantly.",
                 },
-                author: {
-                  "@type": "Person",
-                  name: "JD Fillmore",
+                {
+                  "@type": "Review",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                  },
+                  author: {
+                    "@type": "Person",
+                    name: "Alice Smith",
+                  },
+                  reviewBody:
+                    "Professional and effective SEO services. Highly recommended!",
                 },
-                reviewBody:
-                  "Excellent SEO service that helped improve our local visibility significantly.",
-              },
+                {
+                  "@type": "Review",
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "4",
+                  },
+                  author: {
+                    "@type": "Person",
+                    name: "John Doe",
+                  },
+                  reviewBody:
+                    "Great service and support throughout our SEO campaign.",
+                },
+              ],
               areaServed: {
                 "@type": "GeoCircle",
                 geoMidpoint: {
@@ -82,9 +110,55 @@ const Home = ({ latestPosts }) => {
                 },
                 geoRadius: "50000",
               },
+              openingHours: ["Mo-Fr 09:00-17:00", "Sa 10:00-14:00"],
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "Customer Service",
+                telephone: "+1-905-933-3115",
+                email: "info@infused.agency",
+              },
+              sameAs: [
+                "https://www.facebook.com/infused.agency",
+                "https://twitter.com/InfusedAgency",
+                "https://linkedin.com/company/infused-agency",
+                "https://instagram.com/infusedagency",
+                "https://www.mapquest.com/ca/ontario/infused-agency-456469990",
+                "https://www.yellowpages.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
+                "https://gncc.ca/members-and-benefits/member-directory/#/action/Listing/value/41026/cid/1185/id/1002901/Infused-Agency",
+                "https://www.goodfirms.co/company/infused-agency",
+                "https://www.pagesjaunes.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html?what=Web+Design+%26+Development&where=Beamsville+ON&useContext=true",
+                "https://about.me/infused0",
+                "https://www.zoominfo.com/c/infused-agency/447274660",
+                "https://www.hotfrog.ca/company/9a5d8745ba57d4499b16df3d144dae56/infused-agency/st-catharines/web-design",
+                "https://www.localhomeservicepros.com/ontario/st-catharines/website-design/infused-agency",
+                "https://www.getlisteduae.com/listings/infused-agency",
+                "https://www.canadianplanet.net/infused-agency-niagara-F1109C6001ED043",
+              ],
+              paymentAccepted: ["Cash", "Credit Card", "Debit Card"],
+              makesOffer: [
+                {
+                  "@type": "Service",
+                  name: "Local SEO",
+                  description:
+                    "Improve your local search visibility and attract more customers.",
+                },
+                {
+                  "@type": "Service",
+                  name: "Web Design",
+                  description:
+                    "Custom web design services to create a unique online presence.",
+                },
+                {
+                  "@type": "Service",
+                  name: "Conversion Optimization",
+                  description:
+                    "Optimize your website to convert visitors into customers.",
+                },
+              ],
             }),
           }}
         />
+
         <title>SEO Niagara | #1 SEO Services in Niagara, Ontario</title>
         <meta
           name="description"
@@ -183,7 +257,7 @@ const Home = ({ latestPosts }) => {
                 helping businesses with their search engine optimization for
                 over ten years. This means our local{" "}
                 <strong>SEO Niagara</strong> expert consultants know what works
-                best for local companies when it comes to creating local
+                best for local companies when it comes to creating local{" "}
                 <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
                   SEO
                 </a>{" "}
