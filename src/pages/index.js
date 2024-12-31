@@ -187,62 +187,55 @@ const Home = ({ latestPosts }) => {
               </h2>
             </div>
           </div>
+          <Row>
+            <Col lg="12">
+              <p>
+                Google and other search engines use complicated formulas to
+                decide which websites show up first in search results. How your
+                website is made, what information it shows, and where it's
+                listed online are important factors. At Infused Agency, our SEO
+                services help your website be seen and trusted by Google for
+                better rankings.
+                <br />
+                <br />
+                Want to learn more about SEO? Learn more{" "}
+                <Link href="/posts/how-does-seo-help-your-business-grow">
+                  here.
+                </Link>
+              </p>
+            </Col>
+          </Row>
           <section className="work">
-            <div className="row pd-top-40">
-              <div className="col-lg-6">
+            <Row className="pd-top-40">
+              <Col lg="12">
                 <h2 className="title">Recent Project</h2>
                 <h2>Flat Rock Cellars</h2>
                 <hr />
+              </Col>
+            </Row>
+            <div className="row">
+              <div className="col-lg-6">
                 <Image
                   className="img-fluid"
                   src={flatRock}
                   alt="Flat Rock Cellars SEO Results"
                 />
+              </div>
+              <div className="col-lg-6">
                 <div class="card">
                   <h3>After hiring us:</h3>
                   <ul>
                     <li>Local Google Search Visibility Increased by 300%</li>
                     <li>Page 1 Google Map Rankings for Multiple Keywords</li>
                     <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Streamlined collection of leads</li>
                   </ul>
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <h2 className="title">Recent Project</h2>
-                <h2>KD Flowers</h2>
-                <hr />
-                <Image
-                  className="img-fluid"
-                  src={kd}
-                  alt="KD Flowers SEO Results"
-                />
-                <div class="card">
-                  <h3>After hiring us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 100%</li>
-                    <li>Google Search Visibility Increased by 600%</li>
-                    <li>Achieved first-page Google rankings within 3 months</li>
-                    <li>
-                      0 leads to massive growth in local leads from Google
-                    </li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <Row className="pd-top-40 text-center">
-              <Col lg="12">
+                <br />
                 <Link href="/work">
                   <button>View More Results</button>
                 </Link>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </section>
         </div>
 
@@ -253,7 +246,7 @@ const Home = ({ latestPosts }) => {
             <div className="col-lg-7">
               <h2>Why Choose Infused As Your Niagara SEO Agency?</h2>
               <p>
-                It's simple. Our <strong>SEO Agency in Niagara</strong> has been
+                It's simple. Our <strong>SEO Niagara</strong> agency has been
                 helping businesses with their search engine optimization for
                 over ten years. This means our local{" "}
                 <strong>SEO Niagara</strong> expert consultants know what works
@@ -261,31 +254,34 @@ const Home = ({ latestPosts }) => {
                 <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
                   SEO
                 </a>{" "}
-                strategies. Our experience allows us to create local SEO
-                strategies that not only look amazing but also help businesses
-                get more customers.
+                strategies.
               </p>
 
               <p>
-                When you choose us, you're getting a team that understands the
-                area. We know how to make your online presence stand out to both
-                locals and tourists. Our goal is to help your business grow by
-                attracting more visitors to your site.
+                We proudly serve Niagara, ON, including areas like{" "}
+                <a href="https://www.google.com/maps/place/Niagara+Falls,+ON/@43.089557,-79.066435,13z/data=!4m6!3m5!1s0x882cd695fdfd5e49:0xd7fd08a95b23bbd4!8m2!3d43.089577!4d-79.058923">
+                  Niagara Falls
+                </a>
+                ,{" "}
+                <a href="https://www.google.com/maps/place/Niagara+on+the+Lake,+ON/@43.257835,-79.066229,13z/data=!4m6!3m5!1s0x8827b0ac14c3de73:0xb36734d7e1280be3!8m2!3d43.257722!4d-79.060721">
+                  Niagara-on-the-Lake
+                </a>
+                , and{" "}
+                <a href="https://www.google.com/maps/place/Niagara+Region,+ON/@43.194624,-79.499932,13z/data=!4m6!3m5!1s0x882cc21f7d73e1b3:0xd1c8c5c4b2f836cc!8m2!3d43.194639!4d-79.493822">
+                  Niagara Region
+                </a>
+                .
               </p>
 
               <p>
-                With our <strong>SEO Niagara</strong> skills, we can help your
-                website show up on Google when people search for services in St.
-                Catharines and beyond. This means more people will find you,
-                which can lead to more sales. We love seeing our clients
-                succeed, and we work hard to make that happen!
-              </p>
-
-              <p>
-                With our <Link href="/blog">great knowledge</Link>,{" "}
-                <Link href="/work">high-quality work</Link>, and friendly
-                customer service, we've become a top SEO agency that businesses
-                trust.
+                <a href="https://www.niagararegion.ca/" target="_blank">
+                  Niagara Region, ON
+                </a>{" "}
+                is a beautiful place along the Niagara River, known for its
+                gorgeous parks, rich history, and thriving local businesses.
+                With its welcoming communities and popular attractions like
+                wineries and nature sites, it's a fantastic area to live and
+                work.
               </p>
 
               <Image
@@ -296,92 +292,6 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="col-lg-5">
               <div className="card">
-                <img
-                  alt="ggs niagara SEO landscaping testimonial"
-                  width="48"
-                  height="48"
-                  src="https://lh3.googleusercontent.com/a/ACg8ocJ0eWch1hRWUGzVDCWLHHB4-5kucORKoBlJcD-KmOcfyBhD7Q=w48-h48-p-rp-mo-ba3-br100"
-                />
-                <p className="author">KD Flowers</p>
-                <div className="d-flex">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M12 2L14.09 8.26L20 9.27L15.55 13.97L16.91 20L12 16.9L7.09 20L8.45 13.97L4 9.27L9.91 8.26L12 2Z"
-                      fill="#FFD700"
-                    />
-                  </svg>
-                </div>
-                <p className="desc">
-                  In just one month, my business's website made it to the first
-                  page of Google! I was so surprised! After that, I started
-                  getting emails from people interested in my services right
-                  away, and I've been busy ever since! Thanks a lot to Infused
-                  Agency for helping my business grow!
-                </p>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373093.06470999256!2d-79.970371954853!3d43.066893159426954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1735651985056!5m2!1sen!2sca"
                   width="100%"
@@ -410,85 +320,13 @@ const Home = ({ latestPosts }) => {
           </div>
         </div>
         <div className="container">
-          <Row>
-            <Col lg="12">
-              <p>
-                Are you a business owner in Niagara, Ontario, wanting to boost
-                your online presence and attract more local customers? Infused
-                Agency is here to assist you. Our team specializes in custom{" "}
-                <Link href="/seo">SEO</Link> and{" "}
-                <Link href="/web-design">web design</Link> services for
-                businesses in Niagara and surrounding areas.
-              </p>
-
-              <p>
-                One of the most important things we do is local SEO. By
-                improving your website and online listings for search engines,
-                we help your business appear higher in local search results.
-                This includes things like setting up your Google My Business
-                profile and adding special coding to your website to help search
-                engines understand it better.
-              </p>
-
-              <p>
-                We also offer complete web design services, including WordPress
-                development. Our team can build a website that works well on any
-                device and is optimized for search engines. We understand that
-                it’s essential for your website to look great and function
-                smoothly on phones, as many people use them to search online.
-              </p>
-
-              <p>
-                Don’t let your competitors outrank you in local searches. Reach
-                out to us today for a{" "}
-                <Link href="/get-a-quote">free consultation</Link> and find out
-                how we can help your Niagara business succeed online.
-              </p>
-              <p>
-                We proudly serve Niagara, ON, including areas like{" "}
-                <a href="https://www.google.com/maps/place/Niagara+Falls,+ON/@43.089557,-79.066435,13z/data=!4m6!3m5!1s0x882cd695fdfd5e49:0xd7fd08a95b23bbd4!8m2!3d43.089577!4d-79.058923">
-                  Niagara Falls
-                </a>
-                ,{" "}
-                <a href="https://www.google.com/maps/place/Niagara+on+the+Lake,+ON/@43.257835,-79.066229,13z/data=!4m6!3m5!1s0x8827b0ac14c3de73:0xb36734d7e1280be3!8m2!3d43.257722!4d-79.060721">
-                  Niagara-on-the-Lake
-                </a>
-                , and{" "}
-                <a href="https://www.google.com/maps/place/Niagara+Region,+ON/@43.194624,-79.499932,13z/data=!4m6!3m5!1s0x882cc21f7d73e1b3:0xd1c8c5c4b2f836cc!8m2!3d43.194639!4d-79.493822">
-                  Niagara Region
-                </a>
-                .
-              </p>
-
-              <p>
-                <a href="https://www.niagararegion.ca/" target="_blank">
-                  Niagara Region, ON
-                </a>{" "}
-                is a beautiful place along the Niagara River, known for its
-                gorgeous parks, rich history, and thriving local businesses.
-                With its welcoming communities and popular attractions like
-                wineries and nature sites, it's a fantastic area to live and
-                work.
-              </p>
-
-              <p>
-                Starting a business in Niagara, ON is exciting, but getting the
-                word out is key. Without a strong online presence, it can be
-                tough to grow your business. That's where Infused Agency's team
-                can help—ensuring your business stands out online.
-              </p>
-            </Col>
-          </Row>
           <div className="row pd-top-40">
             <div className="col-lg-4 d-flex">
               <div className="card">
                 <h2>Keyword Research</h2>
                 <p>
                   Our Niagara SEO experts start by looking at your website and
-                  finding the best words to help people find you. This helps us
-                  make a strong SEO plan just for your business. With lots of
-                  experience, the Infused Agency team knows how to do well, even
-                  in tough competition, always getting great results.
+                  finding the best words to help people find you.
                 </p>
               </div>
             </div>
@@ -497,12 +335,8 @@ const Home = ({ latestPosts }) => {
                 <h2>Link Building</h2>
                 <p>
                   We help improve your brand’s presence on big search engines
-                  like Google, Yahoo, and Bing by creating quality links and
-                  adding your business to the right online listings. At Infused
-                  Agency, we follow the best SEO rules using safe and honest
-                  methods. We make a plan that fits your business, whether
-                  you're just starting out or already have an established
-                  company.
+                  like Google by creating quality links and adding your business
+                  to the right online listings.
                 </p>
               </div>
             </div>
@@ -512,9 +346,7 @@ const Home = ({ latestPosts }) => {
                 <p>
                   Infused Agency’s SEO team in Niagara has a creative content
                   team. We create smart marketing strategies for your online
-                  campaigns, including SEO-friendly content. Our goal is to
-                  write fun and interesting content that grabs people's
-                  attention and gets them to support your brand.
+                  campaigns, including SEO-friendly content.
                 </p>
               </div>
             </div>
@@ -525,11 +357,7 @@ const Home = ({ latestPosts }) => {
                 <h2>On-Page SEO</h2>
                 <p>
                   Bring more people to your website and get better leads with
-                  our proven on-page SEO methods. Our Niagara SEO team looks at
-                  what your competitors are doing and uses that information to
-                  improve your website’s traffic and ranking. We create custom
-                  SEO plans to make your site easier to find and get the best
-                  results.
+                  our proven on-page SEO methods.
                 </p>
               </div>
             </div>
@@ -538,9 +366,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Local SEO</h2>
                 <p>
                   Our Niagara local SEO services help your business get noticed
-                  by the right people online. We pick the best local words to
-                  help us find your target audience. This drives more people to
-                  your website and even to your physical store.
+                  by the right people online.
                 </p>
               </div>
             </div>
@@ -548,13 +374,8 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Technical SEO</h2>
                 <p>
-                  Google and other search engines look at how well your website
-                  works to decide how high it ranks. Our Niagara SEO company
-                  takes care of your technical web design to make sure it’s
-                  ready for SEO and works properly. We fix any errors on the
-                  back end and keep track of your website’s performance to make
-                  sure it runs smoothly, making it easier for visitors to use
-                  and turn into customers.
+                  Our Niagara SEO company takes care of your technical web
+                  design to make sure it’s ready for SEO and works properly.
                 </p>
               </div>
             </div>
@@ -660,36 +481,6 @@ const Home = ({ latestPosts }) => {
                 Risks include using bad practices that can get your site
                 penalized by Google. Our <strong>SEO Niagara</strong> experts
                 use safe, proven methods to avoid this.
-              </p>
-
-              <h3>
-                How do you approach local search engine optimization, especially
-                for service-based businesses?
-              </h3>
-              <p>
-                We focus on local keywords, get your business listed on Google
-                Maps, and gather positive reviews to improve local rankings.
-              </p>
-
-              <h3>What is your process for auditing a website?</h3>
-              <p>
-                We check your site’s health, look at keywords, see how it
-                performs, and find areas to improve.
-              </p>
-
-              <h3>How ow do you create Google-friendly content?</h3>
-              <p>
-                Content is key. We write helpful, interesting articles with the
-                right keywords to attract visitors.
-              </p>
-
-              <h3>
-                How do you stay updated with the latest changes in search engine
-                algorithms?
-              </h3>
-              <p>
-                We follow SEO news, read updates from search engines, and test
-                new strategies to keep up.
               </p>
             </Col>
           </Row>
