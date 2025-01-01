@@ -19,9 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          SEO Port Colborne, ON | #1 SEO Services in Port Colborne, Ontario
-        </title>
+        <title>SEO Port Colborne</title>
         <meta
           name="description"
           content="Award-winning Port Colborne SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."

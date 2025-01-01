@@ -18,7 +18,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Grimsby, ON | #1 SEO Services in Grimsby, Ontario</title>
+        <title>SEO Grimsby</title>
         <meta
           name="description"
           content="Get results with affordable SEO services in Grimsby, Ontario. Our expert strategies help your business rank higher and attract more customers."

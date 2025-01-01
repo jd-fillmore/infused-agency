@@ -19,7 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Thorold, ON | SEO Services in Thorold, Ontario</title>
+        <title>SEO Thorold</title>
         <meta
           name="description"
           content="Award-winning Thorold SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."

@@ -19,7 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Fort Erie, ON | SEO Services in Fort Erie, Ontario</title>
+        <title>SEO Fort Erie</title>
         <meta
           name="description"
           content="Award-winning Fort Erie SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."

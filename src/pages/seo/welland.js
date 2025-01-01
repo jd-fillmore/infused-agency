@@ -19,7 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Welland, ON | SEO Services in Welland, Ontario</title>
+        <title>SEO Welland</title>
         <meta
           name="description"
           content="Award-winning Welland SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."

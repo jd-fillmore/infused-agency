@@ -19,7 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Beamsville, ON | SEO Services in Beamsville, Ontario</title>
+        <title>SEO Beamsville</title>
         <meta
           name="description"
           content="Award-winning Beamsville SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."

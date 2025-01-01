@@ -19,7 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Fonthill, ON | SEO Services in Pelham, Ontario</title>
+        <title>SEO Fonthill</title>
         <meta
           name="description"
           content="Award-winning Fonthill SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."

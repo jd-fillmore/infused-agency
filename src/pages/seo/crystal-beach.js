@@ -19,9 +19,7 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          SEO Crystal Beach, ON | SEO Services in Crystal Beach, Ontario
-        </title>
+        <title>SEO Crystal Beach</title>
         <meta
           name="description"
           content="Award-winning Crystal Beach SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."
