@@ -3,21 +3,21 @@ import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
 import Image from "next/image";
-import Nav from "../../components/Nav/nav";
-import InnerHero from "../../components/innerHero/innerHero";
-import InnerContent from "../../components/innerContent/innerContent";
-import CTA from "../../components/CTA/cta";
-import Footer from "../../components/Footer/footer";
-import website from "../img/responsive.svg";
-import bgImage from "../img/inner-web-design.jpg";
+import Example from "../../../components/Nav/nav";
+import InnerHero from "../../../components/innerHero/innerHero";
+import InnerContent from "../../../components/innerContent/innerContent";
+import CTA from "../../../components/CTA/cta";
+import Footer from "../../../components/Footer/footer";
+import website from "../../img/responsive.svg";
+import bgImage from "../../img/inner-web-design.jpg";
 
-import ui from "../img/ui-design.png";
-import build from "../img/build.png";
-import grow from "../img/grow.png";
-import growth from "../img/lead-generating-websites-niagara.png";
-import funnel from "../img/lead-gen-convert.jpg";
-import convert from "../img/conversion-web.jpg";
-import fast from "../img/design-fast.png";
+import ui from "../../img/ui-design.png";
+import build from "../../img/build.png";
+import grow from "../../img/grow.png";
+import growth from "../../img/lead-generating-websites-niagara.png";
+import funnel from "../../img/lead-gen-convert.jpg";
+import convert from "../../img/conversion-web.jpg";
+import fast from "../../img/design-fast.png";
 
 const WebDesign = () => {
   return (
@@ -30,7 +30,7 @@ const WebDesign = () => {
         />
         <link rel="canonical" href="https://infused.agency/web-design" />
       </Head>
-      <Nav />
+      <Example />
       <InnerHero
         title="Lead-Generating Web Design"
         description="Our websites are not 'just websites'. They're your best 24/7 sales manager."

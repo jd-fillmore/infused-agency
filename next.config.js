@@ -31,6 +31,46 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/beamsville-web-design",
+        destination: "/web-design/beamsville",
+        permanent: true,
+      },
+      {
+        source: "/crystal-beach-web-design",
+        destination: "/web-design/crystal-beach",
+        permanent: true,
+      },
+      {
+        source: "/fonthill-web-design",
+        destination: "/web-design/fonthill",
+        permanent: true,
+      },
+      {
+        source: "/fort-erie-web-design",
+        destination: "/web-design/fort-erie",
+        permanent: true,
+      },
+      {
+        source: "/grimsby-web-design",
+        destination: "/web-design/grimsby",
+        permanent: true,
+      },
+      {
+        source: "/port-colborne-web-design",
+        destination: "/web-design/port-colborne",
+        permanent: true,
+      },
+      {
+        source: "/thorold-web-design",
+        destination: "/web-design/thorold",
+        permanent: true,
+      },
+      {
+        source: "/web-design-welland",
+        destination: "/web-design/welland",
+        permanent: true,
+      },
+      {
         source: "/seo/niagara",
         destination: "/",
         permanent: true,
