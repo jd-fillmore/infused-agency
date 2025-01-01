@@ -159,7 +159,7 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>SEO Niagara | #1 SEO Services in Niagara, Ontario</title>
+        <title>SEO Niagara</title>
         <meta
           name="description"
           content="Expert SEO Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
