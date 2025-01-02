@@ -494,6 +494,10 @@ const SEO = () => {
                   <Link href="/seo/for-small-businesses">
                     SEO for Small Businesses in Canada
                   </Link>
+                  ,{" "}
+                  <Link href="/seo/for-dentists">
+                    SEO for Dentists in Canada
+                  </Link>
                 </p>
                 <p>(more coming soon!)</p>
               </Col>
