@@ -159,7 +159,7 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>SEO Niagara</title>
+        <title>SEO | Niagara, St. Catharines, Grimsby | Infused Agency</title>
         <meta
           name="description"
           content="Expert SEO Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
@@ -195,7 +195,10 @@ const Home = ({ latestPosts }) => {
                 website is made, what information it shows, and where it's
                 listed online are important factors. At Infused Agency, our SEO
                 services help your website be seen and trusted by Google for
-                better rankings.
+                better rankings. We do search engine work for businesses in
+                Niagara including: St. Catharines, Grimsby, Welland, Port
+                Colborne, Beamsville, West Lincoln, Smithville, Wainfleet,
+                Fonthill, Pelham, Thorold, Fort Erie and beyond.
                 <br />
                 <br />
                 Want to learn more about SEO? Learn more{" "}
