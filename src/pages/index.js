@@ -183,7 +183,7 @@ const Home = ({ latestPosts }) => {
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Niagara SEO Partners <span>Achieve Great Results</span>
+                Our Clients <span>Get Great Results</span>
               </h2>
             </div>
           </div>
@@ -244,21 +244,23 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-top-120">
             <div className="col-lg-7">
-              <h2>Why Choose Infused As Your Niagara SEO Agency?</h2>
+              <h2>Why Choose Infused Agency?</h2>
               <p>
-                It's simple. Our <strong>SEO Niagara</strong> agency has been
-                helping businesses with their search engine optimization for
-                over ten years. This means our local{" "}
-                <strong>SEO Niagara</strong> expert consultants know what works
-                best for local companies when it comes to creating local{" "}
-                <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
-                  SEO
-                </a>{" "}
-                strategies.
+                It's simple. Our{" "}
+                <strong>
+                  <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
+                    SEO
+                  </a>{" "}
+                  Niagara
+                </strong>{" "}
+                agency has been helping businesses with their search engine
+                optimization for over ten years. We know what works best for
+                local companies when it comes to creating local search engine
+                optimization strategies.
               </p>
 
               <p>
-                We proudly serve Niagara, ON, including areas like{" "}
+                We proudly areas including like{" "}
                 <a href="https://www.google.com/maps/place/Niagara+Falls,+ON/@43.089557,-79.066435,13z/data=!4m6!3m5!1s0x882cd695fdfd5e49:0xd7fd08a95b23bbd4!8m2!3d43.089577!4d-79.058923">
                   Niagara Falls
                 </a>
@@ -266,22 +268,14 @@ const Home = ({ latestPosts }) => {
                 <a href="https://www.google.com/maps/place/Niagara+on+the+Lake,+ON/@43.257835,-79.066229,13z/data=!4m6!3m5!1s0x8827b0ac14c3de73:0xb36734d7e1280be3!8m2!3d43.257722!4d-79.060721">
                   Niagara-on-the-Lake
                 </a>
-                , and{" "}
-                <a href="https://www.google.com/maps/place/Niagara+Region,+ON/@43.194624,-79.499932,13z/data=!4m6!3m5!1s0x882cc21f7d73e1b3:0xd1c8c5c4b2f836cc!8m2!3d43.194639!4d-79.493822">
-                  Niagara Region
-                </a>
-                .
+                and surrounding areas.
               </p>
 
               <p>
-                <a href="https://www.niagararegion.ca/" target="_blank">
-                  Niagara Region, ON
-                </a>{" "}
-                is a beautiful place along the Niagara River, known for its
-                gorgeous parks, rich history, and thriving local businesses.
-                With its welcoming communities and popular attractions like
-                wineries and nature sites, it's a fantastic area to live and
-                work.
+                The area is a beautiful place, known for its gorgeous parks,
+                rich history, and thriving local businesses. With its welcoming
+                communities and popular attractions like wineries and nature
+                sites, it's a fantastic area to live and work.
               </p>
 
               <Image
@@ -310,10 +304,10 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                Leading Niagara SEO Company That <span>Makes An Impact</span>
+                We Make An <span>Impact</span> For Our Clients
               </h2>
               <p>
-                Our <strong>SEO Niagara</strong> services and lead-generating
+                Our search engine optimization services and lead-generating
                 website designs help grow your business.
               </p>
             </div>
@@ -325,8 +319,8 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research</h2>
                 <p>
-                  Our Niagara SEO experts start by looking at your website and
-                  finding the best words to help people find you.
+                  Our SEO experts start by looking at your website and finding
+                  the best words to help people find you.
                 </p>
               </div>
             </div>
@@ -344,9 +338,9 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Infused Agency’s SEO team in Niagara has a creative content
-                  team. We create smart marketing strategies for your online
-                  campaigns, including SEO-friendly content.
+                  Infused Agency’s team has a creative content team. We create
+                  smart marketing strategies for your online campaigns,
+                  including Google-friendly content.
                 </p>
               </div>
             </div>
@@ -354,28 +348,28 @@ const Home = ({ latestPosts }) => {
           <div className="row">
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>On-Page SEO</h2>
+                <h2>On-Page</h2>
                 <p>
                   Bring more people to your website and get better leads with
-                  our proven on-page SEO methods.
+                  our proven on-page methods.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Local SEO</h2>
+                <h2>Local Search Engine Optimization</h2>
                 <p>
-                  Our Niagara local SEO services help your business get noticed
-                  by the right people online.
+                  Our search engine optimization services help your business get
+                  noticed by the right people online.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Technical SEO</h2>
+                <h2>Technical</h2>
                 <p>
-                  Our Niagara SEO company takes care of your technical web
-                  design to make sure it’s ready for SEO and works properly.
+                  Our company takes care of your technical web design to make
+                  sure it’s ready for Google and works properly.
                 </p>
               </div>
             </div>
@@ -387,7 +381,7 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>FAQs for local Niagara SEO Clients</h2>
+              <h2>Frequently Asked Questions</h2>
             </Col>
           </Row>
 
@@ -398,7 +392,7 @@ const Home = ({ latestPosts }) => {
                 my website?
               </h3>
               <p>
-                Local <strong>SEO Niagara</strong> services means making your
+                Local search engine optimization services means making your
                 website better so it appears higher in local search engine
                 results. This helps more people find your site.
               </p>
@@ -414,10 +408,9 @@ const Home = ({ latestPosts }) => {
 
               <h3>How much does Local search engine optimization cost?</h3>
               <p>
-                This entirely depends on both the length of the local{" "}
-                <strong>SEO Niagara</strong> campaign, and the work involved.{" "}
-                <Link href="/get-a-quote">Contact us today</Link> for a free
-                consult and free quote.
+                This entirely depends on both the length of the project, and the
+                work involved. <Link href="/get-a-quote">Contact us today</Link>{" "}
+                for a free consult and free quote.
               </p>
 
               <h3>
@@ -452,7 +445,7 @@ const Home = ({ latestPosts }) => {
               <h3>Can you guarantee my website will rank #1 on Google?</h3>
               <p>
                 No one can promise a #1 spot, but we can improve your chances
-                with good <strong>SEO Niagara</strong> practices, as we have for
+                with good search engine optimization practices, as we have for
                 all of our clients.
               </p>
 
@@ -463,24 +456,6 @@ const Home = ({ latestPosts }) => {
               <p>
                 Backlinks are links from other websites to yours. They show
                 Google your site is trusted.
-              </p>
-
-              <h3>
-                What tools or software do you use for analysis and reporting?
-              </h3>
-              <p>
-                We use tools like Google Analytics and software to check your
-                website’s performance and give you reports.
-              </p>
-
-              <h3>
-                What are the potential risks of search engine optimization, and
-                how do you mitigate them?
-              </h3>
-              <p>
-                Risks include using bad practices that can get your site
-                penalized by Google. Our <strong>SEO Niagara</strong> experts
-                use safe, proven methods to avoid this.
               </p>
             </Col>
           </Row>
