@@ -32,42 +32,42 @@ const nextConfig = {
     return [
       {
         source: "/beamsville-web-design",
-        destination: "/web-design/beamsville",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/crystal-beach-web-design",
-        destination: "/web-design/crystal-beach",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/fonthill-web-design",
-        destination: "/web-design/fonthill",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/fort-erie-web-design",
-        destination: "/web-design/fort-erie",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/grimsby-web-design",
-        destination: "/web-design/grimsby",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/port-colborne-web-design",
-        destination: "/web-design/port-colborne",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/thorold-web-design",
-        destination: "/web-design/thorold",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/web-design-welland",
-        destination: "/web-design/welland",
+        destination: "/web-design",
         permanent: true,
       },
       {
