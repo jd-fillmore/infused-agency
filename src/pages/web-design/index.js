@@ -23,10 +23,13 @@ const WebDesign = () => {
   return (
     <>
       <Head>
-        <title>Lead-Generating Web Design &amp; Development | Infused</title>
+        <title>
+          Infused Web Design - Niagara, St. Catharines, Grimsby - Responsive
+          Website Design
+        </title>
         <meta
           name="description"
-          content="Infused Agency offers lead-generating web design and development services for companies in St. Catharines and Niagara. Click here to get your free quote."
+          content="Infused Agency offers lead-generating web design and development services for companies in St. Catharines, Grimsby, Niagara. Click here to get your free quote."
         />
         <link rel="canonical" href="https://infused.agency/web-design" />
       </Head>
@@ -39,8 +42,35 @@ const WebDesign = () => {
       <InnerContent>
         <section className="web-design">
           <Container>
-            {/* Websites */}
             <Row>
+              <Col lg="12">
+                <h2>Niagara Web Design &amp; Website Development Agency</h2>
+                <p className="text-start">
+                  At Infused Agency, we craft responsive websites that deliver a
+                  seamless user experience across desktop, laptop, tablet, and
+                  smartphone devices. Our expertise lies in web design,
+                  leveraging the latest development standards, content
+                  management systems, and search engine optimization (SEO) to
+                  create impactful online solutions.
+                </p>
+                <p className="text-start">
+                  Based in Niagara, we proudly serve businesses in the Niagara
+                  Region and beyond, including St. Catharines, Niagara Falls,
+                  Welland, Grimsby, Fort Erie, Fonthill, Pelham,
+                  Niagara-on-the-Lake, Beamsville, Port Colborne, Crystal Beach,
+                  Thorold, Wainfleet, Welland, as well as across Ontario,
+                  Canada, and internationally.
+                </p>
+                <p className="text-start">
+                  Website creation or redesign is a collaborative process with
+                  us. We ensure your vision is reflected in every design and
+                  that your input guides the project from start to finish. As a
+                  valued client of Infused Agency, you can trust you're in
+                  capable and supportive hands.
+                </p>
+              </Col>
+            </Row>
+            <Row class="pd-top-40">
               <Col md="6">
                 <h2>
                   Websites made to <span>engage</span>, <span>capture</span> and{" "}
