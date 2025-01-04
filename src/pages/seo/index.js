@@ -471,41 +471,6 @@ const SEO = () => {
                 </Link>
               </Col>
             </Row>
-            <Row>
-              <Col lg="12">
-                <h2>Industries We Service</h2>
-                <p>
-                  <Link href="/seo/for-concrete-contractors">
-                    SEO for Concrete Contractors in Canada
-                  </Link>
-                  ,{" "}
-                  <Link href="/seo/for-therapists">
-                    SEO for Therapists in Canada
-                  </Link>
-                  ,{" "}
-                  <Link href="/seo/for-electricians">
-                    SEO for Electricians in Canada
-                  </Link>
-                  ,{" "}
-                  <Link href="/seo/for-medical-practices">
-                    SEO for Medical Practices in Canada
-                  </Link>
-                  ,{" "}
-                  <Link href="/seo/for-small-businesses">
-                    SEO for Small Businesses in Canada
-                  </Link>
-                  ,{" "}
-                  <Link href="/seo/for-dentists">
-                    SEO for Dentists in Canada
-                  </Link>
-                  ,{" "}
-                  <Link href="/seo/for-freelancers">
-                    SEO for Freelancers in Canada
-                  </Link>
-                </p>
-                <p>(more coming soon!)</p>
-              </Col>
-            </Row>
           </Container>
         </section>
       </InnerContent>
