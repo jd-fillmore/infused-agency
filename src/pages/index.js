@@ -159,7 +159,7 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>SEO | Niagara, St. Catharines, Grimsby | Infused Agency</title>
+        <title>SEO | Niagara, St. Catharines</title>
         <meta
           name="description"
           content="Expert SEO Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
