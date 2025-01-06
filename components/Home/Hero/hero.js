@@ -13,7 +13,7 @@ const Hero = () => {
           <Row className="align-items-center">
             <Col lg="12">
               <h1 className="intro">
-                SEO Niagara | Search Engine Optimization
+                SEO & Web Design | Niagara, St. Catharines
               </h1>
               <h2>
                 <span>Grow Your Business</span> With Our Local SEO Services
