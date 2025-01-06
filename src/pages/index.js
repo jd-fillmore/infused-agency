@@ -159,10 +159,10 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>SEO & Web Design | Niagara, St. Catharines</title>
+        <title>SEO | Niagara, St. Catharines</title>
         <meta
           name="description"
-          content="Expert SEO & Web Design Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
+          content="Expert SEO Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
         />
         <meta
           name="google-site-verification"

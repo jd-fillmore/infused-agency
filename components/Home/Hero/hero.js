@@ -12,9 +12,7 @@ const Hero = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg="12">
-              <h1 className="intro">
-                SEO & Web Design | Niagara, St. Catharines
-              </h1>
+              <h1 className="intro">SEO | Niagara, St. Catharines</h1>
               <h2>
                 <span>Grow Your Business</span> With Our Local SEO Services
               </h2>
