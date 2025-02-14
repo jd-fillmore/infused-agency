@@ -16,11 +16,12 @@ const SEO = () => {
     <>
       <Head>
         <title>
-          SEO for Concrete Contractors | Concrete Marketing in Canada
+          SEO for Concrete Contractors in Canada | Toronto, Montreal, Calgary,
+          Ottawa, Edmonton, Winnipeg
         </title>
         <meta
           name="description"
-          content="Work with the most trusted concrete contractors services SEO agency in Canada. Request your free consultation today!"
+          content="Boost your concrete business with expert SEO for contractors in Toronto, Montreal, Calgary, Ottawa, Edmonton, Winnipeg, and across Canada to drive more clients."
         />
         <link
           rel="canonical"
@@ -39,6 +40,10 @@ const SEO = () => {
           <Row>
             <Col lg="12">
               <h2>Best SEO Agency for Concrete Contractor Services</h2>
+              <h3>
+                Toronto - Montreal - Calgary - Ottawa - Edmonton - Winnipeg and
+                across Canada
+              </h3>
               <br />
             </Col>
           </Row>
@@ -52,7 +57,8 @@ const SEO = () => {
                 </Link>{" "}
                 in Canada are truly dedicated to excellence. You won’t find a
                 more passionate group of SEO experts anywhere else in the
-                country.{" "}
+                country. Serving larger cities like Toronto, Montreal, Calgary,
+                Ottawa, Edmonton, Winnipeg, and all across Canada.{" "}
               </p>{" "}
               <p>
                 {" "}
