@@ -12,16 +12,25 @@ const Hero = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg="12">
-              <h1 className="intro">SEO | Niagara, St. Catharines</h1>
+              <h1 className="intro">
+                SEO Company in Niagara – Expert Search Engine Optimization
+                Services
+              </h1>
               <h2>
-                <span>Grow Your Business</span> With Our Local SEO Services
+                <span>Grow Your Business</span> With The Best Local SEO Agency
+                in Niagara
               </h2>
               <Link href="/work">
-                <button>Check Out Our Work</button>
+                <button>Check Out Our Results</button>
               </Link>
               <div className="trusted pd-top-80">
                 <h3>We're Trusted By</h3>
-                <Image className="img-fluid" src={clients} alt="seo niagara" />
+                <Image
+                  className="img-fluid"
+                  src={clients}
+                  alt="seo niagara, best seo agency niagara, seo st catharines, search engine optimization niagara,local seo company niagara
+"
+                />
               </div>
             </Col>
           </Row>

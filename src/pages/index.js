@@ -159,10 +159,12 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>SEO | Niagara, St. Catharines</title>
+        <title>
+          Niagara SEO Company | Expert Local SEO Services St. Catharines
+        </title>
         <meta
           name="description"
-          content="Expert SEO Niagara services that boost your businesses visibility. Leading SEO agency offering marketing, optimization, and consulting solutions."
+          content="Infused Agency is a top Niagara SEO company specializing in local SEO services for businesses in Niagara Falls, St. Catharines, and surrounding areas. Drive more traffic, improve rankings, and increase leads with expert SEO strategies."
         />
         <meta
           name="google-site-verification"
@@ -183,36 +185,34 @@ const Home = ({ latestPosts }) => {
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Clients <span>Get Great Results</span>
+                <span>Proven SEO Results</span> for Businesses in Niagara
               </h2>
             </div>
           </div>
           <Row>
             <Col lg="12">
               <p>
-                Google and other search engines use complicated formulas to
-                decide which websites show up first in search results. How your
-                website is made, what information it shows, and where it's
-                listed online are important factors. At Infused Agency, our SEO
-                services help your website be seen and trusted by Google for
-                better rankings. We do search engine work for businesses in
-                Niagara including: St. Catharines, Grimsby, Welland, Port
+                Search engines like Google use complex algorithms to determine
+                which websites rank at the top. Factors such as website
+                structure, content quality, and online visibility all play a
+                role. At Infused Agency, our SEO services in Niagara help
+                businesses increase rankings, drive traffic, and generate leads.
+                <br />
+                <br />
+                We provide expert search engine optimization for businesses
+                across Niagara, including St. Catharines, Grimsby, Welland, Port
                 Colborne, Beamsville, West Lincoln, Smithville, Wainfleet,
-                Fonthill, Pelham, Thorold, Fort Erie and beyond.
-                <br />
-                <br />
-                Want to learn more about SEO? Learn more{" "}
-                <Link href="/posts/how-does-seo-help-your-business-grow">
-                  here.
-                </Link>
+                Fonthill, Pelham, Thorold, Fort Erie, and beyond.
               </p>
             </Col>
           </Row>
           <section className="work">
             <Row className="pd-top-40">
               <Col lg="12">
-                <h2 className="title">Recent Project</h2>
-                <h2>Flat Rock Cellars</h2>
+                <h2 className="title">
+                  Recent SEO Results for Niagara Businesses
+                </h2>
+                <h2>Flat Rock Cellars - SEO Success Story</h2>
                 <hr />
               </Col>
             </Row>
@@ -228,14 +228,19 @@ const Home = ({ latestPosts }) => {
                 <div class="card">
                   <h3>After hiring us:</h3>
                   <ul>
-                    <li>Local Google Search Visibility Increased by 300%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
+                    <li>300% Increase in Local Google Search Visibility</li>
+                    <li>
+                      Page 1 Google Map Rankings for SEO Keywords in Niagara
+                    </li>
+                    <li>
+                      Page 1 Organic Google Rankings for Multiple Niagara SEO
+                      Keywords
+                    </li>
                   </ul>
                 </div>
                 <br />
                 <Link href="/work">
-                  <button>View More Results</button>
+                  <button>View More SEO Results</button>
                 </Link>
               </div>
             </div>
@@ -247,38 +252,26 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-top-120">
             <div className="col-lg-7">
-              <h2>Why Choose Infused Agency?</h2>
+              <h2>Why Choose Infused Agency for SEO in Niagara?</h2>
               <p>
-                It's simple. Our{" "}
-                <strong>
-                  <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
-                    SEO
-                  </a>{" "}
-                  Niagara
-                </strong>{" "}
-                agency has been helping businesses with their search engine
-                optimization for over ten years. We know what works best for
-                local companies when it comes to creating local search engine
-                optimization strategies.
-              </p>
-
-              <p>
-                We proudly areas including like{" "}
-                <a href="https://www.google.com/maps/place/Niagara+Falls,+ON/@43.089557,-79.066435,13z/data=!4m6!3m5!1s0x882cd695fdfd5e49:0xd7fd08a95b23bbd4!8m2!3d43.089577!4d-79.058923">
-                  Niagara Falls
-                </a>
-                ,{" "}
-                <a href="https://www.google.com/maps/place/Niagara+on+the+Lake,+ON/@43.257835,-79.066229,13z/data=!4m6!3m5!1s0x8827b0ac14c3de73:0xb36734d7e1280be3!8m2!3d43.257722!4d-79.060721">
-                  Niagara-on-the-Lake
-                </a>
-                and surrounding areas.
-              </p>
-
-              <p>
-                The area is a beautiful place, known for its gorgeous parks,
-                rich history, and thriving local businesses. With its welcoming
-                communities and popular attractions like wineries and nature
-                sites, it's a fantastic area to live and work.
+                It’s simple. Infused Agency is a top-rated Niagara SEO company
+                that has been helping businesses increase their online
+                visibility with expert search engine optimization for over a
+                decade. Our SEO services in Niagara are designed to help local
+                businesses improve their Google rankings, attract targeted
+                traffic, and generate more qualified leads.
+                <br />
+                <br />
+                We specialize in local SEO strategies that ensure your business
+                stands out in Niagara’s competitive digital landscape. From
+                optimizing your Google Business Profile to implementing on-page
+                and technical SEO best practices, we know what it takes to rank
+                higher in local search results.
+                <br />
+                <br />
+                Whether you’re a small business or an established company, our
+                Niagara SEO agency is committed to delivering measurable results
+                that help you grow.
               </p>
 
               <Image
@@ -307,11 +300,14 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                We Make An <span>Impact</span> For Our Clients
+                We Drive <span>Real Results</span> with SEO in Niagara
               </h2>
               <p>
-                Our search engine optimization services and lead-generating
-                website designs help grow your business.
+                At Infused Agency, our Niagara SEO services are designed to
+                increase your visibility, drive targeted traffic, and generate
+                high-quality leads. Through expert search engine optimization
+                strategies, we help local businesses dominate Google rankings
+                and grow their online presence.
               </p>
             </div>
           </div>
@@ -320,30 +316,37 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-top-40">
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Keyword Research</h2>
+                <h2>Keyword Research for SEO in Niagara</h2>
                 <p>
-                  Our SEO experts start by looking at your website and finding
-                  the best words to help people find you.
+                  Our SEO experts analyze your website and identify high-impact
+                  keywords that help local customers find your business on
+                  Google. We focus on search terms with strong commercial
+                  intent, ensuring your website ranks for Niagara SEO searches
+                  that drive real revenue.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Link Building</h2>
+                <h2>High-Quality Link Building & Online Listings</h2>
                 <p>
-                  We help improve your brand’s presence on big search engines
-                  like Google by creating quality links and adding your business
-                  to the right online listings.
+                  Our Niagara SEO agency strengthens your brand authority
+                  through quality backlinks and strategic local business
+                  citations. We help place your business in the right online
+                  directories, improving your search engine rankings and
+                  trustworthiness.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Content Writing</h2>
+                <h2>SEO Content Writing That Ranks</h2>
                 <p>
-                  Infused Agency’s team has a creative content team. We create
-                  smart marketing strategies for your online campaigns,
-                  including Google-friendly content.
+                  Our SEO content team creates Google-friendly,
+                  conversion-focused content that boosts your website’s
+                  authority and rankings. Whether it’s blog posts, service
+                  pages, or landing pages, we craft engaging, keyword-rich
+                  content that attracts and converts visitors.
                 </p>
               </div>
             </div>
@@ -351,28 +354,36 @@ const Home = ({ latestPosts }) => {
           <div className="row">
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>On-Page</h2>
+                <h2>On-Page SEO for Better Visibility & Leads</h2>
                 <p>
-                  Bring more people to your website and get better leads with
-                  our proven on-page methods.
+                  We use proven on-page SEO strategies to optimize your meta
+                  tags, headings, URL structure, and internal links, ensuring
+                  your website is search engine-friendly and highly relevant for
+                  Niagara-based searches.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Local Search Engine Optimization</h2>
+                <h2>Local SEO – Rank in Google’s Local Pack</h2>
                 <p>
-                  Our search engine optimization services help your business get
-                  noticed by the right people online.
+                  Our local SEO services in Niagara ensure your business is
+                  found in Google’s Local Pack and Google Maps rankings. We
+                  optimize your Google Business Profile, manage NAP consistency,
+                  and enhance local citations to increase local search
+                  visibility.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Technical</h2>
+                <h2>Technical SEO – Optimize for Google’s Algorithms</h2>
                 <p>
-                  Our company takes care of your technical web design to make
-                  sure it’s ready for Google and works properly.
+                  We handle all technical SEO aspects, ensuring your website
+                  loads fast, is mobile-friendly, and meets Google’s best
+                  practices. From site speed improvements to structured data
+                  implementation, we make sure your website is optimized for
+                  search engine success.
                 </p>
               </div>
             </div>
@@ -384,7 +395,7 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>Frequently Asked Questions</h2>
+              <h2>Frequently Asked Questions For Niagara SEO Services</h2>
             </Col>
           </Row>
 
@@ -395,25 +406,50 @@ const Home = ({ latestPosts }) => {
                 my website?
               </h3>
               <p>
-                Local search engine optimization services means making your
-                website better so it appears higher in local search engine
-                results. This helps more people find your site.
+                Search engine optimization (SEO) is the process of improving
+                your website to appear higher in local search engine results.
+                For Niagara businesses, ranking higher means increased online
+                visibility, which helps more local customers find your website.
+                Effective local SEO not only boosts your rankings but also
+                enhances the user experience, driving more qualified leads to
+                your site.
               </p>
 
               <h3>
                 What are the main factors that influence Local search engine
                 optimization rankings?
               </h3>
-              <p>
-                Important factors include using the right keywords, having a
-                fast website, and getting other websites to link to yours.
-              </p>
+              <p>The main factors influencing local SEO rankings include:</p>
+              <ul>
+                <li>
+                  <strong>Keyword targeting</strong>: Using the right{" "}
+                  <strong>local keywords</strong> relevant to your business.
+                </li>
+                <li>
+                  <strong>Website performance</strong>: A{" "}
+                  <strong>fast-loading website</strong> is crucial for both user
+                  experience and rankings.
+                </li>
+                <li>
+                  <strong>Backlinks</strong>: Getting reputable websites to{" "}
+                  <strong>link back to your site</strong> signals trust and
+                  authority to search engines.
+                </li>
+                <li>
+                  <strong>Google Business Profile optimization</strong>: A{" "}
+                  <strong>complete and accurate profile</strong> improves your
+                  chances of appearing in local searches and{" "}
+                  <strong>Google Maps</strong>.
+                </li>
+              </ul>
 
               <h3>How much does Local search engine optimization cost?</h3>
               <p>
-                This entirely depends on both the length of the project, and the
-                work involved. <Link href="/get-a-quote">Contact us today</Link>{" "}
-                for a free consult and free quote.
+                The cost of local SEO varies depending on your business goals,
+                the competition in your area, and the scope of work required.
+                Each business is unique, so we recommend reaching out for a free
+                consultation and customized quote to determine what will work
+                best for your specific needs and SEO strategy.
               </p>
 
               <h3>
@@ -421,8 +457,12 @@ const Home = ({ latestPosts }) => {
                 which keywords to target?
               </h3>
               <p>
-                We find words people use to search for your type of business and
-                choose ones that can bring you more visitors.
+                Our Niagara SEO experts perform in-depth keyword research to
+                identify the terms your potential customers are searching for.
+                We focus on long-tail local keywords and high-intent search
+                terms that can bring more qualified traffic to your site. By
+                targeting low-competition, high-traffic keywords, we help
+                increase your chances of ranking higher in local search results.
               </p>
 
               <h3>
@@ -430,10 +470,24 @@ const Home = ({ latestPosts }) => {
                 it differ from off-page local search engine optimization?
               </h3>
               <p>
-                On-page local search engine optimization means improving things
-                on your website, like text and images. Off-page local search
-                engine optimization means getting other websites to link to
-                yours.
+                <ul>
+                  <li>
+                    <strong>On-page local SEO</strong>: Refers to optimizing
+                    elements on your website such as meta tags, headings,
+                    content, and images to ensure they are search
+                    engine-friendly and contain the right local keywords.
+                  </li>
+                  <li>
+                    <strong>Off-page local SEO</strong>: Focuses on improving
+                    your website’s authority by acquiring backlinks from trusted
+                    sources and being listed in local business directories.
+                  </li>
+                  <li>
+                    Both <strong>on-page</strong> and{" "}
+                    <strong>off-page SEO</strong> are critical for improving
+                    local search rankings and driving more local traffic.
+                  </li>
+                </ul>
               </p>
 
               <h3>
@@ -441,15 +495,37 @@ const Home = ({ latestPosts }) => {
                 a website?
               </h3>
               <p>
-                We fix problems like slow loading times, broken links, and
-                mobile-friendliness to improve your site’s performance.
+                Our Niagara SEO agency specializes in addressing technical SEO
+                issues such as:
               </p>
+              <ul>
+                <li>
+                  <strong>Site speed optimization</strong>: Ensuring your
+                  website loads quickly, which is crucial for both rankings and
+                  user experience.
+                </li>
+                <li>
+                  <strong>Mobile-friendliness</strong>: Ensuring your site is
+                  responsive and easy to navigate on all devices.
+                </li>
+                <li>
+                  <strong>Fixing broken links</strong>: Repairing any internal
+                  or external links that could harm your SEO efforts.
+                </li>
+                <li>
+                  These technical improvements help make your website more
+                  Google-friendly and improve your overall search engine
+                  optimization.
+                </li>
+              </ul>
 
               <h3>Can you guarantee my website will rank #1 on Google?</h3>
               <p>
-                No one can promise a #1 spot, but we can improve your chances
-                with good search engine optimization practices, as we have for
-                all of our clients.
+                While no one can guarantee a #1 ranking, we specialize in local
+                SEO best practices that increase your chances of ranking higher
+                for competitive keywords. Through proven SEO strategies, we’ve
+                helped businesses in Niagara improve their rankings and drive
+                more local traffic to their websites.
               </p>
 
               <h3>
@@ -457,8 +533,12 @@ const Home = ({ latestPosts }) => {
                 optimization?
               </h3>
               <p>
-                Backlinks are links from other websites to yours. They show
-                Google your site is trusted.
+                Backlinks are links from other reputable websites that point to
+                yours. They serve as votes of confidence for your site,
+                signaling to Google that your website is trustworthy and
+                authoritative. By acquiring high-quality backlinks, we help your
+                site gain more visibility in local search results, ultimately
+                improving your rankings and online presence.
               </p>
             </Col>
           </Row>
