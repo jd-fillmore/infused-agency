@@ -160,7 +160,7 @@ const Home = ({ latestPosts }) => {
         />
 
         <title>
-          Niagara SEO Company | Expert Local SEO Services St. Catharines
+          SEO Niagara
         </title>
         <meta
           name="description"
