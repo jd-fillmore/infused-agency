@@ -159,12 +159,10 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>
-          SEO Niagara
-        </title>
+        <title>SEO Niagara | St. Catharines, Niagara Falls</title>
         <meta
           name="description"
-          content="Infused Agency is a top Niagara SEO company specializing in local SEO services for businesses in Niagara Falls, St. Catharines, and surrounding areas. Drive more traffic, improve rankings, and increase leads with expert SEO strategies."
+          content="Our SEO Niagara company specializes in local SEO services for businesses in Niagara Falls, St. Catharines, and surrounding areas. Drive more traffic, improve rankings, and increase leads with expert SEO strategies."
         />
         <meta
           name="google-site-verification"

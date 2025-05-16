@@ -13,8 +13,8 @@ const Hero = () => {
           <Row className="align-items-center">
             <Col lg="12">
               <h1 className="intro">
-                SEO Company in Niagara – Expert Search Engine Optimization
-                Services
+                Search Engine Optimization | Niagara, St. Catharines, Niagara
+                Falls
               </h1>
               <h2>
                 <span>Grow Your Business</span> With The Best Local SEO Agency
