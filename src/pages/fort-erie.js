@@ -8,7 +8,7 @@ import Nav from "../../components/Nav/nav";
 import InnerHeroCities from "../../components/innerHero/innerHeroCIties";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import hero from "../img/seo-fonthill.webp";
+import hero from "../img/seo-fort-erie.webp";
 import best from "../img/awards.png";
 import { Col, Container, Row } from "reactstrap";
 import GoogleReviews from "../../components/GoogleReviews/googleReviews";
