@@ -1,44 +1,49 @@
 import React from "react";
-import { getLatestPosts } from "../../lib/posts";
+import { getLatestPosts } from "../lib/posts";
 import { format } from "date-fns";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Nav from "../../../components/Nav/nav";
-import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
-import CTA from "../../../components/CTA/cta";
-import Footer from "../../../components/Footer/footer";
-import hero from "../../img/seo-fonthill.webp";
-import best from "../../img/awards.png";
+import Nav from "../../components/Nav/nav";
+import InnerHeroCities from "../../components/innerHero/innerHeroCIties";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import hero from "../img/seo-beamsville.webp";
+import best from "../img/awards.png";
 import { Col, Container, Row } from "reactstrap";
-import GoogleReviews from "../../../components/GoogleReviews/googleReviews";
-import flatRock from "../../img/flat-rock-seo-results.png";
-import kd from "../../img/kd-flowers-seo-results.png";
+import GoogleReviews from "../../components/GoogleReviews/googleReviews";
+import flatRock from "../img/flat-rock-seo-results.png";
 
 const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Fonthill</title>
+        <title>
+          SEO & Digital Marketing for Niagara-on-the-Lake Businesses | Infused
+          Agency
+        </title>
         <meta
           name="description"
-          content="Award-winning Fonthill SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."
+          content="Increase your Niagara-on-the-Lake business’s online presence with our expert SEO and digital marketing services. Customized campaigns that drive real results locally."
         />
-        <link rel="canonical" href="https://infused.agency/seo/fonthill" />
+        <link
+          rel="canonical"
+          href="https://infused.agency/niagara-on-the-lake"
+        />
       </Head>
       <Nav />
       <InnerHeroCities
-        title="Search Engine Optimization Fonthill"
-        subTitle="Grow Your Business With Our SEO Services in Fonthill, ON"
+        title="Search Engine Optimization Beamsville"
+        subTitle="Grow Your Business With Our SEO Services in Beamsville, ON"
         image={hero}
-        alt="SEO Company in Fonthill, Ontario"
+        alt="SEO Company in Beamsville, Ontario"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Fonthill SEO Partners <span>Achieve Great Results</span>
+                Our Beamsville SEO Partners <span>Achieve Great Results</span>
               </h2>
             </div>
           </div>
@@ -99,62 +104,54 @@ const SEO = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-top-120">
             <div className="col-lg-7">
-              <h2>Why Choose Infused As Your Fonthill SEO Agency?</h2>
+              <h2>Why Choose Infused As Your Beamsville SEO Agency?</h2>
               <p>
-                It's simple. Our <strong>SEO Fonthill</strong> agency has been
+                It's simple. Our <strong>SEO Beamsville</strong> agency has been
                 helping businesses with their search engine optimization for
                 over ten years. This means our local{" "}
-                <strong>SEO Fonthill</strong> expert consultants know what works
-                best for local companies when it comes to creating local{" "}
+                <strong>SEO Beamsville</strong> expert consultants know what
+                works best for local companies when it comes to creating local{" "}
                 <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
                   SEO
                 </a>{" "}
                 strategies.
               </p>
+
               <p>
-                {" "}
-                We provide services across Fonthill, ON, covering areas like{" "}
-                <a
-                  href="https://www.google.com/maps/place/Pelham,+ON/@43.0373515,-79.4111994,12z/data=!3m1!4b1!4m6!3m5!1s0x89d34b0bd454317b:0x7daf72def40e059d!8m2!3d43.037222!4d-79.328764!16zL20vMDM2Z2Nn?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                >
-                  {" "}
-                  Pelham Arena{" "}
+                We provide services across Beamsville, ON, covering areas like{" "}
+                <a href="https://www.google.com/maps/place/Kinsmen+Park/@43.1611284,-79.517786,13z/data=!4m15!1m8!3m7!1s0x882ca6a63bd9bd41:0x22e434fb6db3b5f!2sBeamsville,+Lincoln,+ON!3b1!8m2!3d43.1570948!4d-79.4760133!16zL20vMDZxdG5s!3m5!1s0x882cb1fbd5449701:0xd78126f70d79d742!8m2!3d43.14534!4d-79.47595!16s%2Fg%2F1tf4fp5r?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                  Kinsmen Park
                 </a>
                 ,{" "}
-                <a
-                  href="https://www.google.com/maps/place/Sobeys+Fonthill/@43.046866,-79.2813925,17z/data=!3m1!4b1!4m6!3m5!1s0x89d34be167f5385d:0x1c3276cd4345e29d!8m2!3d43.0468621!4d-79.2788176!16s%2Fg%2F1tlkdbqp?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                >
-                  {" "}
-                  Fonthill Sobeys Plaza{" "}
+                <a href="https://www.google.com/maps/place/Albright+Manor/@43.1507457,-79.4973951,13.93z/data=!4m15!1m8!3m7!1s0x882ca6a63bd9bd41:0x22e434fb6db3b5f!2sBeamsville,+Lincoln,+ON!3b1!8m2!3d43.1570948!4d-79.4760133!16zL20vMDZxdG5s!3m5!1s0x882cb1fdfaf02a1b:0x85601de8cf1e8306!8m2!3d43.1518682!4d-79.4765943!16s%2Fg%2F1t_wp_br?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                  Albright Manor
                 </a>
-                , Downtown Fonthill, Haist Street, and Hurricane Road.{" "}
-              </p>{" "}
+                , Vine Avenue, Mountainview, and Cherry Heights.
+              </p>
+
               <p>
-                {" "}
-                <a href="https://www.pelham.ca/" target="_blank">
-                  {" "}
-                  Fonthill, ON{" "}
+                <a href="https://www.lincoln.ca/" target="_blank">
+                  Beamsville, ON
                 </a>{" "}
                 is a beautiful town located in the heart of the Niagara Region,
-                known for its charming small-town atmosphere and rich community
-                spirit. It is home to local attractions such as the Fonthill
-                Bandshell, the serene Harold Black Park, and the popular Pelham
-                Farmers Market. With its close proximity to the Niagara
-                Escarpment, Fonthill offers picturesque views, outdoor
-                activities, and a friendly, vibrant community.{" "}
+                known for its charming small-town atmosphere and rich
+                agricultural roots. It is home to local attractions such as the
+                Beamsville Heritage Trail, the beautiful vineyards, and the
+                famous Beamsville Lions Park. With its close proximity to the
+                Niagara Escarpment, Beamsville offers breathtaking views, hiking
+                trails, and a friendly, vibrant community.
               </p>
+
               <Image
                 className="img-fluid"
                 src={best}
-                alt="search engine optimization company Fonthill"
+                alt="search engine optimization company Beamsville"
               />
             </div>
             <div className="col-lg-5">
               <div className="card">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23329.80817169622!2d-79.30626191996562!3d43.03667575280389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3495b85ab330f%3A0xa66b7f6644047a01!2sFonthill%2C%20Pelham%2C%20ON!5e0!3m2!1sen!2sca!4v1735605526605!5m2!1sen!2sca"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23282.936303750226!2d-79.49941746955109!3d43.15981920227602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ca6a63bd9bd41%3A0x22e434fb6db3b5f!2sBeamsville%2C%20Lincoln%2C%20ON!5e0!3m2!1sen!2sca!4v1735048861536!5m2!1sen!2sca"
                   width="100%"
                   height="450"
                   allowfullscreen=""
@@ -171,10 +168,10 @@ const SEO = ({ latestPosts }) => {
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                Fonthill SEO Company That <span>Makes An Impact</span>
+                Beamsville SEO Company That <span>Makes An Impact</span>
               </h2>
               <p>
-                Our <strong>SEO Fonthill</strong> services and lead-generating
+                Our <strong>SEO Beamsville</strong> services and lead-generating
                 website designs help grow your business.
               </p>
             </div>
@@ -186,8 +183,8 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research</h2>
                 <p>
-                  Our Fonthill SEO experts start by looking at your website and
-                  finding the best words to help people find you.
+                  Our Beamsville SEO experts start by looking at your website
+                  and finding the best words to help people find you.
                 </p>
               </div>
             </div>
@@ -205,7 +202,7 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Infused Agency’s SEO team in Fonthill has a creative content
+                  Infused Agency’s SEO team in Beamsville has a creative content
                   team. We create smart marketing strategies for your online
                   campaigns, including SEO-friendly content.
                 </p>
@@ -226,8 +223,8 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  Our Fonthill local SEO services help your business get noticed
-                  by the right people online.
+                  Our Beamsville local SEO services help your business get
+                  noticed by the right people online.
                 </p>
               </div>
             </div>
@@ -235,7 +232,7 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Technical SEO</h2>
                 <p>
-                  Our Fonthill SEO company takes care of your technical web
+                  Our Beamsville SEO company takes care of your technical web
                   design to make sure it’s ready for SEO and works properly.
                 </p>
               </div>
@@ -248,7 +245,7 @@ const SEO = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>FAQs for local Fonthill SEO Clients</h2>
+              <h2>FAQs for local Beamsville SEO Clients</h2>
             </Col>
           </Row>
 
@@ -259,7 +256,7 @@ const SEO = ({ latestPosts }) => {
                 my website?
               </h3>
               <p>
-                Local <strong>SEO Fonthill</strong> services means making your
+                Local <strong>SEO Beamsville</strong> services means making your
                 website better so it appears higher in local search engine
                 results. This helps more people find your site.
               </p>
@@ -276,7 +273,7 @@ const SEO = ({ latestPosts }) => {
               <h3>How much does Local search engine optimization cost?</h3>
               <p>
                 This entirely depends on both the length of the local{" "}
-                <strong>SEO Fonthill</strong> campaign, and the work involved.{" "}
+                <strong>SEO Beamsville</strong> campaign, and the work involved.{" "}
                 <Link href="/get-a-quote">Contact us today</Link> for a free
                 consult and free quote.
               </p>
@@ -313,7 +310,7 @@ const SEO = ({ latestPosts }) => {
               <h3>Can you guarantee my website will rank #1 on Google?</h3>
               <p>
                 No one can promise a #1 spot, but we can improve your chances
-                with good <strong>SEO Fonthill</strong> practices, as we have
+                with good <strong>SEO Beamsville</strong> practices, as we have
                 for all of our clients.
               </p>
 
@@ -340,7 +337,7 @@ const SEO = ({ latestPosts }) => {
               </h3>
               <p>
                 Risks include using bad practices that can get your site
-                penalized by Google. Our <strong>SEO Fonthill</strong> experts
+                penalized by Google. Our <strong>SEO Beamsville</strong> experts
                 use safe, proven methods to avoid this.
               </p>
             </Col>

@@ -1,30 +1,31 @@
 import React from "react";
-import { getLatestPosts } from "../../lib/posts";
+import { getLatestPosts } from "../lib/posts";
 import { format } from "date-fns";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Nav from "../../../components/Nav/nav";
-import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
-import CTA from "../../../components/CTA/cta";
-import Footer from "../../../components/Footer/footer";
-import hero from "../../img/seo-beamsville.webp";
-import best from "../../img/awards.png";
+import Nav from "../../components/Nav/nav";
+import InnerHeroCities from "../../components/innerHero/innerHeroCIties";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import hero from "../img/seo-beamsville.webp";
+import best from "../img/awards.png";
 import { Col, Container, Row } from "reactstrap";
-import GoogleReviews from "../../../components/GoogleReviews/googleReviews";
-import flatRock from "../../img/flat-rock-seo-results.png";
-import kd from "../../img/kd-flowers-seo-results.png";
+import GoogleReviews from "../../components/GoogleReviews/googleReviews";
+import flatRock from "../img/flat-rock-seo-results.png";
 
 const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Beamsville</title>
+        <title>
+          Niagara Falls SEO & Digital Marketing Agency | Infused Agency
+        </title>
         <meta
           name="description"
-          content="Award-winning Beamsville SEO Company boosts your online visibility with expert SEO services. Drive traffic, leads, and sales with our proven strategies."
+          content="Dominate Niagara Falls online with Infused Agency’s SEO and digital marketing services. Tailored local strategies designed to grow your business and boost leads."
         />
-        <link rel="canonical" href="https://infused.agency/seo/beamsville" />
+        <link rel="canonical" href="https://infused.agency/niagara-falls" />
       </Head>
       <Nav />
       <InnerHeroCities

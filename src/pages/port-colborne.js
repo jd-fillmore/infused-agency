@@ -1,43 +1,45 @@
 import React from "react";
-import { getLatestPosts } from "../../lib/posts";
+import { getLatestPosts } from "../lib/posts";
 import { format } from "date-fns";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Nav from "../../../components/Nav/nav";
-import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
-import CTA from "../../../components/CTA/cta";
-import Footer from "../../../components/Footer/footer";
-import hero from "../../img/seo-grimsby.webp";
-import best from "../../img/awards.png";
+import Nav from "../../components/Nav/nav";
+import InnerHeroCities from "../../components/innerHero/innerHeroCIties";
+import CTA from "../../components/CTA/cta";
+import Footer from "../../components/Footer/footer";
+import hero from "../img/seo-beamsville.webp";
+import best from "../img/awards.png";
 import { Col, Container, Row } from "reactstrap";
-import GoogleReviews from "../../../components/GoogleReviews/googleReviews";
-import flatRock from "../../img/flat-rock-seo-results.png";
+import GoogleReviews from "../../components/GoogleReviews/googleReviews";
+import flatRock from "../img/flat-rock-seo-results.png";
 
 const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Grimsby</title>
+        <title>
+          Port Colborne SEO & Digital Marketing Services | Infused Agency
+        </title>
         <meta
           name="description"
-          content="Get results with affordable SEO services in Grimsby, Ontario. Our expert strategies help your business rank higher and attract more customers."
+          content="Get found in Port Colborne with proven SEO and digital marketing strategies from Infused Agency. We help local businesses increase traffic, leads, and sales."
         />
-        <link rel="canonical" href="https://infused.agency/seo/grimsby" />
+        <link rel="canonical" href="https://infused.agency/port-colborne" />
       </Head>
       <Nav />
       <InnerHeroCities
-        title="Search Engine Optimization Grimsby"
-        subTitle="Enhance your business growth with expert SEO services in Grimsby, ON."
+        title="Search Engine Optimization Beamsville"
+        subTitle="Grow Your Business With Our SEO Services in Beamsville, ON"
         image={hero}
-        alt="SEO Services in Grimsby, Ontario"
+        alt="SEO Company in Beamsville, Ontario"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Grimsby SEO Partners <span>Achieve Great Results</span>
+                Our Beamsville SEO Partners <span>Achieve Great Results</span>
               </h2>
             </div>
           </div>
@@ -98,13 +100,13 @@ const SEO = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-top-120">
             <div className="col-lg-7">
-              <h2>Why Choose Infused As Your Grimsby SEO Agency?</h2>
+              <h2>Why Choose Infused As Your Beamsville SEO Agency?</h2>
               <p>
-                It's simple. Our <strong>SEO Grimsby</strong> agency has been
+                It's simple. Our <strong>SEO Beamsville</strong> agency has been
                 helping businesses with their search engine optimization for
                 over ten years. This means our local{" "}
-                <strong>SEO Grimsby</strong> expert consultants know what works
-                best for local companies when it comes to creating local{" "}
+                <strong>SEO Beamsville</strong> expert consultants know what
+                works best for local companies when it comes to creating local{" "}
                 <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">
                   SEO
                 </a>{" "}
@@ -112,38 +114,40 @@ const SEO = ({ latestPosts }) => {
               </p>
 
               <p>
-                We provide services across Grimsby, ON, covering areas like{" "}
-                <a href="https://www.google.com/maps/place/Grimsby,+ON/@43.255706,-79.566614,13z/data=!4m6!3m5!1s0x882cd30e9fa388c7:0xd33b4783e9a0a61e!8m2!3d43.2543925!4d-79.5665982!16zL20vMDZxdG5s">
-                  Grimsby Beach
+                We provide services across Beamsville, ON, covering areas like{" "}
+                <a href="https://www.google.com/maps/place/Kinsmen+Park/@43.1611284,-79.517786,13z/data=!4m15!1m8!3m7!1s0x882ca6a63bd9bd41:0x22e434fb6db3b5f!2sBeamsville,+Lincoln,+ON!3b1!8m2!3d43.1570948!4d-79.4760133!16zL20vMDZxdG5s!3m5!1s0x882cb1fbd5449701:0xd78126f70d79d742!8m2!3d43.14534!4d-79.47595!16s%2Fg%2F1tf4fp5r?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                  Kinsmen Park
                 </a>
                 ,{" "}
-                <a href="https://www.google.com/maps/place/Casablanca+Boulevard,+Grimsby,+ON/@43.234639,-79.566462,13z/data=!4m15!1m8!3m7!1s0x882cd303fd660047:0xd98135e2d44b12d8!2sCasablanca+Boulevard,+Grimsby,+ON!3b1!8m2!3d43.2348289!4d-79.5625508!16zL20vMDZxdG5s">
-                  Casablanca Boulevard
+                <a href="https://www.google.com/maps/place/Albright+Manor/@43.1507457,-79.4973951,13.93z/data=!4m15!1m8!3m7!1s0x882ca6a63bd9bd41:0x22e434fb6db3b5f!2sBeamsville,+Lincoln,+ON!3b1!8m2!3d43.1570948!4d-79.4760133!16zL20vMDZxdG5s!3m5!1s0x882cb1fdfaf02a1b:0x85601de8cf1e8306!8m2!3d43.1518682!4d-79.4765943!16s%2Fg%2F1t_wp_br?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                  Albright Manor
                 </a>
-                , Main Street West, Livingston Avenue, and Cherry Hill.
+                , Vine Avenue, Mountainview, and Cherry Heights.
               </p>
 
               <p>
-                <a href="https://www.grimsby.ca/" target="_blank">
-                  Grimsby, ON
+                <a href="https://www.lincoln.ca/" target="_blank">
+                  Beamsville, ON
                 </a>{" "}
-                is a vibrant town located along the shores of Lake Ontario,
-                known for its scenic waterfront, welcoming community, and
-                excellent quality of life. Grimsby offers a mix of beautiful
-                parks, local wineries, and rich history, making it an ideal
-                place to live and do business.
+                is a beautiful town located in the heart of the Niagara Region,
+                known for its charming small-town atmosphere and rich
+                agricultural roots. It is home to local attractions such as the
+                Beamsville Heritage Trail, the beautiful vineyards, and the
+                famous Beamsville Lions Park. With its close proximity to the
+                Niagara Escarpment, Beamsville offers breathtaking views, hiking
+                trails, and a friendly, vibrant community.
               </p>
 
               <Image
                 className="img-fluid"
                 src={best}
-                alt="search engine optimization company Grimsby"
+                alt="search engine optimization company Beamsville"
               />
             </div>
             <div className="col-lg-5">
               <div className="card">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93092.63290802295!2d-79.66322367018574!3d43.18547293296224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882caf79ccfea3dd%3A0x9566109eba2a4656!2sGrimsby%2C%20ON!5e0!3m2!1sen!2sca!4v1735520219703!5m2!1sen!2sca"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23282.936303750226!2d-79.49941746955109!3d43.15981920227602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ca6a63bd9bd41%3A0x22e434fb6db3b5f!2sBeamsville%2C%20Lincoln%2C%20ON!5e0!3m2!1sen!2sca!4v1735048861536!5m2!1sen!2sca"
                   width="100%"
                   height="450"
                   allowfullscreen=""
@@ -160,10 +164,10 @@ const SEO = ({ latestPosts }) => {
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
               <h2>
-                Grimsby SEO Company That <span>Makes An Impact</span>
+                Beamsville SEO Company That <span>Makes An Impact</span>
               </h2>
               <p>
-                Our <strong>SEO Grimsby</strong> services and lead-generating
+                Our <strong>SEO Beamsville</strong> services and lead-generating
                 website designs help grow your business.
               </p>
             </div>
@@ -175,8 +179,8 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research</h2>
                 <p>
-                  Our Grimsby SEO experts start by looking at your website and
-                  finding the best words to help people find you.
+                  Our Beamsville SEO experts start by looking at your website
+                  and finding the best words to help people find you.
                 </p>
               </div>
             </div>
@@ -194,7 +198,7 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Infused Agency’s SEO team in Grimsby has a creative content
+                  Infused Agency’s SEO team in Beamsville has a creative content
                   team. We create smart marketing strategies for your online
                   campaigns, including SEO-friendly content.
                 </p>
@@ -215,8 +219,8 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  Our Grimsby local SEO services help your business get noticed
-                  by the right people online.
+                  Our Beamsville local SEO services help your business get
+                  noticed by the right people online.
                 </p>
               </div>
             </div>
@@ -224,7 +228,7 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Technical SEO</h2>
                 <p>
-                  Our Grimsby SEO company takes care of your technical web
+                  Our Beamsville SEO company takes care of your technical web
                   design to make sure it’s ready for SEO and works properly.
                 </p>
               </div>
@@ -237,7 +241,7 @@ const SEO = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>FAQs for local Grimsby SEO Clients</h2>
+              <h2>FAQs for local Beamsville SEO Clients</h2>
             </Col>
           </Row>
 
@@ -248,7 +252,7 @@ const SEO = ({ latestPosts }) => {
                 my website?
               </h3>
               <p>
-                Local <strong>SEO Grimsby</strong> services means making your
+                Local <strong>SEO Beamsville</strong> services means making your
                 website better so it appears higher in local search engine
                 results. This helps more people find your site.
               </p>
@@ -265,7 +269,7 @@ const SEO = ({ latestPosts }) => {
               <h3>How much does Local search engine optimization cost?</h3>
               <p>
                 This entirely depends on both the length of the local{" "}
-                <strong>SEO Grimsby</strong> campaign, and the work involved.{" "}
+                <strong>SEO Beamsville</strong> campaign, and the work involved.{" "}
                 <Link href="/get-a-quote">Contact us today</Link> for a free
                 consult and free quote.
               </p>
@@ -302,8 +306,8 @@ const SEO = ({ latestPosts }) => {
               <h3>Can you guarantee my website will rank #1 on Google?</h3>
               <p>
                 No one can promise a #1 spot, but we can improve your chances
-                with good <strong>SEO Grimsby</strong> practices, as we have for
-                all of our clients.
+                with good <strong>SEO Beamsville</strong> practices, as we have
+                for all of our clients.
               </p>
 
               <h3>
@@ -329,7 +333,7 @@ const SEO = ({ latestPosts }) => {
               </h3>
               <p>
                 Risks include using bad practices that can get your site
-                penalized by Google. Our <strong>SEO Grimsby</strong> experts
+                penalized by Google. Our <strong>SEO Beamsville</strong> experts
                 use safe, proven methods to avoid this.
               </p>
             </Col>
