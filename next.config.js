@@ -101,7 +101,17 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/beamsville",
+        destination: "/beamsville-seo-digital-marketing",
+        permanent: true,
+      },
+      {
         source: "/seo/crystal-beach",
+        destination: "/crystal-beach-seo-digital-marketing",
+        permanent: true,
+      },
+      {
+        source: "/crystal-beach",
         destination: "/crystal-beach-seo-digital-marketing",
         permanent: true,
       },
