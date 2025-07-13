@@ -97,12 +97,12 @@ const nextConfig = {
       },
       {
         source: "/seo/beamsville",
-        destination: "/beamsville",
+        destination: "/beamsville-seo-digital-marketing",
         permanent: true,
       },
       {
         source: "/seo/crystal-beach",
-        destination: "/crystal-beach",
+        destination: "/crystal-beach-seo-digital-marketing",
         permanent: true,
       },
       {

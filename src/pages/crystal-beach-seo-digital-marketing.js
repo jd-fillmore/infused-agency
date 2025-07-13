@@ -24,7 +24,10 @@ const SEO = ({ latestPosts }) => {
           name="description"
           content="Looking for top SEO and digital marketing in Crystal Beach? Our local experts drive targeted traffic and grow your business online with proven, customized campaigns."
         />
-        <link rel="canonical" href="https://infused.agency/crystal-beach" />
+        <link
+          rel="canonical"
+          href="https://infused.agency/crystal-beach-seo-digital-marketing"
+        />
       </Head>
       <Nav />
       <InnerHeroCities
