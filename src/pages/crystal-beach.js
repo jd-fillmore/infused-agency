@@ -31,6 +31,7 @@ const SEO = ({ latestPosts }) => {
         title="Crystal Beach SEO & Local Digital Marketing Experts"
         subTitle="Drive Growth with Tailored Local SEO Strategies in Crystal Beach, Ontario"
         image={hero}
+        description="Infused Agency is a results-driven Crystal Beach digital marketing and SEO agency. We craft tailored online marketing strategies designed to help businesses grow and succeed."
         alt="SEO digital marketing crystal beach"
       />
       <section className="home-top-web">

@@ -96,23 +96,23 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/beamsville-seo-company",
-        destination: "/seo/beamsville",
+        source: "/seo/beamsville",
+        destination: "/beamsville",
         permanent: true,
       },
       {
-        source: "/crystal-beach-seo-company",
-        destination: "/seo/crystal-beach",
+        source: "/seo/crystal-beach",
+        destination: "/crystal-beach",
         permanent: true,
       },
       {
-        source: "/fonthill-seo-company",
-        destination: "/seo/fonthill",
+        source: "/seo/fonthill",
+        destination: "/fonthill",
         permanent: true,
       },
       {
-        source: "/fort-erie-seo-company",
-        destination: "/seo/fort-erie",
+        source: "/seo/fort-erie",
+        destination: "/fort-erie",
         permanent: true,
       },
       {
