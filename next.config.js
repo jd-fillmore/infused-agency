@@ -95,71 +95,7 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
-      {
-        source: "/seo/beamsville",
-        destination: "/beamsville-seo-digital-marketing",
-        permanent: true,
-      },
-      {
-        source: "/beamsville",
-        destination: "/beamsville-seo-digital-marketing",
-        permanent: true,
-      },
-      {
-        source: "/seo/crystal-beach",
-        destination: "/crystal-beach-seo-digital-marketing",
-        permanent: true,
-      },
-      {
-        source: "/crystal-beach",
-        destination: "/crystal-beach-seo-digital-marketing",
-        permanent: true,
-      },
-      {
-        source: "/seo/fonthill",
-        destination: "/fonthill",
-        permanent: true,
-      },
-      {
-        source: "/seo/fort-erie",
-        destination: "/fort-erie",
-        permanent: true,
-      },
-      {
-        source: "/grimsby-seo-company",
-        destination: "/seo/grimsby",
-        permanent: true,
-      },
-      {
-        source: "/niagara-on-the-lake-seo",
-        destination: "/seo/niagara",
-        permanent: true,
-      },
-      {
-        source: "/niagara-seo-company",
-        destination: "/seo/niagara",
-        permanent: true,
-      },
-      {
-        source: "/port-colborne-seo",
-        destination: "/seo/port-colborne",
-        permanent: true,
-      },
-      {
-        source: "/thorold-seo-company",
-        destination: "/seo/thorold",
-        permanent: true,
-      },
-      {
-        source: "/wainfleet-seo",
-        destination: "/seo/wainfleet",
-        permanent: true,
-      },
-      {
-        source: "/welland-seo-company",
-        destination: "/seo/welland",
-        permanent: true,
-      },
+
       {
         source: "/posts/best-practices-cta-buttons",
         destination: "/posts/3-best-practices-for-high-converting-cta-buttons",
