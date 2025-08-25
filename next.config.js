@@ -289,6 +289,56 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/beamsville",
+        destination: "/seo/beamsville",
+        permanent: true,
+      },
+      {
+        source: "/beamsville-seo-digital-marketing",
+        destination: "/seo/beamsville",
+        permanent: true,
+      },
+      {
+        source: "/fonthill",
+        destination: "/seo/fonthill",
+        permanent: true,
+      },
+      {
+        source: "/fort-erie",
+        destination: "/seo/fort-erie",
+        permanent: true,
+      },
+      {
+        source: "/grimsby",
+        destination: "/seo/grimsby",
+        permanent: true,
+      },
+      {
+        source: "/niagara-on-the-lake",
+        destination: "/seo/niagara-on-the-lake",
+        permanent: true,
+      },
+      {
+        source: "/niagara-falls",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/port-colborne",
+        destination: "/seo/port-colborne",
+        permanent: true,
+      },
+      {
+        source: "/thorold",
+        destination: "/seo/thorold",
+        permanent: true,
+      },
+      {
+        source: "/welland",
+        destination: "/seo/welland",
+        permanent: true,
+      },
     ];
   },
 };

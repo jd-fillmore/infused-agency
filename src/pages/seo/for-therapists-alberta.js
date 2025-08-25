@@ -54,8 +54,8 @@ const SEO = ({ latestPosts }) => {
                 website into your best sales manager. We believe that with the
                 right SEO services for therapists in Alberta, your practice can
                 consistently rank higher on Google, build trust, and become the
-                go-to choice for clients seeking therapy in Toronto, Ottawa,
-                Mississauga, and beyond.
+                go-to choice for clients seeking therapy in Calgary, Red Deer,
+                Edmonton, Banff, Canmore and beyond.
               </p>
 
               <h2>Who We Are</h2>
@@ -148,9 +148,9 @@ const SEO = ({ latestPosts }) => {
                   structure, headers, meta tags, and content to make your
                   therapy practice highly visible on Google. Every page is
                   tailored to appeal to potential clients searching for therapy
-                  services in Toronto, Ottawa, Mississauga and all over Alberta,
-                  ensuring your website ranks well and converts visitors into
-                  patients.
+                  services in Calgary, Edmonton, Banff, Canmore, Red Deer and
+                  all over Alberta, ensuring your website ranks well and
+                  converts visitors into patients.
                 </p>
               </div>
             </div>
@@ -188,7 +188,8 @@ const SEO = ({ latestPosts }) => {
                   searches like “therapist near me” or other relevant keywords.
                   We optimize your Google Business Profile, manage local
                   citations, and create location-specific content to attract
-                  clients in Toronto, Ottawa, Mississauga, and across Alberta.
+                  clients in Calgary, Edmonton, Banff, Canmore, Red Deer and
+                  across Alberta.
                 </p>
               </div>
             </div>
@@ -210,8 +211,8 @@ const SEO = ({ latestPosts }) => {
               <p>
                 SEO for therapists in Alberta improves your Google rankings,
                 making it easier for people in whichever city you're in -
-                whether it's Toronto, Ottawa, Mississauga or anywhere else in
-                Alberta - to find and contact your practice.
+                whether it's Calgary, Edmonton, Banff, Canmore, Red Deer or
+                anywhere else in Alberta - to find and contact your practice.
               </p>{" "}
               <h3>
                 What makes Infused Agency the best SEO company in Alberta?
@@ -235,8 +236,8 @@ const SEO = ({ latestPosts }) => {
                 goals.
               </p>{" "}
               <h3>
-                Can local SEO help therapists in Toronto, Ottawa, and
-                Mississauga?
+                Can local SEO help therapists in Calgary, Edmonton, Banff,
+                Canmore, Red Deer?
               </h3>{" "}
               <p>
                 Absolutely. Local SEO in Alberta ensures that when someone
