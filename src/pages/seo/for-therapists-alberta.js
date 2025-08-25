@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { InlineWidget } from "react-calendly";
 import { getLatestPosts } from "../../lib/posts";
 import { Col, Container, Row } from "reactstrap";
 import { format } from "date-fns";
@@ -12,16 +11,14 @@ import Footer from "../../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-import flatRock from "../../../src/img/st-catharines-seo-results.jpg";
-import test1 from "../../../src/img/seo-company-niagara.png";
-import test2 from "../../../src/img/seo-niagara-experts.png";
-import test3 from "../../../src/img/seo-niagara-services.png";
-import delta from "../../../src/img/niagara-seo-company-results.jpg";
-import infused from "../../../src/img/infused-agency-seo-niagara.png";
+import results1 from "../../../src/img/seo-for-therapists-alberta-results.jpg";
+import test1 from "../../../src/img/seo-for-counsellors-alberta.png";
+import test2 from "../../../src/img/seo-for-alberta-psychotherapists.png";
+import test3 from "../../../src/img/seo-for-alberta-therapists.png";
+import results2 from "../../../src/img/seo-for-psychotherapists-alberta-results.jpg";
+import infused from "../../../src/img/seo-for-therapists-agency-alberta.png";
 import check from "../../../src/img/check.png";
-import results from "../../../src/img/seo-agency-st-catharines.png";
-import reviews from "../../../src/img/seo-niagara-reviews.png";
-import clients from "../../../src/img/seo-niagara.search-engine-optimization-agency-st-catharines.png";
+import reviews from "../../../src/img/seo-for-therapists-alberta-reviews.png";
 
 const Home = ({ latestPosts }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -29,22 +26,18 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          SEO For Therapists Alberta - Calgary, Edmonton, Red Deer, Banff,
-          Canmore - Local SEO Agency, Search Engine Optimization Expert, SEO
-          Services Therapy Practices
+          #1 SEO for Alberta Therapists | Counsellor & Therapy SEO Company
+          Helping Psychologists, Counsellors & Mental Health Professionals Grow
+          Their Practice with Local SEO in Alberta
         </title>
         <meta
           name="description"
-          content="Top-rated SEO For Therapists in Alberta. Expert search engine optimization, local SEO, and digital marketing services. Boost your practice today!"
+          content="Looking for SEO for therapists in Alberta? Our proven strategies help counsellors and psychologists rank higher, attract ideal clients, and grow their practice."
         />
         <meta
           name="google-site-verification"
           content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8"
         />
-        <meta name="geo.region" content="CA-ON" />
-        <meta name="geo.placename" content="Niagara" />
-        <meta name="geo.position" content="43.0896;-79.0849" />
-        <meta name="ICBM" content="43.0896, -79.0849" />
 
         <meta property="og:site_name" content="Infused Agency" />
         <link
@@ -56,14 +49,17 @@ const Home = ({ latestPosts }) => {
       <section className="main-hero alberta">
         <Container>
           <Row className="align-items-center">
-            <Col lg="6">
-              <h1 className="intro">Alberta SEO Company for Therapists</h1>
+            <Col lg="12">
+              <h1 className="intro">
+                Alberta SEO Company for Therapists - Alberta Counsellor SEO
+                Agency
+              </h1>
               <h2>Get More Clients & Build Your Practice Across Alberta</h2>
               <p>
                 Infused Agency is a trusted SEO company in Alberta, helping
-                therapists and mental health professionals in Calgary, Edmonton,
-                Red Deer and across the province grow their online presence. Our
-                team creates custom SEO strategies designed to improve
+                therapists, counsellors, psychologists, and mental health
+                professionals across the province grow their online presence.
+                Our team creates custom SEO strategies designed to improve
                 visibility in search engines, attract the right clients, and
                 generate quality leads. With a focus on conversion-driven
                 results, we don't just bring traffic — we help turn that traffic
@@ -76,43 +72,48 @@ const Home = ({ latestPosts }) => {
                 {isExpanded && (
                   <p className="mt-2">
                     <h2>
-                      Infused Agency: SEO Alberta Experts Helping Therapists
-                      Grow
+                      Infused Agency: SEO Alberta Experts Helping Therapists &
+                      Counsellors Grow
                     </h2>
                     <p>
                       Infused Agency provides custom SEO services in Alberta for
-                      new practices, established therapists, and mental health
-                      organizations across multiple specialties. Whether you're
-                      based in Calgary, Edmonton, Red Deer, Banff, Canmore, or
-                      anywhere else in Alberta, our focus is on delivering
-                      measurable results that generate clients and a strong
-                      return on investment (ROI). This is what sets us apart
-                      from other local SEO companies.
+                      new practices, established therapists, psychologists,
+                      counsellors, and mental health organizations across
+                      multiple specialties. Whether you're anywhere in Alberta,
+                      our focus is on delivering measurable results that
+                      generate clients and a strong return on investment (ROI).
+                      This is what sets us apart from other local SEO companies.
                     </p>
 
                     <h2>About Alberta</h2>
                     <p>
-                      Alberta is home to some of Canada's most vibrant
-                      communities, from the bustling urban centers of Calgary
-                      and Edmonton to the stunning mountain towns of Banff and
-                      Canmore. The province has a diverse population that values
-                      mental health and wellness services, creating significant
-                      opportunities for therapists to connect with clients who
-                      need their expertise.
+                      Alberta is home to some of Canada’s most vibrant and
+                      fast-growing communities, from the bustling urban centers
+                      of Calgary, Edmonton, and Red Deer to the stunning
+                      mountain towns of Banff, Canmore, and Jasper, and the
+                      thriving communities in Lethbridge, Medicine Hat, Grande
+                      Prairie, and Fort McMurray. Across the province, residents
+                      are increasingly turning to therapy, counselling, and
+                      psychology services to support their mental health and
+                      overall well-being. This strong and diverse population
+                      creates meaningful opportunities for therapists to connect
+                      with clients in both major cities and smaller communities
+                      throughout Alberta.
                     </p>
                     <p>
                       With Alberta's growing awareness of mental health
-                      importance and the increasing acceptance of therapy
-                      services, mental health professionals have an incredible
-                      opportunity to expand their reach. At Infused Agency, we
-                      help you capture that opportunity with Alberta SEO
-                      strategies designed to outperform competitors and build
-                      long-term visibility for your therapy practice.
+                      importance and the increasing acceptance of therapy,
+                      counselling, and psychology services, mental health
+                      professionals have an incredible opportunity to expand
+                      their reach. At Infused Agency, we help you capture that
+                      opportunity with Alberta SEO strategies designed to
+                      outperform competitors and build long-term visibility for
+                      your therapy practice.
                     </p>
 
                     <h2>
-                      SEO Services Tailored for Alberta Therapists in Calgary,
-                      Edmonton & Beyond
+                      SEO Services Tailored for Alberta Mental Health
+                      Professionals
                     </h2>
                     <p>
                       Our team of experienced SEO Alberta specialists provides a
@@ -123,15 +124,15 @@ const Home = ({ latestPosts }) => {
                       inquiries.
                     </p>
                     <p>
-                      Whether you need local SEO in Calgary, want to grow your
-                      reach in Edmonton, or are looking to expand across Alberta
-                      including Red Deer, Banff, and Canmore, Infused Agency
-                      delivers solutions that put your therapy practice in front
-                      of the right audience.
+                      Whether you're a therapist, psychologist, counsellor, or
+                      psychotherapist looking for local SEO or wanting to expand
+                      across Alberta, Infused Agency delivers solutions that put
+                      your practice in front of the right audience.
                     </p>
 
                     <h2>
-                      Why Hiring an Alberta SEO Agency Matters for Therapists
+                      Why Hiring an Alberta SEO Agency Matters for Mental Health
+                      Professionals
                     </h2>
                     <p>
                       Trying to manage search engine optimization on your own
@@ -145,37 +146,36 @@ const Home = ({ latestPosts }) => {
                       avoid wasted effort by applying proven frameworks,
                       advanced keyword research, and data-driven strategies.
                       Unlike generic DIY tools, we understand the mental health
-                      market and the nuances of how people search for therapists
-                      in Calgary and Edmonton.
+                      market and the nuances of how people search for
+                      therapists, psychologists, and counsellors in Alberta.
                     </p>
                     <p>
                       Effective SEO isn't just about rankings. It's about
                       creating content that builds trust with potential clients,
                       increases engagement, and ultimately drives bookings.
-                      That's why expert SEO copywriting for Alberta therapists
-                      is a core part of our approach — it ensures your website
-                      speaks to both search engines and real people seeking
-                      help.
+                      That's why expert SEO copywriting for Alberta mental
+                      health professionals is a core part of our approach — it
+                      ensures your website speaks to both search engines and
+                      real people seeking help.
                     </p>
 
                     <h2>
-                      Why Infused Agency Is the Best Choice for Therapist SEO in
-                      Alberta
+                      Why Infused Agency Is the Best Choice for SEO in Alberta
                     </h2>
                     <p>
                       At Infused Agency, we're not just another marketing
                       company. We're a dedicated SEO agency in Alberta focused
-                      on helping local therapists succeed. Every campaign we
-                      build is custom — no cookie-cutter templates, no
-                      guesswork.
+                      on helping local mental health professionals succeed.
+                      Every campaign we build is custom — no cookie-cutter
+                      templates, no guesswork.
                     </p>
                     <p>
                       We combine technical SEO improvements, white-hat link
                       strategies, optimized content, and local targeting to help
                       your practice rise in search results. From fine-tuning
-                      your Google Business Profile to creating city-specific
-                      landing pages for Calgary and Edmonton, our strategies are
-                      designed for long-term growth and sustainable visibility.
+                      your Google Business Profile to creating location-specific
+                      content for Alberta, our strategies are designed for
+                      long-term growth and sustainable visibility.
                     </p>
                     <p>
                       When you work with Infused Agency, you get a trusted
@@ -192,11 +192,6 @@ const Home = ({ latestPosts }) => {
                 >
                   {isExpanded ? "Read Less" : "Read More"}
                 </a>
-              </div>
-            </Col>
-            <Col lg="6">
-              <div className="trusted pd-top-80">
-                <InlineWidget url="https://calendly.com/infused-agency/project-discovery" />
               </div>
             </Col>
           </Row>
@@ -219,7 +214,7 @@ const Home = ({ latestPosts }) => {
                 <hr />
                 <Image
                   className="img-fluid"
-                  src={flatRock}
+                  src={results1}
                   alt="SEO Alberta Therapist Results"
                 />
                 <div className="card">
@@ -234,7 +229,7 @@ const Home = ({ latestPosts }) => {
                 <hr />
                 <Image
                   className="img-fluid"
-                  src={delta}
+                  src={results2}
                   alt="Alberta Therapy Practice SEO Results"
                 />
                 <div className="card">
@@ -254,22 +249,20 @@ const Home = ({ latestPosts }) => {
             </Row>
             <Row className="pd-top-40 text-center testimonials">
               <Col lg="4">
-                <Image
-                  src={test1}
-                  alt="seo for therapist alberta, canmore, banff, red deer, edmonton, calgary"
-                />
-                <p className="owner">Lucas Folino</p>
-                <em>Owner - Fred's Concrete</em>
+                <Image src={test1} alt="seo for counsellors alberta" />
+                <p className="owner">Nicole P.</p>
+                <em>Owner - Purse You Psychotherapy</em>
                 <p className="desc">
-                  "Infused Agency got me a lot more visibility through Google in
-                  a short period of time. Which has led to a ton of leads for my
-                  business. Very knowledgeable and they walk you through every
-                  detail. Would definitely recommend!""
+                  "I just completed a three month project with Infused Agency
+                  and my experience has been great. They are extremely
+                  knowledgeable in their field and very personable and easy to
+                  work with. I'm looking forward to seeing how their work
+                  continues to benefit my therapist practice."
                 </p>
               </Col>
               <Col lg="4">
-                <Image src={test2} alt="seo niagara experts" />
-                <p className="owner">Brandi May</p>
+                <Image src={test2} alt="seo for psychotherapists alberta" />
+                <p className="owner">Brandi M.</p>
                 <em>Owner - Brandi May Psychotherapy</em>
                 <p className="desc">
                   "Infused Agency are not only clear professionals and expert in
@@ -279,14 +272,15 @@ const Home = ({ latestPosts }) => {
                 </p>
               </Col>
               <Col lg="4">
-                <Image src={test3} alt="seo niagara services" />
-                <p className="owner">Sandro Visca</p>
+                <Image src={test3} alt="seo for therapist alberta" />
+                <p className="owner">Courtney V.</p>
                 <em>Owner - VISCA Electric</em>
                 <p className="desc">
-                  "Working with Infused Agency was a pleasure. They were
-                  extremely responsive and informative from start to finish.
-                  Infused Agency is creative, efficient, and very knowledgeable
-                  in their field. "
+                  "I had a great experience working with Infused agency! They
+                  optimized my website, and I saw a significant increase in
+                  traffic and rankings. Thanks to their expertise, my business
+                  is now reaching more potential clients than ever. Highly
+                  recommend for anyone looking for real SEO results!"
                 </p>
               </Col>
             </Row>
@@ -306,13 +300,15 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Ready to <span>Grow Your Business</span> With SEO in Niagara?
+                Ready to <span>Grow Your Practice</span> With Therapy SEO in
+                Alberta?
               </h2>
               <p>
-                Take the first step toward more leads, higher rankings, and real
-                growth. Whether you’re in St. Catharines, Niagara Falls, or
-                anywhere across Niagara, our SEO services are built to deliver
-                results.
+                Take the first step toward more clients, higher rankings, and
+                real growth. Whether you're a therapist, psychologist,
+                counsellor, or psychotherapist anywhere in Alberta, our SEO
+                services are built to deliver results for mental health
+                professionals.
               </p>
               <Link href="/get-a-quote">
                 <button>Get Free Quote</button>
@@ -326,7 +322,7 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
-              <h2>Niagara SEO Services</h2>
+              <h2>Alberta SEO Services for Therapists</h2>
               <p>Get More Visibility</p>
             </div>
           </div>
@@ -337,13 +333,12 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research & Strategy</h2>
                 <p>
-                  At Infused Agency, our SEO Niagara specialists begin every
+                  At Infused Agency, our SEO Alberta specialists begin every
                   campaign with detailed keyword research. We identify the most
-                  relevant and profitable search terms your customers are using
-                  in St. Catharines, Niagara Falls, and across the Niagara
-                  Region. By analyzing your website and competitors, we craft a
-                  data-driven SEO strategy designed to capture qualified traffic
-                  and deliver measurable results.
+                  relevant and profitable search terms your potential clients
+                  are using across Alberta. By analyzing your website and
+                  competitors, we craft a data-driven SEO strategy designed to
+                  capture qualified traffic and deliver measurable results.
                 </p>
               </div>
             </div>
@@ -352,7 +347,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Link Building</h2>
                 <p>
                   A strong backlink profile is essential for higher rankings.
-                  Our Niagara SEO services include ethical link-building
+                  Our Alberta SEO services include ethical link-building
                   strategies that earn high-quality links from reputable
                   websites. These authoritative backlinks boost your domain
                   authority, build trust with search engines, and strengthen
@@ -364,28 +359,28 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Content is the foundation of effective SEO. Our Niagara
+                  Content is the foundation of effective SEO. Our Alberta
                   content writing team creates engaging, SEO-friendly copy
-                  tailored to your business and industry. From optimized blog
-                  posts to landing pages, we develop content that reflects your
-                  brand’s voice, establishes thought leadership, and improves
-                  rankings for keywords like SEO St. Catharines and SEO Niagara
-                  Falls.
+                  tailored to your mental health practice and specialties. From
+                  optimized blog posts to landing pages, we develop content that
+                  reflects your practice's voice, establishes expertise, and
+                  improves rankings for keywords like SEO Alberta psychologists
+                  and SEO Alberta counsellors.
                 </p>
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row pd-btm-80">
             <div className="col-lg-4 d-flex">
               <div className="card">
                 <h2>On-Page SEO</h2>
                 <p>
-                  Our SEO Niagara experts optimize your website’s structure,
+                  Our SEO Alberta experts optimize your website's structure,
                   code, and content to ensure it performs at its best. We
                   conduct in-depth audits, refine metadata, improve internal
                   linking, and enhance site usability — all while aligning with
-                  Google’s ranking factors. The result is a website that
-                  attracts both search engines and users.
+                  Google's ranking factors. The result is a website that
+                  attracts both search engines and potential clients.
                 </p>
               </div>
             </div>
@@ -393,13 +388,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  For businesses in St. Catharines and Niagara Falls, local
-                  visibility is key. Infused Agency ensures your business is
-                  optimized for local searches by improving your Google Business
-                  Profile, building local citations, and creating
-                  location-specific content. These strategies help you appear in
-                  Google’s Local Pack, maps, and other high-visibility areas
-                  where potential customers are searching.
+                  For mental health professionals in Alberta, local visibility
+                  is key. Infused Agency ensures your practice is optimized for
+                  local searches by improving your Google Business Profile,
+                  building local citations, and creating location-specific
+                  content. These strategies help you appear in Google's Local
+                  Pack, maps, and other high-visibility areas where potential
+                  clients are searching.
                 </p>
               </div>
             </div>
@@ -408,8 +403,8 @@ const Home = ({ latestPosts }) => {
                 <h2>Technical SEO</h2>
                 <p>
                   Behind every successful SEO campaign is a strong technical
-                  foundation. Our technical SEO Niagara specialists enhance your
-                  site’s speed, mobile performance, indexing, and security. From
+                  foundation. Our technical SEO Alberta specialists enhance your
+                  site's speed, mobile performance, indexing, and security. From
                   fixing crawl errors to optimizing site architecture, we make
                   sure search engines can easily navigate and rank your website.
                 </p>
@@ -424,13 +419,14 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Get <span>More Visibility In Niagara</span> Now!
+                Get <span>More Visibility</span> In Alberta Now!
               </h2>
               <p>
-                Take the first step toward more leads, higher rankings, and real
-                growth. Whether you’re in St. Catharines, Niagara Falls, or
-                anywhere across Niagara, our SEO services are built to deliver
-                results.
+                Take the first step toward more clients, higher rankings, and
+                real growth. Whether you're a therapist, psychologist,
+                counsellor, or psychotherapist anywhere in Alberta, our SEO
+                services are built to deliver results for mental health
+                professionals.
               </p>
               <Link href="/get-a-quote">
                 <button>Get Free Quote</button>
@@ -444,23 +440,28 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <h2>Choosing Infused Agency as Your SEO Niagara Partner</h2>
+              <h2>
+                Choosing Infused Agency as Your Therapist SEO Alberta Partner
+              </h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-40 pd-btm-40">
             <Col lg="6">
               <p>
-                In today’s competitive market, you can’t afford to partner with
+                In today's competitive market, you can't afford to partner with
                 just any digital marketing firm. You need a team that takes the
-                time to understand your business goals, your brand’s message,
-                and the customers you want to reach. At Infused Agency, we go
-                beyond surface-level strategies — our focus is on delivering
-                real results that generate the highest possible return on your
-                investment.
+                time to understand your practice goals, your therapeutic
+                approach, and the clients you want to reach. At Infused Agency,
+                we go beyond surface-level strategies — our focus is on
+                delivering real results that generate the highest possible
+                return on your investment.
               </p>
             </Col>
             <Col lg="6">
-              <Image src={infused} alt="infused agency seo niagara" />
+              <Image
+                src={infused}
+                alt="infused agency seo for therapists alberta"
+              />
             </Col>
           </Row>
           <Row>
@@ -472,74 +473,90 @@ const Home = ({ latestPosts }) => {
                 Execute, Measure, Report, and Refine — ensures that your
                 campaign is continuously optimized for growth. This agile
                 methodology allows us to adapt to industry changes quickly while
-                keeping your business ahead of competitors in local search
+                keeping your practice ahead of competitors in local search
                 results.
               </p>
 
-              <h3>Supporting Local Businesses in Niagara</h3>
+              <h3>Supporting Local Mental Health Professionals in Alberta</h3>
 
               <p>
-                We understand the challenges local businesses face when trying
-                to stand out online. That’s why we specialize in small business
-                SEO in Niagara, St. Catharines, and Niagara Falls — giving
-                entrepreneurs the tools and strategies needed to gain traction
-                in local search, attract qualified leads, and compete
+                We understand the challenges therapy practices face when trying
+                to stand out online. That's why we specialize in small practice
+                SEO in Alberta — giving therapists, psychologists, counsellors,
+                and psychotherapists the tools and strategies needed to gain
+                traction in local search, attract qualified clients, and compete
                 effectively in their markets.
               </p>
 
               <p>
                 With Infused Agency, you get more than just an SEO provider. You
-                get a partner who’s invested in your long-term success with
-                tailored SEO Niagara services that build credibility,
+                get a partner who's invested in your long-term success with
+                tailored SEO Alberta services that build credibility,
                 visibility, and growth.
               </p>
             </Col>
           </Row>
           <Row className="text-center pd-top-40">
             <Col lg="4">
-              <Image height="50" src={check} alt="client focused seo" />
+              <Image
+                height="50"
+                src={check}
+                alt="seo expert for therapists alberta"
+              />
               <h3 className="pd-top-20">Client-Focused SEO Services</h3>
               <p>
-                At Infused Agency, we treat your business like it’s our own.
+                At Infused Agency, we treat your practice like it's our own.
                 Your success is the measure of our success, which is why we take
                 the time to understand your goals and challenges. Each client
-                works with a dedicated SEO Niagara specialist who provides
+                works with a dedicated SEO Alberta specialist who provides
                 personalized attention and ongoing monitoring to deliver the
                 best possible results.
               </p>
             </Col>
             <Col lg="4">
-              <Image height="50" src={check} alt="seo optimization niagara" />
+              <Image
+                height="50"
+                src={check}
+                alt="seo optimization for counsellors alberta"
+              />
               <h3 className="pd-top-20">Continuous Optimization</h3>
               <p>
-                SEO isn’t a one-time project — it’s an ongoing process. Our team
-                of Niagara SEO experts constantly tracks your website’s
-                performance, adapting strategies to keep pace with Google’s
-                updates and industry changes. This ensures your business stays
-                competitive in St. Catharines, Niagara Falls, and across
-                Niagara.
+                SEO isn't a one-time project — it's an ongoing process. Our team
+                of Alberta SEO experts constantly tracks your website's
+                performance, adapting strategies to keep pace with Google's
+                updates and industry changes. This ensures your practice stays
+                competitive across Alberta.
               </p>
             </Col>
             <Col lg="4">
-              <Image height="50" src={check} alt="affordable seo niagara" />
+              <Image
+                height="50"
+                src={check}
+                alt="affordable seo for therapists alberta"
+              />
               <h3 className="pd-top-20">Affordable SEO Solutions</h3>
               <p>
                 We believe in delivering exceptional value without unexpected
-                costs. Infused Agency offers affordable SEO Niagara services
-                with transparent pricing and no hidden fees. Whether you’re a
-                small business or a growing company, our solutions are designed
-                to fit your budget while generating long-term results.
+                costs. Infused Agency offers affordable SEO Alberta services
+                with transparent pricing and no hidden fees. Whether you're a
+                new psychologist, established counsellor, or growing
+                psychotherapy practice, our solutions are designed to fit your
+                budget while generating long-term results.
               </p>
             </Col>
           </Row>
           <Row className="text-center pd-top-40">
             <Col lg="4">
-              <Image height="50" src={check} alt="seo niagara reporting" />
+              <Image
+                height="50"
+                src={check}
+                alt="seo reporting for therapy practices alberta"
+              />
               <h3 className="pd-top-20">Transparent Reporting</h3>
               <p>
-                You’ll never be left in the dark about your SEO campaign. Our
+                You'll never be left in the dark about your SEO campaign. Our
                 clear, detailed reports give you full visibility into how your
-                website is performing and the steps we’re taking to improve it.
+                website is performing and the steps we're taking to improve it.
                 With Infused Agency, you can expect consistent updates and
                 honest communication every step of the way.
               </p>
@@ -548,26 +565,30 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization st. catharines"
+                alt="seo optimization for psychotherapists alberta"
               />
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
-                Our Niagara SEO specialists stay ahead of the curve with deep
-                knowledge of Google’s latest updates, best practices, and
+                Our Alberta SEO specialists stay ahead of the curve with deep
+                knowledge of Google's latest updates, best practices, and
                 ethical SEO strategies. By following proven, white-hat methods,
                 we help your website achieve sustainable rankings and long-term
                 growth.
               </p>
             </Col>
             <Col lg="4">
-              <Image height="50" src={check} alt="seo niagara audit" />
+              <Image
+                height="50"
+                src={check}
+                alt="seo audit for therapists alberta"
+              />
               <h3 className="pd-top-20">Free SEO Audit</h3>
               <p>
                 Not sure how your website is performing? Infused Agency offers a
-                complimentary SEO audit for Niagara businesses. We’ll review
-                your website’s current performance, highlight opportunities for
-                improvement, and provide recommendations tailored to your
-                business goals — with no obligation.
+                complimentary SEO audit for Alberta mental health professionals.
+                We'll review your website's current performance, highlight
+                opportunities for improvement, and provide recommendations
+                tailored to your practice goals — with no obligation.
               </p>
             </Col>
           </Row>
@@ -578,38 +599,35 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-top-40">
             <Col lg="12">
-              <h2>Trusted SEO Niagara Experts with Proven Results</h2>
+              <h2>Trusted SEO Alberta Experts with Proven Results</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-20">
             <Col lg="6">
               <p>
-                At Infused Agency, results speak for themselves. With over{" "}
-                <span>
-                  50 SEO clients served and 40+ five-star Google reviews
-                </span>
-                , we’ve built a reputation as a leading SEO agency in Niagara,
-                St. Catharines, and Niagara Falls. Our clients consistently see
-                measurable improvements in search rankings, website traffic, and
-                lead generation.
+                At Infused Agency, results speak for themselves. With over 50
+                SEO clients served and 40+ five-star Google reviews, we've built
+                a reputation as a leading SEO agency in Alberta. Our clients
+                consistently see measurable improvements in search rankings,
+                website traffic, and client inquiries.
                 <br />
                 <br />
-                We’re proud to have helped businesses of all sizes — from small
-                startups to established companies — achieve stronger online
-                visibility and higher conversions. Every strategy we implement
-                is backed by data, tailored to your goals, and focused on
-                delivering a real return on investment. When you work with
-                Infused Agency, you’re partnering with a trusted team that
-                combines local market expertise, technical SEO skills, and
-                creative content strategies to help your business dominate
-                search results across Niagara.
+                We're proud to have helped mental health practices of all sizes
+                — from solo practitioners to established psychology clinics —
+                achieve stronger online visibility and higher conversions. Every
+                strategy we implement is backed by data, tailored to your goals,
+                and focused on delivering a real return on investment. When you
+                work with Infused Agency, you're partnering with a trusted team
+                that combines local market expertise, technical SEO skills, and
+                creative content strategies to help your practice dominate
+                search results across Alberta.
               </p>
             </Col>
             <Col lg="6">
               <Image
                 className="img-fluid"
                 src={reviews}
-                alt="seo niagara reviews"
+                alt="seo therapy practice alberta reviews"
               />
             </Col>
           </Row>
@@ -620,130 +638,143 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>Frequently Asked Questions For Niagara SEO Services</h2>
+              <h2>
+                Frequently Asked Questions For Alberta Therapy SEO Services
+              </h2>
             </Col>
           </Row>
 
           <Row>
             <Col lg="12">
               <h3>
-                What makes SEO Niagara services different from general SEO?
+                What makes Therapy SEO Alberta services different from general
+                SEO?
               </h3>
               <p>
-                SEO Niagara services are specifically tailored to help local
-                businesses in St. Catharines, Niagara Falls, and across the
-                Niagara Region rank higher in local search results. We
-                understand the unique market dynamics, local competition, and
-                search patterns specific to the Niagara area. Our SEO strategies
-                include local citation building, Google Business Profile
-                optimization, and location-specific content that helps your
-                business appear when customers search for services in your area.
+                Our SEO Therapy Alberta services are specifically tailored to
+                help local mental health professionals across Alberta rank
+                higher in local search results. We understand the unique market
+                dynamics, local competition, and search patterns specific to
+                Alberta. Our SEO strategies include local citation building,
+                Google Business Profile optimization, and location-specific
+                content that helps your practice appear when clients search for
+                therapy, counselling, or psychology services in your area.
               </p>
 
               <h3>
-                How long does it take to see results from SEO St. Catharines
-                campaigns?
+                How long does it take to see results from SEO Alberta
+                Psychotherapist campaigns?
               </h3>
               <p>
-                Most SEO St. Catharines clients start seeing initial
+                Most SEO Psychotherapist Alberta clients start seeing initial
                 improvements in search visibility within 3-6 months, with
                 significant results typically appearing by 6-12 months. The
                 timeline depends on factors like your current website
                 performance, competition level, and the keywords you're
                 targeting. Our proven SEO process includes continuous
                 optimization and transparent reporting, so you'll see steady
-                progress as we work to improve your rankings in St. Catharines
-                and surrounding areas.
+                progress as we work to improve your rankings across Alberta.
               </p>
 
               <h3>
-                Can small businesses in Niagara Falls compete with larger
-                companies through SEO?
+                Can small mental health practices in Alberta compete with larger
+                clinics through SEO?
               </h3>
               <p>
-                Absolutely! SEO Niagara Falls strategies are particularly
-                effective for small businesses because they focus on local
-                search optimization where you can outrank larger competitors. By
-                targeting location-specific keywords like "services near Niagara
-                Falls" and optimizing for local search intent, small businesses
-                often achieve better visibility than big corporations. Our
-                affordable SEO solutions are designed specifically to help small
-                businesses compete effectively in their local markets.
+                Absolutely! SEO for Therapist in Alberta strategies are
+                particularly effective for small practices because they focus on
+                local search optimization where you can outrank larger
+                competitors. By targeting location-specific keywords like
+                "psychologist near me Alberta" and optimizing for local search
+                intent, small practices often achieve better visibility than big
+                clinics. Our affordable SEO solutions are designed specifically
+                to help small practices compete effectively in their local
+                markets.
               </p>
 
               <h3>
-                What's included in your SEO Niagara audit and strategy
-                development?
+                What's included in your SEO Counsellor Alberta audit and
+                strategy development?
               </h3>
               <p>
-                Our comprehensive SEO Niagara audit includes technical website
-                analysis, keyword research for St. Catharines and Niagara Falls
-                markets, competitor analysis, content evaluation, and local SEO
+                Our comprehensive Therapy SEO Alberta audit includes technical
+                website analysis, keyword research for Alberta markets,
+                competitor analysis, content evaluation, and local SEO
                 assessment. We examine your current Google Business Profile,
                 local citations, backlink profile, and site performance. Based
                 on these findings, we develop a customized SEO strategy that
-                addresses your specific challenges and opportunities in the
-                Niagara Region.
+                addresses your specific challenges and opportunities in Alberta.
               </p>
 
               <h3>
-                How do you measure the success of SEO St. Catharines campaigns?
+                How do you measure the success of SEO Alberta campaigns for
+                therapists?
               </h3>
               <p>
-                We track multiple metrics to measure SEO St. Catharines success,
+                We track multiple metrics to measure SEO success for Alberta
+                counsellors, therapists and mental health professionals,
                 including search rankings for targeted keywords, organic website
                 traffic growth, local visibility improvements, and most
-                importantly, lead generation and conversions. Our transparent
+                importantly, client inquiries and conversions. Our transparent
                 reporting shows you exactly how your website is performing,
                 which keywords are driving traffic, and how many potential
-                customers are finding your business through search. We provide
+                clients are finding your practice through search. We provide
                 detailed monthly reports with clear ROI measurements.
               </p>
 
               <h3>
-                Do you guarantee first-page rankings for SEO Niagara Falls
-                keywords?
+                Do you guarantee first-page rankings for SEO Alberta keywords
+                for therapists?
               </h3>
               <p>
                 While we can't guarantee specific rankings (as search engines
                 constantly update their algorithms), we do guarantee our
                 commitment to improving your visibility through proven SEO
-                Niagara Falls strategies. Our track record shows consistent
-                success helping businesses achieve first-page rankings for their
+                Therapist Alberta strategies. Our track record shows consistent
+                success helping practices achieve first-page rankings for their
                 target keywords. We focus on sustainable, white-hat SEO
                 techniques that build long-term visibility rather than quick
                 fixes that might get penalized by Google.
               </p>
 
               <h3>
-                What's the difference between SEO and local SEO for Niagara
-                businesses?
+                What's the difference between SEO and local SEO for Alberta
+                mental health professionals?
               </h3>
               <p>
                 Traditional SEO focuses on ranking for broad keywords nationally
-                or globally, while local SEO Niagara targets location-specific
-                searches like "SEO company near me" or "St. Catharines SEO
+                or globally, while local SEO Alberta targets location-specific
+                searches like "counsellor near me" or "Alberta psychology
                 services." Local SEO includes optimizing your Google Business
                 Profile, building local citations, managing online reviews, and
-                creating location-based content. For Niagara businesses serving
-                local customers, local SEO is typically more valuable as it
-                helps you appear in Google's Local Pack and Maps results.
+                creating location-based content. For Alberta mental health
+                professionals serving local clients, local SEO is typically more
+                valuable as it helps you appear in Google's Local Pack and Maps
+                results.
               </p>
 
               <h3>
-                How much do SEO services cost for businesses in St. Catharines
-                and Niagara Falls?
+                How much do SEO services cost for mental health practices in
+                Alberta?
               </h3>
               <p>
-                SEO St. Catharines and SEO Niagara Falls pricing varies based on
-                your business size, competition level, and specific goals. We
-                offer affordable SEO packages starting from basic local
-                optimization to comprehensive enterprise solutions. Our
-                transparent pricing includes no hidden fees, and we provide
-                customized quotes based on your specific needs. We believe in
-                delivering exceptional value, and many of our clients see a
-                positive ROI within the first year of their SEO investment.
+                SEO Alberta pricing varies based on your practice size,
+                competition level, and specific goals. We offer affordable SEO
+                packages starting from basic local optimization to comprehensive
+                practice solutions. Our transparent pricing includes no hidden
+                fees, and we provide customized quotes based on your specific
+                needs. We believe in delivering exceptional value, and many of
+                our clients see a positive ROI within the first year of their
+                SEO investment.
               </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9597234.543309616!2d-125.532507303393!3d54.03693962859796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5309b282a82419b5%3A0xb0a9479a409b8e9e!2sAlberta!5e0!3m2!1sen!2sca!4v1756147418003!5m2!1sen!2sca"
+                width="100%"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </Col>
           </Row>
         </Container>
@@ -815,31 +846,6 @@ const Home = ({ latestPosts }) => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="map-cta">
-        <Container>
-          <Row>
-            <Col lg="12">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.712155785956!2d-79.21034682429627!3d43.152573384666596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2s%F0%9F%9A%80%20Infused%20Agency%20%7C%20Niagara%20Web%20Design%20%26%20SEO%20Company!5e0!3m2!1sen!2sca!4v1725932520162!5m2!1sen!2sca"
-                width="100%"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="infused agency"
-              ></iframe>
-              <p>
-                <a
-                  href="https://maps.google.com/maps?ll=43.15257,-79.207772&z=15&t=m&hl=en&gl=CA&mapclient=embed&cid=1774727816813218416"
-                  target="_blank"
-                >
-                  73 Alexandra Blvd, St. Catharines, ON L2P 1K2
-                </a>
-              </p>
-            </Col>
-          </Row>
-        </Container>
       </section>
       <Footer />
     </>
