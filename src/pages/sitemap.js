@@ -1,11 +1,7 @@
 export default function Sitemap() {
   const therapyLocations = [
-    { name: "SEO for Therapists Ontario", url: "/seo/for-therapists-ontario" },
     { name: "SEO for Therapists Alberta", url: "/seo/for-therapists-alberta" },
-    {
-      name: "SEO for Therapists British Columbia",
-      url: "/seo/for-therapists-british-columbia",
-    },
+    { name: "SEO for Therapists Calgary", url: "/seo/for-therapists-calgary" },
   ];
 
   return (
