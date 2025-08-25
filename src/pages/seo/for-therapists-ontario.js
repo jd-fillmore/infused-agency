@@ -1,17 +1,16 @@
 import React from "react";
-import { getLatestPosts } from "../lib/posts";
+import { getLatestPosts } from "../../lib/posts";
 import { format } from "date-fns";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Nav from "../../components/Nav/nav";
-import InnerHeroCities from "../../components/innerHero/innerHeroCIties";
-import CTA from "../../components/CTA/cta";
-import Footer from "../../components/Footer/footer";
-import hero from "../img/seo-for-therapists-ontario-toronto-mississauga-ottawa.jpg";
-import best from "../img/awards.png";
+import Nav from "../../../components/Nav/nav";
+import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
+import CTA from "../../../components/CTA/cta";
+import Footer from "../../../components/Footer/footer";
+import hero from "../../img/seo-for-therapists-ontario-toronto-mississauga-ottawa.jpg";
 import { Col, Container, Row } from "reactstrap";
-import results from "../img/seo-for-therapists-ontario.jpg";
+import results from "../../img/pursue-you-seo.jpg";
 
 const SEO = ({ latestPosts }) => {
   return (
@@ -24,7 +23,7 @@ const SEO = ({ latestPosts }) => {
         />
         <link
           rel="canonical"
-          href="https://infused.agency/seo-for-therapists-ontario"
+          href="https://infused.agency/seo/for-therapists-ontario"
         />
       </Head>
       <Nav />
@@ -268,14 +267,6 @@ const SEO = ({ latestPosts }) => {
                 Bancroft, Brockville, Caledon, Carleton Place, Clarington,
                 Cobourg, and Cochrane.
               </p>{" "}
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22155289.037592396!2d-105.70889426604336!3d47.32404598768217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario!5e0!3m2!1sen!2sca!4v1755957195697!5m2!1sen!2sca"
-                width="100%"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
             </Col>
           </Row>
         </Container>
