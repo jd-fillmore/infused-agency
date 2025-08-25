@@ -130,20 +130,6 @@ const Footer = () => {
               <a href="/seo/thorold">Thorold, ON</a> <span>|</span>
               <a href="/seo/welland">Welland, ON</a>
             </Col>
-            <Col lg="12" className="pd-top-40">
-              <h3>Serving local businesses across Canada:</h3>
-              <a href="/seo/for-therapists-ontario">
-                SEO for Therapists Ontario
-              </a>{" "}
-              <span>|</span>
-              <a href="/seo/for-therapists-alberta">
-                SEO for Therapists Alberta
-              </a>{" "}
-              <span>|</span>
-              <a href="/seo/for-therapists-british-columbia">
-                SEO for Therapists British Columbia
-              </a>
-            </Col>
           </Row>
         </Container>
       </section>
