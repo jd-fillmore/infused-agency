@@ -249,7 +249,7 @@ const Home = ({ latestPosts }) => {
         {/* Container Start*/}
         <div className="container">
           <div className="row pd-top-120">
-            <div className="col-lg-7">
+            <div className="col-lg-12">
               <h2>Why Choose Infused Agency for SEO in Niagara?</h2>
               <p>
                 It’s simple. Infused Agency is a top-rated Niagara SEO company
@@ -277,18 +277,6 @@ const Home = ({ latestPosts }) => {
                 src={best}
                 alt="search engine optimization company niagara"
               />
-            </div>
-            <div className="col-lg-5">
-              <div className="card">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d373093.06470999256!2d-79.970371954853!3d43.066893159426954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d34c9ec993deb7%3A0xef7f46930d192396!2sRegional%20Municipality%20of%20Niagara%2C%20ON!5e0!3m2!1sen!2sca!4v1735651985056!5m2!1sen!2sca"
-                  width="100%"
-                  height="450"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
             </div>
           </div>
         </div>
