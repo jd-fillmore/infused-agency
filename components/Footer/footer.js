@@ -36,11 +36,6 @@ const pages = [
     name: "Get A Quote",
     link: "/get-a-quote",
   },
-  {
-    id: 9,
-    name: "Areas We Serve",
-    link: "/areas-we-serve",
-  },
 ];
 
 const Footer = () => {
@@ -115,6 +110,23 @@ const Footer = () => {
               <a className="phone" href="tel:(905) 933-3115">
                 (905) 933-3115
               </a>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="12">
+              <h3>Serving SEO to Businesses in Niagara since 2013</h3>
+              <a href="/seo/beamsville">Beamsville, ON</a> <span>|</span>
+              <a href="/seo/crystal-beach">Crystal Beach, ON</a> <span>|</span>
+              <a href="/seo/fonthill">Fonthill, ON</a> <span>|</span>
+              <a href="/seo/fort-erie">Fort Erie, ON</a> <span>|</span>
+              <a href="/seo/grimsby">Grimsby, ON</a> <span>|</span>
+              <a href="/seo/niagara-on-the-lake">
+                Niagara-on-the-Lake, ON
+              </a>{" "}
+              <span>|</span>
+              <a href="/seo/port-colborne">Port Colborne, ON</a> <span>|</span>
+              <a href="/seo/thorold">Thorold, ON</a> <span>|</span>
+              <a href="/seo/welland">Welland, ON</a>
             </Col>
           </Row>
         </Container>

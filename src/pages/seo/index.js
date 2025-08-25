@@ -288,187 +288,21 @@ const SEO = () => {
           <Container>
             <Row>
               <Col lg="12">
-                <h2>Cities We Service</h2>
-                <Link href="/seo/beamsville">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Beamsville, ON
-                </Link>{" "}
-                <Link href="/seo/crystal-beach">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Crystal Beach, ON
-                </Link>{" "}
-                <Link href="/seo/fonthill">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Fonthill, ON
-                </Link>{" "}
-                <Link href="/seo/fort-erie">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Fort Erie, ON
-                </Link>{" "}
-                <Link href="/seo/grimsby">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Grimsby, ON
-                </Link>{" "}
-                <Link href="/seo/niagara">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Niagara Falls, ON
-                </Link>{" "}
-                <Link href="/seo/niagara">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Niagara-on-the-Lake, ON
-                </Link>{" "}
-                <Link href="/seo/port-colborne">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Port Colborne, ON
-                </Link>{" "}
-                <Link href="/seo/st-catharines">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in St. Catharines, ON
-                </Link>{" "}
-                <Link href="/seo/thorold">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Thorold, ON
-                </Link>{" "}
-                <Link href="/seo/wainfleet">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Wainfleet, ON
-                </Link>{" "}
-                <Link href="/seo/welland">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                      fill="#ffffff"
-                      d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    />
-                  </svg>
-                  SEO in Welland, ON
-                </Link>
+                <h3>Serving SEO to Businesses in Niagara since 2013</h3>
+                <a href="/seo/beamsville">Beamsville, ON</a> <span>|</span>
+                <a href="/seo/crystal-beach">Crystal Beach, ON</a>{" "}
+                <span>|</span>
+                <a href="/seo/fonthill">Fonthill, ON</a> <span>|</span>
+                <a href="/seo/fort-erie">Fort Erie, ON</a> <span>|</span>
+                <a href="/seo/grimsby">Grimsby, ON</a> <span>|</span>
+                <a href="/seo/niagara-on-the-lake">
+                  Niagara-on-the-Lake, ON
+                </a>{" "}
+                <span>|</span>
+                <a href="/seo/port-colborne">Port Colborne, ON</a>{" "}
+                <span>|</span>
+                <a href="/seo/thorold">Thorold, ON</a> <span>|</span>
+                <a href="/seo/welland">Welland, ON</a>
               </Col>
             </Row>
           </Container>
