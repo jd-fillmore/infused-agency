@@ -123,6 +123,13 @@ form {
   }
 }
 
+.pd-top-20 {
+  padding-top: 20px;
+  @include bp-tablet-sm {
+    padding-top: 20px;
+  }
+}
+
 .pd-top-40 {
   padding-top: 40px;
   @include bp-tablet-sm {
@@ -930,4 +937,27 @@ iframe {
 
 .light-bg {
   background: $purple;
+}
+
+.stats {
+  h3 {
+    font-size: 80px;
+    color: $yellow !important;
+    @include bp-tablet-sm {
+      font-size: 60px !important;
+    }
+  }
+}
+
+.testimonials {
+  em {
+    color: #fff;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.bg-lighter-blue {
+  background: $glow-blue;
 }

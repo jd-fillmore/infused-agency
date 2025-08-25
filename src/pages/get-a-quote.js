@@ -19,10 +19,7 @@ import Footer from "../../components/Footer/footer";
 
 import { InlineWidget } from "react-calendly";
 
-import { useForm, ValidationError } from "@formspree/react";
-
 const Quote = () => {
-  const [state, handleSubmit] = useForm("mjkvogze");
   return (
     <>
       <Head>
