@@ -610,7 +610,126 @@ const Home = ({ latestPosts }) => {
           </Row>
 
           <Row>
-            <Col lg="12"></Col>
+            <Col lg="12">
+              <h3>
+                What makes SEO Niagara services different from general SEO?
+              </h3>
+              <p>
+                SEO Niagara services are specifically tailored to help local
+                businesses in St. Catharines, Niagara Falls, and across the
+                Niagara Region rank higher in local search results. We
+                understand the unique market dynamics, local competition, and
+                search patterns specific to the Niagara area. Our SEO strategies
+                include local citation building, Google Business Profile
+                optimization, and location-specific content that helps your
+                business appear when customers search for services in your area.
+              </p>
+
+              <h3>
+                How long does it take to see results from SEO St. Catharines
+                campaigns?
+              </h3>
+              <p>
+                Most SEO St. Catharines clients start seeing initial
+                improvements in search visibility within 3-6 months, with
+                significant results typically appearing by 6-12 months. The
+                timeline depends on factors like your current website
+                performance, competition level, and the keywords you're
+                targeting. Our proven SEO process includes continuous
+                optimization and transparent reporting, so you'll see steady
+                progress as we work to improve your rankings in St. Catharines
+                and surrounding areas.
+              </p>
+
+              <h3>
+                Can small businesses in Niagara Falls compete with larger
+                companies through SEO?
+              </h3>
+              <p>
+                Absolutely! SEO Niagara Falls strategies are particularly
+                effective for small businesses because they focus on local
+                search optimization where you can outrank larger competitors. By
+                targeting location-specific keywords like "services near Niagara
+                Falls" and optimizing for local search intent, small businesses
+                often achieve better visibility than big corporations. Our
+                affordable SEO solutions are designed specifically to help small
+                businesses compete effectively in their local markets.
+              </p>
+
+              <h3>
+                What's included in your SEO Niagara audit and strategy
+                development?
+              </h3>
+              <p>
+                Our comprehensive SEO Niagara audit includes technical website
+                analysis, keyword research for St. Catharines and Niagara Falls
+                markets, competitor analysis, content evaluation, and local SEO
+                assessment. We examine your current Google Business Profile,
+                local citations, backlink profile, and site performance. Based
+                on these findings, we develop a customized SEO strategy that
+                addresses your specific challenges and opportunities in the
+                Niagara Region.
+              </p>
+
+              <h3>
+                How do you measure the success of SEO St. Catharines campaigns?
+              </h3>
+              <p>
+                We track multiple metrics to measure SEO St. Catharines success,
+                including search rankings for targeted keywords, organic website
+                traffic growth, local visibility improvements, and most
+                importantly, lead generation and conversions. Our transparent
+                reporting shows you exactly how your website is performing,
+                which keywords are driving traffic, and how many potential
+                customers are finding your business through search. We provide
+                detailed monthly reports with clear ROI measurements.
+              </p>
+
+              <h3>
+                Do you guarantee first-page rankings for SEO Niagara Falls
+                keywords?
+              </h3>
+              <p>
+                While we can't guarantee specific rankings (as search engines
+                constantly update their algorithms), we do guarantee our
+                commitment to improving your visibility through proven SEO
+                Niagara Falls strategies. Our track record shows consistent
+                success helping businesses achieve first-page rankings for their
+                target keywords. We focus on sustainable, white-hat SEO
+                techniques that build long-term visibility rather than quick
+                fixes that might get penalized by Google.
+              </p>
+
+              <h3>
+                What's the difference between SEO and local SEO for Niagara
+                businesses?
+              </h3>
+              <p>
+                Traditional SEO focuses on ranking for broad keywords nationally
+                or globally, while local SEO Niagara targets location-specific
+                searches like "SEO company near me" or "St. Catharines SEO
+                services." Local SEO includes optimizing your Google Business
+                Profile, building local citations, managing online reviews, and
+                creating location-based content. For Niagara businesses serving
+                local customers, local SEO is typically more valuable as it
+                helps you appear in Google's Local Pack and Maps results.
+              </p>
+
+              <h3>
+                How much do SEO services cost for businesses in St. Catharines
+                and Niagara Falls?
+              </h3>
+              <p>
+                SEO St. Catharines and SEO Niagara Falls pricing varies based on
+                your business size, competition level, and specific goals. We
+                offer affordable SEO packages starting from basic local
+                optimization to comprehensive enterprise solutions. Our
+                transparent pricing includes no hidden fees, and we provide
+                customized quotes based on your specific needs. We believe in
+                delivering exceptional value, and many of our clients see a
+                positive ROI within the first year of their SEO investment.
+              </p>
+            </Col>
           </Row>
         </Container>
       </section>
