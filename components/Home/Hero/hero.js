@@ -51,7 +51,6 @@ const Hero = () => {
                       on investment (ROI). This is what sets us apart from other
                       local SEO companies.
                     </p>
-
                     <h2>About Niagara</h2>
                     <p>
                       Niagara is one of Ontario’s most recognized regions,
@@ -69,7 +68,6 @@ const Hero = () => {
                       strategies designed to outperform competitors and build
                       long-term visibility.
                     </p>
-
                     <h2>
                       SEO Services Tailored for Niagara, St. Catharines &
                       Niagara Falls
@@ -89,7 +87,6 @@ const Hero = () => {
                       solutions that put your business in front of the right
                       audience.
                     </p>
-
                     <h2>Why Hiring a Niagara SEO Agency Matters</h2>
                     <p>
                       Trying to manage search engine optimization on your own
@@ -114,7 +111,6 @@ const Hero = () => {
                       is a core part of our approach — it ensures your website
                       speaks to both search engines and real customers.
                     </p>
-
                     <h2>
                       Why Infused Agency Is the Best Choice for SEO in Niagara
                     </h2>
@@ -144,9 +140,13 @@ const Hero = () => {
                     <Link href="/seo/for-therapists-alberta">
                       Therapist SEO Alberta
                     </Link>
+                    -
+                    <Link href="/seo/for-therapists-british-columbia">
+                      Therapist SEO British Columbia
+                    </Link>
                   </p>
                 )}
-
+                <br />
                 <a
                   onClick={() => setIsExpanded(!isExpanded)}
                   className="mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
