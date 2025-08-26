@@ -21,19 +21,37 @@ export default function Sitemap() {
       url: "/seo/for-therapists-edmonton",
     },
     {
+      name: "SEO for Therapists Gatineau",
+      url: "/seo/for-therapists-gatineau",
+    },
+    {
       name: "SEO for Therapists Hamilton",
       url: "/seo/for-therapists-hamilton",
     },
+    { name: "SEO for Therapists Laval", url: "/seo/for-therapists-laval" },
     {
       name: "SEO for Therapists Lethbridge",
       url: "/seo/for-therapists-lethbridge",
     },
     {
+      name: "SEO for Therapists Longueuil",
+      url: "/seo/for-therapists-longueuil",
+    },
+    {
       name: "SEO for Therapists Mississauga",
       url: "/seo/for-therapists-mississauga",
     },
+    {
+      name: "SEO for Therapists Montreal",
+      url: "/seo/for-therapists-montreal",
+    },
     { name: "SEO for Therapists Ontario", url: "/seo/for-therapists-ontario" },
     { name: "SEO for Therapists Ottawa", url: "/seo/for-therapists-ottawa" },
+    { name: "SEO for Therapists Quebec", url: "/seo/for-therapists-quebec" },
+    {
+      name: "SEO for Therapists Quebec City",
+      url: "/seo/for-therapists-quebec-city",
+    },
     {
       name: "SEO for Therapists Red Deer",
       url: "/seo/for-therapists-red-deer",

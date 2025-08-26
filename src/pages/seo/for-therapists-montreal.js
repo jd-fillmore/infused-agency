@@ -66,14 +66,12 @@ const Home = ({ latestPosts }) => {
                 into real appointments for your practice. Whether you're a
                 therapist in{" "}
                 <Link href="/seo/for-therapists-montreal">Montreal</Link>,{" "}
-                <Link href="/seo/for-therapists-montreal-city">
-                  Montreal City
-                </Link>
-                , <Link href="/seo/for-therapists-laval">Laval</Link>,{" "}
+                <Link href="/seo/for-therapists-quebec-city">Québec City</Link>,{" "}
+                <Link href="/seo/for-therapists-laval">Laval</Link>,{" "}
                 <Link href="/seo/for-therapists-gatineau">Gatineau</Link>,{" "}
                 <Link href="/seo/for-therapists-longueuil">Longueuil</Link> or
                 anywhere else in{" "}
-                <Link href="/seo/for-therapists-montreal">Montreal</Link>, we'll
+                <Link href="/seo/for-therapists-quebec">Québec</Link>, we'll
                 help your therapy practice get more visibility.
               </p>
 

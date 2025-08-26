@@ -11,14 +11,14 @@ import Footer from "../../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-import results1 from "../../../src/img/seo-for-therapists-laval-results.jpg";
-import test1 from "../../../src/img/seo-for-counsellors-laval.png";
-import test2 from "../../../src/img/seo-for-laval-psychotherapists.png";
-import test3 from "../../../src/img/seo-for-laval-therapists.png";
-import results2 from "../../../src/img/seo-for-psychotherapists-laval-results.jpg";
-import infused from "../../../src/img/seo-for-therapists-agency-laval.png";
+import results1 from "../../../src/img/seo-for-therapists-longueuil-results.jpg";
+import test1 from "../../../src/img/seo-for-counsellors-longueuil.png";
+import test2 from "../../../src/img/seo-for-longueuil-psychotherapists.png";
+import test3 from "../../../src/img/seo-for-longueuil-therapists.png";
+import results2 from "../../../src/img/seo-for-psychotherapists-longueuil-results.jpg";
+import infused from "../../../src/img/seo-for-therapists-agency-longueuil.png";
 import check from "../../../src/img/check.png";
-import reviews from "../../../src/img/seo-for-therapists-laval-reviews.png";
+import reviews from "../../../src/img/seo-for-therapists-longueuil-reviews.png";
 
 const Home = ({ latestPosts }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -26,13 +26,13 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          #1 SEO for Therapists Laval | Counsellor & Therapy SEO Company Helping
-          Psychologists, Counsellors & Mental Health Professionals Grow Their
-          Practice with Local SEO in Laval
+          #1 SEO for Therapists Longueuil | Counsellor & Therapy SEO Company
+          Helping Psychologists, Counsellors & Mental Health Professionals Grow
+          Their Practice with Local SEO in Longueuil
         </title>
         <meta
           name="description"
-          content="Looking for SEO for therapists in Laval? Our proven strategies help counsellors and psychologists rank higher, attract ideal clients, and grow their practice."
+          content="Looking for SEO for therapists in Longueuil? Our proven strategies help counsellors and psychologists rank higher, attract ideal clients, and grow their practice."
         />
         <meta
           name="google-site-verification"
@@ -42,7 +42,7 @@ const Home = ({ latestPosts }) => {
         <meta property="og:site_name" content="Infused Agency" />
         <link
           rel="canonical"
-          href="https://infused.agency/seo/for-therapists-laval"
+          href="https://infused.agency/seo/for-therapists-longueuil"
         />
       </Head>
       <Nav />
@@ -51,11 +51,12 @@ const Home = ({ latestPosts }) => {
           <Row className="align-items-center">
             <Col lg="12">
               <h1 className="intro">
-                Laval SEO Company for Therapists - Laval Counsellor SEO Agency
+                Longueuil SEO Company for Therapists - Longueuil Counsellor SEO
+                Agency
               </h1>
-              <h2>Get More Clients & Build Your Practice Across Laval</h2>
+              <h2>Get More Clients & Build Your Practice Across Longueuil</h2>
               <p>
-                Infused Agency is a trusted SEO company in Laval, helping
+                Infused Agency is a trusted SEO company in Longueuil, helping
                 therapists, counsellors, psychologists, and mental health
                 professionals across the province grow their online presence.
                 Our team creates custom SEO strategies designed to improve
@@ -83,72 +84,75 @@ const Home = ({ latestPosts }) => {
                 {isExpanded && (
                   <p className="mt-2">
                     <h2>
-                      Infused Agency: SEO Laval Experts Helping Therapists &
+                      Infused Agency: SEO Longueuil Experts Helping Therapists &
                       Counsellors Grow
                     </h2>
                     <p>
-                      Infused Agency provides custom SEO services in Laval for
-                      new practices, established therapists, psychologists,
+                      Infused Agency provides custom SEO services in Longueuil
+                      for new practices, established therapists, psychologists,
                       counsellors, and mental health organizations across
-                      multiple specialties. Whether you're anywhere in Laval,
-                      our focus is on delivering measurable results that
-                      generate clients and a strong return on investment (ROI).
-                      This is what sets us apart from other local SEO companies.
+                      multiple specialties. Whether you're anywhere in
+                      Longueuil, our focus is on delivering measurable results
+                      that generate clients and a strong return on investment
+                      (ROI). This is what sets us apart from other local SEO
+                      companies.
                     </p>
 
-                    <h2>About Laval</h2>
+                    <h2>About Longueuil</h2>
                     <p>
-                      Laval, located just north of Montreal, is one of Quebec’s
-                      fastest-growing and most diverse cities. From the bustling
-                      Centre Laval and Vimont districts to family-friendly
-                      neighbourhoods like Chomedey, Sainte-Rose, and Duvernay,
-                      Laval offers residents a mix of urban convenience and
-                      suburban comfort. With parks and recreational spaces such
-                      as Parc de la Rivière-des-Mille-Îles, Centre de la Nature,
-                      and Cosmodome, residents enjoy opportunities for wellness,
-                      outdoor activity, and relaxation year-round. Across
-                      communities including Laval-des-Rapides, Fabreville,
-                      Saint-Vincent-de-Paul, and Laval-sur-le-Lac, more people
-                      are prioritizing their mental health and turning to
-                      therapy, counselling, and psychology services to support
-                      their overall well-being. Whether it’s university students
-                      commuting to Montreal campuses, professionals working in
-                      Laval’s business hubs, or families in established
-                      communities, therapists have countless opportunities to
+                      Longueuil, located just across the St. Lawrence River from
+                      Montreal, is a dynamic and family-friendly city in Quebec.
+                      From the bustling city centre and shopping areas near
+                      Place Longueuil to residential neighbourhoods like
+                      Vieux-Longueuil, Greenfield Park, and Saint-Hubert, the
+                      city offers a mix of urban convenience and suburban
+                      comfort. With parks and recreational spaces such as Parc
+                      Michel-Chartrand, Bois-de-Liesse Nature Park, and the
+                      scenic St. Lawrence waterfront, residents enjoy year-round
+                      opportunities for wellness, outdoor activities, and
+                      relaxation. Across communities including LeMoyne,
+                      Notre-Dame, and Saint-Jean-Vianney, more people are
+                      prioritizing their mental health and seeking therapy,
+                      counselling, and psychology services to support their
+                      overall well-being. Whether it’s students commuting to
+                      Montreal universities, professionals working in local
+                      industries, or families in established neighbourhoods,
+                      therapists in Longueuil have meaningful opportunities to
                       connect with clients actively seeking support.
                     </p>
                     <p>
-                      With Laval's growing awareness of mental health importance
-                      and the increasing acceptance of therapy, counselling, and
-                      psychology services, mental health professionals have an
-                      incredible opportunity to expand their reach. At Infused
-                      Agency, we help you capture that opportunity with Laval
-                      SEO strategies designed to outperform competitors and
-                      build long-term visibility for your therapy practice.
+                      With Longueuil's growing awareness of mental health
+                      importance and the increasing acceptance of therapy,
+                      counselling, and psychology services, mental health
+                      professionals have an incredible opportunity to expand
+                      their reach. At Infused Agency, we help you capture that
+                      opportunity with Longueuil SEO strategies designed to
+                      outperform competitors and build long-term visibility for
+                      your therapy practice.
                     </p>
 
                     <h2>
-                      SEO Services Tailored for Laval Mental Health
+                      SEO Services Tailored for Longueuil Mental Health
                       Professionals
                     </h2>
                     <p>
-                      Our team of experienced SEO Laval specialists provides a
-                      full range of services, including website audits, keyword
-                      research, content optimization, and link-building. Each
-                      strategy is tailored to your unique practice goals,
+                      Our team of experienced SEO Longueuil specialists provides
+                      a full range of services, including website audits,
+                      keyword research, content optimization, and link-building.
+                      Each strategy is tailored to your unique practice goals,
                       ensuring you attract the right clients and drive qualified
                       inquiries.
                     </p>
                     <p>
                       Whether you're a therapist, psychologist, counsellor, or
                       psychotherapist looking for local SEO or wanting to expand
-                      across Laval, Infused Agency delivers solutions that put
-                      your practice in front of the right audience.
+                      across Longueuil, Infused Agency delivers solutions that
+                      put your practice in front of the right audience.
                     </p>
 
                     <h2>
-                      Why Hiring an Laval SEO Agency Matters for Mental Health
-                      Professionals
+                      Why Hiring an Longueuil SEO Agency Matters for Mental
+                      Health Professionals
                     </h2>
                     <p>
                       Trying to manage search engine optimization on your own
@@ -163,41 +167,41 @@ const Home = ({ latestPosts }) => {
                       advanced keyword research, and data-driven strategies.
                       Unlike generic DIY tools, we understand the mental health
                       market and the nuances of how people search for
-                      therapists, psychologists, and counsellors in Laval.
+                      therapists, psychologists, and counsellors in Longueuil.
                     </p>
                     <p>
                       Effective SEO isn't just about rankings. It's about
                       creating content that builds trust with potential clients,
                       increases engagement, and ultimately drives bookings.
-                      That's why expert SEO copywriting for Laval mental health
-                      professionals is a core part of our approach — it ensures
-                      your website speaks to both search engines and real people
-                      seeking help.
+                      That's why expert SEO copywriting for Longueuil mental
+                      health professionals is a core part of our approach — it
+                      ensures your website speaks to both search engines and
+                      real people seeking help.
                     </p>
 
                     <h2>
-                      Why Infused Agency Is the Best Choice for SEO in Laval
+                      Why Infused Agency Is the Best Choice for SEO in Longueuil
                     </h2>
                     <p>
                       At Infused Agency, we're not just another marketing
-                      company. We're a dedicated SEO agency in Laval focused on
-                      helping local mental health professionals succeed. Every
-                      campaign we build is custom — no cookie-cutter templates,
-                      no guesswork.
+                      company. We're a dedicated SEO agency in Longueuil focused
+                      on helping local mental health professionals succeed.
+                      Every campaign we build is custom — no cookie-cutter
+                      templates, no guesswork.
                     </p>
                     <p>
                       We combine technical SEO improvements, white-hat link
                       strategies, optimized content, and local targeting to help
                       your practice rise in search results. From fine-tuning
                       your Google Business Profile to creating location-specific
-                      content for Laval, our strategies are designed for
+                      content for Longueuil, our strategies are designed for
                       long-term growth and sustainable visibility.
                     </p>
                     <p>
                       When you work with Infused Agency, you get a trusted
                       partner invested in your success. We'll help you generate
                       more client inquiries, improve conversions, and grow your
-                      practice through data-driven SEO Laval strategies.
+                      practice through data-driven SEO Longueuil strategies.
                     </p>
                   </p>
                 )}
@@ -219,7 +223,7 @@ const Home = ({ latestPosts }) => {
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Laval Therapy SEO Clients <span>Get Results</span>
+                Our Longueuil Therapy SEO Clients <span>Get Results</span>
               </h2>
             </div>
           </div>
@@ -231,7 +235,7 @@ const Home = ({ latestPosts }) => {
                 <Image
                   className="img-fluid"
                   src={results1}
-                  alt="SEO Laval Therapist Results"
+                  alt="SEO Longueuil Therapist Results"
                 />
                 <div className="card">
                   <div className="text-center stats">
@@ -246,7 +250,7 @@ const Home = ({ latestPosts }) => {
                 <Image
                   className="img-fluid"
                   src={results2}
-                  alt="Laval Therapy Practice SEO Results"
+                  alt="Longueuil Therapy Practice SEO Results"
                 />
                 <div className="card">
                   <div className="text-center stats">
@@ -265,7 +269,7 @@ const Home = ({ latestPosts }) => {
             </Row>
             <Row className="pd-top-40 text-center testimonials">
               <Col lg="4">
-                <Image src={test1} alt="seo for counsellors Laval" />
+                <Image src={test1} alt="seo for counsellors Longueuil" />
                 <p className="owner">Nicole P.</p>
                 <em>Owner - Purse You Psychotherapy</em>
                 <p className="desc">
@@ -277,7 +281,7 @@ const Home = ({ latestPosts }) => {
                 </p>
               </Col>
               <Col lg="4">
-                <Image src={test2} alt="seo for psychotherapists Laval" />
+                <Image src={test2} alt="seo for psychotherapists Longueuil" />
                 <p className="owner">Brandi M.</p>
                 <em>Owner - Brandi May Psychotherapy</em>
                 <p className="desc">
@@ -288,7 +292,7 @@ const Home = ({ latestPosts }) => {
                 </p>
               </Col>
               <Col lg="4">
-                <Image src={test3} alt="seo for therapist Laval" />
+                <Image src={test3} alt="seo for therapist Longueuil" />
                 <p className="owner">Courtney V.</p>
                 <em>Owner - Consciously Collected</em>
                 <p className="desc">
@@ -317,12 +321,12 @@ const Home = ({ latestPosts }) => {
             <Col lg="12">
               <h2>
                 Ready to <span>Grow Your Practice</span> With Therapy SEO in
-                Laval?
+                Longueuil?
               </h2>
               <p>
                 Take the first step toward more clients, higher rankings, and
                 real growth. Whether you're a therapist, psychologist,
-                counsellor, or psychotherapist anywhere in Laval, our SEO
+                counsellor, or psychotherapist anywhere in Longueuil, our SEO
                 services are built to deliver results for mental health
                 professionals.
               </p>
@@ -338,7 +342,7 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
-              <h2>Laval SEO Services for Therapists</h2>
+              <h2>Longueuil SEO Services for Therapists</h2>
               <p>Get More Visibility</p>
             </div>
           </div>
@@ -349,10 +353,10 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research & Strategy</h2>
                 <p>
-                  At Infused Agency, our SEO Laval specialists begin every
+                  At Infused Agency, our SEO Longueuil specialists begin every
                   campaign with detailed keyword research. We identify the most
                   relevant and profitable search terms your potential clients
-                  are using across Laval. By analyzing your website and
+                  are using across Longueuil. By analyzing your website and
                   competitors, we craft a data-driven SEO strategy designed to
                   capture qualified traffic and deliver measurable results.
                 </p>
@@ -363,7 +367,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Link Building</h2>
                 <p>
                   A strong backlink profile is essential for higher rankings.
-                  Our Laval SEO services include ethical link-building
+                  Our Longueuil SEO services include ethical link-building
                   strategies that earn high-quality links from reputable
                   websites. These authoritative backlinks boost your domain
                   authority, build trust with search engines, and strengthen
@@ -375,13 +379,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Content is the foundation of effective SEO. Our Laval content
-                  writing team creates engaging, SEO-friendly copy tailored to
-                  your mental health practice and specialties. From optimized
-                  blog posts to landing pages, we develop content that reflects
-                  your practice's voice, establishes expertise, and improves
-                  rankings for keywords like SEO Laval psychologists and SEO
-                  Laval counsellors.
+                  Content is the foundation of effective SEO. Our Longueuil
+                  content writing team creates engaging, SEO-friendly copy
+                  tailored to your mental health practice and specialties. From
+                  optimized blog posts to landing pages, we develop content that
+                  reflects your practice's voice, establishes expertise, and
+                  improves rankings for keywords like SEO Longueuil
+                  psychologists and SEO Longueuil counsellors.
                 </p>
               </div>
             </div>
@@ -391,12 +395,12 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>On-Page SEO</h2>
                 <p>
-                  Our SEO Laval experts optimize your website's structure, code,
-                  and content to ensure it performs at its best. We conduct
-                  in-depth audits, refine metadata, improve internal linking,
-                  and enhance site usability — all while aligning with Google's
-                  ranking factors. The result is a website that attracts both
-                  search engines and potential clients.
+                  Our SEO Longueuil experts optimize your website's structure,
+                  code, and content to ensure it performs at its best. We
+                  conduct in-depth audits, refine metadata, improve internal
+                  linking, and enhance site usability — all while aligning with
+                  Google's ranking factors. The result is a website that
+                  attracts both search engines and potential clients.
                 </p>
               </div>
             </div>
@@ -404,8 +408,8 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  For mental health professionals in Laval, local visibility is
-                  key. Infused Agency ensures your practice is optimized for
+                  For mental health professionals in Longueuil, local visibility
+                  is key. Infused Agency ensures your practice is optimized for
                   local searches by improving your Google Business Profile,
                   building local citations, and creating location-specific
                   content. These strategies help you appear in Google's Local
@@ -419,10 +423,11 @@ const Home = ({ latestPosts }) => {
                 <h2>Technical SEO</h2>
                 <p>
                   Behind every successful SEO campaign is a strong technical
-                  foundation. Our technical SEO Laval specialists enhance your
-                  site's speed, mobile performance, indexing, and security. From
-                  fixing crawl errors to optimizing site architecture, we make
-                  sure search engines can easily navigate and rank your website.
+                  foundation. Our technical SEO Longueuil specialists enhance
+                  your site's speed, mobile performance, indexing, and security.
+                  From fixing crawl errors to optimizing site architecture, we
+                  make sure search engines can easily navigate and rank your
+                  website.
                 </p>
               </div>
             </div>
@@ -435,12 +440,12 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Get <span>More Visibility</span> In Laval Now!
+                Get <span>More Visibility</span> In Longueuil Now!
               </h2>
               <p>
                 Take the first step toward more clients, higher rankings, and
                 real growth. Whether you're a therapist, psychologist,
-                counsellor, or psychotherapist anywhere in Laval, our SEO
+                counsellor, or psychotherapist anywhere in Longueuil, our SEO
                 services are built to deliver results for mental health
                 professionals.
               </p>
@@ -457,7 +462,7 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center">
             <Col lg="12">
               <h2>
-                Choosing Infused Agency as Your Therapist SEO Laval Partner
+                Choosing Infused Agency as Your Therapist SEO Longueuil Partner
               </h2>
             </Col>
           </Row>
@@ -477,7 +482,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 className="img-fluid"
                 src={infused}
-                alt="infused agency seo for therapists Laval"
+                alt="infused agency seo for therapists Longueuil"
               />
             </Col>
           </Row>
@@ -494,22 +499,22 @@ const Home = ({ latestPosts }) => {
                 results.
               </p>
 
-              <h3>Supporting Local Mental Health Professionals in Laval</h3>
+              <h3>Supporting Local Mental Health Professionals in Longueuil</h3>
 
               <p>
                 We understand the challenges therapy practices face when trying
                 to stand out online. That's why we specialize in small practice
-                SEO in Laval — giving therapists, psychologists, counsellors,
-                and psychotherapists the tools and strategies needed to gain
-                traction in local search, attract qualified clients, and compete
-                effectively in their markets.
+                SEO in Longueuil — giving therapists, psychologists,
+                counsellors, and psychotherapists the tools and strategies
+                needed to gain traction in local search, attract qualified
+                clients, and compete effectively in their markets.
               </p>
 
               <p>
                 With Infused Agency, you get more than just an SEO provider. You
                 get a partner who's invested in your long-term success with
-                tailored SEO Laval services that build credibility, visibility,
-                and growth.
+                tailored SEO Longueuil services that build credibility,
+                visibility, and growth.
               </p>
             </Col>
           </Row>
@@ -518,14 +523,14 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo expert for therapists Laval"
+                alt="seo expert for therapists Longueuil"
               />
               <h3 className="pd-top-20">Client-Focused SEO Services</h3>
               <p>
                 At Infused Agency, we treat your practice like it's our own.
                 Your success is the measure of our success, which is why we take
                 the time to understand your goals and challenges. Each client
-                works with a dedicated SEO Laval specialist who provides
+                works with a dedicated SEO Longueuil specialist who provides
                 personalized attention and ongoing monitoring to deliver the
                 best possible results.
               </p>
@@ -534,31 +539,31 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization for counsellors Laval"
+                alt="seo optimization for counsellors Longueuil"
               />
               <h3 className="pd-top-20">Continuous Optimization</h3>
               <p>
                 SEO isn't a one-time project — it's an ongoing process. Our team
-                of Laval SEO experts constantly tracks your website's
+                of Longueuil SEO experts constantly tracks your website's
                 performance, adapting strategies to keep pace with Google's
                 updates and industry changes. This ensures your practice stays
-                competitive across Laval.
+                competitive across Longueuil.
               </p>
             </Col>
             <Col lg="4">
               <Image
                 height="50"
                 src={check}
-                alt="affordable seo for therapists Laval"
+                alt="affordable seo for therapists Longueuil"
               />
               <h3 className="pd-top-20">Affordable SEO Solutions</h3>
               <p>
                 We believe in delivering exceptional value without unexpected
-                costs. Infused Agency offers affordable SEO Laval services with
-                transparent pricing and no hidden fees. Whether you're a new
-                psychologist, established counsellor, or growing psychotherapy
-                practice, our solutions are designed to fit your budget while
-                generating long-term results.
+                costs. Infused Agency offers affordable SEO Longueuil services
+                with transparent pricing and no hidden fees. Whether you're a
+                new psychologist, established counsellor, or growing
+                psychotherapy practice, our solutions are designed to fit your
+                budget while generating long-term results.
               </p>
             </Col>
           </Row>
@@ -567,7 +572,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo reporting for therapy practices Laval"
+                alt="seo reporting for therapy practices Longueuil"
               />
               <h3 className="pd-top-20">Transparent Reporting</h3>
               <p>
@@ -582,11 +587,11 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization for psychotherapists Laval"
+                alt="seo optimization for psychotherapists Longueuil"
               />
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
-                Our Laval SEO specialists stay ahead of the curve with deep
+                Our Longueuil SEO specialists stay ahead of the curve with deep
                 knowledge of Google's latest updates, best practices, and
                 ethical SEO strategies. By following proven, white-hat methods,
                 we help your website achieve sustainable rankings and long-term
@@ -597,15 +602,16 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo audit for therapists Laval"
+                alt="seo audit for therapists Longueuil"
               />
               <h3 className="pd-top-20">Free SEO Audit</h3>
               <p>
                 Not sure how your website is performing? Infused Agency offers a
-                complimentary SEO audit for Laval mental health professionals.
-                We'll review your website's current performance, highlight
-                opportunities for improvement, and provide recommendations
-                tailored to your practice goals — with no obligation.
+                complimentary SEO audit for Longueuil mental health
+                professionals. We'll review your website's current performance,
+                highlight opportunities for improvement, and provide
+                recommendations tailored to your practice goals — with no
+                obligation.
               </p>
             </Col>
           </Row>
@@ -616,7 +622,7 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-top-40">
             <Col lg="12">
-              <h2>Trusted SEO Laval Experts with Proven Results</h2>
+              <h2>Trusted SEO Longueuil Experts with Proven Results</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-20">
@@ -624,7 +630,7 @@ const Home = ({ latestPosts }) => {
               <p>
                 At Infused Agency, results speak for themselves. With over 50
                 SEO clients served and 40+ five-star Google reviews, we've built
-                a reputation as a leading SEO agency in Laval. Our clients
+                a reputation as a leading SEO agency in Longueuil. Our clients
                 consistently see measurable improvements in search rankings,
                 website traffic, and client inquiries.
                 <br />
@@ -637,14 +643,14 @@ const Home = ({ latestPosts }) => {
                 work with Infused Agency, you're partnering with a trusted team
                 that combines local market expertise, technical SEO skills, and
                 creative content strategies to help your practice dominate
-                search results across Laval.
+                search results across Longueuil.
               </p>
             </Col>
             <Col lg="6">
               <Image
                 className="img-fluid"
                 src={reviews}
-                alt="seo therapy practice Laval reviews"
+                alt="seo therapy practice Longueuil reviews"
               />
             </Col>
           </Row>
@@ -655,52 +661,54 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>Frequently Asked Questions For Laval Therapy SEO Services</h2>
+              <h2>
+                Frequently Asked Questions For Longueuil Therapy SEO Services
+              </h2>
             </Col>
           </Row>
 
           <Row>
             <Col lg="12">
               <h3>
-                What makes Therapy SEO Laval services different from general
+                What makes Therapy SEO Longueuil services different from general
                 SEO?
               </h3>
               <p>
-                Our SEO Therapy Laval services are specifically tailored to help
-                local mental health professionals across Laval rank higher in
-                local search results. We understand the unique market dynamics,
-                local competition, and search patterns specific to Laval. Our
-                SEO strategies include local citation building, Google Business
-                Profile optimization, and location-specific content that helps
-                your practice appear when clients search for therapy,
-                counselling, or psychology services in your area.
+                Our SEO Therapy Longueuil services are specifically tailored to
+                help local mental health professionals across Longueuil rank
+                higher in local search results. We understand the unique market
+                dynamics, local competition, and search patterns specific to
+                Longueuil. Our SEO strategies include local citation building,
+                Google Business Profile optimization, and location-specific
+                content that helps your practice appear when clients search for
+                therapy, counselling, or psychology services in your area.
               </p>
 
               <h3>
-                How long does it take to see results from SEO Laval
+                How long does it take to see results from SEO Longueuil
                 Psychotherapist campaigns?
               </h3>
               <p>
-                Most SEO Psychotherapist Laval clients start seeing initial
+                Most SEO Psychotherapist Longueuil clients start seeing initial
                 improvements in search visibility within 3-6 months, with
                 significant results typically appearing by 6-12 months. The
                 timeline depends on factors like your current website
                 performance, competition level, and the keywords you're
                 targeting. Our proven SEO process includes continuous
                 optimization and transparent reporting, so you'll see steady
-                progress as we work to improve your rankings across Laval.
+                progress as we work to improve your rankings across Longueuil.
               </p>
 
               <h3>
-                Can small mental health practices in Laval compete with larger
-                clinics through SEO?
+                Can small mental health practices in Longueuil compete with
+                larger clinics through SEO?
               </h3>
               <p>
-                Absolutely! SEO for Therapist in Laval strategies are
+                Absolutely! SEO for Therapist in Longueuil strategies are
                 particularly effective for small practices because they focus on
                 local search optimization where you can outrank larger
                 competitors. By targeting location-specific keywords like
-                "psychologist near me Laval" and optimizing for local search
+                "psychologist near me Longueuil" and optimizing for local search
                 intent, small practices often achieve better visibility than big
                 clinics. Our affordable SEO solutions are designed specifically
                 to help small practices compete effectively in their local
@@ -708,25 +716,26 @@ const Home = ({ latestPosts }) => {
               </p>
 
               <h3>
-                What's included in your SEO Counsellor Laval audit and strategy
-                development?
+                What's included in your SEO Counsellor Longueuil audit and
+                strategy development?
               </h3>
               <p>
-                Our comprehensive Therapy SEO Laval audit includes technical
-                website analysis, keyword research for Laval markets, competitor
-                analysis, content evaluation, and local SEO assessment. We
-                examine your current Google Business Profile, local citations,
-                backlink profile, and site performance. Based on these findings,
-                we develop a customized SEO strategy that addresses your
-                specific challenges and opportunities in Laval.
+                Our comprehensive Therapy SEO Longueuil audit includes technical
+                website analysis, keyword research for Longueuil markets,
+                competitor analysis, content evaluation, and local SEO
+                assessment. We examine your current Google Business Profile,
+                local citations, backlink profile, and site performance. Based
+                on these findings, we develop a customized SEO strategy that
+                addresses your specific challenges and opportunities in
+                Longueuil.
               </p>
 
               <h3>
-                How do you measure the success of SEO Laval campaigns for
+                How do you measure the success of SEO Longueuil campaigns for
                 therapists?
               </h3>
               <p>
-                We track multiple metrics to measure SEO success for Laval
+                We track multiple metrics to measure SEO success for Longueuil
                 counsellors, therapists and mental health professionals,
                 including search rankings for targeted keywords, organic website
                 traffic growth, local visibility improvements, and most
@@ -738,31 +747,31 @@ const Home = ({ latestPosts }) => {
               </p>
 
               <h3>
-                Do you guarantee first-page rankings for SEO Laval keywords for
-                therapists?
+                Do you guarantee first-page rankings for SEO Longueuil keywords
+                for therapists?
               </h3>
               <p>
                 While we can't guarantee specific rankings (as search engines
                 constantly update their algorithms), we do guarantee our
                 commitment to improving your visibility through proven SEO
-                Therapist Laval strategies. Our track record shows consistent
-                success helping practices achieve first-page rankings for their
-                target keywords. We focus on sustainable, white-hat SEO
-                techniques that build long-term visibility rather than quick
+                Therapist Longueuil strategies. Our track record shows
+                consistent success helping practices achieve first-page rankings
+                for their target keywords. We focus on sustainable, white-hat
+                SEO techniques that build long-term visibility rather than quick
                 fixes that might get penalized by Google.
               </p>
 
               <h3>
-                What's the difference between SEO and local SEO for Laval mental
-                health professionals?
+                What's the difference between SEO and local SEO for Longueuil
+                mental health professionals?
               </h3>
               <p>
                 Traditional SEO focuses on ranking for broad keywords nationally
-                or globally, while local SEO Laval targets location-specific
-                searches like "counsellor near me" or "Laval psychology
+                or globally, while local SEO Longueuil targets location-specific
+                searches like "counsellor near me" or "Longueuil psychology
                 services." Local SEO includes optimizing your Google Business
                 Profile, building local citations, managing online reviews, and
-                creating location-based content. For Laval mental health
+                creating location-based content. For Longueuil mental health
                 professionals serving local clients, local SEO is typically more
                 valuable as it helps you appear in Google's Local Pack and Maps
                 results.
@@ -770,10 +779,10 @@ const Home = ({ latestPosts }) => {
 
               <h3>
                 How much do SEO services cost for mental health practices in
-                Laval?
+                Longueuil?
               </h3>
               <p>
-                SEO Laval pricing varies based on your practice size,
+                SEO Longueuil pricing varies based on your practice size,
                 competition level, and specific goals. We offer affordable SEO
                 packages starting from basic local optimization to comprehensive
                 practice solutions. Our transparent pricing includes no hidden
@@ -783,7 +792,7 @@ const Home = ({ latestPosts }) => {
                 SEO investment.
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89319.53276852035!2d-73.79207993158407!3d45.605913257686616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc92107b4dfda6b%3A0x2eb4b26fe333c419!2sLaval%2C%20QC!5e0!3m2!1sen!2sca!4v1756218931719!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89470.99593034442!2d-73.51590813482049!3d45.510710255757644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91b69886574f9%3A0x1c63438a7316da2e!2sLongueuil%2C%20QC!5e0!3m2!1sen!2sca!4v1756219494975!5m2!1sen!2sca"
                 width="100%"
                 height="450"
                 allowfullscreen=""

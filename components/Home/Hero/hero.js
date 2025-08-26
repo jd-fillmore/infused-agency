@@ -148,6 +148,10 @@ const Hero = () => {
                     <Link href="/seo/for-therapists-ontario">
                       Therapist SEO Ontario
                     </Link>
+                    -
+                    <Link href="/seo/for-therapists-quebec">
+                      Therapist SEO Quebec
+                    </Link>
                   </p>
                 )}
                 <br />
