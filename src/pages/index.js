@@ -445,7 +445,11 @@ const Home = ({ latestPosts }) => {
               </p>
             </Col>
             <Col lg="6">
-              <Image src={infused} alt="infused agency seo niagara" />
+              <Image
+                className="img-fluid"
+                src={infused}
+                alt="infused agency seo niagara"
+              />
             </Col>
           </Row>
           <Row>
