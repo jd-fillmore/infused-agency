@@ -289,7 +289,7 @@ const Home = ({ latestPosts }) => {
               <Col lg="4">
                 <Image src={test3} alt="seo for therapist Calgary" />
                 <p className="owner">Courtney V.</p>
-                <em>Owner - VISCA Electric</em>
+                <em>Owner - Consciously Collected</em>
                 <p className="desc">
                   "I had a great experience working with Infused agency! They
                   optimized my website, and I saw a significant increase in
