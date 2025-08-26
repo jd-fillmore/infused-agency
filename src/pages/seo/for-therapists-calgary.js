@@ -63,11 +63,22 @@ const Home = ({ latestPosts }) => {
                 visibility in search engines, attract the right clients, and
                 generate quality leads. With a focus on conversion-driven
                 results, we don't just bring traffic — we help turn that traffic
-                into real appointments for your practice.
+                into real appointments for your practice. Whether you're a
+                therapist in{" "}
+                <Link href="/seo/for-therapists-calgary">Calgary</Link>,{" "}
+                <Link href="/seo/for-therapists-edmonton">Edmonton</Link>,{" "}
+                <Link href="/seo/for-therapists-red-deer">Red Deer</Link>,{" "}
+                <Link href="/seo/for-therapists-lethbridge">Lethbridge</Link>,{" "}
+                <Link href="/seo/for-therapists-airdrie">Airdrie</Link> or
+                anywhere else in{" "}
+                <Link href="/seo/for-therapists-alberta">Alberta</Link>, we'll
+                help your therapy practice get more visibility.
               </p>
               <Link href="/work">
                 <button>Check Out Our Results</button>
               </Link>
+              <br />
+              <br />
               <div className="max-w-xl mx-auto">
                 {isExpanded && (
                   <p className="mt-2">
@@ -463,6 +474,7 @@ const Home = ({ latestPosts }) => {
             </Col>
             <Col lg="6">
               <Image
+                className="img-fluid"
                 src={infused}
                 alt="infused agency seo for therapists Calgary"
               />

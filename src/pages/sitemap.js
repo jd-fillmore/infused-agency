@@ -2,8 +2,20 @@ export default function Sitemap() {
   const therapyLocations = [
     { name: "SEO for Therapists Alberta", url: "/seo/for-therapists-alberta" },
     { name: "SEO for Therapists Calgary", url: "/seo/for-therapists-calgary" },
+    {
+      name: "SEO for Therapists Edmonton",
+      url: "/seo/for-therapists-edmonton",
+    },
+    {
+      name: "SEO for Therapists Red Deer",
+      url: "/seo/for-therapists-red-deer",
+    },
+    {
+      name: "SEO for Therapists Lethbridge",
+      url: "/seo/for-therapists-lethbridge",
+    },
+    { name: "SEO for Therapists Airdrie", url: "/seo/for-therapists-airdrie" },
   ];
-
   return (
     <div className="sitemap-container">
       <h1>Site Map</h1>

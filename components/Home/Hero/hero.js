@@ -140,6 +140,10 @@ const Hero = () => {
                       more leads, improve conversions, and grow your brand
                       through data-driven SEO Niagara strategies.
                     </p>
+                    <h3>Industries We Serve</h3>
+                    <Link href="/seo/for-therapists-alberta">
+                      Therapist SEO Alberta
+                    </Link>
                   </p>
                 )}
 
