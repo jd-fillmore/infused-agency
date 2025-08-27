@@ -827,7 +827,6 @@ iframe {
 }
 
 .home-process {
-  padding: 120px 0px 120px 0px;
   @include bp-tablet-sm {
     padding: 40px 0px 40px 0px;
   }
@@ -963,4 +962,16 @@ iframe {
 }
 .affilliates {
   background: #fff;
+}
+
+.home-process {
+  .card {
+    padding: 30px;
+    border-radius: 0px;
+    border-top: 3px solid $light-blue;
+    transition: 0.2s;
+    h2 {
+      font-size: 24px;
+    }
+  }
 }

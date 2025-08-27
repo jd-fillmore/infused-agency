@@ -178,8 +178,9 @@
     @include bp-tablet-sm {
       padding: 10px 0px 0px 0px;
       line-height: 1.3;
-      margin-bottom: 20px;
       font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 0-5px;
     }
   }
   h2 {
@@ -423,5 +424,13 @@
   margin-top: -540px;
   @include bp-tablet-sm {
     margin-top: 0px;
+  }
+}
+
+.trusted {
+  @include bp-tablet-sm {
+    p {
+      margin-bottom: 0px;
+    }
   }
 }

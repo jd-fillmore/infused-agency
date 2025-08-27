@@ -36,6 +36,10 @@ import feat7 from "../../src/img/feat-brandi.png";
 import feat8 from "../../src/img/feat-jerry.png";
 import data1 from "../../src/img/gsc-flat.png";
 import data2 from "../../src/img/gsc-freds.png";
+import step1 from "../../src/img/seo-research.jpg";
+import step2 from "../../src/img/on-page-seo.jpg";
+import step3 from "../../src/img/off-page-seo.jpg";
+import step4 from "../../src/img/seo-reporting.jpg";
 
 const Home = ({ latestPosts }) => {
   return (
@@ -432,7 +436,7 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center pd-btm-20">
             <Col lg="12">
               <h2>
-                Trusted By <span>Niagara Businesses</span>
+                SEO Services Trusted By <span>Niagara Businesses</span>
               </h2>
               <p>For over 10 years</p>
             </Col>
@@ -582,6 +586,29 @@ const Home = ({ latestPosts }) => {
                 <Image src={test1} alt="seo company niagara" />
                 <p className="owner">Lucas Folino</p>
                 <em>Owner - Fred's Concrete</em>
+                <br />
+                <br />
+                <svg
+                  width="125"
+                  height="25"
+                  viewBox="0 0 125 25"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <symbol id="star" viewBox="0 0 100 100">
+                      <polygon
+                        fill="#e2c044"
+                        points="50,8 61,38 94,38 66,58 76,90 50,71 24,90 34,58 6,38 39,38"
+                      />
+                    </symbol>
+                  </defs>
+
+                  <use href="#star" x="0" y="0" width="25" height="25" />
+                  <use href="#star" x="25" y="0" width="25" height="25" />
+                  <use href="#star" x="50" y="0" width="25" height="25" />
+                  <use href="#star" x="75" y="0" width="25" height="25" />
+                  <use href="#star" x="100" y="0" width="25" height="25" />
+                </svg>
                 <p className="desc">
                   "Infused Agency got me a lot more visibility through Google in
                   a short period of time. Which has led to a ton of leads for my
@@ -593,6 +620,29 @@ const Home = ({ latestPosts }) => {
                 <Image src={test2} alt="seo niagara experts" />
                 <p className="owner">Brandi May</p>
                 <em>Owner - Brandi May Psychotherapy</em>
+                <br />
+                <br />
+                <svg
+                  width="125"
+                  height="25"
+                  viewBox="0 0 125 25"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <symbol id="star" viewBox="0 0 100 100">
+                      <polygon
+                        fill="#e2c044"
+                        points="50,8 61,38 94,38 66,58 76,90 50,71 24,90 34,58 6,38 39,38"
+                      />
+                    </symbol>
+                  </defs>
+
+                  <use href="#star" x="0" y="0" width="25" height="25" />
+                  <use href="#star" x="25" y="0" width="25" height="25" />
+                  <use href="#star" x="50" y="0" width="25" height="25" />
+                  <use href="#star" x="75" y="0" width="25" height="25" />
+                  <use href="#star" x="100" y="0" width="25" height="25" />
+                </svg>
                 <p className="desc">
                   "Infused Agency are not only clear professionals and expert in
                   their fields, but are extremely personable to work with. I
@@ -604,6 +654,29 @@ const Home = ({ latestPosts }) => {
                 <Image src={test3} alt="seo niagara services" />
                 <p className="owner">Sandro Visca</p>
                 <em>Owner - VISCA Electric</em>
+                <br />
+                <br />
+                <svg
+                  width="125"
+                  height="25"
+                  viewBox="0 0 125 25"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <symbol id="star" viewBox="0 0 100 100">
+                      <polygon
+                        fill="#e2c044"
+                        points="50,8 61,38 94,38 66,58 76,90 50,71 24,90 34,58 6,38 39,38"
+                      />
+                    </symbol>
+                  </defs>
+
+                  <use href="#star" x="0" y="0" width="25" height="25" />
+                  <use href="#star" x="25" y="0" width="25" height="25" />
+                  <use href="#star" x="50" y="0" width="25" height="25" />
+                  <use href="#star" x="75" y="0" width="25" height="25" />
+                  <use href="#star" x="100" y="0" width="25" height="25" />
+                </svg>
                 <p className="desc">
                   "Working with Infused Agency was a pleasure. They were
                   extremely responsive and informative from start to finish.
@@ -623,7 +696,7 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
-      {/* <section className="process pd-top-80">
+      <section className="home-process pd-top-80">
         <Container>
           <Row className="text-center">
             <Col lg="12">
@@ -631,10 +704,154 @@ const Home = ({ latestPosts }) => {
                 How Search Engine Optimization Works <br />
                 At Infused Agency
               </h2>
+              <p className="w-75">
+                When you work with us, your search engine optimization project
+                is custom, yet streamlined. Over the last 12 years, and working
+                with many different businesses in Niagara, we've crafted local
+                SEO strategies that not only work, but have made it through
+                every major algorithm update. Here's a look into our process.
+              </p>
+            </Col>
+          </Row>
+          <Row className="pd-top-40">
+            <Col lg="6">
+              <div className="card">
+                <Image className="img-fluid" src={step1} alt="seo research" />
+                <h2>1. SEO Research & Competitive Analysis</h2>
+                <p>
+                  Every successful campaign starts with thorough research. Our
+                  SEO experts begin by conducting a comprehensive audit of your
+                  current website performance, analyzing your local market
+                  competition, and identifying the most valuable keywords for
+                  your business.
+                </p>
+                <br />
+                <p>
+                  During this phase, we examine your competitors' strategies,
+                  uncover content gaps in your industry, and research local
+                  search patterns to understand exactly how potential customers
+                  are looking for your services. We also perform technical SEO
+                  analysis to identify any issues that might be holding your
+                  website back from ranking higher.
+                </p>
+                <br />
+                <p>
+                  This research forms the foundation of your custom strategy,
+                  ensuring we target the right keywords and opportunities that
+                  will drive qualified traffic to your business.
+                </p>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="card">
+                <Image className="img-fluid" src={step2} alt="on-page seo" />
+                <h2>2. On-Page SEO</h2>
+                <p>
+                  Once we understand your market landscape, we optimize every
+                  element of your website to help search engines understand and
+                  rank your content. Our on-page optimization includes:
+                </p>
+                <br />
+                <ul>
+                  <li>
+                    Optimizing title tags, meta descriptions, and header
+                    structures for target keywords
+                  </li>
+                  <li>Improving website speed and mobile responsiveness</li>
+                  <li>
+                    Creating and optimizing location-specific landing pages
+                  </li>
+                  <li>
+                    Enhancing internal linking structure and site navigation
+                  </li>
+                  <li>
+                    Optimizing images with proper alt text and file compression
+                  </li>
+                  <li>
+                    Implementing schema markup to help search engines understand
+                    your business
+                  </li>
+                </ul>
+
+                <p>
+                  We also focus heavily on content optimization, ensuring your
+                  existing pages are fully optimized while identifying
+                  opportunities for new, valuable content that addresses your
+                  customers' questions and needs.
+                </p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="6">
+              <div className="card">
+                <Image className="img-fluid" src={step3} alt="off-page seo" />
+                <h2>3. Off-Page SEO</h2>
+                <p>
+                  Building authority and trust is crucial for long-term SEO
+                  success. Our off-page optimization strategy focuses on
+                  establishing your business as a trusted local authority
+                  through:
+                </p>
+                <br />
+                <ul>
+                  <li>Google Business Profile optimization and management</li>
+                  <li>
+                    Local citation building across relevant directories and
+                    platforms
+                  </li>
+                  <li>
+                    Strategic link building from high-quality, local websites
+                  </li>
+                  <li>Online review management and reputation building</li>
+                  <li>Local content marketing and community engagement</li>
+                  <li>Social media optimization to support your SEO efforts</li>
+                </ul>
+
+                <p>
+                  We use only white-hat techniques that comply with Google's
+                  guidelines, ensuring your website builds sustainable authority
+                  that won't be affected by algorithm updates. Every link and
+                  citation we build is relevant to your business and local
+                  market.
+                </p>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="card">
+                <Image className="img-fluid" src={step4} alt="seo reporting" />
+                <h2>4. Campaign Report</h2>
+                <p>
+                  Transparency and continuous improvement are core to our
+                  approach. You'll receive detailed monthly reports that clearly
+                  show your website's progress, including:
+                </p>
+
+                <ul>
+                  <li>
+                    Keyword ranking improvements and search visibility metrics
+                  </li>
+                  <li>Organic traffic growth and user behavior analytics</li>
+                  <li>
+                    Local search performance and Google Business Profile
+                    insights
+                  </li>
+                  <li>Lead generation and conversion tracking</li>
+                  <li>Competitor analysis and market position updates</li>
+                  <li>Technical SEO health monitoring</li>
+                </ul>
+
+                <p>
+                  This ongoing optimization ensures your SEO investment
+                  continues to deliver improved results month after month,
+                  keeping your business competitive in an ever-evolving digital
+                  landscape.
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>
-      </section> */}
+      </section>
 
       <section className="home-services">
         <div className="container">
@@ -737,15 +954,15 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <h2>Choosing Infused Agency as Your SEO Niagara Partner</h2>
+              <h2>Choosing Infused Agency as Your Local SEO Partner</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-40 pd-btm-40">
             <Col lg="6">
               <p>
-                In today’s competitive market, you can’t afford to partner with
+                In today's competitive market, you can't afford to partner with
                 just any digital marketing firm. You need a team that takes the
-                time to understand your business goals, your brand’s message,
+                time to understand your business goals, your brand's message,
                 and the customers you want to reach. At Infused Agency, we go
                 beyond surface-level strategies — our focus is on delivering
                 real results that generate the highest possible return on your
@@ -777,18 +994,17 @@ const Home = ({ latestPosts }) => {
 
               <p>
                 We understand the challenges local businesses face when trying
-                to stand out online. That’s why we specialize in small business
-                SEO in Niagara, St. Catharines, and Niagara Falls — giving
-                entrepreneurs the tools and strategies needed to gain traction
-                in local search, attract qualified leads, and compete
-                effectively in their markets.
+                to stand out online. That's why we specialize in helping
+                regional entrepreneurs gain the tools and strategies needed to
+                attract qualified leads, improve their local search presence,
+                and compete effectively in their markets.
               </p>
 
               <p>
                 With Infused Agency, you get more than just an SEO provider. You
-                get a partner who’s invested in your long-term success with
-                tailored SEO Niagara services that build credibility,
-                visibility, and growth.
+                get a partner who's invested in your long-term success with
+                tailored local SEO services that build credibility, visibility,
+                and sustainable growth.
               </p>
             </Col>
           </Row>
@@ -797,24 +1013,23 @@ const Home = ({ latestPosts }) => {
               <Image height="50" src={check} alt="client focused seo" />
               <h3 className="pd-top-20">Client-Focused SEO Services</h3>
               <p>
-                At Infused Agency, we treat your business like it’s our own.
+                At Infused Agency, we treat your business like it's our own.
                 Your success is the measure of our success, which is why we take
                 the time to understand your goals and challenges. Each client
-                works with a dedicated SEO Niagara specialist who provides
-                personalized attention and ongoing monitoring to deliver the
-                best possible results.
+                works with a dedicated SEO specialist who provides personalized
+                attention and ongoing monitoring to deliver the best possible
+                results.
               </p>
             </Col>
             <Col lg="4">
               <Image height="50" src={check} alt="seo optimization niagara" />
               <h3 className="pd-top-20">Continuous Optimization</h3>
               <p>
-                SEO isn’t a one-time project — it’s an ongoing process. Our team
-                of Niagara SEO experts constantly tracks your website’s
-                performance, adapting strategies to keep pace with Google’s
+                SEO isn't a one-time project — it's an ongoing process. Our team
+                of local SEO experts constantly tracks your website's
+                performance, adapting strategies to keep pace with Google's
                 updates and industry changes. This ensures your business stays
-                competitive in St. Catharines, Niagara Falls, and across
-                Niagara.
+                competitive and visible in local search results.
               </p>
             </Col>
             <Col lg="4">
@@ -822,10 +1037,10 @@ const Home = ({ latestPosts }) => {
               <h3 className="pd-top-20">Affordable SEO Solutions</h3>
               <p>
                 We believe in delivering exceptional value without unexpected
-                costs. Infused Agency offers affordable SEO Niagara services
-                with transparent pricing and no hidden fees. Whether you’re a
-                small business or a growing company, our solutions are designed
-                to fit your budget while generating long-term results.
+                costs. Infused Agency offers affordable local SEO services with
+                transparent pricing and no hidden fees. Whether you're a small
+                business or a growing company, our solutions are designed to fit
+                your budget while generating long-term results.
               </p>
             </Col>
           </Row>
@@ -834,9 +1049,9 @@ const Home = ({ latestPosts }) => {
               <Image height="50" src={check} alt="seo niagara reporting" />
               <h3 className="pd-top-20">Transparent Reporting</h3>
               <p>
-                You’ll never be left in the dark about your SEO campaign. Our
+                You'll never be left in the dark about your SEO campaign. Our
                 clear, detailed reports give you full visibility into how your
-                website is performing and the steps we’re taking to improve it.
+                website is performing and the steps we're taking to improve it.
                 With Infused Agency, you can expect consistent updates and
                 honest communication every step of the way.
               </p>
@@ -849,11 +1064,10 @@ const Home = ({ latestPosts }) => {
               />
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
-                Our Niagara SEO specialists stay ahead of the curve with deep
-                knowledge of Google’s latest updates, best practices, and
-                ethical SEO strategies. By following proven, white-hat methods,
-                we help your website achieve sustainable rankings and long-term
-                growth.
+                Our SEO specialists stay ahead of the curve with deep knowledge
+                of Google's latest updates, best practices, and ethical SEO
+                strategies. By following proven, white-hat methods, we help your
+                website achieve sustainable rankings and long-term growth.
               </p>
             </Col>
             <Col lg="4">
@@ -861,8 +1075,8 @@ const Home = ({ latestPosts }) => {
               <h3 className="pd-top-20">Free SEO Audit</h3>
               <p>
                 Not sure how your website is performing? Infused Agency offers a
-                complimentary SEO audit for Niagara businesses. We’ll review
-                your website’s current performance, highlight opportunities for
+                complimentary SEO audit for local businesses. We'll review your
+                website's current performance, highlight opportunities for
                 improvement, and provide recommendations tailored to your
                 business goals — with no obligation.
               </p>
@@ -875,7 +1089,7 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-top-40">
             <Col lg="12">
-              <h2>Trusted SEO Niagara Experts with Proven Results</h2>
+              <h2>Trusted Local SEO Experts with Proven Results</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-20">
@@ -885,21 +1099,22 @@ const Home = ({ latestPosts }) => {
                 <span>
                   50 SEO clients served and 40+ five-star Google reviews
                 </span>
-                , we’ve built a reputation as a leading SEO agency in Niagara,
-                St. Catharines, and Niagara Falls. Our clients consistently see
-                measurable improvements in search rankings, website traffic, and
-                lead generation.
+                , we've built a reputation as a leading local SEO agency in the
+                region. Our clients consistently see measurable improvements in
+                search rankings, website traffic, and lead generation.
                 <br />
                 <br />
-                We’re proud to have helped businesses of all sizes — from small
+                We're proud to have helped businesses of all sizes — from small
                 startups to established companies — achieve stronger online
                 visibility and higher conversions. Every strategy we implement
                 is backed by data, tailored to your goals, and focused on
-                delivering a real return on investment. When you work with
-                Infused Agency, you’re partnering with a trusted team that
-                combines local market expertise, technical SEO skills, and
-                creative content strategies to help your business dominate
-                search results across Niagara.
+                delivering a real return on investment.
+                <br />
+                <br />
+                When you work with Infused Agency, you're partnering with a
+                trusted team that combines local market expertise, technical SEO
+                skills, and creative content strategies to help your business
+                dominate local search results.
               </p>
             </Col>
             <Col lg="6">
@@ -917,129 +1132,114 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>Frequently Asked Questions For Niagara SEO Services</h2>
+              <h2>FAQs</h2>
+              <p>Learn more about search engine optimization!</p>
             </Col>
           </Row>
 
           <Row>
             <Col lg="12">
               <h3>
-                What makes SEO Niagara services different from general SEO?
+                What makes our local SEO services different from general SEO?
               </h3>
               <p>
-                SEO Niagara services are specifically tailored to help local
-                businesses in St. Catharines, Niagara Falls, and across the
-                Niagara Region rank higher in local search results. We
-                understand the unique market dynamics, local competition, and
-                search patterns specific to the Niagara area. Our SEO strategies
-                include local citation building, Google Business Profile
-                optimization, and location-specific content that helps your
-                business appear when customers search for services in your area.
+                Our services are specifically tailored to help local businesses
+                across the Niagara Region rank higher in local search results.
+                We understand the unique market dynamics, local competition, and
+                search patterns specific to our area. Our strategies include
+                local citation building, Google Business Profile optimization,
+                and location-specific content that helps your business appear
+                when customers search for services nearby.
               </p>
 
               <h3>
-                How long does it take to see results from SEO St. Catharines
-                campaigns?
+                How long does it take to see results from local SEO campaigns?
               </h3>
               <p>
-                Most SEO St. Catharines clients start seeing initial
-                improvements in search visibility within 3-6 months, with
-                significant results typically appearing by 6-12 months. The
-                timeline depends on factors like your current website
-                performance, competition level, and the keywords you're
-                targeting. Our proven SEO process includes continuous
-                optimization and transparent reporting, so you'll see steady
-                progress as we work to improve your rankings in St. Catharines
-                and surrounding areas.
+                Most clients start seeing initial improvements in search
+                visibility within 3-6 months, with significant results typically
+                appearing by 6-12 months. The timeline depends on factors like
+                your current website performance, competition level, and the
+                keywords you're targeting. Our proven process includes
+                continuous optimization and transparent reporting, so you'll see
+                steady progress as we work to improve your local rankings.
               </p>
 
               <h3>
-                Can small businesses in Niagara Falls compete with larger
-                companies through SEO?
+                Can small businesses compete with larger companies through SEO?
               </h3>
               <p>
-                Absolutely! SEO Niagara Falls strategies are particularly
-                effective for small businesses because they focus on local
-                search optimization where you can outrank larger competitors. By
-                targeting location-specific keywords like "services near Niagara
-                Falls" and optimizing for local search intent, small businesses
-                often achieve better visibility than big corporations. Our
-                affordable SEO solutions are designed specifically to help small
-                businesses compete effectively in their local markets.
+                Absolutely! Local SEO strategies are particularly effective for
+                small businesses because they focus on local search optimization
+                where you can outrank larger competitors. By targeting
+                location-specific keywords and optimizing for local search
+                intent, small businesses often achieve better visibility than
+                big corporations. Our affordable solutions are designed
+                specifically to help small businesses compete effectively in
+                their local markets.
               </p>
 
               <h3>
-                What's included in your SEO Niagara audit and strategy
-                development?
+                What's included in your SEO audit and strategy development?
               </h3>
               <p>
-                Our comprehensive SEO Niagara audit includes technical website
-                analysis, keyword research for St. Catharines and Niagara Falls
-                markets, competitor analysis, content evaluation, and local SEO
-                assessment. We examine your current Google Business Profile,
-                local citations, backlink profile, and site performance. Based
-                on these findings, we develop a customized SEO strategy that
-                addresses your specific challenges and opportunities in the
-                Niagara Region.
+                Our comprehensive audit includes technical website analysis,
+                local keyword research, competitor analysis, content evaluation,
+                and local SEO assessment. We examine your current Google
+                Business Profile, local citations, backlink profile, and site
+                performance. Based on these findings, we develop a customized
+                strategy that addresses your specific challenges and
+                opportunities in the region.
               </p>
 
-              <h3>
-                How do you measure the success of SEO St. Catharines campaigns?
-              </h3>
+              <h3>How do you measure the success of local SEO campaigns?</h3>
               <p>
-                We track multiple metrics to measure SEO St. Catharines success,
-                including search rankings for targeted keywords, organic website
-                traffic growth, local visibility improvements, and most
-                importantly, lead generation and conversions. Our transparent
-                reporting shows you exactly how your website is performing,
-                which keywords are driving traffic, and how many potential
-                customers are finding your business through search. We provide
-                detailed monthly reports with clear ROI measurements.
+                We track multiple metrics to measure success, including search
+                rankings for targeted keywords, organic website traffic growth,
+                local visibility improvements, and most importantly, lead
+                generation and conversions. Our transparent reporting shows you
+                exactly how your website is performing, which keywords are
+                driving traffic, and how many potential customers are finding
+                your business through search. We provide detailed monthly
+                reports with clear ROI measurements.
               </p>
 
-              <h3>
-                Do you guarantee first-page rankings for SEO Niagara Falls
-                keywords?
-              </h3>
+              <h3>Do you guarantee first-page rankings for local keywords?</h3>
               <p>
                 While we can't guarantee specific rankings (as search engines
                 constantly update their algorithms), we do guarantee our
                 commitment to improving your visibility through proven SEO
-                Niagara Falls strategies. Our track record shows consistent
-                success helping businesses achieve first-page rankings for their
-                target keywords. We focus on sustainable, white-hat SEO
-                techniques that build long-term visibility rather than quick
-                fixes that might get penalized by Google.
+                strategies. Our track record shows consistent success helping
+                businesses achieve first-page rankings for their target
+                keywords. We focus on sustainable, white-hat techniques that
+                build long-term visibility rather than quick fixes that might
+                get penalized by Google.
               </p>
 
               <h3>
-                What's the difference between SEO and local SEO for Niagara
+                What's the difference between SEO and local SEO for area
                 businesses?
               </h3>
               <p>
                 Traditional SEO focuses on ranking for broad keywords nationally
-                or globally, while local SEO Niagara targets location-specific
-                searches like "SEO company near me" or "St. Catharines SEO
-                services." Local SEO includes optimizing your Google Business
-                Profile, building local citations, managing online reviews, and
-                creating location-based content. For Niagara businesses serving
-                local customers, local SEO is typically more valuable as it
-                helps you appear in Google's Local Pack and Maps results.
+                or globally, while local SEO targets location-specific searches
+                like "SEO company near me" or regional service searches. Local
+                SEO includes optimizing your Google Business Profile, building
+                local citations, managing online reviews, and creating
+                location-based content. For businesses serving local customers,
+                local SEO is typically more valuable as it helps you appear in
+                Google's Local Pack and Maps results.
               </p>
 
-              <h3>
-                How much do SEO services cost for businesses in St. Catharines
-                and Niagara Falls?
-              </h3>
+              <h3>How much do SEO services cost for local businesses?</h3>
               <p>
-                SEO St. Catharines and SEO Niagara Falls pricing varies based on
-                your business size, competition level, and specific goals. We
-                offer affordable SEO packages starting from basic local
-                optimization to comprehensive enterprise solutions. Our
-                transparent pricing includes no hidden fees, and we provide
+                Pricing varies based on your business size, competition level,
+                and specific goals. We offer affordable packages starting from
+                basic local optimization to comprehensive enterprise solutions.
+                Our transparent pricing includes no hidden fees, and we provide
                 customized quotes based on your specific needs. We believe in
                 delivering exceptional value, and many of our clients see a
-                positive ROI within the first year of their SEO investment.
+                positive ROI within the first year of their investment.
               </p>
             </Col>
           </Row>
