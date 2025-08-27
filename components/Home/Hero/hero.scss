@@ -85,7 +85,7 @@
   background: linear-gradient($main-dark-grey, transparent),
     linear-gradient(to top left, $glow-blue, transparent);
   background-blend-mode: screen;
-  padding: 220px 0px 120px 0px;
+  padding: 180px 0px 120px 0px;
   @include bp-tablet-sm {
     background-position: center center;
     text-align: center;
@@ -101,6 +101,10 @@
   p {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     @include bp-tablet-sm {
       margin-bottom: 0;
     }

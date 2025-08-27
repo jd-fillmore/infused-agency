@@ -8,8 +8,6 @@ import Nav from "../../components/Nav/nav";
 import Hero from "../../components/Home/Hero/hero";
 import Footer from "../../components/Footer/footer";
 
-import flatRockLogo from "../../src/img/niagara-seo-company.png";
-
 import Link from "next/link";
 import Image from "next/image";
 import best from "../../src/img/awards.png";
@@ -22,7 +20,16 @@ import infused from "../../src/img/infused-agency-seo-niagara.png";
 import check from "../../src/img/check.png";
 import results from "../../src/img/seo-agency-st-catharines.png";
 import reviews from "../../src/img/seo-niagara-reviews.png";
-import clients from "../../src/img/seo-niagara.search-engine-optimization-agency-st-catharines.png";
+import affiliate1 from "../../src/img/aff-google-partner.jpg";
+import affiliate2 from "../../src/img/aff-niagara-chamber.jpg";
+import affiliate3 from "../../src/img/aff-three-best-rated.jpg";
+import affiliate4 from "../../src/img/aff-good-firms.jpg";
+import affiliate5 from "../../src/img/aff-up-city.jpg";
+import affiliate6 from "../../src/img/aff-google-reviews.jpg";
+import feat1 from "../../src/img/feat-suk-law.png";
+import feat2 from "../../src/img/feat-flat-rock.png";
+import feat3 from "../../src/img/feat-fred.png";
+import feat4 from "../../src/img/feat-uphi.png";
 
 const Home = ({ latestPosts }) => {
   return (
@@ -188,14 +195,31 @@ const Home = ({ latestPosts }) => {
       </Head>
       <Nav />
       <Hero />
-      <section className="affilliates">
+      <section className="affilliates text-center pd-top-40 pd-btm-40">
         <Container>
           <Row>
-            <h3>
-              {" "}
-              Google Partner, Upcity, SEMrush / Ahrefs / SurferSEO, TrustPilot /
-              Google Reviews, 3 best rated
-            </h3>
+            <Col lg="2">
+              <Image unoptimized src={affiliate1} alt="google partner" />
+            </Col>
+            <Col lg="2">
+              <Image
+                unoptimized
+                src={affiliate2}
+                alt="niagara chamber of commerce"
+              />
+            </Col>
+            <Col lg="2">
+              <Image unoptimized src={affiliate3} alt="three best rated" />
+            </Col>
+            <Col lg="2">
+              <Image unoptimized src={affiliate4} alt="good firms" />
+            </Col>
+            <Col lg="2">
+              <Image unoptimized src={affiliate5} alt="upcity" />
+            </Col>
+            <Col lg="2">
+              <Image unoptimized src={affiliate6} alt="google reviews" />
+            </Col>
           </Row>
         </Container>
       </section>
@@ -211,19 +235,19 @@ const Home = ({ latestPosts }) => {
           </Row>
           <Row className="text-center">
             <Col lg="3">
-              <h3>Suk Law</h3>
+              <Image unoptimized src={feat1} alt="suk law" />
             </Col>
             <Col lg="3">
-              <h3>Flat Rock</h3>
+              <Image unoptimized src={feat2} alt="flat rock" />
             </Col>
             <Col lg="3">
-              <h3>Fred's Concrete</h3>
+              <Image unoptimized src={feat3} alt="fred's concrete" />
             </Col>
             <Col lg="3">
-              <h3>UpHi Cannabis</h3>
+              <Image unoptimized src={feat4} alt="uphi cannabis" />
             </Col>
           </Row>
-          <Row className="text-center pd-top-40">
+          {/* <Row className="text-center pd-top-40">
             <Col lg="3">
               <h3>KD Flowers</h3>
             </Col>
@@ -236,7 +260,7 @@ const Home = ({ latestPosts }) => {
             <Col lg="3">
               <h3>Trillium Wellness</h3>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </section>
 
