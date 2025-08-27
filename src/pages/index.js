@@ -24,12 +24,16 @@ import affiliate1 from "../../src/img/aff-google-partner.jpg";
 import affiliate2 from "../../src/img/aff-niagara-chamber.jpg";
 import affiliate3 from "../../src/img/aff-three-best-rated.jpg";
 import affiliate4 from "../../src/img/aff-good-firms.jpg";
-import affiliate5 from "../../src/img/aff-up-city.jpg";
+import affiliate5 from "../../src/img/aff-design-rush.png";
 import affiliate6 from "../../src/img/aff-google-reviews.jpg";
 import feat1 from "../../src/img/feat-suk-law.png";
 import feat2 from "../../src/img/feat-flat-rock.png";
 import feat3 from "../../src/img/feat-fred.png";
 import feat4 from "../../src/img/feat-uphi.png";
+import feat5 from "../../src/img/feat-kd.png";
+import feat6 from "../../src/img/feat-delta.png";
+import feat7 from "../../src/img/feat-brandi.png";
+import feat8 from "../../src/img/feat-jerry.png";
 
 const Home = ({ latestPosts }) => {
   return (
@@ -215,7 +219,16 @@ const Home = ({ latestPosts }) => {
               <Image unoptimized src={affiliate4} alt="good firms" />
             </Col>
             <Col lg="2">
-              <Image unoptimized src={affiliate5} alt="upcity" />
+              <a
+                href="https://www.designrush.com/agency/profile/infused-agency"
+                target="_blank"
+              >
+                <Image
+                  unoptimized
+                  src={affiliate5}
+                  alt="Infused Agency's rating on SEO Agency Listing by DesignRush, the industry-leading B2B Marketplace connecting brands with agencies"
+                />
+              </a>
             </Col>
             <Col lg="2">
               <Image unoptimized src={affiliate6} alt="google reviews" />
@@ -225,7 +238,7 @@ const Home = ({ latestPosts }) => {
       </section>
       <section className="trusted pd-top-80 pd-btm-80">
         <Container>
-          <Row className="text-center">
+          <Row className="text-center pd-btm-20">
             <Col lg="12">
               <h2>
                 Trusted By <span>Niagara Businesses</span>
@@ -247,20 +260,20 @@ const Home = ({ latestPosts }) => {
               <Image unoptimized src={feat4} alt="uphi cannabis" />
             </Col>
           </Row>
-          {/* <Row className="text-center pd-top-40">
+          <Row className="text-center pd-top-40">
             <Col lg="3">
-              <h3>KD Flowers</h3>
+              <Image unoptimized src={feat5} alt="kd flowers" />
             </Col>
             <Col lg="3">
-              <h3>Delta Energy</h3>
+              <Image unoptimized src={feat6} alt="delta energy solutions" />
             </Col>
             <Col lg="3">
-              <h3>Brandi May</h3>
+              <Image unoptimized src={feat7} alt="brandi may psychotherapy" />
             </Col>
             <Col lg="3">
-              <h3>Trillium Wellness</h3>
+              <Image unoptimized src={feat8} alt="jerry's insulating" />
             </Col>
-          </Row> */}
+          </Row>
         </Container>
       </section>
 
