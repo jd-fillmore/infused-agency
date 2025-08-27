@@ -359,7 +359,7 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
-      <section className="process">
+      {/* <section className="process">
         <Container>
           <Row>
             <Col lg="12">
@@ -367,7 +367,7 @@ const Home = ({ latestPosts }) => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       <section className="home-services">
         <div className="container">
