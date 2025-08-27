@@ -34,6 +34,8 @@ import feat5 from "../../src/img/feat-kd.png";
 import feat6 from "../../src/img/feat-delta.png";
 import feat7 from "../../src/img/feat-brandi.png";
 import feat8 from "../../src/img/feat-jerry.png";
+import data1 from "../../src/img/gsc-flat.png";
+import data2 from "../../src/img/gsc-freds.png";
 
 const Home = ({ latestPosts }) => {
   return (
@@ -297,10 +299,40 @@ const Home = ({ latestPosts }) => {
                   alt="Flat Rock Cellars SEO Results"
                 />
                 <div className="card">
+                  <div className="text-center pd-btm-20">
+                    <svg
+                      width="125"
+                      height="25"
+                      viewBox="0 0 125 25"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <symbol id="star" viewBox="0 0 100 100">
+                          <polygon
+                            fill="#e2c044"
+                            points="50,8 61,38 94,38 66,58 76,90 50,71 24,90 34,58 6,38 39,38"
+                          />
+                        </symbol>
+                      </defs>
+
+                      <use href="#star" x="0" y="0" width="25" height="25" />
+                      <use href="#star" x="25" y="0" width="25" height="25" />
+                      <use href="#star" x="50" y="0" width="25" height="25" />
+                      <use href="#star" x="75" y="0" width="25" height="25" />
+                      <use href="#star" x="100" y="0" width="25" height="25" />
+                    </svg>
+                  </div>
+                  <h3 class="text-center">After working with us:</h3>
                   <div className="text-center stats">
                     <h3>+550%</h3>
                     <p>Local Visibility</p>
                   </div>
+                  <Image
+                    className="img-fluid"
+                    unoptimized
+                    src={data1}
+                    alt="flat rock cellars niagara seo"
+                  />
                 </div>
               </Col>
               <Col lg="6">
@@ -312,10 +344,40 @@ const Home = ({ latestPosts }) => {
                   alt="Delta Energy Solutions SEO Results"
                 />
                 <div className="card">
+                  <div className="text-center pd-btm-20">
+                    <svg
+                      width="125"
+                      height="25"
+                      viewBox="0 0 125 25"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <symbol id="star" viewBox="0 0 100 100">
+                          <polygon
+                            fill="#e2c044"
+                            points="50,8 61,38 94,38 66,58 76,90 50,71 24,90 34,58 6,38 39,38"
+                          />
+                        </symbol>
+                      </defs>
+
+                      <use href="#star" x="0" y="0" width="25" height="25" />
+                      <use href="#star" x="25" y="0" width="25" height="25" />
+                      <use href="#star" x="50" y="0" width="25" height="25" />
+                      <use href="#star" x="75" y="0" width="25" height="25" />
+                      <use href="#star" x="100" y="0" width="25" height="25" />
+                    </svg>
+                  </div>
+                  <h3 class="text-center">After working with us:</h3>
                   <div className="text-center stats">
                     <h3>+670%</h3>
                     <p>Local Visibility</p>
                   </div>
+                  <Image
+                    className="img-fluid"
+                    unoptimized
+                    src={data1}
+                    alt="delta energy solutions niagara seo"
+                  />
                 </div>
               </Col>
             </Row>
@@ -372,11 +434,14 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
-      {/* <section className="process">
+      {/* <section className="process pd-top-80">
         <Container>
-          <Row>
+          <Row className="text-center">
             <Col lg="12">
-              <h2>Process</h2>
+              <h2>
+                How Search Engine Optimization Works <br />
+                At Infused Agency
+              </h2>
             </Col>
           </Row>
         </Container>
