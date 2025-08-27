@@ -46,136 +46,325 @@ const Home = ({ latestPosts }) => {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Infused Agency",
-              url: "https://infused.agency",
-              image:
-                "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
-              description:
-                "Infused Agency is an SEO company in Niagara, Ontario. We specialize in Local SEO for companies in Niagara, Niagara-on-the-Lake, Niagara Falls, and St. Catharines.",
-              priceRange: "$$",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "73 Alexandra Blvd",
-                addressLocality: "St. Catharines",
-                addressRegion: "ON",
-                postalCode: "L2P1K2",
-                addressCountry: "CA",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "43.197109",
-                longitude: "-79.243362",
-              },
-              telephone: "(905) 933-3115",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "33",
-              },
-              review: [
+              "@graph": [
                 {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
+                  "@type": "Place",
+                  "@id": "https://infused.agency/#place",
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: "43.197109",
+                    longitude: "-79.243362",
                   },
-                  author: {
-                    "@type": "Person",
-                    name: "JD Fillmore",
+                  hasMap: "https://maps.app.goo.gl/efsLRm9sTqUN7HhG7",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "73 Alexandra Blvd",
+                    addressLocality: "St. Catharines",
+                    addressRegion: "ON",
+                    postalCode: "L2P1K2",
+                    addressCountry: "CA",
                   },
-                  reviewBody:
-                    "Excellent SEO service that helped improve our local visibility significantly.",
                 },
                 {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
+                  "@type": ["LocalBusiness", "Organization"],
+                  "@id": "https://infused.agency/#organization",
+                  name: "Infused Agency",
+                  url: "https://infused.agency",
+                  sameAs: [
+                    "https://www.facebook.com/infused.agency",
+                    "https://twitter.com/InfusedAgency",
+                    "https://linkedin.com/company/infused-agency",
+                    "https://instagram.com/infusedagency",
+                    "https://www.mapquest.com/ca/ontario/infused-agency-456469990",
+                    "https://www.yellowpages.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
+                    "https://gncc.ca/members-and-benefits/member-directory/#/action/Listing/value/41026/cid/1185/id/1002901/Infused-Agency",
+                    "https://www.goodfirms.co/company/infused-agency",
+                    "https://www.pagesjaunes.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
+                    "https://about.me/infused0",
+                    "https://www.zoominfo.com/c/infused-agency/447274660",
+                    "https://www.hotfrog.ca/company/9a5d8745ba57d4499b16df3d144dae56/infused-agency/st-catharines/web-design",
+                    "https://www.localhomeservicepros.com/ontario/st-catharines/website-design/infused-agency",
+                    "https://www.getlisteduae.com/listings/infused-agency",
+                    "https://www.canadianplanet.net/infused-agency-niagara-F1109C6001ED043",
+                  ],
+                  email: "info@infused.agency",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "73 Alexandra Blvd",
+                    addressLocality: "St. Catharines",
+                    addressRegion: "ON",
+                    postalCode: "L2P1K2",
+                    addressCountry: "CA",
                   },
-                  author: {
-                    "@type": "Person",
-                    name: "Alice Smith",
+                  logo: {
+                    "@type": "ImageObject",
+                    "@id": "https://infused.agency/#logo",
+                    url:
+                      "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+                    contentUrl:
+                      "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+                    caption: "Infused Agency",
+                    inLanguage: "en-US",
+                    width: "300",
+                    height: "100",
                   },
-                  reviewBody:
-                    "Professional and effective SEO services. Highly recommended!",
+                  priceRange: "$$",
+                  openingHours: ["Mo-Fr 09:00-17:00", "Sa 10:00-14:00"],
+                  location: {
+                    "@id": "https://infused.agency/#place",
+                  },
+                  image: {
+                    "@id": "https://infused.agency/#logo",
+                  },
+                  telephone: "+1-905-933-3115",
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "4.9",
+                    reviewCount: "33",
+                  },
+                  review: [
+                    {
+                      "@type": "Review",
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                      },
+                      author: {
+                        "@type": "Person",
+                        name: "JD Fillmore",
+                      },
+                      reviewBody:
+                        "Excellent SEO service that helped improve our local visibility significantly.",
+                    },
+                    {
+                      "@type": "Review",
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "5",
+                      },
+                      author: {
+                        "@type": "Person",
+                        name: "Alice Smith",
+                      },
+                      reviewBody:
+                        "Professional and effective SEO services. Highly recommended!",
+                    },
+                    {
+                      "@type": "Review",
+                      reviewRating: {
+                        "@type": "Rating",
+                        ratingValue: "4",
+                      },
+                      author: {
+                        "@type": "Person",
+                        name: "John Doe",
+                      },
+                      reviewBody:
+                        "Great service and support throughout our SEO campaign.",
+                    },
+                  ],
                 },
                 {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "4",
+                  "@type": "WebSite",
+                  "@id": "https://infused.agency/#website",
+                  url: "https://infused.agency",
+                  name: "Infused Agency",
+                  alternateName: "Infused",
+                  publisher: {
+                    "@id": "https://infused.agency/#organization",
                   },
-                  author: {
-                    "@type": "Person",
-                    name: "John Doe",
+                  inLanguage: "en-US",
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: "https://infused.agency/?s={search_term_string}",
+                    "query-input": "required name=search_term_string",
                   },
-                  reviewBody:
-                    "Great service and support throughout our SEO campaign.",
                 },
-              ],
-              areaServed: {
-                "@type": "GeoCircle",
-                geoMidpoint: {
-                  "@type": "GeoCoordinates",
-                  latitude: "43.197109",
-                  longitude: "-79.243362",
-                },
-                geoRadius: "50000",
-              },
-              hasMap: "https://maps.app.goo.gl/efsLRm9sTqUN7HhG7",
-              serviceArea: {
-                "@type": "GeoCircle",
-                geoMidpoint: {
-                  "@type": "GeoCoordinates",
-                  latitude: "43.197109",
-                  longitude: "-79.243362",
-                },
-                geoRadius: "50000",
-              },
-              openingHours: ["Mo-Fr 09:00-17:00", "Sa 10:00-14:00"],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "Customer Service",
-                telephone: "+1-905-933-3115",
-                email: "info@infused.agency",
-              },
-              sameAs: [
-                "https://www.facebook.com/infused.agency",
-                "https://twitter.com/InfusedAgency",
-                "https://linkedin.com/company/infused-agency",
-                "https://instagram.com/infusedagency",
-                "https://www.mapquest.com/ca/ontario/infused-agency-456469990",
-                "https://www.yellowpages.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html",
-                "https://gncc.ca/members-and-benefits/member-directory/#/action/Listing/value/41026/cid/1185/id/1002901/Infused-Agency",
-                "https://www.goodfirms.co/company/infused-agency",
-                "https://www.pagesjaunes.ca/bus/Ontario/St-Catharines/Infused-Agency/101902875.html?what=Web+Design+%26+Development&where=Beamsville+ON&useContext=true",
-                "https://about.me/infused0",
-                "https://www.zoominfo.com/c/infused-agency/447274660",
-                "https://www.hotfrog.ca/company/9a5d8745ba57d4499b16df3d144dae56/infused-agency/st-catharines/web-design",
-                "https://www.localhomeservicepros.com/ontario/st-catharines/website-design/infused-agency",
-                "https://www.getlisteduae.com/listings/infused-agency",
-                "https://www.canadianplanet.net/infused-agency-niagara-F1109C6001ED043",
-              ],
-              paymentAccepted: ["Cash", "Credit Card", "Debit Card"],
-              makesOffer: [
                 {
-                  "@type": "Service",
-                  name: "Local SEO",
+                  "@type": "WebPage",
+                  "@id": "https://infused.agency/#webpage",
+                  url: "https://infused.agency/",
+                  name:
+                    "SEO Company Niagara Falls, St. Catharines | Infused Agency",
+                  datePublished: "2023-01-01T09:00:00+00:00",
+                  dateModified: "2025-08-27T10:00:00+00:00",
+                  about: {
+                    "@id": "https://infused.agency/#organization",
+                  },
+                  isPartOf: {
+                    "@id": "https://infused.agency/#website",
+                  },
+                  primaryImageOfPage: {
+                    "@id":
+                      "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+                  },
+                  inLanguage: "en-US",
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://infused.agency/about/",
+                  name: "Infused Agency",
                   description:
-                    "Improve your local search visibility and attract more customers.",
-                },
-                {
-                  "@type": "Service",
-                  name: "Web Design",
-                  description:
-                    "Custom web design services to create a unique online presence.",
-                },
-                {
-                  "@type": "Service",
-                  name: "Conversion Optimization",
-                  description:
-                    "Optimize your website to convert visitors into customers.",
+                    "Infused Agency is a premier SEO company serving Niagara, St. Catharines, Niagara Falls, and Niagara-on-the-Lake. We specialize in local SEO services that help businesses improve their online visibility and attract more customers. Our expert team provides comprehensive digital marketing solutions including search engine optimization, web design, and local search marketing to grow your business in the Niagara region.",
+                  telephone: "+1-905-933-3115",
+                  url: "https://infused.agency",
+                  logo:
+                    "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+                  hasMap: "https://maps.app.goo.gl/efsLRm9sTqUN7HhG7",
+                  currenciesAccepted: "CAD, USD",
+                  paymentAccepted:
+                    "Cash, Credit Card, Debit Card, Visa, MC, Amex",
+                  additionalProperty:
+                    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                  priceRange: "$$",
+                  openingHours:
+                    "Mo 0900-1700 Tu 0900-1700 We 0900-1700 Th 0900-1700 Fr 0900-1700 Sa 1000-1400",
+                  disambiguatingDescription:
+                    "Founded in St. Catharines, ON, Infused Agency specializes in local SEO services for businesses throughout the Niagara region. We help companies in Niagara Falls, St. Catharines, and Niagara-on-the-Lake improve their online presence through proven SEO strategies and digital marketing solutions.",
+                  alternateName:
+                    "Infused SEO Agency, Infused Digital Marketing",
+                  foundingDate: "2019",
+                  address: {
+                    "@type": "PostalAddress",
+                    postalCode: "L2P1K2",
+                    addressRegion: "ON",
+                    addressCountry: "CA",
+                    streetAddress: "73 Alexandra Blvd",
+                    addressLocality: "St. Catharines",
+                  },
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    contactType: "Customer Service",
+                    telephone: "+1-905-933-3115",
+                    email: "info@infused.agency",
+                    areaServed: ["ON", "CA"],
+                  },
+                  image: {
+                    "@type": "ImageObject",
+                    name: "Infused Agency",
+                    creator: "Infused Agency",
+                    contentLocation: "St. Catharines, ON",
+                    description:
+                      "Premier SEO company serving Niagara region with local search optimization services",
+                    url:
+                      "https://infused.agency/_next/static/media/infused-logo.6971b904.png",
+                  },
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    name: "Infused Agency",
+                    postalCode: "L2P1K2",
+                    latitude: "43.197109",
+                    longitude: "-79.243362",
+                    description:
+                      "Our office location in St. Catharines serving the Niagara region.",
+                  },
+                  areaServed: [
+                    {
+                      "@type": "City",
+                      name: "St. Catharines",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Niagara Falls",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Niagara-on-the-Lake",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Welland",
+                    },
+                    {
+                      "@type": "City",
+                      name: "Fort Erie",
+                    },
+                    {
+                      "@type": "AdministrativeArea",
+                      name: "Niagara Region, Ontario",
+                    },
+                  ],
+                  serviceArea: {
+                    "@type": "GeoCircle",
+                    geoMidpoint: {
+                      "@type": "GeoCoordinates",
+                      latitude: "43.197109",
+                      longitude: "-79.243362",
+                    },
+                    geoRadius: "50000",
+                  },
+                  additionalType: [
+                    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                    "http://productontology.org/id/Search_engine_optimization",
+                    "https://en.wikipedia.org/wiki/Digital_marketing",
+                    "http://productontology.org/id/Digital_marketing",
+                    "https://en.wikipedia.org/wiki/Web_design",
+                    "http://productontology.org/id/Web_design",
+                  ],
+                  mainEntityOfPage: {
+                    "@id": "https://infused.agency/#webpage",
+                  },
+                  knowsAbout: [
+                    "SEO Niagara",
+                    "SEO St. Catharines",
+                    "SEO Niagara Falls",
+                    "Local SEO Services",
+                    "Search Engine Optimization",
+                    "Digital Marketing Niagara",
+                    "Web Design Niagara",
+                    "Local Search Marketing",
+                  ],
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "Infused Agency Services",
+                    "@id": "https://infused.agency",
+                    additionalType: "http://www.productontology.org/id/website",
+                    url: "https://infused.agency",
+                    itemListElement: [
+                      {
+                        "@type": "Offer",
+                        itemOffered: [
+                          {
+                            "@type": "Service",
+                            name: "Local SEO Services",
+                            "@id": "https://infused.agency/seo/",
+                            url: "https://infused.agency/seo/",
+                            description:
+                              "Comprehensive local SEO services for businesses in Niagara, St. Catharines, and Niagara Falls. We help improve your search engine rankings and local visibility to attract more customers.",
+                          },
+                          {
+                            "@type": "Service",
+                            name: "SEO Niagara",
+                            "@id": "https://infused.agency/seo-niagara/",
+                            url: "https://infused.agency/seo-niagara/",
+                            description:
+                              "Specialized SEO services for Niagara region businesses. Our proven strategies help companies rank higher in local search results.",
+                          },
+                          {
+                            "@type": "Service",
+                            name: "Web Design & Development",
+                            "@id": "https://infused.agency/web-design/",
+                            url: "https://infused.agency/web-design/",
+                            description:
+                              "Professional web design and development services creating SEO-optimized websites that convert visitors into customers.",
+                          },
+                          {
+                            "@type": "Service",
+                            name: "Digital Marketing",
+                            "@id": "https://infused.agency/digital-marketing/",
+                            url: "https://infused.agency/digital-marketing/",
+                            description:
+                              "Complete digital marketing solutions including SEO, social media marketing, and online advertising for Niagara businesses.",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "4.9",
+                    reviewCount: "33",
+                  },
                 },
               ],
             }),
