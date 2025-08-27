@@ -83,17 +83,9 @@
 
 .main-hero {
   background: linear-gradient($main-dark-grey, transparent),
-    linear-gradient(to top left, $glow-blue, transparent),
-    url("../../../src/img/niagara-falls.webp");
+    linear-gradient(to top left, $glow-blue, transparent);
   background-blend-mode: screen;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 220px 0px 120px 0px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   @include bp-tablet-sm {
     background-position: center center;
     text-align: center;
@@ -109,7 +101,6 @@
   p {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: fit-content;
     @include bp-tablet-sm {
       margin-bottom: 0;
     }
@@ -177,14 +168,14 @@
     color: #fff !important;
   }
   h1 {
-    padding: 30px 0px 0px 0px;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 60px;
     line-height: 1.6;
+    margin-bottom: -20px;
     @include bp-tablet-sm {
       padding: 10px 0px 0px 0px;
       line-height: 1.3;
       margin-bottom: 20px;
+      font-size: 30px;
     }
   }
   h2 {

@@ -8,6 +8,8 @@ import Nav from "../../components/Nav/nav";
 import Hero from "../../components/Home/Hero/hero";
 import Footer from "../../components/Footer/footer";
 
+import flatRockLogo from "../../src/img/niagara-seo-company.png";
+
 import Link from "next/link";
 import Image from "next/image";
 import best from "../../src/img/awards.png";
@@ -167,11 +169,7 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>
-          SEO Niagara & St. Catharines - Local SEO Agency, Search Engine
-          Optimization Expert, SEO Services - Best SEO Consultant, Specialist &
-          Copywriter for Small Business Growth
-        </title>
+        <title>SEO Niagara Falls | SEO Company St. Catharines</title>
         <meta
           name="description"
           content="Top-rated SEO agency in Niagara & St. Catharines. Expert search engine optimization, local SEO, and digital marketing services. Boost your rankings today!"
@@ -190,6 +188,57 @@ const Home = ({ latestPosts }) => {
       </Head>
       <Nav />
       <Hero />
+      <section className="affilliates">
+        <Container>
+          <Row>
+            <h3>
+              {" "}
+              Google Partner, Upcity, SEMrush / Ahrefs / SurferSEO, TrustPilot /
+              Google Reviews, 3 best rated
+            </h3>
+          </Row>
+        </Container>
+      </section>
+      <section className="trusted pd-top-80 pd-btm-80">
+        <Container>
+          <Row className="text-center">
+            <Col lg="12">
+              <h2>
+                Trusted By <span>Niagara Businesses</span>
+              </h2>
+              <p>For over 10 years</p>
+            </Col>
+          </Row>
+          <Row className="text-center">
+            <Col lg="3">
+              <h3>Suk Law</h3>
+            </Col>
+            <Col lg="3">
+              <h3>Flat Rock</h3>
+            </Col>
+            <Col lg="3">
+              <h3>Fred's Concrete</h3>
+            </Col>
+            <Col lg="3">
+              <h3>UpHi Cannabis</h3>
+            </Col>
+          </Row>
+          <Row className="text-center pd-top-40">
+            <Col lg="3">
+              <h3>KD Flowers</h3>
+            </Col>
+            <Col lg="3">
+              <h3>Delta Energy</h3>
+            </Col>
+            <Col lg="3">
+              <h3>Brandi May</h3>
+            </Col>
+            <Col lg="3">
+              <h3>Trillium Wellness</h3>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
       <section className="home-top-web">
         <div className="container">
@@ -286,22 +335,11 @@ const Home = ({ latestPosts }) => {
         </div>
       </section>
 
-      <section className="pd-top-80 text-center">
+      <section className="process">
         <Container>
           <Row>
             <Col lg="12">
-              <h2>
-                Ready to <span>Grow Your Business</span> With SEO in Niagara?
-              </h2>
-              <p>
-                Take the first step toward more leads, higher rankings, and real
-                growth. Whether you’re in St. Catharines, Niagara Falls, or
-                anywhere across Niagara, our SEO services are built to deliver
-                results.
-              </p>
-              <Link href="/get-a-quote">
-                <button>Get Free Quote</button>
-              </Link>
+              <h2>Process</h2>
             </Col>
           </Row>
         </Container>
@@ -402,27 +440,6 @@ const Home = ({ latestPosts }) => {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="bg-lighter-blue pd-top-80 pd-btm-80 text-center">
-        <Container>
-          <Row>
-            <Col lg="12">
-              <h2>
-                Get <span>More Visibility In Niagara</span> Now!
-              </h2>
-              <p>
-                Take the first step toward more leads, higher rankings, and real
-                growth. Whether you’re in St. Catharines, Niagara Falls, or
-                anywhere across Niagara, our SEO services are built to deliver
-                results.
-              </p>
-              <Link href="/get-a-quote">
-                <button>Get Free Quote</button>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
       </section>
 
       <section className="why pd-top-80">
