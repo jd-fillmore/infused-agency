@@ -797,7 +797,7 @@ const Home = ({ latestPosts }) => {
                 SEO investment.
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45417.52960148656!2d-63.674096639718265!3d44.64618164437631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2ddc!2sCape Breton%2C%20NS!5e0!3m2!1sen!2sca!4v1756478437963!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705750.8372382144!2d-61.32948366903412!3d46.29316848909614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b681cb852711fed%3A0x3e1469e4521d2713!2sCape%20Breton%20Island!5e0!3m2!1sen!2sca!4v1756479300360!5m2!1sen!2sca"
                 width="100%"
                 height="450"
                 allowfullscreen=""
