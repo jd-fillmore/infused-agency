@@ -1,6 +1,13 @@
 @import "../../../src/pages/variables.scss";
 @import "../../../src/pages/breakpoints.scss";
 
+.seo-city-hero {
+  h1 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+
 .alberta {
   background: linear-gradient($main-dark-grey, transparent),
     linear-gradient(to top left, $glow-blue, transparent),
@@ -75,6 +82,16 @@
   background: linear-gradient($main-dark-grey, transparent),
     linear-gradient(to top left, $glow-blue, transparent),
     url("../../../src/img/seo-for-therapists-quebec-hero.jpg") !important;
+  background-blend-mode: screen !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding: 220px 0px 120px 0px;
+}
+
+.manitoba {
+  background: linear-gradient($main-dark-grey, transparent),
+    linear-gradient(to top left, $glow-blue, transparent),
+    url("../../../src/img/seo-for-therapists-manitoba-hero.jpg") !important;
   background-blend-mode: screen !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;

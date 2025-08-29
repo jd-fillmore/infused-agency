@@ -46,7 +46,7 @@ const Home = ({ latestPosts }) => {
         />
       </Head>
       <Nav />
-      <section className=" toronto">
+      <section className="toronto seo-city-hero">
         <Container>
           <Row className="align-items-center">
             <Col lg="12">
