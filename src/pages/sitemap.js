@@ -74,6 +74,14 @@ export default function Sitemap() {
       name: "SEO for Therapists Winnipeg",
       url: "/seo/for-therapists-winnipeg",
     },
+    {
+      name: "SEO for Therapists Saskatchewan",
+      url: "/seo/for-therapists-saskatchewan",
+    },
+    {
+      name: "SEO for Therapists Saskatoon",
+      url: "/seo/for-therapists-saskatoon",
+    },
   ];
 
   return (
