@@ -82,6 +82,22 @@ export default function Sitemap() {
       name: "SEO for Therapists Saskatoon",
       url: "/seo/for-therapists-saskatoon",
     },
+    {
+      name: "SEO for Therapists Regina",
+      url: "/seo/for-therapists-regina",
+    },
+    {
+      name: "SEO for Therapists Nova Scotia",
+      url: "/seo/for-therapists-nova-scotia",
+    },
+    {
+      name: "SEO for Therapists Halifax",
+      url: "/seo/for-therapists-halifax",
+    },
+    {
+      name: "SEO for Therapists Cape Breton",
+      url: "/seo/for-therapists-cape-breton",
+    },
   ];
 
   return (
