@@ -65,7 +65,8 @@ const Home = ({ latestPosts }) => {
                 results, we don't just bring traffic — we help turn that traffic
                 into real appointments for your practice. Whether you're a
                 therapist in{" "}
-                <Link href="/seo/for-therapists-saskatoon">Saskatoon</Link> or
+                <Link href="/seo/for-therapists-saskatoon">Saskatoon</Link>,{" "}
+                <Link href="/seo/for-therapists-regina">Regina</Link> or
                 anywhere else in{" "}
                 <Link href="/seo/for-therapists-saskatchewan">
                   Saskatchewan
