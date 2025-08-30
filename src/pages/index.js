@@ -383,7 +383,7 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>Best SEO Company | Niagara Falls, St. Catharines</title>
+        <title>Niagara SEO | St. Catharines & Niagara Falls SEO Company</title>
         <meta
           name="description"
           content="Top-rated SEO agency in Niagara & St. Catharines. Expert search engine optimization, local SEO, and digital marketing services. Boost your rankings today!"
