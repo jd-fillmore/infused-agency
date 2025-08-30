@@ -110,6 +110,10 @@ export default function Sitemap() {
       name: "SEO for Therapists Fredericton",
       url: "/seo/for-therapists-fredericton",
     },
+    {
+      name: "SEO for Therapists New Brunswick",
+      url: "/seo/for-therapists-new-brunswick",
+    },
   ];
 
   return (
