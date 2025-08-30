@@ -114,6 +114,14 @@ export default function Sitemap() {
       name: "SEO for Therapists New Brunswick",
       url: "/seo/for-therapists-new-brunswick",
     },
+    {
+      name: "SEO for Therapists Newfoundland & Labrador",
+      url: "/seo/for-therapists-newfoundland-labrador",
+    },
+    {
+      name: "SEO for Therapists St. Johns",
+      url: "/seo/for-therapists-st-johns",
+    },
   ];
 
   return (
