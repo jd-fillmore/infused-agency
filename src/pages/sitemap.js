@@ -122,6 +122,10 @@ export default function Sitemap() {
       name: "SEO for Therapists St. Johns",
       url: "/seo/for-therapists-st-johns",
     },
+    {
+      name: "SEO for Solar Companies Phoenix",
+      url: "/seo/for-solar-companies-phoenix",
+    },
   ];
 
   return (

@@ -11,16 +11,11 @@ import Footer from "../../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-import results1 from "../../../src/img/seo-for-therapists-alberta-results.jpg";
-import test1 from "../../../src/img/seo-for-counsellors-alberta.png";
-import test2 from "../../../src/img/seo-for-alberta-psychotherapists.png";
-import test3 from "../../../src/img/seo-for-alberta-therapists.png";
-import results2 from "../../../src/img/seo-for-psychotherapists-alberta-results.jpg";
-import infused from "../../../src/img/seo-for-therapists-agency-alberta.png";
+import infused from "../../../src/img/solar-seo-services-phoenix.png";
 import check from "../../../src/img/check.png";
-import reviews from "../../../src/img/seo-for-therapists-alberta-reviews.png";
-import delta from "../../../src/img/niagara-seo-company-results.jpg";
-import data1 from "../../../src/img/gsc-flat.png";
+import reviews from "../../../src/img/seo-for-solar-business-phoenix.png";
+import delta from "../../../src/img/solar-seo-agency-phoenix.jpg";
+import data1 from "../../../src/img/seo-services-for-solar-companies-phoenix.png";
 
 const Home = ({ latestPosts }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -64,21 +59,9 @@ const Home = ({ latestPosts }) => {
                 companies in Phoenix, designed to improve search engine
                 rankings, drive targeted traffic, and convert visitors into real
                 inquiries. Whether you’re a solar business in{" "}
-                <Link href="/seo/for-solar-companies-phoenix">Phoenix</Link>,{" "}
-                <Link href="/seo/for-solar-companies-tucson">Tucson</Link>,{" "}
-                <Link href="/seo/for-solar-companies-mesa">Mesa</Link>,{" "}
-                <Link href="/seo/for-solar-companies-gilbert">Gilbert</Link>,{" "}
-                <Link href="/seo/for-solar-companies-chandler">Chandler</Link>,{" "}
-                <Link href="/seo/for-solar-companies-glendale">Glendale</Link>,{" "}
-                <Link href="/seo/for-solar-companies-scottsdale">
-                  Scottsdale
-                </Link>
-                , <Link href="/seo/for-solar-companies-peoria">Peoria</Link>,{" "}
-                <Link href="/seo/for-solar-companies-tempe">Tempe</Link>,{" "}
-                <Link href="/seo/for-solar-companies-surprise">Surprise</Link>{" "}
-                or anywhere else in{" "}
-                <Link href="/seo/for-solar-companies-arizona">Arizona</Link>,
-                we'll help your solar company get more visibility.
+                <Link href="/seo/for-solar-companies-phoenix">Phoenix</Link> or
+                surrounding areas, we'll help your solar company get more
+                visibility.
               </p>
 
               <Link href="/work">
@@ -220,6 +203,7 @@ const Home = ({ latestPosts }) => {
                 <hr />
                 <Image
                   className="img-fluid"
+                  style={{ width: "100%", height: "auto" }}
                   src={delta}
                   alt="SEO Solar Agency phoenix, solar seo services phoenix, seo for solar businesses phoenix, seo services for solar companies phoenix, seo for solar company phoenix"
                 />
@@ -281,15 +265,15 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Ready to <span>Grow Your Practice</span> With Therapy SEO in
-                Alberta?
+                Ready to <span>Grow Your Solar Business</span> Solar SEO in
+                Phoenix?
               </h2>
               <p>
-                Take the first step toward more clients, higher rankings, and
-                real growth. Whether you're a therapist, psychologist,
-                counsellor, or psychotherapist anywhere in Alberta, our SEO
-                services are built to deliver results for mental health
-                professionals.
+                Take the first step toward more leads, higher rankings, and
+                sustainable growth. Whether you’re a solar installer, renewable
+                energy provider, or established solar company in Phoenix, our
+                tailored Phoenix solar SEO services are designed to deliver real
+                results for businesses in the solar industry.
               </p>
               <Link href="/get-a-quote">
                 <button>Get Free Quote</button>
@@ -301,9 +285,9 @@ const Home = ({ latestPosts }) => {
 
       <section className="home-services">
         <div className="container">
-          <div className="row pd-btm-40">
+          <div className="row pd-top-40">
             <div className="col-lg-12 text-center">
-              <h2>Alberta SEO Services for Therapists</h2>
+              <h2>Phoenix SEO Services for Solar Companies</h2>
               <p>Get More Visibility</p>
             </div>
           </div>
@@ -314,12 +298,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research & Strategy</h2>
                 <p>
-                  At Infused Agency, our SEO Alberta specialists begin every
-                  campaign with detailed keyword research. We identify the most
-                  relevant and profitable search terms your potential clients
-                  are using across Alberta. By analyzing your website and
-                  competitors, we craft a data-driven SEO strategy designed to
-                  capture qualified traffic and deliver measurable results.
+                  At Infused Agency, our Phoenix solar SEO specialists start
+                  every campaign with in-depth keyword research. We identify the
+                  most relevant and profitable search terms that homeowners and
+                  businesses use when looking for solar solutions in Phoenix. By
+                  analyzing your website and your competitors, we create a
+                  data-driven SEO strategy designed to capture qualified traffic
+                  and deliver measurable results for your solar company.
                 </p>
               </div>
             </div>
@@ -327,12 +312,12 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Link Building</h2>
                 <p>
-                  A strong backlink profile is essential for higher rankings.
-                  Our Alberta SEO services include ethical link-building
-                  strategies that earn high-quality links from reputable
-                  websites. These authoritative backlinks boost your domain
-                  authority, build trust with search engines, and strengthen
-                  your overall online credibility.
+                  A strong backlink profile is essential for higher rankings and
+                  authority. Our SEO services for solar companies in Phoenix
+                  include ethical, white-hat link-building strategies that earn
+                  high-quality links from trusted websites. These authoritative
+                  backlinks boost your domain authority, improve search engine
+                  trust, and strengthen your overall online visibility.
                 </p>
               </div>
             </div>
@@ -340,13 +325,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Content is the foundation of effective SEO. Our Alberta
-                  content writing team creates engaging, SEO-friendly copy
-                  tailored to your mental health practice and specialties. From
-                  optimized blog posts to landing pages, we develop content that
-                  reflects your practice's voice, establishes expertise, and
-                  improves rankings for keywords like SEO Alberta psychologists
-                  and SEO Alberta counsellors.
+                  Content is the cornerstone of effective SEO. Our Phoenix
+                  content team creates engaging, SEO-friendly copy tailored
+                  specifically for solar companies. From optimized landing pages
+                  to educational blog posts, we develop content that reflects
+                  your company’s expertise, attracts potential customers, and
+                  improves rankings for targeted keywords like SEO for solar
+                  companies in Phoenix and solar SEO services Phoenix.
                 </p>
               </div>
             </div>
@@ -356,12 +341,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>On-Page SEO</h2>
                 <p>
-                  Our SEO Alberta experts optimize your website's structure,
-                  code, and content to ensure it performs at its best. We
-                  conduct in-depth audits, refine metadata, improve internal
-                  linking, and enhance site usability — all while aligning with
-                  Google's ranking factors. The result is a website that
-                  attracts both search engines and potential clients.
+                  Our Phoenix solar SEO experts optimize your website’s
+                  structure, code, and content to ensure maximum performance. We
+                  conduct comprehensive audits, refine metadata, improve
+                  internal linking, and enhance site usability — all while
+                  aligning with Google’s ranking factors. The result is a
+                  website that appeals to both search engines and your ideal
+                  solar customers.
                 </p>
               </div>
             </div>
@@ -369,13 +355,14 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  For mental health professionals in Alberta, local visibility
-                  is key. Infused Agency ensures your practice is optimized for
-                  local searches by improving your Google Business Profile,
+                  For solar businesses in Phoenix, local visibility is
+                  everything. Infused Agency ensures your company is optimized
+                  for local searches by improving your Google Business Profile,
                   building local citations, and creating location-specific
-                  content. These strategies help you appear in Google's Local
-                  Pack, maps, and other high-visibility areas where potential
-                  clients are searching.
+                  content. These strategies help you appear in Google’s Local
+                  Pack, Maps, and other high-visibility areas where Phoenix
+                  homeowners and businesses are actively searching for solar
+                  services.
                 </p>
               </div>
             </div>
@@ -383,11 +370,12 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Technical SEO</h2>
                 <p>
-                  Behind every successful SEO campaign is a strong technical
-                  foundation. Our technical SEO Alberta specialists enhance your
-                  site's speed, mobile performance, indexing, and security. From
-                  fixing crawl errors to optimizing site architecture, we make
-                  sure search engines can easily navigate and rank your website.
+                  Behind every successful campaign is a strong technical
+                  foundation. Our technical solar SEO specialists in Phoenix
+                  improve your site speed, mobile responsiveness, indexing, and
+                  security. From fixing crawl errors to optimizing site
+                  architecture, we make sure search engines can easily access
+                  and rank your website — giving you the edge over competitors.
                 </p>
               </div>
             </div>
@@ -400,14 +388,15 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Get <span>More Visibility</span> In Alberta Now!
+                Get <span>More Visibility</span> In Phoenix With Solar SEO
+                Services
               </h2>
               <p>
-                Take the first step toward more clients, higher rankings, and
-                real growth. Whether you're a therapist, psychologist,
-                counsellor, or psychotherapist anywhere in Alberta, our SEO
-                services are built to deliver results for mental health
-                professionals.
+                Take the first step toward more leads, higher rankings, and real
+                growth. Whether you’re a solar installer, renewable energy
+                provider, or established solar company in Phoenix, our SEO
+                services are built to deliver measurable results for businesses
+                in the solar industry.
               </p>
               <Link href="/get-a-quote">
                 <button>Get Free Quote</button>
@@ -421,28 +410,26 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <h2>
-                Choosing Infused Agency as Your Therapist SEO Alberta Partner
-              </h2>
+              <h2>Choosing Infused Agency as Your Phoenix Solar SEO Partner</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-40 pd-btm-40">
             <Col lg="6">
               <p>
-                In today's competitive market, you can't afford to partner with
-                just any digital marketing firm. You need a team that takes the
-                time to understand your practice goals, your therapeutic
-                approach, and the clients you want to reach. At Infused Agency,
-                we go beyond surface-level strategies — our focus is on
-                delivering real results that generate the highest possible
-                return on your investment.
+                In today’s competitive solar market, you can’t afford to work
+                with just any digital marketing company. You need a team that
+                understands your business goals, your unique solar services, and
+                the customers you want to reach. At Infused Agency, we go beyond
+                surface-level strategies — our focus is on delivering measurable
+                results that generate the highest possible return on your
+                investment.
               </p>
             </Col>
             <Col lg="6">
               <Image
                 className="img-fluid"
                 src={infused}
-                alt="infused agency seo for therapists alberta"
+                alt="infused agency seo for solar businesses phoenix"
               />
             </Col>
           </Row>
@@ -454,27 +441,27 @@ const Home = ({ latestPosts }) => {
                 Our comprehensive SEO process — Discover, Analyze, Strategize,
                 Execute, Measure, Report, and Refine — ensures that your
                 campaign is continuously optimized for growth. This agile
-                methodology allows us to adapt to industry changes quickly while
-                keeping your practice ahead of competitors in local search
-                results.
+                methodology allows us to adapt quickly to industry changes while
+                keeping your solar business ahead of competitors in Phoenix
+                search results.
               </p>
 
-              <h3>Supporting Local Mental Health Professionals in Alberta</h3>
+              <h3>Supporting Solar Companies in Phoenix</h3>
 
               <p>
-                We understand the challenges therapy practices face when trying
-                to stand out online. That's why we specialize in small practice
-                SEO in Alberta — giving therapists, psychologists, counsellors,
-                and psychotherapists the tools and strategies needed to gain
-                traction in local search, attract qualified clients, and compete
-                effectively in their markets.
+                We understand the challenges solar companies face when trying to
+                stand out online. That’s why we specialize in SEO for solar
+                companies in Phoenix — giving solar installers, renewable energy
+                providers, and solar businesses the tools and strategies needed
+                to gain traction in local search, attract qualified leads, and
+                compete effectively in their market.
               </p>
 
               <p>
                 With Infused Agency, you get more than just an SEO provider. You
-                get a partner who's invested in your long-term success with
-                tailored SEO Alberta services that build credibility,
-                visibility, and growth.
+                get a partner invested in your long-term success with tailored
+                Phoenix solar SEO services that build credibility, visibility,
+                and sustainable growth.
               </p>
             </Col>
           </Row>
@@ -483,47 +470,48 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo expert for therapists alberta"
+                alt="seo expert for solar companies phoenix"
               />
               <h3 className="pd-top-20">Client-Focused SEO Services</h3>
               <p>
-                At Infused Agency, we treat your practice like it's our own.
-                Your success is the measure of our success, which is why we take
-                the time to understand your goals and challenges. Each client
-                works with a dedicated SEO Alberta specialist who provides
-                personalized attention and ongoing monitoring to deliver the
-                best possible results.
+                At Infused Agency, we treat your solar business as if it were
+                our own. We focus on understanding your goals, your target
+                customers, and your unique solar offerings so that every
+                strategy we implement drives meaningful growth. Each client
+                works with a dedicated Phoenix solar SEO strategist who provides
+                ongoing guidance and hands-on support to ensure your business
+                attracts the right leads.
               </p>
             </Col>
             <Col lg="4">
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization for counsellors alberta"
+                alt="seo agency for solar companies phoenix"
               />
               <h3 className="pd-top-20">Continuous Optimization</h3>
               <p>
-                SEO isn't a one-time project — it's an ongoing process. Our team
-                of Alberta SEO experts constantly tracks your website's
-                performance, adapting strategies to keep pace with Google's
-                updates and industry changes. This ensures your practice stays
-                competitive across Alberta.
+                SEO isn’t a one-off task — it’s a continuous effort. Our team
+                monitors your site’s performance, tracks search trends in the
+                Phoenix solar market, and adapts strategies as needed. This
+                approach keeps your business competitive, ensures consistent
+                lead flow, and positions your solar company ahead of local
+                competitors.
               </p>
             </Col>
             <Col lg="4">
               <Image
                 height="50"
                 src={check}
-                alt="affordable seo for therapists alberta"
+                alt="affordable seo for solar businesses phoenix"
               />
               <h3 className="pd-top-20">Affordable SEO Solutions</h3>
               <p>
-                We believe in delivering exceptional value without unexpected
-                costs. Infused Agency offers affordable SEO Alberta services
-                with transparent pricing and no hidden fees. Whether you're a
-                new psychologist, established counsellor, or growing
-                psychotherapy practice, our solutions are designed to fit your
-                budget while generating long-term results.
+                We know solar businesses of all sizes need results without
+                overspending. Infused Agency offers affordable solar SEO
+                services in Phoenix with clear, upfront pricing. Whether you’re
+                a small installer or a large solar provider, we create
+                strategies that maximize ROI while staying within your budget.
               </p>
             </Col>
           </Row>
@@ -532,45 +520,46 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo reporting for therapy practices alberta"
+                alt="seo reporting for solar companies phoenix"
               />
               <h3 className="pd-top-20">Transparent Reporting</h3>
               <p>
-                You'll never be left in the dark about your SEO campaign. Our
-                clear, detailed reports give you full visibility into how your
-                website is performing and the steps we're taking to improve it.
-                With Infused Agency, you can expect consistent updates and
-                honest communication every step of the way.
+                You’ll always know how your SEO efforts are performing. We
+                provide easy-to-understand reports showing traffic, leads,
+                rankings, and growth opportunities. Our team ensures you’re
+                informed at every step, with actionable insights that make a
+                real difference for your business.
               </p>
             </Col>
             <Col lg="4">
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization for psychotherapists alberta"
+                alt="seo optimization for solar companies phoenix"
               />
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
-                Our Alberta SEO specialists stay ahead of the curve with deep
-                knowledge of Google's latest updates, best practices, and
-                ethical SEO strategies. By following proven, white-hat methods,
-                we help your website achieve sustainable rankings and long-term
-                growth.
+                Our specialists stay up to date on Google’s latest algorithms
+                and best practices, specifically tuned to the solar industry in
+                Phoenix. By using ethical, results-driven methods, we help your
+                website rank higher, attract qualified leads, and grow
+                sustainably over time.
               </p>
             </Col>
             <Col lg="4">
               <Image
                 height="50"
                 src={check}
-                alt="seo audit for therapists alberta"
+                alt="seo audit for solar businesses phoenix"
               />
               <h3 className="pd-top-20">Free SEO Audit</h3>
               <p>
-                Not sure how your website is performing? Infused Agency offers a
-                complimentary SEO audit for Alberta mental health professionals.
-                We'll review your website's current performance, highlight
-                opportunities for improvement, and provide recommendations
-                tailored to your practice goals — with no obligation.
+                Curious about how your website is performing? Infused Agency
+                offers a free, no-obligation SEO audit for Phoenix solar
+                companies. We analyze your site, uncover opportunities to
+                improve visibility, and provide tailored recommendations to help
+                your business generate more leads and dominate local search
+                results.
               </p>
             </Col>
           </Row>
@@ -581,35 +570,36 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-top-40">
             <Col lg="12">
-              <h2>Trusted SEO Alberta Experts with Proven Results</h2>
+              <h2>Trusted Phoenix Solar SEO Experts with Real Results</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-20">
             <Col lg="6">
               <p>
-                At Infused Agency, results speak for themselves. With over 50
-                SEO clients served and 40+ five-star Google reviews, we've built
-                a reputation as a leading SEO agency in Alberta. Our clients
-                consistently see measurable improvements in search rankings,
-                website traffic, and client inquiries.
+                At Infused Agency, our track record speaks for itself. We’ve
+                helped numerous solar companies in Phoenix boost their online
+                visibility, attract qualified leads, and grow their businesses.
+                Our clients consistently see measurable improvements in search
+                rankings, website traffic, and customer inquiries.
                 <br />
                 <br />
-                We're proud to have helped mental health practices of all sizes
-                — from solo practitioners to established psychology clinics —
-                achieve stronger online visibility and higher conversions. Every
-                strategy we implement is backed by data, tailored to your goals,
-                and focused on delivering a real return on investment. When you
-                work with Infused Agency, you're partnering with a trusted team
-                that combines local market expertise, technical SEO skills, and
-                creative content strategies to help your practice dominate
-                search results across Alberta.
+                From small solar installers to larger renewable energy
+                providers, we’ve supported businesses of all sizes in achieving
+                stronger online presence and higher conversions. Every strategy
+                we implement is driven by data, customized to your company’s
+                goals, and focused on delivering tangible returns on investment.
+                When you partner with Infused Agency, you get a trusted team
+                with deep knowledge of the Phoenix solar market. We combine
+                technical SEO expertise, creative content strategies, and local
+                market insights to help your solar business rank higher, capture
+                more leads, and outperform competitors across Phoenix.
               </p>
             </Col>
             <Col lg="6">
               <Image
                 className="img-fluid"
                 src={reviews}
-                alt="seo therapy practice alberta reviews"
+                alt="seo solar companies phoenix reviews"
               />
             </Col>
           </Row>
@@ -620,137 +610,125 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>
-                Frequently Asked Questions For Alberta Therapy SEO Services
-              </h2>
+              <h2>Frequently Asked Questions for Phoenix Solar SEO Services</h2>
             </Col>
           </Row>
 
           <Row>
             <Col lg="12">
               <h3>
-                What makes Therapy SEO Alberta services different from general
+                What makes Phoenix solar SEO services different from general
                 SEO?
               </h3>
               <p>
-                Our SEO Therapy Alberta services are specifically tailored to
-                help local mental health professionals across Alberta rank
-                higher in local search results. We understand the unique market
-                dynamics, local competition, and search patterns specific to
-                Alberta. Our SEO strategies include local citation building,
-                Google Business Profile optimization, and location-specific
-                content that helps your practice appear when clients search for
-                therapy, counselling, or psychology services in your area.
+                Our solar SEO services in Phoenix are specifically designed for
+                solar companies and renewable energy businesses. We understand
+                the local market, homeowner search patterns, and the competitive
+                landscape in Phoenix. Our strategies include local citation
+                building, Google Business Profile optimization, and
+                location-specific content that ensures your business shows up
+                when potential customers search for solar installers, solar
+                panels, or renewable energy solutions in the Phoenix area.
               </p>
 
               <h3>
-                How long does it take to see results from SEO Alberta
-                Psychotherapist campaigns?
+                How long does it take to see results from Phoenix solar SEO
+                campaigns?
               </h3>
               <p>
-                Most SEO Psychotherapist Alberta clients start seeing initial
-                improvements in search visibility within 3-6 months, with
-                significant results typically appearing by 6-12 months. The
-                timeline depends on factors like your current website
-                performance, competition level, and the keywords you're
-                targeting. Our proven SEO process includes continuous
-                optimization and transparent reporting, so you'll see steady
-                progress as we work to improve your rankings across Alberta.
+                Most solar businesses start noticing improvements in search
+                visibility within 3–6 months, with more significant results
+                typically appearing between 6–12 months. Timelines depend on
+                your current website performance, competition, and target
+                keywords. Our proven SEO process includes continuous
+                optimization and transparent reporting, so you can see
+                measurable progress as we improve your rankings and lead
+                generation in Phoenix.
               </p>
 
               <h3>
-                Can small mental health practices in Alberta compete with larger
-                clinics through SEO?
+                Can small solar companies compete with larger installers through
+                SEO?
               </h3>
               <p>
-                Absolutely! SEO for Therapist in Alberta strategies are
-                particularly effective for small practices because they focus on
-                local search optimization where you can outrank larger
-                competitors. By targeting location-specific keywords like
-                "psychologist near me Alberta" and optimizing for local search
-                intent, small practices often achieve better visibility than big
-                clinics. Our affordable SEO solutions are designed specifically
-                to help small practices compete effectively in their local
-                markets.
+                Absolutely! SEO for solar companies in Phoenix is highly
+                effective for smaller businesses because it focuses on local
+                search, where even a small installer can outrank larger
+                competitors. By targeting location-specific keywords like “solar
+                panels Phoenix” or “solar installer near me,” small businesses
+                can gain visibility and attract local leads efficiently. Our
+                affordable SEO solutions are designed to help solar companies of
+                all sizes compete successfully in their market.
               </p>
 
               <h3>
-                What's included in your SEO Counsellor Alberta audit and
-                strategy development?
+                What’s included in your Phoenix solar SEO audit and strategy
+                development?
               </h3>
               <p>
-                Our comprehensive Therapy SEO Alberta audit includes technical
-                website analysis, keyword research for Alberta markets,
+                Our comprehensive solar SEO audit includes technical website
+                analysis, keyword research focused on Phoenix solar searches,
                 competitor analysis, content evaluation, and local SEO
-                assessment. We examine your current Google Business Profile,
-                local citations, backlink profile, and site performance. Based
-                on these findings, we develop a customized SEO strategy that
-                addresses your specific challenges and opportunities in Alberta.
+                assessment. We review your Google Business Profile, local
+                citations, backlink profile, and site performance. Based on
+                these insights, we create a tailored strategy that addresses
+                your business’s specific challenges and opportunities in
+                Phoenix.
               </p>
 
               <h3>
-                How do you measure the success of SEO Alberta campaigns for
-                therapists?
+                How do you measure the success of Phoenix solar SEO campaigns?
               </h3>
               <p>
-                We track multiple metrics to measure SEO success for Alberta
-                counsellors, therapists and mental health professionals,
-                including search rankings for targeted keywords, organic website
-                traffic growth, local visibility improvements, and most
-                importantly, client inquiries and conversions. Our transparent
-                reporting shows you exactly how your website is performing,
-                which keywords are driving traffic, and how many potential
-                clients are finding your practice through search. We provide
-                detailed monthly reports with clear ROI measurements.
+                We track a range of metrics to measure success for solar
+                companies, including keyword rankings, organic website traffic
+                growth, local visibility improvements, and, most importantly,
+                lead generation and customer inquiries. Our transparent
+                reporting shows you exactly which keywords are driving traffic,
+                how many leads your website is attracting, and your overall ROI
+                from SEO efforts.
               </p>
 
               <h3>
-                Do you guarantee first-page rankings for SEO Alberta keywords
-                for therapists?
+                Do you guarantee first-page rankings for Phoenix solar SEO
+                keywords?
               </h3>
               <p>
-                While we can't guarantee specific rankings (as search engines
-                constantly update their algorithms), we do guarantee our
-                commitment to improving your visibility through proven SEO
-                Therapist Alberta strategies. Our track record shows consistent
-                success helping practices achieve first-page rankings for their
-                target keywords. We focus on sustainable, white-hat SEO
-                techniques that build long-term visibility rather than quick
-                fixes that might get penalized by Google.
+                While we cannot guarantee specific rankings—since search engines
+                continually update their algorithms—we do guarantee a committed,
+                data-driven approach to improving your visibility. Our track
+                record shows consistent success helping solar companies achieve
+                higher search rankings. We focus on sustainable, white-hat SEO
+                strategies that build long-term visibility and lead generation.
               </p>
 
               <h3>
-                What's the difference between SEO and local SEO for Alberta
-                mental health professionals?
+                What’s the difference between SEO and local SEO for Phoenix
+                solar companies?
               </h3>
               <p>
-                Traditional SEO focuses on ranking for broad keywords nationally
-                or globally, while local SEO Alberta targets location-specific
-                searches like "counsellor near me" or "Alberta psychology
-                services." Local SEO includes optimizing your Google Business
-                Profile, building local citations, managing online reviews, and
-                creating location-based content. For Alberta mental health
-                professionals serving local clients, local SEO is typically more
-                valuable as it helps you appear in Google's Local Pack and Maps
-                results.
+                Traditional SEO targets broad keywords and aims for national or
+                global reach. Local SEO for solar companies in Phoenix focuses
+                on location-specific searches like “solar installer Phoenix” or
+                “Phoenix solar panels.” This includes optimizing your Google
+                Business Profile, managing local citations, generating customer
+                reviews, and creating localized content. Local SEO is especially
+                valuable for solar businesses looking to attract nearby
+                homeowners and businesses.
               </p>
 
-              <h3>
-                How much do SEO services cost for mental health practices in
-                Alberta?
-              </h3>
+              <h3>How much do Phoenix solar SEO services cost?</h3>
               <p>
-                SEO Alberta pricing varies based on your practice size,
-                competition level, and specific goals. We offer affordable SEO
-                packages starting from basic local optimization to comprehensive
-                practice solutions. Our transparent pricing includes no hidden
-                fees, and we provide customized quotes based on your specific
-                needs. We believe in delivering exceptional value, and many of
-                our clients see a positive ROI within the first year of their
-                SEO investment.
+                Pricing depends on your business size, competition level, and
+                goals. We offer packages ranging from basic local SEO
+                optimization to full-scale solar SEO strategies. Our pricing is
+                transparent with no hidden fees, and each proposal is tailored
+                to your business needs. Many Phoenix solar companies see
+                measurable ROI within the first year of investing in
+                professional SEO services.
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9597234.543309616!2d-125.532507303393!3d54.03693962859796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5309b282a82419b5%3A0xb0a9479a409b8e9e!2sAlberta!5e0!3m2!1sen!2sca!4v1756147418003!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212674.68408551652!2d-112.28959657505945!3d33.604216294099956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sca!4v1756595813242!5m2!1sen!2sca"
                 width="100%"
                 height="450"
                 allowfullscreen=""
