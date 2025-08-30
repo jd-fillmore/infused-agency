@@ -98,6 +98,18 @@ export default function Sitemap() {
       name: "SEO for Therapists Cape Breton",
       url: "/seo/for-therapists-cape-breton",
     },
+    {
+      name: "SEO for Therapists Moncton",
+      url: "/seo/for-therapists-moncton",
+    },
+    {
+      name: "SEO for Therapists Saint John",
+      url: "/seo/for-therapists-saint-john",
+    },
+    {
+      name: "SEO for Therapists Fredericton",
+      url: "/seo/for-therapists-fredericton",
+    },
   ];
 
   return (
