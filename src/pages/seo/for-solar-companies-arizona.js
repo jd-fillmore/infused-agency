@@ -59,8 +59,17 @@ const Home = ({ latestPosts }) => {
                 companies in Arizona, designed to improve search engine
                 rankings, drive targeted traffic, and convert visitors into real
                 inquiries. Whether you’re a solar business in{" "}
-                <Link href="/seo/for-solar-companies-arizona">Arizona</Link> or
-                surrounding areas, we'll help your solar company get more
+                <Link href="/seo/for-solar-companies-arizona">Arizona</Link>,{" "}
+                <Link href="/seo/for-solar-companies-phoenix">Phoenix</Link>,{" "}
+                <Link href="/seo/for-solar-companies-tucson">Tucson</Link>,{" "}
+                <Link href="/seo/for-solar-companies-mesa">Mesa</Link>,{" "}
+                <Link href="/seo/for-solar-companies-gilbert">Gilbert</Link>,{" "}
+                <Link href="/seo/for-solar-companies-chandler">Chandler</Link>,{" "}
+                <Link href="/seo/for-solar-companies-glendale">Glendale</Link>,{" "}
+                <Link href="/seo/for-solar-companies-scottsdale">
+                  Scottsdale
+                </Link>{" "}
+                or surrounding areas, we'll help your solar company get more
                 visibility.
               </p>
 

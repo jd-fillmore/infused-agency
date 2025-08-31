@@ -11,11 +11,11 @@ import Footer from "../../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-import infused from "../../../src/img/solar-seo-services-glendale.png";
+import infused from "../../../src/img/solar-seo-services-scottsdale.png";
 import check from "../../../src/img/check.png";
-import reviews from "../../../src/img/seo-for-solar-business-glendale.png";
-import delta from "../../../src/img/solar-seo-agency-glendale.jpg";
-import data1 from "../../../src/img/seo-services-for-solar-companies-glendale.png";
+import reviews from "../../../src/img/seo-for-solar-business-scottsdale.png";
+import delta from "../../../src/img/solar-seo-agency-scottsdale.jpg";
+import data1 from "../../../src/img/seo-services-for-solar-companies-scottsdale.png";
 
 const Home = ({ latestPosts }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -23,11 +23,12 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          #1 SEO for Glendale, AZ Solar Companies | Solar SEO Agency & Services
+          #1 SEO for Scottsdale, AZ Solar Companies | Solar SEO Agency &
+          Services
         </title>
         <meta
           name="description"
-          content="Helping solar installers, renewable energy businesses, and solar companies in Glendale grow their leads and sales with expert local SEO services."
+          content="Helping solar installers, renewable energy businesses, and solar companies in Scottsdale grow their leads and sales with expert local SEO services."
         />
         <meta
           name="google-site-verification"
@@ -37,26 +38,27 @@ const Home = ({ latestPosts }) => {
         <meta property="og:site_name" content="Infused Agency" />
         <link
           rel="canonical"
-          href="https://infused.agency/seo/for-solar-companies-glendale"
+          href="https://infused.agency/seo/for-solar-companies-scottsdale"
         />
       </Head>
       <Nav />
-      <section className="glendale-solar seo-city-hero">
+      <section className="scottsdale-solar seo-city-hero">
         <Container>
           <Row className="align-items-center">
             <Col lg="12">
               <h1 className="intro">
-                Glendale SEO for Solar Companies – Your Local Solar SEO Agency
+                Scottsdale SEO for Solar Companies – Your Local Solar SEO Agency
               </h1>
               <h2>
-                Grow Your Solar Business and Attract More Leads Across Glendale
+                Grow Your Solar Business and Attract More Leads Across
+                Scottsdale
               </h2>
               <p>
-                Infused Agency is a trusted solar SEO agency in Glendale,
+                Infused Agency is a trusted solar SEO agency in Scottsdale,
                 helping solar companies, installers, and renewable energy
                 businesses increase their online visibility and generate more
                 qualified leads. Our team develops custom SEO strategies for
-                solar companies in Glendale, designed to improve search engine
+                solar companies in Scottsdale, designed to improve search engine
                 rankings, drive targeted traffic, and convert visitors into real
                 inquiries. Whether you’re a solar business in {""}
                 <Link href="/seo/for-solar-companies-arizona">
@@ -85,49 +87,49 @@ const Home = ({ latestPosts }) => {
                   <p className="mt-2">
                     <h2>
                       Infused Agency: Expert SEO Services for Solar Companies in
-                      Glendale
+                      Scottsdale
                     </h2>
                     <p>
-                      We provide tailored solar SEO services in Glendale for new
-                      and established solar businesses, installers, and energy
-                      providers. Our focus is on delivering measurable results
-                      that generate leads and maximize ROI. This is what sets us
-                      apart from other local SEO agencies.
+                      We provide tailored solar SEO services in Scottsdale for
+                      new and established solar businesses, installers, and
+                      energy providers. Our focus is on delivering measurable
+                      results that generate leads and maximize ROI. This is what
+                      sets us apart from other local SEO agencies.
                     </p>
 
-                    <h2>About Glendale, Arizona</h2>
+                    <h2>About Scottsdale, Arizona</h2>
                     <p>
-                      Glendale, Arizona, is a rapidly growing city in the West
-                      Valley and an increasingly popular hub for solar energy
-                      adoption. From the bustling Westgate Entertainment
-                      District and historic downtown Glendale to family-friendly
-                      neighborhoods like Arrowhead Ranch, Rovey Farm, and
-                      Marshall Ranch, residents are looking for ways to lower
-                      energy bills and embrace renewable solutions. With over
-                      300 sunny days each year, Glendale offers the perfect
-                      environment for solar companies to connect with homeowners
-                      and businesses ready to make the switch to solar. Across
-                      communities such as Hillcrest Ranch, Sierra Verde, Desert
-                      Pines, and Sunset Vista, demand for solar panel
-                      installation, battery storage, and system maintenance
-                      continues to rise. Whether it’s residential solar for
-                      growing neighborhoods, upgrades for established
-                      communities, or large-scale installations for local
-                      businesses, Glendale provides solar companies with endless
-                      opportunities to grow. At Infused Agency, we help you
-                      capture that demand with Glendale SEO strategies tailored
-                      to solar businesses. Our proven approach boosts your
-                      visibility in local search results, drives more qualified
-                      leads, and positions your company as a trusted solar
-                      provider in one of Arizona’s most competitive renewable
-                      energy markets.
+                      Scottsdale, Arizona, is one of the state’s most dynamic
+                      cities, blending upscale living, vibrant communities, and
+                      year-round sunshine that makes it a prime market for solar
+                      energy. From the luxury estates of North Scottsdale and DC
+                      Ranch to family-friendly neighborhoods like McCormick
+                      Ranch, Gainey Ranch, and Old Town, homeowners and
+                      businesses are actively searching for reliable solar
+                      solutions to cut costs and embrace renewable energy. With
+                      over 300 sunny days a year, Scottsdale provides an
+                      unmatched opportunity for solar companies to expand their
+                      reach. Across communities including Grayhawk, Kierland,
+                      Desert Mountain, and Troon North, demand for solar panel
+                      installations, battery backup systems, and solar
+                      maintenance services continues to grow. Businesses in
+                      areas like Scottsdale Airpark and downtown also benefit
+                      from sustainable energy solutions, creating an additional
+                      market for solar providers. At Infused Agency, we
+                      specialize in Scottsdale SEO for solar companies, helping
+                      you dominate local search results and connect with
+                      customers looking to invest in solar. Our tailored
+                      strategies increase your visibility, attract qualified
+                      leads, and establish your company as a trusted solar
+                      provider in one of Arizona’s most competitive and
+                      lucrative markets.
                     </p>
 
                     <h2>
-                      SEO Services Tailored for Solar Companies in Glendale
+                      SEO Services Tailored for Solar Companies in Scottsdale
                     </h2>
                     <p>
-                      Our team of experienced Glendale solar SEO specialists
+                      Our team of experienced Scottsdale solar SEO specialists
                       offers a full range of services, including website audits,
                       keyword research, content optimization, and link-building.
                       Every strategy is custom-built for your business goals,
@@ -137,11 +139,11 @@ const Home = ({ latestPosts }) => {
                     <p>
                       Whether you’re a small solar installer or a large
                       renewable energy company, our SEO services for solar
-                      companies in Glendale put your business in front of the
+                      companies in Scottsdale put your business in front of the
                       right audience.
                     </p>
 
-                    <h2>Why Hiring a Glendale Solar SEO Agency Matters</h2>
+                    <h2>Why Hiring a Scottsdale Solar SEO Agency Matters</h2>
                     <p>
                       Managing SEO on your own can waste time and cost
                       opportunities. Effective SEO requires technical know-how,
@@ -149,12 +151,12 @@ const Home = ({ latestPosts }) => {
                       Google’s evolving algorithms.
                     </p>
                     <p>
-                      A professional SEO agency for solar companies in Glendale
-                      like Infused Agency applies proven frameworks, advanced
-                      keyword research, and data-driven strategies. Unlike
-                      generic tools, we understand the solar industry and how
-                      potential customers search for solar installers and solar
-                      services in Glendale.
+                      A professional SEO agency for solar companies in
+                      Scottsdale like Infused Agency applies proven frameworks,
+                      advanced keyword research, and data-driven strategies.
+                      Unlike generic tools, we understand the solar industry and
+                      how potential customers search for solar installers and
+                      solar services in Scottsdale.
                     </p>
                     <p>
                       Effective SEO goes beyond rankings. It’s about creating
@@ -167,11 +169,11 @@ const Home = ({ latestPosts }) => {
 
                     <h2>
                       Why Infused Agency Is the Best Choice for Solar SEO in
-                      Glendale
+                      Scottsdale
                     </h2>
                     <p>
                       We’re not just another marketing company. Infused Agency
-                      is a dedicated Glendale solar SEO agency focused on
+                      is a dedicated Scottsdale solar SEO agency focused on
                       helping local solar businesses succeed. Every campaign is
                       custom-built — no cookie-cutter templates, no guesswork.
                     </p>
@@ -180,7 +182,7 @@ const Home = ({ latestPosts }) => {
                       optimized content, and local targeting to help your solar
                       company rise in search results. From refining your Google
                       Business Profile to creating location-specific content for
-                      Glendale neighborhoods, our strategies are designed for
+                      Scottsdale neighborhoods, our strategies are designed for
                       sustainable growth and long-term visibility.
                     </p>
                     <p>
@@ -188,7 +190,7 @@ const Home = ({ latestPosts }) => {
                       invested in your success. We help solar companies generate
                       more inquiries, improve conversions, and grow their
                       business with data-driven SEO for solar companies in
-                      Glendale.
+                      Scottsdale.
                     </p>
                   </p>
                 )}
@@ -210,7 +212,8 @@ const Home = ({ latestPosts }) => {
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Glendale Solar Company SEO Clients <span>Get Results</span>
+                Our Scottsdale Solar Company SEO Clients{" "}
+                <span>Get Results</span>
               </h2>
             </div>
           </div>
@@ -223,7 +226,7 @@ const Home = ({ latestPosts }) => {
                   className="img-fluid"
                   style={{ width: "100%", height: "auto" }}
                   src={delta}
-                  alt="SEO Solar Agency Glendale, solar seo services Glendale, seo for solar businesses Glendale, seo services for solar companies Glendale, seo for solar company Glendale"
+                  alt="SEO Solar Agency Scottsdale, solar seo services Scottsdale, seo for solar businesses Scottsdale, seo services for solar companies Scottsdale, seo for solar company Scottsdale"
                 />
                 <div className="card">
                   <div className="text-center pd-btm-20">
@@ -252,10 +255,10 @@ const Home = ({ latestPosts }) => {
                   <p className="w-75 text-center">
                     <em>
                       "Infused Agency completely transformed our online
-                      presence. Their solar SEO services in Glendale helped our
-                      company show up for the right searches, and we’ve seen a
-                      steady increase in leads. If you’re looking for expert SEO
-                      for solar companies in Glendale, they’re the team to
+                      presence. Their solar SEO services in Scottsdale helped
+                      our company show up for the right searches, and we’ve seen
+                      a steady increase in leads. If you’re looking for expert
+                      SEO for solar companies in Scottsdale, they’re the team to
                       trust!"
                     </em>
                   </p>
@@ -284,13 +287,13 @@ const Home = ({ latestPosts }) => {
             <Col lg="12">
               <h2>
                 Ready to <span>Grow Your Solar Business</span> Solar SEO in
-                Glendale?
+                Scottsdale?
               </h2>
               <p>
                 Take the first step toward more leads, higher rankings, and
                 sustainable growth. Whether you’re a solar installer, renewable
-                energy provider, or established solar company in Glendale, our
-                tailored Glendale solar SEO services are designed to deliver
+                energy provider, or established solar company in Scottsdale, our
+                tailored Scottsdale solar SEO services are designed to deliver
                 real results for businesses in the solar industry.
               </p>
               <Link href="/get-a-quote">
@@ -305,7 +308,7 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-top-40">
             <div className="col-lg-12 text-center">
-              <h2>Glendale SEO Services for Solar Companies</h2>
+              <h2>Scottsdale SEO Services for Solar Companies</h2>
               <p>Get More Visibility</p>
             </div>
           </div>
@@ -316,10 +319,10 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research & Strategy</h2>
                 <p>
-                  At Infused Agency, our Glendale solar SEO specialists start
+                  At Infused Agency, our Scottsdale solar SEO specialists start
                   every campaign with in-depth keyword research. We identify the
                   most relevant and profitable search terms that homeowners and
-                  businesses use when looking for solar solutions in Glendale.
+                  businesses use when looking for solar solutions in Scottsdale.
                   By analyzing your website and your competitors, we create a
                   data-driven SEO strategy designed to capture qualified traffic
                   and deliver measurable results for your solar company.
@@ -331,7 +334,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Link Building</h2>
                 <p>
                   A strong backlink profile is essential for higher rankings and
-                  authority. Our SEO services for solar companies in Glendale
+                  authority. Our SEO services for solar companies in Scottsdale
                   include ethical, white-hat link-building strategies that earn
                   high-quality links from trusted websites. These authoritative
                   backlinks boost your domain authority, improve search engine
@@ -343,13 +346,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Content is the cornerstone of effective SEO. Our Glendale
+                  Content is the cornerstone of effective SEO. Our Scottsdale
                   content team creates engaging, SEO-friendly copy tailored
                   specifically for solar companies. From optimized landing pages
                   to educational blog posts, we develop content that reflects
                   your company’s expertise, attracts potential customers, and
                   improves rankings for targeted keywords like SEO for solar
-                  companies in Glendale and solar SEO services Glendale.
+                  companies in Scottsdale and solar SEO services Scottsdale.
                 </p>
               </div>
             </div>
@@ -359,7 +362,7 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>On-Page SEO</h2>
                 <p>
-                  Our Glendale solar SEO experts optimize your website’s
+                  Our Scottsdale solar SEO experts optimize your website’s
                   structure, code, and content to ensure maximum performance. We
                   conduct comprehensive audits, refine metadata, improve
                   internal linking, and enhance site usability — all while
@@ -373,12 +376,12 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  For solar businesses in Glendale, local visibility is
+                  For solar businesses in Scottsdale, local visibility is
                   everything. Infused Agency ensures your company is optimized
                   for local searches by improving your Google Business Profile,
                   building local citations, and creating location-specific
                   content. These strategies help you appear in Google’s Local
-                  Pack, Maps, and other high-visibility areas where Glendale
+                  Pack, Maps, and other high-visibility areas where Scottsdale
                   homeowners and businesses are actively searching for solar
                   services.
                 </p>
@@ -389,7 +392,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Technical SEO</h2>
                 <p>
                   Behind every successful campaign is a strong technical
-                  foundation. Our technical solar SEO specialists in Glendale
+                  foundation. Our technical solar SEO specialists in Scottsdale
                   improve your site speed, mobile responsiveness, indexing, and
                   security. From fixing crawl errors to optimizing site
                   architecture, we make sure search engines can easily access
@@ -406,13 +409,13 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Get <span>More Visibility</span> In Glendale With Solar SEO
+                Get <span>More Visibility</span> In Scottsdale With Solar SEO
                 Services
               </h2>
               <p>
                 Take the first step toward more leads, higher rankings, and real
                 growth. Whether you’re a solar installer, renewable energy
-                provider, or established solar company in Glendale, our SEO
+                provider, or established solar company in Scottsdale, our SEO
                 services are built to deliver measurable results for businesses
                 in the solar industry.
               </p>
@@ -429,7 +432,7 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center">
             <Col lg="12">
               <h2>
-                Choosing Infused Agency as Your Glendale Solar SEO Partner
+                Choosing Infused Agency as Your Scottsdale Solar SEO Partner
               </h2>
             </Col>
           </Row>
@@ -449,7 +452,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 className="img-fluid"
                 src={infused}
-                alt="infused agency seo for solar businesses Glendale"
+                alt="infused agency seo for solar businesses Scottsdale"
               />
             </Col>
           </Row>
@@ -462,16 +465,16 @@ const Home = ({ latestPosts }) => {
                 Execute, Measure, Report, and Refine — ensures that your
                 campaign is continuously optimized for growth. This agile
                 methodology allows us to adapt quickly to industry changes while
-                keeping your solar business ahead of competitors in Glendale
+                keeping your solar business ahead of competitors in Scottsdale
                 search results.
               </p>
 
-              <h3>Supporting Solar Companies in Glendale</h3>
+              <h3>Supporting Solar Companies in Scottsdale</h3>
 
               <p>
                 We understand the challenges solar companies face when trying to
                 stand out online. That’s why we specialize in SEO for solar
-                companies in Glendale — giving solar installers, renewable
+                companies in Scottsdale — giving solar installers, renewable
                 energy providers, and solar businesses the tools and strategies
                 needed to gain traction in local search, attract qualified
                 leads, and compete effectively in their market.
@@ -480,8 +483,8 @@ const Home = ({ latestPosts }) => {
               <p>
                 With Infused Agency, you get more than just an SEO provider. You
                 get a partner invested in your long-term success with tailored
-                Glendale solar SEO services that build credibility, visibility,
-                and sustainable growth.
+                Scottsdale solar SEO services that build credibility,
+                visibility, and sustainable growth.
               </p>
             </Col>
           </Row>
@@ -490,7 +493,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo expert for solar companies Glendale"
+                alt="seo expert for solar companies Scottsdale"
               />
               <h3 className="pd-top-20">Client-Focused SEO Services</h3>
               <p>
@@ -498,7 +501,7 @@ const Home = ({ latestPosts }) => {
                 our own. We focus on understanding your goals, your target
                 customers, and your unique solar offerings so that every
                 strategy we implement drives meaningful growth. Each client
-                works with a dedicated Glendale solar SEO strategist who
+                works with a dedicated Scottsdale solar SEO strategist who
                 provides ongoing guidance and hands-on support to ensure your
                 business attracts the right leads.
               </p>
@@ -507,13 +510,13 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo agency for solar companies Glendale"
+                alt="seo agency for solar companies Scottsdale"
               />
               <h3 className="pd-top-20">Continuous Optimization</h3>
               <p>
                 SEO isn’t a one-off task — it’s a continuous effort. Our team
                 monitors your site’s performance, tracks search trends in the
-                Glendale solar market, and adapts strategies as needed. This
+                Scottsdale solar market, and adapts strategies as needed. This
                 approach keeps your business competitive, ensures consistent
                 lead flow, and positions your solar company ahead of local
                 competitors.
@@ -523,14 +526,14 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="affordable seo for solar businesses Glendale"
+                alt="affordable seo for solar businesses Scottsdale"
               />
               <h3 className="pd-top-20">Affordable SEO Solutions</h3>
               <p>
                 We know solar businesses of all sizes need results without
                 overspending. Infused Agency offers affordable solar SEO
-                services in Glendale with clear, upfront pricing. Whether you’re
-                a small installer or a large solar provider, we create
+                services in Scottsdale with clear, upfront pricing. Whether
+                you’re a small installer or a large solar provider, we create
                 strategies that maximize ROI while staying within your budget.
               </p>
             </Col>
@@ -540,7 +543,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo reporting for solar companies Glendale"
+                alt="seo reporting for solar companies Scottsdale"
               />
               <h3 className="pd-top-20">Transparent Reporting</h3>
               <p>
@@ -555,14 +558,14 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization for solar companies Glendale"
+                alt="seo optimization for solar companies Scottsdale"
               />
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
                 Our specialists stay up to date on Google’s latest algorithms
                 and best practices, specifically tuned to the solar industry in
-                Glendale. By using ethical, results-driven methods, we help your
-                website rank higher, attract qualified leads, and grow
+                Scottsdale. By using ethical, results-driven methods, we help
+                your website rank higher, attract qualified leads, and grow
                 sustainably over time.
               </p>
             </Col>
@@ -570,12 +573,12 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo audit for solar businesses Glendale"
+                alt="seo audit for solar businesses Scottsdale"
               />
               <h3 className="pd-top-20">Free SEO Audit</h3>
               <p>
                 Curious about how your website is performing? Infused Agency
-                offers a free, no-obligation SEO audit for Glendale solar
+                offers a free, no-obligation SEO audit for Scottsdale solar
                 companies. We analyze your site, uncover opportunities to
                 improve visibility, and provide tailored recommendations to help
                 your business generate more leads and dominate local search
@@ -590,14 +593,14 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-top-40">
             <Col lg="12">
-              <h2>Trusted Glendale Solar SEO Experts with Real Results</h2>
+              <h2>Trusted Scottsdale Solar SEO Experts with Real Results</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-20">
             <Col lg="6">
               <p>
                 At Infused Agency, our track record speaks for itself. We’ve
-                helped numerous solar companies in Glendale boost their online
+                helped numerous solar companies in Scottsdale boost their online
                 visibility, attract qualified leads, and grow their businesses.
                 Our clients consistently see measurable improvements in search
                 rankings, website traffic, and customer inquiries.
@@ -609,17 +612,17 @@ const Home = ({ latestPosts }) => {
                 we implement is driven by data, customized to your company’s
                 goals, and focused on delivering tangible returns on investment.
                 When you partner with Infused Agency, you get a trusted team
-                with deep knowledge of the Glendale solar market. We combine
+                with deep knowledge of the Scottsdale solar market. We combine
                 technical SEO expertise, creative content strategies, and local
                 market insights to help your solar business rank higher, capture
-                more leads, and outperform competitors across Glendale.
+                more leads, and outperform competitors across Scottsdale.
               </p>
             </Col>
             <Col lg="6">
               <Image
                 className="img-fluid"
                 src={reviews}
-                alt="seo solar companies Glendale reviews"
+                alt="seo solar companies Scottsdale reviews"
               />
             </Col>
           </Row>
@@ -631,7 +634,7 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center pd-btm-40">
             <Col lg="12">
               <h2>
-                Frequently Asked Questions for Glendale Solar SEO Services
+                Frequently Asked Questions for Scottsdale Solar SEO Services
               </h2>
             </Col>
           </Row>
@@ -639,22 +642,22 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h3>
-                What makes Glendale solar SEO services different from general
+                What makes Scottsdale solar SEO services different from general
                 SEO?
               </h3>
               <p>
-                Our solar SEO services in Glendale are specifically designed for
-                solar companies and renewable energy businesses. We understand
-                the local market, homeowner search patterns, and the competitive
-                landscape in Glendale. Our strategies include local citation
-                building, Google Business Profile optimization, and
-                location-specific content that ensures your business shows up
-                when potential customers search for solar installers, solar
-                panels, or renewable energy solutions in the Glendale area.
+                Our solar SEO services in Scottsdale are specifically designed
+                for solar companies and renewable energy businesses. We
+                understand the local market, homeowner search patterns, and the
+                competitive landscape in Scottsdale. Our strategies include
+                local citation building, Google Business Profile optimization,
+                and location-specific content that ensures your business shows
+                up when potential customers search for solar installers, solar
+                panels, or renewable energy solutions in the Scottsdale area.
               </p>
 
               <h3>
-                How long does it take to see results from Glendale solar SEO
+                How long does it take to see results from Scottsdale solar SEO
                 campaigns?
               </h3>
               <p>
@@ -665,7 +668,7 @@ const Home = ({ latestPosts }) => {
                 keywords. Our proven SEO process includes continuous
                 optimization and transparent reporting, so you can see
                 measurable progress as we improve your rankings and lead
-                generation in Glendale.
+                generation in Scottsdale.
               </p>
 
               <h3>
@@ -673,33 +676,35 @@ const Home = ({ latestPosts }) => {
                 SEO?
               </h3>
               <p>
-                Absolutely! SEO for solar companies in Glendale is highly
+                Absolutely! SEO for solar companies in Scottsdale is highly
                 effective for smaller businesses because it focuses on local
                 search, where even a small installer can outrank larger
                 competitors. By targeting location-specific keywords like “solar
-                panels Glendale” or “solar installer near me,” small businesses
-                can gain visibility and attract local leads efficiently. Our
-                affordable SEO solutions are designed to help solar companies of
-                all sizes compete successfully in their market.
+                panels Scottsdale” or “solar installer near me,” small
+                businesses can gain visibility and attract local leads
+                efficiently. Our affordable SEO solutions are designed to help
+                solar companies of all sizes compete successfully in their
+                market.
               </p>
 
               <h3>
-                What’s included in your Glendale solar SEO audit and strategy
+                What’s included in your Scottsdale solar SEO audit and strategy
                 development?
               </h3>
               <p>
                 Our comprehensive solar SEO audit includes technical website
-                analysis, keyword research focused on Glendale solar searches,
+                analysis, keyword research focused on Scottsdale solar searches,
                 competitor analysis, content evaluation, and local SEO
                 assessment. We review your Google Business Profile, local
                 citations, backlink profile, and site performance. Based on
                 these insights, we create a tailored strategy that addresses
                 your business’s specific challenges and opportunities in
-                Glendale.
+                Scottsdale.
               </p>
 
               <h3>
-                How do you measure the success of Glendale solar SEO campaigns?
+                How do you measure the success of Scottsdale solar SEO
+                campaigns?
               </h3>
               <p>
                 We track a range of metrics to measure success for solar
@@ -712,7 +717,7 @@ const Home = ({ latestPosts }) => {
               </p>
 
               <h3>
-                Do you guarantee first-page rankings for Glendale solar SEO
+                Do you guarantee first-page rankings for Scottsdale solar SEO
                 keywords?
               </h3>
               <p>
@@ -725,32 +730,32 @@ const Home = ({ latestPosts }) => {
               </p>
 
               <h3>
-                What’s the difference between SEO and local SEO for Glendale
+                What’s the difference between SEO and local SEO for Scottsdale
                 solar companies?
               </h3>
               <p>
                 Traditional SEO targets broad keywords and aims for national or
-                global reach. Local SEO for solar companies in Glendale focuses
-                on location-specific searches like “solar installer Glendale” or
-                “Glendale solar panels.” This includes optimizing your Google
-                Business Profile, managing local citations, generating customer
-                reviews, and creating localized content. Local SEO is especially
-                valuable for solar businesses looking to attract nearby
-                homeowners and businesses.
+                global reach. Local SEO for solar companies in Scottsdale
+                focuses on location-specific searches like “solar installer
+                Scottsdale” or “Scottsdale solar panels.” This includes
+                optimizing your Google Business Profile, managing local
+                citations, generating customer reviews, and creating localized
+                content. Local SEO is especially valuable for solar businesses
+                looking to attract nearby homeowners and businesses.
               </p>
 
-              <h3>How much do Glendale solar SEO services cost?</h3>
+              <h3>How much do Scottsdale solar SEO services cost?</h3>
               <p>
                 Pricing depends on your business size, competition level, and
                 goals. We offer packages ranging from basic local SEO
                 optimization to full-scale solar SEO strategies. Our pricing is
                 transparent with no hidden fees, and each proposal is tailored
-                to your business needs. Many Glendale solar companies see
+                to your business needs. Many Scottsdale solar companies see
                 measurable ROI within the first year of investing in
                 professional SEO services.
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106339.06153414818!2d-112.38912379676547!3d33.60282202413958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b23272d679d37%3A0x9f14430b838d3b54!2sGlendale%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sca!4v1756650008612!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212502.48821354206!2d-112.0235769442061!3d33.673964676442424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08d9a7772c97%3A0x26d2e412188fe618!2sScottsdale%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sca!4v1756650164398!5m2!1sen!2sca"
                 width="100%"
                 height="450"
                 allowfullscreen=""
