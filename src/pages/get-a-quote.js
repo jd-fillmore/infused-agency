@@ -43,8 +43,8 @@ const Quote = () => {
                 <h2>Let's Elevate Your Brand!</h2>
 
                 <p>
-                  Our <Link href="/">SEO Niagara</Link> team is ready to start
-                  your next web design, SEO or digital marketing project.
+                  Our team is ready to start your next web design, SEO or
+                  digital marketing project.
                   <br />
                   <br />
                   The first step is to get in touch with us to book your free

@@ -11,11 +11,11 @@ import Footer from "../../../components/Footer/footer";
 
 import Link from "next/link";
 import Image from "next/image";
-import infused from "../../../src/img/solar-seo-services-phoenix.png";
+import infused from "../../../src/img/solar-seo-services-tucson.png";
 import check from "../../../src/img/check.png";
-import reviews from "../../../src/img/seo-for-solar-business-phoenix.png";
-import delta from "../../../src/img/solar-seo-agency-phoenix.jpg";
-import data1 from "../../../src/img/seo-services-for-solar-companies-phoenix.png";
+import reviews from "../../../src/img/seo-for-solar-business-tucson.png";
+import delta from "../../../src/img/solar-seo-agency-tucson.jpg";
+import data1 from "../../../src/img/seo-services-for-solar-companies-tucson.png";
 
 const Home = ({ latestPosts }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -23,11 +23,11 @@ const Home = ({ latestPosts }) => {
     <>
       <Head>
         <title>
-          #1 SEO for Phoenix, AZ Solar Companies | Solar SEO Agency & Services
+          #1 SEO for Tucson, AZ Solar Companies | Solar SEO Agency & Services
         </title>
         <meta
           name="description"
-          content="Helping solar installers, renewable energy businesses, and solar companies in Phoenix grow their leads and sales with expert local SEO services."
+          content="Helping solar installers, renewable energy businesses, and solar companies in Tucson grow their leads and sales with expert local SEO services."
         />
         <meta
           name="google-site-verification"
@@ -37,29 +37,29 @@ const Home = ({ latestPosts }) => {
         <meta property="og:site_name" content="Infused Agency" />
         <link
           rel="canonical"
-          href="https://infused.agency/seo/for-solar-companies-phoenix"
+          href="https://infused.agency/seo/for-solar-companies-tucson"
         />
       </Head>
       <Nav />
-      <section className="phoenix-solar seo-city-hero">
+      <section className="tucson-solar seo-city-hero">
         <Container>
           <Row className="align-items-center">
             <Col lg="12">
               <h1 className="intro">
-                Phoenix SEO for Solar Companies – Your Local Solar SEO Agency
+                Tucson SEO for Solar Companies – Your Local Solar SEO Agency
               </h1>
               <h2>
-                Grow Your Solar Business and Attract More Leads Across Phoenix
+                Grow Your Solar Business and Attract More Leads Across Tucson
               </h2>
               <p>
-                Infused Agency is a trusted solar SEO agency in Phoenix, helping
+                Infused Agency is a trusted solar SEO agency in Tucson, helping
                 solar companies, installers, and renewable energy businesses
                 increase their online visibility and generate more qualified
                 leads. Our team develops custom SEO strategies for solar
-                companies in Phoenix, designed to improve search engine
-                rankings, drive targeted traffic, and convert visitors into real
+                companies in Tucson, designed to improve search engine rankings,
+                drive targeted traffic, and convert visitors into real
                 inquiries. Whether you’re a solar business in{" "}
-                <Link href="/seo/for-solar-companies-phoenix">Phoenix</Link> or
+                <Link href="/seo/for-solar-companies-tucson">Tucson</Link> or
                 surrounding areas, we'll help your solar company get more
                 visibility.
               </p>
@@ -74,42 +74,47 @@ const Home = ({ latestPosts }) => {
                   <p className="mt-2">
                     <h2>
                       Infused Agency: Expert SEO Services for Solar Companies in
-                      Phoenix
+                      Tucson
                     </h2>
                     <p>
-                      We provide tailored solar SEO services in Phoenix for new
+                      We provide tailored solar SEO services in Tucson for new
                       and established solar businesses, installers, and energy
                       providers. Our focus is on delivering measurable results
                       that generate leads and maximize ROI. This is what sets us
                       apart from other local SEO agencies.
                     </p>
 
-                    <h2>About Phoenix, Arizona</h2>
+                    <h2>About Tucson, Arizona</h2>
                     <p>
-                      Phoenix is home to one of the fastest-growing metropolitan
-                      areas in the U.S., with vibrant communities across
-                      Scottsdale, Tempe, Mesa, Glendale, and Chandler. With
-                      abundant sunshine year-round and an increasing push toward
-                      renewable energy, homeowners and businesses are actively
-                      seeking solar solutions. This creates a unique opportunity
-                      for solar companies to connect with potential customers in
-                      both urban centers and surrounding neighborhoods
-                      throughout Phoenix.
-                    </p>
-                    <p>
-                      As Arizona continues to expand its solar adoption, solar
-                      companies have a massive opportunity to dominate local
-                      search results. At Infused Agency, we help you capture
-                      this opportunity with SEO strategies for solar businesses
-                      in Phoenix designed to outperform competitors and build
-                      long-term visibility for your company.
+                      Tucson, Arizona, is one of the sunniest cities in the
+                      U.S., making it a natural hub for solar energy adoption.
+                      From the lively downtown core and historic barrios to
+                      growing communities like Oro Valley, Marana, Catalina
+                      Foothills, and Sahuarita, homeowners and businesses are
+                      increasingly turning to solar to cut energy costs and
+                      embrace renewable solutions. With over 280 days of
+                      sunshine per year, Tucson provides the perfect environment
+                      for solar companies to connect with customers who are
+                      actively searching for sustainable energy options. Across
+                      neighborhoods such as Sam Hughes, Rita Ranch, Civano, and
+                      the University area, demand for solar panel installation
+                      and maintenance continues to rise as residents look for
+                      ways to lower utility bills and reduce environmental
+                      impact. Whether it’s residential projects in
+                      family-friendly communities or large-scale solar
+                      installations for commercial properties, solar companies
+                      in Tucson have countless opportunities to grow. At Infused
+                      Agency, we help you harness that demand with targeted
+                      Tucson SEO strategies for solar businesses. Our approach
+                      is designed to increase your visibility in local searches,
+                      attract qualified leads, and position your company as a
+                      trusted solar provider in one of Arizona’s fastest-growing
+                      renewable energy markets.
                     </p>
 
-                    <h2>
-                      SEO Services Tailored for Solar Companies in Phoenix
-                    </h2>
+                    <h2>SEO Services Tailored for Solar Companies in Tucson</h2>
                     <p>
-                      Our team of experienced Phoenix solar SEO specialists
+                      Our team of experienced Tucson solar SEO specialists
                       offers a full range of services, including website audits,
                       keyword research, content optimization, and link-building.
                       Every strategy is custom-built for your business goals,
@@ -119,11 +124,11 @@ const Home = ({ latestPosts }) => {
                     <p>
                       Whether you’re a small solar installer or a large
                       renewable energy company, our SEO services for solar
-                      companies in Phoenix put your business in front of the
+                      companies in Tucson put your business in front of the
                       right audience.
                     </p>
 
-                    <h2>Why Hiring a Phoenix Solar SEO Agency Matters</h2>
+                    <h2>Why Hiring a Tucson Solar SEO Agency Matters</h2>
                     <p>
                       Managing SEO on your own can waste time and cost
                       opportunities. Effective SEO requires technical know-how,
@@ -131,12 +136,12 @@ const Home = ({ latestPosts }) => {
                       Google’s evolving algorithms.
                     </p>
                     <p>
-                      A professional SEO agency for solar companies in Phoenix
+                      A professional SEO agency for solar companies in Tucson
                       like Infused Agency applies proven frameworks, advanced
                       keyword research, and data-driven strategies. Unlike
                       generic tools, we understand the solar industry and how
                       potential customers search for solar installers and solar
-                      services in Phoenix.
+                      services in Tucson.
                     </p>
                     <p>
                       Effective SEO goes beyond rankings. It’s about creating
@@ -149,11 +154,11 @@ const Home = ({ latestPosts }) => {
 
                     <h2>
                       Why Infused Agency Is the Best Choice for Solar SEO in
-                      Phoenix
+                      Tucson
                     </h2>
                     <p>
                       We’re not just another marketing company. Infused Agency
-                      is a dedicated Phoenix solar SEO agency focused on helping
+                      is a dedicated Tucson solar SEO agency focused on helping
                       local solar businesses succeed. Every campaign is
                       custom-built — no cookie-cutter templates, no guesswork.
                     </p>
@@ -162,7 +167,7 @@ const Home = ({ latestPosts }) => {
                       optimized content, and local targeting to help your solar
                       company rise in search results. From refining your Google
                       Business Profile to creating location-specific content for
-                      Phoenix neighborhoods, our strategies are designed for
+                      Tucson neighborhoods, our strategies are designed for
                       sustainable growth and long-term visibility.
                     </p>
                     <p>
@@ -170,7 +175,7 @@ const Home = ({ latestPosts }) => {
                       invested in your success. We help solar companies generate
                       more inquiries, improve conversions, and grow their
                       business with data-driven SEO for solar companies in
-                      Phoenix.
+                      Tucson.
                     </p>
                   </p>
                 )}
@@ -192,7 +197,7 @@ const Home = ({ latestPosts }) => {
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Our Phoenix Solar Company SEO Clients <span>Get Results</span>
+                Our Tucson Solar Company SEO Clients <span>Get Results</span>
               </h2>
             </div>
           </div>
@@ -205,7 +210,7 @@ const Home = ({ latestPosts }) => {
                   className="img-fluid"
                   style={{ width: "100%", height: "auto" }}
                   src={delta}
-                  alt="SEO Solar Agency phoenix, solar seo services phoenix, seo for solar businesses phoenix, seo services for solar companies phoenix, seo for solar company phoenix"
+                  alt="SEO Solar Agency Tucson, solar seo services Tucson, seo for solar businesses Tucson, seo services for solar companies Tucson, seo for solar company Tucson"
                 />
                 <div className="card">
                   <div className="text-center pd-btm-20">
@@ -234,11 +239,10 @@ const Home = ({ latestPosts }) => {
                   <p className="w-75 text-center">
                     <em>
                       "Infused Agency completely transformed our online
-                      presence. Their solar SEO services in Phoenix helped our
+                      presence. Their solar SEO services in Tucson helped our
                       company show up for the right searches, and we’ve seen a
                       steady increase in leads. If you’re looking for expert SEO
-                      for solar companies in Phoenix, they’re the team to
-                      trust!"
+                      for solar companies in Tucson, they’re the team to trust!"
                     </em>
                   </p>
                   <br />
@@ -266,13 +270,13 @@ const Home = ({ latestPosts }) => {
             <Col lg="12">
               <h2>
                 Ready to <span>Grow Your Solar Business</span> Solar SEO in
-                Phoenix?
+                Tucson?
               </h2>
               <p>
                 Take the first step toward more leads, higher rankings, and
                 sustainable growth. Whether you’re a solar installer, renewable
-                energy provider, or established solar company in Phoenix, our
-                tailored Phoenix solar SEO services are designed to deliver real
+                energy provider, or established solar company in Tucson, our
+                tailored Tucson solar SEO services are designed to deliver real
                 results for businesses in the solar industry.
               </p>
               <Link href="/get-a-quote">
@@ -287,7 +291,7 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-top-40">
             <div className="col-lg-12 text-center">
-              <h2>Phoenix SEO Services for Solar Companies</h2>
+              <h2>Tucson SEO Services for Solar Companies</h2>
               <p>Get More Visibility</p>
             </div>
           </div>
@@ -298,10 +302,10 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research & Strategy</h2>
                 <p>
-                  At Infused Agency, our Phoenix solar SEO specialists start
+                  At Infused Agency, our Tucson solar SEO specialists start
                   every campaign with in-depth keyword research. We identify the
                   most relevant and profitable search terms that homeowners and
-                  businesses use when looking for solar solutions in Phoenix. By
+                  businesses use when looking for solar solutions in Tucson. By
                   analyzing your website and your competitors, we create a
                   data-driven SEO strategy designed to capture qualified traffic
                   and deliver measurable results for your solar company.
@@ -313,7 +317,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Link Building</h2>
                 <p>
                   A strong backlink profile is essential for higher rankings and
-                  authority. Our SEO services for solar companies in Phoenix
+                  authority. Our SEO services for solar companies in Tucson
                   include ethical, white-hat link-building strategies that earn
                   high-quality links from trusted websites. These authoritative
                   backlinks boost your domain authority, improve search engine
@@ -325,13 +329,13 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing</h2>
                 <p>
-                  Content is the cornerstone of effective SEO. Our Phoenix
+                  Content is the cornerstone of effective SEO. Our Tucson
                   content team creates engaging, SEO-friendly copy tailored
                   specifically for solar companies. From optimized landing pages
                   to educational blog posts, we develop content that reflects
                   your company’s expertise, attracts potential customers, and
                   improves rankings for targeted keywords like SEO for solar
-                  companies in Phoenix and solar SEO services Phoenix.
+                  companies in Tucson and solar SEO services Tucson.
                 </p>
               </div>
             </div>
@@ -341,7 +345,7 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>On-Page SEO</h2>
                 <p>
-                  Our Phoenix solar SEO experts optimize your website’s
+                  Our Tucson solar SEO experts optimize your website’s
                   structure, code, and content to ensure maximum performance. We
                   conduct comprehensive audits, refine metadata, improve
                   internal linking, and enhance site usability — all while
@@ -355,12 +359,12 @@ const Home = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO</h2>
                 <p>
-                  For solar businesses in Phoenix, local visibility is
+                  For solar businesses in Tucson, local visibility is
                   everything. Infused Agency ensures your company is optimized
                   for local searches by improving your Google Business Profile,
                   building local citations, and creating location-specific
                   content. These strategies help you appear in Google’s Local
-                  Pack, Maps, and other high-visibility areas where Phoenix
+                  Pack, Maps, and other high-visibility areas where Tucson
                   homeowners and businesses are actively searching for solar
                   services.
                 </p>
@@ -371,7 +375,7 @@ const Home = ({ latestPosts }) => {
                 <h2>Technical SEO</h2>
                 <p>
                   Behind every successful campaign is a strong technical
-                  foundation. Our technical solar SEO specialists in Phoenix
+                  foundation. Our technical solar SEO specialists in Tucson
                   improve your site speed, mobile responsiveness, indexing, and
                   security. From fixing crawl errors to optimizing site
                   architecture, we make sure search engines can easily access
@@ -388,13 +392,13 @@ const Home = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <h2>
-                Get <span>More Visibility</span> In Phoenix With Solar SEO
+                Get <span>More Visibility</span> In Tucson With Solar SEO
                 Services
               </h2>
               <p>
                 Take the first step toward more leads, higher rankings, and real
                 growth. Whether you’re a solar installer, renewable energy
-                provider, or established solar company in Phoenix, our SEO
+                provider, or established solar company in Tucson, our SEO
                 services are built to deliver measurable results for businesses
                 in the solar industry.
               </p>
@@ -410,7 +414,7 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center">
             <Col lg="12">
-              <h2>Choosing Infused Agency as Your Phoenix Solar SEO Partner</h2>
+              <h2>Choosing Infused Agency as Your Tucson Solar SEO Partner</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-40 pd-btm-40">
@@ -429,7 +433,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 className="img-fluid"
                 src={infused}
-                alt="infused agency seo for solar businesses phoenix"
+                alt="infused agency seo for solar businesses Tucson"
               />
             </Col>
           </Row>
@@ -442,16 +446,16 @@ const Home = ({ latestPosts }) => {
                 Execute, Measure, Report, and Refine — ensures that your
                 campaign is continuously optimized for growth. This agile
                 methodology allows us to adapt quickly to industry changes while
-                keeping your solar business ahead of competitors in Phoenix
+                keeping your solar business ahead of competitors in Tucson
                 search results.
               </p>
 
-              <h3>Supporting Solar Companies in Phoenix</h3>
+              <h3>Supporting Solar Companies in Tucson</h3>
 
               <p>
                 We understand the challenges solar companies face when trying to
                 stand out online. That’s why we specialize in SEO for solar
-                companies in Phoenix — giving solar installers, renewable energy
+                companies in Tucson — giving solar installers, renewable energy
                 providers, and solar businesses the tools and strategies needed
                 to gain traction in local search, attract qualified leads, and
                 compete effectively in their market.
@@ -460,7 +464,7 @@ const Home = ({ latestPosts }) => {
               <p>
                 With Infused Agency, you get more than just an SEO provider. You
                 get a partner invested in your long-term success with tailored
-                Phoenix solar SEO services that build credibility, visibility,
+                Tucson solar SEO services that build credibility, visibility,
                 and sustainable growth.
               </p>
             </Col>
@@ -470,7 +474,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo expert for solar companies phoenix"
+                alt="seo expert for solar companies Tucson"
               />
               <h3 className="pd-top-20">Client-Focused SEO Services</h3>
               <p>
@@ -478,7 +482,7 @@ const Home = ({ latestPosts }) => {
                 our own. We focus on understanding your goals, your target
                 customers, and your unique solar offerings so that every
                 strategy we implement drives meaningful growth. Each client
-                works with a dedicated Phoenix solar SEO strategist who provides
+                works with a dedicated Tucson solar SEO strategist who provides
                 ongoing guidance and hands-on support to ensure your business
                 attracts the right leads.
               </p>
@@ -487,13 +491,13 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo agency for solar companies phoenix"
+                alt="seo agency for solar companies Tucson"
               />
               <h3 className="pd-top-20">Continuous Optimization</h3>
               <p>
                 SEO isn’t a one-off task — it’s a continuous effort. Our team
                 monitors your site’s performance, tracks search trends in the
-                Phoenix solar market, and adapts strategies as needed. This
+                Tucson solar market, and adapts strategies as needed. This
                 approach keeps your business competitive, ensures consistent
                 lead flow, and positions your solar company ahead of local
                 competitors.
@@ -503,15 +507,15 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="affordable seo for solar businesses phoenix"
+                alt="affordable seo for solar businesses Tucson"
               />
               <h3 className="pd-top-20">Affordable SEO Solutions</h3>
               <p>
                 We know solar businesses of all sizes need results without
                 overspending. Infused Agency offers affordable solar SEO
-                services in Phoenix with clear, upfront pricing. Whether you’re
-                a small installer or a large solar provider, we create
-                strategies that maximize ROI while staying within your budget.
+                services in Tucson with clear, upfront pricing. Whether you’re a
+                small installer or a large solar provider, we create strategies
+                that maximize ROI while staying within your budget.
               </p>
             </Col>
           </Row>
@@ -520,7 +524,7 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo reporting for solar companies phoenix"
+                alt="seo reporting for solar companies Tucson"
               />
               <h3 className="pd-top-20">Transparent Reporting</h3>
               <p>
@@ -535,13 +539,13 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo optimization for solar companies phoenix"
+                alt="seo optimization for solar companies Tucson"
               />
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
                 Our specialists stay up to date on Google’s latest algorithms
                 and best practices, specifically tuned to the solar industry in
-                Phoenix. By using ethical, results-driven methods, we help your
+                Tucson. By using ethical, results-driven methods, we help your
                 website rank higher, attract qualified leads, and grow
                 sustainably over time.
               </p>
@@ -550,12 +554,12 @@ const Home = ({ latestPosts }) => {
               <Image
                 height="50"
                 src={check}
-                alt="seo audit for solar businesses phoenix"
+                alt="seo audit for solar businesses Tucson"
               />
               <h3 className="pd-top-20">Free SEO Audit</h3>
               <p>
                 Curious about how your website is performing? Infused Agency
-                offers a free, no-obligation SEO audit for Phoenix solar
+                offers a free, no-obligation SEO audit for Tucson solar
                 companies. We analyze your site, uncover opportunities to
                 improve visibility, and provide tailored recommendations to help
                 your business generate more leads and dominate local search
@@ -570,14 +574,14 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-top-40">
             <Col lg="12">
-              <h2>Trusted Phoenix Solar SEO Experts with Real Results</h2>
+              <h2>Trusted Tucson Solar SEO Experts with Real Results</h2>
             </Col>
           </Row>
           <Row className="align-items-center pd-top-20">
             <Col lg="6">
               <p>
                 At Infused Agency, our track record speaks for itself. We’ve
-                helped numerous solar companies in Phoenix boost their online
+                helped numerous solar companies in Tucson boost their online
                 visibility, attract qualified leads, and grow their businesses.
                 Our clients consistently see measurable improvements in search
                 rankings, website traffic, and customer inquiries.
@@ -589,17 +593,17 @@ const Home = ({ latestPosts }) => {
                 we implement is driven by data, customized to your company’s
                 goals, and focused on delivering tangible returns on investment.
                 When you partner with Infused Agency, you get a trusted team
-                with deep knowledge of the Phoenix solar market. We combine
+                with deep knowledge of the Tucson solar market. We combine
                 technical SEO expertise, creative content strategies, and local
                 market insights to help your solar business rank higher, capture
-                more leads, and outperform competitors across Phoenix.
+                more leads, and outperform competitors across Tucson.
               </p>
             </Col>
             <Col lg="6">
               <Image
                 className="img-fluid"
                 src={reviews}
-                alt="seo solar companies phoenix reviews"
+                alt="seo solar companies Tucson reviews"
               />
             </Col>
           </Row>
@@ -610,29 +614,28 @@ const Home = ({ latestPosts }) => {
         <Container>
           <Row className="text-center pd-btm-40">
             <Col lg="12">
-              <h2>Frequently Asked Questions for Phoenix Solar SEO Services</h2>
+              <h2>Frequently Asked Questions for Tucson Solar SEO Services</h2>
             </Col>
           </Row>
 
           <Row>
             <Col lg="12">
               <h3>
-                What makes Phoenix solar SEO services different from general
-                SEO?
+                What makes Tucson solar SEO services different from general SEO?
               </h3>
               <p>
-                Our solar SEO services in Phoenix are specifically designed for
+                Our solar SEO services in Tucson are specifically designed for
                 solar companies and renewable energy businesses. We understand
                 the local market, homeowner search patterns, and the competitive
-                landscape in Phoenix. Our strategies include local citation
+                landscape in Tucson. Our strategies include local citation
                 building, Google Business Profile optimization, and
                 location-specific content that ensures your business shows up
                 when potential customers search for solar installers, solar
-                panels, or renewable energy solutions in the Phoenix area.
+                panels, or renewable energy solutions in the Tucson area.
               </p>
 
               <h3>
-                How long does it take to see results from Phoenix solar SEO
+                How long does it take to see results from Tucson solar SEO
                 campaigns?
               </h3>
               <p>
@@ -643,7 +646,7 @@ const Home = ({ latestPosts }) => {
                 keywords. Our proven SEO process includes continuous
                 optimization and transparent reporting, so you can see
                 measurable progress as we improve your rankings and lead
-                generation in Phoenix.
+                generation in Tucson.
               </p>
 
               <h3>
@@ -651,33 +654,32 @@ const Home = ({ latestPosts }) => {
                 SEO?
               </h3>
               <p>
-                Absolutely! SEO for solar companies in Phoenix is highly
+                Absolutely! SEO for solar companies in Tucson is highly
                 effective for smaller businesses because it focuses on local
                 search, where even a small installer can outrank larger
                 competitors. By targeting location-specific keywords like “solar
-                panels Phoenix” or “solar installer near me,” small businesses
+                panels Tucson” or “solar installer near me,” small businesses
                 can gain visibility and attract local leads efficiently. Our
                 affordable SEO solutions are designed to help solar companies of
                 all sizes compete successfully in their market.
               </p>
 
               <h3>
-                What’s included in your Phoenix solar SEO audit and strategy
+                What’s included in your Tucson solar SEO audit and strategy
                 development?
               </h3>
               <p>
                 Our comprehensive solar SEO audit includes technical website
-                analysis, keyword research focused on Phoenix solar searches,
+                analysis, keyword research focused on Tucson solar searches,
                 competitor analysis, content evaluation, and local SEO
                 assessment. We review your Google Business Profile, local
                 citations, backlink profile, and site performance. Based on
                 these insights, we create a tailored strategy that addresses
-                your business’s specific challenges and opportunities in
-                Phoenix.
+                your business’s specific challenges and opportunities in Tucson.
               </p>
 
               <h3>
-                How do you measure the success of Phoenix solar SEO campaigns?
+                How do you measure the success of Tucson solar SEO campaigns?
               </h3>
               <p>
                 We track a range of metrics to measure success for solar
@@ -690,7 +692,7 @@ const Home = ({ latestPosts }) => {
               </p>
 
               <h3>
-                Do you guarantee first-page rankings for Phoenix solar SEO
+                Do you guarantee first-page rankings for Tucson solar SEO
                 keywords?
               </h3>
               <p>
@@ -703,32 +705,32 @@ const Home = ({ latestPosts }) => {
               </p>
 
               <h3>
-                What’s the difference between SEO and local SEO for Phoenix
-                solar companies?
+                What’s the difference between SEO and local SEO for Tucson solar
+                companies?
               </h3>
               <p>
                 Traditional SEO targets broad keywords and aims for national or
-                global reach. Local SEO for solar companies in Phoenix focuses
-                on location-specific searches like “solar installer Phoenix” or
-                “Phoenix solar panels.” This includes optimizing your Google
+                global reach. Local SEO for solar companies in Tucson focuses on
+                location-specific searches like “solar installer Tucson” or
+                “Tucson solar panels.” This includes optimizing your Google
                 Business Profile, managing local citations, generating customer
                 reviews, and creating localized content. Local SEO is especially
                 valuable for solar businesses looking to attract nearby
                 homeowners and businesses.
               </p>
 
-              <h3>How much do Phoenix solar SEO services cost?</h3>
+              <h3>How much do Tucson solar SEO services cost?</h3>
               <p>
                 Pricing depends on your business size, competition level, and
                 goals. We offer packages ranging from basic local SEO
                 optimization to full-scale solar SEO strategies. Our pricing is
                 transparent with no hidden fees, and each proposal is tailored
-                to your business needs. Many Phoenix solar companies see
+                to your business needs. Many Tucson solar companies see
                 measurable ROI within the first year of investing in
                 professional SEO services.
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212674.68408551652!2d-112.28959657505945!3d33.604216294099956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sca!4v1756595813242!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108089.6163201804!2d-110.96507388449965!3d32.15568169106334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d665410b2ced2b%3A0x73c32d384d16c715!2sTucson%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sca!4v1756646312715!5m2!1sen!2sca"
                 width="100%"
                 height="450"
                 allowfullscreen=""
