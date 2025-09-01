@@ -383,7 +383,12 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>Niagara SEO | St. Catharines & Niagara Falls SEO Company</title>
+        <title>
+          SEO Niagara, St Catharines & Niagara Falls | Best SEO Agency | Local
+          SEO Agency | SEO Company | SEO Services | SEO Experts | SEO Marketing
+          | SEO Firms | Search Engine Optimization | SEO Audit Services |
+          Affordable SEO Consultant | SEO Specialist
+        </title>
         <meta
           name="description"
           content="Top-rated SEO agency in Niagara & St. Catharines. Expert search engine optimization, local SEO, and digital marketing services. Boost your rankings today!"
