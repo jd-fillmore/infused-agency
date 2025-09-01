@@ -1239,7 +1239,12 @@ const Home = ({ latestPosts }) => {
                 startups to established companies — achieve stronger online
                 visibility and higher conversions. Every strategy we implement
                 is backed by data, tailored to your goals, and focused on
-                delivering a real return on investment.
+                delivering a real return on investment. Our most requested
+                services are local SEO for Niagara businesses,{" "}
+                <Link href="/seo/for-therapists-canada">
+                  SEO for Therapists in Canada
+                </Link>
+                , and many more.
                 <br />
                 <br />
                 When you work with Infused Agency, you're partnering with a
