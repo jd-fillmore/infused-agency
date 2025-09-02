@@ -63,10 +63,15 @@ const Home = ({ latestPosts }) => {
                 visibility in search engines, attract the right clients, and
                 generate quality leads. With a focus on conversion-driven
                 results, we don't just bring traffic — we help turn that traffic
-                into real appointments for your practice. Whether you're a
-                therapist in New York, Michigan, Massachusetts, Virginia, or
-                anywhere else in the New York, we'll help your therapy practice
-                get more visibility.
+                into real appointments for your practice.{" "}
+                <Link href="/seo/for-therapists-albany">Albany</Link>,{" "}
+                <Link href="/seo/for-therapists-buffalo">Buffalo</Link>,{" "}
+                <Link href="/seo/for-therapists-huntington">Huntington</Link>,{" "}
+                <Link href="/seo/for-therapists-rochester">Rochester</Link>,{" "}
+                <Link href="/seo/for-therapists-syracuse">Syracuse</Link>, or
+                anywhere else in{" "}
+                <Link href="/seo/for-therapists-new-york">New York</Link>, we'll
+                help your therapy practice get more visibility.
               </p>
 
               <Link href="/get-a-quote">
