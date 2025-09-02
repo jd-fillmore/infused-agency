@@ -1249,6 +1249,10 @@ const Home = ({ latestPosts }) => {
                 <Link href="/seo/for-therapists-canada">
                   SEO for Therapists in Canada
                 </Link>
+                ,{" "}
+                <Link href="/seo/for-therapists-usa">
+                  SEO for Therapists in the USA
+                </Link>{" "}
                 , and many more.
                 <br />
                 <br />
