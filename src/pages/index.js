@@ -29,7 +29,7 @@ import affiliate6 from "../../src/img/aff-google-reviews.jpg";
 import feat1 from "../../src/img/feat-suk-law.png";
 import feat2 from "../../src/img/feat-flat-rock.png";
 import feat3 from "../../src/img/feat-fred.png";
-import feat4 from "../../src/img/feat-uphi.png";
+import feat4 from "../../src/img/feat-north.png";
 import feat5 from "../../src/img/feat-kd.png";
 import feat6 from "../../src/img/feat-delta.png";
 import feat7 from "../../src/img/feat-brandi.png";
