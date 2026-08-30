@@ -17,20 +17,111 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>SEO Fonthill | Expert SEO Services & Local SEO Agency</title>
+        <title>Fonthill Local SEO & AI Search | Infused Agency</title>
         <meta
           name="description"
-          content="Looking for the best SEO company in Fonthill? Our SEO experts provide search engine optimization, local SEO, SEO audits to grow your business."
+          content="Fonthill local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
         />
         <link rel="canonical" href="https://infused.agency/seo/fonthill" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What Exactly Is Local SEO for Businesses?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "When Can I Expect to See Results from SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What Is the Typical Cost of SEO Services?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can You Guarantee My Business Will Rank #1 on Google?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do You Work Exclusively with Local Businesses?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How Do You Optimize Google Business Profiles?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Which Types of Businesses Benefit from Your SEO Services?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Will I Receive Regular Reports on My SEO Progress?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How Can I Start Working with Infused Agency for SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
       </Head>
       <Nav />
       <InnerHeroCities
         title="SEO Fonthill"
-        subTitle="Grow Your Business With Our Local SEO Fonthill Services"
+        subTitle="Local SEO & AI Search to Help Fonthill Businesses Get Found"
         image={hero}
-        description="Infused Agency is a local SEO Fonthill agency. We craft tailored online marketing strategies designed to help businesses grow and succeed."
-        alt="SEO Fonthill, local seo experts, seo company, seo services, seo agency, search engine optimization, seo marketing, seo firm, seo pricing, seo specialist, seo consultant"
+        description="Infused Agency is a Fonthill local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
+        alt="Fonthill local SEO & AI Search - helping businesses get found on Google and AI search tools"
       />
       <section className="home-top-web">
         <div className="container">
@@ -42,31 +133,32 @@ const SEO = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <p>
-                Google's complex algorithms determine which websites rank
-                highest based on factors like quality content, site structure,
-                and local relevance. As a leading SEO Fonthill company serving
-                the Twenty Valley region, Infused Agency specializes in helping
-                local businesses improve their search rankings and connect with
-                customers throughout the Niagara Peninsula.
+                Today, being found online means more than a great website—it
+                means showing up when customers search Google and when AI tools
+                like ChatGPT, Gemini, and Google's AI Overviews answer their
+                questions. For small businesses across Fonthill and the broader
+                Pelham area, Infused Agency offers local SEO &amp; AI Search
+                expertise that helps you stand out in the search results that
+                matter most throughout the Niagara region.
                 <br />
                 <br />
-                Our team provides tailored search engine optimization services
-                designed to connect your business with ideal customers through
-                effective digital marketing and local SEO strategies. Whether
-                you need trusted local optimization or comprehensive internet
-                marketing services, we deliver results that grow your online
-                presence and drive traffic.
+                Our approach pairs hands-on local search optimization with
+                AI-ready content built to connect you with the right customers
+                at the right moment. Whether you're a family-owned shop on
+                Highway 20, a service provider serving Welland and Thorold, or a
+                grower with roots in the surrounding countryside, we craft
+                search strategies that bring real, walk-in-the-door results.
                 <br />
                 <br />
-                Located within the Town of Pelham, we understand the unique
-                market dynamics of businesses operating in and around Fonthill,
-                Effingham, and Ridgeville. From the scenic Steve Bauer Trail, to
-                the lush Short Hills Provincial Park, to the popular Fonthill
-                Bandshell concerts and vibrant Pelham Summerfest, we help local
-                businesses connect with customers exploring our welcoming
-                community and the greater Niagara region. If you're curious
-                about how an experienced SEO agency can help your business
-                thrive in this competitive local market, contact us today.
+                Fonthill has a character all its own—a tight-knit community
+                where neighbours support local retailers and word travels fast.
+                From the trails of Short Hills Provincial Park to the summer
+                concerts at the Fonthill Bandshell and the busy shelves of our
+                garden nurseries, this is a town that values the personal touch.
+                We help businesses like yours get found by the people who live,
+                shop, and play right here in Pelham and across Niagara. If you'd
+                like to see how an experienced local SEO &amp; AI Search agency
+                can help your Fonthill business grow, reach out today.
               </p>
             </Col>
           </Row>
@@ -83,7 +175,7 @@ const SEO = ({ latestPosts }) => {
                 <Image
                   className="img-fluid"
                   src={flatRock}
-                  alt="Flat Rock Cellars SEO Results"
+                  alt="Flat Rock Cellars local SEO & AI Search results"
                 />
               </div>
               <div className="col-lg-6">
@@ -108,38 +200,38 @@ const SEO = ({ latestPosts }) => {
                   Helping Your Business Rank Higher on Google and Beyond
                 </h3>
                 <p>
-                  At Infused Agency, we're a trusted SEO Fonthill company
-                  dedicated to boosting local businesses' online visibility
-                  through expert search engine optimization services. Whether
-                  you run a local shop, operate a service business throughout
-                  the region, or manage an expanding company, our personalized
-                  SEO strategies are designed to help your website climb the
-                  Google rankings and attract more qualified leads.
+                  Infused Agency has become a trusted name for Fonthill SEO
+                  services, helping everything from hometown retailers and
+                  family-run service companies to growing Niagara workshops
+                  climb higher in search. We don't rely on cookie-cutter
+                  tactics. Instead, we build personalized strategies that get
+                  your business ranking on Google and recommended by AI tools
+                  like ChatGPT and Gemini—bringing in leads that actually turn
+                  into loyal local customers.
                 </p>
 
                 <p>
-                  As a leading internet marketing company specializing in local
-                  SEO, our team stays up-to-date with the latest search engine
-                  algorithm changes to keep your website competitive. From
-                  comprehensive keyword research and technical SEO audits to
-                  on-page optimization and authoritative link building, we
-                  manage every aspect of your search optimization with
-                  precision.
+                  As a specialist in local search and AI Search optimization, we
+                  keep a close eye on how Google and the AI assistants change
+                  the way people find answers. Everything—from careful keyword
+                  discovery and technical audits to on-page fine-tuning,
+                  AI-ready content, and strong link building—is handled under
+                  one roof with care and consistency.
                 </p>
 
                 <p>
-                  Recently, we partnered with a local client aiming to enhance
-                  their search presence and online reputation. Through a
-                  tailored SEO marketing strategy focusing on targeted keyword
-                  research, website optimization, and building credible local
-                  citations, they saw significant growth in website traffic and
-                  lead generation.
+                  Not long ago, a Fonthill client came to us wanting to be
+                  easier to find and better regarded across the community. By
+                  combining local keyword research, AI-ready copy, and reliable
+                  citations throughout the Pelham and Short Hills area, that
+                  business saw a steady climb in website traffic and a clear
+                  rise in qualified enquiries.
                 </p>
 
                 <p>
-                  If you're ready to take your business to the next level with
-                  professional SEO services from a top-rated agency, contact
-                  Infused Agency today.
+                  If your Fonthill business is ready to grow with professional
+                  local SEO &amp; AI Search services, get in touch with Infused
+                  Agency and let's talk about what's possible.
                 </p>
 
                 <h2 class="text-center pd-top-40">
@@ -149,49 +241,52 @@ const SEO = ({ latestPosts }) => {
                   Connecting Your Business with Local Customers
                 </h3>
                 <p>
-                  If you want to attract more local customers, effective local
-                  SEO Fonthill services are essential. As a leading local SEO
-                  company and optimization agency, Infused Agency helps
-                  businesses rise above the competition in local search
-                  results—whether on Google Maps, organic search, or prominent
-                  online directories.
+                  To win over customers close to home, you need strong local SEO
+                  in Fonthill. As a dedicated local SEO company, Infused Agency
+                  helps Pelham businesses outshine the competition in Google
+                  Maps, organic search, and well-regarded online directories.
+                  The same local signals we strengthen also encourage AI tools
+                  like ChatGPT and Gemini to mention your business when shoppers
+                  ask for a great recommendation.
                 </p>
 
                 <p>
-                  We have a deep understanding of the local market, including
-                  nearby communities like Vineland and Jordan Station. Our
-                  comprehensive local SEO services include:
+                  Because we're based right in Niagara, we know the area well—from
+                  the orchard-lined roads near Vineland and Jordan Station to the
+                  commuter routes that bring people through Welland and Thorold.
+                  Our local SEO services cover:
                 </p>
 
                 <ul>
                   <li>
-                    In-depth local keyword research focused on your target area
+                    Careful keyword research built around Fonthill and the
+                    surrounding Pelham market
                   </li>
                   <li>
-                    Optimizing your Google Business Profile for maximum local
-                    exposure
+                    Google Business Profile optimization to make the most of
+                    your local visibility
                   </li>
                   <li>
-                    Building trusted local citations and directory listings to
-                    boost authority
+                    Trusted local citations and directory listings that raise
+                    your authority nearby
                   </li>
                   <li>
-                    On-page SEO tailored to location-specific search queries
+                    On-page SEO shaped around the searches your neighbours
+                    actually make
                   </li>
                 </ul>
 
                 <p>
-                  In addition to core local SEO services, we also offer web
-                  design, SEO copywriting, and social media management to create
-                  a fully integrated internet marketing service for your
-                  business.
+                  Beyond core local SEO, we also offer AI Search Optimization,
+                  SEO copywriting, and social media management so your entire
+                  search marketing works together as one.
                 </p>
 
                 <p>
-                  When you choose Infused Agency, you're partnering with a
-                  results-driven SEO company that combines local market
-                  expertise with proven digital marketing strategies—connecting
-                  your business with the community that matters most.
+                  When you work with Infused Agency, you're partnering with a
+                  results-driven team that blends genuine local knowledge with
+                  proven digital strategy—helping your Fonthill business connect
+                  with the community that matters most.
                 </p>
               </div>
             </div>
@@ -208,22 +303,21 @@ const SEO = ({ latestPosts }) => {
                 Marketing Partner?
               </h2>
               <p>
-                Not all internet marketing companies are created
-                equal—especially when it comes to understanding the needs of
-                local businesses. Growing your business online requires more
-                than generic digital marketing solutions. It demands a Fonthill
-                SEO company that listens carefully to your goals, knows your
-                local market inside and out, and crafts tailored strategies that
-                deliver real results. At Infused Agency, we are more than just a
-                faceless SEO agency — we're your hands-on partner dedicated to
-                helping businesses increase visibility, attract more customers,
-                and grow their bottom line through expert SEO marketing and
-                internet marketing services.
+                Not every internet marketing company truly understands what it
+                takes to grow a business in a small town like Fonthill. Getting
+                found online isn't about flashy gimmicks—it's about partnering
+                with a Fonthill SEO company that listens to your goals, knows
+                the local landscape, and builds tailored strategies that bring
+                real customers through the door. At Infused Agency, we're not a
+                distant agency hiding behind contracts; we're your hands-on
+                partner helping businesses in Pelham and the Short Hills region
+                increase visibility, attract more customers, and grow through
+                thoughtful local SEO and AI Search marketing.
               </p>
               <Image
                 className="img-fluid"
                 src={best}
-                alt="search engine optimization company"
+                alt="Infused Agency awards for local SEO & AI Search"
               />
             </div>
           </div>
@@ -231,38 +325,38 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-6">
               <h3>A Local SEO Company with a Customer-First Mindset</h3>
               <p>
-                Every business is unique, which is why Infused Agency starts by
-                understanding your specific challenges, your ideal customers,
-                and your growth goals. We ask questions like: Who are your
-                target customers in your area and surrounding regions? What
-                services or products do you want to emphasize? What does success
-                look like for your business in the next 6 to 12 months? Based on
-                your answers, we develop a custom, data-driven SEO plan focused
-                on your needs. No cookie-cutter solutions. No generic "one size
-                fits all" packages—just personalized, effective SEO Fonthill
-                services that make an impact.
+                Every business tells a different story, so we start by listening.
+                Infused Agency takes the time to understand the challenges you
+                face, the customers you want to reach in Fonthill and the
+                surrounding Niagara communities, and the growth you're aiming
+                for over the next year. Are you a retail shop hoping to draw
+                foot traffic from the Short Hills trails? A service business
+                covering Welland and Thorold? We build a custom, data-driven SEO
+                plan around your answers—no cookie-cutter tactics, no blanket
+                "one size fits all" packages, just focused local SEO in Fonthill
+                that makes a genuine difference.
               </p>
             </div>
             <div class="col-lg-6">
               <h3>Transparent Reporting and Measurable Success</h3>
               <p>
-                Too many Fonthill SEO companies promise results without showing
-                progress. At Infused Agency, transparency is key. We provide
-                clear, jargon-free reports every month that focus on what truly
-                matters:
+                Too many local SEO companies talk a big game but never show the
+                receipts. At Infused Agency, we believe in straight talk. Every
+                month you'll receive clear, easy-to-read reports that focus on
+                what actually matters:
               </p>
 
               <ul>
-                <li>Increases in website traffic</li>
-                <li>Improved search engine rankings</li>
-                <li>More qualified leads</li>
-                <li>Higher conversion rates</li>
+                <li>Growth in website traffic</li>
+                <li>Better search engine rankings</li>
+                <li>More qualified local leads</li>
+                <li>Improvements in conversion rates</li>
               </ul>
 
               <p>
-                You'll have a dedicated project manager who keeps you informed,
-                answers your questions, and adjusts your SEO campaign as needed
-                to maximize growth.
+                You'll also have a dedicated project manager who keeps you in
+                the loop, answers your questions honestly, and fine-tunes your
+                campaign as your business grows.
               </p>
             </div>
           </div>
@@ -270,25 +364,25 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-6">
               <h3>A Proven Track Record of Success in the Region</h3>
               <p>
-                With years of experience serving businesses across various
-                industries like home services, retail, tourism, and wellness,
-                Infused Agency has helped companies grow their online presence.
-                Whether launching a new SEO-optimized website or revitalizing an
-                existing one, we bring the local expertise and technical skill
-                to get you noticed and generate leads.
+                Over the years, Infused Agency has helped businesses across
+                Niagara—from home services and retail to tourism and wellness—
+                build a stronger online presence. Whether you're just getting
+                started with search in Fonthill or want to sharpen an existing
+                strategy, we bring the local know-how and technical skill to get
+                you noticed and generate the leads you need to grow.
               </p>
             </div>
             <div className="col-lg-6">
               <h3>Honesty, Respect, and Integrity in Every Partnership</h3>
               <p>
-                At Infused Agency, we value honesty above all else. We will
-                never try to upsell you on services you don't need. Instead,
-                we'll advise you on what truly benefits your business and
-                provide tailored strategies that fit your budget and goals.
-                Every SEO campaign we build is unique—if you only need local SEO
-                and content creation, that's exactly what we'll provide. If your
-                website needs a full redesign, we'll clearly explain why and
-                guide you through the best path forward.
+                At Infused Agency, honesty comes first. We'll never push
+                services you don't need just to pad a bill. Instead, we'll tell
+                you what will genuinely help your Fonthill business and build a
+                strategy that fits your budget and your goals. Every campaign is
+                unique—if you only need local SEO and content, that's what we'll
+                deliver. If you could benefit from stronger visibility in AI
+                tools like ChatGPT and Gemini, we'll explain why and guide you
+                down the right path.
               </p>
             </div>
           </div>
@@ -296,14 +390,14 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-12">
               <h2>Partner with an SEO Company That Cares</h2>
               <p>
-                You deserve more than just an SEO Fonthill vendor—you deserve a
-                true partner invested in your business success. If you're ready
-                to work with a dedicated SEO agency that puts your business
-                first, let's connect. Infused Agency is here to help you build a
-                stronger digital presence through smart, strategic SEO marketing
-                and internet marketing services tailored for local businesses.
-                Contact us today for a free consultation and discover what's
-                possible for your business.
+                You deserve more than just another vendor to keep an eye on—you
+                deserve a partner who's genuinely invested in your success. If
+                you're ready to work with a dedicated agency that puts Fonthill
+                businesses first, let's talk. Infused Agency is here to help you
+                build a stronger digital presence through smart, strategic local
+                SEO and AI Search marketing designed for our community. Reach
+                out today for a free consultation and find out what's possible
+                for your business.
               </p>
             </div>
           </div>
@@ -313,7 +407,7 @@ const SEO = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
-              <h2>Comprehensive SEO Services</h2>
+              <h2>Comprehensive SEO & AI Search Services</h2>
             </div>
           </div>
         </div>
@@ -323,16 +417,15 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research for Local Businesses</h2>
                 <p>
-                  To get found online by customers in your area, it all starts
-                  with understanding the exact search terms they use. Infused
-                  Agency conducts thorough keyword research tailored
-                  specifically to your local market. We go beyond just search
-                  volume and dive into real user intent. Whether your business
-                  targets local service phrases or broader industry terms, we
-                  pinpoint the keywords your potential customers are actively
-                  searching for. This research forms the backbone of every
-                  Fonthill SEO service we provide, from content creation to
-                  on-page optimization.
+                  Being found online starts with knowing the exact words your
+                  customers use. Infused Agency digs deep into keyword research
+                  tailored to the Fonthill and Pelham market, going well beyond
+                  raw search volume to understand what shoppers really mean. Whether
+                  your business relies on local service phrases or wider industry
+                  terms, we zero in on the searches your future customers are
+                  typing right now. That research becomes the foundation of every
+                  Fonthill SEO service we deliver, from content creation to
+                  on-page optimization and AI-ready copy.
                 </p>
               </div>
             </div>
@@ -340,30 +433,34 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO Optimization</h2>
                 <p>
-                  Local SEO is crucial for showing up when people nearby search
-                  for services and products you offer. As a top local SEO
-                  company and optimization agency, Infused Agency develops
-                  targeted local SEO Fonthill strategies to help your business
-                  appear in Google Maps, the local pack, and organic search
-                  results. Our local SEO services include:
+                  When people nearby search for what you offer, local SEO is what
+                  helps you show up. As a dedicated local SEO company, Infused
+                  Agency builds targeted local SEO strategies for Fonthill that
+                  help your business appear in Google Maps, the local pack,
+                  organic results, and even AI-generated answers. Our local SEO
+                  services include:
                 </p>
 
                 <ul>
                   <li>
-                    Google Business Profile optimization tailored for maximum
-                    local visibility
+                    Google Business Profile optimization fine-tuned for local
+                    visibility
                   </li>
                   <li>
-                    Building local citations and directory listings to boost
-                    local authority
+                    Local citations and directory listings that build authority
+                    in the community
                   </li>
                   <li>
-                    Location-specific keyword strategies focused on your target
+                    Location-focused keyword strategies aimed at your Fonthill
                     market
                   </li>
                   <li>
-                    Creation of locally relevant content that resonates with
-                    your community
+                    Locally relevant content that speaks to your neighbours and
+                    customers
+                  </li>
+                  <li>
+                    Optimization for AI tools like ChatGPT, Gemini, and Google's
+                    AI Overviews so your business appears in AI answers
                   </li>
                 </ul>
               </div>
@@ -372,14 +469,15 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing & SEO Copywriting</h2>
                 <p>
-                  Effective content does more than just inform—it converts
-                  visitors into customers. Infused Agency's content writing and
-                  Fonthill SEO copywriting services are designed specifically
-                  for local businesses, combining search engine optimization
-                  with engaging, locally relevant messaging. We naturally
-                  incorporate location-focused keywords and local references,
-                  crafting service pages, blog posts, and website copy that not
-                  only rank well but also build trust with your audience.
+                  Good content doesn't just describe your business—it convinces
+                  visitors to become customers. Infused Agency's content writing
+                  and Fonthill SEO copywriting services are built for local
+                  businesses, pairing solid search optimization with warm,
+                  place-based messaging your neighbours will connect with. We
+                  weave location keywords and local references in naturally,
+                  creating service pages, blog posts, and website copy that rank
+                  well on Google and give AI tools like ChatGPT and Gemini clear,
+                  reliable answers about your business.
                 </p>
               </div>
             </div>
@@ -389,29 +487,29 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Link Building Services</h2>
                 <p>
-                  Backlinks remain a powerful factor in Google's ranking
-                  algorithm. Infused Agency offers white-hat link building
-                  services designed to increase your business's site authority
-                  and search visibility while adhering to Google's guidelines.
-                  Our strategies include:
+                  Backlinks continue to carry real weight in how Google ranks
+                  websites. Infused Agency offers white-hat link building that
+                  raises your site's authority and search visibility while
+                  staying well within Google's guidelines. Our approach includes:
                 </p>
 
                 <ul>
                   <li>
-                    Local business directory submissions focused on regional
+                    Directory submissions focused on Fonthill and Niagara
                     listings
                   </li>
                   <li>
-                    Industry-specific guest posts to establish your brand as an
-                    authority
+                    Guest posts in relevant industries that position your brand
+                    as a trusted voice
                   </li>
                   <li>
-                    Building relationships with community websites, local blogs,
-                    and regional partners
+                    Relationships with community websites, local blogs, and
+                    regional partners here in Pelham
                   </li>
                   <li>
-                    No shortcuts or spammy links—just sustainable SEO marketing
-                    that boosts your online presence over time
+                    No shortcuts or spammy links—just sustainable SEO that grows
+                    your presence and builds the authority AI tools like ChatGPT
+                    and Gemini rely on to recommend businesses
                   </li>
                 </ul>
               </div>
@@ -420,36 +518,49 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>On-Page SEO & Technical SEO</h2>
                 <p>
-                  Your website needs to perform flawlessly to rank well. Infused
-                  Agency's on-page SEO and technical SEO services ensure your
-                  website meets all of Google's requirements and offers an
-                  excellent user experience. Our services cover:
+                  For your website to rank, it has to perform well. Infused
+                  Agency's on-page and technical SEO work makes sure your site
+                  satisfies Google's requirements and gives visitors a smooth
+                  experience. Our services cover:
                 </p>
 
                 <ul>
                   <li>
-                    Meta title and description optimization to improve
-                    click-through rates
+                    Meta title and description updates to lift click-through
+                    rates
                   </li>
                   <li>
-                    Proper use of image alt text and file naming for SEO
-                    benefits
+                    Image alt text and file naming optimized for search engines
                   </li>
                   <li>
                     Page speed improvements and Core Web Vitals optimization
                   </li>
                   <li>
-                    Mobile responsiveness testing to capture mobile traffic
+                    Mobile responsiveness checks to capture customers on the go
                   </li>
                   <li>
-                    Fixing broken links and enhancing internal linking for
-                    better navigation
+                    Fixing broken links and improving internal linking for
+                    easier navigation
                   </li>
                 </ul>
                 <p>
-                  From minor fixes to comprehensive technical audits, we
-                  optimize your website to maximize search engine rankings and
-                  visitor satisfaction.
+                  From quick fixes to full technical audits, we ensure your site
+                  is easy for search engines and AI tools to understand and cite,
+                  and a pleasure for your customers to use.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h2>AI Search Optimization</h2>
+                <p>
+                  More and more, people turn to AI tools like ChatGPT, Gemini,
+                  and Google's AI Overviews when they want a local recommendation.
+                  Infused Agency helps Fonthill businesses get named in those AI
+                  answers by creating AI-ready content, keeping local details
+                  consistent across the web, and building the authority signals
+                  that matter. The next time someone asks AI where to find a
+                  great Pelham business, we want yours to be part of the reply.
                 </p>
               </div>
             </div>

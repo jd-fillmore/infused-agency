@@ -5,7 +5,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   UncontrolledDropdown,
@@ -30,16 +29,14 @@ const Example = (props) => {
         <TopBar />
         <Navbar id="nav" expand="lg">
           <Container fluid>
-            <NavbarBrand className="logo" name="Infused Agency">
-              <Link href="/">
-                <Image
-                  unoptimized={true}
-                  className="logo"
-                  src={logo}
-                  alt="Infused Agency Logo"
-                />
-              </Link>
-            </NavbarBrand>
+            <Link href="/" className="logo navbar-brand">
+              <Image
+                unoptimized={true}
+                className="logo"
+                src={logo}
+                alt="Infused Agency Logo"
+              />
+            </Link>
             <NavbarToggler className="custom-toggler" onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>

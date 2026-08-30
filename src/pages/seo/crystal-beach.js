@@ -17,22 +17,111 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          SEO Crystal Beach | Expert SEO Services & Local SEO Agency
-        </title>
+        <title>Crystal Beach Local SEO & AI Search | Infused Agency</title>
         <meta
           name="description"
-          content="Looking for the best SEO company in Crystal Beach? Our SEO experts provide search engine optimization, local SEO, SEO audits to grow your business."
+          content="Crystal Beach local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
         />
         <link rel="canonical" href="https://infused.agency/seo/crystal-beach" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What Exactly Is Local SEO for Businesses?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "When Can I Expect to See Results from SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What Is the Typical Cost of SEO Services?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can You Guarantee My Business Will Rank #1 on Google?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do You Work Exclusively with Local Businesses?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How Do You Optimize Google Business Profiles?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Which Types of Businesses Benefit from Your SEO Services?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Will I Receive Regular Reports on My SEO Progress?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How Can I Start Working with Infused Agency for SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
       </Head>
       <Nav />
       <InnerHeroCities
         title="SEO Crystal Beach"
-        subTitle="Grow Your Business With Our Local SEO Crystal Beach Services"
+        subTitle="Local SEO & AI Search to Help Crystal Beach Businesses Get Found"
         image={hero}
-        description="Infused Agency is a local SEO Crystal Beach agency. We craft tailored online marketing strategies designed to help businesses grow and succeed."
-        alt="SEO Crystal Beach, local seo experts, seo company, seo services, seo agency, search engine optimization, seo marketing, seo firm, seo pricing, seo specialist, seo consultant"
+        description="Infused Agency is a Crystal Beach local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
+        alt="Crystal Beach local SEO & AI Search - helping businesses get found on Google and AI search tools"
       />
       <section className="home-top-web">
         <div className="container">
@@ -44,32 +133,37 @@ const SEO = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <p>
-                Google's complex algorithms determine which websites rank
-                highest based on factors like quality content, site structure,
-                and local relevance. As a leading SEO Crystal Beach company
-                serving Niagara’s South Coast, Infused Agency specializes in
-                helping local businesses improve their search rankings and
-                connect with customers throughout the Niagara Peninsula.
+                How customers find local businesses has changed dramatically.
+                Between Google's ever-moving algorithms and AI assistants like
+                ChatGPT, Gemini, and Google's AI Overviews, getting discovered
+                online now takes more than a basic website. As a local SEO
+                &amp; AI Search company for Crystal Beach, Infused Agency helps
+                businesses across Niagara's South Coast claim their place in
+                those results and connect with shoppers throughout the Niagara
+                Peninsula.
                 <br />
                 <br />
-                Our team provides tailored search engine optimization services
-                designed to connect your business with ideal customers through
-                effective digital marketing and local SEO strategies. Whether
-                you need trusted local optimization or comprehensive internet
-                marketing services, we deliver results that grow your online
-                presence and drive traffic.
+                We design every campaign around how people actually search
+                today, blending local search optimization with AI-ready content
+                so your business appears whether a customer types a query into
+                Google or asks a chatbot for a recommendation. Whether you need
+                dependable local optimization or a complete search marketing
+                program, we build strategies that grow your online reach and
+                turn visibility into real traffic.
                 <br />
                 <br />
-                Located along the sandy shores of Lake Erie, we understand the
-                unique market dynamics of businesses operating near Crystal
-                Beach’s waterfront, Erie Road, Ridgeway, and the surrounding
-                Fort Erie region. From the lively Bay Beach with its beautiful
-                boardwalk, to the popular Crystal Beach Waterfront Park,
-                Friendship Trail, and nearby Sherkston Shores, we help local
-                businesses connect with customers exploring our vibrant lakeside
-                community and the greater Niagara area. If you're curious about
-                how an experienced SEO agency can help your business thrive in
-                this competitive local market, contact us today.
+                Crystal Beach is no ordinary market, and neither is its customer
+                base. With its sandy Lake Erie shoreline, the lively Bay Beach
+                and its boardwalk, Crystal Beach Waterfront Park, the Friendship
+                Trail, and nearby Sherkston Shores, the community draws both
+                year-round residents and summer visitors—families in rental
+                cottages, weekenders, and tourists exploring the waterfront.
+                From Fort Erie to Ridgeway, we understand how seasonal tourism
+                shapes local searches, and we help businesses get found by
+                everyone exploring our vibrant lakeside community and the
+                greater Niagara area. If you're curious about how an experienced
+                local SEO &amp; AI Search agency can help your business thrive
+                in this competitive local market, contact us today.
               </p>
             </Col>
           </Row>
@@ -111,38 +205,38 @@ const SEO = ({ latestPosts }) => {
                   Helping Your Business Rank Higher on Google and Beyond
                 </h3>
                 <p>
-                  At Infused Agency, we're a trusted SEO Crystal Beach company
-                  dedicated to boosting local businesses' online visibility
-                  through expert search engine optimization services. Whether
-                  you run a local shop, operate a service business throughout
-                  the region, or manage an expanding company, our personalized
-                  SEO strategies are designed to help your website climb the
-                  Google rankings and attract more qualified leads.
+                  Infused Agency is the local SEO &amp; AI Search partner
+                  Crystal Beach businesses turn to for real digital growth.
+                  Whether you run a shop along Erie Road, offer services to
+                  residents and summer visitors across the Fort Erie area, or
+                  manage a growing company, we build strategies tailored to your
+                  goals so your business ranks on Google and earns
+                  recommendations from AI tools like ChatGPT and Gemini—drawing
+                  in more of the right leads.
                 </p>
 
                 <p>
-                  As a leading internet marketing company specializing in local
-                  SEO, our team stays up-to-date with the latest search engine
-                  algorithm changes to keep your website competitive. From
-                  comprehensive keyword research and technical SEO audits to
-                  on-page optimization and authoritative link building, we
-                  manage every aspect of your search optimization with
-                  precision.
+                  Because search keeps evolving, our team tracks the latest
+                  changes to Google's algorithms and the fast-moving AI search
+                  landscape to keep your business ahead of the curve. From deep
+                  keyword research and technical SEO audits to on-page
+                  optimization, AI-ready content, and authoritative link
+                  building, we look after every layer of your search presence
+                  with care.
                 </p>
 
                 <p>
-                  Recently, we partnered with a local client aiming to enhance
-                  their search presence and online reputation. Through a
-                  tailored SEO marketing strategy focusing on targeted keyword
-                  research, website optimization, and building credible local
-                  citations, they saw significant growth in website traffic and
-                  lead generation.
+                  We recently partnered with a local business that wanted
+                  stronger search visibility and a better online reputation.
+                  A focused campaign built around targeted keyword research,
+                  website improvements, and trustworthy local citations led to
+                  meaningful gains in website traffic and qualified leads.
                 </p>
 
                 <p>
-                  If you're ready to take your business to the next level with
-                  professional SEO services from a top-rated agency, contact
-                  Infused Agency today.
+                  Ready to grow with professional local SEO &amp; AI Search
+                  services from a highly rated agency? Contact Infused Agency
+                  today.
                 </p>
 
                 <h2 class="text-center pd-top-40">
@@ -152,49 +246,52 @@ const SEO = ({ latestPosts }) => {
                   Connecting Your Business with Local Customers
                 </h3>
                 <p>
-                  If you want to attract more local customers, effective local
-                  SEO Crystal Beach services are essential. As a leading local
-                  SEO company and optimization agency, Infused Agency helps
-                  businesses rise above the competition in local search
-                  results—whether on Google Maps, organic search, or prominent
-                  online directories.
+                  To capture more business from nearby customers, local SEO in
+                  Crystal Beach is essential. As a leading local SEO and AI
+                  Search company, Infused Agency helps businesses stand out in
+                  local search results—whether on Google Maps, organic search,
+                  or AI search tools like ChatGPT and Gemini.
                 </p>
 
                 <p>
-                  We have a deep understanding of the local market, including
-                  nearby communities like Vineland and Jordan Station. Our
-                  comprehensive local SEO services include:
+                  We know this lakeside market well, from the seasonal tourist
+                  flow along the waterfront to the everyday searches of local
+                  residents and the neighboring communities of Fort Erie and
+                  Ridgeway. Our comprehensive local SEO services include:
                 </p>
 
                 <ul>
                   <li>
-                    In-depth local keyword research focused on your target area
+                    In-depth local keyword research focused on the Crystal Beach
+                    area and its seasonal search patterns
                   </li>
                   <li>
-                    Optimizing your Google Business Profile for maximum local
-                    exposure
+                    Optimizing your Google Business Profile for maximum
+                    visibility in local map results
                   </li>
                   <li>
-                    Building trusted local citations and directory listings to
-                    boost authority
+                    Building trusted local citations and directory listings that
+                    reinforce your authority in the region
                   </li>
                   <li>
-                    On-page SEO tailored to location-specific search queries
+                    On-page SEO tuned to location-specific queries from
+                    residents and summertime visitors alike
                   </li>
                 </ul>
 
                 <p>
-                  In addition to core local SEO services, we also offer web
-                  design, SEO copywriting, and social media management to create
-                  a fully integrated internet marketing service for your
-                  business.
+                  Beyond core local SEO services, we also offer AI Search
+                  Optimization, SEO copywriting, and social media management so
+                  your business enjoys a fully integrated search marketing
+                  approach.
                 </p>
 
                 <p>
                   When you choose Infused Agency, you're partnering with a
-                  results-driven SEO company that combines local market
+                  results-driven SEO company that pairs deep local market
                   expertise with proven digital marketing strategies—connecting
-                  your business with the community that matters most.
+                  your business with the Crystal Beach community that matters
+                  most.
                 </p>
               </div>
             </div>
@@ -211,22 +308,22 @@ const SEO = ({ latestPosts }) => {
                 Marketing Partner?
               </h2>
               <p>
-                Not all internet marketing companies are created
-                equal—especially when it comes to understanding the needs of
-                local businesses. Growing your business online requires more
-                than generic digital marketing solutions. It demands a Crystal
-                Beach SEO company that listens carefully to your goals, knows
-                your local market inside and out, and crafts tailored strategies
-                that deliver real results. At Infused Agency, we are more than
-                just a faceless SEO agency — we're your hands-on partner
-                dedicated to helping businesses increase visibility, attract
-                more customers, and grow their bottom line through expert SEO
-                marketing and internet marketing services.
+                Internet marketing companies aren't all created equal—
+                especially when it comes to understanding a seasonal lakeside
+                market like Crystal Beach. Real online growth takes more than
+                generic digital marketing solutions. It demands a Crystal Beach
+                local SEO &amp; AI Search company that listens carefully to your
+                goals, understands the rhythm of Lake Erie's tourism community,
+                and crafts tailored strategies that deliver real results. At
+                Infused Agency, we are more than just a faceless SEO agency —
+                we're your hands-on partner dedicated to helping businesses
+                increase visibility, attract more customers, and grow their
+                bottom line through expert local SEO and AI Search marketing.
               </p>
               <Image
                 className="img-fluid"
                 src={best}
-                alt="search engine optimization company"
+                alt="Crystal Beach local SEO & AI Search partner - increasing business visibility on Google and AI search tools"
               />
             </div>
           </div>
@@ -234,25 +331,25 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-6">
               <h3>A Local SEO Company with a Customer-First Mindset</h3>
               <p>
-                Every business is unique, which is why Infused Agency starts by
-                understanding your specific challenges, your ideal customers,
-                and your growth goals. We ask questions like: Who are your
-                target customers in your area and surrounding regions? What
-                services or products do you want to emphasize? What does success
-                look like for your business in the next 6 to 12 months? Based on
-                your answers, we develop a custom, data-driven SEO plan focused
-                on your needs. No cookie-cutter solutions. No generic "one size
-                fits all" packages—just personalized, effective SEO Crystal
-                Beach services that make an impact.
+                Every business in the Crystal Beach community is different, so
+                we begin by learning about your challenges, your ideal
+                customers, and your growth goals. Are you courting summer
+                renters and tourists or serving local residents year-round?
+                Which of your services deserve the spotlight, and what does
+                success look like for your business in the next 6 to 12 months?
+                From those answers, we build a custom, data-driven SEO plan
+                around your needs. No cookie-cutter solutions. No generic "one
+                size fits all" packages—just personalized, effective local SEO
+                in Crystal Beach that makes a real difference.
               </p>
             </div>
             <div class="col-lg-6">
               <h3>Transparent Reporting and Measurable Success</h3>
               <p>
-                Too many Crystal Beach SEO companies promise results without
-                showing progress. At Infused Agency, transparency is key. We
-                provide clear, jargon-free reports every month that focus on
-                what truly matters:
+                Many SEO companies promise big results while staying quiet on
+                progress. At Infused Agency, transparency comes first. Each
+                month, we deliver clear, jargon-free reports focused on what
+                truly matters:
               </p>
 
               <ul>
@@ -263,9 +360,9 @@ const SEO = ({ latestPosts }) => {
               </ul>
 
               <p>
-                You'll have a dedicated project manager who keeps you informed,
-                answers your questions, and adjusts your SEO campaign as needed
-                to maximize growth.
+                You'll also have a dedicated project manager who keeps you in
+                the loop, answers your questions, and fine-tunes your SEO
+                campaign as performance data comes in.
               </p>
             </div>
           </div>
@@ -273,25 +370,25 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-6">
               <h3>A Proven Track Record of Success in the Region</h3>
               <p>
-                With years of experience serving businesses across various
-                industries like home services, retail, tourism, and wellness,
-                Infused Agency has helped companies grow their online presence.
-                Whether launching a new SEO-optimized website or revitalizing an
-                existing one, we bring the local expertise and technical skill
-                to get you noticed and generate leads.
+                Our track record spans home services, retail, tourism, and
+                wellness clients across the Niagara region and beyond. Whether
+                we're launching a brand-new SEO-ready website or refreshing an
+                existing one for the Crystal Beach market, we bring the local
+                insight and technical skill needed to get you noticed and
+                generate leads.
               </p>
             </div>
             <div className="col-lg-6">
               <h3>Honesty, Respect, and Integrity in Every Partnership</h3>
               <p>
-                At Infused Agency, we value honesty above all else. We will
+                Integrity guides everything we do at Infused Agency. We'll
                 never try to upsell you on services you don't need. Instead,
-                we'll advise you on what truly benefits your business and
-                provide tailored strategies that fit your budget and goals.
-                Every SEO campaign we build is unique—if you only need local SEO
-                and content creation, that's exactly what we'll provide. If your
-                website needs a full redesign, we'll clearly explain why and
-                guide you through the best path forward.
+                we'll advise you on what genuinely benefits your business and
+                tailor strategies that fit your budget and goals. Every SEO
+                campaign we build is unique—if local SEO and content creation
+                is all your business needs, that's exactly what we'll provide.
+                If your business also needs AI Search optimization, we'll
+                clearly explain why and guide you through the best path forward.
               </p>
             </div>
           </div>
@@ -299,14 +396,14 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-12">
               <h2>Partner with an SEO Company That Cares</h2>
               <p>
-                You deserve more than just an SEO Crystal Beach vendor—you
-                deserve a true partner invested in your business success. If
-                you're ready to work with a dedicated SEO agency that puts your
+                You deserve more than just an SEO vendor—you deserve a true
+                partner invested in the success of your Crystal Beach business.
+                If you're ready to work with a dedicated agency that puts your
                 business first, let's connect. Infused Agency is here to help
                 you build a stronger digital presence through smart, strategic
-                SEO marketing and internet marketing services tailored for local
-                businesses. Contact us today for a free consultation and
-                discover what's possible for your business.
+                local SEO and AI Search marketing tailored for the community.
+                Contact us today for a free consultation and discover what's
+                possible for your business.
               </p>
             </div>
           </div>
@@ -326,16 +423,18 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research for Local Businesses</h2>
                 <p>
-                  To get found online by customers in your area, it all starts
-                  with understanding the exact search terms they use. Infused
-                  Agency conducts thorough keyword research tailored
-                  specifically to your local market. We go beyond just search
-                  volume and dive into real user intent. Whether your business
-                  targets local service phrases or broader industry terms, we
-                  pinpoint the keywords your potential customers are actively
-                  searching for. This research forms the backbone of every
-                  Crystal Beach SEO service we provide, from content creation to
-                  on-page optimization.
+                  Getting found online starts with knowing exactly what Lake
+                  Erie customers type when they search. Infused Agency digs deep
+                  into keyword research for the Crystal Beach market, going
+                  beyond basic search volume to understand real user
+                  intent—including the conversational phrases people now pose
+                  to AI tools like ChatGPT and Gemini. Are they a summer visitor
+                  hunting for a cottage rental near the waterfront or a local
+                  resident booking a service for the winter months? We pinpoint
+                  the terms your potential customers are actively using, and
+                  that research forms the backbone of every local SEO &amp; AI
+                  Search service we provide, from content creation to on-page
+                  optimization.
                 </p>
               </div>
             </div>
@@ -343,30 +442,31 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO Optimization</h2>
                 <p>
-                  Local SEO is crucial for showing up when people nearby search
-                  for services and products you offer. As a top local SEO
-                  company and optimization agency, Infused Agency develops
-                  targeted local SEO Crystal Beach strategies to help your
-                  business appear in Google Maps, the local pack, and organic
-                  search results. Our local SEO services include:
+                  Local SEO decides whether your business shows up when people
+                  in and around Crystal Beach search for what you offer. As a
+                  top local SEO and AI Search optimization agency, Infused
+                  Agency builds targeted local SEO in Crystal Beach strategies
+                  so your business appears in Google Maps, the local pack, and
+                  organic search results—and gets recommended by AI search tools
+                  like ChatGPT and Gemini. Our local SEO services include:
                 </p>
 
                 <ul>
                   <li>
                     Google Business Profile optimization tailored for maximum
-                    local visibility
+                    visibility in the Crystal Beach area
                   </li>
                   <li>
-                    Building local citations and directory listings to boost
-                    local authority
+                    Building local citations and directory listings that
+                    strengthen your authority in the lakeside community
                   </li>
                   <li>
-                    Location-specific keyword strategies focused on your target
-                    market
+                    Location-specific keyword strategies attuned to seasonal
+                    tourism and dependable year-round residents
                   </li>
                   <li>
-                    Creation of locally relevant content that resonates with
-                    your community
+                    Locally relevant content that reflects the character of
+                    your community along Lake Erie
                   </li>
                 </ul>
               </div>
@@ -375,15 +475,15 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing & SEO Copywriting</h2>
                 <p>
-                  Effective content does more than just inform—it converts
-                  visitors into customers. Infused Agency's content writing and
-                  Crystal Beach SEO copywriting services are designed
-                  specifically for local businesses, combining search engine
-                  optimization with engaging, locally relevant messaging. We
-                  naturally incorporate location-focused keywords and local
-                  references, crafting service pages, blog posts, and website
-                  copy that not only rank well but also build trust with your
-                  audience.
+                  Good content should do more than inform—it should turn
+                  browsers into customers. Infused Agency's content writing and
+                  SEO copywriting services speak directly to the Crystal Beach
+                  community, blending search optimization with messaging that
+                  resonates with both residents and summer visitors. We weave
+                  location-focused keywords and local references naturally into
+                  AI-ready service pages, blog posts, and website copy, helping
+                  them rank well, get cited by AI search tools, and build trust
+                  with your audience.
                 </p>
               </div>
             </div>
@@ -393,21 +493,21 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Link Building Services</h2>
                 <p>
-                  Backlinks remain a powerful factor in Google's ranking
+                  Backlinks still carry real weight in Google's ranking
                   algorithm. Infused Agency offers white-hat link building
-                  services designed to increase your business's site authority
-                  and search visibility while adhering to Google's guidelines.
+                  services that build your business's site authority and search
+                  visibility while staying fully within Google's guidelines.
                   Our strategies include:
                 </p>
 
                 <ul>
                   <li>
-                    Local business directory submissions focused on regional
-                    listings
+                    Submissions to local business directories relevant to the
+                    Fort Erie and Niagara region
                   </li>
                   <li>
-                    Industry-specific guest posts to establish your brand as an
-                    authority
+                    Industry-specific guest posts that establish your brand as
+                    an authority in your field
                   </li>
                   <li>
                     Building relationships with community websites, local blogs,
@@ -415,24 +515,40 @@ const SEO = ({ latestPosts }) => {
                   </li>
                   <li>
                     No shortcuts or spammy links—just sustainable SEO marketing
-                    that boosts your online presence over time
+                    that compounds your online presence over time
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
+                <h2>AI Search Optimization</h2>
+                <p>
+                  More and more people ask ChatGPT, Gemini, and Google's AI
+                  Overviews for answers before they ever click a search result.
+                  Infused Agency makes sure your Crystal Beach business is the
+                  one those AI tools recommend. Through AI-ready content, clear
+                  local entity signals, and strong local citations, we help you
+                  get found, cited, and recommended across the AI search
+                  landscape—while staying visible in traditional Google results.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
                 <h2>On-Page SEO & Technical SEO</h2>
                 <p>
-                  Your website needs to perform flawlessly to rank well. Infused
-                  Agency's on-page SEO and technical SEO services ensure your
-                  website meets all of Google's requirements and offers an
+                  A flawless website is the foundation of strong rankings.
+                  Infused Agency's on-page SEO and technical SEO services make
+                  sure your website meets all of Google's
+                  requirements—including machine-readable structured data that
+                  AI search tools use to generate answers—and delivers an
                   excellent user experience. Our services cover:
                 </p>
 
                 <ul>
                   <li>
-                    Meta title and description optimization to improve
+                    Meta title and description optimization to lift
                     click-through rates
                   </li>
                   <li>
@@ -443,11 +559,11 @@ const SEO = ({ latestPosts }) => {
                     Page speed improvements and Core Web Vitals optimization
                   </li>
                   <li>
-                    Mobile responsiveness testing to capture mobile traffic
+                    Mobile responsiveness testing to capture on-the-go searchers
                   </li>
                   <li>
                     Fixing broken links and enhancing internal linking for
-                    better navigation
+                    smoother navigation
                   </li>
                 </ul>
                 <p>

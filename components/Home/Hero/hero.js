@@ -11,12 +11,12 @@ const Hero = () => {
         <Container>
           <Row>
             <Col lg="12">
-              <Image src={best} alt="seo niagara" />
-              <h1 className="intro">Niagara SEO Company</h1>
+              <Image src={best} alt="local SEO and AI search agency Niagara" />
+              <h1 className="intro">Niagara Local SEO & AI Search Company</h1>
               <p>
-                Our SEO Niagara company partners with businesses of every size
-                in Niagara, St. Catharines & beyond to boost their SEO, elevate
-                search rankings, and drive more organic traffic, leads, and
+                Our Niagara SEO & AI Search company partners with businesses of
+                every size to get found on Google and AI tools like ChatGPT &
+                Gemini — boosting local visibility, rankings, leads, and
                 revenue.
               </p>
               <Link href="/get-a-quote">

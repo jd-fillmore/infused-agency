@@ -217,7 +217,7 @@ const Home = ({ latestPosts }) => {
                   "@id": "https://infused.agency/about/",
                   name: "Infused Agency",
                   description:
-                    "Infused Agency is a premier SEO company serving Niagara, St. Catharines, Niagara Falls, and Niagara-on-the-Lake. We specialize in local SEO services that help businesses improve their online visibility and attract more customers. Our expert team provides comprehensive digital marketing solutions including search engine optimization, web design, and local search marketing to grow your business in the Niagara region.",
+                    "Infused Agency is a premier local SEO and AI search company serving Niagara, St. Catharines, Niagara Falls, and Niagara-on-the-Lake. We specialize in local SEO services and AI Search optimization that help businesses improve their online visibility and attract more customers. Our expert team provides comprehensive search marketing solutions including local SEO, AI Search optimization, and local search marketing to grow your business in the Niagara region.",
                   telephone: "+1-905-933-3115",
                   url: "https://infused.agency",
                   logo:
@@ -310,8 +310,8 @@ const Home = ({ latestPosts }) => {
                     "http://productontology.org/id/Search_engine_optimization",
                     "https://en.wikipedia.org/wiki/Digital_marketing",
                     "http://productontology.org/id/Digital_marketing",
-                    "https://en.wikipedia.org/wiki/Web_design",
-                    "http://productontology.org/id/Web_design",
+                    "https://en.wikipedia.org/wiki/Local_SEO",
+                    "http://productontology.org/id/Local_search_engine_optimization",
                   ],
                   mainEntityOfPage: {
                     "@id": "https://infused.agency/#webpage",
@@ -322,8 +322,8 @@ const Home = ({ latestPosts }) => {
                     "SEO Niagara Falls",
                     "Local SEO Services",
                     "Search Engine Optimization",
-                    "Digital Marketing Niagara",
-                    "Web Design Niagara",
+                    "AI Search Optimization",
+                    "AI Search Niagara",
                     "Local Search Marketing",
                   ],
                   hasOfferCatalog: {
@@ -354,11 +354,11 @@ const Home = ({ latestPosts }) => {
                           },
                           {
                             "@type": "Service",
-                            name: "Web Design & Development",
-                            "@id": "https://infused.agency/web-design/",
-                            url: "https://infused.agency/web-design/",
+                            name: "AI Search Optimization",
+                            "@id": "https://infused.agency/ai-search/",
+                            url: "https://infused.agency/ai-search/",
                             description:
-                              "Professional web design and development services creating SEO-optimized websites that convert visitors into customers.",
+                              "AI Search optimization services to help your business get found and cited by AI search tools like ChatGPT and Gemini, alongside strong presence in Google's AI Overviews and local results.",
                           },
                           {
                             "@type": "Service",
@@ -366,7 +366,7 @@ const Home = ({ latestPosts }) => {
                             "@id": "https://infused.agency/digital-marketing/",
                             url: "https://infused.agency/digital-marketing/",
                             description:
-                              "Complete digital marketing solutions including SEO, social media marketing, and online advertising for Niagara businesses.",
+                              "Complete digital marketing solutions including local SEO, AI search optimization, and online advertising for Niagara businesses.",
                           },
                         ],
                       },
@@ -378,20 +378,93 @@ const Home = ({ latestPosts }) => {
                     reviewCount: "33",
                   },
                 },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://infused.agency/#faq",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "What is AI search optimization and why does it matter for local businesses?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "AI search optimization helps your business get found, cited, and recommended by AI tools like ChatGPT, Gemini, and Google's AI Overviews. More and more customers are asking AI assistants for local recommendations instead of scrolling traditional results. We optimize your content, citations, and digital footprint so AI answers present your business as the trusted local option — turning AI-generated responses into new leads and revenue.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "What makes our local search engine optimization services different from general search engine optimization?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Our services are specifically tailored to help local businesses across the Niagara Region rank higher in local search results. We understand the unique market dynamics, local competition, and search patterns specific to our area. Our strategies include local citation building, Google Business Profile optimization, and location-specific content that helps your business appear when customers search for services nearby.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "How long does it take to see results from local campaigns?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Most clients start seeing initial improvements in search visibility within 3-6 months, with significant results typically appearing by 6-12 months. The timeline depends on factors like your current website performance, competition level, and the keywords you're targeting. Our proven process includes continuous optimization and transparent reporting, so you'll see steady progress as we work to improve your local rankings.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Can small businesses compete with larger companies through search?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Absolutely! Local strategies are particularly effective for small businesses because they focus on local search optimization where you can outrank larger competitors. By targeting location-specific keywords and optimizing for local search intent, small businesses often achieve better visibility than big corporations. Our affordable solutions are designed specifically to help small businesses compete effectively in their local markets.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "What's included in yoursearch engine optimization audit and strategy development?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Our comprehensive audit includes technical website analysis, local keyword research, competitor analysis, content evaluation, and local search assessment. We examine your current Google Business Profile, local citations, backlink profile, and site performance. Based on these findings, we develop a customized strategy that addresses your specific challenges and opportunities in the region.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "How do you measure the success of local campaigns?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "We track multiple metrics to measure success, including search rankings for targeted keywords, organic website traffic growth, local visibility improvements, and most importantly, lead generation and conversions. Our transparent reporting shows you exactly how your website is performing, which keywords are driving traffic, and how many potential customers are finding your business through search. We provide detailed monthly reports with clear ROI measurements.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Do you guarantee first-page rankings for local keywords?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "While we can't guarantee specific rankings (as search engines constantly update their algorithms), we do guarantee our commitment to improving your visibility through proven search strategies. Our track record shows consistent success helping businesses achieve first-page rankings for their target keywords. We focus on sustainable, white-hat techniques that build long-term visibility rather than quick fixes that might get penalized by Google.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "What's the difference between normal search and local search for area businesses?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Traditional search focuses on ranking for broad keywords nationally or globally, while local search targets location-specific searches like \"SEO company near me\" or regional service searches. Local search includes optimizing your Google Business Profile, building local citations, managing online reviews, and creating location-based content. For businesses serving local customers, local search is typically more valuable as it helps you appear in Google's Local Pack and Maps results.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "How much do search engine optimization services cost for local businesses?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Pricing varies based on your business size, competition level, and specific goals. We offer affordable packages starting from basic local optimization to comprehensive enterprise solutions. Our transparent pricing includes no hidden fees, and we provide customized quotes based on your specific needs. We believe in delivering exceptional value, and many of our clients see a positive ROI within the first year of their investment.",
+                      },
+                    },
+                  ],
+                },
               ],
             }),
           }}
         />
 
-        <title>
-          SEO Niagara, St Catharines & Niagara Falls | Best SEO Agency | Local
-          SEO Agency | SEO Company | SEO Services | SEO Experts | SEO Marketing
-          | SEO Firms | Search Engine Optimization | SEO Audit Services |
-          Affordable SEO Consultant | SEO Specialist
-        </title>
+        <title>Niagara Local SEO & AI Search Company | Infused Agency</title>
         <meta
           name="description"
-          content="Top-rated SEO agency in Niagara & St. Catharines. Expert search engine optimization, local SEO, and digital marketing services. Boost your rankings today!"
+          content="Get found on Google and AI search tools like ChatGPT & Gemini. Local SEO experts serving Niagara, St. Catharines & Niagara Falls."
         />
         <meta
           name="google-site-verification"
@@ -714,15 +787,17 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center">
             <Col lg="12">
               <h2>
-                How Search Engine Optimization Works <br />
+                How Search Engine Optimization & AI Search Work <br />
                 At Infused Agency
               </h2>
               <p className="w-75">
                 When you work with us, your search engine optimization project
                 is custom, yet streamlined. Over the last 12 years, and working
                 with many different businesses in Niagara, we've crafted local
-                SEO strategies that not only work, but have made it through
-                every major algorithm update. Here's a look into our process.
+                SEO and AI search strategies that not only work, but have made
+                it through every major algorithm update. From Google rankings
+                to AI tools like ChatGPT and Gemini, here's a look into our
+                process.
               </p>
             </Col>
           </Row>
@@ -944,8 +1019,8 @@ const Home = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
-              <h2>Niagara SEO Services</h2>
-              <p>Get More Visibility</p>
+              <h2>Niagara SEO & AI Search Services</h2>
+              <p>Get More Visibility in Google and AI Search</p>
             </div>
           </div>
         </div>
@@ -1009,7 +1084,9 @@ const Home = ({ latestPosts }) => {
                   strategically targeting the search terms your potential
                   customers use. We balance search optimization with readability
                   to ensure your content performs well in search results and
-                  converts visitors into customers.
+                  converts visitors into customers. We also structure content
+                  for AI search optimization, helping your business get named
+                  and cited by ChatGPT, Gemini, and Google's AI Overviews.
                 </p>
               </div>
             </div>
@@ -1052,7 +1129,8 @@ const Home = ({ latestPosts }) => {
                   managing online reviews, optimizing for "near me" searches,
                   and ensuring your business information is consistent across
                   all online directories. We help you dominate local search
-                  results and attract customers in your immediate service area.
+                  results, show up in AI search answers, and attract customers
+                  in your immediate service area.
                 </p>
               </div>
             </div>
@@ -1096,7 +1174,8 @@ const Home = ({ latestPosts }) => {
                 and the customers you want to reach. At Infused Agency, we go
                 beyond surface-level strategies — our focus is on delivering
                 real results that generate the highest possible return on your
-                investment.
+                investment, across Google search, local results, and AI search
+                tools like ChatGPT and Gemini.
               </p>
             </Col>
             <Col lg="6">
@@ -1199,10 +1278,11 @@ const Home = ({ latestPosts }) => {
               <h3 className="pd-top-20">Backed by Google Expertise</h3>
               <p>
                 Our SEO specialists stay ahead of the curve with deep knowledge
-                of Google's latest updates, best practices, and ethical search
-                engine optimization strategies. By following proven, white-hat
-                methods, we help your website achieve sustainable rankings and
-                long-term growth.
+                of Google's latest updates, AI-driven search changes, and
+                ethical search engine optimization strategies. By following
+                proven, white-hat methods, we help your website achieve
+                sustainable rankings and long-term growth across both
+                traditional and AI search.
               </p>
             </Col>
             <Col lg="4">
@@ -1258,8 +1338,9 @@ const Home = ({ latestPosts }) => {
                 <br />
                 When you work with Infused Agency, you're partnering with a
                 trusted team that combines local market expertise, technical SEO
-                skills, and creative content strategies to help your business
-                dominate local search results.
+                skills, and AI search optimization to help your business
+                dominate local search results and get recommended by AI tools
+                like ChatGPT and Gemini.
               </p>
             </Col>
             <Col lg="6">
@@ -1278,12 +1359,27 @@ const Home = ({ latestPosts }) => {
           <Row className="text-center pd-btm-40">
             <Col lg="12">
               <h2>FAQs</h2>
-              <p>Learn more about search engine optimization!</p>
+              <p>Learn more about search engine optimization and AI search!</p>
             </Col>
           </Row>
 
           <Row>
             <Col lg="12">
+              <h3>
+                What is AI search optimization and why does it matter for local
+                businesses?
+              </h3>
+              <p>
+                AI search optimization helps your business get found, cited,
+                and recommended by AI tools like ChatGPT, Gemini, and Google's
+                AI Overviews. More and more customers are asking AI assistants
+                for local recommendations instead of scrolling traditional
+                results. We optimize your content, citations, and digital
+                footprint so AI answers present your business as the trusted
+                local option — turning AI-generated responses into new leads
+                and revenue.
+              </p>
+
               <h3>
                 What makes our local search engine optimization services
                 different from general search engine optimization?

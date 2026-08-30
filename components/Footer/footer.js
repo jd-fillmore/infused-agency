@@ -47,9 +47,9 @@ const Footer = () => {
             <Col lg="4">
               <h3>Infused Agency</h3>
               <p>
-                Infused is a boutique digital marketing &amp; SEO company with
-                more than 10 years of experience in web design, web development,
-                WordPress, SEO and digital marketing.
+                Infused is a boutique local SEO &amp; AI search company with more
+                than 10 years of experience helping Niagara businesses get found
+                on Google and AI search tools like ChatGPT &amp; Gemini.
               </p>
               <p>
                 Follow us on{" "}
@@ -122,11 +122,13 @@ const Footer = () => {
               <a href="/seo/fonthill">Fonthill, ON</a> <span>|</span>
               <a href="/seo/fort-erie">Fort Erie, ON</a> <span>|</span>
               <a href="/seo/grimsby">Grimsby, ON</a> <span>|</span>
+              <a href="/seo/niagara-falls">Niagara Falls, ON</a> <span>|</span>
               <a href="/seo/niagara-on-the-lake">
                 Niagara-on-the-Lake, ON
               </a>{" "}
               <span>|</span>
               <a href="/seo/port-colborne">Port Colborne, ON</a> <span>|</span>
+              <a href="/seo/st-catharines">St. Catharines, ON</a> <span>|</span>
               <a href="/seo/thorold">Thorold, ON</a> <span>|</span>
               <a href="/seo/welland">Welland, ON</a>
             </Col>

@@ -17,22 +17,111 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>
-          SEO Port Colborne | Expert SEO Services & Local SEO Agency
-        </title>
+        <title>Port Colborne Local SEO & AI Search | Infused Agency</title>
         <meta
           name="description"
-          content="Looking for the best SEO company in Port Colborne? Our SEO experts provide search engine optimization, local SEO, SEO audits to grow your business."
+          content="Port Colborne local SEO & AI Search from Infused Agency. Get found on Google and AI search tools like ChatGPT and Gemini to attract more local customers."
         />
         <link rel="canonical" href="https://infused.agency/seo/port-colborne" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "What Exactly Is Local SEO for Businesses?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "When Can I Expect to See Results from SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What Is the Typical Cost of SEO Services?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can You Guarantee My Business Will Rank #1 on Google?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do You Work Exclusively with Local Businesses?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How Do You Optimize Google Business Profiles?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Which Types of Businesses Benefit from Your SEO Services?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Will I Receive Regular Reports on My SEO Progress?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How Can I Start Working with Infused Agency for SEO?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
       </Head>
       <Nav />
       <InnerHeroCities
         title="SEO Port Colborne"
-        subTitle="Grow Your Business With Our Local SEO Port Colborne Services"
+        subTitle="Local SEO & AI Search to Help Port Colborne Businesses Get Found"
         image={hero}
-        description="Infused Agency is a local SEO Port Colborne agency. We craft tailored online marketing strategies designed to help businesses grow and succeed."
-        alt="SEO Port Colborne, local seo experts, seo company, seo services, seo agency, search engine optimization, seo marketing, seo firm, seo pricing, seo specialist, seo consultant"
+        description="Infused Agency is a Port Colborne local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
+        alt="Port Colborne local SEO & AI Search - helping businesses get found on Google and AI search tools"
       />
       <section className="home-top-web">
         <div className="container">
@@ -44,33 +133,36 @@ const SEO = ({ latestPosts }) => {
           <Row>
             <Col lg="12">
               <p>
-                Google's complex algorithms determine which websites rank
-                highest based on factors like quality content, site structure,
-                and local relevance. As a leading SEO Port Colborne company
-                serving the Twenty Valley region, Infused Agency specializes in
-                helping local businesses improve their search rankings and
-                connect with customers throughout the Niagara Peninsula.
+                Finding a business today is no longer just a Google thing—people
+                turn to AI tools like ChatGPT, Gemini, and Google's AI Overviews
+                for recommendations too. As a dedicated local SEO &amp; AI Search
+                studio for Port Colborne and the wider Niagara region, Infused
+                Agency helps forward-thinking businesses make sure they show up
+                whenever and wherever local customers search. Set on the tip of
+                Lake Erie at the southern end of the Welland Canal, Port Colborne
+                is a true marina and boating town, and the businesses that thrive
+                here know their customers are looking right on their doorstep.
                 <br />
                 <br />
-                Our team provides tailored search engine optimization services
-                designed to connect your business with ideal customers through
-                effective digital marketing and local SEO strategies. Whether
-                you need trusted local optimization or comprehensive internet
-                marketing services, we deliver results that grow your online
-                presence and drive traffic.
+                That's exactly where we come in. We craft local search and
+                AI-ready content strategies that put your business in front of
+                the right people—whether they're walking the docks at Sugarloaf
+                Marina, catching the breeze at Nickle Beach, or simply asking an
+                AI assistant for the best spot in town. From trusted local
+                optimization to full-fledged search marketing, we build
+                campaigns that grow your visibility and pull in genuine traffic.
                 <br />
                 <br />
-                Located along the scenic Welland Canal and the shores of Lake
-                Erie, we understand the unique market dynamics of businesses
-                operating in Port Colborne, Sugarloaf, and surrounding areas.
-                From the historic Port Colborne Lighthouse and Lock 8 Visitor
-                Centre, to the family-friendly Erie Beach Park, to the lively
-                Port Colborne Farmers’ Market and the annual Maritime Festival,
-                we help local businesses connect with customers exploring our
-                vibrant waterfront community and the greater Niagara region. If
-                you're curious about how an experienced SEO agency can help your
-                business thrive in this competitive local market, contact us
-                today.
+                Living and breathing the character of this waterfront community
+                gives us a feel for the local market that a generic agency
+                simply can't replicate. Alongside the Sunday sails on the canal,
+                the family outings on our beaches, and the friendly retailers who
+                line our streets, we also keep an eye on the wineries and farm
+                country that surround Port Colborne—so the businesses we serve
+                connect with both lifelong residents and the visitors drawn to
+                our shoreline every season. If you'd like to see what an
+                experienced local SEO &amp; AI Search partner can do for your
+                Port Colborne business, reach out today.
               </p>
             </Col>
           </Row>
@@ -112,38 +204,40 @@ const SEO = ({ latestPosts }) => {
                   Helping Your Business Rank Higher on Google and Beyond
                 </h3>
                 <p>
-                  At Infused Agency, we're a trusted SEO Port Colborne company
-                  dedicated to boosting local businesses' online visibility
-                  through expert search engine optimization services. Whether
-                  you run a local shop, operate a service business throughout
-                  the region, or manage an expanding company, our personalized
-                  SEO strategies are designed to help your website climb the
-                  Google rankings and attract more qualified leads.
+                  Infused Agency is a locally minded SEO &amp; AI Search company
+                  for Port Colborne, and we take real pride in helping the
+                  businesses of this Lake Erie community stand out online.
+                  Whether you run a welcoming shop in the downtown core, offer a
+                  service that takes you to homes around the canal, or manage a
+                  business growing beyond the waterfront, we build personalized
+                  strategies that help you climb on Google and earn mentions from
+                  AI tools like ChatGPT and Gemini—bringing in shoppers and
+                  enquiries that actually convert.
                 </p>
 
                 <p>
-                  As a leading internet marketing company specializing in local
-                  SEO, our team stays up-to-date with the latest search engine
-                  algorithm changes to keep your website competitive. From
-                  comprehensive keyword research and technical SEO audits to
-                  on-page optimization and authoritative link building, we
-                  manage every aspect of your search optimization with
-                  precision.
+                  Search keeps evolving, and so do we. Our team tracks every
+                  meaningful shift in Google's algorithms and the fast-moving
+                  world of AI search so your Port Colborne business never falls
+                  behind the times. From deep keyword research and careful
+                  technical audits to sharp on-page optimization, AI-ready
+                  content, and high-quality link building, we handle the entire
+                  search picture end to end with attention to detail.
                 </p>
 
                 <p>
-                  Recently, we partnered with a local client aiming to enhance
-                  their search presence and online reputation. Through a
-                  tailored SEO marketing strategy focusing on targeted keyword
-                  research, website optimization, and building credible local
-                  citations, they saw significant growth in website traffic and
-                  lead generation.
+                  Just recently we worked alongside a local client who wanted a
+                  stronger presence around the marina and beach crowds. With a
+                  tailored plan built on location-focused keywords, thoughtful
+                  website improvements, and credible local citations, that
+                  business saw a meaningful rise in web traffic and real
+                  enquiries from nearby customers.
                 </p>
 
                 <p>
-                  If you're ready to take your business to the next level with
-                  professional SEO services from a top-rated agency, contact
-                  Infused Agency today.
+                  Ready to give your business the boost it deserves with
+                  professional local SEO &amp; AI Search from a top-rated agency?
+                  Get in touch with Infused Agency today.
                 </p>
 
                 <h2 class="text-center pd-top-40">
@@ -153,49 +247,54 @@ const SEO = ({ latestPosts }) => {
                   Connecting Your Business with Local Customers
                 </h3>
                 <p>
-                  If you want to attract more local customers, effective local
-                  SEO Port Colborne services are essential. As a leading local
-                  SEO company and optimization agency, Infused Agency helps
-                  businesses rise above the competition in local search
-                  results—whether on Google Maps, organic search, or prominent
-                  online directories.
+                  Want the folks mooring at Sugarloaf Marina, the families
+                  spreading towels on Nickle Beach, and the shoppers browsing our
+                  local retailers to find you first? Then solid local SEO in Port
+                  Colborne is exactly what your business needs. As a leading local
+                  SEO and AI Search company, Infused Agency helps Port Colborne
+                  businesses rise above the noise in local results—whether that's
+                  on Google Maps, in organic rankings, or through AI tools like
+                  ChatGPT and Gemini.
                 </p>
 
                 <p>
-                  We have a deep understanding of the local market, including
-                  nearby communities like Vineland and Jordan Station. Our
-                  comprehensive local SEO services include:
+                  We know this waterfront community well, from the distinct
+                  neighbourhoods along the Welland Canal to the farming and
+                  wine-growing country that frames the horizon. Our local SEO
+                  services in Port Colborne cover it all:
                 </p>
 
                 <ul>
                   <li>
-                    In-depth local keyword research focused on your target area
+                    Deep local keyword research aimed squarely at the Lake Erie
+                    region
                   </li>
                   <li>
-                    Optimizing your Google Business Profile for maximum local
-                    exposure
+                    Polishing your Google Business Profile so you command maximum
+                    local visibility
                   </li>
                   <li>
-                    Building trusted local citations and directory listings to
-                    boost authority
+                    Building trustworthy citations and directory listings that
+                    strengthen your authority
                   </li>
                   <li>
-                    On-page SEO tailored to location-specific search queries
+                    On-page SEO shaped around the exact local searches your
+                    neighbours and visitors make
                   </li>
                 </ul>
 
                 <p>
-                  In addition to core local SEO services, we also offer web
-                  design, SEO copywriting, and social media management to create
-                  a fully integrated internet marketing service for your
-                  business.
+                  Beyond the foundation of local SEO, we round things out with AI
+                  Search Optimization, SEO copywriting, and social media
+                  management—so you get one seamless search marketing service
+                  that carries your whole online story.
                 </p>
 
                 <p>
-                  When you choose Infused Agency, you're partnering with a
-                  results-driven SEO company that combines local market
-                  expertise with proven digital marketing strategies—connecting
-                  your business with the community that matters most.
+                  Choosing Infused Agency means partnering with a results-first
+                  SEO company that pairs genuine local insight with proven digital
+                  strategy—helping you reach the community that matters most here
+                  in Port Colborne.
                 </p>
               </div>
             </div>
@@ -208,26 +307,26 @@ const SEO = ({ latestPosts }) => {
           <div className="row pd-top-120">
             <div className="col-lg-12">
               <h2>
-                Why Choose Infused Agency as Your Port Colborne SEO & Digital
-                Marketing Partner?
+                Why Choose Infused Agency as Your Port Colborne Local SEO &amp;
+                AI Search Partner?
               </h2>
               <p>
-                Not all internet marketing companies are created
-                equal—especially when it comes to understanding the needs of
-                local businesses. Growing your business online requires more
-                than generic digital marketing solutions. It demands a Port
-                Colborne SEO company that listens carefully to your goals, knows
-                your local market inside and out, and crafts tailored strategies
-                that deliver real results. At Infused Agency, we are more than
-                just a faceless SEO agency — we're your hands-on partner
-                dedicated to helping businesses increase visibility, attract
-                more customers, and grow their bottom line through expert SEO
-                marketing and internet marketing services.
+                Search marketing companies are hardly one and the same—especially
+                when it comes to really understanding a community like Port
+                Colborne. Growing a business online takes more than off-the-shelf
+                digital tactics. What it calls for is a Port Colborne local SEO
+                &amp; AI Search partner that genuinely listens to your goals,
+                knows this Lake Erie and Welland Canal town inside out, and
+                crafts a strategy made for your success. At Infused Agency we're
+                not some distant marketing machine—we're your hands-on teammate,
+                focused on making sure your business gets found on Google and in
+                AI tools like ChatGPT and Gemini, draws in more customers, and
+                grows its bottom line through expert local SEO and AI Search.
               </p>
               <Image
                 className="img-fluid"
                 src={best}
-                alt="search engine optimization company"
+                alt="Port Colborne local SEO & AI Search partner awards"
               />
             </div>
           </div>
@@ -235,38 +334,38 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-6">
               <h3>A Local SEO Company with a Customer-First Mindset</h3>
               <p>
-                Every business is unique, which is why Infused Agency starts by
-                understanding your specific challenges, your ideal customers,
-                and your growth goals. We ask questions like: Who are your
-                target customers in your area and surrounding regions? What
-                services or products do you want to emphasize? What does success
-                look like for your business in the next 6 to 12 months? Based on
-                your answers, we develop a custom, data-driven SEO plan focused
-                on your needs. No cookie-cutter solutions. No generic "one size
-                fits all" packages—just personalized, effective SEO Port
-                Colborne services that make an impact.
+                Every business has its own story, and Infused Agency begins by
+                hearing yours—your hurdles, the customers you hope to reach
+                around Port Colborne, and where you want to take things. We dig
+                into questions like: Who's searching for you along the canal and
+                the Lake Erie shoreline? Which products or services deserve the
+                spotlight? What would success look like for your business a year
+                from now? From your answers we build a custom, data-backed SEO
+                plan shaped around your goals. No cookie-cutter approaches, no
+                one-size-fits-all packages—just considered, effective local SEO
+                in Port Colborne that moves the needle.
               </p>
             </div>
             <div class="col-lg-6">
               <h3>Transparent Reporting and Measurable Success</h3>
               <p>
-                Too many Port Colborne SEO companies promise results without
-                showing progress. At Infused Agency, transparency is key. We
-                provide clear, jargon-free reports every month that focus on
-                what truly matters:
+                Plenty of Port Colborne SEO companies talk a big game but never
+                show their work. At Infused Agency, honesty is the foundation.
+                Every month you'll receive clear, jargon-free reports built
+                around the numbers that genuinely matter:
               </p>
 
               <ul>
-                <li>Increases in website traffic</li>
-                <li>Improved search engine rankings</li>
+                <li>Growth in website traffic</li>
+                <li>Stronger search engine rankings</li>
                 <li>More qualified leads</li>
                 <li>Higher conversion rates</li>
               </ul>
 
               <p>
-                You'll have a dedicated project manager who keeps you informed,
-                answers your questions, and adjusts your SEO campaign as needed
-                to maximize growth.
+                You'll also have a dedicated project manager who keeps you in
+                the loop, answers your questions, and fine-tunes your campaign
+                as your business evolves.
               </p>
             </div>
           </div>
@@ -274,40 +373,43 @@ const SEO = ({ latestPosts }) => {
             <div className="col-lg-6">
               <h3>A Proven Track Record of Success in the Region</h3>
               <p>
-                With years of experience serving businesses across various
-                industries like home services, retail, tourism, and wellness,
-                Infused Agency has helped companies grow their online presence.
-                Whether launching a new SEO-optimized website or revitalizing an
-                existing one, we bring the local expertise and technical skill
-                to get you noticed and generate leads.
+                Over the years we've helped businesses across home services,
+                retail, tourism, and wellness build a stronger online presence
+                throughout the region. Whether you're laying the groundwork for
+                a fresh search strategy near the marina or fine-tuning an
+                established one along the waterfront, we bring the local know-how
+                and technical skill to get you noticed and turn interest into
+                leads.
               </p>
             </div>
             <div className="col-lg-6">
               <h3>Honesty, Respect, and Integrity in Every Partnership</h3>
               <p>
-                At Infused Agency, we value honesty above all else. We will
-                never try to upsell you on services you don't need. Instead,
-                we'll advise you on what truly benefits your business and
-                provide tailored strategies that fit your budget and goals.
-                Every SEO campaign we build is unique—if you only need local SEO
-                and content creation, that's exactly what we'll provide. If your
-                website needs a full redesign, we'll clearly explain why and
-                guide you through the best path forward.
+                Honesty sits at the core of how Infused Agency works. We'll never
+                push services you simply don't need or pad your bill with extras.
+                Instead, we tell you plainly what will truly help your Port
+                Colborne business and shape a strategy that fits your ambitions
+                and budget. Every campaign is built specifically for you—if local
+                SEO and content are all it takes, that's all we'll deliver. If
+                you'd benefit from greater visibility in AI tools like ChatGPT
+                and Gemini, we'll walk you through the reasons and chart the
+                clearest path forward.
               </p>
             </div>
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <h2>Partner with an SEO Company That Cares</h2>
+              <h2>Partner with a Local SEO &amp; AI Search Company That Cares</h2>
               <p>
-                You deserve more than just an SEO Port Colborne vendor—you
-                deserve a true partner invested in your business success. If
-                you're ready to work with a dedicated SEO agency that puts your
-                business first, let's connect. Infused Agency is here to help
-                you build a stronger digital presence through smart, strategic
-                SEO marketing and internet marketing services tailored for local
-                businesses. Contact us today for a free consultation and
-                discover what's possible for your business.
+                You deserve more than a vendor who just files invoices—you
+                deserve a true partner invested in where your Port Colborne
+                business is headed. If you're ready to work with a dedicated
+                local SEO &amp; AI Search agency that truly puts you first,
+                let's have a conversation. Infused Agency is here to help you
+                build a stronger digital presence in this Lake Erie community
+                through smart, strategic local SEO and AI Search marketing
+                crafted just for you. Get in touch today for a free consultation
+                and see what's possible for your business.
               </p>
             </div>
           </div>
@@ -317,7 +419,7 @@ const SEO = ({ latestPosts }) => {
         <div className="container">
           <div className="row pd-btm-40">
             <div className="col-lg-12 text-center">
-              <h2>Comprehensive SEO Services</h2>
+              <h2>Comprehensive SEO & AI Search Services</h2>
             </div>
           </div>
         </div>
@@ -327,16 +429,19 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Keyword Research for Local Businesses</h2>
                 <p>
-                  To get found online by customers in your area, it all starts
-                  with understanding the exact search terms they use. Infused
-                  Agency conducts thorough keyword research tailored
-                  specifically to your local market. We go beyond just search
-                  volume and dive into real user intent. Whether your business
-                  targets local service phrases or broader industry terms, we
-                  pinpoint the keywords your potential customers are actively
-                  searching for. This research forms the backbone of every Port
-                  Colborne SEO service we provide, from content creation to
-                  on-page optimization.
+                  Being found online starts with knowing exactly what your
+                  neighbours and visitors type into that search bar. Infused
+                  Agency carries out thorough keyword research tailored to the
+                  Port Colborne market, looking past plain search volume to the
+                  real intent behind every query. Whether your customers search
+                  for local Lake Erie services or wider industry terms, we zero
+                  in on the phrases they're actually using. And because Port
+                  Colborne is home to busy marinas, welcoming beaches, and a
+                  shoreline that draws seasonal crowds, we make sure your
+                  campaigns speak to both year-round locals and the visitors
+                  exploring our waterfront. That research anchors every Port
+                  Colborne SEO service we deliver, from content creation to
+                  on-page work and AI-ready copy.
                 </p>
               </div>
             </div>
@@ -344,30 +449,34 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Local SEO Optimization</h2>
                 <p>
-                  Local SEO is crucial for showing up when people nearby search
-                  for services and products you offer. As a top local SEO
-                  company and optimization agency, Infused Agency develops
-                  targeted local SEO Port Colborne strategies to help your
-                  business appear in Google Maps, the local pack, and organic
-                  search results. Our local SEO services include:
+                  Local SEO is what puts you in front of people searching nearby
+                  for what you offer—and for a marina town like Port Colborne,
+                  that's where the real opportunity lives. As a top local SEO
+                  company and optimization agency, Infused Agency builds targeted
+                  local SEO strategies that help your business show up in Google
+                  Maps, the local pack, organic results, and AI-generated
+                  answers. Our local SEO services in Port Colborne cover:
                 </p>
 
                 <ul>
                   <li>
-                    Google Business Profile optimization tailored for maximum
-                    local visibility
+                    Google Business Profile optimization aimed at maximum local
+                    visibility
                   </li>
                   <li>
-                    Building local citations and directory listings to boost
-                    local authority
+                    Building local citations and directory listings that
+                    strengthen your authority
                   </li>
                   <li>
-                    Location-specific keyword strategies focused on your target
-                    market
+                    Location-specific keyword strategies built for your market
                   </li>
                   <li>
-                    Creation of locally relevant content that resonates with
-                    your community
+                    Locally relevant content that really connects with the
+                    community
+                  </li>
+                  <li>
+                    Optimization for AI tools like ChatGPT, Gemini, and Google's
+                    AI Overviews so your business gets named in AI answers
                   </li>
                 </ul>
               </div>
@@ -376,15 +485,15 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Content Writing & SEO Copywriting</h2>
                 <p>
-                  Effective content does more than just inform—it converts
-                  visitors into customers. Infused Agency's content writing and
-                  Port Colborne SEO copywriting services are designed
-                  specifically for local businesses, combining search engine
-                  optimization with engaging, locally relevant messaging. We
-                  naturally incorporate location-focused keywords and local
-                  references, crafting service pages, blog posts, and website
-                  copy that not only rank well but also build trust with your
-                  audience.
+                  Great content does more than inform—it turns a curious visitor
+                  into a loyal customer. Infused Agency's content writing and SEO
+                  copywriting are built for local businesses like yours, blending
+                  solid search optimization with messaging that feels at home in
+                  Port Colborne. We weave in location-focused keywords and easy
+                  local references naturally, creating service pages, articles,
+                  and website copy that rank well on Google while giving AI tools
+                  like ChatGPT and Gemini clean, citable answers about your
+                  business.
                 </p>
               </div>
             </div>
@@ -394,29 +503,31 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>Link Building Services</h2>
                 <p>
-                  Backlinks remain a powerful factor in Google's ranking
-                  algorithm. Infused Agency offers white-hat link building
-                  services designed to increase your business's site authority
-                  and search visibility while adhering to Google's guidelines.
-                  Our strategies include:
+                  Backlinks are still one of the strongest signals Google weighs
+                  when ranking pages. Infused Agency provides white-hat link
+                  building that raises your site's authority and visibility while
+                  staying fully within Google's rules. Our approach draws on the
+                  connective fabric of a community like Port Colborne—from its
+                  marinas to its wineries and farm country—to earn links that
+                  mean something:
                 </p>
 
                 <ul>
                   <li>
-                    Local business directory submissions focused on regional
-                    listings
+                    Local directory submissions focused on regional listings
                   </li>
                   <li>
-                    Industry-specific guest posts to establish your brand as an
-                    authority
+                    Industry-specific guest posts that establish your brand as a
+                    trusted voice
                   </li>
                   <li>
-                    Building relationships with community websites, local blogs,
-                    and regional partners
+                    Close work with community sites, local blogs, and regional
+                    partners
                   </li>
                   <li>
-                    No shortcuts or spammy links—just sustainable SEO marketing
-                    that boosts your online presence over time
+                    No shortcuts or spammy links—just sustainable SEO that builds
+                    the authority AI tools like ChatGPT and Gemini look for when
+                    recommending businesses
                   </li>
                 </ul>
               </div>
@@ -425,36 +536,52 @@ const SEO = ({ latestPosts }) => {
               <div className="card">
                 <h2>On-Page SEO & Technical SEO</h2>
                 <p>
-                  Your website needs to perform flawlessly to rank well. Infused
-                  Agency's on-page SEO and technical SEO services ensure your
-                  website meets all of Google's requirements and offers an
-                  excellent user experience. Our services cover:
+                  For your website to rank well, it has to run flawlessly.
+                  Infused Agency's on-page and technical SEO make sure your site
+                  meets every requirement Google has and gives visitors a smooth
+                  experience along the way. Here's what we focus on:
                 </p>
 
                 <ul>
                   <li>
-                    Meta title and description optimization to improve
-                    click-through rates
+                    Meta titles and descriptions refined to lift click-through
+                    rates
                   </li>
                   <li>
-                    Proper use of image alt text and file naming for SEO
-                    benefits
+                    Proper image alt text and file naming for SEO value
                   </li>
                   <li>
                     Page speed improvements and Core Web Vitals optimization
                   </li>
                   <li>
-                    Mobile responsiveness testing to capture mobile traffic
+                    Mobile responsiveness testing to capture on-the-go traffic
                   </li>
                   <li>
-                    Fixing broken links and enhancing internal linking for
-                    better navigation
+                    Fixing broken links and improving internal linking for easier
+                    navigation
                   </li>
                 </ul>
                 <p>
-                  From minor fixes to comprehensive technical audits, we
-                  optimize your website to maximize search engine rankings and
-                  visitor satisfaction.
+                  From quick corrections to comprehensive technical audits, we
+                  tune your website to maximize rankings, make it easier for AI
+                  search tools to understand and cite, and keep every visitor
+                  happy.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h2>AI Search Optimization</h2>
+                <p>
+                  More and more people are turning to AI tools like ChatGPT,
+                  Gemini, and Google's AI Overviews for local suggestions—and
+                  that includes visitors asking about the best spots along the
+                  Welland Canal or the friendliest businesses near Lake Erie.
+                  Infused Agency helps Port Colborne businesses get named and
+                  recommended in these AI answers by creating AI-ready content,
+                  keeping local information consistent across the web, and
+                  building strong authority signals. When someone asks AI where
+                  to go, we make sure your business is among the answers.
                 </p>
               </div>
             </div>
