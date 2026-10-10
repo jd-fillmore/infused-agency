@@ -43,12 +43,45 @@
         {
           "name": "Web Design",
           "url": "/web-design"
+        },
+        {
+          "name": "eCommerce Web Design",
+          "url": "/web-design/ecommerce-web-design"
+        },
+        {
+          "name": "Shopify Web Design",
+          "url": "/web-design/shopify-web-design"
+        },
+        {
+          "name": "Website Hosting",
+          "url": "/web-design/website-hosting"
         }
       ]
     },
     {
       "heading": "eCommerce Marketing",
-      "links": []
+      "links": [
+        {
+          "name": "eCommerce Marketing",
+          "url": "/ecommerce-marketing"
+        },
+        {
+          "name": "eCommerce Optimization",
+          "url": "/ecommerce-marketing/ecommerce-optimization"
+        },
+        {
+          "name": "eCommerce PPC",
+          "url": "/ecommerce-marketing/ecommerce-ppc"
+        },
+        {
+          "name": "eCommerce SEO",
+          "url": "/ecommerce-marketing/ecommerce-seo"
+        },
+        {
+          "name": "Shopify SEO",
+          "url": "/ecommerce-marketing/shopify-seo"
+        }
+      ]
     },
     {
       "heading": "Digital Marketing and Reputation",
@@ -60,6 +93,14 @@
         {
           "name": "CRO",
           "url": "/digital-marketing/conversion-rate-optimization"
+        },
+        {
+          "name": "Reputation Management",
+          "url": "/reputation-management"
+        },
+        {
+          "name": "Online Reputation Repair",
+          "url": "/reputation-management/online-reputation-repair"
         }
       ]
     }

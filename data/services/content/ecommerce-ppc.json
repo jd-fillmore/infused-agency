@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "eCommerce PPC that runs search and shopping campaigns around product data and ad spend. We structure feeds and bids to capture demand profitably.",
+  "directAnswer": "eCommerce PPC puts paid search and shopping campaigns to work on your product catalogue. We structure the feed, group products sensibly, set budgets where the margin justifies them, and refine bids using revenue and profit signals instead of clicks alone. The aim is paid demand captured profitably, with spend shifted quickly toward whatever actually returns.",
+  "intro": "Paid advertising on ecommerce is unforgiving: spend moves in real time and so do the consequences. The difference between a profitable account and a losing one is rarely creativity. It is structure. Products grouped by how they sell, feeds that present each item accurately, bids set against margin rather than vanity metrics, and a constant willingness to cut what does not pay. eCommerce PPC is about building that machine and tending it. When it works, paid search becomes a reliable tap for demand you can turn up whenever the economics justify it.",
+  "forWho": "This suits retailers with a catalogue worth advertising and the data to tell a sale from a browsing session. It fits stores already spending on ads without a clear idea which products earn, merchants launching ranges that need demand generated quickly, and businesses whose organic presence is too slow to fund growth on its own. If you sell online and want paid spend that behaves like an investment rather than a gamble, this is the service.",
+  "process": [
+    {
+      "title": "Structure by how products sell",
+      "text": "We group products into campaigns and ad groups based on margin, price band and demand, so budget flows to the parts of the catalogue that can return it."
+    },
+    {
+      "title": "Build and clean the feed",
+      "text": "We prepare product data with accurate titles, categories and attributes, because shopping campaigns rise and fall on the quality of the feed behind them."
+    },
+    {
+      "title": "Set bids against value",
+      "text": "We bid using conversion and revenue signals, adjusting for margin where you can share it, rather than optimising blindly toward the cheapest click."
+    },
+    {
+      "title": "Launch search and shopping",
+      "text": "We run search campaigns for high-intent queries and shopping campaigns across the catalogue, with tracking in place so every sale is attributed correctly."
+    },
+    {
+      "title": "Prune and scale",
+      "text": "We remove what loses money, push budget toward what returns, and scale carefully as the numbers prove out rather than all at once."
+    }
+  ],
+  "deliverables": [
+    "Campaign structure matched to your catalogue",
+    "Product feed build, cleanup and optimisation",
+    "Search and shopping campaign management",
+    "Bid strategy tied to revenue and margin",
+    "Conversion tracking and attribution setup",
+    "Regular pruning and budget reallocation"
+  ],
+  "metrics": [
+    "Return on ad spend and cost per acquisition",
+    "Revenue and orders from paid campaigns",
+    "Product and category level performance",
+    "Impression share on profitable terms"
+  ],
+  "sections": [
+    {
+      "heading": "The feed is the campaign",
+      "paragraphs": [
+        "In shopping advertising, your product feed does more selling than your ad copy ever will. Inaccurate titles, poor categories and missing attributes tell the platform to show the wrong product to the wrong search. A well-built feed is quietly one of the highest-leverage assets in an ecommerce account.",
+        "We treat feed management as an ongoing job, not a one-time upload, because prices, stock and promotions change constantly and the feed has to keep up."
+      ]
+    },
+    {
+      "heading": "Why margin matters more than ROAS",
+      "paragraphs": [
+        "A campaign can post a healthy return on ad spend and still lose money if the products it sells carry thin margin. The number that matters is profit, and it looks different across a catalogue. A high-margin accessory can justify a bid that would bankrupt you on a low-margin television.",
+        "Where margin data is available we optimise toward it directly. Where it is not, we are clear about the limits of revenue-only decisions and what that means for the account's risk."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "What is a realistic return on ad spend?",
+      "a": "It depends entirely on your margin and category. There is no universal benchmark worth quoting. We establish what your account needs to be profitable and optimise toward that, which is far more useful than comparing to an industry average."
+    },
+    {
+      "q": "Do you manage Google Shopping and search together?",
+      "a": "Yes, and they work best together. Shopping captures product-level demand while search covers broader and branded queries. Running them in one account, measured the same way, prevents them competing and lets budget move to whichever returns more."
+    },
+    {
+      "q": "How much should we spend per month?",
+      "a": "Start from what you can afford to lose while learning, not from a fixed target. We use early data to find the profitable ceiling and scale toward it. Overspending before the account is understood is how budgets disappear."
+    },
+    {
+      "q": "Can you advertise products that carry little margin?",
+      "a": "Often the better answer is not to, or to treat them as a route to something more profitable. Paid advertising of low-margin items has to earn its place, and we are willing to say when a product should not be advertised."
+    },
+    {
+      "q": "What happens to our existing campaigns?",
+      "a": "We audit them first. We preserve what works, rebuild structure that is holding performance back, and consolidate duplication. Most accounts have good work buried in the wrong arrangement, not nothing worth keeping."
+    },
+    {
+      "q": "How do seasonal peaks factor in?",
+      "a": "We plan for them ahead of time, increasing budgets on proven products and adjusting bids as demand moves. Ramping up after the peak has started means paying premium prices for attention you could have secured earlier."
+    }
+  ]
+}

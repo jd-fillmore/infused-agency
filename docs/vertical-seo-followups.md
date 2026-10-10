@@ -1,4 +1,4 @@
-# FOLLOW-UP SPEC: fixes, legacy handling, audit, city batches, service pages, and Solutions mega menu
+# FOLLOW-UP SPEC: fixes, legacy handling, audit, city batches, service pages, Solutions mega menu, and schema
 
 Read this together with `docs/vertical-seo-build-spec.md` and `docs/vertical-seo-build.md`. The original spec's rules (no thin pages, no fabricated facts, quality gate, URL scheme, no new dependencies, yarn) all still apply and take priority wherever this file is silent.
 
@@ -129,6 +129,18 @@ Rules:
 - JSON-LD: `BreadcrumbList`, `Service` (provider = the existing Infused Agency entity; `serviceType`; `areaServed` = Niagara Region and Canada), and `FAQPage`. No AggregateRating or Review markup.
 - Breadcrumbs use the fixed horizontal component from Phase 1: Home › Solutions › {Group} › {Service}.
 
+### Competitor reference (research only)
+
+Applies to service pages only. Do NOT use competitor pages as a reference for city or other vertical pages; their uniqueness comes from local data and each city's legacy copy.
+
+For each service page you may fetch the matching page on https://smartlinks.ca (start at https://smartlinks.ca/digital-marketing-services/ and follow the links) for research only:
+
+1. Before writing, create `docs/competitor-outline.md` containing, per service: the headings and topics the competitor covers, the questions they answer, and the schema types in their markup. Record no sentences or phrases from their pages, and do not save their page text anywhere in the repo.
+2. Write our page from that outline, from `service-facts.json`, and from your own knowledge of how the service actually works. Aim to cover everything they cover plus what they miss (specifics, edge cases, how we measure, honest limitations).
+3. Never copy or closely paraphrase their wording or sentence structure. Do not carry over their claims about certifications, partner programs (Clutch, HubSpot, Google Ads, Shopify), client counts, awards or results.
+4. If a page can't be fetched, skip the reference and write from your own knowledge.
+5. In the final audit (Phase 9), compare each new service page's unique prose against its competitor counterpart in memory using 5-word-shingle overlap (do not store their text). Rewrite any page scoring above 0.15.
+
 ### Quality gate for service pages
 
 Reuse the gate engine with service thresholds: `status === 'reviewed'`, unique prose of 500+ words, direct answer present, 6+ FAQs, summary 140 to 155 chars, 5-word-shingle similarity of unique prose at most 0.30 against every sibling service page, all internal links resolve. Failing pages are not built in production and are listed in the report with the reason. Extend `verify:seo` and `test:seo` to cover services.
@@ -171,11 +183,29 @@ Layout (desktop):
 
 ---
 
-## Phase 8: Final audit and report
+## Phase 8: Schema audit and completion
 
-Re-run the Phase 3 audit (extended to cover service pages and the nav links) and overwrite `docs/page-audit.md`. Then write a final summary in `docs/vertical-seo-build.md` covering:
+Run this after the service pages and nav exist, so every page type is covered.
+
+1. **Audit** the JSON-LD on every page type: homepage, `/seo`, `/services`, `/web-design`, the Niagara city pages (`/seo/{city}`), the legacy therapist pages that are still live, the vertical pages, the service pages, blog posts, `/work`, `/about` and `/get-a-quote`. Write `docs/schema-audit.md` listing, per page type: types present, types missing, invalid or duplicated nodes, and anything that doesn't match visible page content.
+2. **Implement fixes through one shared helper.** Define a single Organization/ProfessionalService node with a stable `@id`, using only the real address, phone, hours and `sameAs` links already on the existing site (do not invent any), and reference it by `@id` from every other node. Required types:
+   - homepage: Organization/ProfessionalService plus WebSite
+   - Niagara city pages (`/seo/{city}`): Service, BreadcrumbList, FAQPage (only where FAQs are rendered)
+   - vertical pages and service pages: as already specified, switched to the shared `@id` reference
+   - blog posts: BlogPosting with author, `datePublished`, `dateModified`
+   - `/about`: AboutPage
+   - `/get-a-quote`: ContactPage
+3. **Rules.** Only mark up content visibly on the page. No Review or AggregateRating markup for Infused Agency itself. No duplicate Organization nodes. No invented properties.
+4. **Validation script.** Add a script that parses the JSON-LD out of the built HTML for every page, checks it is valid JSON with the required properties for its type, and flags duplicate nodes and unresolved `@id` references. Wire it into `verify:seo` and fail the build on errors on published pages.
+
+---
+
+## Phase 9: Final audit and report
+
+Re-run the Phase 3 audit (extended to cover service pages, the nav links and schema validation) and overwrite `docs/page-audit.md`. Run the competitor-overlap check described in Phase 6. Then write a final summary in `docs/vertical-seo-build.md` covering:
 
 - what changed in each phase
+- the schema audit findings and what was fixed, and the results of the competitor-overlap check
 - service pages published vs draft, and the contents of `docs/service-pages-open-questions.md` (facts the owner needs to supply)
 - the list of pages published, the pages left as draft, and why
 - which provinces still have zero or few city pages
@@ -189,4 +219,4 @@ Re-run the Phase 3 audit (extended to cover service pages and the nav links) and
 - Contractor or other trade verticals
 - US state or city pages
 - French-language pages
-- Any change to the homepage or to existing pages beyond what Phases 2, 6 and 7 state (links on `/seo`, `/web-design` and `/services`, the nav, and sitemaps)
+- Any change to the homepage or to existing pages beyond what Phases 2, 6, 7 and 8 state (links on `/seo`, `/web-design` and `/services`, the nav, sitemaps, and the JSON-LD changes in Phase 8)

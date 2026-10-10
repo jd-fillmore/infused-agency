@@ -11,9 +11,10 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 - [x] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
 - [x] Phase 4 — City content batch A
 - [x] Phase 5 — City content batch B
-- [ ] Phase 6 — Data-driven service pages
+- [x] Phase 6 — Data-driven service pages (6A and 6B committed)
 - [ ] Phase 7 — "Solutions" mega menu
-- [ ] Phase 8 — Final audit and report
+- [ ] Phase 8 — Schema audit and completion
+- [ ] Phase 9 — Final audit and report
 
 ## Phase 0 — discovery findings
 

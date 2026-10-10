@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "eCommerce marketing that coordinates SEO, paid ads, email and conversion across one funnel, set from real store data and measured against revenue.",
+  "directAnswer": "eCommerce marketing joins SEO, paid ads, email and conversion work into one funnel built around your store. We set the plan from real product and sales data, then match each channel to the stage where it earns the most. The goal is straightforward: more qualified traffic, more completed orders, and marketing measured against revenue.",
+  "intro": "Running separate campaigns for an online store is how budget disappears. Ads fight each other for the same shopper, email ignores what paid search already learned, and nobody owns the moment a visitor reaches the product page. eCommerce marketing treats the store as one system: acquisition, conversion and retention planned together and judged against orders rather than clicks. We start from what your catalogue actually sells and build outward, so every channel has a defined job and every dollar can be traced to a result you care about.",
+  "forWho": "This fits store owners who already run some marketing but cannot connect the spend to the sales, and merchants whose channels compete instead of cooperating. It suits brands launching a range that needs demand created as well as captured, and growing stores where a single channel has hit its ceiling. If you sell online and want marketing that reports in revenue rather than impressions, you are the right fit.",
+  "process": [
+    {
+      "title": "Review the store and sales data",
+      "text": "We look at what sells, what carries margin, how customers arrive today, and where they fall away, before proposing a single channel or tactic."
+    },
+    {
+      "title": "Define the funnel and roles",
+      "text": "We assign each channel a job across discovery, conversion and retention, so paid, organic, email and on-site work reinforce each other instead of overlapping."
+    },
+    {
+      "title": "Build the campaigns",
+      "text": "We set up tracking first, then launch the mix, so attribution is in place from day one rather than guessed at after the budget has gone."
+    },
+    {
+      "title": "Improve the store experience",
+      "text": "We connect marketing to the product pages and checkout it feeds, because better conversion lifts the return on every channel at once."
+    },
+    {
+      "title": "Measure against revenue",
+      "text": "We report on orders, revenue and cost per sale, and we move budget toward what returns the most while cutting what does not."
+    }
+  ],
+  "deliverables": [
+    "Funnel plan with a defined role per channel",
+    "Tracking and conversion measurement set up",
+    "Organic, paid and email campaigns in one system",
+    "On-site conversion improvements tied to the traffic",
+    "Revenue-focused monthly reporting",
+    "Budget shifts based on what actually sells"
+  ],
+  "metrics": [
+    "Orders and revenue by channel",
+    "Cost per acquired customer",
+    "Conversion rate from session to order",
+    "Repeat purchase and customer lifetime value"
+  ],
+  "sections": [
+    {
+      "heading": "Revenue beats traffic every time",
+      "paragraphs": [
+        "It is easy to grow traffic and lose money doing it. A surge in visits means nothing if those visitors come from the wrong intent or land on pages that do not sell. We build the measurement first and let orders, not sessions, drive the decisions, which often means trimming a channel that looks busy but never pays.",
+        "That discipline is uncomfortable when you want to see growth quickly, but it is the only way to spend on a store with confidence. We would rather tell you a campaign is losing money today than defend it with a vanity chart."
+      ]
+    },
+    {
+      "heading": "Platform-aware execution",
+      "paragraphs": [
+        "Online stores differ enormously in how they are built, and marketing has to respect the platform. Shopify, WooCommerce and custom storefronts each handle collections, product data and app ecosystems differently. We plan the campaign around the platform you run, not around a generic playbook that ignores its constraints.",
+        "That means the fixes we recommend are ones your store can actually implement, and the data we rely on is data your platform can actually provide."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "How is eCommerce marketing different from just running ads?",
+      "a": "Ads capture demand; marketing also creates it, converts it and keeps it. This service connects paid campaigns with organic search, email and the store experience so a shopper is supported through the whole journey rather than met by one lonely ad."
+    },
+    {
+      "q": "Do we need a big budget to start?",
+      "a": "No. The system works from whatever budget you can responsibly spend, because the first priority is measuring what already happens and fixing the conversion path. Paying for more traffic before the store can convert it simply loses money faster."
+    },
+    {
+      "q": "How long before we see results?",
+      "a": "Paid channels can move within weeks, while organic and email build over months. We set a mixed timeline up front and use early paid learnings to guide the slower, compounding work rather than treating them as separate projects."
+    },
+    {
+      "q": "Can you work with the marketing team we already have?",
+      "a": "Yes. We can lead the strategy and fill specific gaps, or work alongside an in-house team and hand over the systems and reporting. Many clients start with us running the program and gradually take parts of it back as they grow."
+    },
+    {
+      "q": "Which platforms do you support?",
+      "a": "We work with the main ecommerce platforms including Shopify and WooCommerce, plus custom storefronts, and we adapt the marketing plan to the features and data each one offers rather than assuming a single standard."
+    },
+    {
+      "q": "How do you handle profit versus revenue?",
+      "a": "Where you can share margin data, we optimise toward profit, since a high revenue channel at a thin margin can still be the wrong investment. Where margin is private, we are explicit about the limitations of revenue-only reporting."
+    }
+  ]
+}

@@ -98,8 +98,8 @@ _None._
 ## Service pages
 
 - Services: 21
-- Published: 11
-- Draft-excluded: 10
+- Published: 21
+- Draft-excluded: 0
 - Gate-failed: 0
 
 ### Published service pages
@@ -109,6 +109,13 @@ _None._
 | /ai-search | AI Search (GEO, AEO & LLM SEO) | Infused Agency | 834 | 59 | 6 |
 | /digital-marketing | Digital Marketing Services | Infused Agency | 784 | 55 | 6 |
 | /digital-marketing/conversion-rate-optimization | Conversion Rate Optimization Services | Infused Agency | 829 | 60 | 6 |
+| /ecommerce-marketing | eCommerce Marketing Services | Infused Agency | 741 | 54 | 6 |
+| /ecommerce-marketing/ecommerce-optimization | eCommerce Optimization Services | Infused Agency | 692 | 54 | 6 |
+| /ecommerce-marketing/ecommerce-ppc | eCommerce PPC Services | Infused Agency | 725 | 55 | 6 |
+| /ecommerce-marketing/ecommerce-seo | eCommerce SEO Services | Infused Agency | 723 | 53 | 6 |
+| /ecommerce-marketing/shopify-seo | Shopify SEO Services | Infused Agency | 700 | 56 | 6 |
+| /reputation-management | Reputation Management Services | Infused Agency | 738 | 57 | 6 |
+| /reputation-management/online-reputation-repair | Online Reputation Repair Services | Infused Agency | 750 | 58 | 6 |
 | /seo | Search Engine Optimization Services | Infused Agency | 0 | 0 | 0 |
 | /seo/content-writing | Content Writing Services | Infused Agency | 872 | 57 | 6 |
 | /seo/franchise-seo | Franchise SEO Services | Infused Agency | 784 | 55 | 6 |
@@ -117,6 +124,9 @@ _None._
 | /seo/technical-seo | Technical SEO Services | Infused Agency | 843 | 56 | 6 |
 | /seo/white-label | White Label Services Services | Infused Agency | 795 | 54 | 6 |
 | /web-design | Web Design Services | Infused Agency | 0 | 0 | 0 |
+| /web-design/ecommerce-web-design | eCommerce Web Design Services | Infused Agency | 782 | 53 | 6 |
+| /web-design/shopify-web-design | Shopify Web Design Services | Infused Agency | 748 | 57 | 6 |
+| /web-design/website-hosting | Website Hosting Services | Infused Agency | 748 | 57 | 6 |
 
 ### Failed service pages
 

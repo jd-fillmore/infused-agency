@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Shopify web design that shapes themes, sections and storefront UX around your real store. Clean, fast builds that fit how your products sell.",
+  "directAnswer": "Shopify web design turns the platform into a storefront shaped around your products. We work with themes, sections, navigation and product layout so the buying experience feels native to Shopify and fits how you actually sell. The result is a fast, clean store that is easier to run, easier to shop, and built to convert repeat visitors.",
+  "intro": "Shopify gives you a strong storefront engine, but the default theme is a starting point, not a finished shop. Shopify web design is the work of bending the theme to your catalogue instead of bending your catalogue to the theme. That means custom sections that present products the way customers need to see them, navigation that matches how people browse your niche, and a mobile experience that keeps up with how most Shopify purchases actually happen. The build stays inside the platform's strengths, so the store remains easy to update and dependable to run.",
+  "forWho": "You are launching a new Shopify store, or you have one that works but looks and behaves like every other shop on the platform. This suits brands whose products need presentation the default theme cannot give, merchants whose growing catalogue has outgrown a simple grid, and businesses that want a distinctive storefront without the upkeep burden of a fully custom platform. If you sell on Shopify and want the store to feel like yours, this is the service.",
+  "process": [
+    {
+      "title": "Understand the catalogue and brand",
+      "text": "We learn what you sell, how variants and bundles work, and what customers need to see before buying, then shape the design brief around the actual products."
+    },
+    {
+      "title": "Design theme and sections",
+      "text": "We plan the homepage, collection and product templates, building custom sections for the features your products rely on rather than forcing everything into generic blocks."
+    },
+    {
+      "title": "Build within Shopify",
+      "text": "We develop the theme with the platform's own tools so your team can edit sections, run promotions and add products without touching code."
+    },
+    {
+      "title": "Tune performance and mobile",
+      "text": "We trim theme weight, optimise apps and images, and check the buying path on real phones, since most Shopify traffic and sales arrive on mobile."
+    },
+    {
+      "title": "Launch and hand over",
+      "text": "We test the full purchase flow, publish, and walk your team through managing the store so you are not dependent on us for routine changes."
+    }
+  ],
+  "deliverables": [
+    "Custom Shopify theme shaped around your products",
+    "Reusable sections your team can edit",
+    "Collection and product templates for your catalogue",
+    "Mobile-first storefront with tuned performance",
+    "App and integration setup where needed",
+    "A walkthrough so your team can run the store"
+  ],
+  "metrics": [
+    "Conversion rate across collection and product pages",
+    "Mobile purchase completion",
+    "Theme load time and page weight",
+    "Repeat purchase and returning visitor rates"
+  ],
+  "sections": [
+    {
+      "heading": "Designing inside Shopify, not against it",
+      "paragraphs": [
+        "The best Shopify stores feel custom but behave like Shopify. We build with the theme editor and sections system so merchants keep the flexibility the platform promises. Pointless custom code that locks your team out of editing, breaks on app updates, or slows the store down is a false economy we avoid.",
+        "Where your products need something Shopify does not do out of the box, we extend it carefully and document the change, so the store stays maintainable rather than becoming a maze only its builder understands."
+      ]
+    },
+    {
+      "heading": "Merchandising the collection",
+      "paragraphs": [
+        "On Shopify, how products are grouped and ordered is a merchandising decision as much as a design one. We set up collections, filters and sorting so shoppers move through a range logically, see the right items first, and are nudged toward the products that sell best or carry the best margin.",
+        "Small choices, like which attributes become filters and how sold-out variants appear, make the difference between a store that feels considered and one that feels like a spreadsheet."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Do you work with an existing Shopify theme or build custom?",
+      "a": "Both. If your current theme can be shaped into what you need, we customise it and save you the cost of starting over. If it fights the direction you want, we build a custom theme or start from a stronger base and adapt it."
+    },
+    {
+      "q": "Will my team be able to edit the store after launch?",
+      "a": "Yes. We design with editable sections and standard Shopify structures, then train your team on the theme editor. The goal is a store you can run day to day without coming back to us for routine updates."
+    },
+    {
+      "q": "How do apps affect store speed?",
+      "a": "Heavily. Extra apps add scripts and requests that slow every page. We review the apps you use, keep what earns its place, and configure the rest so the storefront stays fast rather than accumulating weight over time."
+    },
+    {
+      "q": "Can you migrate us onto Shopify from another platform?",
+      "a": "Yes. We move products, collections, customers and content, map old URLs to new ones, and stage the switch so you keep your search visibility and your existing customers can still find you."
+    },
+    {
+      "q": "Do you handle Shopify SEO as well?",
+      "a": "We can, and usually should. A store designed around how people shop pairs naturally with SEO for collections and product pages. Together they make sure the happiest customers are the ones who can find you."
+    },
+    {
+      "q": "What about Shopify Plus features?",
+      "a": "If you are on Plus, we use the tools it provides for checkout, wholesale and multi-store needs. If you are not, we build so the store can grow into Plus later without needing a rebuild to get there."
+    }
+  ]
+}

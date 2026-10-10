@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "eCommerce optimization that improves store speed, product discovery and checkout flow. We fix the friction between marketing traffic and completed orders.",
+  "directAnswer": "eCommerce optimization fixes the friction that sits between marketing traffic and finished orders. We look at store speed, product discovery, search, filters and checkout, then remove the steps and delays that cause shoppers to leave. Better conversion on the same traffic lowers your real cost per sale and gets more value from every visitor.",
+  "intro": "Every store already converts some of its visitors. Optimization is about converting more of them without buying a single extra click. The work is partly technical, like shaving load time and tightening search, and partly behavioural, like understanding why shoppers abandon a cart they clearly wanted to complete. We treat the store as a funnel with observable leaks and fix the biggest ones first. Because the traffic is already paid for in time or money, every improvement here is pure margin added to work you have already done.",
+  "forWho": "This is for stores with real traffic that is underperforming on conversion, or merchants whose ad costs keep rising while orders hold flat. It suits catalogue businesses where search and filtering decide whether a shopper finds anything, and any store with measurable cart abandonment. If you are spending on marketing and the return feels thin, the quickest win is often converting the visitors you already have before trying to buy more.",
+  "process": [
+    {
+      "title": "Measure the funnel",
+      "text": "We instrument the path from landing through collection and product pages to checkout so we can see exactly where and how many shoppers are lost."
+    },
+    {
+      "title": "Diagnose the friction",
+      "text": "We combine behavioural data with hands-on testing of search, filtering, mobile UX and checkout to find the specific causes behind the drop-offs."
+    },
+    {
+      "title": "Prioritise the fixes",
+      "text": "We rank each improvement by how much revenue it could unlock and how quickly it can ship, then tackle the highest-value work first."
+    },
+    {
+      "title": "Implement and verify",
+      "text": "We make the changes on the live store in stages, watching conversion and error rates so a fix never creates a new problem elsewhere."
+    },
+    {
+      "title": "Keep tightening",
+      "text": "Optimization is continuous. Once the obvious leaks are closed we test smaller refinements, stacking gains rather than chasing one big redesign."
+    }
+  ],
+  "deliverables": [
+    "Full-funnel measurement across the store",
+    "Behavioural and usability diagnosis",
+    "Speed and performance improvements",
+    "Search, filter and navigation fixes",
+    "Checkout and mobile UX refinements",
+    "A prioritised roadmap of further gains"
+  ],
+  "metrics": [
+    "Conversion rate across each funnel stage",
+    "Cart and checkout abandonment",
+    "Store search success and refinement use",
+    "Page speed on mobile and desktop"
+  ],
+  "sections": [
+    {
+      "heading": "Speed is revenue you can measure",
+      "paragraphs": [
+        "Slow stores lose shoppers before they have seen a product. Large unoptimised images, blocking scripts and bloated apps push load times past the point where attention survives, especially on phones. We measure speed on the devices real customers use and fix the causes, not simply chase a score, because the goal is a browsing experience that keeps moving.",
+        "Improvements to speed and search often lift conversion enough to pay for themselves before any larger change is made, which is why we look there first."
+      ]
+    },
+    {
+      "heading": "Why shoppers abandon carts",
+      "paragraphs": [
+        "Abandonment is usually rational. The shopper was interested, then met a reason to stop: an unexpected cost, a forced account, a confusing shipping estimate, or a payment step that would not cooperate. Removing those reasons is more reliable than any countdown timer or discount pop-up.",
+        "We study abandonment in context and fix the substance. A shopper who feels respected and informed at checkout is far more likely to finish than one who is pushed."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "How is optimization different from a redesign?",
+      "a": "A redesign replaces the store's appearance; optimization improves how the existing store performs. Most stores do not need a new look to convert better. We usually start with the measurable friction points, because that work is faster and less disruptive than a full rebuild."
+    },
+    {
+      "q": "What size of store benefits most?",
+      "a": "Stores with existing traffic and some sales benefit most, because there is data to work from and each improvement multiplies real numbers. Very new stores with little traffic are better served by building the right structure first."
+    },
+    {
+      "q": "How quickly can we expect a difference?",
+      "a": "Speed and checkout fixes often show movement within weeks because they address immediate obstacles. Broader gains accumulate as more of the roadmap ships, so we treat optimization as a program rather than a one-time event."
+    },
+    {
+      "q": "Do you need access to our analytics?",
+      "a": "We need read access to your analytics and store data to measure baselines and verify results. Without data, optimization becomes opinion, and opinions about store design are frequently wrong."
+    },
+    {
+      "q": "Can you improve on-site search?",
+      "a": "Yes, and it is often overlooked. Poor search returns nothing useful, so shoppers leave. We tune synonyms, results ordering and zero-result handling so searching the store actually helps people find products."
+    },
+    {
+      "q": "Will changes disrupt current campaigns?",
+      "a": "We stage changes and coordinate with any active campaigns, and we keep URLs and tracking intact so paid and organic work continues correctly. Optimization should add revenue, not disturb the foundations underneath it."
+    }
+  ]
+}

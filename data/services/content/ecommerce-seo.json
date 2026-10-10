@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "eCommerce SEO for collections, product pages and faceted navigation so commercial pages rank for the buyer-intent queries that actually sell.",
+  "directAnswer": "eCommerce SEO earns organic visibility for the pages that actually sell: collections, product pages and category hubs. We handle faceted navigation, duplicate versions, canonicals and internal links so search engines index the right URLs, then target buyer-intent phrases that lead to orders. Structure and content work together so commercial pages rank and convert.",
+  "intro": "Most ecommerce sites are not short of pages. They are short of pages a search engine can confidently rank. Filters generate thousands of near-duplicate URLs, products appear in several collections at once, and the pages a business most wants found get buried under technical noise. eCommerce SEO sorts that out. We decide which URLs deserve to exist in search, make them unambiguous, and point authority at the collections and products that carry margin. Organic sales then compound, because a ranked commercial page keeps earning orders without paying for each visit.",
+  "forWho": "This service suits stores with a growing catalogue where search visibility lags behind the size of the product range. It fits merchants who rank for their brand but not their categories, businesses whose filters have created index bloat, and online retailers competing against marketplaces for the same product searches. If you sell online and your organic traffic is not doing its share next to paid, this is where to build it.",
+  "process": [
+    {
+      "title": "Crawl and audit the catalogue",
+      "text": "We map every URL the store exposes, separate the valuable commercial pages from the duplicates, and see how search engines currently index them."
+    },
+    {
+      "title": "Control indexation",
+      "text": "We set canonicals, parameter rules and crawl guidance so filters and sort variants stop competing with the collections that should rank."
+    },
+    {
+      "title": "Strengthen commercial pages",
+      "text": "We improve collection and product page content, headings and internal links so those pages match buyer intent and are easy for search engines to understand."
+    },
+    {
+      "title": "Target buying intent",
+      "text": "We prioritise the queries people use when they are ready to buy, then build or improve the pages that answer them with products in view."
+    },
+    {
+      "title": "Track revenue, not just ranks",
+      "text": "We report organic revenue by category and page, so success is judged on orders from search rather than rank positions in isolation."
+    }
+  ],
+  "deliverables": [
+    "Catalogue crawl with duplicate and bloat findings",
+    "Canonical and parameter rules for faceted URLs",
+    "Optimised collection and category pages",
+    "Product page content and structured data",
+    "Internal linking across related products and guides",
+    "Organic revenue reporting by category"
+  ],
+  "metrics": [
+    "Organic orders and revenue",
+    "Indexed commercial pages versus total URLs",
+    "Rankings for buyer-intent category terms",
+    "Click-through rate from search to product pages"
+  ],
+  "sections": [
+    {
+      "heading": "The faceted navigation problem",
+      "paragraphs": [
+        "Filters are wonderful for shoppers and dangerous for search. Each combination of colour, size and price can create its own URL, multiplying pages until the site is a maze of near-twins. Search engines then have to guess which version matters, and often choose the wrong one or ignore them all. Left alone, this spreads authority across thousands of duplicate pages.",
+        "We decide deliberately which facet combinations deserve to rank, lock the rest out of the index, and make the surviving pages distinct. Controlled surface area beats sheer volume every time."
+      ]
+    },
+    {
+      "heading": "Collection pages sell, not just list",
+      "paragraphs": [
+        "A collection page that only lists products wastes its ranking potential. It should explain the group, answer the questions that apply across it, and guide shoppers toward the right item with useful pointers rather than a raw grid. That content helps search engines understand the page and helps customers decide.",
+        "We write collection copy that reads like help instead of keyword padding, and we link related collections and guides so authority flows into the pages that earn."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Should product pages or category pages be the priority?",
+      "a": "Usually both, in sequence. Category and collection pages capture broad buyer intent and often rank more reliably for a smaller store. Product pages win specific searches. We prioritise based on which pages can realistically compete for demand you already have."
+    },
+    {
+      "q": "How do you stop filters from creating duplicate pages?",
+      "a": "We set crawl and indexation rules at the category level, decide which facet combinations are worth keeping in search, and canonicalise or exclude the rest. The goal is to shrink the index to the pages that can genuinely earn traffic."
+    },
+    {
+      "q": "Can you write copy for hundreds of products?",
+      "a": "We build efficient systems for large catalogues, from templates with genuine variation for straightforward products to hand-written copy for the ones where wording changes the sale. We avoid identical boilerplate, which search engines and shoppers both tune out."
+    },
+    {
+      "q": "How long does ecommerce SEO take?",
+      "a": "Technical fixes can improve indexation within weeks, but ranking movement on competitive commercial terms typically takes several months. Ecommerce also changes constantly, so we work in a rhythm rather than a single project."
+    },
+    {
+      "q": "Does out-of-stock or discontinued content hurt the store?",
+      "a": "It can, if thousands of dead product pages remain live and crawlable. We manage out-of-stock and retired products deliberately, keeping pages that still earn and consolidating the ones that have lost their purpose."
+    },
+    {
+      "q": "How do you measure success?",
+      "a": "By organic revenue and orders from search, not ranking charts alone. We track which categories and pages produce sales, because a rank that does not lead to orders is not the result you are paying for."
+    }
+  ]
+}
