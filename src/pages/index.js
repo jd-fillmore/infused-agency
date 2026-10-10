@@ -629,7 +629,9 @@ const Home = ({ latestPosts }) => {
           <div className="row pd-top-40">
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Keyword Research & Strategy</h2>
+                <h2>
+                  <Link href="/seo">Keyword Research &amp; Strategy</Link>
+                </h2>
                 <p>
                   At Infused Agency, our search engine optimization specialists
                   begin every campaign with detailed keyword research. We
@@ -650,7 +652,9 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Link Building</h2>
+                <h2>
+                  <Link href="/seo/link-building">Link Building</Link>
+                </h2>
                 <p>
                   A strong backlink profile is essential for higher rankings.
                   Our search engine optimization services include ethical
@@ -670,7 +674,9 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Content Writing</h2>
+                <h2>
+                  <Link href="/seo/content-writing">Content Writing</Link>
+                </h2>
                 <p>
                   Content is the foundation of effective search engine
                   optimization. Our content writing team creates engaging copy
@@ -695,7 +701,9 @@ const Home = ({ latestPosts }) => {
           <div className="row">
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>On-Page SEO</h2>
+                <h2>
+                  <Link href="/seo">On-Page SEO</Link>
+                </h2>
                 <p>
                   Our search engine optimization experts optimize your website's
                   structure, code, and content to ensure it performs at its
@@ -715,7 +723,9 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Local SEO</h2>
+                <h2>
+                  <Link href="/seo/local-seo">Local SEO</Link>
+                </h2>
                 <p>
                   For local businesses, regional visibility is crucial. Infused
                   Agency ensures your business is optimized for local searches
@@ -737,7 +747,9 @@ const Home = ({ latestPosts }) => {
             </div>
             <div className="col-lg-4 d-flex">
               <div className="card">
-                <h2>Technical SEO</h2>
+                <h2>
+                  <Link href="/seo/technical-seo">Technical SEO</Link>
+                </h2>
                 <p>
                   Behind every successful campaign is a strong technical
                   foundation. Our technical search engine optimization
@@ -754,6 +766,96 @@ const Home = ({ latestPosts }) => {
                   its full ranking potential.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-services">
+        <div className="container">
+          <div className="row pd-btm-40">
+            <div className="col-lg-12 text-center">
+              <h2>Solutions for Niagara Businesses</h2>
+              <p>
+                Explore the services we use to grow traffic and leads for
+                businesses across the Niagara region.
+              </p>
+            </div>
+          </div>
+          <div className="row pd-top-40">
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h3>
+                  <Link href="/seo">Search Engine Optimization (SEO)</Link>
+                </h3>
+                <p>
+                  Technical, on-page, and local SEO that helps Niagara businesses
+                  rank higher on Google and get recommended by tools like
+                  ChatGPT and Gemini.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h3>
+                  <Link href="/ai-search">AI Search Optimization</Link>
+                </h3>
+                <p>
+                  Structure your content and citations so AI assistants name
+                  your business when customers ask for local recommendations.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h3>
+                  <Link href="/web-design">Lead-Generating Web Design</Link>
+                </h3>
+                <p>
+                  Fast, conversion-focused websites built to turn visitors into
+                  enquiries — from local service sites to ecommerce stores.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h3>
+                  <Link href="/ecommerce-marketing">eCommerce Marketing</Link>
+                </h3>
+                <p>
+                  Store optimization, ecommerce SEO, and paid campaigns that
+                  grow online sales for Niagara retailers.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h3>
+                  <Link href="/digital-marketing">Digital Marketing</Link>
+                </h3>
+                <p>
+                  Content, conversion-rate optimization, and campaigns that
+                  connect your brand with buyers at every stage.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 d-flex">
+              <div className="card">
+                <h3>
+                  <Link href="/reputation-management">Reputation Management</Link>
+                </h3>
+                <p>
+                  Build, monitor, and protect your online reputation so your
+                  business earns trust before the first call.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row pd-top-40">
+            <div className="col-lg-12 text-center">
+              <Link href="/services">View all solutions</Link>
             </div>
           </div>
         </div>
@@ -808,6 +910,24 @@ const Home = ({ latestPosts }) => {
                 regional entrepreneurs gain the tools and strategies needed to
                 attract qualified leads, improve their local search presence,
                 and compete effectively in their markets.
+              </p>
+
+              <p>
+                Our local SEO team serves businesses across the Niagara region,
+                including{" "}
+                <Link href="/seo/st-catharines">St. Catharines</Link>,{" "}
+                <Link href="/seo/niagara-falls">Niagara Falls</Link>,{" "}
+                <Link href="/seo/niagara-on-the-lake">
+                  Niagara-on-the-Lake
+                </Link>
+                , <Link href="/seo/welland">Welland</Link>,{" "}
+                <Link href="/seo/beamsville">Beamsville</Link>,{" "}
+                <Link href="/seo/grimsby">Grimsby</Link>,{" "}
+                <Link href="/seo/thorold">Thorold</Link>,{" "}
+                <Link href="/seo/fort-erie">Fort Erie</Link>,{" "}
+                <Link href="/seo/port-colborne">Port Colborne</Link>,{" "}
+                <Link href="/seo/fonthill">Fonthill</Link>, and{" "}
+                <Link href="/seo/crystal-beach">Crystal Beach</Link>.
               </p>
 
               <p>

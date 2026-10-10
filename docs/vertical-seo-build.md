@@ -316,3 +316,27 @@ references it, by `id`, via the extended `src/lib/verticalSeoSchema.js`.
 - **Ordering:** Phase 8 is committed before the homepage SEO pass and Phase 9,
   so the final report reflects the homepage work. Doing the homepage links last
   avoids re-touching schema added here.
+
+## Homepage Niagara local-SEO pass (after Phase 8)
+
+**Assumption / spec override:** the original build spec said not to change the
+homepage beyond adding links. The client explicitly asked for a homepage pass
+to improve local organic rankings for "Niagara", so the spec note is overridden
+here. No fabricated claims were added and the visible FAQ/schema pairing from
+Phase 8 is unchanged.
+
+### What changed (`src/pages/index.js`)
+
+- The six cards in "Niagara SEO & AI Search Services" now link their headings to
+  the matching service pages (`/seo`, `/seo/link-building`,
+  `/seo/content-writing`, `/seo/local-seo`, `/seo/technical-seo`).
+- A new "Solutions for Niagara Businesses" section links to the main pillars:
+  `/seo`, `/ai-search`, `/web-design`, `/ecommerce-marketing`,
+  `/digital-marketing`, `/reputation-management`, plus "View all solutions" →
+  `/services`. Reuses the existing `.home-services` card styling (no new SCSS).
+- The "Supporting Local Businesses in Niagara" subsection gained a paragraph
+  linking the 11 Niagara city pages (`/seo/{city}`).
+
+Homepage H1 ("Niagara SEO and AI SEO Services") and the title/description were
+already locally targeted and were left unchanged. No sections were removed or
+reordered; the changes are additive and contained.
