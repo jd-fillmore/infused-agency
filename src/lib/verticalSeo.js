@@ -537,6 +537,122 @@ function buildLinks(page, publishedSet) {
   return links;
 }
 
+// ----- legacy page orphan prevention (follow-up Phase 2) -----
+//
+// The legacy /seo/for-therapists-* city pages stay live and indexable until
+// their replacement is published. While live they must remain reachable through
+// a crawlable link from a published page, so we surface them in a "More cities"
+// block on the matching province page (and on the pillar for the US cities,
+// which have no built province pages). Deriving "live" from LEGACY_REDIRECT_MAP
+// vs the published set means a city drops out of the block automatically the
+// moment its redirect activates.
+
+const US_LEGACY_CITIES = [
+  { slug: "albany", name: "Albany" },
+  { slug: "buffalo", name: "Buffalo" },
+  { slug: "huntington", name: "Huntington" },
+  { slug: "new-york", name: "New York" },
+  { slug: "rochester", name: "Rochester" },
+  { slug: "syracuse", name: "Syracuse" },
+];
+
+// Every legacy therapist file on disk, regardless of kind.
+function legacyTherapistFiles() {
+  const dir = path.join(process.cwd(), "src", "pages", "seo");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => /^for-therapists-.*\.js$/.test(f))
+    .map((f) => {
+      const slug = f.replace(/^for-therapists-/, "").replace(/\.js$/, "");
+      return { slug, url: `/seo/for-therapists-${slug}` };
+    });
+}
+
+// The legacy city pages we know how to classify, with their province / region.
+function getLegacyTherapistPages() {
+  if (_cache.legacyPages) return _cache.legacyPages;
+  const provinces = loadProvinces();
+  const cities = loadCities();
+  const us = new Map(US_LEGACY_CITIES.map((c) => [c.slug, c]));
+  const entries = [];
+  for (const file of legacyTherapistFiles()) {
+    const city = cities.find((c) => c.slug === file.slug);
+    if (city) {
+      const province = provinces.find((p) => p.slug === city.provinceSlug);
+      entries.push({
+        slug: file.slug,
+        name: city.name,
+        url: file.url,
+        kind: "city",
+        region: "canada",
+        provinceSlug: city.provinceSlug,
+        abbr: province ? province.abbr : "",
+      });
+    } else if (us.has(file.slug)) {
+      entries.push({
+        slug: file.slug,
+        name: us.get(file.slug).name,
+        url: file.url,
+        kind: "usa-city",
+        region: "usa",
+        provinceSlug: null,
+        abbr: "US",
+      });
+    }
+  }
+  _cache.legacyPages = entries;
+  return entries;
+}
+
+// A legacy page is live while it has no redirect, or its redirect target is not
+// actually published.
+function isLegacyPageLive(url, publishedSet) {
+  const target = LEGACY_REDIRECT_MAP[url];
+  if (!target) return true;
+  if (!publishedSet) return false;
+  return !publishedSet.has(target);
+}
+
+// "More cities" links for a page: province pages list their live legacy cities;
+// the pillar lists the live US city pages.
+function buildLegacyLinks(page, publishedSet) {
+  if (page.vertical.slug !== "therapists") return [];
+  const live = getLegacyTherapistPages().filter((e) =>
+    isLegacyPageLive(e.url, publishedSet)
+  );
+  let relevant = [];
+  if (page.kind === "province") {
+    relevant = live.filter(
+      (e) => e.kind === "city" && e.provinceSlug === page.province.slug
+    );
+  } else if (page.kind === "pillar") {
+    relevant = live.filter((e) => e.kind === "usa-city");
+  } else {
+    return [];
+  }
+  return relevant
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((e) => ({
+      href: e.url,
+      label: e.region === "usa" ? e.name : `${e.name}, ${e.abbr}`,
+    }));
+}
+
+// Orphan check: every live legacy page must be linked from a published page.
+function findOrphanLiveLegacyPages(publishedRecords, publishedSet) {
+  const linked = new Set();
+  for (const r of publishedRecords) {
+    for (const l of buildLegacyLinks(r.page, publishedSet)) linked.add(l.href);
+  }
+  const orphans = [];
+  for (const file of legacyTherapistFiles()) {
+    if (!isLegacyPageLive(file.url, publishedSet)) continue;
+    if (!linked.has(file.url)) orphans.push(file.url);
+  }
+  return orphans;
+}
+
 // ----- slug integrity -----
 
 function verifySlugIntegrity() {
@@ -590,6 +706,7 @@ function buildPageProps(page, publishedSet) {
   const proof = getProofByIds(content ? content.proofRefs : []);
   const breadcrumbs = buildBreadcrumbs(page);
   const links = buildLinks(page, publishedSet);
+  const legacyCities = buildLegacyLinks(page, publishedSet);
   const v = page.vertical;
 
   let provincesIndex = [];
@@ -655,6 +772,7 @@ function buildPageProps(page, publishedSet) {
     proof,
     breadcrumbs,
     links,
+    legacyCities,
     provincesIndex,
     citiesIndex,
     regulationRows:
@@ -733,6 +851,11 @@ module.exports = {
   evaluateBasics,
   computePublished,
   buildLinks,
+  buildLegacyLinks,
+  getLegacyTherapistPages,
+  legacyTherapistFiles,
+  isLegacyPageLive,
+  findOrphanLiveLegacyPages,
   buildBreadcrumbs,
   verifySlugIntegrity,
   isVerticalHref,

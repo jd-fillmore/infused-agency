@@ -126,6 +126,25 @@ test("sitemap filtering drops every vertical prefix", () => {
   assert.strictEqual(keep.length, 0);
 });
 
+test("every live legacy therapist page is linked from a published page", () => {
+  const { published } = seo.computePublished();
+  const set = new Set(published.map((r) => r.page.urlPath));
+  const orphans = seo.findOrphanLiveLegacyPages(published, set);
+  assert.deepStrictEqual(orphans, []);
+});
+
+test("More cities block drops a city once its redirect is live", () => {
+  const { published } = seo.computePublished();
+  const set = new Set(published.map((r) => r.page.urlPath));
+  const ontario = published.find((r) => r.page.urlPath === "/therapist-seo/ontario");
+  const links = seo.buildLegacyLinks(ontario.page, set);
+  const hrefs = links.map((l) => l.href);
+  assert.ok(
+    hrefs.every((h) => h !== "/seo/for-therapists-toronto"),
+    "redirected city must not appear in More cities"
+  );
+});
+
 test("summary length gate is enforced", () => {
   const { published } = seo.computePublished();
   for (const r of published) {

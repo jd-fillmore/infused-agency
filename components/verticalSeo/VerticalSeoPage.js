@@ -463,6 +463,25 @@ const VerticalSeoPage = ({ page }) => {
         </section>
       ) : null}
 
+      {page.legacyCities && page.legacyCities.length ? (
+        <section className="pd-top-40">
+          <Container>
+            <Row>
+              <Col lg="12">
+                <h2>More cities</h2>
+                <ul>
+                  {page.legacyCities.map((l, i) => (
+                    <li key={i}>
+                      <Link href={l.href}>{l.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      ) : null}
+
       <Proof items={page.proof} />
       <Faq faqs={content.faqs} />
       <LinkList title="Related pages" links={page.links} />

@@ -7,7 +7,7 @@ Working branch: `seo-overhaul`. Spec: `docs/vertical-seo-build-spec.md`.
 Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 
 - [x] Phase 1 — Visual bugs (breadcrumbs horizontal, hero cutoff fixed; no copy changes)
-- [ ] Phase 2 — Legacy pages, seed city lists, counts
+- [x] Phase 2 — Legacy pages, seed city lists, counts
 - [ ] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
 - [ ] Phase 4 — City content batch A
 - [ ] Phase 5 — City content batch B
@@ -84,3 +84,37 @@ No copy was changed. Reused the existing global SCSS/: no new dependency.
 
 - **Cause.** Every page used `<section className="seo-city-hero">`, but the `.seo-city-hero` rule (`components/Home/Hero/hero.scss`) only set the H1 size — it set **no top padding and no background**, unlike every other hero on the site (`.main-hero`, `.hero`, `.inner-hero`, and the legacy per-city classes all pad the top by ~180–220px). The header is `position:fixed` (`.fixed-top` → TopBar + Navbar, ~150px tall), so the H1, direct-answer paragraph and CTA sat underneath it and were clipped on every template (pillar, province, city, usa). There was no `overflow:hidden`, fixed height, `100vh` sizing or colour-on-colour problem.
 - **Fix.** Gave `.seo-city-hero` the site's standard hero treatment: the dark gradient background and `padding: 210px 0 120px` (desktop) / `120px 0 60px` (≤992px), matching `.inner-hero`. H1/paragraph spacing also normalised. Verified the rendered static HTML contains `class="seo-city-hero"` and the CSS chunk includes the new padding at all three widths.
+
+## Follow-up Phase 2 — legacy pages, seed city lists, counts
+
+### Seed city lists
+
+- `data/vertical-seo/cities.json`: `st-albert` → replaced by `airdrie` (in `alberta`, name "Airdrie"); `sydney` → replaced by `cape-breton` (in `nova-scotia`, name "Cape Breton"). The draft stubs were renamed with `git mv` (`alberta/st-albert.json` → `airdrie.json`, `nova-scotia/sydney.json` → `cape-breton.json`) so the moves — not deletes/adds — are what get committed.
+- `data/vertical-seo/provinces.json`: `alberta.topCitySlugs` → `["calgary","edmonton","red-deer","lethbridge","airdrie"]`; `nova-scotia.topCitySlugs` → `["halifax","cape-breton","truro","new-glasgow","kentville"]`.
+- Copy sweep for the survivors: `content/verticals/therapists/alberta.json` (3 mentions of St. Albert → Airdrie), `content/verticals/therapists/nova-scotia.json` (intro, one FAQ answer and the `summary` — Sydney → Cape Breton), `vertical-geo/therapists/nova-scotia.json` (`provinceSearchNotes` — "Truro and Sydney" → "Truro and Cape Breton").
+
+### Legacy orphan prevention
+
+- **True legacy page count is 46**, not the 45 the follow-up doc guessed (`docs/legacy-redirect-map.md` documents the reconciliation). `Get-ChildItem src/pages/seo/for-therapists-*.js` returns 46 files. It splits into **16 with an active redirect** to a published replacement (canada, usa, 10 provinces, 5 Ontario cities) and **30 that stay live** (24 Canadian cities not yet replaced + the 6 US city pages albany, buffalo, huntington, new-york, rochester, syracuse). 16 + 30 = 46.
+- **Mechanism (data-driven, so it disappears automatically when a redirect activates):** `src/lib/verticalSeo.js` now derives the live legacy set as *legacy pages whose `LEGACY_REDIRECT_MAP` target is missing or not published*.
+  - `legacyTherapistFiles()` — enumerates every `src/pages/seo/for-therapists-*.js` file.
+  - `getLegacyTherapistPages()` — classifies each legacy file as a Canadian city (via `cities.json`), a US city (hardcoded `US_LEGACY_CITIES` list of the 6), or unknown.
+  - `buildLegacyLinks(page, publishedSet)` — "More cities" links: a province page lists its live legacy cities (`{Name}, {ProvAbbr}` anchor text, sorted by name); the pillar lists the live US cities (`{Name}` only, to avoid exact-match stuffing). Canadian legacy city anchors use `{Name}, {ProvAbbr}` for the same reason. The country/US pages and city pages render no block.
+  - `findOrphanLiveLegacyPages(publishedRecords, publishedSet)` — union of all `buildLegacyLinks` targets; any **live** legacy page (including unknown/unregistered ones) that isn't in the union is an orphan.
+- **Rendering.** `VerticalSeoPage.js` renders a "More cities" `<section>` (with Next `<Link>`s — crawlable anchors) after the city index and before `<Proof>`, only when `page.legacyCities` is non-empty. Confirmed in the prerendered HTML: British Columbia lists its 10 live legacy cities; Ontario renders no block (all 5 of its cities are published, all redirected); the pillar lists the US cities.
+- **Gate.** `yarn verify:seo` now reports `Live legacy orphans: N` and **exits 1** if any live legacy page is unlinked (goes into `docs/vertical-seo-report.md` under "no crawlable internal link"). Current result: 0 orphans.
+- **Tests.** Two new `yarn test:seo` cases: (a) every live legacy page is linked from a published page; (b) a redirected city (toronto) is dropped from the More cities block. 12/12 pass.
+
+### Assumptions recorded
+
+- **US city pages get no province page yet** — no US therapeutic province content exists, so the pillar hosts the "More cities" block for the 6 US legacy cities.
+- **Only city legacy pages need linking.** The province/country/pillar legacy pages are all currently redirected to a published page (so not "live"). The orphan check is written against **every** live legacy file on disk, so any non-city legacy page would also fail the build if it were ever left live without a link — fail-loud by design; the 24 Canadian + 6 US cities are the only legitimately-live legacy pages today.
+- **Anchor text uses `{Name}, {ProvAbbr}`** (Canadian) and `{Name}` (US) deliberately — no exact-match URL-anchor stuffing against the legacy pages.
+- **`docs/content-backlog.md` is generated** by `scripts/content-status.js`; regenerated via `yarn content:status` (therapists reviewed=17, draft=45).
+
+### Verification
+
+- `yarn verify:seo` — 150 enumerated, 17 published, 0 gate-failed, 0 slug errors, 0 broken links, **0 live legacy orphans**.
+- `yarn test:seo` — 12/12 pass.
+- `yarn lint` — exit 0 (pre-existing warnings only).
+- `yarn build` — success (needed a clean `.next` first; the first build hit a stale-cache `PageNotFoundError` on `/niagara-web-design` and cleared it the same way a normal `rm -rf .next` does). 17 vertical pages prerendered; the More cities block appears on the published province pages. Restored the `public/sitemap-0.xml` build-timestamp noise before committing.

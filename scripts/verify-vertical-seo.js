@@ -83,6 +83,7 @@ function main() {
     evaluated.filter((r) => r.shingles)
   );
   const orphans = legacyPagesWithoutEquivalent(publishedSet);
+  const liveLegacyOrphans = seo.findOrphanLiveLegacyPages(published, publishedSet);
 
   // ----- console summary -----
   console.log("Vertical SEO verification");
@@ -93,8 +94,11 @@ function main() {
   console.log(`Gate-failed      : ${failed.length}`);
   console.log(`Slug errors      : ${slugErrors.length}`);
   console.log(`Broken links     : ${brokenLinks.length}`);
+  console.log(`Live legacy orphans: ${liveLegacyOrphans.length}`);
   if (slugErrors.length) slugErrors.forEach((e) => console.log("  ! " + e));
   if (brokenLinks.length) brokenLinks.forEach((e) => console.log("  ! " + e));
+  if (liveLegacyOrphans.length)
+    liveLegacyOrphans.forEach((e) => console.log("  ! orphan: " + e));
 
   // ----- markdown report -----
   const lines = [];
@@ -166,12 +170,20 @@ function main() {
     }
   }
   lines.push("");
+  lines.push("## Live legacy pages with no crawlable internal link (must be empty)");
+  lines.push("");
+  if (!liveLegacyOrphans.length) {
+    lines.push("_None._");
+  } else {
+    for (const url of liveLegacyOrphans.sort()) lines.push(`- ${url}`);
+  }
+  lines.push("");
 
   const outPath = path.join(process.cwd(), "docs", "vertical-seo-report.md");
   fs.writeFileSync(outPath, lines.join("\n"), "utf8");
   console.log(`\nWrote ${path.relative(process.cwd(), outPath)}`);
 
-  if (slugErrors.length || brokenLinks.length) {
+  if (slugErrors.length || brokenLinks.length || liveLegacyOrphans.length) {
     console.error("\nStructural errors detected. Failing build.");
     process.exit(1);
   }

@@ -1,9 +1,17 @@
 # Legacy → new redirect map
 
-The legacy therapist geo pages live under `/seo/for-therapists-*` (45 pages in
+The legacy therapist geo pages live under `/seo/for-therapists-*` (46 pages in
 `src/pages/seo/`). They are **not** noindexed and **not** deleted. A 301 is wired
 up only for a legacy URL whose replacement page is actually published (passes the
 build gate). Every other legacy URL stays live and untouched.
+
+**Reconciliation.** The count of 46 is the true number of
+`src/pages/seo/for-therapists-*.js` files (`Get-ChildItem` confirms it). It
+splits into **16 pages with an active redirect** to a published replacement
+(Canada, USA, the 10 provinces and the 5 Ontario cities) plus **30 pages that
+stay live** (24 Canadian cities whose new pages are not published yet, and the 6
+US city pages). 16 + 30 = 46. An earlier draft of this doc said 45, which was an
+undercount of the live set by one.
 
 The map is defined once in `src/lib/verticalSeo.js` (`LEGACY_REDIRECT_MAP`) and
 emitted through `getPublishedRedirects()`, which filters out any destination that
