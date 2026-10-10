@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Laval helps counselling and psychology practices reach families and commuters north of Montreal. French service pages, honest neighbourhood coverage and a complete Google Business Profile bring local searches to your practice.",
+  "intro": "Laval's search story is suburban and practical. One of Quebec's fastest-growing cities and Montreal's northern neighbour, it is home to families, professionals and students who commute south to island campuses, and most local searching happens in French. Residents in Chomedey, Vimont, Duvernay, Sainte-Rose and Laval-des-Rapides usually look for help close to home, naming the neighbourhood or the city itself rather than Montreal. That local intent is what an independent practice can win: directories hold the broad terms, but the practical searches, a counsellor near me, support for a specific issue, help for a child or a teen, favour a clear, honest page from a practice that plainly serves the area. Green spaces like the Parc de la Riviere-des-Mille-Iles and the Centre de la Nature anchor a family-oriented city that values outdoor life.",
+  "localInsight": "Laval's advantage is demand without downtown competition. Its business hubs bring steady professional clients, young families across Duvernay, Sainte-Rose and Fabreville search for children's, couples' and parental support, and students commuting to Montreal campuses look for accessible options near home. Because Laval families compare carefully, consistent details across directories and a maintained Google Business Profile matter. French-language content is the default expectation here: Bill 96 and the Charter of the French Language have made clear French service pages the working baseline for any practice serving Quebec clients. The city also draws searches from nearby municipalities across the North Shore, which widens an honest catchment. Content that reflects real neighbourhoods and real offerings beats broad claims, and practices that state fees, availability and virtual options plainly fit how families actually decide.",
+  "localChecklist": [
+    "French-language service pages for the specialisations you actually offer.",
+    "Neighbourhood content for the Laval districts and surrounding communities you serve.",
+    "A Google Business Profile with a service area that reflects your real catchment.",
+    "Consistent details across the directories North Shore families check.",
+    "Clear fee, availability and virtual-session information.",
+    "Niche focus on a client group such as children, couples or newcomers."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Laval?",
+      "a": "The broad terms are held by directories, but Laval sits in the shadow of Montreal's listings, so well-structured local pages move up quickly. Specific searches around a real issue or neighbourhood are where an independent practice wins.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do Laval clients search in French?",
+      "a": "Overwhelmingly yes. North Shore families search in French, and Bill 96 has made French-language web presence the expected baseline across Quebec. Clear French service pages are the working starting point for a Laval practice.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which neighbourhoods should a Laval practice target?",
+      "a": "Only those it genuinely serves. Chomedey, Vimont, Duvernay, Sainte-Rose and Laval-des-Rapides show distinct search patterns, and families often name their district in the query. Honest neighbourhood pages outperform a broad Laval claim.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Who is searching for a therapist in Laval?",
+      "a": "Mostly families and commuters looking close to home: parents searching for children's and couples' support, professionals working in Laval's business hubs, and students commuting to Montreal campuses. Local intent and convenience drive the search.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual-only practice rank in Laval?",
+      "a": "Yes, with an honest service area. A virtual practice can describe the Laval districts and nearby municipalities it serves without implying an office in each one.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Laval?",
+      "a": "Specific local and issue-based searches often move within a few months, while broader Laval terms take six to twelve months of consistent publishing. The family market rewards credibility and steady local content.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Laval for counselling and psychology practices. French-language local search for North Shore families and Montreal commuters.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

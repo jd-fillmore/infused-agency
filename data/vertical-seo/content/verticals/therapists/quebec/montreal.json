@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Montreal helps counselling and psychology practices get found by clients searching in both French and English. Lead with the specialisations, communities and neighbourhoods you serve, and your practice can rank ahead of directories on the city's most specific searches.",
+  "intro": "Montreal is the second-largest city in Canada and by far its most bilingual therapy market. Clients search for support in English and French, often choosing a practice that speaks their language not just in the session but in how it presents itself online. Broad searches for therapy Montreal or psychologue Montreal are crowded by directories, so an independent practice's realistic ground is specific and local: the client group you work with, the modality you offer, and the neighbourhood where you see people. Plateau-Mont-Royal, Mile End, Griffintown, Verdun and NDG each search in their own way, and clients frequently attach the area to the query. A practice that names these communities, publishes in the languages it actually works in, and is easy to find on a maintained Google Business Profile reaches the people a generic page cannot.",
+  "localInsight": "Montreal's advantage is depth. Demand spans students at McGill and Universite de Montreal, professionals in the city's technology, finance and creative sectors, and families in neighbourhoods from Outremont to Hochelaga-Maisonneuve and the West Island. The bilingual reality cuts both ways: a practice that publishes clear French service pages alongside English ones reaches a much wider share of the city, and the Charter of the French Language (Bill 96) has raised the practical bar for French-language web presence across Quebec. Because Montrealers weigh reviews and cross-check details across directories, consistent practice information matters, and clarity about fees, availability and virtual sessions is expected rather than a bonus. The reliable strategy is honest service pages for real specialisations, real neighbourhood coverage and real cultural signals, which are also the pages that accumulate authority over time.",
+  "localChecklist": [
+    "Service pages in the languages you actually practise, with consistent French and English detail.",
+    "Neighbourhood content for the areas you really serve, from the Plateau and Mile End to Verdun or the West Island.",
+    "A Google Business Profile with an honest service area rather than all of the island and its suburbs.",
+    "Consistent details across directories, because Montrealers cross-check before they book.",
+    "Clear fee, availability and virtual-session information in both languages.",
+    "Niche focus on a client group or modality, which is how independent practices win here."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Montreal?",
+      "a": "It is competitive at the broad level, where directories and large clinics hold therapy Montreal and psychologue Montreal. Independent practices win the long tail: modality, client group and neighbourhood searches, where searchers are closer to booking.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Should I publish in French, English, or both?",
+      "a": "Both, if you genuinely work across languages. Many Montrealers search in French, many in English, and Bill 96 has made French-language web presence an expected part of doing business for any practice serving Quebec clients. Clear French service pages alongside English ones widen your reach substantially.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which neighbourhoods should a Montreal practice target?",
+      "a": "Only the ones it genuinely serves. Plateau-Mont-Royal, Mile End, Verdun, NDG and Hochelaga-Maisonneuve each have distinct search patterns, and clients often include the area in their query. Honest neighbourhood pages outperform a blanket Montreal claim.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Does Montreal's student population change demand?",
+      "a": "Yes. McGill and Universite de Montreal bring concentrations of students searching for support, many looking for accessible fees or virtual sessions. Practices that state fees and availability clearly connect with this group far more easily.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual-only practice rank in Montreal?",
+      "a": "Yes, with an honest service area. Describe the boroughs and communities you actually serve without implying an office you do not have, and pair it with clear virtual-session details.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Montreal?",
+      "a": "Plan on a few months for specific searches and six to twelve months for broader competitive terms. The bilingual version of every page compounds the work, so a clear content plan from the start prevents costlier rewrites later.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Montreal for counselling and psychology practices. Bilingual French and English local search across the city's neighbourhoods.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

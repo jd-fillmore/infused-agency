@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Gatineau helps counselling and psychology practices reach clients across the river from Ottawa. French and English service pages, honest neighbourhood coverage and a local Google Business Profile bring nearby searches to your practice.",
+  "intro": "Gatineau is a search market with two identities. Just across the Ottawa River from the capital, it is home to federal public servants, a large bilingual workforce and families across Hull, Aylmer, the Gatineau sector, Masson-Angers and Buckingham. Searching here happens in both official languages, often split by household and workplace, so a practice that publishes genuinely in both reaches far more of the city. The federal character shapes demand: stable professional clients, some rotation with postings, and an expectation of discretion and reliability. Directories hold the broad terms, but the local combinations, a counsellor near Aylmer, couples support in the Gatineau sector, are open ground for an independent practice that names the communities it serves and is easy to find on a maintained Google Business Profile. Gatineau Park and the riverfront drive an active, outdoors-oriented culture that local content can reflect honestly.",
+  "localInsight": "Gatineau's opportunity sits in its links to Ottawa. Many searchers compare services on both sides of the river, so consistency of your details across directories and a service area that reflects your real reach matter. The federal workforce brings evening and virtual preferences, and the University of Quebec in Outaouais adds student demand in and around Hull. As elsewhere in Quebec, Bill 96 has made French-language web presence an expected baseline, so the winning configuration is honest French and English service pages, real neighbourhood coverage and clear fee and availability information rather than vague claims of covering all of Quebec. Because the city straddles a bilingual capital, practices that write naturally in both languages, without stilted translation, connect with the searching client almost immediately, and consistency across directories seals the trust that booking depends on.",
+  "localChecklist": [
+    "French and English service pages for the specialisations you genuinely offer.",
+    "Neighbourhood coverage for Hull, Aylmer, the Gatineau sector, Masson-Angers and Buckingham.",
+    "A Google Business Profile with an honest service area on the Quebec side of the river.",
+    "Consistent practice details across directories, since Ottawa-Gatineau clients cross-check.",
+    "Clear fee, availability and virtual-session information, including evening slots.",
+    "Niche focus on a client group such as public servants, students or families."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Gatineau?",
+      "a": "Broad terms are contested by directories, but Gatineau's realistic searches are local and specific. A practice that names its communities, publishes in both languages and keeps its business profile current moves up well here.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do I need to publish in both languages in Gatineau?",
+      "a": "For most practices, yes. The city straddles a bilingual reality, and many clients search in French. Bill 96 has also made French-language web presence an expected baseline for any practice serving Quebec residents.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which neighbourhoods should a Gatineau practice target?",
+      "a": "Only those it truly serves. Hull, Aylmer, the Gatineau sector, Masson-Angers and Buckingham each carry distinct search patterns, and clients often name their side of town in the query. Honest local coverage beats a region-wide claim.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Does the federal workforce change demand?",
+      "a": "It shapes it. Public servants bring stable, professional demand, often preferring evening or virtual sessions, and some rotate through postings. Clear availability and plain fee information connect you with this group far more easily.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual practice rank in Gatineau?",
+      "a": "Yes, if the service area is honest. A virtual practice can describe the Gatineau communities it serves, including Ottawa clients if that is genuinely true, without implying an office anywhere it does not exist.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Gatineau?",
+      "a": "Local and bilingual pages often respond within a few months, with broader terms taking six to twelve months. The bilingual content base takes planning, so starting with a clear language strategy avoids rework.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Gatineau for counselling and psychology practices. Bilingual local search across the river from Ottawa's federal community.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

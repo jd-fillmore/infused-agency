@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Longueuil helps counselling and psychology practices reach families and commuters on Montreal's South Shore. French service pages, honest neighbourhood coverage and a complete Google Business Profile bring local searches to your practice.",
+  "intro": "Longueuil is Montreal's South Shore anchor, across the St. Lawrence from the island and large enough to be a genuine city of its own. Its residents in Vieux-Longueuil, Greenfield Park, Saint-Hubert, LeMoyne and Notre-Dame search mostly in French, and they are typically looking close to home rather than on the island. That home-town intent favours an independent practice that is visible for what it actually offers and where it truly works. Directories hold the broad counselling terms, but the useful combinations, a psychologist near Saint-Hubert, couples support in Greenfield Park, family counselling in LeMoyne, are exactly where a clear local page can rank. Aerospace and technology employers anchor the regional economy, adding professional demand, while families and students commuting to Montreal campuses keep the search base broad and steady.",
+  "localInsight": "Longueuil's opportunity is the combination of density and convenience. The city's central location, the Place Longueuil retail hub and green spaces such as Parc Michel-Chartrand and the riverfront make it a place clients stay loyal to, and their searches reflect that. As across Quebec, French-language content is the expected baseline: Bill 96 has raised the bar for French web presence, and a practice that publishes genuinely in French reaches the client it could otherwise miss. Longueuil families research carefully, so consistent details across directories and a maintained Google Business Profile matter. The realistic strategy is honest service pages for real specialisations, real neighbourhood coverage from Vieux-Longueuil to Saint-Hubert, and clear information about fees, availability and virtual sessions from the start, which is what a South Shore client is weighing before they ever call.",
+  "localChecklist": [
+    "French-language service pages for the specialisations you genuinely offer.",
+    "Neighbourhood content for the South Shore districts you truly serve.",
+    "A Google Business Profile set to your authentic catchment in and around Longueuil.",
+    "Consistent details across the directories South Shore families check.",
+    "Clear fee, availability and virtual-session information.",
+    "A defined client focus, from families and couples to commuters."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Longueuil?",
+      "a": "The broad terms are held by directories, but Longueuil's practical searches are local and specific. Practices that name their districts, publish in French and keep their business profile current move up well here.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do Longueuil clients search in French?",
+      "a": "Yes, overwhelmingly. South Shore residents search in French, and Bill 96 has made French-language web presence the working baseline for any practice serving Quebec clients. French service pages are the starting point.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which neighbourhoods should a Longueuil practice target?",
+      "a": "Only those it genuinely serves. Vieux-Longueuil, Greenfield Park, Saint-Hubert, LeMoyne and Notre-Dame each search differently, and clients often name their district in the query. Honest neighbourhood coverage wins over broad claims.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Who is searching for a therapist in Longueuil?",
+      "a": "A broad mix: families across the South Shore, professionals in the regional aerospace and technology sectors, and students commuting to Montreal campuses. Convenience and home-town intent drive how they search and book.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual-only practice rank in Longueuil?",
+      "a": "Yes, if the service area is honest. A virtual practice can describe the Longueuil districts and nearby municipalities it serves without implying an office in each one.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Longueuil?",
+      "a": "Specific local and issue-based searches typically respond within a few months, while broad Longueuil terms need six to twelve months. A clear French content plan from the start prevents later rework.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Longueuil for counselling and psychology practices. French-language local search for South Shore families in and around Montreal.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

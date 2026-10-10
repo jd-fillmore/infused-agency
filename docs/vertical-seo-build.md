@@ -9,7 +9,7 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 - [x] Phase 1 — Visual bugs (breadcrumbs horizontal, hero cutoff fixed; no copy changes)
 - [x] Phase 2 — Legacy pages, seed city lists, counts
 - [x] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
-- [ ] Phase 4 — City content batch A
+- [x] Phase 4 — City content batch A
 - [ ] Phase 5 — City content batch B
 - [ ] Phase 6 — Data-driven service pages
 - [ ] Phase 7 — "Solutions" mega menu
@@ -64,11 +64,11 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 
 ## Verification results
 
-- `yarn verify:seo` — enumerated 150, **published 18**, draft-excluded 44, gate-failed 0, slug errors 0, broken links 0, live legacy orphans 0.
+- `yarn verify:seo` — enumerated 150, **published 33**, draft-excluded 29, gate-failed 0, slug errors 0, broken links 0, live legacy orphans 0.
 - `yarn test:seo` — 12/12 unit tests pass (slug generation, gate logic, link resolution, draft exclusion, redirect safety, sitemap filtering, legacy orphan linking, More cities redirect drop, summary gate).
 - `yarn lint` — exit 0 (warnings only, all pre-existing).
-- `yarn build` — success. 18 vertical pages prerendered.
-- Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (18 URLs); no vertical path leaks into `sitemap-0.xml`.
+- `yarn build` — success. 33 vertical pages prerendered.
+- Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (33 URLs); no vertical path leaks into `sitemap-0.xml`.
 
 ## Follow-up Phase 1 — visual bugs
 
@@ -146,3 +146,48 @@ Requested before continuing to Phases 4–8.
 
 - The shared `.seo-city-hero` section already carried Bootstrap's `text-center` class on the new pages, but the **live legacy city pages** (`.toronto`, `.vancouver`, etc.) render the same class without `text-center`, so their hero text was left-aligned.
 - Fix: `text-align: center` added to `.seo-city-hero` in `components/Home/Hero/hero.scss`. This centers the H1, tagline, direct-answer paragraph and CTA on **every** city hero — new and legacy — without touching per-page markup. Confirmed the built CSS contains the rule and the legacy province/city heroes inherit it.
+
+## Follow-up Phase 4 — city content batch A (QC, BC, AB)
+
+Published **15 city pages** and activated their legacy redirects. One commit.
+
+### Pages written (all `status: reviewed`)
+
+- **Quebec:** montreal, quebec-city, laval, gatineau, longueuil
+- **British Columbia:** vancouver, surrey, burnaby, richmond, abbotsford
+- **Alberta:** calgary, edmonton, red-deer, lethbridge, airdrie
+
+Each page is based on its legacy page's local copy (`src/pages/seo/for-therapists-*.js`), rewritten and extended with the city's actual search-market reality (real neighbourhoods, institutions, industries and commuting patterns). All pass the gate: unique prose ≥ 400 words (intro + localInsight + checklist + geoSpecific FAQ answers), ≥ 6 FAQs with ≥ 4 `geoSpecific`, `summary` 140–155 chars, `directAnswer` 40–60 words, `proofRefs: ["brandi-may-psychotherapy"]`.
+
+### Cities data
+
+- `cities.json`: `neighbourhoods` (from the legacy About copy) and `majorIndustries` filled for all 15. `population2021` stays `null`, matching the published Ontario cities.
+
+### Quebec French-language note
+
+- All five Quebec city pages weave in the bilingual reality and the Charter of the French Language (Bill 96): a geoSpecific FAQ on French-language web presence plus a reflection of it in `localInsight`. `vertical-geo/therapists/quebec.json` keeps `regulator: null`, so the "Provincial rules" section does **not** render (correct — the note is editorial content, not a legal claim).
+
+### Airdrie copy defect fixed
+
+- The legacy Airdrie About paragraph was a **verbatim copy of the Lethbridge one** (Lethbridge landmarks and a non-existent "University of Airdrie"). The new page was rewritten from scratch with Airdrie-accurate communities (Cooper's Crossing, Windsong, Chinook Winds, Ravenswood, King's Heights, Bayview) and its real commuter-suburb positioning.
+
+### Redirects and live-legacy arithmetic
+
+- Added 15 city sources to `LEGACY_REDIRECT_MAP`. Active redirects: **16 → 31**. Live legacy pages: **30 → 15** (the 9 remaining Canadian cities + the 6 US cities). The Quebec, BC and Alberta province pages' "More cities" blocks are now empty (each city dropped automatically the moment its redirect activated); Ontario's block was already empty. `yarn verify:seo` reports **0 live legacy orphans**.
+
+### Similarity (follow-up reporting threshold 0.30)
+
+- Nearest published sibling pair after Phase 4: **0.099** (`red-deer <-> abbotsford`). Nothing exceeded 0.30, so no rewrites were needed. The gate (≤ 0.35) is enforced by `verify:seo`.
+
+### Verification
+
+- `yarn verify:seo` — 150 enumerated, **33 published**, 29 draft-excluded, 0 gate-failed, 0 slug errors, 0 broken links, **0 live legacy orphans**.
+- `yarn test:seo` — 12/12 pass.
+- `yarn lint` — exit 0 (pre-existing warnings only).
+- `yarn build` — success; 33 vertical pages prerendered; `sitemap-vertical-therapists.xml` now lists 33 URLs. Restored the `public/sitemap-0.xml` build-timestamp noise before committing.
+
+### Assumptions recorded
+
+- **`population2021` stays `null`** for new cities, consistent with the published Ontario cities; the unique-fields gate is satisfied by neighbourhoods + majorIndustries + provinceSearchNotes + localInsight + proofRefs.
+- **Quebec regulation is intentionally absent** (regulator null in geo data); the Bill 96 note lives in city copy only.
+- **Migrated legacy URLs become 301s**, never deletes: `/seo/for-therapists-{city}` → `/therapist-seo/{province}/{city}` preserves any existing backlinks/rankings. `docs/legacy-redirect-map.md` reconciles the 31/15 split.

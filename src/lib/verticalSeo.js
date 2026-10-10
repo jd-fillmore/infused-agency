@@ -804,6 +804,21 @@ const LEGACY_REDIRECT_MAP = {
   "/seo/for-therapists-mississauga": "/therapist-seo/ontario/mississauga",
   "/seo/for-therapists-brampton": "/therapist-seo/ontario/brampton",
   "/seo/for-therapists-hamilton": "/therapist-seo/ontario/hamilton",
+  "/seo/for-therapists-montreal": "/therapist-seo/quebec/montreal",
+  "/seo/for-therapists-quebec-city": "/therapist-seo/quebec/quebec-city",
+  "/seo/for-therapists-laval": "/therapist-seo/quebec/laval",
+  "/seo/for-therapists-gatineau": "/therapist-seo/quebec/gatineau",
+  "/seo/for-therapists-longueuil": "/therapist-seo/quebec/longueuil",
+  "/seo/for-therapists-vancouver": "/therapist-seo/british-columbia/vancouver",
+  "/seo/for-therapists-surrey": "/therapist-seo/british-columbia/surrey",
+  "/seo/for-therapists-burnaby": "/therapist-seo/british-columbia/burnaby",
+  "/seo/for-therapists-richmond": "/therapist-seo/british-columbia/richmond",
+  "/seo/for-therapists-abbotsford": "/therapist-seo/british-columbia/abbotsford",
+  "/seo/for-therapists-calgary": "/therapist-seo/alberta/calgary",
+  "/seo/for-therapists-edmonton": "/therapist-seo/alberta/edmonton",
+  "/seo/for-therapists-red-deer": "/therapist-seo/alberta/red-deer",
+  "/seo/for-therapists-lethbridge": "/therapist-seo/alberta/lethbridge",
+  "/seo/for-therapists-airdrie": "/therapist-seo/alberta/airdrie",
 };
 
 function getPublishedRedirects(publishedSet) {

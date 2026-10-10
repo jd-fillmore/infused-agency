@@ -6,12 +6,13 @@ up only for a legacy URL whose replacement page is actually published (passes th
 build gate). Every other legacy URL stays live and untouched.
 
 **Reconciliation.** The count of 46 is the true number of
-`src/pages/seo/for-therapists-*.js` files (`Get-ChildItem` confirms it). It
-splits into **16 pages with an active redirect** to a published replacement
-(Canada, USA, the 10 provinces and the 5 Ontario cities) plus **30 pages that
-stay live** (24 Canadian cities whose new pages are not published yet, and the 6
-US city pages). 16 + 30 = 46. An earlier draft of this doc said 45, which was an
-undercount of the live set by one.
+`src/pages/seo/for-therapists-*.js` files (`Get-ChildItem` confirms it). After
+Phase 4 it splits into **31 pages with an active redirect** to a published
+replacement (canada, usa, the 10 provinces, the 5 Ontario cities and the 15
+Phase-4 cities) plus **15 pages that stay live** (9 Canadian cities whose new
+pages are not published yet — the Phase 5 batch — and the 6 US city pages).
+31 + 15 = 46. An earlier draft of this doc said 45, which was an undercount of
+the live set by one.
 
 The map is defined once in `src/lib/verticalSeo.js` (`LEGACY_REDIRECT_MAP`) and
 emitted through `getPublishedRedirects()`, which filters out any destination that
@@ -39,6 +40,21 @@ the destinations are themselves redirect sources.
 | `/seo/for-therapists-mississauga` | `/therapist-seo/ontario/mississauga` |
 | `/seo/for-therapists-brampton` | `/therapist-seo/ontario/brampton` |
 | `/seo/for-therapists-hamilton` | `/therapist-seo/ontario/hamilton` |
+| `/seo/for-therapists-montreal` | `/therapist-seo/quebec/montreal` |
+| `/seo/for-therapists-quebec-city` | `/therapist-seo/quebec/quebec-city` |
+| `/seo/for-therapists-laval` | `/therapist-seo/quebec/laval` |
+| `/seo/for-therapists-gatineau` | `/therapist-seo/quebec/gatineau` |
+| `/seo/for-therapists-longueuil` | `/therapist-seo/quebec/longueuil` |
+| `/seo/for-therapists-vancouver` | `/therapist-seo/british-columbia/vancouver` |
+| `/seo/for-therapists-surrey` | `/therapist-seo/british-columbia/surrey` |
+| `/seo/for-therapists-burnaby` | `/therapist-seo/british-columbia/burnaby` |
+| `/seo/for-therapists-richmond` | `/therapist-seo/british-columbia/richmond` |
+| `/seo/for-therapists-abbotsford` | `/therapist-seo/british-columbia/abbotsford` |
+| `/seo/for-therapists-calgary` | `/therapist-seo/alberta/calgary` |
+| `/seo/for-therapists-edmonton` | `/therapist-seo/alberta/edmonton` |
+| `/seo/for-therapists-red-deer` | `/therapist-seo/alberta/red-deer` |
+| `/seo/for-therapists-lethbridge` | `/therapist-seo/alberta/lethbridge` |
+| `/seo/for-therapists-airdrie` | `/therapist-seo/alberta/airdrie` |
 
 Notes:
 
@@ -58,16 +74,16 @@ These have no published replacement, so they are served unchanged and **not**
 redirected. Each becomes a redirect candidate once the matching new page is
 written, reviewed and passes the gate:
 
-`abbotsford`, `airdrie`, `albany`, `buffalo`, `burnaby`, `calgary`,
-`cape-breton`, `edmonton`, `fredericton`, `gatineau`, `halifax`, `huntington`,
-`laval`, `lethbridge`, `longueuil`, `moncton`, `montreal`, `new-york`,
-`quebec-city`, `red-deer`, `regina`, `richmond`, `rochester`, `saint-john`,
-`saskatoon`, `st-johns`, `surrey`, `syracuse`, `vancouver`, `winnipeg`.
+`cape-breton`, `fredericton`, `halifax`, `moncton`, `regina`, `saint-john`,
+`saskatoon`, `st-johns`, `winnipeg`.
 
-Many of these are US or Canadian cities outside the launch scope (e.g. US cities
-are out of scope for this phase; only the `usa` country page is published).
-They remain live to avoid destroying existing rankings/backlinks, and will be
-migrated city-by-city as content is written and reviewed.
+(Phase 4 published and redirected Montreal, Quebec City, Laval, Gatineau,
+Longueuil, Vancouver, Surrey, Burnaby, Richmond, Abbotsford, Calgary, Edmonton,
+Red Deer, Lethbridge and Airdrie.) The 6 US city pages — `albany`, `buffalo`,
+`huntington`, `new-york`, `rochester`, `syracuse` — have no published
+replacement either and are out of scope for this launch; they stay live to avoid
+destroying existing rankings/backlinks. The remaining 9 Canadian cities above
+are the Phase 5 batch.
 
 ## Rule for adding a redirect
 
