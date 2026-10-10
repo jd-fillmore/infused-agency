@@ -14,6 +14,8 @@
     "verify:seo": "node scripts/verify-vertical-seo.js && node scripts/validate-schema.js",
     "content:status": "node scripts/content-status.js",
     "content:scaffold": "node scripts/scaffold-content.js",
+    "audit:pages": "node scripts/audit-pages.js",
+    "audit:competitor": "node scripts/competitor-overlap.js",
     "test:seo": "node scripts/test-vertical-seo.js",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "preload-fonts": ""
