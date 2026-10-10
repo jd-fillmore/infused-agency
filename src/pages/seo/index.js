@@ -14,7 +14,7 @@ import build from "../../img/build.png";
 import grow from "../../img/grow.png";
 import growth from "../../img/seo-results.webp";
 
-const SEO = () => {
+const SEO = ({ childServices = [] }) => {
   return (
     <>
       <Head>
@@ -322,6 +322,24 @@ const SEO = () => {
             </Row>
           </Container>
         </section>
+        {childServices.length ? (
+          <section className="pd-top-80">
+            <Container>
+              <Row>
+                <Col lg="12">
+                  <h2>Search engine optimization services</h2>
+                  <ul>
+                    {childServices.map((s) => (
+                      <li key={s.url}>
+                        <Link href={s.url}>{s.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+        ) : null}
       </InnerContent>
       <CTA />
       <Footer />
@@ -330,3 +348,13 @@ const SEO = () => {
 };
 
 export default SEO;
+
+export async function getStaticProps() {
+  const services = require("../../lib/services");
+  const { published } = services.computePublishedServices();
+  const childServices = published
+    .filter((r) => r.service.parentUrl === "/seo")
+    .map((r) => ({ name: r.service.name, url: r.service.url }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return { props: { childServices } };
+}

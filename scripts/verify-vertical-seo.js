@@ -6,11 +6,21 @@
 const fs = require("fs");
 const path = require("path");
 const seo = require("../src/lib/verticalSeo");
+const services = require("../src/lib/services");
 
 function jaccardFromText(a, b) {
   return seo.jaccard
     ? seo.jaccard(a, b)
     : 0;
+}
+
+function writeNavSnapshot() {
+  const snapshot = services.buildNavSnapshot();
+  const dir = path.join(process.cwd(), "src", "generated");
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const file = path.join(dir, "services-nav.json");
+  fs.writeFileSync(file, JSON.stringify(snapshot, null, 2), "utf8");
+  console.log(`Wrote ${path.relative(process.cwd(), file)}`);
 }
 
 function nearestPairs(records) {
@@ -52,9 +62,13 @@ function legacyPagesWithoutEquivalent(publishedSet) {
 function main() {
   let result;
   let slugErrors = [];
+  let servicesResult;
+  let serviceSlugErrors = [];
   try {
     slugErrors = seo.verifySlugIntegrity();
     result = seo.computePublished();
+    serviceSlugErrors = services.verifyServiceIntegrity();
+    servicesResult = services.computePublishedServices();
   } catch (err) {
     console.error("FATAL: " + err.message);
     process.exit(1);
@@ -62,6 +76,15 @@ function main() {
 
   const { all, evaluated, published, failed, drafts } = result;
   const publishedSet = new Set(published.map((r) => r.page.urlPath));
+  const {
+    published: publishedServices,
+    failed: failedServices,
+    drafts: draftServices,
+    verticalsPublished,
+  } = servicesResult;
+  const publishedServiceUrls = new Set(
+    publishedServices.map((r) => r.service.url)
+  );
 
   // Broken-link assertion for published pages (structural -> fail build).
   const brokenLinks = [];
@@ -77,6 +100,27 @@ function main() {
         brokenLinks.push(`${r.page.urlPath} -> ${l.href}`);
       }
     }
+  }
+  // Pillar -> service links (structural assertion for published pillars).
+  const verticalServiceLinks = [];
+  for (const r of published) {
+    if (r.page.kind !== "pillar") continue;
+    for (const l of services.buildVerticalServiceLinks(r.page.vertical, publishedServiceUrls)) {
+      if (!publishedServiceUrls.has(l.href)) {
+        verticalServiceLinks.push(`${r.page.urlPath} -> ${l.href}`);
+      }
+    }
+  }
+  // Service page link/config integrity (structural -> fail build).
+  const serviceStructural = [];
+  for (const r of publishedServices) {
+    const broken = services.checkServiceLinks(
+      r.service,
+      publishedServiceUrls,
+      verticalsPublished
+    );
+    if (broken.length)
+      serviceStructural.push(`${r.service.url}: ${broken.join(", ")}`);
   }
 
   const pairs = nearestPairs(
@@ -95,10 +139,21 @@ function main() {
   console.log(`Slug errors      : ${slugErrors.length}`);
   console.log(`Broken links     : ${brokenLinks.length}`);
   console.log(`Live legacy orphans: ${liveLegacyOrphans.length}`);
+  console.log(`-- services --`);
+  console.log(`Services         : ${servicesResult.services.length}`);
+  console.log(`Service published: ${publishedServices.length}`);
+  console.log(`Service drafts   : ${draftServices.length}`);
+  console.log(`Service fail     : ${failedServices.length}`);
+  console.log(`Service slug errs: ${serviceSlugErrors.length}`);
   if (slugErrors.length) slugErrors.forEach((e) => console.log("  ! " + e));
+  if (serviceSlugErrors.length) serviceSlugErrors.forEach((e) => console.log("  ! service: " + e));
   if (brokenLinks.length) brokenLinks.forEach((e) => console.log("  ! " + e));
+  if (verticalServiceLinks.length) verticalServiceLinks.forEach((e) => console.log("  ! pillar svc link: " + e));
+  if (serviceStructural.length) serviceStructural.forEach((e) => console.log("  ! service config: " + e));
   if (liveLegacyOrphans.length)
     liveLegacyOrphans.forEach((e) => console.log("  ! orphan: " + e));
+
+  writeNavSnapshot();
 
   // ----- markdown report -----
   const lines = [];
@@ -179,11 +234,53 @@ function main() {
   }
   lines.push("");
 
+  lines.push("## Service pages");
+  lines.push("");
+  lines.push(`- Services: ${servicesResult.services.length}`);
+  lines.push(`- Published: ${publishedServices.length}`);
+  lines.push(`- Draft-excluded: ${draftServices.length}`);
+  lines.push(`- Gate-failed: ${failedServices.length}`);
+  lines.push("");
+  lines.push("### Published service pages");
+  lines.push("");
+  lines.push("| URL | Title | Unique words | Direct answer | FAQs |");
+  lines.push("| --- | --- | --- | --- | --- |");
+  for (const r of publishedServices
+    .slice()
+    .sort((a, b) => a.service.url.localeCompare(b.service.url))) {
+    const c = r.content || {};
+    lines.push(
+      `| ${r.service.url} | ${services.serviceTitle(r.service)} | ${r.uniqueWords} | ${(c.directAnswer || "").split(/\s+/).filter(Boolean).length} | ${(c.faqs || []).length} |`
+    );
+  }
+  lines.push("");
+  lines.push("### Failed service pages");
+  lines.push("");
+  if (!failedServices.length) {
+    lines.push("_None._");
+  } else {
+    lines.push("| URL | Failing rules |");
+    lines.push("| --- | --- |");
+    for (const r of failedServices
+      .slice()
+      .sort((a, b) => a.service.url.localeCompare(b.service.url))) {
+      lines.push(`| ${r.service.url} | ${r.failures.join(", ")} |`);
+    }
+  }
+  lines.push("");
+
   const outPath = path.join(process.cwd(), "docs", "vertical-seo-report.md");
   fs.writeFileSync(outPath, lines.join("\n"), "utf8");
   console.log(`\nWrote ${path.relative(process.cwd(), outPath)}`);
 
-  if (slugErrors.length || brokenLinks.length || liveLegacyOrphans.length) {
+  if (
+    slugErrors.length ||
+    brokenLinks.length ||
+    verticalServiceLinks.length ||
+    serviceStructural.length ||
+    serviceSlugErrors.length ||
+    liveLegacyOrphans.length
+  ) {
     console.error("\nStructural errors detected. Failing build.");
     process.exit(1);
   }

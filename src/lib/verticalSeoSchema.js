@@ -52,4 +52,34 @@ function buildGraph(page) {
   return { "@context": "https://schema.org", "@graph": graph };
 }
 
-module.exports = { breadcrumbList, serviceSchema, faqSchema, buildGraph, SITE, ORG_ID };
+// Service pages (Phase 6): BreadcrumbList + Service + FAQPage. Provider is the
+// existing agency entity via @id; no Review/AggregateRating markup.
+function servicePageGraph({ breadcrumbs, name, serviceType, url, faqs }) {
+  const graph = [
+    breadcrumbList(breadcrumbs),
+    {
+      "@type": "Service",
+      name,
+      serviceType,
+      provider: { "@id": ORG_ID },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Niagara Region" },
+        { "@type": "Country", name: "Canada" },
+      ],
+      url: url.startsWith("http") ? url : `${SITE}${url}`,
+    },
+  ];
+  const faq = faqSchema(faqs);
+  if (faq) graph.push(faq);
+  return { "@context": "https://schema.org", "@graph": graph };
+}
+
+module.exports = {
+  breadcrumbList,
+  serviceSchema,
+  faqSchema,
+  buildGraph,
+  servicePageGraph,
+  SITE,
+  ORG_ID,
+};

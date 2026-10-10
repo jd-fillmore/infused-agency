@@ -5,27 +5,34 @@
 const fs = require("fs");
 const path = require("path");
 const seo = require("../src/lib/verticalSeo");
+const services = require("../src/lib/services");
 
 const PUBLIC = path.join(process.cwd(), "public");
+const SERVICE_PREFIXES = services.loadServices().map((s) => s.url);
 
 function locBlock(block) {
   const m = block.match(/<loc>([^<]+)<\/loc>/);
   return m ? m[1] : null;
 }
 
-function scrubDefaultSitemap(verticalPrefixes) {
+function scrubDefaultSitemap(verticalPrefixes, exactUrls) {
   const file = path.join(PUBLIC, "sitemap-0.xml");
   if (!fs.existsSync(file)) return;
   const xml = fs.readFileSync(file, "utf8");
   const header = xml.slice(0, xml.indexOf("<url>"));
   const blocks = xml.match(/<url>[\s\S]*?<\/url>/g) || [];
+  const exact = exactUrls.map((u) => u.replace(/\/$/, ""));
   const kept = blocks.filter((b) => {
     const loc = locBlock(b);
     if (!loc) return false;
-    const rel = loc.replace(seo.SITE, "");
-    return !verticalPrefixes.some(
-      (p) => rel === p || rel.startsWith(p + "/")
-    );
+    const rel = loc.replace(seo.SITE, "").replace(/\/$/, "");
+    if (verticalPrefixes.some(
+      (p) => rel === p || rel.startsWith(p + "/"))
+    ) return false;
+    // Service URLs move to sitemap-services.xml (exact match only, so city and
+    // legacy pages under /seo and /web-design stay in the default sitemap).
+    if (exact.includes(rel)) return false;
+    return true;
   });
   const out = header + kept.join("") + "</urlset>\n";
   fs.writeFileSync(file, out, "utf8");
@@ -73,10 +80,38 @@ function writeIndex(childNames) {
   console.log(`sitemap.xml: index with ${all.length} children`);
 }
 
+function writeServiceSitemap(publishedServices) {
+  const entries = publishedServices
+    .slice()
+    .sort((a, b) => a.service.url.localeCompare(b.service.url))
+    .map((r) => {
+      const lastmod = r.service.updated || undefined;
+      return (
+        "<url>" +
+        `<loc>${seo.SITE}${r.service.url}</loc>` +
+        (lastmod ? `<lastmod>${lastmod}</lastmod>` : "") +
+        "<changefreq>monthly</changefreq>" +
+        "<priority>0.7</priority>" +
+        "</url>"
+      );
+    });
+  if (!entries.length) return null;
+  const xml =
+    '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    entries.join("\n") +
+    "\n</urlset>\n";
+  const name = "sitemap-services.xml";
+  fs.writeFileSync(path.join(PUBLIC, name), xml, "utf8");
+  console.log(`${name}: ${entries.length} URLs`);
+  return name;
+}
+
 function main() {
   const { published } = seo.computePublished();
   const verticalPrefixes = seo.loadVerticals().map((v) => `/${v.urlSlug}`);
-  scrubDefaultSitemap(verticalPrefixes);
+  const { published: publishedServices } = services.computePublishedServices();
+  scrubDefaultSitemap(verticalPrefixes, SERVICE_PREFIXES);
 
   const childNames = [];
   for (const v of seo.loadVerticals()) {
@@ -84,6 +119,8 @@ function main() {
     const name = writeVerticalSitemap(v, published);
     if (name) childNames.push(name);
   }
+  const servicesName = writeServiceSitemap(publishedServices);
+  if (servicesName) childNames.push(servicesName);
   writeIndex(childNames);
 }
 

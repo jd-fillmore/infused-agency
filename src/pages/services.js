@@ -13,7 +13,17 @@ import leadGenImg from "../../src/img/lead-generating-web-design-niagara.png";
 import webConvImg from "../../src/img/website-conversion-optimization-niagara.png";
 import seoImg from "../../src/img/search-engine-optimization-niagara.png";
 
-const Services = () => {
+const GROUP_TITLES = [
+  { title: "SEO", groups: ["seo"] },
+  { title: "Web Design", groups: ["web-design"] },
+  { title: "eCommerce Marketing", groups: ["ecommerce-marketing"] },
+  {
+    title: "Digital Marketing and Reputation",
+    groups: ["digital-marketing", "reputation"],
+  },
+];
+
+const Services = ({ groups = [] }) => {
   return (
     <>
       <Head>
@@ -44,32 +54,25 @@ const Services = () => {
                 </p>
               </Col>
             </Row>
-            <div className="row pd-top-40">
-              <div className="col-lg-6 d-flex">
-                <Link href="/seo">
-                  <div className="card">
-                    <h2>Search Engine Optimization (SEO)</h2>
-                    <p>
-                      Are your customers not finding your website on Google? We
-                      can help your website get found and bring you more leads.
-                    </p>
+            {groups.map((g) =>
+              g.services.length ? (
+                <div className="row pd-top-40" key={g.title}>
+                  <div className="col-lg-12">
+                    <h3>{g.title}</h3>
                   </div>
-                </Link>
-              </div>
-
-              <div className="col-lg-6 d-flex">
-                <Link href="/web-design">
-                  <div className="card">
-                    <h2>Lead-Generating Web Design</h2>
-                    <p>
-                      Is your Niagara website design not bringing you customers?
-                      We make lead-generating websites that turn visitors into
-                      customers.
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
+                  {g.services.map((s) => (
+                    <div className="col-lg-6 d-flex" key={s.url}>
+                      <Link href={s.url}>
+                        <div className="card">
+                          <h4>{s.name}</h4>
+                          <p>{s.summary}</p>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              ) : null
+            )}
             <div className="row pd-top-40">
               <div className="col-lg-12">
                 <h2>SEO by industry</h2>
@@ -92,3 +95,17 @@ const Services = () => {
 };
 
 export default Services;
+
+export async function getStaticProps() {
+  const services = require("../lib/services");
+  const { published } = services.computePublishedServices();
+  const publishedServices = published.map((r) => r.service);
+  const groups = GROUP_TITLES.map((g) => ({
+    title: g.title,
+    services: publishedServices
+      .filter((s) => g.groups.includes(s.group))
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((s) => ({ name: s.name, url: s.url, summary: s.summary })),
+  }));
+  return { props: { groups } };
+}

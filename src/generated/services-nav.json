@@ -1,0 +1,73 @@
+{
+  "groups": [
+    {
+      "heading": "SEO",
+      "links": [
+        {
+          "name": "SEO",
+          "url": "/seo"
+        },
+        {
+          "name": "AI Search",
+          "url": "/ai-search"
+        },
+        {
+          "name": "Content Writing",
+          "url": "/seo/content-writing"
+        },
+        {
+          "name": "Franchise SEO",
+          "url": "/seo/franchise-seo"
+        },
+        {
+          "name": "Link Building",
+          "url": "/seo/link-building"
+        },
+        {
+          "name": "Local SEO",
+          "url": "/seo/local-seo"
+        },
+        {
+          "name": "Technical SEO",
+          "url": "/seo/technical-seo"
+        },
+        {
+          "name": "White Label",
+          "url": "/seo/white-label"
+        }
+      ]
+    },
+    {
+      "heading": "Web Design",
+      "links": [
+        {
+          "name": "Web Design",
+          "url": "/web-design"
+        }
+      ]
+    },
+    {
+      "heading": "eCommerce Marketing",
+      "links": []
+    },
+    {
+      "heading": "Digital Marketing and Reputation",
+      "links": [
+        {
+          "name": "Digital Marketing",
+          "url": "/digital-marketing"
+        },
+        {
+          "name": "CRO",
+          "url": "/digital-marketing/conversion-rate-optimization"
+        }
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "name": "SEO for Therapists in Canada",
+      "url": "/therapist-seo"
+    }
+  ]
+}

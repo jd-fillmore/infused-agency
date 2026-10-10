@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "SEO content writing that ranks and converts. Service pages, location pages and resources that answer real search intent and support your sales pages.",
+  "directAnswer": "SEO content writing earns rankings with copy that also converts. We write service pages, location pages, and guides built around real search intent, not guesswork. The words explain your work, answer the doubts that delay buyers, and move people toward the next step. Every page is original and aimed at turning the attention you earn into enquiries.",
+  "intro": "Most business websites do not lack words, they lack pages that match the questions buyers are typing. SEO content writing is the craft of closing that gap. We research the exact phrasings people use, from specific services to locations and problems, and we write pages that answer those queries properly instead of brushing past them. The result is content that earns a place in search results and, once someone lands on it, earns a reason to keep reading. Conversion is not chased with tricks. It is earned by being clear about what you do, what it costs to consider, and what happens next.",
+  "forWho": "You need this service when your website exists but your valuable pages do not, or when the pages you have are polished yet silent on the questions customers actually bring. It fits service businesses that rely on a handful of pages to carry their entire pipeline, ecommerce stores that need categories and product descriptions built for search, and agencies that want their own site to attract rather than repel. If you are about to pair content with a link building or local SEO program, written pages come first, because nothing accurately earns links until it is accurate itself.",
+  "process": [
+    {
+      "title": "Research the search space",
+      "text": "We map the queries, questions, and intents around your services so each page targets a real search rather than a guess, and note what the pages currently ranking omit."
+    },
+    {
+      "title": "Plan pages by job",
+      "text": "We decide which pages exist to rank, which exist to persuade, and which exist to support the others, so each piece of content has a clear role in the funnel."
+    },
+    {
+      "title": "Write original, accurate copy",
+      "text": "We draft pages in your voice, with real specifics about how you work, and every claim checked against what you can actually deliver before a sentence is kept."
+    },
+    {
+      "title": "Build supporting depth",
+      "text": "We add resources, guides, and answer-style support that capture related searches and give visitors a reason to trust your expertise all the way through."
+    },
+    {
+      "title": "Revise against performance",
+      "text": "We revisit pages against real search behaviour and update the ones that can move, because content decays and the queries around you keep changing."
+    }
+  ],
+  "deliverables": [
+    "Service pages built around genuine buyer queries",
+    "Location pages for the places you actually serve",
+    "Educational resources that earn links and trust",
+    "Product or category descriptions where you need them",
+    "Briefs that explain the intent behind every page",
+    "Monthly content performance update"
+  ],
+  "metrics": [
+    "Rankings for the queries each page targets",
+    "Organic visitors arriving at the pages written",
+    "Engagement signals like time spent and scroll depth",
+    "Conversions and enquiries that began on written pages"
+  ],
+  "sections": [
+    {
+      "heading": "Writing for people and search at the same time",
+      "paragraphs": [
+        "There is no real conflict between writing for readers and writing for rankings, because both punish vagueness. A reader wants to know exactly what you do, how much it hinges on, and whether you are trustworthy. A search engine wants to know the page clearly answers a specific query. The same discipline serves both: specific terms, complete answers, and structure that lets anyone skim to the part they need.",
+        "We avoid the worn patterns that polite writing falls into, the hedged claims that never say what a service costs in time or effort, and the filler sentences that add warmth to word counts. Clarity is not a style choice here, it is the ranking factor and the conversion factor at once."
+      ]
+    },
+    {
+      "heading": "Why most location pages fail",
+      "paragraphs": [
+        "Businesses routinely pump out a page per city that repeats the same paragraph with the place name swapped in. Search engines and readers both notice instantly, and the pages quietly rot. A location page works when it says something true about the place: the areas you cover, the work you have done there, the specifics of serving that town that differ from the next one over.",
+        "We write location content only where a real service story exists, and we tell Google that is the reason not to dress the page in recycled prose."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "How is SEO content different from regular copywriting?",
+      "a": "Regular copy persuades people who already found you. SEO content also earns the discovery itself, built around the queries people actually type and structured so search engines trust the page as the complete answer. The writing standard is the same high bar, but the research and architecture differ completely."
+    },
+    {
+      "q": "Do you rewrite my existing pages or start fresh?",
+      "a": "Both, depending on the page. We keep anything that is working and unique, rework sections that miss the intent, and build fresh pages where the research shows a gap. Replacing great copy for the sake of newness is not a strategy we follow."
+    },
+    {
+      "q": "How do you learn my business well enough to write accurately?",
+      "a": "We start with a structured brief covering how you deliver, what alternatives customers compare, and the facts you are prepared to stand behind. We write from that, and only that. Anything we do not know for certain is a question we ask, not a guess we polish."
+    },
+    {
+      "q": "How many pages should we write first?",
+      "a": "Fewer, stronger pages beat a wider, thinner set. We typically scope the pages that defend your most valuable searches first, see which ones move, and expand from there rather than committing upfront to volume for its own sake."
+    },
+    {
+      "q": "Will the content work with our existing site structure?",
+      "a": "Yes. We match the structure you have or propose the navigation changes needed so every new page has a home, internal links that pass into it, and a place in the site that makes sense to visitors and crawlers."
+    },
+    {
+      "q": "Do you offer monthly content packages?",
+      "a": "We run monthly content programs built around an agreed number of pages plus the research and revision that keeps them effective. Packages are sized to your pipeline, not sold as a bulk word count."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Local SEO that lifts your Google Business Profile, Maps presence and city rankings. We build relevance and trust so nearby customers find and contact you.",
+  "directAnswer": "Local SEO helps your business get found by customers searching near you. We optimize your Google Business Profile, clean up local citations, and build city-specific pages that answer the way people actually search. When someone nearby looks for what you sell, your business shows up on Maps and in local results, with a clear next step to call or visit.",
+  "intro": "Local SEO is the work of making your business visible in the searches people run close to where they are. Someone typing your trade or service followed by a neighbourhood, town, or the word \"near me\" expects to see businesses that can realistically serve them. We shape the signals behind that result: a fully built Google Business Profile, consistent business details across the web, location pages on your own site, and a steady flow of honest reviews. Together those signals tell search engines who you are, where you work, and how reliable you are, which decides whether you appear in the small local pack or the long list underneath it.",
+  "forWho": "You are a business with a physical location, a defined service area, or a team that travels to jobs. Contractors, trades, clinics, studios, restaurants, shops, and professional service firms in and around Niagara are the kinds of businesses that benefit most. If your customers make a decision based on proximity and reputation, local SEO is built for you. It also pays off for multi-location businesses that want separate visibility for each store or branch without creating a jumble of half-finished pages.",
+  "process": [
+    {
+      "title": "Audit your local presence",
+      "text": "We inspect your Google Business Profile, website, and the directories that mention your company, then list every inconsistency and gap in your name, address, and phone details."
+    },
+    {
+      "title": "Clean up citations and listings",
+      "text": "We fix incorrect details, remove duplicate listings, and build consistent citations on the directories that matter for your industry and your region."
+    },
+    {
+      "title": "Build location-focused pages",
+      "text": "We write service-area and city content that explains exactly where you work and what you deliver, so your own website supports the local story instead of just your profile."
+    },
+    {
+      "title": "Set up review flow",
+      "text": "We put a practical review system in place that asks happy customers at the right moment, stays inside the platform rules, and keeps your ratings moving the right way."
+    },
+    {
+      "title": "Track calls, directions, and ranks",
+      "text": "We report on the metrics that connect to revenue, like phone calls, direction requests, and where you rank for the searches your customers actually use."
+    }
+  ],
+  "deliverables": [
+    "Optimized Google Business Profile built out in full",
+    "Citation audit and correction across key directories",
+    "Duplicate listing removal where it is needed",
+    "Service area and city pages that are distinct and readable",
+    "A review request flow that is safe and easy to run",
+    "Monthly reporting focused on calls, directions, and rankings"
+  ],
+  "metrics": [
+    "Views and actions on your Google Business Profile",
+    "Phone calls and direction requests from local results",
+    "Ranking movement for your target cities and services",
+    "Review count and average rating over time"
+  ],
+  "sections": [
+    {
+      "heading": "Why consistency matters",
+      "paragraphs": [
+        "Search engines decide where to show you by cross-checking what they know about you. When your business name, address, and phone number agree across your profile, your website, and the major directories, your business looks like one settled, trustworthy entity. When they differ, even slightly, the link between your brand and your location gets fuzzy. A rebuilding project or a move is exactly when a gap can open up, because the change lands on some listings and not others.",
+        "We treat your business information as data that has to be maintained, not a one-time setup. Every month we recheck the key sources so a drifting detail is caught before it quietly weakens your local performance."
+      ]
+    },
+    {
+      "heading": "Local SEO for therapists and service businesses",
+      "paragraphs": [
+        "Some of the strongest local results we build are for businesses where trust is the deciding factor. Therapy providers, for example, win customers on proximity and on the reassurance that comes from a complete profile, credible reviews, and content that answers honest questions about sessions, fees, and availability. The same principle applies to electricians, concrete contractors, and home-service companies that rely on urgent neighbourhood searches.",
+        "We adapt the same discipline to your industry: the directories you must be in, the questions your customers ask before they book, and the pages that prove you understand the problem they are trying to solve."
+      ]
+    }
+  ],
+  "proofRefs": ["flat-rock-cellars", "delta-energy-solutions", "freds-concrete"],
+  "faqs": [
+    {
+      "q": "How long does local SEO take to show results?",
+      "a": "Expect the first meaningful movement within two to four months. Profile fixes, citation cleanup, and fresh location content give search engines a clearer picture quickly, but reviews and consistent engagement accumulate over a few review cycles before ranking positions settle."
+    },
+    {
+      "q": "Does local SEO work for businesses without a physical storefront?",
+      "a": "Yes, if you serve customers by travelling to them. Service-area businesses can hide their street address while still showing a defined service radius. The key is accurate boundaries and content that matches the towns and neighbourhoods you actually cover."
+    },
+    {
+      "q": "What is a Google Business Profile and why does it matter?",
+      "a": "It is your free business listing on Google that powers the map results people see beside standard rankings. A complete profile with the right categories, service areas, photos, and posts is often the fastest lever for local visibility because it is the version of you Google trusts most."
+    },
+    {
+      "q": "Do I need a separate page for every city I serve?",
+      "a": "Only if the page can offer something genuinely different, like local proof, distinct services, or real differences in how you operate there. Thin pages that repeat the same paragraph for every town are skipped or ignored. We build service-area pages that carry substance."
+    },
+    {
+      "q": "Can Infused Agency respond to reviews on my behalf?",
+      "a": "We can draft responses and coach your team on tone and timing, but the strongest answers come from an owner who knows the customer and the job. We set up a rhythm for responding so every review gets a thoughtful reply without eating your week."
+    },
+    {
+      "q": "How is local SEO different from general SEO?",
+      "a": "General SEO competes for search intent anywhere; local SEO competes for a person plus a place. It leans on profile signals, citations, reviews, and proximity, so the tactics, the data, and the reporting are built around location rather than around pages alone."
+    }
+  ]
+}

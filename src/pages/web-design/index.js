@@ -19,7 +19,7 @@ import funnel from "../../img/lead-gen-convert.jpg";
 import convert from "../../img/conversion-web.jpg";
 import fast from "../../img/design-fast.png";
 
-const WebDesign = () => {
+const WebDesign = ({ childServices = [] }) => {
   return (
     <>
       <Head>
@@ -419,6 +419,24 @@ const WebDesign = () => {
             </Row>
           </Container>
         </section>
+        {childServices.length ? (
+          <section className="pd-top-80">
+            <Container>
+              <Row>
+                <Col lg="12">
+                  <h2>Web design services</h2>
+                  <ul>
+                    {childServices.map((s) => (
+                      <li key={s.url}>
+                        <Link href={s.url}>{s.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+        ) : null}
       </InnerContent>
       <CTA />
       <Footer />
@@ -427,3 +445,13 @@ const WebDesign = () => {
 };
 
 export default WebDesign;
+
+export async function getStaticProps() {
+  const services = require("../../lib/services");
+  const { published } = services.computePublishedServices();
+  const childServices = published
+    .filter((r) => r.service.parentUrl === "/web-design")
+    .map((r) => ({ name: r.service.name, url: r.service.url }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return { props: { childServices } };
+}

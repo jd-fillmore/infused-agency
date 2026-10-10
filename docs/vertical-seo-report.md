@@ -94,3 +94,30 @@ _None._
 ## Live legacy pages with no crawlable internal link (must be empty)
 
 _None._
+
+## Service pages
+
+- Services: 21
+- Published: 11
+- Draft-excluded: 10
+- Gate-failed: 0
+
+### Published service pages
+
+| URL | Title | Unique words | Direct answer | FAQs |
+| --- | --- | --- | --- | --- |
+| /ai-search | AI Search (GEO, AEO & LLM SEO) | Infused Agency | 834 | 59 | 6 |
+| /digital-marketing | Digital Marketing Services | Infused Agency | 784 | 55 | 6 |
+| /digital-marketing/conversion-rate-optimization | Conversion Rate Optimization Services | Infused Agency | 829 | 60 | 6 |
+| /seo | Search Engine Optimization Services | Infused Agency | 0 | 0 | 0 |
+| /seo/content-writing | Content Writing Services | Infused Agency | 872 | 57 | 6 |
+| /seo/franchise-seo | Franchise SEO Services | Infused Agency | 784 | 55 | 6 |
+| /seo/link-building | Link Building Services | Infused Agency | 782 | 54 | 6 |
+| /seo/local-seo | Local SEO Services | Infused Agency | 878 | 60 | 6 |
+| /seo/technical-seo | Technical SEO Services | Infused Agency | 843 | 56 | 6 |
+| /seo/white-label | White Label Services Services | Infused Agency | 795 | 54 | 6 |
+| /web-design | Web Design Services | Infused Agency | 0 | 0 | 0 |
+
+### Failed service pages
+
+_None._

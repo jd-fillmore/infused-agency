@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Technical SEO that removes crawl, speed, indexing and structured data problems so search engines trust your site and its rankings hold steady.",
+  "directAnswer": "Technical SEO keeps your website healthy behind the scenes so the rankings you earn are not wasted. We fix how search engines crawl, render, index, and understand your pages, improve site speed, and apply structured data that paints a clear picture of your business. When the technical foundation is right, everything else you improve counts more.",
+  "intro": "Technical SEO is the layer of your site that users rarely see but search engines never stop checking. It covers whether your pages can be crawled without dead ends, how fast they load on the devices your visitors actually use, whether the right pages get indexed and the wrong ones stay out of search, and how clearly you communicate structure through headings, internal links, and structured data. When this layer is broken, even excellent content struggles. When it is healthy, search engines can find your work, understand it, and trust it enough to keep showing it to the people searching for it.",
+  "forWho": "You need technical SEO if your site has grown quickly, changed platforms, shipped a redesign, or accumulated years of half-added plugins and pages. It matters most for sites that depend on organic traffic and for businesses that watched good pages slip after a migration or a new build. If you are not sure your site is healthy under the hood, that same uncertainty is quietly affecting your rankings.",
+  "process": [
+    {
+      "title": "Full technical crawl",
+      "text": "We run a structured crawl that maps your site the way a search engine sees it, catching broken links, redirect chains, duplicate pages, and pages trapped in robots rules."
+    },
+    {
+      "title": "Speed and rendering audit",
+      "text": "We measure load performance on mobile and desktop, find the slow blocks like oversized images, heavy scripts, or slow hosting, and fix them in priority order."
+    },
+    {
+      "title": "Indexing review",
+      "text": "We confirm exactly which pages should be in search and which should not, then sort out canonicals, noindex rules, and sitemaps so you control what Google holds about you."
+    },
+    {
+      "title": "Structured data setup",
+      "text": "We mark up your business, products, services, and articles with schema that lets search engines assemble accurate rich results instead of guessing."
+    },
+    {
+      "title": "Ongoing monitoring",
+      "text": "We watch core web vitals, crawl errors, and index coverage each month, so a problem is caught before it shows up as a drop in traffic."
+    }
+  ],
+  "deliverables": [
+    "Technical crawl report with findings ranked by impact",
+    "Speed fixes measured before and after on real pages",
+    "Correct canonical and redirect setup across the site",
+    "Clean sitemap and robots instructions",
+    "Structured data applied to your key page types",
+    "Monthly health check on vitals, crawl, and indexing"
+  ],
+  "metrics": [
+    "Core web vitals scores on key pages",
+    "Indexed pages versus pages you want included",
+    "Search console crawl errors and validations",
+    "Pages passing structured data checks"
+  ],
+  "sections": [
+    {
+      "heading": "Speed is part of your brand",
+      "paragraphs": [
+        "Slow pages do more than frustrate visitors. They shorten sessions, soften conversions, and tell search engines your site is not ready for whatever device it is being viewed on. Speed is not a vanity score. A page that loads quickly on a mid-range phone, with the text and buttons usable, turns the same traffic into more enquiries than a page that loads late. We treat load time as a conversion factor, not a badge.",
+        "We measure on real-world profiles rather than just ideal lab conditions, and we fix the causes rather than chasing a single number. Most of the wins come from obvious culprits: images served too large, scripts blocking the page, and hosting that is not up to the task."
+      ]
+    },
+    {
+      "heading": "Making your structure obvious",
+      "paragraphs": [
+        "Search engines understand your site faster when its structure is explicit. Menus that label the main branches, headings that follow a real hierarchy, links that connect related pages with useful anchors, and schema that says plainly what each page is about all reduce guesswork. A site with clear structure also passes authority around better, because links land on pages that are actually meant to rank.",
+        "Our audits surface structural problems that have been invisible for years: orphan pages nothing links to, homepages carrying too many jobs, category pages competing with each other. Fixing those is often the highest-value technical work we do."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "How is technical SEO different from on-page SEO?",
+      "a": "On-page SEO is about the words and headings on each page. Technical SEO is about the machinery around them: crawl access, speed, indexing, redirects, canonicals, and structured data. They feed each other, but a technical problem can quietly disable good on-page work, which is why we audit the foundation first."
+    },
+    {
+      "q": "Will fixing technical issues hurt my current traffic?",
+      "a": "Done carefully it should protect and support traffic, not damage it. The risk cases are migrations, big canonical changes, or mass redirects, so we stagger those, back up the state before changes, and watch search console closely during and after the change window."
+    },
+    {
+      "q": "How often should a technical audit be run?",
+      "a": "A full audit after any migration, redesign, or platform change, and a lighter monthly health check in between. Sites change constantly through plugins, new pages, and content updates, so a single review a year ago is rarely an accurate picture today."
+    },
+    {
+      "q": "What are core web vitals and do they matter?",
+      "a": "They are Google's measures of loading, interactivity, and visual stability, and they matter because they affect how users experience your page and, at the margins, how it is judged. We treat strong vitals as a baseline of quality that most competitors skip."
+    },
+    {
+      "q": "Can you work with our developer or platform?",
+      "a": "Yes. We hand over scoped, tested fixes for whatever team manages your code, or we implement them ourselves on the platforms we support. Either way you get change notes that explain what was done and why."
+    },
+    {
+      "q": "Do I need technical SEO if my rankings are already good?",
+      "a": "Good rankings rarely survive a broken foundation forever. A healthy technical layer protects what you have, makes new wins faster to land, and can unlock pages that were being held back without you knowing it."
+    }
+  ]
+}

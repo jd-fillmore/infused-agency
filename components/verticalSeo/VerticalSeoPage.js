@@ -484,6 +484,7 @@ const VerticalSeoPage = ({ page }) => {
 
       <Proof items={page.proof} />
       <Faq faqs={content.faqs} />
+      <LinkList title="Related services" links={page.serviceLinks} />
       <LinkList title="Related pages" links={page.links} />
       <CTA />
       <Footer />

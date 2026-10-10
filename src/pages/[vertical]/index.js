@@ -22,5 +22,19 @@ export function getStaticProps({ params }) {
     (r) => r.page.urlPath === `/${params.vertical}`
   );
   if (!record) return { notFound: true };
-  return { props: { page: buildPageProps(record.page, publishedSet) } };
+  const page = buildPageProps(record.page, publishedSet);
+  // Live vertical pillars link back to the relevant published services
+  // (follow-up Phase 6 wiring; only pillars get this block).
+  if (record.page.kind === "pillar") {
+    const services = require("../../lib/services");
+    const { published: publishedServices } = services.computePublishedServices();
+    const publishedServiceUrls = new Set(
+      publishedServices.map((r) => r.service.url)
+    );
+    page.serviceLinks = services.buildVerticalServiceLinks(
+      record.page.vertical,
+      publishedServiceUrls
+    );
+  }
+  return { props: { page } };
 }

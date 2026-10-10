@@ -1,4 +1,4 @@
-export default function Sitemap() {
+export default function Sitemap({ services: publishedServices = [] }) {
   const therapyLocations = [
     {
       name: "SEO for Solar Companies Arizona",
@@ -68,6 +68,19 @@ export default function Sitemap() {
     <div className="sitemap-container">
       <h1>Site Map</h1>
 
+      {publishedServices.length ? (
+        <section>
+          <h2>Solutions</h2>
+          <ul>
+            {publishedServices.map((s, index) => (
+              <li key={index}>
+                <a href={s.url}>{s.name}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       <section>
         <ul>
           {therapyLocations.map((location, index) => (
@@ -90,4 +103,16 @@ export default function Sitemap() {
       </section>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const services = require("../lib/services");
+  const { published } = services.computePublishedServices();
+  return {
+    props: {
+      services: published
+        .map((r) => ({ name: r.service.name, url: r.service.url }))
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    },
+  };
 }

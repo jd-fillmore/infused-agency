@@ -4,6 +4,7 @@
 const fs = require("fs");
 const path = require("path");
 const seo = require("../src/lib/verticalSeo");
+const services = require("../src/lib/services");
 
 function missingFields(record) {
   const missing = [];
@@ -46,6 +47,20 @@ function main() {
       .join(", ");
     console.log(`${v}: ${parts}`);
   }
+
+  const serviceEval = services.evaluateServices();
+  const serviceStatus = {};
+  for (const r of serviceEval) {
+    const s = r.content ? r.content.status || "none" : "missing";
+    serviceStatus[s] = (serviceStatus[s] || 0) + 1;
+  }
+  console.log("Service content by status");
+  console.log("-------------------------");
+  console.log(
+    Object.entries(serviceStatus)
+      .map(([s, n]) => `${s}=${n}`)
+      .join(", ")
+  );
 
   const lines = [];
   lines.push("# Vertical SEO content backlog (generated)");

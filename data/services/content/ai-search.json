@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "AI search optimization for GEO, AEO and LLM SEO. We make your content the answer engines and assistants cite as people search without typing keywords.",
+  "directAnswer": "AI search optimization puts your business in the answers AI tools give. We shape your content so ChatGPT, Gemini, and AI-powered search quote and recommend you. Clear entity data, quotable answers, and trusted signals all count. Some call it GEO, AEO, or LLM SEO. When someone asks an assistant for a recommendation, your business becomes part of the answer.",
+  "intro": "People are increasingly asking AI assistants for answers instead of scrolling classic search results, and those assistants gather their answers from visible sources like websites, profiles, and directories. AI search optimization, known by its newer labels as GEO, AEO, and LLM SEO, makes sure your business is one of those sources. The mechanics are still content, structure, and trust, but the format changes: answers need to be extractable, entities need to be recognizable, and claims need to be verifiable. We adapt your presence so that when an assistant decides who deserves the recommendation, your business is written into the answer.",
+  "forWho": "You should care about AI search if people in your field already ask assistants for recommendations, or if your market is shifting toward it. Therapists, home-service businesses, and professional service firms are common early cases because their customers research before they book. The work also matters for any business whose reputation and practices are described on AI-generated pages that aggregate sources. If your competitors are absent, the first to build a credible, extractable presence often inherits the defaults in these answer streams.",
+  "process": [
+    {
+      "title": "Map how AI sees you",
+      "text": "We audit what assistants currently say about your business and your industry, which sources they cite, and where your name appears or fails to appear in their answers."
+    },
+    {
+      "title": "Strengthen your entity",
+      "text": "We consolidate consistent naming, logos, locations, and categories across your site and key profiles so AI systems can identify you as one clear entity, not five fuzzy mentions."
+    },
+    {
+      "title": "Make content quotable",
+      "text": "We build pages with crisp, self-contained answers to the questions AI is asked about your field, so the text you want cited inside an assistant's reply is literally there."
+    },
+    {
+      "title": "Add structure AI understands",
+      "text": "We apply structured data and formatting that make your facts machine-readable without harming how the page reads to humans."
+    },
+    {
+      "title": "Maintain a stream of signals",
+      "text": "We keep your presence current with reviews, answers, and content, because assistants favour sources that look active and trustworthy over stale pages."
+    }
+  ],
+  "deliverables": [
+    "An audit of what AI assistants currently say about you",
+    "Entity consolidation across site and profiles",
+    "Answer-structured content for your key questions",
+    "Structured data applied to your business facts",
+    "A review and citation flow that feeds AI sources",
+    "Quarterly re-audit as assistants change how they answer"
+  ],
+  "metrics": [
+    "Mentions of your business in AI answers over time",
+    "Share of direct recommendations versus competitors",
+    "Answers that cite your content by name",
+    "Completed audited answer spaces for your industry"
+  ],
+  "sections": [
+    {
+      "heading": "How AI systems choose their sources",
+      "paragraphs": [
+        "AI assistants do not decide on nothing. They pull from proprietary indexes, web content, directories, and review sources, and they weigh which written evidence is consistent, specific, and trustworthy. Businesses that publish clear, verifiable information across multiple places get chosen because they are describable. Businesses that are vague, inconsistent, or only exist as a social profile stay invisible in answers.",
+        "This is not magic and it is not prompt hacking. It is the same credibility work as ever, tuned for a new reader: one that extracts facts, compares claims across sources, and quotes prose directly into its reply."
+      ]
+    },
+    {
+      "heading": "GEO, AEO, and LLM SEO explained",
+      "paragraphs": [
+        "You will meet these three acronyms. Generational Engine Optimization, or GEO, is the broad practice of making a brand appear in AI-generated responses. Answer Engine Optimization, or AEO, focuses on owning the boxed answers assistants give before any source is named. LLM SEO targets the large language models that assemble those answers. They are overlapping lenses on the same goal: being the source a machine trusts.",
+        "We treat them as one program rather than separate products. The shared core is entity clarity, answer-ready content, and credible signals, and most of the difference is vocabulary."
+      ]
+    }
+  ],
+  "proofRefs": ["brandi-may-psychotherapy"],
+  "faqs": [
+    {
+      "q": "Is this a replacement for traditional SEO?",
+      "a": "No, it is an addition. Classic search still drives most traffic and mostly trades on the same strengths: clear structure, honest content, and authority. AI search optimization extends that work so you also exist in the answer streams that are growing while you read this."
+    },
+    {
+      "q": "Can you guarantee my business will be cited by ChatGPT?",
+      "a": "No one can honestly guarantee an AI's output, because assistants change how they gather and cite sources over time. We can guarantee the conditions that make citations probable: your entity consistent and complete, your answers quotable, and your signals current. Then we re-audit as the models evolve."
+    },
+    {
+      "q": "How is this different from just having a good website?",
+      "a": "A good website helps. AI optimization goes further by shaping content into extractable answers, structuring your facts so machines can read them, and ensuring your entity appears consistently on the review and directory sources assistants lean on. Those three layers decide whether your good website is the one they quote."
+    },
+    {
+      "q": "When should a business start AI search optimization?",
+      "a": "Before the recommendations get crowded. In most categories the first credible, well-sourced presence becomes the default answer, and being a runner-up in AI output is costly because it reproduces itself every time someone asks. Early work counts more than perfect timing."
+    },
+    {
+      "q": "Do you work with chatbots on our own site?",
+      "a": "We can architect your on-site content and data so your own assistant gives accurate, on-brand answers, but the core service is external visibility: how third-party assistants describe and recommend your business."
+    },
+    {
+      "q": "How do you measure something as changeable as AI output?",
+      "a": "We baseline the answers assistants currently give for your industry, audit your presence in the sources they cite, and re-run the same questions quarterly. Movement in your mentions, citations, and recommendations between batches is the measurement, even when no single answer can be pinned forever."
+    }
+  ]
+}

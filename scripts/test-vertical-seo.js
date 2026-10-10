@@ -5,6 +5,7 @@ const assert = require("assert");
 const fs = require("fs");
 const path = require("path");
 const seo = require("../src/lib/verticalSeo");
+const services = require("../src/lib/services");
 
 let passed = 0;
 function test(name, fn) {
@@ -150,6 +151,66 @@ test("summary length gate is enforced", () => {
   for (const r of published) {
     const len = (r.content.summary || "").length;
     assert.ok(len >= 140 && len <= 155, `${r.page.urlPath} summary=${len}`);
+  }
+});
+
+test("service summary lengths are 140-155 and unique", () => {
+  const { published } = services.computePublishedServices();
+  const seen = new Set();
+  for (const r of published) {
+    const len = r.service.summary.length;
+    assert.ok(len >= 140 && len <= 155, `${r.service.url} summary=${len}`);
+    assert.ok(!seen.has(r.service.summary), `${r.service.url} duplicate summary`);
+    seen.add(r.service.summary);
+  }
+});
+
+test("service gate passes published pages with 500+ words and 6+ FAQs", () => {
+  const { published } = services.computePublishedServices();
+  for (const r of published) {
+    if (r.service.existing) continue;
+    assert.ok(r.uniqueWords >= 500, `${r.service.url} words=${r.uniqueWords}`);
+    assert.ok(r.content.faqs.length >= 6, `${r.service.url} faqs=${r.content.faqs.length}`);
+    const da = (r.content.directAnswer || "").split(/\s+/).filter(Boolean).length;
+    assert.ok(da >= 40 && da <= 60, `${r.service.url} directAnswer=${da}`);
+    assert.ok(services.serviceTitle(r.service).length <= 65, `${r.service.url} title too long`);
+  }
+});
+
+test("no published sibling service pair exceeds 0.30 Jaccard", () => {
+  const { published } = services.computePublishedServices({ includeDrafts: true });
+  const gated = published.filter((r) => !r.service.existing && r.content);
+  for (let i = 0; i < gated.length; i++) {
+    for (let j = i + 1; j < gated.length; j++) {
+      const a = gated[i];
+      const b = gated[j];
+      if (a.service.group !== b.service.group) continue;
+      let inter = 0;
+      for (const s of a.shingles) if (b.shingles.has(s)) inter++;
+      const union = a.shingles.size + b.shingles.size - inter;
+      const score = union === 0 ? 0 : inter / union;
+      assert.ok(
+        score <= 0.3,
+        `${a.service.url} vs ${b.service.url} = ${score.toFixed(3)}`
+      );
+    }
+  }
+});
+
+test("service integrity has no errors", () => {
+  assert.deepStrictEqual(services.verifyServiceIntegrity(), []);
+});
+
+test("published service pages ride on route files and never link unpublished pages", () => {
+  const { published } = services.computePublishedServices();
+  const { verticalsPublished } = services.computePublishedServices();
+  const serviceSet = new Set(published.map((r) => r.service.url));
+  for (const r of published) {
+    const related = services.buildServiceRelatedLinks(r.service, serviceSet);
+    for (const l of related) assert.ok(serviceSet.has(l.href), `${r.service.url} -> ${l.href}`);
+    const industries = services.buildServiceIndustryLinks(r.service, verticalsPublished);
+    for (const l of industries) assert.ok(verticalsPublished.has(l.href), `${r.service.url} -> ${l.href}`);
+    assert.deepStrictEqual(services.checkServiceLinks(r.service, serviceSet, verticalsPublished), []);
   }
 });
 
