@@ -64,11 +64,11 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 
 ## Verification results
 
-- `yarn verify:seo` — enumerated 150, **published 17**, draft-excluded 45, gate-failed 0, slug errors 0, broken links 0.
-- `yarn test:seo` — 10/10 unit tests pass (slug generation, gate logic, link resolution, draft exclusion, redirect safety, sitemap filtering).
+- `yarn verify:seo` — enumerated 150, **published 18**, draft-excluded 44, gate-failed 0, slug errors 0, broken links 0, live legacy orphans 0.
+- `yarn test:seo` — 12/12 unit tests pass (slug generation, gate logic, link resolution, draft exclusion, redirect safety, sitemap filtering, legacy orphan linking, More cities redirect drop, summary gate).
 - `yarn lint` — exit 0 (warnings only, all pre-existing).
-- `yarn build` — success. 17 vertical pages prerendered.
-- Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (17 URLs); no vertical path leaks into `sitemap-0.xml`.
+- `yarn build` — success. 18 vertical pages prerendered.
+- Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (18 URLs); no vertical path leaks into `sitemap-0.xml`.
 
 ## Follow-up Phase 1 — visual bugs
 
@@ -128,3 +128,21 @@ Document only; no code or content changed.
 - **Proposed fixes (deferred, not implemented):** publish the Phase 4–5 city batches (closes the zero-city flags) and link the USA page from the pillar index (Phase 8 baseline item).
 - **Assumption recorded:** word counts include nav/footer chrome, so they are a conservative floor; page-specific copy is smaller. FAQs: city pages ≥ 6, other pages 5–8; no page is below the gate minimum.
 - **Commit note:** `page-audit.md` is generated data captured at this point in time; Phase 8 will re-run the audit and overwrite it per the follow-up spec.
+
+## Follow-up fixes (after Phase 3, before Phases 4–8)
+
+Requested before continuing to Phases 4–8.
+
+### Charlottetown, PEI city page
+
+- `prince-edward-island` had a province page but no published city page. `charlottetown` was already seeded in `cities.json` and its stub already sat in `content/verticals/therapists/prince-edward-island/`, so no routing or data-model change was needed — only real city data + reviewed copy.
+- `cities.json`: filled `charlottetown` with real `neighbourhoods` (Downtown Charlottetown, Brighton, Parkdale, Spring Park, Sherwood, Hillsborough Park, East Royalty, West Royalty) and `majorIndustries` (public administration and government services, healthcare, education, tourism and hospitality, retail trade). `population2021` left `null`, matching the published Ontario cities.
+- `content/verticals/therapists/prince-edward-island/charlottetown.json`: promoted to `reviewed` with directAnswer (43 words), intro, localInsight, 6-item localChecklist, 6 FAQs (4 `geoSpecific`), and a 147-char `summary` (gate 140–155).
+- No regulator claims: PEI's `vertical-geo` file has `regulator: null`, so the "Provincial rules" section does not render on the city page (correct, not an omission).
+- Published count is now **18** (pillar, usa, 10 provinces, 6 city pages). PEI province page now links its Charlottetown city page, so the audit's "zero city links" set dropped from 9 provinces to 8 (Ontario and PEI covered).
+- `docs/page-audit.md` regenerated to reflect 18 pages.
+
+### Centered city heroes
+
+- The shared `.seo-city-hero` section already carried Bootstrap's `text-center` class on the new pages, but the **live legacy city pages** (`.toronto`, `.vancouver`, etc.) render the same class without `text-center`, so their hero text was left-aligned.
+- Fix: `text-align: center` added to `.seo-city-hero` in `components/Home/Hero/hero.scss`. This centers the H1, tagline, direct-answer paragraph and CTA on **every** city hero — new and legacy — without touching per-page markup. Confirmed the built CSS contains the rule and the legacy province/city heroes inherit it.

@@ -6,6 +6,7 @@
     linear-gradient(to top left, $glow-blue, transparent);
   background-blend-mode: screen;
   padding: 210px 0px 120px 0px;
+  text-align: center;
   @include bp-tablet-sm {
     padding: 120px 0px 60px 0px;
   }
