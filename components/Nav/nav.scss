@@ -77,6 +77,7 @@
 }
 
 .navbar {
+  position: relative;
   padding: 1.5rem 2rem !important;
   @include bp-tablet-sm {
     margin-top: 0px !important;
@@ -240,4 +241,120 @@
       font-size: 16px;
     }
   }
+}
+
+/* Solutions mega menu (Phase 7) */
+
+.mega-nav {
+  @media (min-width: 62em) {
+    position: static;
+  }
+}
+
+.mega-nav__trigger {
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid currentColor;
+    transition: transform 0.2s;
+  }
+  .mega-nav.is-open &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.mega-nav__panel {
+  background: $dark-blue;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  z-index: 2000;
+
+  @media (min-width: 62em) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-wrap: wrap;
+    gap: 28px 44px;
+    width: max-content;
+    max-width: calc(100vw - 2rem);
+    padding: 30px 36px;
+  }
+
+  @include bp-tablet-sm {
+    position: static;
+    display: none;
+    padding: 10px 0 12px 14px;
+    box-shadow: none;
+  }
+}
+
+.mega-nav.is-open .mega-nav__panel {
+  display: flex;
+
+  @include bp-tablet-sm {
+    display: block;
+  }
+}
+
+.mega-nav__col {
+  min-width: 150px;
+
+  @include bp-tablet-sm {
+    min-width: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.mega-nav__heading {
+  margin: 0 0 10px 0;
+  color: $purple;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include bp-tablet-sm {
+    margin-bottom: 6px;
+  }
+}
+
+.mega-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mega-nav__link {
+  display: block;
+  padding: 4px 0;
+  color: rgba($main-dark-grey, 0.75) !important;
+  font-size: 15px !important;
+  line-height: 1.35;
+  text-transform: none !important;
+  letter-spacing: 0.3px !important;
+  border-bottom: none !important;
+
+  &:hover,
+  &:focus {
+    color: $light-blue !important;
+    border-bottom: none !important;
+  }
+}
+
+.mega-nav__all {
+  flex-basis: 100%;
+
+  @include bp-tablet-sm {
+    flex-basis: auto;
+  }
+}
+
+.mega-nav__link--all {
+  color: $light-blue !important;
+  font-weight: 700;
 }

@@ -17,6 +17,7 @@ import {
 } from "reactstrap";
 import logo from "../../src/img/infused-logo.png";
 import TopBar from "./topBar";
+import MegaMenu from "./megaMenu";
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,15 +41,7 @@ const Example = (props) => {
             <NavbarToggler className="custom-toggler" onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <Link
-                    title="SEO Niagara"
-                    href="/services"
-                    className="nav-link"
-                  >
-                    Solutions
-                  </Link>
-                </NavItem>
+                <MegaMenu />
                 <NavItem>
                   <Link href="/work" className="nav-link">
                     Work
