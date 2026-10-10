@@ -8,7 +8,7 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 
 - [x] Phase 1 — Visual bugs (breadcrumbs horizontal, hero cutoff fixed; no copy changes)
 - [x] Phase 2 — Legacy pages, seed city lists, counts
-- [ ] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
+- [x] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
 - [ ] Phase 4 — City content batch A
 - [ ] Phase 5 — City content batch B
 - [ ] Phase 6 — Data-driven service pages
@@ -101,7 +101,7 @@ No copy was changed. Reused the existing global SCSS/: no new dependency.
   - `getLegacyTherapistPages()` — classifies each legacy file as a Canadian city (via `cities.json`), a US city (hardcoded `US_LEGACY_CITIES` list of the 6), or unknown.
   - `buildLegacyLinks(page, publishedSet)` — "More cities" links: a province page lists its live legacy cities (`{Name}, {ProvAbbr}` anchor text, sorted by name); the pillar lists the live US cities (`{Name}` only, to avoid exact-match stuffing). Canadian legacy city anchors use `{Name}, {ProvAbbr}` for the same reason. The country/US pages and city pages render no block.
   - `findOrphanLiveLegacyPages(publishedRecords, publishedSet)` — union of all `buildLegacyLinks` targets; any **live** legacy page (including unknown/unregistered ones) that isn't in the union is an orphan.
-- **Rendering.** `VerticalSeoPage.js` renders a "More cities" `<section>` (with Next `<Link>`s — crawlable anchors) after the city index and before `<Proof>`, only when `page.legacyCities` is non-empty. Confirmed in the prerendered HTML: British Columbia lists its 10 live legacy cities; Ontario renders no block (all 5 of its cities are published, all redirected); the pillar lists the US cities.
+- **Rendering.** `VerticalSeoPage.js` renders a "More cities" `<section>` (with Next `<Link>`s — crawlable anchors) after the city index and before `<Proof>`, only when `page.legacyCities` is non-empty. Confirmed in the prerendered HTML: British Columbia lists its 5 live legacy cities (Abbotsford, Burnaby, Richmond, Surrey, Vancouver); Ontario renders no block (all 5 of its cities are published, all redirected); the pillar lists the US cities.
 - **Gate.** `yarn verify:seo` now reports `Live legacy orphans: N` and **exits 1** if any live legacy page is unlinked (goes into `docs/vertical-seo-report.md` under "no crawlable internal link"). Current result: 0 orphans.
 - **Tests.** Two new `yarn test:seo` cases: (a) every live legacy page is linked from a published page; (b) a redirected city (toronto) is dropped from the More cities block. 12/12 pass.
 
@@ -118,3 +118,13 @@ No copy was changed. Reused the existing global SCSS/: no new dependency.
 - `yarn test:seo` — 12/12 pass.
 - `yarn lint` — exit 0 (pre-existing warnings only).
 - `yarn build` — success (needed a clean `.next` first; the first build hit a stale-cache `PageNotFoundError` on `/niagara-web-design` and cleared it the same way a normal `rm -rf .next` does). 17 vertical pages prerendered; the More cities block appears on the published province pages. Restored the `public/sitemap-0.xml` build-timestamp noise before committing.
+
+## Follow-up Phase 3 — baseline audit (`docs/page-audit.md`)
+
+Document only; no code or content changed.
+
+- **Method.** A throwaway Node script walked the prerendered `.next` HTML for all 17 published pages and, per page, recorded: kind, sections rendered, unique visible words, out-links, in-links (from the vertical cluster and from site chrome `/`, `/sitemap`, `/seo`, `/services`, `/work`), city/province/legacy out-link counts and FAQ count. Section presence came from `buildPageProps` (data, not heuristics).
+- **Findings.** 0 orphan live legacy pages. No published sibling pair exceeds 0.30 (nearest ≈ 0.03). No mostly-empty sections. Only structural gaps: **9 of 10 province pages have zero linked city pages** (only Ontario, with its 5 published cities, links any) and **the `/therapist-seo/usa` country page has no in-links inside the vertical cluster** — it is only linked from `/` and `/sitemap` (the pillar's `provincesIndex` lists provinces only, and the `usa` child slug isn't a province).
+- **Proposed fixes (deferred, not implemented):** publish the Phase 4–5 city batches (closes the zero-city flags) and link the USA page from the pillar index (Phase 8 baseline item).
+- **Assumption recorded:** word counts include nav/footer chrome, so they are a conservative floor; page-specific copy is smaller. FAQs: city pages ≥ 6, other pages 5–8; no page is below the gate minimum.
+- **Commit note:** `page-audit.md` is generated data captured at this point in time; Phase 8 will re-run the audit and overwrite it per the follow-up spec.
