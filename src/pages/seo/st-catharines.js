@@ -16,10 +16,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>St. Catharines Local SEO & AI Search | Infused Agency</title>
+        <title>SEO St. Catharines | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="St. Catharines local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
+          content="SEO St. Catharines by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving St. Catharines, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/st-catharines" />
         <script
@@ -124,17 +124,20 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO St. Catharines"
-        subTitle="Local SEO & AI Search Services in St. Catharines"
+        title="St. Catharines SEO"
+        subTitle="Grow Traffic & Local Leads in St. Catharines"
         image={hero}
-        description="Infused Agency is a local SEO & AI Search agency in St. Catharines. We help Niagara businesses get found on Google and AI tools like ChatGPT and Gemini to attract more customers."
-        alt="Infused Agency local SEO and AI search services in St. Catharines, Niagara"
+        description="Infused Agency is a St. Catharines SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="St. Catharines SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
-              <h2>Expert SEO Services in St. Catharines - Get Found Online</h2>
+              <h2>
+                Expert SEO Services in St. Catharines - Grow Traffic &amp; Local
+                Leads
+              </h2>
             </div>
           </div>
           <Row>

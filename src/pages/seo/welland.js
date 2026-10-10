@@ -17,10 +17,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Welland Local SEO & AI Search | Infused Agency</title>
+        <title>SEO Welland | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Welland local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
+          content="SEO Welland by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Welland, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/welland" />
         <script
@@ -117,17 +117,19 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Welland"
-        subTitle="Local SEO & AI Search to Help Welland Businesses Get Found"
+        title="Welland SEO"
+        subTitle="Grow Traffic & Local Leads in Welland"
         image={hero}
-        description="Infused Agency is a Welland local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
-        alt="Welland local SEO & AI Search - helping businesses get found on Google and AI search tools"
+        description="Infused Agency is a Welland SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="Welland SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
-              <h2>Expert SEO Services in Welland - Get Found Online</h2>
+              <h2>
+                Expert SEO Services in Welland - Grow Traffic &amp; Local Leads
+              </h2>
             </div>
           </div>
           <Row>

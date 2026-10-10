@@ -16,10 +16,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Niagara Falls Local SEO & AI Search | Infused Agency</title>
+        <title>SEO Niagara Falls | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Niagara Falls local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
+          content="SEO Niagara Falls by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Niagara Falls, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/niagara-falls" />
         <script
@@ -116,17 +116,20 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Niagara Falls"
-        subTitle="Local SEO & AI Search Services in Niagara Falls"
+        title="Niagara Falls SEO"
+        subTitle="Grow Traffic & Local Leads in Niagara Falls"
         image={hero}
-        description="Infused Agency is a local SEO & AI Search agency serving Niagara Falls. We help Niagara businesses get found on Google and AI tools like ChatGPT and Gemini to attract more customers and visitors."
-        alt="Infused Agency local SEO and AI search services in Niagara Falls, Ontario"
+        description="Infused Agency is a Niagara Falls SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="Niagara Falls SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
-              <h2>Expert SEO Services in Niagara Falls - Get Found Online</h2>
+              <h2>
+                Expert SEO Services in Niagara Falls - Grow Traffic &amp; Local
+                Leads
+              </h2>
             </div>
           </div>
           <Row>

@@ -17,10 +17,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Fort Erie Local SEO & AI Search | Infused Agency</title>
+        <title>SEO Fort Erie | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Fort Erie local SEO & AI Search from Infused Agency. Get found on Google and AI search tools like ChatGPT and Gemini to attract more local customers."
+          content="SEO Fort Erie by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Fort Erie, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/fort-erie" />
         <script
@@ -117,17 +117,19 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Fort Erie"
-        subTitle="Local SEO & AI Search to Help Fort Erie Businesses Get Found"
+        title="Fort Erie SEO"
+        subTitle="Grow Traffic & Local Leads in Fort Erie"
         image={hero}
-        description="Infused Agency is a Fort Erie local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
-        alt="Fort Erie local SEO & AI Search - helping businesses get found on Google and AI search tools"
+        description="Infused Agency is a Fort Erie SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="Fort Erie SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
-              <h2>Expert SEO Services in Fort Erie - Get Found Online</h2>
+              <h2>
+                Expert SEO Services in Fort Erie - Grow Traffic &amp; Local Leads
+              </h2>
             </div>
           </div>
           <Row>

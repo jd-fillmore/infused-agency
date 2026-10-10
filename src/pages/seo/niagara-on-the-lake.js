@@ -17,10 +17,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Niagara-on-the-Lake Local SEO & AI Search | Infused Agency</title>
+        <title>SEO Niagara-on-the-Lake | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Niagara-on-the-Lake local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
+          content="SEO Niagara-on-the-Lake by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Niagara-on-the-Lake, ON and the Niagara region. Free quote."
         />
         <link
           rel="canonical"
@@ -120,18 +120,19 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Niagara-on-the-Lake"
-        subTitle="Local SEO & AI Search to Help Niagara-on-the-Lake Businesses Get Found"
+        title="Niagara-on-the-Lake SEO"
+        subTitle="Grow Traffic & Local Leads in Niagara-on-the-Lake"
         image={hero}
-        description="Infused Agency is a Niagara-on-the-Lake local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
-        alt="Niagara-on-the-Lake local SEO & AI Search - helping businesses get found on Google and AI search tools"
+        description="Infused Agency is a Niagara-on-the-Lake SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="Niagara-on-the-Lake SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
               <h2>
-                Expert SEO Services in Niagara-on-the-Lake - Get Found Online
+                Expert SEO Services in Niagara-on-the-Lake - Grow Traffic &amp;
+                Local Leads
               </h2>
             </div>
           </div>

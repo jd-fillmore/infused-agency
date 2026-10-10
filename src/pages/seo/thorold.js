@@ -17,10 +17,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Thorold Local SEO & AI Search | Infused Agency</title>
+        <title>SEO Thorold | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Local SEO & AI Search for Thorold businesses. Infused Agency helps you get found on Google, ChatGPT, and Gemini. Reach more local customers today."
+          content="SEO Thorold by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Thorold, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/thorold" />
         <script
@@ -117,17 +117,19 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Thorold"
-        subTitle="Grow Your Business with Thorold Local SEO & AI Search"
+        title="Thorold SEO"
+        subTitle="Grow Traffic & Local Leads in Thorold"
         image={hero}
-        description="Infused Agency is a Thorold local SEO & AI Search agency. We craft tailored strategies that help local businesses get found on Google and AI search tools like ChatGPT and Gemini."
-        alt="Thorold local SEO and AI Search agency helping businesses get found on Google and AI search tools"
+        description="Infused Agency is a Thorold SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="Thorold SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
-              <h2>Expert Local SEO & AI Search Services in Thorold - Get Found Online</h2>
+              <h2>
+                Expert SEO Services in Thorold - Grow Traffic &amp; Local Leads
+              </h2>
             </div>
           </div>
           <Row>

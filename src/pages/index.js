@@ -196,8 +196,7 @@ const Home = ({ latestPosts }) => {
                   "@type": "WebPage",
                   "@id": "https://infused.agency/#webpage",
                   url: "https://infused.agency/",
-                  name:
-                    "SEO Company Niagara Falls, St. Catharines | Infused Agency",
+                  name: "SEO Niagara | Grow Traffic & Local Leads",
                   datePublished: "2023-01-01T09:00:00+00:00",
                   dateModified: "2025-08-27T10:00:00+00:00",
                   about: {
@@ -461,10 +460,10 @@ const Home = ({ latestPosts }) => {
           }}
         />
 
-        <title>Niagara Local SEO & AI Search Company | Infused Agency</title>
+        <title>SEO Niagara | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Get found on Google and AI search tools like ChatGPT & Gemini. Local SEO experts serving Niagara, St. Catharines & Niagara Falls."
+          content="SEO Niagara by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving St. Catharines, Niagara Falls and the Niagara region."
         />
         <meta
           name="google-site-verification"

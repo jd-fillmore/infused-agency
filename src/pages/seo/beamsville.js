@@ -17,10 +17,10 @@ const SEO = ({ latestPosts }) => {
   return (
     <>
       <Head>
-        <title>Beamsville Local SEO & AI Search | Infused Agency</title>
+        <title>SEO Beamsville | Grow Traffic & Local Leads</title>
         <meta
           name="description"
-          content="Beamsville local SEO & AI Search from Infused Agency. Get found on Google, ChatGPT, and Gemini to attract more local customers."
+          content="SEO Beamsville by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Beamsville, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/beamsville" />
         <script
@@ -117,17 +117,20 @@ const SEO = ({ latestPosts }) => {
       </Head>
       <Nav />
       <InnerHeroCities
-        title="SEO Beamsville"
-        subTitle="Local SEO & AI Search to Help Beamsville Businesses Get Found"
+        title="Beamsville SEO"
+        subTitle="Grow Traffic & Local Leads in Beamsville"
         image={hero}
-        description="Infused Agency is a Beamsville local SEO & AI Search agency. We help businesses get found on Google and AI search tools like ChatGPT and Gemini."
-        alt="Beamsville local SEO & AI Search - helping businesses get found on Google and AI search tools"
+        description="Infused Agency is a Beamsville SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies."
+        alt="Beamsville SEO - grow traffic and generate more local leads"
       />
       <section className="home-top-web">
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-12">
-              <h2>Expert SEO Services in Beamsville - Get Found Online</h2>
+              <h2>
+                Expert SEO Services in Beamsville - Grow Traffic &amp; Local
+                Leads
+              </h2>
             </div>
           </div>
           <Row>
