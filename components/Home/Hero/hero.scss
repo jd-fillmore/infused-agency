@@ -2,9 +2,21 @@
 @import "../../../src/pages/breakpoints.scss";
 
 .seo-city-hero {
+  background: linear-gradient($main-dark-grey, transparent),
+    linear-gradient(to top left, $glow-blue, transparent);
+  background-blend-mode: screen;
+  padding: 210px 0px 120px 0px;
+  @include bp-tablet-sm {
+    padding: 120px 0px 60px 0px;
+  }
   h1 {
     font-size: 20px;
     font-weight: normal;
+    margin-bottom: 20px;
+  }
+  p {
+    max-width: 820px;
+    margin: 0 auto 30px auto;
   }
 }
 

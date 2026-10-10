@@ -2,6 +2,19 @@
 
 Working branch: `seo-overhaul`. Spec: `docs/vertical-seo-build-spec.md`.
 
+## Follow-up phase checklist
+
+Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
+
+- [x] Phase 1 — Visual bugs (breadcrumbs horizontal, hero cutoff fixed; no copy changes)
+- [ ] Phase 2 — Legacy pages, seed city lists, counts
+- [ ] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
+- [ ] Phase 4 — City content batch A
+- [ ] Phase 5 — City content batch B
+- [ ] Phase 6 — Data-driven service pages
+- [ ] Phase 7 — "Solutions" mega menu
+- [ ] Phase 8 — Final audit and report
+
 ## Phase 0 — discovery findings
 
 - **Router / version:** Next.js `13.5.6`, **Pages Router** (`src/pages`). React 18.
@@ -56,3 +69,18 @@ Working branch: `seo-overhaul`. Spec: `docs/vertical-seo-build-spec.md`.
 - `yarn lint` — exit 0 (warnings only, all pre-existing).
 - `yarn build` — success. 17 vertical pages prerendered.
 - Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (17 URLs); no vertical path leaks into `sitemap-0.xml`.
+
+## Follow-up Phase 1 — visual bugs
+
+No copy was changed. Reused the existing global SCSS/: no new dependency.
+
+### 1. Breadcrumbs
+
+- **Cause.** The component rendered a bare `<ol className="breadcrumbs">` / `<li>` and no `.breadcrumbs` rule existed anywhere in the stylesheet, so the browser's default `ol`/`li` styling applied: a vertical, bulleted list. The `›` was also emitted as literal text inside each `<li>`.
+- **Fix.** Added a `.breadcrumbs` rule (`components/verticalSeo/vertical-seo.scss`, imported globally in `_app.js`): `display:flex; flex-wrap:wrap`, `list-style:none`, `padding-left:0`, small (13px) type. Separators are now CSS `li + li::before { content:"›" }` so they cannot wrap onto their own line. The current page stays a `<span aria-current="page">` (text, not a link). The literal separator text was removed from the JSX. The `BreadcrumbList` JSON-LD in `src/lib/verticalSeoSchema.js` was not touched.
+- This `.breadcrumbs` class is the shared horizontal component the later service pages (Phase 6) will reuse.
+
+### 2. Hero cutoff
+
+- **Cause.** Every page used `<section className="seo-city-hero">`, but the `.seo-city-hero` rule (`components/Home/Hero/hero.scss`) only set the H1 size — it set **no top padding and no background**, unlike every other hero on the site (`.main-hero`, `.hero`, `.inner-hero`, and the legacy per-city classes all pad the top by ~180–220px). The header is `position:fixed` (`.fixed-top` → TopBar + Navbar, ~150px tall), so the H1, direct-answer paragraph and CTA sat underneath it and were clipped on every template (pillar, province, city, usa). There was no `overflow:hidden`, fixed height, `100vh` sizing or colour-on-colour problem.
+- **Fix.** Gave `.seo-city-hero` the site's standard hero treatment: the dark gradient background and `padding: 210px 0 120px` (desktop) / `120px 0 60px` (≤992px), matching `.inner-hero`. H1/paragraph spacing also normalised. Verified the rendered static HTML contains `class="seo-city-hero"` and the CSS chunk includes the new padding at all three widths.

@@ -103,7 +103,6 @@ function Breadcrumbs({ crumbs }) {
                     ) : (
                       <Link href={c.href}>{c.name}</Link>
                     )}
-                    {!last ? " › " : ""}
                   </li>
                 );
               })}
