@@ -1325,11 +1325,11 @@ const Home = ({ latestPosts }) => {
                 is backed by data, tailored to your goals, and focused on
                 delivering a real return on investment. Our most requested
                 services are local SEO for Niagara businesses,{" "}
-                <Link href="/seo/for-therapists-canada">
+                <Link href="/therapist-seo">
                   SEO for Therapists in Canada
                 </Link>
                 ,{" "}
-                <Link href="/seo/for-therapists-usa">
+                <Link href="/therapist-seo/usa">
                   SEO for Therapists in the USA
                 </Link>{" "}
                 , and many more.

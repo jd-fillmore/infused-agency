@@ -70,6 +70,18 @@ const Services = () => {
                 </Link>
               </div>
             </div>
+            <div className="row pd-top-40">
+              <div className="col-lg-12">
+                <h2>SEO by industry</h2>
+                <ul>
+                  <li>
+                    <Link href="/therapist-seo">
+                      SEO for Therapists in Canada
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
         </Container>
       </InnerContent>

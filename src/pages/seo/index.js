@@ -288,8 +288,7 @@ const SEO = () => {
           <Container>
             <Row>
               <Col lg="12">
-                <h3>Serving SEO to Businesses in Niagara since 2013</h3>
-                <a href="/seo/beamsville">Beamsville, ON</a> <span>|</span>
+                <h3>Serving SEO to Businesses in Niagara since 2013</h3>                <a href="/seo/beamsville">Beamsville, ON</a> <span>|</span>
                 <a href="/seo/crystal-beach">Crystal Beach, ON</a>{" "}
                 <span>|</span>
                 <a href="/seo/fonthill">Fonthill, ON</a> <span>|</span>
@@ -303,6 +302,22 @@ const SEO = () => {
                 <span>|</span>
                 <a href="/seo/thorold">Thorold, ON</a> <span>|</span>
                 <a href="/seo/welland">Welland, ON</a>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="pd-top-80">
+          <Container>
+            <Row>
+              <Col lg="12">
+                <h2>SEO by industry</h2>
+                <ul>
+                  <li>
+                    <Link href="/therapist-seo">
+                      SEO for Therapists in Canada
+                    </Link>
+                  </li>
+                </ul>
               </Col>
             </Row>
           </Container>

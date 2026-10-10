@@ -6,10 +6,15 @@
   "license": "0BSD",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/verify-vertical-seo.js",
     "build": "next build",
     "start": "next start",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && node scripts/generate-vertical-sitemaps.js",
     "lint": "next lint",
+    "verify:seo": "node scripts/verify-vertical-seo.js",
+    "content:status": "node scripts/content-status.js",
+    "content:scaffold": "node scripts/scaffold-content.js",
+    "test:seo": "node scripts/test-vertical-seo.js",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "preload-fonts": ""
   },
