@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Winnipeg helps counselling and psychology practices reach Manitoba's capital. Local service pages, honest neighbourhood coverage, language signals and a complete Google Business Profile bring community-minded searches to your practice.",
+  "intro": "Winnipeg is Manitoba's capital and its cultural and economic centre, a city where neighbourhood identity runs deep. From the Exchange District and Osborne Village to established areas like Wolseley, St. Boniface and River Heights, residents search close to home and often name their part of town in the query. The University of Manitoba and the province's public institutions anchor a steady professional population, while family communities such as St. Vital, Transcona and Fort Garry look for services nearby. Winnipeg's diversity also means many clients search in a first language other than English, and practices that signal the communities they serve reach people generic pages miss. Directories hold the broad therapy terms, so the realistic ground for an independent practice is specific: neighbourhood, specialisation and an honest statement of the wider capital region it truly serves.",
+  "localInsight": "Winnipeg rewards honesty about scale. The city genuinely reaches the wider capital region, so a service area that reflects your real catchment is an asset, not a limit. The University of Manitoba keeps student demand steady and seasonal, healthcare and government employment anchor professional searching, and families across St. Vital, Transcona and River Heights compare practices carefully before booking. Landmarks like The Forks and the Assiniboine Park Zoo anchor a city that lives well in both winter and summer, and local content that reflects those rhythms honestly reads as credible. The reliable strategy is genuine service pages, real neighbourhood coverage from Wolseley to St. Boniface, consistent details across directories and clear fee, availability and virtual-session information, with cultural and language signals kept truthful and specific to the communities you actually work with.",
+  "localChecklist": [
+    "Service pages for the specialisations you genuinely offer.",
+    "Neighbourhood content for the Winnipeg districts you truly serve.",
+    "A Google Business Profile scoped to your real catchment across the capital region.",
+    "Consistent details across directories, since Winnipeg clients cross-check.",
+    "Clear fees, availability and virtual options, including evening slots.",
+    "Honest cultural and language signals for the communities you work with."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Winnipeg?",
+      "a": "Moderate and regional. Broad terms are held by directories, but Winnipeg's neighbourhood and issue-specific searches respond well to clear local pages and a genuine Google Business Profile.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which neighbourhoods should a Winnipeg practice target?",
+      "a": "Only those it genuinely serves. Osborne Village, Wolseley, St. Boniface, River Heights, St. Vital, Fort Garry and Transcona each carry distinct search behaviour, and residents often name the district in their query. Honest coverage wins.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Who is searching for a therapist in Winnipeg?",
+      "a": "University of Manitoba students, public-sector and healthcare professionals, and families across the city's established districts. Many search in a first language other than English, so content that names those communities reaches people others miss.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Does Winnipeg's diversity change SEO strategy?",
+      "a": "Yes. Many residents search in a language other than English, so honest signals about the communities and languages you serve widen your reach, while accurate neighbourhood coverage keeps your local relevance intact.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual-only practice rank in Winnipeg?",
+      "a": "Yes, if the service area is honest. A virtual practice can describe the Winnipeg districts and surrounding communities it serves without implying an office in each one.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Winnipeg?",
+      "a": "Local and issue-based searches often respond within a few months; broader terms take six to twelve months. The community-minded market rewards consistent, credible publishing.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Winnipeg for counselling and psychology practices. Neighbourhood-rich local search across Manitoba's capital and its wider region.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

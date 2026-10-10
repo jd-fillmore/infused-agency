@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Saint John helps counselling and psychology practices reach New Brunswick's historic port city and the Kennebecasis Valley. Local service pages, honest neighbourhood coverage and a complete Google Business Profile bring community-minded searches to your practice.",
+  "intro": "Saint John is New Brunswick's historic port city and its largest, an older, close-knit market whose residents search close to home. The Uptown core, Millidgeville, East Saint John, the South End and Lancaster, along with the Kennebecasis Valley communities of Quispamsis and Rothesay just upriver, form one connected market, and clients often name the neighbourhood in the search. The port and industrial economy, the hospital and the university community shape a steady professional demand, while longstanding families across the city's districts keep a strong referral culture. Directory pages hold the broad counselling terms, but the practical searches, a counsellor near the Uptown, family support in the Valley, couples work in the South End, are where an honest local practice wins. Rockwood Park and the Bay of Fundy give the city an identity residents carry into how they search.",
+  "localInsight": "Saint John rewards presence. It is a smaller, referral-driven market where being the named practice for a neighbourhood or a specialisation is genuinely achievable, and where consistency across directories and a maintained Google Business Profile matter more than volume. Clients here often compare a short list of local practices before deciding, so plain fee, availability and virtual-session information converts well. The Kennebecasis Valley is part of the same search market, so a service area that reflects your real reach across it matches how residents actually commute and use services. The port and industrial economy, healthcare and the university bring steady demand, and the city's stability rewards practices that keep their pages current and their claims honest. The winning configuration is genuine service pages, real neighbourhood coverage from the Uptown to the Valley and clear, consistent local information throughout.",
+  "localChecklist": [
+    "Service pages for the specialisations you genuinely offer.",
+    "Neighbourhood content for the Saint John districts and Valley communities you serve.",
+    "A Google Business Profile scoped to your real catchment, including Quispamsis and Rothesay.",
+    "Consistent details across directories, since local clients compare a short list.",
+    "Clear fees, availability and virtual options.",
+    "Niche focus on a community or client group the city's size rewards."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Saint John?",
+      "a": "Open and community-based. Broad terms are held by directories, but Saint John's neighbourhood-level and issue-specific searches respond well to honest local pages and a genuine Google Business Profile.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which neighbourhoods should a Saint John practice target?",
+      "a": "Only those it genuinely serves. The Uptown core, Millidgeville, East Saint John, the South End, Lancaster and the Kennebecasis Valley communities of Quispamsis and Rothesay each search differently. Honest coverage wins.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Who is searching for a therapist in Saint John?",
+      "a": "A stable, local population: port and industrial workers, hospital and university staff, and families across the city's districts and the Valley. The referral culture means credibility and consistency convert searches into bookings.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Does the Kennebecasis Valley belong to the same market?",
+      "a": "Yes. Quispamsis and Rothesay sit just upriver and are part of how Saint John residents search, so an honest service area that reflects your real reach across them matches the way people actually commute and use services.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual-only practice rank in Saint John?",
+      "a": "Yes, if the service area is honest. A virtual practice can describe the Saint John districts and surrounding communities it serves without implying an office in each one.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Saint John?",
+      "a": "Local and issue-based searches often respond within a couple of months; broader terms take six to twelve months. The stable market rewards consistent, credible publishing.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Saint John for counselling and psychology practices. Neighbourhood-level local search in New Brunswick's historic port city.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

@@ -7,12 +7,11 @@ build gate). Every other legacy URL stays live and untouched.
 
 **Reconciliation.** The count of 46 is the true number of
 `src/pages/seo/for-therapists-*.js` files (`Get-ChildItem` confirms it). After
-Phase 4 it splits into **31 pages with an active redirect** to a published
-replacement (canada, usa, the 10 provinces, the 5 Ontario cities and the 15
-Phase-4 cities) plus **15 pages that stay live** (9 Canadian cities whose new
-pages are not published yet — the Phase 5 batch — and the 6 US city pages).
-31 + 15 = 46. An earlier draft of this doc said 45, which was an undercount of
-the live set by one.
+Phase 5 it splits into **39 pages with an active redirect** to a published
+replacement (canada, usa, the 10 provinces, the 5 Ontario cities, the 15
+Phase-4 cities and the 9 Phase-5 cities) plus **6 pages that stay live** (the
+6 US city pages). 39 + 6 = 46. An earlier draft of this doc said 45, which was
+an undercount of the live set by one.
 
 The map is defined once in `src/lib/verticalSeo.js` (`LEGACY_REDIRECT_MAP`) and
 emitted through `getPublishedRedirects()`, which filters out any destination that
@@ -55,6 +54,15 @@ the destinations are themselves redirect sources.
 | `/seo/for-therapists-red-deer` | `/therapist-seo/alberta/red-deer` |
 | `/seo/for-therapists-lethbridge` | `/therapist-seo/alberta/lethbridge` |
 | `/seo/for-therapists-airdrie` | `/therapist-seo/alberta/airdrie` |
+| `/seo/for-therapists-saskatoon` | `/therapist-seo/saskatchewan/saskatoon` |
+| `/seo/for-therapists-regina` | `/therapist-seo/saskatchewan/regina` |
+| `/seo/for-therapists-winnipeg` | `/therapist-seo/manitoba/winnipeg` |
+| `/seo/for-therapists-halifax` | `/therapist-seo/nova-scotia/halifax` |
+| `/seo/for-therapists-cape-breton` | `/therapist-seo/nova-scotia/cape-breton` |
+| `/seo/for-therapists-moncton` | `/therapist-seo/new-brunswick/moncton` |
+| `/seo/for-therapists-saint-john` | `/therapist-seo/new-brunswick/saint-john` |
+| `/seo/for-therapists-fredericton` | `/therapist-seo/new-brunswick/fredericton` |
+| `/seo/for-therapists-st-johns` | `/therapist-seo/newfoundland-and-labrador/st-johns` |
 
 Notes:
 
@@ -70,20 +78,16 @@ Notes:
 
 ## Legacy pages left live (no published equivalent yet)
 
-These have no published replacement, so they are served unchanged and **not**
-redirected. Each becomes a redirect candidate once the matching new page is
-written, reviewed and passes the gate:
+Only the **6 US city pages** stay live: `albany`, `buffalo`, `huntington`,
+`new-york`, `rochester`, `syracuse`. They have no published replacement and are
+out of scope for this launch, so they stay live (and linked from the pillar's
+"More cities" block) to avoid destroying existing rankings/backlinks. Every
+legacy Canadian page now redirects to its published replacement.
 
-`cape-breton`, `fredericton`, `halifax`, `moncton`, `regina`, `saint-john`,
-`saskatoon`, `st-johns`, `winnipeg`.
-
-(Phase 4 published and redirected Montreal, Quebec City, Laval, Gatineau,
-Longueuil, Vancouver, Surrey, Burnaby, Richmond, Abbotsford, Calgary, Edmonton,
-Red Deer, Lethbridge and Airdrie.) The 6 US city pages — `albany`, `buffalo`,
-`huntington`, `new-york`, `rochester`, `syracuse` — have no published
-replacement either and are out of scope for this launch; they stay live to avoid
-destroying existing rankings/backlinks. The remaining 9 Canadian cities above
-are the Phase 5 batch.
+(Phase 4 redirected Montreal, Quebec City, Laval, Gatineau, Longueuil,
+Vancouver, Surrey, Burnaby, Richmond, Abbotsford, Calgary, Edmonton, Red Deer,
+Lethbridge and Airdrie; Phase 5 redirected Saskatoon, Regina, Winnipeg,
+Halifax, Cape Breton, Moncton, Saint John, Fredericton and St. John's.)
 
 ## Rule for adding a redirect
 

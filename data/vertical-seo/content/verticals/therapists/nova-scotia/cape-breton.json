@@ -1,13 +1,49 @@
 {
-  "status": "draft",
+  "status": "reviewed",
   "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": [
-    "brandi-may-psychotherapy"
-  ]
+  "directAnswer": "Therapist SEO in Cape Breton helps counselling and psychology practices reach a close-knit island region of Nova Scotia. Local service pages, honest community coverage and a complete Google Business Profile bring local searches to your practice.",
+  "intro": "Cape Breton is an island of distinct communities, and its search market behaves like a collection of towns rather than one city. Sydney anchors the island with its industrial and commercial history, neighbourhoods like Whitney Pier and Ashby, and the university community of Sydney River alongside it, while towns such as Glace Bay, Sydney Mines and New Waterford carry their own identities and search patterns. Rural and coastal communities from Baddeck, Ingonish and Cheticamp along the Cabot Trail, the Mi'kmaq communities with their own cultural centres, and historic Louisbourg each search close to home. Directories hold the broad terms, but the practical searches, a counsellor near Sydney, support in the former mining towns, family help in a specific community, are where an honest local practice wins. Because clients rarely want to travel far, local relevance is decisive and trust spreads fast in a small region.",
+  "localInsight": "Cape Breton rewards being local in the truest sense. Because the island is made of close-knit communities, being the named practice for a town, a district or a community's specific character is genuinely achievable and far more valuable than a broad regional claim. The island's strong Celtic and Acadian cultural heritage, its long industrial history and its deep community bonds all shape how residents choose a service, and those choices happen mostly by referral. Consistent details across directories and a maintained Google Business Profile therefore matter more than volume. Tourism brings seasonal swings and the university adds a modest student layer, but the demand base is steady and place-based. The winning configuration is honest service pages, real community coverage from Sydney to the Cabot Trail and clear fee, availability and virtual-session information, with any cultural signals kept accurate and respectful.",
+  "localChecklist": [
+    "Service pages for the specialisations you genuinely offer.",
+    "Community content for the Cape Breton towns and districts you truly serve.",
+    "A Google Business Profile scoped to your honest catchment on the island.",
+    "Consistent details across directories, since referrals spread fast here.",
+    "Clear fees, availability and virtual options, including seasonal notes.",
+    "Accurate, respectful reflection of the island's cultural communities where relevant."
+  ],
+  "faqs": [
+    {
+      "q": "How competitive is therapy SEO in Cape Breton?",
+      "a": "Open and community-based. Broad terms are held by directories, but Cape Breton's town-level and issue-specific searches respond well to honest local pages and a genuine Google Business Profile.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which communities should a Cape Breton practice target?",
+      "a": "Only those it genuinely serves. Sydney and its neighbourhoods like Whitney Pier and Ashby, Sydney River, Glace Bay, Sydney Mines, New Waterford, Baddeck, Ingonish and Cheticamp each have distinct search behaviour. Honest coverage wins.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Who is searching for a therapist in Cape Breton?",
+      "a": "Residents of the island's towns, university students near Sydney River, hospital-adjacent families, and the close-knit communities of the rural and coastal areas. Trust and word of mouth convert referrals into bookings.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Does the island's geography affect SEO strategy?",
+      "a": "Yes. Clients rarely want to travel far, so practices that accurately name their home community and the surrounding towns they serve match how islanders actually search, and they can win their area quickly.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can a virtual-only practice rank in Cape Breton?",
+      "a": "Yes, if the service area is honest. A virtual practice can describe the Cape Breton communities it serves without implying an office in each one.",
+      "geoSpecific": false
+    },
+    {
+      "q": "How long does therapy SEO take in Cape Breton?",
+      "a": "Local searches often respond within a couple of months; broader island terms take six to twelve months. The close-knit market rewards consistency and standing in the community.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Therapist SEO in Cape Breton for counselling and psychology practices. Community-based local search across an island of close-knit towns and communities.",
+  "proofRefs": ["brandi-may-psychotherapy"]
 }

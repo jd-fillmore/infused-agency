@@ -819,6 +819,15 @@ const LEGACY_REDIRECT_MAP = {
   "/seo/for-therapists-red-deer": "/therapist-seo/alberta/red-deer",
   "/seo/for-therapists-lethbridge": "/therapist-seo/alberta/lethbridge",
   "/seo/for-therapists-airdrie": "/therapist-seo/alberta/airdrie",
+  "/seo/for-therapists-saskatoon": "/therapist-seo/saskatchewan/saskatoon",
+  "/seo/for-therapists-regina": "/therapist-seo/saskatchewan/regina",
+  "/seo/for-therapists-winnipeg": "/therapist-seo/manitoba/winnipeg",
+  "/seo/for-therapists-halifax": "/therapist-seo/nova-scotia/halifax",
+  "/seo/for-therapists-cape-breton": "/therapist-seo/nova-scotia/cape-breton",
+  "/seo/for-therapists-moncton": "/therapist-seo/new-brunswick/moncton",
+  "/seo/for-therapists-saint-john": "/therapist-seo/new-brunswick/saint-john",
+  "/seo/for-therapists-fredericton": "/therapist-seo/new-brunswick/fredericton",
+  "/seo/for-therapists-st-johns": "/therapist-seo/newfoundland-and-labrador/st-johns",
 };
 
 function getPublishedRedirects(publishedSet) {

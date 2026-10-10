@@ -10,7 +10,7 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 - [x] Phase 2 — Legacy pages, seed city lists, counts
 - [x] Phase 3 — Baseline audit (`docs/page-audit.md`, document only)
 - [x] Phase 4 — City content batch A
-- [ ] Phase 5 — City content batch B
+- [x] Phase 5 — City content batch B
 - [ ] Phase 6 — Data-driven service pages
 - [ ] Phase 7 — "Solutions" mega menu
 - [ ] Phase 8 — Final audit and report
@@ -64,11 +64,11 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 
 ## Verification results
 
-- `yarn verify:seo` — enumerated 150, **published 33**, draft-excluded 29, gate-failed 0, slug errors 0, broken links 0, live legacy orphans 0.
+- `yarn verify:seo` — enumerated 150, **published 42**, draft-excluded 20, gate-failed 0, slug errors 0, broken links 0, live legacy orphans 0.
 - `yarn test:seo` — 12/12 unit tests pass (slug generation, gate logic, link resolution, draft exclusion, redirect safety, sitemap filtering, legacy orphan linking, More cities redirect drop, summary gate).
 - `yarn lint` — exit 0 (warnings only, all pre-existing).
-- `yarn build` — success. 33 vertical pages prerendered.
-- Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (33 URLs); no vertical path leaks into `sitemap-0.xml`.
+- `yarn build` — success. 42 vertical pages prerendered.
+- Live checks: published URLs return 200 with one H1, one self-referencing canonical, unique title/meta, and one valid JSON-LD `@graph` (BreadcrumbList + Service + FAQPage). `/seo/for-therapists-*` legacy URLs 301/308 to the new ones. Unknown or draft URLs under a `urlSlug` return 404. `sitemap.xml` is an index of `sitemap-0.xml` + `sitemap-vertical-therapists.xml` (42 URLs); no vertical path leaks into `sitemap-0.xml`.
 
 ## Follow-up Phase 1 — visual bugs
 
@@ -191,3 +191,68 @@ Each page is based on its legacy page's local copy (`src/pages/seo/for-therapist
 - **`population2021` stays `null`** for new cities, consistent with the published Ontario cities; the unique-fields gate is satisfied by neighbourhoods + majorIndustries + provinceSearchNotes + localInsight + proofRefs.
 - **Quebec regulation is intentionally absent** (regulator null in geo data); the Bill 96 note lives in city copy only.
 - **Migrated legacy URLs become 301s**, never deletes: `/seo/for-therapists-{city}` → `/therapist-seo/{province}/{city}` preserves any existing backlinks/rankings. `docs/legacy-redirect-map.md` reconciles the 31/15 split.
+
+## Follow-up Phase 5 — city content batch B (SK, MB, NS, NB, NL)
+
+Published **9 city pages** and activated their legacy redirects. This closes out
+every remaining Canadian live legacy page. One commit.
+
+### Pages written (all `status: reviewed`)
+
+- **Saskatchewan:** saskatoon, regina
+- **Manitoba:** winnipeg
+- **Nova Scotia:** halifax, cape-breton
+- **New Brunswick:** moncton, saint-john, fredericton
+- **Newfoundland and Labrador:** st-johns
+
+Same pattern as Phase 4: each page is based on its legacy page's local copy
+(`src/pages/seo/for-therapists-*.js`) rewritten with the city's real
+search-market reality. Note the follow-up prompt said "8 cities" but **9 legacy
+files exist** (`for-therapists-st-johns.js` included), and all 9 were migrated.
+
+### Cities data
+
+- `cities.json`: `neighbourhoods` and `majorIndustries` filled for all 9;
+  `population2021` stays `null` (same convention as Phases 1–4). All other
+  null entries were left untouched.
+
+### Moncton bilingual note
+
+- The Moncton page carries a bilingual EN/FR note (official bilingualism of
+  New Brunswick) as editorial copy in `localInsight` and a geoSpecific FAQ.
+  `vertical-geo/therapists/new-brunswick.json` keeps `regulator: null`, so no
+  "Provincial rules" section renders anywhere (verified for SK/MB/NS/NB/NL as
+  well — no regulator claims added).
+
+### Redirects and live-legacy arithmetic
+
+- Added 9 city sources to `LEGACY_REDIRECT_MAP`. Active redirects: **31 → 39**.
+  Live legacy pages: **15 → 6** (only the 6 US cities: albany, buffalo,
+  huntington, new-york, rochester, syracuse). The province pages for
+  Saskatchewan, Manitoba, Nova Scotia, New Brunswick and Newfoundland and
+  Labrador now render empty "More cities" blocks. `yarn verify:seo` reports
+  **0 live legacy orphans**.
+
+### Similarity (follow-up reporting threshold 0.30)
+
+- Nearest published sibling pair after Phase 5: **0.099** (`red-deer <->
+  abbotsford`, unchanged from Phase 4). Nothing exceeded 0.30, so no rewrites
+  were needed. The gate (≤ 0.35) is enforced by `verify:seo`.
+
+### Verification
+
+- `yarn verify:seo` — 150 enumerated, **42 published**, 20 draft-excluded, 0 gate-failed, 0 slug errors, 0 broken links, **0 live legacy orphans**.
+- `yarn test:seo` — 12/12 pass.
+- `yarn lint` — exit 0 (pre-existing warnings only).
+- `yarn build` — success; 42 vertical pages prerendered; `sitemap-vertical-therapists.xml` now lists 42 URLs. Restored the `public/sitemap-0.xml` build-timestamp noise before committing.
+
+### Assumptions recorded
+
+- **`population2021` stays `null`** and `verified` stays `false` for the 9 new
+  cities, matching every other city in the published set.
+- **Regulation is intentionally absent** in SK/MB/NS/NB/NL (regulator null in
+  the vertical-geo files); the only editorial regulatory-adjacent copy is the
+  Moncton bilingual note.
+- **6 live legacy US pages remain by design** — out of scope for this launch,
+  kept to preserve rankings/backlinks, still linked from the pillar.
+  `docs/legacy-redirect-map.md` reconciles the 39/6 split.
