@@ -1,0 +1,45 @@
+[
+  {
+    "id": "brandi-may-psychotherapy",
+    "type": "testimonial",
+    "namedEntity": "Brandi May Psychotherapy",
+    "person": "Brandi M.",
+    "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+    "source": "https://www.infused.agency",
+    "verticals": ["therapists"]
+  },
+  {
+    "id": "flat-rock-cellars",
+    "type": "result",
+    "namedEntity": "Flat Rock Cellars",
+    "metric": "+550% local visibility",
+    "source": "https://www.infused.agency",
+    "verticals": ["wineries"]
+  },
+  {
+    "id": "delta-energy-solutions",
+    "type": "result",
+    "namedEntity": "Delta Energy Solutions",
+    "metric": "+670% local visibility",
+    "source": "https://www.infused.agency",
+    "verticals": ["solar"]
+  },
+  {
+    "id": "freds-concrete",
+    "type": "testimonial",
+    "namedEntity": "Fred's Concrete",
+    "person": "Lucas Folino",
+    "quote": "Lucas Folino of Fred's Concrete recommends Infused Agency for the growth in local visibility their concrete business saw after SEO work.",
+    "source": "https://www.infused.agency",
+    "verticals": ["concrete-contractors", "contractors"]
+  },
+  {
+    "id": "visca-electric",
+    "type": "testimonial",
+    "namedEntity": "VISCA Electric",
+    "person": "Sandro Visca",
+    "quote": "Sandro Visca of VISCA Electric recommends Infused Agency for the local search results their electrical business gained.",
+    "source": "https://www.infused.agency",
+    "verticals": ["electricians", "contractors"]
+  }
+]
