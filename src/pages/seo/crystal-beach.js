@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import CitySeoJsonLd from "../../../components/seo/CitySeoJsonLd";
 import Nav from "../../../components/Nav/nav";
 import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
 import CTA from "../../../components/CTA/cta";
@@ -23,6 +24,7 @@ const SEO = ({ latestPosts }) => {
           content="SEO Crystal Beach by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Crystal Beach, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/crystal-beach" />
+        <CitySeoJsonLd city="Crystal Beach" region="Niagara Region, Ontario" url="/seo/crystal-beach" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

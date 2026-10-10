@@ -13,7 +13,7 @@ Tracked against `docs/vertical-seo-followups.md`. One commit per phase.
 - [x] Phase 5 — City content batch B
 - [x] Phase 6 — Data-driven service pages (6A and 6B committed)
 - [x] Phase 7 — "Solutions" mega menu
-- [ ] Phase 8 — Schema audit and completion
+- [x] Phase 8 — Schema audit and completion
 - [ ] Phase 9 — Final audit and report
 
 ## Phase 0 — discovery findings
@@ -257,3 +257,62 @@ files exist** (`for-therapists-st-johns.js` included), and all 9 were migrated.
 - **6 live legacy US pages remain by design** — out of scope for this launch,
   kept to preserve rankings/backlinks, still linked from the pillar.
   `docs/legacy-redirect-map.md` reconciles the 39/6 split.
+
+## Follow-up Phase 8 — schema audit and completion
+
+Audit captured in `docs/schema-audit.md`. One shared Organization entity
+(`https://infused.agency/#organization`) is now defined on every page that
+references it, by `id`, via the extended `src/lib/verticalSeoSchema.js`.
+
+### What changed
+
+- **`src/lib/verticalSeoSchema.js`** rewritten as the single source of schema.
+  Adds `organizationNode`, `websiteNode`, `webPageNode`, `blogPostingNode`,
+  `serviceNode`, `faqPageNode`, `graph`, and page-type builders (`homeGraph`,
+  `localCityGraph`, `aboutPageGraph`, `contactPageGraph`, `webPageGraph`,
+  `blogGraph`). `buildGraph` and `servicePageGraph` now prepend the Organization
+  node, fixing the previously unresolved `Service.provider` `@id`.
+- **Homepage** — the inline `@graph` (which contained a duplicate
+  `LocalBusiness`, fabricated `AggregateRating` 4.9/33, and 3 invented `Review`
+  nodes) is replaced by `homeGraph()`: Organization/ProfessionalService/
+  LocalBusiness + WebSite + WebPage + FAQPage. No review/rating markup. The
+  visible FAQ section now renders from `src/lib/homeFaqs.js`, the same array
+  the FAQPage schema uses, so markup and visible text cannot drift.
+- **11 Niagara city pages** (`/seo/{city}`) — kept their existing FAQPage block
+  and gained a `components/seo/CitySeoJsonLd.js` block emitting
+  Organization + BreadcrumbList + Service.
+- **`/about` / `/get-a-quote`** — AboutPage / ContactPage + Organization +
+  BreadcrumbList via `components/seo/PageJsonLd.js`.
+- **`/seo`, `/services`, `/web-design`** — CollectionPage/WebPage +
+  Organization + BreadcrumbList.
+- **Blog** (`/posts/{id}`, 15 posts) — BlogPosting (headline, datePublished,
+  dateModified = date, image, author/publisher = Organization) + Organization,
+  plus a canonical link built from the post id.
+- **Logo** copied to `public/img/infused-logo.png`; the schema references the
+  stable `/img/infused-logo.png` instead of a build-hashed `_next/...` asset.
+- **`scripts/validate-schema.js`** parses every `application/ld+json` block in
+  the built HTML and fails on invalid JSON, duplicate `@id`s, unresolved `@id`
+  references, `Review`/`AggregateRating` markup, missing required properties,
+  and missing required types. Wired into `postbuild` (`--require`) and
+  `verify:seo` (skips when no build exists). Current result: 172 pages checked,
+  95 with JSON-LD, 0 failures.
+
+### Assumptions recorded
+
+- **Opening hours follow the visible footer** (Monday–Friday 9a.m.–6p.m.,
+  weekends closed), not the old homepage markup (`Mo-Fr 09:00-17:00`,
+  `Sa 10:00-14:00`), because the schema must match visible content.
+- **`sameAs` links are copied from the existing homepage schema** (unchanged).
+  The footer’s Instagram link (`instagram.com/infusedweb`) differs from the
+  schema Instagram (`instagram.com/infusedagency`); both predate this work and
+  the discrepancy is flagged in `docs/schema-audit.md` for a human to confirm.
+- **Homepage FAQ source of truth** is now `src/lib/homeFaqs.js`; one schema text
+  typo (“yoursearch”) was corrected to “your search”.
+- **Out-of-scope pages were audited, not changed:** the legacy live US therapist
+  pages (no schema), `/niagara-web-design` (FAQPage only) and
+  `/caledonia-web-design` (an un-id'd `LocalBusiness` node with a wrong `url`
+  and a mismatched Instagram `sameAs`). The validator leaves unmapped pages to
+  structural checks only, so these do not fail the build.
+- **Ordering:** Phase 8 is committed before the homepage SEO pass and Phase 9,
+  so the final report reflects the homepage work. Doing the homepage links last
+  avoids re-touching schema added here.

@@ -13,6 +13,8 @@ import ui from "../../img/ui-design.png";
 import build from "../../img/build.png";
 import grow from "../../img/grow.png";
 import growth from "../../img/seo-results.webp";
+import PageJsonLd from "../../../components/seo/PageJsonLd";
+import { webPageGraph } from "../../lib/verticalSeoSchema";
 
 const SEO = ({ childServices = [] }) => {
   return (
@@ -24,6 +26,19 @@ const SEO = ({ childServices = [] }) => {
           content="Looking for SEO services? Check out Infused Agency's search engine optimization services today."
         />
         <link rel="canonical" href="https://infused.agency/seo" />
+        <PageJsonLd
+          graph={webPageGraph({
+            url: "/seo",
+            name: "SEO Search Engine Optimization | Infused Agency",
+            pageType: "CollectionPage",
+            description:
+              "Looking for SEO services? Check out Infused Agency's search engine optimization services today.",
+            breadcrumbs: [
+              { name: "Home", href: "/" },
+              { name: "SEO", href: "/seo" },
+            ],
+          })}
+        />
       </Head>
       <Nav />
       <InnerHero

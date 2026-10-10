@@ -12,6 +12,8 @@ import about from "../img/about.jpeg";
 import leadGenImg from "../img/lead-generating-web-design-niagara.png";
 import webConvImg from "../img/website-conversion-optimization-niagara.png";
 import seoImg from "../img/search-engine-optimization-niagara.png";
+import PageJsonLd from "../../components/seo/PageJsonLd";
+import { aboutPageGraph } from "../lib/verticalSeoSchema";
 
 const About = () => {
   return (
@@ -23,6 +25,14 @@ const About = () => {
           content="Learn more about the core values, the hardworking team and how we accomplish your business goals at Infused."
         />
         <link rel="canonical" href="https://infused.agency/about" />
+        <PageJsonLd
+          graph={aboutPageGraph({
+            url: "/about",
+            name: "Infused Agency | About Our Company",
+            description:
+              "Learn more about the core values, the hardworking team and how we accomplish your business goals at Infused.",
+          })}
+        />
       </Head>
       <Nav />
       <InnerHero

@@ -16,6 +16,8 @@ import InnerHero from "../../components/innerHero/innerHero";
 import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
+import PageJsonLd from "../../components/seo/PageJsonLd";
+import { contactPageGraph } from "../lib/verticalSeoSchema";
 
 import { InlineWidget } from "react-calendly";
 
@@ -29,6 +31,14 @@ const Quote = () => {
           content="Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!"
         />
         <link rel="canonical" href="https://infused.agency/get-a-quote" />
+        <PageJsonLd
+          graph={contactPageGraph({
+            url: "/get-a-quote",
+            name: "Infused Agency | Get A Custom Quote",
+            description:
+              "Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!",
+          })}
+        />
       </Head>
       <Nav />
       <InnerHero

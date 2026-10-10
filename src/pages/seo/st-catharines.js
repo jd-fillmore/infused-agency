@@ -3,6 +3,7 @@ import { getLatestPosts } from "../../lib/posts";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import CitySeoJsonLd from "../../../components/seo/CitySeoJsonLd";
 import Nav from "../../../components/Nav/nav";
 import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
 import CTA from "../../../components/CTA/cta";
@@ -22,6 +23,7 @@ const SEO = ({ latestPosts }) => {
           content="SEO St. Catharines by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving St. Catharines, ON and the Niagara region. Free quote."
         />
         <link rel="canonical" href="https://infused.agency/seo/st-catharines" />
+        <CitySeoJsonLd city="St. Catharines" region="Niagara Region, Ontario" url="/seo/st-catharines" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

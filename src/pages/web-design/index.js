@@ -18,6 +18,8 @@ import growth from "../../img/lead-generating-websites-niagara.png";
 import funnel from "../../img/lead-gen-convert.jpg";
 import convert from "../../img/conversion-web.jpg";
 import fast from "../../img/design-fast.png";
+import PageJsonLd from "../../../components/seo/PageJsonLd";
+import { webPageGraph } from "../../lib/verticalSeoSchema";
 
 const WebDesign = ({ childServices = [] }) => {
   return (
@@ -32,6 +34,19 @@ const WebDesign = ({ childServices = [] }) => {
           content="Infused Agency offers lead-generating web design and development services for companies in St. Catharines, Grimsby, Niagara. Click here to get your free quote."
         />
         <link rel="canonical" href="https://infused.agency/web-design" />
+        <PageJsonLd
+          graph={webPageGraph({
+            url: "/web-design",
+            name: "Infused Web Design - Niagara, St. Catharines, Grimsby - Responsive Website Design",
+            pageType: "WebPage",
+            description:
+              "Infused Agency offers lead-generating web design and development services for companies in St. Catharines, Grimsby, Niagara. Click here to get your free quote.",
+            breadcrumbs: [
+              { name: "Home", href: "/" },
+              { name: "Web Design", href: "/web-design" },
+            ],
+          })}
+        />
       </Head>
       <Example />
       <InnerHero

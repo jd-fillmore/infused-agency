@@ -12,6 +12,8 @@ import Footer from "../../components/Footer/footer";
 import leadGenImg from "../../src/img/lead-generating-web-design-niagara.png";
 import webConvImg from "../../src/img/website-conversion-optimization-niagara.png";
 import seoImg from "../../src/img/search-engine-optimization-niagara.png";
+import PageJsonLd from "../../components/seo/PageJsonLd";
+import { webPageGraph } from "../lib/verticalSeoSchema";
 
 const GROUP_TITLES = [
   { title: "SEO", groups: ["seo"] },
@@ -33,6 +35,19 @@ const Services = ({ groups = [] }) => {
           content="Boost your business with our digital marketing, SEO and web design services today. Get a free quote!"
         />
         <link rel="canonical" href="https://infused.agency/services" />
+        <PageJsonLd
+          graph={webPageGraph({
+            url: "/services",
+            name: "Infused Agency | Online Marketing Solutions",
+            pageType: "CollectionPage",
+            description:
+              "Boost your business with our digital marketing, SEO and web design services today. Get a free quote!",
+            breadcrumbs: [
+              { name: "Home", href: "/" },
+              { name: "Services", href: "/services" },
+            ],
+          })}
+        />
       </Head>
       <Nav />
       <InnerHero

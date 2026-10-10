@@ -12,6 +12,8 @@ import InnerHero from "../../../components/innerHero/innerHero";
 import InnerContent from "../../../components/innerContent/innerContent";
 import CTA from "../../../components/CTA/cta";
 import Footer from "../../../components/Footer/footer";
+import PageJsonLd from "../../../components/seo/PageJsonLd";
+import { blogGraph } from "../../lib/verticalSeoSchema";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -21,6 +23,19 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title} | Infused Agency</title>
         <meta name="description" content={postData.excerpt} />
+        <link
+          rel="canonical"
+          href={`https://infused.agency/posts/${postData.id}`}
+        />
+        <PageJsonLd
+          graph={blogGraph({
+            url: `/posts/${postData.id}`,
+            headline: postData.title,
+            description: postData.excerpt,
+            datePublished: postData.date,
+            image: postData.image,
+          })}
+        />
       </Head>
       <Nav />
       <InnerHero

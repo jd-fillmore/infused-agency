@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import CitySeoJsonLd from "../../../components/seo/CitySeoJsonLd";
 import Nav from "../../../components/Nav/nav";
 import InnerHeroCities from "../../../components/innerHero/innerHeroCIties";
 import CTA from "../../../components/CTA/cta";
@@ -26,6 +27,7 @@ const SEO = ({ latestPosts }) => {
           rel="canonical"
           href="https://infused.agency/seo/niagara-on-the-lake"
         />
+        <CitySeoJsonLd city="Niagara-on-the-Lake" region="Niagara Region, Ontario" url="/seo/niagara-on-the-lake" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
