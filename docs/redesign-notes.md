@@ -121,6 +121,28 @@ Decisions / assumptions logged:
 - [x] `yarn lint` (pre-existing warnings only; new files clean), `yarn build`,
       `yarn verify:seo`, `yarn test:seo` (17 passed) all green.
 
+### Post-review adjustments (owner feedback, after R0–R3)
+- [x] **Console noise fixed.** Removed `autoprefixer` from `postcss.config.js`
+      (it was running over `bootstrap.min.css` and emitting the "replace
+      color-adjust" warnings every compile). Also fixed pre-existing invalid DOM
+      props in legacy `components/CTA/cta.js` (`class` → `className`,
+      `allowfullscreen` → `allowFullScreen`, `referrerpolicy` →
+      `referrerPolicy`) that flooded the dev console on legacy pages.
+- [x] **`@next/font` → `next/font`.** Migrated `_app.js` to built-in `next/font`
+      and removed the `@next/font` dependency (kills the "use built-in next/font"
+      warning). `autoprefixer` dependency removed too.
+- [x] **Font.** Serif display headings removed. Everything is now **Manrope**
+      (400/600/700) via `next/font`, wired to `--font-body` / `--font-display`.
+      Legacy SCSS font vars (`variables.scss` `$heading` / `$body`) updated to
+      Manrope; styleguide labels updated.
+- [x] **Accent colour.** Swapped the brand blue accent for a brand-adjacent
+      **violet** (`#8b5cf6`, hover `#a78bfa`, deep `#5b21b6`, glow + radial
+      atmospheres updated). Dark navy background kept.
+- [x] **Lead form removed.** The inline lead form is gone (owner: "just want a
+      button"). Homepage hero now shows a contact card and the final CTA buttons
+      both link to **`/get-a-quote`**. `components/Home/LeadForm.js` deleted;
+      the mailto workaround and its open-question entry are now stale.
+
 ## Discovery
 
 - Framework: Next.js **13.5.6**, **Pages Router** (`src/pages`), JS only, yarn.

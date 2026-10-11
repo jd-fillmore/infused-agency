@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
-import LeadForm from "../../components/Home/LeadForm";
 import {
   Container,
   Section,
@@ -294,17 +293,40 @@ const Home = () => {
               </ul>
             </div>
             <div>
-              <LeadForm formId="hero-lead" compact />
-              <p className="mt-3 text-xs text-muted">
-                No obligation. Prefer to talk? Call{" "}
-                <a
-                  href="tel:+19059333115"
-                  className="text-accent hover:text-accent-hover"
-                >
-                  (905) 933-3115
-                </a>
-                .
-              </p>
+              <Card glow className="lg:max-w-md">
+                <h2 className="font-display text-h3 font-bold text-ink">
+                  Start your project today
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-muted">
+                  Book a free, no-obligation consultation. Tell us where your
+                  business is today and where you want it to be, and we will
+                  show you the fastest way there.
+                </p>
+                <Button href="/get-a-quote" size="lg" className="mt-6 w-full">
+                  Get a free quote
+                  <Icon name="arrow-right" className="h-4 w-4" />
+                </Button>
+                <ul className="mt-6 space-y-3 border-t border-border pt-5">
+                  <li>
+                    <a
+                      href="tel:+19059333115"
+                      className="flex items-center gap-2 text-sm text-muted hover:text-accent"
+                    >
+                      <Icon name="phone" className="h-4 w-4 text-accent" />
+                      (905) 933-3115
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:info@infused.agency"
+                      className="flex items-center gap-2 text-sm text-muted hover:text-accent"
+                    >
+                      <Icon name="mail" className="h-4 w-4 text-accent" />
+                      info@infused.agency
+                    </a>
+                  </li>
+                </ul>
+              </Card>
             </div>
           </div>
         </Container>
@@ -667,10 +689,16 @@ const Home = () => {
           Tell us a little about your goals and we will get back to you to book
           a free consultation. No obligation, no jargon.
         </p>
-        <div className="mx-auto mt-8 max-w-xl text-left">
-          <LeadForm formId="footer-lead" />
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Button href="/get-a-quote" size="lg">
+            Get a free quote
+            <Icon name="arrow-right" className="h-4 w-4" />
+          </Button>
+          <Button href="/services" variant="secondary" size="lg">
+            Explore our services
+          </Button>
         </div>
-        <p className="mt-4 text-sm text-muted">
+        <p className="mt-6 text-sm text-muted">
           Prefer email?{" "}
           <a
             href="mailto:info@infused.agency"

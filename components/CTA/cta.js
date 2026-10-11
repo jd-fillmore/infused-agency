@@ -18,7 +18,7 @@ const CTA = () => {
                     fill="currentColor"
                     strokeWidth="0"
                     viewBox="0 0 512 512"
-                    class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
+                    className="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
                     height="20px"
                     width="20px"
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,9 +39,9 @@ const CTA = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.712155785956!2d-79.21034682429627!3d43.152573384666596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3507111975161%3A0x18a1198be6280a70!2s%F0%9F%9A%80%20Infused%20Agency%20%7C%20Niagara%20Web%20Design%20%26%20SEO%20Company!5e0!3m2!1sen!2sca!4v1725932520162!5m2!1sen!2sca"
                 width="100%"
                 height="450"
-                allowfullscreen=""
+                allowFullScreen
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <p>
                 <a

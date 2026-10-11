@@ -10,13 +10,13 @@ general design language only (redesign spec rule 1).
 
 | Role | Reference family | Licence | Our choice |
 | --- | --- | --- | --- |
-| Body / UI | Inter (300–800) | SIL Open Font License | Inter (400 / 500 / 700) |
-| Display / headings | Playfair Display (400–700) | SIL Open Font License | Playfair Display (500 / 700) |
+| Body / UI | Inter (300–800) | SIL Open Font License | Manrope (400 / 600 / 700) |
+| Display / headings | Playfair Display (400–700) | SIL Open Font License | Manrope (400 / 600 / 700) |
 
-Both families are open-licence Google Fonts, so per spec §R0.3 we use the same
-families. They are loaded through `next/font` (self-hosted, `font-display: swap`,
-no render-blocking third-party request). The reference uses three-plus weights
-per family; we cap at 3 weights total for the performance budget.
+We use a single modern sans (Manrope) for body and headings — the serif display
+family was dropped after owner review. Manrope is SIL OFL, loaded through
+`next/font` (built-in, self-hosted, `font-display: swap`, no render-blocking
+third-party request), capped at 3 weights for the performance budget.
 
 ## Colour palette (reference, for contrast calibration only)
 
@@ -54,12 +54,14 @@ per family; we cap at 3 weights total for the performance budget.
 ## Infused brand accent (our own, derived from the live site)
 
 The reference's blue/violet is deliberately not used. Infused's own brand colours
-are already defined in `src/pages/variables.scss`:
+are already defined in `src/pages/variables.scss`. After owner review of the first
+dark build, the accent was changed from the brand blue to a punchier brand-adjacent
+violet (updated October 2026):
 
-- Brand blue `#2b9ae1` (links, hover, accents)
-- Brand indigo `#363795` (gradients, deep accents)
-- Brand navy `#100a25` / `#120b2d` (backgrounds)
-- Brand gold `#e2c044` (stat highlights)
+- Accent violet `#8b5cf6` (links, buttons, accents); hover `#a78bfa`
+- Accent deep `#5b21b6` (gradients)
+- Brand navy `#100a25` / `#120b2d` (backgrounds) — kept
+- Brand gold `#e2c044` (stat highlights) — kept
 
 The logo image (`src/img/infused-logo.png`) could not be machine-read in this
 environment (no image input), so the accent is taken from the CSS brand tokens

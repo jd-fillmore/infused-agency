@@ -1,6 +1,6 @@
 import "../styles/tailwind.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Inter, Playfair_Display } from "@next/font/google";
+import { Manrope } from "next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -42,29 +42,16 @@ import "../../components/GoogleReviews/google-reviews.scss";
 import "../../components/verticalSeo/vertical-seo.scss";
 import Script from "next/script";
 
-// export const playfairFont = Playfair_Display({
-//   subsets: ["latin"],
-//   display: "swap",
-//   weight: "400",
-// });
-
-export const inter = Inter({
+export const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "600", "700"],
   display: "swap",
-  variable: "--font-inter",
-});
-
-export const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["700"],
-  display: "swap",
-  variable: "--font-playfair",
+  variable: "--font-manrope",
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${inter.variable} ${playfair.variable} font-body`}>
+    <div className={`${manrope.variable} font-body`}>
       <Script
         strategy="afterInteractive"
         src="https://googletagmanager.com/gtag/js?id=G-9R67WGJ9RB"

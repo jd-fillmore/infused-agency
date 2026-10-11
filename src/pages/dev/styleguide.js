@@ -91,7 +91,7 @@ export default function Styleguide() {
         <Section heading="Typography" headingAs="h2">
           <div className="space-y-4">
             <p className="text-display font-display font-bold text-ink">
-              Display — Playfair Display
+              Display — Manrope
             </p>
             <h2 className="text-h1 font-display font-bold text-ink">
               Heading 1 — fluid clamp
@@ -103,10 +103,10 @@ export default function Styleguide() {
               Heading 3 — fluid clamp
             </h4>
             <p className="text-lead text-muted">
-              Lead paragraph in Inter at the fluid lead size.
+              Lead paragraph in Manrope at the fluid lead size.
             </p>
             <p className="text-ink">
-              Body copy in Inter. Accent{" "}
+              Body copy in Manrope. Accent{" "}
               <span className="text-accent">links use the brand blue</span> and
               muted text sits a step softer.
             </p>
