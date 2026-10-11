@@ -165,6 +165,25 @@ Decisions / assumptions logged:
       - Verified: `yarn build` (172 pages), `verify:seo` 0/0, schema 0, lint
         clean for changed files; compiled CSS contains `!important` utilities
         and `bg-surface/98` → `#120b2dfa` (nav panels render opaque backdrop).
+- [x] **Palette → dark grey/black + cyan.** Owner: "dark grey / black kinda
+      feel with colour accents … don't use my purple anymore". Supersedes the
+      violet entries above. New tokens (`src/styles/tailwind.css` `@theme`):
+      base `#0a0a0b`, surface `#101012`, card `#161618`, elevated `#1c1c1f`,
+      muted `#a1a1aa`, accent **cyan** `#22d3ee` (hover `#67e8f9`, deep
+      `#0891b2`, contrast `#082834`), gold kept. Glow + radial atmospheres and
+      `_document.js` `theme-color` updated (`#0a0a0b`); `rescue.css` body → grey.
+- [x] **Logo → text wordmark.** `components/Nav/nav.js` drops the logo image
+      and renders **`infused.`** (lowercase Manrope bold, cyan full stop) at
+      top-left; footer brand block matches.
+- [x] **Affiliate/footer imagery → text.** Homepage "Recognised and affiliated"
+      badges and the footer `awards.png` (both blurry upscales) were replaced
+      with text chips / a text line (Google Partner, Three Best Rated,
+      GoodFirms, DesignRush, …). `feat-*` client logos kept.
+- [x] **Headings restyled.** Hero H1 (and final CTA) get a cyan→ice→white
+      gradient on key words (`text-gradient` utility, `#gradient-accent` token;
+      rescue.css mirrors it so the legacy `span` reset can't kill it). Section
+      headings get `tracking-[-0.02em]` + `leading-[1.12]`; eyebrows get a 6px
+      accent dash before the label.
 
 ## Discovery
 

@@ -51,17 +51,27 @@ third-party request), capped at 3 weights for the performance budget.
 - Our final tokens (see `docs/redesign-notes.md`) keep body text ≥ 7:1 and muted
   text ≥ 4.5:1 against the page background.
 
-## Infused brand accent (our own, derived from the live site)
+## Infused brand accent (our own, owned by the current owner)
 
-The reference's blue/violet is deliberately not used. Infused's own brand colours
-are already defined in `src/pages/variables.scss`. After owner review of the first
-dark build, the accent was changed from the brand blue to a punchier brand-adjacent
-violet (updated October 2026):
+After owner review of the first dark builds the accent moved through brand blue
+and violet, then settled on a dark grey/black base with a single **cyan/teal**
+accent (updated October 2026). Owner: "dark grey / black kinda feel with colour
+accents … don't use my purple anymore".
 
-- Accent violet `#8b5cf6` (links, buttons, accents); hover `#a78bfa`
-- Accent deep `#5b21b6` (gradients)
-- Brand navy `#100a25` / `#120b2d` (backgrounds) — kept
-- Brand gold `#e2c044` (stat highlights) — kept
+- Accent cyan `#22d3ee` (links, buttons, accents, eye-dash); hover `#67e8f9`
+- Accent deep `#0891b2` (top bar, gradients)
+- Accent contrast `#082834` (text on accent fills)
+- Signature text gradient `#22d3ee → #a5f3fc → #ffffff` (hero + CTA spans)
+- Backgrounds: near-black `#0a0a0b` / `#101012` / `#161618` (base / surface /
+  card)
+- Muted text `#a1a1aa`; brand gold `#e2c044` (stat highlights) — kept
+- Headings: tight tracking (`-0.02em` to `-0.03em`) and ~1.04–1.12 line-height;
+  eyebrows get a 6px accent dash
+- Wordmark: **`infused.`** — text only (logo image removed), lowercase Manrope
+  bold with a cyan full stop; placed top-left in the nav and in the footer
+- Logo disagreement images (affiliate badges, footer awards) were replaced with
+  text chips / a text line to avoid blurry upscales; `theme-color` is now
+  `#0a0a0b`
 
 The logo image (`src/img/infused-logo.png`) could not be machine-read in this
 environment (no image input), so the accent is taken from the CSS brand tokens

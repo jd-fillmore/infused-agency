@@ -21,12 +21,6 @@ import { GROUPS, INDUSTRIES, DESCRIPTIONS } from "../../components/Nav/navData";
 import { HOME_FAQS } from "../lib/homeFaqs";
 import { homeGraph } from "../lib/verticalSeoSchema";
 
-import affiliate1 from "../../src/img/aff-google-partner.jpg";
-import affiliate2 from "../../src/img/aff-niagara-chamber.jpg";
-import affiliate3 from "../../src/img/aff-three-best-rated.jpg";
-import affiliate4 from "../../src/img/aff-good-firms.jpg";
-import affiliate5 from "../../src/img/aff-design-rush.png";
-import affiliate6 from "../../src/img/aff-google-reviews.jpg";
 import feat1 from "../../src/img/feat-suk-law.png";
 import feat2 from "../../src/img/feat-flat-rock.png";
 import feat3 from "../../src/img/feat-fred.png";
@@ -195,12 +189,12 @@ const CITIES = [
 ];
 
 const AFFILIATES = [
-  { src: affiliate1, alt: "Google Partner" },
-  { src: affiliate2, alt: "Niagara Chamber of Commerce" },
-  { src: affiliate3, alt: "Three Best Rated" },
-  { src: affiliate4, alt: "GoodFirms" },
-  { src: affiliate5, alt: "DesignRush SEO agency listing" },
-  { src: affiliate6, alt: "Google Reviews" },
+  "Google Partner",
+  "Niagara Chamber of Commerce",
+  "Three Best Rated",
+  "GoodFirms",
+  "DesignRush",
+  "Google Reviews",
 ];
 
 const CLIENT_LOGOS = [
@@ -266,8 +260,9 @@ const Home = () => {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <Badge>Niagara SEO &amp; AI Search</Badge>
-              <h1 className="mt-5 text-balance font-display text-display font-bold text-ink">
-                Niagara SEO and AI SEO Services
+              <h1 className="mt-5 max-w-3xl text-balance font-display text-display font-bold leading-[1.04] tracking-[-0.03em] text-ink">
+                Niagara SEO and{" "}
+                <span className="text-gradient">AI SEO Services</span>
               </h1>
               <p className="mt-5 text-lead text-muted">
                 Infused Agency helps Niagara businesses rank on Google and get
@@ -338,18 +333,12 @@ const Home = () => {
           <p className="mb-6 text-center text-xs font-semibold uppercase tracking-[0.18em] text-muted">
             Recognised and affiliated
           </p>
-          <ul className="grid grid-cols-2 items-center gap-6 sm:grid-cols-3 lg:grid-cols-6">
-            {AFFILIATES.map((item) => (
-              <li key={item.alt} className="flex justify-center">
-                <div className="relative h-12 w-32">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="128px"
-                    className="object-contain opacity-80"
-                  />
-                </div>
+          <ul className="grid grid-cols-2 items-center gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {AFFILIATES.map((name) => (
+              <li key={name} className="flex justify-center">
+                <span className="inline-flex items-center rounded-full border border-border bg-white/[0.03] px-4 py-1.5 text-xs font-medium text-muted">
+                  {name}
+                </span>
               </li>
             ))}
           </ul>
@@ -683,8 +672,9 @@ const Home = () => {
       </Section>
 
       <Section id="contact" align="center">
-        <h2 className="text-balance font-display text-h2 font-bold text-ink">
-          Ready to grow your business?
+        <h2 className="text-balance font-display text-h2 font-bold leading-[1.12] tracking-[-0.02em] text-ink">
+          Ready to grow your{" "}
+          <span className="text-gradient">business?</span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lead text-muted">
           Tell us a little about your goals and we will get back to you to book

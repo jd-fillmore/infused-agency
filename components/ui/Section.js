@@ -30,14 +30,15 @@ export default function Section({
             )}
           >
             {eyebrow && (
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+              <p className="mb-3 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                <span aria-hidden="true" className="h-px w-6 bg-accent" />
                 {eyebrow}
               </p>
             )}
             {heading && (
               <HeadingTag
                 id={headingId}
-                className="text-balance font-display text-h2 font-bold text-ink"
+                className="text-balance font-display text-h2 font-bold leading-[1.12] tracking-[-0.02em] text-ink"
               >
                 {heading}
               </HeadingTag>

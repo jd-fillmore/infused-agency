@@ -5,21 +5,29 @@
 @source "../../data";
 
 @theme {
-  /* Colours — dark-only theme, accent derived from Infused's own brand. */
-  --color-base: #100a25;
-  --color-surface: #120b2d;
-  --color-card: #170f36;
-  --color-elevated: #1c1340;
+  /* Colours — dark grey/black base, single cyan accent. */
+  --color-base: #0a0a0b;
+  --color-surface: #101012;
+  --color-card: #161618;
+  --color-elevated: #1c1c1f;
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-strong: rgba(255, 255, 255, 0.16);
   --color-ink: #f5f5f5;
-  --color-muted: #a9a3c2;
-  --color-accent: #8b5cf6;
-  --color-accent-hover: #a78bfa;
-  --color-accent-deep: #5b21b6;
-  --color-accent-contrast: #ffffff;
+  --color-muted: #a1a1aa;
+  --color-accent: #22d3ee;
+  --color-accent-hover: #67e8f9;
+  --color-accent-deep: #0891b2;
+  --color-accent-contrast: #082834;
   --color-gold: #e2c044;
   --color-success: #1b8e47;
+
+  /* Signature text gradient (cyan → ice → white) */
+  --gradient-accent: linear-gradient(
+    100deg,
+    #22d3ee 0%,
+    #a5f3fc 45%,
+    #ffffff 100%
+  );
 
   /* Fluid type scale (clamp) */
   --text-display: clamp(2.5rem, 1.9rem + 2.8vw, 4rem);
@@ -43,7 +51,7 @@
   /* Shadow + glow */
   --shadow-card: inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
     0 12px 30px -12px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 28px -2px rgba(139, 92, 246, 0.55);
+  --shadow-glow: 0 0 28px -2px rgba(34, 211, 238, 0.5);
 
   /* Container widths */
   --container-content: 80rem;
@@ -100,7 +108,7 @@
 @utility glow-radial {
   background-image: radial-gradient(
     60% 60% at 50% 0%,
-    rgba(139, 92, 246, 0.22),
+    rgba(34, 211, 238, 0.16),
     transparent 70%
   );
 }
@@ -108,14 +116,22 @@
 @utility glow-radial-deep {
   background-image: radial-gradient(
       50% 55% at 85% 10%,
-      rgba(91, 33, 182, 0.35),
+      rgba(8, 145, 178, 0.28),
       transparent 70%
     ),
     radial-gradient(
       45% 50% at 10% 0%,
-      rgba(139, 92, 246, 0.2),
+      rgba(34, 211, 238, 0.12),
       transparent 70%
     );
+}
+
+/* Signature gradient text (clip applied via text-gradient helper). */
+@utility text-gradient {
+  background-image: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Thin gradient border on featured cards. */

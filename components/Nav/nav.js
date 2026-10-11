@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../src/img/niagara-web-design-infused-logo.webp";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import Icon from "../ui/Icon";
@@ -51,16 +49,10 @@ export default function Nav() {
           <Link
             href="/"
             aria-label="Infused Agency home"
-            className="flex items-center"
+            className="flex items-baseline font-display text-2xl font-bold tracking-tight text-ink transition-opacity hover:opacity-80"
           >
-            <Image
-              src={logo}
-              alt="Infused Agency"
-              width={200}
-              height={58}
-              priority
-              className="h-9 w-auto"
-            />
+            infused
+            <span className="text-accent">.</span>
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">

@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
-import awards from "../../src/img/awards.png";
 import Container from "../ui/Container";
 import Icon from "../ui/Icon";
 import { GROUPS, INDUSTRIES } from "../Nav/navData";
@@ -68,9 +66,10 @@ export default function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <Link href="/" className="flex items-center" aria-label="Infused Agency home">
-              <span className="font-display text-2xl font-bold text-ink">
-                Infused Agency
+            <Link href="/" className="flex items-baseline" aria-label="Infused Agency home">
+              <span className="font-display text-2xl font-bold tracking-tight text-ink">
+                infused
+                <span className="text-accent">.</span>
               </span>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
@@ -95,11 +94,10 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <Image
-              className="mt-6 h-auto w-40"
-              src={awards}
-              alt="Infused Agency awards and affiliations"
-            />
+            <p className="mt-6 max-w-xs text-xs leading-relaxed text-muted">
+              Recognised at: Google Partner · Three Best Rated · GoodFirms ·
+              DesignRush
+            </p>
           </div>
 
           <div className="lg:col-span-3">

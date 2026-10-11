@@ -16,7 +16,7 @@
  */
 
 body {
-  background-color: #100a25 !important;
+  background-color: #0a0a0b !important;
 }
 
 header a,
@@ -89,4 +89,14 @@ header span,
 footer span,
 .redesign-root span {
   background-image: none !important;
+}
+
+/* Except the signature gradient wordmark spans on redesigned pages. */
+header .text-gradient,
+footer .text-gradient,
+.redesign-root .text-gradient {
+  background-image: var(--gradient-accent) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
 }
