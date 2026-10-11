@@ -142,6 +142,29 @@ Decisions / assumptions logged:
       button"). Homepage hero now shows a contact card and the final CTA buttons
       both link to **`/get-a-quote`**. `components/Home/LeadForm.js` deleted;
       the mailto workaround and its open-question entry are now stale.
+- [x] **Cascade rescue (the big one).** The legacy global sheet (bootstrap +
+      `src/pages/*.scss`) is *unlayered*, and per CSS Cascade Layers unlayered
+      rules beat every layered Tailwind utility — for `!important` rules an
+      unlayered declaration beats ANY layered one regardless of specificity. So
+      legacy `button { padding:15px 50px; background:#2b9ae1!important; font-size:
+      20px!important }`, `h1–h6 { color:#2b3a52!important; letter-spacing:
+      -0.065em }` and the `span` highlight gradient were demolishing the new
+      homepage and nav (grey body bg, blue hamburger, tight/blue headings,
+      underline smudges) → "design looks terrible, menus all broken".
+      Fixed with two changes:
+      - `@import "tailwindcss" important;` in `src/styles/tailwind.css` — every
+        utility ships `!important`, so utilities defeat legacy **normal**
+        declarations everywhere.
+      - New unlayered **`src/styles/rescue.css`** imported LAST in `_app.js`,
+        scoped to `.redesign-root` (added to the homepage `<main>`) and
+        `header`/`footer`. Unlayered + `!important` + same-origin → wins the
+        few properties legacy *forced* (`!important`): heading colour/size at
+        `≤992px`, `span` gradient, `header button` pill chrome, `body`
+        background. Legacy pages keep their global styles (rescue is scoped); a
+        couple inherit the navy `body` background for free.
+      - Verified: `yarn build` (172 pages), `verify:seo` 0/0, schema 0, lint
+        clean for changed files; compiled CSS contains `!important` utilities
+        and `bg-surface/98` → `#120b2dfa` (nav panels render opaque backdrop).
 
 ## Discovery
 

@@ -40,6 +40,7 @@ import "../../components/Home/Process/process.scss";
 import "../../components/websiteFAQ/website-faq.scss";
 import "../../components/GoogleReviews/google-reviews.scss";
 import "../../components/verticalSeo/vertical-seo.scss";
+import "../styles/rescue.css";
 import Script from "next/script";
 
 export const manrope = Manrope({

@@ -256,7 +256,8 @@ const Home = () => {
 
       <Nav />
 
-      <section className="relative overflow-hidden pt-12 pb-16 sm:pt-16 sm:pb-20">
+      <main className="redesign-root">
+        <section className="relative overflow-hidden pt-12 pb-16 sm:pt-16 sm:pb-20">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 glow-radial opacity-70"
@@ -715,6 +716,7 @@ const Home = () => {
           </a>
         </p>
       </Section>
+      </main>
 
       <Footer />
     </>

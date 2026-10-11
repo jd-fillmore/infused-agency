@@ -1,0 +1,92 @@
+/* Redesign rescue sheet — must be imported LAST.
+ *
+ * The legacy global stylesheet (bootstrap.min.css + src/pages/*.scss) is
+ * UNLAYERED, so in a normal cascade it beats every Tailwind utility (which
+ * lives in layers), and for !important declarations an unlayered rule beats
+ * *any* layered rule regardless of specificity.
+ *
+ * These rules are themselves unlayered and load after all legacy CSS:
+ *  - They beat legacy NORMAL declarations via !important (importance wins).
+ *  - They beat legacy !important declarations by source order where
+ *    specificity ties (e.g. `a:hover` vs `header a:hover`) or by specificity.
+ *  - They are scoped to the redesigned pages (.redesign-root) and the shared
+ *    chrome (header/footer), so legacy pages keep their global styles, and
+ *    they only set the handful of properties the legacy sheet forced, leaving
+ *    Tailwind utilities on those elements untouched.
+ */
+
+body {
+  background-color: #100a25 !important;
+}
+
+header a,
+footer a,
+.redesign-root a {
+  text-decoration: none !important;
+}
+
+header a:hover,
+header a:focus,
+footer a:hover,
+footer a:focus,
+.redesign-root a:hover,
+.redesign-root a:focus {
+  border-bottom: 0 !important;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+.redesign-root h1,
+.redesign-root h2,
+.redesign-root h3 {
+  color: var(--color-ink) !important;
+  letter-spacing: normal !important;
+}
+
+/* The legacy sheet forces h1-h3 sizes to 30/28/24px on viewports <= 992px
+   (bp-tablet-sm). Those breaks the redesign's fluid scale, so reassert the
+   design tokens at the same breakpoint. */
+@media only screen and (max-width: 62em) {
+  .redesign-root h1 {
+    font-size: var(--text-h1) !important;
+  }
+
+  .redesign-root h2 {
+    font-size: var(--text-h2) !important;
+  }
+
+  .redesign-root h3 {
+    font-size: var(--text-h3) !important;
+  }
+}
+
+/* Legacy button.scss turns every <button> into a blue pill with heavy
+   padding. Only the nav mobile toggle is a real <button> in the redesign. */
+header button,
+footer button,
+.redesign-root button {
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  box-shadow: none !important;
+}
+
+/* Legacy general.scss gives every <span> an underline-highlight gradient. */
+header span,
+footer span,
+.redesign-root span {
+  background-image: none !important;
+}
