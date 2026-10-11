@@ -1,6 +1,7 @@
 export { cn } from "./cn";
 export { default as Container } from "./Container";
 export { default as Section } from "./Section";
+export { default as PageHero } from "./PageHero";
 export { default as Button } from "./Button";
 export { default as Badge } from "./Badge";
 export { default as Card } from "./Card";

@@ -1,25 +1,294 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Container, Row, Col } from "reactstrap";
-import Image from "next/image";
 import Nav from "../../components/Nav/nav";
-import InnerHero from "../../components/innerHero/innerHero";
+import PageHero from "../../components/ui/PageHero";
+import Section from "../../components/ui/Section";
+import Card from "../../components/ui/Card";
+import Icon from "../../components/ui/Icon";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-import bgImage from "../img/inner-work.jpg";
 
-import visca from "../img/portfolio-visca.png";
-import cass from "../img/portfolio-cass.png";
-import flat from "../img/portfolio-flat.png";
-import kd from "../img/portfolio-kd.png";
-import cma from "../img/portfolio-cma.png";
-import med from "../img/portfolio-med.png";
-import jerry from "../img/portfolio-jerrys.png";
-import prem from "../img/portfolio-prem.png";
-import ggs from "../img/portfolio-ggs.png";
-import plant from "../img/portfolio-plant.png";
-import donor from "../img/portfolio-donor.png";
+const LINK = "text-accent hover:text-accent-hover";
+
+const PROJECTS = [
+  {
+    name: "Flat Rock Cellars",
+    description:
+      "Flat Rock Cellars is an award-winning winery based in Jordan, Ontario. They offer Pinot Noir, Chardonnay, Riesling and Sparkling wines grown on the Twenty Mile Bench.",
+    services: [
+      "On-Page SEO Optimization",
+      "Off-Page SEO Optimization",
+      "Local SEO",
+    ],
+    results: [
+      "Google Search Visibility Increased by 300%",
+      "Achieved first-page Google rankings within 1 month",
+      "Page 1 Google Map Rankings for Multiple Keywords",
+      "Page 1 Google Rankings for Multiple Keywords",
+      "Increased Brand Visibility",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+    ],
+  },
+  {
+    name: "KD Flowers",
+    description:
+      "KD Flowers is a small, boutique wedding florist in the Niagara Region. They provide custom, gorgeous wedding flower bouqets and more to brides, grooms and alike.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Off-Page SEO Optimization",
+      "Local SEO",
+      "Responsive & Mobile-Friendly",
+      "Portfolio Photo Gallery",
+      "Lead Forms",
+      "Website Animations",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 100%",
+      "Google Search Visibility Increased by 600%",
+      "Achieved first-page Google rankings within 3 months",
+      "0 leads to massive growth in local leads from Google",
+      "Page 1 Google Map Rankings for Multiple Keywords",
+      "Page 1 Google Rankings for Multiple Keywords",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "Jerry's Insulating",
+    description:
+      "Jerry's Insulating is a family owned and operated full service insulation contractor. Jerry’s Insulating Co. was established in 1975. Their service area includes the Niagara Region, Hamilton/Burlington.",
+    services: [
+      "Custom Website Redesign",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Responsive & Mobile-Friendly",
+      "Portfolio Photo Gallery",
+      "Lead Forms",
+      "Website Animations",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Page 1 Google Rankings",
+      "Website Page Speed Increased By 90%",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "Premium Delivery",
+    description:
+      "Premium Delivery is a call-to-order grocery, food, and drink delivery service. They serve Fort Erie proper, Stevensville, Crystal Beach, and Ridgeway.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Off-Page SEO Optimization",
+      "Local SEO",
+      "Responsive & Mobile-Friendly",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 95%",
+      "Google Search Visibility Increased by 200%",
+      "Page 1 Google Map Rankings for Multiple Keywords",
+      "Page 1 Google Rankings for Multiple Keywords",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+    ],
+  },
+  {
+    name: "VISCA electric",
+    description:
+      "VISCA electric is a premier electrician in Niagara. They offer residential and commercial electrician services at a great price point.",
+    services: [
+      "Custom Website Redesign",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Responsive & Mobile-Friendly",
+      "Portfolio Photo Gallery",
+      "Lead Forms",
+      "Website Animations",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 70%",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "Lincoln Medical Centre",
+    description:
+      "Lincoln Medical Centre is comprised of a team of family physicians, nurses and support staff that work together to ensure that excellent quality patient care is provided in a respectful and compassionate environment.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Off-Page SEO Optimization",
+      "Local SEO",
+      "Responsive & Mobile-Friendly",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 85%",
+      "Google Search Visibility Increased by 90%",
+      "Page 1 Google Map Rankings for Multiple Keywords",
+      "Page 1 Google Rankings for Multiple Keywords",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+    ],
+  },
+  {
+    name: "Cass-A-Bella Construction",
+    description:
+      "Cass-A-Bella Construction is a custom home builder based in Toronto, serving areas beyond including Niagara. Specializing in beautiful custom homes and additions.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Off-Page SEO Optimization",
+      "Local SEO",
+      "Responsive & Mobile-Friendly",
+      "Portfolio Photo Gallery",
+      "Lead Forms",
+      "Website Animations",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 90%",
+      "Google Search Visibility Increased by 200%",
+      "Page 1 Google Map Rankings for Multiple Keywords",
+      "Page 1 Google Rankings for Multiple Keywords",
+      "Leads Increased From 2 to 10 per month in 3 months",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "Canadian Mortgage Authority",
+    description:
+      "The Canadian Mortgage Authority is a team of premier, local mortgage brokers that serve the Niagara region and beyond.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "WordPress Website Development",
+      "On-Page SEO Optimization",
+      "Off-Page SEO Optimization",
+      "Local SEO",
+      "Responsive & Mobile-Friendly",
+      "Blog Functionality",
+      "Lead Forms",
+      "Website Animations",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 75%",
+      "Google Search Visibility Increased by 150%",
+      "Page 1 Google Map Rankings for Multiple Keywords",
+      "Page 1 Google Rankings for Multiple Keywords",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "GGS Niagara Landscaping",
+    description:
+      "GGS Niagara Landscaping Inc. offers full service landscape maintenance and garden design in the Niagara region.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Responsive & Mobile-Friendly",
+      "Lead Forms",
+      "Website Animations",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 85%",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "Plant No.01",
+    description:
+      "Plant No.01 is a vegan food factory located in the Niagara region providing entrees, baked goods and non-dairy cheeses using sustainable practices.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "On-Page SEO Optimization",
+      "Responsive & Mobile-Friendly",
+      "Lead Forms",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 100%",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+  {
+    name: "Donor Compass",
+    description:
+      "They are the leaders in data-driven relationship building. Donor Compass has partnered with over 250 nonprofits across North America to foster meaningful relationships with their top donors.",
+    services: [
+      "Custom Web Design",
+      "Custom Website Development",
+      "WordPress Website Development",
+      "On-Page SEO Optimization",
+      "Responsive & Mobile-Friendly",
+      "Lead Forms",
+      "Blog",
+      "Web Hosting & Ongoing Maintenance",
+    ],
+    results: [
+      "Website Page Speed Increased By 75%",
+      "30% increase in lead collection",
+      "Increased User Experience",
+      "Increased Engagement and Conversions",
+      "Increased Brand Recognition",
+      "Faster Load Times",
+      "Streamlined collection of leads",
+    ],
+  },
+];
+
+const CheckItem = ({ children }) => (
+  <li className="flex items-start gap-3 text-sm leading-relaxed text-muted">
+    <Icon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+    <span>{children}</span>
+  </li>
+);
 
 const OurWork = () => {
   return (
@@ -33,528 +302,63 @@ const OurWork = () => {
         <link rel="canonical" href="https://infused.agency/work" />
       </Head>
       <Nav />
-      <InnerHero
-        title="Featured Work"
-        description="Our business solutions grow our client's businesses."
-        bgImage={bgImage}
-      />
+      <main className="redesign-root">
+        <PageHero
+          title="Featured Work"
+          description="Our business solutions grow our client's businesses."
+          breadcrumbs={[{ name: "Home", href: "/" }, { name: "Work" }]}
+        />
 
-      <section className="work">
-        <section className="light">
-          <Container>
-            <Row className="pd-btm-40">
-              <Col lg="12">
-                <p>
-                  At Infused Agency, we don’t just design websites – we create
-                  powerful online solutions that help businesses grow. From
-                  boosting search engine rankings with expert{" "}
-                  <Link href="/">Niagara SEO</Link> strategies to crafting
-                  stunning, lead-generating web designs, our work speaks for
-                  itself. Explore our featured projects to see how we've helped
-                  our clients achieve real results, increase visibility, and
-                  drive more customers to their businesses. Let our success
-                  stories inspire your next project.
-                </p>
-              </Col>
-            </Row>
-          </Container>
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Flat Rock Cellars</h2>
-                <hr />
-                <p>
-                  Flat Rock Cellars is an award-winning winery based in Jordan,
-                  Ontario. They offer Pinot Noir, Chardonnay, Riesling and
-                  Sparkling wines grown on the Twenty Mile Bench.
-                </p>
-                <ul>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Off-Page SEO Optimization</li>
-                  <li>Local SEO</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Google Search Visibility Increased by 300%</li>
-                    <li>Achieved first-page Google rankings within 1 month</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased Brand Visibility</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={flat}
-                  alt="flatrock cellars"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="dark">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>KD Flowers</h2>
-                <hr />
-                <p>
-                  KD Flowers is a small, boutique wedding florist in the Niagara
-                  Region. They provide custom, gorgeous wedding flower bouqets
-                  and more to brides, grooms and alike.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Off-Page SEO Optimization</li>
-                  <li>Local SEO</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Portfolio Photo Gallery</li>
-                  <li>Lead Forms</li>
-                  <li>Website Animations</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 100%</li>
-                    <li>Google Search Visibility Increased by 600%</li>
-                    <li>Achieved first-page Google rankings within 3 months</li>
-                    <li>
-                      0 leads to massive growth in local leads from Google
-                    </li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image className="img-fluid" src={kd} alt="kd flowers" />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="light">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Jerry's Insulating</h2>
-                <hr />
-                <p>
-                  Jerry's Insulating is a family owned and operated full service
-                  insulation contractor. Jerry’s Insulating Co. was established
-                  in 1975. Their service area includes the Niagara Region,
-                  Hamilton/Burlington.
-                </p>
-                <ul>
-                  <li>Custom Website Redesign</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Portfolio Photo Gallery</li>
-                  <li>Lead Forms</li>
-                  <li>Website Animations</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Page 1 Google Rankings</li>
-                    <li>Website Page Speed Increased By 90%</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={jerry}
-                  alt="jerrys insulating"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="dark">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Premium Delivery</h2>
-                <hr />
-                <p>
-                  Premium Delivery is a call-to-order grocery, food, and drink
-                  delivery service. They serve Fort Erie proper, Stevensville,
-                  Crystal Beach, and Ridgeway.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Off-Page SEO Optimization</li>
-                  <li>Local SEO</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 95%</li>
-                    <li>Google Search Visibility Increased by 200%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={prem}
-                  alt="premium delivery"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
+        <Section>
+          <p className="max-w-3xl text-base leading-relaxed text-muted">
+            At Infused Agency, we don’t just design websites – we create
+            powerful online solutions that help businesses grow. From boosting
+            search engine rankings with expert{" "}
+            <Link className={LINK} href="/">
+              Niagara SEO
+            </Link>{" "}
+            strategies to crafting stunning, lead-generating web designs, our
+            work speaks for itself. Explore our featured projects to see how
+            we&rsquo;ve helped our clients achieve real results, increase
+            visibility, and drive more customers to their businesses. Let our
+            success stories inspire your next project.
+          </p>
+        </Section>
 
-        <section className="light">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>VISCA electric</h2>
-                <hr />
-                <p>
-                  VISCA electric is a premier electrician in Niagara. They offer
-                  residential and commercial electrician services at a great
-                  price point.
+        {PROJECTS.map((project) => (
+          <Section key={project.name}>
+            <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+              <div>
+                <h2 className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+                  Recent Project
+                </h2>
+                <h2 className="mt-3 font-display text-h2 font-bold leading-[1.12] tracking-[-0.02em] text-ink">
+                  {project.name}
+                </h2>
+                <hr className="mt-6 border-0 border-t border-border" />
+                <p className="mt-5 text-base leading-relaxed text-muted">
+                  {project.description}
                 </p>
-                <ul>
-                  <li>Custom Website Redesign</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Portfolio Photo Gallery</li>
-                  <li>Lead Forms</li>
-                  <li>Website Animations</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+                <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+                  {project.services.map((service) => (
+                    <CheckItem key={service}>{service}</CheckItem>
+                  ))}
                 </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 70%</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={visca}
-                  alt="visca electric web design"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="dark">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Lincoln Medical Centre</h2>
-                <hr />
-                <p>
-                  Lincoln Medical Centre is comprised of a team of family
-                  physicians, nurses and support staff that work together to
-                  ensure that excellent quality patient care is provided in a
-                  respectful and compassionate environment.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Off-Page SEO Optimization</li>
-                  <li>Local SEO</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
+              </div>
+              <Card className="h-fit">
+                <h3 className="font-display text-lg font-bold text-ink">
+                  After working with us:
+                </h3>
+                <ul className="mt-4 space-y-2.5">
+                  {project.results.map((result) => (
+                    <CheckItem key={result}>{result}</CheckItem>
+                  ))}
                 </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 85%</li>
-                    <li>Google Search Visibility Increased by 90%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={med}
-                  alt="lincoln medical centre"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="light">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Cass-A-Bella Construction</h2>
-                <hr />
-                <p>
-                  Cass-A-Bella Construction is a custom home builder based in
-                  Toronto, serving areas beyond including Niagara. Specializing
-                  in beautiful custom homes and additions.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Off-Page SEO Optimization</li>
-                  <li>Local SEO</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Portfolio Photo Gallery</li>
-                  <li>Lead Forms</li>
-                  <li>Website Animations</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 90%</li>
-                    <li>Google Search Visibility Increased by 200%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Leads Increased From 2 to 10 per month in 3 months</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={cass}
-                  alt="cass-a-bella web design"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="dark">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Canadian Mortgage Authority</h2>
-                <hr />
-                <p>
-                  The Canadian Mortgage Authority is a team of premier, local
-                  mortgage brokers that serve the Niagara region and beyond.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>WordPress Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Off-Page SEO Optimization</li>
-                  <li>Local SEO</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Blog Functionality</li>
-                  <li>Lead Forms</li>
-                  <li>Website Animations</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 75%</li>
-                    <li>Google Search Visibility Increased by 150%</li>
-                    <li>Page 1 Google Map Rankings for Multiple Keywords</li>
-                    <li>Page 1 Google Rankings for Multiple Keywords</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image className="img-fluid" src={cma} alt="cma web design" />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="light">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>GGS Niagara Landscaping</h2>
-                <hr />
-                <p>
-                  GGS Niagara Landscaping Inc. offers full service landscape
-                  maintenance and garden design in the Niagara region.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Lead Forms</li>
-                  <li>Website Animations</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 85%</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={ggs}
-                  alt="ggs niagara landscaping web design"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="dark">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Plant No.01</h2>
-                <hr />
-                <p>
-                  Plant No.01 is a vegan food factory located in the Niagara
-                  region providing entrees, baked goods and non-dairy cheeses
-                  using sustainable practices.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Lead Forms</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 100%</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={plant}
-                  alt="plant no.01 web design"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className="light">
-          <Container>
-            <Row>
-              <Col lg="5">
-                <h2 className="title">Recent Project</h2>
-                <h2>Donor Compass</h2>
-                <hr />
-                <p>
-                  They are the leaders in data-driven relationship building.
-                  Donor Compass has partnered with over 250 nonprofits across
-                  North America to foster meaningful relationships with their
-                  top donors.
-                </p>
-                <ul>
-                  <li>Custom Web Design</li>
-                  <li>Custom Website Development</li>
-                  <li>WordPress Website Development</li>
-                  <li>On-Page SEO Optimization</li>
-                  <li>Responsive &amp; Mobile-Friendly</li>
-                  <li>Lead Forms</li>
-                  <li>Blog</li>
-                  <li>Web Hosting &amp; Ongoing Maintenance</li>
-                </ul>
-                <div class="card">
-                  <h3>After working with us:</h3>
-                  <ul>
-                    <li>Website Page Speed Increased By 75%</li>
-                    <li>30% increase in lead collection</li>
-                    <li>Increased User Experience</li>
-                    <li>Increased Engagement and Conversions</li>
-                    <li>Increased Brand Recognition</li>
-                    <li>Faster Load Times</li>
-                    <li>Streamlined collection of leads</li>
-                  </ul>
-                </div>
-              </Col>
-              <Col lg="7">
-                <Image
-                  className="img-fluid"
-                  src={donor}
-                  alt="donor compass web design"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      </section>
-
+              </Card>
+            </div>
+          </Section>
+        ))}
+      </main>
       <CTA />
       <Footer />
     </>

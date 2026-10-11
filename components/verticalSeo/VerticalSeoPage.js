@@ -341,6 +341,19 @@ const VerticalSeoPage = ({ page }) => {
                 </ul>
               </Section>
             ) : null}
+            <Section>
+              <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
+                <iframe
+                  title={`Map of ${city.name}, ${province.name}`}
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                    `${city.name}, ${province.name}`
+                  )}&z=11&output=embed`}
+                  className="h-[360px] w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </figure>
+            </Section>
             {city.majorIndustries ? (
               <Section heading="Local economy">
                 <p className={PROSE}>

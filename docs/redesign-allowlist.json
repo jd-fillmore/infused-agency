@@ -1,4 +1,5 @@
 {
   "allowH2Changes": ["/"],
-  "allowNewPages": ["/industries"]
+  "allowNewPages": ["/industries"],
+  "allowRemovedPages": ["/pricing"]
 }

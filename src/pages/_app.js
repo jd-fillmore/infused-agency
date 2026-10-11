@@ -21,7 +21,6 @@ import "../../src/pages/home-services.scss";
 import "../../src/pages/services.scss";
 import "../../src/pages/grimsby.scss";
 import "../../src/pages/web-design.scss";
-import "../../src/pages/pricing.scss";
 import "../../components/Card/card.scss";
 import "../pages/work.scss";
 import "../pages/seo.scss";

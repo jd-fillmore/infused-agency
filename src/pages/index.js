@@ -72,7 +72,6 @@ const BUYER_GUIDES = [
   { label: "All services", href: "/services" },
   { label: "How we work", href: "/how-we-work" },
   { label: "Free website audit", href: "/website-audit" },
-  { label: "Pricing", href: "/pricing" },
 ];
 
 const INTENT_PATHS = [

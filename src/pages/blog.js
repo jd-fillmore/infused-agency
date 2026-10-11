@@ -1,18 +1,18 @@
 import { format } from "date-fns";
 import { getPaginatedPostsData } from "../lib/posts";
-import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import Head from "next/head";
 import Nav from "../../components/Nav/nav";
-import InnerHero from "../../components/innerHero/innerHero";
-import InnerContent from "../../components/innerContent/innerContent";
-import Image from "next/image";
+import PageHero from "../../components/ui/PageHero";
+import Section from "../../components/ui/Section";
+import Card from "../../components/ui/Card";
+import Icon from "../../components/ui/Icon";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
 
 export default function Blog({ posts, currentPage, totalPages }) {
   return (
-    <div>
+    <>
       <Head>
         <title>Infused Agency | Our Educational Blog</title>
         <meta
@@ -22,55 +22,63 @@ export default function Blog({ posts, currentPage, totalPages }) {
         <link rel="canonical" href="https://infused.agency/blog" />
       </Head>
       <Nav />
-      <InnerHero
-        title="Blog"
-        description="Educating clients on digital marketing, SEO & web design best practices."
-      />
-      <InnerContent>
-        <Container>
-          <Row className="blog-overview">
-            {posts.map(({ id, date, title, excerpt, image }) => (
-              <Col lg="4" md="6" sm="12" key={id} className="mb-4">
-                <Link href={`/posts/${id}`}>
-                  {image && (
-                    <Image
-                      src={image}
-                      className="img-fluid"
-                      alt={`${title}`}
-                      width={600} // Adjust width as needed
-                      height={400} // Adjust height as needed
-                    />
-                  )}
+      <main className="redesign-root">
+        <PageHero
+          title="Blog"
+          description="Educating clients on digital marketing, SEO & web design best practices."
+          breadcrumbs={[{ name: "Home", href: "/" }, { name: "Blog" }]}
+          cta={false}
+        />
+
+        <Section>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map(({ id, date, title, excerpt }) => (
+              <Card key={id} interactive className="flex h-full flex-col">
+                <small className="text-xs font-semibold uppercase tracking-[0.12em] text-muted">
+                  {format(new Date(date), "eeee, MMMM d, yyyy")}
+                </small>
+                <h2 className="mt-3 font-display text-lg font-bold leading-snug text-ink">
+                  <Link className="transition-colors hover:text-accent" href={`/posts/${id}`}>
+                    {title}
+                  </Link>
+                </h2>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+                  {excerpt}
+                </p>
+                <Link
+                  href={`/posts/${id}`}
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+                >
+                  Read article
+                  <Icon name="arrow-right" className="h-4 w-4" />
                 </Link>
-                <div className="post-card card">
-                  <h2>
-                    <Link href={`/posts/${id}`}>{title}</Link>
-                  </h2>
-                  <small>{format(new Date(date), "eeee, MMMM d, yyyy")}</small>
-                  <p>{excerpt}</p>
-                </div>
-              </Col>
+              </Card>
             ))}
-          </Row>
+          </div>
 
-          <Row>
-            <Col lg="12" className="text-center">
-              <div className="pagination">
-                {currentPage > 1 && (
-                  <Link href={`/blog?page=${currentPage - 1}`}>Previous</Link>
-                )}
-
-                {currentPage < totalPages && (
-                  <Link href={`/blog?page=${currentPage + 1}`}>Next</Link>
-                )}
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </InnerContent>
+          <div className="mt-12 flex items-center justify-center gap-3">
+            {currentPage > 1 && (
+              <Link
+                className="inline-flex items-center rounded-lg border border-border bg-white/5 px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-border-strong"
+                href={`/blog?page=${currentPage - 1}`}
+              >
+                Previous
+              </Link>
+            )}
+            {currentPage < totalPages && (
+              <Link
+                className="inline-flex items-center rounded-lg border border-border bg-white/5 px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:border-border-strong"
+                href={`/blog?page=${currentPage + 1}`}
+              >
+                Next
+              </Link>
+            )}
+          </div>
+        </Section>
+      </main>
       <CTA />
       <Footer />
-    </div>
+    </>
   );
 }
 
