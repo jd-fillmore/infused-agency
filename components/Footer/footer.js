@@ -62,8 +62,16 @@ function FooterLink({ href, children, onClick }) {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-surface">
-      <Container className="py-14">
+<footer className="border-t border-border bg-surface">
+        <a
+          href="tel:+19059333115"
+          aria-hidden="true"
+          tabIndex={-1}
+          className="pointer-events-none absolute -left-[9999px] top-0 h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 text-transparent"
+        >
+          (905) 933-3115
+        </a>
+        <Container className="py-14">
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-baseline" aria-label="Infused Agency home">
@@ -156,22 +164,6 @@ export default function Footer() {
               <ColumnHeading>Contact</ColumnHeading>
               <ul className="space-y-2 text-sm text-muted">
                 <li>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</li>
-                <li>
-                  <a
-                    href="tel:+19059333115"
-                    className="transition-colors hover:text-ink"
-                  >
-                    (905) 933-3115
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:info@infused.agency"
-                    className="transition-colors hover:text-ink"
-                  >
-                    info@infused.agency
-                  </a>
-                </li>
                 <li>Mon&ndash;Fri, 9 a.m.&ndash;6 p.m.</li>
               </ul>
               <Link

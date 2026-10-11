@@ -1,0 +1,114 @@
+/* Inner-page harmonisation sheet — must be imported LAST.
+ *
+ * The legacy design tokens were remapped in src/pages/variables.scss so that
+ * every legacy page picks up the redesign palette (navy -> near-black
+ * surfaces, blue -> cyan accent). This sheet finishes the job for the handful
+ * of values the legacy CSS hard-codes or over-forces, so all ~120 inner pages
+ * read as the same dark SaaS system as the homepage.
+ *
+ * Cascade strategy mirrors rescue.css: unlayered rules with !important,
+ * loaded after every legacy sheet, so they win without scoping.
+ */
+
+/* Headings — legacy forces -0.065em tracking; match the redesign. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em !important;
+}
+
+/* Legacy paints an underline-highlight behind every <span>. */
+span {
+  background-image: none !important;
+  margin-right: 0 !important;
+}
+
+/* …except the signature gradient, which is intentional. */
+.text-gradient {
+  background-image: var(--gradient-accent) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+/* Softer, modern button corners (legacy forces 5px). */
+button {
+  border-radius: 0.625rem !important;
+}
+
+/* City/vertical hero H1s are over-forced to 20px by legacy hero.scss. */
+.seo-city-hero h1,
+.seo-city-hero .intro,
+.inner-hero-cities h1 {
+  font-size: var(--text-h1) !important;
+  line-height: 1.1 !important;
+}
+
+.seo-city-hero p,
+.inner-hero p {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+@media only screen and (max-width: 62em) {
+  .seo-city-hero h1,
+  .seo-city-hero .intro,
+  .inner-hero-cities h1 {
+    font-size: 2rem !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.3 !important;
+  }
+}
+
+/* Hard-coded blue/purple gradients in legacy sheets -> cyan. */
+.home-client-results {
+  background: linear-gradient(to right, #0e7490, #0891b2) !important;
+}
+
+.seo-page .call-out {
+  background-image: linear-gradient(to right, #0e7490, #0891b2) !important;
+}
+
+/* Data tables on the vertical pages. */
+.table {
+  color: var(--color-ink) !important;
+  border-color: var(--color-border) !important;
+}
+
+.table > :not(caption) > * > * {
+  border-color: var(--color-border) !important;
+  color: inherit;
+}
+
+/* Map embeds sit on the dark canvas. */
+.map-cta iframe {
+  border-radius: 1rem !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+/* Bootstrap modals (industry/city pickers) -> dark surface. */
+.modal-content {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+.modal-body,
+.modal-footer {
+  background: var(--color-surface) !important;
+}
+
+.modal-body h5,
+.modal-body a,
+.modal-header,
+.modal-footer {
+  color: var(--color-ink) !important;
+}

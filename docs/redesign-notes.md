@@ -231,3 +231,40 @@ both SIL OFL, loaded via `next/font` (self-hosted, `swap`).
 5. Reviews badge hidden (no verified rating/count).
 6. No competitor copy/headings/images reused; only generic structure recorded.
 7. `/industries` treated as a new allowlisted page; nav inclusion decided in R2.
+
+## R4 — Inner-page sweep (owner feedback round)
+
+Owner feedback: "Ready to grow your business" CTA looked wonky, remove the
+email + put an invisible phone number in the footer, the mega menu was too big,
+and every inner page should match the homepage's dark/cyan SaaS look.
+
+- Fixed the homepage contact CTA: it used `Section align="center"` but rendered
+  its children left-aligned (the `align` prop only centres the `header` block).
+  Wrapped the content in a centred flex column (`mx-auto flex max-w-3xl
+  flex-col items-center text-center`).
+- Removed every visible email (homepage hero card, homepage final CTA, footer
+  contact list). Kept the `email` value in the LocalBusiness JSON-LD
+  (`verticalSeoSchema.js`) — structured-data contact is fine and invisible to
+  visitors. Phone is now only in the footer as an offscreen, `aria-hidden`,
+  `tabIndex={-1}` `tel:` link (present in the DOM for SEO, not shown).
+- Compacted the Solutions mega menu: 4 columns (one per service group) instead
+  of 5 + a promo card; removed per-link descriptions; industries moved to a
+  slim full-width bottom row. Interaction logic (hover delays, Escape, touch)
+  unchanged.
+- Redesigned **all** inner pages without touching 122 files by remapping the
+  legacy SCSS palette in `src/pages/variables.scss` (navy `#100a25`/`#120b2d`
+  → near-black `#0a0a0b`/`#101012`; blue `#2b9ae1` → cyan `#22d3ee`; indigo
+  `#363795` → deep cyan `#0891b2`) and adding `src/styles/legacy-saas.css`
+  (imported last, after `rescue.css`, unlayered `!important`) to normalise
+  heading tracking (-0.02em), remove the legacy `<span>` highlight, round the
+  buttons, restore the oversized city/vertical hero H1s, recolour the
+  hard-coded blue/purple gradients and dark-mode the Bootstrap modals/tables.
+  This reaches the two generated templates (`VerticalSeoPage`, `ServicePage`,
+  61 pages), the classic `InnerHero → InnerContent → CTA` scaffold, and the 54
+  hand-written therapist/solar pages in one pass.
+- De-duplicated the homepage's in-content links (`<main>` region now has zero
+  repeated `href`+text pairs); the remaining repeats are structural (desktop
+  nav vs. mobile nav vs. footer), which responsive nav requires.
+- Verified: `yarn build` 172 pages / schema 0 failures; `yarn verify:seo`
+  0 failures / 0 warnings; ESLint clean on changed JS. Homepage H1 copy and
+  all SEO fields unchanged.

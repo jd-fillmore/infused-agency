@@ -299,29 +299,13 @@ const Home = () => {
                   show you the fastest way there.
                 </p>
                 <Button href="/get-a-quote" size="lg" className="mt-6 w-full">
-                  Get a free quote
+                  Claim your free audit
                   <Icon name="arrow-right" className="h-4 w-4" />
                 </Button>
-                <ul className="mt-6 space-y-3 border-t border-border pt-5">
-                  <li>
-                    <a
-                      href="tel:+19059333115"
-                      className="flex items-center gap-2 text-sm text-muted hover:text-accent"
-                    >
-                      <Icon name="phone" className="h-4 w-4 text-accent" />
-                      (905) 933-3115
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:info@infused.agency"
-                      className="flex items-center gap-2 text-sm text-muted hover:text-accent"
-                    >
-                      <Icon name="mail" className="h-4 w-4 text-accent" />
-                      info@infused.agency
-                    </a>
-                  </li>
-                </ul>
+                <p className="mt-6 border-t border-border pt-5 text-xs leading-relaxed text-muted">
+                  Book in under two minutes. Free consultation, no tedious forms,
+                  no obligation.
+                </p>
               </Card>
             </div>
           </div>
@@ -671,40 +655,39 @@ const Home = () => {
         <Accordion items={HOME_FAQS} />
       </Section>
 
-      <Section id="contact" align="center">
-        <h2 className="text-balance font-display text-h2 font-bold leading-[1.12] tracking-[-0.02em] text-ink">
-          Ready to grow your{" "}
-          <span className="text-gradient">business?</span>
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lead text-muted">
-          Tell us a little about your goals and we will get back to you to book
-          a free consultation. No obligation, no jargon.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Button href="/get-a-quote" size="lg">
-            Get a free quote
-            <Icon name="arrow-right" className="h-4 w-4" />
-          </Button>
-          <Button href="/services" variant="secondary" size="lg">
-            Explore our services
-          </Button>
+      <Section id="contact">
+        <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+          <h2 className="text-balance font-display text-h2 font-bold leading-[1.12] tracking-[-0.02em] text-ink">
+            Ready to grow your{" "}
+            <span className="text-gradient">business?</span>
+          </h2>
+          <p className="mt-4 text-lead text-muted">
+            Tell us a little about your goals and we will get back to you to
+            book a free consultation. No obligation, no jargon.
+          </p>
+          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+            On the call we review where your business shows up today, the
+            searches your customers actually use, and the fastest path to more
+            qualified enquiries. You will leave with a clear plan you can act
+            on whether or not you work with us, plus straightforward pricing
+            and timelines if you would like us to run it for you.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Button href="/get-a-quote" size="lg">
+              Start your free strategy call
+              <Icon name="arrow-right" className="h-4 w-4" />
+            </Button>
+            <Button href="/services" variant="secondary" size="lg">
+              See all services
+            </Button>
+          </div>
+          <p className="mt-6 max-w-2xl text-sm text-muted">
+            Free consultation — no obligation, no jargon. We reply within one
+            business day, and every recommendation is tied to revenue, not
+            vanity metrics. If we are not the right fit, we will point you to
+            someone who is.
+          </p>
         </div>
-        <p className="mt-6 text-sm text-muted">
-          Prefer email?{" "}
-          <a
-            href="mailto:info@infused.agency"
-            className="text-accent hover:text-accent-hover"
-          >
-            info@infused.agency
-          </a>{" "}
-          · or call{" "}
-          <a
-            href="tel:+19059333115"
-            className="text-accent hover:text-accent-hover"
-          >
-            (905) 933-3115
-          </a>
-        </p>
       </Section>
       </main>
 

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { GROUPS, INDUSTRIES, DESCRIPTIONS } from "./navData";
+import { GROUPS, INDUSTRIES } from "./navData";
 import Container from "../ui/Container";
 import Icon from "../ui/Icon";
 
@@ -101,45 +101,40 @@ const MegaMenu = () => {
           open ? "visible opacity-100" : "invisible"
         }`}
       >
-        <Container className="grid gap-x-8 gap-y-6 py-8 sm:grid-cols-2 lg:grid-cols-5">
-          {GROUPS.map((group) => (
-            <div key={group.heading}>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
-                {group.heading}
-              </p>
-              <ul className="space-y-1">
-                {group.links.map((link) => (
-                  <li key={link.url}>
-                    <Link
-                      href={link.url}
-                      className="block rounded-md px-2 py-1.5 transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                    >
-                      <span className="text-sm font-medium text-ink">
+        <Container className="py-5">
+          <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
+            {GROUPS.map((group) => (
+              <div key={group.heading}>
+                <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
+                  {group.heading}
+                </p>
+                <ul className="space-y-0.5">
+                  {group.links.map((link) => (
+                    <li key={link.url}>
+                      <Link
+                        href={link.url}
+                        className="block rounded-md px-2 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      >
                         {link.name}
-                      </span>
-                      {DESCRIPTIONS[link.url] && (
-                        <span className="mt-0.5 block text-xs leading-snug text-muted">
-                          {DESCRIPTIONS[link.url]}
-                        </span>
-                      )}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
           {INDUSTRIES.length > 0 && (
-            <div>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+            <div className="mt-3 border-t border-border pt-3">
+              <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent">
                 SEO by industry
               </p>
-              <ul className="space-y-1">
+              <ul className="flex flex-wrap gap-x-6 gap-y-0.5">
                 {INDUSTRIES.map((link) => (
                   <li key={link.url}>
                     <Link
                       href={link.url}
-                      className="block rounded-md px-2 py-1.5 text-sm font-medium text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      className="block rounded-md px-2 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       {link.name}
                     </Link>
@@ -148,23 +143,6 @@ const MegaMenu = () => {
               </ul>
             </div>
           )}
-
-          <div className="border-gradient rounded-xl p-5 sm:col-span-2 lg:col-span-1">
-            <p className="font-display text-lg font-bold text-ink">
-              Not sure where to start?
-            </p>
-            <p className="mt-2 text-sm leading-snug text-muted">
-              Tell us your goals and we&rsquo;ll map the right mix of SEO,
-              content and web work.
-            </p>
-            <Link
-              href="/get-a-quote"
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
-            >
-              Get a free quote
-              <Icon name="arrow-right" className="h-4 w-4" />
-            </Link>
-          </div>
         </Container>
       </div>
     </div>
