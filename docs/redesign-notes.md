@@ -35,11 +35,23 @@ setup is committed separately before any visual work.
 - [x] Built CSS: **34.9 kB gzipped** (was 32.5 kB) — under the ~50 kB target.
 
 ### R1b — Design system
-- [ ] Dark theme tokens (below) as CSS variables + Tailwind theme extension.
-- [ ] `next/font` Inter (body) + Playfair Display (display).
-- [ ] Core primitives: Button, Card, Badge, SectionHeading, Container,
-      Eyebrow, StatCard, TestimonialCard, LogoStrip.
-- [ ] `/dev/styleguide` preview route (noindex).
+- [x] Dark theme tokens (below) implemented in `src/styles/tailwind.css` `@theme`
+      as CSS variables + Tailwind theme extension (colours, fluid type scale,
+      radius, shadow/glow, container, z-index).
+- [x] `next/font`: **Inter** (400/600) body + **Playfair Display** (700) display
+      = 3 weights total, self-hosted, `display:swap`, wired via CSS variables
+      `--font-inter` / `--font-playfair` on a wrapper in `_app.js`.
+- [x] Primitives in `components/ui/`: Container, Section (eyebrow/heading/
+      subhead), Button (primary/secondary/ghost), Badge (pill/chip), Card
+      (border/hover-lift/gradient/glow), ServiceCard (numbered), StatBlock,
+      Accordion (native `<details>`), TestimonialCard, Breadcrumb, Field +
+      input/label styles, and an inline SVG `Icon` set. Barrel `components/ui/index.js`.
+- [x] Atmosphere utilities: `bg-grid`, `glow-radial`, `glow-radial-deep`,
+      `border-gradient` (CSS only, no images).
+- [x] `/dev/styleguide` preview page — `noindex`, `getStaticProps` returns
+      `notFound` in production so it is never built or sitemapped.
+- [x] `_document.js`: `theme-color` `#100a25` + `color-scheme: dark`.
+- [x] Built CSS: **37.2 kB gzipped** total (still under the ~50 kB target).
 
 ### R2 — Header, mega menu, footer
 - [ ] Sticky translucent header with backdrop blur; keyboard-accessible mega menu.

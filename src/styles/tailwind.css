@@ -17,8 +17,16 @@
   --color-accent: #2b9ae1;
   --color-accent-hover: #46a6ea;
   --color-accent-deep: #363795;
+  --color-accent-contrast: #06121c;
   --color-gold: #e2c044;
   --color-success: #1b8e47;
+
+  /* Fluid type scale (clamp) */
+  --text-display: clamp(2.5rem, 1.9rem + 2.8vw, 4rem);
+  --text-h1: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);
+  --text-h2: clamp(1.75rem, 1.45rem + 1.4vw, 2.5rem);
+  --text-h3: clamp(1.3rem, 1.15rem + 0.7vw, 1.7rem);
+  --text-lead: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
 
   /* Fonts — wired to next/font variables applied in _app.js. */
   --font-body: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
@@ -52,6 +60,16 @@
   body {
     background-color: var(--color-base);
     color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
   }
 }
 
@@ -65,4 +83,49 @@
 
 @utility z-overlay {
   z-index: var(--z-overlay);
+}
+
+/* Atmosphere — CSS only, cheap to render. */
+@utility bg-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@utility glow-radial {
+  background-image: radial-gradient(
+    60% 60% at 50% 0%,
+    rgba(43, 154, 225, 0.22),
+    transparent 70%
+  );
+}
+
+@utility glow-radial-deep {
+  background-image: radial-gradient(
+      50% 55% at 85% 10%,
+      rgba(54, 55, 149, 0.35),
+      transparent 70%
+    ),
+    radial-gradient(45% 50% at 10% 0%, rgba(43, 154, 225, 0.18), transparent 70%);
+}
+
+/* Thin gradient border on featured cards. */
+@utility border-gradient {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--color-card), var(--color-card)) padding-box,
+    linear-gradient(135deg, var(--color-accent), var(--color-accent-deep))
+      border-box;
+}
+
+/* Native <details> marker cleanup for the accordion. */
+@utility summary-none {
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 }

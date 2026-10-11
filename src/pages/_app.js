@@ -1,6 +1,6 @@
 import "../styles/tailwind.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { DM_Sans } from "@next/font/google";
+import { Inter, Playfair_Display } from "@next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -50,33 +50,23 @@ import Script from "next/script";
 //   weight: "400",
 // });
 
-export const dmsans = DM_Sans({
+export const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "600"],
   display: "swap",
+  variable: "--font-inter",
+});
+
+export const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["700"],
+  display: "swap",
+  variable: "--font-playfair",
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <style jsx global>{`
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          font-family: ${dmsans.style.fontFamily};
-        }
-        a,
-        ul,
-        ol,
-        p,
-        button {
-          font-family: ${dmsans.style.fontFamily} !important;
-        }
-      `}</style>
-
+    <div className={`${inter.variable} ${playfair.variable} font-body`}>
       <Script
         strategy="afterInteractive"
         src="https://googletagmanager.com/gtag/js?id=G-9R67WGJ9RB"
@@ -102,6 +92,6 @@ export default function App({ Component, pageProps }) {
       </Script>
 
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
