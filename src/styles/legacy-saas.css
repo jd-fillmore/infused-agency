@@ -142,3 +142,160 @@ button {
   outline: 2px solid var(--color-accent) !important;
   outline-offset: 2px !important;
 }
+
+/* ------------------------------------------------------------------ *
+ * R5 — remaining inner pages (blog, article, shared heroes, forms).
+ *
+ * The redesign shell (dark global header/footer, tokens, Manrope type)
+ * already reaches these pages via R1/R2 and the variables.scss remap.
+ * This block finishes the sweep so they read as one system. Page
+ * content, headings, links and schema are untouched.
+ * ------------------------------------------------------------------ */
+
+/* Shared inner heroes -> consistent dark SaaS hero band. */
+.inner-hero,
+.inner-hero-cities {
+  background: radial-gradient(
+      80% 95% at 88% -15%,
+      rgba(34, 211, 238, 0.16),
+      transparent 62%
+    ),
+    #0a0a0b !important;
+  background-blend-mode: normal !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  padding: 200px 0 96px 0 !important;
+}
+
+.inner-hero p,
+.inner-hero-cities p {
+  max-width: 64ch;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+/* Gradient rule under the hero heading. */
+.inner-hero hr,
+.inner-hero-cities hr {
+  border: 0 !important;
+  width: 56px !important;
+  height: 3px;
+  margin: 1.5rem 0 1.75rem !important;
+  background: var(--gradient-accent) !important;
+  border-radius: 9999px;
+}
+
+/* City hero sub-heading should not outweigh the H1. */
+.inner-hero-cities h2 {
+  font-size: var(--text-h3) !important;
+  color: var(--color-muted) !important;
+  margin-top: 1rem !important;
+}
+
+/* Media on the dark canvas. */
+.inner-content img,
+.blog img,
+.single-blog img {
+  border-radius: 1rem;
+}
+
+/* Blog index + /posts list cards. */
+.blog-overview .card,
+.post .card {
+  background: var(--color-card) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 1rem !important;
+  box-shadow: var(--shadow-card) !important;
+  transition: border-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.blog-overview .card:hover,
+.post .card:hover {
+  border-color: rgba(34, 211, 238, 0.45) !important;
+  transform: translateY(-2px);
+}
+
+.blog-overview a,
+.post .card a {
+  color: var(--color-ink) !important;
+}
+
+.blog-overview a:hover,
+.post .card a:hover {
+  color: var(--color-accent) !important;
+}
+
+/* Article body typography. */
+.blog p,
+.blog li {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.8;
+}
+
+.blog a,
+.single-blog a {
+  color: var(--color-accent) !important;
+}
+
+.blog h2,
+.blog h3,
+.single-blog h2,
+.single-blog h3 {
+  margin-top: 2.75rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Pagination pills. */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 9999px;
+  color: var(--color-ink) !important;
+  font-weight: 600;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination a:hover {
+  border-color: rgba(34, 211, 238, 0.45) !important;
+  color: var(--color-accent) !important;
+}
+
+/* Forms on legacy quote/contact/audit pages. */
+.inner-content label,
+.inner-content .form-label {
+  color: var(--color-ink) !important;
+}
+
+.inner-content input,
+.inner-content textarea,
+.inner-content select,
+.modal-body input,
+.modal-body textarea,
+.modal-body select {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-ink) !important;
+  border-radius: 0.5rem !important;
+}
+
+.inner-content input::placeholder,
+.inner-content textarea::placeholder {
+  color: var(--color-muted) !important;
+}
+
+/* Embedded widgets (Calendly on /get-a-quote, maps). */
+.quote iframe {
+  border-radius: 1rem;
+}
+
+/* Area lists painted over the dark canvas. */
+.grimsby li,
+.areas-served li {
+  color: rgba(255, 255, 255, 0.72) !important;
+}

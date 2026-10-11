@@ -317,3 +317,37 @@ and every inner page should match the homepage's dark/cyan SaaS look.
 - Assumption recorded: page-level industry benefits are authored per vertical
   (`industriesBenefit`) and fall back to the first `serviceEmphasis` line, then a
   generic line, so a vertical can safely go live before its copy is finalised.
+
+### R5 — Remaining pages shell (spec Phase R5)
+- [x] **Approach (documented assumption).** The remaining pages
+      (`/seo`, `/web-design`, `/seo/{city}`, the 54 hand-written therapist/solar
+      pages, `about`, `work` + case studies, `blog` + `/posts` + `posts/[id]`,
+      `get-a-quote`/contact, `privacy-policy`, `404`) all render through the same
+      shared layer: the global dark **header/footer** (R2), the R1 **tokens +
+      typography** (Manrope, fluid type scale), and the legacy scaffold
+      (`InnerHero → InnerContent → CTA`). Because heading sizes/colours and the
+      nav are global, the shell is already applied to every one of these pages;
+      R5 therefore finishes them at the shared component/CSS layer rather than
+      editing ~120 files one by one (which the spec's "content, headings, links
+      and schema stay as they are" constraint also argues for). No page JSX
+      content, heading, link or schema was changed.
+- [x] **Shared inner heroes** (`.inner-hero`, `.inner-hero-cities`): consistent
+      dark SaaS band — flat `#0a0a0b` with a soft cyan radial glow top-right,
+      hairline bottom border, tightened padding, fluid body copy, and the legacy
+      `<hr>` restyled into a cyan→ice→white gradient rule. City-hero sub-heading
+      demoted to `--text-h3` / muted so it no longer competes with the H1.
+- [x] **Blog + article** (`/blog`, `/posts`, `posts/[id]`): index/list cards move
+      to `--color-card` with hairline border, radius, shadow and a subtle hover
+      lift; article body gets readable line-height, accent links, and larger
+      heading spacing; pagination links become pill buttons.
+- [x] **Media on dark:** images on inner/article pages get a 1rem radius;
+      embedded widgets (`/get-a-quote` Calendly iframe, maps) get rounded corners.
+- [x] **Forms:** legacy quote/contact/audit inputs, selects and labels switch to
+      the dark surface + ink palette (previously `$white` — a misnamed legacy
+      token that is actually `#000` — painted near-invisible labels/inputs).
+- [x] Added all of the above to `src/styles/legacy-saas.css` (unlayered
+      `!important`, imported last) so it wins over the legacy sheets without new
+      `.redesign-root` scoping, leaving Bootstrap-embedded widgets intact.
+- [x] **Checks:** `yarn build` 173 pages / schema 0 failures / sitemap
+      `kept 109 of 172`; `yarn verify:seo` 0 failures / 0 warnings (173 vs 172);
+      `yarn test:seo` 17 passed; `yarn lint` exit 0 (pre-existing warnings only).
