@@ -107,28 +107,196 @@
   ],
   "industries": [
     {
-      "name": "SEO for Therapists in Canada",
-      "url": "/therapist-seo"
+      "name": "SEO for Accountants in Canada",
+      "url": "/accountant-seo"
+    },
+    {
+      "name": "SEO for ADU Contractors in Canada",
+      "url": "/adu-contractor-seo"
+    },
+    {
+      "name": "SEO for Arborists in Canada",
+      "url": "/tree-service-seo"
+    },
+    {
+      "name": "SEO for Architects in Canada",
+      "url": "/architect-seo"
+    },
+    {
+      "name": "SEO for Remodelers in Canada",
+      "url": "/basement-remodeling-seo"
+    },
+    {
+      "name": "SEO for Cabinet Makers in Canada",
+      "url": "/cabinet-maker-seo"
+    },
+    {
+      "name": "SEO for Cleaning Companies in Canada",
+      "url": "/commercial-cleaning-seo"
+    },
+    {
+      "name": "SEO for Snow Removal Companies in Canada",
+      "url": "/commercial-snow-removal-seo"
+    },
+    {
+      "name": "SEO for Daycares in Canada",
+      "url": "/daycare-seo"
+    },
+    {
+      "name": "SEO for Deck Builders in Canada",
+      "url": "/deck-builder-seo"
     },
     {
       "name": "SEO for Dentists in Canada",
       "url": "/dentist-seo"
     },
     {
-      "name": "SEO for Accountants in Canada",
-      "url": "/accountant-seo"
+      "name": "SEO for Design-Builders in Canada",
+      "url": "/design-build-seo"
     },
     {
-      "name": "SEO for Veterinarians in Canada",
-      "url": "/veterinarian-seo"
+      "name": "SEO for Drywallers in Canada",
+      "url": "/drywall-seo"
+    },
+    {
+      "name": "SEO for Electricians in Canada",
+      "url": "/electrician-seo"
+    },
+    {
+      "name": "SEO for Family Lawyers in Canada",
+      "url": "/family-lawyer-seo"
+    },
+    {
+      "name": "SEO for Advisors in Canada",
+      "url": "/financial-advisor-seo"
+    },
+    {
+      "name": "SEO for Flooring Companies in Canada",
+      "url": "/flooring-seo"
+    },
+    {
+      "name": "SEO for Garage Door Companies in Canada",
+      "url": "/garage-door-seo"
+    },
+    {
+      "name": "SEO for Home Additions in Canada",
+      "url": "/home-addition-seo"
+    },
+    {
+      "name": "SEO for Home Builders in Canada",
+      "url": "/home-builder-seo"
+    },
+    {
+      "name": "SEO for Home Remodelers in Canada",
+      "url": "/home-remodeling-seo"
+    },
+    {
+      "name": "SEO for Home Stagers in Canada",
+      "url": "/home-stager-seo"
+    },
+    {
+      "name": "SEO for HVAC Contractors in Canada",
+      "url": "/hvac-contractor-seo"
+    },
+    {
+      "name": "SEO for Immigration Lawyers in Canada",
+      "url": "/immigration-lawyer-seo"
+    },
+    {
+      "name": "SEO for Injury Lawyers in Canada",
+      "url": "/personal-injury-lawyer-seo"
+    },
+    {
+      "name": "SEO for Interior Designers in Canada",
+      "url": "/interior-designer-seo"
+    },
+    {
+      "name": "SEO for Kitchen & Bath Remodelers in Canada",
+      "url": "/kitchen-bath-seo"
+    },
+    {
+      "name": "SEO for Landscapers in Canada",
+      "url": "/landscaper-seo"
     },
     {
       "name": "SEO for Locksmiths in Canada",
       "url": "/locksmith-seo"
     },
     {
+      "name": "SEO for Med Spas in Canada",
+      "url": "/med-spa-seo"
+    },
+    {
+      "name": "SEO for Modular Builders in Canada",
+      "url": "/modular-home-builder-seo"
+    },
+    {
+      "name": "SEO for Mortgage Brokers in Canada",
+      "url": "/mortgage-broker-seo"
+    },
+    {
       "name": "SEO for Movers in Canada",
       "url": "/mover-seo"
+    },
+    {
+      "name": "SEO for Orthodontists in Canada",
+      "url": "/orthodontist-seo"
+    },
+    {
+      "name": "SEO for Paving Companies in Canada",
+      "url": "/paving-company-seo"
+    },
+    {
+      "name": "SEO for Pest Control Companies in Canada",
+      "url": "/pest-control-seo"
+    },
+    {
+      "name": "SEO for Plumbers in Canada",
+      "url": "/plumber-seo"
+    },
+    {
+      "name": "SEO for Pool Builders in Canada",
+      "url": "/pool-builder-seo"
+    },
+    {
+      "name": "SEO for Real Estate Lawyers in Canada",
+      "url": "/real-estate-lawyer-seo"
+    },
+    {
+      "name": "SEO for Restoration Companies in Canada",
+      "url": "/restoration-seo"
+    },
+    {
+      "name": "SEO for Roofers in Canada",
+      "url": "/roofer-seo"
+    },
+    {
+      "name": "SEO for Septic Services in Canada",
+      "url": "/septic-service-seo"
+    },
+    {
+      "name": "SEO for Smart Home Installers in Canada",
+      "url": "/smart-home-seo"
+    },
+    {
+      "name": "SEO for Therapists in Canada",
+      "url": "/therapist-seo"
+    },
+    {
+      "name": "SEO for Tile Contractors in Canada",
+      "url": "/tile-contractor-seo"
+    },
+    {
+      "name": "SEO for Veterinarians in Canada",
+      "url": "/veterinarian-seo"
+    },
+    {
+      "name": "SEO for Wedding Photographers in Canada",
+      "url": "/wedding-photographer-seo"
+    },
+    {
+      "name": "SEO for Window & Door Installers in Canada",
+      "url": "/window-door-seo"
     }
   ]
 }

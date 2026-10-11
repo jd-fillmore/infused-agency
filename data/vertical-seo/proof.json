@@ -1,20 +1,114 @@
 [
   {
+    "id": "accountant-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for accounting firms: service pages for tax and bookkeeping, an optimised Google Business Profile, and reporting on the searches that lead to new clients.",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "accountants"
+    ]
+  },
+  {
+    "id": "adu-contractor-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for adu contractors: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "adu-contractors"
+    ]
+  },
+  {
+    "id": "arborist-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for arborists: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "arborists"
+    ]
+  },
+  {
+    "id": "architect-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for architects: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "architects"
+    ]
+  },
+  {
+    "id": "basement-remodeler-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for basement remodelers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "basement-remodelers"
+    ]
+  },
+  {
     "id": "brandi-may-psychotherapy",
     "type": "testimonial",
     "namedEntity": "Brandi May Psychotherapy",
     "person": "Brandi M.",
     "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
     "source": "https://www.infused.agency",
-    "verticals": ["therapists"]
+    "verticals": [
+      "therapists"
+    ]
   },
   {
-    "id": "flat-rock-cellars",
+    "id": "cabinet-maker-local-seo",
     "type": "result",
-    "namedEntity": "Flat Rock Cellars",
-    "metric": "+550% local visibility",
-    "source": "https://www.infused.agency",
-    "verticals": ["wineries"]
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for cabinet makers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "cabinet-makers"
+    ]
+  },
+  {
+    "id": "commercial-cleaning-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for commercial cleaning companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "commercial-cleaning"
+    ]
+  },
+  {
+    "id": "commercial-snow-removal-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for snow removal companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "commercial-snow-removal"
+    ]
+  },
+  {
+    "id": "daycare-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for daycares: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "daycares"
+    ]
+  },
+  {
+    "id": "deck-builder-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for deck builders: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "deck-builders"
+    ]
   },
   {
     "id": "delta-energy-solutions",
@@ -22,7 +116,79 @@
     "namedEntity": "Delta Energy Solutions",
     "metric": "+670% local visibility",
     "source": "https://www.infused.agency",
-    "verticals": ["solar"]
+    "verticals": [
+      "solar"
+    ]
+  },
+  {
+    "id": "dentist-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for dental practices: treatment and neighbourhood pages, an optimised Google Business Profile, and reporting on the searches that lead to new patients.",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "dentists"
+    ]
+  },
+  {
+    "id": "design-builder-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for design-build firms: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "design-builders"
+    ]
+  },
+  {
+    "id": "drywaller-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for drywallers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "drywallers"
+    ]
+  },
+  {
+    "id": "family-lawyer-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for family lawyers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "family-lawyers"
+    ]
+  },
+  {
+    "id": "financial-advisor-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for financial advisors: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "financial-advisors"
+    ]
+  },
+  {
+    "id": "flat-rock-cellars",
+    "type": "result",
+    "namedEntity": "Flat Rock Cellars",
+    "metric": "+550% local visibility",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "wineries"
+    ]
+  },
+  {
+    "id": "flooring-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for flooring companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "flooring"
+    ]
   },
   {
     "id": "freds-concrete",
@@ -31,7 +197,290 @@
     "person": "Lucas Folino",
     "quote": "Lucas Folino of Fred's Concrete recommends Infused Agency for the growth in local visibility their concrete business saw after SEO work.",
     "source": "https://www.infused.agency",
-    "verticals": ["concrete-contractors", "contractors"]
+    "verticals": [
+      "concrete-contractors",
+      "contractors"
+    ]
+  },
+  {
+    "id": "garage-door-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for garage door companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "garage-door"
+    ]
+  },
+  {
+    "id": "home-addition-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for addition builders: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "home-additions"
+    ]
+  },
+  {
+    "id": "home-builder-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for home builders: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "home-builders"
+    ]
+  },
+  {
+    "id": "home-remodeler-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for home remodelers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "home-remodelers"
+    ]
+  },
+  {
+    "id": "home-stager-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for home stagers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "home-stagers"
+    ]
+  },
+  {
+    "id": "hvac-contractor-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for hvac contractors: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "hvac-contractors"
+    ]
+  },
+  {
+    "id": "immigration-lawyer-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for immigration lawyers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "immigration-lawyers"
+    ]
+  },
+  {
+    "id": "injury-lawyer-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for injury lawyers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "injury-lawyers"
+    ]
+  },
+  {
+    "id": "interior-designer-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for interior designers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "interior-designers"
+    ]
+  },
+  {
+    "id": "kitchen-bath-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for kitchen & bath remodelers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "kitchen-bath"
+    ]
+  },
+  {
+    "id": "landscaper-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for landscapers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "landscapers"
+    ]
+  },
+  {
+    "id": "locksmith-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for locksmiths: urgent-service pages, a service-area Google Business Profile, and reporting on the searches that lead to direct calls.",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "locksmiths"
+    ]
+  },
+  {
+    "id": "med-spa-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for med spas: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "med-spas"
+    ]
+  },
+  {
+    "id": "modular-builder-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for modular home builders: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "modular-builders"
+    ]
+  },
+  {
+    "id": "mortgage-broker-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for mortgage brokers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "mortgage-brokers"
+    ]
+  },
+  {
+    "id": "mover-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for moving companies: local and long-distance pages, a service-area Google Business Profile, and reporting on the searches that lead to quote requests.",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "movers"
+    ]
+  },
+  {
+    "id": "orthodontist-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for orthodontists: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "orthodontists"
+    ]
+  },
+  {
+    "id": "paving-companie-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for paving companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "paving-companies"
+    ]
+  },
+  {
+    "id": "pest-control-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for pest control companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "pest-control"
+    ]
+  },
+  {
+    "id": "plumber-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for plumbers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "plumbers"
+    ]
+  },
+  {
+    "id": "pool-builder-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for pool builders: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "pool-builders"
+    ]
+  },
+  {
+    "id": "real-estate-lawyer-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for real estate lawyers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "real-estate-lawyers"
+    ]
+  },
+  {
+    "id": "restoration-companie-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for restoration companies: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "restoration-companies"
+    ]
+  },
+  {
+    "id": "roofer-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for roofers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "roofers"
+    ]
+  },
+  {
+    "id": "septic-service-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for septic services: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "septic-services"
+    ]
+  },
+  {
+    "id": "smart-home-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for smart home installers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "smart-home"
+    ]
+  },
+  {
+    "id": "tile-contractor-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for tile contractors: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "tile-contractors"
+    ]
+  },
+  {
+    "id": "veterinarian-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for veterinary clinics: service and neighbourhood pages, an optimised Google Business Profile, and reporting on the searches that lead to new clients.",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "veterinarians"
+    ]
   },
   {
     "id": "visca-electric",
@@ -40,46 +489,29 @@
     "person": "Sandro Visca",
     "quote": "Sandro Visca of VISCA Electric recommends Infused Agency for the local search results their electrical business gained.",
     "source": "https://www.infused.agency",
-    "verticals": ["electricians", "contractors"]
+    "verticals": [
+      "electricians",
+      "contractors"
+    ]
   },
   {
-    "id": "dentist-local-seo",
+    "id": "wedding-photographer-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
-    "quote": "A structured local SEO program for dental practices: treatment and neighbourhood pages, an optimised Google Business Profile, and reporting on the searches that lead to new patients.",
-    "source": "https://www.infused.agency",
-    "verticals": ["dentists"]
+    "quote": "A local SEO program for wedding photographers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "wedding-photographers"
+    ]
   },
   {
-    "id": "accountant-local-seo",
+    "id": "window-door-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
-    "quote": "A structured local SEO program for accounting firms: service pages for tax and bookkeeping, an optimised Google Business Profile, and reporting on the searches that lead to new clients.",
-    "source": "https://www.infused.agency",
-    "verticals": ["accountants"]
-  },
-  {
-    "id": "veterinarian-local-seo",
-    "type": "result",
-    "namedEntity": "Local SEO program",
-    "quote": "A structured local SEO program for veterinary clinics: service and neighbourhood pages, an optimised Google Business Profile, and reporting on the searches that lead to new clients.",
-    "source": "https://www.infused.agency",
-    "verticals": ["veterinarians"]
-  },
-  {
-    "id": "locksmith-local-seo",
-    "type": "result",
-    "namedEntity": "Local SEO program",
-    "quote": "A structured local SEO program for locksmiths: urgent-service pages, a service-area Google Business Profile, and reporting on the searches that lead to direct calls.",
-    "source": "https://www.infused.agency",
-    "verticals": ["locksmiths"]
-  },
-  {
-    "id": "mover-local-seo",
-    "type": "result",
-    "namedEntity": "Local SEO program",
-    "quote": "A structured local SEO program for moving companies: local and long-distance pages, a service-area Google Business Profile, and reporting on the searches that lead to quote requests.",
-    "source": "https://www.infused.agency",
-    "verticals": ["movers"]
+    "quote": "A local SEO program for window & door installers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://infused.agency",
+    "verticals": [
+      "window-door"
+    ]
   }
 ]

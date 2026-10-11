@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "Roofer SEO in Manitoba helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across Winnipeg can find and choose you.",
+  "intro": "Manitoba is not one market but several, and roofers that treat it as a single place usually stall. Building for Manitoba means separating the places you serve and describing each one honestly. A roofer in Manitoba is competing for attention against both local rivals and national directories. Content built city by city across Manitoba tends to outperform one page stretched over the whole province. Demand in Manitoba concentrates in Winnipeg, but the long tail across smaller centres is often where a roofer can rank fastest. Because Manitoba spans very different communities, the realistic approach is a hub page plus focused city pages underneath it. A practice in one part of Manitoba is not really competing with one hundreds of kilometres away, even inside the same province.",
+  "localInsight": "For roofers in Manitoba, the clearest gains come from owning a handful of specific searches well. Because Winnipeg dominate much of the demand in Manitoba, those cities usually come first in a content plan. The Google Business Profile should stay aligned with how locals in Manitoba actually search, not one oversized radius. The service pages that win in Manitoba answer a real question rather than listing every capability. In Manitoba, the gap between the largest city and the next tier is often where the fastest wins live. A province page works best as a hub that links to the cities and regions a business genuinely serves. Seasonality shifts demand in parts of Manitoba, so timing content around local patterns helps.",
+  "localChecklist": [
+    "Internal links that connect the province hub to every city page.",
+    "City pages for Winnipeg that describe each place distinctly.",
+    "Local proof that respects privacy and stays within professional rules.",
+    "Consistent business details everywhere you appear online.",
+    "A profile and review presence tied to the same location as each page.",
+    "Content that answers the questions homeowners ask before they get in touch.",
+    "Contact and intake details that make the next step obvious."
+  ],
+  "faqs": [
+    {
+      "q": "Does regulation in Manitoba affect my website wording?",
+      "a": "It can. Rules about titles and advertising vary by province and profession, so your site should use only the claims and credentials you are entitled to, and explain them clearly to homeowners.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How long does it take to rank in Manitoba?",
+      "a": "Local improvements usually begin within three to six months, and competitive terms in the largest cities take longer. Less saturated parts of Manitoba often move faster because there is simply less competition.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Is a Manitoba-wide page enough on its own?",
+      "a": "Rarely. Homeowners search with a city or region attached, so a single provincial page misses most of the demand. A hub page plus focused city pages matches how people actually search in Manitoba.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How much does the Google Business Profile matter in Manitoba?",
+      "a": "A great deal. In Manitoba, the local pack draws much of the traffic for commercial searches, so a complete profile with the right service area and current reviews is central to the plan.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Roofer SEO in Manitoba. A province hub plus city pages and Google Business Profile work built for local search across the region locally and reviews.",
+  "proofRefs": [
+    "roofer-local-seo"
+  ]
 }

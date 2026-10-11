@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "Plumber SEO in Saskatchewan helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across Saskatoon and Regina can find and choose you.",
+  "intro": "In Saskatchewan, the cities of Saskatoon and Regina each behave differently, so a single provincial page rarely serves more than one area well. The searches that matter in Saskatchewan usually name a city, an area or a specific job. The towns and cities of Saskatchewan each bring their own demand, and the best pages respect that difference. Building for Saskatchewan means separating the places you serve and describing each one honestly. From Regina to the smaller centres, homeowners in Saskatchewan search in ways that reflect the region they live in. The search landscape across Saskatchewan shifts by city, by season, and by the industries that dominate the local economy. Plumbers in Saskatchewan get the best results when each city or region has content that reflects its own demand.",
+  "localInsight": "A clear intake and contact process matters everywhere in Saskatchewan, but especially where competition is heaviest. Because Saskatchewan covers both busy metros and quieter towns, one tone will not fit every market. Titles and claims need to match what a business is entitled to use in Saskatchewan, so the copy stays accurate. A page that names a specific area of Saskatchewan speaks to homeowners more directly than a provincial slogan. For plumbers in Saskatchewan, the clearest gains come from owning a handful of specific searches well. Saskatchewan holds a mix of dense urban markets and smaller connected towns, and each needs its own wording. Service pages that use the words homeowners use, rather than internal jargon, tend to win in Saskatchewan.",
+  "localChecklist": [
+    "A profile and review presence tied to the same location as each page.",
+    "Reviews kept current for each city you cover in Saskatchewan.",
+    "Local proof that respects privacy and stays within professional rules.",
+    "Wording that names the areas homeowners search from, not just the province.",
+    "City pages for Saskatoon and Regina that describe each place distinctly.",
+    "Fast, mobile-friendly pages across every location you serve.",
+    "Internal links that connect the province hub to every city page."
+  ],
+  "faqs": [
+    {
+      "q": "Does regulation in Saskatchewan affect my website wording?",
+      "a": "It can. Rules about titles and advertising vary by province and profession, so your site should use only the claims and credentials you are entitled to, and explain them clearly to homeowners.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How much does the Google Business Profile matter in Saskatchewan?",
+      "a": "A great deal. In Saskatchewan, the local pack draws much of the traffic for commercial searches, so a complete profile with the right service area and current reviews is central to the plan.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do Saskatchewan city pages risk looking duplicated?",
+      "a": "Only if they are thin and swap the place name. We build each page around genuinely local detail so it stands on its own and avoids the look of doorway pages.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Why build city pages instead of one Saskatchewan page?",
+      "a": "Because homeowners search with a city or region attached. A hub page for Saskatchewan plus focused pages for places like Saskatoon and Regina matches how people actually search and lets each area earn its own visibility.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Plumber SEO in Saskatchewan. A province hub plus city pages and Google Business Profile work built for local search across the region locally.",
+  "proofRefs": [
+    "plumber-local-seo"
+  ]
 }

@@ -12,6 +12,7 @@
 // Usage: node scripts/generate-vertical-content.js [slug ...]
 const fs = require("fs");
 const path = require("path");
+const { BATCH } = require("./vertical-batch-specs");
 
 const DATA_DIR = path.join(process.cwd(), "data", "vertical-seo");
 const CONTENT_DIR = path.join(DATA_DIR, "content", "verticals");
@@ -179,6 +180,13 @@ const SPECS = {
   },
 };
 
+// Merge the batch-2 vertical definitions (new niches + promoted scaffolds).
+// Existing keys keep their hand-tuned values; batch entries add nounSingular /
+// nounPlural / proofId, which the token builders fall back from for old specs.
+for (const spec of BATCH) {
+  SPECS[spec.slug] = Object.assign({}, SPECS[spec.slug] || {}, spec);
+}
+
 // ----- sentence pools (shared across verticals; niche + geo via tokens) -----
 
 const CITY_INTRO = [
@@ -248,7 +256,7 @@ const CITY_CHECKLIST = [
 
 const CITY_FAQ = [
   {
-    q: "How competitive is {singular} SEO in {city}?",
+    q: "How competitive is {seo} SEO in {city}?",
     a: "It depends on the {service} you focus on. Broad terms in {city} are contested, often by directories and larger operators, but searches tied to {n1}, {n2} or a specific {service} are far easier for a local {singular} to win.",
   },
   {
@@ -438,11 +446,11 @@ const CANADA_CHECKLIST = [
 
 const CANADA_FAQ = [
   {
-    q: "What is {singular} SEO?",
-    a: "{singularCap} SEO is search optimisation built for {displayTitle}, combining technical fixes, service-focused content, local visibility and Google Business Profile work so that someone searching for help nearby can find and choose your business.",
+    q: "What is {seo} SEO?",
+    a: "{seoCap} SEO is search optimisation built for {displayTitle}, combining technical fixes, service-focused content, local visibility and Google Business Profile work so that someone searching for help nearby can find and choose your business.",
   },
   {
-    q: "How is {singular} SEO different in Canada?",
+    q: "How is {seo} SEO different in Canada?",
     a: "Canada regulates many professions province by province, and in Quebec {clients} often search in French, so one national template will not fit every business. A Canadian plan accounts for the province you operate in and the language your {clients} search in.",
   },
   {
@@ -590,20 +598,24 @@ function buildCanadaFaqs(rng, tokens) {
 function cityTokens(city, province, spec, rng) {
   const hoods = city.neighbourhoods || [];
   const [n1, n2, n3] = sample(rng, hoods.length >= 3 ? hoods : hoods.concat(hoods), 3);
+  const ns = spec.nounSingular || spec.singular;
+  const np = spec.nounPlural || spec.plural;
   return {
     city: city.name,
     province: province.name,
     abbr: province.abbr,
     capital: province.capitalCity,
-    s: spec.singular,
-    p: spec.plural,
-    singular: spec.singular,
-    singularCap: spec.singular.charAt(0).toUpperCase() + spec.singular.slice(1),
-    plural: spec.plural,
+    s: ns,
+    p: np,
+    singular: ns,
+    singularCap: ns.charAt(0).toUpperCase() + ns.slice(1),
+    seo: spec.singular,
+    seoCap: spec.singular.charAt(0).toUpperCase() + spec.singular.slice(1),
+    plural: np,
     display: spec.displayName,
     displayTitle: spec.displayTitle,
     speciality: pick(rng, spec.specialties),
-    aSing: `${articleFor(spec.singular)} ${spec.singular}`,
+    aSing: `${articleFor(ns)} ${ns}`,
     service: spec.service,
     services: spec.services,
     booking: spec.booking,
@@ -618,17 +630,21 @@ function cityTokens(city, province, spec, rng) {
 }
 
 function provinceTokens(province, spec, rng, cityNames) {
+  const ns = spec.nounSingular || spec.singular;
+  const np = spec.nounPlural || spec.plural;
   return {
     province: province.name,
     abbr: province.abbr,
     capital: province.capitalCity,
     cityList: naturalList(cityNames),
-    s: spec.singular,
-    p: spec.plural,
-    singular: spec.singular,
-    aSing: `${articleFor(spec.singular)} ${spec.singular}`,
-    singularCap: spec.singular.charAt(0).toUpperCase() + spec.singular.slice(1),
-    plural: spec.plural,
+    s: ns,
+    p: np,
+    singular: ns,
+    aSing: `${articleFor(ns)} ${ns}`,
+    singularCap: ns.charAt(0).toUpperCase() + ns.slice(1),
+    seo: spec.singular,
+    seoCap: spec.singular.charAt(0).toUpperCase() + spec.singular.slice(1),
+    plural: np,
     display: spec.displayName,
     displayTitle: spec.displayTitle,
     service: spec.service,
@@ -641,13 +657,17 @@ function provinceTokens(province, spec, rng, cityNames) {
 }
 
 function canadaTokens(spec, rng) {
+  const ns = spec.nounSingular || spec.singular;
+  const np = spec.nounPlural || spec.plural;
   return {
-    s: spec.singular,
-    p: spec.plural,
-    singular: spec.singular,
-    aSing: `${articleFor(spec.singular)} ${spec.singular}`,
-    singularCap: spec.singular.charAt(0).toUpperCase() + spec.singular.slice(1),
-    plural: spec.plural,
+    s: ns,
+    p: np,
+    singular: ns,
+    aSing: `${articleFor(ns)} ${ns}`,
+    singularCap: ns.charAt(0).toUpperCase() + ns.slice(1),
+    seo: spec.singular,
+    seoCap: spec.singular.charAt(0).toUpperCase() + spec.singular.slice(1),
+    plural: np,
     display: spec.displayName,
     displayTitle: spec.displayTitle,
     service: spec.service,
@@ -668,7 +688,7 @@ function buildCityContent(city, province, spec) {
     status: "reviewed",
     updated: UPDATED,
     directAnswer: render(
-      "{singularCap} SEO in {city} helps {p} rank in the searches people make in the area they actually serve, pairing focused pages with strong local signals so nearby {clients} find and choose you.",
+      "{seoCap} SEO in {city} helps {p} rank in the searches people make in the area they actually serve, pairing focused pages with strong local signals so nearby {clients} find and choose you.",
       tokens
     ),
     intro: sentenceBlock(rng, CITY_INTRO, 7, tokens),
@@ -676,7 +696,7 @@ function buildCityContent(city, province, spec) {
     localChecklist: sample(rng, CITY_CHECKLIST, 6).map((s) => render(s, tokens)),
     faqs: buildCityFaqs(rng, tokens, spec),
     summary: fitSummary(titleBase, CITY_SUMMARY_TAILS),
-    proofRefs: [`${spec.slug.replace(/s$/, "")}-local-seo`],
+    proofRefs: [spec.proofId || `${spec.slug.replace(/s$/, "")}-local-seo`],
   };
 }
 
@@ -688,7 +708,7 @@ function buildProvinceContent(province, spec, cityNames) {
     status: "reviewed",
     updated: UPDATED,
     directAnswer: render(
-      "{singularCap} SEO in {province} helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so {clients} across {cityList} can find and choose you.",
+      "{seoCap} SEO in {province} helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so {clients} across {cityList} can find and choose you.",
       tokens
     ),
     intro: sentenceBlock(rng, PROVINCE_INTRO, 7, tokens),
@@ -696,7 +716,7 @@ function buildProvinceContent(province, spec, cityNames) {
     localChecklist: sample(rng, PROVINCE_CHECKLIST, 7).map((s) => render(s, tokens)),
     faqs: buildProvinceFaqs(rng, tokens),
     summary: fitSummary(titleBase, PROVINCE_SUMMARY_TAILS),
-    proofRefs: [`${spec.slug.replace(/s$/, "")}-local-seo`],
+    proofRefs: [spec.proofId || `${spec.slug.replace(/s$/, "")}-local-seo`],
   };
 }
 
@@ -708,7 +728,7 @@ function buildCanadaContent(spec) {
     status: "reviewed",
     updated: UPDATED,
     directAnswer: render(
-      "{singularCap} SEO is the work of helping a business rank in search so the right {clients} find it. For Canadian businesses that means focused service pages, a strong Google Business Profile, and province-aware content that helps someone searching in their own city book with you.",
+      "{seoCap} SEO is the work of helping a business rank in search so the right {clients} find it. For Canadian businesses that means focused service pages, a strong Google Business Profile, and province-aware content that helps someone searching in their own city book with you.",
       tokens
     ),
     intro: sentenceBlock(rng, CANADA_INTRO, 6, tokens),
@@ -716,7 +736,7 @@ function buildCanadaContent(spec) {
     localChecklist: sample(rng, CANADA_CHECKLIST, 6).map((s) => render(s, tokens)),
     faqs: buildCanadaFaqs(rng, tokens),
     summary: fitSummary(titleBase, CANADA_SUMMARY_TAILS),
-    proofRefs: [`${spec.slug.replace(/s$/, "")}-local-seo`],
+    proofRefs: [spec.proofId || `${spec.slug.replace(/s$/, "")}-local-seo`],
   };
 }
 
@@ -724,7 +744,7 @@ function buildGeo(province, spec) {
   const rng = rngFor(`${spec.slug}/${province.slug}/geo/v2`);
   const tokens = provinceTokens(province, spec, rng, [province.capitalCity]);
   const notes = render(
-    "{singularCap} search in {province} clusters around {capital} and the province's larger centres, where directories and established operators occupy many of the top positions for broad terms. Outside those cities, people often search with a town name attached, so pages that name the location convert better than generic ones.",
+    "{seoCap} search in {province} clusters around {capital} and the province's larger centres, where directories and established operators occupy many of the top positions for broad terms. Outside those cities, people often search with a town name attached, so pages that name the location convert better than generic ones.",
     tokens
   );
   return {
@@ -770,6 +790,12 @@ function assertTitles(spec, provinces, citiesByProvince) {
 
 // ----- main -----
 
+function provincesForSpec(spec, provinces) {
+  const scope = spec.geoProvinces;
+  if (!scope || scope === "all") return provinces;
+  return provinces.filter((p) => scope.includes(p.slug));
+}
+
 function writeJson(absPath, obj) {
   fs.mkdirSync(path.dirname(absPath), { recursive: true });
   fs.writeFileSync(absPath, JSON.stringify(obj, null, 2) + "\n", "utf8");
@@ -793,22 +819,23 @@ function main() {
     const spec = SPECS[slug];
     if (!spec) throw new Error(`unknown spec: ${slug}`);
 
+    const scopedProvinces = provincesForSpec(spec, provinces);
     const citiesByProvince = {};
-    for (const p of provinces) {
+    for (const p of scopedProvinces) {
       citiesByProvince[p.slug] = p.topCitySlugs
         .map((s) => cityBySlug.get(`${p.slug}/${s}`))
         .filter(Boolean)
         .filter(dataRich);
     }
 
-    titleErrors.push(...assertTitles(spec, provinces, citiesByProvince));
+    titleErrors.push(...assertTitles(spec, scopedProvinces, citiesByProvince));
 
     let written = { canada: 0, province: 0, city: 0, geo: 0 };
 
     writeJson(path.join(CONTENT_DIR, slug, "canada.json"), buildCanadaContent(spec));
     written.canada++;
 
-    for (const p of provinces) {
+    for (const p of scopedProvinces) {
       writeJson(path.join(CONTENT_DIR, slug, `${p.slug}.json`), buildProvinceContent(p, spec, citiesByProvince[p.slug].map((c) => c.name)));
       written.province++;
 

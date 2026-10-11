@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "Plumber SEO in Ontario helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across Toronto, Ottawa, Mississauga, Brampton and Hamilton can find and choose you.",
+  "intro": "Homeowners in Ontario expect a page that reflects their area, not a generic provincial pitch. From Toronto to the smaller centres, homeowners in Ontario search in ways that reflect the region they live in. Whether someone is in Toronto or a smaller town, they judge a plumber by how local and specific the page feels. The searches that matter in Ontario usually name a city, an area or a specific job. Building for Ontario means separating the places you serve and describing each one honestly. In Ontario, a strong hub page earns its value by pointing clearly to the places a business serves. A plumber in Ontario is competing for attention against both local rivals and national directories.",
+  "localInsight": "Because Toronto, Ottawa, Mississauga, Brampton and Hamilton dominate much of the demand in Ontario, those cities usually come first in a content plan. In Ontario, the gap between the largest city and the next tier is often where the fastest wins live. Seasonality shifts demand in parts of Ontario, so timing content around local patterns helps. For plumbers in Ontario, the clearest gains come from owning a handful of specific searches well. Outside the biggest centres, search volume is lower and competition thinner, so a well-built page can rank with less effort. Titles and claims need to match what a business is entitled to use in Ontario, so the copy stays accurate. In and around the largest cities, directories and bigger operators absorb a lot of the traffic for broad terms.",
+  "localChecklist": [
+    "A profile and review presence tied to the same location as each page.",
+    "Local proof that respects privacy and stays within professional rules.",
+    "Contact and intake details that make the next step obvious.",
+    "Regular updates so hours and services stay accurate across Ontario.",
+    "A Google Business Profile set to the right service area for Ontario.",
+    "Accurate titles and claims that match what you may legally use in Ontario.",
+    "Seasonal content timed to local demand in Ontario."
+  ],
+  "faqs": [
+    {
+      "q": "Which cities in Ontario should I target first?",
+      "a": "Start with the places you already serve and can describe distinctly, often around Toronto, Ottawa, Mississauga, Brampton and Hamilton. Pages for areas you genuinely cover rank faster and convert better than a page that claims the whole province.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Can you target both in-person and remote clients in Ontario?",
+      "a": "Yes. We make the service area clear so a business offering remote or province-wide jobs can still appear for the cities where its homeowners search, without confusing anyone.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do Ontario city pages risk looking duplicated?",
+      "a": "Only if they are thin and swap the place name. We build each page around genuinely local detail so it stands on its own and avoids the look of doorway pages.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Is a Ontario-wide page enough on its own?",
+      "a": "Rarely. Homeowners search with a city or region attached, so a single provincial page misses most of the demand. A hub page plus focused city pages matches how people actually search in Ontario.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Plumber SEO in Ontario. A province hub plus city pages and Google Business Profile work built for local search across the region locally and reviews.",
+  "proofRefs": [
+    "plumber-local-seo"
+  ]
 }

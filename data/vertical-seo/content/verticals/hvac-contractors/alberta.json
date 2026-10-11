@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "HVAC contractor SEO in Alberta helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across Calgary, Edmonton, Red Deer, Lethbridge and Airdrie can find and choose you.",
+  "intro": "Whether someone is in Edmonton or a smaller town, they judge a HVAC contractor by how local and specific the page feels. Content built city by city across Alberta tends to outperform one page stretched over the whole province. In Alberta, the cities of Calgary, Edmonton, Red Deer, Lethbridge and Airdrie each behave differently, so a single provincial page rarely serves more than one area well. The searches that matter in Alberta usually name a city, an area or a specific job. Ranking across Alberta is a matter of depth: several specific pages beat one broad page every time. A practice in one part of Alberta is not really competing with one hundreds of kilometres away, even inside the same province. Treating Alberta as one audience overlooks how differently Edmonton and smaller centres behave.",
+  "localInsight": "Alberta holds a mix of dense urban markets and smaller connected towns, and each needs its own wording. The Google Business Profile should stay aligned with how locals in Alberta actually search, not one oversized radius. For HVAC contractors in Alberta, the clearest gains come from owning a handful of specific searches well. A clear intake and contact process matters everywhere in Alberta, but especially where competition is heaviest. Local pack results in Alberta reward businesses whose profile, reviews and site all point to the same place. Because Alberta covers both busy metros and quieter towns, one tone will not fit every market. A province page works best as a hub that links to the cities and regions a business genuinely serves.",
+  "localChecklist": [
+    "Accurate titles and claims that match what you may legally use in Alberta.",
+    "Internal links that connect the province hub to every city page.",
+    "Service pages that use the same words your homeowners use.",
+    "A Google Business Profile set to the right service area for Alberta.",
+    "Seasonal content timed to local demand in Alberta.",
+    "Reviews kept current for each city you cover in Alberta.",
+    "Service descriptions written the way homeowners in Alberta phrase their searches."
+  ],
+  "faqs": [
+    {
+      "q": "Can you target both in-person and remote clients in Alberta?",
+      "a": "Yes. We make the service area clear so a business offering remote or province-wide jobs can still appear for the cities where its homeowners search, without confusing anyone.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Is a Alberta-wide page enough on its own?",
+      "a": "Rarely. Homeowners search with a city or region attached, so a single provincial page misses most of the demand. A hub page plus focused city pages matches how people actually search in Alberta.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which cities in Alberta should I target first?",
+      "a": "Start with the places you already serve and can describe distinctly, often around Calgary, Edmonton, Red Deer, Lethbridge and Airdrie. Pages for areas you genuinely cover rank faster and convert better than a page that claims the whole province.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How much does the Google Business Profile matter in Alberta?",
+      "a": "A great deal. In Alberta, the local pack draws much of the traffic for commercial searches, so a complete profile with the right service area and current reviews is central to the plan.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "HVAC Contractor SEO in Alberta. A province hub plus city pages and Google Business Profile work built for local search across the region locally.",
+  "proofRefs": [
+    "hvac-contractor-local-seo"
+  ]
 }

@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "HVAC contractor SEO in Nova Scotia helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across Halifax and Cape Breton can find and choose you.",
+  "intro": "A HVAC contractor in Nova Scotia is competing for attention against both local rivals and national directories. HVAC contractors in Nova Scotia get the best results when each city or region has content that reflects its own demand. Demand in Nova Scotia concentrates in Halifax and Cape Breton, but the long tail across smaller centres is often where a HVAC contractor can rank fastest. Because Nova Scotia spans very different communities, the realistic approach is a hub page plus focused city pages underneath it. In Nova Scotia, the cities of Halifax and Cape Breton each behave differently, so a single provincial page rarely serves more than one area well. From Halifax to the smaller centres, homeowners in Nova Scotia search in ways that reflect the region they live in. Homeowners in Nova Scotia expect a page that reflects their area, not a generic provincial pitch.",
+  "localInsight": "A page that names a specific area of Nova Scotia speaks to homeowners more directly than a provincial slogan. Because Nova Scotia covers both busy metros and quieter towns, one tone will not fit every market. Outside the biggest centres, search volume is lower and competition thinner, so a well-built page can rank with less effort. Nova Scotia holds a mix of dense urban markets and smaller connected towns, and each needs its own wording. Local pack results in Nova Scotia reward businesses whose profile, reviews and site all point to the same place. Because Halifax and Cape Breton dominate much of the demand in Nova Scotia, those cities usually come first in a content plan. Seasonality shifts demand in parts of Nova Scotia, so timing content around local patterns helps.",
+  "localChecklist": [
+    "Seasonal content timed to local demand in Nova Scotia.",
+    "Regular updates so hours and services stay accurate across Nova Scotia.",
+    "Service pages that use the same words your homeowners use.",
+    "Local proof that respects privacy and stays within professional rules.",
+    "Service descriptions written the way homeowners in Nova Scotia phrase their searches.",
+    "Contact and intake details that make the next step obvious.",
+    "Consistent business details everywhere you appear online."
+  ],
+  "faqs": [
+    {
+      "q": "Does regulation in Nova Scotia affect my website wording?",
+      "a": "It can. Rules about titles and advertising vary by province and profession, so your site should use only the claims and credentials you are entitled to, and explain them clearly to homeowners.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Why build city pages instead of one Nova Scotia page?",
+      "a": "Because homeowners search with a city or region attached. A hub page for Nova Scotia plus focused pages for places like Halifax and Cape Breton matches how people actually search and lets each area earn its own visibility.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which cities in Nova Scotia should I target first?",
+      "a": "Start with the places you already serve and can describe distinctly, often around Halifax and Cape Breton. Pages for areas you genuinely cover rank faster and convert better than a page that claims the whole province.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How competitive is Nova Scotia compared with the rest of Canada?",
+      "a": "It varies. The largest cities in Nova Scotia are contested, while smaller centres such as parts of Halifax and Cape Breton are far less saturated, so a focused HVAC contractor can often rank faster there while building toward the bigger market.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "HVAC Contractor SEO in Nova Scotia. A province hub plus city pages and Google Business Profile work built for local search across the region.",
+  "proofRefs": [
+    "hvac-contractor-local-seo"
+  ]
 }

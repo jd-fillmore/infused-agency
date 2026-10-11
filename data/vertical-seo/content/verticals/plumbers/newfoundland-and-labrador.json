@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "Plumber SEO in Newfoundland and Labrador helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across St. John's can find and choose you.",
+  "intro": "Homeowners in Newfoundland and Labrador expect a page that reflects their area, not a generic provincial pitch. Because Newfoundland and Labrador spans very different communities, the realistic approach is a hub page plus focused city pages underneath it. The towns and cities of Newfoundland and Labrador each bring their own demand, and the best pages respect that difference. A plumber in Newfoundland and Labrador is competing for attention against both local rivals and national directories. Building for Newfoundland and Labrador means separating the places you serve and describing each one honestly. Content built city by city across Newfoundland and Labrador tends to outperform one page stretched over the whole province. Plumbers in Newfoundland and Labrador get the best results when each city or region has content that reflects its own demand.",
+  "localInsight": "A province page works best as a hub that links to the cities and regions a business genuinely serves. Newfoundland and Labrador holds a mix of dense urban markets and smaller connected towns, and each needs its own wording. The service pages that win in Newfoundland and Labrador answer a real question rather than listing every capability. For plumbers in Newfoundland and Labrador, the clearest gains come from owning a handful of specific searches well. The Google Business Profile should stay aligned with how locals in Newfoundland and Labrador actually search, not one oversized radius. A page that names a specific area of Newfoundland and Labrador speaks to homeowners more directly than a provincial slogan. Because St. John's dominate much of the demand in Newfoundland and Labrador, those cities usually come first in a content plan.",
+  "localChecklist": [
+    "Accurate titles and claims that match what you may legally use in Newfoundland and Labrador.",
+    "Service descriptions written the way homeowners in Newfoundland and Labrador phrase their searches.",
+    "Regular updates so hours and services stay accurate across Newfoundland and Labrador.",
+    "Content that answers the questions homeowners ask before they get in touch.",
+    "A province hub page plus separate pages for each city or region you serve.",
+    "Local proof that respects privacy and stays within professional rules.",
+    "Service pages that use the same words your homeowners use."
+  ],
+  "faqs": [
+    {
+      "q": "Can you target both in-person and remote clients in Newfoundland and Labrador?",
+      "a": "Yes. We make the service area clear so a business offering remote or province-wide jobs can still appear for the cities where its homeowners search, without confusing anyone.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Is a Newfoundland and Labrador-wide page enough on its own?",
+      "a": "Rarely. Homeowners search with a city or region attached, so a single provincial page misses most of the demand. A hub page plus focused city pages matches how people actually search in Newfoundland and Labrador.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Why build city pages instead of one Newfoundland and Labrador page?",
+      "a": "Because homeowners search with a city or region attached. A hub page for Newfoundland and Labrador plus focused pages for places like St. John's matches how people actually search and lets each area earn its own visibility.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Does regulation in Newfoundland and Labrador affect my website wording?",
+      "a": "It can. Rules about titles and advertising vary by province and profession, so your site should use only the claims and credentials you are entitled to, and explain them clearly to homeowners.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Plumber SEO in Newfoundland and Labrador. A province hub plus city pages and Google Business Profile work built for local search across the region.",
+  "proofRefs": [
+    "plumber-local-seo"
+  ]
 }

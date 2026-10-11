@@ -1,11 +1,51 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "Landscaper SEO is the work of helping a business rank in search so the right homeowners find it. For Canadian businesses that means focused service pages, a strong Google Business Profile, and province-aware content that helps someone searching in their own city book with you.",
+  "intro": "The strongest results come from a Canada-level hub that links down to provinces and cities rather than a single page trying to cover everything. A landscaper that ranks well nationally usually ranks well because each local page underneath is genuinely useful on its own. The businesses that grow from search are the ones whose pages answer a real question before asking for the call. Directories and marketplaces hold strong positions for broad terms, which is why the realistic win is the long tail: a project, a population, and a place. Because Canada is ten provinces with their own competition and their own vocabulary, the content has to reflect the places a business actually serves. Building for Canada means writing for the specific searches that describe what you do, then linking each province and city into a clear structure.",
+  "localInsight": "A complete Google Business Profile with the right category, services and service area is the foundation in every province. Canada regulates many professions province by province, so the language a business may use legitimately changes with location. Trust content works best when it respects privacy and stays within the advertising rules of each profession. Consistent name, address and phone details across the web matter because homeowners cross-check before they contact you. In Quebec, clients often search in French, and the Charter of the French Language makes a French-language presence a practical expectation. Because directories are strong nationally, the most durable gains come from owning specific, high-intent searches in each city.",
+  "localChecklist": [
+    "A structure that links the Canada page to provinces and cities.",
+    "Clear intake information: how to book, what happens first, and how pricing works.",
+    "Location pages that describe the communities you serve without copying one page nationwide.",
+    "Consistent name, address and phone details everywhere your business appears.",
+    "Fast, mobile-friendly pages that make the next step obvious.",
+    "A fully completed Google Business Profile with the correct category and service area."
+  ],
+  "faqs": [
+    {
+      "q": "Why do directory sites outrank my own website?",
+      "a": "Large directories and marketplaces have enormous authority, so they often sit above a single business for broad terms. The strategy is not to fight them for a generic word but to win the specific searches that describe your work, your homeowners and your location.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which projects can you write about?",
+      "a": "We write only about what you genuinely offer. Common examples include irrigation, sod and planting, landscape design and retaining walls. We do not invent services or make claims a business cannot stand behind.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you work with businesses in every province?",
+      "a": "Yes. We build pages for Ontario, Quebec, British Columbia, Alberta, Saskatchewan, Manitoba, Nova Scotia, New Brunswick, Newfoundland and Labrador, and Prince Edward Island, and we link each province page to the cities we cover inside it.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How long before a business sees results?",
+      "a": "Local visibility usually starts improving within three to six months, with more meaningful gains between six and twelve. Timelines depend on your current site, the competition in your city, and how consistently content and profile work is maintained.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How do we get started?",
+      "a": "Request a free quote and we will review your website, your Google Business Profile and the terms you want to rank for. From there we recommend the pages and profile work that will move your business forward first.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How is landscaper SEO different in Canada?",
+      "a": "Canada regulates many professions province by province, and in Quebec homeowners often search in French, so one national template will not fit every business. A Canadian plan accounts for the province you operate in and the language your homeowners search in.",
+      "geoSpecific": true
+    }
+  ],
+  "summary": "Landscaper SEO in Canada. Local search, Google Business Profile work and province-aware pages that help businesses across Canada get found locally.",
+  "proofRefs": [
+    "landscaper-local-seo"
+  ]
 }

@@ -1,11 +1,47 @@
 {
-  "status": "draft",
-  "updated": "2026-10-10",
-  "directAnswer": "",
-  "intro": "",
-  "localInsight": "",
-  "localChecklist": [],
-  "faqs": [],
-  "summary": "",
-  "proofRefs": []
+  "status": "reviewed",
+  "updated": "2026-10-11",
+  "directAnswer": "Plumber SEO in New Brunswick helps a business rank in the searches people make in the region it actually serves, pairing focused service pages with local signals so homeowners across Moncton, Saint John and Fredericton can find and choose you.",
+  "intro": "The towns and cities of New Brunswick each bring their own demand, and the best pages respect that difference. A plumber in New Brunswick is competing for attention against both local rivals and national directories. Ranking across New Brunswick is a matter of depth: several specific pages beat one broad page every time. The searches that matter in New Brunswick usually name a city, an area or a specific job. Plumbers in New Brunswick get the best results when each city or region has content that reflects its own demand. In New Brunswick, a strong hub page earns its value by pointing clearly to the places a business serves. In New Brunswick, the cities of Moncton, Saint John and Fredericton each behave differently, so a single provincial page rarely serves more than one area well.",
+  "localInsight": "Seasonality shifts demand in parts of New Brunswick, so timing content around local patterns helps. Because New Brunswick covers both busy metros and quieter towns, one tone will not fit every market. Local proof and community involvement help in New Brunswick, as long as it stays within the rules of the profession. The service pages that win in New Brunswick answer a real question rather than listing every capability. Search results in New Brunswick mix national directories with local businesses, so specificity is the advantage. The Google Business Profile should stay aligned with how locals in New Brunswick actually search, not one oversized radius. A province page works best as a hub that links to the cities and regions a business genuinely serves.",
+  "localChecklist": [
+    "Accurate titles and claims that match what you may legally use in New Brunswick.",
+    "Consistent business details everywhere you appear online.",
+    "Contact and intake details that make the next step obvious.",
+    "Content that answers the questions homeowners ask before they get in touch.",
+    "Service pages that use the same words your homeowners use.",
+    "Seasonal content timed to local demand in New Brunswick.",
+    "Service descriptions written the way homeowners in New Brunswick phrase their searches."
+  ],
+  "faqs": [
+    {
+      "q": "Do New Brunswick city pages risk looking duplicated?",
+      "a": "Only if they are thin and swap the place name. We build each page around genuinely local detail so it stands on its own and avoids the look of doorway pages.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Why build city pages instead of one New Brunswick page?",
+      "a": "Because homeowners search with a city or region attached. A hub page for New Brunswick plus focused pages for places like Moncton, Saint John and Fredericton matches how people actually search and lets each area earn its own visibility.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Which cities in New Brunswick should I target first?",
+      "a": "Start with the places you already serve and can describe distinctly, often around Moncton, Saint John and Fredericton. Pages for areas you genuinely cover rank faster and convert better than a page that claims the whole province.",
+      "geoSpecific": true
+    },
+    {
+      "q": "How much does the Google Business Profile matter in New Brunswick?",
+      "a": "A great deal. In New Brunswick, the local pack draws much of the traffic for commercial searches, so a complete profile with the right service area and current reviews is central to the plan.",
+      "geoSpecific": true
+    },
+    {
+      "q": "Do you guarantee the number one position?",
+      "a": "No ethical provider can guarantee a specific position, because search results change constantly. We follow a proven process, measure the results that matter such as enquiries and booked jobs, and report them transparently.",
+      "geoSpecific": false
+    }
+  ],
+  "summary": "Plumber SEO in New Brunswick. A province hub plus city pages and Google Business Profile work built for local search across the region locally.",
+  "proofRefs": [
+    "plumber-local-seo"
+  ]
 }
