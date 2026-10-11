@@ -64,6 +64,22 @@ const PATHS = {
     </>
   ),
   spark: <path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18" />,
+  menu: <path d="M4 7h16M4 12h16M4 17h16" />,
+  close: <path d="M6 6l12 12M18 6L6 18" />,
+  instagram: (
+    <>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </>
+  ),
+  facebook: <path d="M15 3h3v4h-3a2 2 0 00-2 2v2h5l-1 4h-4v6H9v-6H6v-4h3V9a5 5 0 015-5z" />,
+  linkedin: (
+    <>
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 014 0v4" />
+    </>
+  ),
 };
 
 export default function Icon({ name, className = "h-5 w-5", ...rest }) {

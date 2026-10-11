@@ -54,7 +54,37 @@ setup is committed separately before any visual work.
 - [x] Built CSS: **37.2 kB gzipped** total (still under the ~50 kB target).
 
 ### R2 — Header, mega menu, footer
-- [ ] Sticky translucent header with backdrop blur; keyboard-accessible mega menu.
+- [x] Sticky translucent dark header (`sticky top-0`, backdrop blur, border
+      appears on scroll) with logo, Solutions (mega menu), Work, About, Blog,
+      and a primary "Get a quote" button. Rewritten without reactstrap/Bootstrap
+      nav (plain markup + Tailwind), mobile toggle reimplemented with Escape close.
+- [x] Mega menu restyled as a full-width dark panel: 4 service groups with group
+      headings + one-line descriptions, an "SEO by industry" group (live
+      verticals only), and a featured "Not sure where to start?" card. Kept the
+      Phase 7 behaviour: hover/focus open with delays, Escape closes and returns
+      focus to the trigger, touch-tap opens, server-rendered links.
+- [x] New mega footer: brand + social icons (from site-facts social profiles),
+      Services by group, Industries (live verticals), Niagara cities (published
+      `/seo/{city}` pages only), Company, and public contact details + legal links.
+- [x] Reviews badge **omitted** — no verified rating/count in `site-facts.json`.
+- [x] Deleted now-unused `components/Nav/nav.scss` and `components/Footer/
+      footer.scss` (their classes were used only by the converted components).
+- [x] Header switched from `position: fixed` (Bootstrap `.fixed-top`) to
+      `position: sticky`, so it reserves its own height and can never overlap
+      content. NOTE: legacy pages still carry their old large top padding, so
+      they show extra top spacing until Phase R5 reflows them (deferred per spec).
+
+Decisions / assumptions logged:
+- **Industries nav/footer entries are not added yet.** The spec lists an
+  "Industries" item in the R2 header, but the `/industries` page is created in
+  R4. Adding the link now would create a broken internal link (the
+  broken-link gate fails on it). We keep the existing nav links in R2 and link
+  the footer "Industries" column straight to the live vertical pillars
+  (`/therapist-seo`). The `/industries` entry is added in R4 with the page.
+- Header logo switched from `infused-logo.png` (82x17, too low-res) to the
+  existing `niagara-web-design-infused-logo.webp` (200x58) for a crisp header.
+- `navData.js` holds the menu data + short, neutral one-line descriptions in our
+  own words (no competitor copy).
 
 ### R3 — Homepage
 - [ ] Rebuild homepage on the design system; keep home JSON-LD types, title,
