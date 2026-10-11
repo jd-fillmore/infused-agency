@@ -20,10 +20,19 @@ setup is committed separately before any visual work.
 - [ ] Run `yarn verify:seo && yarn test:seo && yarn lint && yarn build` + commit.
 
 ### R1a — Tailwind setup (separate commit)
-- [ ] Add Tailwind. Try v4 + `@tailwindcss/postcss`; fall back to v3.4 if the
-      Next 13.5.6 build breaks. Preflight/base reset must not regress existing
-      Bootstrap 4 / reactstrap styles.
-- [ ] Keep existing SCSS working alongside Tailwind.
+- [x] **Tailwind v4.3.3** chosen (spec's preferred branch). Next 13.5.6 + Node
+      22 build green with it, so no v3.4 fallback needed. Installed via yarn as
+      devDependencies: `tailwindcss@^4`, `@tailwindcss/postcss@^4`, and
+      `autoprefixer` (custom `postcss.config.js` replaces Next's default
+      PostCSS pipeline, so autoprefixer keeps legacy vendor prefixing).
+- [x] `postcss.config.js` → `@tailwindcss/postcss` + `autoprefixer`.
+- [x] `src/styles/tailwind.css` imported first in `_app.js` (before Bootstrap so
+      Bootstrap's reboot still wins on legacy components). Preflight **enabled**.
+      `@source` covers `components/`, `src/pages/`, `data/`.
+- [x] Design tokens mapped into `@theme` (colours, fonts, radius, shadow/glow,
+      container) as CSS variables, plus z-index base vars + `z-*` utilities.
+- [x] Existing SCSS/Bootstrap untouched and still working.
+- [x] Built CSS: **34.9 kB gzipped** (was 32.5 kB) — under the ~50 kB target.
 
 ### R1b — Design system
 - [ ] Dark theme tokens (below) as CSS variables + Tailwind theme extension.

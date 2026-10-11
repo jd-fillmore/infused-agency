@@ -1,3 +1,4 @@
+import "../styles/tailwind.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { DM_Sans } from "@next/font/google";
 import "../../src/pages/general.scss";
