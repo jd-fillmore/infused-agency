@@ -11,7 +11,7 @@
     "start": "next start",
     "postbuild": "next-sitemap && node scripts/generate-vertical-sitemaps.js && node scripts/validate-schema.js --require",
     "lint": "next lint",
-    "verify:seo": "node scripts/verify-vertical-seo.js && node scripts/validate-schema.js",
+    "verify:seo": "node scripts/verify-vertical-seo.js && node scripts/validate-schema.js && node scripts/seo-regression.js",
     "content:status": "node scripts/content-status.js",
     "content:scaffold": "node scripts/scaffold-content.js",
     "audit:pages": "node scripts/audit-pages.js",

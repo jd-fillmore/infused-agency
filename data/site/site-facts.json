@@ -1,0 +1,112 @@
+{
+  "clientsHelped": "50+",
+  "resultsClaim": "Over 50 clients helped, ranking for hundreds of long-tail, high-buying-intent keywords, with more leads to show for it.",
+  "results": [
+    {
+      "id": "flat-rock-cellars",
+      "namedEntity": "Flat Rock Cellars",
+      "metric": "+550%",
+      "metricLabel": "Local visibility",
+      "context": "Local visibility grew after SEO work with Infused Agency.",
+      "source": "https://www.infused.agency"
+    },
+    {
+      "id": "delta-energy-solutions",
+      "namedEntity": "Delta Energy Solutions",
+      "metric": "+670%",
+      "metricLabel": "Local visibility",
+      "context": "Local visibility grew after SEO work with Infused Agency.",
+      "source": "https://www.infused.agency"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "freds-concrete",
+      "namedEntity": "Fred's Concrete",
+      "person": "Lucas Folino",
+      "role": "Owner",
+      "quote": "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+      "source": "https://www.infused.agency"
+    },
+    {
+      "id": "brandi-may-psychotherapy",
+      "namedEntity": "Brandi May Psychotherapy",
+      "person": "Brandi May",
+      "role": "Owner",
+      "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+      "source": "https://www.infused.agency"
+    },
+    {
+      "id": "visca-electric",
+      "namedEntity": "VISCA Electric",
+      "person": "Sandro Visca",
+      "role": "Owner",
+      "quote": "Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.",
+      "source": "https://www.infused.agency"
+    }
+  ],
+  "clientLogosAllowed": [
+    "Suk Law",
+    "Flat Rock Cellars",
+    "Fred's Concrete",
+    "UPHI Cannabis",
+    "KD Flowers",
+    "Delta Energy Solutions",
+    "Brandi May Psychotherapy",
+    "Jerry's Insulating",
+    "Google Partner",
+    "Niagara Chamber of Commerce",
+    "Three Best Rated",
+    "GoodFirms",
+    "DesignRush",
+    "Google Reviews"
+  ],
+  "googleReviews": {
+    "count": null,
+    "rating": null,
+    "url": null
+  },
+  "yearsInBusiness": null,
+  "teamSize": null,
+  "responseTime": null,
+  "pricingModel": null,
+  "contractTerms": null,
+  "guarantees": null,
+  "address": {
+    "streetAddress": "73 Alexandra Blvd",
+    "addressLocality": "St. Catharines",
+    "addressRegion": "ON",
+    "postalCode": "L2P 1K2",
+    "addressCountry": "CA"
+  },
+  "phone": "(905) 933-3115",
+  "email": "info@infused.agency",
+  "hours": [
+    "Monday - 9a.m.-6p.m.",
+    "Tuesday - 9a.m.-6p.m.",
+    "Wednesday - 9a.m.-6p.m.",
+    "Thursday - 9a.m.-6p.m.",
+    "Friday - 9a.m.-6p.m.",
+    "Saturday - Closed",
+    "Sunday - Closed"
+  ],
+  "socialProfiles": [
+    { "platform": "Facebook", "url": "https://www.facebook.com/infused.agency" },
+    { "platform": "Twitter", "url": "https://twitter.com/InfusedAgency" },
+    { "platform": "LinkedIn", "url": "https://linkedin.com/company/infused-agency" },
+    { "platform": "Instagram", "url": "https://www.instagram.com/infusedweb/" }
+  ],
+  "serviceArea": [
+    "St. Catharines",
+    "Niagara Falls",
+    "Niagara-on-the-Lake",
+    "Welland",
+    "Fort Erie",
+    "Beamsville",
+    "Grimsby",
+    "Thorold",
+    "Port Colborne",
+    "Fonthill",
+    "Crystal Beach"
+  ]
+}
