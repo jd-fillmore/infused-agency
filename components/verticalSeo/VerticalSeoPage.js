@@ -223,6 +223,7 @@ const VerticalSeoPage = ({ page }) => {
           </p>
         </Hero>
 
+        <div className="vertical-content" data-kind={page.kind}>
         {content.intro ? (
           <Section>
             <p className={PROSE}>{content.intro}</p>
@@ -452,6 +453,7 @@ const VerticalSeoPage = ({ page }) => {
         <Faq faqs={content.faqs} />
         <LinkList title="Related services" links={page.serviceLinks} />
         <LinkList title="Related pages" links={page.links} />
+        </div>
       </main>
       <CTA />
       <Footer />

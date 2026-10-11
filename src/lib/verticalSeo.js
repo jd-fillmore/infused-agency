@@ -504,7 +504,7 @@ function buildLinks(page, publishedSet) {
       if (city.slug === page.city.slug) continue;
       const href = `/${v.urlSlug}/${page.province.slug}/${city.slug}`;
       if (pub(href)) {
-        links.push({ href, label: `SEO for therapists in ${city.name}`, internal: true });
+        links.push({ href, label: `SEO for ${titleCase(v.plural)} in ${city.name}`, internal: true });
         if (++n >= 4) break;
       }
     }

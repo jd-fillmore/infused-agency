@@ -37,3 +37,18 @@
     }
   }
 }
+
+// City pages: alternate the section background on the way down the page so the
+// layout has rhythm. Scoped to the city kind; pillar/province keep the flat base.
+.vertical-content[data-kind="city"] > section {
+  background-color: var(--color-base);
+}
+
+.vertical-content[data-kind="city"] > section:nth-of-type(even) {
+  background-color: var(--color-surface);
+  background-image: radial-gradient(
+    90% 120% at 100% 0%,
+    rgba(34, 211, 238, 0.05),
+    transparent 60%
+  );
+}

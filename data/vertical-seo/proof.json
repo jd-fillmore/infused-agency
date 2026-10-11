@@ -41,5 +41,45 @@
     "quote": "Sandro Visca of VISCA Electric recommends Infused Agency for the local search results their electrical business gained.",
     "source": "https://www.infused.agency",
     "verticals": ["electricians", "contractors"]
+  },
+  {
+    "id": "dentist-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for dental practices: treatment and neighbourhood pages, an optimised Google Business Profile, and reporting on the searches that lead to new patients.",
+    "source": "https://www.infused.agency",
+    "verticals": ["dentists"]
+  },
+  {
+    "id": "accountant-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for accounting firms: service pages for tax and bookkeeping, an optimised Google Business Profile, and reporting on the searches that lead to new clients.",
+    "source": "https://www.infused.agency",
+    "verticals": ["accountants"]
+  },
+  {
+    "id": "veterinarian-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for veterinary clinics: service and neighbourhood pages, an optimised Google Business Profile, and reporting on the searches that lead to new clients.",
+    "source": "https://www.infused.agency",
+    "verticals": ["veterinarians"]
+  },
+  {
+    "id": "locksmith-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for locksmiths: urgent-service pages, a service-area Google Business Profile, and reporting on the searches that lead to direct calls.",
+    "source": "https://www.infused.agency",
+    "verticals": ["locksmiths"]
+  },
+  {
+    "id": "mover-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A structured local SEO program for moving companies: local and long-distance pages, a service-area Google Business Profile, and reporting on the searches that lead to quote requests.",
+    "source": "https://www.infused.agency",
+    "verticals": ["movers"]
   }
 ]
