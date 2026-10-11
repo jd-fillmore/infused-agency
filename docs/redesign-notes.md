@@ -87,8 +87,39 @@ Decisions / assumptions logged:
   own words (no competitor copy).
 
 ### R3 — Homepage
-- [ ] Rebuild homepage on the design system; keep home JSON-LD types, title,
-      meta, canonical, robots unchanged. H2s may change (allowlisted).
+- [x] Rebuilt `src/pages/index.js` on the design system (Tailwind + `components/ui`).
+      `Head` kept byte-identical: same `homeGraph({ faqs: HOME_FAQS })` script,
+      title, meta description, canonical, geo/verification metas. H1 kept exactly
+      `Niagara SEO and AI SEO Services`.
+- [x] Section order per spec: hero (eyebrow, H1, supporting copy, primary CTA +
+      compact inline lead form + real trust row) → recognised/affiliate strip →
+      "how people find your business" intro → proof strip (StatBlocks +550%/+670%,
+      50+, testimonials) → where to start (4 numbered cards + buyer-guide links) →
+      services grid (all 21 services, numbered, grouped as the mega menu, from
+      `navData.js`) → choose your path (3 intent cards) → how we work (4 steps) →
+      web design + SEO together (3 features) → why Infused (4 differentiators) →
+      industries (paragraph + chips = live verticals only) → where we work (Niagara
+      city pills, only published `/seo/{city}` pages) → FAQ → final CTA with the
+      form again.
+- [x] New `components/Home/LeadForm.js`. **Assumption:** the site has no form
+      backend (every page funnels to Calendly on `/get-a-quote` and the public
+      email); the form therefore submits through the existing contact channel via
+      a prefilled `mailto:info@infused.agency`, and includes the required hidden
+      honeypot field (`company_url`, visually hidden + `aria-hidden`, `tabIndex -1`).
+      Logged as an open question.
+- [x] Extended `src/lib/homeFaqs.js` with 4 fresh FAQs (clients helped, work
+      outside Niagara, first step, web + SEO). `HOME_FAQS` is still the single
+      source for both the visible Accordion and the FAQPage JSON-LD, so they stay
+      in sync. Only FAQ *content* changed — JSON-LD **types** are unchanged.
+- [x] Reused only real assets/proof: `aff-*` affiliate badges and `feat-*` client
+      logos (both already on the site and in `site-facts.clientLogosAllowed`), the
+      two verified result metrics, and the three owner-attributed testimonials.
+      No reviews badge, no invented numbers, no competitor copy.
+- [x] Regression: **0 failures, 0 warnings**. Word count kept within the ≤15% rule
+      (3155 → ~2740) after adding substantive prose; H1/title/meta/canonical/robots
+      and JSON-LD types all unchanged.
+- [x] `yarn lint` (pre-existing warnings only; new files clean), `yarn build`,
+      `yarn verify:seo`, `yarn test:seo` (17 passed) all green.
 
 ## Discovery
 

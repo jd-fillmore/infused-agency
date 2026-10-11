@@ -52,6 +52,26 @@ const HOME_FAQS = [
     a:
       "Pricing varies based on your business size, competition level, and specific goals. We offer affordable packages starting from basic local optimization to comprehensive enterprise solutions. Our transparent pricing includes no hidden fees, and we provide customized quotes based on your specific needs. We believe in delivering exceptional value, and many of our clients see a positive ROI within the first year of their investment.",
   },
+  {
+    q: "How many clients have you helped?",
+    a:
+      "Infused Agency has helped over 50 clients with SEO. Those clients rank for hundreds of long-tail, high-buying-intent keywords and have seen more leads as a result.",
+  },
+  {
+    q: "Do you work with businesses outside Niagara?",
+    a:
+      "Yes. We are based in St. Catharines and most of our local work is across the Niagara region, but our vertical SEO programmes run province by province across Canada, so businesses elsewhere can work with us remotely.",
+  },
+  {
+    q: "What is the first step to working with you?",
+    a:
+      "It starts with a free consultation. We review your website, your Google Business Profile, the searches you want to rank for and who you are competing against. From there we recommend the services that will move the needle, with no obligation to proceed.",
+  },
+  {
+    q: "Do you handle both web design and SEO?",
+    a:
+      "Yes. Design, development and SEO sit under one team, which means your site is built to be fast, accessible and crawlable from the start, and any redesign is planned so it does not undo the rankings you already have.",
+  },
 ];
 
 module.exports = { HOME_FAQS };

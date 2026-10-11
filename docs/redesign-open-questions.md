@@ -46,3 +46,15 @@ UI** — components must hide them when null (see spec rule 3).
   industries and whether it should appear in the main nav/mega menu now or later.
 - **Client logos** — `clientLogosAllowed` lists logos currently shown on the live
   site plus affiliate/award badges. Confirm all are still permitted to display.
+
+## Forms / lead capture (R3)
+
+- **No form backend exists.** Every page funnels to the Calendly booking on
+  `/get-a-quote` and the public `info@infused.agency` email; there is no form
+  action/POST endpoint anywhere in the repo (the `@formspree/react` dependency is
+  present but unused and has no form ID). The R3 homepage inline lead form
+  therefore reuses the existing contact channel: on submit it opens a prefilled
+  `mailto:info@infused.agency` and includes the required hidden honeypot. **If a
+  real endpoint (Formspree ID, CRM, API route) should be used instead, supply it
+  and the form will be pointed at it** — no endpoint/backend behaviour was
+  changed.
