@@ -299,3 +299,17 @@ button {
 .areas-served li {
   color: rgba(255, 255, 255, 0.72) !important;
 }
+
+/* Respect prefers-reduced-motion site-wide (spec §1.4 / R6). The redesign
+   leans on hover transitions + subtle reveals; kill them (and any residual
+   legacy animation) when the user asks for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

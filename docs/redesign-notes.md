@@ -351,3 +351,84 @@ and every inner page should match the homepage's dark/cyan SaaS look.
 - [x] **Checks:** `yarn build` 173 pages / schema 0 failures / sitemap
       `kept 109 of 172`; `yarn verify:seo` 0 failures / 0 warnings (173 vs 172);
       `yarn test:seo` 17 passed; `yarn lint` exit 0 (pre-existing warnings only).
+
+### R6 — QA and report (spec Phase R6)
+- [x] **`yarn verify:seo` — 0 failures / 0 warnings.** Pages in build **173** vs
+      baseline **172**. The only intended difference is the **new `/industries`**
+      page (explicitly allowlisted in `docs/redesign-allowlist.json`), plus the
+      allowlisted homepage H2 wording. Every other page's title, meta description,
+      canonical, robots, H1 text and JSON-LD **types** are byte-identical to the
+      pre-redesign baseline; no H2 on any non-allowlisted page changed; schema
+      validation is 0 failures; no word-count warnings.
+- [ ] **Screenshots + Lighthouse — waived by the owner this session.** The spec
+      asks for headless screenshots at 375/768/1280/1440 and a mobile Lighthouse
+      pass, but the owner said not to bother with the screenshot/QA tooling here.
+      Not captured. (A dev server is running on `:3000`, which also makes running
+      a production `next start` for capture unreliable.) A human should capture
+      these before merge — see the review list below.
+- [x] **CSS size:** main built stylesheet **258.1 kB raw / 40.2 kB gzip**, under
+      the ~50 kB gzip target.
+- [x] **Legacy CSS:** there is a **single global CSS bundle** shared by all
+      pages, so legacy rules can't be tree-shaken per route. The legacy sheets
+      remain *required* (the inner pages in R5 are themed through them rather
+      than rewritten), so nothing can be safely dropped yet — recorded, not
+      actioned.
+- [x] **Reduced motion:** the redesign had no `prefers-reduced-motion` handling,
+      so a global net was added in `src/styles/legacy-saas.css` (zeroes animation/
+      transition durations and disables smooth scroll when the user opts in). The
+      redesigned components use only CSS transitions + native `<details>`
+      (no JS animation libraries), so this fully covers them.
+- [x] **Keyboard navigation:** header + mega menu are keyboard-operable (hover/
+      focus open with delays, **Escape** closes and returns focus to the trigger,
+      touch-tap opens) from R2; accordions are native `<details>`/`<summary>`
+      (keyboard- and screen-reader-native); forms are standard controls; the
+      mobile nav toggle is a real `<button>` with `aria-expanded`.
+- [x] **JS disabled:** redesigned surfaces are server-rendered — homepage ships
+      its 13 FAQ `<details>` and nav/ mega-menu links in the HTML, and
+      `/industries` renders **all** industry cards (its filter chips default to
+      "All" and are progressive enhancement only). No redesigned content depends
+      on client JS to be present or crawlable.
+- [x] **Open questions:** carried in `docs/redesign-open-questions.md` (review
+      count/rating unknown → badge stays hidden; years in business / team size /
+      response time / pricing unverified → all `null`; Instagram handle mismatch;
+      confirm logo hex; confirm the final `/industries` list + nav placement).
+
+#### What changed, phase by phase
+- **R0** guardrails + SEO baseline (`docs/pre-redesign-baseline.json`) and
+  regression checker. **R1** Tailwind v4 + dark design tokens + `components/ui`.
+  **R2** sticky dark header, accessible mega menu, mega footer. **R3** homepage
+  rebuilt on the design system. Owner rounds: palette → dark grey/black + **cyan**
+  accent, Manrope everywhere, text wordmark, no visible email, compact mega menu,
+  and a palette-remap sweep of the inner pages. **R4** `/industries` hub +
+  vertical/service template restyles. **R5** shared-layer dark shell for the
+  remaining inner pages (heroes, blog, forms, media). **R6** this QA pass.
+
+#### Fonts and colours (chosen and why)
+- **Manrope** (400/600/700, self-hosted via `next/font`, `display:swap`) for
+  both display and body — the spec allows re-picking open-licence fonts; Manrope
+  gives the modern SaaS feel with a single family and only 3 weights (perf).
+- Palette (owner-directed): base `#0a0a0b`, surface `#101012`, card `#161618`,
+  muted `#a1a1aa`, single **cyan** accent `#22d3ee` (hover `#67e8f9`, deep
+  `#0891b2`), gold `#e2c044` kept. The accent was deliberately re-derived from
+  the brand direction rather than the reference site, so the result isn't a clone.
+
+#### Facts used / claims omitted
+- Used only real, owner-supplied facts (`data/site/site-facts.json`): "50+ clients
+  helped", the existing +550% Flat Rock Cellars / +670% Delta Energy Solutions
+  results, and the three existing testimonials.
+- **Omitted because no real data exists:** Google review count/rating badge,
+  years in business, team size, response time, pricing model, contract terms,
+  guarantees (all `null`).
+
+#### Top five things for a human to review before merging
+1. **Visual pass on desktop + mobile** (the screenshots waived here): homepage,
+   `/industries`, a pillar/province/city page, a service page, `/services`, blog
+   + post, `/get-a-quote`, 404.
+2. **Inner pages with JS disabled / slow network** — confirm the shared hero and
+   blog/article layouts read well (R5 is a shared-CSS layer, not per-page markup).
+3. **Mega menu + mobile nav** interaction (hover/focus/Escape/touch) on real
+   devices, and the FAQ/process `<details>` accordions.
+4. **Contact path** — every CTA targets `/get-a-quote` (Calendly); confirm that's
+   still the intended funnel (no form backend exists; see open questions).
+5. **`/industries` content + nav placement** — currently linked in the header;
+   confirm the industry list and whether it belongs in the mega menu too.
