@@ -232,7 +232,7 @@ both SIL OFL, loaded via `next/font` (self-hosted, `swap`).
 6. No competitor copy/headings/images reused; only generic structure recorded.
 7. `/industries` treated as a new allowlisted page; nav inclusion decided in R2.
 
-## R4 — Inner-page sweep (owner feedback round)
+## Post-review adjustments (owner feedback round 2)
 
 Owner feedback: "Ready to grow your business" CTA looked wonky, remove the
 email + put an invisible phone number in the footer, the mega menu was too big,
@@ -268,3 +268,52 @@ and every inner page should match the homepage's dark/cyan SaaS look.
 - Verified: `yarn build` 172 pages / schema 0 failures; `yarn verify:seo`
   0 failures / 0 warnings; ESLint clean on changed JS. Homepage H1 copy and
   all SEO fields unchanged.
+
+### R4 — Industries hub and template restyle (spec Phase R4)
+- [x] **New `/industries` page** (`src/pages/industries.js`, added to
+      `docs/redesign-allowlist.json` as an allowlisted new page). Static route
+      takes precedence over the `[vertical]` dynamic route; `industries` is not
+      a vertical urlSlug so there is no collision. Eyebrow badge, H1, subhead,
+      filter chips, industry-card grid, and a "Don't see your industry?" card.
+      Filtering is progressive enhancement — `useState` defaults to "All", so
+      every card is in the server-rendered HTML and all links work with JS off.
+- [x] **Data.** Added optional `category` + `industriesBenefit` to the live
+      vertical (`therapists` → "Health & Wellness"). The hub reads **live
+      verticals only** via the new `buildIndustriesProps()` in
+      `src/lib/verticalSeo.js`; the coverage line ("10 provinces · 30 cities") is
+      computed from `computePublished()` — never hardcoded — so the grid grows on
+      its own as verticals go live. `buildPageProps` province index now carries
+      each province's published cities + count.
+- [x] **JSON-LD.** New `itemListNode()` + `industriesGraph()` builders in
+      `src/lib/verticalSeoSchema.js`: Organization (shared `@id`) +
+      BreadcrumbList + CollectionPage + ItemList of the live pillars.
+      `validate-schema` stays at 0 failures.
+- [x] **Vertical templates restyled** (`components/verticalSeo/VerticalSeoPage.js`)
+      on the design system (`Section`/`Card`/`Accordion`/`Breadcrumb`/…). Pillar =
+      province cards with published-city chips; province = city cards; city =
+      dark cards + chip grids. Every H1/H2 **text and order preserved** (the
+      regression checker enforces this); all internal links kept.
+- [x] **Service pages restyled** (`components/services/ServicePage.js`) and the
+      **`/services` hub** (`src/pages/services.js`): hero with breadcrumb,
+      direct-answer, numbered process, FAQ accordion, related-services cards.
+      `/services` keeps H1 "Our Services" and its single H2 "SEO by industry"
+      (group titles stay `<h3>`), plus a new "Browse all industries" link.
+- [x] **Nav.** Added the "Industries" link to `/industries` in
+      `components/Nav/nav.js` (deferred from R2 until the page existed).
+- [x] **Cascade.** Restyled pages wrap content in `<main class="redesign-root">`
+      so `rescue.css` reasserts the dark headings and fixes the ≤992px legacy
+      heading sizes. `<CTA />` and `<Footer />` sit **outside** the root so the
+      shared legacy-styled CTA button is not hit by the `.redesign-root button`
+      reset. Filter chips re-assert their own chrome via a `.chip-toggle` rule in
+      `src/styles/legacy-saas.css` (higher specificity than the reset).
+- [x] **Sitemap.** `/industries` is now in the default `sitemap-0.xml`; the `/seo`
+      and `/web-design` hubs correctly live in `sitemap-services.xml` (the
+      scrubber removes exact service URLs from the default sitemap). Committed the
+      regenerated `sitemap-0.xml` this time because the change is structural (new
+      URL), not timestamp-only.
+- [x] **Checks:** `yarn build` 174 pages / schema 0 failures / sitemap
+      `kept 109 of 172`; `yarn verify:seo` 0 failures / 0 warnings (173 vs 172
+      pages); `yarn test:seo` 17 passed; `yarn lint` exit 0.
+- Assumption recorded: page-level industry benefits are authored per vertical
+  (`industriesBenefit`) and fall back to the first `serviceEmphasis` line, then a
+  generic line, so a vertical can safely go live before its copy is finalised.

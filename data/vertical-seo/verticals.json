@@ -5,6 +5,8 @@
     "singular": "therapist",
     "plural": "therapists",
     "displayName": "Therapists",
+    "category": "Health & Wellness",
+    "industriesBenefit": "Reach prospective clients searching by specialty, modality and location, and turn that trust into booked consultations.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -50,6 +52,8 @@
     "singular": "contractor",
     "plural": "contractors",
     "displayName": "Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Win more local jobs when homeowners search for trusted trades in your service area.",
     "parentSlug": null,
     "maxDepth": "province",
     "primaryKeywords": ["contractor SEO", "SEO for contractors"],

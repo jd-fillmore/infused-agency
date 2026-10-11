@@ -1,116 +1,189 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Container, Row, Col } from "reactstrap";
 import Nav from "../Nav/nav";
 import Footer from "../Footer/footer";
 import CTA from "../CTA/cta";
+import Container from "../ui/Container";
+import Section from "../ui/Section";
+import Card from "../ui/Card";
+import Badge from "../ui/Badge";
+import Button from "../ui/Button";
+import Breadcrumb from "../ui/Breadcrumb";
+import Accordion from "../ui/Accordion";
+import Icon from "../ui/Icon";
 import { buildGraph } from "../../src/lib/verticalSeoSchema";
+
+const PROSE = "max-w-3xl text-base leading-relaxed text-muted";
+
+function CheckList({ items }) {
+  if (!items || !items.length) return null;
+  return (
+    <ul className="grid gap-3 sm:grid-cols-2">
+      {items.map((item, i) => (
+        <li
+          key={i}
+          className="flex items-start gap-3 text-sm leading-relaxed text-muted"
+        >
+          <Icon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 function Proof({ items }) {
   if (!items || !items.length) return null;
   return (
-    <section className="home-top-web pd-top-40">
-      <Container>
-        <Row className="text-center">
-          <Col lg="12">
-            <h2>
-              Proof from <span>our work</span>
-            </h2>
-          </Col>
-        </Row>
-        <Row className="pd-top-40">
-          {items.map((item) => (
-            <Col lg="6" key={item.id}>
-              <div className="card">
-                <h3>{item.namedEntity}</h3>
-                {item.metric ? <p className="stats">{item.metric}</p> : null}
-                {item.quote ? <p>&ldquo;{item.quote}&rdquo;</p> : null}
-                {item.person ? <p className="owner">- {item.person}</p> : null}
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+    <Section
+      heading="Proof from our work"
+      subhead="Real results from businesses we have helped grow."
+    >
+      <div className="grid gap-5 lg:grid-cols-2">
+        {items.map((item) => (
+          <Card key={item.id} className="flex h-full flex-col">
+            <h3 className="font-display text-lg font-bold text-ink">
+              {item.namedEntity}
+            </h3>
+            {item.metric ? (
+              <p className="mt-3 font-display text-2xl font-bold text-gradient">
+                {item.metric}
+              </p>
+            ) : null}
+            {item.quote ? (
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+                &ldquo;{item.quote}&rdquo;
+              </p>
+            ) : null}
+            {item.person ? (
+              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.12em] text-muted">
+                {item.person}
+              </p>
+            ) : null}
+          </Card>
+        ))}
+      </div>
+    </Section>
   );
 }
 
 function Faq({ faqs }) {
   if (!faqs || !faqs.length) return null;
   return (
-    <section className="home-faq pd-top-80">
-      <Container>
-        <Row className="text-center pd-btm-40">
-          <Col lg="12">
-            <h2>Frequently Asked Questions</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg="12">
-            {faqs.map((f, i) => (
-              <div key={i}>
-                <h3>{f.q}</h3>
-                <p>{f.a}</p>
-              </div>
-            ))}
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Section heading="Frequently Asked Questions">
+      <Accordion items={faqs} className="max-w-3xl" />
+    </Section>
   );
 }
 
 function LinkList({ title, links }) {
   if (!links || !links.length) return null;
   return (
-    <section className="pd-top-40">
-      <Container>
-        <Row>
-          <Col lg="12">
-            <h2>{title}</h2>
-            <ul>
-              {links.map((l, i) => (
-                <li key={i}>
-                  {l.internal && l.href.startsWith("/") ? (
-                    <Link href={l.href}>{l.label}</Link>
-                  ) : (
-                    <a href={l.href}>{l.label}</a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Section heading={title}>
+      <ul className="flex flex-wrap gap-3">
+        {links.map((l, i) => (
+          <li key={i}>
+            {l.internal && l.href.startsWith("/") ? (
+              <Link
+                href={l.href}
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+              >
+                {l.label}
+                <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+              </Link>
+            ) : (
+              <a
+                href={l.href}
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+              >
+                {l.label}
+                <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </Section>
   );
 }
 
-function Breadcrumbs({ crumbs }) {
+function ProvinceCard({ province, singular }) {
   return (
-    <Container>
-      <Row>
-        <Col lg="12">
-          <nav aria-label="Breadcrumb" className="pd-top-20">
-            <ol className="breadcrumbs">
-              {crumbs.map((c, i) => {
-                const last = i === crumbs.length - 1;
-                return (
-                  <li key={i}>
-                    {last ? (
-                      <span aria-current="page">{c.name}</span>
-                    ) : (
-                      <Link href={c.href}>{c.name}</Link>
-                    )}
-                  </li>
-                );
-              })}
-            </ol>
-          </nav>
-        </Col>
-      </Row>
-    </Container>
+    <Card interactive className="flex h-full flex-col">
+      <Badge tone="muted" className="self-start">
+        {province.abbr}
+      </Badge>
+      <h3 className="mt-4 font-display text-lg font-bold text-ink">
+        {province.name}
+      </h3>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
+        {province.publishedCityCount > 0
+          ? `${province.publishedCityCount} ${
+              province.publishedCityCount === 1 ? "city" : "cities"
+            } covered across ${province.name}.`
+          : `${singular} SEO across ${province.name}.`}
+      </p>
+      {province.cities.length ? (
+        <ul className="mt-4 flex flex-wrap gap-2">
+          {province.cities.map((city) => (
+            <li key={city.slug}>
+              <Link
+                href={city.href}
+                className="rounded-full border border-border px-3 py-1 text-xs font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+              >
+                {city.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      <Link
+        href={province.href}
+        className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+      >
+        {singular} SEO in {province.name}
+        <Icon name="arrow-right" className="h-4 w-4" />
+      </Link>
+    </Card>
+  );
+}
+
+function CityCard({ city, singular }) {
+  return (
+    <Link
+      href={city.href}
+      className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-card p-5 shadow-card transition-transform duration-200 hover:-translate-y-1 hover:border-accent/40"
+    >
+      <span className="text-sm font-semibold text-ink">
+        {singular} SEO in {city.name}
+      </span>
+      <Icon
+        name="arrow-right"
+        className="h-5 w-5 shrink-0 text-muted transition-colors group-hover:text-accent"
+      />
+    </Link>
+  );
+}
+
+function Hero({ page, children }) {
+  return (
+    <section className="relative overflow-hidden border-b border-border bg-surface pb-16 pt-28 sm:pt-32 lg:pt-36">
+      <div
+        className="pointer-events-none absolute inset-0 glow-radial"
+        aria-hidden="true"
+      />
+      <Container className="relative">
+        <Breadcrumb items={page.breadcrumbs} className="mb-8" />
+        <h1 className="max-w-4xl text-balance font-display text-h1 font-bold leading-[1.08] tracking-[-0.02em] text-ink">
+          {page.h1}
+        </h1>
+        {children}
+        <Button href="/get-a-quote" size="lg" className="mt-8">
+          Get Free Quote
+        </Button>
+      </Container>
+    </section>
   );
 }
 
@@ -118,6 +191,10 @@ const VerticalSeoPage = ({ page }) => {
   const { content, vertical, province, city, geo } = page;
   const graph = buildGraph(page);
   const ruleRegulator = geo && geo.verified && geo.regulator;
+  const publishedCities = (page.citiesIndex || []).filter((c) => c.published);
+  const publishedProvinces = (page.provincesIndex || []).filter(
+    (p) => p.published
+  );
 
   return (
     <>
@@ -139,75 +216,50 @@ const VerticalSeoPage = ({ page }) => {
         />
       </Head>
       <Nav />
-      <section className="seo-city-hero text-center">
-        <Container>
-          <Row className="align-items-center">
-            <Col lg="12">
-              <h1 className="intro">{page.h1}</h1>
-              <p>{content.directAnswer}</p>
-              <Link href="/get-a-quote">
-                <button>Get Free Quote</button>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <main className="redesign-root">
+        <Hero page={page}>
+          <p className="mt-5 max-w-2xl text-lead text-muted">
+            {content.directAnswer}
+          </p>
+        </Hero>
 
-      <Breadcrumbs crumbs={page.breadcrumbs} />
+        {content.intro ? (
+          <Section>
+            <p className={PROSE}>{content.intro}</p>
+          </Section>
+        ) : null}
 
-      <section className="pd-top-40">
-        <Container>
-          <Row>
-            <Col lg="12">
-              {content.intro ? <p>{content.intro}</p> : null}
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {(page.kind === "pillar" || page.kind === "country") && (
-        <>
-          {vertical.serviceEmphasis.length ? (
-            <section className="home-services pd-top-40">
-              <Container>
-                <Row className="pd-btm-40">
-                  <Col lg="12" className="text-center">
-                    <h2>Our approach for {vertical.displayName.toLowerCase()}</h2>
-                  </Col>
-                </Row>
-                <Row>
+        {(page.kind === "pillar" || page.kind === "country") && (
+          <>
+            {vertical.serviceEmphasis.length ? (
+              <Section
+                heading={`Our approach for ${vertical.displayName.toLowerCase()}`}
+                subhead="The areas we focus on to win search visibility in this industry."
+              >
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                   {vertical.serviceEmphasis.map((s, i) => (
-                    <Col lg="4" className="d-flex" key={i}>
-                      <div className="card">
-                        <p>{s}</p>
-                      </div>
-                    </Col>
+                    <Card key={i} className="flex h-full flex-col">
+                      <Icon name="target" className="h-6 w-6 text-accent" />
+                      <p className="mt-4 text-sm leading-relaxed text-muted">
+                        {s}
+                      </p>
+                    </Card>
                   ))}
-                </Row>
-              </Container>
-            </section>
-          ) : null}
+                </div>
+              </Section>
+            ) : null}
 
-          {content.localInsight ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>The Canadian market</h2>
-                    <p>{content.localInsight}</p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
+            {content.localInsight ? (
+              <Section heading="The Canadian market">
+                <p className={PROSE}>{content.localInsight}</p>
+              </Section>
+            ) : null}
 
-          {page.regulationRows.length ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Provincial regulation landscape</h2>
-                    <table className="table">
+            {page.regulationRows.length ? (
+              <Section heading="Provincial regulation landscape">
+                <div className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
+                  <div className="overflow-x-auto">
+                    <table className="table w-full">
                       <thead>
                         <tr>
                           <th>Province</th>
@@ -226,266 +278,168 @@ const VerticalSeoPage = ({ page }) => {
                         ))}
                       </tbody>
                     </table>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
+                  </div>
+                </div>
+              </Section>
+            ) : null}
 
-          {page.quebecLanguageNote ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Quebec and French-language considerations</h2>
-                    <p>{page.quebecLanguageNote}</p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-        </>
-      )}
+            {page.quebecLanguageNote ? (
+              <Section heading="Quebec and French-language considerations">
+                <p className={PROSE}>{page.quebecLanguageNote}</p>
+              </Section>
+            ) : null}
+          </>
+        )}
 
-      {page.kind === "province" && (
-        <>
-          {geo && geo.provinceSearchNotes ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>
-                      How {vertical.singular} SEO works in {province.name}
-                    </h2>
-                    <p>{geo.provinceSearchNotes}</p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {content.localInsight ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <p>{content.localInsight}</p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {ruleRegulator ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Provincial regulation</h2>
-                    <p>
-                      {geo.regulator}
-                      {geo.advertisingRulesNote
-                        ? ` — ${geo.advertisingRulesNote}`
-                        : ""}
-                    </p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-        </>
-      )}
+        {page.kind === "province" && (
+          <>
+            {geo && geo.provinceSearchNotes ? (
+              <Section
+                heading={`How ${vertical.singular} SEO works in ${province.name}`}
+              >
+                <p className={PROSE}>{geo.provinceSearchNotes}</p>
+              </Section>
+            ) : null}
+            {content.localInsight ? (
+              <Section>
+                <p className={PROSE}>{content.localInsight}</p>
+              </Section>
+            ) : null}
+            {ruleRegulator ? (
+              <Section heading="Provincial regulation">
+                <p className={PROSE}>
+                  {geo.regulator}
+                  {geo.advertisingRulesNote
+                    ? ` — ${geo.advertisingRulesNote}`
+                    : ""}
+                </p>
+              </Section>
+            ) : null}
+          </>
+        )}
 
-      {page.kind === "city" && (
-        <>
-          {content.localInsight ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>
-                      How {vertical.singular} SEO works in {city.name}
-                    </h2>
-                    <p>{content.localInsight}</p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {city.neighbourhoods ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Neighbourhoods and areas we cover</h2>
-                    <ul>
-                      {city.neighbourhoods.map((n, i) => (
-                        <li key={i}>{n}</li>
-                      ))}
-                    </ul>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {city.majorIndustries ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Local economy</h2>
-                    <p>
-                      {city.name}&rsquo;s local economy leans on{" "}
-                      {city.majorIndustries.join(", ")}.
-                    </p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {ruleRegulator ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Provincial rules</h2>
-                    <p>
-                      {geo.regulator}
-                      {geo.advertisingRulesNote
-                        ? ` — ${geo.advertisingRulesNote}`
-                        : ""}
-                    </p>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {vertical.serviceEmphasis.length ? (
-            <section className="home-services pd-top-40">
-              <Container>
-                <Row className="pd-btm-40">
-                  <Col lg="12" className="text-center">
-                    <h2>What we do for {city.name} practices</h2>
-                  </Col>
-                </Row>
-                <Row>
-                  {vertical.serviceEmphasis.map((s, i) => (
-                    <Col lg="4" className="d-flex" key={i}>
-                      <div className="card">
-                        <p>{s}</p>
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-          {content.localChecklist ? (
-            <section className="pd-top-40">
-              <Container>
-                <Row>
-                  <Col lg="12">
-                    <h2>Your local checklist</h2>
-                    <ul>
-                      {content.localChecklist.map((c, i) => (
-                        <li key={i}>{c}</li>
-                      ))}
-                    </ul>
-                  </Col>
-                </Row>
-              </Container>
-            </section>
-          ) : null}
-        </>
-      )}
-
-      {content.localChecklist && page.kind !== "city" ? (
-        <section className="pd-top-40">
-          <Container>
-            <Row>
-              <Col lg="12">
-                <h2>What to get right</h2>
-                <ul>
-                  {content.localChecklist.map((c, i) => (
-                    <li key={i}>{c}</li>
-                  ))}
-                </ul>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      ) : null}
-
-      {(page.kind === "pillar" || page.kind === "country") &&
-      page.provincesIndex.length ? (
-        <section className="pd-top-40">
-          <Container>
-            <Row>
-              <Col lg="12">
-                <h2>{vertical.displayName} SEO by province</h2>
-                <ul>
-                  {page.provincesIndex.map((p) =>
-                    p.published ? (
-                      <li key={p.slug}>
-                        <Link href={p.href}>
-                          {vertical.singular} SEO in {p.name}
-                        </Link>
-                      </li>
-                    ) : null
-                  )}
-                </ul>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      ) : null}
-
-      {page.kind === "province" && page.citiesIndex.length ? (
-        <section className="pd-top-40">
-          <Container>
-            <Row>
-              <Col lg="12">
-                <h2>
-                  {vertical.singular} SEO in {province.name} cities
-                </h2>
-                <ul>
-                  {page.citiesIndex.map((c) =>
-                    c.published ? (
-                      <li key={c.slug}>
-                        <Link href={c.href}>
-                          {vertical.singular} SEO in {c.name}
-                        </Link>
-                      </li>
-                    ) : null
-                  )}
-                </ul>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      ) : null}
-
-      {page.legacyCities && page.legacyCities.length ? (
-        <section className="pd-top-40">
-          <Container>
-            <Row>
-              <Col lg="12">
-                <h2>More cities</h2>
-                <ul>
-                  {page.legacyCities.map((l, i) => (
-                    <li key={i}>
-                      <Link href={l.href}>{l.label}</Link>
+        {page.kind === "city" && (
+          <>
+            {content.localInsight ? (
+              <Section
+                heading={`How ${vertical.singular} SEO works in ${city.name}`}
+              >
+                <p className={PROSE}>{content.localInsight}</p>
+              </Section>
+            ) : null}
+            {city.neighbourhoods ? (
+              <Section heading="Neighbourhoods and areas we cover">
+                <ul className="flex flex-wrap gap-2">
+                  {city.neighbourhoods.map((n, i) => (
+                    <li
+                      key={i}
+                      className="rounded-full border border-border bg-white/5 px-3 py-1 text-sm text-muted"
+                    >
+                      {n}
                     </li>
                   ))}
                 </ul>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      ) : null}
+              </Section>
+            ) : null}
+            {city.majorIndustries ? (
+              <Section heading="Local economy">
+                <p className={PROSE}>
+                  {city.name}&rsquo;s local economy leans on{" "}
+                  {city.majorIndustries.join(", ")}.
+                </p>
+              </Section>
+            ) : null}
+            {ruleRegulator ? (
+              <Section heading="Provincial rules">
+                <p className={PROSE}>
+                  {geo.regulator}
+                  {geo.advertisingRulesNote
+                    ? ` — ${geo.advertisingRulesNote}`
+                    : ""}
+                </p>
+              </Section>
+            ) : null}
+            {vertical.serviceEmphasis.length ? (
+              <Section heading={`What we do for ${city.name} practices`}>
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {vertical.serviceEmphasis.map((s, i) => (
+                    <Card key={i} className="flex h-full flex-col">
+                      <Icon name="bolt" className="h-6 w-6 text-accent" />
+                      <p className="mt-4 text-sm leading-relaxed text-muted">
+                        {s}
+                      </p>
+                    </Card>
+                  ))}
+                </div>
+              </Section>
+            ) : null}
+            {content.localChecklist ? (
+              <Section heading="Your local checklist">
+                <CheckList items={content.localChecklist} />
+              </Section>
+            ) : null}
+          </>
+        )}
 
-      <Proof items={page.proof} />
-      <Faq faqs={content.faqs} />
-      <LinkList title="Related services" links={page.serviceLinks} />
-      <LinkList title="Related pages" links={page.links} />
+        {content.localChecklist && page.kind !== "city" ? (
+          <Section heading="What to get right">
+            <CheckList items={content.localChecklist} />
+          </Section>
+        ) : null}
+
+        {(page.kind === "pillar" || page.kind === "country") &&
+        page.provincesIndex.length ? (
+          <Section
+            heading={`${vertical.displayName} SEO by province`}
+            subhead={`Pick your province to see the cities we cover for ${vertical.displayName.toLowerCase()}.`}
+          >
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {publishedProvinces.map((p) => (
+                <ProvinceCard
+                  key={p.slug}
+                  province={p}
+                  singular={vertical.singular}
+                />
+              ))}
+            </div>
+          </Section>
+        ) : null}
+
+        {page.kind === "province" && page.citiesIndex.length ? (
+          <Section
+            heading={`${vertical.singular} SEO in ${province.name} cities`}
+          >
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {publishedCities.map((c) => (
+                <CityCard key={c.slug} city={c} singular={vertical.singular} />
+              ))}
+            </div>
+          </Section>
+        ) : null}
+
+        {page.legacyCities && page.legacyCities.length ? (
+          <Section heading="More cities">
+            <ul className="flex flex-wrap gap-3">
+              {page.legacyCities.map((l, i) => (
+                <li key={i}>
+                  <Link
+                    href={l.href}
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                  >
+                    {l.label}
+                    <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        ) : null}
+
+        <Proof items={page.proof} />
+        <Faq faqs={content.faqs} />
+        <LinkList title="Related services" links={page.serviceLinks} />
+        <LinkList title="Related pages" links={page.links} />
+      </main>
       <CTA />
       <Footer />
     </>

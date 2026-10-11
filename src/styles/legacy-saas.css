@@ -112,3 +112,33 @@ button {
 .modal-footer {
   color: var(--color-ink) !important;
 }
+
+/* Redesigned filter chips. rescue.css resets every <button> inside
+   .redesign-root for the nav toggle, so chips reassert their own chrome here
+   (higher specificity beats the reset regardless of import order). */
+.redesign-root .chip-toggle {
+  padding: 0.4rem 1rem !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 9999px !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: var(--color-muted) !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  cursor: pointer;
+}
+
+.redesign-root .chip-toggle:hover {
+  color: var(--color-ink) !important;
+}
+
+.redesign-root .chip-toggle[aria-pressed="true"] {
+  border-color: rgba(34, 211, 238, 0.4) !important;
+  background-color: rgba(34, 211, 238, 0.1) !important;
+  color: var(--color-accent) !important;
+}
+
+.redesign-root .chip-toggle:focus-visible {
+  outline: 2px solid var(--color-accent) !important;
+  outline-offset: 2px !important;
+}

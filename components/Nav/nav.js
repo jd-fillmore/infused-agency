@@ -8,6 +8,7 @@ import MegaMenu from "./megaMenu";
 import { GROUPS, INDUSTRIES } from "./navData";
 
 const LINKS = [
+  { name: "Industries", href: "/industries" },
   { name: "Work", href: "/work" },
   { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },

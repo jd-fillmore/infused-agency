@@ -711,13 +711,25 @@ function buildPageProps(page, publishedSet) {
 
   let provincesIndex = [];
   if (page.kind === "pillar" || page.kind === "country") {
-    provincesIndex = loadProvinces().map((p) => ({
-      name: p.name,
-      slug: p.slug,
-      abbr: p.abbr,
-      href: `/${v.urlSlug}/${p.slug}`,
-      published: publishedSet.has(`/${v.urlSlug}/${p.slug}`),
-    }));
+    provincesIndex = loadProvinces().map((p) => {
+      const cities = getProvinceCities(p.slug)
+        .map((c) => ({
+          name: c.name,
+          slug: c.slug,
+          href: `/${v.urlSlug}/${p.slug}/${c.slug}`,
+          published: publishedSet.has(`/${v.urlSlug}/${p.slug}/${c.slug}`),
+        }))
+        .filter((c) => c.published);
+      return {
+        name: p.name,
+        slug: p.slug,
+        abbr: p.abbr,
+        href: `/${v.urlSlug}/${p.slug}`,
+        published: publishedSet.has(`/${v.urlSlug}/${p.slug}`),
+        cities,
+        publishedCityCount: cities.length,
+      };
+    });
   }
 
   let citiesIndex = [];
@@ -782,6 +794,37 @@ function buildPageProps(page, publishedSet) {
     quebecLanguageNote: quebec ? quebec.languageNote : null,
     updated: content ? content.updated : null,
   };
+}
+
+// ----- industries hub (R4) -----
+
+// Live verticals with the coverage computed from the published set, shaped for
+// the /industries hub. Never hardcodes province/city counts, so the grid grows
+// automatically as new verticals or geo pages go live.
+function buildIndustriesProps() {
+  const { published } = computePublished();
+  const liveVerticals = loadVerticals().filter((v) => v.launchStatus === "live");
+  const items = liveVerticals.map((v) => {
+    const pages = published.filter((r) => r.page.vertical.slug === v.slug);
+    const provinceCount = pages.filter((r) => r.page.kind === "province").length;
+    const cityCount = pages.filter((r) => r.page.kind === "city").length;
+    const parent = v.parentSlug ? getVerticalBySlug(v.parentSlug) : null;
+    return {
+      slug: v.slug,
+      urlSlug: v.urlSlug,
+      displayName: v.displayName,
+      category: v.category || (parent && parent.category) || "Other",
+      benefit:
+        v.industriesBenefit ||
+        (v.serviceEmphasis && v.serviceEmphasis[0]) ||
+        `Search growth built for ${v.displayName.toLowerCase()}`,
+      href: `/${v.urlSlug}`,
+      provinceCount,
+      cityCount,
+    };
+  });
+  const categories = [...new Set(items.map((i) => i.category))].sort();
+  return { items, categories };
 }
 
 // ----- legacy redirects (only emitted when the target is published) -----
@@ -885,6 +928,7 @@ module.exports = {
   isVerticalHref,
   buildPageProps,
   regulationRows,
+  buildIndustriesProps,
   LEGACY_REDIRECT_MAP,
   getPublishedRedirects,
   publishedPaths,

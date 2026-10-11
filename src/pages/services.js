@@ -1,17 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
-import Image from "next/image";
 import Nav from "../../components/Nav/nav";
-import InnerHero from "../../components/innerHero/innerHero";
-import InnerContent from "../../components/innerContent/innerContent";
 import CTA from "../../components/CTA/cta";
 import Footer from "../../components/Footer/footer";
-
-import leadGenImg from "../../src/img/lead-generating-web-design-niagara.png";
-import webConvImg from "../../src/img/website-conversion-optimization-niagara.png";
-import seoImg from "../../src/img/search-engine-optimization-niagara.png";
+import Container from "../../components/ui/Container";
+import Section from "../../components/ui/Section";
+import Button from "../../components/ui/Button";
+import ServiceCard from "../../components/ui/ServiceCard";
+import Breadcrumb from "../../components/ui/Breadcrumb";
+import Icon from "../../components/ui/Icon";
 import PageJsonLd from "../../components/seo/PageJsonLd";
 import { webPageGraph } from "../lib/verticalSeoSchema";
 
@@ -50,59 +48,81 @@ const Services = ({ groups = [] }) => {
         />
       </Head>
       <Nav />
-      <InnerHero
-        title="Our Services"
-        description="Online marketing services for business that want to add credibility and grow their revenue."
-      />
-      <InnerContent>
-        <Container>
-          <section className="services">
-            <Row>
-              <Col lg="12">
-                <p>
-                  At Infused Agency, we help businesses in Niagara grow by
-                  improving their online presence. Whether you need your website
-                  to show up on Google or want a design that brings in more
-                  customers, we’re here to help. Our services include{" "}
-                  <Link href="/">Niagara SEO</Link> to boost your rankings, and
-                  Lead-Generating Web Design that turns visitors into customers.
-                </p>
-              </Col>
-            </Row>
-            {groups.map((g) =>
-              g.services.length ? (
-                <div className="row pd-top-40" key={g.title}>
-                  <div className="col-lg-12">
-                    <h3>{g.title}</h3>
-                  </div>
-                  {g.services.map((s) => (
-                    <div className="col-lg-6 d-flex" key={s.url}>
-                      <Link href={s.url}>
-                        <div className="card">
-                          <h4>{s.name}</h4>
-                          <p>{s.summary}</p>
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              ) : null
-            )}
-            <div className="row pd-top-40">
-              <div className="col-lg-12">
-                <h2>SEO by industry</h2>
-                <ul>
-                  <li>
-                    <Link href="/therapist-seo">
-                      SEO for Therapists in Canada
-                    </Link>
-                  </li>
-                </ul>
+      <main className="redesign-root">
+        <section className="relative overflow-hidden border-b border-border bg-surface pb-16 pt-28 sm:pt-32 lg:pt-36">
+          <div
+            className="pointer-events-none absolute inset-0 glow-radial"
+            aria-hidden="true"
+          />
+          <Container className="relative">
+            <Breadcrumb
+              items={[
+                { name: "Home", href: "/" },
+                { name: "Services", href: "/services" },
+              ]}
+              className="mb-8"
+            />
+            <h1 className="max-w-4xl text-balance font-display text-h1 font-bold leading-[1.08] tracking-[-0.02em] text-ink">
+              Our Services
+            </h1>
+            <p className="mt-5 max-w-2xl text-lead text-muted">
+              Online marketing services for business that want to add
+              credibility and grow their revenue.
+            </p>
+          </Container>
+        </section>
+
+        <Section>
+          <p className="max-w-3xl text-base leading-relaxed text-muted">
+            At Infused Agency, we help businesses in Niagara grow by improving
+            their online presence. Whether you need your website to show up on
+            Google or want a design that brings in more customers, we’re here to
+            help. Our services include{" "}
+            <Link href="/" className="font-semibold text-accent hover:underline">
+              Niagara SEO
+            </Link>{" "}
+            to boost your rankings, and Lead-Generating Web Design that turns
+            visitors into customers.
+          </p>
+        </Section>
+
+        {groups.map((g) =>
+          g.services.length ? (
+            <Section key={g.title} heading={g.title} headingAs="h3">
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {g.services.map((s) => (
+                  <ServiceCard
+                    key={s.url}
+                    href={s.url}
+                    title={s.name}
+                    description={s.summary}
+                  />
+                ))}
               </div>
-            </div>
-          </section>
-        </Container>
-      </InnerContent>
+            </Section>
+          ) : null
+        )}
+
+        <Section
+          heading="SEO by industry"
+          subhead="Industry-specific programmes with published province and city coverage."
+        >
+          <ul className="flex flex-wrap gap-3">
+            <li>
+              <Link
+                href="/therapist-seo"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+              >
+                SEO for Therapists in Canada
+                <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+              </Link>
+            </li>
+          </ul>
+          <Button href="/industries" variant="secondary" className="mt-6">
+            Browse all industries
+          </Button>
+        </Section>
+      </main>
       <CTA />
       <Footer />
     </>

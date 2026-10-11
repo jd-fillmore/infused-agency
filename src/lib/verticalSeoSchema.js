@@ -353,6 +353,31 @@ function webPageGraph({ url, name, pageType, description, breadcrumbs }) {
   ]);
 }
 
+// ItemList of live industry pillars for the /industries hub.
+function itemListNode(items) {
+  if (!items || !items.length) return null;
+  return {
+    "@type": "ItemList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: absolute(item.url),
+    })),
+  };
+}
+
+// Industries hub: Organization + BreadcrumbList + CollectionPage + ItemList.
+function industriesGraph({ url, name, description, breadcrumbs, items }) {
+  const target = absolute(url);
+  return graph([
+    organizationNode(),
+    breadcrumbs ? breadcrumbList(breadcrumbs) : null,
+    webPageNode({ url: target, pageType: "CollectionPage", name, description }),
+    itemListNode(items),
+  ]);
+}
+
 function blogGraph({
   url,
   headline,
@@ -398,5 +423,7 @@ module.exports = {
   aboutPageGraph,
   contactPageGraph,
   webPageGraph,
+  industriesGraph,
+  itemListNode,
   blogGraph,
 };
