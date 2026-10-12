@@ -6,11 +6,11 @@
   "license": "0BSD",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/verify-vertical-seo.js && node scripts/should-deploy-today.js --report",
+    "prebuild": "node scripts/verify-vertical-seo.js",
     "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap && node scripts/generate-vertical-sitemaps.js && node scripts/validate-schema.js --require",
-    "deploy:gate": "node scripts/should-deploy-today.js",
+    "deploy:check": "node scripts/should-deploy-today.js",
     "lint": "next lint",
     "verify:seo": "node scripts/verify-vertical-seo.js && node scripts/validate-schema.js && node scripts/seo-regression.js",
     "content:status": "node scripts/content-status.js",

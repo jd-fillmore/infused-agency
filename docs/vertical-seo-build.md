@@ -669,46 +669,65 @@ skipped-released-vertical reasons.
 - **`docs/launch-status.md` is a generated artifact** (do not edit by hand); it
   is committed so the rolling status is visible in-repo after each `verify:seo`.
 
-## Launch waves — item 5: CI deploy gate (`.github/workflows/ci.yml`)
+## Launch waves — item 5: scheduled deploys
 
-The launch schedule now fences production deploys. `scripts/should-deploy-today.js`
-answers "should we deploy today?" and gates CI:
+**Hosting / remote detection.** The git remote is
+`https://github.com/jd-fillmore/infused-agency.git` (GitHub). The repo ships no
+`vercel.json`, `netlify.toml`, `now.json` or `render.yaml`, so there is no
+in-repo hosting config; the project was deployed on Vercel, which exposes a
+**deploy hook** URL. That makes Vercel's deploy hook the trigger (a Netlify
+build hook is the drop-in equivalent; a non-GitHub CI would use the same
+`should-deploy-today.js` check plus a host webhook).
 
-- **Gate mode (default):** exit 0 when deployable, exit 1 when blocked.
-  Blocked happens on **embargo** days (as-of date before `startDate`, or no
-  released verticals) and after **`freezeAtWave`** is reached (as-of date >= the
-  freeze wave's date) — so nothing publishes before `startDate` and nothing new
-  can appear after the freeze. Run as `yarn deploy:gate` (the CI deploy job).
-- **Report mode (`--report`):** writes `.next/vertical-seo-deploy.json` with the
-  full decision and *always exits 0*. This is wired into `prebuild`, so local
-  and CI builds succeed on embargo days (they must — the embargo surface is
-  intentionally empty) while still recording that today is not deployable.
+**`scripts/should-deploy-today.js`** prints `true` on stdout only when some
+wave's UTC date equals today's UTC date, otherwise `false`, and always exits 0
+(diagnostics go to stderr). `freezeAtWave` is honoured: waves above the freeze
+never count even on their date. Run it with `yarn deploy:check`, or with
+`LAUNCH_AS_OF=YYYY-MM-DD` to test a specific day.
 
-GitHub Actions workflow (`.github/workflows/ci.yml`) runs three jobs on
-push/PR: `verify` (`yarn verify:seo`), `build` (`yarn build` — which re-runs the
-quality gate + deploy decision as part of `prebuild`), and `deploy` (main
-branch only, needs `build`). The `deploy` job runs `node scripts/should-deploy-today.js`
-as its first step — a blocked decision fails the job, so nothing after it
-(including the deploy-hook POST) ever runs. The workflow detects a deploy
-platform (absence of `vercel.json` / `netlify.toml` / `now.json` / `render.yaml`,
-which is the case in this repo), and triggers production deploys via a Vercel
-deploy hook URL held in the `VERCEL_DEPLOY_HOOK` repo secret; if the secret is
-unset the job validates the gate and then reports that no endpoint is wired.
+**`.github/workflows/scheduled-wave-deploy.yml`** runs daily at `09:00 UTC` and
+on manual dispatch. It runs the script, and only when the output is `true` does
+it `curl -X POST "$DEPLOY_HOOK_URL"` (from the `DEPLOY_HOOK_URL` repo secret) to
+trigger a production rebuild. If the secret is unset it fails with a clear
+message. `.github/workflows/ci.yml` separately runs `yarn verify:seo` and
+`yarn build` on pushes/PRs (this is what keeps the released surface honest
+between waves).
+
+### One-time setup (Vercel)
+
+1. Vercel dashboard -> the project -> **Settings -> Git -> Deploy Hooks**.
+   Create a hook named e.g. `scheduled-wave-deploy` on the production branch
+   (`main`); copy the generated URL.
+2. GitHub repo -> **Settings -> Secrets and variables -> Actions -> New
+   repository secret** named `DEPLOY_HOOK_URL` with that URL as the value.
+3. Test without waiting for cron: **Actions -> Scheduled wave deploy -> Run
+   workflow**. On a non-wave day it logs "No wave is scheduled for today"; on a
+   wave day it POSTs to Vercel and starts a build.
+4. Turn off any Vercel **auto-deploy on push** if you want releases to happen
+   *only* on wave dates (the task's intent); content/other changes then ship via
+   the normal deploy flow you choose.
+
+### Operating the schedule
+
+- **Pause everything** — set `freezeAtWave` in `data/vertical-seo/launch.json`
+  to the last wave number that may release (e.g. `1`). Waves above it stop
+  releasing and `should-deploy-today.js` reports `false` on their dates.
+- **Change dates** — edit `startDate` and/or each wave's `offsetDays` (days from
+  `startDate`). Wave dates are `startDate + offsetDays`, compared as UTC days.
+- **Move a vertical out of hold** — remove its slug from the `hold` array and
+  place it in the wave you want (it must be in a wave to release).
+- **Preview a future wave** — set `LAUNCH_AS_OF=YYYY-MM-DD` when running
+  `yarn verify:seo`, `yarn build` or `yarn deploy:check` to build/see the state
+  as of that date without touching the schedule.
 
 ### Assumptions recorded
 
-- **Vercel auto-deploy is deliberately not used.** The repo has no
-  `vercel.json`/`netlify.toml`/`now.json`, and the task asks for auto-deploy to
-  be blocked in favour of an explicit deploy-hook flow controlled by the gate.
-  A Netlify equivalent would be a build hook URL in a repo secret curl'd by the
-  same deploy job (documented in the workflow comments).
-- **Dates compare as whole UTC days** (the same clock as the schedule).
-  `should-deploy-today.js` prints a timezone note when the as-of date is within
-  ~1 day of `startDate`, so a UTC-based CI platform can't silently flip the
-  embargo; `LAUNCH_AS_OF` exists for exact simulation.
-- **`freezeAtWave` blocks deploys from its own release date onward.** While it
-  is `null` (current schedule) this path is dormant; setting it to `N` means
-  waves `> N` never release and the gate returns "frozen" on `N`'s release date.
+- **Auto-deploy is superseded by wave-gated deploys.** The deploy hook is only
+  pinged on wave dates; whether other pushes auto-deploy is a host setting the
+  operator controls (step 4).
+- **Dates compare as whole UTC days** (the same clock the publishing logic and
+  the 09:00 UTC cron use).
+- **`LAUNCH_AS_OF` is the simulation lever** for all three entry points.
 
 ## Launch waves — item 6: build-time caching + profiling
 
