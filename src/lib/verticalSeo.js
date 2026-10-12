@@ -521,12 +521,46 @@ function computePublished(opts = {}) {
       !finalKept.includes(r) &&
       r.failures.length > 0
   );
+  const allFailed = [
+    ...failed,
+    ...gateFailed.filter((g) => !failed.find((f) => f.page.urlPath === g.page.urlPath)),
+  ];
+
+  // Whole-vertical skip (launch wave 4): a released vertical publishes only if
+  // every one of its pages passes the quality gate. A single failing page skips
+  // the entire vertical, and the skip is reported with the failing rules.
+  // Structural problems (malformed data, broken links on a published page)
+  // still fail the build — they are enforced by the verifier, not this set.
+  const skipReasons = new Map();
+  for (const r of allFailed) {
+    const slug = r.page.vertical.slug;
+    if (!skipReasons.has(slug)) skipReasons.set(slug, new Set());
+    for (const f of r.failures) skipReasons.get(slug).add(f);
+  }
+  const published = [];
+  const skipped = [];
+  for (const k of finalKept) {
+    const reasons = skipReasons.get(k.page.vertical.slug);
+    if (includeDrafts || !reasons) {
+      published.push(k);
+    } else {
+      skipped.push({
+        ...k,
+        failures: [...k.failures, `launch-skip: ${[...reasons].slice(0, 3).join("; ")}`],
+      });
+    }
+  }
+  const launchSkips = [...skipReasons.entries()]
+    .map(([slug, reasons]) => ({ slug, reasons: [...reasons] }))
+    .sort((a, b) => a.slug.localeCompare(b.slug));
 
   return {
     all: allPages,
     evaluated,
-    published: finalKept,
-    failed: [...failed, ...gateFailed.filter((g) => !failed.find((f) => f.page.urlPath === g.page.urlPath))],
+    published,
+    failed: [...allFailed, ...skipped],
+    skipped,
+    launchSkips,
     drafts,
     includeDrafts,
     released: [...released].sort(),

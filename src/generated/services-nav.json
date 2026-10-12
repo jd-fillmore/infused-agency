@@ -105,38 +105,5 @@
       ]
     }
   ],
-  "industries": [
-    {
-      "name": "SEO for Accountants in Canada",
-      "url": "/accountant-seo"
-    },
-    {
-      "name": "SEO for Dentists in Canada",
-      "url": "/dentist-seo"
-    },
-    {
-      "name": "SEO for Electricians in Canada",
-      "url": "/electrician-seo"
-    },
-    {
-      "name": "SEO for HVAC Contractors in Canada",
-      "url": "/hvac-contractor-seo"
-    },
-    {
-      "name": "SEO for Landscapers in Canada",
-      "url": "/landscaper-seo"
-    },
-    {
-      "name": "SEO for Plumbers in Canada",
-      "url": "/plumber-seo"
-    },
-    {
-      "name": "SEO for Roofers in Canada",
-      "url": "/roofer-seo"
-    },
-    {
-      "name": "SEO for Therapists in Canada",
-      "url": "/therapist-seo"
-    }
-  ]
+  "industries": []
 }

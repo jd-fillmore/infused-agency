@@ -639,3 +639,32 @@ will build on go-live morning.
   wave-1 surface, surfacing any content issues *before* the wave is public.
 - **Held verticals can never publish from the schedule** (they still pass the
   content gate checks when the rest of a release is verified).
+
+## Launch waves — item 4: quality-gate short-circuit (`docs/launch-status.md`)
+
+`computePublished()` now applies whole-vertical gating: a *released* vertical
+publishes only if every one of its pages passes the quality gate. A single
+failing page skips the entire vertical; the skip is carried on the failed page
+records as `launch-skip: <failing rules>` and reported separately as
+`launchSkips` (slug + reasons). This is the day-by-day build semantics: content
+issues no longer fail the build, they simply delay a vertical until its content
+is fixed and the next build rolls.
+
+Structural problems still fail the build: a malformed data file throws during
+`loadContent` (prebuild aborts), and `verify-vertical-seo.js` exits 1 when a
+published page has a broken internal link or the legacy-orphan invariant breaks.
+
+The verify script now also writes `docs/launch-status.md`: the evaluation date
+(effective `/ UTC`, with a `LAUNCH_AS_OF` override note), wave table, per-slug
+status (released / scheduled / on hold) and published-page counts, and the
+skipped-released-vertical reasons.
+
+### Assumptions recorded
+
+- **A skip is recorded, not silently swallowed.** The reason list is appended
+  to the failing rules on the page records AND grouped by slug in the status
+  doc, so an operator sees exactly which rule kept a vertical out.
+- **Gate failures count as "not published", not "build failure".** This is the
+  exact trade the spec asks for; verify stays green on a skipped vertical.
+- **`docs/launch-status.md` is a generated artifact** (do not edit by hand); it
+  is committed so the rolling status is visible in-repo after each `verify:seo`.
