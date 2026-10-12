@@ -27,7 +27,7 @@ const _cache = {};
 // unreleased content cannot change the result, so editing it never invalidates
 // the cache or slows a build.
 
-const GATE_VERSION = "2026-10-11.2";
+const GATE_VERSION = "2026-10-11.3";
 const GATE_CACHE_FILE = path.join(process.cwd(), ".next", "cache", "vertical-seo-gate.json");
 
 function walkJsonFiles(dir, out) {
@@ -116,6 +116,7 @@ function writeGateCache(key, asOf, result) {
       key,
       asOf,
       createdAt: new Date().toISOString(),
+      timings: result.timings || null,
       result: serializeGateResult(result),
     };
     fs.writeFileSync(GATE_CACHE_FILE, JSON.stringify(blob), "utf8");
@@ -589,17 +590,23 @@ function computePublished(opts = {}) {
   const tStart = Date.now();
   const released = launch.releasedSlugs(asOf);
 
-  const withTimings = (result, source, totalMs) => ({
-    ...result,
-    timings: {
-      source,
-      dataMs: 0,
-      gateMs: 0,
-      similarityMs: 0,
-      linksMs: 0,
-      totalMs: totalMs != null ? totalMs : Date.now() - tStart,
-    },
-  });
+  const withTimings = (result, source, base) => {
+    // Prefer an explicit base (cache blob timings); otherwise fall back to the
+    // result's own timings so a memo hit still reports the real stage times
+    // rather than zeroes.
+    const t = base || result.timings || {};
+    return {
+      ...result,
+      timings: {
+        source,
+        dataMs: t.dataMs || 0,
+        gateMs: t.gateMs || 0,
+        similarityMs: t.similarityMs || 0,
+        linksMs: t.linksMs || 0,
+        totalMs: t.totalMs != null ? t.totalMs : Date.now() - tStart,
+      },
+    };
+  };
   const memoize = (result) => {
     if (!includeDrafts) {
       _cache.publishedMemo = { ...(_cache.publishedMemo || {}), [memoKey]: result };
@@ -621,7 +628,9 @@ function computePublished(opts = {}) {
     const key = buildGateCacheKey(asOf, released);
     const cached = readGateCache(key);
     if (cached && cached.asOf === asOf) {
-      return memoize(withTimings(hydrateGateResult(cached.result), "cache"));
+      return memoize(
+        withTimings(hydrateGateResult(cached.result), "cache", cached.timings)
+      );
     }
     _cache.cacheKey = key;
   }

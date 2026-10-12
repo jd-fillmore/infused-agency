@@ -33,19 +33,33 @@ function CheckList({ items }) {
   );
 }
 
-function Proof({ items }) {
-  if (!items || !items.length) return null;
+function Stars({ count = 5 }) {
   return (
-    <Section
-      heading="Proof from our work"
-      subhead="Real results from businesses we have helped grow."
-    >
-      <div className="grid gap-5 lg:grid-cols-2">
+    <div className="flex gap-0.5 text-gold" aria-label={`${count} out of 5 stars`}>
+      {Array.from({ length: count }).map((_, i) => (
+        <Icon key={i} name="star" className="h-4 w-4" />
+      ))}
+    </div>
+  );
+}
+
+function Proof({ items, page }) {
+  if (!items || !items.length) return null;
+  const isCity = page && page.kind === "city";
+  const subhead = isCity
+    ? `What ${page.vertical.plural} across ${page.city.name} say about working with us.`
+    : "Real results from businesses we have helped grow.";
+  return (
+    <Section heading="Proof from our work" subhead={subhead}>
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <Card key={item.id} className="flex h-full flex-col">
-            <h3 className="font-display text-lg font-bold text-ink">
-              {item.namedEntity}
-            </h3>
+            {item.rating ? <Stars count={item.rating} /> : null}
+            {item.namedEntity ? (
+              <h3 className="font-display text-lg font-bold text-ink">
+                {item.namedEntity}
+              </h3>
+            ) : null}
             {item.metric ? (
               <p className="mt-3 font-display text-2xl font-bold text-gradient">
                 {item.metric}
@@ -449,7 +463,7 @@ const VerticalSeoPage = ({ page }) => {
           </Section>
         ) : null}
 
-        <Proof items={page.proof} />
+        <Proof items={page.proof} page={page} />
         <Faq faqs={content.faqs} />
         <LinkList title="Related services" links={page.serviceLinks} />
         <LinkList title="Related pages" links={page.links} />

@@ -38,13 +38,13 @@
   }
 }
 
-// City pages: alternate the section background on the way down the page so the
-// layout has rhythm. Scoped to the city kind; pillar/province keep the flat base.
-.vertical-content[data-kind="city"] > section {
+// Vertical SEO pages: alternate the section background on the way down the page
+// so the layout has rhythm (pillar, province and city alike).
+.vertical-content > section {
   background-color: var(--color-base);
 }
 
-.vertical-content[data-kind="city"] > section:nth-of-type(even) {
+.vertical-content > section:nth-of-type(even) {
   background-color: var(--color-surface);
   background-image: radial-gradient(
     90% 120% at 100% 0%,
