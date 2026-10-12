@@ -199,6 +199,50 @@ function loadAllowlist() {
   }
 }
 
+// Vertical pages are published on a launch schedule, so at any given as-of date
+// some pillars/geo pages legitimately exist in the pre-redesign baseline but
+// must not be in the build. Collect the urlSlug prefixes that are expected to be
+// absent right now (unreleased verticals, or scaffold verticals that never
+// publish) so their absence is reported as info, not a regression. Released
+// live verticals are excluded, so a genuinely missing live pillar still fails.
+function loadExpectedAbsentPrefixes() {
+  try {
+    const launch = require(path.join(ROOT, "src", "lib", "launch.js"));
+    const verticals = JSON.parse(
+      fs.readFileSync(
+        path.join(ROOT, "data", "vertical-seo", "verticals.json"),
+        "utf8"
+      )
+    );
+    const released = launch.releasedSlugs();
+    const prefixes = new Set();
+    let releasedLive = 0;
+    for (const v of verticals) {
+      if (released.has(v.slug) && v.launchStatus === "live") {
+        releasedLive++;
+        continue;
+      }
+      if (v.urlSlug) prefixes.add(v.urlSlug);
+    }
+    return {
+      prefixes,
+      asOf: launch.asOfDate(),
+      // With no released live vertical there is no industries surface, so the
+      // "Industries we serve" heading is intentionally omitted on pages that
+      // embed it. Compare H2s with that heading stripped in that case only.
+      industriesGated: releasedLive === 0,
+    };
+  } catch (_e) {
+    return { prefixes: new Set(), asOf: null, industriesGated: false };
+  }
+}
+
+const LAUNCH_GATED_HEADINGS = new Set(["Industries we serve"]);
+
+function stripGatedHeadings(list) {
+  return (list || []).filter((h) => !LAUNCH_GATED_HEADINGS.has(h));
+}
+
 function writeBaseline() {
   if (!fs.existsSync(BUILD_DIR)) {
     console.error(`No build found at ${BUILD_DIR}. Run "yarn build" first.`);
@@ -231,6 +275,10 @@ function compare() {
   const failures = [];
   const warnings = [];
   const info = [];
+  const launchAbsent = loadExpectedAbsentPrefixes();
+  const launchHidden = [];
+  const isLaunchHidden = (url) =>
+    launchAbsent.prefixes.has(url.split("/")[1]);
 
   const fields = [
     "title",
@@ -246,6 +294,11 @@ function compare() {
     if (!c) {
       if (allowRemoved.has(url)) {
         info.push(`${url}: removed from build (allowlisted)`);
+      } else if (isLaunchHidden(url)) {
+        launchHidden.push(url);
+        info.push(
+          `${url}: not published yet (launch schedule, as-of ${launchAbsent.asOf})`
+        );
       } else {
         failures.push(
           `${url}: page present in baseline is missing from the build`
@@ -275,7 +328,17 @@ function compare() {
       );
     }
     if (!sameList(b.h2, c.h2)) {
-      if (allowH2.has(url)) {
+      const bCmp = launchAbsent.industriesGated
+        ? stripGatedHeadings(b.h2)
+        : b.h2;
+      const cCmp = launchAbsent.industriesGated
+        ? stripGatedHeadings(c.h2)
+        : c.h2;
+      if (sameList(bCmp, cCmp)) {
+        info.push(
+          `${url}: launch-gated heading omitted (as-of ${launchAbsent.asOf})`
+        );
+      } else if (allowH2.has(url)) {
         info.push(`${url}: H2 changed (allowlisted)`);
       } else {
         failures.push(
@@ -312,6 +375,7 @@ function compare() {
   console.log("--------------");
   console.log(`Pages in baseline : ${Object.keys(baseline).length}`);
   console.log(`Pages in build    : ${Object.keys(current).length}`);
+  console.log(`Launch-hidden     : ${launchHidden.length} (as-of ${launchAbsent.asOf})`);
   console.log(`Failures          : ${failures.length}`);
   console.log(`Warnings          : ${warnings.length}`);
   for (const f of failures) console.log(`  ! ${f}`);

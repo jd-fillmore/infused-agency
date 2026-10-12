@@ -43,11 +43,29 @@ function asOfDate() {
 }
 
 // startDate + offsetDays for the wave, normalized to UTC YYYY-MM-DD.
-function waveDate(wave) {
-  const launch = loadLaunch();
+// `config` defaults to the loaded schedule but can be passed explicitly so the
+// schedule maths is unit-testable without touching launch.json.
+function waveDate(wave, config) {
+  const launch = config || loadLaunch();
   const offset = Number(wave && wave.offsetDays) || 0;
   const ms = Date.parse(`${launch.startDate}T00:00:00Z`) + offset * MS_PER_DAY;
   return new Date(ms).toISOString().slice(0, 10);
+}
+
+// Slugs released for an explicit schedule + date. Extracted so tests can pass a
+// synthetic schedule (e.g. a frozen one) without editing launch.json.
+function releasedSlugsAt(config, date) {
+  const held = new Set(config.hold || []);
+  const freezeAt = config.freezeAtWave;
+  const slugs = new Set();
+  for (const wave of config.waves || []) {
+    if (freezeAt != null && Number(wave.wave) > Number(freezeAt)) continue;
+    if (waveDate(wave, config) <= date) {
+      for (const slug of wave.verticals || []) slugs.add(slug);
+    }
+  }
+  for (const slug of held) slugs.delete(slug);
+  return slugs;
 }
 
 // Slugs that are scheduled to be live on the given date. A vertical is
@@ -56,18 +74,7 @@ function waveDate(wave) {
 // that number count, so later waves stay hidden no matter the date.
 function releasedSlugs(asOf) {
   const date = asOf || asOfDate();
-  const launch = loadLaunch();
-  const held = new Set(launch.hold || []);
-  const freezeAt = launch.freezeAtWave;
-  const slugs = new Set();
-  for (const wave of launch.waves || []) {
-    if (freezeAt != null && Number(wave.wave) > Number(freezeAt)) continue;
-    if (waveDate(wave) <= date) {
-      for (const slug of wave.verticals || []) slugs.add(slug);
-    }
-  }
-  for (const slug of held) slugs.delete(slug);
-  return slugs;
+  return releasedSlugsAt(loadLaunch(), date);
 }
 
 function isReleased(slug, asOf) {
@@ -121,6 +128,7 @@ module.exports = {
   asOfDate,
   waveDate,
   releasedSlugs,
+  releasedSlugsAt,
   isReleased,
   isHeld,
   waveFor,

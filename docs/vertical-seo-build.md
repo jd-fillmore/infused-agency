@@ -843,3 +843,155 @@ it, but the orphan file was still fetchable).
 - **Legacy `posts/*`/`seo/*` Date serialization is out of scope** — those pages
   are pre-existing, unmodified by this task, and nondeterministic independent of
   the gate cache.
+
+## Launch waves — item 7: tests and verification
+
+### Unit tests (`yarn test:seo`)
+
+`scripts/test-vertical-seo.js` grew from the vertical-gate suite to 28 tests,
+all passing (`yarn test:seo`, ~12s). Added coverage for:
+
+- wave dates (`startDate` + `offsetDays`, normalized to UTC);
+- the schedule covering the catalogue exactly once (51 slugs, no duplicates and
+  no omissions across the four waves plus `hold`);
+- release on the wave date but not before (boundary at `asOf === waveDate`);
+- held verticals never releasing at any date;
+- `freezeAtWave` hiding every higher wave regardless of date;
+- the `LAUNCH_AS_OF` override (run in a fresh child process so the in-process
+  `asOfDate()` cache cannot mask it);
+- the released set growing monotonically with the as-of date;
+- `scripts/should-deploy-today.js` printing `true` only on a wave date and
+  `false` otherwise (exit 0 either way);
+- unreleased verticals producing no published pages;
+- the gate-skip behaviour (a released vertical with a corrupt content file is
+  listed as skipped, not failed — verified by temporarily corrupting
+  `dentists/ontario.json` and restoring it);
+- gate-cache invalidation when a content file changes (a whitespace-only rewrite
+  of a released content file forces a recompute).
+
+`src/lib/launch.js` was refactored for testability along the way: `waveDate()` now
+takes an optional `config`, and `releasedSlugsAt(config, date)` was extracted from
+`releasedSlugs()` so synthetic/frozen schedules can be exercised without editing
+`launch.json`. No behaviour change.
+
+### Surface verification (`scripts/verify-launch-surface.js`)
+
+A new post-build script proves the item-3 "behaves exactly like scaffold"
+requirement. After a build it asserts, for the build's as-of date:
+
+- every **released live** pillar route is prerendered (scaffold verticals are
+  released on schedule but intentionally never build pages, so they are exempt);
+- no **unreleased**, **held** or **scaffold** vertical has *any* prerendered
+  route (`fallback:false` ⇒ those URLs 404);
+- no such vertical appears in any sitemap, `src/generated/services-nav.json`,
+  `/industries`, or the homepage (footer / industry chips), matched on the
+  vertical `urlSlug`;
+- explicit pillar / province / city spot-checks for the next unreleased wave and
+  for a held vertical.
+
+### Builds at each wave (`LAUNCH_AS_OF`), with resolved slugs and counts
+
+| As-of | Released | Live with pages | Published | Prerendered routes | Vertical routes | Sitemap URLs | Build time |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-14 (`startDate`, wave 1) | 8 | 8 | 329 | 424 | 329 | 465 (11 files) | 49.5s |
+| 2026-11-05 (+22d, wave 2) | 18 | 18 | 739 | 834 | 739 | 885 (21 files) | 55.6s |
+| 2026-12-17 (+64d, wave 4) | 44 | 41 | 1680 | 1775 | 1680 | 1849 (44 files) | 68.6s |
+| today (`startDate` not yet reached, embargo) | 0 | 0 | 0 | 95 | 0 | 128 (3 files) | 46.7s |
+
+Resolved slugs per wave (from `data/vertical-seo/launch.json`):
+
+- **Wave 1 (offset 0 → 2026-10-14):** therapists, electricians, plumbers,
+  hvac-contractors, roofers, landscapers, dentists, accountants.
+- **Wave 2 (offset 21 → 2026-11-04):** home-builders, home-renovators,
+  kitchen-bath, flooring, window-door, pest-control, arborists, garage-door,
+  paving-companies, pool-builders.
+- **Wave 3 (offset 42 → 2026-11-25):** basement-renovators, deck-builders,
+  home-additions, cabinet-makers, tile-contractors, drywallers, design-builders,
+  movers, locksmiths, commercial-cleaning.
+- **Wave 4 (offset 63 → 2026-12-16):** the 16 remaining non-held verticals
+  (secondary-suite-builders, architects, commercial-snow-removal,
+  concrete-contractors, contractors, daycares, home-stagers,
+  insulation-contractors, interior-designers, modular-builders, orthodontists,
+  restoration-companies, septic-services, smart-home, veterinarians,
+  wedding-photographers).
+- **Hold (never):** family-lawyers, immigration-lawyers, injury-lawyers,
+  real-estate-lawyers, med-spas, mortgage-brokers, financial-advisors.
+
+At wave 1 the publisher emits exactly 170 pages per wave-1 vertical except
+therapists at 171 (`therapists` has one extra legacy-eligible geo page), for a
+total of 329. By the last wave 44 verticals are released but only **41 publish**
+pages: `concrete-contractors`, `contractors` and `insulation-contractors` are
+`launchStatus: scaffold`, so they are released on schedule yet (correctly)
+produce no pages. This is why "released" and "live with pages" differ from wave 4
+onward, and why the surface script only requires pillar routes for released
+*live* verticals.
+
+### 404 / nowhere proof (wave 2 and held, at the wave-1 build)
+
+At `LAUNCH_AS_OF=2026-10-14`, `scripts/verify-launch-surface.js` reported
+`OK — no unreleased vertical is reachable or referenced anywhere`, including:
+
+```
+404   wave 2  — /home-builder-seo
+404   wave 2  — /home-builder-seo/ontario
+404   wave 2  — /home-builder-seo/ontario/toronto
+404   on hold — /family-lawyer-seo
+404   on hold — /family-lawyer-seo/ontario
+404   on hold — /family-lawyer-seo/ontario/toronto
+```
+
+The same run confirmed no unreleased/held `urlSlug` occurs in any sitemap, the
+services nav snapshot, `/industries` or the homepage. Re-running at
+`2026-11-05` (wave 2 released) correctly moves the spot-check to wave 3
+(`/basement-renovation-seo…` 404), and at `2026-12-17` (wave 4 released) only the
+held vertical remains 404 — demonstrating wave 2 then wave 4 appearing as their
+dates pass.
+
+### `yarn verify:seo`, `yarn test:seo`, `yarn lint`, `yarn build`
+
+- `yarn test:seo` — **pass** (28/28).
+- `yarn lint` — **pass** (warnings only; all pre-existing).
+- `yarn build` — **pass** at every `LAUNCH_AS_OF` tested above. The final
+  committed artifacts are the canonical embargo build (95 routes, 0 vertical
+  pages).
+- `yarn verify:seo` — the `verify-vertical-seo` and `validate-schema` steps pass;
+  the `seo-regression` step still exits 1 on **11 pre-existing H2 changes** on
+  the Niagara `/seo/*` pages (`beamsville`, `crystal-beach`, `fonthill`,
+  `fort-erie`, `grimsby`, `niagara-falls`, `niagara-on-the-lake`,
+  `port-colborne`, `st-catharines`, `thorold`, `welland`). Those eleven
+  `src/pages/seo/*.js` files are modified in the working tree by the in-progress
+  redesign that predates this task; the task explicitly scopes out changing
+  those pages, so they are left as-is.
+
+### Assumptions recorded
+
+- **`seo-regression` made launch-aware, not silenced.** `scripts/seo-regression.js`
+  now treats a baseline page that is missing from the build as expected (info)
+  when its leading path segment is a vertical `urlSlug` that is not currently
+  published (unreleased, held, or scaffold). Released live pillars still fail if
+  absent. At the default as-of this reclassifies 42 vertical pages from failures
+  to "launch-hidden". This is required because item 3 deliberately removes those
+  pages; without it the regression harness would flag the feature itself.
+- **Launch-gated "Industries we serve" heading.** When zero live verticals are
+  published there is no industries surface, so pages embedding it legitimately
+  drop that H2. `seo-regression.js` strips the `Industries we serve` heading from
+  both baseline and current H2 lists *only* when no live vertical is released, so
+  the four remaining non-vertical diffs (`/ai-search`, `/reputation-management`,
+  `/seo/content-writing`, `/seo/local-seo`) are treated as launch-gated rather
+  than regressions. At any as-of with at least one published vertical the heading
+  is compared normally.
+- **Scaffold verticals release but never publish.** Three wave-4 catalogue
+  entries are `launchStatus: scaffold`; the schedule releases them on the wave
+  date, but the publisher's existing `launchStatus === "live"` filter (item 3)
+  keeps them page-less. "Released" therefore counts them while "live with pages"
+  does not. No change was made to their status.
+- **The surface script's as-of must match the build's.** It reads
+  `LAUNCH_AS_OF` (or its argument) and compares against the prerender manifest,
+  so it must be run with the same as-of the build used. `yarn build` alone uses
+  the real current date.
+- **`yarn verify:seo` remains red only on pre-existing redesign H2s.** No failure
+  from this task remains; the residual 11 are uncommitted redesign edits to
+  Niagara `/seo/*` pages that existed before this branch's launch work.
+- **The wave-1 build time reported here (49.5s) is a warm-`Next`-cache build**
+  with only the gate cache cleared; item 6's cold-cache figures (43–70s) are the
+  authoritative per-stage profile.
