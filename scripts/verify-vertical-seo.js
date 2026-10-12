@@ -133,8 +133,11 @@ function main() {
     `computePublished : source=${t.source}, data ${t.dataMs}ms, gate ${t.gateMs}ms, similarity ${t.similarityMs}ms, links ${t.linksMs}ms, total ${t.totalMs}ms`
   );
   console.log(`-- services --`);
+  const existingServiceCount = publishedServices.filter((r) => r.service.existing).length;
   console.log(`Services         : ${servicesResult.services.length}`);
-  console.log(`Service published: ${publishedServices.length}`);
+  console.log(
+    `Service published: ${publishedServices.length - existingServiceCount} (+${existingServiceCount} existing, exempt)`
+  );
   console.log(`Service drafts   : ${draftServices.length}`);
   console.log(`Service fail     : ${failedServices.length}`);
   console.log(`Service slug errs: ${serviceSlugErrors.length}`);
@@ -259,16 +262,32 @@ function main() {
 
   lines.push("## Service pages");
   lines.push("");
+  const existingServices = publishedServices.filter((r) => r.service.existing);
+  const contentServices = publishedServices.filter((r) => !r.service.existing);
+  const servicePairs = services.nearestDuplicatePairs(servicesResult.evaluated);
   lines.push(`- Services: ${servicesResult.services.length}`);
-  lines.push(`- Published: ${publishedServices.length}`);
+  lines.push(`- Published: ${contentServices.length}`);
+  lines.push(`- Existing (exempt): ${existingServices.length}`);
   lines.push(`- Draft-excluded: ${draftServices.length}`);
   lines.push(`- Gate-failed: ${failedServices.length}`);
+  lines.push("");
+  lines.push("### Existing (exempt) service pages");
+  lines.push("");
+  lines.push("Pre-existing pages outside the vertical/seo gate; listed for completeness.");
+  lines.push("");
+  lines.push("| URL | Title |");
+  lines.push("| --- | --- |");
+  for (const r of existingServices
+    .slice()
+    .sort((a, b) => a.service.url.localeCompare(b.service.url))) {
+    lines.push(`| ${r.service.url} | ${services.serviceTitle(r.service)} |`);
+  }
   lines.push("");
   lines.push("### Published service pages");
   lines.push("");
   lines.push("| URL | Title | Unique words | Direct answer | FAQs |");
   lines.push("| --- | --- | --- | --- | --- |");
-  for (const r of publishedServices
+  for (const r of contentServices
     .slice()
     .sort((a, b) => a.service.url.localeCompare(b.service.url))) {
     const c = r.content || {};
@@ -289,6 +308,14 @@ function main() {
       .sort((a, b) => a.service.url.localeCompare(b.service.url))) {
       lines.push(`| ${r.service.url} | ${r.failures.join(", ")} |`);
     }
+  }
+  lines.push("");
+  lines.push("### Nearest duplicate service pairs (same group)");
+  lines.push("");
+  lines.push("| Service A | Service B | Jaccard |");
+  lines.push("| --- | --- | --- |");
+  for (const p of servicePairs) {
+    lines.push(`| ${p.a} | ${p.b} | ${p.score.toFixed(3)} |`);
   }
   lines.push("");
 

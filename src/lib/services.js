@@ -129,11 +129,32 @@ function jaccard(a, b) {
   return union === 0 ? 0 : inter / union;
 }
 
+// Top nearest-duplicate service pairs (same group), used by the verify report.
+// Only records with content (i.e. non-existing pages) participate.
+function nearestDuplicatePairs(records, limit = 10) {
+  const pairs = [];
+  const withShingles = records.filter((r) => r.content && r.shingles);
+  for (let i = 0; i < withShingles.length; i++) {
+    for (let j = i + 1; j < withShingles.length; j++) {
+      const a = withShingles[i];
+      const b = withShingles[j];
+      if (a.service.group !== b.service.group) continue;
+      const score = jaccard(a.shingles, b.shingles);
+      pairs.push({ a: a.service.url, b: b.service.url, score });
+    }
+  }
+  return pairs.sort((x, y) => y.score - x.score).slice(0, limit);
+}
+
 // ----- gate -----
 
 function serviceTitle(service) {
   if (service.titleOverride) return service.titleOverride;
-  return `${service.name} Services | Infused Agency`;
+  // Some service names already end in "Services" (e.g. "White Label Services");
+  // don't append a second "Services" in that case.
+  const base = String(service.name || "").trim();
+  const suffix = /(^|\s)services$/i.test(base) ? "" : " Services";
+  return `${base}${suffix} | Infused Agency`;
 }
 
 function evaluateServiceBasics(service, content) {
@@ -547,6 +568,7 @@ module.exports = {
   uniqueProseText,
   shingleSet,
   jaccard,
+  nearestDuplicatePairs,
   serviceTitle,
   evaluateServiceBasics,
   evaluateServices,
