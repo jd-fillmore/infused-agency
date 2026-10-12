@@ -322,7 +322,7 @@ const Home = () => {
           <ul className="grid grid-cols-2 items-center gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {AFFILIATES.map((name) => (
               <li key={name} className="flex justify-center">
-                <span className="inline-flex items-center rounded-full border border-border bg-white/[0.03] px-4 py-1.5 text-xs font-medium text-muted">
+                <span className="inline-flex items-center rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium text-muted">
                   {name}
                 </span>
               </li>
@@ -394,7 +394,7 @@ const Home = () => {
           <StatBlock value="100s" label="High-intent keywords ranked" />
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="reveal mt-10 grid gap-6 md:grid-cols-3">
           <TestimonialCard
             showStars
             avatar={test1}
@@ -472,10 +472,10 @@ const Home = () => {
             <Link
               key={guide.href}
               href={guide.href}
-              className="inline-flex items-center gap-1 text-sm text-accent hover:text-accent-hover"
+              className="group inline-flex items-center gap-1 text-sm text-accent hover:text-accent-hover"
             >
               {guide.label}
-              <Icon name="arrow-right" className="h-4 w-4" />
+              <Icon name="arrow-right" className="arrow-nudge h-4 w-4" />
             </Link>
           ))}
         </div>

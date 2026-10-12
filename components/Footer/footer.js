@@ -40,7 +40,7 @@ const SOCIAL = [
 
 function ColumnHeading({ children }) {
   return (
-    <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+    <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-contrast-ink/60">
       {children}
     </h3>
   );
@@ -52,7 +52,7 @@ function FooterLink({ href, children, onClick }) {
       <Link
         href={href}
         onClick={onClick}
-        className="block py-1 text-sm text-muted transition-colors hover:text-ink"
+        className="block py-1 text-sm text-contrast-ink/80 transition-colors hover:text-white"
       >
         {children}
       </Link>
@@ -62,7 +62,7 @@ function FooterLink({ href, children, onClick }) {
 
 export default function Footer() {
   return (
-<footer className="border-t border-border bg-surface">
+<footer className="border-t border-white/10 bg-contrast text-contrast-ink">
         <a
           href="tel:+19059333115"
           aria-hidden="true"
@@ -75,12 +75,12 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-baseline" aria-label="Infused Agency home">
-              <span className="font-display text-2xl font-bold tracking-tight text-ink">
+              <span className="font-display text-2xl font-bold tracking-tight text-white">
                 infused
-                <span className="text-accent">.</span>
+                <span className="text-gold-bright">.</span>
               </span>
             </Link>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-contrast-ink/70">
               Infused is a boutique local SEO &amp; AI search company helping
               Niagara businesses get found on Google and AI search tools like
               ChatGPT &amp; Gemini.
@@ -93,7 +93,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={item.platform}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted transition-colors hover:border-accent/40 hover:text-accent"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-contrast-ink/80 transition-colors hover:border-white/40 hover:text-white"
                 >
                   <Icon
                     name={SOCIAL_ICONS[item.platform] || "globe"}
@@ -102,7 +102,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <p className="mt-6 max-w-xs text-xs leading-relaxed text-muted">
+            <p className="mt-6 max-w-xs text-xs leading-relaxed text-contrast-ink/60">
               Recognised at: Google Partner · Three Best Rated · GoodFirms ·
               DesignRush
             </p>
@@ -113,7 +113,7 @@ export default function Footer() {
             <div className="space-y-4">
               {GROUPS.map((group) => (
                 <div key={group.heading}>
-                  <p className="mb-1 text-xs font-medium text-ink/70">
+                  <p className="mb-1 text-xs font-medium text-contrast-ink/60">
                     {group.heading}
                   </p>
                   <ul>
@@ -151,30 +151,30 @@ export default function Footer() {
 
             <div className="mt-6">
               <ColumnHeading>Contact</ColumnHeading>
-              <ul className="space-y-2 text-sm text-muted">
+              <ul className="space-y-2 text-sm text-contrast-ink/70">
                 <li>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</li>
                 <li>Mon&ndash;Fri, 9 a.m.&ndash;6 p.m.</li>
               </ul>
               <Link
                 href="/get-a-quote"
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+                className="group mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-bright transition-colors hover:text-white"
               >
                 Get a free quote
-                <Icon name="arrow-right" className="h-4 w-4" />
+                <Icon name="arrow-right" className="arrow-nudge h-4 w-4" />
               </Link>
             </div>
           </div>
         </div>
       </Container>
 
-      <div className="border-t border-border">
-        <Container className="flex flex-col gap-3 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+      <div className="border-t border-white/10">
+        <Container className="flex flex-col gap-3 py-6 text-xs text-contrast-ink/60 sm:flex-row sm:items-center sm:justify-between">
           <p>Infused Agency &mdash; SEO in Niagara since 2013.</p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="transition-colors hover:text-ink">
+            <Link href="/privacy-policy" className="transition-colors hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="/get-a-quote" className="transition-colors hover:text-ink">
+            <Link href="/get-a-quote" className="transition-colors hover:text-white">
               Get a Quote
             </Link>
           </div>

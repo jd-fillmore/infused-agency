@@ -28,16 +28,16 @@ function getNextTwoMonths() {
 export default function TopBar() {
   const [nextMonth, monthAfterNext] = getNextTwoMonths();
   return (
-    <div className="border-b border-white/10 bg-accent-deep">
+    <div className="border-b border-accent-hover/40 bg-accent">
       <Container className="flex items-center justify-center py-1.5">
         <Link
           href="/get-a-quote"
-          className="group inline-flex items-center gap-1.5 text-xs font-medium text-white/90 transition-colors hover:text-white sm:text-sm"
+          className="group inline-flex items-center gap-1.5 text-xs font-medium text-accent-contrast/90 transition-colors hover:text-accent-contrast sm:text-sm"
         >
           Now booking {nextMonth} &amp; {monthAfterNext} — get a quote
           <Icon
             name="arrow-right"
-            className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+            className="arrow-nudge h-3.5 w-3.5"
           />
         </Link>
       </Container>

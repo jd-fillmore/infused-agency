@@ -109,7 +109,7 @@ Signature text gradient re-derived from the brand blue→indigo:
 
 ## Phase checklist
 
-### L0 — Reference extraction and baseline (this phase)
+### L0 — Reference extraction and baseline
 - [x] Branch `feat/light-reskin` created from `origin/master`.
 - [x] `yarn verify:seo` green before starting (329 published pages, 0 gate fails,
       0 schema failures, 0 regression failures/warnings).
@@ -119,46 +119,60 @@ Signature text gradient re-derived from the brand blue→indigo:
 - [x] `docs/light-design-reference.md` written (design facts only, no copy/code).
 - [x] Dark-only hard-coded styling inventoried (below).
 - [x] Light palette designed with AA contrast ratios (above).
-- [ ] Commit `docs/light-redesign-spec.md`, the two reference docs and the
-      before-screenshots as Phase L0.
+- [x] Committed as L0 `465a9f9`.
 
 ### L1 — Tokens and typography re-skin
-- [ ] `src/styles/tailwind.css`: light `@theme` (colours, gradient, shadows,
+- [x] `src/styles/tailwind.css`: light `@theme` (colours, gradient, shadows,
       atmosphere), `color-scheme: light`, body bg/text, Poppins font vars,
       type-scale tuning.
-- [ ] `src/pages/_document.js`: `theme-color` → light, `color-scheme: light`.
-- [ ] `src/pages/variables.scss`: remap legacy SCSS tokens to light values.
-- [ ] `src/styles/rescue.css` + `legacy-saas.css`: convert the dark-forced
+- [x] `src/pages/_document.js`: `theme-color` → light, `color-scheme: light`.
+- [x] `src/pages/variables.scss`: remap legacy SCSS tokens to light values.
+- [x] `src/styles/rescue.css` + `legacy-saas.css`: convert the dark-forced
       shared-layer values (body, inner heroes, blog/article, forms, modals,
       tables, chips, pagination, area lists, call-outs) to the light system.
-- [ ] Fonts: Poppins via `next/font/google` in `_app.js`; `$heading`/`$body`.
-- [ ] Atmosphere: replace `glow-radial`/`glow-radial-deep` glows with subtle
-      tinted light gradients; `bg-grid` lines darkened; remove `shadow-glow`.
-- [ ] `components/ui/*` primitives: drop `bg-white/5` / white-on-dark idioms in
+- [x] Fonts: Poppins via `next/font/google` in `_app.js`; `$heading`/`$body`.
+- [x] Atmosphere: replace `glow-radial`/`glow-radial-deep` glows with subtle
+      tinted light gradients; `bg-grid` lines darkened; `shadow-glow` re-tinted.
+- [x] `components/ui/*` primitives: drop `bg-white/5` / white-on-dark idioms in
       favour of light tokens.
-- [ ] `src/pages/dev/styleguide.js`: show the new tokens/type/components.
-- [ ] `yarn verify:seo && yarn test:seo && yarn lint && yarn build`; commit.
+- [x] `src/pages/dev/styleguide.js`: show the new tokens/type/components.
+- [x] `yarn verify:seo && yarn test:seo && yarn lint && yarn build`; committed as
+      L1 `d6ea3ba`.
 
 ### L2 — Interaction and motion system
-- [ ] Motion tokens (easing `cubic-bezier(.2,.75,.25,1)`, 150ms micro,
+- [x] Motion tokens (easing `cubic-bezier(.2,.75,.25,1)`, 150ms micro,
       250–350ms card) as CSS variables + Tailwind utilities.
-- [ ] Card/box hover: lift ~4px, layered shadow, accent-tinted border, title/
+- [x] Card/box hover: lift ~4px, layered shadow, accent-tinted border, title/
       arrow nudge; transform/opacity/shadow/border/background only.
-- [ ] Image zoom inside clipped containers (scale ~1.04).
-- [ ] Buttons: lift + deepen; arrow slide; active press.
-- [ ] Links/nav: underline reveal; mega-menu panel fade+rise with delay.
-- [ ] Accordion: smooth grid-rows/height transition + rotating chevron.
-- [ ] Optional CSS-only scroll reveal (content visible by default, no CLS).
-- [ ] `prefers-reduced-motion` and `@media (hover: hover)` guards.
-- [ ] Add effects to the styleguide; verify + commit.
+- [x] Image zoom inside clipped containers (scale ~1.04).
+- [x] Buttons: lift + deepen; arrow slide; active press.
+- [x] Links/nav: underline reveal; mega-menu panel fade+rise with delay.
+- [x] Accordion: smooth grid-rows/height transition + rotating chevron.
+- [x] Optional CSS-only scroll reveal (content visible by default, no CLS).
+- [x] `prefers-reduced-motion` and `@media (hover: hover)` guards.
+- [x] Add effects to the styleguide; committed as L2 `33427ea`.
 
 ### L3 — Shell and homepage
-- [ ] Header/topbar, mega menu, mobile menu, footer on light tokens + motion;
-      CTA band/footer may use the deep contrast colour.
-- [ ] Homepage: every section restyled, content/order/headings/links unchanged;
-      reuse only real data (stats, results, testimonials).
-- [ ] Replace the hero visual so it works on a light background.
-- [ ] Verify + commit.
+- [x] `components/Nav/topBar.js`: announcement strip now brand accent band
+      (`bg-accent`, `text-accent-contrast`, `arrow-nudge`); was `bg-accent-deep`.
+- [x] `components/Nav/nav.js`: light header with scrolled shadow + smooth
+      transition; `hover:bg-white/5` → `hover:bg-surface` (desktop + mobile).
+- [x] `components/Nav/megaMenu.js`: light panel, soft brand shadow, fade+rise
+      (`transition-[opacity,transform] duration-200 ease-smooth`, `-translate-y-1`
+      → `translate-y-0`); hover chips → `bg-surface`; chevrons eased.
+- [x] `components/Footer/footer.js`: now the **deep contrast band**
+      (`bg-contrast`, `text-contrast-ink/…`, white logo, `gold-bright` accent dot
+      and quote link, white/10 dividers, `arrow-nudge`). This gives the page its
+      dark/light rhythm at the bottom; `components/CTA/cta.js` already used light
+      tokens from L1 so stays as-is.
+- [x] `src/pages/index.js`: affiliate chip `bg-white/[0.03]` → `bg-card`;
+      testimonial grid gets `reveal`; buyer-guide links get `group`+`arrow-nudge`.
+      Content, order, headings and links unchanged; only owner-supplied stats,
+      testimonials and logos are shown.
+- [x] Hero works on light: no dark hero art exists — the right column is the
+      (now light) `Card` form panel; `glow-radial` is a subtle light tint.
+- [x] `yarn verify:seo && yarn test:seo && yarn lint && yarn build` green; committed
+      as L3.
 
 ## Dark-only styling inventory (L0.1)
 

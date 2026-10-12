@@ -38,9 +38,9 @@ export default function Nav() {
 
   return (
     <header
-      className={`sticky top-0 z-header w-full border-b transition-colors ${
+      className={`sticky top-0 z-header w-full border-b transition-[background-color,border-color,box-shadow] duration-300 ease-smooth ${
         scrolled
-          ? "border-border bg-base/90 backdrop-blur-md"
+          ? "border-border bg-base/95 shadow-[0_10px_30px_-22px_rgba(22,27,51,0.5)] backdrop-blur-md"
           : "border-transparent bg-base/70 backdrop-blur-sm"
       }`}
     >
@@ -62,7 +62,7 @@ export default function Nav() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-white/5 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-surface hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 {link.name}
               </Link>
@@ -78,7 +78,7 @@ export default function Nav() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Close menu" : "Open menu"}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-ink transition-colors hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent lg:hidden"
           >
             <Icon name={open ? "close" : "menu"} className="h-6 w-6" />
           </button>
@@ -103,7 +103,7 @@ export default function Nav() {
                         <Link
                           href={link.url}
                           onClick={closeMobile}
-                          className="block rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-white/5"
+                          className="block rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-surface"
                         >
                           {link.name}
                         </Link>
@@ -124,7 +124,7 @@ export default function Nav() {
                         <Link
                           href={link.url}
                           onClick={closeMobile}
-                          className="block rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-white/5"
+                          className="block rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-surface"
                         >
                           {link.name}
                         </Link>
@@ -140,7 +140,7 @@ export default function Nav() {
                     key={link.href}
                     href={link.href}
                     onClick={closeMobile}
-                    className="rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-white/5"
+                    className="rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-surface"
                   >
                     {link.name}
                   </Link>
