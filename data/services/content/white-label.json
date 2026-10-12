@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "White label SEO and marketing that lets agencies scale without hiring in house. We fulfill the work and reporting while your brand stays front-facing.",
+  "directAnswer": "White label lets your agency sell SEO and marketing you cannot staff yourself. We run the audits, content, and reporting under strict confidentiality while your brand stays in front of the client. You keep the relationship, the strategy, and the margin. We stay invisible and dependable, so your agency grows without the hiring risk.",
+  "intro": "Agency growth is usually capped by delivery capacity, not by sales. White label services remove that cap. When you sell work your team cannot build, we fulfill it behind the scenes: the technical audits, the content, the local campaigns, the reporting, all produced under your name with your client never knowing a partner exists. We do not pitch the client, contact the client, or appear in the work. Your agency keeps a single voice in front of every relationship, and it scales past whatever your bench can handle on its own.",
+  "forWho": "You are an agency, freelancer, or marketing studio that has outgrown your delivery team or landed a contract your current capacity cannot cover. You need a partner who can take a scope of work, meet agent-grade quality standards, hit deadlines, and stay silent about the arrangement. It also fits consultants who want to sell a fuller service basket, like handling a client's SEO alongside their own web or paid work, without the risk of hiring for it. If you are turning work away because you cannot build it internally, that is the moment the service is built for.",
+  "process": [
+    {
+      "title": "Onboarding and scoping",
+      "text": "You send the client context, access where needed, and the scope. We confirm deliverables, timelines, and anything that would change what the client expects to receive."
+    },
+    {
+      "title": "White label campaign delivery",
+      "text": "We run the work to the standard your brand promises, whether that is technical fixes, content, local SEO, or ongoing marketing, keeping everything inside your reporting language."
+    },
+    {
+      "title": "Your-brand reporting",
+      "text": "You receive reports styled as yours, explaining results in plain language you can present to the client as your own work and recommendations."
+    },
+    {
+      "title": "You handle strategy and relationship",
+      "text": "The client sees only you: the strategy calls stay with your team, decisions come from you, and we execute inside the guardrails you set."
+    },
+    {
+      "title": "Review and renewal",
+      "text": "We review performance, revise what is not moving, and hand you a clean renewal conversation with your client built on results and trust."
+    }
+  ],
+  "deliverables": [
+    "Scoped project or retainer defined up front",
+    "Work delivered on the agreed schedule",
+    "Reports written in your brand and voice",
+    "Access to content, fixes, and dashboards as agreed",
+    "Strict confidentiality on the arrangement",
+    "A clear renewal package you can present as yours"
+  ],
+  "metrics": [
+    "On-time delivery of every milestone",
+    "Ranking and traffic movement per campaign",
+    "Client-facing report quality and accuracy",
+    "Time booked against the scope agreed"
+  ],
+  "sections": [
+    {
+      "heading": "How we keep the arrangement invisible",
+      "paragraphs": [
+        "Confidentiality is the entire business model, so we protect it with process, not promises. All communication runs through your team or a dedicated channel. Nothing we produce carries our branding. We use your reporting templates and language. And we document a lint-clear rule that under no circumstance do we contact or respond to your client directly.",
+        "Vendors that nick the client or slip their logo onto a report undermine exactly what you are buying. We built the opposite into every workflow, because a partner your client ever discovers is not a partner at all."
+      ]
+    },
+    {
+      "heading": "White label versus hiring in house",
+      "paragraphs": [
+        "The threshold between hiring and white label is a math problem. A new employee costs salary, benefits, training, and management, and you carry the bench during quiet months. White label converts delivery into a variable cost you buy only when you sell. For agencies in a growth surge, that flexibility protects margins and lets sales run ahead of the team instead of waiting for it.",
+        "We are not here to replace your core team on the work you do best. We are the overflow valve for the scopes you choose to partner out, so the fixed costs stay yours to control."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Will our client ever know we use a partner?",
+      "a": "No. Every workflow keeps your brand as the only visible party. Communication runs through your team, deliverables carry your identity, and we maintain strict confidentiality as a contractual and process standard. If visibility were needed, that decision would be yours alone."
+    },
+    {
+      "q": "What services can be white labeled?",
+      "a": "We provide white label SEO audits, technical fixes, content writing, local SEO, link building, and marketing reporting. If you can sell a scope, we can usually fulfill it within the same service lines we deliver directly to our own clients."
+    },
+    {
+      "q": "How do we keep control of strategy and the relationship?",
+      "a": "Strategy stays with your team by design. We execute inside guardrails you define, and we surface our recommendations through you rather than to the client. The relationship, the communication, and the decisions remain entirely yours."
+    },
+    {
+      "q": "What does the reporting look like?",
+      "a": "We produce reports in your language and your layout, covering the metrics you have promised the client. You can review them as drafts before anything reaches the client, and we adjust the format to match your existing documents."
+    },
+    {
+      "q": "How fast can we start?",
+      "a": "Once we have the scope, access, and client context, we can usually kick off within days. Larger technical or content scopes get a milestone plan before work begins so you can set expectations with the client confidently."
+    },
+    {
+      "q": "Who owns the client relationship legally?",
+      "a": "Your agency does. Our agreements sit between us and you, never with your client. You retain the relationship, the contract, and the right to move the work to another partner whenever you choose."
+    }
+  ]
+}

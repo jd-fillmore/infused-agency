@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Conversion rate optimization that turns existing traffic into calls and sales through research, testing and UX improvements that remove friction.",
+  "directAnswer": "CRO turns traffic you already pay for into more calls and sales. We study where visitors drop off, form evidence-based hypotheses, test the changes that matter, and keep the winners. Every improvement is grounded in data instead of opinion. The result is a site that works harder on the same audience and a measurable return from people already visiting it.",
+  "intro": "Two businesses can run the same ads, to the same audience, and one will earn twice the enquiries. The difference lives inside the website: how fast the message lands, how easy the next step is, and how many small frictions a visitor trips over on the way. Conversion rate optimization is the discipline of finding those frictions and removing the ones that cost the most. We use behaviour data, session recordings, layout analysis, and staged testing to move from opinion to evidence. Each improvement compounds, because a better conversion rate multiplies the value of every channel feeding the site.",
+  "forWho": "You need CRO when traffic is coming in but enquiries and sales are not tracking alongside it, or when you are about to spend more on ads and want the foundation to handle the extra volume profitably. It fits service businesses unbothered by leads that stall, ecommerce stores watching cart abandonment, and companies whose form, checkout, or booking flow quietly repels visitors. If rising ad spend is meeting flat revenue, the bottleneck is almost never the ads, and CRO is the fix for what actually blocks you.",
+  "process": [
+    {
+      "title": "Find where the value leaks",
+      "text": "We analyse traffic, session recordings, and step-by-step funnel behaviour to see exactly where visitors hesitate or leave before taking the action you want."
+    },
+    {
+      "title": "Ask the people who decide",
+      "text": "We run structured feedback and usability checks so the assumptions we fix come from your visitors, not from a preferences debate inside a meeting room."
+    },
+    {
+      "title": "Prioritise by impact",
+      "text": "We rank each fix by how much revenue it could change and how much repair it costs, so budget and attention land on the moves that matter first."
+    },
+    {
+      "title": "Test the change before trusting it",
+      "text": "We run controlled tests on the promising hypotheses, let the data decide, and keep winners while dropping lost causes without sentimentality."
+    },
+    {
+      "title": "Loop what works back in",
+      "text": "Winning changes roll into your permanent site, and the testing rhythm stays open for the next most valuable experiment."
+    }
+  ],
+  "deliverables": [
+    "Funnel and behaviour analysis with concrete leak points",
+    "Visitor feedback and usability findings",
+    "A prioritised test roadmap tied to expected revenue",
+    "Controlled experiments with clear outcomes",
+    "Winning changes implemented on your site",
+    "A report connecting each change to its measured effect"
+  ],
+  "metrics": [
+    "Conversion rate on the actions that drive revenue",
+    "Cost per chosen action dropping with each improvement",
+    "Friction points closed versus new ones found",
+    "Revenue lift traced to specific shipped changes"
+  ],
+  "sections": [
+    {
+      "heading": "Strategy, not moving buttons",
+      "paragraphs": [
+        "CRO is easy to caricature as borderline for the sake of a headline, but the durable work is strategic. It asks what a visitor needs to believe before they act, and then makes the page prove it: trust evidence where doubt lives, a clear offer where hesitation sits, and a next step that is obvious rather than hunted for. Button colour is a distraction; the belief gap is the project.",
+        "We work on the layer under the interface: the message, the proof, the pricing story, and the ordering of the decision. Anything a test later changes sits on top of that groundwork."
+      ]
+    },
+    {
+      "heading": "Why we test instead of trusting taste",
+      "paragraphs": [
+        "Everyone who uses the business thinks they know what the website should say. Often they are wrong in a direction that feels right, because owners and customers live in different worlds: the owner knows too much, the visitor knows too little, and the gap produces assumptions that flatter the page but fail the funnel.",
+        "Testing breaks that cycle. We let a sample of real visitors arbitrate between the current version and the proposed one, and we act on the outcome. It is slower than asserting a winner, and far more profitable at the end of the quarter."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "How much traffic do you need to run CRO?",
+      "a": "Meaningful tests need enough visitors to reach statistical solidity, usually a few thousand sessions per month per page you want to optimise. Below that, we rely on behavioural analysis, user testing, and obvious friction-fixes rather than promises built on thin A/B samples."
+    },
+    {
+      "q": "How is CRO different from web design?",
+      "a": "Web design shapes how the site looks and carries its identity; CRO shapes how it behaves and converts. We often work with the design you have, changing structure, message, and flow rather than rebranding the whole build."
+    },
+    {
+      "q": "How quickly does CRO start paying for itself?",
+      "a": "The first high-confidence fixes usually ship within weeks and show movement quickly because they carry measurable convenience. Heavier or experimental changes take longer and are judged on their own results before they stay. Overall, compounding usually covers the cost well within the first few months."
+    },
+    {
+      "q": "Do you need access to our analytics and website?",
+      "a": "We need read access to your analytics, traffic behaviour tools, and the ability to preview your pages. For live experiments we work with a testing tool on your domain, and we respect your platform's rules and your change approval flow at every step."
+    },
+    {
+      "q": "What if the tests show our winning idea loses?",
+      "a": "Then the data has saved you money. We report it plainly, study why, and move to the next hypothesis with an extra lesson. CRO only has value if losing ideas are actually allowed to lose, so we protect that discipline even when it bruises a favourite theory."
+    },
+    {
+      "q": "Can CRO work alongside SEO and paid campaigns?",
+      "a": "It multiplies them. More enquiries from the same traffic lowers your cost per result everywhere, and a faster, clearer site supports the metrics your search and ad teams rely on. We coordinate so a testing change never breaks tracked campaigns or page structure."
+    }
+  ]
+}

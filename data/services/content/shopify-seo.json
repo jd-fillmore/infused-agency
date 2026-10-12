@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Shopify SEO that fixes the platform-specific issues on collections, products, canonicals and speed so your store ranks and converts in search.",
+  "directAnswer": "Shopify SEO targets the platform-specific problems that hold stores back in search, from duplicate collection URLs and weak canonicals to theme speed and thin product copy. We clean the structure, strengthen collection and product content, and improve internal linking so Shopify serves search engines the version you want ranked. The store keeps converting while it climbs.",
+  "intro": "Shopify is excellent at selling and imperfect at search out of the box. Its structure creates duplicate URLs for products that belong to several collections, its themes can be heavy, and product pages often launch with supplier copy that appears on a hundred other stores. Those are not failures of the merchant, they are defaults of the platform. Shopify SEO means working with the grain of Shopify to resolve them, then building collection and product content that can actually compete. The store stays simple to run while search engines get a cleaner, stronger version of it to rank.",
+  "forWho": "This is for Shopify merchants whose organic traffic does not match the quality of their store, or who suspect the platform itself is limiting them. It suits brands competing in busy product categories, stores that have never adjusted collection or canonical behaviour past the defaults, and growing merchants who want organic sales to take pressure off paid ads. If you sell on Shopify and rank for your name but little else, this is the fix.",
+  "process": [
+    {
+      "title": "Audit the Shopify setup",
+      "text": "We review how collections, products, variants and redirects are configured, and identify the duplicate URLs, canonicals and theme issues holding the store back."
+    },
+    {
+      "title": "Fix platform structure",
+      "text": "We correct canonical behaviour, manage collection and tag URL duplication, and tidy the site's architecture within what Shopify allows."
+    },
+    {
+      "title": "Improve collection targeting",
+      "text": "We build collection pages around real category searches and give them content that lists products and answers the questions around them."
+    },
+    {
+      "title": "Strengthen product pages",
+      "text": "We replace thin supplier copy with original product content and structured data so each page can rank on its own merits rather than blending with competitors."
+    },
+    {
+      "title": "Speed and internal links",
+      "text": "We reduce theme and app bloat, improve images, and connect related products and collections so authority flows toward the pages that sell."
+    }
+  ],
+  "deliverables": [
+    "Shopify-specific technical audit",
+    "Canonical and URL duplication fixes",
+    "Optimised collection and category pages",
+    "Original product page content and schema",
+    "Theme and app performance improvements",
+    "Internal linking across collections and guides"
+  ],
+  "metrics": [
+    "Organic sessions and revenue on Shopify",
+    "Indexed pages versus duplicate URLs",
+    "Rankings for category and product terms",
+    "Theme speed and core web vitals"
+  ],
+  "sections": [
+    {
+      "heading": "The duplicate collection problem",
+      "paragraphs": [
+        "On Shopify, a single product that sits in multiple collections can be reachable by several URLs, and collection pages with tags or filters generate more. Search engines struggle to decide which version is primary, and authority gets split. Left unmanaged, this quietly caps how well a store can rank.",
+        "We resolve it with canonical and collection structuring that tells search engines which URL matters, while keeping the shopping experience intact for customers."
+      ]
+    },
+    {
+      "heading": "Supplier copy will not rank",
+      "paragraphs": [
+        "When product descriptions are copied from a manufacturer, every store selling that item publishes the same words. Search engines see no reason to prefer one over another, so nobody ranks well. Original product copy is often the single most valuable SEO work a Shopify store can do.",
+        "We write descriptions that sound like the brand, answer the buyer's real questions, and make each page unique enough to compete on its own."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Is Shopify bad for SEO?",
+      "a": "No. Shopify handles a great deal well, including security, speed basics and structured data. The issues it leaves you are specific and fixable, mainly around collection URLs and the freedom the platform gives merchants to publish thin content. Handled deliberately, a Shopify store can rank strongly."
+    },
+    {
+      "q": "Do I need to leave Shopify to rank better?",
+      "a": "Almost never. Replatforming is disruptive and usually unnecessary. The right work is to use Shopify's features properly and fix the defaults that create duplicate URLs and thin pages. Migrating is a last resort, not the first suggestion."
+    },
+    {
+      "q": "How do you handle collection pages?",
+      "a": "We treat each important collection as a landing page in its own right, targeting how customers search for that category, adding useful content, and linking related collections together so the store has a clear hierarchy."
+    },
+    {
+      "q": "Can you fix the theme speed ourselves built?",
+      "a": "Yes. We profile the theme and its apps, reduce unnecessary scripts and oversized images, and make the storefront faster. Speed matters both for rankings and for how shoppers experience the brand on mobile."
+    },
+    {
+      "q": "Will SEO work with our apps?",
+      "a": "We review the app stack because apps often inject scripts, duplicate content or redirects that counter SEO. We keep the apps that earn their place and configure the rest so they stop working against the store."
+    },
+    {
+      "q": "How long until Shopify SEO shows results?",
+      "a": "Structural fixes can improve indexation within weeks, while ranking movement on competitive product terms typically takes several months. Because a store changes constantly, we keep optimising rather than treating it as one project."
+    }
+  ]
+}

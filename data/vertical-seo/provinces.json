@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "ontario",
+    "name": "Ontario",
+    "abbr": "ON",
+    "capitalCity": "Toronto",
+    "languageNote": null,
+    "topCitySlugs": ["toronto", "ottawa", "mississauga", "brampton", "hamilton"],
+    "verified": false
+  },
+  {
+    "slug": "quebec",
+    "name": "Quebec",
+    "abbr": "QC",
+    "capitalCity": "Quebec City",
+    "languageNote": "Quebec businesses face French-language website requirements under the Charter of the French Language (Bill 96). French-language SEO is a consideration for Quebec practices.",
+    "topCitySlugs": ["montreal", "quebec-city", "laval", "gatineau", "longueuil"],
+    "verified": false
+  },
+  {
+    "slug": "british-columbia",
+    "name": "British Columbia",
+    "abbr": "BC",
+    "capitalCity": "Victoria",
+    "languageNote": null,
+    "topCitySlugs": ["vancouver", "surrey", "burnaby", "richmond", "abbotsford"],
+    "verified": false
+  },
+  {
+    "slug": "alberta",
+    "name": "Alberta",
+    "abbr": "AB",
+    "capitalCity": "Edmonton",
+    "languageNote": null,
+    "topCitySlugs": ["calgary", "edmonton", "red-deer", "lethbridge", "airdrie"],
+    "verified": false
+  },
+  {
+    "slug": "saskatchewan",
+    "name": "Saskatchewan",
+    "abbr": "SK",
+    "capitalCity": "Regina",
+    "languageNote": null,
+    "topCitySlugs": ["saskatoon", "regina", "prince-albert", "moose-jaw", "swift-current"],
+    "verified": false
+  },
+  {
+    "slug": "manitoba",
+    "name": "Manitoba",
+    "abbr": "MB",
+    "capitalCity": "Winnipeg",
+    "languageNote": null,
+    "topCitySlugs": ["winnipeg", "brandon", "steinbach", "winkler", "thompson"],
+    "verified": false
+  },
+  {
+    "slug": "nova-scotia",
+    "name": "Nova Scotia",
+    "abbr": "NS",
+    "capitalCity": "Halifax",
+    "languageNote": null,
+    "topCitySlugs": ["halifax", "cape-breton", "truro", "new-glasgow", "kentville"],
+    "verified": false
+  },
+  {
+    "slug": "new-brunswick",
+    "name": "New Brunswick",
+    "abbr": "NB",
+    "capitalCity": "Fredericton",
+    "languageNote": null,
+    "topCitySlugs": ["moncton", "saint-john", "fredericton", "dieppe", "miramichi"],
+    "verified": false
+  },
+  {
+    "slug": "newfoundland-and-labrador",
+    "name": "Newfoundland and Labrador",
+    "abbr": "NL",
+    "capitalCity": "St. John's",
+    "languageNote": null,
+    "topCitySlugs": ["st-johns", "mount-pearl", "corner-brook", "conception-bay-south", "paradise"],
+    "verified": false
+  },
+  {
+    "slug": "prince-edward-island",
+    "name": "Prince Edward Island",
+    "abbr": "PE",
+    "capitalCity": "Charlottetown",
+    "languageNote": null,
+    "topCitySlugs": ["charlottetown", "summerside", "stratford", "cornwall", "kensington"],
+    "verified": false
+  }
+]

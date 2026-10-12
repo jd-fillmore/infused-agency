@@ -6,16 +6,23 @@
   "license": "0BSD",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/verify-vertical-seo.js",
     "build": "next build",
     "start": "next start",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && node scripts/generate-vertical-sitemaps.js && node scripts/validate-schema.js --require",
+    "deploy:check": "node scripts/should-deploy-today.js",
     "lint": "next lint",
+    "verify:seo": "node scripts/verify-vertical-seo.js && node scripts/validate-schema.js && node scripts/seo-regression.js",
+    "content:status": "node scripts/content-status.js",
+    "content:scaffold": "node scripts/scaffold-content.js",
+    "audit:pages": "node scripts/audit-pages.js",
+    "audit:competitor": "node scripts/competitor-overlap.js",
+    "test:seo": "node scripts/test-vertical-seo.js",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "preload-fonts": ""
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
-    "@next/font": "^14.0.3",
     "animate.css": "^4.1.1",
     "bootstrap": "^4.5.3",
     "date-fns": "^3.6.0",
@@ -48,10 +55,12 @@
     "yet-another-react-lightbox": "^3.21.5"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.3",
     "file-loader": "^6.2.0",
     "frontmatter-markdown-loader": "^3.7.0",
-    "prettier": "2.1.2"
+    "prettier": "2.1.2",
+    "tailwindcss": "^4"
   }
 }

@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "eCommerce web design that builds store architecture, product pages and checkout around conversion. Fast online stores customers enjoy buying from.",
+  "directAnswer": "eCommerce web design builds an online store around how people actually buy. We shape category structure, product pages, search and checkout so visitors find items quickly and finish the purchase without friction. The store loads fast on mobile, guides shoppers clearly, and turns more of the traffic you already earn into completed orders.",
+  "intro": "An online store lives or dies on whether a shopper can go from \"I want this\" to \"it is on its way\" without getting lost. eCommerce web design is the discipline of removing everything that sits between those two moments. That means category pages that make sense at a glance, product pages that answer the questions a buyer has before adding to cart, on-site search that forgives imperfect typing, and a checkout that asks for the minimum and behaves well on a phone. We design the whole path, not just the homepage, because the homepage is rarely where the sale happens.",
+  "forWho": "This is for stores that already sell, or are about to, and need a build that treats the buying path as the product. It suits retailers replacing a theme that looks fine but converts poorly, merchants migrating from a platform that has run out of room, and catalogue businesses whose size makes navigation a genuine design problem. If your traffic is decent but your conversion rate is not, or if your mobile experience loses people the desktop version keeps, the store design is the place to work.",
+  "process": [
+    {
+      "title": "Map the buying path",
+      "text": "We study how customers move from landing to category to product to checkout in your current store or a closest competitor, and mark where they hesitate or drop."
+    },
+    {
+      "title": "Design the collection structure",
+      "text": "We organise categories, filters and attributes so shoppers can narrow a large catalogue to the right few products without guesswork or dead ends."
+    },
+    {
+      "title": "Build product and checkout pages",
+      "text": "We lay out product detail around real buying questions, then simplify cart and checkout so the final step is short, clear and dependable on mobile."
+    },
+    {
+      "title": "Optimise speed and search",
+      "text": "We set image handling, page weight and on-site search so the store feels fast and finding a product never depends on knowing its exact name."
+    },
+    {
+      "title": "Test and refine",
+      "text": "After launch we watch real behaviour and keep improving the path, because a store is never finished and small changes to checkout compound."
+    }
+  ],
+  "deliverables": [
+    "Category and collection architecture built for browsing",
+    "Product page layouts around real buying questions",
+    "Simplified cart and checkout flow",
+    "On-site search and filtering that works on large catalogues",
+    "Mobile-first build with fast, stable page loads",
+    "Migration of products, content and URLs where needed"
+  ],
+  "metrics": [
+    "Add-to-cart and checkout completion rates",
+    "Mobile versus desktop conversion gap",
+    "Store search success and zero-result rate",
+    "Average order value and revenue per session"
+  ],
+  "sections": [
+    {
+      "heading": "Product pages carry the sale",
+      "paragraphs": [
+        "A category gets a shopper interested, but the product page is where the decision is made. It has to answer the practical questions without making anyone hunt: what exactly this is, what it fits, what it costs once shipping and tax appear, how long it takes to arrive, and what happens if it is wrong. Photos and specs matter, but so does plain, honest copy that removes doubt instead of padding detail.",
+        "We treat each product template as a reusable system, so adding products later does not mean designing from scratch. Consistency lets a shopper learn your store once and trust it on every page after."
+      ]
+    },
+    {
+      "heading": "Checkout is not an afterthought",
+      "paragraphs": [
+        "Most abandoned carts are abandoned at the last step, not the first. Extra fields, forced account creation, surprise costs, and slow payment pages quietly cost stores money every single day. We strip checkout back to the essentials, show all costs clearly, and make paying work smoothly on the device the customer is actually holding.",
+        "Every field you remove and every second you save at checkout translates directly into revenue you were already earning but not collecting."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Which platforms can you build an online store on?",
+      "a": "We work with the major hosted and open-source platforms, and we build custom storefronts when a catalogue or workflow needs it. In the first call we match the platform to your products, margins and how your team wants to manage the site."
+    },
+    {
+      "q": "Can you migrate our existing store without losing search rankings?",
+      "a": "Yes, with a plan. We map every old URL to its new home, keep what search engines already trust, and stage the move so redirects and product data land together rather than churning the site in pieces."
+    },
+    {
+      "q": "How long does an eCommerce build take?",
+      "a": "A focused store on an established platform is often a matter of weeks; large catalogues or custom functionality take longer. We scope milestones up front so you know what launches when, rather than waiting for one large reveal."
+    },
+    {
+      "q": "Will the store work well on phones?",
+      "a": "Mobile is the default, not an add-on. Most store traffic now arrives on a phone, so we design the narrow screen first, test real thumb behaviour, and treat desktop as the larger version of the same experience."
+    },
+    {
+      "q": "Do you write product descriptions too?",
+      "a": "We can. Our content team writes product and category copy that answers buyer questions and supports search, either for your whole catalogue or for the templates and key products where wording moves the most."
+    },
+    {
+      "q": "What happens after launch?",
+      "a": "We stay for a stabilisation period, watch real conversion data, and fix what the numbers reveal. Many clients then move into a maintenance or optimisation rhythm rather than treating launch as the finish line."
+    }
+  ]
+}

@@ -1,112 +1,163 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
-import logo from "../../src/img/infused-logo.png";
+import Container from "../ui/Container";
+import Button from "../ui/Button";
+import Icon from "../ui/Icon";
 import TopBar from "./topBar";
+import MegaMenu from "./megaMenu";
+import { GROUPS, INDUSTRIES } from "./navData";
 
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+const LINKS = [
+  { name: "Industries", href: "/industries" },
+  { name: "Work", href: "/work" },
+  { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
+];
 
-  const toggle = () => setIsOpen(!isOpen);
+export default function Nav() {
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const onKey = (event) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  const closeMobile = () => setOpen(false);
 
   return (
-    <>
-      <div className="fixed-top">
-        <TopBar />
-        <Navbar id="nav" expand="lg">
-          <Container fluid>
-            <Link href="/" className="logo navbar-brand">
-              <Image
-                unoptimized={true}
-                className="logo"
-                src={logo}
-                alt="Infused Agency Logo"
-              />
-            </Link>
-            <NavbarToggler className="custom-toggler" onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <Link
-                    title="SEO Niagara"
-                    href="/services"
-                    className="nav-link"
-                  >
-                    Solutions
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link href="/work" className="nav-link">
-                    Work
-                  </Link>
-                </NavItem>
-                {/* <NavItem>
-                <Link href="/pricing" className="nav-link">
-                  Pricing
-                </Link>
-              </NavItem> */}
-                {/* <NavItem>
-                <Link href="/process" className="nav-link">
-                  Process
-                </Link>
-              </NavItem> */}
-                <NavItem>
-                  <Link href="/about" className="nav-link">
-                    About
-                  </Link>
-                </NavItem>
-                {/* <NavItem>
-                <Link href="/reviews" className="nav-link">
-                  Reviews
-                </Link>
-              </NavItem> */}
-                <NavItem>
-                  <Link href="/blog" className="nav-link">
-                    Blog
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <a
-                    className="nav-link btn"
-                    href="/get-a-quote"
-                    rel="noreferrer"
-                  >
-                    <strong>Get A Quote</strong>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      class="absolute left-1/2 top-1/2 translate-centered group-hover:ml-1 transition-250"
-                      height="20px"
-                      width="20px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M295.6 163.7c-5.1 5-5.1 13.3-.1 18.4l60.8 60.9H124.9c-7.1 0-12.9 5.8-12.9 13s5.8 13 12.9 13h231.3l-60.8 60.9c-5 5.1-4.9 13.3.1 18.4 5.1 5 13.2 5 18.3-.1l82.4-83c1.1-1.2 2-2.5 2.7-4.1.7-1.6 1-3.3 1-5 0-3.4-1.3-6.6-3.7-9.1l-82.4-83c-4.9-5.2-13.1-5.3-18.2-.3z"></path>
-                    </svg>
-                  </a>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Container>
-        </Navbar>
-      </div>
-    </>
-  );
-};
+    <header
+      className={`sticky top-0 z-header w-full border-b transition-colors ${
+        scrolled
+          ? "border-border bg-base/90 backdrop-blur-md"
+          : "border-transparent bg-base/70 backdrop-blur-sm"
+      }`}
+    >
+      <TopBar />
+      <Container>
+        <div className="flex h-16 items-center justify-between gap-4">
+          <Link
+            href="/"
+            aria-label="Infused Agency home"
+            className="flex items-baseline font-display text-2xl font-bold tracking-tight text-ink transition-opacity hover:opacity-80"
+          >
+            infused
+            <span className="text-accent">.</span>
+          </Link>
 
-export default Example;
+          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
+            <MegaMenu />
+            {LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-white/5 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Button href="/get-a-quote" className="ml-2">
+              Get a quote
+            </Button>
+          </nav>
+
+          <button
+            type="button"
+            onClick={() => setOpen((value) => !value)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent lg:hidden"
+          >
+            <Icon name={open ? "close" : "menu"} className="h-6 w-6" />
+          </button>
+        </div>
+      </Container>
+
+      {open && (
+        <div
+          id="mobile-menu"
+          className="border-t border-border bg-base/98 backdrop-blur-md lg:hidden"
+        >
+          <Container className="max-h-[calc(100vh-8rem)] overflow-y-auto py-5">
+            <nav aria-label="Mobile" className="flex flex-col gap-5">
+              {GROUPS.map((group) => (
+                <div key={group.heading}>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                    {group.heading}
+                  </p>
+                  <ul className="space-y-0.5">
+                    {group.links.map((link) => (
+                      <li key={link.url}>
+                        <Link
+                          href={link.url}
+                          onClick={closeMobile}
+                          className="block rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-white/5"
+                        >
+                          {link.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+
+              {INDUSTRIES.length > 0 && (
+                <div>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                    SEO by industry
+                  </p>
+                  <ul className="space-y-0.5">
+                    {INDUSTRIES.map((link) => (
+                      <li key={link.url}>
+                        <Link
+                          href={link.url}
+                          onClick={closeMobile}
+                          className="block rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-white/5"
+                        >
+                          {link.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <div className="flex flex-col gap-0.5 border-t border-border pt-4">
+                {LINKS.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={closeMobile}
+                    className="rounded-md px-2 py-2 text-sm font-medium text-ink hover:bg-white/5"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+
+              <Button
+                href="/get-a-quote"
+                onClick={closeMobile}
+                className="w-full"
+              >
+                Get a quote
+              </Button>
+            </nav>
+          </Container>
+        </div>
+      )}
+    </header>
+  );
+}

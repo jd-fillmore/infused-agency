@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Website hosting and maintenance that keeps your WordPress site running while you focus on business, without promising guaranteed uptime or backups.",
+  "directAnswer": "Website hosting keeps your site online, updated and monitored so you can focus on running the business. We handle the technical upkeep of WordPress sites, run updates carefully, and watch for problems before they reach your customers. It is steady, practical maintenance rather than a promise of perfect uptime. If something needs attention, you hear from us.",
+  "intro": "A website is not finished when it launches. It runs on software that changes constantly, and left alone, that software drifts toward breakage: plugins fall out of step, themes develop conflicts, and a small fault turns into an outage at the worst moment. Website hosting and maintenance is the ongoing care that keeps a WordPress site healthy. We handle the updates, the checks, and the troubleshooting, so you are not the person discovering a problem, and we are honest that no host on earth can promise perfection. We offer steady attention instead.",
+  "forWho": "This suits businesses running a WordPress site who want it looked after by someone accountable rather than handed to the cheapest host and forgotten. It fits owners who are tired of doing updates themselves and worrying whether today is the day something breaks, agencies that need a reliable home for client sites, and any site where an outage means lost enquiries. If your website matters to how you earn, it deserves more than an untouched hosting account.",
+  "process": [
+    {
+      "title": "Review the current setup",
+      "text": "We audit where the site is hosted, what plugins and theme it runs, how it is backed up, and what monitoring exists, so we know the starting health."
+    },
+    {
+      "title": "Move or stabilise",
+      "text": "If needed, we migrate the site with minimal disruption, configure the environment properly, and resolve obvious risks like version mismatches and unused software."
+    },
+    {
+      "title": "Routine upkeep",
+      "text": "We apply core, theme and plugin updates on a sensible schedule, testing after each one so an update never quietly breaks a page or a form."
+    },
+    {
+      "title": "Monitor and respond",
+      "text": "We watch the site for outages, errors and security warnings, and act when something needs attention rather than waiting for you to notice."
+    },
+    {
+      "title": "Report and advise",
+      "text": "We keep you informed of what we changed and flag anything that needs a decision, like a plugin being retired or a renewal worth reviewing."
+    }
+  ],
+  "deliverables": [
+    "Hosting environment configured for WordPress",
+    "Scheduled core, theme and plugin updates",
+    "Post-update testing to catch breakage",
+    "Uptime and error monitoring",
+    "Migration of your existing site where needed",
+    "Plain-language notes on what changed"
+  ],
+  "metrics": [
+    "Site availability tracked over time",
+    "Updates applied and verified",
+    "Issues caught before they affect visitors",
+    "Page load performance held stable"
+  ],
+  "sections": [
+    {
+      "heading": "What we will and will not promise",
+      "paragraphs": [
+        "We will promise careful updates, active monitoring, and someone who responds when something goes wrong. We will not promise a specific uptime percentage or backup schedule, because those depend on infrastructure and terms we would have to verify before claiming them, and unverified numbers on a website are a promise you can hold against us later.",
+        "That honesty is the point. You should know exactly what the service covers, and we would rather set a realistic expectation than win the work on a number that means nothing when a real incident happens."
+      ]
+    },
+    {
+      "heading": "Why maintenance is worth doing properly",
+      "paragraphs": [
+        "A neglected WordPress site accumulates risk invisibly. Plugins age out of support, themes conflict with newer PHP versions, and abandoned add-ons become the easiest way in for an attacker. Regular, tested maintenance keeps the site current and closes those gaps before they become an incident rather than after.",
+        "It is unglamorous work that mostly shows up as the absence of problems. That is exactly what you want from the foundation under your business."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Do you guarantee a specific uptime percentage?",
+      "a": "No, and you should be wary of hosts that do without qualification. Uptime depends on the whole chain of infrastructure beneath the site. We focus on reliable hosting, active monitoring and fast response, and we will tell you plainly what we can and cannot guarantee."
+    },
+    {
+      "q": "How often are updates applied?",
+      "a": "Core and security-relevant updates are handled promptly, and routine plugin and theme updates follow a planned schedule. We test after updating so a change does not silently break a form, a page or a checkout."
+    },
+    {
+      "q": "What happens if my site goes down?",
+      "a": "Our monitoring alerts us, and we investigate and work to restore service. You are not left refreshing the page wondering. We also explain what happened afterwards in plain terms, because a problem you understand is less worrying than one you do not."
+    },
+    {
+      "q": "Can you take over hosting for a site built elsewhere?",
+      "a": "Yes. We review the site first to understand its plugins and dependencies, then migrate it carefully to a maintained environment. If the site itself has underlying problems, we flag them before the move rather than after."
+    },
+    {
+      "q": "Do you offer backups?",
+      "a": "Backups are part of a sensible setup, but we will not advertise a schedule or retention period until the arrangement is confirmed and verified. Where backups exist, we make sure they are actually restorable, because an untested backup is not a backup."
+    },
+    {
+      "q": "Is the site still vulnerable if it is maintained?",
+      "a": "No site is permanently immune, but regular upkeep removes the common, avoidable weaknesses. We keep software current, limit unnecessary access, and watch for signs of trouble, which is the practical version of security rather than a slogan."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+name: Scheduled wave deploy
+
+# Production rebuilds are driven by the launch schedule, not by auto-deploy.
+# This runs daily at 09:00 UTC and on manual dispatch, checks whether a wave is
+# dated today, and if so POSTs to the host's deploy hook to trigger a rebuild.
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+jobs:
+  wave-deploy:
+    name: Deploy if a wave releases today
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+
+      - name: Should deploy today?
+        id: check
+        run: echo "deploy=$(node scripts/should-deploy-today.js)" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger production rebuild
+        if: steps.check.outputs.deploy == 'true'
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$DEPLOY_HOOK_URL" ]; then
+            echo "::error::DEPLOY_HOOK_URL secret is not set; cannot trigger the wave deploy."
+            echo "Create a deploy hook in the host and add its URL as a repo secret."
+            exit 1
+          fi
+          curl -fsS -X POST "$DEPLOY_HOOK_URL"
+
+      - name: No wave today
+        if: steps.check.outputs.deploy != 'true'
+        run: echo "No wave is scheduled for today; nothing to deploy."

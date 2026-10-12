@@ -1,0 +1,16 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "react/no-unescaped-entities": "warn",
+    "react/jsx-key": "warn",
+    "react/jsx-no-duplicate-props": "warn",
+    "react/no-children-prop": "warn",
+    "@next/next/no-img-element": "warn",
+    "@next/next/no-html-link-for-pages": "warn",
+    "@next/next/no-page-custom-font": "warn",
+    "jsx-a11y/alt-text": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-anonymous-default-export": "warn"
+  }
+}

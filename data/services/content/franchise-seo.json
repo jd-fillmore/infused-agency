@@ -1,0 +1,86 @@
+{
+  "status": "reviewed",
+  "summary": "Franchise SEO that scales visibility across every location. Location pages, local content systems and consistent local SEO for every site in your network.",
+  "directAnswer": "Franchise SEO gives every location its own shot at being found nearby. We build a system where each store ranks for its city without locations fighting over the same pages. Location pages, consistent profiles, and shared brand authority lift the whole network. Your corporate strength feeds the locations, and the locations capture the local demand.",
+  "intro": "A franchise is one brand trying to win in many places at once, and that is the core difficulty of its SEO. If every location leans on one homepage, the franchise ranks for nothing locally and stores end up fighting each other for the same terms. Franchise SEO solves it with architecture: a strong corporate core, individual location pages or subsites built with real local substance, and local signals like profiles and citations maintained per store. Done this way, the network compounds. Authority earned by the brand supports every location, while each location converts that support into neighbourhood visibility no single site could produce alone.",
+  "forWho": "This service is for franchise systems of any size, from a handful of units to national networks, that want consistent visibility across their footprint. It fits systems whose locations currently point at one corporate site, franchisees who are building their own sites in ways that fragment the brand, and companies entering new territories that need each market to stand up its own local presence from day one. If your franchising agreement already fixes the web structure, we work inside those rules rather than against them.",
+  "process": [
+    {
+      "title": "Audit the network",
+      "text": "We map every location, its profiles, citations, and pages, and see exactly where the brand wins, loses, or overlaps across the territory."
+    },
+    {
+      "title": "Design the location architecture",
+      "text": "We decide how each store gets found, whether through dedicated location pages, location-specific content within your site, or a structure that fits your platform and franchise agreement."
+    },
+    {
+      "title": "Build the location system",
+      "text": "We roll out per-store pages and profiles with genuine local detail for each community, without templates so thin that duplicates defeat the purpose."
+    },
+    {
+      "title": "Create a content flow per store",
+      "text": "We set up how new locations, new services, and seasonal content get published consistently, so growth does not depend on one person remembering to do it."
+    },
+    {
+      "title": "Align franchisees",
+      "text": "We give franchisees a simple operating rulebook for reviews, offers, and local activity that protects the brand while strengthening each local presence."
+    }
+  ],
+  "deliverables": [
+    "Network audit covering every location and profile",
+    "Location architecture plan matched to your platform",
+    "Per-location pages with real local content",
+    "Per-store profile and citation guidance",
+    "A content publishing system that scales",
+    "National and per-store reporting dashboards"
+  ],
+  "metrics": [
+    "Locations ranking for their target cities",
+    "Per-store traffic and enquiry volume",
+    "Cannibalization reduced between nearby locations",
+    "New territory launches reaching baseline visibility faster"
+  ],
+  "sections": [
+    {
+      "heading": "Beating the cannibalization problem",
+      "paragraphs": [
+        "When two franchise locations serve overlapping areas from similar pages, search engines often show one and bury the other. We solve this with honest geographic boundaries in each page, service-area details that differ meaningfully, and clearly signalled relationships between the corporate site and each store. The goal is not to hide stores from each other, it is to give the engine a clean answer for who to serve in which area.",
+        "We also dampen the flipside, coverage holes, where a territory has no visible location because the corporate site swallowed every search. Every store should carry its own weight locally."
+      ]
+    },
+    {
+      "heading": "Working inside franchise rules",
+      "paragraphs": [
+        "Franchise systems usually fix the website, the branding, and the sales process, which can leave little room for individual stores to build organic presence. We design local strategies that run inside those constraints: profiles and citations the system can own, location content approved through existing channels, and a rulebook franchisees can actually follow.",
+        "When the national structure is the bottleneck, we help the corporate side redesign the location architecture itself, so future franchisees launch into a system that already works."
+      ]
+    }
+  ],
+  "proofRefs": [],
+  "faqs": [
+    {
+      "q": "Should every franchisee have their own website?",
+      "a": "Rarely. Separate sites fragment the brand and dilute authority unless they are professionally managed at scale, which most franchisees are not equipped to do. We usually recommend location sections within one system, unless review of your agreement and platform shows a stronger split."
+    },
+    {
+      "q": "How do location pages avoid being seen as duplicates?",
+      "a": "Each page must stand on real local substance: the communities covered, services delivered differently there, local proof, and distinct answers to local questions. We refuse template pages that only swap the city name, because those are precisely what search engines devalue."
+    },
+    {
+      "q": "Can this work on the platform our franchise uses?",
+      "a": "Most franchise platforms can host either dedicated location pages or structured location content. We map the approach to your actual system rather than demanding a migration, and where the platform blocks essentials we show corporate exactly what to request."
+    },
+    {
+      "q": "How do you reconcile corporate and local goals?",
+      "a": "Corporate owns brand-level terms and national campaigns; locations own the local and neighbourhood demand. We define boundaries for which pages compete for which searches, then align authority flow so both sides are strengthened rather than fighting."
+    },
+    {
+      "q": "What about franchisees who run their own reviews and ads?",
+      "a": "We give franchisees a simple playbook for reviews, offers, and local activity that connects to the national system. Consistency matters, so guidelines replace guesswork while local owners stay in control of the day-to-day."
+    },
+    {
+      "q": "How fast does a new franchise location start ranking?",
+      "a": "A well-built location page with accurate profiles and citations typically needs two to four months to establish baseline visibility, and continues improving as reviews and content accumulate. We track each new unit from its launch baseline so progress is visible from month one."
+    }
+  ]
+}

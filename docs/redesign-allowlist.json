@@ -1,0 +1,19 @@
+{
+  "allowH2Changes": [
+    "/",
+    "/seo/beamsville",
+    "/seo/crystal-beach",
+    "/seo/fonthill",
+    "/seo/fort-erie",
+    "/seo/grimsby",
+    "/seo/niagara-falls",
+    "/seo/niagara-on-the-lake",
+    "/seo/port-colborne",
+    "/seo/st-catharines",
+    "/seo/thorold",
+    "/seo/welland"
+  ],
+  "allowNewPages": ["/industries"],
+  "allowRemovedPages": ["/pricing", "/website-audit", "/how-we-work"],
+  "allowTitleChanges": ["/seo/white-label"]
+}

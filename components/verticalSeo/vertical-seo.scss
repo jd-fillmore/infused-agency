@@ -1,0 +1,54 @@
+@import "../../src/pages/variables.scss";
+@import "../../src/pages/breakpoints.scss";
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    line-height: 1.6;
+    & + li::before {
+      content: "›";
+      margin: 0 8px;
+      color: rgba($dark-blue, 0.35);
+    }
+  }
+  a {
+    font-size: 13px;
+    color: rgba($dark-blue, 0.55);
+    &:hover,
+    &:focus {
+      color: $light-blue;
+    }
+  }
+  span {
+    background: none;
+    margin-right: 0;
+    font-weight: 400;
+    &[aria-current="page"] {
+      font-size: 13px;
+      color: rgba($dark-blue, 0.9);
+    }
+  }
+}
+
+// Vertical SEO pages: alternate the section background on the way down the page
+// so the layout has rhythm (pillar, province and city alike).
+.vertical-content > section {
+  background-color: var(--color-base);
+}
+
+.vertical-content > section:nth-of-type(even) {
+  background-color: var(--color-surface);
+  background-image: radial-gradient(
+    90% 120% at 100% 0%,
+    rgba(34, 211, 238, 0.05),
+    transparent 60%
+  );
+}

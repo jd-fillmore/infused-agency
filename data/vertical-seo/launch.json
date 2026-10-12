@@ -1,0 +1,83 @@
+{
+  "startDate": "2026-10-11",
+  "freezeAtWave": null,
+  "waves": [
+    {
+      "wave": 1,
+      "offsetDays": 0,
+      "verticals": [
+        "therapists",
+        "electricians",
+        "plumbers",
+        "hvac-contractors",
+        "roofers",
+        "landscapers",
+        "dentists",
+        "accountants"
+      ]
+    },
+    {
+      "wave": 2,
+      "offsetDays": 21,
+      "verticals": [
+        "home-builders",
+        "home-renovators",
+        "kitchen-bath",
+        "flooring",
+        "window-door",
+        "pest-control",
+        "arborists",
+        "garage-door",
+        "paving-companies",
+        "pool-builders",
+        "concrete-contractors",
+        "insulation-contractors",
+        "contractors"
+      ]
+    },
+    {
+      "wave": 3,
+      "offsetDays": 42,
+      "verticals": [
+        "basement-renovators",
+        "deck-builders",
+        "home-additions",
+        "cabinet-makers",
+        "tile-contractors",
+        "drywallers",
+        "design-builders",
+        "movers",
+        "locksmiths",
+        "commercial-cleaning"
+      ]
+    },
+    {
+      "wave": 4,
+      "offsetDays": 63,
+      "verticals": [
+        "secondary-suite-builders",
+        "architects",
+        "commercial-snow-removal",
+        "daycares",
+        "home-stagers",
+        "interior-designers",
+        "modular-builders",
+        "orthodontists",
+        "restoration-companies",
+        "septic-services",
+        "smart-home",
+        "veterinarians",
+        "wedding-photographers"
+      ]
+    }
+  ],
+  "hold": [
+    "family-lawyers",
+    "immigration-lawyers",
+    "injury-lawyers",
+    "real-estate-lawyers",
+    "med-spas",
+    "mortgage-brokers",
+    "financial-advisors"
+  ]
+}

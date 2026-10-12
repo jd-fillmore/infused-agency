@@ -1,0 +1,160 @@
+@import "tailwindcss" important;
+
+@source "../../components";
+@source "../pages";
+@source "../../data";
+
+@theme {
+  /* Colours — dark grey/black base, single cyan accent. */
+  --color-base: #0a0a0b;
+  --color-surface: #101012;
+  --color-card: #161618;
+  --color-elevated: #1c1c1f;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+  --color-ink: #f5f5f5;
+  --color-muted: #a1a1aa;
+  --color-accent: #22d3ee;
+  --color-accent-hover: #67e8f9;
+  --color-accent-deep: #0891b2;
+  --color-accent-contrast: #082834;
+  --color-gold: #e2c044;
+  --color-success: #1b8e47;
+
+  /* Signature text gradient (cyan → ice → white) */
+  --gradient-accent: linear-gradient(
+    100deg,
+    #22d3ee 0%,
+    #a5f3fc 45%,
+    #ffffff 100%
+  );
+
+  /* Fluid type scale (clamp) */
+  --text-display: clamp(2.5rem, 1.9rem + 2.8vw, 4rem);
+  --text-h1: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);
+  --text-h2: clamp(1.75rem, 1.45rem + 1.4vw, 2.5rem);
+  --text-h3: clamp(1.3rem, 1.15rem + 0.7vw, 1.7rem);
+  --text-lead: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
+
+  /* Fonts — Inter throughout, wired to the next/font variable in _app.js. */
+  --font-body: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
+    "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
+    "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Radius scale */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1.25rem;
+
+  /* Shadow + glow */
+  --shadow-card: inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
+    0 12px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 28px -2px rgba(34, 211, 238, 0.5);
+
+  /* Container widths */
+  --container-content: 80rem;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --z-header: 50;
+    --z-mega: 60;
+    --z-overlay: 70;
+    --z-modal: 80;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+
+  /* Modern section rhythm: alternate redesigned sections onto the raised
+     surface colour so pages read as distinct bands instead of one flat
+     background. Utility classes with an explicit background (e.g.
+     bg-surface/40) still win, so hand-tuned pages are unaffected. */
+  .redesign-root > section:nth-of-type(even) {
+    background-color: var(--color-surface);
+  }
+}
+
+@utility z-header {
+  z-index: var(--z-header);
+}
+
+@utility z-mega {
+  z-index: var(--z-mega);
+}
+
+@utility z-overlay {
+  z-index: var(--z-overlay);
+}
+
+/* Atmosphere — CSS only, cheap to render. */
+@utility bg-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@utility glow-radial {
+  background-image: radial-gradient(
+    60% 60% at 50% 0%,
+    rgba(34, 211, 238, 0.16),
+    transparent 70%
+  );
+}
+
+@utility glow-radial-deep {
+  background-image: radial-gradient(
+      50% 55% at 85% 10%,
+      rgba(8, 145, 178, 0.28),
+      transparent 70%
+    ),
+    radial-gradient(
+      45% 50% at 10% 0%,
+      rgba(34, 211, 238, 0.12),
+      transparent 70%
+    );
+}
+
+/* Signature gradient text (clip applied via text-gradient helper). */
+@utility text-gradient {
+  background-image: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Thin gradient border on featured cards. */
+@utility border-gradient {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--color-card), var(--color-card)) padding-box,
+    linear-gradient(135deg, var(--color-accent), var(--color-accent-deep))
+      border-box;
+}
+
+/* Native <details> marker cleanup for the accordion. */
+@utility summary-none {
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}

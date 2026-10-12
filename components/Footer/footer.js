@@ -1,142 +1,185 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
-import Image from "next/image";
 
-import awards from "../../src/img/awards.png";
+import Container from "../ui/Container";
+import Icon from "../ui/Icon";
+import { GROUPS } from "../Nav/navData";
 
-const pages = [
-  {
-    id: 1,
-    name: "Home",
-    link: "/",
-  },
-  {
-    id: 2,
-    name: "Solutions",
-    link: "/services",
-  },
-  {
-    id: 3,
-    name: "Work",
-    link: "/work",
-  },
-  {
-    id: 6,
-    name: "About",
-    link: "/about",
-  },
-  {
-    id: 7,
-    name: "Blog",
-    link: "/blog",
-  },
-  {
-    id: 8,
-    name: "Get A Quote",
-    link: "/get-a-quote",
-  },
+const CITIES = [
+  { name: "Beamsville", href: "/seo/beamsville" },
+  { name: "Crystal Beach", href: "/seo/crystal-beach" },
+  { name: "Fonthill", href: "/seo/fonthill" },
+  { name: "Fort Erie", href: "/seo/fort-erie" },
+  { name: "Grimsby", href: "/seo/grimsby" },
+  { name: "Niagara Falls", href: "/seo/niagara-falls" },
+  { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
+  { name: "Port Colborne", href: "/seo/port-colborne" },
+  { name: "St. Catharines", href: "/seo/st-catharines" },
+  { name: "Thorold", href: "/seo/thorold" },
+  { name: "Welland", href: "/seo/welland" },
 ];
 
-const Footer = () => {
-  return (
-    <>
-      <section className="footer">
-        <Container>
-          <Row>
-            <Col lg="4">
-              <h3>Infused Agency</h3>
-              <p>
-                Infused is a boutique local SEO &amp; AI search company with more
-                than 10 years of experience helping Niagara businesses get found
-                on Google and AI search tools like ChatGPT &amp; Gemini.
-              </p>
-              <p>
-                Follow us on{" "}
-                <a
-                  rel="noreferrer"
-                  href="https://www.instagram.com/infusedweb/"
-                  target="_blank"
-                >
-                  Instagram
-                </a>
-              </p>
-              <Image
-                className="img-fluid"
-                src={awards}
-                alt="infused agency awards"
-              />
-            </Col>
-            <Col lg="2">
-              <h3>Pages</h3>
-              <ul>
-                {pages.map((page) => (
-                  <li key={page.id}>
-                    <Link href={page.link}>{page.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </Col>
-            <Col lg="3">
-              <h3>Services</h3>
-              <ul>
-                <li>
-                  <Link href="/web-design">Lead-Generating Web Design</Link>
-                </li>
-                <li>
-                  <Link href="/seo">Search Engine Optimization</Link>
-                </li>
-              </ul>
-            </Col>
-            <Col lg="3">
-              <h3>Contact</h3>
-              <Link href="/get-a-quote">
-                <strong>Get Free Quote</strong>
-              </Link>
-              <br />
-              <Link href="/sitemap">Sitemap</Link>
+const COMPANY = [
+  { name: "Work", href: "/work" },
+  { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
+  { name: "Sitemap", href: "/sitemap" },
+];
 
-              <br />
-              <br />
-              <h3>Hours</h3>
-              <ul>
-                <li>Monday - 9a.m.-6p.m.</li>
-                <li>Tuesday - 9a.m.-6p.m.</li>
-                <li>Wednesday - 9a.m.-6p.m.</li>
-                <li>Thursday - 9a.m.-6p.m.</li>
-                <li>Friday - 9a.m.-6p.m.</li>
-                <li>Saturday - Closed</li>
-                <li>Sunday - Closed</li>
-              </ul>
-              <p>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</p>
-              <a className="phone" href="tel:(905) 933-3115">
-                (905) 933-3115
-              </a>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="12">
-              <h3>Serving SEO to Businesses in Niagara since 2013</h3>
-              <a href="/seo/beamsville">Beamsville, ON</a> <span>|</span>
-              <a href="/seo/crystal-beach">Crystal Beach, ON</a> <span>|</span>
-              <a href="/seo/fonthill">Fonthill, ON</a> <span>|</span>
-              <a href="/seo/fort-erie">Fort Erie, ON</a> <span>|</span>
-              <a href="/seo/grimsby">Grimsby, ON</a> <span>|</span>
-              <a href="/seo/niagara-falls">Niagara Falls, ON</a> <span>|</span>
-              <a href="/seo/niagara-on-the-lake">
-                Niagara-on-the-Lake, ON
-              </a>{" "}
-              <span>|</span>
-              <a href="/seo/port-colborne">Port Colborne, ON</a> <span>|</span>
-              <a href="/seo/st-catharines">St. Catharines, ON</a> <span>|</span>
-              <a href="/seo/thorold">Thorold, ON</a> <span>|</span>
-              <a href="/seo/welland">Welland, ON</a>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </>
-  );
+const SOCIAL_ICONS = {
+  Facebook: "facebook",
+  Instagram: "instagram",
+  LinkedIn: "linkedin",
 };
 
-export default Footer;
+const SOCIAL = [
+  { platform: "Instagram", url: "https://www.instagram.com/infusedweb/" },
+  { platform: "Facebook", url: "https://www.facebook.com/infused.agency" },
+  { platform: "LinkedIn", url: "https://linkedin.com/company/infused-agency" },
+];
+
+function ColumnHeading({ children }) {
+  return (
+    <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+      {children}
+    </h3>
+  );
+}
+
+function FooterLink({ href, children, onClick }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        onClick={onClick}
+        className="block py-1 text-sm text-muted transition-colors hover:text-ink"
+      >
+        {children}
+      </Link>
+    </li>
+  );
+}
+
+export default function Footer() {
+  return (
+<footer className="border-t border-border bg-surface">
+        <a
+          href="tel:+19059333115"
+          aria-hidden="true"
+          tabIndex={-1}
+          className="pointer-events-none absolute -left-[9999px] top-0 h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 text-transparent"
+        >
+          (905) 933-3115
+        </a>
+        <Container className="py-14">
+        <div className="grid gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <Link href="/" className="flex items-baseline" aria-label="Infused Agency home">
+              <span className="font-display text-2xl font-bold tracking-tight text-ink">
+                infused
+                <span className="text-accent">.</span>
+              </span>
+            </Link>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
+              Infused is a boutique local SEO &amp; AI search company helping
+              Niagara businesses get found on Google and AI search tools like
+              ChatGPT &amp; Gemini.
+            </p>
+            <div className="mt-5 flex items-center gap-3">
+              {SOCIAL.map((item) => (
+                <a
+                  key={item.platform}
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.platform}
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted transition-colors hover:border-accent/40 hover:text-accent"
+                >
+                  <Icon
+                    name={SOCIAL_ICONS[item.platform] || "globe"}
+                    className="h-4 w-4"
+                  />
+                </a>
+              ))}
+            </div>
+            <p className="mt-6 max-w-xs text-xs leading-relaxed text-muted">
+              Recognised at: Google Partner · Three Best Rated · GoodFirms ·
+              DesignRush
+            </p>
+          </div>
+
+          <div className="lg:col-span-3">
+            <ColumnHeading>Services</ColumnHeading>
+            <div className="space-y-4">
+              {GROUPS.map((group) => (
+                <div key={group.heading}>
+                  <p className="mb-1 text-xs font-medium text-ink/70">
+                    {group.heading}
+                  </p>
+                  <ul>
+                    {group.links.slice(0, 4).map((link) => (
+                      <FooterLink key={link.url} href={link.url}>
+                        {link.name}
+                      </FooterLink>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:col-span-2">
+            <ColumnHeading>Niagara cities</ColumnHeading>
+            <ul>
+              {CITIES.map((city) => (
+                <FooterLink key={city.href} href={city.href}>
+                  {city.name}
+                </FooterLink>
+              ))}
+            </ul>
+          </div>
+
+          <div className="lg:col-span-3">
+            <ColumnHeading>Company</ColumnHeading>
+            <ul>
+              {COMPANY.map((link) => (
+                <FooterLink key={link.href} href={link.href}>
+                  {link.name}
+                </FooterLink>
+              ))}
+            </ul>
+
+            <div className="mt-6">
+              <ColumnHeading>Contact</ColumnHeading>
+              <ul className="space-y-2 text-sm text-muted">
+                <li>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</li>
+                <li>Mon&ndash;Fri, 9 a.m.&ndash;6 p.m.</li>
+              </ul>
+              <Link
+                href="/get-a-quote"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+              >
+                Get a free quote
+                <Icon name="arrow-right" className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Container>
+
+      <div className="border-t border-border">
+        <Container className="flex flex-col gap-3 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>Infused Agency &mdash; SEO in Niagara since 2013.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="transition-colors hover:text-ink">
+              Privacy Policy
+            </Link>
+            <Link href="/get-a-quote" className="transition-colors hover:text-ink">
+              Get a Quote
+            </Link>
+          </div>
+        </Container>
+      </div>
+    </footer>
+  );
+}

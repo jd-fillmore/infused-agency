@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap><loc>https://infused.agency/sitemap-0.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-accountants.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-dentists.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-electricians.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-hvac-contractors.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-landscapers.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-plumbers.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-roofers.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-vertical-therapists.xml</loc></sitemap>
+<sitemap><loc>https://infused.agency/sitemap-services.xml</loc></sitemap>
 </sitemapindex>

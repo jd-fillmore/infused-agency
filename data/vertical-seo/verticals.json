@@ -1,0 +1,1738 @@
+[
+  {
+    "slug": "accountants",
+    "urlSlug": "accountant-seo",
+    "singular": "accountant",
+    "plural": "accountants",
+    "displayName": "Accountants",
+    "category": "Business & Professional Services",
+    "industriesBenefit": "Reach individuals and businesses searching for an accountant by service and city, and turn those searches into booked consultations.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for accountants",
+      "accountant SEO",
+      "accounting firm SEO",
+      "CPA marketing",
+      "accounting practice marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local pack visibility",
+      "Service pages for tax, bookkeeping and advisory",
+      "Consultation and enquiry conversion",
+      "Trust and credential signals",
+      "A local landing page for each office",
+      "Seasonal content around tax deadlines"
+    ],
+    "buyerJourneyNotes": "Accountants are firm owners or partners. They search when they want more of the right clients, when they open a second office, or when a competitor outranks them for tax and bookkeeping terms in their city.",
+    "proofRefs": [
+      "accountant-local-seo"
+    ],
+    "defaultFaqs": []
+  },
+  {
+    "slug": "secondary-suite-builders",
+    "urlSlug": "secondary-suite-seo",
+    "singular": "Secondary suite",
+    "plural": "Secondary suite builders",
+    "displayName": "Secondary Suite & ADU Builders",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search for legal secondary suites and garden suites by city, so pages covering permits, compliance and build types win the enquiry.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for secondary suite builders",
+      "Secondary suite builder SEO",
+      "Secondary suite builders marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the projects secondary suite builders actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Secondary Suite & ADU Builders are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "secondary-suite-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "arborists",
+    "urlSlug": "tree-service-seo",
+    "singular": "arborist",
+    "plural": "arborists",
+    "displayName": "Tree Services",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Storm damage and dangerous-limb removals drive urgent searches, so arborists win when emergency tree work is easy to find and book.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for arborists",
+      "arborist SEO",
+      "arborists marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs arborists actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Tree Services are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "arborist-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "architects",
+    "urlSlug": "architect-seo",
+    "singular": "architect",
+    "plural": "architects",
+    "displayName": "Architects & Building Designers",
+    "category": "Business & Professional Services",
+    "industriesBenefit": "Homeowners and developers search residential and commercial architects by city, so pages on project types and process win the brief.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for architects",
+      "architect SEO",
+      "architects marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Portfolio and project pages that prove capability",
+      "Consultation and enquiry conversion",
+      "Credential and accreditation signals",
+      "A local landing page for the areas you serve",
+      "Content that answers scope and cost questions"
+    ],
+    "buyerJourneyNotes": "Architects & Building Designers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "architect-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "basement-renovators",
+    "urlSlug": "basement-renovation-seo",
+    "singular": "renovator",
+    "plural": "renovators",
+    "displayName": "Basement Renovation Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search basement finishing by city and compare a few quotes, so pages tied to layouts, permits and cost ranges convert.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for renovators",
+      "renovator SEO",
+      "basement renovators marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the renovations basement renovators actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Basement Renovation Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "basement-renovator-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "cabinet-makers",
+    "urlSlug": "cabinet-maker-seo",
+    "singular": "cabinet maker",
+    "plural": "cabinet makers",
+    "displayName": "Custom Cabinet Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Buyers search custom kitchens, vanities and built-ins by room and city, so pages that show materials and millwork options earn the consult.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for cabinet makers",
+      "cabinet maker SEO",
+      "cabinet makers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the projects cabinet makers actually sell",
+      "Consultation and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Custom Cabinet Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "cabinet-maker-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "commercial-cleaning",
+    "urlSlug": "commercial-cleaning-seo",
+    "singular": "janitorial",
+    "plural": "cleaning companies",
+    "displayName": "Commercial Cleaning Services",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Facility managers search office and janitorial contracts by service and city, so pages built around sectors and specs win the RFP.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for cleaning companies",
+      "janitorial SEO",
+      "commercial cleaning companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the contracts commercial cleaning companies actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Commercial Cleaning Services are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "commercial-cleaning-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "commercial-snow-removal",
+    "urlSlug": "commercial-snow-removal-seo",
+    "singular": "snow removal",
+    "plural": "snow removal companies",
+    "displayName": "Commercial Snow Removal",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Property managers search seasonal snow and ice contracts before winter, so pages covering response times and lot types win the account.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for snow removal companies",
+      "snow removal SEO",
+      "snow removal companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the contracts snow removal companies actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Commercial Snow Removal are owners and operators. They search when they need a steadier flow of the right customers from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "commercial-snow-removal-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "concrete-contractors",
+    "urlSlug": "concrete-contractor-seo",
+    "singular": "concrete contractor",
+    "plural": "concrete contractors",
+    "displayName": "Concrete Contractors",
+    "parentSlug": "contractors",
+    "maxDepth": "province",
+    "primaryKeywords": [
+      "concrete contractor SEO"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "scaffold",
+    "serviceEmphasis": [],
+    "buyerJourneyNotes": "",
+    "proofRefs": [
+      "freds-concrete"
+    ],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners and builders search driveways, slabs and foundations by city, so pages on finishes, thickness and curing win the quote."
+  },
+  {
+    "slug": "contractors",
+    "urlSlug": "contractor-seo",
+    "singular": "contractor",
+    "plural": "contractors",
+    "displayName": "Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search trusted trades by job type and city, so pages that prove licensing, insurance and past work win the hire.",
+    "parentSlug": null,
+    "maxDepth": "province",
+    "primaryKeywords": [
+      "contractor SEO",
+      "SEO for contractors"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "scaffold",
+    "serviceEmphasis": [],
+    "buyerJourneyNotes": "",
+    "proofRefs": [
+      "freds-concrete",
+      "visca-electric"
+    ],
+    "defaultFaqs": []
+  },
+  {
+    "slug": "daycares",
+    "urlSlug": "daycare-seo",
+    "singular": "daycare",
+    "plural": "daycares",
+    "displayName": "Daycare Centres",
+    "category": "Education & Childcare",
+    "industriesBenefit": "Parents search licensed daycares by age group and neighbourhood, so pages on programs, ratios and waitlists win the tour.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for daycares",
+      "daycare SEO",
+      "daycares marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local pack visibility",
+      "Program and age-group pages",
+      "Enrolment and tour-booking conversion",
+      "Parent-trust and safety signals",
+      "A local landing page for each location",
+      "Content that answers licensing and waitlist questions"
+    ],
+    "buyerJourneyNotes": "Daycare Centres are owners and operators. They search when they need a steadier flow of the right parents from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "daycare-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "deck-builders",
+    "urlSlug": "deck-builder-seo",
+    "singular": "deck builder",
+    "plural": "deck builders",
+    "displayName": "Deck & Patio Builders",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search deck and patio projects by material and city, so pages comparing composite and wood, plus permits, drive quotes.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for deck builders",
+      "deck builder SEO",
+      "deck builders marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the builds deck builders actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Deck & Patio Builders are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "deck-builder-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "dentists",
+    "urlSlug": "dentist-seo",
+    "singular": "dentist",
+    "plural": "dentists",
+    "displayName": "Dentists",
+    "category": "Health & Wellness",
+    "industriesBenefit": "Reach patients searching for a dentist by treatment and neighbourhood, and turn those searches into booked appointments.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for dentists",
+      "dentist SEO",
+      "dental SEO",
+      "dental practice marketing",
+      "new patient SEO"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Treatment and service pages (implants, aligners, emergency)",
+      "New patient booking conversion",
+      "Review and reputation signals",
+      "A local landing page for each clinic location",
+      "Accessibility and patient-trust content"
+    ],
+    "buyerJourneyNotes": "Dentists are clinic owners or practice managers. They search when they open a new location, add a treatment, or notice a competitor ranking above them for the searches that bring in new patients.",
+    "proofRefs": [
+      "dentist-local-seo"
+    ],
+    "defaultFaqs": []
+  },
+  {
+    "slug": "design-builders",
+    "urlSlug": "design-build-seo",
+    "singular": "design-builder",
+    "plural": "design-builders",
+    "displayName": "Design-Build Firms",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Owners search for one firm to design and build, so pages that show integrated design, permitting and construction earn the project.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for design-builders",
+      "design-builder SEO",
+      "design-build firms marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the projects design-build firms actually sell",
+      "Consultation and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Design-Build Firms are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "design-builder-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "drywallers",
+    "urlSlug": "drywall-seo",
+    "singular": "drywaller",
+    "plural": "drywallers",
+    "displayName": "Drywall Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Builders and homeowners search boarding, taping and finishing by city, so pages covering levels of finish and turnaround win trade work.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for drywallers",
+      "drywaller SEO",
+      "drywallers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs drywallers actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Drywall Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "drywaller-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "electricians",
+    "urlSlug": "electrician-seo",
+    "singular": "electrician",
+    "plural": "electricians",
+    "displayName": "Electricians",
+    "parentSlug": "contractors",
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for electricians",
+      "electrician SEO",
+      "electricians marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs electricians actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Electricians are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "visca-electric"
+    ],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Reach homeowners searching for electricians by service and location, and turn those searches into booked work.",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "family-lawyers",
+    "urlSlug": "family-lawyer-seo",
+    "singular": "family lawyer",
+    "plural": "family lawyers",
+    "displayName": "Family Lawyers",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "People search divorce, custody and support by city under stress, so pages on process, cost and confidentiality earn the consult.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for family lawyers",
+      "family lawyer SEO",
+      "family lawyers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Practice-area pages that match how people search",
+      "Consultation and enquiry conversion",
+      "Credential and privacy signals",
+      "A local landing page for each office",
+      "Content that answers process and cost questions"
+    ],
+    "buyerJourneyNotes": "Family Lawyers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "family-lawyer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "financial-advisors",
+    "urlSlug": "financial-advisor-seo",
+    "singular": "advisor",
+    "plural": "advisors",
+    "displayName": "Financial Advisors",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Clients search retirement, investing and fee models by city, so pages on services and credentials build trust and bookings.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for advisors",
+      "advisor SEO",
+      "financial advisors marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Service pages for the advice you actually give",
+      "Consultation and enquiry conversion",
+      "Credential and compliance signals",
+      "A local landing page for the areas you serve",
+      "Content that answers trust and fee questions"
+    ],
+    "buyerJourneyNotes": "Financial Advisors are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "financial-advisor-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "flooring",
+    "urlSlug": "flooring-seo",
+    "singular": "flooring",
+    "plural": "flooring companies",
+    "displayName": "Flooring Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search by material such as hardwood, tile, vinyl or carpet, so pages organised by floor type and city capture the right intent.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for flooring companies",
+      "flooring SEO",
+      "flooring companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the installs flooring companies actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Flooring Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "flooring-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "garage-door",
+    "urlSlug": "garage-door-seo",
+    "singular": "garage door",
+    "plural": "garage door companies",
+    "displayName": "Garage Door Sales & Repair",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Urgent garage door repair searches dominate, so pages that lead with same-day repair and common opener brands win the call.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for garage door companies",
+      "garage door SEO",
+      "garage door companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs garage door companies actually sell",
+      "Call and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Garage Door Sales & Repair are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "garage-door-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "home-additions",
+    "urlSlug": "home-addition-seo",
+    "singular": "home addition",
+    "plural": "home additions",
+    "displayName": "Home Additions & Extension Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search additions and extensions by type and city, so pages on permits, timelines and cost ranges build the quote request.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for home additions",
+      "home addition SEO",
+      "addition builders marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the projects addition builders actually sell",
+      "Consultation and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Home Additions & Extension Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "home-addition-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "home-builders",
+    "urlSlug": "home-builder-seo",
+    "singular": "home builder",
+    "plural": "home builders",
+    "displayName": "General Contractors & Home Builders",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Buyers search custom and new home builders by city, so pages that prove process, warranties and past builds earn the consultation.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for home builders",
+      "home builder SEO",
+      "home builders marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the builds home builders actually sell",
+      "Consultation and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "General Contractors & Home Builders are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "home-builder-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "home-renovators",
+    "urlSlug": "home-renovation-seo",
+    "singular": "home renovator",
+    "plural": "home renovators",
+    "displayName": "Home Renovation Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search whole-home renovation by city and compare portfolios, so pages tied to scope, budget and permits win the project.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for home renovators",
+      "home renovator SEO",
+      "home renovators marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the renovations home renovators actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Home Renovation Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "home-renovator-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "home-stagers",
+    "urlSlug": "home-stager-seo",
+    "singular": "home stager",
+    "plural": "home stagers",
+    "displayName": "Home Stagers",
+    "category": "Business & Professional Services",
+    "industriesBenefit": "Sellers and agents search staging and styling by city, so pages on occupied versus vacant staging and its return win the listing.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for home stagers",
+      "home stager SEO",
+      "home stagers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Before-and-after portfolio pages",
+      "Consultation and booking conversion",
+      "Review and trust signals",
+      "A local landing page for the areas you serve",
+      "Content that answers turnaround and pricing questions"
+    ],
+    "buyerJourneyNotes": "Home Stagers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "home-stager-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "hvac-contractors",
+    "urlSlug": "hvac-contractor-seo",
+    "singular": "HVAC contractor",
+    "plural": "HVAC contractors",
+    "displayName": "HVAC Contractors",
+    "parentSlug": "contractors",
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for hvac contractors",
+      "hvac contractor SEO",
+      "hvac contractors marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs hvac contractors actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "HVAC Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "hvac-contractor-local-seo"
+    ],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Reach homeowners searching for hvac contractors by service and location, and turn those searches into booked work.",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "immigration-lawyers",
+    "urlSlug": "immigration-lawyer-seo",
+    "singular": "immigration",
+    "plural": "immigration lawyers",
+    "displayName": "Immigration Lawyers",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Clients search by program such as work permits, permanent residency and citizenship, so pages explaining eligibility and timelines win the consult.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for immigration lawyers",
+      "immigration SEO",
+      "immigration lawyers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and multilingual visibility",
+      "Practice-area and country-specific pages",
+      "Consultation and enquiry conversion",
+      "Credential and success signals",
+      "A local landing page for each office",
+      "Content that answers eligibility and timeline questions"
+    ],
+    "buyerJourneyNotes": "Immigration Lawyers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "immigration-lawyer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "injury-lawyers",
+    "urlSlug": "personal-injury-lawyer-seo",
+    "singular": "injury lawyer",
+    "plural": "injury lawyers",
+    "displayName": "Personal Injury Lawyers",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Accident victims search for an injury lawyer soon after, so pages on case types, no-win-no-fee and response time win the call.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for injury lawyers",
+      "injury lawyer SEO",
+      "injury lawyers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Case-type pages that match how people search",
+      "Free-consultation conversion",
+      "Credential and result signals",
+      "A local landing page for each office",
+      "Content that answers process and fee questions"
+    ],
+    "buyerJourneyNotes": "Personal Injury Lawyers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "injury-lawyer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "insulation-contractors",
+    "urlSlug": "insulation-contractor-seo",
+    "singular": "insulation contractor",
+    "plural": "insulation contractors",
+    "displayName": "Insulation Contractors",
+    "parentSlug": "contractors",
+    "maxDepth": "province",
+    "primaryKeywords": [
+      "insulation contractor SEO"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "scaffold",
+    "serviceEmphasis": [],
+    "buyerJourneyNotes": "",
+    "proofRefs": [],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search attic, wall and spray-foam insulation by city, so pages on rebates, R-values and comfort win the quote."
+  },
+  {
+    "slug": "interior-designers",
+    "urlSlug": "interior-designer-seo",
+    "singular": "interior design",
+    "plural": "interior designers",
+    "displayName": "Interior Designers",
+    "category": "Business & Professional Services",
+    "industriesBenefit": "Clients search full-service and room-by-room design by city, so pages on styles, budgets and process earn the consult.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for interior designers",
+      "interior design SEO",
+      "interior designers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Portfolio and style pages that attract the right clients",
+      "Consultation and enquiry conversion",
+      "Review and press signals",
+      "A local landing page for the areas you serve",
+      "Content that answers process and budget questions"
+    ],
+    "buyerJourneyNotes": "Interior Designers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "interior-designer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "kitchen-bath",
+    "urlSlug": "kitchen-bath-seo",
+    "singular": "kitchen & bath",
+    "plural": "kitchen & bathroom renovators",
+    "displayName": "Kitchen & Bathroom Renovators",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search kitchen and bathroom renovation separately by city, so dedicated pages for each room and price band convert best.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for kitchen & bathroom renovators",
+      "kitchen & bath SEO",
+      "kitchen & bathroom renovators marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the renovations kitchen & bathroom renovators actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Kitchen & Bathroom Renovators are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "kitchen-bath-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "landscapers",
+    "urlSlug": "landscaper-seo",
+    "singular": "landscaper",
+    "plural": "landscapers",
+    "displayName": "Landscape Contractors",
+    "parentSlug": "contractors",
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for landscapers",
+      "landscaper SEO",
+      "landscapers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the projects landscapers actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Landscape Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "landscaper-local-seo"
+    ],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Reach homeowners searching for landscapers by service and location, and turn those searches into booked work.",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "locksmiths",
+    "urlSlug": "locksmith-seo",
+    "singular": "locksmith",
+    "plural": "locksmiths",
+    "displayName": "Locksmiths",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Lockouts, rekeys and car keys trigger urgent nearby searches, so pages that lead with 24/7 response and a clear service area win the call.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for locksmiths",
+      "locksmith SEO",
+      "locksmith marketing",
+      "emergency locksmith SEO",
+      "local locksmith SEO"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for lockouts, rekeying and replacement",
+      "Call and quote conversion",
+      "Review and trust signals",
+      "A local landing page for each service area",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Locksmiths are owner-operators. They search when they want fewer directory leads and more direct calls, when they cover a new area, or when national lead-generation sites outrank them for emergency terms.",
+    "proofRefs": [
+      "locksmith-local-seo"
+    ],
+    "defaultFaqs": []
+  },
+  {
+    "slug": "med-spas",
+    "urlSlug": "med-spa-seo",
+    "singular": "med spa",
+    "plural": "med spas",
+    "displayName": "Med Spas",
+    "category": "Health & Wellness",
+    "industriesBenefit": "Clients search by treatment such as Botox, fillers, laser and skin, so service pages with before-and-after proof win bookings.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for med spas",
+      "med spa SEO",
+      "med spas marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Treatment pages for each of your services",
+      "Booking and consultation conversion",
+      "Review and reputation signals",
+      "A local landing page for each clinic",
+      "Content that answers safety and results questions"
+    ],
+    "buyerJourneyNotes": "Med Spas are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "med-spa-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "modular-builders",
+    "urlSlug": "modular-home-builder-seo",
+    "singular": "modular builder",
+    "plural": "modular builders",
+    "displayName": "Modular & Custom Home Builders",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Buyers search modular and prefab homes by region, so pages explaining build timelines, financing and delivery zones earn the enquiry.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for modular builders",
+      "modular builder SEO",
+      "modular home builders marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the builds modular home builders actually sell",
+      "Consultation and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Modular & Custom Home Builders are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "modular-builder-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "mortgage-brokers",
+    "urlSlug": "mortgage-broker-seo",
+    "singular": "mortgage broker",
+    "plural": "mortgage brokers",
+    "displayName": "Mortgage Brokers",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Homebuyers search rates, pre-approval and refinancing by city, so pages on lender access and process win the application.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for mortgage brokers",
+      "mortgage broker SEO",
+      "mortgage brokers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Service pages for each buyer situation",
+      "Application and enquiry conversion",
+      "Credential and rate-transparency signals",
+      "A local landing page for the areas you serve",
+      "Content that answers qualification questions"
+    ],
+    "buyerJourneyNotes": "Mortgage Brokers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "mortgage-broker-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "movers",
+    "urlSlug": "mover-seo",
+    "singular": "mover",
+    "plural": "movers",
+    "displayName": "Moving Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Local and long-distance moves are searched with dates and routes, so pages covering local, cross-country and packing services win the booking.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for movers",
+      "mover SEO",
+      "moving company SEO",
+      "moving company marketing",
+      "local moving SEO"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for local, long-distance and packing",
+      "Quote request conversion",
+      "Review and trust signals",
+      "A local landing page for each service area",
+      "Content that answers moving-cost questions"
+    ],
+    "buyerJourneyNotes": "Movers are company owners or dispatchers. They search when they want a steadier flow of booked jobs, when they expand to a new city, or when lead-generation marketplaces dominate the terms they want.",
+    "proofRefs": [
+      "mover-local-seo"
+    ],
+    "defaultFaqs": []
+  },
+  {
+    "slug": "orthodontists",
+    "urlSlug": "orthodontist-seo",
+    "singular": "orthodontist",
+    "plural": "orthodontists",
+    "displayName": "Orthodontists",
+    "category": "Health & Wellness",
+    "industriesBenefit": "Parents and adults search braces versus clear aligners by city, so pages on treatment options, financing and consultations convert.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for orthodontists",
+      "orthodontist SEO",
+      "orthodontists marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Treatment and age-group pages",
+      "Consultation and booking conversion",
+      "Review and reputation signals",
+      "A local landing page for each clinic",
+      "Content that answers cost and timeline questions"
+    ],
+    "buyerJourneyNotes": "Orthodontists are owners and operators. They search when they need a steadier flow of the right patients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "orthodontist-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "paving-companies",
+    "urlSlug": "paving-company-seo",
+    "singular": "paving company",
+    "plural": "paving companies",
+    "displayName": "Driveway & Paving Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search driveway paving, sealing and repair by city, so seasonal pages on asphalt, interlock and concrete capture demand.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for paving companies",
+      "paving company SEO",
+      "paving companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs paving companies actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Driveway & Paving Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "paving-companie-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "pest-control",
+    "urlSlug": "pest-control-seo",
+    "singular": "pest control",
+    "plural": "pest control companies",
+    "displayName": "Pest Control Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Infestations trigger fast, specific searches such as ants, mice and bed bugs, so pages by pest type and city win the emergency call.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for pest control companies",
+      "pest control SEO",
+      "pest control companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs pest control companies actually sell",
+      "Inspection and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Pest Control Companies are owners and operators. They search when they need a steadier flow of the right customers from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "pest-control-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "plumbers",
+    "urlSlug": "plumber-seo",
+    "singular": "plumber",
+    "plural": "plumbers",
+    "displayName": "Plumbers",
+    "parentSlug": "contractors",
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for plumbers",
+      "plumber SEO",
+      "plumbers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs plumbers actually sell",
+      "Call and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Plumbers are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "plumber-local-seo"
+    ],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Reach homeowners searching for plumbers by service and location, and turn those searches into booked work.",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "pool-builders",
+    "urlSlug": "pool-builder-seo",
+    "singular": "pool builder",
+    "plural": "pool builders",
+    "displayName": "Swimming Pool Builders",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search pool installation and renovation by city in spring, so pages on fibreglass versus concrete and backyard layout drive quotes.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for pool builders",
+      "pool builder SEO",
+      "pool builders marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the builds pool builders actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Swimming Pool Builders are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "pool-builder-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "real-estate-lawyers",
+    "urlSlug": "real-estate-lawyer-seo",
+    "singular": "real estate law",
+    "plural": "real estate lawyers",
+    "displayName": "Real Estate Lawyers",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Buyers and sellers search closing and title services by city, so pages on purchase, sale and refinance steps win the file.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for real estate lawyers",
+      "real estate law SEO",
+      "real estate lawyers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Transaction and service pages",
+      "Enquiry and closing conversion",
+      "Credential and trust signals",
+      "A local landing page for each office",
+      "Content that answers fees and timelines"
+    ],
+    "buyerJourneyNotes": "Real Estate Lawyers are owners and operators. They search when they need a steadier flow of the right clients from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "real-estate-lawyer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "restoration-companies",
+    "urlSlug": "restoration-seo",
+    "singular": "restoration",
+    "plural": "restoration companies",
+    "displayName": "Environmental Services & Restoration",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "After floods, fires and mould, homeowners search for restoration urgently, so pages on 24/7 response and insurance claims win the job.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for restoration companies",
+      "restoration SEO",
+      "restoration companies marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs restoration companies actually sell",
+      "Call and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Environmental Services & Restoration are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "restoration-companie-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "roofers",
+    "urlSlug": "roofer-seo",
+    "singular": "roofer",
+    "plural": "roofers",
+    "displayName": "Roofers & Siding Contractors",
+    "parentSlug": "contractors",
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for roofers",
+      "roofer SEO",
+      "roofers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs roofers actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Roofers & Siding Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "roofer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Reach homeowners searching for roofers by service and location, and turn those searches into booked work.",
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "septic-services",
+    "urlSlug": "septic-service-seo",
+    "singular": "septic service",
+    "plural": "septic services",
+    "displayName": "Septic Tank Systems & Installation",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Rural homeowners search pumping, repair and inspection by town, so pages covering emergencies and maintenance schedules win the call.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for septic services",
+      "septic service SEO",
+      "septic services marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the jobs septic services actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Septic Tank Systems & Installation are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "septic-service-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "smart-home",
+    "urlSlug": "smart-home-seo",
+    "singular": "smart home",
+    "plural": "smart home installers",
+    "displayName": "Home Automation & Home Media Installers",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search security, audio and automation installs by city, so pages on brands, integrations and wiring earn the quote.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for smart home installers",
+      "smart home SEO",
+      "smart home installers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the installs smart home installers actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Home Automation & Home Media Installers are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "smart-home-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "therapists",
+    "urlSlug": "therapist-seo",
+    "singular": "therapist",
+    "plural": "therapists",
+    "displayName": "Therapists",
+    "category": "Health & Wellness",
+    "industriesBenefit": "Reach prospective clients searching by specialty, modality and location, and turn that trust into booked consultations.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for therapists",
+      "therapist SEO",
+      "counsellor SEO",
+      "psychology practice SEO",
+      "therapy practice marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local pack visibility",
+      "Specialty and modality service pages",
+      "Directory competition (Psychology Today and similar listings)",
+      "Intake and booking conversion",
+      "Trust and confidentiality signals in copy",
+      "Province-aware regulation and language context"
+    ],
+    "buyerJourneyNotes": "Therapists and counsellors are usually the business owner and the buyer. They search when their caseload has a gap, when they open a new location, or when a directory listing outranks their own site. They respond to plain-language explanations, confidentiality reassurance, and proof from other practitioners.",
+    "proofRefs": [
+      "brandi-may-psychotherapy"
+    ],
+    "defaultFaqs": [
+      {
+        "q": "How is therapist SEO different from SEO for other local businesses?",
+        "a": "Therapy searches are high-intent and trust-driven. People rarely choose on price; they choose on fit, specialisation, and whether they feel safe. That means service pages need to speak to modality and population, directory listings such as Psychology Today compete for the same terms, and confidentiality has to be handled carefully in everything that is published.",
+        "geoSpecific": false
+      },
+      {
+        "q": "How long does SEO take for a therapy practice?",
+        "a": "Most practices start seeing movement in local visibility within three to six months, with the strongest gains between six and twelve months. Timelines depend on your existing site, how competitive your terms are, and how consistently content and profile work is maintained.",
+        "geoSpecific": false
+      },
+      {
+        "q": "Do you guarantee a number one ranking?",
+        "a": "No ethical provider can guarantee a specific position, because search results change constantly. What we do is follow a proven process, measure the results that matter to a practice such as enquiries and booked consultations, and report them transparently.",
+        "geoSpecific": false
+      }
+    ]
+  },
+  {
+    "slug": "tile-contractors",
+    "urlSlug": "tile-contractor-seo",
+    "singular": "tile contractor",
+    "plural": "tile contractors",
+    "displayName": "Tile & Stone Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners and builders search tile and stone work by room and city, so pages on materials, waterproofing and finishes win the project.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for tile contractors",
+      "tile contractor SEO",
+      "tile contractors marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the installs tile contractors actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Tile & Stone Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "tile-contractor-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "veterinarians",
+    "urlSlug": "veterinarian-seo",
+    "singular": "veterinarian",
+    "plural": "veterinarians",
+    "displayName": "Veterinarians",
+    "category": "Health & Wellness",
+    "industriesBenefit": "Pet owners search by need such as checkups, emergencies and dental, so pages per service and neighbourhood win the visit.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for veterinarians",
+      "veterinarian SEO",
+      "veterinary clinic SEO",
+      "vet marketing",
+      "animal clinic SEO"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for wellness, dental and surgery",
+      "New client booking conversion",
+      "Review and reputation signals",
+      "A local landing page for each clinic",
+      "Pet-owner trust and emergency-care content"
+    ],
+    "buyerJourneyNotes": "Veterinarians are clinic owners or practice managers. They search when they open a clinic, add a service, or lose new clients to a competitor showing up higher for urgent and routine searches.",
+    "proofRefs": [
+      "veterinarian-local-seo"
+    ],
+    "defaultFaqs": []
+  },
+  {
+    "slug": "wedding-photographers",
+    "urlSlug": "wedding-photographer-seo",
+    "singular": "wedding photographer",
+    "plural": "wedding photographers",
+    "displayName": "Wedding Photographers",
+    "category": "Business & Professional Services",
+    "industriesBenefit": "Couples search by style, package and city venue, so pages with real weddings and clear pricing win the date.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for wedding photographers",
+      "wedding photographer SEO",
+      "wedding photographers marketing"
+    ],
+    "geoScope": {
+      "provinces": [
+        "ontario",
+        "quebec",
+        "british-columbia",
+        "alberta",
+        "saskatchewan",
+        "manitoba",
+        "nova-scotia",
+        "new-brunswick",
+        "prince-edward-island"
+      ]
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and local visibility",
+      "Portfolio and venue pages",
+      "Enquiry and booking conversion",
+      "Review and featured-in signals",
+      "A local landing page for the areas you shoot",
+      "Content that answers packages and pricing"
+    ],
+    "buyerJourneyNotes": "Wedding Photographers are owners and operators. They search when they need a steadier flow of the right couples from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "wedding-photographer-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
+    "slug": "window-door",
+    "urlSlug": "window-door-seo",
+    "singular": "window & door",
+    "plural": "window & door installers",
+    "displayName": "Window & Door Installation Companies",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search window and door replacement by product and city, so pages on energy ratings, styles and financing earn the quote.",
+    "parentSlug": null,
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for window & door installers",
+      "window & door SEO",
+      "window & door installers marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the installs window & door installers actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "Window & Door Installation Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "window-door-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  }
+]

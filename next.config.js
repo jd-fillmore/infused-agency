@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
+const { computePublished, getPublishedRedirects } = require("./src/lib/verticalSeo");
+
+function verticalRedirects() {
+  const { published } = computePublished();
+  const publishedSet = new Set(published.map((r) => r.page.urlPath));
+  return getPublishedRedirects(publishedSet);
+}
+
 const nextConfig = {
   reactStrictMode: true,
   eslint: {
@@ -30,6 +38,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      ...verticalRedirects(),
       {
         source: "/beamsville-web-design",
         destination: "/web-design",
@@ -78,6 +87,16 @@ const nextConfig = {
       {
         source: "/pricing",
         destination: "/get-a-quote",
+        permanent: true,
+      },
+      {
+        source: "/website-audit",
+        destination: "/get-a-quote",
+        permanent: true,
+      },
+      {
+        source: "/how-we-work",
+        destination: "/services",
         permanent: true,
       },
       {
