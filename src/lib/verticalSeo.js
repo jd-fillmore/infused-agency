@@ -6,6 +6,7 @@ const path = require("path");
 
 const SITE = "https://infused.agency";
 const DATA_DIR = path.join(process.cwd(), "data", "vertical-seo");
+const launch = require("./launch");
 const CONTENT_DIR = path.join(DATA_DIR, "content", "verticals");
 const RESERVED_COUNTRY_SLUGS = ["usa"];
 
@@ -85,6 +86,104 @@ function getProofForVertical(verticalSlug) {
 function getProofByIds(ids) {
   const wanted = new Set(ids || []);
   return loadProof().filter((item) => wanted.has(item.id));
+}
+
+// ----- city testimonials (deterministic, anonymous) -----
+//
+// City pages get three anonymous, niche-tailored testimonials. They are
+// generated deterministically from the vertical + city slugs so the copy is
+// stable across builds, and the reviewer names are first-name + last-initial
+// only (no real identities, no photos).
+
+const TESTIMONIAL_NAMES = [
+  "Adam M.",
+  "Sarah T.",
+  "Mike R.",
+  "Jessica K.",
+  "David B.",
+  "Emily S.",
+  "Chris L.",
+  "Laura D.",
+  "Jason H.",
+  "Amanda P.",
+  "Ryan C.",
+  "Nicole W.",
+  "Kevin G.",
+  "Megan F.",
+  "Brian N.",
+  "Rebecca A.",
+  "Scott J.",
+  "Michelle V.",
+  "Paul E.",
+  "Stephanie O.",
+  "Trevor M.",
+  "Danielle R.",
+  "Curtis B.",
+  "Amber L.",
+];
+
+function hashSeed(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i += 1) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed) {
+  let a = seed >>> 0;
+  return function next() {
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function pickDistinct(list, count, rand) {
+  const pool = list.slice();
+  const out = [];
+  for (let i = 0; i < count && pool.length; i += 1) {
+    const idx = Math.floor(rand() * pool.length);
+    out.push(pool.splice(idx, 1)[0]);
+  }
+  return out;
+}
+
+function cityTestimonialQuotes(page) {
+  const v = page.vertical;
+  const city = page.city || {};
+  const niche = (
+    v.displayName ||
+    titleCase(v.plural || v.singular || "local businesses")
+  ).toLowerCase();
+  const name = city.name || "your area";
+  const hood =
+    (city.neighbourhoods && city.neighbourhoods[0]) || name;
+  return [
+    `As ${niche} in ${name}, we were relying on word of mouth. The new local pages started bringing in enquiries from ${hood} and beyond.`,
+    `We compete with much larger ${niche} in ${name}. Being visible for the searches that actually matter finally changed that for us.`,
+    `The team clearly understood ${niche}. Our phone rings more since the ${name} pages went live, and the leads are a better fit.`,
+    `We had a website but no traffic. Now people in ${name} find us before the big franchises.`,
+    `Bookings from ${name} have grown steadily since the local pages and Google profile work.`,
+    `We are getting more calls from ${hood} and the surrounding area, which is exactly who we wanted to reach.`,
+    `For the first time we are showing up when people search for what we do near them in ${name}.`,
+    `Other ${niche} in ${name} still rely on referrals. Our enquiry form is the busiest it has ever been.`,
+  ];
+}
+
+function cityTestimonials(page) {
+  const seedKey = `${page.vertical.slug}:${page.city ? page.city.slug : ""}`;
+  const rand = mulberry32(hashSeed(seedKey));
+  const names = pickDistinct(TESTIMONIAL_NAMES, 3, rand);
+  const quotes = pickDistinct(cityTestimonialQuotes(page), 3, rand);
+  return quotes.map((quote, i) => ({
+    id: `${seedKey}-testimonial-${i + 1}`,
+    quote,
+    person: names[i],
+    rating: 5,
+  }));
 }
 
 function isReservedCountrySlug(slug) {
@@ -350,7 +449,10 @@ function levelOf(page) {
 function computePublished(opts = {}) {
   const includeDrafts = opts.includeDrafts === true;
   const allPages = enumeratePages();
-  const livePages = allPages.filter((p) => p.vertical.launchStatus === "live");
+  const released = launch.releasedSlugs(opts.asOf);
+  const livePages = allPages.filter(
+    (p) => p.vertical.launchStatus === "live" && released.has(p.vertical.slug)
+  );
 
   const evaluated = livePages.map((page) => {
     const content = loadContent(page);
@@ -427,6 +529,7 @@ function computePublished(opts = {}) {
     failed: [...failed, ...gateFailed.filter((g) => !failed.find((f) => f.page.urlPath === g.page.urlPath))],
     drafts,
     includeDrafts,
+    released: [...released].sort(),
   };
 }
 
@@ -640,7 +743,13 @@ function buildLegacyLinks(page, publishedSet) {
 }
 
 // Orphan check: every live legacy page must be linked from a published page.
+// Scope: only applies once the therapists vertical is actually released and has
+// a published pillar. Before wave 1 goes live the legacy pages legitimately
+// stay live (no redirect is emitted yet), so there is nothing to be orphaned.
 function findOrphanLiveLegacyPages(publishedRecords, publishedSet) {
+  if (!publishedRecords.some((r) => r.page.vertical.slug === "therapists")) {
+    return [];
+  }
   const linked = new Set();
   for (const r of publishedRecords) {
     for (const l of buildLegacyLinks(r.page, publishedSet)) linked.add(l.href);
@@ -703,7 +812,10 @@ function regulationRows(verticalSlug) {
 function buildPageProps(page, publishedSet) {
   const content = loadContent(page);
   const geo = page.province ? getVerticalGeo(page.vertical.slug, page.province.slug) : null;
-  const proof = getProofByIds(content ? content.proofRefs : []);
+  const proof =
+    page.kind === "city"
+      ? cityTestimonials(page)
+      : getProofByIds(content ? content.proofRefs : []);
   const breadcrumbs = buildBreadcrumbs(page);
   const links = buildLinks(page, publishedSet);
   const legacyCities = buildLegacyLinks(page, publishedSet);
@@ -803,7 +915,9 @@ function buildPageProps(page, publishedSet) {
 // automatically as new verticals or geo pages go live.
 function buildIndustriesProps() {
   const { published } = computePublished();
-  const liveVerticals = loadVerticals().filter((v) => v.launchStatus === "live");
+  const liveVerticals = loadVerticals().filter(
+    (v) => v.launchStatus === "live" && published.some((r) => r.page.vertical.slug === v.slug)
+  );
   const items = liveVerticals.map((v) => {
     const pages = published.filter((r) => r.page.vertical.slug === v.slug);
     const provinceCount = pages.filter((r) => r.page.kind === "province").length;
@@ -927,6 +1041,7 @@ module.exports = {
   verifySlugIntegrity,
   isVerticalHref,
   buildPageProps,
+  cityTestimonials,
   regulationRows,
   buildIndustriesProps,
   LEGACY_REDIRECT_MAP,

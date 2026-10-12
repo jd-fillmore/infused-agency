@@ -606,3 +606,36 @@ date), `freezeAtWave` is `null`, and the four waves use `offsetDays`
   schedule a complete partition of the catalogue.
 - **`startDate` is relative to the build date.** The spec asks for "3 days from
   today"; the day this schedule was authored was 2026-10-11.
+
+## Launch waves — item 3: publishing gate (`src/lib/launch.js`)
+
+The schedule now drives publishing. `src/lib/launch.js` reads `launch.json` and
+exposes the schedule helpers; `computePublished()` in `src/lib/verticalSeo.js`
+only evaluates *released* live verticals (their wave date has elapsed and they
+are not on `hold`), and `buildIndustriesProps()` only emits verticals that
+actually have a published pillar. Because `buildNavSnapshot()` and the
+`/industries` card data derive from the published set, unreleased verticals now
+vanish from the Solutions/industries snapshot and therefore from the homepage
+chips, nav snapshot, related-links blocks, and sitemaps automatically. Wave 1
+(`startDate` 2026-10-14) resolves to 329 pages across all 8 verticals.
+
+`LAUNCH_AS_OF=YYYY-MM-DD` overrides "today" (UTC) for build-time simulation:
+`LAUNCH_AS_OF=2026-10-14 yarn verify:seo` verifies the wave-1 catalogue as it
+will build on go-live morning.
+
+### Assumptions recorded
+
+- **Embargo day publishes nothing, and that is a clean build.** The day the
+  builder runs there are no released verticals, so there are zero vertical SEO
+  pages. The verifier must stay green so the build can succeed and CI can
+  deploy the (empty, warm-up) vertical surface while the wave schedule rolls
+  forward. The legacy-therapist orphan check is therefore scoped to "the
+  therapists pillar is actually published" — before wave 1 the legacy `/seo/for-
+  therapists-*` pages legitimately stay live because their redirects are not
+  emitted yet.
+- **Unreleased content still passes the quality gate invisibly.** Content for
+  unreleased verticals is not evaluated (and thus cannot raise "gate-failed"
+  counts) until its wave date; the first release is a dry-run of the whole
+  wave-1 surface, surfacing any content issues *before* the wave is public.
+- **Held verticals can never publish from the schedule** (they still pass the
+  content gate checks when the rest of a release is verified).
