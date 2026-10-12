@@ -500,3 +500,74 @@ indexable, kept for existing backlinks/rankings and linked from the pillar's
 - `yarn lint` — exit 0 (pre-existing warnings only).
 - `yarn build` — success, 172 pages prerendered; restored the `public/sitemap-0.xml`
   build-timestamp noise before committing.
+
+## Launch waves — item 1: terminology and card copy (verticals not in wave 1)
+
+Scope is deliberately limited to verticals that are **not** in wave 1; the eight
+wave-1 slugs (`therapists`, `electricians`, `plumbers`, `hvac-contractors`,
+`roofers`, `landscapers`, `dentists`, `accountants`) are frozen and untouched
+(slug, singular/plural, category, blurb and copy all left as-is).
+
+### Renames applied
+
+| Old slug | New slug | urlSlug | singular | plural | displayName |
+| --- | --- | --- | --- | --- | --- |
+| `adu-contractors` | `secondary-suite-builders` | `secondary-suite-seo` | `secondary suite` | `secondary suite builders` | Secondary Suite & ADU Builders |
+| `basement-remodelers` | `basement-renovators` | `basement-renovation-seo` | `renovator` | `renovators` | Basement Renovation Companies |
+| `home-remodelers` | `home-renovators` | `home-renovation-seo` | `home renovator` | `home renovators` | Home Renovation Companies |
+| `kitchen-bath` (unchanged) | `kitchen-bath` | `kitchen-bath-seo` | `kitchen & bath` | `kitchen & bathroom renovators` | Kitchen & Bathroom Renovators |
+| `daycares` (unchanged) | `daycares` | `daycare-seo` | `daycare` | `daycares` | Daycare Centres |
+
+### Assumptions recorded
+
+- **ADU → "Secondary Suite & ADU Builders".** "ADU" (accessory dwelling unit) is
+  the US term; the Canadian equivalents are "secondary suite" (and "garden
+  suite"). The display name keeps the ADU acronym (uppercase, as the prompt
+  requires) alongside the Canadian term so both audiences are covered. The
+  singular/plural used in page titles are `secondary suite` / `secondary suite
+  builders`; the full display name is used for cards and headings.
+- **Singular strings are chosen to keep the title-length gate (≤ 65 chars).**
+  The longest province name is "Newfoundland and Labrador" (25), so
+  `"Secondary Suite SEO in Newfoundland and Labrador | Infused Agency"` is
+  exactly 65. A longer singular (`secondary suite builder`) would exceed the
+  gate, which is why titles use the shorter `secondary suite`. `renovator` (not
+  `basement renovator`) is used for the same reason, matching the previous
+  `remodeler` convention.
+- **`kitchen-bath` slug and urlSlug are unchanged** (neither contained
+  "remodel"); only its display name, plural and copy changed.
+- **Copy was rewritten in place** across `data/vertical-seo/content/verticals/*`
+  and `data/vertical-seo/vertical-geo/*` (165 content files + 30 geo files):
+  "remodeler(s)" → "renovator(s)", "remodeling" → "renovation",
+  "ADU contractor(s)" → "secondary suite builder(s)", "centers" → "centres".
+  Article and sentence-case cleanups were applied afterwards (for example
+  "an ADU contractor" → "a secondary suite builder", sentence-initial
+  "secondary suite" → "Secondary suite"). Standalone "ADU" in prose is retained
+  uppercase.
+- **Categories rebalanced** for non-wave-1 verticals: `Home & Trade Services`
+  (trades/home), `Health & Wellness` (med spas, orthodontists, veterinarians),
+  new `Legal & Financial Services` (the four lawyer verticals, financial
+  advisors, mortgage brokers), `Business & Professional Services` (architects,
+  home stagers, interior designers, wedding photographers) and new
+  `Education & Childcare` (daycares, moved out of Business & Professional
+  Services). Wave-1 categories were left unchanged, so `accountants` remains in
+  Business & Professional Services.
+- **Card blurbs** (`industriesBenefit`) were rewritten per industry for every
+  non-wave-1 vertical so each reflects how that trade's customers actually
+  search (emergency/urgent intent for locksmiths and restoration, seasonality
+  for pool and snow, program/eligibility for immigration, and so on) instead of
+  the repeated "Reach X searching for Y" template. Wave-1 blurbs are unchanged.
+- **Old slugs purged** from `data/vertical-seo/verticals.json`, `proof.json`
+  (ids, quotes, `verticals` arrays), the content and geo directories,
+  `scripts/vertical-batch-specs.js`, the generated sitemaps and the generated
+  `docs/vertical-seo-report.md` / `src/generated/services-nav.json`. The three
+  stale per-vertical sitemaps (`adu-contractors`, `basement-remodelers`,
+  `home-remodelers`) were deleted and the index rebuilt. No redirects are needed
+  because none of these verticals were ever published.
+
+### Verification
+
+- `node scripts/verify-vertical-seo.js` — 2956 enumerated, 1967 published,
+  20 draft-excluded, 0 gate-failed, 0 slug errors, 0 broken links.
+- `node scripts/test-vertical-seo.js` — 17/17 pass.
+- Repo-wide search confirms no remaining reference to the old slugs or
+  "remodeler"/"Accessory Dwelling Unit (ADU) Contractors"/"Daycare Centers".

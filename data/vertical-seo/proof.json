@@ -10,13 +10,13 @@
     ]
   },
   {
-    "id": "adu-contractor-local-seo",
+    "id": "secondary-suite-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
-    "quote": "A local SEO program for adu contractors: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "quote": "A local SEO program for secondary suite builders: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
     "source": "https://infused.agency",
     "verticals": [
-      "adu-contractors"
+      "secondary-suite-builders"
     ]
   },
   {
@@ -40,13 +40,13 @@
     ]
   },
   {
-    "id": "basement-remodeler-local-seo",
+    "id": "basement-renovator-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
-    "quote": "A local SEO program for basement remodelers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "quote": "A local SEO program for basement renovators: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
     "source": "https://infused.agency",
     "verticals": [
-      "basement-remodelers"
+      "basement-renovators"
     ]
   },
   {
@@ -233,13 +233,13 @@
     ]
   },
   {
-    "id": "home-remodeler-local-seo",
+    "id": "home-renovator-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
-    "quote": "A local SEO program for home remodelers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "quote": "A local SEO program for home renovators: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
     "source": "https://infused.agency",
     "verticals": [
-      "home-remodelers"
+      "home-renovators"
     ]
   },
   {
@@ -296,7 +296,7 @@
     "id": "kitchen-bath-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
-    "quote": "A local SEO program for kitchen & bath remodelers: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "quote": "A local SEO program for kitchen & bathroom renovators: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
     "source": "https://infused.agency",
     "verticals": [
       "kitchen-bath"

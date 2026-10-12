@@ -35,19 +35,19 @@
     "defaultFaqs": []
   },
   {
-    "slug": "adu-contractors",
-    "urlSlug": "adu-contractor-seo",
-    "singular": "ADU contractor",
-    "plural": "ADU contractors",
-    "displayName": "Accessory Dwelling Unit (ADU) Contractors",
+    "slug": "secondary-suite-builders",
+    "urlSlug": "secondary-suite-seo",
+    "singular": "Secondary suite",
+    "plural": "Secondary suite builders",
+    "displayName": "Secondary Suite & ADU Builders",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for adu contractors by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search for legal secondary suites and garden suites by city, so pages covering permits, compliance and build types win the enquiry.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
-      "SEO for adu contractors",
-      "adu contractor SEO",
-      "adu contractors marketing"
+      "SEO for secondary suite builders",
+      "Secondary suite builder SEO",
+      "Secondary suite builders marketing"
     ],
     "geoScope": {
       "provinces": "all"
@@ -55,15 +55,15 @@
     "launchStatus": "live",
     "serviceEmphasis": [
       "Google Business Profile and map pack visibility",
-      "Service pages for the projects adu contractors actually sell",
+      "Service pages for the projects secondary suite builders actually sell",
       "Quote and enquiry conversion",
       "Review and trust signals",
       "A local landing page for each area you serve",
       "Mobile-first pages built for urgent searches"
     ],
-    "buyerJourneyNotes": "Accessory Dwelling Unit (ADU) Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "buyerJourneyNotes": "Secondary Suite & ADU Builders are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
     "proofRefs": [
-      "adu-contractor-local-seo"
+      "secondary-suite-local-seo"
     ],
     "defaultFaqs": [],
     "updated": "2026-10-11"
@@ -75,7 +75,7 @@
     "plural": "arborists",
     "displayName": "Tree Services",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for arborists by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Storm damage and dangerous-limb removals drive urgent searches, so arborists win when emergency tree work is easy to find and book.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -109,7 +109,7 @@
     "plural": "architects",
     "displayName": "Architects & Building Designers",
     "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for architects by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners and developers search residential and commercial architects by city, so pages on project types and process win the brief.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -137,19 +137,19 @@
     "updated": "2026-10-11"
   },
   {
-    "slug": "basement-remodelers",
-    "urlSlug": "basement-remodeling-seo",
-    "singular": "remodeler",
-    "plural": "remodelers",
-    "displayName": "Basement Remodeling Companies",
+    "slug": "basement-renovators",
+    "urlSlug": "basement-renovation-seo",
+    "singular": "renovator",
+    "plural": "renovators",
+    "displayName": "Basement Renovation Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for basement remodelers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search basement finishing by city and compare a few quotes, so pages tied to layouts, permits and cost ranges convert.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
-      "SEO for remodelers",
-      "remodeler SEO",
-      "basement remodelers marketing"
+      "SEO for renovators",
+      "renovator SEO",
+      "basement renovators marketing"
     ],
     "geoScope": {
       "provinces": "all"
@@ -157,15 +157,15 @@
     "launchStatus": "live",
     "serviceEmphasis": [
       "Google Business Profile and map pack visibility",
-      "Service pages for the renovations basement remodelers actually sell",
+      "Service pages for the renovations basement renovators actually sell",
       "Quote and enquiry conversion",
       "Review and trust signals",
       "A local landing page for each area you serve",
       "Mobile-first pages built for urgent searches"
     ],
-    "buyerJourneyNotes": "Basement Remodeling Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "buyerJourneyNotes": "Basement Renovation Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
     "proofRefs": [
-      "basement-remodeler-local-seo"
+      "basement-renovator-local-seo"
     ],
     "defaultFaqs": [],
     "updated": "2026-10-11"
@@ -177,7 +177,7 @@
     "plural": "cabinet makers",
     "displayName": "Custom Cabinet Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for cabinet makers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Buyers search custom kitchens, vanities and built-ins by room and city, so pages that show materials and millwork options earn the consult.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -211,7 +211,7 @@
     "plural": "cleaning companies",
     "displayName": "Commercial Cleaning Services",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach clients searching for commercial cleaning companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Facility managers search office and janitorial contracts by service and city, so pages built around sectors and specs win the RFP.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -245,7 +245,7 @@
     "plural": "snow removal companies",
     "displayName": "Commercial Snow Removal",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach customers searching for snow removal companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Property managers search seasonal snow and ice contracts before winter, so pages covering response times and lot types win the account.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -292,7 +292,9 @@
     "proofRefs": [
       "freds-concrete"
     ],
-    "defaultFaqs": []
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners and builders search driveways, slabs and foundations by city, so pages on finishes, thickness and curing win the quote."
   },
   {
     "slug": "contractors",
@@ -301,7 +303,7 @@
     "plural": "contractors",
     "displayName": "Contractors",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Win more local jobs when homeowners search for trusted trades in your service area.",
+    "industriesBenefit": "Homeowners search trusted trades by job type and city, so pages that prove licensing, insurance and past work win the hire.",
     "parentSlug": null,
     "maxDepth": "province",
     "primaryKeywords": [
@@ -325,9 +327,9 @@
     "urlSlug": "daycare-seo",
     "singular": "daycare",
     "plural": "daycares",
-    "displayName": "Daycare Centers",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach parents searching for daycares by service and location, and turn those searches into booked work.",
+    "displayName": "Daycare Centres",
+    "category": "Education & Childcare",
+    "industriesBenefit": "Parents search licensed daycares by age group and neighbourhood, so pages on programs, ratios and waitlists win the tour.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -347,7 +349,7 @@
       "A local landing page for each location",
       "Content that answers licensing and waitlist questions"
     ],
-    "buyerJourneyNotes": "Daycare Centers are owners and operators. They search when they need a steadier flow of the right parents from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "buyerJourneyNotes": "Daycare Centres are owners and operators. They search when they need a steadier flow of the right parents from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
     "proofRefs": [
       "daycare-local-seo"
     ],
@@ -361,7 +363,7 @@
     "plural": "deck builders",
     "displayName": "Deck & Patio Builders",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for deck builders by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search deck and patio projects by material and city, so pages comparing composite and wood, plus permits, drive quotes.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -430,7 +432,7 @@
     "plural": "design-builders",
     "displayName": "Design-Build Firms",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach clients searching for design-build firms by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Owners search for one firm to design and build, so pages that show integrated design, permitting and construction earn the project.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -464,7 +466,7 @@
     "plural": "drywallers",
     "displayName": "Drywall Contractors",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for drywallers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Builders and homeowners search boarding, taping and finishing by city, so pages covering levels of finish and turnaround win trade work.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -531,8 +533,8 @@
     "singular": "family lawyer",
     "plural": "family lawyers",
     "displayName": "Family Lawyers",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for family lawyers by service and location, and turn those searches into booked work.",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "People search divorce, custody and support by city under stress, so pages on process, cost and confidentiality earn the consult.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -565,8 +567,8 @@
     "singular": "advisor",
     "plural": "advisors",
     "displayName": "Financial Advisors",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for financial advisors by service and location, and turn those searches into booked work.",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Clients search retirement, investing and fee models by city, so pages on services and credentials build trust and bookings.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -600,7 +602,7 @@
     "plural": "flooring companies",
     "displayName": "Flooring Contractors",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for flooring companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search by material such as hardwood, tile, vinyl or carpet, so pages organised by floor type and city capture the right intent.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -634,7 +636,7 @@
     "plural": "garage door companies",
     "displayName": "Garage Door Sales & Repair",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for garage door companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Urgent garage door repair searches dominate, so pages that lead with same-day repair and common opener brands win the call.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -668,7 +670,7 @@
     "plural": "home additions",
     "displayName": "Home Additions & Extension Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for addition builders by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search additions and extensions by type and city, so pages on permits, timelines and cost ranges build the quote request.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -702,7 +704,7 @@
     "plural": "home builders",
     "displayName": "General Contractors & Home Builders",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for home builders by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Buyers search custom and new home builders by city, so pages that prove process, warranties and past builds earn the consultation.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -730,19 +732,19 @@
     "updated": "2026-10-11"
   },
   {
-    "slug": "home-remodelers",
-    "urlSlug": "home-remodeling-seo",
-    "singular": "home remodeler",
-    "plural": "home remodelers",
-    "displayName": "Home Remodeling Companies",
+    "slug": "home-renovators",
+    "urlSlug": "home-renovation-seo",
+    "singular": "home renovator",
+    "plural": "home renovators",
+    "displayName": "Home Renovation Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for home remodelers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search whole-home renovation by city and compare portfolios, so pages tied to scope, budget and permits win the project.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
-      "SEO for home remodelers",
-      "home remodeler SEO",
-      "home remodelers marketing"
+      "SEO for home renovators",
+      "home renovator SEO",
+      "home renovators marketing"
     ],
     "geoScope": {
       "provinces": "all"
@@ -750,15 +752,15 @@
     "launchStatus": "live",
     "serviceEmphasis": [
       "Google Business Profile and map pack visibility",
-      "Service pages for the renovations home remodelers actually sell",
+      "Service pages for the renovations home renovators actually sell",
       "Quote and enquiry conversion",
       "Review and trust signals",
       "A local landing page for each area you serve",
       "Mobile-first pages built for urgent searches"
     ],
-    "buyerJourneyNotes": "Home Remodeling Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "buyerJourneyNotes": "Home Renovation Companies are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
     "proofRefs": [
-      "home-remodeler-local-seo"
+      "home-renovator-local-seo"
     ],
     "defaultFaqs": [],
     "updated": "2026-10-11"
@@ -770,7 +772,7 @@
     "plural": "home stagers",
     "displayName": "Home Stagers",
     "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for home stagers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Sellers and agents search staging and styling by city, so pages on occupied versus vacant staging and its return win the listing.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -837,8 +839,8 @@
     "singular": "immigration",
     "plural": "immigration lawyers",
     "displayName": "Immigration Lawyers",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for immigration lawyers by service and location, and turn those searches into booked work.",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Clients search by program such as work permits, permanent residency and citizenship, so pages explaining eligibility and timelines win the consult.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -871,8 +873,8 @@
     "singular": "injury lawyer",
     "plural": "injury lawyers",
     "displayName": "Personal Injury Lawyers",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for injury lawyers by service and location, and turn those searches into booked work.",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Accident victims search for an injury lawyer soon after, so pages on case types, no-win-no-fee and response time win the call.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -917,7 +919,9 @@
     "serviceEmphasis": [],
     "buyerJourneyNotes": "",
     "proofRefs": [],
-    "defaultFaqs": []
+    "defaultFaqs": [],
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners search attic, wall and spray-foam insulation by city, so pages on rebates, R-values and comfort win the quote."
   },
   {
     "slug": "interior-designers",
@@ -926,7 +930,7 @@
     "plural": "interior designers",
     "displayName": "Interior Designers",
     "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for interior designers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Clients search full-service and room-by-room design by city, so pages on styles, budgets and process earn the consult.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -957,16 +961,16 @@
     "slug": "kitchen-bath",
     "urlSlug": "kitchen-bath-seo",
     "singular": "kitchen & bath",
-    "plural": "kitchen & bath remodelers",
-    "displayName": "Kitchen & Bathroom Remodelers",
+    "plural": "kitchen & bathroom renovators",
+    "displayName": "Kitchen & Bathroom Renovators",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for kitchen & bath remodelers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search kitchen and bathroom renovation separately by city, so dedicated pages for each room and price band convert best.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
-      "SEO for kitchen & bath remodelers",
+      "SEO for kitchen & bathroom renovators",
       "kitchen & bath SEO",
-      "kitchen & bath remodelers marketing"
+      "kitchen & bathroom renovators marketing"
     ],
     "geoScope": {
       "provinces": "all"
@@ -974,13 +978,13 @@
     "launchStatus": "live",
     "serviceEmphasis": [
       "Google Business Profile and map pack visibility",
-      "Service pages for the renovations kitchen & bath remodelers actually sell",
+      "Service pages for the renovations kitchen & bathroom renovators actually sell",
       "Quote and enquiry conversion",
       "Review and trust signals",
       "A local landing page for each area you serve",
       "Mobile-first pages built for urgent searches"
     ],
-    "buyerJourneyNotes": "Kitchen & Bathroom Remodelers are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "buyerJourneyNotes": "Kitchen & Bathroom Renovators are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
     "proofRefs": [
       "kitchen-bath-local-seo"
     ],
@@ -1028,7 +1032,7 @@
     "plural": "locksmiths",
     "displayName": "Locksmiths",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Win more local lockout, rekey and security jobs when customers search for a locksmith nearby.",
+    "industriesBenefit": "Lockouts, rekeys and car keys trigger urgent nearby searches, so pages that lead with 24/7 response and a clear service area win the call.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1063,7 +1067,7 @@
     "plural": "med spas",
     "displayName": "Med Spas",
     "category": "Health & Wellness",
-    "industriesBenefit": "Reach clients searching for med spas by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Clients search by treatment such as Botox, fillers, laser and skin, so service pages with before-and-after proof win bookings.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1097,7 +1101,7 @@
     "plural": "modular builders",
     "displayName": "Modular & Custom Home Builders",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for modular home builders by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Buyers search modular and prefab homes by region, so pages explaining build timelines, financing and delivery zones earn the enquiry.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1130,8 +1134,8 @@
     "singular": "mortgage broker",
     "plural": "mortgage brokers",
     "displayName": "Mortgage Brokers",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for mortgage brokers by service and location, and turn those searches into booked work.",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Homebuyers search rates, pre-approval and refinancing by city, so pages on lender access and process win the application.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1165,7 +1169,7 @@
     "plural": "movers",
     "displayName": "Moving Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Win more local and long-distance moves when customers search for trusted movers in your area.",
+    "industriesBenefit": "Local and long-distance moves are searched with dates and routes, so pages covering local, cross-country and packing services win the booking.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1200,7 +1204,7 @@
     "plural": "orthodontists",
     "displayName": "Orthodontists",
     "category": "Health & Wellness",
-    "industriesBenefit": "Reach patients searching for orthodontists by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Parents and adults search braces versus clear aligners by city, so pages on treatment options, financing and consultations convert.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1234,7 +1238,7 @@
     "plural": "paving companies",
     "displayName": "Driveway & Paving Contractors",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for paving companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search driveway paving, sealing and repair by city, so seasonal pages on asphalt, interlock and concrete capture demand.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1268,7 +1272,7 @@
     "plural": "pest control companies",
     "displayName": "Pest Control Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach customers searching for pest control companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Infestations trigger fast, specific searches such as ants, mice and bed bugs, so pages by pest type and city win the emergency call.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1336,7 +1340,7 @@
     "plural": "pool builders",
     "displayName": "Swimming Pool Builders",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for pool builders by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search pool installation and renovation by city in spring, so pages on fibreglass versus concrete and backyard layout drive quotes.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1369,8 +1373,8 @@
     "singular": "real estate law",
     "plural": "real estate lawyers",
     "displayName": "Real Estate Lawyers",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach clients searching for real estate lawyers by service and location, and turn those searches into booked work.",
+    "category": "Legal & Financial Services",
+    "industriesBenefit": "Buyers and sellers search closing and title services by city, so pages on purchase, sale and refinance steps win the file.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1404,7 +1408,7 @@
     "plural": "restoration companies",
     "displayName": "Environmental Services & Restoration",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for restoration companies by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "After floods, fires and mould, homeowners search for restoration urgently, so pages on 24/7 response and insurance claims win the job.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1472,7 +1476,7 @@
     "plural": "septic services",
     "displayName": "Septic Tank Systems & Installation",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for septic services by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Rural homeowners search pumping, repair and inspection by town, so pages covering emergencies and maintenance schedules win the call.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1506,7 +1510,7 @@
     "plural": "smart home installers",
     "displayName": "Home Automation & Home Media Installers",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for smart home installers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search security, audio and automation installs by city, so pages on brands, integrations and wiring earn the quote.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1591,7 +1595,7 @@
     "plural": "tile contractors",
     "displayName": "Tile & Stone Contractors",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for tile contractors by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners and builders search tile and stone work by room and city, so pages on materials, waterproofing and finishes win the project.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1625,7 +1629,7 @@
     "plural": "veterinarians",
     "displayName": "Veterinarians",
     "category": "Health & Wellness",
-    "industriesBenefit": "Reach pet owners searching for a vet by service and neighbourhood, and turn those searches into booked appointments.",
+    "industriesBenefit": "Pet owners search by need such as checkups, emergencies and dental, so pages per service and neighbourhood win the visit.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1660,7 +1664,7 @@
     "plural": "wedding photographers",
     "displayName": "Wedding Photographers",
     "category": "Business & Professional Services",
-    "industriesBenefit": "Reach couples searching for wedding photographers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Couples search by style, package and city venue, so pages with real weddings and clear pricing win the date.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
@@ -1704,7 +1708,7 @@
     "plural": "window & door installers",
     "displayName": "Window & Door Installation Companies",
     "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for window & door installers by service and location, and turn those searches into booked work.",
+    "industriesBenefit": "Homeowners search window and door replacement by product and city, so pages on energy ratings, styles and financing earn the quote.",
     "parentSlug": null,
     "maxDepth": "city",
     "primaryKeywords": [
