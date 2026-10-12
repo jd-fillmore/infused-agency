@@ -748,17 +748,84 @@ evaluates the gate once instead of once per generated page:
   content is stored once by URL, plus URL lists for the published / failed /
   draft / skip sets — so it is ~7 MB at the full catalogue rather than tens of
   MB. `GATE_VERSION` must be bumped when the gate logic changes.
+- **Per-process file cache.** `readJson()` parses each JSON file at most once
+  per build process (keyed by absolute path). Content files are mostly unique
+  per page so the win is small there, but the shared geo files, `proof.json`
+  etc. are read many times. The disk cache (above) is what detects on-disk
+  changes across processes.
 
-The verifier prints a stopwatch profile (source + gate / similarity / link /
-total ms) and records it in `docs/vertical-seo-report.md`. Measured full
-catalogue (all 44 released verticals, 1680 pages): computed cold ≈ 1.2 s
-(gate ~0.94 s, similarity ~0.24 s, links ~0.03 s) vs ≈ 0.25 s from cache.
-`LAUNCH_AS_OF` still forces a different as-of date (and therefore a fresh key).
+**Shingle sets and the similarity pass.** Each page's 5-gram shingle set is
+built once during data collection and reused by both the gate and the similarity
+pass. The similarity pass compares a page only against already-kept pages in its
+own sibling set (same vertical + same level), never all pages, so it is not
+quadratic across the catalogue. We prototyped the spec's suggested inverted
+index (shingle -> kept pages) and **rejected it**: at the current data sizes the
+sibling groups are small (≈30 city pages) while shingle sets are large, so
+building and probing the index cost more than the linear sibling scan it
+replaced. Measured at the full catalogue: linear sibling scan ≈ 240 ms vs
+inverted index ≈ 386 ms for the similarity stage. The inverted-index variant is
+also provably output-identical (it only skips pairs that share no shingle, whose
+Jaccard is 0); it is simply slower here, so the sibling-scoped linear scan
+stands. If a single vertical ever grows to hundreds of same-level pages, revisit
+this.
 
-`scripts/generate-vertical-sitemaps.js` now also deletes any
+**Measured profile.** The verifier prints a stopwatch profile (`source` +
+data / gate / similarity / links / total ms) and records it in
+`docs/vertical-seo-report.md`. Full catalogue, 1680 pages (all 44 released
+verticals):
+
+| Stage | Cold (computed) | Warm (disk cache) |
+| --- | --- | --- |
+| data collection (enumerate + read/parse + shingles) | ~737 ms | 0 ms |
+| quality gate (rule evaluation) | ~123 ms | 0 ms |
+| similarity | ~240 ms | 0 ms |
+| link pass | ~26 ms | 0 ms |
+| **computePublished total** | **~1.45 s** | **~7 ms** |
+
+`LAUNCH_AS_OF` forces a different as-of date and therefore a different cache key.
+
+**Build times** (Windows Dev box, `next build` + prebuild verify; the second and
+later runs benefit from Next's own webpack compilation cache, so the first
+`wave 1` figure below is the warm-compile number):
+
+| Schedule | Pages generated | Wall time |
+| --- | --- | --- |
+| embargo (no waves released) | 0 vertical | 43–45 s |
+| wave 1 only (`LAUNCH_AS_OF=2026-10-14`) | 329 | 50.2 s |
+| all waves, cold gate cache (`2027-01-01`) | 1680 | 70.4 s |
+| all waves, warm gate cache (repeat) | 1680 | 68.9 s |
+
+The gate cache saves ~1.5 s on a full-catalogue build (the gate is computed once
+in prebuild either way); the dominant cost is Next's static generation of the
+1680 pages, which item 6 must not change.
+
+`scripts/generate-vertical-sitemaps.js` also deletes any
 `sitemap-vertical-*.xml` it did not write this run, so an unreleased, held or
 skipped vertical leaves no stale child sitemap on disk (the index never listed
 it, but the orphan file was still fetchable).
+
+### Identical-output proof
+
+- **Route set.** `computePublished()` was run against the pre-cache code
+  (`git worktree` at `72eabb5`) and the optimized code at three as-of dates. The
+  sorted published URL list hashes are byte-identical:
+
+  | As-of | Published | Published-URL-list SHA-256 (16) |
+  | --- | --- | --- |
+  | 2026-10-14 | 329 | `88e07720151db5bf` |
+  | 2026-11-04 | 739 | `c531024d14216827` |
+  | 2027-01-01 | 1680 | `d450ba602a90abc2` |
+
+- **Page HTML.** Two full builds at `2027-01-01` (cold gate cache vs warm gate
+  cache) emitted the same 1808 `.html` files; normalizing Next's per-build
+  `buildId` and asset-content hashes, **all 1680 vertical pages are
+  byte-identical**. Only a handful of pre-existing legacy `posts/*` and `seo/*`
+  pages differ, and the differing fragment is a Date rendered as
+  `2025-08-30T13:08:47.634Z` in one build and
+  `Sat Aug 30 2025 09:08:47 GMT-0400 (Eastern Daylight Saving Time)` in the
+  other — a pre-existing Date-serialization nondeterminism on those legacy
+  pages (the differing set changes from build to build regardless of the gate
+  cache, and none of those pages are vertical pages). Not caused by item 6.
 
 ### Assumptions recorded
 
@@ -770,3 +837,9 @@ it, but the orphan file was still fetchable).
   stores the result shape directly.
 - **The cache is regenerated, not edited** (`.next` is git-ignored); a missing,
   stale or malformed cache simply falls through to a fresh compute.
+- **The inverted index was measured and rejected** at current data sizes (see
+  above); the sibling-scoped linear scan already satisfies "not quadratic across
+  all pages".
+- **Legacy `posts/*`/`seo/*` Date serialization is out of scope** — those pages
+  are pre-existing, unmodified by this task, and nondeterministic independent of
+  the gate cache.

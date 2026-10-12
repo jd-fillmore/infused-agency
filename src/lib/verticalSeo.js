@@ -125,8 +125,14 @@ function writeGateCache(key, asOf, result) {
 }
 
 function readJson(absPath) {
-  const raw = fs.readFileSync(absPath, "utf8");
-  return JSON.parse(raw);
+  // Parse each file at most once per build process. The disk cache (below) is
+  // what detects on-disk changes across processes; this only avoids re-reading
+  // and re-parsing the same file for the hundreds of pages that share it.
+  if (!_cache.files) _cache.files = Object.create(null);
+  if (absPath in _cache.files) return _cache.files[absPath];
+  const parsed = JSON.parse(fs.readFileSync(absPath, "utf8"));
+  _cache.files[absPath] = parsed;
+  return parsed;
 }
 
 function loadVerticals() {
@@ -587,6 +593,7 @@ function computePublished(opts = {}) {
     ...result,
     timings: {
       source,
+      dataMs: 0,
       gateMs: 0,
       similarityMs: 0,
       linksMs: 0,
@@ -624,11 +631,16 @@ function computePublished(opts = {}) {
     (p) => p.vertical.launchStatus === "live" && released.has(p.vertical.slug)
   );
 
-  const evaluated = livePages.map((page) => {
+  // Data collection: enumerate + read/parse each page's content and build its
+  // shingle set once (reused by both the gate and the similarity pass).
+  const loaded = livePages.map((page) => {
     const content = loadContent(page);
-    const basics = evaluateBasics(page, content);
-    return { page, content, ...basics, shingles: shingleSet(uniqueProseText(content)) };
+    return { page, content, shingles: shingleSet(uniqueProseText(content)) };
   });
+  const tCollect = Date.now();
+
+  // Quality gate: rule evaluation per page.
+  const evaluated = loaded.map((r) => ({ ...r, ...evaluateBasics(r.page, r.content) }));
   const tGate = Date.now();
 
   let candidates;
@@ -744,7 +756,8 @@ function computePublished(opts = {}) {
     scoringPairs,
     timings: {
       source: "computed",
-      gateMs: tGate - tStart,
+      dataMs: tCollect - tStart,
+      gateMs: tGate - tCollect,
       similarityMs: tSimilarity - tGate,
       linksMs: tLinks - tSimilarity,
       totalMs: tEnd - tStart,
@@ -1260,6 +1273,13 @@ function publishedPaths() {
   return published.map((p) => p.page.urlPath);
 }
 
+// Test/preview helper: drop all in-process caches (parsed files, per-as-of
+// results, legacy-page scan, cache key) so the next computePublished()
+// re-reads from disk and recomputes the gate cache key.
+function resetCaches() {
+  for (const key of Object.keys(_cache)) delete _cache[key];
+}
+
 module.exports = {
   SITE,
   DATA_DIR,
@@ -1290,6 +1310,7 @@ module.exports = {
   evaluateBasics,
   computePublished,
   nearestDuplicatePairs,
+  resetCaches,
   buildLinks,
   buildLegacyLinks,
   getLegacyTherapistPages,

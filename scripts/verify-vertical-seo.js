@@ -130,7 +130,7 @@ function main() {
   const t = result.timings || {};
   console.log(`-- pipeline profile --`);
   console.log(
-    `computePublished : source=${t.source}, gate ${t.gateMs}ms, similarity ${t.similarityMs}ms, links ${t.linksMs}ms, total ${t.totalMs}ms`
+    `computePublished : source=${t.source}, data ${t.dataMs}ms, gate ${t.gateMs}ms, similarity ${t.similarityMs}ms, links ${t.linksMs}ms, total ${t.totalMs}ms`
   );
   console.log(`-- services --`);
   console.log(`Services         : ${servicesResult.services.length}`);
@@ -167,6 +167,7 @@ function main() {
   lines.push("## Build profile");
   lines.push("");
   lines.push(`- computePublished source: ${t.source}`);
+  lines.push(`- data collection (enumerate + read/parse): ${t.dataMs} ms`);
   lines.push(`- content gate: ${t.gateMs} ms`);
   lines.push(`- similarity scoring: ${t.similarityMs} ms`);
   lines.push(`- link pass: ${t.linksMs} ms`);
@@ -320,6 +321,23 @@ function main() {
   );
   launchLines.push(`- Published pages: ${published.length}`);
   launchLines.push(`- Skipped released verticals: ${launchSkips.length}`);
+  const launchConfig = launch.loadLaunch();
+  const isFrozen = (w) =>
+    launchConfig.freezeAtWave != null && Number(w.wave) > Number(launchConfig.freezeAtWave);
+  const publishedWaves = launchConfig.waves
+    .filter((w) => !isFrozen(w) && launch.waveDate(w) <= summary.asOf)
+    .map((w) => w.wave);
+  const nextWave = launchConfig.waves.find(
+    (w) => !isFrozen(w) && launch.waveDate(w) > summary.asOf
+  );
+  launchLines.push(
+    `- Published waves: ${publishedWaves.length ? publishedWaves.join(", ") : "none"}`
+  );
+  launchLines.push(
+    `- Next wave: ${
+      nextWave ? `wave ${nextWave.wave} on ${launch.waveDate(nextWave)}` : "none (all waves released)"
+    }`
+  );
   launchLines.push("");
   launchLines.push("## Waves");
   launchLines.push("");
