@@ -571,3 +571,38 @@ wave-1 slugs (`therapists`, `electricians`, `plumbers`, `hvac-contractors`,
 - `node scripts/test-vertical-seo.js` — 17/17 pass.
 - Repo-wide search confirms no remaining reference to the old slugs or
   "remodeler"/"Accessory Dwelling Unit (ADU) Contractors"/"Daycare Centers".
+
+## Launch waves — item 2: launch schedule (`data/vertical-seo/launch.json`)
+
+`startDate` defaults to **2026-10-14** (three days after the 2026-10-11 build
+date), `freezeAtWave` is `null`, and the four waves use `offsetDays`
+`0 / 21 / 42 / 63`. Names were resolved to slugs against
+`data/vertical-seo/verticals.json` (note the item-1 renames). Resolved slugs:
+
+- **Wave 1 (offset 0, 8):** `therapists`, `electricians`, `plumbers`,
+  `hvac-contractors`, `roofers`, `landscapers`, `dentists`, `accountants`.
+- **Wave 2 (offset 21, 10):** `home-builders`, `home-renovators`,
+  `kitchen-bath`, `flooring`, `window-door`, `pest-control`, `arborists`,
+  `garage-door`, `paving-companies`, `pool-builders`.
+- **Wave 3 (offset 42, 10):** `basement-renovators`, `deck-builders`,
+  `home-additions`, `cabinet-makers`, `tile-contractors`, `drywallers`,
+  `design-builders`, `movers`, `locksmiths`, `commercial-cleaning`.
+- **Wave 4 (offset 63, 16 — every remaining vertical that is not on hold):**
+  `secondary-suite-builders`, `architects`, `commercial-snow-removal`,
+  `concrete-contractors`, `contractors`, `daycares`, `home-stagers`,
+  `insulation-contractors`, `interior-designers`, `modular-builders`,
+  `orthodontists`, `restoration-companies`, `septic-services`, `smart-home`,
+  `veterinarians`, `wedding-photographers`.
+- **`hold` (never auto-published, 7):** `family-lawyers`,
+  `immigration-lawyers`, `injury-lawyers`, `real-estate-lawyers`, `med-spas`,
+  `mortgage-brokers`, `financial-advisors`.
+
+### Assumptions recorded
+
+- **Wave 4 literally means "every remaining vertical".** It includes the three
+  `scaffold` verticals (`concrete-contractors`, `contractors`,
+  `insulation-contractors`); they stay unpublished because `computePublished()`
+  only ever emits pages for `launchStatus: "live"`. Recording them keeps the
+  schedule a complete partition of the catalogue.
+- **`startDate` is relative to the build date.** The spec asks for "3 days from
+  today"; the day this schedule was authored was 2026-10-11.
