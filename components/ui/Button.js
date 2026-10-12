@@ -4,10 +4,10 @@ import { cn } from "./cn";
 
 const VARIANTS = {
   primary:
-    "bg-accent text-accent-contrast shadow-glow hover:bg-accent-hover",
+    "bg-accent text-accent-contrast shadow-card hover:bg-accent-hover hover:shadow-lift",
   secondary:
-    "border border-border-strong bg-transparent text-ink hover:bg-white/5",
-  ghost: "bg-white/5 text-ink hover:bg-white/10",
+    "border border-border-strong bg-card text-ink hover:border-accent hover:text-accent",
+  ghost: "bg-transparent text-ink hover:bg-surface",
 };
 
 const SIZES = {

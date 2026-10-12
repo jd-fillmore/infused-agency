@@ -3,7 +3,7 @@ import { cn } from "./cn";
 
 const TONES = {
   accent: "border-accent/30 bg-accent/10 text-accent",
-  muted: "border-border bg-white/5 text-muted",
+  muted: "border-border bg-surface text-muted",
   gold: "border-gold/30 bg-gold/10 text-gold",
 };
 

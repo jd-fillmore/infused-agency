@@ -49,7 +49,7 @@ button {
 
 .seo-city-hero p,
 .inner-hero p {
-  color: rgba(255, 255, 255, 0.72) !important;
+  color: var(--color-muted) !important;
 }
 
 @media only screen and (max-width: 62em) {
@@ -69,13 +69,13 @@ button {
   }
 }
 
-/* Hard-coded blue/purple gradients in legacy sheets -> cyan. */
+/* Hard-coded blue/purple gradients in legacy sheets -> brand gradient. */
 .home-client-results {
-  background: linear-gradient(to right, #0e7490, #0891b2) !important;
+  background: linear-gradient(to right, #005c97, #363795) !important;
 }
 
 .seo-page .call-out {
-  background-image: linear-gradient(to right, #0e7490, #0891b2) !important;
+  background-image: linear-gradient(to right, #005c97, #363795) !important;
 }
 
 /* Data tables on the vertical pages. */
@@ -120,7 +120,7 @@ button {
   padding: 0.4rem 1rem !important;
   border: 1px solid var(--color-border) !important;
   border-radius: 9999px !important;
-  background-color: rgba(255, 255, 255, 0.05) !important;
+  background-color: var(--color-surface) !important;
   color: var(--color-muted) !important;
   font-size: 0.875rem !important;
   font-weight: 600 !important;
@@ -133,8 +133,8 @@ button {
 }
 
 .redesign-root .chip-toggle[aria-pressed="true"] {
-  border-color: rgba(34, 211, 238, 0.4) !important;
-  background-color: rgba(34, 211, 238, 0.1) !important;
+  border-color: rgba(0, 92, 151, 0.4) !important;
+  background-color: rgba(0, 92, 151, 0.1) !important;
   color: var(--color-accent) !important;
 }
 
@@ -152,15 +152,15 @@ button {
  * content, headings, links and schema are untouched.
  * ------------------------------------------------------------------ */
 
-/* Shared inner heroes -> consistent dark SaaS hero band. */
+/* Shared inner heroes -> consistent light hero band. */
 .inner-hero,
 .inner-hero-cities {
   background: radial-gradient(
       80% 95% at 88% -15%,
-      rgba(34, 211, 238, 0.16),
+      rgba(0, 92, 151, 0.1),
       transparent 62%
     ),
-    #0a0a0b !important;
+    var(--color-base) !important;
   background-blend-mode: normal !important;
   border-bottom: 1px solid var(--color-border) !important;
   padding: 200px 0 96px 0 !important;
@@ -210,7 +210,7 @@ button {
 
 .blog-overview .card:hover,
 .post .card:hover {
-  border-color: rgba(34, 211, 238, 0.45) !important;
+  border-color: rgba(0, 92, 151, 0.45) !important;
   transform: translateY(-2px);
 }
 
@@ -227,7 +227,7 @@ button {
 /* Article body typography. */
 .blog p,
 .blog li {
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--color-ink);
   line-height: 1.8;
 }
 
@@ -262,7 +262,7 @@ button {
 }
 
 .pagination a:hover {
-  border-color: rgba(34, 211, 238, 0.45) !important;
+  border-color: rgba(0, 92, 151, 0.45) !important;
   color: var(--color-accent) !important;
 }
 
@@ -294,10 +294,10 @@ button {
   border-radius: 1rem;
 }
 
-/* Area lists painted over the dark canvas. */
+/* Area lists painted over the light canvas. */
 .grimsby li,
 .areas-served li {
-  color: rgba(255, 255, 255, 0.72) !important;
+  color: var(--color-muted) !important;
 }
 
 /* Respect prefers-reduced-motion site-wide (spec §1.4 / R6). The redesign

@@ -5,28 +5,37 @@
 @source "../../data";
 
 @theme {
-  /* Colours — dark grey/black base, single cyan accent. */
-  --color-base: #0a0a0b;
-  --color-surface: #101012;
-  --color-card: #161618;
-  --color-elevated: #1c1c1f;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-strong: rgba(255, 255, 255, 0.16);
-  --color-ink: #f5f5f5;
-  --color-muted: #a1a1aa;
-  --color-accent: #22d3ee;
-  --color-accent-hover: #67e8f9;
-  --color-accent-deep: #0891b2;
-  --color-accent-contrast: #082834;
-  --color-gold: #e2c044;
-  --color-success: #1b8e47;
+  /* Colours — light theme in Infused's own brand blue/indigo.
+     Derived from the brand tokens (blue #005c97, indigo #363795, deep
+     indigo #100a25); NOT from the reference site's teal/coral palette.
+     Contrast ratios are recorded in docs/light-reskin-notes.md. */
+  --color-base: #f6f7fb;
+  --color-surface: #eef2fb;
+  --color-card: #ffffff;
+  --color-elevated: #ffffff;
+  --color-border: #e2e7ef;
+  --color-border-strong: #cbd5e4;
+  --color-ink: #161b33;
+  --color-muted: #516172;
+  --color-accent: #005c97;
+  --color-accent-hover: #00497a;
+  --color-accent-deep: #0e1b3d;
+  --color-accent-contrast: #ffffff;
+  /* Deep "contrast band" for occasional full-width dark sections. */
+  --color-contrast: #0e1b3d;
+  --color-contrast-ink: #e9edf6;
+  --color-gold: #8a6100;
+  --color-gold-bright: #e2c044;
+  --color-success: #147d3f;
+  --color-warning: #b45309;
+  --color-error: #dc2626;
 
-  /* Signature text gradient (cyan → ice → white) */
+  /* Signature text gradient (brand blue → indigo). */
   --gradient-accent: linear-gradient(
     100deg,
-    #22d3ee 0%,
-    #a5f3fc 45%,
-    #ffffff 100%
+    #005c97 0%,
+    #3f6fd8 48%,
+    #363795 100%
   );
 
   /* Fluid type scale (clamp) */
@@ -36,10 +45,10 @@
   --text-h3: clamp(1.3rem, 1.15rem + 0.7vw, 1.7rem);
   --text-lead: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
 
-  /* Fonts — Inter throughout, wired to the next/font variable in _app.js. */
-  --font-body: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
+  /* Fonts — Poppins throughout, wired to the next/font variable in _app.js. */
+  --font-body: var(--font-poppins, ui-sans-serif), system-ui, -apple-system,
     "Segoe UI", Roboto, Arial, sans-serif;
-  --font-display: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
+  --font-display: var(--font-poppins, ui-sans-serif), system-ui, -apple-system,
     "Segoe UI", Roboto, Arial, sans-serif;
 
   /* Radius scale */
@@ -48,10 +57,12 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1.25rem;
 
-  /* Shadow + glow */
-  --shadow-card: inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
-    0 12px 30px -12px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 28px -2px rgba(34, 211, 238, 0.5);
+  /* Soft light shadows (brand-tinted, layered). */
+  --shadow-card: 0 1px 2px 0 rgba(22, 27, 51, 0.04),
+    0 12px 30px -12px rgba(22, 27, 51, 0.12);
+  --shadow-lift: 0 2px 4px 0 rgba(22, 27, 51, 0.05),
+    0 18px 40px -14px rgba(22, 27, 51, 0.18);
+  --shadow-glow: 0 12px 30px -12px rgba(0, 92, 151, 0.35);
 
   /* Container widths */
   --container-content: 80rem;
@@ -59,7 +70,7 @@
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light;
     --z-header: 50;
     --z-mega: 60;
     --z-overlay: 70;
@@ -102,21 +113,22 @@
   z-index: var(--z-overlay);
 }
 
-/* Atmosphere — CSS only, cheap to render. */
+/* Atmosphere — CSS only, cheap to render. Light-theme equivalents of the
+   old dark glows: subtle brand-tinted radials + a faint grid. */
 @utility bg-grid {
   background-image: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.04) 1px,
+      rgba(22, 27, 51, 0.06) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(22, 27, 51, 0.06) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 
 @utility glow-radial {
   background-image: radial-gradient(
     60% 60% at 50% 0%,
-    rgba(34, 211, 238, 0.16),
+    rgba(0, 92, 151, 0.1),
     transparent 70%
   );
 }
@@ -124,12 +136,12 @@
 @utility glow-radial-deep {
   background-image: radial-gradient(
       50% 55% at 85% 10%,
-      rgba(8, 145, 178, 0.28),
+      rgba(54, 55, 149, 0.1),
       transparent 70%
     ),
     radial-gradient(
       45% 50% at 10% 0%,
-      rgba(34, 211, 238, 0.12),
+      rgba(0, 92, 151, 0.08),
       transparent 70%
     );
 }

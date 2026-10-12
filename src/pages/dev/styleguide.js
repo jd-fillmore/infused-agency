@@ -20,11 +20,13 @@ const SWATCHES = [
   ["base", "bg-base"],
   ["surface", "bg-surface"],
   ["card", "bg-card"],
-  ["elevated", "bg-elevated"],
   ["accent", "bg-accent"],
   ["accent-deep", "bg-accent-deep"],
+  ["contrast", "bg-contrast"],
   ["gold", "bg-gold"],
   ["success", "bg-success"],
+  ["warning", "bg-warning"],
+  ["error", "bg-error"],
 ];
 
 const ICONS = [
@@ -65,7 +67,7 @@ export default function Styleguide() {
           <Section
             eyebrow="Internal"
             heading="Design system styleguide"
-            subhead="Tokens, typography, and components for the dark SaaS redesign. Dev only."
+            subhead="Tokens, typography, and components for the light design system. Dev only."
           >
             <Breadcrumb
               items={[
@@ -91,7 +93,7 @@ export default function Styleguide() {
         <Section heading="Typography" headingAs="h2">
           <div className="space-y-4">
             <p className="text-display font-display font-bold text-ink">
-              Display — Inter
+              Display — Poppins
             </p>
             <h2 className="text-h1 font-display font-bold text-ink">
               Heading 1 — fluid clamp
@@ -103,10 +105,10 @@ export default function Styleguide() {
               Heading 3 — fluid clamp
             </h4>
             <p className="text-lead text-muted">
-              Lead paragraph in Inter at the fluid lead size.
+              Lead paragraph in Poppins at the fluid lead size.
             </p>
             <p className="text-ink">
-              Body copy in Inter. Accent{" "}
+              Body copy in Poppins. Accent{" "}
               <span className="text-accent">links use the brand blue</span> and
               muted text sits a step softer.
             </p>

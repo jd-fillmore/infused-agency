@@ -17,7 +17,7 @@ export default function Card({
         gradient && "border-gradient",
         interactive &&
           "transition-transform duration-200 hover:-translate-y-1 hover:border-border-strong",
-        glow && "ring-1 ring-accent/30 shadow-glow",
+        glow && "ring-1 ring-accent/25 shadow-glow",
         className
       )}
       {...rest}
