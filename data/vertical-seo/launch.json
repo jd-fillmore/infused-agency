@@ -1,5 +1,5 @@
 {
-  "startDate": "2026-10-14",
+  "startDate": "2026-10-11",
   "freezeAtWave": null,
   "waves": [
     {
@@ -29,7 +29,10 @@
         "arborists",
         "garage-door",
         "paving-companies",
-        "pool-builders"
+        "pool-builders",
+        "concrete-contractors",
+        "insulation-contractors",
+        "contractors"
       ]
     },
     {
@@ -55,11 +58,8 @@
         "secondary-suite-builders",
         "architects",
         "commercial-snow-removal",
-        "concrete-contractors",
-        "contractors",
         "daycares",
         "home-stagers",
-        "insulation-contractors",
         "interior-designers",
         "modular-builders",
         "orthodontists",

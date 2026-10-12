@@ -672,12 +672,12 @@ skipped-released-vertical reasons.
 ## Launch waves — item 5: scheduled deploys
 
 **Hosting / remote detection.** The git remote is
-`https://github.com/jd-fillmore/infused-agency.git` (GitHub). The repo ships no
-`vercel.json`, `netlify.toml`, `now.json` or `render.yaml`, so there is no
-in-repo hosting config; the project was deployed on Vercel, which exposes a
-**deploy hook** URL. That makes Vercel's deploy hook the trigger (a Netlify
-build hook is the drop-in equivalent; a non-GitHub CI would use the same
-`should-deploy-today.js` check plus a host webhook).
+`https://github.com/jd-fillmore/infused-agency.git` (GitHub) and hosting is
+Netlify. The repo ships a `netlify.toml` that only pins the build-time Node
+version (`NODE_VERSION`); release deploys are otherwise driven by a Netlify
+**build hook** (Site configuration -> Build & deploy -> Continuous deployment ->
+Build hooks). The workflow POSTs to that hook URL from the `DEPLOY_HOOK_URL`
+repo secret; the same check works with any host that exposes a build webhook.
 
 **`scripts/should-deploy-today.js`** prints `true` on stdout only when some
 wave's UTC date equals today's UTC date, otherwise `false`, and always exits 0
@@ -693,17 +693,18 @@ message. `.github/workflows/ci.yml` separately runs `yarn verify:seo` and
 `yarn build` on pushes/PRs (this is what keeps the released surface honest
 between waves).
 
-### One-time setup (Vercel)
+### One-time setup (Netlify)
 
-1. Vercel dashboard -> the project -> **Settings -> Git -> Deploy Hooks**.
-   Create a hook named e.g. `scheduled-wave-deploy` on the production branch
-   (`main`); copy the generated URL.
+1. Netlify dashboard -> the site -> **Site configuration -> Build & deploy ->
+   Continuous deployment -> Build hooks**. Create a hook named e.g.
+   `scheduled-wave-deploy` on the production branch (`main`); copy the generated
+   URL.
 2. GitHub repo -> **Settings -> Secrets and variables -> Actions -> New
    repository secret** named `DEPLOY_HOOK_URL` with that URL as the value.
 3. Test without waiting for cron: **Actions -> Scheduled wave deploy -> Run
    workflow**. On a non-wave day it logs "No wave is scheduled for today"; on a
-   wave day it POSTs to Vercel and starts a build.
-4. Turn off any Vercel **auto-deploy on push** if you want releases to happen
+   wave day it POSTs to Netlify and starts a build.
+4. Turn off any Netlify **auto-publish on push** if you want releases to happen
    *only* on wave dates (the task's intent); content/other changes then ship via
    the normal deploy flow you choose.
 
@@ -995,3 +996,149 @@ dates pass.
 - **The wave-1 build time reported here (49.5s) is a warm-`Next`-cache build**
   with only the gate cache cleared; item 6's cold-cache figures (43–70s) are the
   authoritative per-stage profile.
+
+## Pre-launch fixes
+
+Five fixes were applied after item 7, ahead of launch.
+
+### 1. Launch now starts 2026-10-11 (wave 1 live)
+
+`data/vertical-seo/launch.json` `startDate` changed `2026-10-14` → `2026-10-11`.
+Relative to the default as-of (UTC today `2026-10-12`), wave 1 is now released:
+
+- **Released verticals: 8 / 51** (all of wave 1), **Published pages: 329**,
+  skipped released verticals: 0.
+- Wave dates recompute from the new start: wave 1 `2026-10-11`, wave 2
+  `2026-11-01`, wave 3 `2026-11-22`, wave 4 `2026-12-13`.
+- `docs/launch-status.md` reports `Published waves: 1`, next wave 2 on
+  `2026-11-01`, and per-vertical page counts (41 each, 42 for `therapists`).
+
+**The Build profile now shows real gate and similarity times.** With the site
+embargoed (0 released) there was nothing to gate, so the committed profile
+showed `content gate: 0 ms` / `similarity scoring: 0 ms`. With wave 1 released
+the profile reports, e.g.:
+
+```
+computePublished  : source=cache, data 195ms, gate 31ms, similarity 58ms, links 9ms, total 356ms
+```
+
+To make this robust against cache hits, `computePublished()` now stores its stage
+timings in the gate cache blob and replays them on a cache hit (`source=cache`),
+so the profile always reports the real gate and similarity times instead of
+zeroes; `GATE_VERSION` was bumped (`…11.3`) so pre-change caches invalidate. The
+memo path likewise now carries the computed stage times.
+
+**Wave-1-only build time:**
+
+| Build | Time |
+| --- | --- |
+| Cold (full recompile after the `services.js`/`verticalSeo.js` edits) | 111.4s |
+| Warm re-run | 39.3s |
+
+Both runs published 329 pages; `computePublished` reported `gate 31 ms,
+similarity 58 ms` (source `computed` on the cold run, `cache` on the warm run).
+
+### 2. Duplicated-word title bug fixed
+
+**Cause.** `serviceTitle()` in `src/lib/services.js` unconditionally built
+`` `${name} Services | Infused Agency` ``. The `white-label` service is named
+"White Label Services", so its title became
+"White Label Services **Services** | Infused Agency".
+
+**Fix (general).** `serviceTitle()` now omits the appended " Services" when the
+service name already ends in that word:
+
+```js
+if (/Services$/i.test(service.name.trim())) return `${service.name} | Infused Agency`;
+return `${service.name} Services | Infused Agency`;
+```
+
+**Audit.** Every service title was checked for adjacent duplicated words
+(case-insensitive). Result: **0 duplicated-word titles** across all 21 services.
+The fix is recorded as an intentional change in
+`docs/redesign-allowlist.json` under a new `allowTitleChanges` list, which
+`scripts/seo-regression.js` now honours (so the `title changed` finding is
+reported as allowlisted rather than a failure).
+
+All 21 service titles (source of truth `serviceTitle()`):
+
+| Service | Title |
+| --- | --- |
+| /seo (existing, exempt) | Search Engine Optimization Services \| Infused Agency |
+| /web-design (existing, exempt) | Web Design Services \| Infused Agency |
+| /seo/local-seo | Local SEO Services \| Infused Agency |
+| /seo/technical-seo | Technical SEO Services \| Infused Agency |
+| /seo/link-building | Link Building Services \| Infused Agency |
+| /seo/content-writing | Content Writing Services \| Infused Agency |
+| /seo/white-label | White Label Services \| Infused Agency |
+| /seo/franchise-seo | Franchise SEO Services \| Infused Agency |
+| /ai-search | AI Search (GEO, AEO & LLM SEO) \| Infused Agency |
+| /digital-marketing | Digital Marketing Services \| Infused Agency |
+| /digital-marketing/conversion-rate-optimization | Conversion Rate Optimization Services \| Infused Agency |
+| /web-design/ecommerce-web-design | eCommerce Web Design Services \| Infused Agency |
+| /web-design/shopify-web-design | Shopify Web Design Services \| Infused Agency |
+| /web-design/website-hosting | Website Hosting Services \| Infused Agency |
+| /ecommerce-marketing | eCommerce Marketing Services \| Infused Agency |
+| /ecommerce-marketing/ecommerce-optimization | eCommerce Optimization Services \| Infused Agency |
+| /ecommerce-marketing/ecommerce-seo | eCommerce SEO Services \| Infused Agency |
+| /ecommerce-marketing/ecommerce-ppc | eCommerce PPC Services \| Infused Agency |
+| /ecommerce-marketing/shopify-seo | Shopify SEO Services \| Infused Agency |
+| /reputation-management | Reputation Management Services \| Infused Agency |
+| /reputation-management/online-reputation-repair | Online Reputation Repair Services \| Infused Agency |
+
+### 3. Three verticals moved from wave 4 to wave 2
+
+`concrete-contractors`, `insulation-contractors` and `contractors` moved from
+wave 4 (`offset 63`) to wave 2 (`offset 21`) in `launch.json`. Wave sizes are now
+wave 1 = 8, **wave 2 = 13**, wave 3 = 10, **wave 4 = 13**, hold = 7 (still 44 + 7
+= 51, no duplicates). Their new due date is `2026-11-01`. All three remain
+`launchStatus: scaffold`, so despite releasing in wave 2 they still publish no
+pages — the release only changes their scheduled date.
+
+### 4. `/seo` and `/web-design` shown as "existing (exempt)"
+
+`scripts/verify-vertical-seo.js` no longer lists the two pre-existing service
+pages in the "Published service pages" table with zero counts. They are split
+out into their own **"Existing (exempt) service pages"** table, and the counts
+now read `Published: 19`, `Existing (exempt): 2` (console summary:
+`Service published: 19 (+2 existing, exempt)`).
+
+### 5. Nearest-duplicate service pairs added to the report
+
+Added `nearestDuplicatePairs()` to `src/lib/services.js` (same-group sibling
+pairing over content shingle sets, mirroring the vertical helper). The report now
+has a **"Nearest duplicate service pairs (same group)"** table with Jaccard
+scores. Current top pairs (all very low; the service corpus is well-differentiated
+against the 0.3 failure threshold):
+
+| Service A | Service B | Jaccard |
+| --- | --- | --- |
+| /reputation-management | /reputation-management/online-reputation-repair | 0.004 |
+| /ecommerce-marketing/ecommerce-seo | /ecommerce-marketing/shopify-seo | 0.003 |
+| /ecommerce-marketing | /ecommerce-marketing/ecommerce-ppc | 0.001 |
+| /ecommerce-marketing/ecommerce-seo | /ecommerce-marketing/ecommerce-ppc | 0.001 |
+| /ecommerce-marketing | /ecommerce-marketing/ecommerce-seo | 0.001 |
+
+### Verification after the fixes
+
+- `yarn build` — **pass** (wave 1 live, 329 pages). Cold 111.4s / warm 39.3s.
+- `yarn test:seo` — **pass** (28/28). The schedule tests still pass with the new
+  `startDate` and wave-2 membership.
+- `yarn lint` — **pass** (pre-existing warnings only).
+- `yarn verify:seo` — `verify-vertical-seo` and `validate-schema` pass; the
+  `seo-regression` step still exits 1 on the same **11 pre-existing** Niagara
+  `/seo/*` H2 changes (uncommitted redesign, out of scope). The white-label
+  title fix is allowlisted and no longer a failure.
+
+### Assumptions recorded
+
+- **Timings persisted in the cache are the real gate/similarity times** from the
+  compute that produced the cached result; the report labels them with
+  `source: cache` so they are not mistaken for a fresh measurement.
+- **`allowTitleChanges` is a new, explicit allowlist key** rather than a baseline
+  edit, so the intentional white-label title fix is auditable and other title
+  regressions are still caught.
+- **The moved wave-2 scaffold verticals still publish nothing** — moving them is
+  a scheduling change only.
+- **The 111.4s cold build is a post-source-change full recompile**; the 39.3s
+  warm build is the steady-state wave-1 build time.

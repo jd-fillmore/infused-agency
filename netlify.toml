@@ -1,0 +1,4 @@
+# Pin the Node.js version Netlify builds with to the line we develop on
+# (local dev/CI machines run Node 22; see docs/vertical-seo-build.md).
+[build.environment]
+  NODE_VERSION = "22"
