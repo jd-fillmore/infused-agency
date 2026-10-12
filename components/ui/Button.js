@@ -24,7 +24,7 @@ export default function Button({
   ...rest
 }) {
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-base disabled:opacity-60",
+    "inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-[color,background-color,border-color,box-shadow,transform] duration-200 ease-smooth hover:-translate-y-0.5 active:translate-y-0 active:duration-75 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-base disabled:opacity-60 disabled:hover:translate-y-0",
     VARIANTS[variant],
     SIZES[size],
     className

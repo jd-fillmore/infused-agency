@@ -16,10 +16,14 @@ export default function Accordion({ items = [], className }) {
             <span>{item.q}</span>
             <Icon
               name="chevron"
-              className="h-5 w-5 shrink-0 text-accent transition-transform duration-200 group-open:rotate-180"
+              className="h-5 w-5 shrink-0 text-accent transition-transform duration-300 ease-smooth group-open:rotate-180"
             />
           </summary>
-          <p className="mt-3 text-sm leading-relaxed text-muted">{item.a}</p>
+          <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-smooth group-open:grid-rows-[1fr]">
+            <div className="overflow-hidden">
+              <p className="mt-3 text-sm leading-relaxed text-muted">{item.a}</p>
+            </div>
+          </div>
         </details>
       ))}
     </div>

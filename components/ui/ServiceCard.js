@@ -21,7 +21,7 @@ export default function ServiceCard({
         {href && (
           <Icon
             name="arrow-right"
-            className="h-5 w-5 text-muted transition-colors group-hover:text-accent"
+            className="h-5 w-5 text-muted transition-colors group-hover:translate-x-0.5 group-hover:text-accent"
           />
         )}
       </div>
@@ -33,7 +33,7 @@ export default function ServiceCard({
   );
 
   const classes = cn(
-    "group flex h-full flex-col rounded-xl border border-border bg-card p-6 shadow-card transition-transform duration-200 hover:-translate-y-1 hover:border-accent/40",
+    "group flex h-full flex-col rounded-xl border border-border bg-card p-6 shadow-card card-lift",
     className
   );
 

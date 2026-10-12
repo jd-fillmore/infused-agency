@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "./cn";
 
 export const inputClasses =
-  "w-full rounded-lg border border-border-strong bg-card px-4 py-2.5 text-sm text-ink placeholder:text-muted/70 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40";
+  "w-full rounded-lg border border-border-strong bg-card px-4 py-2.5 text-sm text-ink transition-colors placeholder:text-muted/70 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40";
 
 export const labelClasses = "mb-1.5 block text-sm font-medium text-ink";
 

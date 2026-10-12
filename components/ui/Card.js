@@ -15,8 +15,7 @@ export default function Card({
       className={cn(
         "rounded-xl border border-border bg-card p-6 shadow-card",
         gradient && "border-gradient",
-        interactive &&
-          "transition-transform duration-200 hover:-translate-y-1 hover:border-border-strong",
+        interactive && "card-lift",
         glow && "ring-1 ring-accent/25 shadow-glow",
         className
       )}

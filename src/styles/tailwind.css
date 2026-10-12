@@ -64,6 +64,10 @@
     0 18px 40px -14px rgba(22, 27, 51, 0.18);
   --shadow-glow: 0 12px 30px -12px rgba(0, 92, 151, 0.35);
 
+  /* Motion — one smooth ease-out curve (from the reference) + duration scale. */
+  --ease-smooth: cubic-bezier(0.2, 0.75, 0.25, 1);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
   /* Container widths */
   --container-content: 80rem;
 }
@@ -75,6 +79,9 @@
     --z-mega: 60;
     --z-overlay: 70;
     --z-modal: 80;
+    --duration-micro: 150ms;
+    --duration-card: 280ms;
+    --duration-reveal: 700ms;
   }
 
   body {
@@ -168,5 +175,108 @@
 
   &::-webkit-details-marker {
     display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * Motion system (Phase L2).
+ *
+ * One shared ease-out curve + duration scale so every component moves
+ * the same way. Only transform/opacity/shadow/border/background animate;
+ * hover effects are gated behind @media (hover: hover) so touch devices
+ * never get stuck in a hover state. prefers-reduced-motion is handled by
+ * the global net in legacy-saas.css.
+ * ------------------------------------------------------------------ */
+
+/* Cards / boxes: rise ~4px, deepen the shadow, tint the border. */
+@utility card-lift {
+  transition: transform var(--duration-card) var(--ease-smooth),
+    box-shadow var(--duration-card) var(--ease-smooth),
+    border-color var(--duration-micro) var(--ease-smooth),
+    background-color var(--duration-micro) var(--ease-smooth);
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lift);
+      border-color: color-mix(
+        in oklab,
+        var(--color-accent) 45%,
+        var(--color-border)
+      );
+    }
+  }
+}
+
+/* Images inside cards: subtle zoom within a clipped container. */
+@utility media-zoom {
+  overflow: hidden;
+
+  & img {
+    transition: transform var(--duration-reveal) var(--ease-smooth);
+  }
+
+  @media (hover: hover) {
+    &:hover img {
+      transform: scale(1.04);
+    }
+  }
+}
+
+/* Links / nav: animated underline reveal. */
+@utility link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size var(--duration-micro) var(--ease-smooth),
+    color var(--duration-micro) var(--ease-smooth);
+
+  @media (hover: hover) {
+    &:hover {
+      background-size: 100% 1.5px;
+    }
+  }
+}
+
+/* Arrow icons nudge in the reading direction on hover. */
+@utility arrow-nudge {
+  & svg {
+    transition: transform var(--duration-micro) var(--ease-smooth);
+  }
+
+  @media (hover: hover) {
+    &:hover svg {
+      transform: translateX(3px);
+    }
+  }
+}
+
+/* Optional scroll reveal — progressive enhancement only. Content is
+   visible by default; the fade-up runs only where view() timelines are
+   supported, and never affects layout (opacity + transform). */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      animation: none;
+    }
   }
 }
