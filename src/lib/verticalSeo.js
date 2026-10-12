@@ -3,6 +3,7 @@
 // the standalone Node verification script without a build step.
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const SITE = "https://infused.agency";
 const DATA_DIR = path.join(process.cwd(), "data", "vertical-seo");
@@ -11,6 +12,117 @@ const CONTENT_DIR = path.join(DATA_DIR, "content", "verticals");
 const RESERVED_COUNTRY_SLUGS = ["usa"];
 
 const _cache = {};
+
+// ----- published-result gate cache -----
+//
+// The gate pipeline (content load -> basics -> shingles -> similarity -> links)
+// is the expensive part of the vertical SEO build. `computePublished()` is
+// memoized per process and also persisted to `.next/cache/vertical-seo-gate.json`
+// so prebuild (verify) can compute once and `next build`/postbuild/sitemaps can
+// read the result back across processes. The cache is compact: each page's
+// content is stored once, keyed by URL, with its final failures, and the
+// published/failed/draft/skip sets are stored as URL lists (no record
+// duplication, no shingles). The key hashes the gate version, the as-of date,
+// the core data files, and the content/geo files of *released* verticals only —
+// unreleased content cannot change the result, so editing it never invalidates
+// the cache or slows a build.
+
+const GATE_VERSION = "2026-10-11.2";
+const GATE_CACHE_FILE = path.join(process.cwd(), ".next", "cache", "vertical-seo-gate.json");
+
+function walkJsonFiles(dir, out) {
+  if (!fs.existsSync(dir)) return;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, entry.name);
+    if (entry.isDirectory()) walkJsonFiles(p, out);
+    else if (/\.json$/.test(entry.name)) out.push(p);
+  }
+}
+
+function buildGateCacheKey(asOf, releasedSlugs) {
+  const h = crypto.createHash("sha256");
+  h.update(`GATE_VERSION:${GATE_VERSION}\0AS_OF:${asOf || ""}\0`);
+  const files = [
+    path.join(DATA_DIR, "launch.json"),
+    path.join(DATA_DIR, "verticals.json"),
+    path.join(DATA_DIR, "provinces.json"),
+    path.join(DATA_DIR, "cities.json"),
+    path.join(DATA_DIR, "proof.json"),
+  ];
+  for (const slug of releasedSlugs || []) {
+    walkJsonFiles(path.join(CONTENT_DIR, slug), files);
+    walkJsonFiles(path.join(DATA_DIR, "vertical-geo", slug), files);
+  }
+  files.sort();
+  for (const file of files) {
+    h.update(file);
+    h.update("\0");
+    if (fs.existsSync(file)) h.update(fs.readFileSync(file));
+    h.update("\0");
+  }
+  return h.digest("hex");
+}
+
+// Store each page once (content + final failures), then reference it by URL.
+function serializeGateResult(result) {
+  const pages = {};
+  for (const r of result.evaluated) {
+    pages[r.page.urlPath] = {
+      content: r.content || null,
+      uniqueWords: r.uniqueWords,
+      uniqueFields: r.uniqueFields,
+      failures: r.failures || [],
+    };
+  }
+  // failed/skipped/drafts carry the final failure lists — overwrite.
+  for (const list of [result.failed, result.skipped, result.drafts]) {
+    for (const r of list) {
+      pages[r.page.urlPath] = {
+        content: r.content || null,
+        uniqueWords: r.uniqueWords,
+        uniqueFields: r.uniqueFields,
+        failures: r.failures || [],
+      };
+    }
+  }
+  return {
+    pages,
+    published: result.published.map((r) => r.page.urlPath),
+    failed: result.failed.map((r) => r.page.urlPath),
+    drafts: result.drafts.map((r) => r.page.urlPath),
+    skipped: result.skipped.map((r) => r.page.urlPath),
+    released: result.released,
+    launchSkips: result.launchSkips,
+    scoringPairs: result.scoringPairs || [],
+  };
+}
+
+function readGateCache(key) {
+  if (!fs.existsSync(GATE_CACHE_FILE)) return null;
+  try {
+    const cached = JSON.parse(fs.readFileSync(GATE_CACHE_FILE, "utf8"));
+    if (cached.version !== GATE_VERSION || cached.key !== key) return null;
+    return cached;
+  } catch {
+    return null;
+  }
+}
+
+function writeGateCache(key, asOf, result) {
+  try {
+    fs.mkdirSync(path.dirname(GATE_CACHE_FILE), { recursive: true });
+    const blob = {
+      version: GATE_VERSION,
+      key,
+      asOf,
+      createdAt: new Date().toISOString(),
+      result: serializeGateResult(result),
+    };
+    fs.writeFileSync(GATE_CACHE_FILE, JSON.stringify(blob), "utf8");
+  } catch (err) {
+    console.warn(`vertical-seo gate cache write skipped: ${err.message}`);
+  }
+}
 
 function readJson(absPath) {
   const raw = fs.readFileSync(absPath, "utf8");
@@ -446,10 +558,68 @@ function levelOf(page) {
   return page.level;
 }
 
+// Top nearest-duplicate pairs (same vertical + level), used by the report and
+// cached with the gate result so a cache hit keeps the same reporting.
+function nearestDuplicatePairs(records, limit = 10) {
+  const pairs = [];
+  for (let i = 0; i < records.length; i++) {
+    for (let j = i + 1; j < records.length; j++) {
+      const a = records[i];
+      const b = records[j];
+      if (a.page.vertical.slug !== b.page.vertical.slug) continue;
+      if (a.page.level !== b.page.level) continue;
+      if (!a.shingles || !b.shingles) continue;
+      const score = jaccard(a.shingles, b.shingles);
+      pairs.push({ a: a.page.urlPath, b: b.page.urlPath, score });
+    }
+  }
+  return pairs.sort((x, y) => y.score - x.score).slice(0, limit);
+}
+
 function computePublished(opts = {}) {
   const includeDrafts = opts.includeDrafts === true;
+  const asOf = opts.asOf || launch.asOfDate();
+  const memoKey = `${asOf}|${includeDrafts ? "drafts" : "live"}`;
+  const tStart = Date.now();
+  const released = launch.releasedSlugs(asOf);
+
+  const withTimings = (result, source, totalMs) => ({
+    ...result,
+    timings: {
+      source,
+      gateMs: 0,
+      similarityMs: 0,
+      linksMs: 0,
+      totalMs: totalMs != null ? totalMs : Date.now() - tStart,
+    },
+  });
+  const memoize = (result) => {
+    if (!includeDrafts) {
+      _cache.publishedMemo = { ...(_cache.publishedMemo || {}), [memoKey]: result };
+    }
+    return result;
+  };
+
+  // Process-level memoization: every computePublished() call in this process
+  // (nav snapshot, /industries, page getStaticProps, next.config redirects)
+  // shares one result per (as-of, includeDrafts). This is the main win — a
+  // release build evaluates the gate once, not once per generated page.
+  if (_cache.publishedMemo && _cache.publishedMemo[memoKey]) {
+    return withTimings(_cache.publishedMemo[memoKey], "memo");
+  }
+
+  // Cross-process disk cache (written by prebuild verify, read by the Build):
+  // .next/cache/vertical-seo-gate.json.
+  if (!includeDrafts && opts.cacheRef !== false) {
+    const key = buildGateCacheKey(asOf, released);
+    const cached = readGateCache(key);
+    if (cached && cached.asOf === asOf) {
+      return memoize(withTimings(hydrateGateResult(cached.result), "cache"));
+    }
+    _cache.cacheKey = key;
+  }
+
   const allPages = enumeratePages();
-  const released = launch.releasedSlugs(opts.asOf);
   const livePages = allPages.filter(
     (p) => p.vertical.launchStatus === "live" && released.has(p.vertical.slug)
   );
@@ -459,6 +629,7 @@ function computePublished(opts = {}) {
     const basics = evaluateBasics(page, content);
     return { page, content, ...basics, shingles: shingleSet(uniqueProseText(content)) };
   });
+  const tGate = Date.now();
 
   let candidates;
   if (includeDrafts) {
@@ -493,6 +664,7 @@ function computePublished(opts = {}) {
       kept.push(cand);
     }
   }
+  const tSimilarity = Date.now();
 
   // Link pass: every published page's generated vertical links must be published.
   const publishedSet = new Set(kept.map((k) => k.page.urlPath));
@@ -512,6 +684,7 @@ function computePublished(opts = {}) {
       finalKept.push(k);
     }
   }
+  const tLinks = Date.now();
 
   const drafts = evaluated.filter((r) => r.content && r.content.status !== "reviewed");
   const gateFailed = evaluated.filter(
@@ -554,7 +727,10 @@ function computePublished(opts = {}) {
     .map(([slug, reasons]) => ({ slug, reasons: [...reasons] }))
     .sort((a, b) => a.slug.localeCompare(b.slug));
 
-  return {
+  const scoringPairs = nearestDuplicatePairs(evaluated.filter((r) => r.shingles));
+  const tEnd = Date.now();
+
+  const result = {
     all: allPages,
     evaluated,
     published,
@@ -564,6 +740,54 @@ function computePublished(opts = {}) {
     drafts,
     includeDrafts,
     released: [...released].sort(),
+    asOf,
+    scoringPairs,
+    timings: {
+      source: "computed",
+      gateMs: tGate - tStart,
+      similarityMs: tSimilarity - tGate,
+      linksMs: tLinks - tSimilarity,
+      totalMs: tEnd - tStart,
+    },
+  };
+
+  if (!includeDrafts) {
+    _cache.publishedMemo = { ...(_cache.publishedMemo || {}), [memoKey]: result };
+    if (_cache.cacheKey) writeGateCache(_cache.cacheKey, asOf, result);
+  }
+  return result;
+}
+
+function hydrateGateResult(data) {
+  const all = enumeratePages();
+  const pages = data.pages || {};
+  const byPath = new Map();
+  for (const page of all) byPath.set(page.urlPath, page);
+  const recordFor = (urlPath) => {
+    const p = pages[urlPath];
+    const page = byPath.get(urlPath);
+    if (!p || !page) return null;
+    return {
+      page,
+      content: p.content,
+      uniqueWords: p.uniqueWords,
+      uniqueFields: p.uniqueFields,
+      failures: p.failures || [],
+      shingles: undefined,
+    };
+  };
+  const mapPaths = (paths) => (paths || []).map(recordFor).filter(Boolean);
+  return {
+    all,
+    evaluated: mapPaths(Object.keys(pages)),
+    published: mapPaths(data.published),
+    failed: mapPaths(data.failed),
+    drafts: mapPaths(data.drafts),
+    skipped: mapPaths(data.skipped),
+    launchSkips: data.launchSkips || [],
+    released: data.released || [],
+    scoringPairs: data.scoringPairs || [],
+    includeDrafts: false,
   };
 }
 
@@ -1065,6 +1289,7 @@ module.exports = {
   uniqueFieldCount,
   evaluateBasics,
   computePublished,
+  nearestDuplicatePairs,
   buildLinks,
   buildLegacyLinks,
   getLegacyTherapistPages,

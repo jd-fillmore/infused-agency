@@ -9,12 +9,6 @@ const seo = require("../src/lib/verticalSeo");
 const services = require("../src/lib/services");
 const launch = require("../src/lib/launch");
 
-function jaccardFromText(a, b) {
-  return seo.jaccard
-    ? seo.jaccard(a, b)
-    : 0;
-}
-
 function writeNavSnapshot() {
   const snapshot = services.buildNavSnapshot();
   const dir = path.join(process.cwd(), "src", "generated");
@@ -22,25 +16,6 @@ function writeNavSnapshot() {
   const file = path.join(dir, "services-nav.json");
   fs.writeFileSync(file, JSON.stringify(snapshot, null, 2), "utf8");
   console.log(`Wrote ${path.relative(process.cwd(), file)}`);
-}
-
-function nearestPairs(records) {
-  const pairs = [];
-  for (let i = 0; i < records.length; i++) {
-    for (let j = i + 1; j < records.length; j++) {
-      const a = records[i];
-      const b = records[j];
-      if (a.page.vertical.slug !== b.page.vertical.slug) continue;
-      if (a.page.level !== b.page.level) continue;
-      if (!a.shingles || !b.shingles) continue;
-      let inter = 0;
-      for (const s of a.shingles) if (b.shingles.has(s)) inter++;
-      const union = a.shingles.size + b.shingles.size - inter;
-      const score = union === 0 ? 0 : inter / union;
-      pairs.push({ a: a.page.urlPath, b: b.page.urlPath, score });
-    }
-  }
-  return pairs.sort((x, y) => y.score - x.score).slice(0, 10);
 }
 
 function legacyPagesWithoutEquivalent(publishedSet) {
@@ -124,9 +99,9 @@ function main() {
       serviceStructural.push(`${r.service.url}: ${broken.join(", ")}`);
   }
 
-  const pairs = nearestPairs(
-    evaluated.filter((r) => r.shingles)
-  );
+  const pairs = Array.isArray(result.scoringPairs)
+    ? result.scoringPairs
+    : seo.nearestDuplicatePairs(evaluated.filter((r) => r.shingles));
   const orphans = legacyPagesWithoutEquivalent(publishedSet);
   const liveLegacyOrphans = seo.findOrphanLiveLegacyPages(published, publishedSet);
 
@@ -152,6 +127,11 @@ function main() {
   console.log(`Slug errors      : ${slugErrors.length}`);
   console.log(`Broken links     : ${brokenLinks.length}`);
   console.log(`Live legacy orphans: ${liveLegacyOrphans.length}`);
+  const t = result.timings || {};
+  console.log(`-- pipeline profile --`);
+  console.log(
+    `computePublished : source=${t.source}, gate ${t.gateMs}ms, similarity ${t.similarityMs}ms, links ${t.linksMs}ms, total ${t.totalMs}ms`
+  );
   console.log(`-- services --`);
   console.log(`Services         : ${servicesResult.services.length}`);
   console.log(`Service published: ${publishedServices.length}`);
@@ -183,6 +163,14 @@ function main() {
   lines.push(`- Draft-excluded: ${drafts.length}`);
   lines.push(`- Gate-failed: ${failed.length}`);
   lines.push(`- Skipped verticals: ${skipped.length}`);
+  lines.push("");
+  lines.push("## Build profile");
+  lines.push("");
+  lines.push(`- computePublished source: ${t.source}`);
+  lines.push(`- content gate: ${t.gateMs} ms`);
+  lines.push(`- similarity scoring: ${t.similarityMs} ms`);
+  lines.push(`- link pass: ${t.linksMs} ms`);
+  lines.push(`- total: ${t.totalMs} ms`);
   lines.push("");
   lines.push("## Launch schedule");
   lines.push("");

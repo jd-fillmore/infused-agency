@@ -80,6 +80,20 @@ function writeIndex(childNames) {
   console.log(`sitemap.xml: index with ${all.length} children`);
 }
 
+// A vertical that is no longer published (unreleased wave, held, or skipped by
+// the quality gate) must not keep a stale child sitemap on disk: it is still
+// fetchable even when the index does not link it. Remove any child sitemap that
+// was not written this run.
+function removeStaleVerticalSitemaps(writtenNames) {
+  const written = new Set(writtenNames);
+  for (const f of fs.readdirSync(PUBLIC)) {
+    if (!/^sitemap-vertical-.*\.xml$/.test(f)) continue;
+    if (written.has(f)) continue;
+    fs.unlinkSync(path.join(PUBLIC, f));
+    console.log(`removed stale ${f}`);
+  }
+}
+
 function writeServiceSitemap(publishedServices) {
   const entries = publishedServices
     .slice()
@@ -121,6 +135,7 @@ function main() {
   }
   const servicesName = writeServiceSitemap(publishedServices);
   if (servicesName) childNames.push(servicesName);
+  removeStaleVerticalSitemaps(childNames);
   writeIndex(childNames);
 }
 

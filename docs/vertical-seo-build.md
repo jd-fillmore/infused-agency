@@ -709,3 +709,45 @@ unset the job validates the gate and then reports that no endpoint is wired.
 - **`freezeAtWave` blocks deploys from its own release date onward.** While it
   is `null` (current schedule) this path is dormant; setting it to `N` means
   waves `> N` never release and the gate returns "frozen" on `N`'s release date.
+
+## Launch waves — item 6: build-time caching + profiling
+
+`computePublished()` is now cached at two levels, so a day-by-day release build
+evaluates the gate once instead of once per generated page:
+
+- **Per-process memo** keyed by `as-of|includeDrafts`. In `next build` this
+  covers getStaticPaths for all three dynamic routes, every getStaticProps, the
+  nav snapshot, `/industries`, and `next.config` redirects — the first call pays
+  the gate, the rest are O(1).
+- **Cross-process disk cache** at `.next/cache/vertical-seo-gate.json` keyed by
+  a SHA-256 of the gate version, the as-of date, the core data files
+  (`launch.json`, `verticals.json`, `provinces.json`, `cities.json`,
+  `proof.json`) and the content/geo files **of released verticals only**.
+  Unreleased content can't change the result, so editing it never invalidates
+  the cache. prebuild (`verify`) computes and writes it; `next build` and
+  postbuild (sitemaps, schema) read it back. The cache is compact — each page's
+  content is stored once by URL, plus URL lists for the published / failed /
+  draft / skip sets — so it is ~7 MB at the full catalogue rather than tens of
+  MB. `GATE_VERSION` must be bumped when the gate logic changes.
+
+The verifier prints a stopwatch profile (source + gate / similarity / link /
+total ms) and records it in `docs/vertical-seo-report.md`. Measured full
+catalogue (all 44 released verticals, 1680 pages): computed cold ≈ 1.2 s
+(gate ~0.94 s, similarity ~0.24 s, links ~0.03 s) vs ≈ 0.25 s from cache.
+`LAUNCH_AS_OF` still forces a different as-of date (and therefore a fresh key).
+
+`scripts/generate-vertical-sitemaps.js` now also deletes any
+`sitemap-vertical-*.xml` it did not write this run, so an unreleased, held or
+skipped vertical leaves no stale child sitemap on disk (the index never listed
+it, but the orphan file was still fetchable).
+
+### Assumptions recorded
+
+- **Editing unreleased content does not invalidate the cache.** Only released
+  verticals' files are hashed, because only they participate in the result;
+  this keeps the key cheap and avoids needless rebuilds.
+- **`GATE_VERSION` is the manual invalidation lever.** Any logic change to the
+  gate must bump it; schema/shape changes also require it because the cache
+  stores the result shape directly.
+- **The cache is regenerated, not edited** (`.next` is git-ignored); a missing,
+  stale or malformed cache simply falls through to a fresh compute.
