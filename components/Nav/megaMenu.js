@@ -6,9 +6,11 @@ import Icon from "../ui/Icon";
 
 const OPEN_DELAY = 60;
 const CLOSE_DELAY = 160;
+const VISIBLE_INDUSTRIES = 8;
 
 const MegaMenu = () => {
   const [open, setOpen] = useState(false);
+  const [industriesExpanded, setIndustriesExpanded] = useState(false);
   const openTimer = useRef(null);
   const closeTimer = useRef(null);
   const rootRef = useRef(null);
@@ -41,6 +43,7 @@ const MegaMenu = () => {
   const closeNow = useCallback(() => {
     clearTimers();
     setOpen(false);
+    setIndustriesExpanded(false);
   }, [clearTimers]);
 
   const onKeyDown = (event) => {
@@ -130,7 +133,10 @@ const MegaMenu = () => {
                 SEO by industry
               </p>
               <ul className="flex flex-wrap gap-x-6 gap-y-0.5">
-                {INDUSTRIES.map((link) => (
+                {(industriesExpanded
+                  ? INDUSTRIES
+                  : INDUSTRIES.slice(0, VISIBLE_INDUSTRIES)
+                ).map((link) => (
                   <li key={link.url}>
                     <Link
                       href={link.url}
@@ -141,6 +147,24 @@ const MegaMenu = () => {
                   </li>
                 ))}
               </ul>
+              {INDUSTRIES.length > VISIBLE_INDUSTRIES && (
+                <button
+                  type="button"
+                  onClick={() => setIndustriesExpanded((prev) => !prev)}
+                  aria-expanded={industriesExpanded}
+                  className="mt-1.5 inline-flex items-center gap-1 rounded-md px-2 py-1 text-[13px] font-semibold text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  {industriesExpanded
+                    ? "Show less"
+                    : `View all industries (${INDUSTRIES.length})`}
+                  <Icon
+                    name="chevron"
+                    className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                      industriesExpanded ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              )}
             </div>
           )}
         </Container>

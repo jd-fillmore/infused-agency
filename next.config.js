@@ -90,6 +90,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/website-audit",
+        destination: "/get-a-quote",
+        permanent: true,
+      },
+      {
+        source: "/how-we-work",
+        destination: "/services",
+        permanent: true,
+      },
+      {
         source: "/reviews",
         destination: "/get-a-quote",
         permanent: true,

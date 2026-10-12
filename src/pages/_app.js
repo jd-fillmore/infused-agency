@@ -1,6 +1,6 @@
 import "../styles/tailwind.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../../src/pages/general.scss";
 import "../../src/pages/variables.scss";
 import "../../src/pages/breakpoints.scss";
@@ -25,7 +25,6 @@ import "../../components/Card/card.scss";
 import "../pages/work.scss";
 import "../pages/seo.scss";
 import "../pages/work-specific.scss";
-import "../pages/how-we-work.scss";
 import "../pages/areas-served.scss";
 import "../pages/digital-marketing.scss";
 import "../../components/seoFAQ/seo-faq.scss";
@@ -43,16 +42,16 @@ import "../styles/rescue.css";
 import "../styles/legacy-saas.css";
 import Script from "next/script";
 
-export const manrope = Manrope({
+export const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
-  variable: "--font-manrope",
+  variable: "--font-inter",
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${manrope.variable} font-body`}>
+    <div className={`${inter.variable} font-body`}>
       <Script
         strategy="afterInteractive"
         src="https://googletagmanager.com/gtag/js?id=G-9R67WGJ9RB"

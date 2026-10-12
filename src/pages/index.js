@@ -29,6 +29,9 @@ import feat5 from "../../src/img/feat-kd.png";
 import feat6 from "../../src/img/feat-delta.png";
 import feat7 from "../../src/img/feat-brandi.png";
 import feat8 from "../../src/img/feat-jerry.png";
+import test1 from "../../src/img/seo-company-niagara.png";
+import test2 from "../../src/img/seo-niagara-experts.png";
+import test3 from "../../src/img/seo-niagara-services.png";
 
 const TRUST = [
   { icon: "users", label: "50+ Niagara businesses helped" },
@@ -70,8 +73,8 @@ const START_PATHS = [
 
 const BUYER_GUIDES = [
   { label: "All services", href: "/services" },
-  { label: "How we work", href: "/how-we-work" },
-  { label: "Free website audit", href: "/website-audit" },
+  { label: "Our work", href: "/work" },
+  { label: "Get a quote", href: "/get-a-quote" },
 ];
 
 const INTENT_PATHS = [
@@ -103,7 +106,7 @@ const STEPS = [
     number: "1",
     title: "Research and competitive analysis",
     description:
-      "We audit your site, study your local competitors and map the keywords and pages that can actually bring in enquiries.",
+      "We review your site, study your local competitors and map the keywords and pages that can actually bring in enquiries.",
   },
   {
     number: "2",
@@ -298,7 +301,7 @@ const Home = () => {
                   show you the fastest way there.
                 </p>
                 <Button href="/get-a-quote" size="lg" className="mt-6 w-full">
-                  Claim your free audit
+                  Get your free quote
                   <Icon name="arrow-right" className="h-4 w-4" />
                 </Button>
                 <p className="mt-6 border-t border-border pt-5 text-xs leading-relaxed text-muted">
@@ -393,18 +396,27 @@ const Home = () => {
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <TestimonialCard
+            showStars
+            avatar={test1}
+            avatarAlt="Lucas Folino"
             quote="Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!"
             person="Lucas Folino"
             role="Owner"
             company="Fred’s Concrete"
           />
           <TestimonialCard
+            showStars
+            avatar={test2}
+            avatarAlt="Brandi May"
             quote="Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!"
             person="Brandi May"
             role="Owner"
             company="Brandi May Psychotherapy"
           />
           <TestimonialCard
+            showStars
+            avatar={test3}
+            avatarAlt="Sandro Visca"
             quote="Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field."
             person="Sandro Visca"
             role="Owner"
@@ -419,13 +431,13 @@ const Home = () => {
           <ul className="grid grid-cols-2 items-center gap-6 sm:grid-cols-4 lg:grid-cols-8">
             {CLIENT_LOGOS.map((item) => (
               <li key={item.alt} className="flex justify-center">
-                <div className="relative h-10 w-28">
+                <div className="relative h-8 w-20">
                   <Image
                     src={item.src}
                     alt={item.alt}
                     fill
-                    sizes="112px"
-                    className="object-contain opacity-80"
+                    sizes="80px"
+                    className="object-contain opacity-75"
                   />
                 </div>
               </li>
@@ -524,7 +536,7 @@ const Home = () => {
 
       <Section
         id="process"
-        eyebrow="How we work"
+        eyebrow="Our process"
         heading="A process you can follow at every step"
         subhead="No black boxes. Here is the same four-step process we run for every SEO engagement."
       >
@@ -544,8 +556,8 @@ const Home = () => {
           ))}
         </div>
         <div className="mt-8">
-          <Button href="/how-we-work" variant="secondary">
-            See how we work in detail
+          <Button href="/services" variant="secondary">
+            See our services
             <Icon name="arrow-right" className="h-4 w-4" />
           </Button>
         </div>

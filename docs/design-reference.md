@@ -10,13 +10,13 @@ general design language only (redesign spec rule 1).
 
 | Role | Reference family | Licence | Our choice |
 | --- | --- | --- | --- |
-| Body / UI | Inter (300–800) | SIL Open Font License | Manrope (400 / 600 / 700) |
-| Display / headings | Playfair Display (400–700) | SIL Open Font License | Manrope (400 / 600 / 700) |
+| Body / UI | Inter (300–800) | SIL Open Font License | Inter (400 / 500 / 600 / 700 / 800) |
+| Display / headings | Playfair Display (400–700) | SIL Open Font License | Inter (400 / 500 / 600 / 700 / 800) |
 
-We use a single modern sans (Manrope) for body and headings — the serif display
-family was dropped after owner review. Manrope is SIL OFL, loaded through
+We use a single modern sans (Inter) for body and headings — the serif display
+family was dropped after owner review. Inter is SIL OFL, loaded through
 `next/font` (built-in, self-hosted, `font-display: swap`, no render-blocking
-third-party request), capped at 3 weights for the performance budget.
+third-party request).
 
 ## Colour palette (reference, for contrast calibration only)
 

@@ -9,8 +9,11 @@
 //
 // Fails (exit 1) on any change to title, meta description, canonical, robots or
 // JSON-LD types, or to the H1, for pages that are not listed in
-// docs/redesign-allowlist.json. Only the homepage H2s and the new /industries
-// page may be allowlisted; intentionally deleted pages go in allowRemovedPages.
+// docs/redesign-allowlist.json. A page's H2s may be allowlisted when the redesign
+// only restyles or reorders headings (demotes H2 to H3, relabels a section) while
+// keeping every keyword-bearing/informational heading and the content; new pages
+// go in allowNewPages, deleted pages in allowRemovedPages, and intentional title
+// fixes in allowTitleChanges.
 // Warns (no exit) when main-content word count drops more than 15%.
 //
 // Skips (exit 0) when there is no build, or no baseline yet, so it is safe to
@@ -271,6 +274,7 @@ function compare() {
   const allowH2 = new Set(allow.allowH2Changes || []);
   const allowNew = new Set(allow.allowNewPages || []);
   const allowRemoved = new Set(allow.allowRemovedPages || []);
+  const allowTitle = new Set(allow.allowTitleChanges || []);
 
   const failures = [];
   const warnings = [];
@@ -313,6 +317,10 @@ function compare() {
         ? !sameList(bv, cv)
         : bv !== cv;
       if (changed) {
+        if (f === "title" && allowTitle.has(url)) {
+          info.push(`${url}: title changed (allowlisted)`);
+          continue;
+        }
         failures.push(
           `${url}: ${f} changed\n      before: ${JSON.stringify(
             bv

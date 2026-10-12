@@ -31,8 +31,8 @@ const CTA = () => {
                 Get Free Quote
                 <Icon name="arrow-right" className="h-4 w-4" />
               </Button>
-              <Button href="/website-audit" variant="secondary" size="lg">
-                Free website audit
+              <Button href="/work" variant="secondary" size="lg">
+                See our work
               </Button>
             </div>
           </div>

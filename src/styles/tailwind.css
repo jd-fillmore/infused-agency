@@ -36,10 +36,10 @@
   --text-h3: clamp(1.3rem, 1.15rem + 0.7vw, 1.7rem);
   --text-lead: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
 
-  /* Fonts — Manrope throughout, wired to the next/font variable in _app.js. */
-  --font-body: var(--font-manrope, ui-sans-serif), system-ui, -apple-system,
+  /* Fonts — Inter throughout, wired to the next/font variable in _app.js. */
+  --font-body: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
     "Segoe UI", Roboto, Arial, sans-serif;
-  --font-display: var(--font-manrope, ui-sans-serif), system-ui, -apple-system,
+  --font-display: var(--font-inter, ui-sans-serif), system-ui, -apple-system,
     "Segoe UI", Roboto, Arial, sans-serif;
 
   /* Radius scale */
@@ -79,6 +79,14 @@
   h5,
   h6 {
     font-family: var(--font-display);
+  }
+
+  /* Modern section rhythm: alternate redesigned sections onto the raised
+     surface colour so pages read as distinct bands instead of one flat
+     background. Utility classes with an explicit background (e.g.
+     bg-surface/40) still win, so hand-tuned pages are unaffected. */
+  .redesign-root > section:nth-of-type(even) {
+    background-color: var(--color-surface);
   }
 }
 

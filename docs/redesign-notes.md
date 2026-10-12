@@ -131,10 +131,10 @@ Decisions / assumptions logged:
 - [x] **`@next/font` → `next/font`.** Migrated `_app.js` to built-in `next/font`
       and removed the `@next/font` dependency (kills the "use built-in next/font"
       warning). `autoprefixer` dependency removed too.
-- [x] **Font.** Serif display headings removed. Everything is now **Manrope**
-      (400/600/700) via `next/font`, wired to `--font-body` / `--font-display`.
+- [x] **Font.** Serif display headings removed. Everything is now **Inter**
+      (400/500/600/700/800) via `next/font`, wired to `--font-body` / `--font-display`.
       Legacy SCSS font vars (`variables.scss` `$heading` / `$body`) updated to
-      Manrope; styleguide labels updated.
+      Inter; styleguide labels updated.
 - [x] **Accent colour.** Swapped the brand blue accent for a brand-adjacent
       **violet** (`#8b5cf6`, hover `#a78bfa`, deep `#5b21b6`, glow + radial
       atmospheres updated). Dark navy background kept.

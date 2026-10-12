@@ -146,7 +146,7 @@ button {
 /* ------------------------------------------------------------------ *
  * R5 — remaining inner pages (blog, article, shared heroes, forms).
  *
- * The redesign shell (dark global header/footer, tokens, Manrope type)
+ * The redesign shell (dark global header/footer, tokens, Inter type)
  * already reaches these pages via R1/R2 and the variables.scss remap.
  * This block finishes the sweep so they read as one system. Page
  * content, headings, links and schema are untouched.

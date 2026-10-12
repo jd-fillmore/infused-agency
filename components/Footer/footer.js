@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Container from "../ui/Container";
 import Icon from "../ui/Icon";
-import { GROUPS, INDUSTRIES } from "../Nav/navData";
+import { GROUPS } from "../Nav/navData";
 
 const CITIES = [
   { name: "Beamsville", href: "/seo/beamsville" },
@@ -129,25 +129,14 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <ColumnHeading>Industries</ColumnHeading>
+            <ColumnHeading>Niagara cities</ColumnHeading>
             <ul>
-              {INDUSTRIES.map((link) => (
-                <FooterLink key={link.url} href={link.url}>
-                  {link.name}
+              {CITIES.map((city) => (
+                <FooterLink key={city.href} href={city.href}>
+                  {city.name}
                 </FooterLink>
               ))}
             </ul>
-
-            <div className="mt-6">
-              <ColumnHeading>Niagara cities</ColumnHeading>
-              <ul>
-                {CITIES.map((city) => (
-                  <FooterLink key={city.href} href={city.href}>
-                    {city.name}
-                  </FooterLink>
-                ))}
-              </ul>
-            </div>
           </div>
 
           <div className="lg:col-span-3">
