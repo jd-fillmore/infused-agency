@@ -1,0 +1,80 @@
+name: Vertical SEO CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  verify:
+    name: Verify vertical SEO
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - name: Quality gate + launch schedule
+        run: yarn verify:seo
+
+  build:
+    name: Production build (prebuild runs quality gate + deploy decision)
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - name: yarn build
+        run: yarn build
+
+  deploy:
+    name: Deploy (launch gate)
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+
+      # Gate: fail the deploy job on embargo days (before startDate) or after
+      # freezeAtWave, so the vertical surface can never go live early or late.
+      - name: Should deploy today? (gate)
+        run: node scripts/should-deploy-today.js
+
+      # Detect the deploy target. The repo ships no vercel.json / netlify.toml /
+      # now.json / render.yaml, so Vercel auto-deploy is intentionally not used;
+      # deploys are driven by an explicit deploy hook instead.
+      - name: Detect deploy platform config
+        id: platform
+        run: |
+          found=$(ls vercel.json netlify.toml now.json render.yaml 2>/dev/null | sed '/^$/d' | wc -l | tr -d ' ')
+          echo "found=$found" >> "$GITHUB_OUTPUT"
+          if [ "$found" -eq 0 ]; then
+            echo "No vercel.json / netlify.toml / now.json / render.yaml present — no auto-deploy target detected (expected)."
+          fi
+
+      - name: Trigger deploy (Vercel deploy hook)
+        if: ${{ secrets.VERCEL_DEPLOY_HOOK != '' }}
+        env:
+          DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: curl -fsS -X POST "$DEPLOY_HOOK"
+
+      - name: No deploy endpoint configured
+        if: ${{ secrets.VERCEL_DEPLOY_HOOK == '' }}
+        run: |
+          echo "VERCEL_DEPLOY_HOOK is not set as a repo secret, so this job"
+          echo "validates the gate but does not ping a deploy endpoint. To wire"
+          echo "production deploys, create a Vercel deploy hook, then add its URL"
+          echo "as the VERCEL_DEPLOY_HOOK secret (see docs/vertical-seo-build.md,"
+          echo "launch waves - item 5)."

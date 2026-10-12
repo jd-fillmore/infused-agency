@@ -668,3 +668,44 @@ skipped-released-vertical reasons.
   exact trade the spec asks for; verify stays green on a skipped vertical.
 - **`docs/launch-status.md` is a generated artifact** (do not edit by hand); it
   is committed so the rolling status is visible in-repo after each `verify:seo`.
+
+## Launch waves — item 5: CI deploy gate (`.github/workflows/ci.yml`)
+
+The launch schedule now fences production deploys. `scripts/should-deploy-today.js`
+answers "should we deploy today?" and gates CI:
+
+- **Gate mode (default):** exit 0 when deployable, exit 1 when blocked.
+  Blocked happens on **embargo** days (as-of date before `startDate`, or no
+  released verticals) and after **`freezeAtWave`** is reached (as-of date >= the
+  freeze wave's date) — so nothing publishes before `startDate` and nothing new
+  can appear after the freeze. Run as `yarn deploy:gate` (the CI deploy job).
+- **Report mode (`--report`):** writes `.next/vertical-seo-deploy.json` with the
+  full decision and *always exits 0*. This is wired into `prebuild`, so local
+  and CI builds succeed on embargo days (they must — the embargo surface is
+  intentionally empty) while still recording that today is not deployable.
+
+GitHub Actions workflow (`.github/workflows/ci.yml`) runs three jobs on
+push/PR: `verify` (`yarn verify:seo`), `build` (`yarn build` — which re-runs the
+quality gate + deploy decision as part of `prebuild`), and `deploy` (main
+branch only, needs `build`). The `deploy` job runs `node scripts/should-deploy-today.js`
+as its first step — a blocked decision fails the job, so nothing after it
+(including the deploy-hook POST) ever runs. The workflow detects a deploy
+platform (absence of `vercel.json` / `netlify.toml` / `now.json` / `render.yaml`,
+which is the case in this repo), and triggers production deploys via a Vercel
+deploy hook URL held in the `VERCEL_DEPLOY_HOOK` repo secret; if the secret is
+unset the job validates the gate and then reports that no endpoint is wired.
+
+### Assumptions recorded
+
+- **Vercel auto-deploy is deliberately not used.** The repo has no
+  `vercel.json`/`netlify.toml`/`now.json`, and the task asks for auto-deploy to
+  be blocked in favour of an explicit deploy-hook flow controlled by the gate.
+  A Netlify equivalent would be a build hook URL in a repo secret curl'd by the
+  same deploy job (documented in the workflow comments).
+- **Dates compare as whole UTC days** (the same clock as the schedule).
+  `should-deploy-today.js` prints a timezone note when the as-of date is within
+  ~1 day of `startDate`, so a UTC-based CI platform can't silently flip the
+  embargo; `LAUNCH_AS_OF` exists for exact simulation.
+- **`freezeAtWave` blocks deploys from its own release date onward.** While it
+  is `null` (current schedule) this path is dormant; setting it to `N` means
+  waves `> N` never release and the gate returns "frozen" on `N`'s release date.
