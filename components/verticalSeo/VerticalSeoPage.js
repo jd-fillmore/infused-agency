@@ -10,6 +10,7 @@ import Card from "../ui/Card";
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import Breadcrumb from "../ui/Breadcrumb";
+import HeroAtmosphere from "../ui/HeroAtmosphere";
 import Accordion from "../ui/Accordion";
 import Icon from "../ui/Icon";
 import { buildGraph } from "../../src/lib/verticalSeoSchema";
@@ -183,10 +184,7 @@ function CityCard({ city, singular }) {
 function Hero({ page, children }) {
   return (
     <section className="relative overflow-hidden border-b border-border bg-surface pb-16 pt-28 sm:pt-32 lg:pt-36">
-      <div
-        className="pointer-events-none absolute inset-0 glow-radial"
-        aria-hidden="true"
-      />
+      <HeroAtmosphere />
       <Container className="relative">
         <Breadcrumb items={page.breadcrumbs} className="mb-8" />
         <h1 className="max-w-4xl text-balance font-display text-h1 font-bold leading-[1.08] tracking-[-0.02em] text-ink">

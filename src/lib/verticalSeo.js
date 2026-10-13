@@ -1194,29 +1194,18 @@ function buildPageProps(page, publishedSet) {
 // the /industries hub. Never hardcodes province/city counts, so the grid grows
 // automatically as new verticals or geo pages go live.
 function buildIndustriesProps() {
-  const { published } = computePublished();
-  const liveVerticals = loadVerticals().filter(
-    (v) => v.launchStatus === "live" && published.some((r) => r.page.vertical.slug === v.slug)
-  );
-  const items = liveVerticals.map((v) => {
-    const pages = published.filter((r) => r.page.vertical.slug === v.slug);
-    const provinceCount = pages.filter((r) => r.page.kind === "province").length;
-    const cityCount = pages.filter((r) => r.page.kind === "city").length;
-    const parent = v.parentSlug ? getVerticalBySlug(v.parentSlug) : null;
-    return {
-      slug: v.slug,
-      urlSlug: v.urlSlug,
-      displayName: v.displayName,
-      category: v.category || (parent && parent.category) || "Other",
-      benefit:
-        v.industriesBenefit ||
-        (v.serviceEmphasis && v.serviceEmphasis[0]) ||
-        `Search growth built for ${v.displayName.toLowerCase()}`,
-      href: `/${v.urlSlug}`,
-      provinceCount,
-      cityCount,
-    };
-  });
+  // Niagara-first: the industries surfaced on the homepage and /industries are
+  // the curated bespoke Niagara programmes (plus the Canada-wide therapist
+  // programme). See src/lib/niagaraIndustries.js.
+  const { NIAGARA_INDUSTRIES } = require("./niagaraIndustries");
+  const items = NIAGARA_INDUSTRIES.map((v) => ({
+    slug: v.slug,
+    displayName: v.displayName,
+    category: v.category,
+    benefit: v.benefit,
+    href: v.href,
+    coverage: v.coverage,
+  }));
   const categories = [...new Set(items.map((i) => i.category))].sort();
   return { items, categories };
 }

@@ -6,14 +6,7 @@
       "wave": 1,
       "offsetDays": 0,
       "verticals": [
-        "therapists",
-        "electricians",
-        "plumbers",
-        "hvac-contractors",
-        "roofers",
-        "landscapers",
-        "dentists",
-        "accountants"
+        "therapists"
       ]
     },
     {

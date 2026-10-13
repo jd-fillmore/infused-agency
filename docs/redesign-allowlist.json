@@ -11,9 +11,34 @@
     "/seo/port-colborne",
     "/seo/st-catharines",
     "/seo/thorold",
-    "/seo/welland"
+    "/seo/welland",
+    "/sitemap"
   ],
-  "allowNewPages": ["/industries"],
-  "allowRemovedPages": ["/pricing", "/website-audit", "/how-we-work"],
+  "allowNewPages": [
+    "/industries",
+    "/seo/for-concrete-contractors-niagara",
+    "/seo/for-insulation-niagara",
+    "/seo/for-electricians-niagara",
+    "/seo/for-law-firms-niagara",
+    "/seo/for-solar-companies-niagara",
+    "/seo/for-wineries-niagara",
+    "/seo/for-deck-builders-niagara"
+  ],
+  "allowRemovedPages": [
+    "/pricing",
+    "/website-audit",
+    "/how-we-work",
+    "/alberta-arborist-tree-removal-websites",
+    "/british-columbia-arborist-tree-removal-websites",
+    "/seo-dental-in-ontario",
+    "/seo/for-solar-companies-arizona",
+    "/seo/for-solar-companies-chandler",
+    "/seo/for-solar-companies-gilbert",
+    "/seo/for-solar-companies-glendale",
+    "/seo/for-solar-companies-mesa",
+    "/seo/for-solar-companies-phoenix",
+    "/seo/for-solar-companies-scottsdale",
+    "/seo/for-solar-companies-tucson"
+  ],
   "allowTitleChanges": ["/seo/white-label"]
 }

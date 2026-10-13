@@ -993,7 +993,7 @@ const Home = ({ latestPosts, industries = [] }) => {
         id="industries"
         eyebrow="Industries"
         heading="SEO built around your industry"
-        subhead="Some industries have their own search behaviour, competition and rules. We build search programmes around how a specific industry actually gets found, then drill into the provinces and cities we cover."
+        subhead="Some industries have their own search behaviour, competition and rules. We build search programmes around how a specific industry actually gets found, right here in the Niagara region."
       >
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {industries.map((item) => (
@@ -1019,7 +1019,7 @@ const Home = ({ latestPosts, industries = [] }) => {
                 href={item.href}
                 className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
               >
-                View provinces
+                Learn more
                 <Icon name="arrow-right" className="h-4 w-4" />
               </Link>
             </Card>
@@ -1142,10 +1142,9 @@ export async function getStaticProps() {
     image,
   }));
   const { buildIndustriesProps } = require("../lib/verticalSeo");
-  const industries = buildIndustriesProps().items.map((item) => ({
-    ...item,
-    coverage: `${item.provinceCount} provinces · ${item.cityCount} cities`,
-  }));
+  const industries = buildIndustriesProps().items.filter(
+    (item) => item.slug !== "therapists"
+  );
   return {
     props: {
       latestPosts,

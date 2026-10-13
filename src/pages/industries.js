@@ -16,10 +16,10 @@ import { industriesGraph } from "../lib/verticalSeoSchema";
 
 const TITLE = "SEO by Industry | Infused Agency";
 const DESCRIPTION =
-  "SEO programmes built for specific industries. See the sectors Infused Agency serves, the provinces and cities covered, and how to get started.";
+  "SEO programmes built for specific industries in the Niagara region and beyond. See the sectors Infused Agency serves and how to get started.";
 const H1 = "SEO by industry";
 const SUBHEAD =
-  "We build search programmes around how a specific industry actually gets found. Start with the sector closest to your business, then drill into the provinces and cities we cover.";
+  "We build search programmes around how a specific industry actually gets found. Start with the sector closest to your business, then explore the industries we serve across Niagara.";
 
 function pluralize(n, singular, plural) {
   return `${n} ${n === 1 ? singular : plural}`;
@@ -89,7 +89,7 @@ const Industries = ({ items = [], categories = [] }) => {
 
         <Section
           heading="Browse by industry"
-          subhead="Every card below is a live programme with published province and city pages. Filter by category, or jump straight to a pillar to see the provinces we cover."
+          subhead="Every card below links to a live programme. Filter by category, or jump straight to the industry closest to your business."
         >
           <div className="mb-8 flex flex-wrap gap-2" role="group" aria-label="Filter by industry category">
             {chips.map((chip) => {
@@ -126,13 +126,13 @@ const Industries = ({ items = [], categories = [] }) => {
                 </p>
                 <p className="mt-4 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.12em] text-muted">
                   <Icon name="map-pin" className="h-4 w-4 text-accent" />
-                  {coverageLine(item)}
+                  {item.coverage || coverageLine(item)}
                 </p>
                 <Link
                   href={item.href}
                   className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
                 >
-                  View provinces
+                  Learn more
                   <Icon name="arrow-right" className="h-4 w-4" />
                 </Link>
               </Card>

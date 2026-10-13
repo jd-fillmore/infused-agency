@@ -330,3 +330,59 @@ button {
     scroll-behavior: auto !important;
   }
 }
+
+/* Therapist /seo/ city + province heroes (.seo-city-hero, stacked with a
+   per-region photo class such as .alberta) adopt the homepage light aurora
+   band so every SEO page shares the same "sexy gradient" header. The higher
+   specificity of `section.seo-city-hero` beats the legacy per-province
+   `background` rules, and this sheet loads last. */
+section.seo-city-hero {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-surface) !important;
+  background-image: linear-gradient(
+      to right,
+      rgba(22, 27, 51, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(22, 27, 51, 0.06) 1px, transparent 1px) !important;
+  background-size: 56px 56px !important;
+  background-repeat: repeat !important;
+  background-attachment: scroll !important;
+  background-blend-mode: normal !important;
+}
+
+section.seo-city-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 620px;
+  pointer-events: none;
+  background-image: radial-gradient(
+      38% 50% at 12% 18%,
+      rgba(0, 92, 151, 0.34),
+      transparent 68%
+    ),
+    radial-gradient(
+      42% 56% at 88% 12%,
+      rgba(54, 55, 149, 0.3),
+      transparent 68%
+    ),
+    radial-gradient(
+      34% 42% at 74% 88%,
+      rgba(226, 192, 68, 0.3),
+      transparent 66%
+    ),
+    radial-gradient(
+      46% 58% at 38% 104%,
+      rgba(63, 111, 216, 0.26),
+      transparent 72%
+    );
+  filter: blur(36px) saturate(1.08);
+  opacity: 0.9;
+}
+
+section.seo-city-hero > * {
+  position: relative;
+  z-index: 1;
+}
