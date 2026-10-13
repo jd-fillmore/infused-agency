@@ -12,9 +12,13 @@ export default function ServiceCard({
 }) {
   const body = (
     <>
+      <span
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-1 bg-brand-gradient opacity-80"
+      />
       <div className="flex items-center justify-between">
         {number != null && (
-          <span className="font-display text-2xl font-bold text-accent">
+          <span className="font-display text-2xl font-bold text-brand-gradient">
             {number}
           </span>
         )}
@@ -33,7 +37,7 @@ export default function ServiceCard({
   );
 
   const classes = cn(
-    "group flex h-full flex-col rounded-xl border border-border bg-card p-6 shadow-card card-lift",
+    "group relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card p-6 shadow-card card-lift",
     className
   );
 

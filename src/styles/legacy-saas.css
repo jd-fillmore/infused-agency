@@ -39,12 +39,29 @@ button {
   border-radius: 0.625rem !important;
 }
 
-/* City/vertical hero H1s are over-forced to 20px by legacy hero.scss. */
+/* City/vertical hero H1s are over-forced to 20px by legacy hero.scss, and
+   inner-hero.scss hard-codes rgba(#fff, 0.5) — invisible on the light band. */
 .seo-city-hero h1,
 .seo-city-hero .intro,
 .inner-hero-cities h1 {
   font-size: var(--text-h1) !important;
   line-height: 1.1 !important;
+  color: var(--color-ink) !important;
+}
+
+/* The dental niche hero (.niche-pages .hero) is a gradient band now, but
+   general.scss still forces #fff on its headings and copy. Photo heroes
+   (.niche-inner-hero) intentionally stay white on their dark scrims. */
+.niche-pages .hero h1,
+.niche-pages .hero h2,
+.niche-pages .hero h3,
+.niche-pages .hero p {
+  color: var(--color-ink) !important;
+}
+
+.niche-pages .hero h2.intro,
+.niche-pages .hero h2.sub {
+  color: var(--color-muted) !important;
 }
 
 .seo-city-hero p,

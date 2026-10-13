@@ -25,6 +25,25 @@ const PATHS = {
     </>
   ),
   code: <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />,
+  layout: (
+    <>
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M3 9h18M9 21V9" />
+    </>
+  ),
+  pencil: <path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4 12.5-12.5z" />,
+  link: (
+    <>
+      <path d="M10 13a5 5 0 007.5.5l3-3a5 5 0 00-7-7l-1.7 1.7" />
+      <path d="M14 11a5 5 0 00-7.5-.5l-3 3a5 5 0 007 7l1.7-1.7" />
+    </>
+  ),
+  "trending-up": (
+    <>
+      <path d="M22 7l-8.5 8.5-5-5L2 17" />
+      <path d="M16 7h6v6" />
+    </>
+  ),
   bolt: <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />,
   "map-pin": (
     <>

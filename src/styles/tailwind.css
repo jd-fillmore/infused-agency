@@ -38,6 +38,18 @@
     #363795 100%
   );
 
+  /* Full-strength brand gradient for surfaces/bands. */
+  --gradient-brand: linear-gradient(135deg, #005c97 0%, #363795 100%);
+
+  /* Brand gradient with a warm gold glint for hero/CTA accents. */
+  --gradient-warm: linear-gradient(
+    125deg,
+    #0e1b3d 0%,
+    #363795 42%,
+    #005c97 78%,
+    #e2c044 135%
+  );
+
   /* Fluid type scale (clamp) */
   --text-display: clamp(2.5rem, 1.9rem + 2.8vw, 4rem);
   --text-h1: clamp(2.25rem, 1.8rem + 2vw, 3.25rem);
@@ -151,6 +163,79 @@
       rgba(0, 92, 151, 0.08),
       transparent 70%
     );
+}
+
+/* Colourful brand "aurora burst" for light heroes — layered radials in the
+   brand blue/indigo plus a warm gold glint. It sits behind dark-ink copy at
+   low opacity, so heading/body contrast stays AA. */
+@utility aurora-burst {
+  background-image: radial-gradient(
+      38% 50% at 12% 18%,
+      rgba(0, 92, 151, 0.34),
+      transparent 68%
+    ),
+    radial-gradient(42% 56% at 88% 12%, rgba(54, 55, 149, 0.3), transparent 68%),
+    radial-gradient(34% 42% at 74% 88%, rgba(226, 192, 68, 0.3), transparent 66%),
+    radial-gradient(46% 58% at 38% 104%, rgba(63, 111, 216, 0.26), transparent 72%);
+  filter: blur(36px) saturate(1.08);
+}
+
+/* A single soft colour orb (decorative hero blob). */
+@utility orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(58px);
+  opacity: 0.7;
+  will-change: transform;
+  animation: orb-drift 16s ease-in-out infinite alternate;
+}
+
+@keyframes orb-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(3%, -4%, 0) scale(1.08);
+  }
+}
+
+/* Faint brand wash to tint alternating section bands. */
+@utility bg-brand-wash {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 92, 151, 0.07),
+      rgba(54, 55, 149, 0.05)
+    ),
+    radial-gradient(60% 80% at 90% 0%, rgba(226, 192, 68, 0.08), transparent 70%);
+}
+
+/* Gradient icon tile used behind feature/benefit icons. */
+@utility icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background-image: var(--gradient-brand);
+  color: #fff;
+  box-shadow: 0 12px 26px -12px rgba(0, 92, 151, 0.55);
+}
+
+/* Full brand gradient as a surface. */
+@utility bg-brand-gradient {
+  background-image: var(--gradient-brand);
+}
+
+/* Warm brand gradient (with gold glint) as a surface. */
+@utility bg-warm-gradient {
+  background-image: var(--gradient-warm);
+}
+
+/* Gradient text using the brand gradient. */
+@utility text-brand-gradient {
+  background-image: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Signature gradient text (clip applied via text-gradient helper). */
