@@ -11,7 +11,7 @@ const ADDRESS = "73 Alexandra Blvd, St. Catharines, ON L2P 1K2";
 
 const CTA = () => {
   return (
-    <section className="redesign-root border-t border-border bg-base">
+    <section className="redesign-root border-t border-border bg-brand-wash">
       <div
         className="pointer-events-none absolute inset-x-0 h-px"
         aria-hidden="true"

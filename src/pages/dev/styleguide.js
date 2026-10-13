@@ -20,11 +20,13 @@ const SWATCHES = [
   ["base", "bg-base"],
   ["surface", "bg-surface"],
   ["card", "bg-card"],
-  ["elevated", "bg-elevated"],
   ["accent", "bg-accent"],
   ["accent-deep", "bg-accent-deep"],
+  ["contrast", "bg-contrast"],
   ["gold", "bg-gold"],
   ["success", "bg-success"],
+  ["warning", "bg-warning"],
+  ["error", "bg-error"],
 ];
 
 const ICONS = [
@@ -65,7 +67,7 @@ export default function Styleguide() {
           <Section
             eyebrow="Internal"
             heading="Design system styleguide"
-            subhead="Tokens, typography, and components for the dark SaaS redesign. Dev only."
+            subhead="Tokens, typography, and components for the light design system. Dev only."
           >
             <Breadcrumb
               items={[
@@ -91,7 +93,7 @@ export default function Styleguide() {
         <Section heading="Typography" headingAs="h2">
           <div className="space-y-4">
             <p className="text-display font-display font-bold text-ink">
-              Display — Inter
+              Display — Poppins
             </p>
             <h2 className="text-h1 font-display font-bold text-ink">
               Heading 1 — fluid clamp
@@ -103,10 +105,10 @@ export default function Styleguide() {
               Heading 3 — fluid clamp
             </h4>
             <p className="text-lead text-muted">
-              Lead paragraph in Inter at the fluid lead size.
+              Lead paragraph in Poppins at the fluid lead size.
             </p>
             <p className="text-ink">
-              Body copy in Inter. Accent{" "}
+              Body copy in Poppins. Accent{" "}
               <span className="text-accent">links use the brand blue</span> and
               muted text sits a step softer.
             </p>
@@ -192,6 +194,39 @@ export default function Styleguide() {
               <Button>Submit</Button>
             </div>
           </Card>
+        </Section>
+
+        <Section heading="Motion" headingAs="h2">
+          <p className="mb-6 max-w-2xl text-sm text-muted">
+            One shared ease-out curve (<code>--ease-smooth</code>,
+            cubic-bezier(.2,.75,.25,1)) and duration scale: 150ms micro
+            interactions, 280ms card motion, 700ms image zoom. Hover effects only
+            run on pointer devices (<code>@media (hover: hover)</code>) and honour
+            reduced motion.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Card interactive>
+              <h3 className="text-lg font-semibold text-ink">Card lift</h3>
+              <p className="mt-2 text-sm text-muted">
+                Rises ~4px, deepens the shadow, tints the border toward the accent.
+              </p>
+            </Card>
+            <div className="rounded-xl border border-border bg-card p-6">
+              <p className="text-ink">
+                <a href="#" className="link-underline font-semibold text-accent">
+                  Underline reveal link
+                </a>
+              </p>
+              <span className="arrow-nudge mt-4 inline-flex items-center gap-2 font-semibold text-ink">
+                Arrow nudge <Icon name="arrow-right" className="h-4 w-4" />
+              </span>
+            </div>
+            <div className="media-zoom h-40 rounded-xl border border-border bg-gradient-to-br from-accent/20 to-surface" />
+          </div>
+          <div className="reveal mt-6 rounded-xl border border-border bg-surface p-6 text-sm text-muted">
+            Scroll-reveal block — fades up where the CSS <code>view()</code>
+            timeline is supported; identical (static) otherwise.
+          </div>
         </Section>
 
         <Section heading="Icons" headingAs="h2">

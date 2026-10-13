@@ -85,7 +85,7 @@ const MegaMenu = () => {
       <Link
         ref={triggerRef}
         href="/services"
-        className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-white/5 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-surface hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         aria-haspopup="true"
         aria-expanded={open}
         onClick={onTriggerClick}
@@ -93,15 +93,15 @@ const MegaMenu = () => {
         Solutions
         <Icon
           name="chevron"
-          className={`h-4 w-4 transition-transform duration-200 ${
+          className={`h-4 w-4 transition-transform duration-200 ease-smooth ${
             open ? "rotate-180" : ""
           }`}
         />
       </Link>
 
       <div
-        className={`absolute inset-x-0 top-full z-mega origin-top border-b border-border bg-surface/98 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.7)] backdrop-blur-md transition opacity-0 ${
-          open ? "visible opacity-100" : "invisible"
+        className={`absolute inset-x-0 top-full z-mega origin-top border-b border-border bg-surface shadow-[0_24px_60px_-24px_rgba(22,27,51,0.28)] backdrop-blur-md transition-[opacity,transform] duration-200 ease-smooth ${
+          open ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"
         }`}
       >
         <Container className="py-5">
@@ -116,7 +116,7 @@ const MegaMenu = () => {
                     <li key={link.url}>
                       <Link
                         href={link.url}
-                        className="block rounded-md px-2 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="block rounded-md px-2 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         {link.name}
                       </Link>
@@ -140,7 +140,7 @@ const MegaMenu = () => {
                   <li key={link.url}>
                     <Link
                       href={link.url}
-                      className="block rounded-md px-2 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      className="block rounded-md px-2 py-1 text-[13px] font-medium text-ink transition-colors hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       {link.name}
                     </Link>
@@ -159,7 +159,7 @@ const MegaMenu = () => {
                     : `View all industries (${INDUSTRIES.length})`}
                   <Icon
                     name="chevron"
-                    className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                    className={`h-3.5 w-3.5 transition-transform duration-200 ease-smooth ${
                       industriesExpanded ? "rotate-180" : ""
                     }`}
                   />

@@ -282,7 +282,7 @@ function CityLinks() {
           <li key={c.href}>
             <Link
               href={c.href}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
             >
               {c.name}
               <Icon name="arrow-right" className="h-4 w-4 text-accent" />

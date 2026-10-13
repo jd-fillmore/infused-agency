@@ -27,10 +27,14 @@ export default function TestimonialCard({
   return (
     <figure
       className={cn(
-        "flex h-full flex-col rounded-xl border border-border bg-card p-6 shadow-card",
+        "relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card p-6 shadow-card card-lift",
         className
       )}
     >
+      <span
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-1 bg-brand-gradient opacity-70"
+      />
       {showStars && <Stars />}
       <blockquote className="flex-1 text-sm leading-relaxed text-ink">
         {quote}

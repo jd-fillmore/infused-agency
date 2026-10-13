@@ -101,7 +101,7 @@ function LinkList({ title, links }) {
             {l.internal && l.href.startsWith("/") ? (
               <Link
                 href={l.href}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
               >
                 {l.label}
                 <Icon name="arrow-right" className="h-4 w-4 text-accent" />
@@ -109,7 +109,7 @@ function LinkList({ title, links }) {
             ) : (
               <a
                 href={l.href}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
               >
                 {l.label}
                 <Icon name="arrow-right" className="h-4 w-4 text-accent" />
@@ -348,7 +348,7 @@ const VerticalSeoPage = ({ page }) => {
                   {city.neighbourhoods.map((n, i) => (
                     <li
                       key={i}
-                      className="rounded-full border border-border bg-white/5 px-3 py-1 text-sm text-muted"
+                      className="rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted"
                     >
                       {n}
                     </li>
@@ -452,7 +452,7 @@ const VerticalSeoPage = ({ page }) => {
                 <li key={i}>
                   <Link
                     href={l.href}
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
                   >
                     {l.label}
                     <Icon name="arrow-right" className="h-4 w-4 text-accent" />

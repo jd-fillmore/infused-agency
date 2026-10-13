@@ -117,7 +117,7 @@ const SEO = ({ childServices = [] }) => {
           <div className="max-w-3xl space-y-4">
             <p className="text-base leading-relaxed text-muted">
               Search Engine Optimization (SEO) done by our{" "}
-              <Link className={LINK} href="/seo/niagara">
+              <Link className={LINK} href="/">
                 SEO Niagara
               </Link>{" "}
               team is your local business’s secret weapon in today’s digital
