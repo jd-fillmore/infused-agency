@@ -76,7 +76,8 @@ const Industries = ({ items = [], categories = [] }) => {
           heading={H1}
           headingAs="h1"
           subhead={SUBHEAD}
-          className="pt-32 sm:pt-36 lg:pt-40"
+          atmosphere
+          className="bg-surface pt-32 sm:pt-36 lg:pt-40"
         >
           <Breadcrumb
             className="mb-10"

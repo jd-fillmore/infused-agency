@@ -1,6 +1,7 @@
 import React from "react";
 import IndustryNiagaraPage from "../../../components/seo/IndustryNiagaraPage";
 import hero from "../../img/seo-for-deck-builders-niagara.jpg";
+import proofImage from "../../img/deck-building-seo.jpg";
 
 const page = {
   seo: {
@@ -26,7 +27,20 @@ const page = {
       "The goal is not traffic for its own sake. It is more qualified design consultations and build enquiries for the decks, pergolas, railings and fencing you actually want to sell, across the communities you actually serve.",
     ],
   },
-  proof: null,
+  proof: {
+    heading: "Client result",
+    client: "Timber Wolf Carpentry & Renovations",
+    subhead:
+      "Timber Wolf Carpentry & Renovations ranks for thousands of high-intent deck and renovation searches and now appears in Google, AI Overviews, ChatGPT and the Google Map Pack.",
+    label: "Client result",
+    image: proofImage,
+    alt: "Timber Wolf Carpentry & Renovations Niagara SEO results",
+    items: [
+      "Ranking for thousands of long-tail, high-buying-intent keywords",
+      "Visible in Google, AI Overviews and ChatGPT",
+      "Showing in the Google Map Pack",
+    ],
+  },
   bodyBlock: {
     heading: "Why deck builders need local SEO in Niagara",
     subhead: "Getting found before your competitors is the whole game",

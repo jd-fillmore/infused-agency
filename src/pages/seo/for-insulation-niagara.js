@@ -1,6 +1,7 @@
 import React from "react";
 import IndustryNiagaraPage from "../../../components/seo/IndustryNiagaraPage";
 import hero from "../../img/seo-for-insulation-niagara.jpg";
+import proofImage from "../../img/jerrys-insulating-seo.jpg";
 
 const page = {
   seo: {
@@ -26,7 +27,20 @@ const page = {
       "The goal is never vanity rankings or traffic for its own sake. It is a steadier flow of qualified quote requests for the insulation work you actually want to sell, across the communities you actually serve.",
     ],
   },
-  proof: null,
+  proof: {
+    heading: "Client result",
+    client: "Jerry's Insulating",
+    subhead:
+      "Jerry's Insulating ranks for thousands of high-intent insulation searches and now appears in Google, AI Overviews, ChatGPT and the Google Map Pack.",
+    label: "Client result",
+    image: proofImage,
+    alt: "Jerry's Insulating Niagara SEO results",
+    items: [
+      "Ranking for thousands of long-tail, high-buying-intent keywords",
+      "Visible in Google, AI Overviews and ChatGPT",
+      "Showing in the Google Map Pack",
+    ],
+  },
   bodyBlock: {
     heading: "Why insulation contractors need local SEO in Niagara",
     subhead: "Getting found before your competitors is the whole game",

@@ -1,6 +1,7 @@
 import React from "react";
 import IndustryNiagaraPage from "../../../components/seo/IndustryNiagaraPage";
 import hero from "../../img/seo-for-law-firms-niagara.jpg";
+import proofImage from "../../img/suk-law-seo.jpg";
 
 const page = {
   seo: {
@@ -26,7 +27,20 @@ const page = {
       "Our approach is to build that credibility into every page, so that when a prospective client compares your firm with another, yours reads as clear, trustworthy and genuinely local.",
     ],
   },
-  proof: null,
+  proof: {
+    heading: "Client result",
+    client: "Suk Law",
+    subhead:
+      "Suk Law ranks for thousands of high-intent legal searches and now appears in Google, AI Overviews, ChatGPT and the Google Map Pack.",
+    label: "Client result",
+    image: proofImage,
+    alt: "Suk Law Niagara SEO results",
+    items: [
+      "Ranking for thousands of long-tail, high-buying-intent keywords",
+      "Visible in Google, AI Overviews and ChatGPT",
+      "Showing in the Google Map Pack",
+    ],
+  },
   bodyBlock: {
     heading: "Why law firms need local SEO in Niagara",
     subhead: "Getting found while the decision is already being made",

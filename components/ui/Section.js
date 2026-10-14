@@ -1,6 +1,7 @@
 import React from "react";
 import { cn } from "./cn";
 import Container from "./Container";
+import HeroAtmosphere from "./HeroAtmosphere";
 
 export default function Section({
   as: Tag = "section",
@@ -11,6 +12,7 @@ export default function Section({
   headingId,
   subhead,
   align = "left",
+  atmosphere = false,
   className,
   headerClassName,
   bodyClassName,
@@ -19,8 +21,17 @@ export default function Section({
 }) {
   const hasHeader = Boolean(eyebrow || heading || subhead);
   return (
-    <Tag id={id} className={cn("py-16 sm:py-20 lg:py-24", className)} {...rest}>
-      <Container>
+    <Tag
+      id={id}
+      className={cn(
+        "py-16 sm:py-20 lg:py-24",
+        atmosphere && "relative overflow-hidden",
+        className
+      )}
+      {...rest}
+    >
+      {atmosphere && <HeroAtmosphere />}
+      <Container className={cn(atmosphere && "relative")}>
         {hasHeader && (
           <header
             className={cn(

@@ -1,7 +1,7 @@
 import React from "react";
 import IndustryNiagaraPage from "../../../components/seo/IndustryNiagaraPage";
 import hero from "../../img/seo-for-electricians-niagara.jpg";
-import proofImage from "../../img/visca-electric.png";
+import proofImage from "../../img/visca-electric-seo.jpg";
 
 const page = {
   seo: {
@@ -32,14 +32,14 @@ const page = {
     heading: "Client result",
     client: "VISCA Electric",
     subhead:
-      "\u201cWorking with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.\u201d \u2014 Sandro Visca, Owner",
-    label: "Owner, VISCA Electric",
+      "VISCA Electric ranks for thousands of high-intent electrical searches and now appears in Google, AI Overviews, ChatGPT and the Google Map Pack.",
+    label: "Client result",
     image: proofImage,
     alt: "VISCA Electric Niagara SEO results",
     items: [
-      "A responsive, informative partner from start to finish",
-      "Creative, efficient work tailored to the trade",
-      "Deep knowledge of local search for electricians",
+      "Ranking for thousands of long-tail, high-buying-intent keywords",
+      "Visible in Google, AI Overviews and ChatGPT",
+      "Showing in the Google Map Pack",
     ],
   },
   bodyBlock: {
