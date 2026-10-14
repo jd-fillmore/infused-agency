@@ -281,6 +281,68 @@ const COMMITMENTS = [
   },
 ];
 
+const GBP_ITEMS = [
+  {
+    icon: "map-pin",
+    title: "Categories, services and service areas",
+    description:
+      "The primary category, secondary categories and service list decide which searches your listing is eligible for. We set them around the work you actually want, and list the Niagara cities you serve.",
+  },
+  {
+    icon: "star",
+    title: "Reviews that build trust",
+    description:
+      "We set up a simple, repeatable way to ask happy customers for reviews and respond to the ones you receive, because rating and review volume sit right beside your name in the map pack.",
+  },
+  {
+    icon: "layers",
+    title: "Photos, posts and Q&A",
+    description:
+      "Real photos of your work, regular updates and answered questions make your listing look active and give customers a reason to call you instead of the next result.",
+  },
+  {
+    icon: "check",
+    title: "Consistent citations",
+    description:
+      "Your name, address and phone number should match everywhere Google looks. We clean up inconsistent listings and build the directory profiles that are worth having.",
+  },
+];
+
+const AUDIT_ITEMS = [
+  "Where you rank today for your main services and the Niagara cities you cover",
+  "A review of your Google Business Profile and local citations",
+  "Technical issues: speed, mobile, indexing, structured data",
+  "How the businesses outranking you on the same map are doing it",
+  "A short, prioritized list of what to fix first",
+];
+
+const AI_ITEMS = [
+  {
+    icon: "chat",
+    title: "Answer-ready content",
+    description:
+      "Pages that answer the questions buyers actually ask, in plain language, so there is something clear for an assistant to quote.",
+  },
+  {
+    icon: "check",
+    title: "Consistent business information",
+    description:
+      "Matching details across your site, Google Business Profile and directories, so AI tools see one trustworthy business rather than conflicting records.",
+  },
+  {
+    icon: "code",
+    title: "Structured data",
+    description:
+      "Markup that spells out who you are, where you work and what you offer in a form both search engines and AI tools can read.",
+  },
+  {
+    icon: "star",
+    title: "Reviews and mentions",
+    description:
+      "Genuine reviews and references from other local sources are the signals that help assistants decide who to recommend.",
+  },
+];
+
 const RESULT_IMAGES = [
   {
     src: flatRock,
@@ -311,10 +373,10 @@ const Home = ({ latestPosts, industries = [] }) => {
           }}
         />
 
-        <title>SEO Niagara | Grow Traffic &amp; Local Leads</title>
+        <title>SEO Niagara | Local SEO &amp; AI Search Company | Infused Agency</title>
         <meta
           name="description"
-          content="SEO Niagara by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving St. Catharines, Niagara Falls and the Niagara region."
+          content="Niagara SEO company for local businesses: local SEO, Google Business Profile, SEO audits and AI search. Based in St. Catharines. Free consultation."
         />
         <meta
           name="google-site-verification"
@@ -700,7 +762,53 @@ const Home = ({ latestPosts, industries = [] }) => {
       </Section>
 
       <Section
+        id="google-business-profile"
+        eyebrow="Maps and local pack"
+        heading="Google Business Profile optimization in St. Catharines and Niagara Falls"
+        subhead="For most Niagara businesses, the first thing a customer sees is not your website. It is three listings on a map."
+      >
+        <div className="max-w-3xl space-y-4 text-lead text-muted">
+          <p>
+            When someone searches for a service near them, Google shows a map
+            with three businesses, their ratings and a call button, before any
+            regular results. Most of the clicks and calls go to those three.
+            Getting your business into that group, in St. Catharines, Niagara
+            Falls, Welland and the towns around them, is usually the fastest way
+            local SEO turns into phone calls.
+          </p>
+          <p>
+            Your Google Business Profile is the biggest single piece of that.
+            We set it up properly, keep it active and make sure everything
+            around it, from your website to your directory listings, tells
+            Google the same story.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          {GBP_ITEMS.map((item) => (
+            <Card key={item.title} className="h-full">
+              <span className="icon-tile h-11 w-11">
+                <Icon name={item.icon} className="h-5 w-5" />
+              </span>
+              <h3 className="mt-4 text-lg font-semibold text-ink">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {item.description}
+              </p>
+            </Card>
+          ))}
+        </div>
+        <div className="mt-8">
+          <Button href="/seo/local-seo" variant="secondary">
+            Explore local SEO
+            <Icon name="arrow-right" className="h-4 w-4" />
+          </Button>
+        </div>
+      </Section>
+
+      <Section
         id="ai-search"
+        className="border-y border-border bg-surface/40"
         eyebrow="AI search"
         heading="AI search optimization for Niagara businesses"
         subhead="Get cited and recommended when customers ask AI assistants for local recommendations."
@@ -720,11 +828,72 @@ const Home = ({ latestPosts, industries = [] }) => {
             the kind of authority both search engines and AI tools reward.
           </p>
         </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {AI_ITEMS.map((item) => (
+            <Card key={item.title} className="h-full">
+              <span className="icon-tile h-11 w-11">
+                <Icon name={item.icon} className="h-5 w-5" />
+              </span>
+              <h3 className="mt-4 text-lg font-semibold text-ink">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                {item.description}
+              </p>
+            </Card>
+          ))}
+        </div>
         <div className="mt-8">
           <Button href="/ai-search" variant="secondary">
             Explore AI search
             <Icon name="arrow-right" className="h-4 w-4" />
           </Button>
+        </div>
+      </Section>
+
+      <Section
+        id="seo-audit"
+        eyebrow="Free SEO audit"
+        heading="Free SEO audit for Niagara businesses"
+        subhead="Find out where you stand before you spend anything."
+      >
+        <div className="grid items-start gap-10 lg:grid-cols-2">
+          <div className="space-y-4 text-lead text-muted">
+            <p>
+              If you are not sure why your website is not bringing in enquiries,
+              or whether an SEO company can actually help, start with an audit.
+              We look at your site, your Google Business Profile and the
+              businesses you are competing with, and tell you what is holding
+              you back.
+            </p>
+            <p>
+              The audit is free and comes with no obligation. You get a clear
+              list of what to fix whether or not you decide to work with us.
+            </p>
+            <div className="pt-2">
+              <Button href="/get-a-quote" size="lg">
+                Request your free audit
+                <Icon name="arrow-right" className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+          <Card className="h-full">
+            <h3 className="font-display text-h3 font-bold text-ink">
+              What the audit covers
+            </h3>
+            <ul className="mt-5 space-y-4">
+              {AUDIT_ITEMS.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <span className="icon-tile mt-0.5 h-7 w-7 shrink-0">
+                    <Icon name="check" className="h-4 w-4" />
+                  </span>
+                  <span className="text-sm leading-relaxed text-muted">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </Card>
         </div>
       </Section>
 
@@ -783,7 +952,43 @@ const Home = ({ latestPosts, industries = [] }) => {
       </Section>
 
       <Section
+        id="small-business-seo"
+        eyebrow="Small business SEO"
+        heading="SEO for small businesses in Niagara"
+        subhead="You do not need a big budget to compete locally. You need to show up for the right searches."
+      >
+        <div className="max-w-3xl space-y-4 text-lead text-muted">
+          <p>
+            A small business can outrank a much larger competitor in local
+            search, because Google rewards relevance to the person searching:
+            how close you are, how well your pages match the job, and how much
+            customers trust you. A national company with a generic page often
+            loses to a local one with a complete profile, good reviews and a page
+            written for exactly what the customer needs.
+          </p>
+          <p>
+            That is how we approach it. We pick the specific services and towns
+            that bring you profitable work, build pages and a profile around
+            them, and report on enquiries rather than vanity numbers. If you work
+            in a trade or professional service, see how we do it for your
+            industry below.
+          </p>
+        </div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Button href="/industries" variant="secondary">
+            Browse SEO by industry
+            <Icon name="arrow-right" className="h-4 w-4" />
+          </Button>
+          <Button href="/seo/local-seo" variant="secondary">
+            Local SEO for Niagara businesses
+            <Icon name="arrow-right" className="h-4 w-4" />
+          </Button>
+        </div>
+      </Section>
+
+      <Section
         id="why"
+        className="border-t border-border"
         eyebrow="Why Infused"
         heading="Why Niagara businesses choose Infused Agency"
         subhead="You want a partner who shows their work and gets local search. Here is what sets us apart."
