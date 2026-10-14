@@ -30,13 +30,60 @@ const NIAGARA_CITIES = [
   { name: "Fonthill", href: "/seo/fonthill" },
 ];
 
+const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+// Inline-link renderer for body copy. Paragraphs, checklist items and FAQ
+// answers may embed `[label](/href)` tokens, which render as internal links
+// using the site's accent styling. Everything else renders as plain text.
+function RichText({ text }) {
+  if (typeof text !== "string") return text;
+  const nodes = [];
+  let last = 0;
+  let match;
+  const re = new RegExp(LINK_RE);
+  while ((match = re.exec(text)) !== null) {
+    if (match.index > last) nodes.push(text.slice(last, match.index));
+    const [, label, href] = match;
+    const isInternal = href.startsWith("/");
+    nodes.push(
+      isInternal ? (
+        <Link
+          key={`${match.index}-${href}`}
+          href={href}
+          className="font-semibold text-accent transition-colors hover:text-accent-hover"
+        >
+          {label}
+        </Link>
+      ) : (
+        <a
+          key={`${match.index}-${href}`}
+          href={href}
+          className="font-semibold text-accent transition-colors hover:text-accent-hover"
+        >
+          {label}
+        </a>
+      )
+    );
+    last = re.lastIndex;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return <>{nodes}</>;
+}
+
+// Plain-text form of the same copy, for the FAQ JSON-LD so the structured data
+// matches the visible answer exactly (link labels inlined, no markup).
+function stripLinks(text) {
+  if (typeof text !== "string") return text;
+  return text.replace(new RegExp(LINK_RE), "$1");
+}
+
 function Prose({ paragraphs }) {
   if (!paragraphs || !paragraphs.length) return null;
   return (
     <div className="max-w-3xl">
       {paragraphs.map((p, i) => (
         <p key={i} className="mt-4 text-base leading-relaxed text-muted">
-          {p}
+          <RichText text={p} />
         </p>
       ))}
     </div>
@@ -53,7 +100,9 @@ function CheckList({ items }) {
           className="flex items-start gap-3 text-sm leading-relaxed text-muted"
         >
           <Icon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-          <span>{item}</span>
+          <span>
+            <RichText text={item} />
+          </span>
         </li>
       ))}
     </ul>
@@ -263,7 +312,33 @@ function Faq({ faqs }) {
   if (!faqs || !faqs.length) return null;
   return (
     <Section heading="Frequently Asked Questions">
-      <Accordion items={faqs} className="max-w-3xl" />
+      <Accordion
+        items={faqs.map((f) => ({ q: f.q, a: <RichText text={f.a} /> }))}
+        className="max-w-3xl"
+      />
+    </Section>
+  );
+}
+
+function MapEmbed({ city, region, query }) {
+  if (!city) return null;
+  const q = encodeURIComponent(query || (region ? `${city}, ${region}` : city));
+  return (
+    <Section
+      eyebrow="Service area"
+      heading={`Serving businesses across ${city}`}
+      subhead="We help local businesses get found across the city and the surrounding communities."
+    >
+      <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-card">
+        <iframe
+          title={`Google map of ${city}`}
+          src={`https://www.google.com/maps?q=${q}&z=12&output=embed`}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+          className="h-[360px] w-full border-0"
+        />
+      </div>
     </Section>
   );
 }
@@ -332,7 +407,7 @@ const NiagaraCityPage = ({ page }) => {
               mainEntity: page.faqs.map((f) => ({
                 "@type": "Question",
                 name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
+                acceptedAnswer: { "@type": "Answer", text: stripLinks(f.a) },
               })),
             }),
           }}
@@ -345,6 +420,7 @@ const NiagaraCityPage = ({ page }) => {
         <Proof proof={page.proof} />
         <ProseBlock block={page.servicesBlock} />
         <ProseBlock block={page.localBlock} />
+        <MapEmbed city={city} region={seo.region} query={page.mapQuery} />
         <WhyChoose whyChoose={page.whyChoose} />
         <ServicesGrid services={page.services} />
         <Faq faqs={page.faqs} />

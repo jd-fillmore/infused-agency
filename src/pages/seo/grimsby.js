@@ -25,9 +25,9 @@ const page = {
   intro: {
     heading: "Expert SEO Services in Grimsby - Grow Traffic & Local Leads",
     paragraphs: [
-      "These days it's Google's algorithm alongside AI assistants like ChatGPT, Gemini, and Google's AI Overviews that largely decide which local businesses get seen. As a Grimsby SEO & AI Search agency rooted in Niagara, Infused Agency exists to put your business in front of the right searchers—whether they're browsing from downtown Grimsby, out near Grimsby Beach, or travelling home along the QEW after a long day in the city.",
-      "Our approach blends local search optimization with AI-ready content, so your brand isn't just findable on Google but also recommended by the digital assistants your future customers are leaning on. From first-rate local optimization to full-scale search marketing, we build strategies that lift your online presence, earn more traffic, and turn searches into sales.",
-      "Set against the Niagara Escarpment and the Lake Ontario waterfront, Grimsby is a community with unmistakable character— the Gateway to Niagara, surrounded by apple country, fruit farms, and wineries, with the much-loved Grimsby Beach draw local crowds and commuters every season. That rich local flavour shapes how we approach local SEO in Grimsby: we understand the shoppers, the wine trail visitors, and the QEW commuters who make up your market, and we make sure your business comes up first when they search. Curious how a seasoned local SEO & AI Search partner could help you stand out in this tight-knit community? Reach out to us anytime.",
+      "These days it's Google's algorithm alongside AI assistants like ChatGPT, Gemini, and Google's AI Overviews that largely decide which local businesses get seen. As a Grimsby [SEO](/seo) & [AI Search](/ai-search) agency rooted in Niagara, Infused Agency exists to put your business in front of the right searchers—whether they're browsing from downtown Grimsby, out near Grimsby Beach, or travelling home along the QEW after a long day in the city.",
+      "Our approach blends [local SEO](/seo/local-seo) with AI-ready content, so your brand isn't just findable on Google but also recommended by the digital assistants your future customers are leaning on. From first-rate local optimization to full-scale search marketing, we build strategies that lift your online presence, earn more traffic, and turn searches into sales.",
+      "Set against the Niagara Escarpment and the Lake Ontario waterfront, Grimsby is a community with unmistakable character— the Gateway to Niagara, surrounded by apple country, fruit farms, and [wineries](/seo/for-wineries-niagara), with the much-loved Grimsby Beach draw local crowds and commuters every season. That rich local flavour shapes how we approach local SEO in Grimsby: we understand the shoppers, the wine trail visitors, and the QEW commuters who make up your market, and we make sure your business comes up first when they search. Curious how a seasoned local SEO & AI Search partner could help you stand out in this tight-knit community? Reach out to us anytime.",
     ],
   },
   proof: {
@@ -47,7 +47,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and Beyond",
     paragraphs: [
       "At Infused Agency, we're the dependable local SEO & AI Search partner for Grimsby businesses who want to be found. Whether you run a shop on Ontario Street, offer home services to families across West Lincoln, grow and sell from your own orchard or winery, or serve the steady flow of QEW commuters, our tailored strategies help you rank on Google and earn recommendations from AI tools like ChatGPT and Gemini—bringing in the kind of leads that actually convert.",
-      "As a forward-looking local search and AI Search agency, our team keeps pace with every meaningful shift in Google's algorithm and the AI landscape, so your Grimsby SEO services never go stale. We handle the full picture with precision: deep keyword research, thorough technical audits, polished on-page optimization, AI-ready copy, and authoritative link building—all woven into one cohesive strategy designed to keep your business competitive.",
+      "As a forward-looking local search and AI Search agency, our team keeps pace with every meaningful shift in Google's algorithm and the AI landscape, so your Grimsby SEO services never go stale. We handle the full picture with precision: deep keyword research, thorough [technical SEO](/seo/technical-seo) audits, polished on-page optimization, AI-ready copy, and authoritative [link building](/seo/link-building)—all woven into one cohesive strategy designed to keep your business competitive.",
       "Not long ago we partnered with a client here in the region who wanted a stronger search presence and a more polished online reputation. Through a focused plan built on targeted keyword research, smart website optimization, and credible local citations, they watched their website traffic climb and their lead pipeline fill up.",
       "Ready to take your business further with professional local SEO & AI Search from a well-regarded agency that knows Grimsby? Get in touch with Infused Agency today.",
     ],
@@ -144,7 +144,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Great content does far more than inform—it persuades visitors to become customers. Infused Agency's content writing and Grimsby SEO copywriting services are built for local businesses, pairing solid search optimization with messaging that fits the local scene. We weave in location-focused keywords and genuine references to the area with ease, producing service pages, blog posts, and website copy that rank well while earning the trust of your audience.",
+          "Great content does far more than inform—it persuades visitors to become customers. Infused Agency's content writing and Grimsby [SEO copywriting](/seo/content-writing) services are built for local businesses, pairing solid search optimization with messaging that fits the local scene. We weave in location-focused keywords and genuine references to the area with ease, producing service pages, blog posts, and website copy that rank well while earning the trust of your audience.",
         ],
       },
       {
@@ -185,44 +185,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What does local SEO actually mean for a Grimsby business?",
+      a: "We help Grimsby companies get discovered the moment a nearby customer searches for what they offer. That means earning visibility in Google's map results, organic listings and the answers AI assistants now give. We tune your site, Google Business Profile and directory listings so searches from downtown Grimsby to Grimsby Beach point to you. Infused Agency serves Grimsby from our office in St. Catharines.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How quickly will I see results from SEO in Grimsby?",
+      a: "You can usually expect to see meaningful movement in about three to six months. Timelines vary with your industry, the state of your website and how aggressively we can make changes. A Bench winery chasing seasonal visitors may notice shifts at a different pace than a service business near Casablanca. We'll always give you an honest picture instead of a date we can't defend.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "How much does SEO cost for a small Grimsby company?",
+      a: "There is no single price, because what you need depends on your goals and how much work is involved. Some clients want a one-time audit, while others prefer ongoing monthly management. A storefront in downtown Grimsby has different needs from a business based out at Grimsby on the Lake. We provide a tailored quote after a free consultation, never before.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Do you promise #1 Google rankings for Grimsby searches?",
+      a: "No honest agency can guarantee the top spot, since Google's rankings shift all the time. What we focus on is durable, white-hat visibility that helps you compete for the terms that bring in customers. Whether someone is searching near the Niagara Escarpment or close to Grimsby Beach, we build rankings steadily over time rather than making promises no one can keep.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "What sets Infused Agency apart for Grimsby businesses?",
+      a: "We combine more than ten years of SEO experience with genuine knowledge of this area. Grimsby stretches from the shoreline up to the Niagara Escarpment, and that mix of commuters, fruit farms and Bench wineries shapes how people search. We keep everything transparent, with plain advice and no jargon.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you only take on Grimsby clients?",
+      a: "Not at all. Local SEO is where we do our best work, but we also support businesses throughout Niagara and further afield. The method never changes: every strategy is shaped around your market. For a Grimsby client that might mean reaching residents near downtown Grimsby or visitors coming for the Bench wineries.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you optimise a Google Business Profile in Grimsby?",
+      a: "We fill out and refine every section — categories, services, photos, opening hours and service areas — so the profile matches what you actually do. We also keep it active with posts and fresh details. For a Grimsby business, that helps you turn up for the right searches, from Casablanca over to the waterfront at Grimsby on the Lake. A well-kept profile tends to bring more map visibility and more calls.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which kinds of Grimsby businesses get the most from SEO?",
+      a: "It works for almost anyone whose customers search before they buy — retailers, restaurants, trades, wellness providers and the wineries along the Bench. If people look you up before they visit or call, SEO puts you in front of them. A café in downtown Grimsby and a service company covering Grimsby on the Lake both gain by ranking first.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "What does your monthly reporting look like?",
+      a: "Each month you receive a clear, plain-language summary of where you stand. It covers your rankings, how much traffic your site is getting, the leads coming in and how many of them convert. We also compare your progress against local competitors, so you can see the direction of travel rather than just a snapshot.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "How do I get started with SEO in Grimsby?",
+      a: "It begins with a free consultation. We'll look over your website and current online presence, discuss your goals and where you want to grow, then put together a plan built for your business. From there we start with the essentials — your Google Business Profile, listings and on-page fixes — shaped to how customers search around Grimsby.",
     },
   ],
 };

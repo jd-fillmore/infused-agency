@@ -26,7 +26,7 @@ const page = {
     heading:
       "Expert SEO Services in Crystal Beach - Grow Traffic & Local Leads",
     paragraphs: [
-      "How customers find local businesses has changed dramatically. Between Google's ever-moving algorithms and AI assistants like ChatGPT, Gemini, and Google's AI Overviews, getting discovered online now takes more than a basic website. As a local SEO & AI Search company for Crystal Beach, Infused Agency helps businesses across Niagara's South Coast claim their place in those results and connect with shoppers throughout the Niagara Peninsula.",
+      "How customers find local businesses has changed dramatically. Between Google's ever-moving algorithms and AI assistants like ChatGPT, Gemini, and Google's AI Overviews, getting discovered online now takes more than a basic website. As a [local SEO](/seo/local-seo) & [AI Search](/ai-search) company for Crystal Beach, Infused Agency helps businesses across Niagara's South Coast claim their place in those results and connect with shoppers throughout the Niagara Peninsula.",
       "We design every campaign around how people actually search today, blending local search optimization with AI-ready content so your business appears whether a customer types a query into Google or asks a chatbot for a recommendation. Whether you need dependable local optimization or a complete search marketing program, we build strategies that grow your online reach and turn visibility into real traffic.",
       "Crystal Beach is no ordinary market, and neither is its customer base. With its sandy Lake Erie shoreline, the lively Bay Beach and its boardwalk, Crystal Beach Waterfront Park, the Friendship Trail, and nearby Sherkston Shores, the community draws both year-round residents and summer visitors—families in rental cottages, weekenders, and tourists exploring the waterfront. From Fort Erie to Ridgeway, we understand how seasonal tourism shapes local searches, and we help businesses get found by everyone exploring our vibrant lakeside community and the greater Niagara area. If you're curious about how an experienced local SEO & AI Search agency can help your business thrive in this competitive local market, contact us today.",
     ],
@@ -48,7 +48,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and Beyond",
     paragraphs: [
       "Infused Agency is the local SEO & AI Search partner Crystal Beach businesses turn to for real digital growth. Whether you run a shop along Erie Road, offer services to residents and summer visitors across the Fort Erie area, or manage a growing company, we build strategies tailored to your goals so your business ranks on Google and earns recommendations from AI tools like ChatGPT and Gemini—drawing in more of the right leads.",
-      "Because search keeps evolving, our team tracks the latest changes to Google's algorithms and the fast-moving AI search landscape to keep your business ahead of the curve. From deep keyword research and technical SEO audits to on-page optimization, AI-ready content, and authoritative link building, we look after every layer of your search presence with care.",
+      "Because search keeps evolving, our team tracks the latest changes to Google's algorithms and the fast-moving AI search landscape to keep your business ahead of the curve. From deep keyword research and [technical SEO](/seo/technical-seo) audits to on-page optimization, AI-ready content, and authoritative [link building](/seo/link-building), we look after every layer of your search presence with care.",
       "We recently partnered with a local business that wanted stronger search visibility and a better online reputation. A focused campaign built around targeted keyword research, website improvements, and trustworthy local citations led to meaningful gains in website traffic and qualified leads.",
       "Ready to grow with professional local SEO & AI Search services from a highly rated agency? Contact Infused Agency today.",
     ],
@@ -145,7 +145,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Good content should do more than inform—it should turn browsers into customers. Infused Agency's content writing and SEO copywriting services speak directly to the Crystal Beach community, blending search optimization with messaging that resonates with both residents and summer visitors. We weave location-focused keywords and local references naturally into AI-ready service pages, blog posts, and website copy, helping them rank well, get cited by AI search tools, and build trust with your audience.",
+          "Good content should do more than inform—it should turn browsers into customers. Infused Agency's content writing and [SEO copywriting](/seo/content-writing) services speak directly to the Crystal Beach community, blending search optimization with messaging that resonates with both residents and summer visitors. We weave location-focused keywords and local references naturally into AI-ready service pages, blog posts, and website copy, helping them rank well, get cited by AI search tools, and build trust with your audience.",
         ],
       },
       {
@@ -186,44 +186,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What is local SEO meant to achieve for a Crystal Beach business?",
+      a: "It helps your business surface when people close by search for what you offer, in Google's map results and inside AI answers. For Crystal Beach, that can mean reaching year-round residents, weekenders and summer travellers drawn to the waterfront and Bay Beach. We fine-tune your site, Google Business Profile and citations so you appear at the right moment. We serve Crystal Beach from our St. Catharines base.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How soon does SEO start paying off in Crystal Beach?",
+      a: "Plan on seeing meaningful movement somewhere between three and six months. Crystal Beach runs on a seasonal tide: visitor searches near Bay Beach and the waterfront can rocket in summer, while local resident demand holds steadier through winter. Your industry, your website's condition and how fast we can implement changes all influence that timeline. We prefer to give you a grounded view.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What does SEO run for a small Crystal Beach operation?",
+      a: "The figure hinges on your objectives, your business size and the work required. A café steps from Bay Beach and a Ridgeway-based service company have separate needs, so a single price would be misleading. We handle anything from a standalone audit to continuing monthly management, and we avoid selling you extras. We quote once we have met you at no cost.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Can you promise #1 rankings for Crystal Beach keywords?",
+      a: "No honest provider can make that promise, because Google's rankings move all the time. Instead we focus on enduring, white-hat visibility so you can fight for the searches that drive business — from locals around Ridgeway to visitors heading to the waterfront. What we measure is gradual first-page progress, not an unattainable guarantee.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "Why should a Crystal Beach business choose Infused Agency?",
+      a: "We bring over a decade of SEO experience and a straightforward way of working. Crystal Beach is defined by Lake Erie's seasonal pulse, and we understand how that swings demand between busy summer weeks and the calmer off-season. You get truthful advice and clear reporting rather than a wall of jargon.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you take on clients beyond Crystal Beach?",
+      a: "Yes, we do. Local SEO is our core focus, but our work stretches across the wider Niagara region and further out. The philosophy stays the same: every campaign is adapted to your market, whether your customers live near Ridgeway year-round or arrive each summer for the waterfront.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you optimize a Google Business Profile for Crystal Beach?",
+      a: "We tidy and complete every element — categories, services, photos, hours and service areas — until the profile is an accurate mirror of your business. For a Crystal Beach company that means ranking for the right searches, whether customers are near Bay Beach or coming from Ridgeway. A full, frequently updated profile earns stronger map-pack placement and more calls.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which Crystal Beach businesses benefit most from SEO?",
+      a: "Nearly any business that lives on being found locally — eateries, shops, rental hosts, trades and tourism operators who serve residents plus summer crowds. When someone searches before booking or visiting, visibility decides who gets chosen. A Bay Beach concession and a Ridgeway service provider can each come out ahead by ranking first.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "How is SEO progress reported for Crystal Beach clients?",
+      a: "Once a month you receive an easy-to-read update covering rankings, traffic, leads and conversions. It is written in plain language, so you can tell at a glance what is working. We also track how your campaign performs against the seasonal patterns along Lake Erie, so slower months do not leave you guessing.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "How do I start SEO for a Crystal Beach business?",
+      a: "Reach out for a free consultation. We will audit your site and online visibility, discuss your objectives and the customers you hope to reach, then put together a plan for Crystal Beach. We often begin with the foundations — Google Business Profile, citations and on-page improvements — matched to how people find you.",
     },
   ],
 };

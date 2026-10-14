@@ -26,7 +26,7 @@ const page = {
     heading:
       "Expert SEO Services in St. Catharines - Grow Traffic & Local Leads",
     paragraphs: [
-      "As The Garden City and the largest city in the Niagara Region, St. Catharines is where tens of thousands of customers search online every day for everything from a dinner reservation to a trusted contractor. Winning their attention means showing up when they ask Google, or an AI assistant like ChatGPT, Gemini, or Google's AI Overviews, for the best local option. Infused Agency is an SEO St. Catharines company that helps businesses across this urban hub turn search visibility into new customers.",
+      "As The Garden City and the largest city in the Niagara Region, St. Catharines is where tens of thousands of customers search online every day for everything from a dinner reservation to a trusted contractor. Winning their attention means showing up when they ask Google, or an AI assistant like ChatGPT, Gemini, or Google's AI Overviews, for the best local option. Infused Agency is an [SEO](/seo) St. Catharines company that helps businesses across this urban hub turn search visibility into new customers.",
       "St. Catharines isn't a quiet bedroom community; it's the commercial heart of Niagara, packed with restaurants, retail shops, health and wellness providers, trades, and professional services serving both a large residential population and the commuters who move through the city every day. That density means real competition for attention, and it's exactly why forward-thinking local businesses invest in SEO services built around St. Catharines search demand.",
       "From the historic downtown core and its boutique neighbourhood retailers to the plazas scattered along the Welland Canal, we craft search strategies that reflect how people here actually shop, dine, and hire. Whether you need stronger local rankings or want AI search tools to recommend your business first, we can show you what's possible. Reach out today and let's make your business impossible to miss in this city's search results.",
     ],
@@ -48,7 +48,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and AI Search",
     paragraphs: [
       "St. Catharines SEO services from Infused Agency are built for businesses that trade in a real, working city. With the Niagara Region's largest customer base spread across downtown, neighbourhood retail districts, and busy commercial corridors, there's no shortage of people searching for what you offer. Our job is to make sure those searches land on your website, your Google Business Profile, and your name in AI search answers.",
-      "Between juggling daily operations and serving customers, most St. Catharines business owners don't have time to keep up with constant changes to how search engines and AI platforms rank results. We do. Our SEO team manages the full pipeline for you, from keyword research and technical audits to on-page optimization and credible link building, so your presence stays competitive while you stay focused on running your business.",
+      "Between juggling daily operations and serving customers, most St. Catharines business owners don't have time to keep up with constant changes to how search engines and AI platforms rank results. We do. Our SEO team manages the full pipeline for you, from keyword research and [technical SEO](/seo/technical-seo) audits to on-page optimization and credible [link building](/seo/link-building), so your presence stays competitive while you stay focused on running your business.",
       "Every engagement begins with a close look at where you stand today. We dig into a client's rankings, their competition across the city, and the searches that actually convert, then build a tailored plan around those findings. It's a straightforward approach that has helped St. Catharines-area businesses lift their website traffic, widen their AI search visibility, and fill their calendars with qualified leads.",
       "Ready to see what professional SEO and AI Search services can do for a St. Catharines business like yours? Contact Infused Agency to book your free consultation.",
     ],
@@ -57,7 +57,7 @@ const page = {
     heading: "Local SEO Services in St. Catharines",
     subhead: "Connecting Your Business with Local Customers",
     paragraphs: [
-      "People in St. Catharines search locally before they spend locally. Whether someone in the downtown core is hunting for a new restaurant, a family in a residential neighbourhood is comparing health and wellness providers, or a trades company is shortlisting contractors, the winning businesses are the ones that appear first on Google Maps, in local pack results, and in directories people actually trust. Our local SEO in St. Catharines is designed to put your business in all of those places.",
+      "People in St. Catharines search locally before they spend locally. Whether someone in the downtown core is hunting for a new restaurant, a family in a residential neighbourhood is comparing health and wellness providers, or a trades company is shortlisting contractors, the winning businesses are the ones that appear first on Google Maps, in local pack results, and in directories people actually trust. Our [local SEO in St. Catharines](/seo/local-seo) is designed to put your business in all of those places.",
       "St. Catharines doesn't operate in isolation. Customers flow in and out daily from Niagara-on-the-Lake, Thorold, Lincoln, and the rest of the region, which means your local visibility has to stretch well beyond a single street. Here's how we make that happen:",
     ],
     checklist: [
@@ -65,7 +65,7 @@ const page = {
       "Google Business Profile optimization for maximum exposure in the local map pack",
       "Trusted citations and directory listings that strengthen your authority across the Niagara Region",
       "On-page SEO fine-tuned for location-specific search queries",
-      "AI Search optimization so ChatGPT, Gemini, and Google's AI Overviews recommend your business to local searchers",
+      "[AI Search optimization](/ai-search) so ChatGPT, Gemini, and Google's AI Overviews recommend your business to local searchers",
     ],
     paragraphsAfter: [
       "Choose Infused Agency for local SEO in St. Catharines and you'll gain a team that treats your success as its own. We blend grassroots knowledge of this city with proven digital marketing strategy, ensuring your business connects with the customers who keep this community moving.",
@@ -152,7 +152,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "A great website makes visitors stay; great copy makes them take action. Our content writing and SEO copywriting is built for St. Catharines businesses that want pages that rank and words that resonate. We weave location-focused keywords naturally into engaging, locally relevant messaging and shape content that AI platforms can read and trust, so your site earns clicks from search and confidence from every visitor.",
+          "A great website makes visitors stay; great copy makes them take action. Our content writing and [SEO copywriting](/seo/content-writing) is built for St. Catharines businesses that want pages that rank and words that resonate. We weave location-focused keywords naturally into engaging, locally relevant messaging and shape content that AI platforms can read and trust, so your site earns clicks from search and confidence from every visitor.",
         ],
       },
       {
@@ -184,44 +184,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What does local SEO involve for a St. Catharines business?",
+      a: "It's the ongoing effort to make your business the obvious choice when someone nearby searches — whether that happens on Google, in the map pack or through an AI assistant. St. Catharines is the busiest market in Niagara, so the competition for those nearby clicks is real. We sharpen your site, your Google Business Profile and your directory listings so you turn up for the searches that lead to bookings. Infused Agency is headquartered here, so this market is home.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How soon can a St. Catharines business expect SEO results?",
+      a: "The honest window is three to six months before you see dependable gains, though individual keywords can move earlier. St. Catharines has the deepest pool of competitors in the region, and how quickly you climb depends on your starting point and the changes we can make. We lay out a realistic timeline in the first conversation instead of overpromising.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What kind of investment does local SEO require in St. Catharines?",
+      a: "Scope drives the number: a focused audit costs far less than running a full campaign every month. We only recommend the work your business actually needs. A shop near the Pen Centre and a professional practice serving clients from Brock University aren't the same project, so pricing follows a free consultation rather than a template.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Will you guarantee the top Google spot for St. Catharines searches?",
+      a: "We won't, and you should be wary of anyone who does — Google's rankings are never fixed. What we control is the quality of the work: ethical techniques that hold up over time and put you in contention for the queries that bring customers. Placing on page one consistently is the aim; a locked-in number one isn't a promise anyone can honestly make.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "Why should a St. Catharines company choose Infused Agency?",
+      a: "Because we've been doing SEO for more than ten years and we're based in this city. That combination means our recommendations reflect how people actually search around downtown St. Paul Street, out in Merritton and everywhere in between. We explain the work in plain English and keep the reporting honest.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you only take on St. Catharines clients?",
+      a: "No — we work with businesses throughout Niagara and well beyond it. What doesn't change is the method: we get to know your specific customers before recommending anything, whether you serve commuters along the Welland Canal or families in Port Dalhousie.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "What's involved in optimizing my Google Business Profile in St. Catharines?",
+      a: "Everything customers and Google look at: your categories, services, service areas, hours, photos and answers to common questions. We also keep it current with posts and review responses. In a city this size, where two similar businesses often sit blocks apart, a complete and active profile is frequently what tips the map-pack result your way.",
     },
     {
-      q: "How Does AI Search Optimization Help My Local Business Get Found?",
-      a: "AI search tools like ChatGPT, Gemini, and Google's AI Overviews increasingly answer questions by drawing from trusted, localized sources. We help structure your content, strengthen local citations, and build authoritative mentions so these AI assistants choose your business when someone asks for services in St. Catharines and the Niagara region.",
+      q: "Which St. Catharines businesses benefit most from SEO?",
+      a: "Any business that lives or dies by nearby search — restaurants and retailers, contractors and trades, clinics, salons and professional services. With a large resident base and thousands of students and staff connected to Brock University, there's consistent local demand. Appearing first when someone is ready to buy or book is what separates a busy business from a quiet one.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, AI search visibility, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "How do you report on SEO progress?",
+      a: "Each month you receive a plain-language summary covering where you rank, how much traffic you're getting, and how many leads and sales came through. We put those results side by side with your local competitors so the trend is easy to read. There are no confusing metrics dressed up to look impressive.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO and AI Search strategy to help your business grow online.",
+      q: "How does a St. Catharines business begin working with you?",
+      a: "Book a free consultation and we'll audit your site and online footprint, discuss your targets, and outline a tailored plan. Most projects start with the essentials — your Google Business Profile, listings and on-page improvements — then expand toward the search terms that matter most across St. Catharines.",
     },
   ],
 };

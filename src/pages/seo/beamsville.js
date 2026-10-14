@@ -25,9 +25,9 @@ const page = {
   intro: {
     heading: "Expert SEO Services in Beamsville - Grow Traffic & Local Leads",
     paragraphs: [
-      "Where shoppers once leaned on word of mouth, they now ask Google, ChatGPT, Gemini, and Google's AI Overviews to point them in the right direction. For Beamsville businesses in Twenty Valley, that's a real opportunity — if they know how to get found. As a local SEO & AI Search company serving the Niagara Peninsula, Infused Agency specializes in raising your visibility on Google and answering the search questions your future customers are asking right now.",
+      "Where shoppers once leaned on word of mouth, they now ask Google, ChatGPT, Gemini, and Google's AI Overviews to point them in the right direction. For Beamsville businesses in Twenty Valley, that's a real opportunity — if they know how to get found. As a [local SEO](/seo/local-seo) & [AI Search](/ai-search) company serving the Niagara Peninsula, Infused Agency specializes in raising your visibility on Google and answering the search questions your future customers are asking right now.",
       "We pair local search optimization with AI-ready content, putting your business in front of the right audience at the precise moment they're ready to act. Whether you need a tightly focused local campaign or a complete search marketing program, we build strategies that grow your online presence and turn curiosity into steady, qualified traffic.",
-      "Being based in Ontario's wine country means we know this market from the inside out. We understand the rhythm of the Beamsville Bench, the foot traffic along King Street and Mountainview Road, and the communities spread across Lincoln County — from Ball's Falls Conservation Area to the Comfort Maple. If you want residents and travellers moving along the QEW corridor to find your business first, our Beamsville SEO services are built for exactly that. Curious what a stronger local presence could do for your business? Contact us today.",
+      "Being based in Ontario's [wine country](/seo/for-wineries-niagara) means we know this market from the inside out. We understand the rhythm of the Beamsville Bench, the foot traffic along King Street and Mountainview Road, and the communities spread across Lincoln County — from Ball's Falls Conservation Area to the Comfort Maple. If you want residents and travellers moving along the QEW corridor to find your business first, our Beamsville SEO services are built for exactly that. Curious what a stronger local presence could do for your business? Contact us today.",
     ],
   },
   proof: {
@@ -47,7 +47,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and Beyond",
     paragraphs: [
       "Infused Agency is the local SEO & AI Search partner Beamsville businesses rely on to put themselves in front of the right customers. Whether you run a storefront on King Street, offer services across the Beamsville Bench and Twenty Valley, or manage a growing company along the QEW corridor, our strategies are built around your goals — ranking on Google, earning recommendations from AI tools like ChatGPT and Gemini, and pulling in qualified leads that actually convert.",
-      "Search never stands still, and neither does our approach. As a leading local search and AI Search optimization agency, we track Google's algorithm updates and the fast rise of AI discovery so your Beamsville business stays a step ahead. From thorough keyword research and technical audits to on-page refinement, AI-ready content, and authoritative link building, we manage every layer of your search optimization with care.",
+      "Search never stands still, and neither does our approach. As a leading local search and AI Search optimization agency, we track Google's algorithm updates and the fast rise of AI discovery so your Beamsville business stays a step ahead. From thorough keyword research and [technical SEO](/seo/technical-seo) audits to on-page refinement, AI-ready content, and authoritative [link building](/seo/link-building), we manage every layer of your search optimization with care.",
       "Consider a recent engagement: a local client wanted to strengthen their footprint across Twenty Valley. By focusing on the search terms that mattered, refining their website, and building credible citations throughout the Niagara Peninsula, they watched their traffic climb and their leads multiply. That's the compounding momentum our Beamsville SEO work delivers time and again.",
       "Ready to take your business further with professional local SEO & AI Search services? Contact Infused Agency today and let's put a winning strategy in motion.",
     ],
@@ -74,7 +74,7 @@ const page = {
     heading:
       "Why Choose Infused Agency as Your Beamsville SEO & AI Search Partner?",
     paragraphs: [
-      "Search marketing firms aren't all the same — and the differences matter most when your business is local. Growing online takes more than a stack of generic tactics; it demands a Beamsville SEO & AI Search company that listens to your goals, understands Twenty Valley and the Niagara Peninsula from the ground up, and builds strategies aimed squarely at results. That's what Infused Agency delivers. We're not an anonymous vendor in the background — we're your hands-on partner, helping Beamsville businesses get found on Google and recommended by ChatGPT and Gemini, attract more customers, and grow the bottom line through expert local SEO and AI Search.",
+      "Search marketing firms aren't all the same — and the differences matter most when your business is local. Growing online takes more than a stack of generic tactics; it demands a Beamsville [SEO](/seo) & AI Search company that listens to your goals, understands Twenty Valley and the Niagara Peninsula from the ground up, and builds strategies aimed squarely at results. That's what Infused Agency delivers. We're not an anonymous vendor in the background — we're your hands-on partner, helping Beamsville businesses get found on Google and recommended by ChatGPT and Gemini, attract more customers, and grow the bottom line through expert local SEO and AI Search.",
     ],
     awards: {
       image: best,
@@ -144,7 +144,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Content that merely informs is wasted opportunity — the best copy converts. Infused Agency's content writing and Beamsville SEO copywriting services pair strong optimization with messaging that feels unmistakably local. We work location keywords and familiar Niagara Peninsula references into service pages, blog posts, and website copy, producing content that ranks well and earns the trust of your readers.",
+          "Content that merely informs is wasted opportunity — the best copy converts. Infused Agency's content writing and Beamsville [SEO copywriting](/seo/content-writing) services pair strong optimization with messaging that feels unmistakably local. We work location keywords and familiar Niagara Peninsula references into service pages, blog posts, and website copy, producing content that ranks well and earns the trust of your readers.",
         ],
       },
       {
@@ -185,44 +185,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What does local SEO actually do for a Beamsville company?",
+      a: "It positions your business where nearby searchers will notice it — inside Google's map pack and AI-generated answers. Around Beamsville that might mean being found by residents between the Beamsville Bench wineries and the communities of nearby Vineland and Jordan. We refine your website, Google Business Profile and directory listings together. Our team handles this for Beamsville from St. Catharines.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How long until we notice SEO gains in Beamsville?",
+      a: "You should see encouraging movement within roughly three to six months. The Beamsville area blends steady local demand with wine-country tourism, so some searches surge during tasting season and ease off later. How competitive your sector is, the health of your site and the pace of changes all influence the outcome. We will always tell you what to expect honestly.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What is the typical SEO investment for a Beamsville small business?",
+      a: "Costs vary with your goals, the size of your operation and how much work is needed. A Beamsville Bench winery chasing seasonal visitors and a small service provider near Vineland and Jordan face very different scopes. We can begin with a one-time audit or provide continuing monthly management. After a no-cost consultation we prepare a tailored quote.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Do you guarantee top rankings for Beamsville searches?",
+      a: "We cannot, and neither can any provider working ethically — Google's results are always changing. Our promise is different: proven white-hat techniques that build lasting visibility so you can compete for the queries that matter, from the Beamsville Bench wineries to nearby Vineland and Jordan. Steady first-page growth over time is the outcome we aim for.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "What sets Infused Agency apart for Beamsville businesses?",
+      a: "Experience and honesty. We bring more than ten years in SEO and an approach that favours clarity over jargon. Beamsville sits at the heart of wine country, so we grasp how the vineyard and tourism calendar shapes local search demand across the Beamsville Bench wineries and the surrounding towns of Vineland and Jordan. You always know what we are doing and why.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Are your services limited to Beamsville businesses?",
+      a: "No, though local work is our strong suit. We assist companies throughout Niagara and well beyond it. What remains constant is our process: each strategy is customised to your market, whether you draw customers from the Beamsville Bench wineries or from the Vineland and Jordan area.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you handle Google Business Profile optimization for a Beamsville business?",
+      a: "We flesh out every field — categories, service list, photography, hours and coverage areas — so the profile tells the full story of your business. A Beamsville client might want to surface near the Beamsville Bench wineries or when travellers pass through Vineland or Jordan. A detailed, current profile generally attracts stronger map-pack placement and more inquiries.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which Beamsville businesses see the biggest SEO benefit?",
+      a: "Any business that depends on nearby customers finding it — retailers, restaurants, tradespeople, wellness clinics and the estates around the Beamsville Bench wineries. If people search before they visit, book or buy, visibility determines who wins the click. A village storefront and a grower out toward Vineland or Jordan can each gain from ranking first.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "What kind of reporting will I get on my Beamsville campaign?",
+      a: "Each month we send a clear, unfussy report on rankings, traffic, leads and conversions. We explain what the figures mean in everyday language, not technical talk. Because Beamsville's wine-country rhythm moves with the seasons, we also show how your campaign is pacing through quieter and busier stretches of the year.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "How do I get going with SEO in Beamsville?",
+      a: "Book a free consultation and we will take it from there. We look over your website and current online presence, talk through your ambitions and the customers you want to attract, then design a plan for Beamsville. Typically we start with the essentials — your Google Business Profile, citations and on-page work — shaped to your market.",
     },
   ],
 };
