@@ -310,6 +310,34 @@ function localCityGraph({ city, region, url, serviceName }) {
   ]);
 }
 
+// Bespoke Niagara industry pages (/seo/for-*-niagara): Organization +
+// BreadcrumbList + Service + FAQPage, with the service area anchored to the
+// Niagara region and its cities.
+function industryGraph({ url, name, serviceName, description, faqs, breadcrumbs }) {
+  const target = absolute(url);
+  return graph([
+    organizationNode(),
+    breadcrumbList(
+      breadcrumbs || [
+        { name: "Home", href: "/" },
+        { name: "SEO", href: "/seo" },
+        { name: serviceName || name, href: url },
+      ]
+    ),
+    serviceNode({
+      name: serviceName || name,
+      serviceType: "Search engine optimization",
+      url: target,
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Niagara Region, Ontario" },
+        ...AREA_CITIES.map((cityName) => ({ "@type": "City", name: cityName })),
+        { "@type": "Country", name: "Canada" },
+      ],
+    }),
+    faqPageNode(faqs, `${target}#faq`),
+  ]);
+}
+
 function aboutPageGraph({ url, name, description }) {
   const target = absolute(url);
   return graph([
@@ -420,6 +448,7 @@ module.exports = {
   servicePageGraph,
   homeGraph,
   localCityGraph,
+  industryGraph,
   aboutPageGraph,
   contactPageGraph,
   webPageGraph,

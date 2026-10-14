@@ -1,40 +1,5 @@
 [
   {
-    "slug": "accountants",
-    "urlSlug": "accountant-seo",
-    "singular": "accountant",
-    "plural": "accountants",
-    "displayName": "Accountants",
-    "category": "Business & Professional Services",
-    "industriesBenefit": "Reach individuals and businesses searching for an accountant by service and city, and turn those searches into booked consultations.",
-    "parentSlug": null,
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for accountants",
-      "accountant SEO",
-      "accounting firm SEO",
-      "CPA marketing",
-      "accounting practice marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and local pack visibility",
-      "Service pages for tax, bookkeeping and advisory",
-      "Consultation and enquiry conversion",
-      "Trust and credential signals",
-      "A local landing page for each office",
-      "Seasonal content around tax deadlines"
-    ],
-    "buyerJourneyNotes": "Accountants are firm owners or partners. They search when they want more of the right clients, when they open a second office, or when a competitor outranks them for tax and bookkeeping terms in their city.",
-    "proofRefs": [
-      "accountant-local-seo"
-    ],
-    "defaultFaqs": []
-  },
-  {
     "slug": "secondary-suite-builders",
     "urlSlug": "secondary-suite-seo",
     "singular": "Secondary suite",
@@ -391,41 +356,6 @@
     "updated": "2026-10-11"
   },
   {
-    "slug": "dentists",
-    "urlSlug": "dentist-seo",
-    "singular": "dentist",
-    "plural": "dentists",
-    "displayName": "Dentists",
-    "category": "Health & Wellness",
-    "industriesBenefit": "Reach patients searching for a dentist by treatment and neighbourhood, and turn those searches into booked appointments.",
-    "parentSlug": null,
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for dentists",
-      "dentist SEO",
-      "dental SEO",
-      "dental practice marketing",
-      "new patient SEO"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and map pack visibility",
-      "Treatment and service pages (implants, aligners, emergency)",
-      "New patient booking conversion",
-      "Review and reputation signals",
-      "A local landing page for each clinic location",
-      "Accessibility and patient-trust content"
-    ],
-    "buyerJourneyNotes": "Dentists are clinic owners or practice managers. They search when they open a new location, add a treatment, or notice a competitor ranking above them for the searches that bring in new patients.",
-    "proofRefs": [
-      "dentist-local-seo"
-    ],
-    "defaultFaqs": []
-  },
-  {
     "slug": "design-builders",
     "urlSlug": "design-build-seo",
     "singular": "design-builder",
@@ -491,40 +421,6 @@
       "drywaller-local-seo"
     ],
     "defaultFaqs": [],
-    "updated": "2026-10-11"
-  },
-  {
-    "slug": "electricians",
-    "urlSlug": "electrician-seo",
-    "singular": "electrician",
-    "plural": "electricians",
-    "displayName": "Electricians",
-    "parentSlug": "contractors",
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for electricians",
-      "electrician SEO",
-      "electricians marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and map pack visibility",
-      "Service pages for the jobs electricians actually sell",
-      "Quote and enquiry conversion",
-      "Review and trust signals",
-      "A local landing page for each area you serve",
-      "Mobile-first pages built for urgent searches"
-    ],
-    "buyerJourneyNotes": "Electricians are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
-    "proofRefs": [
-      "visca-electric"
-    ],
-    "defaultFaqs": [],
-    "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for electricians by service and location, and turn those searches into booked work.",
     "updated": "2026-10-11"
   },
   {
@@ -800,40 +696,6 @@
     "updated": "2026-10-11"
   },
   {
-    "slug": "hvac-contractors",
-    "urlSlug": "hvac-contractor-seo",
-    "singular": "HVAC contractor",
-    "plural": "HVAC contractors",
-    "displayName": "HVAC Contractors",
-    "parentSlug": "contractors",
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for hvac contractors",
-      "hvac contractor SEO",
-      "hvac contractors marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and map pack visibility",
-      "Service pages for the jobs hvac contractors actually sell",
-      "Quote and enquiry conversion",
-      "Review and trust signals",
-      "A local landing page for each area you serve",
-      "Mobile-first pages built for urgent searches"
-    ],
-    "buyerJourneyNotes": "HVAC Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
-    "proofRefs": [
-      "hvac-contractor-local-seo"
-    ],
-    "defaultFaqs": [],
-    "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for hvac contractors by service and location, and turn those searches into booked work.",
-    "updated": "2026-10-11"
-  },
-  {
     "slug": "immigration-lawyers",
     "urlSlug": "immigration-lawyer-seo",
     "singular": "immigration",
@@ -989,40 +851,6 @@
       "kitchen-bath-local-seo"
     ],
     "defaultFaqs": [],
-    "updated": "2026-10-11"
-  },
-  {
-    "slug": "landscapers",
-    "urlSlug": "landscaper-seo",
-    "singular": "landscaper",
-    "plural": "landscapers",
-    "displayName": "Landscape Contractors",
-    "parentSlug": "contractors",
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for landscapers",
-      "landscaper SEO",
-      "landscapers marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and map pack visibility",
-      "Service pages for the projects landscapers actually sell",
-      "Quote and enquiry conversion",
-      "Review and trust signals",
-      "A local landing page for each area you serve",
-      "Mobile-first pages built for urgent searches"
-    ],
-    "buyerJourneyNotes": "Landscape Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
-    "proofRefs": [
-      "landscaper-local-seo"
-    ],
-    "defaultFaqs": [],
-    "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for landscapers by service and location, and turn those searches into booked work.",
     "updated": "2026-10-11"
   },
   {
@@ -1300,40 +1128,6 @@
     "updated": "2026-10-11"
   },
   {
-    "slug": "plumbers",
-    "urlSlug": "plumber-seo",
-    "singular": "plumber",
-    "plural": "plumbers",
-    "displayName": "Plumbers",
-    "parentSlug": "contractors",
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for plumbers",
-      "plumber SEO",
-      "plumbers marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and map pack visibility",
-      "Service pages for the jobs plumbers actually sell",
-      "Call and enquiry conversion",
-      "Review and trust signals",
-      "A local landing page for each area you serve",
-      "Mobile-first pages built for urgent searches"
-    ],
-    "buyerJourneyNotes": "Plumbers are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
-    "proofRefs": [
-      "plumber-local-seo"
-    ],
-    "defaultFaqs": [],
-    "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for plumbers by service and location, and turn those searches into booked work.",
-    "updated": "2026-10-11"
-  },
-  {
     "slug": "pool-builders",
     "urlSlug": "pool-builder-seo",
     "singular": "pool builder",
@@ -1433,40 +1227,6 @@
       "restoration-companie-local-seo"
     ],
     "defaultFaqs": [],
-    "updated": "2026-10-11"
-  },
-  {
-    "slug": "roofers",
-    "urlSlug": "roofer-seo",
-    "singular": "roofer",
-    "plural": "roofers",
-    "displayName": "Roofers & Siding Contractors",
-    "parentSlug": "contractors",
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for roofers",
-      "roofer SEO",
-      "roofers marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and map pack visibility",
-      "Service pages for the jobs roofers actually sell",
-      "Quote and enquiry conversion",
-      "Review and trust signals",
-      "A local landing page for each area you serve",
-      "Mobile-first pages built for urgent searches"
-    ],
-    "buyerJourneyNotes": "Roofers & Siding Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
-    "proofRefs": [
-      "roofer-local-seo"
-    ],
-    "defaultFaqs": [],
-    "category": "Home & Trade Services",
-    "industriesBenefit": "Reach homeowners searching for roofers by service and location, and turn those searches into booked work.",
     "updated": "2026-10-11"
   },
   {

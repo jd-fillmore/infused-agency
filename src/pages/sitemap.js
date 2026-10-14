@@ -1,38 +1,12 @@
+import { NIAGARA_INDUSTRIES } from "../lib/niagaraIndustries";
+
 export default function Sitemap({ services: publishedServices = [] }) {
-  const therapyLocations = [
-    {
-      name: "SEO for Solar Companies Arizona",
-      url: "/seo/for-solar-companies-arizona",
-    },
-    {
-      name: "SEO for Solar Companies Phoenix",
-      url: "/seo/for-solar-companies-phoenix",
-    },
-    {
-      name: "SEO for Solar Companies Tucson",
-      url: "/seo/for-solar-companies-tucson",
-    },
-    {
-      name: "SEO for Solar Companies Mesa",
-      url: "/seo/for-solar-companies-mesa",
-    },
-    {
-      name: "SEO for Solar Companies Gilbert",
-      url: "/seo/for-solar-companies-gilbert",
-    },
-    {
-      name: "SEO for Solar Companies Chandler",
-      url: "/seo/for-solar-companies-chandler",
-    },
-    {
-      name: "SEO for Solar Companies Glendale",
-      url: "/seo/for-solar-companies-glendale",
-    },
-    {
-      name: "SEO for Solar Companies Scottsdale",
-      url: "/seo/for-solar-companies-scottsdale",
-    },
-  ];
+  const industries = NIAGARA_INDUSTRIES.filter(
+    (item) => item.slug !== "therapists"
+  ).map((item) => ({
+    name: `SEO for ${item.displayName} in Niagara`,
+    url: item.href,
+  }));
 
   const therapistSeo = [
     { name: "SEO for Therapists in Canada", url: "/therapist-seo" },
@@ -82,8 +56,9 @@ export default function Sitemap({ services: publishedServices = [] }) {
       ) : null}
 
       <section>
+        <h2>Industries in Niagara</h2>
         <ul>
-          {therapyLocations.map((location, index) => (
+          {industries.map((location, index) => (
             <li key={index}>
               <a href={location.url}>{location.name}</a>
             </li>

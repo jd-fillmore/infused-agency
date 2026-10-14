@@ -490,7 +490,7 @@ function verifyServiceIntegrity() {
 // ----- nav snapshot (written to src/generated/services-nav.json) -----
 
 function buildNavSnapshot() {
-  const { published, verticalsPublished } = computePublishedServices();
+  const { published } = computePublishedServices();
   const publishedServices = published.map((r) => r.service);
   const groups = NAV_GROUPS.map((g) => ({
     heading: g.heading,
@@ -498,13 +498,7 @@ function buildNavSnapshot() {
       .filter((s) => g.groups.includes(s.group))
       .map((s) => ({ name: s.shortName || s.name, url: s.url })),
   }));
-  const industries = verticalSeo
-    .loadVerticals()
-    .filter((v) => verticalsPublished.has(`/${v.urlSlug}`))
-    .map((v) => ({
-      name: `SEO for ${verticalSeo.titleCase(v.plural)} in Canada`,
-      url: `/${v.urlSlug}`,
-    }));
+  const industries = require("./niagaraIndustries").NIAGARA_INDUSTRY_NAV_LINKS;
   return { groups, industries };
 }
 

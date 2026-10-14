@@ -3,6 +3,7 @@ import { cn } from "./cn";
 import Container from "./Container";
 import Breadcrumb from "./Breadcrumb";
 import Button from "./Button";
+import HeroAtmosphere from "./HeroAtmosphere";
 
 export default function PageHero({
   title,
@@ -21,10 +22,7 @@ export default function PageHero({
         className
       )}
     >
-      <div
-        className="pointer-events-none absolute inset-0 glow-radial"
-        aria-hidden="true"
-      />
+      <HeroAtmosphere />
       <Container className="relative">
         {breadcrumbs && breadcrumbs.length ? (
           <Breadcrumb items={breadcrumbs} className="mb-8" />

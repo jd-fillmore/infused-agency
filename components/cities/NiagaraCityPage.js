@@ -11,6 +11,7 @@ import Card from "../ui/Card";
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import Breadcrumb from "../ui/Breadcrumb";
+import HeroAtmosphere from "../ui/HeroAtmosphere";
 import Accordion from "../ui/Accordion";
 import Icon from "../ui/Icon";
 import CitySeoJsonLd from "../seo/CitySeoJsonLd";
@@ -62,10 +63,7 @@ function CheckList({ items }) {
 function Hero({ city, hero }) {
   return (
     <section className="relative overflow-hidden border-b border-border bg-surface pb-16 pt-28 sm:pt-32 lg:pt-36">
-      <div
-        className="pointer-events-none absolute inset-0 glow-radial"
-        aria-hidden="true"
-      />
+      <HeroAtmosphere />
       <Container className="relative">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-7">

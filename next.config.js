@@ -7,6 +7,44 @@ function verticalRedirects() {
   return getPublishedRedirects(publishedSet);
 }
 
+// Legacy off-topic pages removed in the Niagara-first reorg. Each points
+// directly at a live, relevant final URL (no chains).
+const ARIZONA_SOLAR_SLUGS = [
+  "arizona",
+  "chandler",
+  "gilbert",
+  "glendale",
+  "mesa",
+  "phoenix",
+  "scottsdale",
+  "tucson",
+];
+
+function rogueRedirects() {
+  return [
+    ...ARIZONA_SOLAR_SLUGS.map((slug) => ({
+      source: `/seo/for-solar-companies-${slug}`,
+      destination: "/seo/for-solar-companies-niagara",
+      permanent: true,
+    })),
+    {
+      source: "/alberta-arborist-tree-removal-websites",
+      destination: "/industries",
+      permanent: true,
+    },
+    {
+      source: "/british-columbia-arborist-tree-removal-websites",
+      destination: "/industries",
+      permanent: true,
+    },
+    {
+      source: "/seo-dental-in-ontario",
+      destination: "/industries",
+      permanent: true,
+    },
+  ];
+}
+
 const nextConfig = {
   reactStrictMode: true,
   eslint: {
@@ -39,6 +77,7 @@ const nextConfig = {
   async redirects() {
     return [
       ...verticalRedirects(),
+      ...rogueRedirects(),
       {
         source: "/beamsville-web-design",
         destination: "/web-design",
