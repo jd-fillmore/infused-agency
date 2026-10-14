@@ -25,7 +25,7 @@ const page = {
   intro: {
     heading: "Expert SEO Services in Welland - Grow Traffic & Local Leads",
     paragraphs: [
-      "The way people discover businesses has changed completely. Google's ranking systems and AI assistants like ChatGPT, Gemini, and Google's AI Overviews now call the shots on who gets noticed online. As a local SEO & AI Search agency rooted in Welland and serving the wider Niagara area, Infused Agency helps businesses across this growing, family-oriented community get found by the exact customers who are searching for them.",
+      "The way people discover businesses has changed completely. Google's ranking systems and AI assistants like ChatGPT, Gemini, and Google's AI Overviews now call the shots on who gets noticed online. As a [local SEO](/seo/local-seo) & [AI Search](/ai-search) agency rooted in Welland and serving the wider Niagara area, Infused Agency helps businesses across this growing, family-oriented community get found by the exact customers who are searching for them.",
       "From a trade and logistics company doing business near the Welland Canal to a local shop serving families on Merritt Island, we build custom local search and AI-ready content strategies that put your business in front of the right people. Whether you're looking for straightforward local optimization or a full search marketing effort, we craft solutions that grow your visibility and bring in real traffic.",
       "Living and working in a city shaped by both its industrial heritage and its waterfront recreation, we get the local market in a way a generic firm never could. From the flatwater of the Welland Recreational Canal to the neighbourhood parks and trails where families spend their weekends, and from the tradespeople commuting to St. Catharines each morning to the service businesses building the community, we know what makes Welland tick. If you're wondering how seasoned local SEO & AI Search specialists can help your business stand out here, reach out to us today.",
     ],
@@ -46,8 +46,8 @@ const page = {
     heading: "SEO Services in Welland",
     subhead: "Helping Your Business Rank Higher on Google and Beyond",
     paragraphs: [
-      "At Infused Agency, we're a Welland SEO & AI Search company built around one goal: helping local businesses actually get discovered. Whether you run a shop downtown, offer trade services to the families and builders of the region, or run a growing logistics operation near the canal, our personalized approach is designed to earn you top spots on Google and recommendations from AI tools like ChatGPT and Gemini—so the right customers keep finding their way to you.",
-      "Search is never static, and neither is our work. Our specialists track every meaningful shift in Google's algorithms and the fast-moving AI search landscape to keep Welland businesses competitive. From digging into the keywords your neighbours actually type, to technical SEO audits, on-page refinements, AI-ready copy, and authoritative link building, we leave no part of your search presence to chance.",
+      "At Infused Agency, we're a Welland [SEO](/seo) & AI Search company built around one goal: helping local businesses actually get discovered. Whether you run a shop downtown, offer trade services to the families and builders of the region, or run a growing logistics operation near the canal, our personalized approach is designed to earn you top spots on Google and recommendations from AI tools like ChatGPT and Gemini—so the right customers keep finding their way to you.",
+      "Search is never static, and neither is our work. Our specialists track every meaningful shift in Google's algorithms and the fast-moving AI search landscape to keep Welland businesses competitive. From digging into the keywords your neighbours actually type, to [technical SEO](/seo/technical-seo) audits, on-page refinements, AI-ready copy, and authoritative [link building](/seo/link-building), we leave no part of your search presence to chance.",
       "Take a recent partnership with a local client who wanted to strengthen their footprint and reputation online. By pairing deliberate keyword research with solid website optimization and credible local citations, we helped them unlock noticeable gains in both website traffic and the quality of leads coming through the door—a result any family-owned Welland business would appreciate.",
       "If you're ready to grow with professional local SEO & AI Search support from a well-regarded Welland agency, get in touch with Infused Agency today.",
     ],
@@ -143,7 +143,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Good content does far more than fill a page—it turns curious visitors into loyal customers. Infused Agency's content writing and Welland SEO copywriting services pair search engine optimization with engaging, authentic messaging that suits your local audience. We weave location-focused keywords and natural references to the community into service pages, blog posts, and website copy that ranks well and, just as important, earns trust with local readers.",
+          "Good content does far more than fill a page—it turns curious visitors into loyal customers. Infused Agency's content writing and Welland [SEO copywriting](/seo/content-writing) services pair search engine optimization with engaging, authentic messaging that suits your local audience. We weave location-focused keywords and natural references to the community into service pages, blog posts, and website copy that ranks well and, just as important, earns trust with local readers.",
         ],
       },
       {
@@ -184,44 +184,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What is local SEO and why does it matter in Welland?",
+      a: "Local SEO puts your business in front of neighbours the moment they search for what you offer — on Google Maps, in the local pack and in AI assistants like ChatGPT or Gemini. Welland is a compact, growing city, so visibility gets won block by block, from Seaway Mall across to the neighbourhoods around Merritt Island. We tighten your website, your Google Business Profile and your citations so you surface for searches that turn into calls. Infused Agency is based in St. Catharines and knows this market closely.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How quickly will I see results from Welland SEO?",
+      a: "Expect the first real movement somewhere between three and six months. Welland is still expanding, which often means lighter competition than the larger Niagara cities and a chance to win the right keywords sooner. How fast you climb depends on your site's current health and how much we can improve at once. We'd rather map out a realistic window than sell a date we can't control.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What should a Welland small business budget for SEO?",
+      a: "Every quote is built around what you actually need, never a fixed package. Some Welland owners start with a single audit and fix the basics; others hand us the whole campaign month to month. A storefront near downtown Welland and a supplier working the Welland Canal corridor have very different requirements. Tell us your goals in a free consultation and we'll price the work from there.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Do you promise a #1 ranking for Welland keywords?",
+      a: "Nobody who understands Google makes that promise — the rankings move too often. Our job is to earn durable visibility with methods that stay inside Google's guidelines, so you keep showing up for the searches that bring customers. In a market like Welland that increasingly means appearing in the map pack and in AI answers, not only the blue links. Sustainable growth is the goal; a guaranteed position isn't something we'd claim.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "Why choose Infused Agency over another Welland SEO firm?",
+      a: "We've spent more than ten years doing this, and we pair that experience with real familiarity with Welland — its canal-side industry, its waterfront and its steady residential base. You won't get a canned strategy or a wall of jargon. You get a team based just up the road in St. Catharines that treats your results as the scoreboard.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Are you limited to Welland businesses only?",
+      a: "Not at all. Welland is home turf, but we also run campaigns for companies across Niagara and further afield. The thread connecting them is how we work: we study your specific market before touching anything, whether your customers are families near Merritt Island or commuters who pass through downtown Welland each day.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you improve a Google Business Profile in Welland?",
+      a: "A strong profile is part directory listing and part storefront. We fill out every field that matters — primary and secondary categories, services, service areas, photos, hours and Q&A — and keep it active with posts and fresh reviews. For Welland businesses this is often the difference between showing up when someone searches nearby and being invisible. A profile that's complete and current tends to earn the map-pack clicks and the inbound calls.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which kinds of Welland businesses get the most from SEO?",
+      a: "If customers find you through search, SEO helps — that covers restaurants and retailers, trades and contractors, clinics, and the logistics and industrial suppliers tied to the canal. Welland's mix of long-time residents and a growing population means steady demand for local services. When someone nearby is ready to buy or book, ranking ahead of the competition is what converts.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "How will I know the SEO is working?",
+      a: "You'll get a clear monthly report written in everyday language. We track rankings, how much traffic arrives, how many enquiries and sales follow, and how all of it stacks up against your local competitors. No vanity dashboards or confusing acronyms — just the numbers that show whether your investment is paying off.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "What does getting started with SEO in Welland involve?",
+      a: "It starts with a free consultation where we look over your site and online presence, hear what you're aiming for, and sketch a plan. From there we usually begin with the fundamentals — your Google Business Profile, your listings and on-page fixes — and build toward the search phrases that matter most in Welland.",
     },
   ],
 };

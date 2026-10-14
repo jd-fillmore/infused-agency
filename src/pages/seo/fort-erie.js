@@ -25,8 +25,8 @@ const page = {
   intro: {
     heading: "Expert SEO Services in Fort Erie - Grow Traffic & Local Leads",
     paragraphs: [
-      "Search behaviours have shifted. Google's ranking systems, along with AI assistants like ChatGPT, Gemini, and Google's AI Overviews, now shape which businesses capture attention online. As a dedicated Fort Erie SEO company working across Niagara's South Coast, Infused Agency helps local businesses claim stronger visibility in search results and earn mentions from AI tools, reaching customers right across the Niagara Peninsula.",
-      "We build custom local SEO and AI Search strategies that put your business in front of the people you want to serve. Whether you need sharp local optimization or a full search marketing program, our goal is simple: grow your presence and bring in real traffic and real leads.",
+      "Search behaviours have shifted. Google's ranking systems, along with AI assistants like ChatGPT, Gemini, and Google's AI Overviews, now shape which businesses capture attention online. As a dedicated Fort Erie [SEO](/seo) company working across Niagara's South Coast, Infused Agency helps local businesses claim stronger visibility in search results and earn mentions from AI tools, reaching customers right across the Niagara Peninsula.",
+      "We build custom [local SEO](/seo/local-seo) and [AI Search](/ai-search) strategies that put your business in front of the people you want to serve. Whether you need sharp local optimization or a full search marketing program, our goal is simple: grow your presence and bring in real traffic and real leads.",
       "Fort Erie is no ordinary market. As Ontario's southernmost town and a busy border community sitting along Lake Erie and the Niagara River, it sees a steady flow of both residents and travellers, many of whom cross the Peace Bridge from Buffalo, New York. From the heritage of Old Fort Erie and the summer energy of Crystal Beach, to scenic drives along the Friendship Trail, boating and fishing on the lake, and the family fun of Safari Niagara, there's no shortage of local businesses serving a lively blend of neighbours and visitors. We understand that mix intimately, and we help Fort Erie businesses get found on Google and AI search tools as people explore our corner of the Niagara region. Reach out today to see how a hands-on local SEO & AI Search team can support your business in this competitive border-town market.",
     ],
   },
@@ -47,7 +47,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and Beyond",
     paragraphs: [
       "Infused Agency is a Fort Erie SEO services partner that focuses on one thing above all: helping local businesses get noticed. Whether you run a shop on Jarvis Street, offer services across the border-town neighbourhoods, or manage a growing operation, we build strategies tailored to your goals so your business ranks on Google and gets recommended by AI tools like ChatGPT and Gemini—driving more of the qualified leads you actually want.",
-      "Search is always evolving, and so are we. As a leading local SEO and AI Search agency, our team tracks the latest shifts in Google's algorithms and AI search platforms to keep your business competitive. From in-depth keyword research and technical SEO audits to on-page refinement, AI-ready content, and authoritative link building, we handle every piece of your search strategy with care and precision.",
+      "Search is always evolving, and so are we. As a leading local SEO and AI Search agency, our team tracks the latest shifts in Google's algorithms and AI search platforms to keep your business competitive. From in-depth keyword research and [technical SEO](/seo/technical-seo) audits to on-page refinement, AI-ready content, and authoritative [link building](/seo/link-building), we handle every piece of your search strategy with care and precision.",
       "Recently, we partnered with a Fort Erie client eager to build a stronger search presence and a trusted online reputation. Using a focused SEO marketing plan built around targeted keyword research, careful website optimization, and solid local citations, they watched their website traffic and lead flow climb steadily.",
       "If you're ready to grow your business with professional local SEO & AI Search services from a top-rated agency, get in touch with Infused Agency today.",
     ],
@@ -144,7 +144,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Great content does more than inform—it turns curious visitors into paying customers. Infused Agency's content writing and Fort Erie SEO copywriting services are built for local businesses, blending search engine optimization with fresh, locally relevant messaging. We weave in location-focused keywords and local references naturally, crafting service pages, blog posts, and website copy that rank well and build trust with your audience at the same time.",
+          "Great content does more than inform—it turns curious visitors into paying customers. Infused Agency's content writing and Fort Erie [SEO copywriting](/seo/content-writing) services are built for local businesses, blending search engine optimization with fresh, locally relevant messaging. We weave in location-focused keywords and local references naturally, crafting service pages, blog posts, and website copy that rank well and build trust with your audience at the same time.",
         ],
       },
       {
@@ -185,44 +185,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What is local SEO and why does it matter for a Fort Erie business?",
+      a: "Local SEO shapes how your business appears when people nearby look for what you sell, in Google's map results and in AI answers. In Fort Erie that can mean reaching year-round households around Stevensville and Bridgeburg, alongside cross-border shoppers arriving off the Peace Bridge. We tune your site, your Google Business Profile and your citations so Fort Erie searches point to you. We deliver this from our St. Catharines office.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How quickly can a Fort Erie business see SEO results?",
+      a: "Realistically, expect early signs between three and six months. Fort Erie's border-town setting means demand swings between local residents and visiting traffic, so certain terms move faster depending on the season. Your sector, the state of your website and how aggressively we can make changes all affect timing. We would rather set an honest expectation than oversell.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What would SEO cost a small Fort Erie company?",
+      a: "There is no flat rate, because a small shop on Garrison Road and a larger tourism operator near Crystal Beach carry different needs. Scope, competition and your growth targets drive the quote. We can start with a single audit or move into ongoing support, and we only recommend what helps. That is why we price after a free consultation.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Will you promise the top Google ranking for Fort Erie keywords?",
+      a: "Nobody using ethical methods can promise the top spot — search results shift too often for that. What we pursue instead is durable, white-hat visibility that puts you in contention from Ridgeway through to Bridgeburg. Progress shows up as first-page gains over time. We would rather earn that honestly than guarantee something no one controls.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "How is Infused Agency different from other Fort Erie SEO firms?",
+      a: "Two things stand out: more than a decade spent doing this work, and total transparency about it. We know how Fort Erie's identity — part quiet town, part border crossing — shapes what people search for, from Garrison Road storefronts to beach-season queries. You get candid guidance and readable reporting, never industry jargon.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you only take on Fort Erie clients?",
+      a: "Fort Erie is not our only market. Local SEO is where we focus, yet we also support companies right across Niagara and further afield. The method does not change — every strategy is shaped around your own market, whether you serve Stevensville households or travellers heading over the Peace Bridge.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "What does optimizing a Google Business Profile involve in Fort Erie?",
+      a: "We build out the whole listing — categories, services, photos, opening hours and the areas you cover — until it mirrors your business precisely. For a Fort Erie operator that could mean ranking near Garrison Road or catching searches by the Peace Bridge. A complete, regularly updated profile tends to win more map visibility and more calls.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which kinds of Fort Erie businesses get the most from SEO?",
+      a: "It suits virtually anyone who relies on being discovered nearby — cafés, shops, contractors, marinas and tourism operators who serve both locals and visitors. When people search before they call or drop in, strong visibility decides who they choose. A Ridgeway retailer and a Bridgeburg tradesperson can both gain by showing up first.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "How will I see my Fort Erie SEO progress reported?",
+      a: "Every month you receive a plain-language summary covering rankings, website traffic, leads and conversions. We tie the numbers back to what matters for a border community, so you can read the report without a translator. If a season shifts your visitor traffic, you will still see where the campaign stands.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "How do I begin SEO for my Fort Erie business?",
+      a: "It starts with a free consultation. We examine your existing site and online footprint, discuss your goals and the customers you want, then draft a plan built for Fort Erie. From there we usually lay the groundwork — Google Business Profile, citations and on-page fixes — matched to your market.",
     },
   ],
 };

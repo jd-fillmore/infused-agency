@@ -25,8 +25,8 @@ const page = {
   intro: {
     heading: "Expert SEO Services in Thorold - Grow Traffic & Local Leads",
     paragraphs: [
-      "The way Thorold residents shop is changing fast. Instead of only typing queries into Google, they're asking ChatGPT, Gemini, and Google's AI Overviews for recommendations on where to eat, who to call for trades help, and which family-run shops deserve their business. As a local SEO and AI Search agency rooted in the Rose City, Infused Agency knows exactly what it takes to get your business in front of those answers—across traditional search and the Niagara Region's favourite AI tools.",
-      "Whether your customers are lock operators and tradespeople working the Welland Canal, commuters heading in and out of the region, or families putting down roots near Short Hills, we build tailored Thorold SEO strategies that connect you with the people your business is built to serve. From polishing your Google Business Profile to making your site the obvious choice for AI citations, every move we make is aimed at growing your visibility and filling your schedule.",
+      "The way Thorold residents shop is changing fast. Instead of only typing queries into Google, they're asking ChatGPT, Gemini, and Google's AI Overviews for recommendations on where to eat, who to call for trades help, and which family-run shops deserve their business. As a [local SEO](/seo/local-seo) and [AI Search](/ai-search) agency rooted in the Rose City, Infused Agency knows exactly what it takes to get your business in front of those answers—across traditional search and the Niagara Region's favourite AI tools.",
+      "Whether your customers are lock operators and tradespeople working the Welland Canal, commuters heading in and out of the region, or families putting down roots near Short Hills, we build tailored Thorold [SEO](/seo) strategies that connect you with the people your business is built to serve. From polishing your Google Business Profile to making your site the obvious choice for AI citations, every move we make is aimed at growing your visibility and filling your schedule.",
       "Thorold is a city of hard workers and loyal neighbours—a place where a handshake still means something and word-of-mouth carries real weight. That's the spirit we bring to local SEO in Thorold. Between the impressive lock system of the Welland Canal, the natural beauty of Decew Falls, and the busy corners where independent family businesses have thrived for generations, there's genuine opportunity here. If you'd like to see how experienced Thorold SEO services can help your business rank higher and get talked about, reach out to us today.",
     ],
   },
@@ -47,7 +47,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and AI Search",
     paragraphs: [
       "Infused Agency is a Thorold local SEO company that doesn't just talk about rankings—we earn them. Whether you're a glass-and-steel factory serving the canal industries, a commute-friendly service provider covering the whole region, or a family business that's been part of the Rose City for decades, our strategies are built around you. We help your business climb Google's results and become the name AI search recommends when someone asks where to go in Thorold.",
-      "The search landscape shifts constantly, and we stay ahead of it. Our team tracks every meaningful algorithm change so your Thorold SEO strategy never falls behind. From digging into keyword research and running technical audits to refining on-page content, earning authoritative links, and preparing your brand for AI Search Optimization, we handle the full scope of your online presence with care and precision.",
+      "The search landscape shifts constantly, and we stay ahead of it. Our team tracks every meaningful algorithm change so your Thorold SEO strategy never falls behind. From digging into keyword research and running [technical SEO](/seo/technical-seo) audits to refining on-page content, earning authoritative [links](/seo/link-building), and preparing your brand for AI Search Optimization, we handle the full scope of your online presence with care and precision.",
       "In fact, one of our recent Thorold-area projects proves what a focused approach can do. Working alongside a local client who wanted stronger visibility and a cleaner reputation, we combined targeted keyword research with on-site optimization and credible Niagara Region citations. The outcome: a notable jump in website traffic and a steady stream of new leads.",
       "If you're ready to work with a professional Thorold SEO agency that delivers more than promises, contact Infused Agency today and let's get building.",
     ],
@@ -127,7 +127,7 @@ const page = {
       {
         title: "Keyword Research for Local Businesses",
         paragraphs: [
-          "Being found online starts with knowing exactly what Thorold customers type when they need what you sell. Infused Agency digs deep into keyword research tuned to this local market, looking past raw search volume to understand real intent. Whether someone is searching for a plumber near the canal, an electrician serving commuters, or a family-friendly restaurant between Decew Falls and downtown, we zero in on the phrases that matter. That research becomes the foundation of every Thorold local SEO and AI Search service we deliver—from the copy we write to the pages we optimize.",
+          "Being found online starts with knowing exactly what Thorold customers type when they need what you sell. Infused Agency digs deep into keyword research tuned to this local market, looking past raw search volume to understand real intent. Whether someone is searching for a plumber near the canal, an [electrician](/seo/for-electricians-niagara) serving commuters, or a family-friendly restaurant between Decew Falls and downtown, we zero in on the phrases that matter. That research becomes the foundation of every Thorold local SEO and AI Search service we deliver—from the copy we write to the pages we optimize.",
         ],
       },
       {
@@ -145,7 +145,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Great writing does more than inform—it persuades, builds trust, and earns the attention of AI search tools. Infused Agency's content writing and Thorold SEO copywriting services pair thoughtful messaging with strong search and AI optimization, all aimed squarely at this community. We weave in local keywords and details naturally, crafting service pages, blog posts, and website copy that not only rank well but genuinely connect with the tradespeople, commuters, and families who call Thorold home.",
+          "Great writing does more than inform—it persuades, builds trust, and earns the attention of AI search tools. Infused Agency's content writing and Thorold [SEO copywriting](/seo/content-writing) services pair thoughtful messaging with strong search and AI optimization, all aimed squarely at this community. We weave in local keywords and details naturally, crafting service pages, blog posts, and website copy that not only rank well but genuinely connect with the tradespeople, commuters, and families who call Thorold home.",
         ],
       },
       {
@@ -186,44 +186,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What is local SEO and what does it do for a Thorold business?",
+      a: "It is the process of making sure your business appears when people close by search for what you sell. That includes Google's map and organic results as well as the recommendations AI tools now provide. We adjust your website, Google Business Profile and online listings so the right searchers find you, whether they are in Thorold South or near the Welland Canal locks. Infused Agency serves Thorold while based in St. Catharines.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How long before SEO starts working in Thorold?",
+      a: "In most cases you'll notice real movement somewhere in the three-to-six-month range. How fast depends on your sector, the health of your current site and how many changes we can make together. A business serving the Welland Canal locks may face different competition than one in Allanburg. We would rather give you a grounded estimate than an empty promise.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What will SEO cost for a small Thorold business?",
+      a: "Every project is priced around its own scope, so there is no flat rate. You might need just a one-off audit, or you might prefer month-to-month management. A tradesperson in Port Robinson and a retailer in Thorold South will not need the same things. We put a number together after a free consultation, once we understand your goals.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Can you guarantee first place on Google for Thorold searches?",
+      a: "Nobody can honestly guarantee first place, because Google reorders its results constantly. Our job is to build lasting, ethical visibility so you can compete for the keywords that genuinely matter to your business. For someone searching around Allanburg or by the Welland Canal locks, we aim for steady climbs rather than impossible claims.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "Why should a Thorold business pick Infused Agency?",
+      a: "We bring over a decade of SEO experience together with firsthand knowledge of the area. Thorold is a close, hard-working community, and reputation still travels by word of mouth here. We pair that local understanding with open, jargon-free communication at every step.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you work with businesses outside Thorold as well?",
+      a: "Yes. Local SEO is our main focus, but our clients stretch across the Niagara region and beyond. The core approach holds steady regardless of location. What shifts is the detail — for Thorold businesses we look at how customers search from Thorold South across to Port Robinson.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you improve a Google Business Profile for Thorold?",
+      a: "We make sure every field is filled in properly — categories, services, photos, hours and service areas — so the listing reflects your business accurately. Staying active with posts and updates also helps. For Thorold, that means showing up for the right searches whether someone is near Allanburg or the Welland Canal locks. A tidy, active profile generally earns stronger placement in the map results.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which Thorold businesses benefit most from SEO?",
+      a: "It suits nearly any business that relies on being found locally — trades, shops, restaurants, service companies and the suppliers connected to the canal. When customers research before they call, SEO gets you seen first. A contractor working Thorold South and a store near Port Robinson both come out ahead by ranking well.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "How will I know my SEO is actually working?",
+      a: "You'll get a plain-language report every month so you are never guessing. It lays out your search rankings, website traffic, incoming leads and conversion numbers. We will also show how you measure up against other local businesses, giving you a clear sense of whether things are moving in the right direction.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "What is the first step to start SEO in Thorold?",
+      a: "Book a free consultation to begin. We'll review your site and online footprint, talk through your objectives and the growth you are after, then draft a plan suited to your business. Then we tackle the basics — Google Business Profile, listings and on-page work — built around how people search in Thorold.",
     },
   ],
 };

@@ -26,8 +26,8 @@ const page = {
     heading:
       "Expert SEO Services in Niagara-on-the-Lake - Grow Traffic & Local Leads",
     paragraphs: [
-      "These days, the businesses that get discovered aren't just the ones with the best storefronts — they're the ones that show up when a potential customer types a question into Google or asks an AI assistant like ChatGPT, Gemini, or Google's AI Overviews. Infused Agency is a dedicated local SEO & AI Search partner for Niagara-on-the-Lake, helping businesses across the Twenty Valley and the wider Niagara Peninsula capture attention right at the moment customers are searching.",
-      "What we create is far from a one-size-fits-all package. Every campaign we build blends local SEO fundamentals with AI-ready content, so your business connects with the travellers visiting our heritage streets as well as the residents who call this town home. If you run a boutique shop in Old Town, pour wine at a vineyard on the Niagara River, or cater to Shaw Festival theatregoers, we tailor a search strategy that turns curiosity into customers.",
+      "These days, the businesses that get discovered aren't just the ones with the best storefronts — they're the ones that show up when a potential customer types a question into Google or asks an AI assistant like ChatGPT, Gemini, or Google's AI Overviews. Infused Agency is a dedicated [local SEO](/seo/local-seo) & [AI Search](/ai-search) partner for Niagara-on-the-Lake, helping businesses across the Twenty Valley and the wider Niagara Peninsula capture attention right at the moment customers are searching.",
+      "What we create is far from a one-size-fits-all package. Every campaign we build blends local SEO fundamentals with AI-ready content, so your business connects with the travellers visiting our heritage streets as well as the residents who call this town home. If you run a boutique shop in Old Town, pour wine at a [vineyard](/seo/for-wineries-niagara) on the Niagara River, or cater to Shaw Festival theatregoers, we tailor a search strategy that turns curiosity into customers.",
       "There's no market quite like Niagara-on-the-Lake. Set along the shore of Lake Ontario beside the mouth of the Niagara River, this historic town draws visitors to its Old Town charm, its world-class wineries and vineyards, and its boutique shopping — all while serving a proud local community year-round. We understand that rhythm because we live and breathe it. From the scale of the Shaw Festival to the quiet appeal of Queenston, we help Niagara-on-the-Lake businesses get found by everyone exploring this remarkable region. Curious about what a true local SEO & AI Search partner could do for your business? Reach out today.",
     ],
   },
@@ -48,7 +48,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and Beyond",
     paragraphs: [
       "Infused Agency is a local SEO & AI Search firm rooted in the Niagara-on-the-Lake community, and we've built our reputation on getting local businesses seen. Whether you run a heritage retail shop along Queen Street, welcome guests at a winery tucked between the vineyards, or deliver services to homes and businesses across the region, our strategies are built around one goal: helping you show up on Google and get recommended by AI tools like ChatGPT and Gemini so that qualified customers come looking for you.",
-      "Search never stands still, and neither do we. Our team watches the constant shifts in Google's algorithms and the rise of AI search so your business stays a step ahead of the competition. Everything we do falls under one roof — deep keyword research, technical SEO audits, on-page refinement, AI-ready content, and authoritative link building — handled with the precision that Old Town customers expect from a first-rate service.",
+      "Search never stands still, and neither do we. Our team watches the constant shifts in Google's algorithms and the rise of AI search so your business stays a step ahead of the competition. Everything we do falls under one roof — deep keyword research, [technical SEO](/seo/technical-seo) audits, on-page refinement, AI-ready content, and authoritative [link building](/seo/link-building) — handled with the precision that Old Town customers expect from a first-rate service.",
       "Take one of our recent engagements: a local business wanted to strengthen both its search presence and its online reputation. By pairing careful keyword research with website optimization and trusted local citations, we helped the client pull in noticeably more website traffic and a healthier pipeline of leads.",
       "Ready to give your business the visibility it deserves with professional local SEO & AI Search support from an agency that knows Niagara-on-the-Lake? Get in touch with Infused Agency today.",
     ],
@@ -67,7 +67,7 @@ const page = {
       "On-page SEO built around the location-specific phrases your customers search",
     ],
     paragraphsAfter: [
-      "Beyond the essentials, we round things out with AI Search Optimization, SEO copywriting, and social media management — one integrated search marketing service for your whole business.",
+      "Beyond the essentials, we round things out with AI Search Optimization, [SEO copywriting](/seo/content-writing), and social media management — one integrated search marketing service for your whole business.",
       "Choosing Infused Agency means working with a results-first SEO company that pairs genuine local market insight with proven digital marketing know-how, connecting your business with the people who matter most here.",
     ],
   },
@@ -186,44 +186,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What does local SEO mean for a Niagara-on-the-Lake business?",
+      a: "For businesses in Niagara-on-the-Lake, local SEO means showing up when someone nearby is ready to take action — whether they're exploring Old Town, visiting Fort George, or staying along the Niagara Parkway. It helps connect you with locals as well as the many visitors who come for the Shaw Festival each year. Using ethical, white-hat methods, we strengthen your visibility across Google and AI search results. The goal is simple: turn those searches into calls, bookings, or foot traffic.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How long will it take to see results for SEO in Niagara-on-the-Lake?",
+      a: "Results typically come within 3–6 months, though timing can shift with the town's seasonal patterns. Demand often peaks around the Shaw Festival, while quieter months can be ideal for building long-term foundations. Your starting point, competition, and scope all play a role in how quickly things move. We focus on steady gains that last well beyond any single season.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages—from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What does SEO cost for a Niagara-on-the-Lake business?",
+      a: "The scope of work depends on your goals — a boutique on Queen Street won't need the same plan as a winery out on Niagara Stone Road. After a free consultation, we'll outline exactly what would help based on your current online presence and priorities. We keep our recommendations clear and never push services you don't need. From there, you can decide what's right for your budget and timeline.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Can you guarantee the #1 ranking for Niagara-on-the-Lake searches?",
+      a: "No, we cannot guarantee a #1 position — it's not something any honest SEO provider can promise due to constant changes in Google's algorithm. What we can guarantee is a focus on ethical, sustainable tactics that improve your visibility over time. With over a decade of SEO experience, we've helped businesses earn first-page growth that drives real results. Our focus stays on outcomes, not empty rankings claims.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "What makes Infused Agency different from other Niagara-on-the-Lake SEO companies?",
+      a: "We pair deep familiarity with Niagara-on-the-Lake — from Queenston to Virgil and St. Davids — with over a decade of [SEO](/seo) experience. We serve this area from our base in St. Catharines, so we understand both the year-round community and the tourism cycles that shape demand. Our approach is transparent, practical, and built around your specific goals. You get straight advice and clear reporting, not buzzwords or fluff.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you only work with local businesses in Niagara-on-the-Lake?",
+      a: "While Niagara-on-the-Lake is a key focus for us, we also work with businesses across the wider Niagara region and beyond. That broader perspective helps us bring proven strategies to your market while still tailoring to its unique needs. Whether you're in Old Town or further afield, the same high standard of care applies. Local SEO remains our specialty, no matter the exact location.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you optimize a Google Business Profile for a Niagara-on-the-Lake business?",
+      a: "We refine every element — categories, services, photos, hours, and service areas — to accurately reflect what your business offers. For a town with distinct pockets like Old Town, Virgil, and Queenston, precision in location signals is especially important. Keeping your profile active and consistent helps boost your presence in the map pack and drive more calls. These tweaks work alongside your website to maximize local visibility.",
     },
     {
-      q: "Which Types of Businesses Benefit from Your SEO Services?",
-      a: "We support a wide range of businesses—from home services and restaurants to retail, health clinics, and tourism-related companies. Whether your audience is local residents or visitors to your area, we tailor SEO strategies to fit your market.",
+      q: "Which Niagara-on-the-Lake businesses benefit most from local SEO?",
+      a: "Any business that depends on nearby customers can benefit, particularly retailers, restaurants, wineries, trades, and wellness providers. If tourists searching for Fort George or the Niagara Parkway, or locals in St. Davids, are part of your audience, visibility matters. Even businesses along Niagara Stone Road can capture high-intent traffic with the right strategy. The key is reaching people at the moment they're ready to book or buy.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "What kind of reporting will I receive for my Niagara-on-the-Lake SEO campaign?",
+      a: "You'll get straightforward monthly reporting on rankings, traffic, leads, and conversions, written in plain language. We measure progress against the specific goals we set during your free consultation and highlight what moved each month. This keeps you informed without needing to parse technical reports or guess at results. It's designed to show you exactly how your investment is paying off.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO strategy to help your business grow online.",
+      q: "How do I get started with SEO for my Niagara-on-the-Lake business?",
+      a: "Start with a free consultation where we'll review your current website and online presence, then talk through your goals. We'll look for realistic opportunities based on your location — whether you're in Old Town, Queen Street, or out toward Virgil. From there, we build a custom plan using ethical, white-hat methods tailored to your market. It's a low-pressure way to see exactly what it would take to grow your visibility.",
     },
   ],
 };

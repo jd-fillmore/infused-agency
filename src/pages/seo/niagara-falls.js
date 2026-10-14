@@ -25,8 +25,8 @@ const page = {
   intro: {
     heading: "Expert SEO Services in Niagara Falls - Grow Traffic & Local Leads",
     paragraphs: [
-      "Search engines decide what gets seen first by weighing content quality, technical structure, and how locally relevant a site truly is. As an SEO Niagara Falls company focused on the wider Niagara region, Infused Agency helps businesses rise in the results and get in front of the people who matter, whether they're longtime locals or day-trippers stepping off the tour bus at Clifton Hill.",
-      "We build search engine optimization campaigns around the way real customers actually search, pairing proven local SEO with forward-looking AI Search work. From tightening up foundational on-site signals to earning recommendations from ChatGPT, Gemini, and Google's AI Overviews, everything we do is aimed at turning online visibility into foot traffic and revenue.",
+      "Search engines decide what gets seen first by weighing content quality, technical structure, and how locally relevant a site truly is. As an [SEO](/seo) Niagara Falls company focused on the wider Niagara region, Infused Agency helps businesses rise in the results and get in front of the people who matter, whether they're longtime locals or day-trippers stepping off the tour bus at Clifton Hill.",
+      "We build search engine optimization campaigns around the way real customers actually search, pairing proven [local SEO](/seo/local-seo) with forward-looking [AI Search](/ai-search) work. From tightening up foundational on-site signals to earning recommendations from ChatGPT, Gemini, and Google's AI Overviews, everything we do is aimed at turning online visibility into foot traffic and revenue.",
       "Niagara Falls ranks among the planet's most-visited places, and that magnetism creates a fiercely competitive arena for the hotels, attractions, restaurants, tourism districts, and residential neighbourhoods that call this city home. Whether you're courting excursionists drawn by the iconic falls, Fallsview visitors, or the shoppers and families living in the surrounding communities, we connect your business with the audiences exploring our dynamic corner of the Niagara region. If you'd like to see what a seasoned local SEO agency can do for you in this market, we'd love to talk.",
     ],
   },
@@ -47,7 +47,7 @@ const page = {
     subhead: "Helping Your Business Rank Higher on Google and AI Search",
     paragraphs: [
       "As a trusted SEO Niagara Falls company, Infused Agency exists to lift the online profile of local businesses through expert search engine optimization and AI Search services. Whether you own a boutique on a residential street, run a hotel within sight of the falls, or operate a growing regional company, we tailor our approach to help your website climb the Google rankings, earn AI search mentions, and pull in a steadier stream of qualified leads and visitors.",
-      "Search behavior never stands still, so neither do we. Our team tracks the latest shifts in both search engine and AI algorithms to keep your site a step ahead of the competition. From deep keyword research and technical SEO audits to polished on-page optimization and authoritative link building, we handle every moving part of your search program with care.",
+      "Search behavior never stands still, so neither do we. Our team tracks the latest shifts in both search engine and AI algorithms to keep your site a step ahead of the competition. From deep keyword research and [technical SEO](/seo/technical-seo) audits to polished on-page optimization and authoritative [link building](/seo/link-building), we handle every moving part of your search program with care.",
       "We recently teamed up with a regional client who wanted to strengthen both their search presence and their reputation online. Working from a strategy built on targeted keyword research, careful website optimization, and credible local citations, they watched their website traffic, AI search visibility, and lead flow climb in a matter of months.",
       "When you're ready to move your business forward with professional SEO services from a highly rated agency, reach out to Infused Agency today.",
     ],
@@ -152,7 +152,7 @@ const page = {
       {
         title: "Content Writing & SEO Copywriting",
         paragraphs: [
-          "Great content doesn't just inform, it converts browsers into customers. Infused Agency's content writing and SEO copywriting services are built for local businesses, blending strong search optimization with engaging, regionally relevant messaging. We weave in location-focused keywords and AI-ready copy that not only ranks well but also earns the trust of your audience.",
+          "Great content doesn't just inform, it converts browsers into customers. Infused Agency's content writing and [SEO copywriting](/seo/content-writing) services are built for local businesses, blending strong search optimization with engaging, regionally relevant messaging. We weave in location-focused keywords and AI-ready copy that not only ranks well but also earns the trust of your audience.",
         ],
       },
       {
@@ -184,44 +184,44 @@ const page = {
   },
   faqs: [
     {
-      q: "What Exactly Is Local SEO for Businesses?",
-      a: "Local SEO involves optimizing your website, Google Business Profile, and online citations to improve your visibility in local search results. This includes targeting location-specific keywords, ensuring accurate business listings, building local backlinks, and creating content relevant to the local community to help your business appear in Google's local map packs and organic search results.",
+      q: "What is local SEO for a Niagara Falls business?",
+      a: "It's the discipline of getting your business seen by people searching in and around Niagara Falls — across Google's local and map results and now AI assistants too. What's unusual here is the blend of two audiences: tourists planning trips to Clifton Hill or Niagara Parks, and locals in Stamford or Chippawa looking for everyday services. We tune your website and your Google Business Profile to capture both. We serve the city out of St. Catharines.",
     },
     {
-      q: "When Can I Expect to See Results from SEO?",
-      a: "Most SEO efforts start showing noticeable improvements within 3 to 6 months. The timeline depends on your industry's competitiveness, your current website's condition, and how aggressive your SEO campaign is. Some less competitive local keywords may produce faster results, sometimes within just a few weeks.",
+      q: "How long before SEO produces results in Niagara Falls?",
+      a: "Plan for three to six months of consistent work before the growth becomes obvious, and know that timing shifts with the seasons here. Tourist-driven searches around Fallsview and the Falls surge in summer, while neighbourhood queries stay steadier year-round. Your industry, your site's current health and the pace of changes all matter, so we set expectations honestly up front.",
     },
     {
-      q: "What Is the Typical Cost of SEO Services?",
-      a: "SEO pricing varies depending on the size of your business, your goals, and the scope of work involved. Infused Agency offers flexible packages from basic SEO audits and local optimization to full-service monthly SEO management. We recommend a free consultation so we can provide a personalized quote.",
+      q: "What does SEO cost a small Niagara Falls business?",
+      a: "It depends entirely on what you need. A single audit to get you on track costs a fraction of an ongoing monthly program. We won't pad the plan with extras. A hotel near Fallsview and a tradesperson working out of Chippawa have little in common when it comes to SEO, so every quote starts from a free consultation.",
     },
     {
-      q: "Can You Guarantee My Business Will Rank #1 on Google?",
-      a: "No ethical SEO company can promise the #1 spot due to ever-changing search engine algorithms. However, Infused Agency has a proven history of helping local businesses achieve first-page rankings with white-hat, sustainable SEO strategies focused on long-term growth.",
+      q: "Can you promise #1 rankings for Niagara Falls keywords?",
+      a: "No, and it would be dishonest to say otherwise — search results shift constantly. Our focus is durable, guideline-safe visibility that keeps you competitive for the searches that actually produce customers, from Lundy's Lane attractions to local services in Stamford. Measurable first-page progress over time is what we deliver, not an unattainable guarantee.",
     },
     {
-      q: "What Makes Infused Agency Stand Out Among Local SEO Companies?",
-      a: "We combine deep local expertise with over a decade of SEO experience. Unlike large marketing agencies, we offer a personalized, transparent approach focused on your unique business needs. Clear communication and delivering real results are at the heart of what we do.",
+      q: "What sets Infused Agency apart from other Niagara Falls SEO companies?",
+      a: "More than a decade of SEO work, plus a genuine grasp of how this city's demand swings with tourism. Niagara Falls behaves differently from most markets — the Fallsview strip, the downtown core on Queen Street and the quieter residential streets each have their own search patterns. We bring that nuance and keep our reporting free of jargon.",
     },
     {
-      q: "Do You Work Exclusively with Local Businesses?",
-      a: "While we specialize in local SEO, Infused Agency also serves businesses across various regions. We focus on local SEO strategies tailored to small and mid-sized businesses in different markets.",
+      q: "Do you work exclusively with local businesses?",
+      a: "Not exclusively. We take on clients across the Niagara region and beyond. Regardless of location, the process is the same: we study who your customers are and where they search before building a strategy — whether you're courting residents in Chippawa or visitors planning around Niagara Parks.",
     },
     {
-      q: "How Do You Optimize Google Business Profiles?",
-      a: "Optimizing your Google Business Profile is a core part of our local SEO service. We ensure your profile is fully complete, accurate, and optimized with the right categories, photos, service areas, and content to boost your presence in local map packs and attract nearby customers.",
+      q: "How do you optimize a Google Business Profile for Niagara Falls?",
+      a: "We make sure every relevant field is filled and accurate — categories, services, hours, photos, service areas and the questions customers ask most — then keep it active. For a Niagara Falls business that means being findable whether someone searches while standing near Clifton Hill or is planning a Fallsview getaway weeks ahead. A well-tended profile compounds into more map-pack clicks and calls.",
     },
     {
-      q: "How Does AI Search Optimization Help My Local Business Get Found?",
-      a: "AI search tools like ChatGPT, Gemini, and Google's AI Overviews increasingly answer questions by drawing from trusted, localized sources. We help structure your content, strengthen local citations, and build authoritative mentions so these AI assistants choose your business when someone asks for services in Niagara Falls and the surrounding region.",
+      q: "Which Niagara Falls businesses gain the most from SEO?",
+      a: "It suits businesses that depend on being discovered — restaurants and hotels, attractions, shops and service providers catering to both residents and tourists. If your customers search before they arrive or book, showing up first is what turns searchers into customers. Both a restaurant on Lundy's Lane and a contractor working in Stamford gain when they outrank the alternatives.",
     },
     {
-      q: "Will I Receive Regular Reports on My SEO Progress?",
-      a: "Absolutely. We provide straightforward monthly reports detailing keyword rankings, website traffic, AI search visibility, leads, and other critical metrics. Transparency is a priority, so you always know how your SEO campaign is performing.",
+      q: "What does your SEO reporting include?",
+      a: "You'll receive a monthly report in everyday language covering rankings, site traffic, and the leads and conversions your campaign produced. We also track how you compare with local competitors and how the tourist seasons affect your traffic. It's designed to be understood at a glance, not decoded.",
     },
     {
-      q: "How Can I Start Working with Infused Agency for SEO?",
-      a: "Getting started is easy. Contact Infused Agency for a free consultation. We'll discuss your goals, evaluate your current website and online presence, then design a custom SEO and AI Search strategy to help your business grow online.",
+      q: "How do I start SEO for my Niagara Falls business?",
+      a: "Reach out for a free consultation. We'll review your website and online presence, talk through your objectives, and put together a plan made for your situation. In most cases we start with the foundations — Google Business Profile, citations and on-page fixes — and build from there around the searches that matter in Niagara Falls.",
     },
   ],
 };
