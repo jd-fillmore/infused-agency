@@ -15,6 +15,7 @@ import HeroAtmosphere from "../ui/HeroAtmosphere";
 import Accordion from "../ui/Accordion";
 import Icon from "../ui/Icon";
 import PageJsonLd from "./PageJsonLd";
+import { StatBlock } from "../ui";
 import { industryGraph } from "../../src/lib/verticalSeoSchema";
 import { NIAGARA_INDUSTRIES } from "../../src/lib/niagaraIndustries";
 
@@ -162,6 +163,29 @@ function Intro({ intro }) {
 
 function Proof({ proof }) {
   if (!proof) return null;
+  if (proof.stats) {
+    return (
+      <Section
+        heading={proof.heading}
+        subhead={proof.subhead}
+      >
+        <div className="grid gap-4 sm:grid-cols-3">
+          {proof.stats.map((stat, i) => (
+            <StatBlock key={i} value={stat.value} label={stat.label} />
+          ))}
+        </div>
+        {proof.note ? (
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-muted">
+            {proof.note}
+          </p>
+        ) : null}
+        <Button href={proof.viewMoreHref || "/work"} variant="secondary" className="mt-8">
+          {proof.viewMoreLabel || "View More Results"}
+          <Icon name="arrow-right" className="h-4 w-4" />
+        </Button>
+      </Section>
+    );
+  }
   return (
     <Section
       eyebrow={proof.heading}

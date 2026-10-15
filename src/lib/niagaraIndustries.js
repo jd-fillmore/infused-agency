@@ -70,6 +70,51 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "plumbers",
+    displayName: "Plumbers",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for drain cleaning, water heaters, sump pumps and emergency plumbing across Niagara.",
+    href: "/seo/for-plumbers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "roofers",
+    displayName: "Roofers",
+    category: "Home & Trade Services",
+    benefit:
+      "Win more shingle, flat and metal roofing, repair and storm-damage jobs from searches across Niagara.",
+    href: "/seo/for-roofers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "dentists",
+    displayName: "Dentists",
+    category: "Health & Wellness",
+    benefit:
+      "Show up when patients search for a dentist, cleaning, emergency care or implants across Niagara.",
+    href: "/seo/for-dentists-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "landscapers",
+    displayName: "Landscapers",
+    category: "Home & Trade Services",
+    benefit:
+      "Win more lawn care, interlock, retaining-wall and garden projects from searches across Niagara.",
+    href: "/seo/for-landscapers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "hvac-contractors",
+    displayName: "HVAC Contractors",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for furnace, air conditioning and heat pump work across Niagara.",
+    href: "/seo/for-hvac-contractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
