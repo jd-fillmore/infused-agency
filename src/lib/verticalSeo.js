@@ -558,7 +558,6 @@ const ALLOWED_STATIC_LINKS = new Set([
   "/blog",
   "/about",
   "/get-a-quote",
-  "/seo/st-catharines",
 ]);
 
 function levelOf(page) {
@@ -914,7 +913,7 @@ function buildLinks(page, publishedSet) {
 
   // Ontario contextual local link (spec section 9).
   if (page.province && page.province.slug === "ontario") {
-    links.push({ href: "/seo/st-catharines", label: "our home base in St. Catharines", internal: true });
+    links.push({ href: "/", label: "our home base in St. Catharines", internal: true });
   }
 
   return links;

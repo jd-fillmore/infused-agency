@@ -38,7 +38,11 @@
     "/seo/for-solar-companies-mesa",
     "/seo/for-solar-companies-phoenix",
     "/seo/for-solar-companies-scottsdale",
-    "/seo/for-solar-companies-tucson"
+    "/seo/for-solar-companies-tucson",
+    "/seo/st-catharines",
+    "/seo/niagara-falls"
   ],
-  "allowTitleChanges": ["/seo/white-label"]
+  "allowTitleChanges": [
+    "/seo/white-label"
+  ]
 }

@@ -19,8 +19,6 @@ import { industryGraph } from "../../src/lib/verticalSeoSchema";
 import { NIAGARA_INDUSTRIES } from "../../src/lib/niagaraIndustries";
 
 const NIAGARA_CITIES = [
-  { name: "St. Catharines", href: "/seo/st-catharines" },
-  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Welland", href: "/seo/welland" },
   { name: "Grimsby", href: "/seo/grimsby" },
   { name: "Thorold", href: "/seo/thorold" },

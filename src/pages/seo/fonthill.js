@@ -6,9 +6,9 @@ import flatRock from "../../img/flat-rock-seo-results.png";
 
 const page = {
   seo: {
-    title: "SEO Fonthill | Grow Traffic & Local Leads",
+    title: "SEO Fonthill | Local SEO Company & Agency in Fonthill | Infused Agency",
     description:
-      "SEO Fonthill by Infused Agency. Grow your traffic and generate more local leads with proven SEO strategies. Serving Fonthill, ON and the Niagara region. Free quote.",
+      "SEO company serving Fonthill businesses. Local SEO, Google Business Profile and AI search visibility for home services and trades across Fonthill, Ontario, Canada. Free consultation.",
     canonical: "https://infused.agency/seo/fonthill",
     city: "Fonthill",
     region: "Niagara Region, Ontario",
@@ -16,19 +16,18 @@ const page = {
   },
   city: "Fonthill",
   hero: {
-    title: "Fonthill SEO",
+    title: "Fonthill SEO Company",
     description:
-      "Infused Agency is a Fonthill SEO company. We help local businesses grow traffic and generate more local leads with proven search strategies.",
+      "Infused Agency is a Fonthill SEO company. We help local businesses in the Town of Pelham get found on Google, in the map pack and in AI search, then turn those searches into qualified enquiries.",
     image: hero,
-    alt: "Fonthill SEO - grow traffic and generate more local leads",
+    alt: "Local SEO results for a Fonthill business",
   },
-  intro: {
-    heading:
-      "Expert SEO Services in Fonthill - Grow Traffic & Local Leads",
+  marketIntro: {
+    heading: "How local search works in Fonthill",
     paragraphs: [
-      "Today, being found online means more than a great website—it means showing up when customers search Google and when AI tools like ChatGPT, Gemini, and Google's AI Overviews answer their questions. For small businesses across Fonthill and the broader Pelham area, Infused Agency offers [local SEO](/seo/local-seo) & [AI Search](/ai-search) expertise that helps you stand out in the search results that matter most throughout the Niagara region.",
-      "Our approach pairs hands-on local search optimization with AI-ready content built to connect you with the right customers at the right moment. Whether you're a family-owned shop on Highway 20, a service provider serving Welland and Thorold, or a grower with roots in the surrounding countryside, we craft search strategies that bring real, walk-in-the-door results.",
-      "Fonthill has a character all its own—a tight-knit community where neighbours support local retailers and word travels fast. From the trails of Short Hills Provincial Park to the summer concerts at the Fonthill Bandshell and the busy shelves of our garden nurseries, this is a town that values the personal touch. We help businesses like yours get found by the people who live, shop, and play right here in Pelham and across Niagara. If you'd like to see how an experienced local SEO & AI Search agency can help your Fonthill business grow, reach out today.",
+      "Fonthill is the civic centre of the Town of Pelham, sitting on the Niagara Escarpment with Short Hills Provincial Park on its doorstep and a tidy, growing residential base spreading outward. That steady, family-centred community creates reliable demand for home services, wellness and everyday retail rather than tourism spikes, which means search volume here is smaller than in larger Niagara cities but often more loyal and conversion-friendly once you earn it.",
+      "Searches in Fonthill tend to pair household needs with the town. A resident might search \"physiotherapist Fonthill,\" \"roofing Fonthill\" or \"HVAC Pelham,\" and a parent might search \"dentist Fonthill\" or \"daycare Fonthill Ontario.\" The escarpment and the surrounding parkland also pull in outdoor and wellness-related searches, so businesses that name Fonthill, Pelham, Short Hills and the escarpment in their service pages are easier for Google to match to the community. A page that says only \"Niagara\" tends to lose to one that says where the work actually happens.",
+      "The aim is not a prettier chart. It is more household enquiries from the Pelham neighbourhoods you serve, so your calendar fills with customers ready to hire rather than traffic that never acts.",
     ],
   },
   proof: {
@@ -36,195 +35,152 @@ const page = {
     client: "Flat Rock Cellars",
     label: "After hiring us",
     image: flatRock,
-    alt: "Flat Rock Cellars local SEO & AI Search results",
+    alt: "Flat Rock Cellars SEO results in Niagara",
     items: [
       "300% growth in local search visibility",
       "Multiple first-page Google Map placements",
       "Page 1 organic rankings for key industry keywords",
     ],
   },
-  servicesBlock: {
-    heading: "SEO Services in Fonthill",
-    subhead: "Helping Your Business Rank Higher on Google and Beyond",
+  whyNeeded: {
+    heading: "Why Fonthill businesses need local SEO",
     paragraphs: [
-      "Infused Agency has become a trusted name for Fonthill [SEO](/seo) services, helping everything from hometown retailers and family-run service companies to growing Niagara workshops climb higher in search. We don't rely on cookie-cutter tactics. Instead, we build personalized strategies that get your business ranking on Google and recommended by AI tools like ChatGPT and Gemini—bringing in leads that actually turn into loyal local customers.",
-      "As a specialist in local search and AI Search optimization, we keep a close eye on how Google and the AI assistants change the way people find answers. Everything—from careful keyword discovery and [technical SEO](/seo/technical-seo) audits to on-page fine-tuning, AI-ready content, and strong [link building](/seo/link-building)—is handled under one roof with care and consistency.",
-      "Not long ago, a Fonthill client came to us wanting to be easier to find and better regarded across the community. By combining local keyword research, AI-ready copy, and reliable citations throughout the Pelham and Short Hills area, that business saw a steady climb in website traffic and a clear rise in qualified enquiries.",
-      "If your Fonthill business is ready to grow with professional local SEO & AI Search services, get in touch with Infused Agency and let's talk about what's possible.",
-    ],
-  },
-  localBlock: {
-    heading: "Local SEO Services in Fonthill",
-    subhead: "Connecting Your Business with Local Customers",
-    paragraphs: [
-      "To win over customers close to home, you need strong local SEO in Fonthill. As a dedicated local SEO company, Infused Agency helps Pelham businesses outshine the competition in Google Maps, organic search, and well-regarded online directories. The same local signals we strengthen also encourage AI tools like ChatGPT and Gemini to mention your business when shoppers ask for a great recommendation.",
-      "Because we're based right in Niagara, we know the area well—from the orchard-lined roads near Vineland and Jordan Station to the commuter routes that bring people through Welland and Thorold. Our local SEO services cover:",
+      "In Fonthill, the map pack and recent reviews decide a lot of household calls before anyone reads a full website, because local buyers trust the nearest credible option. If you do not show there, the enquiry goes to a competitor whose profile simply looks more trustworthy.",
+      "Chasing broad national terms is neither winnable nor useful for a Fonthill business. Our SEO services in Fonthill concentrate on the specific searches your neighbours actually type, the neighbourhoods in and around Pelham, and the services you want more of. Affordable SEO for a Fonthill business works when it covers the Google Business Profile, the site and the reviews together and targets the town-level and nearby searches that genuinely produce calls.",
+      "AI search matters here too. Residents increasingly ask ChatGPT, Gemini or Google's AI Overviews to recommend a local service in Fonthill, and the tools favour businesses with clear, consistent information and genuine, recent reviews. We fold that into our SEO optimization work so your Fonthill business is named when someone asks rather than merely ranked.",
     ],
     checklist: [
-      "Careful keyword research built around Fonthill and the surrounding Pelham market",
-      "Google Business Profile optimization to make the most of your local visibility",
-      "Trusted local citations and directory listings that raise your authority nearby",
-      "On-page SEO shaped around the searches your neighbours actually make",
-    ],
-    paragraphsAfter: [
-      "Beyond core local SEO, we also offer AI Search Optimization, SEO copywriting, and social media management so your entire search marketing works together as one.",
-      "When you work with Infused Agency, you're partnering with a results-driven team that blends genuine local knowledge with proven digital strategy—helping your Fonthill business connect with the community that matters most.",
-    ],
-  },
-  whyChoose: {
-    heading:
-      "Why Choose Infused Agency as Your Fonthill SEO & Digital Marketing Partner?",
-    paragraphs: [
-      "Not every internet marketing company truly understands what it takes to grow a business in a small town like Fonthill. Getting found online isn't about flashy gimmicks—it's about partnering with a Fonthill SEO company that listens to your goals, knows the local landscape, and builds tailored strategies that bring real customers through the door. At Infused Agency, we're not a distant agency hiding behind contracts; we're your hands-on partner helping businesses in Pelham and the Short Hills region increase visibility, attract more customers, and grow through thoughtful local SEO and AI Search marketing.",
-    ],
-    awards: {
-      image: best,
-      alt: "Infused Agency awards for local SEO & AI Search",
-    },
-    blocks: [
-      {
-        title: "A Local SEO Company with a Customer-First Mindset",
-        paragraphs: [
-          "Every business tells a different story, so we start by listening. Infused Agency takes the time to understand the challenges you face, the customers you want to reach in Fonthill and the surrounding Niagara communities, and the growth you're aiming for over the next year. Are you a retail shop hoping to draw foot traffic from the Short Hills trails? A service business covering Welland and Thorold? We build a custom, data-driven SEO plan around your answers—no cookie-cutter tactics, no blanket \"one size fits all\" packages, just focused local SEO in Fonthill that makes a genuine difference.",
-        ],
-      },
-      {
-        title: "Transparent Reporting and Measurable Success",
-        paragraphs: [
-          "Too many local SEO companies talk a big game but never show the receipts. At Infused Agency, we believe in straight talk. Every month you'll receive clear, easy-to-read reports that focus on what actually matters:",
-        ],
-        checklist: [
-          "Growth in website traffic",
-          "Better search engine rankings",
-          "More qualified local leads",
-          "Improvements in conversion rates",
-        ],
-        paragraphsAfter: [
-          "You'll also have a dedicated project manager who keeps you in the loop, answers your questions honestly, and fine-tunes your campaign as your business grows.",
-        ],
-      },
-      {
-        title: "A Proven Track Record of Success in the Region",
-        paragraphs: [
-          "Over the years, Infused Agency has helped businesses across Niagara—from home services and retail to tourism and wellness—build a stronger online presence. Whether you're just getting started with search in Fonthill or want to sharpen an existing strategy, we bring the local know-how and technical skill to get you noticed and generate the leads you need to grow.",
-        ],
-      },
-      {
-        title: "Honesty, Respect, and Integrity in Every Partnership",
-        paragraphs: [
-          "At Infused Agency, honesty comes first. We'll never push services you don't need just to pad a bill. Instead, we'll tell you what will genuinely help your Fonthill business and build a strategy that fits your budget and your goals. Every campaign is unique—if you only need local SEO and content, that's what we'll deliver. If you could benefit from stronger visibility in AI tools like ChatGPT and Gemini, we'll explain why and guide you down the right path.",
-        ],
-      },
-    ],
-    closingHeading: "Partner with an SEO Company That Cares",
-    closingParagraphs: [
-      "You deserve more than just another vendor to keep an eye on—you deserve a partner who's genuinely invested in your success. If you're ready to work with a dedicated agency that puts Fonthill businesses first, let's talk. Infused Agency is here to help you build a stronger digital presence through smart, strategic local SEO and AI Search marketing designed for our community. Reach out today for a free consultation and find out what's possible for your business.",
+      "Service pages for each thing you sell",
+      "Google Business Profile optimisation for the Niagara map pack",
+      "City pages for the towns and neighbourhoods you serve",
+      "Reviews and trust signals that reassure buyers before they call",
+      "Technical fixes that keep your site fast and easy to crawl",
     ],
   },
   services: {
-    heading: "Comprehensive SEO & AI Search Services",
+    heading: "SEO services in Fonthill",
+    subhead: "Practical local search work for Pelham's largest community",
     cards: [
       {
-        title: "Keyword Research for Local Businesses",
+        title: "Local SEO for Fonthill businesses",
         paragraphs: [
-          "Being found online starts with knowing the exact words your customers use. Infused Agency digs deep into keyword research tailored to the Fonthill and Pelham market, going well beyond raw search volume to understand what shoppers really mean. Whether your business relies on local service phrases or wider industry terms, we zero in on the searches your future customers are typing right now. That research becomes the foundation of every Fonthill SEO service we deliver, from content creation to on-page optimization and AI-ready copy.",
+          "Local visibility in Fonthill starts with mapping your services to Pelham and the escarpment communities you work in.",
         ],
       },
       {
-        title: "Local SEO Optimization",
+        title: "Google Business Profile and map pack",
         paragraphs: [
-          "When people nearby search for what you offer, local SEO is what helps you show up. As a dedicated local SEO company, Infused Agency builds targeted local SEO strategies for Fonthill that help your business appear in Google Maps, the local pack, organic results, and even AI-generated answers. Our local SEO services include:",
-        ],
-        checklist: [
-          "Google Business Profile optimization fine-tuned for local visibility",
-          "Local citations and directory listings that build authority in the community",
-          "Location-focused keyword strategies aimed at your Fonthill market",
-          "Locally relevant content that speaks to your neighbours and customers",
-          "Optimization for AI tools like ChatGPT, Gemini, and Google's AI Overviews so your business appears in AI answers",
+          "Households comparing local providers often start with your Google profile, so we keep every field current.",
         ],
       },
       {
-        title: "Content Writing & SEO Copywriting",
+        title: "On-page SEO and service pages",
         paragraphs: [
-          "Good content doesn't just describe your business—it convinces visitors to become customers. Infused Agency's content writing and Fonthill [SEO copywriting](/seo/content-writing) services are built for local businesses, pairing solid search optimization with warm, place-based messaging your neighbours will connect with. We weave location keywords and local references in naturally, creating service pages, blog posts, and website copy that rank well on Google and give AI tools like ChatGPT and Gemini clear, reliable answers about your business.",
+          "For every service you sell around Fonthill, we create a page shaped around the words local buyers use, from home services to professional practices on Pelham Street. We refine headings, copy and internal links so visitors, the map and AI tools all agree on what you actually sell around town.",
         ],
       },
       {
-        title: "Link Building Services",
+        title: "Technical SEO and site speed",
         paragraphs: [
-          "Backlinks continue to carry real weight in how Google ranks websites. Infused Agency offers white-hat link building that raises your site's authority and search visibility while staying well within Google's guidelines. Our approach includes:",
-        ],
-        checklist: [
-          "Directory submissions focused on Fonthill and Niagara listings",
-          "Guest posts in relevant industries that position your brand as a trusted voice",
-          "Relationships with community websites, local blogs, and regional partners here in Pelham",
-          "No shortcuts or spammy links—just sustainable SEO that grows your presence and builds the authority AI tools like ChatGPT and Gemini rely on to recommend businesses",
+          "Pelham households need quick load times.",
         ],
       },
       {
-        title: "On-Page SEO & Technical SEO",
+        title: "Content and links",
         paragraphs: [
-          "For your website to rank, it has to perform well. Infused Agency's on-page and technical SEO work makes sure your site satisfies Google's requirements and gives visitors a smooth experience. Our services cover:",
-        ],
-        checklist: [
-          "Meta title and description updates to lift click-through rates",
-          "Image alt text and file naming optimized for search engines",
-          "Page speed improvements and Core Web Vitals optimization",
-          "Mobile responsiveness checks to capture customers on the go",
-          "Fixing broken links and improving internal linking for easier navigation",
-        ],
-        paragraphsAfter: [
-          "From quick fixes to full technical audits, we ensure your site is easy for search engines and AI tools to understand and cite, and a pleasure for your customers to use.",
+          "Fonthill copy reaches the right customers when it includes Pelham and the escarpment.",
         ],
       },
       {
-        title: "AI Search Optimization",
+        title: "AI SEO for Fonthill businesses",
         paragraphs: [
-          "More and more, people turn to AI tools like ChatGPT, Gemini, and Google's AI Overviews when they want a local recommendation. Infused Agency helps Fonthill businesses get named in those AI answers by creating AI-ready content, keeping local details consistent across the web, and building the authority signals that matter. The next time someone asks AI where to find a great Pelham business, we want yours to be part of the reply.",
+          "Pelham households find Fonthill businesses in AI answers because their information stays consistent and reviews stay current.",
         ],
       },
     ],
   },
+  whyChoose: {
+    heading: "Why Fonthill businesses choose Infused Agency",
+    paragraphs: [
+      "Pelham searches are driven by households and small organisations, so we adapt to that rhythm instead of repeating a generic template.",
+    ],
+    awards: {
+      image: best,
+      alt: "Get found on Google and AI search tools with Infused Agency's local SEO services",
+    },
+    blocks: [
+      {
+        title: "Choosing an SEO company in Fonthill",
+        paragraphs: [
+          "When you compare a solo consultant, an agency and a larger firm for Pelham, the useful questions are who knows the neighbourhood, who will explain results plainly and whose scope fits. We will walk through our approach plainly and say when a lighter scope suits.",
+        ],
+      },
+      {
+        title: "Enquiries, not empty traffic",
+        paragraphs: [
+          "We chase the searches that end in a call or appointment rather than vanity visits that never convert. You get visibility into what produces customers:",
+        ],
+        checklist: [
+          "Rankings for the services you actually sell",
+          "Calls and form fills per page",
+          "Google Business Profile calls and direction requests",
+          "Which neighbourhoods and nearby towns produce enquiries",
+        ],
+        paragraphsAfter: [
+          "That clarity lets your budget follow the results rather than the other way around.",
+        ],
+      },
+      {
+        title: "Written by people who know local search",
+        paragraphs: [
+          "Pelham buyers often ask Google and AI tools for nearby providers, so clear pages do the convincing.",
+        ],
+      },
+      {
+        title: "Straight answers on cost and fit",
+        paragraphs: [
+          "SEO cost in Fonthill depends on your competition, your current website and how many services and areas you cover, so we price every project individually after a free audit. We say plainly when a narrower scope is enough and when SEO is not the right fit yet. Every client receives a free written quote.",
+        ],
+      },
+    ],
+    closingHeading: "Turn neighbourly search into calls",
+    closingParagraphs: [
+      "If people in Fonthill are finding your competitors when they search, book a free consultation and we will map what it takes to change that. SEO in Fonthill pays best when it is built around the neighbourhoods and everyday service searches your customers actually use.",
+    ],
+    cta: true,
+  },
   faqs: [
     {
-      q: "What does local SEO mean for a Fonthill business?",
-      a: "For businesses in Fonthill, local SEO means being visible to people searching in the Town of Pelham when they need a product or service nearby. That can be shoppers on Pelham Street, families in Fenwick, or active locals making use of the Steve Bauer Trail area. We use ethical, white-hat methods to strengthen your online presence so you connect with these audiences at the right moment. All of this work helps turn local searches into real leads.",
+      q: "How do I choose the best SEO company in Fonthill?",
+      a: "Look for a team that understands the Pelham community and explains progress in plain language. Ask for local examples, clear reporting and a scope that fits your size. No ethical agency can promise to be the best, and we do not.",
     },
     {
-      q: "How long will it take to see SEO results in Fonthill?",
-      a: "With the right approach, results typically come within 3–6 months, though progress can vary based on your starting point and level of competition. For Fonthill businesses near busy spots like Highway 20 or the Short Hills corridor, visibility tends to build gradually over time. We focus on sustainable gains using proven tactics that hold steady as Google evolves. You'll always know where things stand before and during the process.",
+      q: "What does SEO cost in Fonthill and what do packages include?",
+      a: "Pricing is individual and depends on your goals, your service area and your website's condition. Packages usually include local SEO, Google Business Profile work and service pages. You receive a free written quote after a free audit, with no invented figures.",
     },
     {
-      q: "What should a Fonthill small business expect to pay for SEO?",
-      a: "Every business has unique goals, so the right SEO scope will differ from one shop to the next. A retailer on Pelham Street may only need specific optimizations, while a service provider covering Fenwick or the wider Town of Pelham may need a broader plan. After a free consultation, we'll outline a clear strategy tailored to your needs. We never push services you don't need and keep everything transparent from the start.",
+      q: "Is affordable SEO worth it for a Fonthill business?",
+      a: "Yes, when it covers the foundations together: a complete Google Business Profile, service pages and consistent reviews. Low-cost work that skips local basics rarely holds. Affordable SEO should still be real work in the right order.",
     },
     {
-      q: "Can you guarantee the #1 spot for Fonthill search terms?",
-      a: "No, we cannot guarantee #1 rankings — that is simply not possible in any honest SEO campaign due to how often Google updates its results. What we can do is build steady, ethical visibility for high-intent terms that matter to Fonthill customers. Over the past decade of SEO experience, we've focused on first-page growth that drives real business outcomes. Our priority is sustainable results, not empty promises.",
+      q: "Do I need a big Fonthill SEO company or will a local one do?",
+      a: "For most Fonthill businesses a smaller, attentive team with local knowledge outperforms a large distant firm. What matters is understanding the community, honest scope and steady execution, not headcount.",
     },
     {
-      q: "What makes Infused Agency different from other Fonthill SEO companies?",
-      a: "We blend hands-on knowledge of the Fonthill community with over a decade of SEO experience to create strategies that fit this market. From the trails of Short Hills to the businesses along Pelham Street, we understand what makes this area distinct. Our approach stays transparent, practical, and focused on outcomes that matter to you. Most importantly, we back it with plain-language guidance every step of the way.",
+      q: "What is local SEO and how is it different from general SEO in Fonthill?",
+      a: "Local SEO targets map results, Google Business Profile and town-specific searches, while general SEO chases broader regional terms. In Fonthill most demand ties back to nearby residential service searches, so local SEO is usually the better first investment.",
     },
     {
-      q: "Do you only work with Fonthill local businesses?",
-      a: "While we focus heavily on helping Fonthill businesses grow, we don't limit ourselves to just this city. Our reach extends across the Niagara region and beyond to meet different goals. That said, if you're based in the Town of Pelham, we know the area well and can speak directly to your market. The same level of care applies no matter where your customers are located.",
+      q: "How long does SEO take for a Fonthill business?",
+      a: "Expect initial improvement in three to six months and more significant results in six to twelve. Pace depends on your site quality and how competitive your category already is in the area.",
     },
     {
-      q: "How do you optimize a Google Business Profile for Fonthill businesses?",
-      a: "A strong Google Business Profile starts with accurate categories, hours, services, and photos that reflect your business as it truly is. For Fonthill companies, we also fine-tune location signals to connect with nearby searches, whether along Highway 20 or near Fenwick. By keeping your profile active and consistent, we help improve map-pack visibility and drive more calls. These efforts work hand-in-hand with your website for maximum impact.",
+      q: "Can AI tools like ChatGPT recommend my Fonthill business?",
+      a: "Yes, when your information is clear and consistent online and your reviews are recent and genuine. We structure your site and profile so AI search tools are more likely to name you for a Fonthill search.",
     },
     {
-      q: "Which Fonthill businesses benefit most from local SEO?",
-      a: "Any business that relies on nearby customers stands to benefit, especially trades, retailers, restaurants, and wellness providers in the Town of Pelham. If people search before they call or visit, showing up matters — from shops on Pelham Street to those serving Fenwick families. Even businesses near the Steve Bauer Trail or Short Hills can capture high-intent traffic through targeted SEO. The key is matching your strategy to how your customers actually search.",
-    },
-    {
-      q: "What kind of reporting will I get for my Fonthill SEO campaign?",
-      a: "You'll receive straightforward monthly reporting on rankings, traffic, leads, and conversions, all written in plain language. We track progress against the goals we set during your free consultation and flag any meaningful shifts along the way. This gives you a clear picture of what's working without needing to decode technical jargon. It's reporting designed to help you make informed decisions about your growth.",
-    },
-    {
-      q: "How do I get started with SEO for my Fonthill business?",
-      a: "Getting started is simple with a free consultation where we review your website, Google presence, and goals. We'll identify realistic opportunities based on your location — whether you're near Pelham Street, Highway 20, or Fenwick. From there, we build a custom plan using ethical, white-hat methods tailored to your market. Once you're on board, we put those actions into motion with clear timelines and next steps.",
+      q: "Do you guarantee rankings for Fonthill searches?",
+      a: "No. No ethical SEO company guarantees a specific position because search results change constantly. We use white-hat methods, report transparently and work toward lasting visibility instead of promises we cannot keep.",
     },
   ],
 };

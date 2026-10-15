@@ -123,6 +123,13 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Removed Niagara city pages: permanent redirect to homepage.
+      { source: "/seo/st-catharines", destination: "/", statusCode: 301 },
+      { source: "/seo/st-catharines/", destination: "/", statusCode: 301 },
+      { source: "/seo/niagara-falls", destination: "/", statusCode: 301 },
+      { source: "/seo/niagara-falls/", destination: "/", statusCode: 301 },
+      { source: "/st-catharines-seo-company", destination: "/", statusCode: 301 },
+      { source: "/st-catharines-seo-company/", destination: "/", statusCode: 301 },
       {
         source: "/pricing",
         destination: "/get-a-quote",

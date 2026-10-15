@@ -11,10 +11,8 @@ const CITIES = [
   { name: "Fonthill", href: "/seo/fonthill" },
   { name: "Fort Erie", href: "/seo/fort-erie" },
   { name: "Grimsby", href: "/seo/grimsby" },
-  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
   { name: "Port Colborne", href: "/seo/port-colborne" },
-  { name: "St. Catharines", href: "/seo/st-catharines" },
   { name: "Thorold", href: "/seo/thorold" },
   { name: "Welland", href: "/seo/welland" },
 ];

@@ -15,10 +15,9 @@ import HeroAtmosphere from "../ui/HeroAtmosphere";
 import Accordion from "../ui/Accordion";
 import Icon from "../ui/Icon";
 import CitySeoJsonLd from "../seo/CitySeoJsonLd";
+import { NIAGARA_INDUSTRIES } from "../../src/lib/niagaraIndustries";
 
 const NIAGARA_CITIES = [
-  { name: "St. Catharines", href: "/seo/st-catharines" },
-  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Welland", href: "/seo/welland" },
   { name: "Grimsby", href: "/seo/grimsby" },
   { name: "Thorold", href: "/seo/thorold" },
@@ -32,9 +31,6 @@ const NIAGARA_CITIES = [
 
 const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
 
-// Inline-link renderer for body copy. Paragraphs, checklist items and FAQ
-// answers may embed `[label](/href)` tokens, which render as internal links
-// using the site's accent styling. Everything else renders as plain text.
 function RichText({ text }) {
   if (typeof text !== "string") return text;
   const nodes = [];
@@ -70,8 +66,6 @@ function RichText({ text }) {
   return <>{nodes}</>;
 }
 
-// Plain-text form of the same copy, for the FAQ JSON-LD so the structured data
-// matches the visible answer exactly (link labels inlined, no markup).
 function stripLinks(text) {
   if (typeof text !== "string") return text;
   return text.replace(new RegExp(LINK_RE), "$1");
@@ -138,6 +132,9 @@ function Hero({ city, hero }) {
                 See Our Results
               </Button>
             </div>
+            <p className="mt-4 text-sm text-muted">
+              Based in St. Catharines, serving {city} businesses.
+            </p>
           </div>
           <div className="lg:col-span-5">
             <figure className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-card shadow-card">
@@ -157,12 +154,12 @@ function Hero({ city, hero }) {
   );
 }
 
-function Intro({ intro, city }) {
-  if (!intro || !intro.paragraphs.length) return null;
+function MarketIntro({ intro, city }) {
+  if (!intro || !intro.paragraphs || !intro.paragraphs.length) return null;
   return (
     <Section
       eyebrow="Local SEO in the Niagara region"
-      heading={intro.heading || `${city} SEO services`}
+      heading={intro.heading || `SEO in ${city}`}
     >
       <Prose paragraphs={intro.paragraphs} />
     </Section>
@@ -211,10 +208,13 @@ function Proof({ proof }) {
   );
 }
 
-function ProseBlock({ block }) {
-  if (!block || !block.paragraphs.length) return null;
+function WhyNeeded({ block, city }) {
+  if (!block || !block.paragraphs || !block.paragraphs.length) return null;
   return (
-    <Section heading={block.heading} subhead={block.subhead || undefined}>
+    <Section
+      heading={block.heading || `Why ${city} businesses need local SEO`}
+      subhead={block.subhead}
+    >
       <Prose paragraphs={block.paragraphs} />
       {block.checklist && block.checklist.length ? (
         <div className="mt-6 max-w-3xl">
@@ -222,6 +222,40 @@ function ProseBlock({ block }) {
         </div>
       ) : null}
       <Prose paragraphs={block.paragraphsAfter} />
+    </Section>
+  );
+}
+
+function ServicesGrid({ services }) {
+  if (!services || !services.cards || !services.cards.length) return null;
+  return (
+    <Section
+      heading={services.heading}
+      subhead={services.subhead || undefined}
+    >
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {services.cards.map((card, i) => (
+          <Card key={i} className="flex h-full flex-col">
+            <span className="font-display text-sm font-bold text-accent">
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <h3 className="mt-3 font-display text-lg font-bold text-ink">
+              {card.title}
+            </h3>
+            <div className="mt-3">
+              <Prose paragraphs={card.paragraphs} />
+            </div>
+            {card.checklist && card.checklist.length ? (
+              <div className="mt-5">
+                <CheckList items={card.checklist} />
+              </div>
+            ) : null}
+            <div className="mt-3">
+              <Prose paragraphs={card.paragraphsAfter} />
+            </div>
+          </Card>
+        ))}
+      </div>
     </Section>
   );
 }
@@ -260,7 +294,7 @@ function WhyChoose({ whyChoose }) {
           </Card>
         ))}
       </div>
-      {whyChoose.closingHeading || whyChoose.closingParagraphs.length ? (
+      {whyChoose.closingHeading || (whyChoose.closingParagraphs && whyChoose.closingParagraphs.length) ? (
         <div className="mt-10 max-w-3xl">
           {whyChoose.closingHeading && (
             <h2 className="font-display text-h3 font-bold text-ink">
@@ -270,40 +304,88 @@ function WhyChoose({ whyChoose }) {
           <Prose paragraphs={whyChoose.closingParagraphs} />
         </div>
       ) : null}
+      {whyChoose.cta ? (
+        <div className="mt-10">
+          <Button href="/get-a-quote" size="lg">
+            Book a free consultation
+            <Icon name="arrow-right" className="h-4 w-4" />
+          </Button>
+        </div>
+      ) : null}
     </Section>
   );
 }
 
-function ServicesGrid({ services }) {
-  if (!services || !services.cards.length) return null;
+function NearbyAreas({ city }) {
+  const others = NIAGARA_CITIES.filter((c) => c.name !== city);
   return (
     <Section
-      heading={services.heading}
-      subhead={services.subhead || undefined}
+      eyebrow="Nearby areas"
+      heading="SEO across the rest of Niagara"
+      subhead="We serve businesses across the Niagara region."
     >
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {services.cards.map((card, i) => (
-          <Card key={i} className="flex h-full flex-col">
-            <span className="font-display text-sm font-bold text-accent">
-              {String(i + 1).padStart(2, "0")}
-            </span>
-            <h3 className="mt-3 font-display text-lg font-bold text-ink">
-              {card.title}
-            </h3>
-            <div className="mt-3">
-              <Prose paragraphs={card.paragraphs} />
-            </div>
-            {card.checklist && card.checklist.length ? (
-              <div className="mt-5">
-                <CheckList items={card.checklist} />
-              </div>
-            ) : null}
-            <div className="mt-3">
-              <Prose paragraphs={card.paragraphsAfter} />
-            </div>
-          </Card>
+      <p className="max-w-3xl text-base leading-relaxed text-muted">
+        Infused Agency runs local SEO programmes throughout the Niagara region,
+        both in {city} and in the communities nearby. If you serve customers
+        across more than one town, we connect your search visibility across each
+        of them. Explore the pages below for the other Niagara communities we
+        support.
+      </p>
+      <ul className="mt-6 flex flex-wrap gap-3">
+        {others.map((c) => (
+          <li key={c.href}>
+            <Link
+              href={c.href}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+            >
+              SEO in {c.name}
+              <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+            </Link>
+          </li>
         ))}
-      </div>
+        <li>
+          <Link
+            href="/seo/local-seo"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+          >
+            Local SEO in Niagara
+            <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+          >
+            SEO in St. Catharines and Niagara Falls
+            <Icon name="arrow-right" className="h-4 w-4 text-accent" />
+          </Link>
+        </li>
+      </ul>
+    </Section>
+  );
+}
+
+function Industries() {
+  return (
+    <Section
+      eyebrow="Industries"
+      heading="SEO for Niagara industries"
+      subhead="Search behaviour differs by industry. Explore the programmes we run for other Niagara sectors."
+    >
+      <ul className="flex flex-wrap gap-3">
+        {NIAGARA_INDUSTRIES.map((item) => (
+          <li key={item.href}>
+            <Link
+              href={item.href}
+              className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent/15"
+            >
+              {item.displayName}
+              <Icon name="arrow-right" className="h-4 w-4" />
+            </Link>
+          </li>
+        ))}
+      </ul>
     </Section>
   );
 }
@@ -316,62 +398,6 @@ function Faq({ faqs }) {
         items={faqs.map((f) => ({ q: f.q, a: <RichText text={f.a} /> }))}
         className="max-w-3xl"
       />
-    </Section>
-  );
-}
-
-function MapEmbed({ city, region, query }) {
-  if (!city) return null;
-  const q = encodeURIComponent(query || (region ? `${city}, ${region}` : city));
-  return (
-    <Section
-      eyebrow="Service area"
-      heading={`Serving businesses across ${city}`}
-      subhead="We help local businesses get found across the city and the surrounding communities."
-    >
-      <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-card">
-        <iframe
-          title={`Google map of ${city}`}
-          src={`https://www.google.com/maps?q=${q}&z=12&output=embed`}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          allowFullScreen
-          className="h-[360px] w-full border-0"
-        />
-      </div>
-    </Section>
-  );
-}
-
-function CityLinks() {
-  return (
-    <Section
-      eyebrow="Explore Niagara"
-      heading="SEO for every Niagara community"
-      subhead="We help businesses get found right here in the Niagara region."
-    >
-      <ul className="flex flex-wrap gap-3">
-        {NIAGARA_CITIES.map((c) => (
-          <li key={c.href}>
-            <Link
-              href={c.href}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
-            >
-              {c.name}
-              <Icon name="arrow-right" className="h-4 w-4 text-accent" />
-            </Link>
-          </li>
-        ))}
-        <li>
-          <Link
-            href="/industries"
-            className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent/15"
-          >
-            Browse all industries
-            <Icon name="arrow-right" className="h-4 w-4" />
-          </Link>
-        </li>
-      </ul>
     </Section>
   );
 }
@@ -416,15 +442,14 @@ const NiagaraCityPage = ({ page }) => {
       <Nav />
       <main className="redesign-root">
         <Hero city={city} hero={hero} />
-        <Intro intro={page.intro} city={city} />
+        <MarketIntro intro={page.marketIntro} city={city} />
         <Proof proof={page.proof} />
-        <ProseBlock block={page.servicesBlock} />
-        <ProseBlock block={page.localBlock} />
-        <MapEmbed city={city} region={seo.region} query={page.mapQuery} />
-        <WhyChoose whyChoose={page.whyChoose} />
+        <WhyNeeded block={page.whyNeeded} city={city} />
         <ServicesGrid services={page.services} />
+        <WhyChoose whyChoose={page.whyChoose} />
+        <NearbyAreas city={city} />
+        <Industries />
         <Faq faqs={page.faqs} />
-        <CityLinks />
       </main>
       <CTA />
       <Footer />

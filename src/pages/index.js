@@ -44,8 +44,6 @@ const TRUST = [
 ];
 
 const CITIES = [
-  { name: "St. Catharines", href: "/seo/st-catharines" },
-  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
   { name: "Welland", href: "/seo/welland" },
   { name: "Fort Erie", href: "/seo/fort-erie" },

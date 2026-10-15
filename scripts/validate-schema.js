@@ -22,10 +22,8 @@ const CITY_SLUGS = new Set([
   "fonthill",
   "fort-erie",
   "grimsby",
-  "niagara-falls",
   "niagara-on-the-lake",
   "port-colborne",
-  "st-catharines",
   "thorold",
   "welland",
 ]);
