@@ -277,11 +277,11 @@ function homeGraph({ faqs } = {}) {
     webPageNode({
       url: `${SITE}/`,
       id: `${SITE}/#webpage`,
-      name: "SEO Niagara | Grow Traffic & Local Leads",
+      name: "SEO Niagara, St. Catharines & Niagara Falls | Local SEO Company & AI SEO Agency",
       primaryImage: LOGO_ID,
       isPartOf: WEBSITE_ID,
       datePublished: "2023-01-01T09:00:00+00:00",
-      dateModified: "2025-08-27T10:00:00+00:00",
+      dateModified: "2026-10-14T10:00:00+00:00",
     }),
     faqPageNode(faqs, `${SITE}/#faq`),
   ]);
