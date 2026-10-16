@@ -356,8 +356,47 @@ function AreasLinks() {
   );
 }
 
+function relatedIndustries(currentUrl) {
+  const all = NIAGARA_INDUSTRIES;
+  const current =
+    all.find((item) => item.href === currentUrl) || null;
+  const others = all.filter((item) => item.href !== currentUrl);
+  if (others.length <= 12) return others;
+
+  const sameCategory = others.filter(
+    (item) => item.category === (current && current.category)
+  );
+  const otherCategory = others.filter(
+    (item) => item.category !== (current && current.category)
+  );
+
+  const currentIndex = all.findIndex((item) => item.href === currentUrl);
+  const rotate = (list, count, offset) => {
+    if (!list.length) return [];
+    const start = list.length ? offset % list.length : 0;
+    const result = [];
+    for (let i = 0; i < count; i += 1) {
+      result.push(list[(start + i) % list.length]);
+    }
+    return result;
+  };
+
+  if (sameCategory.length >= 12) {
+    return rotate(sameCategory, 12, currentIndex >= 0 ? currentIndex : 0);
+  }
+
+  const chosen = [...sameCategory];
+  const remaining = 12 - chosen.length;
+  const filler = rotate(
+    otherCategory,
+    remaining,
+    currentIndex >= 0 ? currentIndex : 0
+  );
+  return chosen.concat(filler);
+}
+
 function OtherIndustries({ currentUrl }) {
-  const others = NIAGARA_INDUSTRIES.filter((item) => item.href !== currentUrl);
+  const others = relatedIndustries(currentUrl);
   return (
     <Section
       eyebrow="More industries"
