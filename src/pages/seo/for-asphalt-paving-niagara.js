@@ -22,7 +22,7 @@ const page = {
   intro: {
     heading: "Asphalt paving SEO built for the Niagara market",
     paragraphs: [
-      "Asphalt is a trade where the job window is dictated by the weather, and the quoting window starts weeks before. A homeowner in St. Catharines or Niagara Falls who notices a driveway breaking up in March is online that afternoon comparing paving companies, long before the first truck arrives. If your company is not in those first results, the paving season books itself around whoever is. Our [SEO services](/seo) put your asphalt business in front of homeowners and property managers at the point they decide to get quotes.",
+      "Asphalt is a trade where the job window is dictated by the weather, and the quoting window starts weeks before. A homeowner in St. Catharines or Niagara Falls who notices a driveway breaking up is online that afternoon comparing paving companies, long before the first truck arrives. If your company is not in those first results, the paving season books itself around whoever is. Our [SEO services](/seo) put your asphalt business in front of homeowners and property managers at the point they decide to get quotes.",
       "Paving customers split into two very different jobs. A homeowner in Fonthill pricing a brand-new driveway uses different words from a property manager in Welland who needs a commercial lot resurfaced before winter. We map those searches, decide which ones lead to the work you actually want, and build service and town pages that can rank for them.",
       "The result is not a vanity ranking. It is more qualified quote requests for paving, patching and sealcoating, from the communities you actually work in and the types of customer you prefer.",
     ],
@@ -47,7 +47,7 @@ const page = {
     paragraphs: [
       "Asphalt work in Niagara follows the frost and the thaw. Spring brings a burst of patching and crack-repair calls from winter damage, summer carries new driveways and commercial lots, and early autumn is the last practical window for any significant pour or overlay. When searches like \u201casphalt driveway St. Catharines,\u201d \u201cdriveway paving Niagara Falls,\u201d \u201csealcoating Welland\u201d or \u201casphalt repair near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, reviews and town coverage all carry that weight.",
       "Chasing national phrases helps nobody when a paving crew and hot mix have to arrive on a specific driveway. We concentrate on the town-level searches a homeowner in Port Colborne or a retail property manager in Beamsville actually makes. It starts with an honest audit of where you rank today, which pavers are ahead of you locally, and what your website leaves unsaid, then a steady fix of each gap.",
-      "AI tools are increasingly part of the research stage. Homeowners and property managers now ask ChatGPT, Gemini or Google's AI Overviews to point them toward a local paving company with a solid reputation. We keep your content organised and your local authority strong so those assistants are more likely to name your business when someone in Niagara asks.",
+      "AI tools are increasingly part of the research stage. Homeowners and property managers now ask ChatGPT, Gemini or Google's AI Overviews to point them toward a local paving company with a solid reputation. We keep your content organised and your local authority strong so those assistants are more likely to name your company when someone asks for a paving contractor nearby.",
     ],
     checklist: [
       "Service pages for new driveways, resurfacing and patching",
@@ -96,7 +96,7 @@ const page = {
       {
         title: "Tar and tonnage, not passing clicks",
         paragraphs: [
-          "A hundred visitors who will never pave anything earns nothing. We chase the searches that end in a quote: new driveways, resurfacing an overlay, commercial lots, parking lots, patching, crack sealing, edge repair and sealcoating.",
+          "A hundred visitors who will never pave anything earns nothing. We chase the searches that end in a quote: new driveways, resurfacing, overlays, commercial lots, parking lots, patching, crack filling, crack sealing, edge repair and sealcoating.",
           "Our reporting connects each page and query to the calls and forms it produced, so the coming month follows the jobs that actually turned into work.",
         ],
         checklist: [

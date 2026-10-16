@@ -47,7 +47,7 @@ const page = {
     paragraphs: [
       "Fence work in Niagara runs on weather, on outdoor-living season and on pool season. Spring through autumn brings the new installs, while storm damage and wind work arrives whenever weather does. When searches like \u201cfence installation St. Catharines,\u201d \u201cprivacy fence Niagara Falls,\u201d \u201cchain link Fence Welland\u201d or \u201cfence contractor near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, photos and town coverage all carry that weight.",
       "General national phrases are useless when a crew has to dig posts into Niagara soil. We focus on the town-level searches a homeowner in Port Colborne or a property owner in Beamsville actually makes. That starts with an honest audit of where you rank today, which installers are ahead of you locally, and what your site leaves unanswered, then a steady fix of each gap.",
-      "Buyers are increasingly turning to AI tools as well. Homeowners now ask ChatGPT, Gemini or Google's AI Overviews to point them toward a good local fence installer. We keep your content organised and your local authority strong so those assistants are more likely to name your business when someone in Niagara asks.",
+      "Buyers are increasingly turning to AI tools as well. Homeowners now ask ChatGPT, Gemini or Google's AI Overviews to point them toward a good local fence installer. We keep your content organised and your local authority strong so those assistants are more likely to name your crew when someone asks for a fence installer nearby.",
     ],
     checklist: [
       "Service pages for wood, vinyl, chain link and metal fencing",

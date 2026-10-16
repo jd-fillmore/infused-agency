@@ -45,9 +45,9 @@ const page = {
     heading: "Why kitchen and bathroom renovators need local SEO in Niagara",
     subhead: "Getting found while the shortlist is still open",
     paragraphs: [
-      "Kitchen and bath demand in Niagara is year-round but it is not even. Cooler months are when most homeowners plan and price the work they want finished by spring or before a sale, and the volume of \u201ckitchen renovation St. Catharines,\u201d \u201bbathroom remodel Niagara Falls,\u201d \u201ccustom cabinetry Welland\u201d or \u201bbathroom renovation near me\u201d searches climbs long before the tools arrive. Google relies heavily on local signals for those queries, so your website, Google Business Profile, reviews and town coverage all carry weight.",
+      "Kitchen and bath demand in Niagara is year-round but it is not even. Cooler months are often when homeowners plan and price work they want finished before a sale, and the volume of \u201ckitchen renovation St. Catharines,\u201d \u201bbathroom remodel Niagara Falls,\u201d \u201ccustom cabinetry Welland\u201d or \u201bbathroom renovation near me\u201d searches climbs long before the tools arrive. Google relies heavily on local signals for those queries, so your website, Google Business Profile, reviews and town coverage all carry weight.",
       "Chasing broad national phrases does nothing for a renovator who has to measure a room and manage a trade. We focus on the town-level searches a homeowner in Port Colborne or a landlord in Beamsville actually makes. It begins with a clear audit of where you rank today, which renovators are ahead of you, and what your site leaves unanswered, then a steady fix of each gap.",
-      "AI tools are part of the picture too. A growing number of homeowners ask ChatGPT, Gemini or Google's AI Overviews to recommend a kitchen or bathroom renovator nearby. We keep your content organised and your local authority strong so those assistants are more likely to name your business when someone in Niagara asks.",
+      "AI tools are part of the picture too. A growing number of homeowners ask ChatGPT, Gemini or Google's AI Overviews to recommend a kitchen or bathroom renovator nearby. We keep your content organised and your local authority strong so those assistants are more likely to name your company when someone asks for a kitchen or bath renovator nearby.",
     ],
     checklist: [
       "Service pages for kitchens, baths, cabinetry and countertop work",
@@ -82,7 +82,7 @@ const page = {
   whyChoose: {
     heading: "Why Niagara kitchen and bath renovators bring us in",
     paragraphs: [
-      "Kitchens and bathrooms are bought with the heart and justified with the head. A homeowner who starts a Pinterest board in October usually wants contractor shortlists by January, and timing lost in the window between planning and booking rarely comes back that year.",
+      "Kitchens and bathrooms are bought with the heart and justified with the head. Homeowners often plan these rooms well ahead and build a contractor shortlist before booking, and timing lost in that window rarely comes back that year.",
       "We work with renovators across the region to surface for the searches that start those projects, so the pipeline stays full even through the slower winter weeks.",
     ],
     blocks: [

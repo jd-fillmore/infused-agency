@@ -22,7 +22,7 @@ const page = {
   intro: {
     heading: "Pool and hot tub service SEO built for the Niagara market",
     paragraphs: [
-      "Pool service is a trade where the phone starts ringing the moment the ice is off the cover. A homeowner in St. Catharines or Niagara Falls who cannot get their water clear in May is on Google within the hour, and the technician who shows up first is usually the one who gets the whole season's work. If your company is not on that first screen, the programme goes to whoever is. Our [SEO services](/seo) put your pool and hot tub business in front of homeowners at the exact point they decide they need help.",
+      "Pool service is a trade where the phone starts ringing the moment the ice is off the cover. A homeowner in St. Catharines or Niagara Falls who cannot get their water clear in spring is on Google within the hour, and the technician who shows up first is usually the one who gets the whole season's work. If your company is not on that first screen, the programme goes to whoever is. Our [SEO services](/seo) put your pool and hot tub business in front of homeowners at the exact point they decide they need help.",
       "The work behind a pool service search is rarely one job. A client in Fonthill who wants weekly maintenance through summer is not the same buyer as someone in Thorold with a pump that will not prime, or a landlord who needs a hot tub serviced at a rental. We sort those searches apart, work out which ones lead to the work your route wants, and build service and town pages that can rank for them.",
       "The outcome is not a vanity ranking. It is more qualified service calls, openings and closings, equipment repairs and recurring maintenance contracts, from the communities you actually drive to.",
     ],
@@ -47,7 +47,7 @@ const page = {
     paragraphs: [
       "Pool service in Niagara is front-loaded and unforgiving. Spring openings arrive in a compressed window, summer demands consistent chemistry and equipment, and autumn closings pile up fast. When searches like \u201cpool opening St. Catharines,\u201d \u201cpool maintenance Niagara Falls,\u201d \u201chot tub repair Welland\u201d or \u201cpool service near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, reviews and town coverage all carry that weight.",
       "Chasing broad national phrases helps nobody when a technician has to be at the property the same week. We focus on the town-level searches a homeowner in Port Colborne or a cottage owner near Crystal Beach actually makes. It starts with an honest audit of where you rank today, which service companies are ahead of you locally, and what your website leaves unanswered, then a steady fix of each gap.",
-      "Buyers are also turning to AI tools. Homeowners now ask ChatGPT, Gemini or Google's AI Overviews to name a reliable local pool service company. We keep your content organised and your local authority strong so those assistants are more likely to name your business when someone in Niagara asks.",
+      "Buyers are also turning to AI tools. Homeowners now ask ChatGPT, Gemini or Google's AI Overviews to name a reliable local pool service company. We keep your content organised and your local authority strong so those assistants are more likely to name your company when someone asks for pool or hot tub help nearby.",
     ],
     checklist: [
       "Service pages for openings, closings and weekly care",

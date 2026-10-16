@@ -47,7 +47,7 @@ const page = {
     paragraphs: [
       "Whole-home work in Niagara follows the calendar even when the planning does not. Builds and heavy renovations tend to concentrate from spring through autumn, but the decisions about who to hire are made well ahead, often through winter. When searches like \u201cgeneral contractor St. Catharines,\u201d \u201cwhole home renovation Niagara Falls,\u201d \u201chouse renovation contractor Welland\u201d or \u201cgeneral contractor near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, reviews and town coverage all carry that weight.",
       "Broad national phrases are useless when someone is about to invite a crew into their home for months. We concentrate on the town-level searches a homeowner in Port Colborne or a couple planning a move to Beamsville actually makes. That starts with an honest audit of where you sit today, which general contractors are ahead of you locally, and what gaps your website leaves unanswered, then a methodical fix of each one.",
-      "A growing share of homeowners now ask ChatGPT, Gemini or Google's AI Overviews to point them toward a reputable local contractor. We keep your content organised and your local authority strong so those assistants are more likely to name your business when someone in Niagara asks.",
+      "A growing share of homeowners now ask ChatGPT, Gemini or Google's AI Overviews to point them toward a reputable local contractor. We keep your content organised and your local authority strong so those assistants are more likely to name your company when someone asks for a general contractor nearby.",
     ],
     checklist: [
       "Pages for whole-home renovations, additions and major remodels",
@@ -82,14 +82,14 @@ const page = {
   whyChoose: {
     heading: "Why Niagara general contractors bring us in",
     paragraphs: [
-      "General contracting is a long-horizon sale. The homeowner who enquires in November is rarely calling anyone until February, and the one who calls in February often wants the work finished before summer. Being present at the research stage is how you get onto the shortlist before it hardens.",
+      "General contracting is a long-horizon sale. Homeowners who enquire early often do not sign until months later, and many want a project finished before the busy season. Being present at the research stage is how you get onto the shortlist before it hardens.",
       "We work with general contractors across Niagara to surface for the searches that start whole projects, so the pipeline stays full rather than clustering around one or two busy months.",
     ],
     blocks: [
       {
         title: "Planned around the building season",
         paragraphs: [
-          "General contracting in Niagara runs on a different clock than a quick repair. Spring through autumn is when heavy construction happens, but winter is when estimates are signed and crews are lined up. We pace your content, project photography and profile activity to that rhythm rather than doing the same thing every month.",
+          "General contracting in Niagara runs on a different clock than a quick repair. The busy building season runs spring through autumn, but planning and quoting often happen through the winter beforehand. We pace your content, project photography and profile activity to that rhythm rather than doing the same thing every month.",
           "By the time the first site visit happens in March, your service pages and recent completions are already doing the selling.",
         ],
       },

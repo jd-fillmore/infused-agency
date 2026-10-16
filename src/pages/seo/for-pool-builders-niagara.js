@@ -22,7 +22,7 @@ const page = {
   intro: {
     heading: "Pool builder SEO built for the Niagara market",
     paragraphs: [
-      "A swimming pool is the biggest discretionary spend most Niagara homeowners make on their property, and the decision is made months before the ground is broken. A family in St. Catharines or Niagara Falls who starts thinking about a pool in January usually signs with whoever they have been quietly researching since Christmas. If your name is not on that shortlist, the project goes to someone else. Our [SEO services](/seo) put your pool-building business in front of homeowners while the planning is still open.",
+      "A swimming pool is the biggest discretionary spend most Niagara homeowners make on their property, and the decision is made months before the ground is broken. A family in St. Catharines or Niagara Falls may research pool options for weeks before contacting anyone, and the names encountered during that research usually shape the shortlist. If your name is not on that shortlist, the project goes to someone else. Our [SEO services](/seo) put your pool-building business in front of homeowners while the planning is still open.",
       "Pool buyers are not all looking for the same thing. A household in Fonthill pricing a compact inground pool with a simple surround is not typing the same words as a couple in Fort Erie planning a custom design with a tanning ledge and full landscaping. We sort those searches apart, work out which ones lead to the builds your crew wants, and build service and town pages that can rank for them.",
       "The outcome is not a vanity ranking. It is more qualified build enquiries for the kind of pools you actually want to install, across the communities you actually travel to.",
     ],
@@ -45,9 +45,9 @@ const page = {
     heading: "Why pool builders need local SEO in Niagara",
     subhead: "Getting found before the build season books up",
     paragraphs: [
-      "Pool demand in Niagara builds a long way ahead of the season. The installers who are fully booked by March are usually the ones homeowners found in December and January, not April. When searches like \u201cpool builders St. Catharines,\u201d \u201cinground pool Niagara Falls,\u201d \u201cpool installation Welland\u201d or \u201cpool contractor near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, photos, reviews and town coverage all feed that decision.",
+      "Pool demand in Niagara builds a long way ahead of the season. The installers with a full season often earn it during the winter planning months rather than at the first warm weekend. When searches like \u201cpool builders St. Catharines,\u201d \u201cinground pool Niagara Falls,\u201d \u201cpool installation Welland\u201d or \u201cpool contractor near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, photos, reviews and town coverage all feed that decision.",
       "National phrases mean nothing when a dig and an install have to be scheduled around a local calendar. We focus on the town-level searches a homeowner in Port Colborne or a family in Beamsville actually makes. It starts with an honest audit of where you rank today, which builders are ahead of you locally, and what your website leaves unanswered, then a steady fix of each gap.",
-      "AI tools are increasingly part of that research. Homeowners now ask ChatGPT, Gemini or Google's AI Overviews for a pool builder recommendation in their area. We keep your content organised and your local authority strong so those assistants are more likely to name your business when someone in Niagara asks.",
+      "AI tools are increasingly part of that research. Homeowners now ask ChatGPT, Gemini or Google's AI Overviews for a pool builder recommendation in their area. We keep your content organised and your local authority strong so those assistants are more likely to name your company when someone asks for a pool builder nearby.",
     ],
     checklist: [
       "Service pages for inground and above-ground pools",
@@ -82,7 +82,7 @@ const page = {
   whyChoose: {
     heading: "Why Niagara pool builders bring us in",
     paragraphs: [
-      "Pool building is a long-horizon, high-trust sale. The homeowner who starts planning in November usually signs in March, and the builder who was present through those months of research is the one most likely to win the contract.",
+      "Pool building is a long-horizon, high-trust sale. Homeowners who start planning in the off-season often sign weeks or months later, and the builder who was present through that research is the one most likely to win the contract.",
       "We work with pool builders throughout Niagara to surface for the searches that start those plans, so the following season's install schedule gets filled while your competitors are still scaling up.",
     ],
     blocks: [
