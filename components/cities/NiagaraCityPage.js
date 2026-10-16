@@ -15,7 +15,7 @@ import HeroAtmosphere from "../ui/HeroAtmosphere";
 import Accordion from "../ui/Accordion";
 import Icon from "../ui/Icon";
 import CitySeoJsonLd from "../seo/CitySeoJsonLd";
-import { NIAGARA_INDUSTRY_NAV_LINKS } from "../../src/lib/niagaraIndustries";
+import { NIAGARA_INDUSTRY_NAV_LINKS, NIAGARA_INDUSTRIES } from "../../src/lib/niagaraIndustries";
 
 const NIAGARA_CITIES = [
   { name: "Welland", href: "/seo/welland" },
@@ -367,25 +367,44 @@ function NearbyAreas({ city }) {
 }
 
 function Industries() {
+  const byHref = Object.fromEntries(
+    NIAGARA_INDUSTRIES.map((item) => [item.href, item.category])
+  );
+  const groups = NIAGARA_INDUSTRY_NAV_LINKS.reduce((acc, item) => {
+    const category = byHref[item.url] || "Other";
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(item);
+    return acc;
+  }, {});
   return (
     <Section
       eyebrow="Industries"
       heading="SEO for Niagara industries"
       subhead="Search behaviour differs by industry. Explore the programmes we run for other Niagara sectors."
     >
-      <ul className="flex flex-wrap gap-3">
-        {NIAGARA_INDUSTRY_NAV_LINKS.map((item) => (
-          <li key={item.url}>
-            <Link
-              href={item.url}
-              className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent/15"
-            >
-              {item.name}
-              <Icon name="arrow-right" className="h-4 w-4" />
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="space-y-6">
+        {Object.keys(groups)
+          .sort()
+          .map((category) => (
+            <div key={category}>
+              <h3 className="font-display text-sm font-bold uppercase tracking-[0.12em] text-ink">
+                {category}
+              </h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {groups[category].map((item) => (
+                  <li key={item.url}>
+                    <Link
+                      href={item.url}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-3 py-1.5 text-xs font-semibold text-accent transition-colors hover:bg-accent/15"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+      </div>
     </Section>
   );
 }

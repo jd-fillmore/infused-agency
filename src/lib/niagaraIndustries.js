@@ -214,6 +214,78 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "basement-finishing",
+    displayName: "Basement Finishing",
+    category: "Home & Trade Services",
+    benefit:
+      "Win more basement finishing, family-room and in-law suite projects from homeowners searching across Niagara.",
+    href: "/seo/for-basement-finishing-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "kitchen-and-bathroom-renovators",
+    displayName: "Kitchen and Bathroom Renovators",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for kitchen and bathroom remodel searches across Niagara, from design to install.",
+    href: "/seo/for-kitchen-and-bathroom-renovators-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "general-contractors",
+    displayName: "General Contractors",
+    category: "Home & Trade Services",
+    benefit:
+      "Win whole-home renovation and project-management searches from homeowners across Niagara.",
+    href: "/seo/for-general-contractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "interlock-installers",
+    displayName: "Interlock Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for interlock driveways, patios, walkways and retaining walls across Niagara.",
+    href: "/seo/for-interlock-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "asphalt-paving",
+    displayName: "Asphalt Paving",
+    category: "Home & Trade Services",
+    benefit:
+      "Win new driveway, resurfacing and sealcoating jobs from searches across Niagara.",
+    href: "/seo/for-asphalt-paving-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "fence-installers",
+    displayName: "Fence Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for wood, vinyl, chain link and privacy fence searches across Niagara.",
+    href: "/seo/for-fence-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "pool-builders",
+    displayName: "Pool Builders",
+    category: "Home & Trade Services",
+    benefit:
+      "Win inground and above-ground pool installation searches across Niagara.",
+    href: "/seo/for-pool-builders-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "pool-and-hot-tub-service",
+    displayName: "Pool and Hot Tub Service",
+    category: "Home & Trade Services",
+    benefit:
+      "Be found for pool openings, closings, maintenance and hot tub repair across Niagara.",
+    href: "/seo/for-pool-and-hot-tub-service-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
