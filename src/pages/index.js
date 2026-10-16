@@ -792,9 +792,7 @@ export async function getStaticProps() {
     image,
   }));
   const { buildIndustriesProps } = require("../lib/verticalSeo");
-  const industries = buildIndustriesProps().items.filter(
-    (item) => item.slug !== "therapists",
-  );
+  const industries = buildIndustriesProps().homepageItems;
   return {
     props: {
       latestPosts,

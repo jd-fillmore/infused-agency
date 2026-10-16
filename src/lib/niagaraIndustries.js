@@ -115,6 +115,105 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "foundation-waterproofing",
+    displayName: "Foundation Waterproofing",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for wet basements, weeping tile, crack repair and sump pumps across Niagara.",
+    href: "/seo/for-foundation-waterproofing-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "restoration-companies",
+    displayName: "Restoration Companies",
+    category: "Home & Trade Services",
+    benefit:
+      "Be the first call for water, flood and fire damage cleanup and mould remediation across Niagara.",
+    href: "/seo/for-restoration-companies-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "garage-door-companies",
+    displayName: "Garage Door Companies",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for broken springs, opener repair and new door installation in Niagara.",
+    href: "/seo/for-garage-door-companies-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "pest-control",
+    displayName: "Pest Control",
+    category: "Home & Trade Services",
+    benefit:
+      "Win ant, wasp, rodent and bed bug calls from homes and businesses across Niagara.",
+    href: "/seo/for-pest-control-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "siding-contractors",
+    displayName: "Siding Contractors",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for vinyl, fibre cement and steel siding, soffit, fascia and storm repairs across Niagara.",
+    href: "/seo/for-siding-contractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "eavestrough-contractors",
+    displayName: "Eavestrough Contractors",
+    category: "Home & Trade Services",
+    benefit:
+      "Rank for eavestrough installs, leaf guards, downspouts and cleaning across Niagara.",
+    href: "/seo/for-eavestrough-contractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "septic-services",
+    displayName: "Septic Services",
+    category: "Home & Trade Services",
+    benefit:
+      "Be found for septic pumping, inspections, repairs and installation across rural Niagara.",
+    href: "/seo/for-septic-services-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "auto-body-shops",
+    displayName: "Auto Body Shops",
+    category: "Automotive",
+    benefit:
+      "Show up for collision repair, dent and bumper repair and paint matching across Niagara.",
+    href: "/seo/for-auto-body-shops-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "window-and-door-installers",
+    displayName: "Window and Door Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for replacement windows, entry and patio doors and energy-efficiency upgrades across Niagara.",
+    href: "/seo/for-window-and-door-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "towing-companies",
+    displayName: "Towing Companies",
+    category: "Automotive",
+    benefit:
+      "Be the first number drivers find for towing, roadside help and accident recovery in Niagara.",
+    href: "/seo/for-towing-companies-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "appliance-repair",
+    displayName: "Appliance Repair",
+    category: "Home & Trade Services",
+    benefit:
+      "Win washer, dryer, fridge and oven repair calls from homeowners across Niagara.",
+    href: "/seo/for-appliance-repair-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
@@ -125,10 +224,47 @@ const NIAGARA_INDUSTRIES = [
   },
 ];
 
+// The industries the homepage features: every Niagara programme. The
+// Canada-wide therapist programme is surfaced separately, so it is excluded
+// from the homepage industries grid.
+const HOMEPAGE_INDUSTRY_SLUGS = [
+  "concrete-contractors",
+  "insulation-contractors",
+  "electricians",
+  "law-firms",
+  "solar-companies",
+  "wineries",
+  "deck-builders",
+  "plumbers",
+  "roofers",
+  "dentists",
+  "landscapers",
+  "hvac-contractors",
+  "foundation-waterproofing",
+  "restoration-companies",
+  "garage-door-companies",
+  "pest-control",
+  "siding-contractors",
+  "eavestrough-contractors",
+  "septic-services",
+  "auto-body-shops",
+  "window-and-door-installers",
+  "towing-companies",
+  "appliance-repair",
+];
+
+const HOMEPAGE_INDUSTRIES = NIAGARA_INDUSTRIES.filter((item) =>
+  HOMEPAGE_INDUSTRY_SLUGS.includes(item.slug)
+);
+
 // Shape expected by the vertical nav snapshot (name + url).
 const NIAGARA_INDUSTRY_NAV_LINKS = NIAGARA_INDUSTRIES.map((item) => ({
   name: `SEO for ${item.displayName}${item.slug === "therapists" ? " in Canada" : " in Niagara"}`,
   url: item.href,
 }));
 
-module.exports = { NIAGARA_INDUSTRIES, NIAGARA_INDUSTRY_NAV_LINKS };
+module.exports = {
+  NIAGARA_INDUSTRIES,
+  HOMEPAGE_INDUSTRIES,
+  NIAGARA_INDUSTRY_NAV_LINKS,
+};

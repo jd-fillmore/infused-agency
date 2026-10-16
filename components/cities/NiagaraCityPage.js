@@ -15,7 +15,7 @@ import HeroAtmosphere from "../ui/HeroAtmosphere";
 import Accordion from "../ui/Accordion";
 import Icon from "../ui/Icon";
 import CitySeoJsonLd from "../seo/CitySeoJsonLd";
-import { NIAGARA_INDUSTRIES } from "../../src/lib/niagaraIndustries";
+import { NIAGARA_INDUSTRY_NAV_LINKS } from "../../src/lib/niagaraIndustries";
 
 const NIAGARA_CITIES = [
   { name: "Welland", href: "/seo/welland" },
@@ -374,13 +374,13 @@ function Industries() {
       subhead="Search behaviour differs by industry. Explore the programmes we run for other Niagara sectors."
     >
       <ul className="flex flex-wrap gap-3">
-        {NIAGARA_INDUSTRIES.map((item) => (
-          <li key={item.href}>
+        {NIAGARA_INDUSTRY_NAV_LINKS.map((item) => (
+          <li key={item.url}>
             <Link
-              href={item.href}
+              href={item.url}
               className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent/15"
             >
-              {item.displayName}
+              {item.name}
               <Icon name="arrow-right" className="h-4 w-4" />
             </Link>
           </li>

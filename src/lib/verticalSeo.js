@@ -1196,17 +1196,21 @@ function buildIndustriesProps() {
   // Niagara-first: the industries surfaced on the homepage and /industries are
   // the curated bespoke Niagara programmes (plus the Canada-wide therapist
   // programme). See src/lib/niagaraIndustries.js.
-  const { NIAGARA_INDUSTRIES } = require("./niagaraIndustries");
-  const items = NIAGARA_INDUSTRIES.map((v) => ({
+  const { NIAGARA_INDUSTRIES, HOMEPAGE_INDUSTRIES } = require("./niagaraIndustries");
+  const shape = (v) => ({
     slug: v.slug,
     displayName: v.displayName,
     category: v.category,
     benefit: v.benefit,
     href: v.href,
     coverage: v.coverage,
-  }));
+  });
+  const items = NIAGARA_INDUSTRIES.map(shape);
+  // The homepage features a short, curated subset; /industries and every
+  // "Other industries" list use the full `items` set.
+  const homepageItems = HOMEPAGE_INDUSTRIES.map(shape);
   const categories = [...new Set(items.map((i) => i.category))].sort();
-  return { items, categories };
+  return { items, categories, homepageItems };
 }
 
 // ----- legacy redirects (only emitted when the target is published) -----
