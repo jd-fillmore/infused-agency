@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "Pool builds often sit beside enclosure and outdoor work, so our pages for [pool and hot tub service in Niagara](/seo/for-pool-and-hot-tub-service-niagara), [fence installers in Niagara](/seo/for-fence-installers-niagara) and [landscapers in Niagara](/seo/for-landscapers-niagara) are useful context as well.",
     ],
   },
   whyChoose: {

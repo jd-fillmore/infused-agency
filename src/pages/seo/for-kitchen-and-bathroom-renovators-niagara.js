@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "If your projects overlap with larger scopes or lower-level work, our pages for [general contractors in Niagara](/seo/for-general-contractors-niagara) and [basement finishing in Niagara](/seo/for-basement-finishing-niagara) cover adjacent searches too.",
     ],
   },
   whyChoose: {

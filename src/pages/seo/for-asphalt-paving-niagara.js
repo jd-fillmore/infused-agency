@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "Asphalt work often sits beside concrete and interlock, so our pages for [concrete contractors in Niagara](/seo/for-concrete-contractors-niagara) and [interlock installers in Niagara](/seo/for-interlock-installers-niagara) are useful context as well.",
     ],
   },
   whyChoose: {

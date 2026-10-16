@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "Service work often sits beside new builds, so our page for [pool builders in Niagara](/seo/for-pool-builders-niagara) covers adjacent searches as well.",
     ],
   },
   whyChoose: {

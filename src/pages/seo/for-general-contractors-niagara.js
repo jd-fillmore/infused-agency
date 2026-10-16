@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "If your scope touches lower-level or room-specific work, our pages for [basement finishing in Niagara](/seo/for-basement-finishing-niagara) and [kitchen and bathroom renovators in Niagara](/seo/for-kitchen-and-bathroom-renovators-niagara) cover adjacent searches too.",
     ],
   },
   whyChoose: {

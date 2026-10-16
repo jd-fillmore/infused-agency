@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "Paver work often sits beside concrete and outdoor projects, so our pages for [concrete contractors in Niagara](/seo/for-concrete-contractors-niagara), [landscapers in Niagara](/seo/for-landscapers-niagara) and [asphalt paving in Niagara](/seo/for-asphalt-paving-niagara) are useful context as well.",
     ],
   },
   whyChoose: {

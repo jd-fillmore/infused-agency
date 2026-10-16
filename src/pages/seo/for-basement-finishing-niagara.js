@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "If your work sits close to drainage, repair or finishing trades, see our pages for [foundation waterproofing in Niagara](/seo/for-foundation-waterproofing-niagara) and [kitchen and bathroom renovators in Niagara](/seo/for-kitchen-and-bathroom-renovators-niagara) as well.",
     ],
   },
   whyChoose: {

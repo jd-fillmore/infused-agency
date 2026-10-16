@@ -76,6 +76,7 @@ const page = {
     ],
     paragraphsAfter: [
       "The dedicated city pages below show the local programmes we run across the region.",
+      "Fence work often sits beside outdoor builds, so our pages for [deck builders in Niagara](/seo/for-deck-builders-niagara) and [landscapers in Niagara](/seo/for-landscapers-niagara) are useful context as well.",
     ],
   },
   whyChoose: {
