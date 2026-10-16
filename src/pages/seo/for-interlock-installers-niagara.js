@@ -23,7 +23,7 @@ const page = {
     heading: "Interlock installer SEO built for the Niagara market",
     paragraphs: [
       "Pavers do not sell themselves to people who have never owned a cracked driveway. A homeowner in St. Catharines or Niagara Falls who is thinking about an interlock driveway, a backyard patio or a front walk usually spends a couple of weeks on Google before calling anyone. If your company is not in that first round of results, the job lands with whoever is. Our [SEO services](/seo) put your interlock business in front of homeowners at the exact point they decide to get quotes.",
-      "Buyers in this trade describe what they want very differently from how contractors do. Someone in Fonthill picturing a herringbone driveway is not typing the same words as a homeowner in Thorold who needs a lifted, uneven walkway re-levelled. We sort those searches apart, work out which ones lead to profitable work, and build service and town pages that can rank for them.",
+      "Buyers in this trade describe what they want very differently from how contractors do. Someone in Fonthill picturing a herringbone driveway is not typing the same words as a homeowner in Thorold who needs a lifted, uneven walkway re-levelled. We pull those searches apart, decide which ones lead to the installations your crew wants, and build pages and service areas that can rank for them.",
       "The outcome is not a higher number on a report. It is more qualified estimate requests for the paver work you actually want to take on, across the communities you actually drive to.",
     ],
   },
@@ -46,7 +46,7 @@ const page = {
     subhead: "Getting found before the driveway season starts",
     paragraphs: [
       "Interlock work in Niagara has a clear season and it often starts earlier than people expect. Installations run from spring through autumn, while spring itself brings a rush of calls from homeowners whose driveways have buckled heaved or settled over winter. When searches like \u201cinterlock driveway St. Catharines,\u201d \u201cpaving stones Niagara Falls,\u201d \u201cpatio installers Welland\u201d or \u201cinterlock near me\u201d are typed in, Google leans heavily on local signals to decide who shows. Your website, Google Business Profile, photos and town coverage all feed that decision.",
-      "National phrases are useless when someone is about to have a crew in the yard for a week. We focus on the town-level searches a homeowner in Port Colborne or a property owner in Beamsville actually makes. That starts with an honest audit of where you rank today, which installers are ahead of you locally, and what gaps your pages leave open, then a steady fix one page at a time.",
+      "National phrases are useless when someone is about to have a crew in the yard for a week. We focus on the town-level searches a homeowner in Port Colborne or a property manager in Beamsville actually makes. That starts with an honest audit of where you rank today, which installers are ahead of you locally, and what gaps your pages leave open, then a steady fix one page at a time.",
       "AI tools have entered the picture too. Increasingly homeowners ask ChatGPT, Gemini or Google's AI Overviews to name a good local interlock installer. We keep your content organised and your local authority strong so those assistants are more likely to name your crew when someone asks for an interlock installer nearby.",
     ],
     checklist: [
@@ -58,7 +58,7 @@ const page = {
       "Technical fixes that keep the site fast and easy to crawl",
     ],
     paragraphsAfter: [
-      "Because your service area is the region rather than one subdivision, we build the work around how people move through it. A homeowner in Grimsby and one in Crystal Beach both want an installer who feels local, and we make sure your presence reaches them wherever they are searching.",
+      "Because your service area is the region rather than one subdivision, we build the work around how people move through it. A homeowner in Grimsby and one near Crystal Beach both want an installer who feels nearby, and we make sure your presence reaches them wherever they are searching.",
     ],
   },
   areasBlock: {

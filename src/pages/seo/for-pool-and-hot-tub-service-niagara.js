@@ -6,7 +6,7 @@ const page = {
   seo: {
     title: "SEO for Pool and Hot Tub Service in Niagara | Infused Agency",
     description:
-      "Local SEO for Niagara pool and hot tub service companies. Win openings, closings and maintenance searches in St. Catharines and Niagara Falls. Free consultation.",
+    "Local SEO for Niagara pool and hot tub service. Win openings, closings and repair searches in St. Catharines and Niagara Falls. Free consultation.",
     canonical:
       "https://infused.agency/seo/for-pool-and-hot-tub-service-niagara",
     url: "/seo/for-pool-and-hot-tub-service-niagara",

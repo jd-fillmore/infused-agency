@@ -117,7 +117,7 @@ const page = {
         title: "Straight answers about what will move the needle",
         paragraphs: [
           "Some general contractors need a clean set of service and town pages plus a properly managed Google profile; others need a stronger site before anything ranks. We tell you which one you are, plainly.",
-          "If a smaller scope fills your calendar faster, we will recommend it. Building a larger scope than a business needs helps nobody.",
+          "If a modest scope fills your calendar faster, we will recommend it. Overselling work a business does not need helps nobody.",
         ],
       },
     ],

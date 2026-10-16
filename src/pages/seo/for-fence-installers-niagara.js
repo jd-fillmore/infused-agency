@@ -163,7 +163,7 @@ const page = {
       {
         title: "Content that answers buying questions",
         paragraphs: [
-          "How deep posts should go against frost heave, wood versus vinyl over a Niagara winter, how to plan a gate swing, and when a repair is better than replacement; these are the things homeowners ask before committing. We turn the ones that are true to your work into content that earns trust and search traffic.",
+          "How deep posts should go against frost heave, wood versus vinyl over a Niagara winter, how to plan a gate swing, and when a repair is better than replacement; these are the things homeowners ask before committing. We turn the ones that are true to your work into content that builds trust and search traffic.",
         ],
       },
     ],

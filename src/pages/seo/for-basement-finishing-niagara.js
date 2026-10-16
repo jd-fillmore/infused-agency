@@ -6,7 +6,7 @@ const page = {
   seo: {
     title: "SEO for Basement Finishing in Niagara | Infused Agency",
     description:
-      "Local SEO for Niagara basement finishing and renovation contractors. Get found for lower-level remodels, suites and family rooms in St. Catharines and Niagara Falls. Free consultation.",
+    "Local SEO for Niagara basement finishing. Win suite and lower-level remodel searches in St. Catharines and Niagara Falls. Free consultation.",
     canonical:
       "https://infused.agency/seo/for-basement-finishing-niagara",
     url: "/seo/for-basement-finishing-niagara",

@@ -6,7 +6,7 @@ const page = {
   seo: {
     title: "SEO for Asphalt Paving in Niagara | Infused Agency",
     description:
-      "Local SEO for Niagara asphalt paving and driveway sealing contractors. Win new driveways and sealcoating searches in St. Catharines and Niagara Falls. Free consultation.",
+    "Local SEO for Niagara asphalt paving. Win new driveway, resurfacing and sealcoating searches in St. Catharines and Niagara Falls. Free consultation.",
     canonical:
       "https://infused.agency/seo/for-asphalt-paving-niagara",
     url: "/seo/for-asphalt-paving-niagara",
@@ -163,7 +163,7 @@ const page = {
       {
         title: "Content that answers buying questions",
         paragraphs: [
-          "How long asphalt lasts in a Niagara winter, whether a driveway can be overlaid, when crack repair is enough and when replacement is needed, and how long to stay off fresh paving; these are the questions buyers ask before committing. We turn the ones that are true to your work into content that earns trust and search traffic.",
+          "How long asphalt lasts in a Niagara winter, whether a driveway can be overlaid, when crack repair is enough and when replacement is needed, and how long to stay off fresh paving; these are the questions buyers ask before committing. We turn the ones that are true to your work into content that earns trust and search visibility.",
         ],
       },
     ],

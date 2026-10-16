@@ -6,7 +6,7 @@ const page = {
   seo: {
     title: "SEO for Kitchen and Bathroom Renovators in Niagara | Infused Agency",
     description:
-      "Local SEO for Niagara kitchen and bathroom renovators. Win remodel searches for cabinets, countertops and tile in St. Catharines and Niagara Falls. Free consultation.",
+    "Local SEO for Niagara kitchen and bathroom renovators. Win cabinetry, countertop and remodel searches in St. Catharines and Niagara Falls. Free consultation.",
     canonical:
       "https://infused.agency/seo/for-kitchen-and-bathroom-renovators-niagara",
     url: "/seo/for-kitchen-and-bathroom-renovators-niagara",
@@ -117,7 +117,7 @@ const page = {
         title: "Straight answers about what will move the needle",
         paragraphs: [
           "Some renovators only need a tidy set of room and service pages plus a properly managed Google profile; others need a site rebuild before anything ranks. We tell you which one you are, plainly.",
-          "If a smaller scope fills your calendar faster, we will recommend it. Selling work a business does not need helps nobody.",
+          "If a tighter scope fills your calendar faster, we will recommend it. Selling work a business does not need helps nobody.",
         ],
       },
     ],
