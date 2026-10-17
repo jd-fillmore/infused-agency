@@ -10,13 +10,13 @@ Status key: todo = not started, done = committed on branch, needs review = copy/
 1. Med Spas and Cosmetic Clinics (/seo/for-med-spas-niagara): done
 2. Home Builders and Custom Home Builders (/seo/for-home-builders-niagara): done
 3. Design-Build Firms (/seo/for-design-build-firms-niagara): done
-4. Home Additions (/seo/for-home-additions-niagara): todo
-5. Mortgage Brokers (/seo/for-mortgage-brokers-niagara): todo
-6. Financial Advisors (/seo/for-financial-advisors-niagara): todo
-7. Accountants (/seo/for-accountants-niagara): todo
-8. Insurance Brokers (/seo/for-insurance-brokers-niagara): todo
-9. Chiropractors (/seo/for-chiropractors-niagara): todo
-10. Physiotherapists (/seo/for-physiotherapists-niagara): todo
+4. Home Additions (/seo/for-home-additions-niagara): done
+5. Mortgage Brokers (/seo/for-mortgage-brokers-niagara): done
+6. Financial Advisors (/seo/for-financial-advisors-niagara): done
+7. Accountants (/seo/for-accountants-niagara): done
+8. Insurance Brokers (/seo/for-insurance-brokers-niagara): done
+9. Chiropractors (/seo/for-chiropractors-niagara): done
+10. Physiotherapists (/seo/for-physiotherapists-niagara): done
 11. Architects and Building Designers (/seo/for-architects-niagara): todo
 12. Veterinarians (/seo/for-veterinarians-niagara): todo
 13. Optometrists (/seo/for-optometrists-niagara): todo
