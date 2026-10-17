@@ -286,6 +286,213 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "mortgage-brokers",
+    displayName: "Mortgage Brokers",
+    category: "Business & Professional Services",
+    benefit:
+      "Show up for first-time buyer, renewal, refinancing and self-employed mortgage searches across St. Catharines, Niagara Falls and the region.",
+    href: "/seo/for-mortgage-brokers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "financial-advisors",
+    displayName: "Financial Advisors",
+    category: "Business & Professional Services",
+    benefit:
+      "Get found for retirement planning, investment planning and estate planning searches from Niagara residents and business owners.",
+    href: "/seo/for-financial-advisors-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "accountants",
+    displayName: "Accountants",
+    category: "Business & Professional Services",
+    benefit:
+      "Show up for personal and small-business tax filing, bookkeeping, payroll and incorporation searches across Niagara.",
+    href: "/seo/for-accountants-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "insurance-brokers",
+    displayName: "Insurance Brokers",
+    category: "Business & Professional Services",
+    benefit:
+      "Get found for home, auto, commercial and business insurance searches across Niagara.",
+    href: "/seo/for-insurance-brokers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "architects",
+    displayName: "Architects",
+    category: "Business & Professional Services",
+    benefit:
+      "Reach homeowners and businesses searching for residential design, additions, renovations and permit drawings across Niagara.",
+    href: "/seo/for-architects-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "med-spas",
+    displayName: "Med Spas",
+    category: "Health & Wellness",
+    benefit:
+      "Show up for facial and skin treatments, laser hair removal, skin rejuvenation and body contouring searches across Niagara.",
+    href: "/seo/for-med-spas-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "chiropractors",
+    displayName: "Chiropractors",
+    category: "Health & Wellness",
+    benefit:
+      "Show up for back and neck concerns, sports injuries and ongoing chiropractic care searches across Niagara.",
+    href: "/seo/for-chiropractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "physiotherapists",
+    displayName: "Physiotherapists",
+    category: "Health & Wellness",
+    benefit:
+      "Get found for injury rehabilitation, sports injuries and post-surgery rehab searches across Niagara.",
+    href: "/seo/for-physiotherapists-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "veterinarians",
+    displayName: "Veterinarians",
+    category: "Health & Wellness",
+    benefit:
+      "Show up for wellness exams, vaccinations, dental care and urgent veterinary searches from Niagara pet owners.",
+    href: "/seo/for-veterinarians-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "optometrists",
+    displayName: "Optometrists",
+    category: "Health & Wellness",
+    benefit:
+      "Get found for eye exams, glasses, contact lenses and children's eye exam searches across Niagara.",
+    href: "/seo/for-optometrists-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "home-builders",
+    displayName: "Home Builders",
+    category: "Home & Trade Services",
+    benefit:
+      "Win custom home build, infill lot and new construction searches from homeowners across Niagara.",
+    href: "/seo/for-home-builders-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "design-build-firms",
+    displayName: "Design-Build Firms",
+    category: "Home & Trade Services",
+    benefit:
+      "Win design-build searches from homeowners who want one team responsible for design and construction across Niagara.",
+    href: "/seo/for-design-build-firms-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "home-additions",
+    displayName: "Home Additions",
+    category: "Home & Trade Services",
+    benefit:
+      "Win second-storey addition, rear addition and garage conversion searches from Niagara homeowners.",
+    href: "/seo/for-home-additions-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "interior-designers",
+    displayName: "Interior Designers",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for residential interior design, space planning and renovation design searches across Niagara.",
+    href: "/seo/for-interior-designers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "cabinet-makers",
+    displayName: "Cabinet Makers",
+    category: "Home & Trade Services",
+    benefit:
+      "Win custom kitchen and vanity cabinetry, built-ins and refacing searches across Niagara.",
+    href: "/seo/for-cabinet-makers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "countertop-fabricators",
+    displayName: "Countertop Fabricators",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for quartz, granite and stone countertop searches from Niagara homeowners and renovators.",
+    href: "/seo/for-countertop-fabricators-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "flooring-installers",
+    displayName: "Flooring Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Win hardwood, laminate, vinyl and refinishing searches from Niagara homeowners and builders.",
+    href: "/seo/for-flooring-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "tile-installers",
+    displayName: "Tile Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for bathroom tile, backsplash, heated floor and shower tile searches across Niagara.",
+    href: "/seo/for-tile-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "masonry-contractors",
+    displayName: "Masonry Contractors",
+    category: "Home & Trade Services",
+    benefit:
+      "Win brick repair, repointing, stone veneer and parging searches from Niagara homeowners.",
+    href: "/seo/for-masonry-contractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "fireplace-and-chimney-services",
+    displayName: "Fireplace and Chimney Services",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for fireplace installation, chimney cleaning and inspection searches across Niagara.",
+    href: "/seo/for-fireplace-and-chimney-services-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "tree-services",
+    displayName: "Tree Services",
+    category: "Home & Trade Services",
+    benefit:
+      "Win tree removal, trimming, stump grinding and storm damage searches across Niagara.",
+    href: "/seo/for-tree-services-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "painters",
+    displayName: "Painters",
+    category: "Home & Trade Services",
+    benefit:
+      "Win interior and exterior painting, cabinet refinishing and deck staining searches across Niagara.",
+    href: "/seo/for-painters-niagara",
+    coverage: "Niagara region",
+  },
+  {
+    slug: "home-automation-installers",
+    displayName: "Home Automation Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for smart home setup, security cameras, alarms and home automation searches across Niagara.",
+    href: "/seo/for-home-automation-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
