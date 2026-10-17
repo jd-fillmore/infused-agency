@@ -12,7 +12,7 @@ Status key: done = committed on branch; needs review = copy/facts flagged
 3. Design-Build Firms (/seo/for-design-build-firms-niagara): rewritten
 4. Home Additions (/seo/for-home-additions-niagara): rewritten
 5. Mortgage Brokers (/seo/for-mortgage-brokers-niagara): rewritten
-6. Financial Advisors (/seo/for-financial-advisors-niagara): done
+6. Financial Advisors (/seo/for-financial-advisors-niagara): rewritten
 7. Accountants (/seo/for-accountants-niagara): done
 8. Insurance Brokers (/seo/for-insurance-brokers-niagara): done
 9. Chiropractors (/seo/for-chiropractors-niagara): done
