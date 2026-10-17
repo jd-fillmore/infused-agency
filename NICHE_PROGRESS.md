@@ -16,7 +16,7 @@ Status key: done = committed on branch; needs review = copy/facts flagged
 7. Accountants (/seo/for-accountants-niagara): rewritten
 8. Insurance Brokers (/seo/for-insurance-brokers-niagara): rewritten
 9. Chiropractors (/seo/for-chiropractors-niagara): rewritten
-10. Physiotherapists (/seo/for-physiotherapists-niagara): done
+10. Physiotherapists (/seo/for-physiotherapists-niagara): rewritten
 11. Architects and Building Designers (/seo/for-architects-niagara): done
 12. Veterinarians (/seo/for-veterinarians-niagara): done
 13. Optometrists (/seo/for-optometrists-niagara): done
