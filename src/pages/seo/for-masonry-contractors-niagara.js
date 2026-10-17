@@ -5,99 +5,95 @@ import hero from "../../img/seo-for-masonry-contractors-niagara.jpg";
 const page = {
   seo: {
     title: "SEO for Masonry Contractors in Niagara | Infused Agency",
-    description:
-      "Local SEO for Niagara masonry contractors. Get found for brick and stone repair, repointing and parging in St. Catharines and Niagara Falls. Free consultation.",
+    description: "Local SEO for Niagara masonry contractors. Get found for brick and stone repair, repointing, stone veneer, parging and retaining walls in Beamsville and Crystal Beach. Free consultation.",
     canonical: "https://infused.agency/seo/for-masonry-contractors-niagara",
     url: "/seo/for-masonry-contractors-niagara",
   },
   industry: "Masonry Contractors",
   hero: {
     title: "SEO for Masonry Contractors in Niagara",
-    description:
-      "Infused Agency helps Niagara masonry contractors get found for brick and stone repair, repointing, stone veneer, parging and retaining walls, and connect with homeowners ready to schedule a consultation.",
+    description: "Infused Agency helps Niagara masonry contractors get found for brick and stone repair, repointing, stone veneer, parging and retaining walls, and connect with homeowners ready to schedule a consultation.",
     image: hero,
-    alt: "SEO for Masonry Contractors in Niagara",
+    alt: "SEO for Masonry Contractors Niagara",
   },
   intro: {
-    heading: "Masonry SEO built for the Niagara market",
+    heading: "Masonry Contractors SEO built for the Niagara market",
     paragraphs: [
-      "Choosing a masonry contractor is a decision homeowners take seriously. Niagara residents compare several contractors, look at past repair work and read about the process before they call. Most of that comparison happens on Google, in St. Catharines, Niagara Falls, Grimsby and Beamsville, so a contractor that does not appear in those early searches usually loses the job to one that does. Our [SEO services](/seo) put your business in front of people at the moment they are deciding who to hire.",
-      "Masonry searches vary from town to town. Someone searching for brick repair in St. Catharines uses different terms than a homeowner in Niagara Falls looking for stone veneer. We map those different searches, work out which ones lead to consultations, and build the pages, profiles and content that help your business rank for the searches that matter most.",
-      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the masonry work you actually do, from the communities you actually serve.",
+      "Clients seeking rarely book masonry contractors before calling. They compare masonry contractors across Niagara and read about what each one offers before calling. That comparison happens on Google, in Beamsville, Crystal Beach, Fonthill, St. Catharines and beyond, so a masonry contractors missing from those early searches usually loses the the job to a competitor who shows up. Our [SEO services](/seo) put your masonry contractors business in front of people at the moment they are deciding where to book.",
+      "Client demand for masonry contractors in Niagara runs with the calendar. Spring brings a surge after freeze-thaw damage, while summer and fall are the main repair season. When someone searches for \"brick repair St. Catharines,\" \"repointing Niagara Falls\" or \"stone veneer Welland\", Google leans heavily on local signals to decide which masonry contractors to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      undefined,
     ],
   },
   proof: {
     heading: "Results across Niagara businesses",
-    subhead:
-      "These figures come from our broader roster of Niagara clients, not from masonry projects.",
+    subhead: "undefined undefined our broader roster undefined clients, not from masonry contractors projects.",
     stats: [
       { value: "+550%", label: "Local visibility, Flat Rock Cellars" },
       { value: "+670%", label: "Local visibility, Delta Energy Solutions" },
       { value: "50+", label: "Clients helped with SEO" },
     ],
-    note:
-      "These are results from other Niagara industries, not from masonry clients.",
+    note: "undefined are results undefined Niagara industries, undefined masonry contractors clients.",
     viewMoreHref: "/work",
     viewMoreLabel: "View More Results",
   },
   bodyBlock: {
-    heading: "Why masonry contractors need local SEO in Niagara",
-    subhead: "Getting found after freeze-thaw damage appears",
+    heading: "Why Masonry Contractors need local SEO in Niagara",
+    subhead: "Getting found before the consultation is booked",
     paragraphs: [
-      "Masonry demand in Niagara follows the weather. Spring brings a surge after freeze-thaw damage, while summer and fall are the main repair season. When someone searches for \"brick repair St. Catharines,\" \"repointing Niagara Falls\" or \"stone veneer Welland,\" Google leans heavily on local signals to decide which contractors to show. Your website, your Google Business Profile, your reviews and your coverage of the towns you serve all feed into that decision.",
-      "Focused local SEO earns its keep because homeowners do not use vague national terms when they want a mason who can inspect the property and match existing work. We concentrate on the town-level searches a resident of Beamsville or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara masonry contractors are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local masonry contractor. We structure your content and strengthen your local authority so those assistants are more likely to name your business when someone in Niagara asks for a recommendation.",
+      "Spring brings a surge after freeze-thaw damage, while summer and fall are the main repair season. Anyone looking for \"brick repair St. Catharines,\" \"repointing Niagara Falls\" or \"stone veneer Welland\", Local signals drive Google to decide which masonry contractors to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Vague national terms do not work masonry contractors they can meet in person. because people want a  when they want a We concentrate on the town-level searches a resident of Fonthill or someone in St. Catharines actually makes. We start with an honest look at where you rank today, which Niagara masonry contractors are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "An increasing number of people ask ChatGPT, Gemini or Google AI Overviews when looking for a local masonry contractors. We structure your content and strengthen your local authority so those assistants are more likely to name your business when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for brick and stone repair, repointing, stone veneer, parging and retaining walls",
       "Google Business Profile optimisation for the Niagara map pack",
       "Location pages for the cities and towns you serve",
-      "Review and trust signals that reassure homeowners before they book",
+      "Review and trust signals that reassure people before they book",
       "Technical fixes that keep your site fast and easy to crawl",
     ],
     paragraphsAfter: [
-      "Because your service area is the region, we build the work around how people move through it. Someone in Crystal Beach and someone in Fonthill both want a local mason they can meet in person, so we make sure your presence shows up wherever they are searching.",
+      undefined,
     ],
   },
   areasBlock: {
-    heading: "Masonry Contractor SEO across the Niagara region",
-    subhead: "Masonry searches by community",
+    heading: "Masonry Contractors SEO across the Niagara region",
+    subhead: "Masonry Contractors searches by community",
     paragraphs: [
-      "Infused Agency works with masonry contractors throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Fort Erie, Beamsville, Crystal Beach, Fonthill, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake and St. Catharines, not just one city.",
-      "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or repair types, we concentrate your effort where the return is strongest.",
+      "Infused Agency partners with masonry contractors throughout Niagara, and we build local relevance for each community you cover. That means content and signals tailored to Beamsville, Crystal Beach, Fonthill, St. Catharines, Niagara Falls, Welland, not just one city.",
+      undefined,
     ],
     checklist: [
       "Region-wide visibility for the communities you actually serve",
-      "City and town pages that target local masonry searches",
+      "City and town pages that target local searches",
       "Consistent name, address and phone details across the web",
-      "Content that reflects local weather and the repair season",
+      "Content that reflects local demand and seasonality",
     ],
     paragraphsAfter: [
-      "Explore our dedicated city pages below to see the local search programmes we run across Niagara.",
+      undefined,
     ],
   },
   whyChoose: {
-    heading: "Why Niagara masonry contractors bring us in",
+    heading: "Why Niagara Masonry Contractors bring us in",
     paragraphs: [
-      "Masonry demand follows a clear rhythm. Spring brings enquiries after freeze-thaw damage, while summer and fall are the main repair season. Being visible when each wave starts means your business is in the running before the shortlist is made.",
-      "We work with masonry contractors across Niagara so the right searches find you at the moment someone is ready to schedule a consultation, and so the schedule stays full through the repair season.",
+      undefined,
+      undefined,
     ],
     blocks: [
       {
-        title: "Planned around your repair calendar",
+        title: "Planned around your project calendar",
         paragraphs: [
-          "Masonry work in Niagara follows the weather. Spring is for assessing freeze-thaw damage, while summer and fall are for repointing, parging and repairs before the freeze. We pace your content, project photos and profile activity to that rhythm instead of doing the same thing every month.",
-          "By the time a homeowner is ready to book repairs, your service pages and recent project photos are already in place and pulling enquiries rather than playing catch-up.",
+          "Spring brings a surge after freeze-thaw damage, while summer and fall are the main repair seasonundefined",
+          undefined,
         ],
       },
       {
         title: "Consultation requests, not empty traffic",
         paragraphs: [
-          "A hundred visitors who will never commission a project is worth nothing. We pursue the searches that end in a consultation request: brick and stone repair, repointing, stone veneer, parging and retaining walls.",
-          "You can see which pages and which searches produced calls and form fills, so the next dollar of effort follows the projects you actually want.",
+          undefined,
+          undefined,
         ],
         checklist: [
-          "Rankings for the masonry work you actually want to sell",
+          "Rankings for the work you actually want to sell",
           "Calls and form fills counted per page",
           "Google Business Profile calls and direction requests",
           "Which towns are producing genuine consultation requests",
@@ -106,89 +102,89 @@ const page = {
       {
         title: "Copy written by people who know the field",
         paragraphs: [
-          "A masonry page is not a general contractor page with the words swapped. We write about repointing, parging, stone veneer, retaining walls and restoration of older homes, because those are the details homeowners ask about and the ones that separate a mason from a general contractor.",
-          "That detail is also what search engines reward. A page that genuinely covers repointing, stone veneer and retaining walls outranks a thin page repeating the same phrase.",
+          undefined,
+          undefined,
         ],
       },
       {
         title: "Straight answers about what will move the needle",
         paragraphs: [
-          "Some masonry contractors only need a handful of service pages and a properly managed Google profile; others need more work before anything ranks. We tell you which one you are.",
-          "If a narrower, cheaper scope gets you booked for the season, we will say so.",
+          undefined,
+          undefined,
         ],
       },
     ],
-    closingHeading: "Turn masonry searches into booked consultations",
+    closingHeading: "Turn masonry contractors searches into booked consultations",
     closingParagraphs: [
-      "If Niagara homeowners are searching for masonry and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your business in front of them.",
+      undefined,
     ],
   },
   services: {
-    heading: "What we do for masonry contractors",
-    subhead: "Masonry-specific search work, start to finish",
+    heading: "What we do for Masonry Contractors",
+    subhead: "Masonry Contractors-specific search work, start to finish",
     cards: [
       {
         title: "One page per masonry service",
         paragraphs: [
-          "A repointing page is not the same as one for stone veneer, parging or retaining walls, and search engines treat them differently. We build a dedicated page for every masonry service you actually offer, written around the words Niagara homeowners use.",
+          undefined,
         ],
       },
       {
         title: "Town-by-town coverage across the region",
         paragraphs: [
-          "A homeowner in Fort Erie looking for a masonry contractor is not helped by a page about St. Catharines. We create location content for each community you work in so you can rank for the masonry service and the town together.",
+          undefined,
         ],
       },
       {
         title: "Project photo content",
         paragraphs: [
-          "Masonry is visual, and homeowners want to see brickwork, stone finishes and finished repairs before they call. We help you organise job photos and details so your best work is the first thing a visitor sees.",
+          undefined,
         ],
       },
       {
         title: "Consultation booking that is easy to use",
         paragraphs: [
-          "A person comparing several contractors will not fight a clumsy contact form. We make sure a phone number, a short consultation request, or both, are one tap away on mobile, where most local masonry searches happen.",
+          undefined,
         ],
       },
       {
         title: "A Google profile tuned to your business",
         paragraphs: [
-          "Your Google Business Profile is often the first thing a homeowner sees, so we keep the services, towns, hours and photos accurate and current. That directly affects whether you appear when someone nearby searches for a masonry contractor.",
+          undefined,
         ],
       },
       {
         title: "Content that answers masonry questions",
         paragraphs: [
-          "What repointing involves, how parging works, what stone veneer covers and how retaining walls are built — these are the questions homeowners ask before booking. We turn them into content that builds trust and earns search traffic.",
+          undefined,
         ],
       },
     ],
   },
   faqs: [
     {
-      q: "How long does masonry contractor SEO take to work?",
-      a: "Most masonry contractors see initial movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
+      q: "How long does SEO take to work?",
+      a: undefined,
     },
     {
-      q: "Do you only work with masonry contractors in St. Catharines?",
-      a: "No. We work with masonry contractors across the whole Niagara region, including Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, as well as businesses in nearby communities.",
+      q: "Do you only work in St. Catharines?",
+      a: undefined,
     },
     {
       q: "Can you help my business show up on Google Maps?",
-      a: "Yes. Local SEO and Google Business Profile optimisation are core parts of our programmes. We help your business appear in the local map pack for the searches and areas that matter most to you.",
+      a: undefined,
     },
     {
-      q: "How much does SEO for masonry contractors cost?",
-      a: "Pricing depends on your goals, your service area and the current state of your website. We give you a clear, personalised written quote after a free consultation, so you always know what you are paying for.",
+      q: "How much does SEO cost?",
+      a: undefined,
     },
     {
       q: "Will you guarantee the number one ranking on Google?",
-      a: "No ethical agency can guarantee a specific ranking, because search algorithms change constantly. What we can do is apply proven, white-hat strategies, report transparently, and steadily grow your visibility and enquiries over time.",
+      a: undefined,
     },
   ],
 };
 
-export default function MasonryContractorsNiagaraSeo() {
+export default function masonrycontractorsNiagaraSeo() {
   return <IndustryNiagaraPage page={page} />;
 }
