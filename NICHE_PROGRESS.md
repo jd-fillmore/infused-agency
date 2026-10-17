@@ -9,7 +9,7 @@ Status key: todo = not started, done = committed on branch, needs review = copy/
 
 1. Med Spas and Cosmetic Clinics (/seo/for-med-spas-niagara): done
 2. Home Builders and Custom Home Builders (/seo/for-home-builders-niagara): done
-3. Design-Build Firms (/seo/for-design-build-firms-niagara): todo
+3. Design-Build Firms (/seo/for-design-build-firms-niagara): done
 4. Home Additions (/seo/for-home-additions-niagara): todo
 5. Mortgage Brokers (/seo/for-mortgage-brokers-niagara): todo
 6. Financial Advisors (/seo/for-financial-advisors-niagara): todo
