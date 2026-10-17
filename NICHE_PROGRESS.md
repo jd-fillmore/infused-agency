@@ -7,7 +7,7 @@ Hero images: copies of src/img/seo-for-concrete-contractors-niagara.jpg
 
 Status key: done = committed on branch; needs review = copy/facts flagged
 
-1. Med Spas and Cosmetic Clinics (/seo/for-med-spas-niagara): done
+1. Med Spas and Cosmetic Clinics (/seo/for-med-spas-niagara): rewritten
 2. Home Builders and Custom Home Builders (/seo/for-home-builders-niagara): done
 3. Design-Build Firms (/seo/for-design-build-firms-niagara): done
 4. Home Additions (/seo/for-home-additions-niagara): done
