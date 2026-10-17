@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Med spa SEO built for the Niagara market",
     paragraphs: [
-      "People researching facial and skin treatments, laser hair removal, skin rejuvenation or body contouring do not usually book the first clinic they find. They compare several Niagara med spas and read about the treatments on offer before they ever call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Fonthill and beyond, so a clinic that does not show up in those early searches loses the consultation to one that does. Our [SEO services](/seo) are built to put your clinic in front of people at the moment they are weighing up where to book.",
-      "Treatment searches are specific, and the words differ from town to town. Someone looking for laser hair removal in St. Catharines is using different terms than someone searching for a medical spa in Niagara Falls that offers skin rejuvenation. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your clinic rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the treatments you actually provide, from the communities you actually serve.",
+      "Most people looking for facial and skin treatments, laser hair removal, skin rejuvenation or body contouring do not book the first clinic that appears. They compare several med spas across Niagara, read about what each one offers, and only then make contact. That comparison happens on Google, in St. Catharines, Niagara Falls, Beamsville and Fonthill, so a clinic missing from those early searches usually loses the consultation to a competitor who shows up. Our [SEO services](/seo) put your clinic in front of people at the moment they are deciding where to book.",
+      "Treatment searches vary from town to town. Someone searching for laser hair removal in St. Catharines uses different words than someone looking for a medical spa in Niagara Falls that offers skin rejuvenation. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your clinic rank for the searches worth ranking for.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the treatments you actually provide, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,26 +44,26 @@ const page = {
     heading: "Why med spas need local SEO in Niagara",
     subhead: "Getting found before the consultation is booked",
     paragraphs: [
-      "Demand for med spas in Niagara moves with the calendar. Interest picks up before summer and before big events, and the new year brings a wave of people looking into treatments and packages. Between those peaks there is a steady flow of returning clients and new searches for clinics nearby. When someone searches for \"med spa St. Catharines,\" \"laser hair removal Niagara Falls\" or \"skin rejuvenation Welland,\" Google leans heavily on local signals to decide which clinics to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep here because people do not search for vague national terms when they want a treatment booked close to home. We concentrate on the town-level searches a resident of Fonthill or a visitor to Niagara Falls actually makes. That starts with an honest look at where you rank today, which Niagara clinics are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local med spa or cosmetic clinic. We structure your content and strengthen your local authority so those assistants are more likely to include your clinic when someone in Niagara asks for a recommendation.",
+      "Demand for med spas in Niagara moves with the calendar. Interest builds before summer and before big events, and January brings a wave of people researching treatments and packages. Between those peaks there is a steady flow of returning clients and fresh searches for clinics nearby. When someone searches for \"med spa St. Catharines,\" \"laser hair removal Niagara Falls\" or \"skin rejuvenation Welland,\" Google leans heavily on local signals to decide which clinics to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Focused local SEO earns its keep because people do not use vague national terms when they want a treatment booked close to home. We concentrate on the town-level searches a resident of Fonthill or a visitor to Niagara Falls actually makes. That starts with an honest look at where you rank today, which Niagara clinics are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local med spa or cosmetic clinic. We structure your content and strengthen your local authority so those assistants are more likely to include your clinic when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
-      "Service pages for facials, skin treatments, laser hair removal, body contouring and consultations",
+      "Dedicated pages for facials, skin treatments, laser hair removal, body contouring and consultations",
       "Google Business Profile optimisation for the Niagara map pack",
       "Location pages for the cities and towns your clinic serves",
       "Review and trust signals that reassure people before they book",
       "Technical fixes that keep your site fast and easy to crawl",
     ],
     paragraphsAfter: [
-      "Because your clients come from across the region, we build the work around how people move through it. Someone in Grimsby and someone in Crystal Beach both want a clinic that is easy to reach, so we make sure your presence shows up wherever they are searching.",
+      "Because your clients come from across the region, we build the work around how people move through it. Someone in Crystal Beach and someone in Fonthill both want a clinic that is easy to reach, so we make sure your presence shows up wherever they are searching.",
     ],
   },
   areasBlock: {
     heading: "Med Spa SEO across the Niagara region",
     subhead: "Cosmetic clinic searches by community",
     paragraphs: [
-      "Infused Agency works with med spas and cosmetic clinics throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with med spas and cosmetic clinics throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Fort Erie, Beamsville, Crystal Beach, Fonthill, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake and St. Catharines, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -79,7 +79,7 @@ const page = {
   whyChoose: {
     heading: "Why Niagara med spas bring us in",
     paragraphs: [
-      "Med spa demand follows a clear rhythm. Pre-event and pre-summer interest brings in new clients, the new year brings treatment inquiries and package interest, and recurring clients keep coming back for maintenance and memberships. Being visible when each wave starts means your clinic is in the running before the shortlist is made.",
+      "Med spa demand follows a clear rhythm. Pre-event and pre-summer interest brings in new clients, January brings treatment inquiries and package interest, and recurring clients keep coming back for maintenance and memberships. Being visible when each wave starts means your clinic is in the running before the shortlist is made.",
       "We work with med spas across Niagara so the right searches find you at the moment someone is ready to book a consultation, and so the appointment book stays steady through the quieter months too.",
     ],
     blocks: [
@@ -114,7 +114,7 @@ const page = {
         title: "Straight answers about what will move the needle",
         paragraphs: [
           "Some med spas only need a handful of treatment pages and a properly managed Google profile; others need more work before anything ranks. We tell you which one you are.",
-          "If a narrower, cheaper scope gets you booked for the season, we will say so. Advertising rules for your profession apply to how treatments are described, and we keep the copy neutral and factual.",
+          "Advertising rules for your profession apply to how treatments are described, and we keep the copy neutral and factual.",
         ],
       },
     ],

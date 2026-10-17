@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Physiotherapist SEO built for the Niagara market",
     paragraphs: [
-      "Choosing a physiotherapist is a considered decision. Niagara residents compare several clinics, read about the rehab services on offer and check who serves their area before they ever call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Fonthill and beyond, so a physiotherapist who does not show up in those early searches loses the new patient to one who does. Our [SEO services](/seo) are built to put your clinic in front of people at the moment they are weighing up where to book.",
-      "Physiotherapist searches are specific, and the words differ from town to town. Someone looking for injury rehab in St. Catharines is using different terms than someone searching for a physiotherapist in Niagara Falls for post-surgery rehab. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your clinic rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified new patient enquiries for the rehab you actually provide, from the communities you actually serve.",
+      "Choosing a physiotherapist is a decision people take seriously. Niagara residents compare several clinics, read about the rehab services on offer and check who works locally before they call. That comparison happens on Google, in St. Catharines, Niagara Falls, Thorold and Welland, so a physiotherapist who is absent from those early searches usually loses the new patient to someone who shows up. Our [SEO services](/seo) put your clinic in front of people at the moment they are deciding where to book.",
+      "Physiotherapist searches are not the same everywhere. Someone looking for injury rehab in St. Catharines uses different words than someone searching for a physiotherapist in Niagara Falls for post-surgery rehab. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your clinic rank for the searches that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified new patient enquiries for the rehab you actually provide, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,9 +44,9 @@ const page = {
     heading: "Why physiotherapists need local SEO in Niagara",
     subhead: "Getting found before the first appointment is booked",
     paragraphs: [
-      "Physiotherapy demand in Niagara follows the seasons, with seasonal sports injuries and winter slips driving spikes, alongside steady insurance-driven referrals and new patient searches all year. When someone searches for \"physiotherapist St. Catharines,\" \"injury rehab Niagara Falls\" or \"post-surgery rehab Welland,\" Google leans heavily on local signals to decide which clinics to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because people do not use vague national terms when they want a physiotherapist they can visit in person. We concentrate on the town-level searches a resident of Fonthill or someone in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara physiotherapists are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local physiotherapist. We structure your content and strengthen your local authority so those assistants are more likely to name your clinic when someone in Niagara asks for a recommendation.",
+      "Physiotherapy demand in Niagara follows the seasons. Seasonal sports injuries and winter slips bring spikes, alongside steady insurance-driven referrals and new patient searches all year. When someone searches for \"physiotherapist St. Catharines,\" \"injury rehab Niagara Falls\" or \"post-surgery rehab Welland,\" Google leans heavily on local signals to decide which clinics to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Focused local SEO earns its keep because people do not use vague national terms when they want a physiotherapist they can visit in person. We concentrate on the town-level searches a resident of Fonthill or someone in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara physiotherapists are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local physiotherapist. We structure your content and strengthen your local authority so those assistants are more likely to name your clinic when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for injury rehab, post-surgery rehab, sports injuries and workplace and motor vehicle accident rehab",
@@ -56,14 +56,14 @@ const page = {
       "Technical fixes that keep your site fast and easy to crawl",
     ],
     paragraphsAfter: [
-      "Because your patients come from across the region, we build the work around how people move through it. Someone in Grimsby and someone in Crystal Beach both want a physiotherapist who is easy to reach, so we make sure your presence shows up wherever they are searching.",
+      "Because your patients come from across the region, we build the work around how people move through it. Someone in Crystal Beach and someone in Fonthill both want a physiotherapist who is easy to reach, so we make sure your presence shows up wherever they are searching.",
     ],
   },
   areasBlock: {
     heading: "Physiotherapist SEO across the Niagara region",
     subhead: "Physiotherapy searches by community",
     paragraphs: [
-      "Infused Agency works with physiotherapists throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with physiotherapists throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Fonthill, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and St. Catharines, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or types of rehab, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -120,7 +120,7 @@ const page = {
     ],
     closingHeading: "Turn rehab searches into booked consultations",
     closingParagraphs: [
-      "If Niagara residents are searching for physiotherapists and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your clinic in front of them. We will also assess whether your site is ready to compete for those searches. Book today and we will map the search opportunity for your physiotherapy clinic.",
+      "If Niagara residents are searching for physiotherapists and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your clinic in front of them.",
     ],
   },
   services: {

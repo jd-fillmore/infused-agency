@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Home addition SEO built for the Niagara market",
     paragraphs: [
-      "Adding space to a house is a major decision, and Niagara homeowners do not pick the first contractor they find. They compare addition builders, look at past projects and read about structural planning before they call. Most of that comparison happens on Google, in St. Catharines, Niagara Falls, Grimsby, Beamsville and beyond, so a contractor that does not appear in those early searches is usually off the shortlist. Our [SEO services](/seo) are built to put your addition business in front of homeowners at the moment they are deciding who to hire.",
-      "Addition searches are specific, and the words differ from town to town. Someone searching for a second-storey addition in St. Catharines is using different terms than a homeowner in Niagara Falls looking for a garage conversion. We map those different searches, work out which ones lead to consultations, and build the pages, profiles and content that help your business rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the addition work you actually want to do, from the communities you actually serve.",
+      "Adding space to a house is a major decision, and Niagara homeowners do not pick the first contractor they find. They compare addition builders, look at past projects and read about structural planning before they call. Most of that comparison happens on Google, in St. Catharines, Niagara Falls, Grimsby and Beamsville, so a contractor that does not appear in those early searches is usually off the shortlist. Our [SEO services](/seo) put your addition business in front of homeowners at the moment they are deciding who to hire.",
+      "Addition searches vary from town to town. Someone searching for a second-storey addition in St. Catharines uses different terms than a homeowner in Niagara Falls looking for a garage conversion. We map those different searches, work out which ones lead to consultations, and build the pages, profiles and content that help your business rank for the searches that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the addition work you actually want to do, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -45,8 +45,8 @@ const page = {
     subhead: "Getting found while the plans are still being drawn",
     paragraphs: [
       "Home addition demand in Niagara follows a planning rhythm. Families often plan additions through fall and winter and build through spring, summer and early fall, and they start by searching for an addition contractor near them. Searches like \"home additions St. Catharines,\" \"second-storey addition Niagara Falls\" or \"garage conversion Welland\" are local decisions, and Google leans heavily on local signals to decide which contractors to show. Your website, your Google Business Profile, your reviews and your coverage of the towns you serve all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because homeowners do not use vague national terms when they want a contractor who can tie new space into an existing house. We concentrate on the town-level searches a resident of Beamsville or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara addition contractors are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local home addition contractor. We structure your content and strengthen your local authority so those assistants are more likely to name your business when someone in Niagara asks for a recommendation.",
+      "Focused local SEO earns its keep because homeowners do not use vague national terms when they want a contractor who can tie new space into an existing house. We concentrate on the town-level searches a resident of Beamsville or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara addition contractors are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local home addition contractor. We structure your content and strengthen your local authority so those assistants are more likely to name your business when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for second-storey, rear and side additions, garage conversions and in-law suites",
@@ -56,14 +56,14 @@ const page = {
       "Technical fixes that keep your site fast and easy to crawl",
     ],
     paragraphsAfter: [
-      "Because your service area is the region, we build the work around how people move through it. A homeowner in Grimsby and one in Crystal Beach both want an addition contractor who is local and easy to reach, so we make sure your presence reaches them wherever they are searching.",
+      "Because your service area is the region, we build the work around how people move through it. Someone in Port Colborne and someone in Niagara-on-the-Lake both want a local contractor they can meet in person, so we make sure your presence shows up wherever they are searching.",
     ],
   },
   areasBlock: {
     heading: "Home Addition SEO across the Niagara region",
     subhead: "Addition searches by community",
     paragraphs: [
-      "Infused Agency works with home addition contractors throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with home addition contractors throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach, Fonthill, Niagara Falls, Welland, Grimsby, Thorold and St. Catharines, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or types of addition, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -120,7 +120,7 @@ const page = {
     ],
     closingHeading: "Turn addition searches into booked consultations",
     closingParagraphs: [
-      "If Niagara homeowners are searching for home additions and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your addition business in front of them. We will also tell you straight whether your site is ready to compete for those searches.",
+      "If Niagara homeowners are searching for home additions and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your addition business in front of them.",
     ],
   },
   services: {
@@ -168,7 +168,7 @@ const page = {
   faqs: [
     {
       q: "How long does home addition SEO take to work?",
-      a: "Most home addition contractors start to see movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Local map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
+      a: "Most home addition contractors start to see movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
     },
     {
       q: "Do you only work with addition contractors in St. Catharines?",

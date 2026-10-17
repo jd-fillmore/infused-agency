@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Insurance broker SEO built for the Niagara market",
     paragraphs: [
-      "Choosing an insurance broker is a considered decision. Niagara homeowners, drivers and business owners compare several brokers, read about the carriers they work with and check who serves their area before they ever call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Fonthill and beyond, so a broker who does not show up in those early searches loses the client to one who does. Our [SEO services](/seo) are built to put your brokerage in front of people at the moment they are weighing up where to place their cover.",
-      "Insurance searches are specific, and the words differ from town to town. Someone looking for home insurance in St. Catharines is using different terms than a business owner searching for commercial insurance in Niagara Falls. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your brokerage rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the insurance work you actually handle, from the communities you actually serve.",
+      "Picking an insurance broker is a decision people take seriously. Niagara homeowners, drivers and business owners compare a few brokers, read about the carriers they work with and check who serves their area before they call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland and Fonthill, so a broker who is absent from those early searches usually loses the client to someone who shows up. Our [SEO services](/seo) put your brokerage in front of people at the moment they are deciding where to place their cover.",
+      "Insurance searches are not the same everywhere. Someone looking for home insurance in St. Catharines uses different words than a business owner in Niagara Falls searching for commercial insurance. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your brokerage rank for the ones that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the insurance work you actually handle, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,9 +44,9 @@ const page = {
     heading: "Why insurance brokers need local SEO in Niagara",
     subhead: "Getting found before the policy is renewed",
     paragraphs: [
-      "Insurance demand in Niagara moves with the calendar. Renewals drive steady searches throughout the year, and new home or new vehicle purchases bring waves of home and auto insurance enquiries. When someone searches for \"insurance broker St. Catharines,\" \"home insurance Niagara Falls\" or \"commercial insurance Welland,\" Google leans heavily on local signals to decide which brokers to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because people do not use vague national terms when they want a broker who can review their policy face to face. We concentrate on the town-level searches a resident of Fonthill or a business owner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara brokers are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local insurance broker. We structure your content and strengthen your local authority so those assistants are more likely to name your brokerage when someone in Niagara asks for a recommendation.",
+      "Insurance demand in Niagara moves with the calendar. Renewals drive steady searches through the year, and new home or new vehicle purchases bring waves of home and auto insurance enquiries. When someone searches for \"insurance broker St. Catharines,\" \"home insurance Niagara Falls\" or \"commercial insurance Welland,\" Google leans heavily on local signals to decide which brokers to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Focused local SEO earns its keep because people do not use vague national terms when they want a broker who can review their policy face to face. We concentrate on the town-level searches a resident of Fonthill or a business owner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara brokers are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local insurance broker. We structure your content and strengthen your local authority so those assistants are more likely to name your brokerage when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for home, auto, commercial and business insurance",
@@ -63,7 +63,7 @@ const page = {
     heading: "Insurance Broker SEO across the Niagara region",
     subhead: "Insurance searches by community",
     paragraphs: [
-      "Infused Agency works with insurance brokers throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with insurance brokers throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach, Fonthill, Niagara Falls, Welland and Grimsby, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or lines of cover, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -120,7 +120,7 @@ const page = {
     ],
     closingHeading: "Turn insurance searches into booked consultations",
     closingParagraphs: [
-      "If Niagara residents are searching for insurance brokers and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your brokerage in front of them. We will also give you a straight answer on whether your site is ready to compete for those searches. Book today and we will map the search opportunity for your insurance brokerage.",
+      "If Niagara residents are searching for insurance brokers and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your brokerage in front of them.",
     ],
   },
   services: {

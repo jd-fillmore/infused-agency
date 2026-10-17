@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Mortgage broker SEO built for the Niagara market",
     paragraphs: [
-      "Choosing a mortgage broker is a considered decision. Niagara homebuyers and renewers compare several brokers, read about the application process and check who serves their area before they ever call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Fonthill and beyond, so a broker who does not show up in those early searches loses the consultation to one who does. Our [SEO services](/seo) are built to put your brokerage in front of people at the moment they are weighing up where to apply.",
-      "Mortgage searches are specific, and the words differ from town to town. Someone looking for a first-time buyer mortgage in St. Catharines is using different terms than a self-employed applicant searching for a mortgage broker in Niagara Falls. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your brokerage rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the mortgage work you actually handle, from the communities you actually serve.",
+      "Homebuyers and renewers in Niagara do not pick the first broker they see. They compare a few names, read about the application process and check who works in their town before making contact. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland and Fonthill, so a broker who is absent from those early searches usually loses the client to someone who shows up. Our [SEO services](/seo) put your brokerage in front of people at the moment they are deciding where to apply.",
+      "Mortgage searches vary from place to place. A first-time buyer in St. Catharines uses different words than a self-employed applicant in Niagara Falls looking for a broker. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your brokerage rank for the ones that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the mortgage work you actually handle, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,9 +44,9 @@ const page = {
     heading: "Why mortgage brokers need local SEO in Niagara",
     subhead: "Getting found before the application is started",
     paragraphs: [
-      "Mortgage demand in Niagara moves with the buying calendar. The spring buying season brings a surge of first-time buyer searches, renewals drive steady traffic throughout the year, and rate news can spike interest in refinancing at any moment. When someone searches for \"mortgage broker St. Catharines,\" \"mortgage renewal Niagara Falls\" or \"self-employed mortgage Welland,\" Google leans heavily on local signals to decide which brokers to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because people do not use vague national terms when they want a broker who can sit down with them and review their application. We concentrate on the town-level searches a resident of Fonthill or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara brokers are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local mortgage broker. We structure your content and strengthen your local authority so those assistants are more likely to name your brokerage when someone in Niagara asks for a recommendation.",
+      "Mortgage demand in Niagara moves with the buying calendar. The spring buying season brings a surge of first-time buyer searches, renewals keep a steady flow going through the year, and rate news can spike interest in refinancing at any moment. When someone searches for \"mortgage broker St. Catharines,\" \"mortgage renewal Niagara Falls\" or \"self-employed mortgage Welland,\" Google leans heavily on local signals to decide which brokers to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Focused local SEO earns its keep because people do not use vague national terms when they want a broker who can sit down and review their application. We concentrate on the town-level searches a resident of Fonthill or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara brokers are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local mortgage broker. We structure your content and strengthen your local authority so those assistants are more likely to name your brokerage when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for first-time buyers, renewals, refinancing and self-employed applicants",
@@ -63,7 +63,7 @@ const page = {
     heading: "Mortgage Broker SEO across the Niagara region",
     subhead: "Mortgage searches by community",
     paragraphs: [
-      "Infused Agency works with mortgage brokers throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with mortgage brokers throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Fort Erie, Beamsville, Crystal Beach, Fonthill, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake and St. Catharines, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or client types, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -120,7 +120,7 @@ const page = {
     ],
     closingHeading: "Turn mortgage searches into booked consultations",
     closingParagraphs: [
-      "If Niagara residents are searching for mortgage brokers and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your brokerage in front of them. We will also tell you straight whether your site is ready to compete for those searches. Book today and we will map the search opportunity for your brokerage.",
+      "If Niagara residents are searching for mortgage brokers and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your brokerage in front of them.",
     ],
   },
   services: {
@@ -180,7 +180,7 @@ const page = {
     },
     {
       q: "How much does SEO for mortgage brokers cost?",
-      a: "Pricing depends on your goals, your service area and the current state of your website. We provide a clear, personalised written quote after a free consultation, so you always know what you are paying for.",
+      a: "Pricing depends on your goals, your service area and the current state of your website. We give you a clear, personalised written quote after a free consultation, so you always know what you are paying for.",
     },
     {
       q: "Will you guarantee the number one ranking on Google?",

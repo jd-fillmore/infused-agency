@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Financial advisor SEO built for the Niagara market",
     paragraphs: [
-      "Choosing a financial advisor is a considered decision. Niagara residents and business owners compare several advisors, read about planning approaches and check who serves their area before they ever call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Fonthill and beyond, so an advisor who does not show up in those early searches loses the consultation to one who does. Our [SEO services](/seo) are built to put your practice in front of people at the moment they are weighing up where to get financial advice.",
-      "Advisor searches are specific, and the words differ from town to town. Someone looking for retirement planning in St. Catharines is using different terms than a business owner searching for a financial advisor in Niagara Falls. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your practice rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the planning work you actually offer, from the communities you actually serve.",
+      "Picking a financial advisor is a decision people take seriously. Niagara residents and business owners compare a few advisors, read about their planning approach and check who works locally before they call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland and Fonthill, so an advisor who does not appear in those early searches usually loses the client to someone who does. Our [SEO services](/seo) put your practice in front of people at the moment they are deciding where to get financial advice.",
+      "Advisor searches are not the same everywhere. Someone searching for retirement planning in St. Catharines uses different words than a business owner in Niagara Falls looking for estate planning help. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your practice rank for the ones that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the planning work you actually offer, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,9 +44,9 @@ const page = {
     heading: "Why financial advisors need local SEO in Niagara",
     subhead: "Getting found before the first meeting is booked",
     paragraphs: [
-      "Demand for financial advisors in Niagara moves with the calendar. Tax season and year-end planning bring a surge of searches, and life events such as retirement, inheritance or selling a business drive steady interest throughout the year. When someone searches for \"financial advisor St. Catharines,\" \"retirement planning Niagara Falls\" or \"estate planning Welland,\" Google leans heavily on local signals to decide which advisors to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because people do not use vague national terms when they want an advisor they can meet face to face. We concentrate on the town-level searches a resident of Fonthill or a business owner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara advisors are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local financial advisor. We structure your content and strengthen your local authority so those assistants are more likely to name your practice when someone in Niagara asks for a recommendation.",
+      "Demand for financial advice in Niagara moves with the calendar. Tax season and year-end planning bring a surge of searches, while retirement, inheritance and selling a business drive steady interest all year long. When someone searches for \"financial advisor St. Catharines,\" \"retirement planning Niagara Falls\" or \"estate planning Welland,\" Google leans heavily on local signals to decide which advisors to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Focused local SEO earns its keep because people do not use vague national terms when they want an advisor they can meet face to face. We concentrate on the town-level searches a resident of Fonthill or a business owner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara advisors are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local financial advisor. We structure your content and strengthen your local authority so those assistants are more likely to name your practice when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for retirement planning, investment planning, tax-aware planning and estate planning",
@@ -63,7 +63,7 @@ const page = {
     heading: "Financial Advisor SEO across the Niagara region",
     subhead: "Financial planning searches by community",
     paragraphs: [
-      "Infused Agency works with financial advisors throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with financial advisors throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach, Fonthill and Niagara Falls, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or client types, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -120,7 +120,7 @@ const page = {
     ],
     closingHeading: "Turn planning searches into booked consultations",
     closingParagraphs: [
-      "If Niagara residents are searching for financial advisors and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your practice in front of them. We will also give you a straight read on whether your site can compete for those searches. Book today and we will map the search opportunity for your advisory practice.",
+      "If Niagara residents are searching for financial advisors and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your practice in front of them.",
     ],
   },
   services: {

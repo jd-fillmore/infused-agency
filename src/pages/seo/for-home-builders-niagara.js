@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Home builder SEO built for the Niagara market",
     paragraphs: [
-      "Building a custom home is one of the biggest decisions a Niagara homeowner will make, and it is rarely a quick one. Families spend months researching builders, comparing portfolios and reading about the build process before they ever call. Most of that research happens on Google, in St. Catharines, Niagara Falls, Grimsby, Beamsville and beyond, so a builder that does not appear in those early searches is usually off the shortlist before the first conversation. Our [SEO services](/seo) are built to put your building company in front of homeowners at the moment they are weighing up who to hire.",
-      "Custom home searches are specific, and the words differ from town to town. Someone searching for a custom home builder in St. Catharines is using different terms than a buyer looking for an infill lot builder in Niagara Falls. We map those different searches, work out which ones lead to consultations and signed contracts, and build the pages, profiles and content that help your company rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the building work you actually want to do, from the communities you actually serve.",
+      "Building a custom home is one of the biggest decisions a Niagara household makes, and it is never a quick one. Families research builders, compare portfolios and read about the build process for months before they call. Most of that research happens on Google, in St. Catharines, Niagara Falls, Grimsby and Beamsville, so a builder absent from those early searches usually drops off the shortlist before the first conversation. Our [SEO services](/seo) put your building company in front of homeowners at the moment they are deciding who to hire.",
+      "Custom home searches vary from place to place. Someone searching for a custom home builder in St. Catharines uses different words than a buyer looking for an infill lot builder in Niagara Falls. We map those different searches, work out which ones lead to consultations and signed contracts, and build the pages, profiles and content that help your company rank for the searches that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the building work you actually want to do, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,9 +44,9 @@ const page = {
     heading: "Why home builders need local SEO in Niagara",
     subhead: "Getting found while the plans are still being drawn",
     paragraphs: [
-      "Custom home building in Niagara runs on long planning cycles. A family thinking about an infill lot in St. Catharines or a new build in Niagara Falls may research for a year or more before breaking ground, and the searches they make early on—custom home builder, new home construction, infill lot builder—shape who ends up on the shortlist. Google leans heavily on local signals for those searches: your website, your Google Business Profile, your reviews and your coverage of the towns you build in all feed into the decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because homeowners do not use vague national terms when they want a builder who can walk a site and manage a build. We concentrate on the town-level searches a family in Grimsby or a buyer in Beamsville actually makes. That starts with an honest look at where you rank today, which Niagara builders are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local home builder. We structure your content and strengthen your local authority so those assistants are more likely to name your company when someone in Niagara asks for a builder.",
+      "Custom home building in Niagara runs on long planning cycles. A family thinking about an infill lot in St. Catharines or a new build in Niagara Falls may research for a year or more before breaking ground, and the searches they make early on — custom home builder, new home construction, infill lot builder — shape who ends up on the shortlist. Google leans heavily on local signals for those searches: your website, your Google Business Profile, your reviews and your coverage of the towns you build in all feed into the decision.",
+      "Focused local SEO earns its keep because homeowners do not use vague national terms when they want a builder who can walk a site and manage a build. We concentrate on the town-level searches a family in Grimsby or a buyer in Beamsville actually makes. That starts with an honest look at where you rank today, which Niagara builders are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local home builder. We structure your content and strengthen your local authority so those assistants are more likely to name your company when someone in Niagara asks for a builder.",
     ],
     checklist: [
       "Service pages for custom new builds, infill lots and design-led projects",
@@ -63,7 +63,7 @@ const page = {
     heading: "Home Builder SEO across the Niagara region",
     subhead: "Custom home searches by community",
     paragraphs: [
-      "Infused Agency works with home builders throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with home builders throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Beamsville, Crystal Beach, Fonthill, Fort Erie, Grimsby, Niagara Falls, Niagara-on-the-Lake, Port Colborne, St. Catharines, Thorold and Welland, not just one city.",
       "If you build across the region, we make sure your search visibility does too. If you concentrate on certain towns or lot types, we focus your effort where the return is strongest.",
     ],
     checklist: [
@@ -79,7 +79,7 @@ const page = {
   whyChoose: {
     heading: "Why Niagara home builders bring us in",
     paragraphs: [
-      "Custom home demand is research-heavy and seasonal. Homeowners often plan through fall and winter and build through spring and summer, so a builder who is invisible during the research months misses the season before it starts. Being visible while families are comparing names is what keeps the schedule full.",
+      "Custom home demand is research-heavy and seasonal. Homeowners often plan through fall and winter and build through spring and summer, so a builder who is invisible during the research months misses the season before it starts. Being visible while families compare names is what keeps the schedule full.",
       "We work with home builders across Niagara so the right searches find you at the moment someone is ready to schedule a consultation, and so enquiries keep coming through the months when building naturally slows down.",
     ],
     blocks: [
@@ -168,7 +168,7 @@ const page = {
   faqs: [
     {
       q: "How long does home builder SEO take to work?",
-      a: "Most home builders start to see movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Local map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
+      a: "Most home builders start to see movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
     },
     {
       q: "Do you only work with home builders in St. Catharines?",

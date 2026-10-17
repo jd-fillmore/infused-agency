@@ -21,9 +21,9 @@ const page = {
   intro: {
     heading: "Design-build SEO built for the Niagara market",
     paragraphs: [
-      "Choosing a design-build firm is a considered decision. Homeowners in Niagara are weighing one team against the older approach of hiring a designer and a builder separately, and they research both options thoroughly on Google before making contact. Whether the project is a full home renovation in St. Catharines, a custom home in Niagara Falls or an addition in Grimsby, the firms that appear when people search for design and construction are the ones that get the first call. Our [SEO services](/seo) are built to put your design-build practice in front of homeowners at the moment they are deciding how to run their project.",
+      "Choosing a design-build firm is a considered decision. Niagara homeowners weigh one team against the older approach of hiring a designer and a builder separately, and they research both options thoroughly on Google before making contact. Whether the project is a full home renovation in St. Catharines, a custom home in Niagara Falls or an addition in Grimsby, the firms that appear when people search for design and construction are the ones that get the first call. Our [SEO services](/seo) put your design-build practice in front of homeowners at the moment they are deciding how to run their project.",
       "Design-build searches are specific, and the words differ from town to town. Someone looking for a design-build firm in St. Catharines is using different terms than a homeowner in Niagara Falls searching for a design and build contractor. We map those different searches, work out which ones lead to consultations, and build the pages, profiles and content that help your firm rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the design and build work you actually want to take on, from the communities you actually serve.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the design and build work you actually want to take on, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -45,8 +45,8 @@ const page = {
     subhead: "Getting found before the decision between two approaches is made",
     paragraphs: [
       "Demand for design-build in Niagara follows the renovation calendar. Homeowners plan additions, renovations and custom homes through the cooler months and build through spring, summer and early fall, and they often start by searching for a design-build firm near them. Searches like \"design-build firm St. Catharines,\" \"design and build contractor Niagara Falls\" or \"home renovation design build Grimsby\" are local decisions, and Google leans heavily on local signals to decide which firms to show. Your website, your Google Business Profile, your reviews and your coverage of the towns you serve all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because homeowners do not use vague national terms when they want one team accountable for both design and construction. We concentrate on the town-level searches a resident of Beamsville or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara design-build firms are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local design-build firm. We structure your content and strengthen your local authority so those assistants are more likely to name your firm when someone in Niagara asks for a recommendation.",
+      "Focused local SEO earns its keep because homeowners do not use vague national terms when they want one team accountable for both design and construction. We concentrate on the town-level searches a resident of Beamsville or a homeowner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara design-build firms are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local design-build firm. We structure your content and strengthen your local authority so those assistants are more likely to name your firm when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for design-build projects, home renovations and custom homes",
@@ -63,7 +63,7 @@ const page = {
     heading: "Design-Build SEO across the Niagara region",
     subhead: "Design and construction searches by community",
     paragraphs: [
-      "Infused Agency works with design-build firms throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with design-build firms throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach, Fonthill, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne and St. Catharines, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or project types, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -168,7 +168,7 @@ const page = {
   faqs: [
     {
       q: "How long does design-build SEO take to work?",
-      a: "Most design-build firms start to see movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Local map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
+      a: "Most design-build firms start to see movement in rankings and enquiries within three to six months, depending on how competitive your area is and how much work your site needs. Map-pack improvements can show sooner, while broader organic rankings build over six to twelve months.",
     },
     {
       q: "Do you only work with design-build firms in St. Catharines?",

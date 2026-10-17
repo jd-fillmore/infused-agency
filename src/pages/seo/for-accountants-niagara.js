@@ -14,16 +14,16 @@ const page = {
   hero: {
     title: "SEO for Accountants in Niagara",
     description:
-      "Infused Agency helps Niagara accountants get found for personal and small business tax filing, bookkeeping, payroll and incorporation searches, and connect with people ready to book a consultation.",
+      "Infused Agency helps Niagara accountants get found for personal tax filing, small business tax, bookkeeping, payroll and incorporation searches, and connect with people ready to book a consultation.",
     image: hero,
     alt: "SEO for Accountants Niagara",
   },
   intro: {
     heading: "Accountant SEO built for the Niagara market",
     paragraphs: [
-      "Choosing an accountant is a considered decision. Niagara residents and business owners compare several accountants, read about the services on offer and check who serves their area before they ever call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Fonthill and beyond, so an accountant who does not show up in those early searches loses the client to one who does. Our [SEO services](/seo) are built to put your practice in front of people at the moment they are weighing up where to file their taxes or manage their books.",
-      "Accountant searches are specific, and the words differ from town to town. Someone looking for small business tax filing in St. Catharines is using different terms than a business owner searching for an accountant in Niagara Falls. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your practice rank for the searches that matter most.",
-      "The goal is not a higher number on a ranking report. It is more qualified consultation requests for the accounting work you actually do, from the communities you actually serve.",
+      "Choosing an accountant is a decision people take seriously. Niagara residents and business owners compare a few accountants, read about the services offered and check who works locally before they call. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland and Fonthill, so an accountant who does not appear in those early searches usually loses the client to someone who does. Our [SEO services](/seo) put your practice in front of people at the moment they are deciding where to file their taxes or manage their books.",
+      "Accountant searches are not the same everywhere. Someone looking for small business tax filing in St. Catharines uses different words than a business owner in Niagara Falls searching for an accountant. We map those different searches, work out which ones lead to booked consultations, and build the pages, profiles and content that help your practice rank for the ones that matter most.",
+      "The aim is not a bigger number on a ranking report. It is more qualified consultation requests for the accounting work you actually do, from the communities you actually serve.",
     ],
   },
   proof: {
@@ -44,9 +44,9 @@ const page = {
     heading: "Why accountants need local SEO in Niagara",
     subhead: "Getting found before the engagement letter is signed",
     paragraphs: [
-      "Accounting demand in Niagara moves with the calendar. Tax season brings a surge of personal and small business tax filing searches, year-end keeps bookkeeping and payroll steady, and new business start-ups drive incorporation enquiries throughout the year. When someone searches for \"accountant St. Catharines,\" \"small business tax filing Niagara Falls\" or \"bookkeeper Welland,\" Google leans heavily on local signals to decide which practices to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused [local SEO](/seo/local-seo) earns its keep because people do not use vague national terms when they want an accountant they can meet face to face. We concentrate on the town-level searches a resident of Fonthill or a business owner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara accountants are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "Search behaviour is also shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local accountant. We structure your content and strengthen your local authority so those assistants are more likely to name your practice when someone in Niagara asks for a recommendation.",
+      "Accounting demand in Niagara moves with the calendar. Tax season brings a surge of personal and small business tax filing searches, year-end keeps bookkeeping and payroll steady, and new business start-ups drive incorporation enquiries all year long. When someone searches for \"accountant St. Catharines,\" \"small business tax filing Niagara Falls\" or \"bookkeeper Welland,\" Google leans heavily on local signals to decide which practices to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
+      "Focused local SEO earns its keep because people do not use vague national terms when they want an accountant they can meet face to face. We concentrate on the town-level searches a resident of Fonthill or a business owner in Thorold actually makes. That starts with an honest look at where you rank today, which Niagara accountants are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
+      "Search behaviour is shifting toward AI tools. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a local accountant. We structure your content and strengthen your local authority so those assistants are more likely to name your practice when someone in Niagara asks for a recommendation.",
     ],
     checklist: [
       "Service pages for personal tax filing, small business tax, bookkeeping, payroll and incorporation",
@@ -63,7 +63,7 @@ const page = {
     heading: "Accountant SEO across the Niagara region",
     subhead: "Accounting searches by community",
     paragraphs: [
-      "Infused Agency works with accountants throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill, not just one city.",
+      "Infused Agency works with accountants throughout Niagara, and we build local relevance for each community you cover. That means content and signals that speak to Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach, Fonthill and Niagara Falls, not just one city.",
       "If you serve the whole region, we make sure your search visibility does too. If you focus on certain towns or client types, we concentrate your effort where the return is strongest.",
     ],
     checklist: [
@@ -120,7 +120,7 @@ const page = {
     ],
     closingHeading: "Turn accounting searches into booked consultations",
     closingParagraphs: [
-      "If Niagara residents are searching for accountants and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your practice in front of them. We will also tell you whether your site is in shape to compete for those searches. Book today and we will map the search opportunity for your accounting practice.",
+      "If Niagara residents are searching for accountants and finding someone else instead, book a free consultation with [Infused Agency](/) and we will map what it takes to put your practice in front of them.",
     ],
   },
   services: {
