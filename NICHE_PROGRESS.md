@@ -10,7 +10,7 @@ Status key: done = committed on branch; needs review = copy/facts flagged
 1. Med Spas and Cosmetic Clinics (/seo/for-med-spas-niagara): rewritten
 2. Home Builders and Custom Home Builders (/seo/for-home-builders-niagara): rewritten
 3. Design-Build Firms (/seo/for-design-build-firms-niagara): rewritten
-4. Home Additions (/seo/for-home-additions-niagara): done
+4. Home Additions (/seo/for-home-additions-niagara): rewritten
 5. Mortgage Brokers (/seo/for-mortgage-brokers-niagara): done
 6. Financial Advisors (/seo/for-financial-advisors-niagara): done
 7. Accountants (/seo/for-accountants-niagara): done
