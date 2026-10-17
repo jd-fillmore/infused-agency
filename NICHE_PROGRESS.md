@@ -19,7 +19,7 @@ Status key: done = committed on branch; needs review = copy/facts flagged
 10. Physiotherapists (/seo/for-physiotherapists-niagara): rewritten
 11. Architects and Building Designers (/seo/for-architects-niagara): done
 12. Veterinarians (/seo/for-veterinarians-niagara): done
-13. Optometrists (/seo/for-optometrists-niagara): done
+13. Optometrists (/seo/for-optometrists-niagara): rewritten
 14. Home Automation and Security Installers (/seo/for-home-automation-installers-niagara): done
 15. Interior Designers (/seo/for-interior-designers-niagara): done
 16. Cabinet Makers and Custom Cabinetry (/seo/for-cabinet-makers-niagara): done
