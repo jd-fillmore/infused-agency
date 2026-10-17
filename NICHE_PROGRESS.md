@@ -17,12 +17,12 @@ Status key: done = committed on branch; needs review = copy/facts flagged
 8. Insurance Brokers (/seo/for-insurance-brokers-niagara): rewritten
 9. Chiropractors (/seo/for-chiropractors-niagara): rewritten
 10. Physiotherapists (/seo/for-physiotherapists-niagara): rewritten
-11. Architects and Building Designers (/seo/for-architects-niagara): done
-12. Veterinarians (/seo/for-veterinarians-niagara): done
+11. Architects and Building Designers (/seo/for-architects-niagara): rewritten
+12. Veterinarians (/seo/for-veterinarians-niagara): rewritten
 13. Optometrists (/seo/for-optometrists-niagara): rewritten
-14. Home Automation and Security Installers (/seo/for-home-automation-installers-niagara): done
-15. Interior Designers (/seo/for-interior-designers-niagara): done
-16. Cabinet Makers and Custom Cabinetry (/seo/for-cabinet-makers-niagara): done
+14. Home Automation and Security Installers (/seo/for-home-automation-installers-niagara): rewritten
+15. Interior Designers (/seo/for-interior-designers-niagara): rewritten
+16. Cabinet Makers and Custom Cabinetry (/seo/for-cabinet-makers-niagara): rewritten
 17. Countertop Fabricators (/seo/for-countertop-fabricators-niagara): done
 18. Flooring Installers (/seo/for-flooring-installers-niagara): done
 19. Tile Installers (/seo/for-tile-installers-niagara): done
