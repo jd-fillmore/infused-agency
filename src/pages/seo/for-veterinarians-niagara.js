@@ -5,62 +5,64 @@ import hero from "../../img/seo-for-veterinarians-niagara.jpg";
 const page = {
   seo: {
     title: "SEO for Veterinarians in Niagara | Infused Agency",
-    description: "Local SEO for Niagara veterinarians. Get found for wellness exams, vaccinations, dental care, emergency and urgent care, spay and neuter, and senior-pet care in St. Catharines and Niagara Falls. Free consultation.",
+    description:
+      "Wellness exams, vaccinations, dental care, emergency care and spay and neuter — Niagara veterinary clinics get found with Infused Agency. Book a no-obligation chat.",
     canonical: "https://infused.agency/seo/for-veterinarians-niagara",
     url: "/seo/for-veterinarians-niagara",
   },
   industry: "Veterinarians",
   hero: {
     title: "SEO for Veterinarians in Niagara",
-    description: "Infused Agency helps Niagara veterinarians get found for wellness exams, vaccinations, dental care, emergency and urgent care, spay and neuter, and senior-pet care, and connect with pet owners ready to book.",
+    description:
+      "Niagara veterinary clinics appear for wellness exams, vaccinations, dental care, emergency care and spay and neuter when pet owners search — turning search traffic into booked appointments.",
     image: hero,
     alt: "SEO for Veterinarians Niagara",
   },
   intro: {
-    heading: "Veterinarians SEO built for the Niagara market",
+    heading: "Veterinary search visibility built for Niagara",
     paragraphs: [
-      "Many residents searching do not choose veterinarians before calling. They compare veterinarians across Niagara and read about what each one offers before calling. That comparison happens on Google, in St. Catharines, Niagara Falls, Welland, Grimsby and beyond, so a veterinarians missing from those early searches usually loses the the client to a competitor who shows up. Our [SEO services](/seo) put your veterinarians business in front of people at the moment they are deciding where to book.",
-      "Interest in veterinarians in Niagara tracks the calendar. Veterinary demand in Niagara is steady, with spikes in spring flea-and-tick season and urgent after-hours searches throughout the year. When someone searches for \"veterinarian St. Catharines,\" \"pet vaccinations Niagara Falls\" or \"emergency vet Welland\", Google leans heavily on local signals to decide which veterinarians to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      undefined,
+      "Pet owners know that choosing a veterinarian is never a one-search decision. They compare clinics, check service ranges and read what other pet owners say before calling — nearly all of it happens on Google. From St. Catharines to Niagara Falls, Welland to Grimsby, a clinic that is invisible while people compare usually loses the client to one that appears. Our search engine optimisation work places your clinic before local households at the moment they decide who should care for their pet.",
+      "Veterinary demand moves with the calendar. Spring flea-and-tick season brings a surge in wellness exam searches, while urgent after-hours needs arise throughout the year. When someone searches \"veterinarian St. Catharines,\" \"pet vaccinations Niagara Falls\" or \"emergency vet Welland,\" Google uses local signals to decide which clinics show up. Your website, Google Business Profile listing, client reviews and town coverage all play a part.",
+      "Veterinary care is not human medicine or pet grooming. It centres on wellness exams, vaccinations, dental care, emergency and urgent care, spay and neuter, and senior-pet care — the kind of care people return to throughout an animal's life. We target the searches veterinary clinics want most: wellness exams, vaccinations, dental care, emergency care and spay and neuter.",
     ],
   },
   proof: {
-    heading: "Results across Niagara businesses",
-    subhead: "undefined undefined our broader roster undefined clients, not from veterinarians projects.",
+    heading: "What our clients achieve",
+    subhead: "Outcomes from clinics across Niagara.",
     stats: [
       { value: "+550%", label: "Local visibility, Flat Rock Cellars" },
       { value: "+670%", label: "Local visibility, Delta Energy Solutions" },
       { value: "50+", label: "Clients helped with SEO" },
     ],
-    note: "undefined are results undefined Niagara industries, undefined veterinarians clients.",
+    note: "These figures come from our wider Niagara client base in many industries, not from veterinary projects.",
     viewMoreHref: "/work",
     viewMoreLabel: "View More Results",
   },
   bodyBlock: {
-    heading: "Why Veterinarians need local SEO in Niagara",
-    subhead: "Getting found before the consultation is booked",
+    heading: "Why veterinary clinics need local search in Niagara",
+    subhead: "Being found before the first appointment is set",
     paragraphs: [
-      "Veterinary demand in Niagara is steady, with spikes in spring flea-and-tick season and urgent after-hours searches throughout the year. People looking for \"veterinarian St. Catharines,\" \"pet vaccinations Niagara Falls\" or \"emergency vet Welland\", Google uses local signals to decide which veterinarians to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Targeted local SEO matters veterinarians they can visit in person. because people do not search using vague national terms when they want a We concentrate on the town-level searches a resident of Welland or someone in Grimsby actually makes. We start with an honest look at where you rank today, which Niagara veterinarians are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "An increasing number of people now turn to ChatGPT, Gemini or Google's AI Overviews to get a local veterinarians. We structure your content and strengthen your local authority so those assistants are more likely to name your business when someone in Niagara asks for a recommendation.",
+      "Picking a veterinarian takes thought. Before any household books a first appointment, they compare clinics, read client feedback and find out how the care process works, from examination through to treatment. Search results shape who makes the shortlist, so your website, Google Business Profile listing, client reviews and location pages all affect whether you appear on it.",
+      "We do not go after broad national terms. Instead, we focus on the neighbourhood searches someone in Port Colborne or Niagara-on-the-Lake actually runs: \"veterinarian Thorold,\" \"pet vaccinations Grimsby,\" \"emergency vet near me.\" We begin by checking where you rank now, which Niagara veterinary clinics lead the search results, and where your pages leave gaps — then we close them one by one.",
+      "More Niagara households now ask ChatGPT, Gemini and Google's AI Overviews to recommend a local veterinarian. We write your content and build your local authority so those assistants are more likely to mention your clinic when a Niagara resident asks for a recommendation.",
     ],
     checklist: [
-      "Service pages for wellness exams, vaccinations, dental care, emergency care and spay and neuter",
-      "Google Business Profile optimisation for the Niagara map pack",
-      "Location pages for the cities and towns you serve",
-      "Review and trust signals that reassure people before they book",
+      "Dedicated pages for wellness exams, vaccinations, dental care, emergency care and spay and neuter",
+      "Google Business Profile set up to appear in the Niagara map pack",
+      "Location pages for every city and town you serve",
+      "Client reviews and trust signals that reassure households before they book",
       "Technical fixes that keep your site fast and easy to crawl",
     ],
     paragraphsAfter: [
-      undefined,
+      "Because your service area spans the region, we shape the work around how people actually move through it. A clinic in Crystal Beach and one in Beamsville both want a veterinarian who knows the local community, so we make sure your clinic shows up wherever those people search.",
     ],
   },
   areasBlock: {
-    heading: "Veterinarians SEO across the Niagara region",
-    subhead: "Veterinarians searches by community",
+    heading: "Veterinary clinic SEO across the Niagara region",
+    subhead: "Veterinary searches by community",
     paragraphs: [
-      "Infused Agency partners with veterinarians all across Niagara, and we establish local relevance for each community you serve. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, not just one city.",
-      undefined,
+      "We serve veterinary clinics across Niagara and build local relevance for each community you cover. That means content and signals that speak to St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach and Fonthill — not just one town.",
+      "Cover the entire region and your visibility should match that spread. Focus on certain towns and we direct effort toward the towns with the strongest return.",
     ],
     checklist: [
       "Region-wide visibility for the communities you actually serve",
@@ -69,122 +71,115 @@ const page = {
       "Content that reflects local demand and seasonality",
     ],
     paragraphsAfter: [
-      undefined,
+      "Look through our dedicated city pages below for the local search programmes we run across Niagara.",
     ],
   },
   whyChoose: {
-    heading: "Why Niagara Veterinarians bring us in",
+    heading: "Why Niagara veterinary clinics bring us in",
     paragraphs: [
-      undefined,
-      undefined,
+      "Care work rests on trust and being found when someone is ready to book. Households comparing clinics narrow to a shortlist and call whichever vet looks credible and closest first. Miss those early searches and the appointment book stays quiet even when pet care demand is strong.",
+      "We partner with clinics across Niagara so the right searches find you when someone is ready to schedule, with enquiries arriving in every season.",
     ],
     blocks: [
       {
-        title: "Planned around your care calendar",
+        title: "Care shaped around the animal, not the condition",
         paragraphs: [
-          "Veterinary demand in Niagara is steady, with spikes in spring flea-and-tick season and urgent after-hours searches throughout the yearundefined",
-          undefined,
+          "A wellness exam needs a different approach than emergency care, and senior-pet care needs a different approach than spay and neuter. We help you write about each service so people can see you understand their situation.",
+          "Search engines reward that kind of detail. A thin page that repeats the same phrase will be outranked by one that genuinely covers dental care and emergency care.",
         ],
       },
       {
-        title: "Consultation requests, not empty traffic",
+        title: "Appointment requests that turn into ongoing care",
         paragraphs: [
-          undefined,
-          undefined,
+          "When a hundred visits come from people who never book an exam, that traffic is worth nothing. We target the searches that end in a booking request: wellness exams, vaccinations, dental care, emergency care and spay and neuter.",
+          "Your reports show which pages and which searches brought in calls and form fills, so your budget goes toward the client relationships that last.",
         ],
         checklist: [
-          "Rankings for the work you actually want to sell",
+          "Rankings for the care services you actually want to provide",
           "Calls and form fills counted per page",
           "Google Business Profile calls and direction requests",
-          "Which towns are producing genuine consultation requests",
+          "Which towns are producing genuine appointment requests",
         ],
       },
       {
-        title: "Copy written by people who know the field",
+        title: "Honest guidance on how far to go",
         paragraphs: [
-          undefined,
-          undefined,
-        ],
-      },
-      {
-        title: "Straight answers about what will move the needle",
-        paragraphs: [
-          undefined,
-          undefined,
+          "Some clinics get by with a handful of service pages and a properly managed profile; others need more work before anything ranks. We will be straight about which one you are.",
+          "A tighter scope that gets you booked is what we will recommend. There is no sense paying for work you do not need.",
         ],
       },
     ],
-    closingHeading: "Turn veterinarians searches into booked consultations",
+    closingHeading: "Turn veterinary searches into booked appointments",
     closingParagraphs: [
-      undefined,
+      "Pet owners in Niagara who search for a veterinarian and find your competitors instead should reach out to Infused Agency — we will map what it takes to put your clinic in front of them.",
     ],
   },
   services: {
-    heading: "What we do for Veterinarians",
-    subhead: "Veterinarians-specific search work, start to finish",
+    heading: "What we do for veterinary clinics",
+    subhead: "Veterinary-specific search work, start to finish",
     cards: [
       {
-        title: "One page per type of care",
+        title: "A page per type of care",
         paragraphs: [
-          undefined,
+          "A dedicated page for wellness exams ranks differently from one for dental care or spay and neuter. Search engines rank them separately. We build one page per type of care you actually offer, using the language Niagara pet owners search with.",
         ],
       },
       {
-        title: "Town-by-town coverage across the region",
+        title: "Town-by-town presence across the region",
         paragraphs: [
-          undefined,
+          "A page about St. Catharines will not help someone in Fort Erie who needs a veterinarian. We build location content for every community you serve so your care services appear together with the town someone searches with.",
         ],
       },
       {
-        title: "Wellness and preventive care content",
+        title: "Pet health and wellness content",
         paragraphs: [
-          undefined,
+          "A veterinary visit starts with a full wellness exam, vaccination review and a personalised recommendation before any treatment begins. We help you publish content that explains the process so pet owners know what to expect.",
         ],
       },
       {
-        title: "Appointment booking that is easy to use",
+        title: "Answers pet owners ask before booking",
         paragraphs: [
-          undefined,
+          "Pet owners commonly ask how often their animal needs an exam, which vaccinations are required and what care options exist. We help you answer those questions on your site so visitors have the details they need before booking.",
         ],
       },
       {
-        title: "A Google profile tuned to your clinic",
+        title: "Simple appointment scheduling",
         paragraphs: [
-          undefined,
+          "Comparing clinics should not mean struggling with a clumsy contact form. We make sure a phone number and a short appointment request are easy to reach on a phone, where most local veterinarian searches happen.",
         ],
       },
       {
-        title: "Content that answers pet care questions",
+        title: "Google Business Profile that works for your clinic",
         paragraphs: [
-          undefined,
+          "A pet owner often sees your Google Business Profile first. We keep your services, towns, hours and photos accurate and current so you appear when someone nearby searches for a veterinarian.",
         ],
       },
     ],
   },
   faqs: [
     {
-      q: "How long does SEO take to work?",
-      a: undefined,
+      q: "How soon will veterinary SEO show results?",
+      a: "Veterinary clinics usually see initial movement in enquiries and map-pack visibility within a few months, with full organic growth taking six to twelve months depending on competition and site condition.",
     },
     {
-      q: "Do you only work in St. Catharines?",
-      a: undefined,
+      q: "Do you only serve St. Catharines?",
+      a: "No. Our work covers veterinary clinics across the whole Niagara region: Niagara Falls and St. Catharines, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake, Fort Erie, Beamsville, Crystal Beach, Fonthill and surrounding areas.",
     },
     {
-      q: "Can you help my business show up on Google Maps?",
-      a: undefined,
+      q: "Can my clinic appear in the Google map pack?",
+      a: "Yes. Local SEO and Google Business Profile optimisation are core parts of our programmes. We help your clinic show up in map pack results for the searches and areas that matter most.",
     },
     {
-      q: "How much does SEO cost?",
-      a: undefined,
+      q: "What does veterinary SEO cost?",
+      a: "Pricing depends on your goals, the towns you serve and the state of your website. After a free consultation, we explain what drives the cost and send you a clear written quote, so you always know what you are paying for.",
     },
     {
-      q: "Will you guarantee the number one ranking on Google?",
-      a: undefined,
+      q: "Will you promise a number one Google ranking?",
+      a: "No agency can promise a number one ranking on Google, because Google's search algorithms change constantly. We use transparent, sustainable optimisation, clear reporting and steady visibility growth over time.",
     },
   ],
 };
 
-export default function veterinariansNiagaraSeo() {
+export default function VeterinariansNiagaraSeo() {
   return <IndustryNiagaraPage page={page} />;
 }
