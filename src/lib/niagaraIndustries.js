@@ -484,6 +484,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "painters",
+    displayName: "Painters",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for interior and exterior painting, cabinet refinishing, deck and fence staining searches from homeowners across Niagara.",
+    href: "/seo/for-painters-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
