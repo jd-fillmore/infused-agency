@@ -437,7 +437,8 @@ const StCatharinesWebDesign = () => {
               During the build, pages are developed and checked across screens
               of every size — phones, tablets, laptops and desktops — because
               so many local searches happen on a phone. Content is normally
-              something you provide, since you know your business best; if you
+              something you provide, since you know your business inside out;
+              if you
               would rather not write it, we can write it for you at an
               additional cost. WordPress projects include a walkthrough so you
               can update pages, posts and photos yourself.

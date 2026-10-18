@@ -365,7 +365,7 @@ const NiagaraWebDesign = () => {
               direction of the design before it is finished, feedback is
               expected rather than tolerated, and changes get folded in as the
               site takes shape. Content is normally yours to supply — you know
-              your business best — and if writing it is the part you dread, we
+              your business inside out — and if writing it is the part you dread, we
               can write it for you at an additional cost.
             </p>
             <p>
