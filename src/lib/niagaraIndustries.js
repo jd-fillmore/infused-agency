@@ -475,6 +475,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "fireplace-and-chimney-services",
+    displayName: "Fireplace and Chimney Services",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for fireplace and insert installation, chimney inspection and cleaning searches from homeowners across Niagara.",
+    href: "/seo/for-fireplace-and-chimney-services-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
