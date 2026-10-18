@@ -421,69 +421,6 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
-    slug: "countertop-fabricators",
-    displayName: "Countertop Fabricators",
-    category: "Home & Trade Services",
-    benefit:
-      "Show up for quartz, granite and stone countertop searches from Niagara homeowners and renovators.",
-    href: "/seo/for-countertop-fabricators-niagara",
-    coverage: "Niagara region",
-  },
-  {
-    slug: "flooring-installers",
-    displayName: "Flooring Installers",
-    category: "Home & Trade Services",
-    benefit:
-      "Win hardwood, laminate, vinyl and refinishing searches from Niagara homeowners and builders.",
-    href: "/seo/for-flooring-installers-niagara",
-    coverage: "Niagara region",
-  },
-  {
-    slug: "tile-installers",
-    displayName: "Tile Installers",
-    category: "Home & Trade Services",
-    benefit:
-      "Get found for bathroom tile, backsplash, heated floor and shower tile searches across Niagara.",
-    href: "/seo/for-tile-installers-niagara",
-    coverage: "Niagara region",
-  },
-  {
-    slug: "masonry-contractors",
-    displayName: "Masonry Contractors",
-    category: "Home & Trade Services",
-    benefit:
-      "Win brick repair, repointing, stone veneer and parging searches from Niagara homeowners.",
-    href: "/seo/for-masonry-contractors-niagara",
-    coverage: "Niagara region",
-  },
-  {
-    slug: "fireplace-and-chimney-services",
-    displayName: "Fireplace and Chimney Services",
-    category: "Home & Trade Services",
-    benefit:
-      "Show up for fireplace installation, chimney cleaning and inspection searches across Niagara.",
-    href: "/seo/for-fireplace-and-chimney-services-niagara",
-    coverage: "Niagara region",
-  },
-  {
-    slug: "tree-services",
-    displayName: "Tree Services",
-    category: "Home & Trade Services",
-    benefit:
-      "Win tree removal, trimming, stump grinding and storm damage searches across Niagara.",
-    href: "/seo/for-tree-services-niagara",
-    coverage: "Niagara region",
-  },
-  {
-    slug: "painters",
-    displayName: "Painters",
-    category: "Home & Trade Services",
-    benefit:
-      "Win interior and exterior painting, cabinet refinishing and deck staining searches across Niagara.",
-    href: "/seo/for-painters-niagara",
-    coverage: "Niagara region",
-  },
-  {
     slug: "home-automation-installers",
     displayName: "Home Automation Installers",
     category: "Home & Trade Services",

@@ -23,13 +23,6 @@ Status key: done = committed on branch; needs review = copy/facts flagged
 14. Home Automation and Security Installers (/seo/for-home-automation-installers-niagara): rewritten
 15. Interior Designers (/seo/for-interior-designers-niagara): rewritten
 16. Cabinet Makers and Custom Cabinetry (/seo/for-cabinet-makers-niagara): rewritten
-17. Countertop Fabricators (/seo/for-countertop-fabricators-niagara): done
-18. Flooring Installers (/seo/for-flooring-installers-niagara): done
-19. Tile Installers (/seo/for-tile-installers-niagara): done
-20. Masonry and Brick Repair (/seo/for-masonry-contractors-niagara): done
-21. Tree Services (/seo/for-tree-services-niagara): done
-22. Fireplace Installers and Chimney Services (/seo/for-fireplace-and-chimney-services-niagara): done
-23. Painters (/seo/for-painters-niagara): done
 
 Not building: immigration consultants (out of scope).
 
