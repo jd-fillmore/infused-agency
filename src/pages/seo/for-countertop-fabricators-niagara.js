@@ -88,7 +88,7 @@ const page = {
       {
         title: "Stone shaped around the room, not the showroom",
         paragraphs: [
-          "A kitchen countertop package calls for a different approach than a bathroom vanity top, and a marble fireplace surround calls for a different approach than quartz. We help you write about each service so people can see you understand their situation.",
+          "A kitchen countertop package calls for a different approach than a bathroom vanity countertop, and a marble fireplace surround calls for a different approach than quartz. We help you write about each service so people can see you understand their situation.",
           "Google tends to reward that depth. A page with real substance on quartz countertops and vanity tops earns a better position than a thin page that repeats the same phrase.",
         ],
       },
