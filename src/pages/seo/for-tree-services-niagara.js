@@ -5,62 +5,64 @@ import hero from "../../img/seo-for-tree-services-niagara.jpg";
 const page = {
   seo: {
     title: "SEO for Tree Services in Niagara | Infused Agency",
-    description: "Local SEO for Niagara tree services. Get found for tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing in Crystal Beach and Fonthill. Free consultation.",
+    description:
+      "Tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing — Niagara tree services get found with Infused Agency. Book a free estimate.",
     canonical: "https://infused.agency/seo/for-tree-services-niagara",
     url: "/seo/for-tree-services-niagara",
   },
   industry: "Tree Services",
   hero: {
     title: "SEO for Tree Services in Niagara",
-    description: "Infused Agency helps Niagara tree services get found for tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing, and connect with homeowners ready to schedule a consultation.",
+    description:
+      "Tree services across Niagara appear for tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing when homeowners search — turning local traffic into booked consultations.",
     image: hero,
     alt: "SEO for Tree Services Niagara",
   },
   intro: {
-    heading: "Tree Services SEO built for the Niagara market",
+    heading: "Tree service search visibility built for Niagara",
     paragraphs: [
-      "Most people looking do not go tree services before calling. They compare tree services across Niagara and read about what each one offers before calling. That comparison happens on Google, in Crystal Beach, Fonthill, St. Catharines, Niagara Falls and beyond, so a tree services missing from those early searches usually loses the the job to a competitor who shows up. Our [SEO services](/seo) put your tree services business in front of people at the moment they are deciding where to book.",
-      "Demand for tree services in Niagara shifts with the calendar. Tree service demand in Niagara is storm-driven. Emergencies spike after severe weather, winter and early spring bring pruning enquiries, and steady removals continue all year. When someone searches for \"tree removal St. Catharines,\" \"tree trimming Niagara Falls\" or \"emergency tree service Welland\", Google leans heavily on local signals to decide which tree services to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      undefined,
+      "Tree work is not decided after one search. Niagara homeowners compare services, review credentials and weigh each company's approach before calling — and most of that research starts on Google. From Crystal Beach to Fonthill, St. Catharines to Niagara Falls, a tree service invisible during comparisons usually loses the job to one that appears. Our search engine optimisation work places your business before local households at the moment they decide who should handle their trees.",
+      "Tree service demand shifts with the calendar. Storm damage brings emergency spikes, winter and early spring drive pruning enquiries, and steady removals continue all year, beginning with a search for a local provider. When someone searches \"tree removal St. Catharines,\" \"tree trimming Niagara Falls\" or \"emergency tree service Welland,\" Google weighs local signals to decide which services appear. Your website, Google Business Profile listing, project photos and town coverage all play a part.",
+      "Tree services differ from landscaping or construction work. It centres on tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing — work people need as they maintain their properties. We target the searches tree services want most: tree removal and trimming, stump grinding, storm damage cleanup and emergency removal.",
     ],
   },
   proof: {
-    heading: "Results across Niagara businesses",
-    subhead: "undefined undefined our broader roster undefined clients, not from tree services projects.",
+    heading: "What our clients achieve",
+    subhead: "Outcomes from tree services across Niagara.",
     stats: [
       { value: "+550%", label: "Local visibility, Flat Rock Cellars" },
       { value: "+670%", label: "Local visibility, Delta Energy Solutions" },
       { value: "50+", label: "Clients helped with SEO" },
     ],
-    note: "undefined are results undefined Niagara industries, undefined tree services clients.",
+    note: "These figures come from our wider Niagara client base in many industries, not from tree service projects.",
     viewMoreHref: "/work",
     viewMoreLabel: "View More Results",
   },
   bodyBlock: {
-    heading: "Why Tree Services need local SEO in Niagara",
-    subhead: "Getting found before the consultation is booked",
+    heading: "Why tree services need local search in Niagara",
+    subhead: "Being found before the consultation is booked",
     paragraphs: [
-      "Tree service demand in Niagara is storm-driven. Emergencies spike after severe weather, winter and early spring bring pruning enquiries, and steady removals continue all year. When someone searches for \"tree removal St. Catharines,\" \"tree trimming Niagara Falls\" or \"emergency tree service Welland\", Local signals drive Google to decide which tree services to show. Your website, your Google Business Profile, your reviews and your location coverage all feed into that decision.",
-      "Focused local SEO earns its keep tree services they can meet in person. because people want a  when they want a We concentrate on the town-level searches a resident of St. Catharines or someone in Niagara Falls actually makes. We start with an honest look at where you rank today, which Niagara tree services are appearing ahead of you, and where your pages leave gaps, then a methodical fix one page at a time.",
-      "More people now ask ChatGPT, Gemini or Google's AI Overviews when looking for a local tree services. We structure your content and strengthen your local authority so those assistants are more likely to name your business when someone in Niagara asks for a recommendation.",
+      "Selecting a tree service takes time. Before a household books a first consultation, they compare companies, check credentials and learn about the process from assessment to cleanup. Search results decide who makes the shortlist, so your website, Google Business Profile listing, project photography and location pages all affect whether you appear on it.",
+      "Broad national terms do not connect with local buyers. Instead, we target the neighbourhood searches someone in Port Colborne or Niagara-on-the-Lake actually runs: \"tree service Thorold,\" \"tree removal Grimsby,\" \"emergency tree service near me.\" We start by checking your current position, identifying which Niagara services lead the results, and finding where your pages leave openings — then we close those gaps one by one.",
+      "More homeowners now turn to AI tools such as ChatGPT, Gemini and Google's AI Overviews for local tree service recommendations. We shape your content and build your local authority so those tools are more likely to name your business when someone in Niagara asks for a suggestion.",
     ],
     checklist: [
-      "Service pages for tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing",
-      "Google Business Profile optimisation for the Niagara map pack",
-      "Location pages for the cities and towns you serve",
-      "Review and trust signals that reassure people before they book",
-      "Technical fixes that keep your site fast and easy to crawl",
+      "Service pages covering tree removal and trimming, stump grinding, storm damage cleanup, emergency removal and lot clearing",
+      "Google Business Profile optimised for local map pack visibility",
+      "Location pages for every city and town in your service area",
+      "Customer reviews and trust signals that build confidence before booking",
+      "Technical fixes for fast, crawlable site performance",
     ],
     paragraphsAfter: [
-      undefined,
+      "Because your service area spans the region, we tailor the work to how people actually move through it. A service in Crystal Beach and one in Beamsville both want a tree company that knows the local community, so we make sure your presence reaches them wherever they search.",
     ],
   },
   areasBlock: {
-    heading: "Tree Services SEO across the Niagara region",
-    subhead: "Tree Services searches by community",
+    heading: "Tree service SEO across the Niagara region",
+    subhead: "Tree service searches by community",
     paragraphs: [
-      "Infused Agency works with tree services across Niagara, and we create local relevance for every community you cover. That means content and signals tailored to Crystal Beach, Fonthill, St. Catharines, Niagara Falls, Welland, Grimsby, not just one city.",
-      undefined,
+      "We serve tree services across Niagara and build local relevance for each community you cover. Your content and signals should speak to Crystal Beach, Fonthill, St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake and Beamsville — not just one town.",
+      "Build your presence across the region and your visibility should match that reach. Focus on select towns and we steer effort where the return is strongest.",
     ],
     checklist: [
       "Region-wide visibility for the communities you actually serve",
@@ -69,122 +71,115 @@ const page = {
       "Content that reflects local demand and seasonality",
     ],
     paragraphsAfter: [
-      undefined,
+      "Browse our dedicated city pages below for the local search programmes we run right across Niagara.",
     ],
   },
   whyChoose: {
-    heading: "Why Niagara Tree Services bring us in",
+    heading: "Why Niagara tree services bring us in",
     paragraphs: [
-      undefined,
-      undefined,
+      "Tree work is built on trust and being found at the moment someone is ready to book. Households comparing services narrow to a shortlist and call whichever looks credible and local first. Miss those early searches and the pipeline goes quiet even when storm demand is strong.",
+      "We partner with services across Niagara so the right searches find you when someone is ready to book, and enquiries keep arriving through every season.",
     ],
     blocks: [
       {
-        title: "Planned around your project calendar",
+        title: "Trees shaped around the property, not the estimate",
         paragraphs: [
-          "Tree service demand in Niagara is storm-drivenundefined",
-          undefined,
+          "Tree removal calls for a different approach than trimming, and stump grinding calls for a different approach than storm cleanup. We help you write about each service so people can see you understand their situation.",
+          "Search engines reward that depth too. A page that genuinely covers tree removal and stump grinding outranks a thin page that repeats the same phrase.",
         ],
       },
       {
-        title: "Consultation requests, not empty traffic",
+        title: "Consultation requests that turn into tree projects",
         paragraphs: [
-          undefined,
-          undefined,
+          "A hundred visits from people who never become clients is worth nothing. We pursue the searches that end in a consultation request: tree removal and trimming, stump grinding, storm damage cleanup, emergency removal, pruning and lot clearing.",
+          "Your reporting shows which pages and which searches produced calls and form fills, so your budget goes toward the client relationships that last.",
         ],
         checklist: [
-          "Rankings for the work you actually want to sell",
+          "Rankings for the tree services you actually want to provide",
           "Calls and form fills counted per page",
           "Google Business Profile calls and direction requests",
           "Which towns are producing genuine consultation requests",
         ],
       },
       {
-        title: "Copy written by people who know the field",
+        title: "Straight guidance on how far to go",
         paragraphs: [
-          undefined,
-          undefined,
-        ],
-      },
-      {
-        title: "Straight answers about what will move the needle",
-        paragraphs: [
-          undefined,
-          undefined,
+          "Some services only need a few core service pages and a well-managed profile; others need more before anything ranks. We will tell you straight which one you are.",
+          "If a leaner scope gets you booked, we will say so — there is no point paying for work you do not need.",
         ],
       },
     ],
-    closingHeading: "Turn tree services searches into booked consultations",
+    closingHeading: "Turn tree service searches into booked consultations",
     closingParagraphs: [
-      undefined,
+      "Homeowners in Niagara who search for tree removal and trimming and find your competitors instead should contact Infused Agency — we will map what it takes to put your business in front of them.",
     ],
   },
   services: {
-    heading: "What we do for Tree Services",
-    subhead: "Tree Services-specific search work, start to finish",
+    heading: "What we do for tree services",
+    subhead: "Tree service-specific search work, start to finish",
     cards: [
       {
         title: "One page per tree service",
         paragraphs: [
-          undefined,
+          "Tree removal deserves its own page, separate from trimming or stump grinding, because search engines treat them differently. We create a dedicated page for each tree service you actually offer, using the phrases Niagara homeowners type into search.",
         ],
       },
       {
-        title: "Town-by-town coverage across the region",
+        title: "Local coverage in every town you serve",
         paragraphs: [
-          undefined,
+          "A page about St. Catharines will not help someone in Fort Erie who needs a tree service. We create location content for each community you work in so your tree work ranks alongside the town someone searches with.",
         ],
       },
       {
-        title: "Project photo content",
+        title: "Storm cleanup and pruning content",
         paragraphs: [
-          undefined,
+          "A tree service project starts with a site inspection, risk assessment and work recommendation before any cutting begins. We help you publish content that explains the process so homeowners know what to expect.",
         ],
       },
       {
-        title: "Consultation booking that is easy to use",
+        title: "Questions homeowners ask before booking",
         paragraphs: [
-          undefined,
+          "Homeowners often ask how long a job takes, what permits are needed and what a tree service project costs before booking. We help you answer those questions on your site so visitors have what they need before calling.",
         ],
       },
       {
-        title: "A Google profile tuned to your business",
+        title: "Easy consultation scheduling",
         paragraphs: [
-          undefined,
+          "Comparing tree services should not mean dealing with a difficult contact form. We make sure a phone number and short consultation request are easy to reach on mobile, where most local tree searches happen.",
         ],
       },
       {
-        title: "Content that answers tree questions",
+        title: "Google Business Profile built for your business",
         paragraphs: [
-          undefined,
+          "A homeowner often sees your Google Business Profile first, so we keep your services, towns, hours and project photos accurate and current. That affects whether you appear when someone nearby searches for a tree service.",
         ],
       },
     ],
   },
   faqs: [
     {
-      q: "How long does SEO take to work?",
-      a: undefined,
+      q: "How soon will tree service SEO show results?",
+      a: "Tree services typically see initial movement in enquiries and map-pack visibility within a few months, with full organic growth taking six to twelve months depending on competition and site condition.",
     },
     {
-      q: "Do you only work in St. Catharines?",
-      a: undefined,
+      q: "Do you only serve St. Catharines?",
+      a: "No. We help tree services across the whole Niagara region, running from Crystal Beach and Fonthill through St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Port Colborne, Niagara-on-the-Lake and Beamsville.",
     },
     {
-      q: "Can you help my business show up on Google Maps?",
-      a: undefined,
+      q: "Can my Tree appear in the Google map pack?",
+      a: "Yes. Local SEO and Google Business Profile optimisation are core parts of our programmes. We help your business show up in map pack results for the searches and areas that matter most.",
     },
     {
-      q: "How much does SEO cost?",
-      a: undefined,
+      q: "What does tree service SEO cost?",
+      a: "Pricing depends on your goals, the towns you serve and the state of your website. After a free consultation, we explain what drives the cost and send you a clear written quote, so you always know what you are paying for.",
     },
     {
-      q: "Will you guarantee the number one ranking on Google?",
-      a: undefined,
+      q: "Will you promise a number one Google ranking?",
+      a: "No agency can promise a number one ranking on Google, because Google's search algorithms change constantly. We use transparent, sustainable optimisation, clear reporting and steady visibility growth over time.",
     },
   ],
 };
 
-export default function treeservicesNiagaraSeo() {
+export default function TreeServicesNiagaraSeo() {
   return <IndustryNiagaraPage page={page} />;
 }
