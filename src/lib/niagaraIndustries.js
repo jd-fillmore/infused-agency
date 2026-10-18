@@ -457,6 +457,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "masonry-contractors",
+    displayName: "Masonry Contractors",
+    category: "Home & Trade Services",
+    benefit:
+      "Win brick repair, repointing, parging, retaining wall and stone restoration searches from homeowners across Niagara.",
+    href: "/seo/for-masonry-contractors-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
