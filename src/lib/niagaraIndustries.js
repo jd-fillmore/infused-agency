@@ -448,6 +448,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "tile-installers",
+    displayName: "Tile Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for bathroom and shower tile, backsplashes, heated floors and large-format tile searches across Niagara.",
+    href: "/seo/for-tile-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
