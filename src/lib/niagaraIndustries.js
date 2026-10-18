@@ -430,6 +430,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "countertop-fabricators",
+    displayName: "Countertop Fabricators",
+    category: "Home & Trade Services",
+    benefit:
+      "Win kitchen countertop, bathroom vanity top, quartz and stone searches from homeowners across Niagara.",
+    href: "/seo/for-countertop-fabricators-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
