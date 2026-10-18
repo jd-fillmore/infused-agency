@@ -466,6 +466,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "tree-services",
+    displayName: "Tree Services",
+    category: "Home & Trade Services",
+    benefit:
+      "Show up for tree removal, pruning, stump grinding, storm cleanup and emergency callouts from homeowners across Niagara.",
+    href: "/seo/for-tree-services-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
