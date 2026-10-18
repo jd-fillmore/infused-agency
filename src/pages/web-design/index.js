@@ -13,6 +13,7 @@ import Button from "../../../components/ui/Button";
 import Breadcrumb from "../../../components/ui/Breadcrumb";
 import HeroAtmosphere from "../../../components/ui/HeroAtmosphere";
 import TestimonialCard from "../../../components/ui/TestimonialCard";
+import Icon from "../../../components/ui/Icon";
 import PageJsonLd from "../../../components/seo/PageJsonLd";
 import { webPageGraph } from "../../lib/verticalSeoSchema";
 import ui from "../../img/ui-design.png";
@@ -346,6 +347,50 @@ const WebDesign = ({ childServices = [] }) => {
             </div>
           </Section>
         ) : null}
+
+        <Section
+          className="border-t border-border"
+          heading="Web design by area"
+          subhead="Dedicated pages for the two areas we are asked about most."
+        >
+          <div className="grid gap-5 sm:grid-cols-2">
+            <Card className="flex h-full flex-col">
+              <h3 className="font-display text-lg font-bold text-ink">
+                St. Catharines web design
+              </h3>
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+                Our home base. Learn how a St. Catharines web design project
+                runs from first conversation to launch, see recent local work,
+                and read answers to the questions local owners ask us most.
+              </p>
+              <Link
+                href="/web-design/st-catharines"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+              >
+                St. Catharines web design company
+                <Icon name="arrow-right" className="h-4 w-4" />
+              </Link>
+            </Card>
+            <Card className="flex h-full flex-col">
+              <h3 className="font-display text-lg font-bold text-ink">
+                Niagara web design
+              </h3>
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+                Web design businesses across Niagara can be built on a website
+                &mdash; from Niagara Falls and Niagara-on-the-Lake to Welland
+                and Grimsby. See the projects, the process, and what ongoing
+                visibility across the region looks like.
+              </p>
+              <Link
+                href="/web-design/niagara"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+              >
+                Niagara web design company
+                <Icon name="arrow-right" className="h-4 w-4" />
+              </Link>
+            </Card>
+          </div>
+        </Section>
       </main>
       <CTA />
       <Footer />
