@@ -86,7 +86,7 @@ const MARKET_PARAGRAPHS = [
 
 const LOCAL_SEO_PARAGRAPHS = [
   "On most searches, the first thing a customer sees is a map with three businesses. Winning a spot there in St. Catharines or Niagara Falls is often worth more than the result underneath. A complete, well-managed Google Business Profile is the foundation, and local SEO in Niagara starts there.",
-  "Focused work beats trying to compete with the whole internet. As a local SEO company, we help you own the services and towns where buyers look for help. Relevance matters far more than volume.",
+  "Focused work beats trying to compete with the whole internet. As a local SEO company, we help you own the services and towns where buyers look for help. Relevance matters far more than volume. Our St. Catharines SEO work starts with your Google Business Profile and the map rankings that bring in calls.",
   "A growing share of customers now ask ChatGPT, Gemini or a Google AI Overview to recommend a local business, so we plan for those results as part of our work. Those tools draw on clear, consistent information and genuine reviews, so the groundwork that helps you rank also helps you get named.",
 ];
 
@@ -230,7 +230,9 @@ const Home = ({ latestPosts, industries = [] }) => {
                   and recommended by AI assistants. We plan local SEO, content
                   and technical work from St. Catharines for companies across
                   Niagara Falls and the wider region, so more of the right
-                  customers find you.
+                  customers find you. If you are looking for an SEO company St. Catharines
+                  business owners can meet in person, we are based in St. Catharines and
+                  work with businesses across Niagara in person.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <Button href="/get-a-quote" size="lg">
