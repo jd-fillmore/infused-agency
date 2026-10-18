@@ -439,6 +439,15 @@ const NIAGARA_INDUSTRIES = [
     coverage: "Niagara region",
   },
   {
+    slug: "flooring-installers",
+    displayName: "Flooring Installers",
+    category: "Home & Trade Services",
+    benefit:
+      "Get found for hardwood, engineered, laminate and vinyl plank flooring searches from homeowners across Niagara.",
+    href: "/seo/for-flooring-installers-niagara",
+    coverage: "Niagara region",
+  },
+  {
     slug: "therapists",
     displayName: "Therapists",
     category: "Health & Wellness",
