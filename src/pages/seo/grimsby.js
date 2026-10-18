@@ -6,9 +6,9 @@ import flatRock from "../../img/flat-rock-seo-results.png";
 
 const page = {
   seo: {
-    title: "SEO Grimsby | Local SEO Company & Agency in Grimsby | Infused Agency",
+    title: "SEO Grimsby, Ontario | Local SEO Company & Agency in Grimsby, Ontario | Infused Agency",
     description:
-      "SEO company serving Grimsby businesses. Local SEO, Google Business Profile and AI search visibility for lakeside and escarpment businesses across Grimsby, Ontario, Canada. Free consultation.",
+      "SEO company serving Grimsby, Ontario businesses. Local SEO, Google Business Profile and AI search visibility for lakeside and escarpment businesses across Grimsby, Ontario, Canada. Free consultation.",
     canonical: "https://infused.agency/seo/grimsby",
     city: "Grimsby",
     region: "Niagara Region, Ontario",
@@ -16,11 +16,11 @@ const page = {
   },
   city: "Grimsby",
   hero: {
-    title: "Grimsby SEO Company",
+    title: "Grimsby, Ontario SEO Company",
     description:
-      "Infused Agency is a Grimsby SEO company. We help local businesses between the lake and the escarpment get found on Google, in the map pack and in AI search, then turn those searches into qualified enquiries.",
+      "Infused Agency is a Grimsby, Ontario SEO company. We help local businesses between the lake and the escarpment get found on Google, in the map pack and in AI search, then turn those searches into qualified enquiries.",
     image: hero,
-    alt: "Local SEO results for a Grimsby business",
+    alt: "Local SEO results for a Grimsby, Ontario business",
   },
   marketIntro: {
     heading: "How local search works in Grimsby",
