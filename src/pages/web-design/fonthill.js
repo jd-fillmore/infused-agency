@@ -244,7 +244,7 @@ const FonthillWebDesign = () => {
               loads fast on a phone, describes what you do in plain language,
               shows real photos of the work or the storefront, and keeps
               hours and contact details current will outperform anything
-              clever built on top of a weak foundation. That is the work we
+              clever built atop a weak foundation. That is the work we
               do for Fonthill businesses.
             </p>
           </div>
@@ -364,7 +364,7 @@ const FonthillWebDesign = () => {
               the idea of rebuilding it can feel like volunteering for risk.
               It does not have to work that way. Search engines care about
               what your pages say and how they are structured — content and
-              structure, not the visual design layered on top. Both travel
+              structure, not the visual design layered over it. Both travel
               into a new build deliberately, on purpose, every time.
             </p>
             <p>
@@ -448,7 +448,7 @@ const FonthillWebDesign = () => {
             >
               Thorold
             </Link>{" "}
-            at the top of the escarpment. Every web design page we keep for
+            at the crest of the escarpment. Every web design page we keep for
             Niagara is linked below.
           </p>
           <ul className="mt-6 flex flex-wrap gap-3">

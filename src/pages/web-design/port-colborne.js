@@ -365,7 +365,7 @@ const PortColborneWebDesign = () => {
               cannot afford to break — and the fear is understandable, even
               if the trade-off it assumes is mostly imaginary. Search engines
               respond to what your pages say and how they are organized, not
-              to the design layered over top. Content and structure both
+              to the design layered over it. Content and structure both
               travel into a new site deliberately, on purpose, every time.
             </p>
             <p>

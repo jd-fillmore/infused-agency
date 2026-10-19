@@ -235,7 +235,7 @@ const GrimsbyWebDesign = () => {
               Niagara Escarpment and Lake Ontario, at the western gateway to
               the Niagara Region. That geography shapes the town: downtown
               near the shore, neighbourhoods climbing the mountain, and wine
-              country at the top of the hill. Businesses here serve a mix that
+              country at the crest of the hill. Businesses here serve a mix that
               few places match — locals running everyday errands, visitors
               passing through on the way to wine country, and homeowners on
               either side of the escarpment who all search on their phones
@@ -363,7 +363,7 @@ const GrimsbyWebDesign = () => {
               of rebuilding it can feel like volunteering for risk. It does
               not have to work that way. Search engines respond to what your
               pages say and how they are organized — content and structure,
-              not the visual design layered on top. Both of those travel into
+              not the visual design layered over it. Both of those travel into
               a new site deliberately, on purpose, every time.
             </p>
             <p>

@@ -362,7 +362,7 @@ const ThoroldWebDesign = () => {
               traffic, regular calls — is worth protecting, and redesigning it
               does not have to mean starting over where search is concerned.
               Search engines care about what your pages say and how they are
-              structured, not about the colours layered on top. Both of those
+              structured, not about the colours layered over it. Both of those
               carry forward into a new build on purpose, every time.
             </p>
             <p>
