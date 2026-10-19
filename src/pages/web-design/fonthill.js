@@ -504,22 +504,6 @@ const FonthillWebDesign = () => {
                   <Icon name="arrow-right" className="h-4 w-4" />
                 </Button>
               </div>
-              <p className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-contrast-ink/80">
-                <a
-                  href="tel:+19059333115"
-                  className="inline-flex items-center gap-2 transition-colors hover:text-white"
-                >
-                  <Icon name="phone" className="h-4 w-4" />
-                  (905) 933-3115
-                </a>
-                <a
-                  href="mailto:info@infused.agency"
-                  className="inline-flex items-center gap-2 transition-colors hover:text-white"
-                >
-                  <Icon name="mail" className="h-4 w-4" />
-                  info@infused.agency
-                </a>
-              </p>
             </div>
           </div>
         </Section>
