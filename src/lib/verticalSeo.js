@@ -911,6 +911,16 @@ function buildLinks(page, publishedSet) {
     }
   }
 
+  // General Contractors hub: one-way links to the Niagara programme page,
+  // the homepage and local SEO. These target pages always exist.
+  if (page.kind === "pillar" && v.slug === "general-contractors") {
+    links.push(
+      { href: "/seo/for-general-contractors-niagara", label: "General contractor SEO in Niagara", internal: true },
+      { href: "/", label: "Homepage", internal: true },
+      { href: "/seo/local-seo", label: "Local SEO services", internal: true }
+    );
+  }
+
   // Ontario contextual local link (spec section 9).
   if (page.province && page.province.slug === "ontario") {
     links.push({ href: "/", label: "our home base in St. Catharines", internal: true });

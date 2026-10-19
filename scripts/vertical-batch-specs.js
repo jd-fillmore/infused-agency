@@ -1067,6 +1067,33 @@ const RAW = [
       "yard maintenance",
     ],
   },
+  {
+    slug: "general-contractors",
+    urlSlug: "general-contractor-seo",
+    singular: "contractor",
+    plural: "general contractors",
+    nounSingular: "general contractor",
+    nounPlural: "general contractors",
+    displayTitle: "General Contractors",
+    category: "Home & Trade Services",
+    parentSlug: "contractors",
+    clients: "homeowners",
+    service: "project",
+    services: "projects",
+    booking: "quote",
+    specialties: [
+      "whole-home and multi-trade renovations",
+      "kitchens and bathrooms as part of a larger project",
+      "basement renovations",
+      "home additions and structural changes",
+      "project management, scheduling and subtrade coordination",
+      "budgets and change orders",
+      "permits and inspections handled on the client's behalf",
+      "handover",
+    ],
+    industriesBenefit:
+      "Homeowners planning a whole renovation or build search for a general contractor who can run the project from start to finish. They compare contractors on past projects, reviews and communication, and often begin with a search such as \"general contractor\" or \"home renovation contractor\" plus a city. A contractor's website, project galleries and Google Business Profile are how those searches find them.",
+  },
 ];
 
 function buildSpec(raw) {

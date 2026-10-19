@@ -203,6 +203,16 @@
     ]
   },
   {
+    "id": "general-contractor-local-seo",
+    "type": "result",
+    "namedEntity": "Local SEO program",
+    "quote": "A local SEO program for general contractors: focused service pages, Google Business Profile work and area pages built to turn nearby searches into enquiries.",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "general-contractors"
+    ]
+  },
+  {
     "id": "garage-door-local-seo",
     "type": "result",
     "namedEntity": "Local SEO program",
