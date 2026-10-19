@@ -15,6 +15,7 @@ import TestimonialCard from "../../../components/ui/TestimonialCard";
 import Accordion from "../../../components/ui/Accordion";
 import Icon from "../../../components/ui/Icon";
 import PageJsonLd from "../../../components/seo/PageJsonLd";
+import EmbeddedMap from "../../../components/maps/EmbeddedMap";
 import {
   organizationNode,
   breadcrumbList,
@@ -367,6 +368,37 @@ const StCatharinesWebDesign = () => {
               brochure: clear services, contact details within reach on mobile,
               and a structure search engines can understand.
             </p>
+          </div>
+        </Section>
+
+        <Section
+          className="border-y border-border bg-surface/40"
+          eyebrow="Where we work"
+          heading="Web design in St. Catharines, Ontario"
+        >
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+            <div className="max-w-3xl space-y-4 text-base leading-relaxed text-muted">
+              <p>
+                Our office is in St. Catharines, and we work with businesses
+                across the city — from the downtown core to the neighbourhoods
+                along the Welland Canal and out toward the towns on either
+                side. Most projects run entirely by phone, email and video
+                call, while meetings in person are always an option for anyone
+                who prefers to sit down together.
+              </p>
+              <p>
+                The map gives a sense of the ground we cover. If your business
+                is based in St. Catharines or nearby, the quickest way to start
+                is a free consultation — we will talk through what you need and
+                send a written quote, with no charge for the conversation.
+              </p>
+            </div>
+            <EmbeddedMap
+              place="St. Catharines, Ontario, Canada"
+              zoom={13}
+              title="Map of St. Catharines, Ontario"
+              className="shadow-card"
+            />
           </div>
         </Section>
 

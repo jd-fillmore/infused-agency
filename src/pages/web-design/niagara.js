@@ -14,6 +14,7 @@ import TestimonialCard from "../../../components/ui/TestimonialCard";
 import Accordion from "../../../components/ui/Accordion";
 import Icon from "../../../components/ui/Icon";
 import PageJsonLd from "../../../components/seo/PageJsonLd";
+import EmbeddedMap from "../../../components/maps/EmbeddedMap";
 import {
   organizationNode,
   breadcrumbList,
@@ -419,22 +420,32 @@ const NiagaraWebDesign = () => {
         <Section
           className="border-y border-border bg-surface/40"
           eyebrow="Where we work"
-          heading="Communities we build for"
+          heading="Where we work across Niagara"
           subhead="Websites for businesses in these Niagara communities, plus local SEO pages for many of them."
         >
-          <ul className="flex flex-wrap gap-3">
-            {AREAS.map((area) => (
-              <li key={area.label}>
-                <Link
-                  href={area.href}
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
-                >
-                  <Icon name="map-pin" className="h-4 w-4 text-accent" />
-                  {area.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+            <div>
+              <ul className="flex flex-wrap gap-3">
+                {AREAS.map((area) => (
+                  <li key={area.label}>
+                    <Link
+                      href={area.href}
+                      className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                    >
+                      <Icon name="map-pin" className="h-4 w-4 text-accent" />
+                      {area.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <EmbeddedMap
+              place="Niagara Region, Ontario, Canada"
+              zoom={9}
+              title="Map of the Niagara Region, Ontario"
+              className="shadow-card"
+            />
+          </div>
         </Section>
 
         <Section
