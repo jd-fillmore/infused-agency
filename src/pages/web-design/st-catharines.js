@@ -23,6 +23,7 @@ import {
   faqPageNode,
   graph,
 } from "../../lib/verticalSeoSchema";
+import { WEB_DESIGN_CROSS_LINKS } from "../../lib/niagaraWebDesignCities";
 
 import hero from "../../img/web-design-st-catharines.jpg";
 import visca from "../../img/st-catharines-web-design-visca-electric.png";
@@ -400,6 +401,46 @@ const StCatharinesWebDesign = () => {
               className="shadow-card"
             />
           </div>
+        </Section>
+
+        <Section
+          className="border-t border-border"
+          eyebrow="Across the region"
+          heading="Web design across Niagara"
+        >
+          <p className="max-w-3xl text-base leading-relaxed text-muted">
+            St. Catharines is our home base, and we build for businesses
+            across the whole region — from{" "}
+            <Link
+              href="/web-design/thorold"
+              className="font-semibold text-accent transition-colors hover:text-accent-hover"
+            >
+              Thorold
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/web-design/welland"
+              className="font-semibold text-accent transition-colors hover:text-accent-hover"
+            >
+              Welland
+            </Link>{" "}
+            down the lakeshore to Fort Erie, and along the escarpment to the
+            wine country. Every web design page we keep for Niagara is linked
+            below.
+          </p>
+          <ul className="mt-6 flex flex-wrap gap-3">
+            {WEB_DESIGN_CROSS_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                >
+                  <Icon name="map-pin" className="h-4 w-4 text-accent" />
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </Section>
 
         <Section

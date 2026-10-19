@@ -22,6 +22,7 @@ import {
   faqPageNode,
   graph,
 } from "../../lib/verticalSeoSchema";
+import { WEB_DESIGN_CROSS_LINKS } from "../../lib/niagaraWebDesignCities";
 
 import hero from "../../img/web-design-niagara.webp";
 import visca from "../../img/niagara-web-design-visca-electric.png";
@@ -446,6 +447,26 @@ const NiagaraWebDesign = () => {
               className="shadow-card"
             />
           </div>
+        </Section>
+
+        <Section
+          eyebrow="Web design by city"
+          heading="Web design pages for Niagara cities"
+          subhead="Each page covers web design in one Niagara community — what businesses there need from a website, where we work, and projects nearby."
+        >
+          <ul className="flex flex-wrap gap-3">
+            {WEB_DESIGN_CROSS_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-accent/40 hover:text-ink"
+                >
+                  <Icon name="map-pin" className="h-4 w-4 text-accent" />
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </Section>
 
         <Section
