@@ -9,7 +9,7 @@ export const NIAGARA_WEB_DESIGN_CITIES = [
     slug: "niagara-falls",
     place: "Niagara Falls, Ontario, Canada",
     zoom: 13,
-    seoUrl: "/seo/niagara-falls",
+    seoUrl: null,
     neighbours: ["niagara-on-the-lake", "thorold"],
   },
   {

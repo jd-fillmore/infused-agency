@@ -177,8 +177,8 @@ function blogPostingNode(opts) {
   return node;
 }
 
-function serviceNode({ name, serviceType, url, areaServed }) {
-  return {
+function serviceNode({ name, serviceType, url, areaServed, hasMap }) {
+  const node = {
     "@type": "Service",
     name,
     serviceType,
@@ -189,6 +189,8 @@ function serviceNode({ name, serviceType, url, areaServed }) {
     ],
     url: absolute(url),
   };
+  if (hasMap) node.hasMap = hasMap;
+  return node;
 }
 
 function areaServedFor(page) {
