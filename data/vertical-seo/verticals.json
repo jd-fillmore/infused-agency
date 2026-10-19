@@ -560,6 +560,40 @@
     "updated": "2026-10-11"
   },
   {
+    "slug": "general-contractors",
+    "urlSlug": "general-contractor-seo",
+    "singular": "contractor",
+    "plural": "general contractors",
+    "displayName": "General Contractors",
+    "category": "Home & Trade Services",
+    "industriesBenefit": "Homeowners planning a whole renovation or build search for a general contractor who can run the project from start to finish. They compare contractors on past projects, reviews and communication, and often begin with a search such as \"general contractor\" or \"home renovation contractor\" plus a city. A contractor's website, project galleries and Google Business Profile are how those searches find them.",
+    "parentSlug": "contractors",
+    "maxDepth": "city",
+    "primaryKeywords": [
+      "SEO for general contractors",
+      "contractor SEO",
+      "general contractors marketing"
+    ],
+    "geoScope": {
+      "provinces": "all"
+    },
+    "launchStatus": "live",
+    "serviceEmphasis": [
+      "Google Business Profile and map pack visibility",
+      "Service pages for the projects general contractors actually sell",
+      "Quote and enquiry conversion",
+      "Review and trust signals",
+      "A local landing page for each area you serve",
+      "Mobile-first pages built for urgent searches"
+    ],
+    "buyerJourneyNotes": "General Contractors are owners and operators. They search when they need a steadier flow of the right homeowners from their own area, when they expand to a new city, or when competitors and directories outrank them for the searches that bring in work.",
+    "proofRefs": [
+      "general-contractor-local-seo"
+    ],
+    "defaultFaqs": [],
+    "updated": "2026-10-11"
+  },
+  {
     "slug": "home-additions",
     "urlSlug": "home-addition-seo",
     "singular": "home addition",
