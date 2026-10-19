@@ -118,6 +118,17 @@ const nextConfig = {
         destination: "/web-design",
         permanent: true,
       },
+      // Legacy standalone web design pages replaced by /web-design/niagara.
+      {
+        source: "/caledonia-web-design",
+        destination: "/web-design/niagara",
+        permanent: true,
+      },
+      {
+        source: "/niagara-web-design",
+        destination: "/web-design/niagara",
+        permanent: true,
+      },
       {
         source: "/seo/niagara",
         destination: "/",
