@@ -238,6 +238,11 @@ const CONCRETE_CITY_MODULES = {
   vancouver: require("../content/canada-niche/concrete-contractors/cities/vancouver.js"),
   surrey: require("../content/canada-niche/concrete-contractors/cities/surrey.js"),
   burnaby: require("../content/canada-niche/concrete-contractors/cities/burnaby.js"),
+  "victoria-bc": require("../content/canada-niche/concrete-contractors/cities/victoria-bc.js"),
+  "richmond-bc": require("../content/canada-niche/concrete-contractors/cities/richmond-bc.js"),
+  calgary: require("../content/canada-niche/concrete-contractors/cities/calgary.js"),
+  edmonton: require("../content/canada-niche/concrete-contractors/cities/edmonton.js"),
+  "red-deer": require("../content/canada-niche/concrete-contractors/cities/red-deer.js"),
 };
 
 const CONCRETE_HUB_MODULE = require("../content/canada-niche/concrete-contractors/hub.js");
