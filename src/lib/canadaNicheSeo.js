@@ -228,6 +228,11 @@ const CONCRETE_CITY_MODULES = {
   ottawa: require("../content/canada-niche/concrete-contractors/cities/ottawa.js"),
   hamilton: require("../content/canada-niche/concrete-contractors/cities/hamilton.js"),
   kitchener: require("../content/canada-niche/concrete-contractors/cities/kitchener.js"),
+  "london-on": require("../content/canada-niche/concrete-contractors/cities/london-on.js"),
+  "windsor-on": require("../content/canada-niche/concrete-contractors/cities/windsor-on.js"),
+  "kingston-on": require("../content/canada-niche/concrete-contractors/cities/kingston-on.js"),
+  montreal: require("../content/canada-niche/concrete-contractors/cities/montreal.js"),
+  "quebec-city": require("../content/canada-niche/concrete-contractors/cities/quebec-city.js"),
 };
 
 const CONCRETE_HUB_MODULE = require("../content/canada-niche/concrete-contractors/hub.js");
