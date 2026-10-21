@@ -267,7 +267,8 @@ const inbound = buildInbound();
     const url = cityPath(NICHE, slug);
     const count = (inbound.get(url) || new Set()).size;
     if (count >= 2) ok(`${url}: ${count} inbound`);
-    else fail(`${url}: only ${count} inbound (need >= 2)`);
+    else if (STRICT) fail(`${url}: only ${count} inbound (need >= 2)`);
+    else warn(`${url}: ${count} inbound so far (neighbours may be in a later batch)`);
   }
 }
 

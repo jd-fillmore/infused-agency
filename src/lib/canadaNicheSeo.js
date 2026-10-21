@@ -222,7 +222,13 @@ const CITIES = [
 // (a computed require() path would be a "request of a dependency is an
 // expression" warning and fail at build time). Populated as city pages are
 // written, one batch at a time.
-const CONCRETE_CITY_MODULES = {};
+const CONCRETE_CITY_MODULES = {
+  toronto: require("../content/canada-niche/concrete-contractors/cities/toronto.js"),
+  mississauga: require("../content/canada-niche/concrete-contractors/cities/mississauga.js"),
+  ottawa: require("../content/canada-niche/concrete-contractors/cities/ottawa.js"),
+  hamilton: require("../content/canada-niche/concrete-contractors/cities/hamilton.js"),
+  kitchener: require("../content/canada-niche/concrete-contractors/cities/kitchener.js"),
+};
 
 const CONCRETE_HUB_MODULE = require("../content/canada-niche/concrete-contractors/hub.js");
 
