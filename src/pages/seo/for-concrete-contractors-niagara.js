@@ -25,7 +25,7 @@ const page = {
     paragraphs: [
       "Concrete work is one of the most competitive home-service categories in the Niagara region. From St. Catharines and Niagara Falls to Beamsville, Fonthill and Fort Erie, homeowners compare several contractors before they ever pick up the phone, and most of that comparison happens on Google before you hear a word about it. If your business does not appear in those first results, the job usually goes to a competitor who does. Our [SEO services](/seo) are built to put your concrete company in front of the right homeowners at exactly the moment they are ready to request a quote.",
       "Unlike general marketing, concrete contractor SEO has to respect how people actually search. Someone planning a stamped-concrete patio in Fonthill is using very different words than a builder looking for a commercial foundation in Thorold. We map those searches, understand which ones turn into profitable work, and build the pages, profiles and content that let your business rank for the ones that matter most.",
-      "The result is not vanity rankings or traffic for its own sake. It is more qualified quote requests for the concrete work you actually want to sell, across the communities you actually serve.",
+      "The result is not vanity rankings or traffic for its own sake. It is more qualified quote requests for the concrete work you actually want to sell, across the communities you actually serve. If you work beyond Niagara, our [SEO for Concrete Contractors in Canada](/seo/for-concrete-contractors) hub covers the programme city by city.",
     ],
   },
   proof: {
