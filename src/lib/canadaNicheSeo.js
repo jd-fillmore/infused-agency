@@ -243,6 +243,11 @@ const CONCRETE_CITY_MODULES = {
   calgary: require("../content/canada-niche/concrete-contractors/cities/calgary.js"),
   edmonton: require("../content/canada-niche/concrete-contractors/cities/edmonton.js"),
   "red-deer": require("../content/canada-niche/concrete-contractors/cities/red-deer.js"),
+  lethbridge: require("../content/canada-niche/concrete-contractors/cities/lethbridge.js"),
+  winnipeg: require("../content/canada-niche/concrete-contractors/cities/winnipeg.js"),
+  brandon: require("../content/canada-niche/concrete-contractors/cities/brandon.js"),
+  regina: require("../content/canada-niche/concrete-contractors/cities/regina.js"),
+  saskatoon: require("../content/canada-niche/concrete-contractors/cities/saskatoon.js"),
 };
 
 const CONCRETE_HUB_MODULE = require("../content/canada-niche/concrete-contractors/hub.js");
