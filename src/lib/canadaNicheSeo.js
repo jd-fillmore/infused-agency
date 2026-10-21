@@ -190,7 +190,7 @@ const CITIES = [
     slug: "moncton",
     name: "Moncton",
     province: "new-brunswick",
-    nearby: ["fredericton", "charlottetown", "halifax"],
+    nearby: ["fredericton", "charlottetown", "halifax", "st-johns"],
   },
   {
     slug: "fredericton",
@@ -202,7 +202,7 @@ const CITIES = [
     slug: "halifax",
     name: "Halifax",
     province: "nova-scotia",
-    nearby: ["moncton", "charlottetown", "fredericton"],
+    nearby: ["moncton", "charlottetown", "fredericton", "st-johns"],
   },
   {
     slug: "st-johns",
@@ -248,6 +248,11 @@ const CONCRETE_CITY_MODULES = {
   brandon: require("../content/canada-niche/concrete-contractors/cities/brandon.js"),
   regina: require("../content/canada-niche/concrete-contractors/cities/regina.js"),
   saskatoon: require("../content/canada-niche/concrete-contractors/cities/saskatoon.js"),
+  moncton: require("../content/canada-niche/concrete-contractors/cities/moncton.js"),
+  fredericton: require("../content/canada-niche/concrete-contractors/cities/fredericton.js"),
+  halifax: require("../content/canada-niche/concrete-contractors/cities/halifax.js"),
+  "st-johns": require("../content/canada-niche/concrete-contractors/cities/st-johns.js"),
+  charlottetown: require("../content/canada-niche/concrete-contractors/cities/charlottetown.js"),
 };
 
 const CONCRETE_HUB_MODULE = require("../content/canada-niche/concrete-contractors/hub.js");

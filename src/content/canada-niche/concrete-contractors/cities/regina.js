@@ -36,18 +36,18 @@ module.exports = {
   },
   season: {
     heading: "Regina's season and climate",
-    subhead: "A short season, severe cold and prairie wind",
+    subhead: "A capital on open prairie, exposed and short-seasoned",
     paragraphs: [
-      "Regina shares Saskatchewan's demanding climate: long, cold winters, a severe freeze-thaw cycle and the prairie wind that makes exposure a real consideration for exterior flatwork. The exterior pouring season is short, roughly late spring through early fall, and air-entrained mixes, curing, sealing and drainage are central to almost every exterior project. Repair and resurfacing demand stays strong through the cold months.",
-      "Planning peaks in a tight spring window before the season opens and again in fall. Because Regina's institutional and commercial work runs on its own schedule, the market stays active beyond the residential months.",
+      "Regina sits in the open, treeless country at the heart of the continent, with nothing to blunt the weather. Summers can be hot and dry and winters bitterly cold, and the swing between them is extreme, so concrete here faces both heat and a punishing freeze. On exterior flatwork that means careful mix design, attention to curing in dry summer conditions, and drainage that will not fail when the ground heaves. Homeowners who have replaced a failed driveway ask about these things directly.",
+      "The workable season is brief, so projects concentrate tightly into it. Planning peaks early, before the ground is ready, and again in the fall as owners prepare surfaces for winter. The capital's public and institutional building programs run on their own budget cycles, which keeps a portion of the market moving even in the deepest cold.",
     ],
   },
   whatWeDo: {
     heading: "What we do for Regina concrete contractors",
     subhead: "Service pages, institutional content and a managed profile",
     paragraphs: [
-      "We build out your site so each concrete service has its own page — driveways, patios and walkways, foundations, garage and basement floors, commercial and institutional slabs, heavy-duty floors and repairs — written with the freeze-thaw, exposure and drainage detail this market expects. Separating residential work from institutional and commercial work matters, because the audiences search and evaluate differently.",
-      "On the local side, we manage your Google Business Profile for accuracy and activity, build area content across Regina's neighbourhoods and the surrounding region, keep your business details consistent across the web, and organise reviews into a clear credibility signal. In a capital city, a steady institutional demand rewards companies that keep their local presence current year round, and we structure content so search engines and AI assistants can surface your company for the queries customers use.",
+      "We split your site so each kind of concrete work gets its own page: residential driveways and patios, foundation and repair work, and the larger institutional and commercial pours the capital generates. Each page is written with the heat-and-freeze reality of the Regina climate in mind, because that is what local buyers are weighing. Keeping the public-sector and commercial side separate from the homeowner side matters, since the two are bought in completely different ways.",
+      "Locally, we run your Google Business Profile so it stays accurate and active, create area content for the neighbourhoods and communities you serve, keep your details aligned across the web, and turn reviews into a signal people trust. Because the capital's project work does not stop for winter, a business that keeps its local presence live all year holds its position while seasonal competitors go quiet. We also make sure search engines and AI assistants can name your company when someone in Regina needs concrete work.",
     ],
     checklist: [
       "Service pages for residential, commercial and institutional concrete work",
@@ -60,10 +60,10 @@ module.exports = {
   },
   straight: {
     heading: "Straight answers on cost and fit",
-    subhead: "Using a capital city's steady demand",
+    subhead: "A capital that keeps working through winter",
     paragraphs: [
-      "Regina's advantage is steadiness. Because the capital's institutional and commercial work runs independent of the season, a concrete company that ranks across both the institutional and the residential sides stays busy through the year rather than riding a short summer. The first work is structure — distinct pages for distinct services, split between residential and institutional or commercial, plus a properly managed profile.",
-      "Timing follows the pattern. Map visibility can improve within a few months; competitive consumer terms build over six to twelve months. Institutional, commercial and industrial searches often face lighter competition and can respond sooner. We will tell you which services are your quick wins and which need sustained work.",
+      "Regina's edge is that the capital keeps working when the weather does not. Government, health and university projects need concrete on their own timelines, so a company visible for both that public-sector work and everyday residential jobs keeps a steadier pipeline than one that lives only on summer driveways. The starting point is the same everywhere: give each service its own page, and make the profile do its job.",
+      "As for timing, map visibility tends to shift within a few months, while competitive residential phrases usually take six to twelve months to settle. Public-sector, commercial and industrial work often sees fewer contenders online and can gain traction sooner. We will point out which of your services can move quickly and which will take patience.",
     ],
     checklist: [
       "Institutional work keeps a capital market steady year round",
