@@ -16,19 +16,12 @@ const LOGO_URL = `${SITE}/img/infused-logo.png`;
 
 const ADDRESS = {
   "@type": "PostalAddress",
-  streetAddress: "73 Alexandra Blvd",
   addressLocality: "St. Catharines",
   addressRegion: "ON",
-  postalCode: "L2P 1K2",
   addressCountry: "CA",
 };
 
-const GEO = {
-  "@type": "GeoCoordinates",
-  latitude: "43.197109",
-  longitude: "-79.243362",
-};
-
+const GEO = undefined;
 // The service area as listed in the site footer.
 const AREA_CITIES = [
   "St. Catharines",

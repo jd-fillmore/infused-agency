@@ -73,10 +73,8 @@
   "contractTerms": null,
   "guarantees": null,
   "address": {
-    "streetAddress": "73 Alexandra Blvd",
     "addressLocality": "St. Catharines",
     "addressRegion": "ON",
-    "postalCode": "L2P 1K2",
     "addressCountry": "CA"
   },
   "phone": "(905) 933-3115",
@@ -107,6 +105,10 @@
     "Thorold",
     "Port Colborne",
     "Fonthill",
-    "Crystal Beach"
+    "Crystal Beach",
+    "Pelham",
+    "West Lincoln",
+    "Smithville",
+    "Wainfleet"
   ]
 }

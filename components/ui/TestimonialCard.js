@@ -7,7 +7,7 @@ function Stars() {
   return (
     <div className="mb-4 flex gap-0.5 text-gold" aria-label="5 out of 5 stars">
       {[0, 1, 2, 3, 4].map((i) => (
-        <Icon key={i} name="star" className="h-4 w-4" />
+        <Icon key={i} name="star" className="h-4 w-4 fill-current" />
       ))}
     </div>
   );
@@ -36,7 +36,7 @@ export default function TestimonialCard({
         className="absolute inset-x-0 top-0 h-1 bg-brand-gradient opacity-70"
       />
       {showStars && <Stars />}
-      <blockquote className="flex-1 text-sm leading-relaxed text-ink">
+      <blockquote className="flex-1 text-sm leading-relaxed text-ink italic">
         {quote}
       </blockquote>
       {hasMeta && (

@@ -200,7 +200,7 @@ const FAQS = [
   },
   {
     q: "Do you actually work with businesses in St. Catharines?",
-    a: "Yes — this is our home base. Our office is at 73 Alexandra Blvd in St. Catharines, and we meet local owners in person as often as remotely. People also find us by searching things like \"web design company St. Catherines\" — a spelling that gets used often — and by every variation of \"web design St. Catharines\" you can imagine. Whatever brought you here, we are down the road.",
+    a: "Yes — this is our home base. Our office is at St. Catharines, Ontario · Serving the Niagara Region"web design company St. Catherines\" — a spelling that gets used often — and by every variation of \"web design St. Catharines\" you can imagine. Whatever brought you here, we are down the road.",
   },
   {
     q: "Do you also handle SEO, or just the website?",

@@ -1,0 +1,14 @@
+const fs=require('fs');
+const html=fs.readFileSync('src/pages/index.js','utf8');
+let text = html.replace(/<Nav[\s\S]*?<\/Nav>/,'').replace(/<Footer[\s\S]*?<\/Footer>/,'');
+text = text.replace(/<script[\s\S]*?<\/script>/g,'');
+text = text.replace(/<style[\s\S]*?<\/style>/g,'');
+text = text.replace(/<img[^>]+alt="([^"]*)"/g,'');
+text = text.replace(/<[^>]+>/g,' ');
+text = text.replace(/\{[^{}]*\}/g,'');
+text = text.replace(/import[\s\S]*?;/g,'');
+text = text.replace(/const [\s\S]*?;/g,'');
+text = text.replace(/export[\s\S]*$/g,'');
+text = text.replace(/\s+/g,' ').trim();
+const words = text.split(' ').filter(w=>w.length>2 || /\d/.test(w));
+console.log(words.length);

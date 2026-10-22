@@ -150,7 +150,7 @@ export default function Footer() {
             <div className="mt-6">
               <ColumnHeading>Contact</ColumnHeading>
               <ul className="space-y-2 text-sm text-contrast-ink/70">
-                <li>73 Alexandra Blvd, St. Catharines, ON L2P 1K2</li>
+                <li>St. Catharines, Ontario &middot; Serving the Niagara Region</li>
                 <li>Mon&ndash;Fri, 9 a.m.&ndash;6 p.m.</li>
               </ul>
               <Link
