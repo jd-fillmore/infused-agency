@@ -119,7 +119,6 @@ const FAQS = [
 
 const RELATED = [
   { label: "Web design services", href: "/web-design" },
-  { label: "Niagara web design", href: "/web-design/niagara" },
   { label: "Our work", href: "/work" },
   { label: "Get a quote", href: "/get-a-quote" },
   { label: "SEO in Crystal Beach", href: "/seo/crystal-beach" },
@@ -131,7 +130,6 @@ const schema = graph([
   breadcrumbList([
     { name: "Home", href: "/" },
     { name: "Web Design", href: "/web-design" },
-    { name: "Niagara", href: "/web-design/niagara" },
     { name: "Crystal Beach", href: URL_PATH },
   ]),
   serviceNode({
@@ -183,7 +181,6 @@ const CrystalBeachWebDesign = () => {
                   items={[
                     { name: "Home", href: "/" },
                     { name: "Web Design", href: "/web-design" },
-                    { name: "Niagara", href: "/web-design/niagara" },
                     { name: "Crystal Beach" },
                   ]}
                   className="mb-8"

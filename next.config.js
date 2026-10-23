@@ -118,17 +118,20 @@ const nextConfig = {
         destination: "/web-design",
         permanent: true,
       },
-      // Legacy standalone web design pages replaced by /web-design/niagara.
+      // Legacy standalone web design pages now point at the web design hub.
       {
         source: "/caledonia-web-design",
-        destination: "/web-design/niagara",
+        destination: "/web-design",
         permanent: true,
       },
       {
         source: "/niagara-web-design",
-        destination: "/web-design/niagara",
+        destination: "/web-design",
         permanent: true,
       },
+      // Removed Niagara web design page: permanent redirect to the homepage.
+      { source: "/web-design/niagara", destination: "/", statusCode: 301 },
+      { source: "/web-design/niagara/", destination: "/", statusCode: 301 },
       {
         source: "/seo/niagara",
         destination: "/",

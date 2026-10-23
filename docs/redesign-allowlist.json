@@ -24,8 +24,15 @@
     "/seo/for-wineries-niagara",
     "/seo/for-deck-builders-niagara"
   ],
+  "allowDescriptionChanges": [
+    "/"
+  ],
+  "allowH1Changes": [
+    "/"
+  ],
   "allowRemovedPages": [
     "/pricing",
+    "/web-design/niagara",
     "/website-audit",
     "/how-we-work",
     "/alberta-arborist-tree-removal-websites",
@@ -43,6 +50,7 @@
     "/seo/niagara-falls"
   ],
   "allowTitleChanges": [
-    "/seo/white-label"
+    "/seo/white-label",
+    "/"
   ]
 }

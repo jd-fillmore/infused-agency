@@ -276,7 +276,6 @@ const FAQS = [
 
 const RELATED = [
   { label: "Web design services", href: "/web-design" },
-  { label: "Niagara web design company", href: "/web-design/niagara" },
   { label: "Our work", href: "/work" },
   { label: "Get a quote", href: "/get-a-quote" },
   { label: "SEO services", href: "/seo" },

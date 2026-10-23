@@ -373,7 +373,7 @@ const WebDesign = ({ childServices = [] }) => {
             </Card>
             <Card className="flex h-full flex-col">
               <h3 className="font-display text-lg font-bold text-ink">
-                Niagara web design
+                Niagara Falls web design
               </h3>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
                 Web design businesses across Niagara can be built on a website
@@ -382,10 +382,10 @@ const WebDesign = ({ childServices = [] }) => {
                 visibility across the region looks like.
               </p>
               <Link
-                href="/web-design/niagara"
+                href="/web-design/niagara-falls"
                 className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
               >
-                Niagara web design company
+                Niagara Falls web design company
                 <Icon name="arrow-right" className="h-4 w-4" />
               </Link>
             </Card>

@@ -6,6 +6,8 @@ import Icon from "../ui/Icon";
 import { GROUPS } from "../Nav/navData";
 
 const CITIES = [
+  { name: "St. Catharines", href: "/seo/st-catharines" },
+  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Beamsville", href: "/seo/beamsville" },
   { name: "Crystal Beach", href: "/seo/crystal-beach" },
   { name: "Fonthill", href: "/seo/fonthill" },

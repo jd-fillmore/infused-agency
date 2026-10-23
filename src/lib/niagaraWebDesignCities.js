@@ -107,7 +107,6 @@ export function cityHref(slug) {
 // descriptive anchors. Used by the city pages, the pillar and the
 // St. Catharines page.
 export const WEB_DESIGN_CROSS_LINKS = [
-  { label: "Niagara web design", href: "/web-design/niagara" },
   { label: "St. Catharines web design", href: "/web-design/st-catharines" },
   ...NIAGARA_WEB_DESIGN_CITIES.map((c) => ({
     label: `Web design in ${c.name}`,

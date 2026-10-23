@@ -119,7 +119,6 @@ const FAQS = [
 
 const RELATED = [
   { label: "Web design services", href: "/web-design" },
-  { label: "Niagara web design", href: "/web-design/niagara" },
   { label: "Our work", href: "/work" },
   { label: "Get a quote", href: "/get-a-quote" },
   { label: "SEO in Fonthill", href: "/seo/fonthill" },
@@ -131,7 +130,6 @@ const schema = graph([
   breadcrumbList([
     { name: "Home", href: "/" },
     { name: "Web Design", href: "/web-design" },
-    { name: "Niagara", href: "/web-design/niagara" },
     { name: "Fonthill", href: URL_PATH },
   ]),
   serviceNode({
@@ -183,7 +181,6 @@ const FonthillWebDesign = () => {
                   items={[
                     { name: "Home", href: "/" },
                     { name: "Web Design", href: "/web-design" },
-                    { name: "Niagara", href: "/web-design/niagara" },
                     { name: "Fonthill" },
                   ]}
                   className="mb-8"

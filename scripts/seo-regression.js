@@ -275,6 +275,8 @@ function compare() {
   const allowNew = new Set(allow.allowNewPages || []);
   const allowRemoved = new Set(allow.allowRemovedPages || []);
   const allowTitle = new Set(allow.allowTitleChanges || []);
+  const allowDescription = new Set(allow.allowDescriptionChanges || []);
+  const allowH1 = new Set(allow.allowH1Changes || []);
 
   const failures = [];
   const warnings = [];
@@ -321,6 +323,10 @@ function compare() {
           info.push(`${url}: title changed (allowlisted)`);
           continue;
         }
+        if (f === "description" && allowDescription.has(url)) {
+          info.push(`${url}: meta description changed (allowlisted)`);
+          continue;
+        }
         failures.push(
           `${url}: ${f} changed\n      before: ${JSON.stringify(
             bv
@@ -329,11 +335,15 @@ function compare() {
       }
     }
     if (!sameList(b.h1, c.h1)) {
-      failures.push(
-        `${url}: H1 changed\n      before: ${JSON.stringify(
-          b.h1
-        )}\n      after:  ${JSON.stringify(c.h1)}`
-      );
+      if (allowH1.has(url)) {
+        info.push(`${url}: H1 changed (allowlisted)`);
+      } else {
+        failures.push(
+          `${url}: H1 changed\n      before: ${JSON.stringify(
+            b.h1
+          )}\n      after:  ${JSON.stringify(c.h1)}`
+        );
+      }
     }
     if (!sameList(b.h2, c.h2)) {
       const bCmp = launchAbsent.industriesGated

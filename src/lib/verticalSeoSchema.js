@@ -272,7 +272,7 @@ function homeGraph({ faqs } = {}) {
     webPageNode({
       url: `${SITE}/`,
       id: `${SITE}/#webpage`,
-      name: "SEO Niagara, St. Catharines & Niagara Falls | Local SEO Company & AI SEO Agency",
+      name: "Niagara SEO, AI Search & Web Design | Infused Agency",
       primaryImage: LOGO_ID,
       isPartOf: WEBSITE_ID,
       datePublished: "2023-01-01T09:00:00+00:00",

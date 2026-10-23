@@ -37,7 +37,7 @@ const AUDIT_URL = "/get-a-quote";
 const TRUST = [
   { icon: "users", label: "50+ Niagara businesses helped" },
   { icon: "target", label: "Local SEO for Niagara businesses" },
-  { icon: "map-pin", label: "Based in St. Catharines" },
+  { icon: "map-pin", label: "Serving all of Niagara" },
   { icon: "clock", label: "Over 10 years of local SEO" },
 ];
 
@@ -61,6 +61,8 @@ const CLIENT_LOGOS = [
 ];
 
 const AREA_CITIES = [
+  { name: "St. Catharines", href: "/seo/st-catharines" },
+  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
   { name: "Welland", href: "/seo/welland" },
   { name: "Fort Erie", href: "/seo/fort-erie" },
@@ -169,22 +171,42 @@ const INDUSTRY_CARDS = [
   },
 ];
 
-const FAQ_ITEMS = [
+const SERVICE_CARDS = [
   {
-    q: "How much does SEO cost in Niagara?",
-    a: "It depends on your competition, your site and how many services and towns you cover. We quote each business individually after a free audit.",
+    number: "1",
+    title: "SEO",
+    href: "/seo",
+    description: "Get found on Google and in the local map pack.",
   },
   {
-    q: "How long does SEO take?",
-    a: "Most clients see early movement in rankings and enquiries within three to six months, with bigger results building over six to twelve months.",
+    number: "2",
+    title: "AI Search",
+    href: "/ai-search",
+    description: "Show up in the answers people get from AI tools.",
   },
   {
-    q: "Will ChatGPT or Gemini recommend my business?",
-    a: "No one can guarantee a mention. Clear content, consistent business details and genuine reviews improve your odds, and we build those signals.",
+    number: "3",
+    title: "Web Design",
+    href: "/web-design",
+    description: "Turn more visitors into calls and enquiries.",
+  },
+];
+
+const WEB_DESIGN_SERVICES = [
+  {
+    title: "Web Design",
+    href: "/web-design",
+    description: "Fast, lead-generating websites.",
   },
   {
-    q: "Can you guarantee a #1 ranking?",
-    a: "No, and no honest agency can. We commit to proven, white-hat work and clear reporting rather than a ranking promise.",
+    title: "eCommerce Web Design",
+    href: "/web-design/ecommerce-web-design",
+    description: "Online stores built to sell.",
+  },
+  {
+    title: "Shopify Web Design",
+    href: "/web-design/shopify-web-design",
+    description: "Shopify storefronts designed for growth.",
   },
 ];
 
@@ -200,11 +222,11 @@ const Home = ({ latestPosts }) => {
         />
 
         <title>
-          Niagara SEO Company &amp; Local SEO Services | Infused Agency
+          Niagara SEO, AI Search &amp; Web Design | Infused Agency
         </title>
         <meta
           name="description"
-          content="Niagara SEO company for local SEO, Google Business Profile and AI search. Based in St. Catharines, serving the whole Niagara region. Free SEO audit."
+          content="SEO, AI search optimization and web design for Niagara businesses. Get found on Google, in the map pack and in ChatGPT. Free SEO audit."
         />
         <meta
           name="google-site-verification"
@@ -247,13 +269,13 @@ const Home = ({ latestPosts }) => {
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div>
                 <h1 className="mt-5 max-w-3xl text-balance font-display text-display font-bold leading-[1.04] tracking-[-0.03em] text-ink">
-                  Local SEO Services in Niagara &amp; St. Catharines
+                  SEO, AI Search &amp; Web Design for Niagara Businesses
                 </h1>
                 <p className="mt-5 text-lead text-muted">
-                  We help small businesses in Niagara get found with local SEO
-                  and AI search. Based in St. Catharines, we serve the whole
-                  Niagara region with practical work that brings calls and
-                  enquiries.
+                  We help Niagara businesses get found on Google, in the map
+                  pack and in AI search tools like ChatGPT and Gemini. From SEO
+                  and AI search optimization to web design, the work is built
+                  around calls and enquiries.
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <Button href="/get-a-quote" size="lg">
@@ -298,6 +320,24 @@ const Home = ({ latestPosts }) => {
             </div>
           </Container>
         </section>
+
+        <Section
+          id="services"
+          eyebrow="Services"
+          heading="SEO, AI Search and Web Design Services"
+        >
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SERVICE_CARDS.map((item) => (
+              <ServiceCard
+                key={item.title}
+                number={item.number}
+                title={item.title}
+                description={item.description}
+                href={item.href}
+              />
+            ))}
+          </div>
+        </Section>
 
         <section className="border-y border-border bg-surface/60 py-12">
           <Container>
@@ -479,17 +519,78 @@ const Home = ({ latestPosts }) => {
           </div>
           <p className="mt-6 text-sm text-muted">
             Need a site built to rank? See our{" "}
-            <Link href="/web-design/niagara">Niagara web design services</Link>.
+            <Link href="/web-design">web design services</Link>.
           </p>
         </Section>
 
-        <Section>
-          <h2>AI SEO Services for ChatGPT &amp; Gemini Search</h2>
-          <p className="mt-4 text-muted">
-            We structure your content, business details and reviews so ChatGPT and
-            Gemini can recommend you. See our{" "}
-            <Link href="/ai-search">AI search services</Link>.
+        <Section
+          id="ai-search"
+          className="border-t border-border"
+          eyebrow="AI Search"
+          heading="AI Search Optimization: AI SEO, AEO &amp; GEO"
+        >
+          <div className="max-w-3xl space-y-4 text-base leading-relaxed text-muted">
+            <p>
+              AI search optimization is about being found in the answers people
+              get from ChatGPT, Gemini and AI Overviews, not only in a list of
+              links. Our AI SEO services start with the foundations that matter
+              to both people and machines: clear pages, consistent business
+              details and trustworthy signals.
+            </p>
+            <p>
+              AI SEO is the umbrella term, and you will also see it called SEO
+              for AI. Answer engine optimization (AEO) focuses on the direct
+              answer an assistant gives to a question. Generative engine
+              optimization (GEO) focuses on being named or cited inside an
+              AI-generated response. The three overlap, but they describe
+              different parts of the same work.
+            </p>
+            <p>
+              As an AI SEO agency, we combine AI SEO optimization, AEO and GEO
+              into one plan. We audit how AI tools describe your business,
+              strengthen the details they rely on, and shape your content into
+              clear answers they can quote. See our{" "}
+              <Link href="/ai-search">AI search services</Link> for the full
+              picture.
+            </p>
+          </div>
+          <div className="mt-8">
+            <Button href="/ai-search" variant="secondary">
+              Explore AI search
+              <Icon name="arrow-right" className="h-4 w-4" />
+            </Button>
+          </div>
+        </Section>
+
+        <Section
+          id="web-design"
+          className="border-y border-border bg-surface/40"
+          eyebrow="Web Design"
+          heading="Web Design Built to Turn Visitors into Customers"
+        >
+          <p className="max-w-3xl text-base leading-relaxed text-muted">
+            We design and build fast, lead-generating websites for Niagara
+            businesses. That includes{" "}
+            <Link href="/web-design">web design</Link>,{" "}
+            <Link href="/web-design/ecommerce-web-design">
+              eCommerce web design
+            </Link>{" "}
+            and{" "}
+            <Link href="/web-design/shopify-web-design">
+              Shopify web design
+            </Link>{" "}
+            for stores that need to sell online.
           </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {WEB_DESIGN_SERVICES.map((item) => (
+              <ServiceCard
+                key={item.title}
+                title={item.title}
+                description={item.description}
+                href={item.href}
+              />
+            ))}
+          </div>
         </Section>
 
         <Section
@@ -498,7 +599,7 @@ const Home = ({ latestPosts }) => {
           heading="Areas served"
         >
           <p className="mt-4 text-muted">
-            We serve St. Catharines, Niagara Falls,{" "}
+            We serve{" "}
             {AREA_CITIES.map((city, idx) => (
               <span key={city.href}>
                 <Link href={city.href}>{city.name}</Link>
@@ -585,7 +686,7 @@ const Home = ({ latestPosts }) => {
           heading="Frequently Asked Questions"
         >
           <div className="mt-8">
-            <Accordion items={FAQ_ITEMS} />
+            <Accordion items={HOME_FAQS} />
           </div>
         </Section>
 

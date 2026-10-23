@@ -119,7 +119,6 @@ const FAQS = [
 
 const RELATED = [
   { label: "Web design services", href: "/web-design" },
-  { label: "Niagara web design", href: "/web-design/niagara" },
   { label: "Our work", href: "/work" },
   { label: "Get a quote", href: "/get-a-quote" },
   { label: "SEO in Port Colborne", href: "/seo/port-colborne" },
@@ -131,7 +130,6 @@ const schema = graph([
   breadcrumbList([
     { name: "Home", href: "/" },
     { name: "Web Design", href: "/web-design" },
-    { name: "Niagara", href: "/web-design/niagara" },
     { name: "Port Colborne", href: URL_PATH },
   ]),
   serviceNode({
@@ -183,7 +181,6 @@ const PortColborneWebDesign = () => {
                   items={[
                     { name: "Home", href: "/" },
                     { name: "Web Design", href: "/web-design" },
-                    { name: "Niagara", href: "/web-design/niagara" },
                     { name: "Port Colborne" },
                   ]}
                   className="mb-8"
