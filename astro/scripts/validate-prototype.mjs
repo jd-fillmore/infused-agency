@@ -13,6 +13,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  RETIRED_ROUTES,
+  RETIRED_ROUTE_PATHS,
+  getRetiredRoute,
+} from "../src/lib/retired-routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..", "..");
@@ -59,6 +64,11 @@ function routeForFile(file) {
   if (rel === "index.html") return "/";
   if (rel.endsWith("/index.html")) return `/${rel.slice(0, -"/index.html".length)}`;
   return `/${rel.replace(/\.html$/, "")}`;
+}
+
+function normalizeRedirectPath(value) {
+  const clean = String(value || "").trim().replace(/\/+$/, "");
+  return clean || "/";
 }
 
 function builtRouteExists(route, htmlRoutes) {
@@ -131,6 +141,13 @@ function run() {
 
   const htmlRoutes = new Set(htmlFiles.map(routeForFile));
   const notMigrated = new Set();
+
+  // Retired routes must never be emitted as canonical, indexable pages.
+  for (const entry of RETIRED_ROUTES) {
+    if (builtRouteExists(entry.route, htmlRoutes)) {
+      error("dist", `retired route was built as an active page: ${entry.route}`);
+    }
+  }
 
   for (const file of htmlFiles) {
     const rel = path.relative(distDir, file);
@@ -257,6 +274,15 @@ function run() {
         continue;
       }
 
+      const retired = getRetiredRoute(internal);
+      if (retired) {
+        error(
+          rel,
+          `link to retired route (${retired.disposition}): ${internal}`
+        );
+        continue;
+      }
+
       if (builtRouteExists(internal, htmlRoutes)) continue;
 
       const manifestValue = internal.replace(/\/+$/, "") || "/";
@@ -304,6 +330,9 @@ function run() {
       if (NOINDEX_ROUTES.has(route)) {
         error("sitemap.xml", `noindex route included: ${route}`);
       }
+      if (RETIRED_ROUTE_PATHS.includes(route)) {
+        error("sitemap.xml", `retired route included: ${route}`);
+      }
       if (!builtRouteExists(route, htmlRoutes)) {
         error("sitemap.xml", `URL is not a built route: ${route}`);
       }
@@ -313,6 +342,74 @@ function run() {
     for (const route of htmlRoutes) {
       if (!NOINDEX_ROUTES.has(route) && !sitemapRoutes.has(route)) {
         error("sitemap.xml", `indexable route missing from sitemap: ${route}`);
+      }
+    }
+  }
+
+  // Redirects: every retired route needs an explicit 301 or 410, 301 targets
+  // must exist, and no rule may introduce a redirect chain.
+  const redirectsFile = path.join(distDir, "_redirects");
+  if (!fs.existsSync(redirectsFile)) {
+    error("dist", "missing _redirects");
+  } else {
+    const rules = fs
+      .readFileSync(redirectsFile, "utf8")
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith("#") && !line.startsWith("/*"))
+      .map((line) => {
+        const tokens = line.split(/\s+/);
+        if (tokens.length < 3) return null;
+        const status = tokens[tokens.length - 1];
+        const destination = tokens[tokens.length - 2];
+        const source = tokens.slice(0, -2).join(" ");
+        return { source, destination, status, raw: line };
+      })
+      .filter(Boolean);
+
+    const bySource = new Map();
+    for (const rule of rules) {
+      const source = normalizeRedirectPath(rule.source);
+      if (!bySource.has(source)) bySource.set(source, rule);
+    }
+
+    for (const entry of RETIRED_ROUTES) {
+      const rule = bySource.get(entry.route);
+      if (!rule) {
+        error("_redirects", `missing rule for retired route: ${entry.route}`);
+        continue;
+      }
+      const expectedStatus = entry.disposition === "redirect" ? "301" : "410";
+      if (rule.status !== expectedStatus) {
+        error(
+          "_redirects",
+          `${entry.route} uses ${rule.status}; expected ${expectedStatus}`
+        );
+      }
+      if (entry.disposition === "redirect") {
+        const target = normalizeRedirectPath(rule.destination);
+        if (RETIRED_ROUTE_PATHS.includes(target)) {
+          error("_redirects", `${entry.route} redirects to another retired route: ${target}`);
+        } else if (!builtRouteExists(target, htmlRoutes)) {
+          error("_redirects", `${entry.route} redirects to a missing page: ${target}`);
+        }
+        if (bySource.has(target)) {
+          error("_redirects", `${entry.route} redirects into a chain via ${target}`);
+        }
+      } else if (normalizeRedirectPath(rule.destination) !== entry.route) {
+        error("_redirects", `${entry.route} must be a self-referencing 410`);
+      }
+    }
+
+    for (const rule of rules) {
+      const destination = normalizeRedirectPath(rule.destination);
+      const source = normalizeRedirectPath(rule.source);
+      if (destination === source) continue;
+      if (bySource.has(destination) && !RETIRED_ROUTE_PATHS.includes(source)) {
+        warn(
+          "_redirects",
+          `pre-existing redirect chain: ${source} -> ${destination} -> ${bySource.get(destination).destination}`
+        );
       }
     }
   }

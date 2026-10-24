@@ -1,6 +1,7 @@
 import siteFactsJson from "../../../data/site/site-facts.json";
 import servicesJson from "../../../data/services/services.json";
 import navJson from "../../../src/generated/services-nav.json";
+import { RETIRED_ROUTE_PATHS } from "./retired-routes.mjs";
 import { homeFaqs as astroHomeFaqs } from "./home-faqs";
 
 export const SITE = "https://infused.agency";
@@ -73,9 +74,17 @@ export interface Faq {
   a: string;
 }
 
+const retiredRouteSet = new Set(RETIRED_ROUTE_PATHS);
+const isLiveService = (service: Service) => !retiredRouteSet.has(service.url);
+
 export const siteFacts = siteFactsJson as SiteFacts;
-export const services = servicesJson as Service[];
-export const navGroups = (navJson as { groups: NavGroup[] }).groups;
+export const services = (servicesJson as Service[]).filter(isLiveService);
+export const navGroups = (navJson as { groups: NavGroup[] }).groups.map(
+  (group) => ({
+    ...group,
+    links: group.links.filter((link) => !retiredRouteSet.has(link.url)),
+  })
+);
 export const industries = (navJson as { industries: NavLink[] }).industries;
 
 // Homepage FAQ copy lives in the Astro project so the legacy Next.js pages are

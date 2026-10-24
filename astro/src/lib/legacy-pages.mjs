@@ -13,6 +13,7 @@ import {
   extractLegacyConstants,
   extractLegacyContent,
 } from "./legacy-jsx.mjs";
+import { isRetiredRoute, rewritePageLinks } from "./retired-routes.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = path.resolve(HERE, "../../..");
@@ -221,7 +222,7 @@ export function getIndustryPages() {
       const { page } = extractLegacyPage(
         `src/pages/seo/for-${slug}-niagara.js`
       );
-      return page;
+      return rewritePageLinks(page);
     }).sort((a, b) => a.seo.url.localeCompare(b.seo.url))
   );
 }
@@ -249,7 +250,7 @@ export function getCitySeoPages() {
       const relatedLinks = NIAGARA_CITIES.filter(
         (city) => city.name !== page.city
       ).map((city) => ({ href: city.href, label: `${city.name}, ON` }));
-      return {
+      return rewritePageLinks({
         ...page,
         relatedLinks,
         hero: {
@@ -258,7 +259,7 @@ export function getCitySeoPages() {
           // public path produced by the evaluator.
           image: page.hero?.image,
         },
-      };
+      });
     })
   );
 }
@@ -280,8 +281,11 @@ export function getServicePages() {
     const pages = [];
     for (const service of all) {
       if (service.slug === "seo" || service.slug === "web-design") continue;
+      // Retired services never produce a page, even if the legacy gate still
+      // publishes their legacy route.
+      if (isRetiredRoute(service.url)) continue;
       const result = services.servicePagePropsFor(service.slug);
-      if (result?.props?.page) pages.push(result.props.page);
+      if (result?.props?.page) pages.push(rewritePageLinks(result.props.page));
     }
     return pages.sort((a, b) => a.urlPath.localeCompare(b.urlPath));
   });
@@ -303,6 +307,7 @@ export function getVerticalPages() {
     const publishedSet = new Set(published.map((record) => record.page.urlPath));
     return published
       .map((record) => verticalSeo.buildPageProps(record.page, publishedSet))
+      .map((page) => rewritePageLinks(page))
       .sort((a, b) => a.urlPath.localeCompare(b.urlPath));
   });
 }
@@ -318,7 +323,7 @@ export function getVerticalPage(pathname) {
 export function getNicheHub() {
   return memo("niche-hub", () => {
     const niche = legacyRequire("src/lib/canadaNicheSeo.js");
-    return niche.hubPageProps("concrete-contractors").props;
+    return rewritePageLinks(niche.hubPageProps("concrete-contractors").props);
   });
 }
 
@@ -329,6 +334,7 @@ export function getNicheCityPages() {
     return niche
       .publishedCitySlugs("concrete-contractors")
       .map((slug) => niche.cityPageProps("concrete-contractors", slug).props)
+      .map((page) => rewritePageLinks(page))
       .sort((a, b) => a.urlPath.localeCompare(b.urlPath));
   });
 }
@@ -709,7 +715,7 @@ const BESPOKE_ROUTES = [
 export function getBespokePages() {
   return memo("bespoke-pages", () =>
     BESPOKE_ROUTES.map((route) =>
-      bespokePage(route.pathname, route.file, route)
+      rewritePageLinks(bespokePage(route.pathname, route.file, route))
     ).sort((a, b) => a.pathname.localeCompare(b.pathname))
   );
 }
@@ -725,7 +731,7 @@ export function getBespokePage(pathname) {
 export function getWorkProjects() {
   return memo("work-projects", () => {
     const constants = extractLegacyConstants("src/pages/work.js");
-    return constants.PROJECTS;
+    return rewritePageLinks(constants.PROJECTS);
   });
 }
 
@@ -733,7 +739,7 @@ export function getIndustriesData() {
   return memo("industries-data", () => {
     const verticalSeo = legacyRequire("src/lib/verticalSeo.js");
     const { items, categories } = verticalSeo.buildIndustriesProps();
-    return { items, categories };
+    return { items: rewritePageLinks(items), categories };
   });
 }
 
@@ -750,20 +756,28 @@ export function getServicesData() {
         groups: ["digital-marketing", "reputation"],
       },
     ];
+    // Retired standalone services must not appear in the services hub, the
+    // human sitemap, or any generated service list. Filter them before the
+    // group mapping so empty legacy groups disappear as well.
+    const liveServices = published
+      .map((record) => record.service)
+      .filter((service) => !isRetiredRoute(service.url));
+
     return {
-      groups: groupTitles.map((group) => ({
-        title: group.title,
-        services: published
-          .map((record) => record.service)
-          .filter((service) => group.groups.includes(service.group))
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((service) => ({
-            name: service.name,
-            url: service.url,
-            summary: service.summary,
-          })),
-      })),
-      all: published.map((record) => record.service),
+      groups: groupTitles
+        .map((group) => ({
+          title: group.title,
+          services: liveServices
+            .filter((service) => group.groups.includes(service.group))
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((service) => ({
+              name: service.name,
+              url: service.url,
+              summary: service.summary,
+            })),
+        }))
+        .filter((group) => group.services.length > 0),
+      all: liveServices,
     };
   });
 }

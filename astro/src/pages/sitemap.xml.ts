@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 import { getAllPosts } from "../lib/posts";
 import { SITE } from "../lib/site";
+import { RETIRED_ROUTE_PATHS } from "../lib/retired-routes.mjs";
 import {
   getIndustryPages,
   getCitySeoPages,
@@ -57,9 +58,11 @@ export const GET: APIRoute = () => {
   for (const route of US_THERAPIST_ROUTES) entries.set(route.pathname, undefined);
   for (const city of WEB_DESIGN_CITIES) entries.set(`/web-design/${city.slug}`, undefined);
 
-  // Exclude noindex/error routes.
+  // Exclude noindex/error routes and every retired route, even if a legacy
+  // adapter or future page module tries to reintroduce one.
   entries.delete("/404");
   entries.delete("/500");
+  for (const route of RETIRED_ROUTE_PATHS) entries.delete(route);
 
   const routes = [...entries.entries()].sort(([a], [b]) => {
     if (a === "/") return -1;
