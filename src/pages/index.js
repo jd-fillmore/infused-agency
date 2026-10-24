@@ -29,8 +29,6 @@ import feat6 from "../../src/img/feat-delta.png";
 import feat7 from "../../src/img/feat-brandi.png";
 import feat8 from "../../src/img/feat-jerry.png";
 import test1 from "../../src/img/testimonial-lucas-folino-niagara.png";
-import flatRock from "../../src/img/st-catharines-seo-results.jpg";
-import delta from "../../src/img/niagara-seo-company-results.jpg";
 
 const AUDIT_URL = "/get-a-quote";
 
@@ -74,24 +72,7 @@ const AREA_CITIES = [
   { name: "Crystal Beach", href: "/seo/crystal-beach" },
 ];
 
-const RESULT_IMAGES = [
-  {
-    src: flatRock,
-    alt: "Search visibility results for Flat Rock Cellars, a Niagara winery we work with",
-    name: "Flat Rock Cellars",
-    industry: "Winery",
-    stat: "+550%",
-    statLabel: "local visibility",
-  },
-  {
-    src: delta,
-    alt: "Local search visibility results for Delta Energy Solutions, serving Niagara Falls and the Niagara region",
-    name: "Delta Energy Solutions",
-    industry: "Electrical & energy",
-    stat: "+670%",
-    statLabel: "local visibility",
-  },
-];
+
 
 const WHAT_WE_DO = [
   {
@@ -388,50 +369,6 @@ const Home = ({ latestPosts }) => {
           eyebrow="Proof"
           heading="Real results for Niagara businesses"
         >
-          <div className="reveal mt-10 grid gap-6 md:grid-cols-2">
-            {RESULT_IMAGES.map((result) => (
-              <Card key={result.alt} className="overflow-hidden" interactive>
-                <div className="relative h-52 overflow-hidden rounded-lg border border-border">
-                  <Image
-                    src={result.src}
-                    alt={result.alt}
-                    fill
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover"
-                    loading="lazy"
-                  />
-                  <div className="absolute left-3 top-3">
-                    <Badge tone="gold" className="shadow-card">
-                      <Icon name="star" className="h-3.5 w-3.5" />
-                      Verified result
-                    </Badge>
-                  </div>
-                </div>
-                <div className="mt-5 flex items-center gap-4">
-                  <span className="icon-tile h-12 w-12 shrink-0">
-                    <Icon name="trending-up" className="h-6 w-6" />
-                  </span>
-                  <div className="min-w-0">
-                    <div className="font-display text-2xl font-bold leading-none text-gold">
-                      {result.stat}
-                    </div>
-                    <div className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-muted">
-                      {result.statLabel}
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4 border-t border-border pt-4">
-                  <div className="text-base font-semibold text-ink">
-                    {result.name}
-                  </div>
-                  <div className="mt-0.5 text-sm text-muted">
-                    {result.industry}
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-
           <div className="reveal mt-10 grid gap-6 md:grid-cols-3">
             <TestimonialCard
               showStars
@@ -445,7 +382,7 @@ const Home = ({ latestPosts }) => {
             <TestimonialCard
               showStars
               quote="&ldquo;I reached out to a few companies to help with ranking my business presence online. JD came in with the best advice on how to organically rank my company&rsquo;s website. We are already seeing thousands of impressions driven directly from his services. Best yet , you are not tied into a massive monthly bill.&rdquo;"
-              person="Brent McCoppenopen"
+              person="Brent McCoppen"
               role="Owner"
               company="Timberwolf Carpentry & Renovations"
             />
@@ -455,6 +392,12 @@ const Home = ({ latestPosts }) => {
               person="Scott Forbes"
               role="Owner"
               company="Pro Battery Shop"
+            />
+            <TestimonialCard
+              showStars
+              quote="&ldquo;I had a great experience working with JD on my website's SEO. JD was very thorough, knowledgeable, and clearly communicated his process and progress throughout the project. Within a few months, I saw a noticeable increase in visibility and consultation bookings for my therapy practice through Google. I'm very happy with the results and would recommend their services to anyone looking to improve their online presence.&rdquo;"
+              person="Devyn Eadie"
+              company="Willow Creek Counselling"
             />
           </div>
         </Section>

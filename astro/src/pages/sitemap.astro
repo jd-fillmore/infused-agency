@@ -10,6 +10,7 @@ import {
   getNiagaraIndustries,
   getServicesData,
   getVerticalPages,
+  NIAGARA_CITY_LINKS,
 } from "../lib/legacy-pages.mjs";
 import {
   baseGraph,
@@ -37,10 +38,7 @@ const breadcrumbs = [
 const mainPages = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
   { name: "Results", href: "/results" },
-  { name: "Process", href: "/process" },
-  { name: "Areas We Serve", href: "/areas-we-serve" },
   { name: "Industries", href: "/industries" },
   { name: "Blog", href: "/blog" },
   { name: "Get a Free Quote", href: "/get-a-quote" },
@@ -101,6 +99,14 @@ const jsonLd = [
     <ul class="chip-list">
       {webDesignPages.map((page: any) => (
         <li><a class="chip" href={page.pathname}>{page.h1}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section heading="Local SEO pages">
+    <ul class="chip-list">
+      {NIAGARA_CITY_LINKS.map((city: any) => (
+        <li><a class="chip" href={city.href}>SEO in {city.name}, ON</a></li>
       ))}
     </ul>
   </Section>

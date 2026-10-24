@@ -1,12 +1,13 @@
-// Astro-only registry for legacy routes that are no longer part of the rebuild.
+// Astro-only registry for legacy routes and standalone pages that are no
+// longer part of the rebuild.
 //
-// The legacy Next.js service records still describe these routes, so every
-// Astro adapter that reads legacy data must filter or rewrite them here rather
-// than editing the shared source-of-truth files under /data and /src.
+// The legacy Next.js service records still describe some of these routes, so
+// every Astro adapter that reads legacy data must filter or rewrite them here
+// rather than editing the shared source-of-truth files under /data and /src.
 //
 // `disposition` is the public response for the retired URL:
 //   - "redirect": a genuinely equivalent surviving page exists.
-//   - "gone":     the offer was discontinued and no equivalent page exists.
+//   - "gone":     the page or offer was removed and no equivalent exists.
 //
 // `linkList` controls how the route is handled when it appears in a list of
 // promotional links (related services, chips, "keep exploring" blocks):
@@ -16,6 +17,66 @@
 // de-linked (label preserved, href removed) for gone routes.
 
 export const RETIRED_ROUTES = [
+  {
+    route: "/services",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The standalone services hub was removed. SEO, AI search and web design are linked directly from the main navigation.",
+  },
+  {
+    route: "/process",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason: "The standalone process page was removed.",
+  },
+  {
+    route: "/areas-we-serve",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The standalone areas-we-serve page was removed. Local coverage is handled by the individual city pages.",
+  },
+  {
+    route: "/web-design/ecommerce-web-design",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The standalone eCommerce web design page was removed. Store builds are covered by the core web design service.",
+  },
+  {
+    route: "/web-design/shopify-web-design",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The standalone Shopify web design page was removed. Store builds are covered by the core web design service.",
+  },
+  {
+    route: "/effective-web-design-steps",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason: "The standalone effective web design steps guide was removed.",
+  },
+  {
+    route: "/kd-florist",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason: "The KD Flowers case study page was removed.",
+  },
+  {
+    route: "/tree-reports",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason: "The TreeReports case study page was removed.",
+  },
   {
     route: "/web-design/website-hosting",
     disposition: "gone",
@@ -62,7 +123,7 @@ export const RETIRED_ROUTES = [
     destination: null,
     linkList: "drop",
     reason:
-      "Standalone Shopify SEO was retired. Shopify builds survive at /web-design/shopify-web-design and SEO is covered by /seo.",
+      "Standalone Shopify SEO was retired. Shopify store work is covered by the core web design and SEO services.",
   },
   {
     route: "/digital-marketing",

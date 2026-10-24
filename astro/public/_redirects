@@ -62,14 +62,10 @@
 /niagara-web-design /web-design 301
 /web-design/niagara / 301
 /seo/niagara / 301
-/seo/st-catharines / 301
-/seo/niagara-falls / 301
 /web-design/niagara/ / 301
-/st-catharines-seo-company / 301
-/seo/st-catharines/ / 301
-/seo/niagara-falls/ / 301
-/how-we-work /services 301
-/st-catharines-seo-company/ / 301
+/st-catharines-seo-company /seo/st-catharines 301
+/st-catharines-seo-company/ /seo/st-catharines 301
+/how-we-work /about 301
 /digital-marketing-agency-niagara / 301
 /digital-marketing-agency-st-catharines / 301
 /pricing /get-a-quote 301
@@ -108,12 +104,17 @@
 /wordpress-developer-St. Catharines / 301
 /posts/drive-visitors-to-new-website/ /posts/what-is-the-best-method-to-drive-visitors-to-a-new-website 301
 /beamsville /seo/beamsville 301
+/st-catharines /seo/st-catharines 301
+/pelham /seo/pelham 301
+/smithville /seo/smithville 301
+/wainfleet /seo/wainfleet 301
+/west-lincoln /seo/west-lincoln 301
 /5-effective-seo-techniques-for-landscaping-companies/ / 301
 /posts/how-to-build-a-website-with-good-seo-in-mind/ / 301
 /beamsville-seo-digital-marketing /seo/beamsville 301
 /posts/best-seo-keywords-for-interior-designers/ / 301
 /fonthill /seo/fonthill 301
-/niagara-falls / 301
+/niagara-falls /seo/niagara-falls 301
 /fort-erie /seo/fort-erie 301
 /grimsby /seo/grimsby 301
 /niagara-on-the-lake /seo/niagara-on-the-lake 301
@@ -127,8 +128,16 @@
 
 /work /results 301
 
-# Retired service routes. Redirect only where a genuinely equivalent page
+# Retired and removed routes. Redirect only where a genuinely equivalent page
 # survives; otherwise return 410 Gone. See docs/astro-rebuild/RETIRED_ROUTES_AND_INTERNAL_LINK_AUDIT.md.
+/services /services 410
+/process /process 410
+/areas-we-serve /areas-we-serve 410
+/web-design/ecommerce-web-design /web-design/ecommerce-web-design 410
+/web-design/shopify-web-design /web-design/shopify-web-design 410
+/effective-web-design-steps /effective-web-design-steps 410
+/kd-florist /kd-florist 410
+/tree-reports /tree-reports 410
 /web-design/website-hosting /web-design/website-hosting 410
 /ecommerce-marketing /ecommerce-marketing 410
 /ecommerce-marketing/ecommerce-optimization /website-conversion-optimization 301

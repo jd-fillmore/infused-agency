@@ -17,7 +17,9 @@ interface LocalSeoPageData {
     label: string;
     image?: string;
     alt?: string;
-    items: string[];
+    quote?: string;
+    person?: string;
+    items?: string[];
   };
   whyNeeded: { heading: string; paragraphs: string[]; checklist: string[] };
   services: {
@@ -104,9 +106,25 @@ const { data } = Astro.props;
     <div class="reveal">
       <span class="badge">{data.proof.label}</span>
       <h3 class="h3" style="margin-top: 1rem; color: #ffffff;">{data.proof.client}</h3>
-      <ul class="check-list" style="margin-top: 1.1rem;">
-        {data.proof.items.map((item) => <li>{item}</li>)}
-      </ul>
+      {
+        data.proof.quote && (
+          <p class="prose" style="margin-top: 1.1rem; color: var(--color-contrast-muted);">
+            &ldquo;{data.proof.quote}&rdquo;
+          </p>
+        )
+      }
+      {
+        data.proof.person && (
+          <p class="card__meta" style="margin-top: 0.65rem;">{data.proof.person}</p>
+        )
+      }
+      {
+        data.proof.items && data.proof.items.length > 0 && (
+          <ul class="check-list" style="margin-top: 1.1rem;">
+            {data.proof.items.map((item) => <li>{item}</li>)}
+          </ul>
+        )
+      }
       <div style="margin-top: 1.75rem;">
         <Button href="/get-a-quote" variant="gold" arrow>Discuss a similar project</Button>
       </div>
@@ -220,7 +238,7 @@ const { data } = Astro.props;
   <Accordion items={data.faqs} />
 </Section>
 
-<Section tone="contrast" eyebrow="Nearby" index="07" heading="More Niagara locations">
+<Section tone="contrast" eyebrow="Related" index="07" heading="Nearby locations and search services">
   <ul class="chip-list">
     {
       data.relatedLinks.map((link) => (

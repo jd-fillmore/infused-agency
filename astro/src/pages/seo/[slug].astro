@@ -75,6 +75,20 @@ const jsonLd = [
       : `${industryData!.industry} SEO in Niagara`,
     description,
     serviceType: cityData ? "Local SEO" : `${industryData!.industry} SEO`,
+    ...(cityData
+      ? {
+          areaServed: [
+            {
+              "@type": "City",
+              name: cityData.city,
+              containedInPlace: {
+                "@type": "AdministrativeArea",
+                name: cityData.seo.region,
+              },
+            },
+          ],
+        }
+      : {}),
   }),
   ...(faqs.length > 0 ? [faqPageNode(pathname, faqs)] : []),
 ];

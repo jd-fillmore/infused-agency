@@ -1013,8 +1013,9 @@
 
 .hero-report__stat {
   display: flex;
-  align-items: flex-end;
-  gap: 0.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
   margin-top: 1.15rem;
 }
 
@@ -1060,6 +1061,25 @@
 .hero-report__bars span:nth-child(4) { height: 58%; animation-delay: 940ms; }
 .hero-report__bars span:nth-child(5) { height: 72%; animation-delay: 1020ms; }
 .hero-report__bars span:nth-child(6) { height: 100%; animation-delay: 1100ms; background: var(--gradient-brand); }
+
+.hero-report__ai {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1rem 0 0;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 92, 151, 0.08);
+  color: var(--color-accent);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.hero-report__ai svg {
+  width: 0.85rem;
+  height: 0.85rem;
+}
 
 .hero-report__foot {
   display: flex;
@@ -1307,6 +1327,28 @@
   margin-top: 1.9rem;
 }
 
+/* Shared page-hero entrance: gentle fade-rise with a small stagger. The
+   reduced-motion preference is handled globally in motion.css. */
+.page-hero__copy > * {
+  animation: hero-fade 760ms var(--ease-out) both;
+}
+
+.page-hero__copy > *:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.page-hero__copy > *:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+.page-hero__copy > *:nth-child(4) {
+  animation-delay: 270ms;
+}
+
+.page-hero__copy > *:nth-child(5) {
+  animation-delay: 360ms;
+}
+
 .page-hero__aside {
   position: relative;
   padding: 1.35rem;
@@ -1525,7 +1567,7 @@
 }
 
 .stat__value {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2.4rem, 1.8rem + 2.6vw, 4.6rem);
   font-weight: 700;
   line-height: 0.9;
@@ -1626,6 +1668,24 @@
   min-height: 100%;
 }
 
+.testimonial__stats {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid rgba(17, 26, 46, 0.12);
+}
+
+.testimonial__stats .case-stats {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.testimonial__note {
+  margin: 0.85rem 0 0;
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  line-height: 1.55;
+}
+
 .testimonial blockquote {
   margin: 0;
   color: var(--color-ink);
@@ -1637,7 +1697,7 @@
   content: "\201C";
   display: block;
   margin-bottom: 0.15rem;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 3rem;
   line-height: 0.55;
   color: var(--color-gold);
@@ -2024,7 +2084,7 @@
   display: inline-flex;
   align-items: baseline;
   color: #ffffff;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 1.55rem;
   font-weight: 600;
   letter-spacing: -0.045em;
@@ -2492,10 +2552,6 @@
   padding-block: clamp(3.5rem, 2.5rem + 3vw, 5.5rem);
 }
 
-.site-footer__inner--compact {
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.8fr) minmax(0, 0.95fr);
-}
-
 .site-footer__brand .brand {
   color: #ffffff;
   font-size: 2rem;
@@ -2524,6 +2580,21 @@
 
 .footer-list li + li {
   margin-top: 0.1rem;
+}
+
+.footer-list--cities {
+  columns: 2;
+  column-gap: 1rem;
+}
+
+.footer-list--cities li {
+  break-inside: avoid;
+}
+
+@media (max-width: 560px) {
+  .footer-list--cities {
+    columns: 1;
+  }
 }
 
 .footer-list a,
@@ -3702,7 +3773,7 @@
 
 .proof-stat__value {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
   line-height: 1.05;
@@ -3718,6 +3789,36 @@
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--color-muted);
+}
+
+.case-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(17, 26, 46, 0.1);
+}
+
+.case-stat__value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 1.4rem + 1.6vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: var(--color-accent);
+}
+
+.case-stat__label {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .section--contrast .proof-stat__label {

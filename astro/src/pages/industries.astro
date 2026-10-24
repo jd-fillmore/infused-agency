@@ -16,7 +16,7 @@ import {
 const pathname = "/industries";
 const title = "SEO by Industry | Infused Agency";
 const description =
-  "SEO programmes built for specific industries in the Niagara region and beyond. See the sectors Infused Agency serves and how to get started.";
+  "Industry-specific SEO programmes for businesses in Niagara and beyond. See the sectors Infused Agency serves, including local SEO and AI search visibility work.";
 const { items, categories } = getIndustriesData();
 
 const breadcrumbs = [
@@ -52,12 +52,25 @@ const jsonLd = [
     ctaLabel="Get a Free Quote"
   />
 
+  <Section>
+    <div class="prose reveal" style="max-width: 52rem;">
+      <p>
+        Each programme is built around how that industry actually gets found,
+        from the services customers compare to the local areas a business
+        serves. Where it fits the sector, the work also covers
+        <a href="/ai-search">AI search visibility</a>: clear business facts,
+        answer-ready content and consistent details that help AI assistants
+        describe your business accurately.
+      </p>
+    </div>
+  </Section>
+
   <Section
     eyebrow="Browse"
     heading="Browse by industry"
     description="Every card below links to a live programme. Choose the category closest to your business."
   >
-    <ul class="chip-list">
+    <ul class="chip-list reveal">
       {groups.map((group: any) => (
         <li><a class="chip" href={`#${group.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{group.category}<Icon name="arrow-right" /></a></li>
       ))}
@@ -79,9 +92,11 @@ const jsonLd = [
               <span class="badge">{item.category}</span>
               <h3 class="card__title" style="margin-top: 1rem;">{item.displayName}</h3>
               <p class="card__text">{item.benefit}</p>
-              <p class="card__meta">
-                <Icon name="map-pin" /> {item.coverage ?? "Niagara region"}
-              </p>
+              {item.coverage && item.coverage !== "Niagara region" && (
+                <p class="card__meta">
+                  <Icon name="map-pin" /> {item.coverage}
+                </p>
+              )}
               <p style="margin-top: 1.25rem;">
                 <a class="link-arrow" href={item.href}>Learn more<Icon name="arrow-right" /></a>
               </p>
@@ -93,7 +108,7 @@ const jsonLd = [
   }
 
   <Section tone="contrast" eyebrow="Not listed?" heading="Don't see your industry?">
-    <p class="prose" style="color: var(--color-contrast-muted); max-width: 46rem;">
+    <p class="prose reveal" style="color: var(--color-contrast-muted); max-width: 46rem;">
       New industry programmes go live as we publish real content for them. Tell
       us what you do and we will show you where the opportunity is.
     </p>

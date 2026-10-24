@@ -26,7 +26,8 @@ const {
   meta,
 } = Astro.props;
 
-const hasAside = Astro.slots.has("aside");
+const asideHtml = Astro.slots.has("aside") ? await Astro.slots.render("aside") : "";
+const hasAside = Boolean(asideHtml.trim());
 ---
 
 <section class:list={["page-hero", compact && "page-hero--compact"]}>
@@ -52,9 +53,7 @@ const hasAside = Astro.slots.has("aside");
 
       {
         hasAside && (
-          <aside class="page-hero__aside">
-            <slot name="aside" />
-          </aside>
+          <aside class="page-hero__aside" set:html={asideHtml} />
         )
       }
     </div>

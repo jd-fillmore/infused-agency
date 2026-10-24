@@ -2,85 +2,111 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServicePage from "../../templates/ServicePage.astro";
 import { getService, services } from "../../lib/site";
-import { baseGraph, breadcrumbNode, serviceNode, webPageNode } from "../../lib/schema";
+import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
 
 const seoService = getService("seo");
-const title = "SEO Search Engine Optimization | Infused Agency";
+const title = "SEO Services | Local SEO & AI Search Visibility | Infused";
 const description =
-  "Looking for SEO services? Check out Infused Agency's search engine optimization services today.";
+  "SEO services for Niagara businesses and clients across Canada and the U.S. Improve local visibility, service pages and AI search visibility. Get a free quote.";
+
+const faqs = [
+  {
+    q: "What do your SEO services include?",
+    a: "Most engagements combine local SEO, Google Business Profile work, service-page content, technical fixes and internal linking. Where it fits the business, we also improve AI search visibility through entity consistency, answer-ready content and structured data. The exact scope is agreed after a review.",
+  },
+  {
+    q: "How long does SEO take to show results?",
+    a: "Foundation improvements often show within a few months, while competitive service terms take longer. The pace depends on your starting visibility, website quality, competition and how consistently the work is maintained. We report progress against agreed measures rather than promising a fixed date.",
+  },
+  {
+    q: "Do you guarantee first-page rankings?",
+    a: "No. Search results vary by location, device and query, and no ethical agency controls Google's rankings. We commit to the work, transparent reporting and honest recommendations, not a guaranteed position.",
+  },
+  {
+    q: "What is AI search optimization, GEO or AEO?",
+    a: "AI search optimization is the work of making your business clear and credible enough to appear in AI-generated answers. GEO (Generative Engine Optimization) and AEO (Answer Engine Optimization) are related labels for that work. It extends SEO into tools such as ChatGPT, Gemini and Google AI Overviews rather than replacing it.",
+  },
+  {
+    q: "Can you help my business appear in AI-generated answers?",
+    a: "We can improve the conditions that make it easier for AI tools to describe, quote and recommend you: consistent business details, clear service content, structured data and genuine reviews. No agency can guarantee that a specific assistant will cite or recommend your business.",
+  },
+  {
+    q: "How much do SEO services cost?",
+    a: "Pricing depends on your competition, website, services and how many locations you target. We review the business first and send a written quote with a clear scope. We do not publish invented package prices or promise a set number of leads.",
+  },
+];
 
 const data = {
   heroTitle: "Search Engine Optimization (SEO)",
-  heroDescription: "We're ready to boost your rankings and drive results.",
+  heroDescription:
+    "SEO that helps your business get found in Google, the map pack and AI-generated answers, then turns that visibility into enquiries.",
   breadcrumbs: [{ name: "Home", href: "/" }, { name: "SEO" }],
   introHeadingHtml:
-    'Rank better on Google for more <span class="text-gradient">leads</span>, <span class="text-gradient">traffic</span> and <span class="text-gradient">revenue</span>.',
+    'Be found in search, the map pack and <span class="text-gradient">AI answers</span>.',
   introParagraphs: [
-    'Search Engine Optimization (SEO) done by our <a href="/">SEO Niagara</a> team is your local business’s secret weapon in today’s digital world. Imagine your business appearing at the top of Google search results whenever someone in your area searches for your services. That’s the power of SEO.',
-    "Why is SEO crucial for local businesses? Visibility. Higher search engine rankings mean more people see your business, leading to increased foot traffic, calls, and inquiries. Potential customers are searching for businesses like yours, and SEO ensures they find you first.",
-    '<a href="/posts/local-seo-tips-niagara">Local SEO specifically attracts customers</a> in your area. By using locally relevant keywords, creating location-specific content, and keeping your business details consistent online, you become the top choice for local searches.',
-    "This is important because local searches often have high purchase intent. If someone searches for “best Italian restaurant near me,” they’re likely planning to dine out soon. Showing up in these searches means capturing ready-to-buy customers.",
-    'SEO also <a href="/posts/how-seo-upgrades-business">builds trust and credibility</a>. People trust search engines, and top-ranking businesses are seen as more reliable. Managing online reviews and optimizing your Google My Business listing further boosts your trustworthiness.',
-    "The result? More customers and revenue. SEO drives targeted traffic that converts into paying customers. Invest in SEO to boost your visibility, build trust, and grow your business.",
+    "SEO is still the foundation of how customers find a business online. It covers the pages on your website, the way Google understands them, the signals behind your Google Business Profile and the words people use when they are ready to buy. When those pieces work together, your business appears for the searches that matter instead of leaving the enquiry to a competitor.",
+    'For local businesses, the map pack and <a href="/posts/local-seo-tips-niagara">local search results</a> are often the first shortlist. We improve the profile, service pages, location content and reviews that decide whether you appear, then measure the calls and form fills that follow.',
+    'Search behaviour is also moving into AI. People ask ChatGPT, Gemini and Google\'s AI Overviews for recommendations, comparisons and explanations, and those tools assemble answers from sources they can read and trust. We treat <a href="/ai-search">AI search optimization</a> as an extension of SEO: clear entity information, answer-ready content and consistent facts across your site and profiles. Some call it GEO (Generative Engine Optimization), AEO (Answer Engine Optimization) or SEO for AI search. The aim is the same: make your business easier to describe, quote and recommend accurately.',
+    "We do not promise a specific ranking, a citation or a number of leads. We build the foundations that give a business a better chance of being found, explain the trade-offs in plain language and report on what actually changed.",
   ],
   approach: [
     {
       icon: "search",
       title: "Research",
-      body: "We start with comprehensive research to identify your industry trends, target audience, and effective keywords. This data-driven approach ensures we tailor our SEO strategies to meet your business goals.",
+      body: "We review your market, the searches your customers use, the competitors already winning and the strength of your website and profile. The plan starts with the demand that can realistically produce enquiries.",
     },
     {
       icon: "code",
       title: "Build",
-      body: "In the build phase, we optimize your website’s structure and content for better visibility. Our focus is on user-friendly design, mobile optimization, and engaging, keyword-rich content that attracts and converts visitors.",
+      body: "We fix the technical foundations, strengthen service and location pages, improve the Google Business Profile and make the important business facts consistent and easy to understand.",
     },
     {
       icon: "bolt",
       title: "Grow",
-      body: "SEO is an ongoing process. We monitor your site’s performance and make adjustments while implementing off-page strategies like link building. This ensures sustained traffic growth and long-term success for your business.",
+      body: "SEO is ongoing. We monitor rankings, enquiries and AI search visibility, then adjust the content and priorities as the market and the tools change.",
     },
   ],
   results: {
-    heading: "Real & Local SEO Results",
-    body: "At Infused Agency, we deliver real local SEO results for Niagara businesses. Our expert strategies boost your online visibility, ensuring your business ranks at the top of local searches. We focus on driving targeted traffic, which converts into genuine leads, sales, and increased revenue. By optimizing your website with locally relevant keywords, managing your online reviews, and enhancing your Google My Business listing, we help build trust and attract ready-to-buy customers. Let us help your Niagara business grow and thrive with proven SEO techniques tailored to your local market.",
+    heading: "Visibility that supports real enquiries",
+    body: "Our work is judged by whether the right people can find the business and take the next step, not by a ranking chart alone. We look at which services and locations produce calls, quote requests and booked appointments, and we use that to decide what to improve next. Where AI search visibility is part of the scope, we baseline the answers assistants give and compare them over time. We do not publish invented city-specific results or claim that a ranking in one place guarantees the same outcome in another.",
   },
   services: [
     {
-      title: "Keyword Research",
-      body: "Keyword research identifies the most effective words and phrases your potential customers use to find your services. By targeting these keywords, we ensure your website appears in relevant searches, increasing traffic and visibility. This helps attract more customers, ultimately growing your business.",
+      title: "Local SEO and Google Business Profile",
+      body: "We tighten your categories, services, hours, coverage areas, photos and review responses so your business is easier to find in the map pack and easier for a nearby customer to choose.",
     },
     {
-      title: "Link Building",
-      body: "Link building involves acquiring high-quality backlinks from other websites to yours. These links enhance your website’s authority and improve its search engine rankings. Increased visibility leads to more traffic and potential customers, helping your business grow and establish a stronger online presence.",
+      title: "On-page SEO and service pages",
+      body: "Distinct services deserve distinct pages. We improve headings, copy, internal links and calls to action so each page has a clear job and answers the questions a buyer actually asks.",
     },
     {
-      title: "Content Writing",
-      body: "Content writing focuses on creating engaging, relevant, and keyword-rich content for your website. Well-crafted content attracts and retains visitors, informs and educates your audience, and improves search engine rankings. This drives more traffic, generates leads, and boosts sales, fostering business growth.",
+      title: "Technical SEO and site speed",
+      body: "We fix crawlability, indexing, duplicate metadata, slow templates and mobile usability problems that hold good content back. A faster, cleaner site helps both users and search engines.",
     },
     {
-      title: "On-Page SEO",
-      body: "On-page SEO optimizes individual web pages to rank higher in search engines. This includes improving meta tags, headers, images, and internal links. Enhanced on-page SEO increases your site’s visibility, attracts more traffic, and converts visitors into customers, driving business growth.",
+      title: "Content strategy and answer-ready copy",
+      body: "We plan content around real customer questions, then write it clearly enough to be understood by people and extracted by search and AI systems. Content writing is part of the SEO work, not a separate service line.",
     },
     {
-      title: "Local SEO",
-      body: "Local SEO targets customers in your specific area by optimizing your online presence for local searches. This includes managing your Google My Business listing and acquiring local citations. Effective local SEO ensures your business appears in local searches, attracting nearby customers and increasing sales.",
+      title: "AI search optimization (GEO and AEO)",
+      body: "We improve entity consistency, structured data and quotable answers so AI assistants have accurate material to work with. This is AI search visibility work, not a promise that a specific tool will recommend you.",
     },
     {
-      title: "Technical SEO",
-      body: "Technical SEO improves the backend of your website to enhance its performance and search engine rankings. This includes optimizing site speed, mobile-friendliness, and security. A well-optimized site provides a better user experience, increases visibility, and attracts more visitors, driving business growth.",
+      title: "Reporting and conversion tracking",
+      body: "We connect search visibility to the actions that matter: calls, form fills, direction requests and booked appointments. Reporting shows what changed and where the next opportunity is.",
     },
   ],
-  cities: [
-    { href: "/seo/beamsville", label: "Beamsville, ON" },
-    { href: "/seo/crystal-beach", label: "Crystal Beach, ON" },
-    { href: "/seo/fonthill", label: "Fonthill, ON" },
-    { href: "/seo/fort-erie", label: "Fort Erie, ON" },
-    { href: "/seo/grimsby", label: "Grimsby, ON" },
-    { href: "/seo/niagara-on-the-lake", label: "Niagara-on-the-Lake, ON" },
-    { href: "/seo/port-colborne", label: "Port Colborne, ON" },
-    { href: "/seo/thorold", label: "Thorold, ON" },
-    { href: "/seo/welland", label: "Welland, ON" },
-  ],
+  cities: NIAGARA_CITY_LINKS.map((city) => ({
+    href: city.href,
+    label: `${city.name}, ON`,
+  })),
   industries: [
     { href: "/therapist-seo", label: "SEO for Therapists in Canada" },
     { href: "/general-contractor-seo", label: "SEO for General Contractors" },
@@ -89,17 +115,25 @@ const data = {
     .filter((service) => service.parentUrl === "/seo")
     .map((service) => ({ name: service.name, url: service.url }))
     .sort((a, b) => a.name.localeCompare(b.name)),
+  faqs,
 };
 
 const jsonLd = [
   ...baseGraph(),
-  webPageNode({ url: "/seo", name: title, description, type: "CollectionPage" }),
+  webPageNode({
+    url: "/seo",
+    name: title,
+    description,
+    type: "CollectionPage",
+  }),
   breadcrumbNode([{ name: "Home", href: "/" }, { name: "SEO" }], "/seo"),
   serviceNode({
     url: "/seo",
     name: seoService?.name ?? "Search Engine Optimization",
     description: seoService?.summary ?? description,
+    serviceType: "Search engine optimization, local SEO and AI search optimization",
   }),
+  faqPageNode("/seo", faqs),
 ];
 ---
 

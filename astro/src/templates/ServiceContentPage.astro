@@ -37,6 +37,9 @@ interface Props {
     industries: Array<{ href: string; label: string; internal?: boolean }>;
     relatedSectionTitle: string;
     industrySectionTitle: string;
+    showCta?: boolean;
+    showAside?: boolean;
+    showRelated?: boolean;
   };
 }
 
@@ -50,20 +53,23 @@ const content = data.content;
   breadcrumbs={data.breadcrumbs}
   eyebrow="Services"
   ctaLabel="Get a Free Quote"
+  showCta={data.showCta !== false}
 >
-  <Fragment slot="aside">
-    <h2>Start with a free quote</h2>
-    <p>
-      Tell us what you sell and where you want to grow. We will review the
-      opportunity and send a written quote with a clear scope.
-    </p>
-    <ul class="page-hero__aside-list">
-      <li><Icon name="check" /> Website and search review</li>
-      <li><Icon name="check" /> Practical scope and priorities</li>
-      <li><Icon name="check" /> A clear written quote</li>
-    </ul>
-    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
-  </Fragment>
+  {data.showAside !== false && (
+    <Fragment slot="aside">
+      <h2>Start with a free quote</h2>
+      <p>
+        Tell us what you sell and where you want to grow. We will review the
+        opportunity and send a written quote with a clear scope.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> Website and search review</li>
+        <li><Icon name="check" /> Practical scope and priorities</li>
+        <li><Icon name="check" /> A clear written quote</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+    </Fragment>
+  )}
 </PageHero>
 
 <Section>
@@ -96,13 +102,13 @@ const content = data.content;
 </Section>
 
 <Section tone="tint" eyebrow="Deliverables" index="03" heading="What you get">
-  <ul class="check-list">
+  <ul class="check-list reveal">
     {content.deliverables.map((item) => <li>{item}</li>)}
   </ul>
 </Section>
 
 <Section eyebrow="Measurement" index="04" heading="How we measure results">
-  <ul class="check-list">
+  <ul class="check-list reveal">
     {content.metrics.map((item) => <li>{item}</li>)}
   </ul>
 </Section>
@@ -134,21 +140,27 @@ const content = data.content;
   )
 }
 
-<Section eyebrow="Related" heading={data.relatedSectionTitle}>
-  <ul class="chip-list">
-    {data.related.map((link) => (
-      <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
-    ))}
-    {data.industries.map((link) => (
-      <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
-    ))}
-  </ul>
-</Section>
+{
+  data.showRelated !== false && (
+    <Section eyebrow="Related" heading={data.relatedSectionTitle}>
+      <ul class="chip-list reveal">
+        {data.related.map((link) => (
+          <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+        ))}
+        {data.industries.map((link) => (
+          <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+        ))}
+      </ul>
+    </Section>
+  )
+}
 
 {
   content.faqs && content.faqs.length > 0 && (
     <Section tone="warm" eyebrow="Questions" heading="Frequently asked questions">
-      <Accordion items={content.faqs} />
+      <div class="reveal">
+        <Accordion items={content.faqs} />
+      </div>
     </Section>
   )
 }

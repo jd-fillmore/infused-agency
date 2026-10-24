@@ -29,7 +29,7 @@ const { post } = Astro.props;
 
 <Section tone="warm">
   <div class="article-layout">
-    <article>
+    <article class="reveal">
       {
         post.image && (
           <div class="article-cover">
@@ -50,7 +50,7 @@ const { post } = Astro.props;
       </div>
     </article>
 
-    <aside class="article-aside">
+    <aside class="article-aside reveal">
       <p class="eyebrow">Free quote</p>
       <h2 style="margin-top: 0.8rem;">Want help applying this?</h2>
       <p>

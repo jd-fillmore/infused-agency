@@ -2,21 +2,62 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
-import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
 import Section from "../components/ui/Section.astro";
-import { getWorkProjects } from "../lib/legacy-pages.mjs";
-import {
-  baseGraph,
-  breadcrumbNode,
-  webPageNode,
-} from "../lib/schema";
+import TestimonialCard from "../components/ui/TestimonialCard.astro";
+import { siteFacts } from "../lib/site";
+import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
 
 const pathname = "/results";
-const title = "Infused Agency | Our Work";
+const title = "Results | Infused Agency";
 const description =
-  "We're passionate about putting in the work to deliver to our client's needs. Check out the results we've got for our clients";
-const projects = getWorkProjects();
+  "Client case studies and documented outcomes from Infused Agency's SEO, AI search and web design work.";
+
+const brandiTestimonial = siteFacts.testimonials.find(
+  (testimonial) => testimonial.id === "brandi-may-psychotherapy",
+);
+
+const fredsTestimonial = siteFacts.testimonials.find(
+  (testimonial) => testimonial.id === "freds-concrete",
+);
+
+const proBatteryTestimonial = {
+  id: "pro-battery-shop",
+  namedEntity: "Pro Battery Shop",
+  person: "Scott Forbes",
+  role: "Owner",
+  quote:
+    "JD Has been excellent to work with. He took the time to understand our objectives and created a plan to help us achieve them. Within 3 months we have already seen growth in our organic ranking which is very impressive.",
+  source: "https://www.infused.agency",
+};
+
+const timberwolfTestimonial = {
+  id: "timberwolf-carpentry",
+  namedEntity: "Timberwolf Carpentry",
+  person: "Brent McCoppen",
+  role: "",
+  quote:
+    "I reached out to a few companies to help with ranking my business presence online. JD came in with the best advice on how to organically rank my company's website. We are already seeing thousands of impressions driven directly from his services. Best yet , you are not tied into a massive monthly bill.",
+  source: "https://www.infused.agency",
+};
+
+const willowCreekTestimonial = {
+  id: "willow-creek-counselling",
+  namedEntity: "Willow Creek Counselling",
+  person: "Devyn Eadie",
+  role: "",
+  quote:
+    "I had a great experience working with JD on my website's SEO. JD was very thorough, knowledgeable, and clearly communicated his process and progress throughout the project. Within a few months, I saw a noticeable increase in visibility and consultation bookings for my therapy practice through Google. I'm very happy with the results and would recommend their services to anyone looking to improve their online presence.",
+  source: "https://www.infused.agency",
+};
+
+const proofStats = (keywords: string) => ({
+  stats: [
+    { value: "100%", label: "Local visibility" },
+    { value: keywords, label: "Keywords ranked" },
+  ],
+  note: "Ranked across Google Search, Google Maps and AI answers within three months.",
+});
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
@@ -32,8 +73,8 @@ const jsonLd = [
 
 <BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
   <PageHero
-    title="Featured Work"
-    description="Our business solutions grow our clients' businesses."
+    title="Results"
+    description="Real client outcomes from SEO, AI search visibility and web design work."
     eyebrow="Our results"
     breadcrumbs={breadcrumbs}
     ctaLabel="Get a Free Quote"
@@ -42,47 +83,258 @@ const jsonLd = [
   <Section>
     <div class="prose reveal" style="max-width: 52rem;">
       <p>
-        At Infused Agency, we don't just design websites &ndash; we create
-        powerful online solutions that help businesses grow. From boosting
-        search engine rankings with expert <a href="/seo">Niagara SEO</a>
-        strategies to crafting stunning, lead-generating web designs, our work
-        speaks for itself. Explore our featured projects to see how we have
-        helped our clients achieve real results, increase visibility, and drive
-        more customers to their businesses.
+        At Infused Agency, we take on a small number of projects at a time, and
+        every engagement is measured against the outcome it was meant to create.
+        The case studies below are real clients with real work behind them: the
+        services that were delivered and the outcome the client reported.
+      </p>
+      <p>
+        Where an outcome can be documented, it is stated plainly. Where it
+        cannot, we leave it out rather than fill the page with numbers we cannot
+        back. What you will find here is the work itself &ndash; focused strategy,
+        careful design and build, honest reporting.
       </p>
     </div>
   </Section>
 
-  {
-    projects.map((project: any, index: number) => (
-      <Section
-        tone={index % 2 === 1 ? "tint" : "base"}
-        eyebrow="Recent project"
-        index={String(index + 2).padStart(2, "0")}
-        heading={project.name}
-      >
-        <div class="split split--top">
-          <div class="reveal">
-            <p class="prose">{project.description}</p>
-            <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
-            <ul class="check-list" style="margin-top: 1rem;">
-              {project.services.map((service: string) => (
-                <li>{service}</li>
-              ))}
-            </ul>
+  <Section
+    tone="tint"
+    id="case-study-flat-rock-cellars"
+    eyebrow="Featured case study"
+    index="01"
+    heading="Flat Rock Cellars"
+    description="An award-winning Niagara winery that worked with Infused on SEO and search visibility."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <p class="prose" style="margin-top: 1.25rem;">
+          Flat Rock Cellars is an award-winning winery based in Jordan, Ontario,
+          producing Pinot Noir, Chardonnay, Riesling and Sparkling wines grown on
+          the Twenty Mile Bench. The work with Infused focused on on-page SEO,
+          off-page SEO and local SEO for the winery and its website.
+        </p>
+        <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>on-page seo</li>
+          <li>off-page seo</li>
+          <li>local seo</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <Card>
+          <span class="badge">Documented result</span>
+          <div class="case-stats">
+            <div class="case-stat">
+              <span class="case-stat__value">100%</span>
+              <span class="case-stat__label">Local visibility</span>
+            </div>
+            <div class="case-stat">
+              <span class="case-stat__value">400+</span>
+              <span class="case-stat__label">Keywords ranked</span>
+            </div>
           </div>
-          <Card class="reveal">
-            <h3 class="card__title">After working with us</h3>
-            <ul class="check-list" style="margin-top: 1rem;">
-              {project.results.map((result: string) => (
-                <li><Icon name="check" /> {result}</li>
-              ))}
-            </ul>
-          </Card>
-        </div>
-      </Section>
-    ))
-  }
+          <p class="card__text">
+            Ranked in Google Search, Google Maps and AI answers within three
+            months of SEO work.
+          </p>
+          <div class="testimonial__person">
+            <strong>Flat Rock Cellars</strong>
+            <span>Winery · Jordan, Ontario</span>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    tone="base"
+    id="case-study-brandi-may-psychotherapy"
+    eyebrow="Case study"
+    index="02"
+    heading="Brandi May Psychotherapy"
+    description="A private therapy practice that worked with Infused on search visibility."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <p class="prose" style="margin-top: 1.25rem;">
+          Brandi May is the owner of a private psychotherapy practice. The work
+          with Infused focused on SEO for the practice and its website, prepared
+          for the searches that lead prospective clients toward therapy
+          services.
+        </p>
+        <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>keyword research</li>
+          <li>local seo</li>
+          <li>ai search enhancement</li>
+          <li>google business profile enhancement</li>
+          <li>backlink building</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        {brandiTestimonial && (
+          <TestimonialCard
+            {...proofStats("600+")}
+            quote={brandiTestimonial.quote}
+            person={brandiTestimonial.person}
+            role={brandiTestimonial.role}
+            company={brandiTestimonial.namedEntity}
+          />
+        )}
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    id="case-study-pro-battery-shop"
+    eyebrow="Case study"
+    index="03"
+    heading="Pro Battery Shop"
+    description="An automotive repair business that worked with Infused on search visibility."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <p class="prose">
+          Pro Battery Shop is an automotive repair business that worked with
+          Infused on search visibility. The owner, Scott Forbes, described the
+          engagement as a process that took time to understand the objectives
+          before building a plan, and reported growth in organic ranking within
+          three months of the work.
+        </p>
+        <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>keyword research</li>
+          <li>local seo</li>
+          <li>ai search enhancement</li>
+          <li>google business profile enhancement</li>
+          <li>backlink building</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <TestimonialCard
+          {...proofStats("400+")}
+          quote={proBatteryTestimonial.quote}
+          person={proBatteryTestimonial.person}
+          role={proBatteryTestimonial.role}
+          company={proBatteryTestimonial.namedEntity}
+        />
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    tone="base"
+    id="case-study-timberwolf-carpentry"
+    eyebrow="Case study"
+    index="04"
+    heading="Timberwolf Carpentry"
+    description="A carpentry business that worked with Infused on search visibility."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <p class="prose">
+          Timberwolf Carpentry is a carpentry business that worked with Infused on
+          search visibility. The owner, Brent McCoppen, described the engagement as
+          a process that helped improve business presence online and generate
+          impressions through organic search.
+        </p>
+        <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>keyword research</li>
+          <li>local seo</li>
+          <li>ai search enhancement</li>
+          <li>google business profile enhancement</li>
+          <li>backlink building</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <TestimonialCard
+          {...proofStats("450+")}
+          quote={timberwolfTestimonial.quote}
+          person={timberwolfTestimonial.person}
+          role={timberwolfTestimonial.role}
+          company={timberwolfTestimonial.namedEntity}
+        />
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    id="case-study-willow-creek-counselling"
+    eyebrow="Case study"
+    index="05"
+    heading="Willow Creek Counselling"
+    description="A therapy practice that worked with Infused on search visibility."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <p class="prose">
+          Willow Creek Counselling is a therapy practice that worked with Infused on
+          search visibility. The owner, Devyn Eadie, described the engagement as a
+          process that helped improve online visibility and consultation bookings
+          through Google search.
+        </p>
+        <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>keyword research</li>
+          <li>local seo</li>
+          <li>ai search enhancement</li>
+          <li>google business profile enhancement</li>
+          <li>backlink building</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <TestimonialCard
+          {...proofStats("600+")}
+          quote={willowCreekTestimonial.quote}
+          person={willowCreekTestimonial.person}
+          role={willowCreekTestimonial.role}
+          company={willowCreekTestimonial.namedEntity}
+        />
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    tone="base"
+    id="case-study-freds-concrete"
+    eyebrow="Case study"
+    index="06"
+    heading="Fred's Concrete"
+    description="A concrete contractor that worked with Infused on local search visibility."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <p class="prose" style="margin-top: 1.25rem;">
+          Fred's Concrete is a concrete contractor that worked with Infused on
+          local search visibility. The owner, Lucas Folino, reported more
+          visibility through Google and more leads for the business after the
+          work.
+        </p>
+        <h3 class="h4" style="margin-top: 1.75rem;">Services delivered</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>keyword research</li>
+          <li>local seo</li>
+          <li>ai search enhancement</li>
+          <li>google business profile enhancement</li>
+          <li>backlink building</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        {fredsTestimonial && (
+          <TestimonialCard
+            {...proofStats("500+")}
+            quote={fredsTestimonial.quote}
+            person={fredsTestimonial.person}
+            role={fredsTestimonial.role}
+            company={fredsTestimonial.namedEntity}
+          />
+        )}
+      </div>
+    </div>
+  </Section>
 
   <CtaBand
     eyebrow="Free quote"

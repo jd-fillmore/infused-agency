@@ -14,6 +14,8 @@ import {
   extractLegacyContent,
 } from "./legacy-jsx.mjs";
 import { isRetiredRoute, rewritePageLinks } from "./retired-routes.mjs";
+import { LOCAL_SEO_PAGES } from "./local-seo-pages.mjs";
+import { applyServiceContentOverrides } from "./service-content-overrides.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = path.resolve(HERE, "../../..");
@@ -150,10 +152,16 @@ const NIAGARA_CITIES = [
   { name: "Fonthill", href: "/seo/fonthill" },
   { name: "Fort Erie", href: "/seo/fort-erie" },
   { name: "Grimsby", href: "/seo/grimsby" },
+  { name: "Niagara Falls", href: "/seo/niagara-falls" },
   { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
+  { name: "Pelham", href: "/seo/pelham" },
   { name: "Port Colborne", href: "/seo/port-colborne" },
+  { name: "Smithville", href: "/seo/smithville" },
+  { name: "St. Catharines", href: "/seo/st-catharines" },
   { name: "Thorold", href: "/seo/thorold" },
+  { name: "Wainfleet", href: "/seo/wainfleet" },
   { name: "Welland", href: "/seo/welland" },
+  { name: "West Lincoln", href: "/seo/west-lincoln" },
 ];
 
 export const NIAGARA_CITY_LINKS = NIAGARA_CITIES;
@@ -244,13 +252,17 @@ const CITY_SEO_SLUGS = [
 
 /** @returns {any[]} */
 export function getCitySeoPages() {
-  return memo("city-pages", () =>
-    CITY_SEO_SLUGS.map((slug) => {
+  return memo("city-pages", () => {
+    const legacyPages = CITY_SEO_SLUGS.map((slug) => {
       const { page } = extractLegacyPage(`src/pages/seo/${slug}.js`);
-      const relatedLinks = NIAGARA_CITIES.filter(
-        (city) => city.name !== page.city
-      ).map((city) => ({ href: city.href, label: `${city.name}, ON` }));
-      return rewritePageLinks({
+      const relatedLinks = [
+        ...NIAGARA_CITIES.filter(
+          (city) => city.name !== page.city
+        ).map((city) => ({ href: city.href, label: `${city.name}, ON` })),
+        { href: "/ai-search", label: "AI search optimization" },
+        { href: "/seo", label: "SEO services" },
+      ];
+      return {
         ...page,
         relatedLinks,
         hero: {
@@ -259,9 +271,20 @@ export function getCitySeoPages() {
           // public path produced by the evaluator.
           image: page.hero?.image,
         },
-      });
-    })
-  );
+      };
+    });
+
+    // Astro-authored pages carry their own nearby-location links so the
+    // township and community pages can point at genuinely related pages.
+    const authoredPages = LOCAL_SEO_PAGES.map((page) => ({
+      ...page,
+      relatedLinks: page.relatedLinks ?? [],
+    }));
+
+    return [...legacyPages, ...authoredPages].map((page) =>
+      rewritePageLinks(page)
+    );
+  });
 }
 
 export function getCitySeoPage(pathname) {
@@ -285,7 +308,13 @@ export function getServicePages() {
       // publishes their legacy route.
       if (isRetiredRoute(service.url)) continue;
       const result = services.servicePagePropsFor(service.slug);
-      if (result?.props?.page) pages.push(rewritePageLinks(result.props.page));
+      if (result?.props?.page) {
+        pages.push(
+          applyServiceContentOverrides(
+            rewritePageLinks(result.props.page)
+          )
+        );
+      }
     }
     return pages.sort((a, b) => a.urlPath.localeCompare(b.urlPath));
   });
@@ -577,16 +606,6 @@ const BESPOKE_ROUTES = [
     ],
   },
   {
-    pathname: "/process",
-    file: "src/pages/process.js",
-    kind: "static",
-    eyebrow: "Process",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Process" },
-    ],
-  },
-  {
     pathname: "/privacy-policy",
     file: "src/pages/privacy-policy.js",
     kind: "static",
@@ -594,17 +613,6 @@ const BESPOKE_ROUTES = [
     breadcrumbs: [
       { name: "Home", href: "/" },
       { name: "Privacy Policy" },
-    ],
-  },
-  {
-    pathname: "/areas-we-serve",
-    file: "src/pages/areas-we-serve.js",
-    kind: "static",
-    eyebrow: "Areas",
-    replaceLinks: { "/seo/wainfleet": "/seo" },
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Areas We Serve" },
     ],
   },
   {
@@ -619,45 +627,12 @@ const BESPOKE_ROUTES = [
     ],
   },
   {
-    pathname: "/kd-florist",
-    file: "src/pages/kd-florist.js",
-    kind: "case-study",
-    eyebrow: "Case study",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Work", href: "/work" },
-      { name: "KD Flowers" },
-    ],
-  },
-  {
-    pathname: "/tree-reports",
-    file: "src/pages/tree-reports.js",
-    kind: "case-study",
-    eyebrow: "Case study",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Work", href: "/work" },
-      { name: "TreeReports" },
-    ],
-  },
-  {
-    pathname: "/effective-web-design-steps",
-    file: "src/pages/effective-web-design-steps.js",
-    kind: "article",
-    eyebrow: "Guide",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Effective Web Design Steps" },
-    ],
-  },
-  {
     pathname: "/website-conversion-optimization",
     file: "src/pages/website-conversion-optimization.js",
     kind: "service",
     eyebrow: "Services",
     breadcrumbs: [
       { name: "Home", href: "/" },
-      { name: "Services", href: "/services" },
       { name: "Website Conversion Rate Optimization" },
     ],
   },

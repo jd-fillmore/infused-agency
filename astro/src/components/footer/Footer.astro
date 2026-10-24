@@ -1,18 +1,9 @@
 ---
 import Icon from "../ui/Icon.astro";
 import { siteFacts } from "../../lib/site";
+import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
 
-const cities = [
-  { name: "Beamsville", href: "/seo/beamsville" },
-  { name: "Crystal Beach", href: "/seo/crystal-beach" },
-  { name: "Fonthill", href: "/seo/fonthill" },
-  { name: "Fort Erie", href: "/seo/fort-erie" },
-  { name: "Grimsby", href: "/seo/grimsby" },
-  { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
-  { name: "Port Colborne", href: "/seo/port-colborne" },
-  { name: "Thorold", href: "/seo/thorold" },
-  { name: "Welland", href: "/seo/welland" },
-];
+const cities = NIAGARA_CITY_LINKS;
 
 const company = [
   { name: "Results", href: "/results" },
@@ -28,13 +19,11 @@ const socials = siteFacts.socialProfiles
     icon: profile.platform.toLowerCase(),
   }));
 
-const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
-const showLocalPages = !["/about", "/web-design"].includes(pathname);
 ---
 
 <footer class="site-footer">
   <div class="container">
-    <div class:list={["site-footer__inner", { "site-footer__inner--compact": !showLocalPages }]}>
+    <div class="site-footer__inner">
       <div class="site-footer__brand">
         <a class="brand" href="/" aria-label="Infused Agency home">
           infused<span>.</span>
@@ -63,20 +52,15 @@ const showLocalPages = !["/about", "/web-design"].includes(pathname);
           <li><a href="/seo">SEO</a></li>
           <li><a href="/ai-search">AI Search</a></li>
           <li><a href="/web-design">Web Design</a></li>
-          <li><a href="/services">All services</a></li>
         </ul>
       </div>
 
-      {
-        showLocalPages && (
-          <div>
-            <h2>Local SEO pages</h2>
-            <ul class="footer-list">
-              {cities.map((city) => <li><a href={city.href}>{city.name}</a></li>)}
-            </ul>
-          </div>
-        )
-      }
+      <div>
+        <h2>Local SEO pages</h2>
+        <ul class="footer-list footer-list--cities">
+          {cities.map((city) => <li><a href={city.href}>{city.name}</a></li>)}
+        </ul>
+      </div>
 
       <div>
         <h2>Company</h2>

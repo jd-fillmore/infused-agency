@@ -61,8 +61,11 @@
   --gradient-gold: linear-gradient(120deg, #f0dfab 0%, #e2c044 46%, #c89c22 100%);
 
   /* Typography ----------------------------------------------------------- */
-  --font-sans: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --font-display: "Poppins", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Inter carries headings and display numerals; Manrope carries body copy,
+     navigation, buttons, forms, cards and footer text. The fallbacks keep the
+     site readable if the Google Fonts request fails. */
+  --font-sans: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;

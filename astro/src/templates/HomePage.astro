@@ -72,8 +72,6 @@ const industryCards = [
 
 const webDesignServices = [
   { title: "Web Design", href: "/web-design", description: "Fast, lead-generating websites." },
-  { title: "eCommerce Web Design", href: "/web-design/ecommerce-web-design", description: "Online stores built to sell." },
-  { title: "Shopify Web Design", href: "/web-design/shopify-web-design", description: "Shopify storefronts designed for growth." },
 ];
 
 const aiTerms = [
@@ -162,6 +160,10 @@ const featuredResult = proofResults[0];
           <div class="hero-report__bars" aria-hidden="true">
             <span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
+          <p class="hero-report__ai">
+            <Icon name="spark" />
+            <span>Also tracked in AI search answers</span>
+          </p>
           <div class="hero-report__foot">
             <div>
               <strong>{featuredResult.name}</strong>
@@ -219,12 +221,6 @@ const featuredResult = proofResults[0];
 >
   <div class="chapter-services__grid reveal-group">
     {services.map((service, index) => <ServiceCard {...service} featured={index === 0} />)}
-  </div>
-  <div class="prose-links" style="margin-top: 2rem;">
-    <a class="link-arrow" href="/services">
-      Explore all services
-      <Icon name="arrow-right" />
-    </a>
   </div>
 </Section>
 
@@ -416,10 +412,9 @@ const featuredResult = proofResults[0];
     <div class="reveal">
       <p class="prose">
         We design and build fast, lead-generating websites for businesses across
-        Canada and the United States. That includes <a href="/web-design">web design</a>,
-        <a href="/web-design/ecommerce-web-design">eCommerce web design</a> and
-        <a href="/web-design/shopify-web-design">Shopify web design</a> for stores
-        that need to sell online.
+        Canada and the United States. Every build pairs clear messaging with
+        search-aware structure and conversion paths that turn visitors into
+        enquiries.
       </p>
       <div class="prose-links" style="margin-top: 1.75rem;">
         <a class="link-arrow" href="/web-design">

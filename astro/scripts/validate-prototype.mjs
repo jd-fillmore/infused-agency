@@ -5,7 +5,7 @@
  * Checks the generated static build for the things that can be verified
  * without a browser: document metadata, canonical URLs, a single H1, JSON-LD
  * parsing and node types, internal links, local assets, self-hosted scripts,
- * analytics absence, and the known deleted-city links.
+ * analytics absence, and retired-route links.
  *
  * It does not test rendering, Lighthouse, or live-host behaviour.
  */
@@ -267,11 +267,6 @@ function run() {
 
       if (internal.length > 1 && internal.endsWith("/")) {
         error(rel, `internal link uses a trailing slash: ${href}`);
-      }
-
-      if (internal === "/seo/st-catharines" || internal === "/seo/niagara-falls") {
-        error(rel, `link to a deleted city page: ${internal}`);
-        continue;
       }
 
       const retired = getRetiredRoute(internal);
