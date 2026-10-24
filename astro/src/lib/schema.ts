@@ -81,6 +81,7 @@ export function serviceNode(input: {
   name: string;
   description: string;
   serviceType?: string;
+  areaServed?: Array<Record<string, unknown>>;
 }): JsonLdNode {
   const url = `${SITE}${input.url}`;
   return {
@@ -91,10 +92,12 @@ export function serviceNode(input: {
     serviceType: input.serviceType ?? input.name,
     url,
     provider: { "@id": ORGANIZATION_ID },
-    areaServed: siteFacts.serviceArea.map((city) => ({
-      "@type": "City",
-      name: city,
-    })),
+    areaServed:
+      input.areaServed ??
+      siteFacts.serviceArea.map((city) => ({
+        "@type": "City",
+        name: city,
+      })),
   };
 }
 

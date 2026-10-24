@@ -135,7 +135,7 @@
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --duration-micro: 150ms;
   --duration-control: 240ms;
-  --duration-card: 340ms;
+  --duration-card: 280ms;
   --duration-reveal: 760ms;
 
   /* Layering ------------------------------------------------------------- */

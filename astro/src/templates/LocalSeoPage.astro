@@ -58,20 +58,20 @@ const { data } = Astro.props;
     { name: data.city },
   ]}
   eyebrow="Local SEO"
-  ctaLabel="Get a free quote"
+  ctaLabel="Get a Free Quote"
 >
   <Fragment slot="aside">
-    <h2>Free local visibility review</h2>
+    <h2>Start with a free quote</h2>
     <p>
-      See how your business appears in local search, the map pack and AI answers,
-      and what to fix first.
+      Tell us about your business and we will review how you appear in local
+      search, the map pack and AI answers, then send a written quote.
     </p>
     <ul class="page-hero__aside-list">
       <li><Icon name="check" /> Google Business Profile check</li>
       <li><Icon name="check" /> Local competitor scan</li>
       <li><Icon name="check" /> Written, no-obligation quote</li>
     </ul>
-    <Button href="/get-a-quote" variant="gold" block arrow>Book a free consultation</Button>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
   </Fragment>
 </PageHero>
 
@@ -209,7 +209,7 @@ const { data } = Astro.props;
           {data.whyChoose.closingParagraphs?.map((paragraph) => <p>{paragraph}</p>)}
         </div>
         <div style="margin-top: 1.5rem;">
-          <Button href="/get-a-quote" size="lg" arrow>Book a free consultation</Button>
+          <Button href="/get-a-quote" size="lg" arrow>Get a Free Quote</Button>
         </div>
       </div>
     )
@@ -236,8 +236,8 @@ const { data } = Astro.props;
 </Section>
 
 <CtaBand
-  eyebrow="Free consultation"
+  eyebrow="Free quote"
   heading={`Win the ${data.city} search`}
-  description="Book a free consultation and we will map what it takes to get your business found locally."
-  ctaLabel="Get a free quote"
+  description="Request a free quote and we will map what it takes to get your business found locally."
+  ctaLabel="Get a Free Quote"
 />

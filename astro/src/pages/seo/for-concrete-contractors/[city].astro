@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ConcreteCityPage from "../../../templates/ConcreteCityPage.astro";
+import { getNicheCityPage, getNicheCityPages } from "../../../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../../lib/schema";
+
+export function getStaticPaths() {
+  return getNicheCityPages().map((page) => ({
+    params: { city: page.city.slug },
+    props: { pathname: page.urlPath },
+  }));
+}
+
+interface Props {
+  pathname: string;
+}
+
+const { pathname } = Astro.props;
+const data = getNicheCityPage(pathname);
+
+if (!data) {
+  throw new Error(`Missing concrete city page data for ${pathname}`);
+}
+
+const faqs = data.content.faqs.map((faq: { q: string; a: string }) => ({
+  q: faq.q,
+  a: faq.a,
+}));
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: data.content.seo.title,
+    description: data.content.seo.description,
+  }),
+  breadcrumbNode(data.breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: `SEO for ${data.niche.name} in ${data.city.name}`,
+    description: data.content.seo.description,
+    serviceType: "Search engine optimization",
+    areaServed: [
+      { "@type": "City", name: data.city.name },
+      { "@type": "Country", name: "Canada" },
+    ],
+  }),
+  ...(faqs.length ? [faqPageNode(pathname, faqs)] : []),
+];
+---
+
+<BaseLayout
+  title={data.content.seo.title}
+  description={data.content.seo.description}
+  canonical={pathname}
+  jsonLd={jsonLd}
+>
+  <ConcreteCityPage data={data} />
+</BaseLayout>

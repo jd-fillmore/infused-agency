@@ -19,6 +19,7 @@ interface Props {
   type?: "website" | "article";
   geo?: boolean;
   image?: string;
+  imageAlt?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
@@ -31,6 +32,7 @@ const {
   type,
   geo,
   image,
+  imageAlt,
   jsonLd,
 } = Astro.props;
 ---
@@ -50,6 +52,7 @@ const {
       type={type}
       geo={geo}
       image={image}
+      imageAlt={imageAlt}
     />
     {jsonLd && <JsonLd data={jsonLd} />}
   </head>

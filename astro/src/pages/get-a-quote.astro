@@ -8,9 +8,12 @@ import Section from "../components/ui/Section.astro";
 import { CALENDLY_URL, siteFacts } from "../lib/site";
 import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
 
-const title = "Infused Agency | Get A Custom Quote";
+const title = "Get a Free Quote | Infused Agency";
 const description =
   "Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!";
+
+const telHref = `tel:+1${siteFacts.phone.replace(/\D/g, "")}`;
+const emailHref = `mailto:${siteFacts.email}?subject=${encodeURIComponent("Free quote request")}`;
 
 const jsonLd = [
   ...baseGraph(),
@@ -39,11 +42,11 @@ const jsonLd = [
       <h2>Prefer to talk it through?</h2>
       <p>Call or email and we will tell you whether a project is the right fit.</p>
       <ul class="page-hero__aside-list">
-        <li><Icon name="phone" /> {siteFacts.phone}</li>
-        <li><Icon name="mail" /> {siteFacts.email}</li>
+        <li><Icon name="phone" /> <a href={telHref}>{siteFacts.phone}</a></li>
+        <li><Icon name="mail" /> <a href={emailHref}>{siteFacts.email}</a></li>
         <li><Icon name="map-pin" /> {siteFacts.address.addressLocality}, {siteFacts.address.addressRegion}</li>
       </ul>
-      <Button href={`mailto:${siteFacts.email}`} variant="gold" block arrow>Email the team</Button>
+      <Button href={emailHref} variant="gold" block arrow>Email the team</Button>
     </Fragment>
   </PageHero>
 
@@ -104,7 +107,7 @@ const jsonLd = [
         </ul>
         <p style="margin-top: 1rem;">
           Prefer email? Write to
-          <a href={`mailto:${siteFacts.email}`}>{siteFacts.email}</a>.
+          <a href={emailHref}>{siteFacts.email}</a>.
         </p>
         <div style="margin-top: 1.25rem;">
           <Button href={CALENDLY_URL} variant="secondary" arrow external>Book a consultation</Button>
@@ -116,6 +119,8 @@ const jsonLd = [
   <CtaBand
     heading="Ready to Grow Your Business?"
     description="Book a free, no-obligation consultation and we'll map out where your next customers come from."
-    ctaLabel="Get Free Quote"
+    ctaLabel="Book a consultation"
+    ctaHref={CALENDLY_URL}
+    ctaExternal
   />
 </BaseLayout>

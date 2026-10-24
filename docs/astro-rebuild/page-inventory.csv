@@ -1,6 +1,5 @@
 url,template,source_file,data_source,in_sitemap,status,title,h1
-"/","home","src/pages/index.js","src/pages/index.js (inline content)","true","200","Niagara SEO, AI Search & Web Design | Infused Agency","SEO, AI Search & Web Design for Niagara Businesses"
-"/404","error","src/pages/404.js","src/pages/404.js (inline content)","false","404","404 - Infused","404 Error"
+"/","home","src/pages/index.js","src/pages/index.js (inline content)","true","200","SEO, AI Search & Web Design Agency | Infused","Get Found. Get Chosen. Grow Your Business.""/404","error","src/pages/404.js","src/pages/404.js (inline content)","false","404","404 - Infused","404 Error"
 "/500","error","Next.js default 500 page (no src/pages/500.js)","Next.js default 500 page (no src/pages/500.js) (inline content)","false","404","404 - Infused","404 Error"
 "/about","static","src/pages/about.js","src/pages/about.js (inline content)","true","200","Infused Agency | About Our Company","About Infused Agency"
 "/ai-search","service-page","src/pages/ai-search.js","data/services/content/ai-search.json","true","200","AI Search (GEO, AEO & LLM SEO) | Infused Agency","AI Search"
@@ -26,6 +25,7 @@ url,template,source_file,data_source,in_sitemap,status,title,h1
 "/general-contractor-seo/ontario","vertical-seo","src/pages/[vertical]/[province].js","data/vertical-seo/content/verticals/general-contractors/ontario.json","true","200","Contractor SEO in Ontario | Infused Agency","Contractor SEO in Ontario"
 "/general-contractor-seo/quebec","vertical-seo","src/pages/[vertical]/[province].js","data/vertical-seo/content/verticals/general-contractors/quebec.json","true","200","Contractor SEO in Quebec | Infused Agency","Contractor SEO in Quebec"
 "/general-contractor-seo/saskatchewan","vertical-seo","src/pages/[vertical]/[province].js","data/vertical-seo/content/verticals/general-contractors/saskatchewan.json","true","200","Contractor SEO in Saskatchewan | Infused Agency","Contractor SEO in Saskatchewan"
+"/general-contractor-seo/prince-edward-island","vertical-seo","src/pages/[vertical]/[province].js","data/vertical-seo/content/verticals/general-contractors/prince-edward-island.json","true","200","Contractor SEO in Prince Edward Island | Infused Agency","Contractor SEO in Prince Edward Island"
 "/get-a-quote","static","src/pages/get-a-quote.js","src/pages/get-a-quote.js (inline content)","true","200","Infused Agency | Get A Custom Quote","Get Your Free Quote"
 "/get-started","static","src/pages/get-started.js","src/pages/get-started.js (inline content)","true","200","Get Started - Infused","Get Started"
 "/industries","industries-hub","src/pages/industries.js","src/lib/niagaraIndustries.js","true","200","SEO by Industry | Infused Agency","SEO by industry"

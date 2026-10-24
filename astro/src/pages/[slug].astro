@@ -1,0 +1,21 @@
+---
+import BespokeRoute from "../components/routes/BespokeRoute.astro";
+import { getBespokePages } from "../lib/legacy-pages.mjs";
+
+export function getStaticPaths() {
+  return getBespokePages()
+    .filter(
+      (page) =>
+        page.pathname.split("/").filter(Boolean).length === 1 &&
+        page.kind !== "web-design"
+    )
+    .map((page) => ({
+      params: { slug: page.pathname.replace(/^\//, "") },
+      props: { pathname: page.pathname },
+    }));
+}
+
+const { pathname } = Astro.props;
+---
+
+<BespokeRoute pathname={pathname} />

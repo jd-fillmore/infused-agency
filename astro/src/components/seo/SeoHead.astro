@@ -10,6 +10,7 @@ interface Props {
   type?: "website" | "article";
   geo?: boolean;
   image?: string;
+  imageAlt?: string;
 }
 
 const {
@@ -21,7 +22,10 @@ const {
   type = "website",
   geo = false,
   image,
+  imageAlt = "Infused Agency — SEO, AI search and web design in Niagara",
 } = Astro.props;
+
+const DEFAULT_OG_IMAGE = "/img/og-infused.jpg";
 
 const canonicalUrl =
   canonical === null
@@ -38,14 +42,14 @@ const ogImage = image
   ? image.startsWith("http")
     ? image
     : `${SITE}${image}`
-  : undefined;
+  : `${SITE}${DEFAULT_OG_IMAGE}`;
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
 {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 <meta name="robots" content={robotsContent} />
-<meta name="theme-color" content="#f6f7fb" />
+<meta name="theme-color" content="#08152b" />
 <meta name="color-scheme" content="light" />
 
 <meta property="og:site_name" content={SITE_NAME} />
@@ -54,12 +58,14 @@ const ogImage = image
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
-{ogImage && <meta property="og:image" content={ogImage} />}
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:alt" content={imageAlt} />
 
-<meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-{ogImage && <meta name="twitter:image" content={ogImage} />}
+<meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={imageAlt} />
 
 {
   geo && (

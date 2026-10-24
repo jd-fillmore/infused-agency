@@ -1,0 +1,161 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+
+interface ServiceContent {
+  directAnswer: string;
+  intro: string;
+  forWho: string;
+  summary?: string;
+  process: Array<{ title: string; text: string }>;
+  deliverables: string[];
+  metrics: string[];
+  sections: Array<{ heading: string; paragraphs: string[] }>;
+  faqs: Array<{ q: string; a: string }>;
+}
+
+interface Props {
+  data: {
+    h1: string;
+    title: string;
+    summary: string;
+    content: ServiceContent;
+    breadcrumbs: Array<{ name: string; href?: string }>;
+    proof: Array<{
+      id: string;
+      namedEntity?: string;
+      metric?: string;
+      quote?: string;
+      person?: string;
+    }>;
+    related: Array<{ href: string; label: string; internal?: boolean }>;
+    industries: Array<{ href: string; label: string; internal?: boolean }>;
+    relatedSectionTitle: string;
+    industrySectionTitle: string;
+  };
+}
+
+const { data } = Astro.props;
+const content = data.content;
+---
+
+<PageHero
+  title={data.h1}
+  description={content.directAnswer}
+  breadcrumbs={data.breadcrumbs}
+  eyebrow="Services"
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <h2>Start with a free quote</h2>
+    <p>
+      Tell us what you sell and where you want to grow. We will review the
+      opportunity and send a written quote with a clear scope.
+    </p>
+    <ul class="page-hero__aside-list">
+      <li><Icon name="check" /> Website and search review</li>
+      <li><Icon name="check" /> Practical scope and priorities</li>
+      <li><Icon name="check" /> A clear written quote</li>
+    </ul>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+  </Fragment>
+</PageHero>
+
+<Section>
+  <div class="split split--top">
+    <div class="reveal">
+      <p class="eyebrow"><span class="eyebrow__index">01</span> What it is</p>
+      <h2 class="h2" style="margin-top: 1rem;">{data.h1}</h2>
+      <div class="prose" style="margin-top: 1.25rem;">
+        <p>{content.intro}</p>
+      </div>
+    </div>
+    <aside class="callout reveal">
+      <h3>Who it&rsquo;s for</h3>
+      <p>{content.forWho}</p>
+      <Button href="/get-a-quote" arrow>Get a Free Quote</Button>
+    </aside>
+  </div>
+</Section>
+
+<Section tone="contrast" eyebrow="Process" index="02" heading="What we do" description="The repeatable process we run to grow search visibility and leads.">
+  <div class="grid grid--3 reveal-group">
+    {content.process.map((step, index) => (
+      <Card class="card--dark">
+        <span class="service-card__number">{String(index + 1).padStart(2, "0")}</span>
+        <h3 class="card__title">{step.title}</h3>
+        <p class="card__text">{step.text}</p>
+      </Card>
+    ))}
+  </div>
+</Section>
+
+<Section tone="tint" eyebrow="Deliverables" index="03" heading="What you get">
+  <ul class="check-list">
+    {content.deliverables.map((item) => <li>{item}</li>)}
+  </ul>
+</Section>
+
+<Section eyebrow="Measurement" index="04" heading="How we measure results">
+  <ul class="check-list">
+    {content.metrics.map((item) => <li>{item}</li>)}
+  </ul>
+</Section>
+
+{
+  content.sections.map((section, index) => (
+    <Section eyebrow="Detail" index={String(index + 5).padStart(2, "0")} heading={section.heading}>
+      <div class="prose reveal">
+        {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </Section>
+  ))
+}
+
+{
+  data.proof.length > 0 && (
+    <Section tone="contrast" eyebrow="Proof" heading="Proof from our work">
+      <div class="grid grid--2 reveal-group">
+        {data.proof.map((item) => (
+          <Card class="card--dark">
+            <h3 class="card__title">{item.namedEntity}</h3>
+            {item.metric && <p class="proof-stat__value">{item.metric}</p>}
+            {item.quote && <p class="card__text">&ldquo;{item.quote}&rdquo;</p>}
+            {item.person && <p class="card__meta">{item.person}</p>}
+          </Card>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+<Section eyebrow="Related" heading={data.relatedSectionTitle}>
+  <ul class="chip-list">
+    {data.related.map((link) => (
+      <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+    ))}
+    {data.industries.map((link) => (
+      <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+    ))}
+  </ul>
+</Section>
+
+{
+  content.faqs && content.faqs.length > 0 && (
+    <Section tone="warm" eyebrow="Questions" heading="Frequently asked questions">
+      <Accordion items={content.faqs} />
+    </Section>
+  )
+}
+
+<CtaBand
+  eyebrow="Free quote"
+  heading="A clear quote for the work that moves the needle"
+  description="Tell us where the business is today and where you want it to be. We will send a free, no-obligation quote."
+  ctaLabel="Get a Free Quote"
+/>

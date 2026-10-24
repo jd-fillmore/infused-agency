@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import ServiceCard from "../components/ui/ServiceCard.astro";
+import Button from "../components/ui/Button.astro";
+import { getServicesData } from "../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/services";
+const title = "Infused Agency | Online Marketing Solutions";
+const description =
+  "Boost your business with our digital marketing, SEO and web design services today. Get a free quote!";
+const { groups } = getServicesData();
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Services" },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: title,
+    description,
+    type: "CollectionPage",
+  }),
+  breadcrumbNode(breadcrumbs, pathname),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="Our Services"
+    description="Online marketing services for businesses that want to add credibility and grow their revenue."
+    eyebrow="Services"
+    breadcrumbs={breadcrumbs}
+    ctaLabel="Get a Free Quote"
+  />
+
+  <Section>
+    <div class="prose reveal" style="max-width: 52rem;">
+      <p>
+        At Infused Agency, we help businesses in Niagara grow by improving
+        their online presence. Whether you need your website to show up on
+        Google or want a design that brings in more customers, we are here to
+        help. Our services include <a href="/seo">Niagara SEO</a> to boost your
+        rankings, and lead-generating web design that turns visitors into
+        customers.
+      </p>
+    </div>
+  </Section>
+
+  {
+    groups.map((group: any, groupIndex: number) => (
+      <Section
+        tone={groupIndex % 2 === 1 ? "tint" : "base"}
+        eyebrow="Services"
+        index={String(groupIndex + 1).padStart(2, "0")}
+        heading={group.title}
+      >
+        <div class="grid grid--3 reveal-group">
+          {group.services.map((service: any) => (
+            <ServiceCard
+              href={service.url}
+              title={service.name}
+              description={service.summary}
+            />
+          ))}
+        </div>
+      </Section>
+    ))
+  }
+
+  <Section tone="contrast" eyebrow="Industries" heading="SEO by industry">
+    <p class="prose" style="color: var(--color-contrast-muted); max-width: 46rem;">
+      Industry-specific programmes with published province and city coverage.
+    </p>
+    <ul class="chip-list" style="margin-top: 1.75rem;">
+      <li>
+        <a class="chip" href="/therapist-seo">
+          SEO for Therapists in Canada
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/general-contractor-seo">
+          SEO for General Contractors in Canada
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+    </ul>
+    <div style="margin-top: 1.75rem;">
+      <Button href="/industries" variant="gold" arrow>Browse all industries</Button>
+    </div>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="A clear quote for the work that moves the needle"
+    description="Tell us where the business is today and where you want it to be. We will send a free, no-obligation quote."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

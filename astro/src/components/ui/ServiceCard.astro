@@ -36,12 +36,23 @@ const { title, description, href, number, linkLabel = "Learn more", featured = f
     text-decoration: none;
   }
 
-  .service-card__title a:hover {
+  .service-card__title a:focus-visible {
     color: var(--color-accent);
     text-decoration: none;
   }
 
-  .service-card--featured .service-card__title a:hover {
+  .service-card--featured .service-card__title a:focus-visible {
     color: var(--color-gold-bright);
+  }
+
+  @media (hover: hover) {
+    .service-card__title a:hover {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .service-card--featured .service-card__title a:hover {
+      color: var(--color-gold-bright);
+    }
   }
 </style>

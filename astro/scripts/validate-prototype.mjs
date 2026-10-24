@@ -19,6 +19,7 @@ const repoRoot = path.resolve(__dirname, "..", "..");
 const distDir = path.resolve(repoRoot, "astro", "dist");
 const manifestPath = path.resolve(repoRoot, "docs", "astro-rebuild", "route-manifest.csv");
 const SITE = "https://infused.agency";
+const DEFAULT_OG_IMAGE = "/img/og-infused.jpg";
 
 const errors = [];
 const warnings = [];
@@ -124,6 +125,10 @@ function run() {
   const htmlFiles = walk(distDir).filter((file) => file.endsWith(".html"));
   if (htmlFiles.length === 0) throw new Error("The build contains no HTML files.");
 
+  if (!fs.existsSync(path.join(distDir, DEFAULT_OG_IMAGE.replace(/^\//, "")))) {
+    error("dist", `missing default social image ${DEFAULT_OG_IMAGE}`);
+  }
+
   const htmlRoutes = new Set(htmlFiles.map(routeForFile));
   const notMigrated = new Set();
 
@@ -166,6 +171,28 @@ function run() {
     // Open Graph.
     for (const property of ["og:title", "og:description", "og:type", "og:locale"]) {
       if (!html.includes(`property="${property}"`)) error(rel, `missing ${property}`);
+    }
+
+    const ogImage = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1];
+    if (!ogImage) {
+      error(rel, "missing og:image");
+    } else if (!ogImage.startsWith(`${SITE}/`)) {
+      error(rel, `og:image is not absolute: ${ogImage}`);
+    } else {
+      const imagePath = new URL(ogImage).pathname.replace(/^\//, "");
+      if (!fs.existsSync(path.join(distDir, imagePath))) {
+        error(rel, `og:image file is missing: ${ogImage}`);
+      }
+    }
+
+    if (!/<meta property="og:image:alt" content="[^"]+"/.test(html)) {
+      error(rel, "missing og:image:alt");
+    }
+    if (!/<meta name="twitter:card" content="summary_large_image"/.test(html)) {
+      error(rel, "missing summary_large_image Twitter card");
+    }
+    if (!/<meta name="twitter:image" content="[^"]+"/.test(html)) {
+      error(rel, "missing twitter:image");
     }
 
     // JSON-LD.
@@ -249,6 +276,55 @@ function run() {
     }
 
     if (!isNoindex) info.push(`${route} — ${title}`);
+  }
+
+  // Sitemap and robots.
+  const sitemapFile = path.join(distDir, "sitemap.xml");
+  if (!fs.existsSync(sitemapFile)) {
+    error("dist", "missing sitemap.xml");
+  } else {
+    const sitemap = fs.readFileSync(sitemapFile, "utf8");
+    if (!sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
+      error("sitemap.xml", "missing XML declaration");
+    }
+    const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+    if (locs.length === 0) error("sitemap.xml", "contains no URLs");
+    if (new Set(locs).size !== locs.length) error("sitemap.xml", "contains duplicate URLs");
+
+    const sitemapRoutes = new Set();
+    for (const loc of locs) {
+      if (!loc.startsWith(`${SITE}/`) && loc !== SITE) {
+        error("sitemap.xml", `non-canonical URL: ${loc}`);
+        continue;
+      }
+      const route = new URL(loc).pathname;
+      if (route.length > 1 && route.endsWith("/")) {
+        error("sitemap.xml", `trailing-slash URL: ${loc}`);
+      }
+      if (NOINDEX_ROUTES.has(route)) {
+        error("sitemap.xml", `noindex route included: ${route}`);
+      }
+      if (!builtRouteExists(route, htmlRoutes)) {
+        error("sitemap.xml", `URL is not a built route: ${route}`);
+      }
+      sitemapRoutes.add(route);
+    }
+
+    for (const route of htmlRoutes) {
+      if (!NOINDEX_ROUTES.has(route) && !sitemapRoutes.has(route)) {
+        error("sitemap.xml", `indexable route missing from sitemap: ${route}`);
+      }
+    }
+  }
+
+  const robotsFile = path.join(distDir, "robots.txt");
+  if (!fs.existsSync(robotsFile)) {
+    error("dist", "missing robots.txt");
+  } else {
+    const robots = fs.readFileSync(robotsFile, "utf8");
+    if (!robots.includes(`Sitemap: ${SITE}/sitemap.xml`)) {
+      error("robots.txt", "missing canonical sitemap declaration");
+    }
   }
 
   // CSS-referenced font assets.

@@ -1,0 +1,258 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+
+interface Props {
+  page: any;
+}
+
+const { page } = Astro.props;
+const { content, vertical, province, city, geo } = page;
+const isCity = page.kind === "city";
+const isProvince = page.kind === "province";
+const isHub = page.kind === "pillar" || page.kind === "country";
+const publishedProvinces = (page.provincesIndex ?? []).filter(
+  (entry: { published: boolean }) => entry.published
+);
+const publishedCities = (page.citiesIndex ?? []).filter(
+  (entry: { published: boolean }) => entry.published
+);
+const checklist: string[] = content.localChecklist ?? [];
+const faqs = content.faqs ?? [];
+---
+
+<PageHero
+  title={page.h1}
+  description={content.directAnswer}
+  breadcrumbs={page.breadcrumbs}
+  eyebrow={isCity ? "Local SEO" : isProvince ? province?.name ?? "Canada" : "Industry SEO"}
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <h2>Start with a free quote</h2>
+    <p>
+      Tell us about your business and the searches that matter. We will review
+      your website, profile and local visibility, then send a written quote.
+    </p>
+    <ul class="page-hero__aside-list">
+      <li><Icon name="check" /> Website and content review</li>
+      <li><Icon name="check" /> Local search opportunity map</li>
+      <li><Icon name="check" /> A clear written quote</li>
+    </ul>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+  </Fragment>
+</PageHero>
+
+{
+  content.intro && (
+    <Section>
+      <div class="split split--top">
+        <div class="reveal">
+          <p class="eyebrow"><span class="eyebrow__index">01</span> The opportunity</p>
+          <h2 class="h2" style="margin-top: 1rem;">
+            {isCity ? `SEO for ${vertical.plural} in ${city.name}` : `SEO for ${vertical.plural} in ${province?.name ?? "Canada"}`}
+          </h2>
+          <div class="prose" style="margin-top: 1.25rem;">
+            <p>{content.intro}</p>
+          </div>
+        </div>
+        {
+          checklist.length > 0 && (
+            <aside class="card reveal">
+              <p class="eyebrow"><span class="eyebrow__index">02</span> Focus</p>
+              <h3 class="card__title">What we focus on</h3>
+              <ul class="check-list" style="margin-top: 1rem;">
+                {checklist.map((item: string) => <li>{item}</li>)}
+              </ul>
+            </aside>
+          )
+        }
+      </div>
+    </Section>
+  )
+}
+
+{
+  content.localInsight && (
+    <Section tone="contrast" eyebrow="The market" index="03" heading={isCity ? `How ${vertical.singular} SEO works in ${city.name}` : `The Canadian market`}>
+      <p class="prose" style="color: var(--color-contrast-muted);">{content.localInsight}</p>
+    </Section>
+  )
+}
+
+{
+  isHub && publishedProvinces.length > 0 && (
+    <Section eyebrow="Across Canada" index="04" heading={`${vertical.displayName} SEO by province`}>
+      <div class="grid grid--3 reveal-group">
+        {publishedProvinces.map((entry: { href: string; name: string; abbr: string; publishedCityCount: number }) => (
+          <Card interactive>
+            <span class="badge">{entry.abbr}</span>
+            <h3 class="card__title" style="margin-top: 0.9rem;">
+              <a class="province-link" href={entry.href}>
+                <span>{entry.name}</span>
+                <Icon name="arrow-right" />
+              </a>
+            </h3>
+            <p class="card__text">
+              {entry.publishedCityCount > 0
+                ? `${entry.publishedCityCount} ${entry.publishedCityCount === 1 ? "city" : "cities"} covered`
+                : "Province-wide coverage"}
+            </p>
+          </Card>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+{
+  isProvince && (
+    <>
+      {geo?.provinceSearchNotes && (
+        <Section eyebrow="Local search" index="04" heading={`How ${vertical.singular} SEO works in ${province?.name}`}>
+          <p class="prose">{geo.provinceSearchNotes}</p>
+        </Section>
+      )}
+      {publishedCities.length > 0 && (
+        <Section tone="tint" eyebrow="Cities" index="05" heading={`${vertical.singular} SEO in ${province?.name} cities`}>
+          <div class="grid grid--3 reveal-group">
+            {publishedCities.map((entry: { href: string; name: string }) => (
+              <a class="card card--interactive card--link" href={entry.href}>
+                <span class="card__title">{vertical.singular} SEO in {entry.name}</span>
+                <Icon name="arrow-right" />
+              </a>
+            ))}
+          </div>
+        </Section>
+      )}
+    </>
+  )
+}
+
+{
+  isCity && (
+    <>
+      {city.neighbourhoods?.length && (
+        <Section eyebrow="Neighbourhoods" index="04" heading="Areas we cover">
+          <ul class="chip-list">
+            {city.neighbourhoods.map((name: string) => <li><span class="chip">{name}</span></li>)}
+          </ul>
+        </Section>
+      )}
+      <Section eyebrow="Location" index="05" heading={`${city.name}, ${province?.name}`}>
+        <figure class="map-frame">
+          <iframe
+            title={`Map of ${city.name}, ${province?.name}`}
+            src={`https://maps.google.com/maps?q=${encodeURIComponent(`${city.name}, ${province?.name}`)}&z=11&output=embed`}
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </figure>
+        {city.majorIndustries?.length && (
+          <p class="prose" style="margin-top: 1.5rem;">
+            {city.name}&rsquo;s local economy leans on {city.majorIndustries.join(", ")}.
+          </p>
+        )}
+      </Section>
+    </>
+  )
+}
+
+{
+  vertical.serviceEmphasis?.length > 0 && (
+    <Section tone="tint" eyebrow="Services" index="06" heading={`What we do for ${isCity ? `${city.name} practices` : `${vertical.displayName.toLowerCase()}`}`}>
+      <div class="grid grid--3 reveal-group">
+        {vertical.serviceEmphasis.map((item: string) => (
+          <Card>
+            <span class="card__icon"><Icon name="target" /></span>
+            <p class="card__text">{item}</p>
+          </Card>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+{
+  page.regulationRows?.length > 0 && (
+    <Section eyebrow="Regulation" index="07" heading="Provincial regulation landscape">
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Province</th><th>Regulator</th></tr></thead>
+          <tbody>
+            {page.regulationRows.map((row: { name: string; regulator: string; note?: string }) => (
+              <tr>
+                <td>{row.name}</td>
+                <td>{row.regulator}{row.note ? ` — ${row.note}` : ""}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </Section>
+  )
+}
+
+{
+  page.quebecLanguageNote && (
+    <Section eyebrow="Quebec" index="08" heading="French-language considerations">
+      <p class="prose">{page.quebecLanguageNote}</p>
+    </Section>
+  )
+}
+
+{
+  page.proof?.length > 0 && (
+    <Section tone="contrast" eyebrow="Proof" index="09" heading="Proof from our work">
+      <div class="grid grid--3 reveal-group">
+        {page.proof.map((item: any) => (
+          <Card class="card--dark">
+            {item.rating ? <p class="proof-stars">{"★".repeat(item.rating)}</p> : null}
+            {item.namedEntity && <h3 class="card__title">{item.namedEntity}</h3>}
+            {item.metric && <p class="proof-stat__value">{item.metric}</p>}
+            {item.quote && <p class="card__text">&ldquo;{item.quote}&rdquo;</p>}
+            {item.person && <p class="card__meta">{item.person}</p>}
+          </Card>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+{
+  faqs.length > 0 && (
+    <Section tone="warm" eyebrow="Questions" index="10" heading="Frequently asked questions">
+      <Accordion items={faqs} />
+    </Section>
+  )
+}
+
+{
+  (page.serviceLinks?.length > 0 || page.links?.length > 0 || page.legacyCities?.length > 0) && (
+    <Section eyebrow="Explore" index="11" heading="Related pages">
+      <ul class="chip-list">
+        {page.serviceLinks?.map((link: { href: string; label: string }) => (
+          <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+        ))}
+        {page.links?.map((link: { href: string; label: string }) => (
+          <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+        ))}
+        {page.legacyCities?.map((link: { href: string; label: string }) => (
+          <li><a class="chip" href={link.href}>{link.label}<Icon name="arrow-right" /></a></li>
+        ))}
+      </ul>
+    </Section>
+  )
+}
+
+<CtaBand
+  eyebrow="Free quote"
+  heading={isCity ? `Win the ${city.name} search` : "Grow with local search"}
+  description="Request a free quote and we will review your website, profile and the terms you want to rank for."
+  ctaLabel="Get a Free Quote"
+/>

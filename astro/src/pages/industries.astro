@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { getIndustriesData } from "../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/industries";
+const title = "SEO by Industry | Infused Agency";
+const description =
+  "SEO programmes built for specific industries in the Niagara region and beyond. See the sectors Infused Agency serves and how to get started.";
+const { items, categories } = getIndustriesData();
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Industries" },
+];
+
+const groups = categories
+  .map((category: string) => ({
+    category,
+    items: items.filter((item: any) => item.category === category),
+  }))
+  .filter((group: any) => group.items.length > 0);
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: title,
+    description,
+    type: "CollectionPage",
+  }),
+  breadcrumbNode(breadcrumbs, pathname),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="SEO by industry"
+    description="We build search programmes around how a specific industry actually gets found. Start with the sector closest to your business, then explore the industries we serve across Niagara."
+    eyebrow="Industries"
+    breadcrumbs={breadcrumbs}
+    ctaLabel="Get a Free Quote"
+  />
+
+  <Section
+    eyebrow="Browse"
+    heading="Browse by industry"
+    description="Every card below links to a live programme. Choose the category closest to your business."
+  >
+    <ul class="chip-list">
+      {groups.map((group: any) => (
+        <li><a class="chip" href={`#${group.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{group.category}<Icon name="arrow-right" /></a></li>
+      ))}
+    </ul>
+  </Section>
+
+  {
+    groups.map((group: any, groupIndex: number) => (
+      <Section
+        id={group.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}
+        tone={groupIndex % 2 === 1 ? "tint" : "base"}
+        eyebrow={group.category}
+        index={String(groupIndex + 2).padStart(2, "0")}
+        heading={group.category}
+      >
+        <div class="grid grid--3 reveal-group">
+          {group.items.map((item: any) => (
+            <Card interactive>
+              <span class="badge">{item.category}</span>
+              <h3 class="card__title" style="margin-top: 1rem;">{item.displayName}</h3>
+              <p class="card__text">{item.benefit}</p>
+              <p class="card__meta">
+                <Icon name="map-pin" /> {item.coverage ?? "Niagara region"}
+              </p>
+              <p style="margin-top: 1.25rem;">
+                <a class="link-arrow" href={item.href}>Learn more<Icon name="arrow-right" /></a>
+              </p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+    ))
+  }
+
+  <Section tone="contrast" eyebrow="Not listed?" heading="Don't see your industry?">
+    <p class="prose" style="color: var(--color-contrast-muted); max-width: 46rem;">
+      New industry programmes go live as we publish real content for them. Tell
+      us what you do and we will show you where the opportunity is.
+    </p>
+    <div style="margin-top: 1.75rem;">
+      <Button href="/get-a-quote" variant="gold" arrow>Talk to us</Button>
+    </div>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Find the searches your business should own"
+    description="Request a free quote and we will map the industry terms worth winning in your market."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

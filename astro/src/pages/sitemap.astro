@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { getAllPosts } from "../lib/posts";
+import {
+  getBespokePages,
+  getNicheCityPages,
+  getNiagaraIndustries,
+  getServicesData,
+  getVerticalPages,
+} from "../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/sitemap";
+const title = "Site Map | Infused Agency";
+const description =
+  "Browse every page on the Infused Agency website: services, industries, locations, web design and blog posts.";
+
+const { groups } = getServicesData();
+const industries = getNiagaraIndustries();
+const verticals = getVerticalPages();
+const bespoke = getBespokePages();
+const posts = getAllPosts();
+const concreteCities = getNicheCityPages();
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Site Map" },
+];
+
+const mainPages = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Work", href: "/work" },
+  { name: "Process", href: "/process" },
+  { name: "Areas We Serve", href: "/areas-we-serve" },
+  { name: "Industries", href: "/industries" },
+  { name: "Blog", href: "/blog" },
+  { name: "Get a Free Quote", href: "/get-a-quote" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
+];
+
+const webDesignPages = bespoke.filter((page: any) =>
+  page.pathname === "/web-design" || page.pathname.startsWith("/web-design/")
+);
+
+const servicePages = groups.flatMap((group: any) =>
+  group.services.map((service: any) => ({ name: service.name, href: service.url }))
+);
+
+const verticalPillars = verticals.filter(
+  (page: any) => page.urlPath.split("/").filter(Boolean).length === 1
+);
+const verticalProvinces = verticals.filter(
+  (page: any) => page.urlPath.split("/").filter(Boolean).length === 2
+);
+const verticalCities = verticals.filter(
+  (page: any) => page.urlPath.split("/").filter(Boolean).length === 3
+);
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description, type: "CollectionPage" }),
+  breadcrumbNode(breadcrumbs, pathname),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="Site Map"
+    description="Every live page on infused.agency, grouped by section."
+    eyebrow="Site map"
+    breadcrumbs={breadcrumbs}
+    showCta={false}
+  />
+
+  <Section heading="Main pages">
+    <ul class="chip-list">
+      {mainPages.map((page) => (
+        <li><a class="chip" href={page.href}>{page.name}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section tone="tint" heading="Services">
+    <ul class="chip-list">
+      {servicePages.map((service: any) => (
+        <li><a class="chip" href={service.href}>{service.name}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section heading="Web design">
+    <ul class="chip-list">
+      {webDesignPages.map((page: any) => (
+        <li><a class="chip" href={page.pathname}>{page.h1}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section tone="tint" heading="Industries in Niagara">
+    <ul class="chip-list">
+      {industries.map((industry: any) => (
+        <li><a class="chip" href={industry.href}>SEO for {industry.displayName} in Niagara</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section heading="Vertical SEO">
+    <h3 class="h4">Pillars</h3>
+    <ul class="chip-list">
+      {verticalPillars.map((page: any) => (
+        <li><a class="chip" href={page.urlPath}>{page.h1}</a></li>
+      ))}
+    </ul>
+    <h3 class="h4" style="margin-top: 2rem;">Provinces and states</h3>
+    <ul class="chip-list">
+      {verticalProvinces.map((page: any) => (
+        <li><a class="chip" href={page.urlPath}>{page.h1}</a></li>
+      ))}
+    </ul>
+    <h3 class="h4" style="margin-top: 2rem;">Cities</h3>
+    <ul class="chip-list">
+      {verticalCities.map((page: any) => (
+        <li><a class="chip" href={page.urlPath}>{page.h1}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section tone="tint" heading="Concrete contractors across Canada">
+    <ul class="chip-list">
+      <li><a class="chip" href="/seo/for-concrete-contractors">SEO for Concrete Contractors in Canada</a></li>
+      {concreteCities.map((page: any) => (
+        <li><a class="chip" href={page.urlPath}>{page.content.seo.title}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <Section heading="Case studies and guides">
+    <ul class="chip-list">
+      {bespoke
+        .filter((page: any) => ["case-study", "article"].includes(page.kind))
+        .map((page: any) => (
+          <li><a class="chip" href={page.pathname}>{page.h1}</a></li>
+        ))}
+    </ul>
+  </Section>
+
+  <Section tone="tint" heading="Blog posts">
+    <ul class="chip-list">
+      {posts.map((post) => (
+        <li><a class="chip" href={`/posts/${post.id}`}>{post.title}</a></li>
+      ))}
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Can't find what you need?"
+    description="Tell us what you are looking for and we will point you to the right page or answer directly."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

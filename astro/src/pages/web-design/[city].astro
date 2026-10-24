@@ -1,0 +1,15 @@
+---
+import BespokeRoute from "../../components/routes/BespokeRoute.astro";
+import { WEB_DESIGN_CITIES } from "../../lib/legacy-pages.mjs";
+
+export function getStaticPaths() {
+  return WEB_DESIGN_CITIES.map((city) => ({
+    params: { city: city.slug },
+    props: { pathname: `/web-design/${city.slug}` },
+  }));
+}
+
+const { pathname } = Astro.props;
+---
+
+<BespokeRoute pathname={pathname} />

@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import IndustryPage from "../../templates/IndustryPage.astro";
+import LocalSeoPage from "../../templates/LocalSeoPage.astro";
+import {
+  getCitySeoPage,
+  getCitySeoPages,
+  getIndustryPage,
+  getIndustryPages,
+  NIAGARA_CITY_LINKS,
+} from "../../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+export function getStaticPaths() {
+  const cities = getCitySeoPages().map((page) => ({
+    params: { slug: page.seo.url.replace("/seo/", "") },
+    props: { pathname: page.seo.url, kind: "city" },
+  }));
+  const industries = getIndustryPages().map((page) => ({
+    params: { slug: page.seo.url.replace("/seo/", "") },
+    props: { pathname: page.seo.url, kind: "industry" },
+  }));
+  return [...cities, ...industries];
+}
+
+interface Props {
+  pathname: string;
+  kind: "city" | "industry";
+}
+
+const { pathname, kind } = Astro.props;
+
+const cityData = kind === "city" ? getCitySeoPage(pathname) : null;
+const industryData = kind === "industry" ? getIndustryPage(pathname) : null;
+
+if (!cityData && !industryData) {
+  throw new Error(`Missing SEO page data for ${pathname}`);
+}
+
+const title = cityData?.seo.title ?? industryData!.seo.title;
+const description = cityData?.seo.description ?? industryData!.seo.description;
+
+const faqSource = cityData?.faqs ?? industryData?.faqs ?? [];
+const faqs = faqSource.map((faq: { q: string; a: string }) => ({
+  q: faq.q,
+  a: faq.a.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1"),
+}));
+
+const breadcrumb = cityData
+  ? [
+      { name: "Home", href: "/" },
+      { name: "SEO", href: "/seo" },
+      { name: cityData.city },
+    ]
+  : [
+      { name: "Home", href: "/" },
+      { name: "SEO", href: "/seo" },
+      { name: industryData!.industry },
+    ];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumb, pathname),
+  serviceNode({
+    url: pathname,
+    name: cityData
+      ? `Local SEO in ${cityData.city}`
+      : `${industryData!.industry} SEO in Niagara`,
+    description,
+    serviceType: cityData ? "Local SEO" : `${industryData!.industry} SEO`,
+  }),
+  ...(faqs.length > 0 ? [faqPageNode(pathname, faqs)] : []),
+];
+
+const siblings = industryData
+  ? getIndustryPages()
+      .filter((page) => page.seo.url !== pathname)
+      .slice(0, 12)
+      .map((page) => ({
+        href: page.seo.url,
+        displayName: page.industry,
+      }))
+  : [];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  {
+    cityData ? (
+      <LocalSeoPage data={cityData} />
+    ) : (
+      <IndustryPage
+        data={industryData!}
+        siblings={siblings}
+        cities={NIAGARA_CITY_LINKS}
+      />
+    )
+  }
+</BaseLayout>

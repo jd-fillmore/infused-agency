@@ -1,0 +1,18 @@
+---
+import VerticalRoute from "../../components/routes/VerticalRoute.astro";
+import { getVerticalPages } from "../../lib/legacy-pages.mjs";
+
+export function getStaticPaths() {
+  return getVerticalPages()
+    .filter((page) => page.urlPath.startsWith("/general-contractor-seo/"))
+    .filter((page) => page.urlPath.split("/").filter(Boolean).length === 2)
+    .map((page) => ({
+      params: { province: page.urlPath.split("/").pop() },
+      props: { pathname: page.urlPath },
+    }));
+}
+
+const { pathname } = Astro.props;
+---
+
+<VerticalRoute pathname={pathname} />

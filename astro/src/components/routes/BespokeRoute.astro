@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegacyContentPage from "../../templates/LegacyContentPage.astro";
+import { getBespokePage } from "../../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+interface Props {
+  pathname: string;
+}
+
+const { pathname } = Astro.props;
+const page = getBespokePage(pathname);
+
+if (!page) {
+  throw new Error(`Missing bespoke page data for ${pathname}`);
+}
+
+const faqBlock = page.blocks.find((block: { type: string }) => block.type === "faqs");
+const faqs = (faqBlock?.items ?? []).map((faq: { q: string; a: string }) => ({
+  q: faq.q,
+  a: faq.a,
+}));
+
+const areaServed =
+  page.kind === "web-design" || page.kind === "therapist"
+    ? [
+        { "@type": "City", name: page.h1.replace(/ Web Design Company$/, "").replace(/ SEO Company.*$/, "") },
+        {
+          "@type": "AdministrativeArea",
+          name: page.kind === "therapist" ? "New York" : "Ontario",
+        },
+        { "@type": "Country", name: page.kind === "therapist" ? "United States" : "Canada" },
+      ]
+    : undefined;
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: page.title,
+    description: page.description,
+  }),
+  breadcrumbNode(page.breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: page.h1,
+    description: page.description,
+    serviceType:
+      page.kind === "web-design"
+        ? "Web Design"
+        : page.kind === "therapist"
+          ? "Therapist SEO"
+          : undefined,
+    areaServed,
+  }),
+  ...(faqs.length ? [faqPageNode(pathname, faqs)] : []),
+];
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  canonical={pathname}
+  jsonLd={jsonLd}
+>
+  <LegacyContentPage page={page} />
+</BaseLayout>

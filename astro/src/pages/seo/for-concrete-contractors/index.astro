@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ConcreteHubPage from "../../../templates/ConcreteHubPage.astro";
+import { getNicheHub } from "../../../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../../lib/schema";
+
+const data = getNicheHub();
+const pathname = data.urlPath;
+
+const faqs = data.hub.faqs.map((faq: { q: string; a: string }) => ({
+  q: faq.q,
+  a: faq.a,
+}));
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: data.hub.seo.title,
+    description: data.hub.seo.description,
+  }),
+  breadcrumbNode(data.breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: `SEO for ${data.niche.name} in Canada`,
+    description: data.hub.seo.description,
+    serviceType: "Search engine optimization",
+    areaServed: [{ "@type": "Country", name: "Canada" }],
+  }),
+  ...(faqs.length ? [faqPageNode(pathname, faqs)] : []),
+];
+---
+
+<BaseLayout
+  title={data.hub.seo.title}
+  description={data.hub.seo.description}
+  canonical={pathname}
+  jsonLd={jsonLd}
+>
+  <ConcreteHubPage data={data} />
+</BaseLayout>

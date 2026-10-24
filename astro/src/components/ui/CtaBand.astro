@@ -7,14 +7,16 @@ interface Props {
   eyebrow?: string;
   ctaLabel?: string;
   ctaHref?: string;
+  ctaExternal?: boolean;
 }
 
 const {
   heading,
   description,
   eyebrow,
-  ctaLabel = "Get a free quote",
+  ctaLabel = "Get a Free Quote",
   ctaHref = "/get-a-quote",
+  ctaExternal = false,
 } = Astro.props;
 ---
 
@@ -27,7 +29,7 @@ const {
         {description && <p>{description}</p>}
       </div>
       <div class="cta-band__actions">
-        <Button href={ctaHref} variant="gold" size="lg" arrow>{ctaLabel}</Button>
+        <Button href={ctaHref} variant="gold" size="lg" arrow external={ctaExternal}>{ctaLabel}</Button>
       </div>
     </div>
   </div>

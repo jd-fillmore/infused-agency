@@ -86,8 +86,10 @@ a {
   transition: color var(--duration-micro) var(--ease-smooth);
 }
 
-a:hover {
-  color: var(--color-accent-hover);
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-accent-hover);
+  }
 }
 
 button,
@@ -116,7 +118,23 @@ button {
 .section--contrast :focus-visible,
 .site-footer :focus-visible,
 .home-hero :focus-visible,
-.cta-band :focus-visible {
+.cta-band :focus-visible,
+.page-hero :focus-visible,
+.site-header :focus-visible,
+.mega__aside :focus-visible,
+.card--dark :focus-visible,
+.callout--dark :focus-visible,
+.service-card--featured :focus-visible {
+  outline-color: var(--color-gold-bright);
+}
+
+/* The mega and mobile panels are light surfaces inside dark navigation. */
+.mega__panel :focus-visible,
+.mobile-nav :focus-visible {
+  outline-color: var(--color-accent);
+}
+
+.mega__aside :focus-visible {
   outline-color: var(--color-gold-bright);
 }
 
