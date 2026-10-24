@@ -1,0 +1,80 @@
+---
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { formatPostDate, type Post } from "../lib/posts";
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+const [featured, ...remaining] = posts;
+---
+
+<PageHero
+  title="Blog"
+  description="Educating clients on digital marketing, SEO & web design best practices."
+  breadcrumbs={[{ name: "Home", href: "/" }, { name: "Blog" }]}
+  eyebrow={`${posts.length} articles`}
+  showCta={false}
+  compact
+/>
+
+<Section tone="warm">
+  {
+    featured && (
+      <article class="card featured-post reveal">
+        {featured.image && (
+          <div class="featured-post__media">
+            <img src={featured.image} alt={featured.title} loading="eager" decoding="async" />
+          </div>
+        )}
+        <div class="featured-post__body">
+          <p class="post-card__date">Latest · {formatPostDate(featured.date)}</p>
+          <h2><a href={`/posts/${featured.id}`}>{featured.title}</a></h2>
+          <p>{featured.excerpt}</p>
+          <a class="link-arrow" href={`/posts/${featured.id}`}>
+            Read article
+            <Icon name="arrow-right" />
+          </a>
+        </div>
+      </article>
+    )
+  }
+
+  <div class="grid grid--3 reveal-group" style="margin-top: clamp(2rem, 1.5rem + 2vw, 3rem);">
+    {
+      remaining.map((post) => (
+        <article class="card card--interactive post-card">
+          {post.image && (
+            <div class="post-card__image">
+              <img src={post.image} alt={post.title} loading="lazy" decoding="async" />
+            </div>
+          )}
+          <div class="post-card__body">
+            <p class="post-card__date">{formatPostDate(post.date)}</p>
+            <h2 class="post-card__title">
+              <a href={`/posts/${post.id}`}>{post.title}</a>
+            </h2>
+            <p class="post-card__excerpt">{post.excerpt}</p>
+            <div class="card__footer">
+              <a class="link-arrow" href={`/posts/${post.id}`}>
+                Read article
+                <Icon name="arrow-right" />
+              </a>
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Section>
+
+<CtaBand
+  eyebrow="Learn with us"
+  heading="Ready to put these ideas to work?"
+  description="Book a free consultation and we will show you the first changes worth making."
+  ctaLabel="Get your free SEO audit"
+/>

@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { siteFacts } from "../lib/site";
+
+const title = "Something went wrong | Infused Agency";
+const description =
+  "An unexpected error occurred. Return to the homepage or contact Infused Agency for help.";
+---
+
+<BaseLayout title={title} description={description} canonical={null} noindex={true}>
+  <PageHero
+    title="Something went wrong"
+    description="The page could not be loaded. Please try again, or return to the homepage."
+    showCta={false}
+  />
+  <Section tone="warm">
+    <div class="prose">
+      <p>
+        If the problem continues, email
+        <a href={`mailto:${siteFacts.email}`}>{siteFacts.email}</a> and we will
+        help you find what you need.
+      </p>
+      <p><Button href="/">Back to the homepage</Button></p>
+    </div>
+  </Section>
+</BaseLayout>

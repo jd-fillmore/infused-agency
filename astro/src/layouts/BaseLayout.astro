@@ -1,0 +1,214 @@
+---
+import "@fontsource/poppins/latin-400.css";
+import "@fontsource/poppins/latin-500.css";
+import "@fontsource/poppins/latin-600.css";
+import "@fontsource/poppins/latin-700.css";
+import "../styles/global.css";
+
+import Nav from "../components/nav/Nav.astro";
+import Footer from "../components/footer/Footer.astro";
+import SeoHead from "../components/seo/SeoHead.astro";
+import JsonLd from "../components/seo/JsonLd.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string | null;
+  robots?: string;
+  noindex?: boolean;
+  type?: "website" | "article";
+  geo?: boolean;
+  image?: string;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  robots,
+  noindex,
+  type,
+  geo,
+  image,
+  jsonLd,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <SeoHead
+      title={title}
+      description={description}
+      canonical={canonical}
+      robots={robots}
+      noindex={noindex}
+      type={type}
+      geo={geo}
+      image={image}
+    />
+    {jsonLd && <JsonLd data={jsonLd} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <script>
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      /* Scroll reveals ------------------------------------------------------
+         Only elements below the fold are prepared for a reveal. This avoids a
+         flash of hidden content on load and leaves everything visible if the
+         script never runs. */
+      const revealTargets = Array.from(
+        document.querySelectorAll<HTMLElement>(".reveal, .reveal-group")
+      );
+      const belowFold = revealTargets.filter((el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= window.innerHeight * 0.92;
+      });
+
+      if (belowFold.length > 0) {
+        if (reduceMotion || !("IntersectionObserver" in window)) {
+          belowFold.forEach((el) => el.classList.add("is-visible"));
+        } else {
+          try {
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                  }
+                });
+              },
+              { rootMargin: "0px 0px -6% 0px", threshold: 0.08 }
+            );
+            belowFold.forEach((el) => {
+              el.classList.add("will-reveal");
+              observer.observe(el);
+            });
+          } catch {
+            belowFold.forEach((el) => el.classList.add("is-visible"));
+          }
+        }
+      }
+
+      /* Header state -------------------------------------------------------- */
+      const header = document.querySelector<HTMLElement>(".site-header");
+      if (header) {
+        const onScroll = () => {
+          header.classList.toggle("is-scrolled", window.scrollY > 8);
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      }
+
+      /* Desktop mega menu --------------------------------------------------- */
+      const mega = document.querySelector<HTMLDetailsElement>("[data-mega]");
+      if (mega) {
+        const summary = mega.querySelector<HTMLElement>("summary");
+        const closeMega = (restoreFocus = false) => {
+          if (!mega.open) return;
+          mega.open = false;
+          if (restoreFocus) summary?.focus();
+        };
+
+        document.addEventListener("click", (event) => {
+          if (!mega.open) return;
+          const target = event.target as Node;
+          if (!mega.contains(target)) closeMega();
+        });
+
+        mega.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            event.preventDefault();
+            closeMega(true);
+          }
+        });
+
+        mega.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => closeMega());
+        });
+
+        window.matchMedia("(min-width: 1080px)").addEventListener("change", (event) => {
+          if (!event.matches) closeMega();
+        });
+      }
+
+      /* Mobile navigation --------------------------------------------------- */
+      const mobileMenu = document.querySelector<HTMLDetailsElement>("[data-mobile-menu]");
+      if (mobileMenu) {
+        const mobileSummary = mobileMenu.querySelector<HTMLElement>(".menu-toggle");
+        const mobilePanel = mobileMenu.querySelector<HTMLElement>(".mobile-nav");
+
+        const focusables = (): HTMLElement[] => {
+          const items = mobilePanel
+            ? Array.from(
+                mobilePanel.querySelectorAll<HTMLElement>(
+                  'a[href], button:not([disabled]), summary, [tabindex]:not([tabindex="-1"])'
+                )
+              )
+            : [];
+          return [mobileSummary, ...items].filter(
+            (el): el is HTMLElement => el !== null && el.offsetParent !== null
+          );
+        };
+
+        mobileMenu.addEventListener("toggle", () => {
+          document.body.classList.toggle("menu-open", mobileMenu.open);
+          if (mobileMenu.open) {
+            const details = mobilePanel?.querySelectorAll<HTMLDetailsElement>(".mobile-group");
+            details?.forEach((item) => {
+              if (item !== mobilePanel?.querySelector(".mobile-group")) item.open = false;
+            });
+          }
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (!mobileMenu.open) return;
+
+          if (event.key === "Escape") {
+            event.preventDefault();
+            mobileMenu.open = false;
+            mobileSummary?.focus();
+            return;
+          }
+
+          if (event.key === "Tab") {
+            const items = focusables();
+            if (items.length === 0) return;
+            const first = items[0];
+            const last = items[items.length - 1];
+            const active = document.activeElement as HTMLElement | null;
+
+            if (event.shiftKey && (active === first || !items.includes(active as HTMLElement))) {
+              event.preventDefault();
+              last.focus();
+            } else if (!event.shiftKey && active === last) {
+              event.preventDefault();
+              first.focus();
+            }
+          }
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.open = false;
+          });
+        });
+
+        window.matchMedia("(min-width: 1080px)").addEventListener("change", (event) => {
+          if (event.matches) mobileMenu.open = false;
+        });
+      }
+    </script>
+  </body>
+</html>

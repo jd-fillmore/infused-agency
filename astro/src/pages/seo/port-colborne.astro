@@ -1,0 +1,224 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LocalSeoPage from "../../templates/LocalSeoPage.astro";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const title =
+  "SEO Port Colborne | Local SEO Company & Agency in Port Colborne | Infused Agency";
+const description =
+  "SEO company serving Port Colborne businesses. Local SEO, Google Business Profile and AI search visibility for lakeside and canal businesses across Port Colborne, Ontario, Canada. Free consultation.";
+
+const data = {
+  city: "Port Colborne",
+  hero: {
+    title: "Port Colborne SEO Company",
+    description:
+      "Infused Agency is a Port Colborne SEO company. We help local businesses along Lake Erie and the Welland Canal get found on Google, in the map pack and in AI search, then turn those searches into qualified enquiries.",
+    image: "/img/seo-port-colborne.webp",
+    alt: "Local SEO results for a Port Colborne business",
+  },
+  marketIntro: {
+    heading: "How local search works in Port Colborne",
+    paragraphs: [
+      "Port Colborne sits where the Welland Canal meets Lake Erie, with a working waterfront, sandy beaches and a main street drawing both residents and summer visitors. Local businesses serve two audiences year-round locals and seasonal visitors, so search work has to reach both or the other benefits a competitor.",
+      'Searches here follow the water and the season. A visitor might search "Port Colborne restaurants," "Nickel Beach things to do," or "marina Port Colborne," while a resident searches "HVAC Port Colborne" or "roofer Port Colborne Ontario" when comparing local trades. Businesses that name the waterfront, the canal, West Street or the lake neighbourhoods in their service pages tend to earn Google\'s trust, because the copy mirrors how Port Colborne clients actually describe where they are.',
+      "Ranking cheers do not pay the bills. The real goal is more enquiries from the waterfront and lakefront searches that matter locally, so your calendar fills with ready customers rather than traffic that never converts.",
+    ],
+  },
+  proof: {
+    heading: "Recent Project",
+    client: "Flat Rock Cellars",
+    label: "After hiring us",
+    image: "/img/flat-rock-seo-results.png",
+    alt: "Flat Rock Cellars SEO results in Niagara",
+    items: [
+      "300% growth in local search visibility",
+      "Multiple first-page Google Map placements",
+      "Page 1 organic rankings for key industry keywords",
+    ],
+  },
+  whyNeeded: {
+    heading: "Why Port Colborne businesses need local SEO",
+    paragraphs: [
+      "In Port Colborne, waterfront and marina customers rarely read past the map pack, so a profile with fresh reviews and accurate details usually wins the job.",
+      "Port Colborne businesses rarely benefit from broad national terms, so we concentrate on the specific searches your customers type around the waterfront and nearby homes. Affordable local work still needs the Google Business Profile, the site and the reviews handled together.",
+      "AI search is becoming part of how visitors choose. More people now ask ChatGPT, Gemini or Google's AI Overviews to recommend a business in Port Colborne, and the tools favour clear, consistent information and genuine, recent reviews. We fold that into our SEO optimization work so your Port Colborne business is named when someone asks rather than merely ranked.",
+    ],
+    checklist: [
+      "Service pages for each thing you sell",
+      "Google Business Profile optimisation for the Niagara map pack",
+      "City pages for the towns and neighbourhoods you serve",
+      "Reviews and trust signals that reassure buyers before they call",
+      "Technical fixes that keep your site fast and easy to crawl",
+    ],
+  },
+  services: {
+    heading: "SEO services in Port Colborne",
+    subhead: "Practical local search work for a lakeside city",
+    cards: [
+      {
+        title: "Local SEO for Port Colborne businesses",
+        paragraphs: [
+          "In Port Colborne, local visibility means speaking to the waterfront, marina and downtown distinctly.",
+        ],
+      },
+      {
+        title: "Google Business Profile and map pack",
+        paragraphs: [
+          "Waterfront visitors and marina customers check the map first, so we keep your profile current with hours, photos and the coverage areas you actually serve.",
+        ],
+      },
+      {
+        title: "On-page SEO and service pages",
+        paragraphs: [
+          "For every service you sell in Port Colborne, we create a page shaped around the words local buyers and visitors use, from marine and waterfront work to home services along the lake. We refine headings, copy and internal links so visitors, the map and AI tools all agree on what you actually sell along the waterfront.",
+        ],
+      },
+      {
+        title: "Technical SEO and site speed",
+        paragraphs: ["Waterfront visitors need quick loading pages."],
+      },
+      {
+        title: "Content and links",
+        paragraphs: [
+          "Port Colborne copy supports the right customers when it references the waterfront and marina.",
+        ],
+      },
+      {
+        title: "AI SEO for Port Colborne businesses",
+        paragraphs: [
+          "Marina and waterfront AI searches surface Port Colborne businesses with fresh reviews and consistent details.",
+        ],
+      },
+    ],
+  },
+  whyChoose: {
+    heading: "Why Port Colborne businesses choose Infused Agency",
+    paragraphs: [
+      "Port Colborne's mix of lakefront tourism, a working canal terminal and a steady residential base means search demand changes with the season, so we plan around how businesses here actually get found rather than applying a generic template.",
+    ],
+    awards: {
+      image: "/img/awards.png",
+      alt: "Get found on Google and AI search tools with Infused Agency's local SEO services",
+    },
+    blocks: [
+      {
+        title: "Choosing an SEO company in Port Colborne",
+        paragraphs: [
+          "When you compare a solo consultant, an agency and a larger firm for Port Colborne, the useful questions are who understands seasonal lakefront demand, who will explain results plainly and whose scope fits. We will walk through our approach plainly and say when a lighter scope suits.",
+        ],
+      },
+      {
+        title: "Enquiries, not empty traffic",
+        paragraphs: [
+          "We chase the searches that end in a call or quote rather than vanity visits that never convert. You get visibility into what produces customers:",
+        ],
+        checklist: [
+          "Rankings for the services you actually sell",
+          "Calls and form fills per page",
+          "Google Business Profile calls and direction requests",
+          "Which lakeshore and canal areas produce enquiries",
+        ],
+        paragraphsAfter: [
+          "That clarity lets your budget follow the results rather than the other way around.",
+        ],
+      },
+      {
+        title: "Written by people who know local search",
+        paragraphs: [
+          "Marina visitors search Google and AI tools for waterfront providers, so waterfront pages do the convincing.",
+        ],
+      },
+      {
+        title: "Straight answers on cost and fit",
+        paragraphs: [
+          "SEO cost in Port Colborne is shaped by waterfront competition, your site and how many services you target, so we price the work after a free audit. We will be direct when a smaller scope fits, and every client receives a free written quote.",
+        ],
+      },
+    ],
+    closingHeading: "Win the lakeside search",
+    closingParagraphs: [
+      "If people in Port Colborne are finding your competitors instead of you, book a free consultation and we will map what it takes to change that. SEO in Port Colborne pays best when it is built around the lake, the canal and the neighbourhoods your customers actually search.",
+    ],
+  },
+  faqs: [
+    {
+      q: "How do I choose the best SEO company in Port Colborne?",
+      a: "Look for a team that understands seasonal lakefront demand and explains progress in plain language. Ask for local examples, clear reporting and a scope that fits your size. No ethical agency can promise to be the best, and we do not.",
+    },
+    {
+      q: "What does SEO cost in Port Colborne and what do packages include?",
+      a: "Pricing is individual and depends on your goals, your service area and your website's condition. Packages usually include local SEO, Google Business Profile work and service pages. You receive a free written quote after a free audit, with no invented figures.",
+    },
+    {
+      q: "Is affordable SEO worth it for a Port Colborne business?",
+      a: "Yes, when it covers the foundations together: a complete Google Business Profile, service pages and consistent reviews. Low-cost work that skips local basics rarely holds. Affordable SEO should still be real work in the right order.",
+    },
+    {
+      q: "Do I need a big Port Colborne SEO company or will a local one do?",
+      a: "For most Port Colborne businesses a smaller, attentive team with local knowledge outperforms a large distant firm. What matters is understanding seasonal demand, honest scope and steady execution, not headcount.",
+    },
+    {
+      q: "What is local SEO and how is it different from general SEO in Port Colborne?",
+      a: "Local SEO targets map results, Google Business Profile and town-specific searches, while general SEO chases broader regional terms. In Port Colborne most demand ties back to the lake, the canal and nearby towns, so local SEO is usually the better first investment.",
+    },
+    {
+      q: "How long does SEO take for a Port Colborne business?",
+      a: "Expect initial improvement in three to six months and more significant results in six to twelve. Seasonal visitor demand shifts the pace, and sites with stronger foundations move faster.",
+    },
+    {
+      q: "Can AI tools like ChatGPT recommend my Port Colborne business?",
+      a: "Yes, when your information is clear and consistent online and your reviews are recent and genuine. We structure your site and profile so AI search tools are more likely to name you for a Port Colborne search.",
+    },
+    {
+      q: "Do you guarantee rankings for Port Colborne searches?",
+      a: "No. No ethical SEO company guarantees a specific position because search results change constantly. We use white-hat methods, report transparently and work toward lasting visibility instead of promises we cannot keep.",
+    },
+  ],
+  relatedLinks: [
+    { href: "/seo/beamsville", label: "Beamsville, ON" },
+    { href: "/seo/crystal-beach", label: "Crystal Beach, ON" },
+    { href: "/seo/fonthill", label: "Fonthill, ON" },
+    { href: "/seo/fort-erie", label: "Fort Erie, ON" },
+    { href: "/seo/grimsby", label: "Grimsby, ON" },
+    { href: "/seo/niagara-on-the-lake", label: "Niagara-on-the-Lake, ON" },
+    { href: "/seo/thorold", label: "Thorold, ON" },
+    { href: "/seo/welland", label: "Welland, ON" },
+  ],
+};
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: "/seo/port-colborne", name: title, description }),
+  breadcrumbNode(
+    [
+      { name: "Home", href: "/" },
+      { name: "SEO", href: "/seo" },
+      { name: "Port Colborne" },
+    ],
+    "/seo/port-colborne"
+  ),
+  serviceNode({
+    url: "/seo/port-colborne",
+    name: "Local SEO in Port Colborne",
+    description,
+    serviceType: "Local SEO",
+  }),
+  faqPageNode("/seo/port-colborne", data.faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="/seo/port-colborne"
+  jsonLd={jsonLd}
+>
+  <LocalSeoPage data={data} />
+</BaseLayout>

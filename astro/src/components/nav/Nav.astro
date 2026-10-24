@@ -1,0 +1,205 @@
+---
+import Button from "../ui/Button.astro";
+import Icon from "../ui/Icon.astro";
+import { navGroups, industries, siteFacts } from "../../lib/site";
+
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+const now = new Date();
+const nextMonth = MONTHS[(now.getMonth() + 1) % 12];
+const monthAfterNext = MONTHS[(now.getMonth() + 2) % 12];
+
+const primaryLinks = [
+  { name: "Industries", href: "/industries" },
+  { name: "Work", href: "/work" },
+  { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
+];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`);
+
+const serviceCount = navGroups.reduce((total, group) => total + group.links.length, 0);
+const telHref = `tel:+1${siteFacts.phone.replace(/\D/g, "")}`;
+---
+
+<header class="site-header" data-header>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__inner">
+        <p class="topbar__note">Niagara&rsquo;s local SEO &amp; AI search studio</p>
+        <a href="/get-a-quote">
+          Now booking {nextMonth} &amp; {monthAfterNext} — get a quote
+          <Icon name="arrow-right" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="nav" data-nav>
+      <a class="brand" href="/" aria-label="Infused Agency home">
+        infused<span>.</span>
+      </a>
+
+      <nav class="nav__primary" aria-label="Main">
+        <ul class="nav__desktop">
+          <li class="nav__item">
+            <details class="mega" data-mega>
+              <summary>Services</summary>
+              <div class="mega__panel" data-mega-panel>
+                <div class="mega__grid">
+                  <div class="mega__groups">
+                    {
+                      navGroups.map((group, index) => (
+                        <div class="mega__group">
+                          <h3>
+                            <span>{String(index + 1).padStart(2, "0")}</span>
+                            {group.heading}
+                          </h3>
+                          <ul>
+                            {group.links.map((link) => (
+                              <li>
+                                <a href={link.url} aria-current={isActive(link.url) ? "page" : undefined}>
+                                  {link.name}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))
+                    }
+                  </div>
+
+                  <aside class="mega__aside">
+                    <p class="eyebrow" style="color: var(--color-gold-bright);">Free audit</p>
+                    <h3>See what is holding your search visibility back.</h3>
+                    <p>
+                      A clear, no-obligation look at your website, Google Business
+                      Profile and the searches that matter to your business.
+                    </p>
+                    <Button href="/get-a-quote" variant="gold" arrow>Get a free quote</Button>
+                    <a class="link-arrow" href="/services">
+                      All {serviceCount} services
+                      <Icon name="arrow-right" />
+                    </a>
+                  </aside>
+                </div>
+
+                <div class="mega__foot">
+                  <span>SEO · AI search · Web design · Niagara Region</span>
+                  <a href="/services">View all services</a>
+                </div>
+              </div>
+            </details>
+          </li>
+          {
+            primaryLinks.map((link) => (
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href={link.href}
+                  aria-current={isActive(link.href) ? "page" : undefined}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="nav__phone" href={telHref}>
+          <Icon name="phone" />
+          {siteFacts.phone}
+        </a>
+        <Button href="/get-a-quote" variant="gold">Get a quote</Button>
+      </div>
+
+      <details class="mobile-menu" data-mobile-menu>
+        <summary class="menu-toggle" aria-label="Navigation menu" aria-controls="mobile-navigation">
+          <span class="menu-toggle__label menu-toggle__label--open">Menu</span>
+          <span class="menu-toggle__label menu-toggle__label--close">Close</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        </summary>
+
+        <div class="mobile-nav" id="mobile-navigation">
+          <div class="mobile-nav__inner">
+            <div class="mobile-nav__head">
+              <p>Navigation</p>
+              <a href={telHref}>
+                <Icon name="phone" />
+                {siteFacts.phone}
+              </a>
+            </div>
+
+            <nav aria-label="Mobile">
+              {
+                navGroups.map((group) => (
+                  <details class="mobile-group">
+                    <summary>{group.heading}</summary>
+                    <ul>
+                      {group.links.map((link) => (
+                        <li>
+                          <a href={link.url} aria-current={isActive(link.url) ? "page" : undefined}>
+                            {link.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                ))
+              }
+
+              <details class="mobile-group">
+                <summary>SEO by industry</summary>
+                <ul>
+                  {
+                    industries.slice(0, 12).map((link) => (
+                      <li>
+                        <a href={link.url}>{link.name.replace(/^SEO for /, "")}</a>
+                      </li>
+                    ))
+                  }
+                  <li><a href="/industries">View all industries</a></li>
+                </ul>
+              </details>
+
+              <div class="mobile-nav__links">
+                {primaryLinks.map((link) => <a href={link.href}>{link.name}</a>)}
+                <a href="/general-contractor-seo">General contractor SEO</a>
+                <a href="/services">All services</a>
+              </div>
+            </nav>
+
+            <div class="mobile-nav__meta">
+              <a href={telHref}>
+                <Icon name="phone" />
+                Call
+              </a>
+              <a href={`mailto:${siteFacts.email}`}>
+                <Icon name="mail" />
+                Email
+              </a>
+              <a href="/get-a-quote">
+                <Icon name="target" />
+                Free audit
+              </a>
+            </div>
+
+            <div class="mobile-nav__cta">
+              <Button href="/get-a-quote" variant="gold" size="lg" block arrow>
+                Get a free quote
+              </Button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>

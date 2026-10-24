@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HomePage from "../templates/HomePage.astro";
+import { getAllPosts } from "../lib/posts";
+import { baseGraph, faqPageNode, webPageNode } from "../lib/schema";
+import { homeFaqs } from "../lib/site";
+
+const title = "Niagara SEO, AI Search & Web Design | Infused Agency";
+const description =
+  "SEO, AI search optimization and web design for Niagara businesses. Get found on Google, in the map pack and in ChatGPT. Free SEO audit.";
+
+const posts = getAllPosts().slice(0, 3);
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: "/", name: title, description }),
+  faqPageNode("/", homeFaqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="/"
+  geo={true}
+  jsonLd={jsonLd}
+>
+  <HomePage posts={posts} />
+</BaseLayout>

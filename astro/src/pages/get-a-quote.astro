@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { CALENDLY_URL, siteFacts } from "../lib/site";
+import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
+
+const title = "Infused Agency | Get A Custom Quote";
+const description =
+  "Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!";
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: "/get-a-quote",
+    name: title,
+    description,
+    type: "ContactPage",
+  }),
+  breadcrumbNode(
+    [{ name: "Home", href: "/" }, { name: "Get a Quote" }],
+    "/get-a-quote"
+  ),
+];
+---
+
+<BaseLayout title={title} description={description} canonical="/get-a-quote" jsonLd={jsonLd}>
+  <PageHero
+    title="Get Your Free Quote"
+    description="Transform your online presence with a tailored web and SEO solution."
+    breadcrumbs={[{ name: "Home", href: "/" }, { name: "Get a Quote" }]}
+    eyebrow="Start a project"
+    showCta={false}
+  >
+    <Fragment slot="aside">
+      <h2>Prefer to talk it through?</h2>
+      <p>Call or email and we will tell you whether a project is the right fit.</p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="phone" /> {siteFacts.phone}</li>
+        <li><Icon name="mail" /> {siteFacts.email}</li>
+        <li><Icon name="map-pin" /> {siteFacts.address.addressLocality}, {siteFacts.address.addressRegion}</li>
+      </ul>
+      <Button href={`mailto:${siteFacts.email}`} variant="gold" block arrow>Email the team</Button>
+    </Fragment>
+  </PageHero>
+
+  <Section tone="warm">
+    <div class="quote-layout">
+      <div class="reveal">
+        <p class="eyebrow"><span class="eyebrow__index">01</span> Let&rsquo;s begin</p>
+        <h2 class="h2" style="margin-top: 1rem;">Let&rsquo;s Elevate Your Brand!</h2>
+        <p class="lead" style="margin-top: 1.25rem;">
+          Our team is ready to start your next web design, SEO or digital
+          marketing project.
+        </p>
+        <p class="lead" style="margin-top: 1rem;">
+          The first step is to get in touch with us to book your free project
+          consultation.
+        </p>
+        <div style="margin-top: 1.9rem;">
+          <Button href={CALENDLY_URL} size="lg" variant="gold" arrow external>
+            Open the booking calendar
+          </Button>
+        </div>
+        <p class="small muted" style="margin-top: 0.9rem;">
+          Booking opens in a new tab.
+        </p>
+
+        <ol class="quote-steps" style="margin-top: 2.5rem;">
+          <li>
+            <span class="quote-steps__index">01</span>
+            <div>
+              <h3>We learn about your business</h3>
+              <p>Your market, your goals and what a good enquiry looks like.</p>
+            </div>
+          </li>
+          <li>
+            <span class="quote-steps__index">02</span>
+            <div>
+              <h3>We review your visibility</h3>
+              <p>Your website, Google Business Profile and the local competition.</p>
+            </div>
+          </li>
+          <li>
+            <span class="quote-steps__index">03</span>
+            <div>
+              <h3>You receive a written quote</h3>
+              <p>A clear scope and a free, no-obligation quote for the work.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <aside class="callout reveal" aria-labelledby="quote-aside-title">
+        <span class="card__icon"><Icon name="chat" /></span>
+        <h2 id="quote-aside-title" style="margin-top: 1rem;">What happens next</h2>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>We learn about your business, your market and your goals.</li>
+          <li>We review your website, Google Business Profile and competitors.</li>
+          <li>You receive a written scope and a free, no-obligation quote.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          Prefer email? Write to
+          <a href={`mailto:${siteFacts.email}`}>{siteFacts.email}</a>.
+        </p>
+        <div style="margin-top: 1.25rem;">
+          <Button href={CALENDLY_URL} variant="secondary" arrow external>Book a consultation</Button>
+        </div>
+      </aside>
+    </div>
+  </Section>
+
+  <CtaBand
+    heading="Ready to Grow Your Business?"
+    description="Book a free, no-obligation consultation and we'll map out where your next customers come from."
+    ctaLabel="Get Free Quote"
+  />
+</BaseLayout>

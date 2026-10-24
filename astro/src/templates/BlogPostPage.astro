@@ -1,0 +1,74 @@
+---
+import Button from "../components/ui/Button.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { formatPostDate, type Post } from "../lib/posts";
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+---
+
+<PageHero
+  title={post.title}
+  description={post.excerpt}
+  breadcrumbs={[
+    { name: "Home", href: "/" },
+    { name: "Blog", href: "/blog" },
+    { name: post.title },
+  ]}
+  eyebrow="Journal"
+  meta={formatPostDate(post.date)}
+  showCta={false}
+  compact
+/>
+
+<Section tone="warm">
+  <div class="article-layout">
+    <article>
+      {
+        post.image && (
+          <div class="article-cover">
+            <img src={post.image} alt={post.title} loading="eager" decoding="async" />
+          </div>
+        )
+      }
+      <div class="article-body" set:html={post.html} />
+      <div class="article-footer">
+        <a class="link-arrow" href="/blog">
+          <Icon name="arrow-left" />
+          Back to all articles
+        </a>
+        <a class="link-arrow" href="/get-a-quote">
+          Get a free quote
+          <Icon name="arrow-right" />
+        </a>
+      </div>
+    </article>
+
+    <aside class="article-aside">
+      <p class="eyebrow">Free audit</p>
+      <h2 style="margin-top: 0.8rem;">Want help applying this?</h2>
+      <p>
+        Book a free consultation and we will look at your site, your local
+        visibility and the searches that matter to your business.
+      </p>
+      <Button href="/get-a-quote" variant="primary" block arrow>Get your free SEO audit</Button>
+      <div class="article-aside__links">
+        <a class="link-arrow" href="/seo">Explore SEO services <Icon name="arrow-right" /></a>
+        <a class="link-arrow" href="/blog">More articles <Icon name="arrow-right" /></a>
+      </div>
+    </aside>
+  </div>
+</Section>
+
+<CtaBand
+  eyebrow="Free audit"
+  heading="Want more of the right visitors?"
+  description="Get a clear look at your local visibility and the content that will earn attention."
+  ctaLabel="Get your free SEO audit"
+/>

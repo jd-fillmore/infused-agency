@@ -1,0 +1,20 @@
+---
+interface Props {
+  quote: string;
+  person: string;
+  role?: string;
+  company?: string;
+}
+
+const { quote, person, role, company } = Astro.props;
+---
+
+<figure class="card testimonial">
+  <blockquote>{quote}</blockquote>
+  <figcaption class="testimonial__person">
+    <strong>{person}</strong>
+    {(role || company) && (
+      <span>{[role, company].filter(Boolean).join(", ")}</span>
+    )}
+  </figcaption>
+</figure>

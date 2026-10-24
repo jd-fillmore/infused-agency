@@ -1,0 +1,74 @@
+---
+import { SITE, SITE_NAME, absoluteUrl } from "../../lib/site";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string | null;
+  robots?: string;
+  noindex?: boolean;
+  type?: "website" | "article";
+  geo?: boolean;
+  image?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  robots,
+  noindex = false,
+  type = "website",
+  geo = false,
+  image,
+} = Astro.props;
+
+const canonicalUrl =
+  canonical === null
+    ? null
+    : canonical
+      ? canonical.startsWith("http")
+        ? canonical
+        : absoluteUrl(canonical)
+      : absoluteUrl(Astro.url.pathname);
+
+const robotsContent = noindex ? "noindex, nofollow" : robots ?? "index, follow";
+
+const ogImage = image
+  ? image.startsWith("http")
+    ? image
+    : `${SITE}${image}`
+  : undefined;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+{canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+<meta name="robots" content={robotsContent} />
+<meta name="theme-color" content="#f6f7fb" />
+<meta name="color-scheme" content="light" />
+
+<meta property="og:site_name" content={SITE_NAME} />
+<meta property="og:locale" content="en_CA" />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+{canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+{ogImage && <meta property="og:image" content={ogImage} />}
+
+<meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{ogImage && <meta name="twitter:image" content={ogImage} />}
+
+{
+  geo && (
+    <>
+      <meta name="google-site-verification" content="VK8okfPDhG2ziQHXaOAh2Nerc_pVe6vR9pcCp1WtSW8" />
+      <meta name="geo.region" content="CA-ON" />
+      <meta name="geo.placename" content="Niagara" />
+      <meta name="geo.position" content="43.0896;-79.0849" />
+      <meta name="ICBM" content="43.0896, -79.0849" />
+    </>
+  )
+}

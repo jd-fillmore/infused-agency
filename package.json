@@ -10,6 +10,11 @@
     "build": "next build",
     "postbuild": "next-sitemap && node scripts/generate-vertical-sitemaps.js && node scripts/validate-schema.js --require && node scripts/index-site.mjs",
     "start": "next start",
+    "dev:astro": "astro dev --root astro",
+    "build:astro": "astro build --root astro",
+    "preview:astro": "astro preview --root astro",
+    "check:astro": "astro check --root astro",
+    "validate:astro": "node astro/scripts/validate-prototype.mjs",
     "deploy:check": "node scripts/should-deploy-today.js",
     "lint": "next lint",
     "verify:seo": "node scripts/verify-vertical-seo.js && node scripts/validate-schema.js && node scripts/seo-regression.js",
@@ -22,8 +27,10 @@
     "preload-fonts": ""
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.3.0",
     "@formspree/react": "^2.5.1",
     "animate.css": "^4.1.1",
+    "astro": "^5.18.2",
     "bootstrap": "^4.5.3",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.5.4",
@@ -57,12 +64,15 @@
     "yet-another-react-lightbox": "^3.21.5"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@emnapi/runtime": "^1.7.1",
     "@tailwindcss/postcss": "^4",
     "eslint": "8.54.0",
     "eslint-config-next": "14.0.3",
     "file-loader": "^6.2.0",
     "frontmatter-markdown-loader": "^3.7.0",
     "prettier": "2.1.2",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5.9.0"
   }
 }

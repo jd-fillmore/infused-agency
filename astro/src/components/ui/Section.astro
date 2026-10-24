@@ -1,0 +1,75 @@
+---
+interface Props {
+  id?: string;
+  eyebrow?: string;
+  index?: string;
+  heading?: string;
+  description?: string;
+  tone?: "base" | "surface" | "warm" | "warm-deep" | "tint" | "card" | "contrast";
+  tight?: boolean;
+  center?: boolean;
+  wideHead?: boolean;
+  class?: string;
+}
+
+const {
+  id,
+  eyebrow,
+  index,
+  heading,
+  description,
+  tone = "base",
+  tight = false,
+  center = false,
+  wideHead = false,
+  class: className = "",
+} = Astro.props;
+
+const toneClass =
+  tone === "surface"
+    ? "section--surface"
+    : tone === "warm"
+      ? "section--warm"
+      : tone === "warm-deep"
+        ? "section--warm-deep"
+        : tone === "tint"
+          ? "section--tint"
+          : tone === "card"
+            ? "section--surface"
+            : tone === "contrast"
+              ? "section--contrast"
+              : "";
+
+const classes = ["section", toneClass, tight ? "section--tight" : "", className]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<section id={id} class={classes} data-section>
+  <div class="container">
+    {
+      (eyebrow || heading || description) && (
+        <div
+          class:list={[
+            "section-head",
+            center && "section-head--center",
+            wideHead && "section-head--wide",
+            "reveal",
+          ]}
+        >
+          {eyebrow && (
+            <p class="eyebrow">
+              {index && <span class="eyebrow__index">{index}</span>}
+              {eyebrow}
+            </p>
+          )}
+          <div class="section-head__row">
+            {heading && <h2 class="h2">{heading}</h2>}
+            {description && <p class="section-head__desc">{description}</p>}
+          </div>
+        </div>
+      )
+    }
+    <slot />
+  </div>
+</section>

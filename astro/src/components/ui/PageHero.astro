@@ -1,0 +1,62 @@
+---
+import Breadcrumb from "./Breadcrumb.astro";
+import Button from "./Button.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  eyebrow?: string;
+  breadcrumbs?: Array<{ name: string; href?: string }>;
+  showCta?: boolean;
+  ctaHref?: string;
+  ctaLabel?: string;
+  compact?: boolean;
+  meta?: string;
+}
+
+const {
+  title,
+  description,
+  eyebrow,
+  breadcrumbs,
+  showCta = true,
+  ctaHref = "/get-a-quote",
+  ctaLabel = "Get a free quote",
+  compact = false,
+  meta,
+} = Astro.props;
+
+const hasAside = Astro.slots.has("aside");
+---
+
+<section class:list={["page-hero", compact && "page-hero--compact"]}>
+  <div class="container">
+    <div class:list={["page-hero__inner", !hasAside && "page-hero__inner--copy"]}>
+      <div class="page-hero__copy">
+        {breadcrumbs && breadcrumbs.length > 0 && <Breadcrumb items={breadcrumbs} />}
+        {eyebrow && <p class="eyebrow" style="margin-top: 1.35rem; color: var(--color-gold-bright);">{eyebrow}</p>}
+        <h1>{title}</h1>
+        {description && <p class="page-hero__description">{description}</p>}
+        {meta && <p class="article-hero-meta">{meta}</p>}
+        <slot />
+        {
+          showCta && (
+            <div class="page-hero__actions">
+              <Button href={ctaHref} size="lg" variant="gold" arrow>
+                {ctaLabel}
+              </Button>
+            </div>
+          )
+        }
+      </div>
+
+      {
+        hasAside && (
+          <aside class="page-hero__aside">
+            <slot name="aside" />
+          </aside>
+        )
+      }
+    </div>
+  </div>
+</section>

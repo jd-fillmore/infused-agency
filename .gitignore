@@ -1,4 +1,5 @@
 *.json
+!astro/tsconfig.json
 # build output
 dist
 .next
