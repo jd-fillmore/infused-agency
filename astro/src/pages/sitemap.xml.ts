@@ -4,7 +4,6 @@ import { SITE } from "../lib/site";
 import {
   getIndustryPages,
   getCitySeoPages,
-  getServicePages,
   getVerticalPages,
   getNicheCityPages,
   getNicheHub,
@@ -50,7 +49,6 @@ export const GET: APIRoute = () => {
 
   for (const page of getIndustryPages()) entries.set(page.seo.url, undefined);
   for (const page of getCitySeoPages()) entries.set(page.seo.url, undefined);
-  for (const page of getServicePages()) entries.set(page.urlPath, undefined);
   for (const page of getVerticalPages()) entries.set(page.urlPath, undefined);
   for (const page of getNicheCityPages()) entries.set(page.urlPath, undefined);
   const nicheHub = getNicheHub();

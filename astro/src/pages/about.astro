@@ -1,0 +1,489 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import TestimonialCard from "../components/ui/TestimonialCard.astro";
+import { SITE, siteFacts } from "../lib/site";
+import {
+  baseGraph,
+  breadcrumbNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/about";
+const title = "About Infused Agency | SEO, AI Search & Web Design";
+const description =
+  "Meet Infused Agency and JD Fillmore, the team behind strategic SEO, AI search visibility and web design for businesses across Canada and the United States.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "About" },
+];
+
+const services = [
+  {
+    icon: "search",
+    title: "SEO",
+    text: "Search strategy, technical foundations and page-level work that help the right people find the business.",
+    href: "/seo",
+  },
+  {
+    icon: "spark",
+    title: "AI search",
+    text: "Clear content and consistent business signals so AI tools have something accurate to understand and cite.",
+    href: "/ai-search",
+  },
+  {
+    icon: "code",
+    title: "Web design",
+    text: "Websites planned around the customer journey, then designed and built to make the next step obvious.",
+    href: "/web-design",
+  },
+];
+
+const principles = [
+  {
+    number: "01",
+    title: "Start with the business",
+    text: "A website or a search campaign only works when it is built around how the business actually earns money. We learn that first.",
+  },
+  {
+    number: "02",
+    title: "Make the work legible",
+    text: "Clear scope, plain-language reporting and a direct answer about what is happening and why. No mystery retainers and no vanity metrics.",
+  },
+  {
+    number: "03",
+    title: "Think beyond the homepage",
+    text: "Search, AI visibility, page experience and conversion paths affect each other. We plan them as one system rather than isolated tasks.",
+  },
+  {
+    number: "04",
+    title: "Keep the standard high",
+    text: "Fast pages, accessible interfaces, sensible structure and design that respects the brand. The details are part of the result.",
+  },
+];
+
+const testimonials = siteFacts.testimonials.slice(0, 2);
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: title,
+    description,
+    type: "AboutPage",
+  }),
+  breadcrumbNode(breadcrumbs, pathname),
+  {
+    "@type": "Person",
+    "@id": `${SITE}/about#jd-fillmore`,
+    name: "JD Fillmore",
+    jobTitle: "Owner",
+    worksFor: { "@id": `${SITE}/#organization` },
+    url: `${SITE}/about`,
+  },
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="A small agency, built around the work that matters."
+    description="Infused is an SEO, AI search and web design agency. We help businesses explain their value clearly, get found by the right people, and turn attention into enquiries."
+    eyebrow="About Infused"
+    breadcrumbs={breadcrumbs}
+    meta="Independent agency · Working across Canada and the United States"
+    ctaLabel="Start a conversation"
+  >
+    <Fragment slot="aside">
+      <h2>The short version</h2>
+      <p>
+        One team, direct access and a standard of work that does not depend on
+        how large the project is.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> SEO, AI search and web design</li>
+        <li><Icon name="check" /> Strategy and delivery in one place</li>
+        <li><Icon name="check" /> Remote work across Canada and the U.S.</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+    </Fragment>
+  </PageHero>
+
+  <Section>
+    <div class="about-intro">
+      <div class="about-intro__copy reveal">
+        <p class="eyebrow"><span class="eyebrow__index">01</span> The agency</p>
+        <h2 class="h2" style="margin-top: 1rem;">
+          We build the thing that makes a business easier to find and easier to choose.
+        </h2>
+        <div class="prose about-intro__prose">
+          <p>
+            Infused is a boutique digital agency working with businesses on
+            search visibility, AI search and web design. The work sits at the
+            point where a good website meets a clear search strategy: people
+            find the business, understand what it offers and know what to do
+            next.
+          </p>
+          <p>
+            We are deliberately small. That keeps the thinking close to the
+            execution and means the person you speak with at the start is still
+            close to the work at launch. It also lets us be honest about scope,
+            timing and whether a project is a good fit.
+          </p>
+          <p>
+            Our clients range from trades and professional practices to
+            hospitality and eCommerce businesses. They tend to share the same
+            goal: a digital presence that does more than exist.
+          </p>
+        </div>
+        <div class="prose-links about-intro__links">
+          <a class="link-arrow" href="/web-design">
+            Explore web design
+            <Icon name="arrow-right" />
+          </a>
+          <a class="link-arrow" href="/results">
+            See the results
+            <Icon name="arrow-right" />
+          </a>
+        </div>
+      </div>
+
+      <figure class="about-intro__media reveal">
+        <div class="about-intro__frame">
+          <img
+            src="/img/inner-about.jpg"
+            alt="A laptop and notebook on a desk during a design and planning session"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption>
+          The work starts with questions, not a template.
+        </figcaption>
+      </figure>
+    </div>
+  </Section>
+
+  <Section
+    tone="surface"
+    eyebrow="What we do"
+    index="02"
+    heading="Three services, one standard"
+    description="Search, AI visibility and web design are stronger when they are planned together. Each service is available on its own, with the same attention to the business behind it."
+  >
+    <div class="grid grid--3 reveal-group">
+      {
+        services.map((service) => (
+          <article class="card card--interactive about-service">
+            <span class="card__icon"><Icon name={service.icon} /></span>
+            <h3 class="card__title">{service.title}</h3>
+            <p class="card__text">{service.text}</p>
+            <div class="card__footer">
+              <a class="link-arrow" href={service.href}>
+                Learn more
+                <Icon name="arrow-right" />
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <section class="section section--warm" id="approach">
+    <div class="container">
+      <div class="manifesto about-approach">
+        <div class="manifesto__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__index">03</span> How we work</p>
+          <h2 class="h2" style="margin-top: 1rem;">A practical approach, without the theatre</h2>
+          <p style="margin-top: 1.1rem; color: var(--color-muted); max-width: 30rem;">
+            Good digital work is part strategy, part craft and part
+            communication. These are the standards we bring to every project.
+          </p>
+          <div style="margin-top: 1.7rem;">
+            <Button href="/get-a-quote" variant="secondary" arrow>Talk about a project</Button>
+          </div>
+        </div>
+
+        <ol class="manifesto__list reveal-group">
+          {
+            principles.map((principle) => (
+              <li class="manifesto__item">
+                <span class="manifesto__index">{principle.number}</span>
+                <div>
+                  <h3>{principle.title}</h3>
+                  <p>{principle.text}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contrast about-team" id="team">
+    <div class="container">
+      <div class="about-team__grid">
+        <figure class="about-team__portrait reveal">
+          <img
+            src="/img/about.jpeg"
+            alt="JD Fillmore walking with his daughter on a boardwalk trail"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>JD Fillmore, owner of Infused Agency.</figcaption>
+        </figure>
+
+        <div class="about-team__copy reveal">
+          <p class="eyebrow" style="color: var(--color-gold-bright);">
+            <span class="eyebrow__index">04</span>
+            The person behind it
+          </p>
+          <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">JD Fillmore</h2>
+          <p class="about-team__role">Owner, Infused Agency</p>
+          <div class="about-team__bio">
+            <p>
+              JD owns and runs Infused Agency. He is involved in the strategy,
+              design and delivery of client work, from the first conversation
+              through to launch.
+            </p>
+            <p>
+              His approach is straightforward: understand the business, make a
+              clear plan, and do the work properly. Clients work directly with
+              him, which keeps decisions quick and the standard consistent.
+            </p>
+            <p>
+              Away from the studio, he is usually outside with his family. That
+              same preference for real places over posturing is a good guide to
+              how the agency works.
+            </p>
+          </div>
+          <div class="about-team__actions">
+            <Button href="/get-a-quote" variant="gold" arrow>Work with Infused</Button>
+            <a class="link-arrow" href={`mailto:${siteFacts.email}`}>
+              Email JD
+              <Icon name="arrow-right" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Section
+    eyebrow="Client perspective"
+    index="05"
+    heading="What it is like to work together"
+    description="The best proof is how clients describe the experience after the work is done."
+  >
+    <div class="grid grid--2 reveal-group">
+      {
+        testimonials.map((testimonial) => (
+          <TestimonialCard
+            quote={testimonial.quote}
+            person={testimonial.person}
+            role={testimonial.role}
+            company={testimonial.namedEntity}
+          />
+        ))
+      }
+    </div>
+    <div class="prose-links about-testimonials__link">
+      <a class="link-arrow" href="/results">
+        Read more client results
+        <Icon name="arrow-right" />
+      </a>
+    </div>
+  </Section>
+
+  <CtaBand
+    eyebrow="Next step"
+    heading="Tell us what you are trying to build"
+    description="A short conversation is enough to work out whether we are the right fit. You will get a clear answer and a written quote if the project makes sense."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>
+
+<style>
+  .about-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    gap: clamp(2rem, 1.4rem + 3.5vw, 5rem);
+    align-items: center;
+  }
+
+  .about-intro__prose {
+    margin-top: 1.35rem;
+  }
+
+  .about-intro__prose p {
+    font-size: var(--text-base);
+    line-height: 1.75;
+  }
+
+  .about-intro__links {
+    margin-top: 1.8rem;
+  }
+
+  .about-intro__media {
+    margin: 0;
+  }
+
+  .about-intro__frame {
+    position: relative;
+    overflow: hidden;
+    border: var(--border-hairline);
+    border-radius: var(--radius-2xl);
+    background: var(--color-tint);
+    box-shadow: var(--shadow-lift);
+  }
+
+  .about-intro__frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .about-intro__frame img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 900ms var(--ease-out);
+  }
+
+  @media (hover: hover) {
+    .about-intro__frame:hover img {
+      transform: scale(1.02);
+    }
+  }
+
+  .about-intro__media figcaption {
+    margin-top: 0.85rem;
+    color: var(--color-muted);
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+  }
+
+  .about-service {
+    min-height: 15rem;
+  }
+
+  .about-service .card__title {
+    margin-top: 1.25rem;
+  }
+
+  .about-service .card__footer {
+    margin-top: auto;
+    padding-top: 1.2rem;
+  }
+
+  .about-team__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+    gap: clamp(2rem, 1.5rem + 4vw, 5.5rem);
+    align-items: center;
+  }
+
+  .about-team__portrait {
+    margin: 0;
+  }
+
+  .about-team__portrait img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 62%;
+    border: 1px solid var(--color-contrast-line);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-deep);
+  }
+
+  .about-team__portrait figcaption {
+    margin-top: 0.9rem;
+    color: var(--color-contrast-muted);
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+  }
+
+  .about-team__role {
+    margin-top: 0.6rem;
+    color: var(--color-gold-bright);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .about-team__bio {
+    max-width: 36rem;
+    margin-top: 1.5rem;
+    color: var(--color-contrast-muted);
+  }
+
+  .about-team__bio p {
+    font-size: var(--text-base);
+    line-height: 1.75;
+  }
+
+  .about-team__bio p + p {
+    margin-top: 1rem;
+  }
+
+  .about-team__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+    margin-top: 1.9rem;
+  }
+
+  .about-team__actions .link-arrow {
+    color: var(--color-gold-bright);
+  }
+
+  .about-testimonials__link {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: var(--border-hairline);
+  }
+
+  @media (max-width: 900px) {
+    .about-intro,
+    .about-team__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-intro__media {
+      max-width: 38rem;
+    }
+
+    .about-team__portrait {
+      max-width: 30rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .about-intro__frame img {
+      aspect-ratio: 1 / 1;
+    }
+
+    .about-team__actions .btn {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-intro__frame:hover img {
+      transform: none;
+    }
+  }
+</style>

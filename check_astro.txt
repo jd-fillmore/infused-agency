@@ -1,0 +1,34 @@
+﻿yarn run v1.22.19
+$ astro check --root astro
+[2m09:42:11[22m [34m[content][39m Syncing content
+[2m09:42:11[22m [34m[content][39m Synced content
+[2m09:42:11[22m [34m[types][39m Generated [2m3.44s[22m
+[2m09:42:11[22m [34m[check][39m Getting diagnostics for Astro files in C:\Users\User\Desktop\infused-agency\astro...
+[96mastro/src/components/footer/Footer.astro[0m:[93m3[0m:[93m10[0m - [93mwarning[0m[90m ts(6133): [0m'navGroups' is declared but its value is never read.
+
+[7m3[0m import { navGroups, siteFacts } from "../../lib/site";
+[7m [0m [93m         ~~~~~~~~~[0m
+
+[96mastro/src/components/nav/Nav.astro[0m:[93m28[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'telHref' is declared but its value is never read.
+
+[7m28[0m const telHref = `tel:+1${siteFacts.phone.replace(/\D/g, "")}`;
+[7m  [0m [93m      ~~~~~~~[0m
+
+[96mastro/src/pages/get-a-quote.astro[0m:[93m44[0m:[93m68[0m - [91merror[0m[90m ts(2304): [0mCannot find name 'telHref'.
+
+[7m44[0m         <li class="visually-hidden"><Icon name="phone" /> <a href={telHref}>{siteFacts.phone}</a></li>
+[7m  [0m [91m                                                                   ~~~~~~~[0m
+
+Result (75 files): 
+- 1 error
+- 0 warnings
+- 2 hints
+
+node.exe : error Command failed with exit code 1.
+At C:\Users\User\AppData\Roaming\npm\yarn.ps1:24 char:5
++     & "node$exe"  "$basedir/node_modules/yarn/bin/yarn.js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error Command failed with exit code 1.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -144,7 +144,7 @@ function paragraphs(items?: string[]) {
               {paragraphs(data.proof.items).map((item) => <li><RichText text={item} /></li>)}
             </ul>
             <div style="margin-top: 1.75rem;">
-              <Button href={data.proof.viewMoreHref ?? "/work"} variant="gold" arrow>
+              <Button href={data.proof.viewMoreHref ?? "/results"} variant="gold" arrow>
                 {data.proof.viewMoreLabel ?? "View more results"}
               </Button>
             </div>

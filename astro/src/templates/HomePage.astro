@@ -16,13 +16,12 @@ interface Props {
 const { posts } = Astro.props;
 
 const trust = [
-  { icon: "users", label: `${siteFacts.clientsHelped} Niagara businesses helped` },
-  { icon: "target", label: "Local SEO for Niagara businesses" },
-  { icon: "map-pin", label: "Serving all of Niagara" },
+  { icon: "users", label: `${siteFacts.clientsHelped} businesses helped` },
+  { icon: "target", label: "SEO, AI search and web design" },
+  { icon: "globe", label: "Remote across Canada and the U.S." },
 ];
 
 const affiliated = [
-  { label: "Google Partner", image: "/img/aff-google-partner.jpg" },
   { label: "Niagara Chamber", image: "/img/aff-niagara-chamber.jpg" },
   { label: "Three Best Rated", image: "/img/aff-three-best-rated.jpg" },
   { label: "GoodFirms", image: "/img/aff-good-firms.jpg" },
@@ -41,53 +40,26 @@ const clients = [
 ];
 
 const services = [
-  { number: "01", title: "SEO", href: "/seo", description: "Get found on Google and in the local map pack." },
+  { number: "01", title: "SEO", href: "/seo", description: "Get found on Google for the searches that bring enquiries." },
   { number: "02", title: "AI Search", href: "/ai-search", description: "Show up in the answers people get from AI tools." },
   { number: "03", title: "Web Design", href: "/web-design", description: "Turn more visitors into calls and enquiries." },
 ];
 
 const whatWeDo = [
-  { number: "1", title: "Keyword research", href: "/seo", description: "Find the terms that bring calls." },
-  { number: "2", title: "Link building", href: "/seo/link-building", description: "Build trust with relevant links." },
-  { number: "3", title: "Content writing", href: "/seo/content-writing", description: "Pages written for buyers." },
-  { number: "4", title: "Local SEO", href: "/seo/local-seo", description: "Win the map for your services." },
-  { number: "5", title: "Technical SEO", href: "/seo/technical-seo", description: "Keep your site fast and crawlable." },
-  { number: "6", title: "On-page SEO", href: "/seo", description: "Tighten pages that drive calls." },
+  { number: "1", title: "Search strategy", href: "/seo", description: "Find the searches that bring the right enquiries." },
+  { number: "2", title: "Technical SEO", href: "/seo", description: "Keep your site fast, crawlable and easy to trust." },
+  { number: "3", title: "On-page SEO", href: "/seo", description: "Tighten the pages that drive calls and form fills." },
+  { number: "4", title: "AI search visibility", href: "/ai-search", description: "Show up in the answers people get from AI tools." },
+  { number: "5", title: "Web design", href: "/web-design", description: "Turn more visitors into calls and enquiries." },
+  { number: "6", title: "Measurement", href: "/results", description: "Track visibility, leads and the work that moved them." },
 ];
 
 const whyInfused = [
-  { icon: "clock", title: "Planned around Niagara's seasons", text: "We time work to the months that matter most." },
-  { icon: "trending-up", title: "Enquiries, not empty traffic", text: "We track calls and form fills that drive revenue." },
-  { icon: "map-pin", title: "People who know local search", text: "We know the map pack and AI answers in Niagara." },
-  { icon: "chat", title: "Straight answers on cost and fit", text: "We quote after a free consultation and tell you if it's not a fit." },
+  { icon: "target", title: "Work tied to enquiries", text: "Every decision is measured against the calls, forms and customers it brings." },
+  { icon: "spark", title: "SEO and AI search together", text: "One plan that helps you show up in search results and in AI answers." },
+  { icon: "code", title: "Web design that earns trust", text: "Clear messaging, intuitive journeys and fast pages that make choosing you easier." },
+  { icon: "chat", title: "Straight answers on scope and cost", text: "We quote after a free consultation and tell you if we are not the right fit." },
 ];
-
-const cities = [
-  { name: "Beamsville", href: "/seo/beamsville" },
-  { name: "Crystal Beach", href: "/seo/crystal-beach" },
-  { name: "Fonthill", href: "/seo/fonthill" },
-  { name: "Fort Erie", href: "/seo/fort-erie" },
-  { name: "Grimsby", href: "/seo/grimsby" },
-  { name: "Niagara-on-the-Lake", href: "/seo/niagara-on-the-lake" },
-  { name: "Port Colborne", href: "/seo/port-colborne" },
-  { name: "Thorold", href: "/seo/thorold" },
-  { name: "Welland", href: "/seo/welland" },
-];
-
-const unlinkedAreas = ["St. Catharines", "Niagara Falls", "Pelham", "West Lincoln", "Smithville", "Wainfleet"];
-
-const resultVisuals: Record<string, { image: string; alt: string; industry: string }> = {
-  "Flat Rock Cellars": {
-    image: "/img/st-catharines-seo-results.webp",
-    alt: "Search visibility results for Flat Rock Cellars, a Niagara winery we work with",
-    industry: "Winery",
-  },
-  "Delta Energy Solutions": {
-    image: "/img/niagara-seo-company-results.webp",
-    alt: "Local search visibility results for Delta Energy Solutions, serving Niagara Falls and the Niagara region",
-    industry: "Electrical & energy",
-  },
-};
 
 const industryCards = [
   { category: "Trades", title: "Concrete contractors", benefit: "Get found for jobs in your area.", href: "/seo/for-concrete-contractors-niagara" },
@@ -110,8 +82,29 @@ const aiTerms = [
   { code: "GEO", title: "Generative engine optimization", text: "Earn the citation inside an AI-generated response, not just a list of links." },
 ];
 
-const featuredResult = siteFacts.results[0];
-const featuredVisual = resultVisuals[featuredResult.namedEntity];
+const proofResults = [
+  {
+    name: "Flat Rock Cellars",
+    industry: "Winery",
+    metric: "Page 1",
+    label: "Google rankings",
+    context: "First-page Google rankings for multiple priority keywords, achieved within the first month of SEO work.",
+    image: "/img/st-catharines-seo-results.webp",
+    alt: "Search visibility results for Flat Rock Cellars",
+  },
+  {
+    name: "Delta Energy Solutions",
+    industry: "Electrical & energy",
+    metric: "Growth",
+    label: "Local visibility",
+    context: "Stronger local search visibility after a focused SEO program built around service-area demand.",
+    image: "/img/niagara-seo-company-results.webp",
+    alt: "Search visibility results for Delta Energy Solutions",
+  },
+];
+
+const featuredResult = proofResults[0];
+
 ---
 
 <section class="home-hero">
@@ -120,9 +113,9 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
       <div class="home-hero__copy">
         <p class="hero-kicker">
           <span class="hero-kicker__dot" aria-hidden="true"></span>
-          <span>Niagara SEO &amp; AI search</span>
+          <span>SEO, AI Search &amp; Web Design</span>
           <span class="hero-kicker__rule" aria-hidden="true"></span>
-          <span>St. Catharines, ON</span>
+          <span>Canada &amp; the U.S.</span>
         </p>
 
         <h1 class="hero-title">
@@ -132,15 +125,14 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
         </h1>
 
         <p class="hero-lead">
-          We help businesses get found on Google, in the map pack and in AI
-          search tools like ChatGPT and Gemini. Based in Niagara, Ontario,
-          serving Canada and beyond. From SEO and AI search optimization to web
-          design, the work is built around calls and enquiries.
+          We help businesses grow through SEO, AI search visibility and
+          high-performing web design. Based in Niagara, Ontario, we work
+          remotely with businesses across Canada and the United States.
         </p>
 
         <div class="hero-actions">
           <Button href="/get-a-quote" size="lg" variant="gold" arrow>Get a Free Quote</Button>
-          <Button href="/work" variant="ghost" size="lg">View our work</Button>
+          <Button href="/results" variant="ghost" size="lg">View our work</Button>
         </div>
 
         <ul class="hero-trust">
@@ -155,25 +147,25 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
         </ul>
       </div>
 
-      <aside class="hero-visual" aria-label="Verified local visibility result">
+      <aside class="hero-visual" aria-label="Documented search result">
         <span class="hero-visual__orbit" aria-hidden="true"></span>
 
         <div class="hero-report">
           <div class="hero-report__top">
-            <span class="hero-report__eyebrow">Local visibility</span>
-            <span class="badge badge--gold">Verified</span>
+            <span class="hero-report__eyebrow">Documented result</span>
+            <span class="badge badge--gold">SEO result</span>
           </div>
           <div class="hero-report__stat">
             <span class="hero-report__value">{featuredResult.metric}</span>
-            <span class="hero-report__label">{featuredResult.metricLabel}</span>
+            <span class="hero-report__label">{featuredResult.label}</span>
           </div>
           <div class="hero-report__bars" aria-hidden="true">
             <span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
           <div class="hero-report__foot">
             <div>
-              <strong>{featuredResult.namedEntity}</strong>
-              <span>{featuredVisual?.industry ?? "Niagara business"}</span>
+              <strong>{featuredResult.name}</strong>
+              <span>{featuredResult.industry}</span>
             </div>
             <a class="link-arrow" href="#results">
               See results
@@ -184,12 +176,7 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
 
         <div class="hero-ticket">
           <span class="hero-ticket__value">{siteFacts.clientsHelped}</span>
-          <span>Niagara businesses helped</span>
-        </div>
-
-        <div class="hero-partner">
-          <img src="/img/aff-google-partner.jpg" alt="Google Partner" loading="eager" decoding="async" />
-          <span>Google Partner</span>
+          <span>Businesses helped</span>
         </div>
       </aside>
     </div>
@@ -248,14 +235,15 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
         <span class="eyebrow__index">02</span>
         Proof
       </p>
-      <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">Real results for Niagara businesses</h2>
+      <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">Real results for businesses we work with</h2>
       <p style="margin-top: 1.1rem; color: var(--color-contrast-muted); max-width: 30rem;">
-        Local visibility grew after SEO work with Infused Agency. These are the
-        verified outcomes we can share, alongside the businesses that lived them.
+        Search work should show up in the business, not only in a report. These
+        are documented outcomes from client campaigns, alongside the work that
+        helped create them.
       </p>
       <div class="stat" style="margin-top: 2rem;">
         <span class="stat__value">{siteFacts.clientsHelped}</span>
-        <span class="stat__label">Niagara businesses helped</span>
+        <span class="stat__label">Businesses helped</span>
       </div>
       <div style="margin-top: 1.75rem;">
         <Button href="/get-a-quote" variant="gold" arrow>Get a Free Quote</Button>
@@ -264,32 +252,27 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
 
     <div class="proof-results reveal-group">
       {
-        siteFacts.results.map((result) => {
-          const visual = resultVisuals[result.namedEntity];
-          return (
-            <article class="proof-result">
-              <div class="proof-result__body">
-                <span class="badge">Verified result</span>
-                <div class="stat" style="margin-top: 1.1rem;">
-                  <span class="stat__value">{result.metric}</span>
-                  <span class="stat__label">{result.metricLabel}</span>
-                </div>
-                <p style="margin-top: 0.8rem; color: var(--color-contrast-muted); font-size: var(--text-sm); line-height: 1.65;">
-                  {result.context}
-                </p>
-                <div class="proof-result__client">
-                  <strong>{result.namedEntity}</strong>
-                  {visual && <span>{visual.industry}</span>}
-                </div>
+        proofResults.map((result) => (
+          <article class="proof-result">
+            <div class="proof-result__body">
+              <span class="badge">Documented result</span>
+              <div class="stat" style="margin-top: 1.1rem;">
+                <span class="stat__value">{result.metric}</span>
+                <span class="stat__label">{result.label}</span>
               </div>
-              {visual && (
-                <div class="proof-result__media">
-                  <img src={visual.image} alt={visual.alt} loading="lazy" decoding="async" />
-                </div>
-              )}
-            </article>
-          );
-        })
+              <p style="margin-top: 0.8rem; color: var(--color-contrast-muted); font-size: var(--text-sm); line-height: 1.65;">
+                {result.context}
+              </p>
+              <div class="proof-result__client">
+                <strong>{result.name}</strong>
+                <span>{result.industry}</span>
+              </div>
+            </div>
+            <div class="proof-result__media">
+              <img src={result.image} alt={result.alt} loading="lazy" decoding="async" />
+            </div>
+          </article>
+        ))
       }
     </div>
   </div>
@@ -316,10 +299,10 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
           <span class="eyebrow__index">03</span>
           Why Infused
         </p>
-        <h2 class="h2" style="margin-top: 1rem;">Why Niagara businesses choose Infused Agency</h2>
+        <h2 class="h2" style="margin-top: 1rem;">Why businesses choose Infused Agency</h2>
         <p style="margin-top: 1.1rem; color: var(--color-muted); max-width: 30rem;">
-          A boutique team with local knowledge, a clear scope and a plan timed to
-          the way Niagara actually searches.
+          A boutique agency with a clear scope, direct communication and a plan
+          built around how your customers actually search.
         </p>
         <div style="margin-top: 1.7rem;">
           <Button href="/about" variant="secondary" arrow>Meet the team</Button>
@@ -348,8 +331,8 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
   tone="tint"
   eyebrow="Capabilities"
   index="04"
-  heading="Small Business SEO Services in Niagara"
-  description="The search foundations that bring qualified calls, built in the order that moves your business first."
+  heading="Search Foundations Built in the Right Order"
+  description="The strategy, technical work and page-level improvements that help the right people find and choose your business."
 >
   <div class="process-grid reveal-group">
     {
@@ -432,8 +415,8 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
   <div class="split split--top">
     <div class="reveal">
       <p class="prose">
-        We design and build fast, lead-generating websites for Niagara businesses.
-        That includes <a href="/web-design">web design</a>,
+        We design and build fast, lead-generating websites for businesses across
+        Canada and the United States. That includes <a href="/web-design">web design</a>,
         <a href="/web-design/ecommerce-web-design">eCommerce web design</a> and
         <a href="/web-design/shopify-web-design">Shopify web design</a> for stores
         that need to sell online.
@@ -466,8 +449,8 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
   id="industries"
   eyebrow="Industries"
   index="07"
-  heading="SEO for Niagara Industries"
-  description="Specific search work for the trades, practices and hospitality businesses that make up the Niagara market."
+  heading="Industries We Work With"
+  description="Search work shaped around the trades, professional practices and hospitality businesses we know well."
 >
   <div class="grid grid--3 reveal-group">
     {
@@ -498,39 +481,10 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
   </div>
 </Section>
 
-<section class="section section--contrast" id="areas">
-  <div class="container">
-    <div class="areas-panel">
-      <div class="areas-panel__copy reveal">
-        <p class="eyebrow" style="color: var(--color-gold-bright);">
-          <span class="eyebrow__index">08</span>
-          Where we work
-        </p>
-        <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">Areas served</h2>
-        <p style="margin-top: 1.1rem;">
-          We serve St. Catharines, Niagara Falls and communities across the Niagara
-          Region. If your customers search locally, we can help you be the answer.
-        </p>
-        <div style="margin-top: 1.6rem;">
-          <Button href="/seo" variant="gold" arrow>Explore local SEO</Button>
-        </div>
-      </div>
-
-      <ul class="areas-grid reveal-group" aria-label="Niagara communities served">
-        {unlinkedAreas.slice(0, 2).map((area) => <li><span>{area}</span></li>)}
-        {cities.map((city) => (
-          <li><a href={city.href}>{city.name}</a></li>
-        ))}
-        {unlinkedAreas.slice(2).map((area) => <li><span>{area}</span></li>)}
-      </ul>
-    </div>
-  </div>
-</section>
-
 <CtaBand
   eyebrow="Free quote"
-  heading="Get a Free Local SEO Quote"
-  description="Tell us about your goals and we will map the local search work that fits, with a clear written quote."
+  heading="Get a Free Quote"
+  description="Tell us about your goals and we will map the search and web design work that fits, with a clear written quote."
   ctaLabel="Get a Free Quote"
 />
 
@@ -539,13 +493,13 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
     <div class="faq-layout">
       <div class="faq-layout__intro reveal">
         <p class="eyebrow">
-          <span class="eyebrow__index">09</span>
+          <span class="eyebrow__index">08</span>
           Questions
         </p>
         <h2 class="h2" style="margin-top: 1rem;">Frequently Asked Questions</h2>
         <p>
-          Straight answers on local visibility, AI search, timelines and what the
-          work actually involves.
+          Straight answers on search visibility, AI search, web design, timelines
+          and what the work actually involves.
         </p>
         <Button href="/get-a-quote" variant="secondary" arrow>Ask us a question</Button>
       </div>
@@ -558,9 +512,9 @@ const featuredVisual = resultVisuals[featuredResult.namedEntity];
   id="blog"
   tone="warm"
   eyebrow="Learn"
-  index="10"
+  index="09"
   heading="Blog"
-  description="Practical notes on SEO, AI search and web design for local businesses."
+  description="Practical notes on SEO, AI search and web design for growing businesses."
 >
   <div class="grid grid--3 reveal-group">
     {

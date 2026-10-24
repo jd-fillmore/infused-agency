@@ -1,8 +1,7 @@
-import { createRequire } from "node:module";
-
 import siteFactsJson from "../../../data/site/site-facts.json";
 import servicesJson from "../../../data/services/services.json";
 import navJson from "../../../src/generated/services-nav.json";
+import { homeFaqs as astroHomeFaqs } from "./home-faqs";
 
 export const SITE = "https://infused.agency";
 export const SITE_NAME = "Infused Agency";
@@ -79,13 +78,9 @@ export const services = servicesJson as Service[];
 export const navGroups = (navJson as { groups: NavGroup[] }).groups;
 export const industries = (navJson as { industries: NavLink[] }).industries;
 
-// The homepage FAQ module is CommonJS and already the single source of truth for
-// both visible copy and FAQPage JSON-LD; load it at build time rather than
-// duplicating the content.
-const require = createRequire(import.meta.url);
-export const homeFaqs = (
-  require("../../../src/lib/homeFaqs.js") as { HOME_FAQS: Faq[] }
-).HOME_FAQS;
+// Homepage FAQ copy lives in the Astro project so the legacy Next.js pages are
+// not modified. It is the single source for both visible copy and FAQPage JSON-LD.
+export const homeFaqs: Faq[] = astroHomeFaqs;
 
 export function absoluteUrl(pathname: string): string {
   if (pathname === "/") return SITE;

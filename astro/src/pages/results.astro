@@ -12,7 +12,7 @@ import {
   webPageNode,
 } from "../lib/schema";
 
-const pathname = "/work";
+const pathname = "/results";
 const title = "Infused Agency | Our Work";
 const description =
   "We're passionate about putting in the work to deliver to our client's needs. Check out the results we've got for our clients";
@@ -20,7 +20,7 @@ const projects = getWorkProjects();
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
-  { name: "Work" },
+  { name: "Results" },
 ];
 
 const jsonLd = [
@@ -34,7 +34,7 @@ const jsonLd = [
   <PageHero
     title="Featured Work"
     description="Our business solutions grow our clients' businesses."
-    eyebrow="Our work"
+    eyebrow="Our results"
     breadcrumbs={breadcrumbs}
     ctaLabel="Get a Free Quote"
   />

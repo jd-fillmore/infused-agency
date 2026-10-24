@@ -1,5 +1,679 @@
 ---
-import BespokeRoute from "../../components/routes/BespokeRoute.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Accordion from "../../components/ui/Accordion.astro";
+import Button from "../../components/ui/Button.astro";
+import CtaBand from "../../components/ui/CtaBand.astro";
+import Icon from "../../components/ui/Icon.astro";
+import PageHero from "../../components/ui/PageHero.astro";
+import Section from "../../components/ui/Section.astro";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const pathname = "/web-design";
+const title = "Web Design & Development in Ontario | Infused";
+const description =
+  "Conversion-focused web design and development for businesses across Canada and the United States. Infused builds clear, fast, accessible websites with SEO-aware structure.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Web Design" },
+];
+
+const faqs = [
+  {
+    q: "What makes a website designed by Infused different?",
+    a: "We start with the business goal, the audience and the action you want people to take. The design follows that strategy, and the build is held to the same standard on performance, accessibility and search structure. You get a site that is considered as a whole rather than a template with new colours.",
+  },
+  {
+    q: "How long does a website project take?",
+    a: "Most projects run for several weeks rather than a few days. The timeline depends on the number of pages, how much content is ready and how quickly decisions can be made. We agree on a realistic schedule before work begins and keep you updated as it moves.",
+  },
+  {
+    q: "Can you redesign an existing website?",
+    a: "Yes. A redesign can keep what already works while fixing the structure, messaging and experience that hold the site back. We review the current site before recommending whether a rebuild or a more focused update is the better investment.",
+  },
+  {
+    q: "Will my website work on phones and tablets?",
+    a: "Yes. We design and build responsively, so layouts, type, navigation and calls to action are considered at every screen size. We also test the finished site on narrow mobile screens, not only on desktop.",
+  },
+  {
+    q: "Do you guarantee rankings or conversions?",
+    a: "No. We build SEO-aware structure and clear conversion paths, but no agency can guarantee a ranking, traffic level or conversion rate. Search and user behaviour involve factors outside any one agency's control. We focus on doing the work well and reporting honestly.",
+  },
+  {
+    q: "How is a project quoted?",
+    a: "Every project is scoped and quoted individually. After a free consultation we review the site, the requirements and the level of work involved, then send a clear written quote. If the project is not a fit, we will tell you.",
+  },
+];
+
+const capabilities = [
+  {
+    icon: "search",
+    title: "Strategy and site structure",
+    text: "A clear plan for what the site needs to say, which pages it needs and how people will move through it.",
+  },
+  {
+    icon: "users",
+    title: "User experience",
+    text: "Navigation and page flows built around the questions real customers bring to your website.",
+  },
+  {
+    icon: "star",
+    title: "Visual design",
+    text: "Distinctive, consistent design that supports the brand and makes the important information easy to read.",
+  },
+  {
+    icon: "code",
+    title: "Responsive development",
+    text: "A careful build that holds together on phones, tablets, laptops and large screens.",
+  },
+  {
+    icon: "bolt",
+    title: "Performance and technical quality",
+    text: "Fast pages, sensible markup and a build that avoids unnecessary weight and friction.",
+  },
+  {
+    icon: "trending-up",
+    title: "SEO-aware foundations",
+    text: "Logical headings, crawlable pages and content hierarchy that give search engines clear signals.",
+  },
+];
+
+const problems = [
+  {
+    number: "01",
+    title: "What do you actually do?",
+    text: "Visitors should understand the offer quickly, without decoding internal language or hunting for the answer.",
+  },
+  {
+    number: "02",
+    title: "Why should I trust you?",
+    text: "Proof, clarity and a polished experience do more for trust than a long list of claims.",
+  },
+  {
+    number: "03",
+    title: "What happens next?",
+    text: "The path to a call, quote or enquiry should be obvious on every page, not left to chance.",
+  },
+];
+
+const process = [
+  {
+    number: "01",
+    title: "Discover",
+    text: "We learn how the business works, who it serves and what the website needs to achieve. We review the current site and the competitive landscape.",
+  },
+  {
+    number: "02",
+    title: "Plan",
+    text: "We map the pages, messaging and conversion paths before design begins. The sitemap and page priorities come out of that thinking.",
+  },
+  {
+    number: "03",
+    title: "Design",
+    text: "We design the experience around clarity, trust and action, then refine it with you. The visual system stays consistent across the site.",
+  },
+  {
+    number: "04",
+    title: "Build and launch",
+    text: "We develop the site responsively, check performance and accessibility, and prepare the technical details for launch.",
+  },
+];
+
+const work = [
+  {
+    name: "Cass-A-Bella Construction",
+    sector: "Custom home renovation",
+    image: "/img/custom-website-design-beamsville-cass-a-bella-construction.png",
+    alt: "Cass-A-Bella Construction website shown on a laptop and phone",
+  },
+  {
+    name: "VISCA Electric",
+    sector: "Electrical services",
+    image: "/img/custom-website-design-crystal-beach-visca-electric.png",
+    alt: "VISCA Electric website shown on a laptop and phone",
+  },
+  {
+    name: "Jerry's Insulating",
+    sector: "Insulation contractor",
+    image: "/img/crystal-beach-web-design-jerrys-insulating.png",
+    alt: "Jerry's Insulating website shown on a laptop and phone",
+  },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "Web Design and Development",
+    description,
+    serviceType: "Web Design",
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Ontario" },
+      { "@type": "Country", name: "Canada" },
+      { "@type": "Country", name: "United States" },
+    ],
+  }),
+  faqPageNode(
+    pathname,
+    faqs.map((faq) => ({ q: faq.q, a: faq.a }))
+  ),
+];
 ---
 
-<BespokeRoute pathname="/web-design" />
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="Web design that does more than look good."
+    description="Strategic websites designed around how people search, decide and get in touch. We plan, design and build sites that make your value clear and the next step obvious."
+    eyebrow="Web design & development"
+    breadcrumbs={breadcrumbs}
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <figure class="media-frame wd-hero__media">
+        <img
+          src="/img/custom-website-design-beamsville-cass-a-bella-construction.png"
+          alt="Cass-A-Bella Construction website shown on a laptop and phone"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+      <p class="wd-hero__caption">
+        Design, development and search structure considered together.
+      </p>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="The real job"
+    index="01"
+    heading="A website has to answer three questions"
+    description="Good design is not decoration. It is the difference between a visitor who understands why you are the right choice and one who leaves to check a competitor."
+  >
+    <div class="wd-problems reveal-group">
+      {
+        problems.map((problem) => (
+          <article class="wd-problem">
+            <span class="wd-problem__index">{problem.number}</span>
+            <h3>{problem.title}</h3>
+            <p>{problem.text}</p>
+          </article>
+        ))
+      }
+    </div>
+    <div class="wd-note reveal">
+      <p>
+        The answer is rarely a new colour palette. It is usually clearer
+        thinking, a stronger hierarchy and a build that respects how people
+        actually use a website.
+      </p>
+      <a class="link-arrow" href="/seo">
+        See how search and design connect
+        <Icon name="arrow-right" />
+      </a>
+    </div>
+  </Section>
+
+  <Section
+    tone="surface"
+    eyebrow="Capabilities"
+    index="02"
+    heading="What we bring to the build"
+    description="The work covers strategy, design, development and the technical foundations that let a site perform."
+  >
+    <div class="grid grid--3 reveal-group">
+      {
+        capabilities.map((item) => (
+          <article class="card wd-capability">
+            <span class="card__icon">
+              <Icon name={item.icon} />
+            </span>
+            <h3 class="card__title">{item.title}</h3>
+            <p class="card__text">{item.text}</p>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <section class="section section--contrast" id="conversion">
+    <div class="container">
+      <div class="split wd-conversion">
+        <div class="reveal">
+          <p class="eyebrow" style="color: var(--color-gold-bright);">
+            <span class="eyebrow__index">03</span>
+            Trust and conversion
+          </p>
+          <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">
+            Design earns attention. Clarity earns the enquiry.
+          </h2>
+          <p class="wd-conversion__lead">
+            A site can look polished and still make people work too hard. When
+            the offer, the proof and the next step line up, visitors stop
+            comparing and start contacting.
+          </p>
+          <ul class="check-list wd-conversion__list">
+            <li>Message hierarchy that answers the first question fast.</li>
+            <li>Proof placed where it supports the decision, not buried.</li>
+            <li>Calls to action that are visible and specific.</li>
+            <li>Page speed and mobile behaviour that remove friction.</li>
+          </ul>
+          <div style="margin-top: 1.8rem;">
+            <Button href="/results" variant="gold" arrow>See the work</Button>
+          </div>
+        </div>
+
+        <figure class="media-frame wd-conversion__media reveal">
+          <img
+            src="/img/lead-gen-convert.jpg"
+            alt="A person reviewing website analytics on a laptop"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <Section
+    tone="tint"
+    eyebrow="The process"
+    index="04"
+    heading="A clear process, not a template"
+    description="Every project starts with the business and works toward a site that fits it. The steps are deliberate, and you know what is happening at each one."
+  >
+    <ol class="wd-process reveal-group">
+      {
+        process.map((step) => (
+          <li class="wd-process__step">
+            <span class="wd-process__number">{step.number}</span>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="small muted wd-process__foot">
+      Need ongoing search work after launch? See
+      <a href="/seo">SEO services</a> and <a href="/ai-search">AI search visibility</a>.
+    </p>
+  </Section>
+
+  <Section
+    eyebrow="Selected work"
+    index="05"
+    heading="Websites built for real businesses"
+    description="A few recent projects where design, development and search structure came together."
+  >
+    <div class="wd-work reveal-group">
+      {
+        work.map((project) => (
+          <article class="wd-work__card">
+            <div class="wd-work__media">
+              <img src={project.image} alt={project.alt} loading="lazy" decoding="async" />
+            </div>
+            <div class="wd-work__body">
+              <span class="badge">{project.sector}</span>
+              <h3>{project.name}</h3>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div class="prose-links wd-work__links">
+      <a class="link-arrow" href="/results">
+        View more results
+        <Icon name="arrow-right" />
+      </a>
+      <a class="link-arrow" href="/web-design/ecommerce-web-design">
+        eCommerce web design
+        <Icon name="arrow-right" />
+      </a>
+      <a class="link-arrow" href="/web-design/shopify-web-design">
+        Shopify web design
+        <Icon name="arrow-right" />
+      </a>
+    </div>
+  </Section>
+
+  <section class="section section--warm" id="why-infused">
+    <div class="container">
+      <div class="manifesto">
+        <div class="manifesto__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__index">06</span> Why Infused</p>
+          <h2 class="h2" style="margin-top: 1rem;">A considered build, with the search work already in mind</h2>
+          <p style="margin-top: 1.1rem; color: var(--color-muted); max-width: 30rem;">
+            We are small enough to stay close to the work and experienced enough
+            to see how the website, search and AI visibility affect each other.
+          </p>
+          <div style="margin-top: 1.7rem;">
+            <Button href="/about" variant="secondary" arrow>Meet the team</Button>
+          </div>
+        </div>
+
+        <ol class="manifesto__list reveal-group">
+          <li class="manifesto__item">
+            <span class="manifesto__index">01</span>
+            <div>
+              <h3>Strategy before pixels</h3>
+              <p>The page plan and messaging come first, so design has something real to solve.</p>
+            </div>
+          </li>
+          <li class="manifesto__item">
+            <span class="manifesto__index">02</span>
+            <div>
+              <h3>Design and build together</h3>
+              <p>The same team carries the idea through to a working site, without handing it down a chain.</p>
+            </div>
+          </li>
+          <li class="manifesto__item">
+            <span class="manifesto__index">03</span>
+            <div>
+              <h3>Search considered from day one</h3>
+              <p>Structure, headings and page speed are part of the build, not a fix applied months later.</p>
+            </div>
+          </li>
+          <li class="manifesto__item">
+            <span class="manifesto__index">04</span>
+            <div>
+              <h3>Honest scope, clear communication</h3>
+              <p>You get a written scope, a realistic schedule and a direct answer when something changes.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-layout__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__index">07</span> Questions</p>
+          <h2 class="h2" style="margin-top: 1rem;">Web design FAQs</h2>
+          <p>
+            Practical answers for businesses planning a new site or a redesign.
+          </p>
+          <Button href="/get-a-quote" variant="secondary" arrow>Ask us a question</Button>
+        </div>
+        <Accordion items={faqs} />
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    eyebrow="Start a project"
+    heading="Let's build a website that earns its place"
+    description="Tell us about the business, the site you have now and what you want the next one to do. We will send a clear written quote."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>
+
+<style>
+  .wd-hero__media {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .wd-hero__media img {
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #0d1930;
+    padding: clamp(0.6rem, 0.4rem + 0.8vw, 1rem);
+  }
+
+  .wd-hero__caption {
+    margin-top: 0.85rem;
+    color: var(--color-contrast-muted);
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+  }
+
+  .wd-problems {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 0.8rem + 1vw, 1.75rem);
+  }
+
+  .wd-problem {
+    padding-top: 1.4rem;
+    border-top: 2px solid var(--color-accent);
+  }
+
+  .wd-problem__index {
+    display: block;
+    color: var(--color-gold);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+
+  .wd-problem h3 {
+    margin-top: 1.2rem;
+    font-size: var(--text-xl);
+  }
+
+  .wd-problem p {
+    margin-top: 0.55rem;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    line-height: 1.7;
+  }
+
+  .wd-note {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-top: clamp(2rem, 1.5rem + 2vw, 3rem);
+    padding-top: 1.5rem;
+    border-top: var(--border-hairline);
+  }
+
+  .wd-note p {
+    max-width: 40rem;
+    color: var(--color-ink);
+    font-size: var(--text-lg);
+    line-height: 1.6;
+  }
+
+  .wd-capability {
+    min-height: 15rem;
+  }
+
+  .wd-capability .card__title {
+    margin-top: 1.25rem;
+  }
+
+  .wd-conversion {
+    align-items: center;
+  }
+
+  .wd-conversion__lead {
+    max-width: 34rem;
+    margin-top: 1.2rem;
+    color: var(--color-contrast-muted);
+    font-size: var(--text-lg);
+    line-height: 1.65;
+  }
+
+  .wd-conversion__list {
+    margin-top: 1.5rem;
+  }
+
+  .wd-conversion__media {
+    border-color: var(--color-contrast-line);
+    box-shadow: var(--shadow-deep);
+  }
+
+  .wd-conversion__media img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .wd-process {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    border-top: 1px solid rgba(17, 26, 46, 0.14);
+    border-left: 1px solid rgba(17, 26, 46, 0.14);
+    list-style: none;
+  }
+
+  .wd-process__step {
+    padding: clamp(1.35rem, 1.05rem + 0.9vw, 1.8rem);
+    border-right: 1px solid rgba(17, 26, 46, 0.14);
+    border-bottom: 1px solid rgba(17, 26, 46, 0.14);
+    background: rgba(255, 253, 248, 0.42);
+    transition: background-color var(--duration-card) var(--ease-smooth);
+  }
+
+  @media (hover: hover) {
+    .wd-process__step:hover {
+      background: var(--color-card);
+    }
+  }
+
+  .wd-process__number {
+    display: block;
+    color: var(--color-gold);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+
+  .wd-process__step h3 {
+    margin-top: 1.7rem;
+    font-size: var(--text-xl);
+  }
+
+  .wd-process__step p {
+    margin-top: 0.55rem;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    line-height: 1.68;
+  }
+
+  .wd-process__foot {
+    margin-top: 1.5rem;
+  }
+
+  .wd-work {
+    display: grid;
+    gap: clamp(1rem, 0.8rem + 1vw, 1.6rem);
+  }
+
+  .wd-work__card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(1.25rem, 1rem + 2vw, 2.75rem);
+    padding: clamp(1rem, 0.7rem + 1vw, 1.5rem);
+    border: var(--border-hairline);
+    border-radius: var(--radius-lg);
+    background: var(--color-card);
+    box-shadow: var(--shadow-xs);
+    transition:
+      border-color var(--duration-card) var(--ease-smooth),
+      box-shadow var(--duration-card) var(--ease-smooth),
+      translate var(--duration-control) var(--ease-smooth);
+  }
+
+  @media (hover: hover) {
+    .wd-work__card:hover {
+      border-color: var(--color-border-strong);
+      box-shadow: var(--shadow-card);
+      translate: 0 -2px;
+    }
+  }
+
+  .wd-work__media {
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background: var(--color-tint);
+  }
+
+  .wd-work__media img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 700ms var(--ease-out);
+  }
+
+  @media (hover: hover) {
+    .wd-work__card:hover .wd-work__media img {
+      transform: scale(1.02);
+    }
+  }
+
+  .wd-work__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .wd-work__body h3 {
+    font-size: var(--text-2xl);
+  }
+
+  .wd-work__links {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: var(--border-hairline);
+  }
+
+  @media (max-width: 980px) {
+    .wd-problems {
+      grid-template-columns: 1fr;
+    }
+
+    .wd-process {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wd-work__card {
+      grid-template-columns: 1fr;
+    }
+
+    .wd-work__media img {
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .wd-conversion__media img {
+      aspect-ratio: 16 / 11;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .wd-process {
+      grid-template-columns: 1fr;
+    }
+
+    .wd-note p {
+      font-size: var(--text-base);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wd-work__card:hover {
+      translate: none;
+    }
+
+    .wd-work__card:hover .wd-work__media img {
+      transform: none;
+    }
+  }
+</style>

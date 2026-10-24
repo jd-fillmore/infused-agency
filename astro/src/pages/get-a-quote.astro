@@ -12,7 +12,6 @@ const title = "Get a Free Quote | Infused Agency";
 const description =
   "Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!";
 
-const telHref = `tel:+1${siteFacts.phone.replace(/\D/g, "")}`;
 const emailHref = `mailto:${siteFacts.email}?subject=${encodeURIComponent("Free quote request")}`;
 
 const jsonLd = [
@@ -42,7 +41,7 @@ const jsonLd = [
       <h2>Prefer to talk it through?</h2>
       <p>Call or email and we will tell you whether a project is the right fit.</p>
       <ul class="page-hero__aside-list">
-        <li><Icon name="phone" /> <a href={telHref}>{siteFacts.phone}</a></li>
+        <li class="visually-hidden"><Icon name="phone" /> <a href={`tel:+1${siteFacts.phone.replace(/\D/g, "")}`}>{siteFacts.phone}</a></li>
         <li><Icon name="mail" /> <a href={emailHref}>{siteFacts.email}</a></li>
         <li><Icon name="map-pin" /> {siteFacts.address.addressLocality}, {siteFacts.address.addressRegion}</li>
       </ul>

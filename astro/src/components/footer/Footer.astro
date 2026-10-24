@@ -1,6 +1,6 @@
 ---
 import Icon from "../ui/Icon.astro";
-import { navGroups, siteFacts } from "../../lib/site";
+import { siteFacts } from "../../lib/site";
 
 const cities = [
   { name: "Beamsville", href: "/seo/beamsville" },
@@ -15,32 +15,34 @@ const cities = [
 ];
 
 const company = [
-  { name: "Work", href: "/work" },
+  { name: "Results", href: "/results" },
   { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
-  { name: "General contractor SEO", href: "/general-contractor-seo" },
   { name: "Sitemap", href: "/sitemap" },
 ];
 
 const socials = siteFacts.socialProfiles
-  .filter((profile) => ["Instagram", "Facebook", "LinkedIn"].includes(profile.platform))
+  .filter((profile) => ["Instagram", "Facebook"].includes(profile.platform))
   .map((profile) => ({
     ...profile,
     icon: profile.platform.toLowerCase(),
   }));
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const showLocalPages = !["/about", "/web-design"].includes(pathname);
 ---
 
 <footer class="site-footer">
   <div class="container">
-    <div class="site-footer__inner">
+    <div class:list={["site-footer__inner", { "site-footer__inner--compact": !showLocalPages }]}>
       <div class="site-footer__brand">
         <a class="brand" href="/" aria-label="Infused Agency home">
           infused<span>.</span>
         </a>
         <p>
-          Infused is a boutique local SEO &amp; AI search company helping Niagara
-          businesses get found on Google and AI search tools like ChatGPT &amp;
-          Gemini.
+          Infused is a boutique SEO, AI search and web design agency helping
+          businesses get found on Google and in AI search tools like ChatGPT
+          and Gemini.
         </p>
         <ul class="social-list">
           {
@@ -58,25 +60,23 @@ const socials = siteFacts.socialProfiles
       <div>
         <h2>Services</h2>
         <ul class="footer-list">
-          {
-            navGroups.slice(0, 2).map((group) => (
-              <li>
-                <a href={group.links[0]?.url ?? "/services"}>{group.heading}</a>
-              </li>
-            ))
-          }
-          <li><a href="/services">All services</a></li>
-          <li><a href="/seo/local-seo">Local SEO</a></li>
+          <li><a href="/seo">SEO</a></li>
           <li><a href="/ai-search">AI Search</a></li>
+          <li><a href="/web-design">Web Design</a></li>
+          <li><a href="/services">All services</a></li>
         </ul>
       </div>
 
-      <div>
-        <h2>Niagara cities</h2>
-        <ul class="footer-list">
-          {cities.map((city) => <li><a href={city.href}>{city.name}</a></li>)}
-        </ul>
-      </div>
+      {
+        showLocalPages && (
+          <div>
+            <h2>Local SEO pages</h2>
+            <ul class="footer-list">
+              {cities.map((city) => <li><a href={city.href}>{city.name}</a></li>)}
+            </ul>
+          </div>
+        )
+      }
 
       <div>
         <h2>Company</h2>
@@ -86,9 +86,9 @@ const socials = siteFacts.socialProfiles
 
         <div class="site-footer__contact" style="margin-top: 1.5rem;">
           <h2>Contact</h2>
-          <span>{siteFacts.address.addressLocality}, {siteFacts.address.addressRegion} · Serving the Niagara Region</span>
-          <span>Mon–Fri, 9 a.m.–6 p.m.</span>
-          <a href={`tel:+1${siteFacts.phone.replace(/\D/g, "")}`}>{siteFacts.phone}</a>
+          <span>{siteFacts.address.addressLocality}, {siteFacts.address.addressRegion}</span>
+          <span>Mon&ndash;Fri, 9 a.m.&ndash;6 p.m.</span>
+          <a class="footer-phone visually-hidden" href={`tel:+1${siteFacts.phone.replace(/\D/g, "")}`} aria-label="Phone number">{siteFacts.phone}</a>
           <a href={`mailto:${siteFacts.email}`}>{siteFacts.email}</a>
           <a class="link-arrow" href="/get-a-quote">
             Get a Free Quote
@@ -106,10 +106,10 @@ const socials = siteFacts.socialProfiles
   <div class="site-footer__bottom">
     <div class="container">
       <div class="site-footer__bottom-inner">
-        <p>Infused Agency — SEO and web design in Niagara.</p>
+        <p>Infused Agency &mdash; SEO, AI search and web design.</p>
         <div>
           <a href="/privacy-policy">Privacy Policy</a>
-          <span aria-hidden="true"> · </span>
+          <span aria-hidden="true">&middot;</span>
           <a href="/get-a-quote">Get a Free Quote</a>
         </div>
       </div>
