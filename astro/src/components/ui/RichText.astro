@@ -1,0 +1,46 @@
+---
+interface LinkSegment {
+  type: "link";
+  value: string;
+  href: string;
+}
+
+interface TextSegment {
+  type: "text";
+  value: string;
+}
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+
+// Legacy content uses Markdown-style `[label](/href)` tokens inside plain
+// paragraph strings. Split them without rendering arbitrary HTML.
+const segments: Array<LinkSegment | TextSegment> = [];
+const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+let lastIndex = 0;
+let match: RegExpExecArray | null;
+
+while ((match = pattern.exec(text)) !== null) {
+  if (match.index > lastIndex) {
+    segments.push({ type: "text", value: text.slice(lastIndex, match.index) });
+  }
+  segments.push({ type: "link", value: match[1], href: match[2] });
+  lastIndex = pattern.lastIndex;
+}
+if (lastIndex < text.length) {
+  segments.push({ type: "text", value: text.slice(lastIndex) });
+}
+---
+
+{
+  segments.map((segment) =>
+    segment.type === "link" ? (
+      <a href={segment.href}>{segment.value}</a>
+    ) : (
+      <Fragment>{segment.value}</Fragment>
+    )
+  )
+}

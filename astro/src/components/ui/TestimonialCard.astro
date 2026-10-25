@@ -1,0 +1,37 @@
+---
+interface Props {
+  quote: string;
+  person: string;
+  role?: string;
+  company?: string;
+  badge?: string;
+  stats?: Array<{ value: string; label: string }>;
+  note?: string;
+}
+
+const { quote, person, role, company, badge, stats, note } = Astro.props;
+---
+
+<figure class="card testimonial">
+  {badge && <span class="badge">{badge}</span>}
+  {stats && stats.length > 0 && (
+    <div class="testimonial__stats">
+      <div class="case-stats">
+        {stats.map((stat) => (
+          <div class="case-stat">
+            <span class="case-stat__value">{stat.value}</span>
+            <span class="case-stat__label">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+      {note && <p class="testimonial__note">{note}</p>}
+    </div>
+  )}
+  <blockquote>{quote}</blockquote>
+  <figcaption class="testimonial__person">
+    <strong>{person}</strong>
+    {(role || company) && (
+      <span>{[role, company].filter(Boolean).join(", ")}</span>
+    )}
+  </figcaption>
+</figure>

@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import VerticalGeoPage from "../../templates/VerticalGeoPage.astro";
+import { getVerticalPage } from "../../lib/legacy-pages.mjs";
+import { baseGraph, breadcrumbNode, faqPageNode, serviceNode, webPageNode } from "../../lib/schema";
+
+interface Props {
+  pathname: string;
+}
+
+const { pathname } = Astro.props;
+const page = getVerticalPage(pathname);
+
+if (!page) {
+  throw new Error(`Missing vertical SEO data for ${pathname}`);
+}
+
+const faqs = (page.content.faqs ?? []).map((faq: { q: string; a: string }) => ({
+  q: faq.q,
+  a: faq.a,
+}));
+
+const areaServed = page.city
+  ? [
+      { "@type": "City", name: page.city.name },
+      { "@type": "AdministrativeArea", name: page.province.name },
+      { "@type": "Country", name: "Canada" },
+    ]
+  : page.province
+    ? [
+        { "@type": "AdministrativeArea", name: page.province.name },
+        { "@type": "Country", name: "Canada" },
+      ]
+    : page.kind === "country"
+      ? [{ "@type": "Country", name: "United States" }]
+      : [{ "@type": "Country", name: "Canada" }];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: page.title, description: page.content.summary }),
+  breadcrumbNode(page.breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: page.h1,
+    description: page.content.summary,
+    serviceType: `${page.vertical.displayName} SEO`,
+    areaServed,
+  }),
+  ...(faqs.length ? [faqPageNode(pathname, faqs)] : []),
+];
+---
+
+<BaseLayout title={page.title} description={page.content.summary} canonical={pathname} jsonLd={jsonLd}>
+  <VerticalGeoPage page={page} />
+</BaseLayout>

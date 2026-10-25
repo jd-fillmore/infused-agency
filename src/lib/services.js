@@ -1,7 +1,7 @@
 // Shared data + quality-gate library for the service pages, Solutions mega menu,
 // hub grid, sitemap and internal links.
-// CommonJS so it can be required by Next.js pages (via webpack interop) and by
-// the standalone Node verification script without a build step.
+// CommonJS so the Astro build and the standalone Node scripts can require it
+// without a build step.
 const fs = require("fs");
 const path = require("path");
 const verticalSeo = require("./verticalSeo");
@@ -502,7 +502,7 @@ function buildNavSnapshot() {
   return { groups, industries };
 }
 
-// ----- serializable page props (for getStaticProps) -----
+// ----- serializable page props -----
 
 function buildServicePageProps(record, servicesPublishedSet, verticalsPublishedSet) {
   const service = record.service;

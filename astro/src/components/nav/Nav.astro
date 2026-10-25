@@ -1,0 +1,111 @@
+---
+import Button from "../ui/Button.astro";
+import Icon from "../ui/Icon.astro";
+import { siteFacts } from "../../lib/site";
+
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+const now = new Date();
+const nextMonth = MONTHS[(now.getMonth() + 1) % 12];
+const monthAfterNext = MONTHS[(now.getMonth() + 2) % 12];
+
+const primaryLinks = [
+  { name: "SEO", href: "/seo" },
+  { name: "AI Search", href: "/ai-search" },
+  { name: "Web Design", href: "/web-design" },
+  { name: "Results", href: "/results" },
+  { name: "Industries", href: "/industries" },
+  { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
+];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === "/" ? path === "/" : path === href || path.startsWith(`${href}/`);
+---
+
+<header class="site-header" data-header>
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__inner">
+        <p class="topbar__note">Based in Niagara, Ontario &middot; Working across Canada &amp; the U.S.</p>
+        <a href="/get-a-quote">
+          Now booking {nextMonth} &amp; {monthAfterNext} — Free Quote
+          <Icon name="arrow-right" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="nav" data-nav>
+      <a class="brand" href="/" aria-label="Infused Agency home">
+        infused<span>.</span>
+      </a>
+
+      <nav class="nav__primary" aria-label="Main">
+        <ul class="nav__desktop">
+          {
+            primaryLinks.map((link) => (
+              <li class="nav__item">
+                <a
+                  class="nav__link"
+                  href={link.href}
+                  aria-current={isActive(link.href) ? "page" : undefined}
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <Button href="/get-a-quote" variant="gold">Free Quote</Button>
+      </div>
+
+      <details class="mobile-menu" data-mobile-menu>
+        <summary class="menu-toggle" aria-label="Navigation menu" aria-controls="mobile-navigation">
+          <span class="menu-toggle__label menu-toggle__label--open">Menu</span>
+          <span class="menu-toggle__label menu-toggle__label--close">Close</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        </summary>
+
+        <div class="mobile-nav" id="mobile-navigation">
+          <div class="mobile-nav__inner">
+            <div class="mobile-nav__head">
+              <p>Navigation</p>
+            </div>
+
+            <nav aria-label="Mobile">
+              <div class="mobile-nav__links">
+                {primaryLinks.map((link) => <a href={link.href}>{link.name}</a>)}
+              </div>
+            </nav>
+
+            <div class="mobile-nav__meta">
+              <a href={`mailto:${siteFacts.email}`}>
+                <Icon name="mail" />
+                Email
+              </a>
+              <a href="/get-a-quote">
+                <Icon name="target" />
+                Free Quote
+              </a>
+            </div>
+
+            <div class="mobile-nav__cta">
+              <Button href="/get-a-quote" variant="gold" size="lg" block arrow>
+                Get a Free Quote
+              </Button>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</header>

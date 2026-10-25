@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Infused Agency — design tokens
+   Phase 3.2 direction: a warm editorial light system with deep navy and
+   brand-blue chapters. Contrast pairs are documented in
+   docs/astro-rebuild/PHASE_3_2_DESIGN_REVIEW.md.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Surfaces ------------------------------------------------------------- */
+  --color-base: #f4efe6;          /* warm paper */
+  --color-base-deep: #ece4d6;     /* darker warm band */
+  --color-surface: #faf6ee;       /* lifted warm surface */
+  --color-card: #fffdf8;          /* warm white card */
+  --color-elevated: #ffffff;
+  --color-tint: #e8eef7;          /* cool brand tint */
+  --color-tint-deep: #dce6f3;
+
+  /* Ink ------------------------------------------------------------------ */
+  --color-ink: #111a2e;
+  --color-muted: #4f5a68;
+  --color-border: #ddd4c5;
+  --color-border-strong: #c7bcaa;
+
+  /* Brand ---------------------------------------------------------------- */
+  --color-accent: #005c97;
+  --color-accent-hover: #00497a;
+  --color-accent-soft: #e2edf7;
+  --color-indigo: #363795;
+  --color-navy: #08152b;
+  --color-navy-soft: #0e1b3d;
+
+  /* Contrast bands ------------------------------------------------------- */
+  --color-contrast: #08152b;
+  --color-contrast-ink: #eef2f9;
+  --color-contrast-muted: #a9b6cc;
+  --color-contrast-line: rgba(238, 242, 249, 0.14);
+
+  /* Gold ----------------------------------------------------------------- */
+  --color-gold: #8a6100;
+  --color-gold-bright: #e2c044;
+  --color-gold-soft: #f3e6c8;
+
+  /* Status --------------------------------------------------------------- */
+  --color-success: #147d3f;
+  --color-warning: #b45309;
+  --color-error: #c62828;
+
+  /* Gradients ------------------------------------------------------------ */
+  --gradient-brand: linear-gradient(102deg, #005c97 0%, #2f6fc9 46%, #363795 100%);
+  --gradient-blue: linear-gradient(135deg, #005c97 0%, #164a83 48%, #363795 100%);
+  --gradient-navy: linear-gradient(155deg, #0a1a35 0%, #08152b 45%, #0e1b3d 100%);
+  --gradient-warm: linear-gradient(180deg, #faf6ee 0%, #f4efe6 100%);
+  --gradient-tint: linear-gradient(165deg, #eef3fa 0%, #e5edf7 52%, #dde7f4 100%);
+  --gradient-hero:
+    radial-gradient(52% 46% at 88% 8%, rgba(54, 55, 149, 0.5), transparent 68%),
+    radial-gradient(44% 54% at 4% 12%, rgba(0, 92, 151, 0.36), transparent 64%),
+    radial-gradient(60% 46% at 54% 112%, rgba(63, 111, 216, 0.2), transparent 70%),
+    linear-gradient(160deg, #0a1a35 0%, #08152b 52%, #0b1c3c 100%);
+  --gradient-gold: linear-gradient(120deg, #f0dfab 0%, #e2c044 46%, #c89c22 100%);
+
+  /* Typography ----------------------------------------------------------- */
+  /* Inter carries headings and display numerals; Manrope carries body copy,
+     navigation, buttons, forms, cards and footer text. The fallbacks keep the
+     site readable if the Google Fonts request fails. */
+  --font-sans: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: clamp(1.35rem, 1.15rem + 0.8vw, 1.7rem);
+  --text-3xl: clamp(1.85rem, 1.45rem + 1.6vw, 2.6rem);
+  --text-4xl: clamp(2.3rem, 1.65rem + 2.8vw, 3.7rem);
+  --text-5xl: clamp(2.8rem, 1.9rem + 4vw, 5rem);
+  --text-display: clamp(3rem, 1.9rem + 5vw, 5.65rem);
+
+  --leading-tight: 0.98;
+  --leading-snug: 1.16;
+  --leading-body: 1.65;
+
+  --tracking-tight: -0.038em;
+  --tracking-heading: -0.03em;
+  --tracking-eyebrow: 0.18em;
+
+  /* Spacing rhythm ------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --section-pad: clamp(4rem, 2.7rem + 4.4vw, 7rem);
+  --section-pad-tight: clamp(2.5rem, 1.9rem + 2.4vw, 4rem);
+  --container-max: 81rem;
+  --container-pad: clamp(1.25rem, 0.8rem + 2.1vw, 2.5rem);
+  --measure: 43rem;
+
+  /* Header heights ------------------------------------------------------- */
+  --topbar-h: 2.15rem;
+  --nav-h: 4.35rem;
+  --header-h: calc(var(--topbar-h) + var(--nav-h));
+
+  /* Radii ---------------------------------------------------------------- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-2xl: 34px;
+  --radius-pill: 999px;
+
+  /* Borders and shadows -------------------------------------------------- */
+  --border-hairline: 1px solid var(--color-border);
+  --border-strong: 1px solid var(--color-border-strong);
+  --border-light: 1px solid rgba(238, 242, 249, 0.16);
+  --shadow-xs: 0 1px 2px rgba(17, 26, 46, 0.05);
+  --shadow-card: 0 1px 2px rgba(17, 26, 46, 0.04), 0 16px 36px -24px rgba(17, 26, 46, 0.32);
+  --shadow-lift: 0 2px 5px rgba(17, 26, 46, 0.05), 0 30px 60px -28px rgba(17, 26, 46, 0.42);
+  --shadow-deep: 0 32px 80px -38px rgba(4, 12, 30, 0.7);
+  --shadow-accent: 0 20px 40px -22px rgba(0, 92, 151, 0.65);
+  --ring-focus: 0 0 0 3px rgba(0, 92, 151, 0.36);
+  --ring-focus-light: 0 0 0 3px rgba(226, 192, 68, 0.48);
+
+  /* Motion --------------------------------------------------------------- */
+  --ease-smooth: cubic-bezier(0.2, 0.75, 0.25, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-micro: 150ms;
+  --duration-control: 240ms;
+  --duration-card: 280ms;
+  --duration-reveal: 760ms;
+
+  /* Layering ------------------------------------------------------------- */
+  --z-header: 70;
+  --z-mega: 80;
+  --z-overlay: 60;
+  --z-skip: 120;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --topbar-h: 0rem;
+    --nav-h: 4.1rem;
+    --header-h: var(--nav-h);
+  }
+}

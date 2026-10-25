@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+
+const title = "Page not found | Infused Agency";
+const description =
+  "The page you are looking for could not be found. Explore Infused Agency's SEO, AI search and web design services in Niagara.";
+---
+
+<BaseLayout title={title} description={description} canonical={null} noindex={true}>
+  <PageHero
+    title="That page has moved or no longer exists"
+    description="Check the address, or start from one of the links below."
+    showCta={false}
+  />
+  <Section tone="warm">
+    <div class="grid grid--3">
+      <div class="card">
+        <h2 class="card__title" style="margin-top: 0;">SEO</h2>
+        <p class="card__text">Search strategy, local SEO and Google Business Profile work.</p>
+        <div class="card__footer"><Button href="/seo" variant="secondary">Explore SEO</Button></div>
+      </div>
+      <div class="card">
+        <h2 class="card__title" style="margin-top: 0;">AI Search</h2>
+        <p class="card__text">Answer-ready content and visibility in AI search tools.</p>
+        <div class="card__footer"><Button href="/ai-search" variant="secondary">Explore AI search</Button></div>
+      </div>
+      <div class="card">
+        <h2 class="card__title" style="margin-top: 0;">Contact</h2>
+        <p class="card__text">Request a free quote and get a written scope.</p>
+        <div class="card__footer"><Button href="/get-a-quote" variant="secondary">Get a Free Quote</Button></div>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

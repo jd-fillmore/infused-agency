@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HomePage from "../templates/HomePage.astro";
+import { getAllPosts } from "../lib/posts";
+import { baseGraph, faqPageNode, webPageNode } from "../lib/schema";
+import { homeFaqs } from "../lib/site";
+
+const title = "SEO, AI Search & Web Design Agency | Infused";
+const description =
+  "Infused is an SEO, AI search and web design agency based in Niagara, Ontario, working remotely with businesses across Canada and the United States.";
+
+const posts = getAllPosts().slice(0, 3);
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: "/", name: title, description }),
+  faqPageNode("/", homeFaqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="/"
+  geo={true}
+  jsonLd={jsonLd}
+>
+  <HomePage posts={posts} />
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+interface Props {
+  interactive?: boolean;
+  surface?: boolean;
+  class?: string;
+}
+
+const { interactive = false, surface = false, class: className = "" } = Astro.props;
+const classes = [
+  "card",
+  interactive ? "card--interactive" : "",
+  surface ? "card--surface" : "",
+  className,
+]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<div class={classes}>
+  <slot />
+</div>

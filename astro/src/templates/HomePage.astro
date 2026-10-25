@@ -1,0 +1,540 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import Section from "../components/ui/Section.astro";
+import ServiceCard from "../components/ui/ServiceCard.astro";
+import TestimonialCard from "../components/ui/TestimonialCard.astro";
+import { homeFaqs, siteFacts } from "../lib/site";
+import { formatPostDate, type Post } from "../lib/posts";
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+
+const trust = [
+  { icon: "users", label: `${siteFacts.clientsHelped} businesses helped` },
+  { icon: "target", label: "SEO, AI search and web design" },
+  { icon: "globe", label: "Remote across Canada and the U.S." },
+];
+
+const affiliated = [
+  { label: "Niagara Chamber", image: "/img/aff-niagara-chamber.jpg" },
+  { label: "Three Best Rated", image: "/img/aff-three-best-rated.jpg" },
+  { label: "GoodFirms", image: "/img/aff-good-firms.jpg" },
+  { label: "DesignRush", image: "/img/aff-design-rush.png" },
+  { label: "Google Reviews", image: "/img/aff-google-reviews.jpg" },
+];
+
+const clients = [
+  { name: "Suk Law", image: "/img/feat-suk-law.png" },
+  { name: "Flat Rock Cellars", image: "/img/feat-flat-rock.png" },
+  { name: "Fred's Concrete", image: "/img/feat-fred.png" },
+  { name: "KD Flowers", image: "/img/feat-kd.png" },
+  { name: "Delta Energy Solutions", image: "/img/feat-delta.png" },
+  { name: "Brandi May Psychotherapy", image: "/img/feat-brandi.png" },
+  { name: "Jerry's Insulating", image: "/img/feat-jerry.png" },
+];
+
+const services = [
+  { number: "01", title: "SEO", href: "/seo", description: "Get found on Google for the searches that bring enquiries." },
+  { number: "02", title: "AI Search", href: "/ai-search", description: "Show up in the answers people get from AI tools." },
+  { number: "03", title: "Web Design", href: "/web-design", description: "Turn more visitors into calls and enquiries." },
+];
+
+const whatWeDo = [
+  { number: "1", title: "Search strategy", href: "/seo", description: "Find the searches that bring the right enquiries." },
+  { number: "2", title: "Technical SEO", href: "/seo", description: "Keep your site fast, crawlable and easy to trust." },
+  { number: "3", title: "On-page SEO", href: "/seo", description: "Tighten the pages that drive calls and form fills." },
+  { number: "4", title: "AI search visibility", href: "/ai-search", description: "Show up in the answers people get from AI tools." },
+  { number: "5", title: "Web design", href: "/web-design", description: "Turn more visitors into calls and enquiries." },
+  { number: "6", title: "Measurement", href: "/results", description: "Track visibility, leads and the work that moved them." },
+];
+
+const whyInfused = [
+  { icon: "target", title: "Work tied to enquiries", text: "Every decision is measured against the calls, forms and customers it brings." },
+  { icon: "spark", title: "SEO and AI search together", text: "One plan that helps you show up in search results and in AI answers." },
+  { icon: "code", title: "Web design that earns trust", text: "Clear messaging, intuitive journeys and fast pages that make choosing you easier." },
+  { icon: "chat", title: "Straight answers on scope and cost", text: "We quote after a free consultation and tell you if we are not the right fit." },
+];
+
+const industryCards = [
+  { category: "Trades", title: "Concrete contractors", benefit: "Get found for jobs in your area.", href: "/seo/for-concrete-contractors-niagara" },
+  { category: "Trades", title: "Insulation contractors", benefit: "Rank for high-value installs.", href: "/seo/for-insulation-niagara" },
+  { category: "Trades", title: "Electricians", benefit: "Win calls in your service area.", href: "/seo/for-electricians-niagara" },
+  { category: "Legal", title: "Law firms", benefit: "Attract local clients.", href: "/seo/for-law-firms-niagara" },
+  { category: "Energy", title: "Solar companies", benefit: "Capture local demand.", href: "/seo/for-solar-companies-niagara" },
+  { category: "Hospitality", title: "Wineries", benefit: "Drive visits and enquiries.", href: "/seo/for-wineries-niagara" },
+];
+
+const webDesignServices = [
+  { title: "Web Design", href: "/web-design", description: "Fast, lead-generating websites." },
+];
+
+const aiTerms = [
+  { code: "AI SEO", title: "The umbrella term", text: "Clear pages, consistent business details and trustworthy signals for people and machines." },
+  { code: "AEO", title: "Answer engine optimization", text: "Shape content into the direct answer an assistant gives to a question." },
+  { code: "GEO", title: "Generative engine optimization", text: "Earn the citation inside an AI-generated response, not just a list of links." },
+];
+
+const proofResults = [
+  {
+    name: "Flat Rock Cellars",
+    industry: "Winery",
+    metric: "Page 1",
+    label: "Google rankings",
+    context: "First-page Google rankings for multiple priority keywords, achieved within the first month of SEO work.",
+    image: "/img/st-catharines-seo-results.webp",
+    alt: "Search visibility results for Flat Rock Cellars",
+  },
+  {
+    name: "Delta Energy Solutions",
+    industry: "Electrical & energy",
+    metric: "Growth",
+    label: "Local visibility",
+    context: "Stronger local search visibility after a focused SEO program built around service-area demand.",
+    image: "/img/niagara-seo-company-results.webp",
+    alt: "Search visibility results for Delta Energy Solutions",
+  },
+];
+
+const featuredResult = proofResults[0];
+
+---
+
+<section class="home-hero">
+  <div class="container">
+    <div class="home-hero__inner">
+      <div class="home-hero__copy">
+        <p class="hero-kicker">
+          <span class="hero-kicker__dot" aria-hidden="true"></span>
+          <span>SEO, AI Search &amp; Web Design</span>
+          <span class="hero-kicker__rule" aria-hidden="true"></span>
+          <span>Canada &amp; the U.S.</span>
+        </p>
+
+        <h1 class="hero-title">
+          <span class="hero-line"><span class="hero-line__inner">Get Found.</span></span>
+          <span class="hero-line"><span class="hero-line__inner">Get Chosen.</span></span>
+          <span class="hero-line hero-line--accent"><span class="hero-line__inner">Grow Your Business.</span></span>
+        </h1>
+
+        <p class="hero-lead">
+          We help businesses grow through SEO, AI search visibility and
+          high-performing web design. Based in Niagara, Ontario, we work
+          remotely with businesses across Canada and the United States.
+        </p>
+
+        <div class="hero-actions">
+          <Button href="/get-a-quote" size="lg" variant="gold" arrow>Get a Free Quote</Button>
+          <Button href="/results" variant="ghost" size="lg">View our work</Button>
+        </div>
+
+        <ul class="hero-trust">
+          {
+            trust.map((item) => (
+              <li>
+                <Icon name={item.icon} />
+                <span>{item.label}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <aside class="hero-visual" aria-label="Documented search result">
+        <span class="hero-visual__orbit" aria-hidden="true"></span>
+
+        <div class="hero-report">
+          <div class="hero-report__top">
+            <span class="hero-report__eyebrow">Documented result</span>
+            <span class="badge badge--gold">SEO result</span>
+          </div>
+          <div class="hero-report__stat">
+            <span class="hero-report__value">{featuredResult.metric}</span>
+            <span class="hero-report__label">{featuredResult.label}</span>
+          </div>
+          <div class="hero-report__bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="hero-report__ai">
+            <Icon name="spark" />
+            <span>Also tracked in AI search answers</span>
+          </p>
+          <div class="hero-report__foot">
+            <div>
+              <strong>{featuredResult.name}</strong>
+              <span>{featuredResult.industry}</span>
+            </div>
+            <a class="link-arrow" href="#results">
+              See results
+              <Icon name="arrow-right" />
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-ticket">
+          <span class="hero-ticket__value">{siteFacts.clientsHelped}</span>
+          <span>Businesses helped</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-strip__head">
+      <p class="trust-strip__label">Recognized and affiliated</p>
+      <p class="trust-strip__label">A few of the businesses we work with</p>
+    </div>
+    <ul class="trust-strip__list reveal-group">
+      {
+        affiliated.map((item) => (
+          <li>
+            <img src={item.image} alt={item.label} loading="lazy" decoding="async" />
+          </li>
+        ))
+      }
+    </ul>
+    <ul class="client-strip reveal-group" style="margin-top: clamp(1.5rem, 1rem + 1.5vw, 2.25rem);">
+      {
+        clients.map((client) => (
+          <li>
+            <img src={client.image} alt={client.name} loading="lazy" decoding="async" />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<Section
+  id="services"
+  eyebrow="What we do"
+  index="01"
+  heading="SEO, AI Search and Web Design Services"
+  description="From SEO and AI search optimization to web design, the work is built around calls and enquiries."
+>
+  <div class="chapter-services__grid reveal-group">
+    {services.map((service, index) => <ServiceCard {...service} featured={index === 0} />)}
+  </div>
+</Section>
+
+<Section id="results" tone="contrast">
+  <div class="proof-layout">
+    <div class="proof-layout__intro reveal">
+      <p class="eyebrow" style="color: var(--color-gold-bright);">
+        <span class="eyebrow__index">02</span>
+        Proof
+      </p>
+      <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">Real results for businesses we work with</h2>
+      <p style="margin-top: 1.1rem; color: var(--color-contrast-muted); max-width: 30rem;">
+        Search work should show up in the business, not only in a report. These
+        are documented outcomes from client campaigns, alongside the work that
+        helped create them.
+      </p>
+      <div class="stat" style="margin-top: 2rem;">
+        <span class="stat__value">{siteFacts.clientsHelped}</span>
+        <span class="stat__label">Businesses helped</span>
+      </div>
+      <div style="margin-top: 1.75rem;">
+        <Button href="/get-a-quote" variant="gold" arrow>Get a Free Quote</Button>
+      </div>
+    </div>
+
+    <div class="proof-results reveal-group">
+      {
+        proofResults.map((result) => (
+          <article class="proof-result">
+            <div class="proof-result__body">
+              <span class="badge">Documented result</span>
+              <div class="stat" style="margin-top: 1.1rem;">
+                <span class="stat__value">{result.metric}</span>
+                <span class="stat__label">{result.label}</span>
+              </div>
+              <p style="margin-top: 0.8rem; color: var(--color-contrast-muted); font-size: var(--text-sm); line-height: 1.65;">
+                {result.context}
+              </p>
+              <div class="proof-result__client">
+                <strong>{result.name}</strong>
+                <span>{result.industry}</span>
+              </div>
+            </div>
+            <div class="proof-result__media">
+              <img src={result.image} alt={result.alt} loading="lazy" decoding="async" />
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="grid grid--3 reveal-group" style="margin-top: clamp(2rem, 1.5rem + 2vw, 3rem);">
+    {
+      siteFacts.testimonials.map((testimonial) => (
+        <TestimonialCard
+          quote={testimonial.quote}
+          person={testimonial.person}
+          role={testimonial.role}
+          company={testimonial.namedEntity}
+        />
+      ))
+    }
+  </div>
+</Section>
+
+<section class="section section--warm" id="why-infused">
+  <div class="container">
+    <div class="manifesto">
+      <div class="manifesto__intro reveal">
+        <p class="eyebrow">
+          <span class="eyebrow__index">03</span>
+          Why Infused
+        </p>
+        <h2 class="h2" style="margin-top: 1rem;">Why businesses choose Infused Agency</h2>
+        <p style="margin-top: 1.1rem; color: var(--color-muted); max-width: 30rem;">
+          A boutique agency with a clear scope, direct communication and a plan
+          built around how your customers actually search.
+        </p>
+        <div style="margin-top: 1.7rem;">
+          <Button href="/about" variant="secondary" arrow>Meet the team</Button>
+        </div>
+      </div>
+
+      <ol class="manifesto__list reveal-group">
+        {
+          whyInfused.map((item, index) => (
+            <li class="manifesto__item">
+              <span class="manifesto__index">{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>
+
+<Section
+  id="what-we-do"
+  tone="tint"
+  eyebrow="Capabilities"
+  index="04"
+  heading="Search Foundations Built in the Right Order"
+  description="The strategy, technical work and page-level improvements that help the right people find and choose your business."
+>
+  <div class="process-grid reveal-group">
+    {
+      whatWeDo.map((service) => (
+        <article class="process-step">
+          <span class="process-step__index">{service.number.padStart(2, "0")} / Service</span>
+          <h3><a href={service.href}>{service.title}</a></h3>
+          <p>{service.description}</p>
+        </article>
+      ))
+    }
+  </div>
+  <p class="small muted" style="margin-top: 1.5rem;">
+    Need a site built to rank? See our <a href="/web-design">web design services</a>.
+  </p>
+</Section>
+
+<section class="section section--contrast" id="ai-search">
+  <div class="container">
+    <div class="split split--wide">
+      <div class="reveal">
+        <p class="eyebrow" style="color: var(--color-gold-bright);">
+          <span class="eyebrow__index">05</span>
+          AI Search
+        </p>
+        <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">
+          AI Search Optimization: AI SEO, AEO &amp; GEO
+        </h2>
+        <div class="prose" style="margin-top: 1.25rem; color: var(--color-contrast-muted);">
+          <p style="color: var(--color-contrast-muted);">
+            AI search optimization is about being found in the answers people get
+            from ChatGPT, Gemini and AI Overviews, not only in a list of links. Our AI
+            SEO services start with the foundations that matter to both people and
+            machines: clear pages, consistent business details and trustworthy
+            signals.
+          </p>
+          <p style="color: var(--color-contrast-muted);">
+            AI SEO is the umbrella term, and you will also see it called SEO for AI.
+            Answer engine optimization (AEO) focuses on the direct answer an assistant
+            gives to a question. Generative engine optimization (GEO) focuses on being
+            named or cited inside an AI-generated response. The three overlap, but
+            they describe different parts of the same work.
+          </p>
+          <p style="color: var(--color-contrast-muted);">
+            As an AI SEO agency, we combine AI SEO optimization, AEO and GEO into one
+            plan. We audit how AI tools describe your business, strengthen the details
+            they rely on, and shape your content into clear answers they can quote.
+            See our <a href="/ai-search">AI search services</a> for the full picture.
+          </p>
+        </div>
+        <div style="margin-top: 1.8rem;">
+          <Button href="/ai-search" variant="gold" arrow>Explore AI search</Button>
+        </div>
+      </div>
+
+      <aside class="ai-stack reveal" aria-label="The three parts of AI search optimization">
+        {
+          aiTerms.map((term) => (
+            <div class="ai-stack__item">
+              <span class="ai-stack__code">{term.code}</span>
+              <div>
+                <strong>{term.title}</strong>
+                <p>{term.text}</p>
+              </div>
+            </div>
+          ))
+        }
+      </aside>
+    </div>
+  </div>
+</section>
+
+<Section
+  id="web-design"
+  tone="surface"
+  eyebrow="Web Design"
+  index="06"
+  heading="Web Design Built to Turn Visitors into Customers"
+>
+  <div class="split split--top">
+    <div class="reveal">
+      <p class="prose">
+        We design and build fast, lead-generating websites for businesses across
+        Canada and the United States. Every build pairs clear messaging with
+        search-aware structure and conversion paths that turn visitors into
+        enquiries.
+      </p>
+      <div class="prose-links" style="margin-top: 1.75rem;">
+        <a class="link-arrow" href="/web-design">
+          Explore web design
+          <Icon name="arrow-right" />
+        </a>
+      </div>
+    </div>
+    <figure class="media-frame reveal">
+      <img
+        src="/img/1-design.webp"
+        alt="Sketching a website layout during a design session"
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
+  </div>
+
+  <div class="grid grid--3 reveal-group" style="margin-top: clamp(2rem, 1.5rem + 2vw, 3rem);">
+    {webDesignServices.map((service) => (
+      <ServiceCard {...service} />
+    ))}
+  </div>
+</Section>
+
+<Section
+  id="industries"
+  eyebrow="Industries"
+  index="07"
+  heading="Industries We Work With"
+  description="Search work shaped around the trades, professional practices and hospitality businesses we know well."
+>
+  <div class="grid grid--3 reveal-group">
+    {
+      industryCards.map((item) => (
+        <article class="card card--interactive industry-card">
+          <span class="badge">{item.category}</span>
+          <div class="industry-card__body">
+            <h3>{item.title}</h3>
+            <p>{item.benefit}</p>
+            <a class="link-arrow" href={item.href}>
+              Learn more
+              <Icon name="arrow-right" />
+            </a>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+  <div class="prose-links" style="margin-top: 2rem; padding-top: 1.5rem; border-top: var(--border-hairline);">
+    <a class="link-arrow" href="/industries">
+      View all industries
+      <Icon name="arrow-right" />
+    </a>
+    <a class="link-arrow" href="/general-contractor-seo">
+      SEO for general contractors
+      <Icon name="arrow-right" />
+    </a>
+  </div>
+</Section>
+
+<CtaBand
+  eyebrow="Free quote"
+  heading="Get a Free Quote"
+  description="Tell us about your goals and we will map the search and web design work that fits, with a clear written quote."
+  ctaLabel="Get a Free Quote"
+/>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="faq-layout__intro reveal">
+        <p class="eyebrow">
+          <span class="eyebrow__index">08</span>
+          Questions
+        </p>
+        <h2 class="h2" style="margin-top: 1rem;">Frequently Asked Questions</h2>
+        <p>
+          Straight answers on search visibility, AI search, web design, timelines
+          and what the work actually involves.
+        </p>
+        <Button href="/get-a-quote" variant="secondary" arrow>Ask us a question</Button>
+      </div>
+      <Accordion items={homeFaqs} />
+    </div>
+  </div>
+</section>
+
+<Section
+  id="blog"
+  tone="warm"
+  eyebrow="Learn"
+  index="09"
+  heading="Blog"
+  description="Practical notes on SEO, AI search and web design for growing businesses."
+>
+  <div class="grid grid--3 reveal-group">
+    {
+      posts.map((post) => (
+        <article class="card card--interactive post-card">
+          {post.image && (
+            <div class="post-card__image">
+              <img src={post.image} alt={post.title} loading="lazy" decoding="async" />
+            </div>
+          )}
+          <div class="post-card__body">
+            <p class="post-card__date">{formatPostDate(post.date)}</p>
+            <h3 class="post-card__title">
+              <a href={`/posts/${post.id}`}>{post.title}</a>
+            </h3>
+            <p class="post-card__excerpt">{post.excerpt}</p>
+            <div class="card__footer">
+              <a class="link-arrow" href={`/posts/${post.id}`}>
+                Read article
+                <Icon name="arrow-right" />
+              </a>
+            </div>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Section>

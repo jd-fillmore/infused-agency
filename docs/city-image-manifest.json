@@ -1,0 +1,352 @@
+{
+  "niagara-falls": {
+    "hero": "web-design-niagara-falls-hero.webp",
+    "images": [
+      {
+        "client": "visca-electric",
+        "filename": "niagara-falls-web-design-visca-electric.png",
+        "importName": "img1"
+      },
+      {
+        "client": "flat-rock-cellars",
+        "filename": "niagara-falls-website-design-flat-rock-cellars.png",
+        "importName": "img2"
+      },
+      {
+        "client": "jerrys-insulating",
+        "filename": "web-design-company-niagara-falls-jerrys-insulating.png",
+        "importName": "img3"
+      },
+      {
+        "client": "kd-flowers",
+        "filename": "niagara-falls-web-design-company-kd-flowers.png",
+        "importName": "img4"
+      },
+      {
+        "client": "cass-a-bella-construction",
+        "filename": "custom-website-design-niagara-falls-cass-a-bella-construction.png",
+        "importName": "img5"
+      },
+      {
+        "client": "canadian-mortgage-authority",
+        "filename": "web-design-niagara-falls-canadian-mortgage-authority.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "niagara-on-the-lake": {
+    "hero": "web-design-niagara-on-the-lake-hero.webp",
+    "images": [
+      {
+        "client": "flat-rock-cellars",
+        "filename": "niagara-on-the-lake-website-design-flat-rock-cellars.png",
+        "importName": "img1"
+      },
+      {
+        "client": "jerrys-insulating",
+        "filename": "web-design-company-niagara-on-the-lake-jerrys-insulating.png",
+        "importName": "img2"
+      },
+      {
+        "client": "kd-flowers",
+        "filename": "niagara-on-the-lake-web-design-company-kd-flowers.png",
+        "importName": "img3"
+      },
+      {
+        "client": "cass-a-bella-construction",
+        "filename": "custom-website-design-niagara-on-the-lake-cass-a-bella-construction.png",
+        "importName": "img4"
+      },
+      {
+        "client": "canadian-mortgage-authority",
+        "filename": "web-design-niagara-on-the-lake-canadian-mortgage-authority.png",
+        "importName": "img5"
+      },
+      {
+        "client": "donor-compass",
+        "filename": "niagara-on-the-lake-web-design-donor-compass.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "welland": {
+    "hero": "web-design-welland-hero.webp",
+    "images": [
+      {
+        "client": "jerrys-insulating",
+        "filename": "web-design-company-welland-jerrys-insulating.png",
+        "importName": "img1"
+      },
+      {
+        "client": "kd-flowers",
+        "filename": "welland-web-design-company-kd-flowers.png",
+        "importName": "img2"
+      },
+      {
+        "client": "cass-a-bella-construction",
+        "filename": "custom-website-design-welland-cass-a-bella-construction.png",
+        "importName": "img3"
+      },
+      {
+        "client": "canadian-mortgage-authority",
+        "filename": "web-design-welland-canadian-mortgage-authority.png",
+        "importName": "img4"
+      },
+      {
+        "client": "donor-compass",
+        "filename": "welland-web-design-donor-compass.png",
+        "importName": "img5"
+      },
+      {
+        "client": "ggs-niagara-landscaping",
+        "filename": "welland-website-design-ggs-niagara-landscaping.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "fort-erie": {
+    "hero": "web-design-fort-erie-hero.webp",
+    "images": [
+      {
+        "client": "kd-flowers",
+        "filename": "fort-erie-web-design-company-kd-flowers.png",
+        "importName": "img1"
+      },
+      {
+        "client": "cass-a-bella-construction",
+        "filename": "custom-website-design-fort-erie-cass-a-bella-construction.png",
+        "importName": "img2"
+      },
+      {
+        "client": "canadian-mortgage-authority",
+        "filename": "web-design-fort-erie-canadian-mortgage-authority.png",
+        "importName": "img3"
+      },
+      {
+        "client": "donor-compass",
+        "filename": "fort-erie-web-design-donor-compass.png",
+        "importName": "img4"
+      },
+      {
+        "client": "ggs-niagara-landscaping",
+        "filename": "fort-erie-website-design-ggs-niagara-landscaping.png",
+        "importName": "img5"
+      },
+      {
+        "client": "lincoln-medical-centre",
+        "filename": "web-design-company-fort-erie-lincoln-medical-centre.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "beamsville": {
+    "hero": "web-design-beamsville-hero.webp",
+    "images": [
+      {
+        "client": "cass-a-bella-construction",
+        "filename": "custom-website-design-beamsville-cass-a-bella-construction.png",
+        "importName": "img1"
+      },
+      {
+        "client": "canadian-mortgage-authority",
+        "filename": "web-design-beamsville-canadian-mortgage-authority.png",
+        "importName": "img2"
+      },
+      {
+        "client": "donor-compass",
+        "filename": "beamsville-web-design-donor-compass.png",
+        "importName": "img3"
+      },
+      {
+        "client": "ggs-niagara-landscaping",
+        "filename": "beamsville-website-design-ggs-niagara-landscaping.png",
+        "importName": "img4"
+      },
+      {
+        "client": "lincoln-medical-centre",
+        "filename": "web-design-company-beamsville-lincoln-medical-centre.png",
+        "importName": "img5"
+      },
+      {
+        "client": "plant-no-01",
+        "filename": "beamsville-web-design-company-plant-no-01.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "grimsby": {
+    "hero": "web-design-grimsby-hero.webp",
+    "images": [
+      {
+        "client": "canadian-mortgage-authority",
+        "filename": "web-design-grimsby-canadian-mortgage-authority.png",
+        "importName": "img1"
+      },
+      {
+        "client": "donor-compass",
+        "filename": "grimsby-web-design-donor-compass.png",
+        "importName": "img2"
+      },
+      {
+        "client": "ggs-niagara-landscaping",
+        "filename": "grimsby-website-design-ggs-niagara-landscaping.png",
+        "importName": "img3"
+      },
+      {
+        "client": "lincoln-medical-centre",
+        "filename": "web-design-company-grimsby-lincoln-medical-centre.png",
+        "importName": "img4"
+      },
+      {
+        "client": "plant-no-01",
+        "filename": "grimsby-web-design-company-plant-no-01.png",
+        "importName": "img5"
+      },
+      {
+        "client": "visca-electric",
+        "filename": "custom-website-design-grimsby-visca-electric.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "thorold": {
+    "hero": "web-design-thorold-hero.webp",
+    "images": [
+      {
+        "client": "donor-compass",
+        "filename": "thorold-web-design-donor-compass.png",
+        "importName": "img1"
+      },
+      {
+        "client": "ggs-niagara-landscaping",
+        "filename": "thorold-website-design-ggs-niagara-landscaping.png",
+        "importName": "img2"
+      },
+      {
+        "client": "lincoln-medical-centre",
+        "filename": "web-design-company-thorold-lincoln-medical-centre.png",
+        "importName": "img3"
+      },
+      {
+        "client": "plant-no-01",
+        "filename": "thorold-web-design-company-plant-no-01.png",
+        "importName": "img4"
+      },
+      {
+        "client": "visca-electric",
+        "filename": "custom-website-design-thorold-visca-electric.png",
+        "importName": "img5"
+      },
+      {
+        "client": "flat-rock-cellars",
+        "filename": "web-design-thorold-flat-rock-cellars.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "port-colborne": {
+    "hero": "web-design-port-colborne-hero.webp",
+    "images": [
+      {
+        "client": "ggs-niagara-landscaping",
+        "filename": "port-colborne-website-design-ggs-niagara-landscaping.png",
+        "importName": "img1"
+      },
+      {
+        "client": "lincoln-medical-centre",
+        "filename": "web-design-company-port-colborne-lincoln-medical-centre.png",
+        "importName": "img2"
+      },
+      {
+        "client": "plant-no-01",
+        "filename": "port-colborne-web-design-company-plant-no-01.png",
+        "importName": "img3"
+      },
+      {
+        "client": "visca-electric",
+        "filename": "custom-website-design-port-colborne-visca-electric.png",
+        "importName": "img4"
+      },
+      {
+        "client": "flat-rock-cellars",
+        "filename": "web-design-port-colborne-flat-rock-cellars.png",
+        "importName": "img5"
+      },
+      {
+        "client": "jerrys-insulating",
+        "filename": "port-colborne-web-design-jerrys-insulating.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "fonthill": {
+    "hero": "web-design-fonthill-hero.webp",
+    "images": [
+      {
+        "client": "lincoln-medical-centre",
+        "filename": "web-design-company-fonthill-lincoln-medical-centre.png",
+        "importName": "img1"
+      },
+      {
+        "client": "plant-no-01",
+        "filename": "fonthill-web-design-company-plant-no-01.png",
+        "importName": "img2"
+      },
+      {
+        "client": "visca-electric",
+        "filename": "custom-website-design-fonthill-visca-electric.png",
+        "importName": "img3"
+      },
+      {
+        "client": "flat-rock-cellars",
+        "filename": "web-design-fonthill-flat-rock-cellars.png",
+        "importName": "img4"
+      },
+      {
+        "client": "jerrys-insulating",
+        "filename": "fonthill-web-design-jerrys-insulating.png",
+        "importName": "img5"
+      },
+      {
+        "client": "kd-flowers",
+        "filename": "fonthill-website-design-kd-flowers.png",
+        "importName": "img6"
+      }
+    ]
+  },
+  "crystal-beach": {
+    "hero": "web-design-crystal-beach-hero.webp",
+    "images": [
+      {
+        "client": "plant-no-01",
+        "filename": "crystal-beach-web-design-company-plant-no-01.png",
+        "importName": "img1"
+      },
+      {
+        "client": "visca-electric",
+        "filename": "custom-website-design-crystal-beach-visca-electric.png",
+        "importName": "img2"
+      },
+      {
+        "client": "flat-rock-cellars",
+        "filename": "web-design-crystal-beach-flat-rock-cellars.png",
+        "importName": "img3"
+      },
+      {
+        "client": "jerrys-insulating",
+        "filename": "crystal-beach-web-design-jerrys-insulating.png",
+        "importName": "img4"
+      },
+      {
+        "client": "kd-flowers",
+        "filename": "crystal-beach-website-design-kd-flowers.png",
+        "importName": "img5"
+      },
+      {
+        "client": "cass-a-bella-construction",
+        "filename": "web-design-company-crystal-beach-cass-a-bella-construction.png",
+        "importName": "img6"
+      }
+    ]
+  }
+}

@@ -1,5 +1,12 @@
 # BUILD SPEC: Vertical × Geo SEO architecture for infused.agency
 
+> **Historical document.** This describes the original Next.js implementation
+> of the vertical/geo SEO system. The Next.js application has since been retired;
+> Astro is the repository's only application and the live implementation lives
+> under `astro/`. The content, data model and quality gate described here are
+> still in use, but file paths and build commands reflect the old Next.js setup.
+> See `docs/astro-rebuild/LEGACY_NEXTJS_REMOVAL_REPORT.md`.
+
 You are working in the existing infused.agency codebase (Next.js; detect Pages Router vs App Router and version yourself). Build the system described below on a new git branch `feat/vertical-geo-seo`. Do not touch unrelated pages. Work autonomously: where this spec is silent, choose the simplest option consistent with the existing codebase, and record the decision in `docs/vertical-seo-build.md`. Do not stop to ask questions.
 
 ---

@@ -1,0 +1,277 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import RichText from "../components/ui/RichText.astro";
+import Section from "../components/ui/Section.astro";
+
+interface Block {
+  type: string;
+  level?: number;
+  text?: string;
+  ordered?: boolean;
+  items?: any[];
+  src?: string;
+  alt?: string;
+  quote?: string;
+  person?: string;
+  role?: string;
+  company?: string;
+  avatar?: string;
+  avatarAlt?: string;
+  place?: string;
+  title?: string;
+  label?: string;
+  href?: string;
+}
+
+interface Props {
+  page: {
+    title: string;
+    description: string;
+    h1: string;
+    eyebrow: string;
+    hero: {
+      title: string;
+      description: string;
+      image?: string;
+      imageAlt?: string;
+    } | null;
+    blocks: Block[];
+    breadcrumbs: Array<{ name: string; href?: string }>;
+  };
+}
+
+const { page } = Astro.props;
+
+const sections: Array<{
+  heading: string | null;
+  eyebrow: string | null;
+  lead: string | null;
+  blocks: Block[];
+}> = [];
+
+let current = { heading: null as string | null, eyebrow: null as string | null, lead: null as string | null, blocks: [] as Block[] };
+
+for (const block of page.blocks) {
+  if (block.type === "heading" && block.level === 2) {
+    if (current.heading || current.blocks.length > 0) sections.push(current);
+    current = { heading: block.text ?? "", eyebrow: null, lead: null, blocks: [] };
+    continue;
+  }
+  if (block.type === "eyebrow") {
+    current.eyebrow = block.text ?? null;
+    continue;
+  }
+  if (block.type === "lead") {
+    current.lead = block.text ?? null;
+    continue;
+  }
+  current.blocks.push(block);
+}
+if (current.heading || current.blocks.length > 0) sections.push(current);
+
+function groupBlocks(blocks: Block[]) {
+  const units: Array<{ type: string; items?: any[]; block?: Block }> = [];
+  for (let index = 0; index < blocks.length; index += 1) {
+    const block = blocks[index];
+    if (block.type === "testimonial") {
+      const items = [block];
+      while (blocks[index + 1]?.type === "testimonial") {
+        index += 1;
+        items.push(blocks[index]);
+      }
+      units.push({ type: "testimonials", items });
+      continue;
+    }
+    units.push({ type: block.type, block });
+  }
+  return units;
+}
+
+function isLinkItem(item: string) {
+  return /^\[[^\]]+\]\([^)]+\)$/.test(item);
+}
+
+function isExternal(href: string) {
+  return /^https?:\/\//.test(href);
+}
+
+function mapSrc(place: string) {
+  return `https://maps.google.com/maps?q=${encodeURIComponent(place)}&z=12&output=embed`;
+}
+---
+
+<PageHero
+  title={page.h1}
+  description={page.hero?.description}
+  breadcrumbs={page.breadcrumbs}
+  eyebrow={page.eyebrow}
+  ctaLabel="Get a Free Quote"
+>
+  {
+    page.hero?.image ? (
+      <Fragment slot="aside">
+        <figure class="media-frame" style="margin: 0;">
+          <img
+            src={page.hero.image}
+            alt={page.hero.imageAlt ?? page.h1}
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+      </Fragment>
+    ) : (
+      <Fragment slot="aside">
+        <h2>Start with a free quote</h2>
+        <p>
+          Tell us about your business and what you want the website to do. We
+          will review the opportunity and send a clear written quote.
+        </p>
+        <ul class="page-hero__aside-list">
+          <li><Icon name="check" /> Website and search review</li>
+          <li><Icon name="check" /> Practical priorities</li>
+          <li><Icon name="check" /> A clear written quote</li>
+        </ul>
+        <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+      </Fragment>
+    )
+  }
+</PageHero>
+
+{
+  sections.map((section, sectionIndex) => (
+    <Section
+      tone={sectionIndex % 3 === 1 ? "tint" : "base"}
+      eyebrow={section.eyebrow ?? (sectionIndex === 0 ? "Overview" : undefined)}
+      index={String(sectionIndex + 1).padStart(2, "0")}
+      heading={section.heading ?? undefined}
+      description={section.lead ?? undefined}
+    >
+      <div class="legacy-content">
+        {groupBlocks(section.blocks).map((unit) => {
+          const block = unit.block;
+          if (unit.type === "paragraph") {
+            return <p class="prose"><RichText text={block?.text ?? ""} /></p>;
+          }
+          if (unit.type === "heading") {
+            return block?.level === 3 ? (
+              <h3 class="h3">{block.text}</h3>
+            ) : (
+              <h4 class="h4">{block?.text}</h4>
+            );
+          }
+          if (unit.type === "list") {
+            const items = block?.items ?? [];
+            if (items.length > 0 && items.every(isLinkItem)) {
+              return (
+                <ul class="chip-list">
+                  {items.map((item: string) => {
+                    const match = item.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+                    return (
+                      <li>
+                        <a
+                          class="chip"
+                          href={match?.[2] ?? "#"}
+                          target={isExternal(match?.[2] ?? "") ? "_blank" : undefined}
+                          rel={isExternal(match?.[2] ?? "") ? "noopener noreferrer" : undefined}
+                        >
+                          {match?.[1] ?? item}
+                          <Icon name="arrow-right" />
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              );
+            }
+            return (
+              <ul class="check-list">
+                {items.map((item: string) => (
+                  <li><RichText text={item} /></li>
+                ))}
+              </ul>
+            );
+          }
+          if (unit.type === "image") {
+            return (
+              <figure class="media-frame">
+                <img
+                  src={block?.src}
+                  alt={block?.alt?.trim() ? block.alt : "Image"}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            );
+          }
+          if (unit.type === "caption") {
+            return <p class="card__meta">{block?.text}</p>;
+          }
+          if (unit.type === "testimonials") {
+            return (
+              <div class="grid grid--3">
+                {(unit.items ?? []).map((item: any) => (
+                  <Card>
+                    {item.avatar && (
+                      <img
+                        class="testimonial-avatar"
+                        src={item.avatar}
+                        alt={item.avatarAlt ?? item.person ?? ""}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    <p class="proof-stars">★★★★★</p>
+                    <p class="card__text">&ldquo;{item.quote}&rdquo;</p>
+                    <p class="card__meta">
+                      {item.person}
+                      {item.role ? `, ${item.role}` : ""}
+                      {item.company ? ` — ${item.company}` : ""}
+                    </p>
+                  </Card>
+                ))}
+              </div>
+            );
+          }
+          if (unit.type === "faqs") {
+            return <Accordion items={unit.items ?? []} />;
+          }
+          if (unit.type === "map") {
+            return (
+              <figure class="map-frame">
+                <iframe
+                  title={block?.title ?? `Map of ${block?.place ?? "the area"}`}
+                  src={mapSrc(block?.place ?? "")}
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </figure>
+            );
+          }
+          if (unit.type === "link") {
+            return (
+              <p>
+                <a class="chip" href={block?.href}>
+                  {block?.label}
+                  <Icon name="arrow-right" />
+                </a>
+              </p>
+            );
+          }
+          return null;
+        })}
+      </div>
+    </Section>
+  ))
+}
+
+<CtaBand
+  eyebrow="Free quote"
+  heading="Ready to talk about your project?"
+  description="Tell us where the business is today and what you want to achieve. We will send a free, no-obligation quote."
+  ctaLabel="Get a Free Quote"
+/>

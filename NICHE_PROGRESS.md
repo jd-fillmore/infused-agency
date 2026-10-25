@@ -1,5 +1,10 @@
 # Niche Pages Batch 3 Progress
 
+> **Historical document.** This tracks pages built for the retired Next.js
+> application. Astro is the repository's only application; the data survives
+> in `src/lib/niagaraIndustries.js` and the JSON snapshots under
+> `astro/src/data/legacy/`. See `docs/astro-rebuild/LEGACY_NEXTJS_REMOVAL_REPORT.md`.
+
 Target branch: niche-pages-batch-3 (branched from niche-pages-batch-2; batch 2 not merged into master)
 Reference template: /seo/for-concrete-contractors-niagara (IndustryNiagaraPage.js)
 Shared data: src/lib/niagaraIndustries.js (all 23 added in one wiring commit after page 1)

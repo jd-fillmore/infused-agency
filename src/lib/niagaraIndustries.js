@@ -2,8 +2,8 @@
 // /industries hub. These are bespoke /seo/for-*-niagara pages (plus the
 // therapist SEO programme), not part of the vertical x geo system.
 //
-// CommonJS so the pages-router getStaticProps() can require() it while the
-// components import it with a normal ESM import (webpack interop).
+// CommonJS so the Astro build and the Node scripts can require() it without a
+// build step.
 
 const NIAGARA_INDUSTRIES = [
   {

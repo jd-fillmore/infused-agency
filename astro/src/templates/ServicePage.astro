@@ -1,0 +1,158 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+
+interface ServicePageData {
+  heroTitle: string;
+  heroDescription: string;
+  breadcrumbs: Array<{ name: string; href?: string }>;
+  introHeadingHtml: string;
+  introParagraphs: string[];
+  approach: Array<{ icon: string; title: string; body: string }>;
+  results: { heading: string; body: string };
+  services: Array<{ title: string; body: string }>;
+  cities: Array<{ href: string; label: string }>;
+  industries: Array<{ href: string; label: string }>;
+  childServices: Array<{ name: string; url: string }>;
+  faqs?: Array<{ q: string; a: string }>;
+}
+
+interface Props {
+  data: ServicePageData;
+}
+
+const { data } = Astro.props;
+---
+
+<PageHero
+  title={data.heroTitle}
+  description={data.heroDescription}
+  breadcrumbs={data.breadcrumbs}
+  eyebrow="SEO services"
+  ctaLabel="Get a Free Quote"
+/>
+
+<Section>
+  <div class="split split--top">
+    <div class="reveal">
+      <p class="eyebrow"><span class="eyebrow__index">01</span> The opportunity</p>
+      <h2 class="h2" style="margin-top: 1rem;" set:html={data.introHeadingHtml} />
+    </div>
+    <div class="prose reveal">
+      {data.introParagraphs.map((paragraph) => <p set:html={paragraph} />)}
+    </div>
+  </div>
+</Section>
+
+<Section
+  tone="contrast"
+  eyebrow="Process"
+  index="02"
+  heading="Research, build and grow"
+  description="A practical sequence, not a pile of disconnected tactics."
+>
+  <div class="grid grid--3 reveal-group">
+    {
+      data.approach.map((step) => (
+        <Card class="card--dark">
+          <span class="card__icon"><Icon name={step.icon} /></span>
+          <h3 class="card__title">{step.title}</h3>
+          <p class="card__text">{step.body}</p>
+        </Card>
+      ))
+    }
+  </div>
+</Section>
+
+<Section eyebrow="Proof" index="03" heading={data.results.heading}>
+  <div class="split split--top">
+    <p class="prose reveal">{data.results.body}</p>
+    <div class="callout reveal">
+      <h2>Ready to rank?</h2>
+      <p>Tell us where your business is today and where you want it to be.</p>
+      <Button href="/get-a-quote" arrow>Get a Free Quote</Button>
+    </div>
+  </div>
+</Section>
+
+<Section tone="tint" eyebrow="Services" index="04" heading="SEO Services To Grow Your Business">
+  <div class="grid grid--3 reveal-group">
+    {
+      data.services.map((service, index) => (
+        <Card>
+          <span class="service-card__number">{String(index + 1).padStart(2, "0")}</span>
+          <h3 class="card__title">{service.title}</h3>
+          <p class="card__text">{service.body}</p>
+        </Card>
+      ))
+    }
+  </div>
+</Section>
+
+<Section
+  eyebrow="Service area"
+  index="05"
+  heading="Serving SEO to Businesses in Niagara"
+  description="Local search work for the cities and industries where your customers are already looking."
+>
+  <div class="split split--top">
+    <div class="reveal">
+      <h3 class="h3">Niagara cities</h3>
+      <ul class="chip-list" style="margin-top: 1rem;">
+        {data.cities.map((city) => <li><a class="chip" href={city.href}>{city.label}</a></li>)}
+      </ul>
+    </div>
+    <div class="reveal">
+      <h3 class="h3">SEO by industry</h3>
+      <ul class="chip-list" style="margin-top: 1rem;">
+        {
+          data.industries.map((industry) => (
+            <li>
+              <a class="chip" href={industry.href}>
+                {industry.label}
+                <Icon name="arrow-right" />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</Section>
+
+{
+  data.childServices.length > 0 && (
+    <Section tone="contrast" eyebrow="Explore" index="06" heading="Search engine optimization services">
+      <ul class="grid grid--3 service-link-grid" style="list-style: none;">
+        {data.childServices.map((service) => (
+          <li>
+            <a class="service-link" href={service.url}>
+              <span>{service.name}</span>
+              <Icon name="arrow-right" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  )
+}
+
+{
+  data.faqs && data.faqs.length > 0 && (
+    <Section eyebrow="Questions" index="07" heading="Frequently asked questions">
+      <Accordion items={data.faqs} />
+    </Section>
+  )
+}
+
+<CtaBand
+  eyebrow="Free quote"
+  heading="A clear quote for the work that moves rankings"
+  description="Tell us where your business is today. We will review your local visibility and send a free, no-obligation quote."
+  ctaLabel="Get a Free Quote"
+/>

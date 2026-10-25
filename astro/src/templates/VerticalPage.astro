@@ -1,0 +1,125 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+
+interface VerticalContent {
+  directAnswer: string;
+  intro: string;
+  localInsight: string;
+  localChecklist: string[];
+  faqs: Array<{ q: string; a: string }>;
+  summary: string;
+}
+
+interface Props {
+  h1: string;
+  description: string;
+  verticalName: string;
+  content: VerticalContent;
+  provinces: Array<{ name: string; href: string; cityCount: number }>;
+  serviceLinks: Array<{ name: string; url: string }>;
+}
+
+const { h1, description, verticalName, content, provinces, serviceLinks } = Astro.props;
+---
+
+<PageHero
+  title={h1}
+  description={description}
+  breadcrumbs={[{ name: "Home", href: "/" }, { name: verticalName }]}
+  eyebrow="Industry SEO"
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <h2>Start with a free quote</h2>
+    <p>
+      Tell us about your practice and we will review your website, Google Business
+      Profile and the terms you want to rank for, then send a written quote.
+    </p>
+    <ul class="page-hero__aside-list">
+      <li><Icon name="check" /> Website and profile review</li>
+      <li><Icon name="check" /> Local search opportunity map</li>
+      <li><Icon name="check" /> A clear written quote</li>
+    </ul>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+  </Fragment>
+</PageHero>
+
+<Section>
+  <div class="split split--top">
+    <div class="reveal">
+      <div class="callout callout--dark">
+        <p class="eyebrow" style="color: var(--color-gold-bright);">In short</p>
+        <h2 style="margin-top: 0.8rem;">{content.directAnswer}</h2>
+      </div>
+      <div class="prose" style="margin-top: 2rem;">
+        <p>{content.intro}</p>
+      </div>
+    </div>
+    <aside class="card reveal">
+      <p class="eyebrow"><span class="eyebrow__index">01</span> Focus</p>
+      <h3 class="card__title">What we focus on</h3>
+      <ul class="check-list" style="margin-top: 1rem;">
+        {content.localChecklist.map((item) => <li>{item}</li>)}
+      </ul>
+    </aside>
+  </div>
+</Section>
+
+<Section tone="contrast" eyebrow="Across Canada" index="02" heading="Local search across Canada">
+  <div class="split split--top">
+    <div class="prose reveal" style="color: var(--color-contrast-muted);">
+      <p style="color: var(--color-contrast-muted);">{content.localInsight}</p>
+    </div>
+    <div class="grid grid--2 reveal-group">
+      {
+        provinces.map((province) => (
+          <Card class="card--dark" interactive>
+            <h3 class="card__title" style="margin-top: 0;">
+              <a class="province-link" href={province.href}>
+                <span>{province.name}</span>
+                <Icon name="arrow-right" />
+              </a>
+            </h3>
+            <p class="card__text">
+              {province.cityCount > 0
+                ? `${province.cityCount} ${province.cityCount === 1 ? "city" : "cities"} covered`
+                : "Province-wide coverage"}
+            </p>
+          </Card>
+        ))
+      }
+    </div>
+  </div>
+</Section>
+
+<Section eyebrow="Related services" index="03" heading="Related services">
+  <ul class="chip-list reveal-group">
+    {
+      serviceLinks.map((service) => (
+        <li>
+          <a class="chip" href={service.url}>
+            {service.name}
+            <Icon name="arrow-right" />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<Section tone="warm" eyebrow="Questions" index="04" heading="Frequently asked questions">
+  <Accordion items={content.faqs} />
+</Section>
+
+<CtaBand
+  eyebrow="Free quote"
+  heading="Grow your practice with local SEO"
+  description="Request a free quote and we will review your website, your Google Business Profile and the terms you want to rank for."
+  ctaLabel="Get a Free Quote"
+/>

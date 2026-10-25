@@ -1,0 +1,310 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import RichText from "../components/ui/RichText.astro";
+import Section from "../components/ui/Section.astro";
+
+interface Stat {
+  value: string;
+  label: string;
+}
+
+interface Block {
+  heading?: string;
+  title?: string;
+  subhead?: string;
+  paragraphs?: string[];
+  checklist?: string[];
+  paragraphsAfter?: string[];
+}
+
+interface Props {
+  data: {
+    seo: { title: string; description: string; url: string };
+    industry: string;
+    hero: { title: string; description: string; image?: string; alt?: string };
+    intro: Block;
+    proof?: {
+      heading: string;
+      subhead?: string;
+      stats?: Stat[];
+      note?: string;
+      client?: string;
+      label?: string;
+      image?: string;
+      alt?: string;
+      items?: string[];
+      viewMoreHref?: string;
+      viewMoreLabel?: string;
+    };
+    bodyBlock?: Block;
+    areasBlock?: Block;
+    whyChoose?: {
+      heading: string;
+      paragraphs?: string[];
+      awards?: { image: string; alt: string };
+      blocks?: Block[];
+      closingHeading?: string;
+      closingParagraphs?: string[];
+      cta?: boolean;
+    };
+    services?: {
+      heading: string;
+      subhead?: string;
+      cards: Array<{ title: string; paragraphs: string[]; checklist?: string[]; paragraphsAfter?: string[] }>;
+    };
+    faqs?: Array<{ q: string; a: string }>;
+  };
+  siblings: Array<{ href: string; displayName: string }>;
+  cities: Array<{ name: string; href: string }>;
+}
+
+const { data, siblings, cities } = Astro.props;
+
+function paragraphs(items?: string[]) {
+  return items ?? [];
+}
+---
+
+<PageHero
+  title={data.hero.title}
+  description={data.hero.description}
+  breadcrumbs={[
+    { name: "Home", href: "/" },
+    { name: "SEO", href: "/seo" },
+    { name: data.industry },
+  ]}
+  eyebrow="Industry SEO"
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <h2>Start with a free quote</h2>
+    <p>
+      Tell us about your {data.industry.toLowerCase()} business and the work you
+      want more of. We will review your website and local visibility, then send a
+      clear written quote.
+    </p>
+    <ul class="page-hero__aside-list">
+      <li><Icon name="check" /> Website and content review</li>
+      <li><Icon name="check" /> Google Business Profile check</li>
+      <li><Icon name="check" /> A clear written quote</li>
+    </ul>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+  </Fragment>
+</PageHero>
+
+<Section>
+  <div class="split split--top">
+    <div class="reveal">
+      <p class="eyebrow"><span class="eyebrow__index">01</span> The opportunity</p>
+      <h2 class="h2" style="margin-top: 1rem;">{data.intro.heading}</h2>
+      <div class="prose" style="margin-top: 1.25rem;">
+        {paragraphs(data.intro.paragraphs).map((paragraph) => (
+          <p><RichText text={paragraph} /></p>
+        ))}
+      </div>
+    </div>
+    {
+      data.hero.image && (
+        <figure class="media-frame reveal">
+          <img
+            src={data.hero.image}
+            alt={data.hero.alt ?? `${data.hero.title} by Infused Agency`}
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+      )
+    }
+  </div>
+</Section>
+
+{
+  data.proof && (
+    <Section tone="contrast" eyebrow="Proof" index="02" heading={data.proof.heading}>
+      {data.proof.stats ? (
+        <div class="grid grid--3 reveal-group">
+          {data.proof.stats.map((stat) => (
+            <Card class="card--dark">
+              <p class="proof-stat__value">{stat.value}</p>
+              <p class="proof-stat__label">{stat.label}</p>
+            </Card>
+          ))}
+        </div>
+      ) : (
+        <div class="split split--top">
+          <div class="reveal">
+            <span class="badge">{data.proof.label ?? "Recent project"}</span>
+            <h3 class="h3" style="margin-top: 1rem; color: #ffffff;">{data.proof.client}</h3>
+            <ul class="check-list" style="margin-top: 1.1rem;">
+              {paragraphs(data.proof.items).map((item) => <li><RichText text={item} /></li>)}
+            </ul>
+            <div style="margin-top: 1.75rem;">
+              <Button href={data.proof.viewMoreHref ?? "/results"} variant="gold" arrow>
+                {data.proof.viewMoreLabel ?? "View more results"}
+              </Button>
+            </div>
+          </div>
+          {data.proof.image && (
+            <figure class="media-frame reveal">
+              <img
+                src={data.proof.image}
+                alt={data.proof.alt ?? `${data.proof.client} results`}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          )}
+        </div>
+      )}
+      {data.proof.note && <p class="prose" style="margin-top: 1.5rem;">{data.proof.note}</p>}
+    </Section>
+  )
+}
+
+{
+  data.bodyBlock && paragraphs(data.bodyBlock.paragraphs).length > 0 && (
+    <Section eyebrow="The work" index="03" heading={data.bodyBlock.heading} description={data.bodyBlock.subhead}>
+      <div class="split split--top">
+        <div class="prose reveal">
+          {paragraphs(data.bodyBlock.paragraphs).map((paragraph) => (
+            <p><RichText text={paragraph} /></p>
+          ))}
+          {paragraphs(data.bodyBlock.paragraphsAfter).map((paragraph) => (
+            <p><RichText text={paragraph} /></p>
+          ))}
+        </div>
+        {data.bodyBlock.checklist && data.bodyBlock.checklist.length > 0 && (
+          <aside class="card reveal">
+            <h3 class="card__title">What to get right</h3>
+            <ul class="check-list" style="margin-top: 1rem;">
+              {data.bodyBlock.checklist.map((item) => <li><RichText text={item} /></li>)}
+            </ul>
+          </aside>
+        )}
+      </div>
+    </Section>
+  )
+}
+
+{
+  data.areasBlock && paragraphs(data.areasBlock.paragraphs).length > 0 && (
+    <Section tone="tint" eyebrow="Niagara" index="04" heading={data.areasBlock.heading} description={data.areasBlock.subhead}>
+      <div class="prose reveal">
+        {paragraphs(data.areasBlock.paragraphs).map((paragraph) => (
+          <p><RichText text={paragraph} /></p>
+        ))}
+      </div>
+      <ul class="chip-list" style="margin-top: 1.75rem;">
+        {cities.map((city) => (
+          <li><a class="chip" href={city.href}>SEO in {city.name}<Icon name="arrow-right" /></a></li>
+        ))}
+      </ul>
+    </Section>
+  )
+}
+
+{
+  data.services && data.services.cards.length > 0 && (
+    <Section eyebrow="Services" index="05" heading={data.services.heading} description={data.services.subhead}>
+      <div class="grid grid--3 reveal-group">
+        {data.services.cards.map((card, index) => (
+          <Card>
+            <span class="service-card__number">{String(index + 1).padStart(2, "0")}</span>
+            <h3 class="card__title">{card.title}</h3>
+            {paragraphs(card.paragraphs).map((paragraph) => (
+              <p class="card__text"><RichText text={paragraph} /></p>
+            ))}
+            {card.checklist && card.checklist.length > 0 && (
+              <ul class="check-list" style="margin-top: 1rem;">
+                {card.checklist.map((item) => <li><RichText text={item} /></li>)}
+              </ul>
+            )}
+          </Card>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+{
+  data.whyChoose && (
+    <Section eyebrow="Why Infused" index="06" heading={data.whyChoose.heading}>
+      <div class="split split--top">
+        <div class="reveal">
+          <div class="prose">
+            {paragraphs(data.whyChoose.paragraphs).map((paragraph) => (
+              <p><RichText text={paragraph} /></p>
+            ))}
+          </div>
+          {data.whyChoose.awards && (
+            <div class="card" style="max-width: 30rem; margin-top: 1.75rem; padding: 1.25rem;">
+              <img src={data.whyChoose.awards.image} alt={data.whyChoose.awards.alt} loading="lazy" decoding="async" />
+            </div>
+          )}
+        </div>
+        <div class="grid" style="grid-template-columns: 1fr; gap: 1rem;">
+          {(data.whyChoose.blocks ?? []).map((block) => (
+            <Card class="reveal">
+              <h3 class="card__title" style="margin-top: 0;">{block.heading ?? block.title}</h3>
+              {paragraphs(block.paragraphs).map((paragraph) => (
+                <p class="card__text"><RichText text={paragraph} /></p>
+              ))}
+              {block.checklist && block.checklist.length > 0 && (
+                <ul class="check-list" style="margin-top: 1rem;">
+                  {block.checklist.map((item) => <li><RichText text={item} /></li>)}
+                </ul>
+              )}
+              {paragraphs(block.paragraphsAfter).map((paragraph) => (
+                <p class="card__text"><RichText text={paragraph} /></p>
+              ))}
+            </Card>
+          ))}
+        </div>
+      </div>
+      {data.whyChoose.closingHeading && (
+        <div class="reveal" style="margin-top: 2.75rem; max-width: 46rem;">
+          <h2 class="h3">{data.whyChoose.closingHeading}</h2>
+          <div class="prose" style="margin-top: 1rem;">
+            {paragraphs(data.whyChoose.closingParagraphs).map((paragraph) => (
+              <p><RichText text={paragraph} /></p>
+            ))}
+          </div>
+          {data.whyChoose.cta && (
+            <div style="margin-top: 1.5rem;">
+              <Button href="/get-a-quote" arrow>Get a Free Quote</Button>
+            </div>
+          )}
+        </div>
+      )}
+    </Section>
+  )
+}
+
+{
+  data.faqs && data.faqs.length > 0 && (
+    <Section tone="warm" eyebrow="Questions" index="07" heading="Frequently asked questions">
+      <Accordion items={data.faqs} />
+    </Section>
+  )
+}
+
+<Section tone="contrast" eyebrow="More industries" index="08" heading="Other industries we serve in Niagara">
+  <ul class="chip-list">
+    {siblings.map((item) => (
+      <li><a class="chip" href={item.href}>{item.displayName}<Icon name="arrow-right" /></a></li>
+    ))}
+    <li><a class="chip" href="/industries">Browse all industries<Icon name="arrow-right" /></a></li>
+  </ul>
+</Section>
+
+<CtaBand
+  eyebrow="Free quote"
+  heading={`Win more ${data.industry.toLowerCase()} work in Niagara`}
+  description="Request a free quote and we will map what it takes to get your business found by the customers already searching."
+  ctaLabel="Get a Free Quote"
+/>

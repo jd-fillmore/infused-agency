@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogPostPage from "../../templates/BlogPostPage.astro";
+import { getAllPosts } from "../../lib/posts";
+import { baseGraph, blogPostingNode, breadcrumbNode, webPageNode } from "../../lib/schema";
+
+export function getStaticPaths() {
+  return getAllPosts().map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+
+const title = `${post.title} | Infused Agency`;
+const description = post.excerpt;
+const canonical = `/posts/${post.id}`;
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: canonical, name: title, description }),
+  breadcrumbNode(
+    [
+      { name: "Home", href: "/" },
+      { name: "Blog", href: "/blog" },
+      { name: post.title },
+    ],
+    canonical
+  ),
+  blogPostingNode({
+    url: canonical,
+    headline: post.title,
+    description,
+    datePublished: post.date,
+    image: post.image,
+  }),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  type="article"
+  image={post.image}
+  imageAlt={post.title}
+  jsonLd={jsonLd}
+>
+  <BlogPostPage post={post} />
+</BaseLayout>

@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Motion layer
+   Content is visible by default. Scroll reveals are added by JavaScript only
+   to elements below the fold; if JS fails, nothing is hidden.
+   ========================================================================== */
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.15em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bar-grow {
+  from {
+    transform: scaleY(0.08);
+    opacity: 0.35;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes mega-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobile-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll reveal: applied only after JS confirms the element is below fold. */
+.will-reveal:not(.reveal-group) {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity var(--duration-reveal) var(--ease-out),
+    transform var(--duration-reveal) var(--ease-out);
+}
+
+.will-reveal:not(.reveal-group).is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.will-reveal.reveal-group > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 640ms var(--ease-out),
+    transform 640ms var(--ease-out);
+}
+
+.will-reveal.reveal-group.is-visible > * {
+  opacity: 1;
+  transform: none;
+}
+
+/* Cards use the separate `translate` property for their hover lift so the
+   longer scroll-reveal transform timing does not slow the interaction. */
+.will-reveal.reveal-group.is-visible > .card {
+  transition:
+    opacity 640ms var(--ease-out),
+    transform 640ms var(--ease-out),
+    translate var(--duration-control) var(--ease-smooth),
+    box-shadow var(--duration-card) var(--ease-smooth),
+    border-color var(--duration-card) var(--ease-smooth),
+    background-color var(--duration-card) var(--ease-smooth);
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(2) {
+  transition-delay: 70ms;
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(3) {
+  transition-delay: 140ms;
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(4) {
+  transition-delay: 210ms;
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(5) {
+  transition-delay: 280ms;
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(6) {
+  transition-delay: 350ms;
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(7) {
+  transition-delay: 420ms;
+}
+
+.will-reveal.reveal-group.is-visible > *:nth-child(8) {
+  transition-delay: 490ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .will-reveal,
+  .will-reveal.reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Keep interaction feedback (colour, border, outline) but remove movement. */
+  .btn:hover,
+  .btn:focus-visible,
+  .link-arrow:hover,
+  .link-arrow:focus-visible,
+  .service-link:hover,
+  .service-link:focus-visible,
+  .chip:hover,
+  .chip:focus-visible,
+  .card--interactive:hover,
+  .card--interactive:focus-within,
+  .footer-list a:hover,
+  .site-footer__contact a:hover,
+  .social-list a:hover,
+  .mega__group a:hover,
+  .mega__group a:focus-visible,
+  .client-strip img:hover,
+  .service-card:hover .service-card__arrow,
+  .service-card:focus-within .service-card__arrow,
+  .service-card--featured:hover .service-card__arrow,
+  .service-card--featured:focus-within .service-card__arrow {
+    transform: none !important;
+  }
+
+  .card--interactive:hover {
+    translate: none !important;
+  }
+
+  .btn:hover svg,
+  .btn:focus-visible svg,
+  .link-arrow:hover svg,
+  .link-arrow:focus-visible svg,
+  .service-link:hover svg,
+  .service-link:focus-visible svg,
+  .province-link:hover svg,
+  .province-link:focus-visible svg,
+  .topbar a:hover svg,
+  .topbar a:focus-visible svg {
+    transform: none !important;
+  }
+
+  .post-card:hover .post-card__image img,
+  .featured-post:hover .featured-post__media img,
+  .result-card:hover .result-card__media img,
+  .proof-result:hover .proof-result__media img,
+  .media-frame:hover img {
+    transform: none !important;
+  }
+}

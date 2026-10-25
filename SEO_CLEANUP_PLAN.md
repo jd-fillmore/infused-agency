@@ -1,5 +1,10 @@
 # SEO Cleanup Plan — Niagara Industry Focus
 
+> **Historical document.** This plan was produced for the retired Next.js
+> application and predates the Astro rebuild. Astro is the repository's only
+> application. The surviving data models live under `src/lib/` and
+> `data/`; see `docs/astro-rebuild/LEGACY_NEXTJS_REMOVAL_REPORT.md`.
+
 **Status:** Phase 1 deliverable (read-only audit). **No code has been changed.** Waiting for user "go" before Phase 2.
 **Branch context:** `feat/home-seo-depth` @ `3e4e6d5`, working tree clean at time of audit.
 **Date:** 2026-10-12

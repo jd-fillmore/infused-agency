@@ -8,7 +8,7 @@ on:
 
 jobs:
   verify:
-    name: Verify vertical SEO
+    name: Check, build and validate Astro
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,18 +17,9 @@ jobs:
           node-version: 22
           cache: yarn
       - run: yarn install --frozen-lockfile
-      - name: Quality gate + launch schedule
-        run: yarn verify:seo
-
-  build:
-    name: Production build
-    needs: verify
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
+      - name: Astro type and content checks
+        run: yarn check:astro
+      - name: Production build
+        run: yarn build:astro
+      - name: Static build validation
+        run: yarn validate:astro

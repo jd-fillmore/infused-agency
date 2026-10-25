@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ServicePage from "../../templates/ServicePage.astro";
+import { getService, services } from "../../lib/site";
+import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const seoService = getService("seo");
+const title = "SEO Services | Local SEO & AI Search Visibility | Infused";
+const description =
+  "SEO services for Niagara businesses and clients across Canada and the U.S. Improve local visibility, service pages and AI search visibility. Get a free quote.";
+
+const faqs = [
+  {
+    q: "What do your SEO services include?",
+    a: "Most engagements combine local SEO, Google Business Profile work, service-page content, technical fixes and internal linking. Where it fits the business, we also improve AI search visibility through entity consistency, answer-ready content and structured data. The exact scope is agreed after a review.",
+  },
+  {
+    q: "How long does SEO take to show results?",
+    a: "Foundation improvements often show within a few months, while competitive service terms take longer. The pace depends on your starting visibility, website quality, competition and how consistently the work is maintained. We report progress against agreed measures rather than promising a fixed date.",
+  },
+  {
+    q: "Do you guarantee first-page rankings?",
+    a: "No. Search results vary by location, device and query, and no ethical agency controls Google's rankings. We commit to the work, transparent reporting and honest recommendations, not a guaranteed position.",
+  },
+  {
+    q: "What is AI search optimization, GEO or AEO?",
+    a: "AI search optimization is the work of making your business clear and credible enough to appear in AI-generated answers. GEO (Generative Engine Optimization) and AEO (Answer Engine Optimization) are related labels for that work. It extends SEO into tools such as ChatGPT, Gemini and Google AI Overviews rather than replacing it.",
+  },
+  {
+    q: "Can you help my business appear in AI-generated answers?",
+    a: "We can improve the conditions that make it easier for AI tools to describe, quote and recommend you: consistent business details, clear service content, structured data and genuine reviews. No agency can guarantee that a specific assistant will cite or recommend your business.",
+  },
+  {
+    q: "How much do SEO services cost?",
+    a: "Pricing depends on your competition, website, services and how many locations you target. We review the business first and send a written quote with a clear scope. We do not publish invented package prices or promise a set number of leads.",
+  },
+];
+
+const data = {
+  heroTitle: "Search Engine Optimization (SEO)",
+  heroDescription:
+    "SEO that helps your business get found in Google, the map pack and AI-generated answers, then turns that visibility into enquiries.",
+  breadcrumbs: [{ name: "Home", href: "/" }, { name: "SEO" }],
+  introHeadingHtml:
+    'Be found in search, the map pack and <span class="text-gradient">AI answers</span>.',
+  introParagraphs: [
+    "SEO is still the foundation of how customers find a business online. It covers the pages on your website, the way Google understands them, the signals behind your Google Business Profile and the words people use when they are ready to buy. When those pieces work together, your business appears for the searches that matter instead of leaving the enquiry to a competitor.",
+    'For local businesses, the map pack and <a href="/posts/local-seo-tips-niagara">local search results</a> are often the first shortlist. We improve the profile, service pages, location content and reviews that decide whether you appear, then measure the calls and form fills that follow.',
+    'Search behaviour is also moving into AI. People ask ChatGPT, Gemini and Google\'s AI Overviews for recommendations, comparisons and explanations, and those tools assemble answers from sources they can read and trust. We treat <a href="/ai-search">AI search optimization</a> as an extension of SEO: clear entity information, answer-ready content and consistent facts across your site and profiles. Some call it GEO (Generative Engine Optimization), AEO (Answer Engine Optimization) or SEO for AI search. The aim is the same: make your business easier to describe, quote and recommend accurately.',
+    "We do not promise a specific ranking, a citation or a number of leads. We build the foundations that give a business a better chance of being found, explain the trade-offs in plain language and report on what actually changed.",
+  ],
+  approach: [
+    {
+      icon: "search",
+      title: "Research",
+      body: "We review your market, the searches your customers use, the competitors already winning and the strength of your website and profile. The plan starts with the demand that can realistically produce enquiries.",
+    },
+    {
+      icon: "code",
+      title: "Build",
+      body: "We fix the technical foundations, strengthen service and location pages, improve the Google Business Profile and make the important business facts consistent and easy to understand.",
+    },
+    {
+      icon: "bolt",
+      title: "Grow",
+      body: "SEO is ongoing. We monitor rankings, enquiries and AI search visibility, then adjust the content and priorities as the market and the tools change.",
+    },
+  ],
+  results: {
+    heading: "Visibility that supports real enquiries",
+    body: "Our work is judged by whether the right people can find the business and take the next step, not by a ranking chart alone. We look at which services and locations produce calls, quote requests and booked appointments, and we use that to decide what to improve next. Where AI search visibility is part of the scope, we baseline the answers assistants give and compare them over time. We do not publish invented city-specific results or claim that a ranking in one place guarantees the same outcome in another.",
+  },
+  services: [
+    {
+      title: "Local SEO and Google Business Profile",
+      body: "We tighten your categories, services, hours, coverage areas, photos and review responses so your business is easier to find in the map pack and easier for a nearby customer to choose.",
+    },
+    {
+      title: "On-page SEO and service pages",
+      body: "Distinct services deserve distinct pages. We improve headings, copy, internal links and calls to action so each page has a clear job and answers the questions a buyer actually asks.",
+    },
+    {
+      title: "Technical SEO and site speed",
+      body: "We fix crawlability, indexing, duplicate metadata, slow templates and mobile usability problems that hold good content back. A faster, cleaner site helps both users and search engines.",
+    },
+    {
+      title: "Content strategy and answer-ready copy",
+      body: "We plan content around real customer questions, then write it clearly enough to be understood by people and extracted by search and AI systems. Content writing is part of the SEO work, not a separate service line.",
+    },
+    {
+      title: "AI search optimization (GEO and AEO)",
+      body: "We improve entity consistency, structured data and quotable answers so AI assistants have accurate material to work with. This is AI search visibility work, not a promise that a specific tool will recommend you.",
+    },
+    {
+      title: "Reporting and conversion tracking",
+      body: "We connect search visibility to the actions that matter: calls, form fills, direction requests and booked appointments. Reporting shows what changed and where the next opportunity is.",
+    },
+  ],
+  cities: NIAGARA_CITY_LINKS.map((city) => ({
+    href: city.href,
+    label: `${city.name}, ON`,
+  })),
+  industries: [
+    { href: "/therapist-seo", label: "SEO for Therapists in Canada" },
+    { href: "/general-contractor-seo", label: "SEO for General Contractors" },
+  ],
+  childServices: services
+    .filter((service) => service.parentUrl === "/seo")
+    .map((service) => ({ name: service.name, url: service.url }))
+    .sort((a, b) => a.name.localeCompare(b.name)),
+  faqs,
+};
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: "/seo",
+    name: title,
+    description,
+    type: "CollectionPage",
+  }),
+  breadcrumbNode([{ name: "Home", href: "/" }, { name: "SEO" }], "/seo"),
+  serviceNode({
+    url: "/seo",
+    name: seoService?.name ?? "Search Engine Optimization",
+    description: seoService?.summary ?? description,
+    serviceType: "Search engine optimization, local SEO and AI search optimization",
+  }),
+  faqPageNode("/seo", faqs),
+];
+---
+
+<BaseLayout title={title} description={description} canonical="/seo" jsonLd={jsonLd}>
+  <ServicePage data={data} />
+</BaseLayout>

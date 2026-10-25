@@ -1,0 +1,36 @@
+---
+import Button from "./Button.astro";
+
+interface Props {
+  heading: string;
+  description?: string;
+  eyebrow?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  ctaExternal?: boolean;
+}
+
+const {
+  heading,
+  description,
+  eyebrow,
+  ctaLabel = "Get a Free Quote",
+  ctaHref = "/get-a-quote",
+  ctaExternal = false,
+} = Astro.props;
+---
+
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band__inner">
+      <div>
+        {eyebrow && <p class="eyebrow" style="color: var(--color-gold-bright);">{eyebrow}</p>}
+        <h2>{heading}</h2>
+        {description && <p>{description}</p>}
+      </div>
+      <div class="cta-band__actions">
+        <Button href={ctaHref} variant="gold" size="lg" arrow external={ctaExternal}>{ctaLabel}</Button>
+      </div>
+    </div>
+  </div>
+</section>

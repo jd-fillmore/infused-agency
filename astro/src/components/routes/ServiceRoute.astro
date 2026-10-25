@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ServiceContentPage from "../../templates/ServiceContentPage.astro";
+import { getServicePage } from "../../lib/legacy-pages.mjs";
+import { baseGraph, breadcrumbNode, faqPageNode, serviceNode, webPageNode } from "../../lib/schema";
+
+interface Props {
+  pathname: string;
+}
+
+const { pathname } = Astro.props;
+const data = getServicePage(pathname);
+
+if (!data) {
+  throw new Error(`Missing service page data for ${pathname}`);
+}
+
+const faqs = data.content.faqs.map((faq: { q: string; a: string }) => ({
+  q: faq.q,
+  a: faq.a,
+}));
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: data.title, description: data.summary }),
+  breadcrumbNode(data.breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: data.name,
+    description: data.summary,
+    serviceType: data.group,
+  }),
+  ...(faqs.length ? [faqPageNode(pathname, faqs)] : []),
+];
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.summary}
+  canonical={pathname}
+  jsonLd={jsonLd}
+>
+  <ServiceContentPage data={data} />
+</BaseLayout>

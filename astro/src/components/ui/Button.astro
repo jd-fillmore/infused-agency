@@ -1,0 +1,53 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  href?: string;
+  variant?: "primary" | "secondary" | "light" | "ghost" | "gold";
+  size?: "md" | "lg";
+  arrow?: boolean;
+  block?: boolean;
+  type?: "button" | "submit" | "reset";
+  class?: string;
+  external?: boolean;
+}
+
+const {
+  href,
+  variant = "primary",
+  size = "md",
+  arrow = false,
+  block = false,
+  type = "button",
+  class: className = "",
+  external = false,
+} = Astro.props;
+
+const classes = [
+  "btn",
+  `btn--${variant}`,
+  size === "lg" ? "btn--lg" : "",
+  block ? "btn--block" : "",
+  className,
+]
+  .filter(Boolean)
+  .join(" ");
+---
+
+{
+  href ? (
+    <a
+      href={href}
+      class={classes}
+      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+    >
+      <slot />
+      {arrow && <Icon name="arrow-right" />}
+    </a>
+  ) : (
+    <button type={type} class={classes}>
+      <slot />
+      {arrow && <Icon name="arrow-right" />}
+    </button>
+  )
+}

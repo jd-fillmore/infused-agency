@@ -1,0 +1,161 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import RichText from "../components/ui/RichText.astro";
+import Section from "../components/ui/Section.astro";
+
+interface Block {
+  heading: string;
+  subhead?: string;
+  paragraphs: string[];
+  paragraphsAfter?: string[];
+  checklist?: string[];
+}
+
+interface Props {
+  data: {
+    niche: { slug: string; name: string };
+    city: { slug: string; name: string };
+    content: {
+      seo: { title: string; description: string };
+      hero: { subhead: string };
+      competition: Block;
+      searches: Block;
+      season: Block;
+      whatWeDo: Block;
+      straight: Block;
+      faqs: Array<{ q: string; a: string }>;
+      nearby: {
+        heading: string;
+        subhead?: string;
+        notes?: Record<string, string>;
+      };
+    };
+    urlPath: string;
+    breadcrumbs: Array<{ name: string; href?: string }>;
+    nearby: Array<{
+      slug: string;
+      name: string;
+      href: string;
+      note: string | null;
+    }>;
+  };
+}
+
+const { data } = Astro.props;
+const { content, city, niche } = data;
+const blocks = [
+  content.competition,
+  content.searches,
+  content.season,
+  content.whatWeDo,
+  content.straight,
+];
+const sectionTones = ["base", "contrast", "base", "tint", "base"] as const;
+const sectionEyebrows = [
+  "Competition",
+  "Searches",
+  "Season",
+  "What we do",
+  "Straight answers",
+] as const;
+---
+
+<PageHero
+  title={`SEO for Concrete Contractors in ${city.name}`}
+  description={content.hero.subhead}
+  breadcrumbs={data.breadcrumbs}
+  eyebrow="Local SEO"
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <h2>Start with a free quote</h2>
+    <p>
+      Tell us about your {city.name} concrete business and the work you want
+      more of. We will review your website and local visibility, then send a
+      clear written quote.
+    </p>
+    <ul class="page-hero__aside-list">
+      <li><Icon name="check" /> Website and content review</li>
+      <li><Icon name="check" /> Google Business Profile check</li>
+      <li><Icon name="check" /> A clear written quote</li>
+    </ul>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+  </Fragment>
+</PageHero>
+
+{
+  blocks.map((block, index) => (
+    <Section
+      tone={sectionTones[index]}
+      eyebrow={sectionEyebrows[index]}
+      index={String(index + 1).padStart(2, "0")}
+      heading={block.heading}
+      description={block.subhead}
+    >
+      <div class="split split--top">
+        <div class="prose reveal">
+          {block.paragraphs.map((paragraph) => (
+            <p><RichText text={paragraph} /></p>
+          ))}
+          {(block.paragraphsAfter ?? []).map((paragraph) => (
+            <p><RichText text={paragraph} /></p>
+          ))}
+        </div>
+        {
+          block.checklist && block.checklist.length > 0 && (
+            <aside class={index === 1 ? "card card--dark reveal" : "card reveal"}>
+              <h3 class="card__title">What to know</h3>
+              <ul class="check-list" style="margin-top: 1rem;">
+                {block.checklist.map((item) => <li><RichText text={item} /></li>)}
+              </ul>
+            </aside>
+          )
+        }
+      </div>
+    </Section>
+  ))
+}
+
+{
+  content.faqs.length > 0 && (
+    <Section tone="warm" eyebrow="Questions" index="06" heading="Frequently asked questions">
+      <Accordion items={content.faqs} />
+    </Section>
+  )
+}
+
+{
+  data.nearby.length > 0 && (
+    <Section eyebrow="Nearby" index="07" heading={content.nearby.heading} description={content.nearby.subhead}>
+      <div class="grid grid--2 reveal-group">
+        {data.nearby.map((nearby) => (
+          <Card>
+            {nearby.note && <p class="card__text">{nearby.note}</p>}
+            <p style="margin-top: 1rem;">
+              <a class="chip" href={nearby.href}>
+                SEO for {niche.name} in {nearby.name}
+                <Icon name="arrow-right" />
+              </a>
+            </p>
+          </Card>
+        ))}
+      </div>
+      <p class="prose" style="margin-top: 2rem;">
+        Browse the full list of city pages from the{" "}
+        <a href={`/seo/for-${niche.slug}`}>SEO for {niche.name} in Canada hub</a>.
+      </p>
+    </Section>
+  )
+}
+
+<CtaBand
+  eyebrow="Free quote"
+  heading={`Win the ${city.name} concrete search`}
+  description="Request a free quote and we will review your website, profile and the terms you want to rank for."
+  ctaLabel="Get a Free Quote"
+/>

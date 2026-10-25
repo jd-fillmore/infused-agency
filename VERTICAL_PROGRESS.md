@@ -1,5 +1,11 @@
 # Vertical SEO progress: General Contractors (canada-general-contractors)
 
+> **Historical document.** This tracks the original Next.js implementation of
+> the vertical×geo system, which has been retired. Astro is the repository's
+> only application; the system now lives in `src/lib/verticalSeo.js`, `data/vertical-seo/`
+> and `astro/src/templates/VerticalGeoPage.astro`. See
+> `docs/astro-rebuild/LEGACY_NEXTJS_REMOVAL_REPORT.md` and `docs/vertical-seo-build.md`.
+
 NOT committed. One stage per commit; push after each commit.
 
 Context: adds one vertical — General Contractors — mirroring the contractor
