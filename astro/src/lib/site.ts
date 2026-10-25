@@ -87,8 +87,8 @@ export const navGroups = (navJson as { groups: NavGroup[] }).groups.map(
 );
 export const industries = (navJson as { industries: NavLink[] }).industries;
 
-// Homepage FAQ copy lives in the Astro project so the legacy Next.js pages are
-// not modified. It is the single source for both visible copy and FAQPage JSON-LD.
+// Homepage FAQ copy lives in the Astro project so it is the single source for
+// both the visible copy and the FAQPage JSON-LD.
 export const homeFaqs: Faq[] = astroHomeFaqs;
 
 export function absoluteUrl(pathname: string): string {

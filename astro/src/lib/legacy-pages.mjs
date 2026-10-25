@@ -1,18 +1,15 @@
-// Build-time adapters for the legacy Next.js content sources.
+// Build-time adapters for the content inherited from the retired Next.js site.
 //
-// Phase 5 keeps the original content files in place and reads them here rather
-// than copying hundreds of pages into a second hand-maintained data set. The
-// React pages themselves are never imported: only their plain data objects and
-// content JSON are evaluated at build time.
+// The legacy React page tree has been removed. Its rendered content was
+// exported once to JSON under astro/src/data/legacy/ so the Astro build reads
+// plain data instead of evaluating React modules. The remaining CommonJS
+// modules under /src/lib are data/computation helpers shared with the vertical
+// SEO content set; they are required here at build time.
 
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
-import {
-  extractLegacyConstants,
-  extractLegacyContent,
-} from "./legacy-jsx.mjs";
 import { isRetiredRoute, rewritePageLinks } from "./retired-routes.mjs";
 import { LOCAL_SEO_PAGES } from "./local-seo-pages.mjs";
 import { applyServiceContentOverrides } from "./service-content-overrides.mjs";
@@ -22,11 +19,23 @@ export const REPO_ROOT = path.resolve(HERE, "../../..");
 
 const requireFromRepo = createRequire(path.join(REPO_ROOT, "package.json"));
 
-let babelParser;
-function parser() {
-  if (!babelParser) babelParser = requireFromRepo("@babel/parser");
-  return babelParser;
+const LEGACY_CONTENT_DIR = path.join(
+  REPO_ROOT,
+  "astro",
+  "src",
+  "data",
+  "legacy"
+);
+function readLegacyContent(file) {
+  return JSON.parse(
+    fs.readFileSync(path.join(LEGACY_CONTENT_DIR, file), "utf8")
+  );
 }
+
+const LEGACY_INDUSTRY_PAGES = readLegacyContent("industry-pages.json");
+const LEGACY_CITY_PAGES = readLegacyContent("city-pages.json");
+const LEGACY_BESPOKE_PAGES = readLegacyContent("bespoke-pages.json");
+const LEGACY_WORK_PROJECTS = readLegacyContent("work-projects.json");
 
 const cache = new Map();
 function memo(key, factory) {
@@ -36,110 +45,6 @@ function memo(key, factory) {
 
 function legacyRequire(relativePath) {
   return requireFromRepo(path.join(REPO_ROOT, relativePath));
-}
-
-/* -------------------------------------------------------------------------- */
-/* Tiny JS object-literal evaluator                                            */
-/* -------------------------------------------------------------------------- */
-
-function evaluate(node, context) {
-  if (!node) return undefined;
-
-  switch (node.type) {
-    case "ObjectExpression": {
-      const result = {};
-      for (const property of node.properties) {
-        if (property.type !== "ObjectProperty") continue;
-        const key =
-          property.key.type === "Identifier"
-            ? property.key.name
-            : property.key.value;
-        result[key] = evaluate(property.value, context);
-      }
-      return result;
-    }
-    case "ArrayExpression":
-      return node.elements.map((element) => evaluate(element, context));
-    case "StringLiteral":
-      return node.value;
-    case "NumericLiteral":
-      return node.value;
-    case "BooleanLiteral":
-      return node.value;
-    case "NullLiteral":
-      return null;
-    case "TemplateLiteral":
-      if (node.expressions.length === 0) return node.quasis[0].value.cooked;
-      return node.quasis.map((quasi) => quasi.value.cooked).join("");
-    case "UnaryExpression":
-      return node.operator === "-"
-        ? -evaluate(node.argument, context)
-        : undefined;
-    case "Identifier":
-      if (Object.prototype.hasOwnProperty.call(context.constants, node.name)) {
-        return context.constants[node.name];
-      }
-      if (Object.prototype.hasOwnProperty.call(context.imports, node.name)) {
-        return context.imports[node.name];
-      }
-      return undefined;
-    case "TSAsExpression":
-      return evaluate(node.expression, context);
-    default:
-      return undefined;
-  }
-}
-
-function imagePublicPath(source) {
-  if (!/\.(jpe?g|png|webp|gif|avif|svg)$/i.test(source)) return undefined;
-  return `/img/${path.basename(source)}`;
-}
-
-/**
- * Reads a legacy page module and evaluates its top-level constants plus the
- * `page` object. Image imports are mapped to their eventual public path.
- */
-export function extractLegacyPage(file) {
-  const absolute = path.isAbsolute(file) ? file : path.join(REPO_ROOT, file);
-  const source = fs.readFileSync(absolute, "utf8");
-  const ast = parser().parse(source, {
-    sourceType: "module",
-    plugins: ["jsx", "classProperties"],
-  });
-
-  const context = { imports: {}, constants: {} };
-
-  for (const node of ast.program.body) {
-    if (node.type !== "ImportDeclaration") continue;
-    const imported = node.source.value;
-    for (const specifier of node.specifiers) {
-      if (specifier.type !== "ImportDefaultSpecifier") continue;
-      const mapped = imagePublicPath(imported);
-      if (mapped) context.imports[specifier.local.name] = mapped;
-    }
-  }
-
-  for (const node of ast.program.body) {
-    if (node.type !== "VariableDeclaration") continue;
-    for (const declaration of node.declarations) {
-      if (declaration.id.type !== "Identifier") continue;
-      const value = evaluate(declaration.init, context);
-      if (value !== undefined) context.constants[declaration.id.name] = value;
-    }
-  }
-
-  let page;
-  for (const node of ast.program.body) {
-    if (node.type !== "VariableDeclaration") continue;
-    for (const declaration of node.declarations) {
-      if (declaration.id.type === "Identifier" && declaration.id.name === "page") {
-        page = evaluate(declaration.init, context);
-      }
-    }
-  }
-
-  if (!page) throw new Error(`No evaluable data object found in ${file}`);
-  return { page, constants: context.constants };
 }
 
 /* -------------------------------------------------------------------------- */
@@ -166,114 +71,18 @@ const NIAGARA_CITIES = [
 
 export const NIAGARA_CITY_LINKS = NIAGARA_CITIES;
 
-const INDUSTRY_FILES = [
-  "accountants",
-  "appliance-repair",
-  "architects",
-  "asphalt-paving",
-  "auto-body-shops",
-  "basement-finishing",
-  "cabinet-makers",
-  "chiropractors",
-  "concrete-contractors",
-  "countertop-fabricators",
-  "deck-builders",
-  "dentists",
-  "design-build-firms",
-  "eavestrough-contractors",
-  "electricians",
-  "fence-installers",
-  "financial-advisors",
-  "fireplace-and-chimney-services",
-  "flooring-installers",
-  "foundation-waterproofing",
-  "garage-door-companies",
-  "general-contractors",
-  "home-additions",
-  "home-automation-installers",
-  "home-builders",
-  "hvac-contractors",
-  "insulation",
-  "insurance-brokers",
-  "interior-designers",
-  "interlock-installers",
-  "kitchen-and-bathroom-renovators",
-  "landscapers",
-  "law-firms",
-  "masonry-contractors",
-  "med-spas",
-  "mortgage-brokers",
-  "optometrists",
-  "painters",
-  "pest-control",
-  "physiotherapists",
-  "plumbers",
-  "pool-and-hot-tub-service",
-  "pool-builders",
-  "restoration-companies",
-  "roofers",
-  "septic-services",
-  "siding-contractors",
-  "solar-companies",
-  "tile-installers",
-  "towing-companies",
-  "tree-services",
-  "veterinarians",
-  "window-and-door-installers",
-  "wineries",
-];
-
 /** @returns {any[]} */
 export function getIndustryPages() {
-  return memo("industry-pages", () =>
-    INDUSTRY_FILES.map((slug) => {
-      const { page } = extractLegacyPage(
-        `src/pages/seo/for-${slug}-niagara.js`
-      );
-      return rewritePageLinks(page);
-    }).sort((a, b) => a.seo.url.localeCompare(b.seo.url))
-  );
+  return memo("industry-pages", () => LEGACY_INDUSTRY_PAGES);
 }
 
 export function getIndustryPage(pathname) {
   return getIndustryPages().find((page) => page.seo.url === pathname);
 }
 
-const CITY_SEO_SLUGS = [
-  "beamsville",
-  "crystal-beach",
-  "fonthill",
-  "fort-erie",
-  "grimsby",
-  "niagara-on-the-lake",
-  "thorold",
-  "welland",
-];
-
 /** @returns {any[]} */
 export function getCitySeoPages() {
   return memo("city-pages", () => {
-    const legacyPages = CITY_SEO_SLUGS.map((slug) => {
-      const { page } = extractLegacyPage(`src/pages/seo/${slug}.js`);
-      const relatedLinks = [
-        ...NIAGARA_CITIES.filter(
-          (city) => city.name !== page.city
-        ).map((city) => ({ href: city.href, label: `${city.name}, ON` })),
-        { href: "/ai-search", label: "AI search optimization" },
-        { href: "/seo", label: "SEO services" },
-      ];
-      return {
-        ...page,
-        relatedLinks,
-        hero: {
-          ...page.hero,
-          // The legacy pages already supply an image import; keep the mapped
-          // public path produced by the evaluator.
-          image: page.hero?.image,
-        },
-      };
-    });
-
     // Astro-authored pages carry their own nearby-location links so the
     // township and community pages can point at genuinely related pages.
     const authoredPages = LOCAL_SEO_PAGES.map((page) => ({
@@ -281,7 +90,7 @@ export function getCitySeoPages() {
       relatedLinks: page.relatedLinks ?? [],
     }));
 
-    return [...legacyPages, ...authoredPages].map((page) =>
+    return [...LEGACY_CITY_PAGES, ...authoredPages].map((page) =>
       rewritePageLinks(page)
     );
   });
@@ -422,277 +231,9 @@ export const US_THERAPIST_ROUTES = US_THERAPIST_CITIES.map((city) => ({
   city: city.name,
 }));
 
-function cloneBlocks(blocks) {
-  return blocks.map((block) => ({
-    ...block,
-    items: Array.isArray(block.items)
-      ? block.items.map((item) => (typeof item === "object" ? { ...item } : item))
-      : block.items,
-  }));
-}
-
-function isFaqHeading(block) {
-  return (
-    block.type === "heading" &&
-    /frequently asked questions/i.test(block.text)
-  );
-}
-
-function convertFaqSequence(blocks) {
-  const start = blocks.findIndex(isFaqHeading);
-  if (start === -1) return blocks;
-
-  let end = blocks.findIndex(
-    (block, index) =>
-      index > start && block.type === "heading" && block.level <= 2
-  );
-  if (end === -1) end = blocks.length;
-
-  const items = [];
-  const region = blocks.slice(start + 1, end);
-  for (let index = 0; index < region.length; index += 1) {
-    const block = region[index];
-    if (block.type !== "heading" || block.level !== 3) continue;
-    const answer = region[index + 1];
-    if (!answer || answer.type !== "paragraph") continue;
-    items.push({ q: block.text, a: answer.text });
-    index += 1;
-  }
-
-  if (items.length < 2) return blocks;
-
-  const faqBlock = { type: "faqs", items };
-  return [
-    ...blocks.slice(0, start + 1),
-    faqBlock,
-    ...blocks.slice(end),
-  ];
-}
-
-function trimTrailingBlogTeaser(blocks) {
-  const index = blocks.findIndex(
-    (block) =>
-      block.type === "heading" && /latest blog posts/i.test(block.text)
-  );
-  return index === -1 ? blocks : blocks.slice(0, index);
-}
-
-function dropIconImages(blocks) {
-  return blocks.filter((block) => {
-    if (block.type !== "image") return true;
-    const base = path.basename(block.src).toLowerCase();
-    return !["check.png", "check.webp", "check.svg"].includes(base);
-  });
-}
-
-function replaceLinks(blocks, replacements) {
-  const replace = (value) => {
-    if (typeof value !== "string") return value;
-    let output = value;
-    for (const [from, to] of Object.entries(replacements)) {
-      output = output.split(from).join(to);
-    }
-    return output;
-  };
-
-  return blocks.map((block) => {
-    const next = { ...block };
-    if (typeof next.text === "string") next.text = replace(next.text);
-    if (typeof next.label === "string") next.label = replace(next.label);
-    if (typeof next.href === "string") next.href = replace(next.href);
-    if (Array.isArray(next.items)) {
-      next.items = next.items.map((item) =>
-        typeof item === "string"
-          ? replace(item)
-          : {
-              ...item,
-              q: replace(item.q),
-              a: replace(item.a),
-              label: replace(item.label),
-              href: replace(item.href),
-            }
-      );
-    }
-    return next;
-  });
-}
-
-function insertCrossLinks(blocks, pathname) {
-  const headingIndex = blocks.findIndex(
-    (block) =>
-      block.type === "heading" && /web design across niagara/i.test(block.text)
-  );
-  if (headingIndex === -1) return blocks;
-
-  let insertAt = headingIndex + 1;
-  while (
-    insertAt < blocks.length &&
-    blocks[insertAt].type !== "heading" &&
-    blocks[insertAt].type !== "eyebrow"
-  ) {
-    insertAt += 1;
-  }
-
-  const list = {
-    type: "list",
-    ordered: false,
-    items: WEB_DESIGN_CITY_LINKS.filter(
-      (link) => link.href !== pathname
-    ).map((link) => `[${link.label}](${link.href})`),
-  };
-
-  return [
-    ...blocks.slice(0, insertAt),
-    list,
-    ...blocks.slice(insertAt),
-  ];
-}
-
-function normaliseHeroImage(blocks, hero) {
-  if (!hero || hero.image) return { blocks, hero };
-  const index = blocks.findIndex((block) => block.type === "image");
-  if (index !== 0) return { blocks, hero };
-
-  const [image] = blocks.splice(index, 1);
-  return {
-    blocks,
-    hero: { ...hero, image: image.src, imageAlt: image.alt },
-  };
-}
-
-function bespokePage(pathname, file, options = {}) {
-  const extracted = extractLegacyContent(file);
-  let blocks = dropIconImages(cloneBlocks(extracted.blocks));
-  let hero = extracted.hero ? { ...extracted.hero } : null;
-
-  if (options.faqs !== false) blocks = convertFaqSequence(blocks);
-  if (options.trimTeaser) blocks = trimTrailingBlogTeaser(blocks);
-  if (options.replaceLinks) blocks = replaceLinks(blocks, options.replaceLinks);
-  if (options.crossLinks) blocks = insertCrossLinks(blocks, pathname);
-  if (options.heroImage) {
-    const normalised = normaliseHeroImage(blocks, hero);
-    blocks = normalised.blocks;
-    hero = normalised.hero;
-  }
-
-  return {
-    pathname,
-    file,
-    kind: options.kind ?? "static",
-    eyebrow: options.eyebrow ?? "Infused Agency",
-    title: extracted.title,
-    description: extracted.description,
-    canonical:
-      extracted.canonical || `https://infused.agency${pathname}`,
-    h1: extracted.h1,
-    hero,
-    blocks,
-    breadcrumbs: options.breadcrumbs ?? [
-      { name: "Home", href: "/" },
-      { name: extracted.h1 || pathname },
-    ],
-  };
-}
-
-const BESPOKE_ROUTES = [
-  {
-    pathname: "/about",
-    file: "src/pages/about.js",
-    kind: "static",
-    eyebrow: "About",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "About" },
-    ],
-  },
-  {
-    pathname: "/privacy-policy",
-    file: "src/pages/privacy-policy.js",
-    kind: "static",
-    eyebrow: "Legal",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Privacy Policy" },
-    ],
-  },
-  {
-    pathname: "/cass-a-bella-construction",
-    file: "src/pages/cass-a-bella-construction.js",
-    kind: "case-study",
-    eyebrow: "Case study",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Work", href: "/work" },
-      { name: "Cass-A-Bella Construction" },
-    ],
-  },
-  {
-    pathname: "/website-conversion-optimization",
-    file: "src/pages/website-conversion-optimization.js",
-    kind: "service",
-    eyebrow: "Services",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Website Conversion Rate Optimization" },
-    ],
-  },
-  {
-    pathname: "/wordpress-developer-niagara",
-    file: "src/pages/wordpress-developer-niagara.js",
-    kind: "service",
-    eyebrow: "Web design",
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Web Design", href: "/web-design" },
-      { name: "WordPress Developer Niagara" },
-    ],
-  },
-  {
-    pathname: "/web-design",
-    file: "src/pages/web-design/index.js",
-    kind: "web-design",
-    eyebrow: "Web design",
-    heroImage: true,
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Web Design" },
-    ],
-  },
-  ...WEB_DESIGN_CITIES.map((city) => ({
-    pathname: `/web-design/${city.slug}`,
-    file: `src/pages/web-design/${city.slug}.js`,
-    kind: "web-design",
-    eyebrow: "Web design",
-    heroImage: true,
-    crossLinks: true,
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "Web Design", href: "/web-design" },
-      { name: city.name },
-    ],
-  })),
-  ...US_THERAPIST_CITIES.map((city) => ({
-    pathname: `/seo/for-therapists-${city.slug}`,
-    file: `src/pages/seo/for-therapists-${city.slug}.js`,
-    kind: "therapist",
-    eyebrow: "Therapist SEO",
-    trimTeaser: true,
-    breadcrumbs: [
-      { name: "Home", href: "/" },
-      { name: "SEO", href: "/seo" },
-      { name: "Therapist SEO", href: "/therapist-seo" },
-      { name: city.name },
-    ],
-  })),
-];
-
 /** @returns {any[]} */
 export function getBespokePages() {
-  return memo("bespoke-pages", () =>
-    BESPOKE_ROUTES.map((route) =>
-      rewritePageLinks(bespokePage(route.pathname, route.file, route))
-    ).sort((a, b) => a.pathname.localeCompare(b.pathname))
-  );
+  return memo("bespoke-pages", () => LEGACY_BESPOKE_PAGES);
 }
 
 export function getBespokePage(pathname) {
@@ -704,10 +245,7 @@ export function getBespokePage(pathname) {
 /* -------------------------------------------------------------------------- */
 
 export function getWorkProjects() {
-  return memo("work-projects", () => {
-    const constants = extractLegacyConstants("src/pages/work.js");
-    return rewritePageLinks(constants.PROJECTS);
-  });
+  return memo("work-projects", () => LEGACY_WORK_PROJECTS);
 }
 
 export function getIndustriesData() {

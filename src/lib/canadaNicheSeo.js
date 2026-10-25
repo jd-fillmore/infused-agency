@@ -406,7 +406,7 @@ function hubPageProps(nicheSlug) {
   };
 }
 
-// Props for one city page (used by getStaticProps in the [city] shell).
+// Props for one city page (consumed by the Astro city route).
 function cityPageProps(nicheSlug, citySlug) {
   const niche = getNiche(nicheSlug);
   const city = getCity(citySlug);

@@ -124,6 +124,11 @@ const EXPECTED_TYPES = {
   "/get-a-quote": ["ContactPage", "BreadcrumbList"],
 };
 
+// Utility files published at the build root are opaque service blobs (for
+// example the Google Search Console verification file); they carry no page
+// metadata and are deliberately excluded from the sitemap.
+const UTILITY_FILES = new Set(["googlea476b363e2afb389.html"]);
+
 const NOINDEX_ROUTES = new Set(["/404", "/500"]);
 
 function run() {
@@ -132,7 +137,9 @@ function run() {
   }
 
   const manifestUrls = readManifestUrls();
-  const htmlFiles = walk(distDir).filter((file) => file.endsWith(".html"));
+  const htmlFiles = walk(distDir).filter(
+    (file) => file.endsWith(".html") && !UTILITY_FILES.has(path.basename(file))
+  );
   if (htmlFiles.length === 0) throw new Error("The build contains no HTML files.");
 
   if (!fs.existsSync(path.join(distDir, DEFAULT_OG_IMAGE.replace(/^\//, "")))) {

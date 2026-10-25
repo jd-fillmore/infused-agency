@@ -1,6 +1,6 @@
 // Shared data + quality-gate library for the vertical x geo SEO system.
-// CommonJS so it can be required by Next.js pages (via webpack interop) and by
-// the standalone Node verification script without a build step.
+// CommonJS so the Astro build and the standalone Node scripts can require it
+// without a build step.
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
@@ -17,9 +17,9 @@ const _cache = {};
 //
 // The gate pipeline (content load -> basics -> shingles -> similarity -> links)
 // is the expensive part of the vertical SEO build. `computePublished()` is
-// memoized per process and also persisted to `.next/cache/vertical-seo-gate.json`
-// so prebuild (verify) can compute once and `next build`/postbuild/sitemaps can
-// read the result back across processes. The cache is compact: each page's
+// memoized per process and also persisted to `.cache/vertical-seo-gate.json`
+// so separate build steps and scripts can read the result back across
+// processes. The cache is compact: each page's
 // content is stored once, keyed by URL, with its final failures, and the
 // published/failed/draft/skip sets are stored as URL lists (no record
 // duplication, no shingles). The key hashes the gate version, the as-of date,
@@ -28,7 +28,7 @@ const _cache = {};
 // the cache or slows a build.
 
 const GATE_VERSION = "2026-10-11.3";
-const GATE_CACHE_FILE = path.join(process.cwd(), ".next", "cache", "vertical-seo-gate.json");
+const GATE_CACHE_FILE = path.join(process.cwd(), ".cache", "vertical-seo-gate.json");
 
 function walkJsonFiles(dir, out) {
   if (!fs.existsSync(dir)) return;
@@ -614,15 +614,14 @@ function computePublished(opts = {}) {
   };
 
   // Process-level memoization: every computePublished() call in this process
-  // (nav snapshot, /industries, page getStaticProps, next.config redirects)
-  // shares one result per (as-of, includeDrafts). This is the main win — a
-  // release build evaluates the gate once, not once per generated page.
+  // (nav snapshot, /industries, page props, redirects) shares one result per
+  // (as-of, includeDrafts). A release build evaluates the gate once per process.
   if (_cache.publishedMemo && _cache.publishedMemo[memoKey]) {
     return withTimings(_cache.publishedMemo[memoKey], "memo");
   }
 
-  // Cross-process disk cache (written by prebuild verify, read by the Build):
-  // .next/cache/vertical-seo-gate.json.
+  // Cross-process disk cache (shared by the Astro build and the scripts):
+  // .cache/vertical-seo-gate.json.
   if (!includeDrafts && opts.cacheRef !== false) {
     const key = buildGateCacheKey(asOf, released);
     const cached = readGateCache(key);
@@ -948,17 +947,20 @@ const US_LEGACY_CITIES = [
   { slug: "syracuse", name: "Syracuse" },
 ];
 
-// Every legacy therapist file on disk, regardless of kind.
+// Every legacy therapist route, regardless of kind. The React page tree was
+// removed, so the routes are read from the exported manifest maintained by the
+// Astro build (astro/src/data/legacy/therapist-routes.json).
 function legacyTherapistFiles() {
-  const dir = path.join(process.cwd(), "src", "pages", "seo");
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => /^for-therapists-.*\.js$/.test(f))
-    .map((f) => {
-      const slug = f.replace(/^for-therapists-/, "").replace(/\.js$/, "");
-      return { slug, url: `/seo/for-therapists-${slug}` };
-    });
+  const manifest = path.join(
+    process.cwd(),
+    "astro",
+    "src",
+    "data",
+    "legacy",
+    "therapist-routes.json"
+  );
+  if (!fs.existsSync(manifest)) return [];
+  return JSON.parse(fs.readFileSync(manifest, "utf8"));
 }
 
 // The legacy city pages we know how to classify, with their province / region.
@@ -1080,7 +1082,7 @@ function verifySlugIntegrity() {
   return errors;
 }
 
-// ----- serializable page props (for getStaticProps) -----
+// ----- serializable page props -----
 
 function regulationRows(verticalSlug) {
   const rows = [];

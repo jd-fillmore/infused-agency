@@ -1,5 +1,11 @@
 # CANADA NICHE PAGES — PROGRESS (do not commit)
 
+> **Historical document.** This tracks the original Next.js implementation of
+> the Canada niche pages, which has been retired. Astro is the repository's
+> only application; the surviving data model lives in `src/lib/canadaNicheSeo.js`,
+> `src/content/canada-niche/` and the Astro templates under `astro/src/templates/`.
+> See `docs/astro-rebuild/LEGACY_NEXTJS_REMOVAL_REPORT.md`.
+
 Niche: Concrete Contractors (slug `concrete-contractors`, display "Concrete Contractors")
 Branch: `canada-concrete-pages` (from master af11a16)
 URLs: `/seo/for-concrete-contractors` (hub) + `/seo/for-concrete-contractors/<city>` (30 city pages) = 31 pages

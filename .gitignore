@@ -1,56 +1,45 @@
-*.json
-!astro/tsconfig.json
-# build output
-dist
-.next
-target
-packages/next/wasm/@next
+# Dependencies
+node_modules/
+astro/node_modules/
 
-# dependencies
-node_modules
+# Astro build output and generated types
+astro/dist/
+astro/.astro/
+dist/
+
+# The repository uses Yarn 1.x; never commit npm lockfiles
 package-lock.json
-yarn.lock
-!/yarn.lock
-test/node_modules
-.pnpm-store/
-.github/**/node_modules
 
-# logs & pids
+# Logs, pids and profiles
 *.log
 pids
 *.cpuprofile
 *.heapsnapshot
 
-# coverage
-.nyc_output
-coverage
-
-# test output
+# Coverage and test output
+.nyc_output/
+coverage/
 test/**/out*
-test/**/next-env.d.ts
-.DS_Store
-/e2e-tests
 test/tmp/**
 test/.trace
 test/traces
 
-# Editors
+# Editor and OS files
+.DS_Store
 **/.idea
 **/.#*
+.vscode/
 .nvmrc
 
-# examples
-examples/**/out
-examples/**/.env*.local
-
-pr-stats.md
-test-timings.json
-
-# Vercel
-.vercel
-.now
+# Local environment files
+.env
+.env.*
+!.env.example
 
 # Cache
 *.tsbuildinfo
 .swc/
-.turbo
+.turbo/
+.cache/
+.vercel/
+.now/

@@ -1,11 +1,8 @@
 import { defineConfig } from "astro/config";
 
-// Phase 3 isolation decision:
-// The legacy Next.js app owns the repository root (`src/`, `public/`, `.next/`).
-// To keep it fully intact and runnable as the migration reference, the Astro
-// project is rooted in `astro/` and is invoked with `astro ... --root astro`.
-// This avoids any collision between Next pages and Astro pages and keeps the
-// legacy build/deploy configuration untouched.
+// Astro is the repository's only application. The project is rooted in `astro/`
+// (invoked as `astro ... --root astro`) because the shared content sources
+// (`data/`, `posts/`, `src/lib/`) live at the repository root.
 export default defineConfig({
   site: "https://infused.agency",
   output: "static",

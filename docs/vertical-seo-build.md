@@ -1,5 +1,12 @@
 # Vertical × Geo SEO build notes
 
+> **Historical document.** This describes the original Next.js implementation
+> of the vertical/geo SEO system. The Next.js application has since been retired;
+> Astro is the repository's only application and the live implementation lives
+> under `astro/`. The content, data model and quality gate described here are
+> still in use, but file paths and build commands reflect the old Next.js setup.
+> See `docs/astro-rebuild/LEGACY_NEXTJS_REMOVAL_REPORT.md`.
+
 Working branch: `seo-overhaul`. Spec: `docs/vertical-seo-build-spec.md`.
 
 ## Follow-up phase checklist

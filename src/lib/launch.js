@@ -1,6 +1,6 @@
 // Launch-schedule data + helpers for the vertical x geo SEO system.
-// CommonJS so it can be required by Next.js pages (via webpack interop) and by
-// the standalone Node verification script without a build step.
+// CommonJS so the Astro build and the standalone Node scripts can require it
+// without a build step.
 const fs = require("fs");
 const path = require("path");
 
