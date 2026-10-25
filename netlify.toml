@@ -2,6 +2,11 @@
 # (local dev/CI machines run Node 22; see docs/vertical-seo-build.md).
 [build.environment]
   NODE_VERSION = "22"
+  # The site was migrated from Next.js to Astro. @netlify/plugin-nextjs was
+  # auto-installed at the site level (plugin "from Netlify app") and keeps
+  # failing in onBuild against the static astro/dist output. This opt-out
+  # makes the plugin no-op until it is uninstalled in the Netlify dashboard.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 # The repository root is the Yarn workspace root; Astro is rooted in astro/.
 [build]
