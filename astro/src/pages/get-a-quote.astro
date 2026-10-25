@@ -1,19 +1,16 @@
----
+﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Button from "../components/ui/Button.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
 import Section from "../components/ui/Section.astro";
-import { CALENDLY_URL, siteFacts } from "../lib/site";
+import { CALENDLY_URL } from "../lib/site";
 import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
 
 const title = "Get a Free Quote | Infused Agency";
 const description =
   "Get a free, no-obligation quote for expert web design and SEO services in Niagara. Boost your online presence with Infused Agency's tailored solutions for local businesses. Request your custom quote today!";
-
-const emailHref = `mailto:${siteFacts.email}?subject=${encodeURIComponent("Free quote request")}`;
-
 const jsonLd = [
   ...baseGraph(),
   webPageNode({
@@ -37,15 +34,6 @@ const jsonLd = [
     eyebrow="Start a project"
     showCta={false}
   >
-    <Fragment slot="aside">
-      <h2>Prefer to talk it through?</h2>
-      <p>Call or email and we will tell you whether a project is the right fit.</p>
-      <ul class="page-hero__aside-list">
-        <li class="visually-hidden"><Icon name="phone" /> <a href={`tel:+1${siteFacts.phone.replace(/\D/g, "")}`}>{siteFacts.phone}</a></li>
-        <li><Icon name="mail" /> <a href={emailHref}>{siteFacts.email}</a></li>
-        <li><Icon name="map-pin" /> {siteFacts.address.addressLocality}, {siteFacts.address.addressRegion}</li>
-      </ul>
-    </Fragment>
   </PageHero>
 
   <Section tone="warm">
@@ -103,10 +91,6 @@ const jsonLd = [
           <li>We review your website, Google Business Profile and competitors.</li>
           <li>You receive a written scope and a free, no-obligation quote.</li>
         </ul>
-        <p style="margin-top: 1rem;">
-          Prefer email? Write to
-          <a href={emailHref}>{siteFacts.email}</a>.
-        </p>
         <div style="margin-top: 1.25rem;">
           <Button href={CALENDLY_URL} variant="secondary" arrow external>Book a consultation</Button>
         </div>

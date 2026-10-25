@@ -4,14 +4,16 @@ interface Props {
   person: string;
   role?: string;
   company?: string;
+  badge?: string;
   stats?: Array<{ value: string; label: string }>;
   note?: string;
 }
 
-const { quote, person, role, company, stats, note } = Astro.props;
+const { quote, person, role, company, badge, stats, note } = Astro.props;
 ---
 
 <figure class="card testimonial">
+  {badge && <span class="badge">{badge}</span>}
   {stats && stats.length > 0 && (
     <div class="testimonial__stats">
       <div class="case-stats">

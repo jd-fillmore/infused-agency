@@ -1024,6 +1024,7 @@
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.055em;
+  padding-bottom: 0.3rem;
   color: var(--color-accent);
 }
 
@@ -1671,6 +1672,10 @@
 .testimonial__stats {
   padding-bottom: 1.1rem;
   border-bottom: 1px solid rgba(17, 26, 46, 0.12);
+}
+
+.testimonial .badge {
+  margin-bottom: 1.1rem;
 }
 
 .testimonial__stats .case-stats {
