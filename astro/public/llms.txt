@@ -1,79 +1,62 @@
 # Infused Agency
 
-> Infused Agency (often referred to simply as "Infused") is a boutique SEO, AI search and web design agency based in St. Catharines, Ontario, Canada. It helps trades businesses, professional practices, hospitality brands and online stores get found in Google Search, Google Maps and AI-generated answers from tools such as ChatGPT, Gemini and Google AI Overviews, then turn that visibility into calls, enquiries and clients. Core services are search engine optimization (including local SEO and technical SEO), AI search optimization (also called GEO, AEO or LLM SEO), and conversion-focused web design and development. The agency is based in the Niagara Region of Ontario and works remotely with clients across Canada and the United States. The website states that Infused has helped 50+ businesses ranking for hundreds of long-tail, high-buying-intent keywords.
+> Boutique SEO, AI search and web design agency based in St. Catharines, Ontario, Canada. Infused helps owner-run businesses in trades, professional practices, hospitality and related service industries get found in Google Search, Google Maps and AI-generated answers, and turn that visibility into calls and enquiries. Services include SEO (local and technical), AI search optimization (GEO/AEO/LLM SEO), and conversion-focused web design and development. Works remotely with clients across Canada and the United States.
 
-Infused is deliberately small, so the person a client speaks with at the start stays close to the work through launch and reporting. The homepage and About page describe three service areas — SEO, AI search and web design — planned as one system rather than isolated tasks, with measurement tied to enquiries (calls, quote requests, bookings) rather than vanity traffic. Pricing is quoted individually after a free consultation, and the site is explicit that Infused does not guarantee rankings, AI citations or lead counts, because those depend on factors no agency controls.
+Infused is deliberately small — the person you speak with stays close to the work from consultation through launch and reporting. Work is planned as a system (SEO, AI search and web design together), with measurement tied to enquiries (calls, quote requests, bookings) rather than vanity traffic. Pricing is quoted individually after a free consultation. No rankings, AI citations or lead counts are guaranteed — outcomes depend on factors outside the agency's control.
 
-The business primarily serves owner-run companies in service industries. Published industry coverage includes trades such as concrete contractors, general contractors, electricians, insulation contractors and roofers, professional practices such as therapists, law firms, accountants and physiotherapists, and sectors such as wineries, med spas and solar companies. Local SEO pages cover Niagara Region municipalities in Ontario; province- and city-level SEO programmes cover markets across Canada; and therapist SEO coverage also includes cities in New York State in the United States.
+## Core Services
 
-A note on terminology: "AI search optimization" is Infused's term for making a business clear, consistent and easy for AI systems to describe, quote and recommend accurately. Answer Engine Optimization (AEO), Generative Engine Optimization (GEO) and LLM SEO are related labels used on the site for the same kind of work.
+- [SEO](https://infused.agency/seo): Local SEO, Google Business Profile optimization, service and location pages, technical SEO and internal linking. AI search visibility is treated as an extension of the same work.
+- [AI Search (GEO, AEO & LLM SEO)](https://infused.agency/ai-search): Makes a business clear, consistent and quotable so AI assistants and answer engines can describe and recommend it accurately.
+- [Web Design & Development](https://infused.agency/web-design): Conversion-focused, SEO-aware websites for businesses across Canada and the United States, scoped and quoted individually.
+- [Website Conversion Rate Optimization](https://infused.agency/website-conversion-optimization): Audits, user research, testing and refinements to turn existing traffic into enquiries.
+- [WordPress Development (Niagara)](https://infused.agency/wordpress-developer-niagara): WordPress builds for Niagara/St. Catharines businesses with training and post-launch support.
 
-## Primary pages
+## Industries & Specializations
 
-- [Infused Agency home page](https://infused.agency/): overview of the agency, its three core services, staged pricing approach, client testimonials, accreditation badges and links to local SEO pages by city.
-- [About Infused Agency](https://infused.agency/about): who the agency is, what it does and does not do, its working principles, and information about the owner, JD Fillmore. Confirms Infused is an independent boutique agency working across Canada and the United States.
-- [Results](https://infused.agency/results): documented client outcomes from SEO, AI search visibility and web design work, organised as individual case studies with the services delivered and the outcome reported.
-- [Get a Free Quote](https://infused.agency/get-a-quote): the contact and quote-request page, with the booking calendar for a free project consultation and the three-step quote process the agency follows.
+- [SEO by Industry](https://infused.agency/industries): Industry-specific SEO programmes built around how each sector gets found.
+- [SEO for Therapists in Canada](https://infused.agency/therapist-seo): SEO built specifically for counselling, psychotherapy and psychology practices, with province and city pages across all ten Canadian provinces. [US Therapist SEO](https://infused.agency/therapist-seo/usa) covers select New York State cities.
+- [SEO for Concrete Contractors in Canada](https://infused.agency/seo/for-concrete-contractors): Canada-wide programme with city pages across major markets.
+- [General Contractor SEO in Canada](https://infused.agency/general-contractor-seo): Province and city-level coverage for renovation/building businesses.
 
-## Services
+## Service Areas (Niagara)
 
-- [SEO services](https://infused.agency/seo): the main search engine optimization service, covering local SEO, Google Business Profile work, service and location page content, technical SEO and internal linking. It treats AI search visibility as an extension of the same work and states plainly what SEO can and cannot guarantee.
-- [AI Search (GEO, AEO and LLM SEO)](https://infused.agency/ai-search): AI search optimization intended to make a business the answer that AI assistants, answer engines and chat tools can cite when people ask questions rather than type keywords. Covers entity consistency, answer-ready content, structured data and quotable business facts.
-- [Web design and development](https://infused.agency/web-design): conversion-focused web design and development for businesses across Canada and the United States, with responsive builds, SEO-aware site structure and individually scoped, quoted projects.
-- [Website conversion rate optimization](https://infused.agency/website-conversion-optimization): website conversion rate optimization (CRO) through design audits, user research, A/B testing and refinements to guide, capture and convert website visitors into leads.
-- [WordPress development](https://infused.agency/wordpress-developer-niagara): WordPress web design and development for Niagara and St. Catharines businesses, using the WordPress ecosystem so clients can update their own content; training and post-launch support are included.
-- [Therapist SEO in Canada](https://infused.agency/therapist-seo): search optimization built specifically for counselling, psychotherapy and psychology practices across Canada, with content for each specialisation, Google Business Profile work, and province and city pages for all ten Canadian provinces.
+- [SEO in St. Catharines, ON](https://infused.agency/seo/st-catharines)
+- [SEO in Niagara Falls, ON](https://infused.agency/seo/niagara-falls)
+- [SEO in Welland, ON](https://infused.agency/seo/welland)
+- [SEO in Pelham, ON](https://infused.agency/seo/pelham)
+- [SEO in Grimsby, ON](https://infused.agency/seo/grimsby)
+- [SEO in West Lincoln, ON](https://infused.agency/seo/west-lincoln)
+- [SEO in Fort Erie, ON](https://infused.agency/seo/fort-erie)
+- [SEO in Niagara-on-the-Lake, ON](https://infused.agency/seo/niagara-on-the-lake)
+- [SEO in Port Colborne, ON](https://infused.agency/seo/port-colborne)
+- [SEO in Beamsville, ON](https://infused.agency/seo/beamsville)
 
-## Industries and geographic coverage
+## Case Studies & Results
 
-- [SEO by industry](https://infused.agency/industries): an index of industry-specific SEO programmes, each built around how that industry actually gets found, covering roughly fifty sectors from trades to professional and health services.
-- [SEO for concrete contractors in Canada](https://infused.agency/seo/for-concrete-contractors): a Canada-wide programme for concrete contractors, with published city pages for major Canadian markets such as Toronto, Vancouver, Montreal, Ottawa, Calgary, Edmonton, Winnipeg and Halifax.
-- [General contractor SEO in Canada](https://infused.agency/general-contractor-seo): search optimization for renovation and building businesses, with province pages across Canada and city-level pages for larger markets. The Canadian therapist SEO programme above complements it with pages for all ten provinces.
+- [Results](https://infused.agency/results): Documented client outcomes. Published examples include Flat Rock Cellars (+100% local visibility, 400+ keywords ranked across Google Search/Maps and AI answers within three months), Brandi May Psychotherapy and Willow Creek Counselling (600+ keywords each with reported increased visibility/bookings), Pro Battery Shop (400+ keywords, growth in organic ranking within three months), Timberwolf Carpentry (450+ keywords, thousands of impressions), and Fred's Concrete (500+ keywords, more visibility and leads).
+- [Cass-A-Bella Construction](https://infused.agency/cass-a-bella-construction): Website redesign case study for a custom home builder with reported growth in views and leads.
 
-Local SEO for Niagara Region municipalities: Infused maintains individual city and township pages describing how local search works in each market.
+## Resources & Guides
 
-- [SEO in St. Catharines, Ontario](https://infused.agency/seo/st-catharines): local SEO and AI search visibility for Niagara's largest and one of its most competitive search markets, covering downtown, Port Dalhousie, Merritton and the north end.
-- [SEO in Niagara Falls, Ontario](https://infused.agency/seo/niagara-falls): local SEO for Niagara Falls businesses and tourism-adjacent service providers.
-- [SEO in Welland, Ontario](https://infused.agency/seo/welland): local SEO for Welland businesses and service-area companies.
-- [SEO in Pelham, Ontario](https://infused.agency/seo/pelham): local SEO for a township of distinct communities including Fonthill, Fenwick, Ridgeville and North Pelham.
-- [SEO in Grimsby, Ontario](https://infused.agency/seo/grimsby): local SEO for Grimsby businesses serving the west Niagara corridor.
-- [SEO in West Lincoln, Ontario](https://infused.agency/seo/west-lincoln): local SEO for a rural township and its communities, including a separate page for Smithville.
+- [Blog](https://infused.agency/blog)
+- [Can SEO Be Done by AI?](https://infused.agency/posts/can-seo-be-done-by-ai)
+- [Local SEO Domination — How Small Businesses Can Outrank Big Competitors](https://infused.agency/posts/local-seo-domination-small-business)
+- [11 Local SEO Tips to Boost Your Niagara Business Visibility](https://infused.agency/posts/local-seo-tips-niagara)
+- [How Much Should a Small Business Spend on SEO](https://infused.agency/posts/how-much-should-a-small-business-spend-on-seo)
+- [How to Create a Lead-Generating Website](https://infused.agency/posts/how-to-create-a-lead-generating-website)
 
-Additional Niagara municipality pages (including Beamsville, Crystal Beach, Fonthill, Fort Erie, Niagara-on-the-Lake, Port Colborne, Smithville, Thorold and Wainfleet) are listed in the footer of every page and in the [site map](https://infused.agency/sitemap).
+## About & Contact
 
-## Results and case studies
-
-- [Results](https://infused.agency/results): published case studies with the client's name, the services delivered and the documented outcome. As published on this page: Flat Rock Cellars (an award-winning Niagara winery) — 100% increase in local visibility and 400+ keywords ranked across Google Search, Maps and AI answers within three months; Brandi May Psychotherapy and Willow Creek Counselling — 600+ keywords ranked each, with the owners reporting increased visibility and, in the counselling case, more consultation bookings; Pro Battery Shop — 400+ keywords ranked, with the owner reporting growth in organic ranking within three months; Timberwolf Carpentry — 450+ keywords ranked, with the owner reporting thousands of impressions; and Fred's Concrete — 500+ keywords ranked, with the owner reporting more Google visibility and a large increase in leads. All outcome figures are those published by Infused on this page.
-- [Cass-A-Bella Construction case study](https://infused.agency/cass-a-bella-construction): a published website redesign case study for a local custom home builder, covering the dated website challenge, the rebuild and the growth in views and leads the business reported.
-
-## Selected resources
-
-- [Blog](https://infused.agency/blog): the educational blog index, covering SEO, local SEO, AI search and web design topics.
-- [Can SEO Be Done by AI?](https://infused.agency/posts/can-seo-be-done-by-ai): a plain-language examination of what AI tools can and cannot do for SEO, reflecting the agency's positioning at the intersection of SEO and AI search.
-- [Local SEO Domination — How Small Businesses Can Outrank Big Competitors](https://infused.agency/posts/local-seo-domination-small-business): practical local SEO tactics for small businesses, including Google Business Profile optimization and community-focused content.
-- [11 Local SEO Tips to Boost Your Niagara Business Visibility](https://infused.agency/posts/local-seo-tips-niagara): Niagara-specific local SEO guidance grounded in the agency's home market experience.
-- [How Much Should a Small Business Spend on SEO](https://infused.agency/posts/how-much-should-a-small-business-spend-on-seo): budget ranges, factors that affect SEO cost, and how to think about return on that investment.
-- [How to Create a Lead-Generating Website](https://infused.agency/posts/how-to-create-a-lead-generating-website): guidance on planning a website around conversion and enquiry generation, reflecting the agency's web design approach.
-
-## Contact and company information
-
-- [Get a Free Quote](https://infused.agency/get-a-quote): the main contact page, including the booking calendar for a free project consultation (opens in a new tab).
-- Booking calendar: [https://calendly.com/infused-agency/project-discovery/](https://calendly.com/infused-agency/project-discovery/)
-- Location: St. Catharines, Ontario, Canada (the website does not publish a street address).
-- Phone: (905) 933-3115 (published in the site footer).
+- [About Infused Agency](https://infused.agency/about)
+- [Get a Free Quote](https://infused.agency/get-a-quote)
+- Location: St. Catharines, Ontario, Canada (no street address published)
+- Phone: (905) 933-3115
 - Email: info@infused.agency
-- Hours: Monday to Friday, 9 a.m. to 6 p.m. Eastern.
-- Social profiles published in the site's structured data: [LinkedIn](https://linkedin.com/company/infused-agency), [Facebook](https://www.facebook.com/infused.agency), [Instagram](https://www.instagram.com/infusedweb/) and [X (formerly Twitter)](https://twitter.com/InfusedAgency).
-- Recognitions displayed on the homepage: Niagara Chamber of Commerce membership and listings on Three Best Rated, GoodFirms and DesignRush, along with Google Reviews.
+- Hours: Monday–Friday, 9 a.m. to 6 p.m. ET
+- Booking: [Calendly](https://calendly.com/infused-agency/project-discovery/)
 
-## Optional
+## Sitemap
 
-Secondary pages that are accurate and public but less central to understanding the business:
-
-- [Site map](https://infused.agency/sitemap): the human-readable index of the website's pages.
-- [Privacy Policy](https://infused.agency/privacy-policy): how Infused handles personal information collected through the website.
-- [SEO for therapists in the United States](https://infused.agency/therapist-seo/usa): the United States hub of the therapist SEO programme, covering six New York State cities including New York City, Albany, Buffalo, Rochester and Syracuse.
-- [SEO for concrete contractors in Niagara](https://infused.agency/seo/for-concrete-contractors-niagara): the Niagara-specific version of the concrete contractor programme, alongside the Canada-wide programme listed above.
-- [Web design in St. Catharines, Ontario](https://infused.agency/web-design/st-catharines): the web design service projected onto Infused's home city; similar pages exist for other Niagara municipalities (Beamsville, Crystal Beach, Fonthill, Fort Erie, Grimsby, Niagara Falls, Niagara-on-the-Lake, Port Colborne, Thorold and Welland).
-- [Residential and commercial electrician web design in Niagara, ON](https://infused.agency/posts/electrician-web-design): a published web design project showcase for an electrical business.
-- [Home insulation web design in Niagara, ON](https://infused.agency/posts/home-insulation-web-design): a published web design project showcase for an insulation contractor.
+- [XML Sitemap](https://infused.agency/sitemap.xml)
+- [HTML Sitemap](https://infused.agency/sitemap)
