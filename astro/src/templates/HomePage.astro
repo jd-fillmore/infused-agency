@@ -455,7 +455,7 @@ const featuredResult = proofResults[0];
           <div class="industry-card__body">
             <h3>{item.title}</h3>
             <p>{item.benefit}</p>
-            <a class="link-arrow" href={item.href}>
+            <a class="link-arrow" href={item.href} aria-label={`Learn more about SEO for ${item.title}`}>
               Learn more
               <Icon name="arrow-right" />
             </a>

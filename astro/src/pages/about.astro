@@ -168,7 +168,7 @@ const jsonLd = [
             <h3 class="card__title">{service.title}</h3>
             <p class="card__text">{service.text}</p>
             <div class="card__footer">
-              <a class="link-arrow" href={service.href}>
+              <a class="link-arrow" href={service.href} aria-label={`Learn more about ${service.title}`}>
                 Learn more
                 <Icon name="arrow-right" />
               </a>

@@ -23,7 +23,7 @@ const { title, description, href, number, linkLabel = "Learn more", featured = f
   </h3>
   <p class="service-card__text">{description}</p>
   <div class="service-card__link">
-    <a class="link-arrow" href={href}>
+    <a class="link-arrow" href={href} aria-label={`Learn more about ${title}`}>
       {linkLabel}
       <Icon name="arrow-right" />
     </a>
