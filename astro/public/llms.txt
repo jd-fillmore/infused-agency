@@ -21,6 +21,8 @@ Infused is deliberately small — the person you speak with stays close to the w
 
 ## Service Areas (Niagara)
 
+### SEO
+
 - [SEO in St. Catharines, ON](https://infused.agency/seo/st-catharines)
 - [SEO in Niagara Falls, ON](https://infused.agency/seo/niagara-falls)
 - [SEO in Welland, ON](https://infused.agency/seo/welland)
@@ -31,6 +33,25 @@ Infused is deliberately small — the person you speak with stays close to the w
 - [SEO in Niagara-on-the-Lake, ON](https://infused.agency/seo/niagara-on-the-lake)
 - [SEO in Port Colborne, ON](https://infused.agency/seo/port-colborne)
 - [SEO in Beamsville, ON](https://infused.agency/seo/beamsville)
+
+### Web Design
+
+- [Web Design in Niagara](https://infused.agency/web-design/niagara)
+- [Web Design in St. Catharines](https://infused.agency/web-design/st-catharines)
+- [Web Design in Niagara Falls](https://infused.agency/web-design/niagara-falls)
+- [Web Design in Niagara-on-the-Lake](https://infused.agency/web-design/niagara-on-the-lake)
+- [Web Design in Welland](https://infused.agency/web-design/welland)
+- [Web Design in Fort Erie](https://infused.agency/web-design/fort-erie)
+- [Web Design in Port Colborne](https://infused.agency/web-design/port-colborne)
+- [Web Design in Grimsby](https://infused.agency/web-design/grimsby)
+- [Web Design in Beamsville](https://infused.agency/web-design/beamsville)
+- [Web Design in West Lincoln](https://infused.agency/web-design/west-lincoln)
+- [Web Design in Smithville](https://infused.agency/web-design/smithville)
+- [Web Design in Pelham](https://infused.agency/web-design/pelham)
+- [Web Design in Fonthill](https://infused.agency/web-design/fonthill)
+- [Web Design in Thorold](https://infused.agency/web-design/thorold)
+- [Web Design in Crystal Beach](https://infused.agency/web-design/crystal-beach)
+- [Web Design in Wainfleet](https://infused.agency/web-design/wainfleet)
 
 ## Case Studies & Results
 
@@ -51,7 +72,6 @@ Infused is deliberately small — the person you speak with stays close to the w
 - [About Infused Agency](https://infused.agency/about)
 - [Get a Free Quote](https://infused.agency/get-a-quote)
 - Location: St. Catharines, Ontario, Canada (no street address published)
-- Phone: (905) 933-3115
 - Email: info@infused.agency
 - Hours: Monday–Friday, 9 a.m. to 6 p.m. ET
 - Booking: [Calendly](https://calendly.com/infused-agency/project-discovery/)
