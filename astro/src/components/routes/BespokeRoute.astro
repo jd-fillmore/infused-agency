@@ -27,8 +27,11 @@ const faqs = (faqBlock?.items ?? []).map((faq: { q: string; a: string }) => ({
   a: faq.a,
 }));
 
+// Regional pages carry their own areaServed list because a single City node
+// cannot describe a service area that spans several municipalities.
 const areaServed =
-  page.kind === "web-design" || page.kind === "therapist"
+  page.areaServed ??
+  (page.kind === "web-design" || page.kind === "therapist"
     ? [
         { "@type": "City", name: page.h1.replace(/ Web Design Company$/, "").replace(/ SEO Company.*$/, "") },
         {
@@ -37,7 +40,7 @@ const areaServed =
         },
         { "@type": "Country", name: page.kind === "therapist" ? "United States" : "Canada" },
       ]
-    : undefined;
+    : undefined);
 
 const jsonLd = [
   ...baseGraph(),

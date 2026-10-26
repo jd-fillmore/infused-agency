@@ -2814,6 +2814,727 @@
     ]
   },
   {
+    "pathname": "/web-design/niagara",
+    "kind": "web-design",
+    "eyebrow": "Niagara Region web design",
+    "title": "Niagara Region Web Design Company | Infused Agency",
+    "description": "Web design for businesses across the Niagara Region. A St. Catharines studio building fast, mobile-friendly websites that work in every town you serve.",
+    "canonical": "https://infused.agency/web-design/niagara",
+    "h1": "Niagara Region Web Design Company",
+    "hero": {
+      "title": "Niagara Region Web Design Company",
+      "description": "Infused Agency is a St. Catharines web design studio working with businesses across the Niagara Region. We plan, design and build sites that make sense in every town you serve, from Grimsby to Fort Erie and everywhere between.",
+      "image": "/img/web-design/cities/web-design-niagara-region-hero.webp",
+      "imageAlt": "Vineyard rows and open farmland across the Niagara Region"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Niagara Region",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Fort Erie",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Grimsby",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Lincoln",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Niagara Falls",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Niagara-on-the-Lake",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Pelham",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Port Colborne",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "St. Catharines",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Thorold",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Wainfleet",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Welland",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "West Lincoln",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Niagara Region"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
+      },
+      {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      {
+        "@type": "Country",
+        "name": "United States"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design for businesses across the Niagara Region"
+      },
+      {
+        "type": "eyebrow",
+        "text": "The regional picture"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Niagara Region is twelve municipalities, not one market. A contractor in Fort Erie, a winery in Niagara-on-the-Lake, a clinic in St. Catharines and a shop in Grimsby can serve customers who live twenty minutes apart and still face different competitors, different searches and different expectations. A website that only speaks to one town leaves the rest of the region to someone else."
+      },
+      {
+        "type": "paragraph",
+        "text": "We build sites that hold that wider picture together. The core pages explain what you do, who it is for and why you are the right choice. Service pages give each offer room to breathe. Where the demand is real, town pages answer the questions people in that community ask. The result is one coherent site rather than a pile of near-identical location pages."
+      },
+      {
+        "type": "paragraph",
+        "text": "We are based in St. Catharines and work across the peninsula in person or by phone, email and video call. We also work with clients throughout Canada and the United States, so a business outside Niagara is not an afterthought."
+      },
+      {
+        "type": "paragraph",
+        "text": "Recognised and affiliated"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Google Partner Certified agency",
+          "Niagara Chamber Member",
+          "Three Best Rated Top-rated local",
+          "GoodFirms Verified reviews",
+          "DesignRush Listed agency",
+          "Google Reviews 40+ five-star"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design across Niagara's twelve municipalities"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Where we work"
+      },
+      {
+        "type": "paragraph",
+        "text": "The region runs from Grimsby, Lincoln and West Lincoln at the western end, through St. Catharines, Thorold, Niagara Falls, Niagara-on-the-Lake and Pelham, down to Welland, Port Colborne, Wainfleet and Fort Erie. Each has its own centre, its own business mix and its own search behaviour."
+      },
+      {
+        "type": "paragraph",
+        "text": "We also work in the communities inside those municipalities, including Beamsville in Lincoln, Fonthill in Pelham, Smithville in West Lincoln and Crystal Beach in Fort Erie. Where the local intent is specific enough to deserve its own page, we build one. The map below gives a sense of the ground we cover."
+      },
+      {
+        "type": "map",
+        "place": "Niagara Region, Ontario, Canada",
+        "title": "Map of the Niagara Region, Ontario"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design pages across the region"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Local pages"
+      },
+      {
+        "type": "paragraph",
+        "text": "We keep a dedicated web design page for each community where we have something specific to say. If your business serves more than one municipality, this regional page is the right starting point; the links below take you to the town-level pages."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[Web design in Beamsville](/web-design/beamsville)",
+          "[Web design in Crystal Beach](/web-design/crystal-beach)",
+          "[Web design in Fonthill](/web-design/fonthill)",
+          "[Web design in Fort Erie](/web-design/fort-erie)",
+          "[Web design in Grimsby](/web-design/grimsby)",
+          "[Web design in Niagara Falls](/web-design/niagara-falls)",
+          "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
+          "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
+          "[Web design in Thorold](/web-design/thorold)",
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "One website, or a page for every town?"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Page structure"
+      },
+      {
+        "type": "paragraph",
+        "text": "Business owners often ask whether they need a page for every municipality in Niagara. Sometimes they do; often they do not. A location page earns its place when there is genuine search demand and something useful to say, such as local projects, coverage details, response times or knowledge of the neighbourhoods you serve. A page that only swaps the town name in the headline is a liability, not an asset."
+      },
+      {
+        "type": "paragraph",
+        "text": "We make that decision during planning. We look at the services you sell, the towns you actually cover, the terms people use and the pages you already have. A plumber working out of St. Catharines across the whole peninsula might need one strong service page and three or four town pages. A regional contractor might do better with a single page, a clear coverage section and a portfolio that does the selling."
+      },
+      {
+        "type": "paragraph",
+        "text": "The same logic applies outside Niagara. If you sell across Ontario, Canada or the United States, we build the service and location content around the markets where you actually compete, not a page for every city on a map."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you are unsure which structure fits, bring it to the free consultation. We will tell you what we would build and what we would leave out."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Choosing a web design company in the Niagara Region"
+      },
+      {
+        "type": "eyebrow",
+        "text": "How to compare"
+      },
+      {
+        "type": "lead",
+        "text": "The questions below separate a considered build from a template with a regional headline."
+      },
+      {
+        "type": "paragraph",
+        "text": "Search for web design in Niagara and you will find freelancers, template services, agencies from Toronto and Hamilton, and studios like ours. Every proposal will look different, so ask the same questions of each company and compare the answers, not the covers."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask who will actually design and build the site, and whether you will deal with them directly. Ask how they will handle the towns you serve: will they build a page for every municipality, keep the site regional, or something in between? Ask what is included beyond the design, including content, search foundations, accessibility, training and support, and how changes are handled once the project is underway."
+      },
+      {
+        "type": "paragraph",
+        "text": "Look for recent work in businesses with a similar problem. A restaurant site and a contractor site are not the same job, even when both look polished. The right partner should be able to explain why a page exists, not just show that it does."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "Who designs and builds the site, and will you speak to them?",
+          "How will the site handle the towns and municipalities you serve?",
+          "What is included: content, search foundations, accessibility, training?",
+          "Will you be able to update the site yourself after launch?",
+          "Recent work for businesses like yours, not only the best-looking logos",
+          "How quotes, scope changes and payment are handled",
+          "What support exists after launch"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What a regional web design project looks like"
+      },
+      {
+        "type": "eyebrow",
+        "text": "The process"
+      },
+      {
+        "type": "paragraph",
+        "text": "It starts with a free consultation. We ask how the business works, which towns and customers matter most, what the current site does well and where it loses people. If you are outside Niagara, the same conversation happens by video call."
+      },
+      {
+        "type": "paragraph",
+        "text": "You get a written quote based on the work the project actually needs. Once it is approved, planning begins: the page structure, the services that need their own pages, the communities worth targeting, the messaging and the calls to action. You see that plan before design starts, so there are no surprises later."
+      },
+      {
+        "type": "paragraph",
+        "text": "Design and build run together. You review the direction early, feedback shapes the pages, and every template is checked on phones, tablets and large screens. Content is usually yours because you know the business best; if you would rather we write it, that is quoted as part of the project."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before launch we check performance, accessibility and the technical details that affect search. If the site replaces an existing one, we map old addresses to new ones with redirects and keep the pages that already earn traffic. WordPress clients get a walkthrough so they can update pages, posts and photos themselves."
+      },
+      {
+        "type": "paragraph",
+        "text": "Launch is not the end. We stay available for questions and changes, and businesses that want to keep building visibility can continue with our SEO and AI search work."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Websites built for Niagara businesses"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Recent projects"
+      },
+      {
+        "type": "lead",
+        "text": "A sample of recent work for businesses in and around the region. Each project links through to the fuller case studies on our results page."
+      },
+      {
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design services for Niagara businesses"
+      },
+      {
+        "type": "eyebrow",
+        "text": "What you get"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Custom design, not a template"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your pages are planned around your services, your customers and the action you want people to take. Layouts, messaging and calls to action are built for your business, not borrowed from a theme."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Responsive builds for every screen"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most regional searches happen on a phone, often in a car or on a job site. Every site is designed and tested across mobile, tablet, laptop and desktop, with contact details and next steps within easy reach."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "WordPress sites you can update"
+      },
+      {
+        "type": "paragraph",
+        "text": "When you need a content management system, we usually build on WordPress. You get a walkthrough of pages, posts and photos so small changes do not require a developer."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Online stores on Shopify and WooCommerce"
+      },
+      {
+        "type": "paragraph",
+        "text": "For product businesses, we design and build stores with clear product pages, a simple cart and a checkout that does not make people work."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Layouts built to turn visits into enquiries"
+      },
+      {
+        "type": "paragraph",
+        "text": "We plan the conversion path deliberately: short forms, tappable phone numbers, clear service pages and calls to action that appear where the decision happens."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Search-ready foundations"
+      },
+      {
+        "type": "paragraph",
+        "text": "Logical headings, crawlable structure, clean metadata and schema markup are part of the build. That groundwork helps Google understand the site and gives AI search tools something accurate to work with."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Performance and accessibility"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pages are kept light, images are handled properly and the build respects keyboard navigation, contrast and readable type. A faster, clearer site is better for every visitor."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Support after launch"
+      },
+      {
+        "type": "paragraph",
+        "text": "Hosting is not something we sell as a separate service. We recommend a host that suits the site, help you get it live and stay available for changes afterwards."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "SEO and AI search after launch"
+      },
+      {
+        "type": "paragraph",
+        "text": "A new site is a strong start, but visibility is built over time. Our SEO and AI search services continue the work if you want to keep growing in Google, the map pack and AI answers."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Who we build for across the region"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Who we work with"
+      },
+      {
+        "type": "lead",
+        "text": "These are the kinds of businesses in our portfolio and on our industry pages, not a list of everyone with a budget."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Trades and home services"
+      },
+      {
+        "type": "paragraph",
+        "text": "Electricians, insulators, landscapers, concrete contractors and similar trades live on the phone. When a homeowner in Thorold or a property manager in Welland searches for the work you do, the site has to show the service, the coverage and the number in seconds."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[SEO for electricians in Niagara](/seo/for-electricians-niagara)",
+          "[SEO for insulation contractors](/seo/for-insulation-niagara)",
+          "[SEO for landscapers in Niagara](/seo/for-landscapers-niagara)",
+          "[SEO for concrete contractors in Niagara](/seo/for-concrete-contractors-niagara)"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Wineries, food and tourism"
+      },
+      {
+        "type": "paragraph",
+        "text": "Niagara's wineries, food makers and visitor businesses sell to locals and travellers alike. We have built sites for producers in the region and understand that the site often has to sell an experience as much as a product."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[SEO for wineries in Niagara](/seo/for-wineries-niagara)"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Medical and professional practices"
+      },
+      {
+        "type": "paragraph",
+        "text": "Clinics, dental practices and professional offices need practical answers about services, hours and booking, without friction, and a tone that reflects the care behind the name. We built the Lincoln Medical Centre site and work with other practices across Niagara."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[SEO for dentists](/seo/for-dentists-niagara)",
+          "[SEO for chiropractors](/seo/for-chiropractors-niagara)",
+          "[SEO for physiotherapists](/seo/for-physiotherapists-niagara)"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Builders and construction companies"
+      },
+      {
+        "type": "paragraph",
+        "text": "Custom builders and renovation contractors sell on trust and craft. A clear portfolio, an honest process and a simple enquiry path help the right clients start a conversation."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[SEO for general contractors](/seo/for-general-contractors-niagara)"
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Retail, studios and specialty makers"
+      },
+      {
+        "type": "paragraph",
+        "text": "Shops, studios and makers often compete on character as much as price. A site that shows the work properly, explains how to buy or visit, and loads quickly can turn a passing search into a visit."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Nonprofits and mission-driven organizations"
+      },
+      {
+        "type": "paragraph",
+        "text": "Organizations need a site that explains the mission clearly, serves the people who rely on it and makes donating or getting involved straightforward. We built Donor Compass, a donor-data platform used by nonprofits."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What it is like to work with us"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Client feedback"
+      },
+      {
+        "type": "lead",
+        "text": "A few words from Niagara businesses we have worked with, in their own words."
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+        "person": "Lucas Folino",
+        "role": "Owner",
+        "company": "Fred's Concrete",
+        "avatar": "/img/testimonial-lucas-folino-niagara.png",
+        "avatarAlt": "Lucas Folino, owner of Fred's Concrete, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+        "person": "Brandi May",
+        "role": "Owner",
+        "company": "Brandi May Psychotherapy",
+        "avatar": "/img/testimonial-brandi-may-niagara.png",
+        "avatarAlt": "Brandi May, owner of Brandi May Psychotherapy, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.",
+        "person": "Sandro Visca",
+        "role": "Owner",
+        "company": "VISCA Electric",
+        "avatar": "/img/testimonial-sandro-visca-niagara.png",
+        "avatarAlt": "Sandro Visca, owner of VISCA Electric, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Redesigning a Niagara website without losing visibility"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keeping your rankings"
+      },
+      {
+        "type": "paragraph",
+        "text": "If your current site already brings in calls from several towns, a redesign can feel risky. The traffic pays the bills, and a new build is a big change. Done carefully, a redesign protects what already works and fixes what does not."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before anything is rebuilt we look at which pages bring in traffic, which searches they answer and where the business appears in the map pack. Pages that earn visibility keep their purpose and, wherever possible, their addresses. Where an address has to change, redirects send visitors and search engines to the right place."
+      },
+      {
+        "type": "paragraph",
+        "text": "A redesign is also the moment to consolidate. If the old site has five thin town pages that compete with each other, we can turn them into two strong pages and a clear regional story. Fewer, better pages usually serve customers better than a long list of near-duplicates."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you would like a second opinion on what a redesign would mean for your current rankings, ask. Reviewing existing sites is something we do gladly, and there is no charge for the conversation."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Before you start"
+      },
+      {
+        "type": "faqs",
+        "items": [
+          {
+            "q": "Do you only work with businesses in the Niagara Region?",
+            "a": "No. We are based in St. Catharines and most of our local work is across Niagara, but we also work with clients throughout Canada and the United States. Most projects run by phone, email and video call, with in-person meetings where they help."
+          },
+          {
+            "q": "Do I need a separate page for every town in Niagara?",
+            "a": "Usually not. A town page makes sense where there is real search demand and something specific to say. For many businesses, one strong regional page with clear service sections is better than a dozen thin pages. We decide this during planning, based on your services, coverage and competition."
+          },
+          {
+            "q": "How much does a website cost?",
+            "a": "There is no single price. The size of the site, the features you need, how much content is ready and whether we write the copy all affect the scope. After a free consultation we send a clear written quote, so you know what you are paying for before work begins."
+          },
+          {
+            "q": "Do you handle SEO as well as web design?",
+            "a": "Yes. Every build includes on-page search foundations such as fast pages, clean structure, sensible headings and schema markup. For ongoing visibility in Google, the map pack and AI search, we offer SEO and AI search services after launch."
+          },
+          {
+            "q": "Can you redesign an existing site without hurting rankings?",
+            "a": "In most cases, yes. We review what the current site ranks for, keep working pages and addresses where possible, and set up redirects where they have to change. No one can promise a specific ranking, but a careful redesign protects what you already have."
+          },
+          {
+            "q": "How long does a project take?",
+            "a": "It depends on the number of pages, how ready the content and photos are, and whether an online store or booking system is included. A straightforward business site can be live within a few weeks of approving the quote; larger regional sites take longer. The timeline is agreed before work starts."
+          },
+          {
+            "q": "Will I be able to update the site myself?",
+            "a": "Yes, on WordPress projects. We include a walkthrough covering pages, posts and photos, so you are not dependent on a developer for small changes. For anything larger, we are an email away."
+          },
+          {
+            "q": "Do you write the content?",
+            "a": "Content is usually supplied by you because you know the business best. If you would rather not write it, we can write the site copy at an additional cost, and we include it in the project scope when quoting."
+          },
+          {
+            "q": "Can you build an online store?",
+            "a": "Yes. We design and build e-commerce stores on Shopify and WooCommerce, with product pages, carts and checkout set up to be quick for customers and manageable for you."
+          },
+          {
+            "q": "Will my website show up in ChatGPT and AI search?",
+            "a": "AI tools rely on the same foundations as search: fast pages, clear structure, consistent business details and content that answers real questions. Every build includes that groundwork plus schema markup. Our AI search services can continue the work after launch, though no agency can guarantee a specific mention."
+          },
+          {
+            "q": "Do you host websites?",
+            "a": "We do not sell hosting as a separate service. We recommend hosting that suits the site, help you get it live and stay available for support afterwards."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Related pages"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keep exploring"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[Web design services](/web-design)",
+          "[SEO in the Niagara Region](/seo/niagara)",
+          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Our work](/results)",
+          "[AI search optimization](/ai-search)",
+          "[Get a quote](/get-a-quote)"
+        ]
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Web Design",
+        "href": "/web-design"
+      },
+      {
+        "name": "Niagara Region"
+      }
+    ]
+  },
+  {
     "pathname": "/web-design/beamsville",
     "kind": "web-design",
     "eyebrow": "Web design",

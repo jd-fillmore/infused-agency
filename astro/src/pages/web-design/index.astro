@@ -356,11 +356,17 @@ const jsonLd = [
     tone="surface"
     eyebrow="Service area"
     index="06"
-    heading="Serving web design to businesses in Niagara"
-    description="Website design and development for the cities and towns where your customers are already looking."
+    heading="Based in Niagara, working across Canada and the U.S."
+    description="Our studio is in St. Catharines and most of our work is across the Niagara Region. We also take on remote projects with businesses throughout Canada and the United States."
   >
     <div class="reveal">
-      <h3 class="h3">Niagara cities</h3>
+      <p class="wd-area__lead">
+        If your business serves more than one municipality, start with
+        <a href="/web-design/niagara">web design for the Niagara Region</a>. It
+        explains how one site can cover the whole peninsula without turning into
+        a dozen thin pages. Or jump straight to a city or town below.
+      </p>
+      <h3 class="h3">Niagara cities and towns</h3>
       <ul class="chip-list" style="margin-top: 1rem;">
         {
           WEB_DESIGN_CITY_LINKS.map((city) => (
@@ -521,6 +527,26 @@ const jsonLd = [
 
   .wd-capability {
     min-height: 15rem;
+  }
+
+  .wd-area__lead {
+    max-width: 44rem;
+    margin-bottom: 1.75rem;
+    color: var(--color-muted);
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+
+  .wd-area__lead a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (hover: hover) {
+    .wd-area__lead a:hover {
+      color: var(--color-gold);
+    }
   }
 
   .wd-capability .card__title {
