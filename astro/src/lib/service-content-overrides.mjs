@@ -123,10 +123,10 @@ const AI_SEARCH_CONTENT = {
 
 const OVERRIDES = {
   "/ai-search": {
-    title: "AI Search Optimization (GEO & AEO) | Infused Agency",
+    title: "AI Search Optimization (GEO & AEO) in Ontario | Infused Agency",
     h1: "AI Search Optimization",
     summary:
-      "AI search optimization for GEO, AEO and SEO for AI search. Improve your AI search visibility so assistants can describe, quote and recommend your business accurately.",
+      "AI search optimization (GEO and AEO) for businesses across Ontario. We improve your AI search visibility so ChatGPT, Gemini and other assistants can quote and recommend your business accurately.",
     content: AI_SEARCH_CONTENT,
     related: AI_SEARCH_CONTENT.related,
     industries: AI_SEARCH_CONTENT.industries,
