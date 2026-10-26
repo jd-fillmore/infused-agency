@@ -45,7 +45,7 @@ module.exports = {
   niagara: {
     heading: "The Niagara Region has its own page",
     paragraphs: [
-      "Our home base is St. Catharines, in the Niagara Region, and that market is covered in depth on its own page — St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Fort Erie and the surrounding towns. If your crews work in Niagara, start there: [SEO for Concrete Contractors in Niagara](/seo/for-concrete-contractors-niagara).",
+      "Our home base is St. Catharines, in the Niagara Region, and that market is covered in depth on its own page — St. Catharines, Niagara Falls, Welland, Grimsby, Thorold, Fort Erie and the surrounding towns. If your crews work in Niagara, start there: [SEO for Concrete Contractors in Niagara](/seo/for-concrete-contractors-niagara). For the wider regional view across all twelve Niagara municipalities, see our [Niagara Region SEO page](/seo/niagara).",
     ],
   },
   faqs: [

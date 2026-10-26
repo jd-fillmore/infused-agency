@@ -68,6 +68,12 @@ const AI_SEARCH_CONTENT = {
         "We also connect AI visibility back to conventional search and website data. If AI mentions improve but the site still has no clear service pages or enquiry path, the business has not gained much. The goal is discoverability that supports real customer decisions, not a vanity mention.",
       ],
     },
+    {
+      heading: "AI search optimization in the Niagara Region",
+      paragraphs: [
+        "If your business serves customers across several Niagara municipalities, our [Niagara Region SEO page](/seo/niagara) explains how we connect local search, city pages and AI visibility across the region. It is the regional complement to the town-level pages, not a replacement for them.",
+      ],
+    },
   ],
   faqs: [
     {

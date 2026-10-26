@@ -5,10 +5,12 @@ import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
+import RichText from "../components/ui/RichText.astro";
 import Section from "../components/ui/Section.astro";
 
 interface LocalSeoPageData {
   city: string;
+  eyebrow?: string;
   hero: { title: string; description: string; image?: string; alt?: string };
   marketIntro: { heading: string; paragraphs: string[] };
   proof: {
@@ -42,6 +44,24 @@ interface LocalSeoPageData {
   };
   faqs: Array<{ q: string; a: string }>;
   relatedLinks: Array<{ href: string; label: string }>;
+  relatedHeading?: string;
+  relatedDescription?: string;
+  aiSearch?: {
+    heading: string;
+    subhead?: string;
+    paragraphs: string[];
+    checklist?: string[];
+  };
+  coverage?: {
+    heading: string;
+    paragraphs?: string[];
+    groups: Array<{
+      heading: string;
+      links: Array<{ href: string; label: string }>;
+    }>;
+  };
+  ctaHeading?: string;
+  ctaDescription?: string;
 }
 
 interface Props {
@@ -59,7 +79,7 @@ const { data } = Astro.props;
     { name: "SEO", href: "/seo" },
     { name: data.city },
   ]}
-  eyebrow="Local SEO"
+  eyebrow={data.eyebrow ?? "Local SEO"}
   ctaLabel="Get a Free Quote"
 >
   <Fragment slot="aside">
@@ -83,7 +103,7 @@ const { data } = Astro.props;
       <p class="eyebrow"><span class="eyebrow__index">01</span> The local market</p>
       <h2 class="h2" style="margin-top: 1rem;">{data.marketIntro.heading}</h2>
       <div class="prose" style="margin-top: 1.25rem;">
-        {data.marketIntro.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        {data.marketIntro.paragraphs.map((paragraph) => <p><RichText text={paragraph} /></p>)}
       </div>
     </div>
     {
@@ -109,7 +129,7 @@ const { data } = Astro.props;
       {
         data.proof.quote && (
           <p class="prose" style="margin-top: 1.1rem; color: var(--color-contrast-muted);">
-            &ldquo;{data.proof.quote}&rdquo;
+            &ldquo;<RichText text={data.proof.quote} />&rdquo;
           </p>
         )
       }
@@ -150,7 +170,7 @@ const { data } = Astro.props;
       <p class="eyebrow"><span class="eyebrow__index">03</span> Why it matters</p>
       <h2 class="h2" style="margin-top: 1rem;">{data.whyNeeded.heading}</h2>
       <div class="prose" style="margin-top: 1.25rem;">
-        {data.whyNeeded.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        {data.whyNeeded.paragraphs.map((paragraph) => <p><RichText text={paragraph} /></p>)}
       </div>
     </div>
     <div class="callout reveal">
@@ -175,18 +195,45 @@ const { data } = Astro.props;
         <Card>
           <span class="service-card__number">{String(index + 1).padStart(2, "0")}</span>
           <h3 class="card__title">{card.title}</h3>
-          {card.paragraphs.map((paragraph) => <p class="card__text">{paragraph}</p>)}
+          {card.paragraphs.map((paragraph) => <p class="card__text"><RichText text={paragraph} /></p>)}
         </Card>
       ))
     }
   </div>
 </Section>
 
+{
+  data.aiSearch && (
+    <Section
+      tone="contrast"
+      eyebrow="AI search"
+      heading={data.aiSearch.heading}
+      description={data.aiSearch.subhead}
+    >
+      <div class="split split--top">
+        <div class="prose reveal">
+          {data.aiSearch.paragraphs.map((paragraph) => (
+            <p><RichText text={paragraph} /></p>
+          ))}
+        </div>
+        {data.aiSearch.checklist && data.aiSearch.checklist.length > 0 && (
+          <aside class="callout reveal">
+            <h3>What the work covers</h3>
+            <ul class="check-list" style="margin-top: 1rem;">
+              {data.aiSearch.checklist.map((item) => <li>{item}</li>)}
+            </ul>
+          </aside>
+        )}
+      </div>
+    </Section>
+  )
+}
+
 <Section eyebrow="Why Infused" index="05" heading={data.whyChoose.heading}>
   <div class="split split--top">
     <div class="reveal">
       <div class="prose">
-        {data.whyChoose.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        {data.whyChoose.paragraphs.map((paragraph) => <p><RichText text={paragraph} /></p>)}
       </div>
       {
         data.whyChoose.awards && (
@@ -206,13 +253,13 @@ const { data } = Astro.props;
         data.whyChoose.blocks.map((block) => (
           <Card class="reveal">
             <h3 class="card__title" style="margin-top: 0;">{block.title}</h3>
-            {block.paragraphs.map((paragraph) => <p class="card__text">{paragraph}</p>)}
+            {block.paragraphs.map((paragraph) => <p class="card__text"><RichText text={paragraph} /></p>)}
             {block.checklist && (
               <ul class="check-list" style="margin-top: 1rem;">
                 {block.checklist.map((item) => <li>{item}</li>)}
               </ul>
             )}
-            {block.paragraphsAfter?.map((paragraph) => <p class="card__text">{paragraph}</p>)}
+            {block.paragraphsAfter?.map((paragraph) => <p class="card__text"><RichText text={paragraph} /></p>)}
           </Card>
         ))
       }
@@ -224,7 +271,7 @@ const { data } = Astro.props;
       <div class="reveal" style="margin-top: 2.75rem; max-width: 46rem;">
         <h2 class="h3">{data.whyChoose.closingHeading}</h2>
         <div class="prose" style="margin-top: 1rem;">
-          {data.whyChoose.closingParagraphs?.map((paragraph) => <p>{paragraph}</p>)}
+          {data.whyChoose.closingParagraphs?.map((paragraph) => <p><RichText text={paragraph} /></p>)}
         </div>
         <div style="margin-top: 1.5rem;">
           <Button href="/get-a-quote" size="lg" arrow>Get a Free Quote</Button>
@@ -234,11 +281,52 @@ const { data } = Astro.props;
   }
 </Section>
 
+{
+  data.coverage && (
+    <Section
+      tone="tint"
+      eyebrow="Communities"
+      heading={data.coverage.heading}
+    >
+      {data.coverage.paragraphs && data.coverage.paragraphs.length > 0 && (
+        <div class="prose reveal" style="max-width: 52rem;">
+          {data.coverage.paragraphs.map((paragraph) => (
+            <p><RichText text={paragraph} /></p>
+          ))}
+        </div>
+      )}
+      <div class="grid grid--2 reveal-group" style="margin-top: 2rem;">
+        {data.coverage.groups.map((group) => (
+          <div>
+            <h3 class="h3">{group.heading}</h3>
+            <ul class="chip-list" style="margin-top: 1rem;">
+              {group.links.map((link) => (
+                <li>
+                  <a class="chip" href={link.href}>
+                    {link.label}
+                    <Icon name="arrow-right" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
 <Section tone="warm" eyebrow="Questions" index="06" heading="Frequently asked questions">
   <Accordion items={data.faqs} />
 </Section>
 
-<Section tone="contrast" eyebrow="Related" index="07" heading="Nearby locations and search services">
+<Section
+  tone="contrast"
+  eyebrow="Related"
+  index="07"
+  heading={data.relatedHeading ?? "Nearby locations and search services"}
+  description={data.relatedDescription}
+>
   <ul class="chip-list">
     {
       data.relatedLinks.map((link) => (
@@ -255,7 +343,7 @@ const { data } = Astro.props;
 
 <CtaBand
   eyebrow="Free quote"
-  heading={`Win the ${data.city} search`}
-  description="Request a free quote and we will map what it takes to get your business found locally."
+  heading={data.ctaHeading ?? `Win the ${data.city} search`}
+  description={data.ctaDescription ?? "Request a free quote and we will map what it takes to get your business found locally."}
   ctaLabel="Get a Free Quote"
 />

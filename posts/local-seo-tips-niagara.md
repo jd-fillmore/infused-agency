@@ -59,4 +59,6 @@ Use tools like Google Analytics and Google Search Console to track your local SE
 
 By implementing these local SEO strategies, your Niagara business can improve its online visibility, attract more local customers, and stand out in the competitive Niagara market. Remember, local SEO is an ongoing process, so continue to refine and adapt your strategies as the digital landscape evolves. Avoid [common SEO mistakes](https://infused.agency/posts/common-seo-mistakes-and-how-to-avoid-them) to ensure your efforts are as effective as possible.
 
+If you serve customers across several municipalities, our [Niagara Region SEO page](https://infused.agency/seo/niagara) explains how regional visibility and town-level pages fit together.
+
 If you need professional assistance with your local SEO strategy or web design, don't hesitate to reach out to [Niagara web design experts](https://infused.agency/) who can help you navigate the complexities of online marketing in the Niagara region.

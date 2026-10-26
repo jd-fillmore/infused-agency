@@ -5,6 +5,7 @@ import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
+import RichText from "../components/ui/RichText.astro";
 import Section from "../components/ui/Section.astro";
 
 interface ServiceContent {
@@ -117,7 +118,7 @@ const content = data.content;
   content.sections.map((section, index) => (
     <Section eyebrow="Detail" index={String(index + 5).padStart(2, "0")} heading={section.heading}>
       <div class="prose reveal">
-        {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        {section.paragraphs.map((paragraph) => <p><RichText text={paragraph} /></p>)}
       </div>
     </Section>
   ))

@@ -1,0 +1,352 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LocalSeoPage from "../../templates/LocalSeoPage.astro";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const pathname = "/seo/niagara";
+const title = "SEO Services in Niagara Region | Local SEO & AI Search | Infused";
+const description =
+  "SEO for Niagara Region businesses: local Google visibility, map pack presence and AI search results in ChatGPT and AI Overviews. Get a free quote.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: "Niagara Region" },
+];
+
+// The twelve lower-tier municipalities of the Niagara Region, plus the
+// communities that have their own local pages. Communities are schema Places
+// inside their municipality rather than cities in their own right.
+const municipalities = [
+  "Fort Erie",
+  "Grimsby",
+  "Lincoln",
+  "Niagara Falls",
+  "Niagara-on-the-Lake",
+  "Pelham",
+  "Port Colborne",
+  "St. Catharines",
+  "Thorold",
+  "Wainfleet",
+  "Welland",
+  "West Lincoln",
+];
+
+const communities = [
+  { name: "Beamsville", municipality: "Lincoln" },
+  { name: "Crystal Beach", municipality: "Fort Erie" },
+  { name: "Fonthill", municipality: "Pelham" },
+  { name: "Smithville", municipality: "West Lincoln" },
+];
+
+const faqs = [
+  {
+    q: "What does an SEO company in the Niagara Region do?",
+    a: "We help businesses across Niagara improve how they appear in Google, the map pack and AI-generated answers. That usually includes Google Business Profile work, service and location pages, technical fixes, reviews, internal linking and answer-ready content. The scope is agreed after reviewing your market, website and competition.",
+  },
+  {
+    q: "Do you have an office in Niagara?",
+    a: "Infused Agency is based in St. Catharines, Ontario, and works with businesses throughout the Niagara Region. We meet locally where it is useful and work remotely where that is more practical. We do not invent satellite offices or local addresses.",
+  },
+  {
+    q: "How is this page different from your Niagara city pages?",
+    a: "This page covers businesses that serve several municipalities or need a regional plan. The city pages cover town-level search intent in places such as St. Catharines, Niagara Falls, Welland and Grimsby. The pages link to each other rather than repeating the same copy with a different place name.",
+  },
+  {
+    q: "What is local SEO in Niagara?",
+    a: "Local SEO is the work of helping a business appear for nearby searches, especially in the map pack and for town-specific queries. It includes an accurate Google Business Profile, clear service and coverage information, reviews, local pages and a website that search engines can crawl and understand.",
+  },
+  {
+    q: "What are AI SEO, GEO and AEO?",
+    a: "AI SEO is the broader effort to improve how a business appears in AI-generated answers. GEO stands for generative engine optimization, the practice of appearing in AI responses. AEO stands for answer engine optimization, which focuses on the direct answers assistants give. They overlap with SEO because they depend on clear content, consistent facts, structured data and trusted signals.",
+  },
+  {
+    q: "Can you get my business recommended by ChatGPT?",
+    a: "We can improve the conditions that make a recommendation more likely: consistent business details, crawlable service and location content, structured data, genuine reviews and direct answers to buyer questions. We cannot guarantee that ChatGPT, Gemini, Google AI Overviews or any other assistant will cite or recommend a specific business.",
+  },
+  {
+    q: "How do you improve visibility in Google AI Overviews?",
+    a: "We make the important facts easy to find and quote: clear service descriptions, location and coverage information, concise answers to common questions, structured data and strong internal links. We also baseline the answers currently shown for your market and compare them later. AI answers change, so no agency can promise a permanent citation.",
+  },
+  {
+    q: "How much does SEO cost in the Niagara Region?",
+    a: "Cost depends on your competition, website, services and how many communities you want to target. We review the business first and send a written quote with a clear scope. We do not publish invented package prices or promise a fixed number of leads.",
+  },
+  {
+    q: "How long does SEO take for a Niagara business?",
+    a: "Foundation improvements can show within a few months, while competitive service terms usually take longer. Your starting visibility, website quality, review profile and how consistently the work is maintained all affect the pace. We report progress against agreed measures rather than guaranteeing a date.",
+  },
+  {
+    q: "Do you guarantee rankings or AI recommendations?",
+    a: "No. Search results vary by location, device and query, and AI assistants change how they gather and present sources. We commit to the work, transparent reporting and honest recommendations, not a guaranteed position or a guaranteed AI mention.",
+  },
+];
+
+const data = {
+  city: "Niagara Region",
+  eyebrow: "Regional SEO",
+  hero: {
+    title: "Niagara Region SEO Company",
+    description:
+      "Infused Agency is a Niagara Region SEO company based in St. Catharines. We help businesses across the region's twelve municipalities get found in Google, the map pack and AI search, then turn that visibility into enquiries.",
+    alt: "SEO services for businesses across the Niagara Region",
+  },
+  marketIntro: {
+    heading: "How search works across the Niagara Region",
+    paragraphs: [
+      "The Niagara Region is twelve municipalities, not one market. A St. Catharines retailer, a Niagara-on-the-Lake winery, a Fort Erie contractor and a West Lincoln service business can sit within a short drive of each other and still face different competitors, travel expectations and customer questions. Searches follow those lines: people type the town they are in, the town they are willing to drive to, or \u201cnear me\u201d from a phone. A business that only says \u201cNiagara\u201d can be visible everywhere in theory and nowhere in particular.",
+      "That is why we keep the regional picture and the town-level picture separate. Our [SEO services page](/seo) covers the discipline. The city pages cover St. Catharines, Niagara Falls, Welland, Port Colborne, Niagara-on-the-Lake, Fort Erie, Grimsby, Beamsville, Thorold, Pelham, Fonthill, Smithville, West Lincoln, Wainfleet and Crystal Beach. This page is for businesses that serve more than one of those places, sell to customers across the peninsula, or need a regional plan before deciding which local pages to build.",
+      "AI search adds another layer. People now ask ChatGPT, Gemini or Google\u2019s AI Overviews for a recommendation, sometimes without naming a town at all. Those answers are assembled from business details, service pages, reviews and other public sources. Clear regional coverage, consistent facts and answer-ready content make it easier for an assistant to understand where you work. No agency can guarantee a recommendation, but the groundwork is the same work that makes a local SEO programme credible.",
+    ],
+  },
+  proof: {
+    heading: "What Niagara clients say",
+    client: "Fred's Concrete",
+    label: "Client feedback",
+    quote:
+      "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+    person: "Lucas Folino, Owner, Fred's Concrete",
+    items: [
+      "50+ clients helped with SEO, AI search and web design",
+      "Based in St. Catharines and working across the Niagara Region",
+      "Written scopes and reporting instead of ranking guarantees",
+    ],
+  },
+  whyNeeded: {
+    heading: "Why Niagara businesses need local SEO and AI search visibility",
+    paragraphs: [
+      "Local buying decisions in Niagara often start with a map result. A homeowner in Thorold needs a plumber, a parent in Grimsby looks for a dentist, a business owner in Welland compares accountants. Google shows a short list, weighs proximity and reviews, and the customer calls one of the first credible options. If your profile is thin or your site never says which communities you cover, you can lose the enquiry before the first conversation.",
+      "Businesses that serve several municipalities face a second problem: coverage clarity. A regional page that lists every town without explaining services is not useful. A separate thin page for every community can compete with itself. We build a deliberate structure: a regional page for the wider story, city pages where the demand justifies them, and service pages that explain what you actually sell. That gives customers a clear path and gives search engines a clear map.",
+      "AI search is now part of the same decision. Some owners ask us how to get their business recommended by ChatGPT, or how to show up in ChatGPT search results and Google AI Overviews. The honest answer is that you improve the inputs: consistent business details, crawlable service and location content, structured data, genuine reviews and answers to the questions buyers ask. We can measure whether mentions improve; we cannot promise that a specific assistant will recommend you.",
+    ],
+    checklist: [
+      "A Google Business Profile with honest service areas and categories",
+      "A regional page plus city pages for the communities that matter",
+      "Service pages that explain the work, coverage and next step",
+      "Consistent name, address, phone and category details across the web",
+      "Reviews and photos that show the business is active",
+      "Answer-ready content and structured data for AI search",
+    ],
+  },
+  services: {
+    heading: "SEO services for Niagara Region businesses",
+    subhead:
+      "Local search, AI visibility and a page structure that fits a region of twelve municipalities",
+    cards: [
+      {
+        title: "Local SEO Niagara",
+        paragraphs: [
+          "We map the services you sell to the municipalities and communities you actually cover, then improve the Google Business Profile, service pages and local signals that decide whether you appear nearby.",
+        ],
+      },
+      {
+        title: "Regional SEO strategy",
+        paragraphs: [
+          "For businesses serving multiple towns, we decide which city pages deserve to exist, how they link to the regional page, and which searches are too thin to justify a page. The aim is coverage without doorway-page duplication.",
+        ],
+      },
+      {
+        title: "AI search optimization (GEO and AEO)",
+        paragraphs: [
+          "We improve entity consistency, answer-ready content and structured data so AI assistants have accurate material when someone asks for a local recommendation. This is sometimes called generative engine optimization or answer engine optimization; we treat it as part of SEO, not a separate trick.",
+        ],
+      },
+      {
+        title: "ChatGPT and Google AI Overviews visibility",
+        paragraphs: [
+          "If you want to show up in ChatGPT search results or Google AI Overviews, the work starts with pages that can be read, quoted and verified. We baseline what assistants currently say, strengthen the source material and re-check the answers over time.",
+        ],
+      },
+      {
+        title: "Google Business Profile and map pack",
+        paragraphs: [
+          "A complete profile with the right categories, services, hours, photos and service areas is still the strongest local signal for many Niagara searches. For multi-location businesses, we keep each profile accurate and consistent.",
+        ],
+      },
+      {
+        title: "Technical SEO and enquiry tracking",
+        paragraphs: [
+          "We fix crawl, speed, metadata and internal-link problems, then connect visibility to calls, quote requests and booked appointments. Reporting shows which communities and services are producing enquiries.",
+        ],
+      },
+    ],
+  },
+  aiSearch: {
+    heading: "AI search optimization for Niagara businesses",
+    subhead:
+      "GEO, AEO and the practical work behind ChatGPT and Google AI Overviews visibility",
+    paragraphs: [
+      "AI search has changed the question from \u201cwhich page ranks?\u201d to \u201cwhich business does the assistant trust enough to mention?\u201d When someone asks for an SEO company in Niagara, a contractor near St. Catharines or a clinic in Niagara Falls, the answer is assembled from sources the model can read: your website, Google Business Profile, reviews, directories and third-party mentions. ChatGPT search, Gemini, Perplexity and Google AI Overviews do not all work the same way, but they share a preference for clear, consistent and verifiable information.",
+      "The work is less mysterious than the acronyms suggest. Generative engine optimization (GEO) and answer engine optimization (AEO) both depend on the same foundations as SEO: a crawlable site, distinct service pages, accurate location information and content that answers real questions. We add entity cleanup, structured data, direct answers and internal links so the important facts are easy to extract. For Niagara businesses, that often means making the relationship between the regional page, city pages and service pages explicit.",
+      "We do not promise that ChatGPT will recommend you, or that Google AI Overviews will cite you. Those systems change, and no agency controls their output. We do commit to measuring a baseline, improving the inputs, and reporting what changed rather than showing a single screenshot as proof.",
+    ],
+    checklist: [
+      "Consistent business name, address, phone and categories",
+      "Service pages that state what you do and where you do it",
+      "Regional and city pages with a clear relationship",
+      "Direct answers to the questions buyers ask",
+      "Structured data for services, locations and FAQs",
+      "A baseline and re-check of AI answers",
+    ],
+  },
+  whyChoose: {
+    heading: "Why Niagara businesses choose Infused Agency",
+    paragraphs: [
+      "Infused Agency is based in St. Catharines, so the Niagara Region is not a remote market we read about in a template. We work with businesses across the peninsula, from the QEW corridor and wine country to the south Niagara townships, and we know that a regional plan has to respect the difference between a city, a town and a rural service area. We have helped 50+ clients with SEO, AI search and web design, and we judge the work by the enquiries it supports rather than a ranking chart alone.",
+    ],
+    awards: {
+      image: "/img/awards.png",
+      alt: "Infused Agency recognition for SEO and web design work",
+    },
+    blocks: [
+      {
+        title: "Choosing an SEO company in Niagara",
+        paragraphs: [
+          "Ask how the team will handle the regional page versus city pages, how it will avoid thin location pages, and what it will measure. We explain the scope in plain language and will tell you when a focused city page is a better first step than a broad regional campaign.",
+        ],
+      },
+      {
+        title: "A Niagara SEO company, not a directory listing",
+        paragraphs: [
+          "We do not invent offices in every municipality or claim local results we cannot verify. Our address is in St. Catharines, our client feedback is real, and our local relevance comes from useful content and accurate business information.",
+        ],
+      },
+      {
+        title: "Built for how people search now",
+        paragraphs: [
+          "Traditional search and AI search are not separate strategies. We build the service, location and trust signals that help in Google, then make the same facts easy for AI assistants to read and quote. That is more durable than chasing a single algorithm update.",
+        ],
+      },
+      {
+        title: "Straight answers on cost and fit",
+        paragraphs: [
+          "SEO cost in the Niagara Region depends on your competition, website, services and how many communities you target. We quote after a review and do not publish invented package prices or promise a set number of leads.",
+        ],
+      },
+    ],
+    closingHeading: "Build a clearer regional presence",
+    closingParagraphs: [
+      "If your business serves customers across Niagara but your website only speaks to one town, start with a free review. We will map the regional, city and AI search gaps and show you what is worth fixing first.",
+    ],
+  },
+  coverage: {
+    heading: "Communities we serve across the Niagara Region",
+    paragraphs: [
+      "We work with businesses throughout the region\u2019s twelve municipalities and the communities inside them. The links below go to the local pages where we already cover a specific market. If your town is not listed, this regional page is still the right starting point.",
+    ],
+    groups: [
+      {
+        heading: "West Niagara",
+        links: [
+          { href: "/seo/beamsville", label: "Beamsville" },
+          { href: "/seo/grimsby", label: "Grimsby" },
+          { href: "/seo/smithville", label: "Smithville" },
+          { href: "/seo/west-lincoln", label: "West Lincoln" },
+        ],
+      },
+      {
+        heading: "Central Niagara",
+        links: [
+          { href: "/seo/st-catharines", label: "St. Catharines" },
+          { href: "/seo/thorold", label: "Thorold" },
+          { href: "/seo/pelham", label: "Pelham" },
+          { href: "/seo/fonthill", label: "Fonthill" },
+        ],
+      },
+      {
+        heading: "Niagara Falls and wine country",
+        links: [
+          { href: "/seo/niagara-falls", label: "Niagara Falls" },
+          { href: "/seo/niagara-on-the-lake", label: "Niagara-on-the-Lake" },
+        ],
+      },
+      {
+        heading: "South Niagara",
+        links: [
+          { href: "/seo/welland", label: "Welland" },
+          { href: "/seo/port-colborne", label: "Port Colborne" },
+          { href: "/seo/wainfleet", label: "Wainfleet" },
+          { href: "/seo/fort-erie", label: "Fort Erie" },
+          { href: "/seo/crystal-beach", label: "Crystal Beach" },
+        ],
+      },
+    ],
+  },
+  faqs,
+  relatedHeading: "Related SEO services and niche pages",
+  relatedDescription:
+    "Go deeper on the search services that support a regional programme, or see the industry pages for Niagara trades and professional practices.",
+  relatedLinks: [
+    { href: "/seo", label: "SEO services overview" },
+    { href: "/ai-search", label: "AI search optimization (GEO and AEO)" },
+    {
+      href: "/seo/for-concrete-contractors-niagara",
+      label: "SEO for concrete contractors in Niagara",
+    },
+    {
+      href: "/seo/for-general-contractors-niagara",
+      label: "SEO for general contractors in Niagara",
+    },
+    { href: "/therapist-seo", label: "SEO for therapists in Canada" },
+    { href: "/web-design", label: "Web design in Niagara" },
+  ],
+  ctaHeading: "Reach customers across the Niagara Region",
+  ctaDescription:
+    "Request a free quote and we will review your website, Google Business Profile and AI search visibility, then map the regional and local work that matters most.",
+};
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "SEO services in the Niagara Region",
+    description,
+    serviceType:
+      "Local SEO, AI search optimization (GEO and AEO) and Google Business Profile management",
+    areaServed: [
+      {
+        "@type": "AdministrativeArea",
+        name: "Niagara Region",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Ontario",
+        },
+      },
+      ...municipalities.map((name) => ({
+        "@type": "AdministrativeArea",
+        name,
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Niagara Region",
+        },
+      })),
+      ...communities.map(({ name, municipality }) => ({
+        "@type": "Place",
+        name,
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: municipality,
+        },
+      })),
+    ],
+  }),
+  faqPageNode(pathname, faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  jsonLd={jsonLd}
+>
+  <LocalSeoPage data={data} />
+</BaseLayout>
