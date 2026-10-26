@@ -74,9 +74,7 @@
         },
         {
           "title": "Technical SEO and site speed",
-          "paragraphs": [
-            "QEW travellers need instant loads."
-          ]
+          "paragraphs": ["QEW travellers need instant loads."]
         },
         {
           "title": "Content and links",
@@ -234,6 +232,10 @@
         "label": "West Lincoln, ON"
       },
       {
+        "href": "/web-design/beamsville",
+        "label": "Web design in Beamsville"
+      },
+      {
         "href": "/ai-search",
         "label": "AI search optimization"
       },
@@ -318,9 +320,7 @@
         },
         {
           "title": "Technical SEO and site speed",
-          "paragraphs": [
-            "Lakefront visitors need quick load speeds."
-          ]
+          "paragraphs": ["Lakefront visitors need quick load speeds."]
         },
         {
           "title": "Content and links",
@@ -478,6 +478,10 @@
         "label": "West Lincoln, ON"
       },
       {
+        "href": "/web-design/crystal-beach",
+        "label": "Web design in Crystal Beach"
+      },
+      {
         "href": "/ai-search",
         "label": "AI search optimization"
       },
@@ -562,9 +566,7 @@
         },
         {
           "title": "Technical SEO and site speed",
-          "paragraphs": [
-            "Pelham households need quick load times."
-          ]
+          "paragraphs": ["Pelham households need quick load times."]
         },
         {
           "title": "Content and links",
@@ -720,6 +722,10 @@
       {
         "href": "/seo/west-lincoln",
         "label": "West Lincoln, ON"
+      },
+      {
+        "href": "/web-design/fonthill",
+        "label": "Web design in Fonthill"
       },
       {
         "href": "/ai-search",
@@ -966,6 +972,10 @@
         "label": "West Lincoln, ON"
       },
       {
+        "href": "/web-design/fort-erie",
+        "label": "Web design in Fort Erie"
+      },
+      {
         "href": "/ai-search",
         "label": "AI search optimization"
       },
@@ -1210,6 +1220,10 @@
         "label": "West Lincoln, ON"
       },
       {
+        "href": "/web-design/grimsby",
+        "label": "Web design in Grimsby"
+      },
+      {
         "href": "/ai-search",
         "label": "AI search optimization"
       },
@@ -1294,9 +1308,7 @@
         },
         {
           "title": "Technical SEO and site speed",
-          "paragraphs": [
-            "Old Town visitors want immediate page loads."
-          ]
+          "paragraphs": ["Old Town visitors want immediate page loads."]
         },
         {
           "title": "Content and links",
@@ -1454,6 +1466,10 @@
         "label": "West Lincoln, ON"
       },
       {
+        "href": "/web-design/niagara-on-the-lake",
+        "label": "Web design in Niagara-on-the-Lake"
+      },
+      {
         "href": "/ai-search",
         "label": "AI search optimization"
       },
@@ -1538,9 +1554,7 @@
         },
         {
           "title": "Technical SEO and site speed",
-          "paragraphs": [
-            "Canal-town neighbours want fast loading pages."
-          ]
+          "paragraphs": ["Canal-town neighbours want fast loading pages."]
         },
         {
           "title": "Content and links",
@@ -1698,6 +1712,10 @@
         "label": "West Lincoln, ON"
       },
       {
+        "href": "/web-design/thorold",
+        "label": "Web design in Thorold"
+      },
+      {
         "href": "/ai-search",
         "label": "AI search optimization"
       },
@@ -1782,9 +1800,7 @@
         },
         {
           "title": "Technical SEO and site speed",
-          "paragraphs": [
-            "Commuters and students need speedy page loads."
-          ]
+          "paragraphs": ["Commuters and students need speedy page loads."]
         },
         {
           "title": "Content and links",
@@ -1940,6 +1956,10 @@
       {
         "href": "/seo/west-lincoln",
         "label": "West Lincoln, ON"
+      },
+      {
+        "href": "/web-design/welland",
+        "label": "Web design in Welland"
       },
       {
         "href": "/ai-search",

@@ -270,7 +270,7 @@ function run() {
       }
 
       // Static assets are validated separately.
-      if (/\/[^/]+\.[a-z0-9]{2,5}$/i.test(internal)) continue;
+      if (/\/[^/]+\.(?:[a-z0-9]{2,5}|webmanifest)$/i.test(internal)) continue;
 
       if (internal.length > 1 && internal.endsWith("/")) {
         error(rel, `internal link uses a trailing slash: ${href}`);
@@ -296,7 +296,7 @@ function run() {
     }
 
     // Local asset references.
-    for (const match of html.matchAll(/\b(?:src|href)="(\/[^"]+\.(?:css|js|png|jpe?g|webp|svg|ico|woff2?|mp4))"/g)) {
+    for (const match of html.matchAll(/\b(?:src|href)="(\/[^"]+\.(?:css|js|png|jpe?g|webp|svg|ico|woff2?|mp4|webmanifest))"/g)) {
       const asset = match[1].split("?")[0].split("#")[0];
       if (!fs.existsSync(path.join(distDir, asset.slice(1)))) {
         error(rel, `missing local asset: ${asset}`);

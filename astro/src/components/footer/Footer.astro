@@ -1,9 +1,6 @@
 ---
 import Icon from "../ui/Icon.astro";
 import { siteFacts } from "../../lib/site";
-import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
-
-const cities = NIAGARA_CITY_LINKS;
 
 const company = [
   { name: "Results", href: "/results" },
@@ -52,14 +49,6 @@ const socials = siteFacts.socialProfiles
           <li><a href="/seo">SEO</a></li>
           <li><a href="/ai-search">AI Search</a></li>
           <li><a href="/web-design">Web Design</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Local SEO pages</h2>
-        <ul class="footer-list footer-list--cities">
-          <li><a href="/seo/niagara">Niagara Region</a></li>
-          {cities.map((city) => <li><a href={city.href}>{city.name}</a></li>)}
         </ul>
       </div>
 

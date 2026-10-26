@@ -104,10 +104,13 @@ const data = {
       body: "We connect search visibility to the actions that matter: calls, form fills, direction requests and booked appointments. Reporting shows what changed and where the next opportunity is.",
     },
   ],
-  cities: NIAGARA_CITY_LINKS.map((city) => ({
-    href: city.href,
-    label: `${city.name}, ON`,
-  })),
+  cities: [
+    { href: "/seo/niagara", label: "Niagara Region" },
+    ...NIAGARA_CITY_LINKS.map((city) => ({
+      href: city.href,
+      label: `${city.name}, ON`,
+    })),
+  ],
   industries: [
     { href: "/therapist-seo", label: "SEO for Therapists in Canada" },
     { href: "/general-contractor-seo", label: "SEO for General Contractors" },

@@ -62,7 +62,8 @@ export const LOCAL_SEO_PAGES = [
     },
     services: {
       heading: "SEO services in Pelham",
-      subhead: "Local search work built around a township of distinct communities",
+      subhead:
+        "Local search work built around a township of distinct communities",
       cards: [
         {
           title: "Local SEO for Pelham businesses",
@@ -169,6 +170,7 @@ export const LOCAL_SEO_PAGES = [
       },
     ],
     relatedLinks: [
+      { href: "/web-design/pelham", label: "Web design in Pelham" },
       { href: "/seo/fonthill", label: "Fonthill, ON" },
       { href: "/seo/st-catharines", label: "St. Catharines, ON" },
       { href: "/seo/welland", label: "Welland, ON" },
@@ -338,6 +340,7 @@ export const LOCAL_SEO_PAGES = [
       },
     ],
     relatedLinks: [
+      { href: "/web-design/west-lincoln", label: "Web design in West Lincoln" },
       { href: "/seo/smithville", label: "Smithville, ON" },
       { href: "/seo/pelham", label: "Pelham, ON" },
       { href: "/seo/wainfleet", label: "Wainfleet, ON" },
@@ -506,6 +509,7 @@ export const LOCAL_SEO_PAGES = [
       },
     ],
     relatedLinks: [
+      { href: "/web-design/smithville", label: "Web design in Smithville" },
       { href: "/seo/west-lincoln", label: "West Lincoln, ON" },
       { href: "/seo/grimsby", label: "Grimsby, ON" },
       { href: "/seo/pelham", label: "Pelham, ON" },
@@ -674,6 +678,7 @@ export const LOCAL_SEO_PAGES = [
       },
     ],
     relatedLinks: [
+      { href: "/web-design/wainfleet", label: "Web design in Wainfleet" },
       { href: "/seo/port-colborne", label: "Port Colborne, ON" },
       { href: "/seo/welland", label: "Welland, ON" },
       { href: "/seo/pelham", label: "Pelham, ON" },
@@ -842,6 +847,10 @@ export const LOCAL_SEO_PAGES = [
       },
     ],
     relatedLinks: [
+      {
+        href: "/web-design/st-catharines",
+        label: "Web design in St. Catharines",
+      },
       { href: "/seo/niagara-falls", label: "Niagara Falls, ON" },
       { href: "/seo/thorold", label: "Thorold, ON" },
       { href: "/seo/niagara-on-the-lake", label: "Niagara-on-the-Lake, ON" },
@@ -1010,6 +1019,10 @@ export const LOCAL_SEO_PAGES = [
       },
     ],
     relatedLinks: [
+      {
+        href: "/web-design/niagara-falls",
+        label: "Web design in Niagara Falls",
+      },
       { href: "/seo/st-catharines", label: "St. Catharines, ON" },
       { href: "/seo/niagara-on-the-lake", label: "Niagara-on-the-Lake, ON" },
       { href: "/seo/thorold", label: "Thorold, ON" },

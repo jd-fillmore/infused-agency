@@ -2602,7 +2602,7 @@
     "h1": "Lead-Generating Web Design",
     "hero": {
       "title": "Lead-Generating Web Design",
-      "description": "Our websites are not ‘just websites’. They’re your best 24/7 sales manager.",
+      "description": "Our websites are not â€˜just websites’. They’re your best 24/7 sales manager.",
       "image": "/img/inner-web-design.jpg",
       "imageAlt": "Lead-generating website design by Infused Agency for Niagara businesses"
     },
@@ -2824,7 +2824,7 @@
     "hero": {
       "title": "Beamsville Web Design Company",
       "description": "Infused Agency builds websites for businesses in Beamsville and the surrounding Town of Lincoln — wineries on the Bench, farm-related businesses, local shops and the trades that keep them running. Sites that are fast, easy to use on a phone, and honest about what you do.",
-      "image": "/img/web-design-beamsville-hero.webp",
+      "image": "/img/web-design/cities/web-design-beamsville-hero.webp",
       "imageAlt": "Web design company serving Beamsville, Ontario by Infused Agency"
     },
     "blocks": [
@@ -2877,58 +2877,57 @@
         "text": "Sites for Niagara businesses and organizations, from builders to food producers. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/custom-website-design-beamsville-cass-a-bella-construction.png",
-        "alt": "Cass-A-Bella Construction website designed by Infused Agency for a Niagara custom home builder"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — custom builder website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-beamsville-canadian-mortgage-authority.png",
-        "alt": "Canadian Mortgage Authority website for a Niagara mortgage brokerage, built by Infused Agency"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — mortgage brokerage website"
-      },
-      {
-        "type": "image",
-        "src": "/img/beamsville-web-design-donor-compass.png",
-        "alt": "Donor Compass website by Infused Agency for a donor-data platform used by nonprofits"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — donor-data platform website"
-      },
-      {
-        "type": "image",
-        "src": "/img/beamsville-website-design-ggs-niagara-landscaping.png",
-        "alt": "GGS Niagara Landscaping website showing garden and landscape work, built by Infused Agency"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — landscape company website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-beamsville-lincoln-medical-centre.png",
-        "alt": "Lincoln Medical Centre website by Infused Agency for family physicians in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — family practice website"
-      },
-      {
-        "type": "image",
-        "src": "/img/beamsville-web-design-company-plant-no-01.png",
-        "alt": "Plant No.01 website by Infused Agency for a vegan food factory in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — food producer website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -3097,16 +3096,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
           "[Web design in Fort Erie](/web-design/fort-erie)",
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -3128,15 +3131,6 @@
           "[SEO in Beamsville](/seo/beamsville)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Ready to talk about your website?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us about your Beamsville business and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -3164,7 +3158,7 @@
     "hero": {
       "title": "Crystal Beach Web Design Company",
       "description": "Infused Agency designs and builds websites for businesses in Crystal Beach and Fort Erie — the lakeshore shops and restaurants, cottage and rental properties, and the trades that keep the south end of Niagara running. Fast, mobile-friendly sites that work as well on the pier as they do at home.",
-      "image": "/img/web-design-crystal-beach-hero.webp",
+      "image": "/img/web-design/cities/web-design-crystal-beach-hero.webp",
       "imageAlt": "Web design company serving Crystal Beach, Ontario by Infused Agency"
     },
     "blocks": [
@@ -3217,58 +3211,57 @@
         "text": "Sites for Niagara businesses and organizations, from food producers to builders. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/crystal-beach-web-design-company-plant-no-01.png",
-        "alt": "Plant No.01 website by Infused Agency for a vegan food factory in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — vegan food factory website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-crystal-beach-visca-electric.png",
-        "alt": "VISCA Electric website built by Infused Agency for an electrical contractor in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — electrical contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-crystal-beach-flat-rock-cellars.png",
-        "alt": "Flat Rock Cellars website by Infused Agency for a winery in the Niagara Escarpment wine region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery website"
-      },
-      {
-        "type": "image",
-        "src": "/img/crystal-beach-web-design-jerrys-insulating.png",
-        "alt": "Jerry's Insulating website by Infused Agency for an insulation contractor serving Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — insulation contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/crystal-beach-website-design-kd-flowers.png",
-        "alt": "KD Flowers website by Infused Agency for a Niagara florist and garden centre"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — florist and garden centre website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-crystal-beach-cass-a-bella-construction.png",
-        "alt": "Cass-A-Bella Construction website by Infused Agency for a custom home builder in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — custom builder website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -3437,16 +3430,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Fonthill](/web-design/fonthill)",
           "[Web design in Fort Erie](/web-design/fort-erie)",
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -3468,15 +3465,6 @@
           "[SEO in Crystal Beach](/seo/crystal-beach)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Ready to talk about your website?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us about your Crystal Beach business and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -3504,7 +3492,7 @@
     "hero": {
       "title": "Fonthill Web Design Company",
       "description": "Infused Agency builds websites for businesses in Fonthill and the Town of Pelham — village shops and services, farms and garden businesses on the plateau, and the trades that serve the properties and homes around them. Sites that load quickly and make calling easy.",
-      "image": "/img/web-design-fonthill-hero.webp",
+      "image": "/img/web-design/cities/web-design-fonthill-hero.webp",
       "imageAlt": "Web design company serving Fonthill, Ontario by Infused Agency"
     },
     "blocks": [
@@ -3557,58 +3545,57 @@
         "text": "Sites for Niagara businesses and organizations, from medical practices to trades. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/web-design-company-fonthill-lincoln-medical-centre.png",
-        "alt": "Lincoln Medical Centre website by Infused Agency for family physicians serving the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — family medical practice website"
-      },
-      {
-        "type": "image",
-        "src": "/img/fonthill-web-design-company-plant-no-01.png",
-        "alt": "Plant No.01 website by Infused Agency for a vegan food factory in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — vegan food factory website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-fonthill-visca-electric.png",
-        "alt": "VISCA Electric website built by Infused Agency for an electrical contractor in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — electrical contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-fonthill-flat-rock-cellars.png",
-        "alt": "Flat Rock Cellars website by Infused Agency for a winery on the Niagara Escarpment"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery website"
-      },
-      {
-        "type": "image",
-        "src": "/img/fonthill-web-design-jerrys-insulating.png",
-        "alt": "Jerry's Insulating website by Infused Agency for an insulation contractor in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — insulation contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/fonthill-website-design-kd-flowers.png",
-        "alt": "KD Flowers website by Infused Agency for a Niagara florist and garden centre"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — florist and garden centre website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -3777,16 +3764,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fort Erie](/web-design/fort-erie)",
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -3808,15 +3799,6 @@
           "[SEO in Fonthill](/seo/fonthill)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Let’s build something for your business"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us what your Fonthill business sells and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -3844,7 +3826,7 @@
     "hero": {
       "title": "Fort Erie Web Design Company",
       "description": "Infused Agency builds websites for Fort Erie businesses — the trades, shops and services that serve a border town, where your next customer may be coming from across the bridge as easily as from down the road. Fast, mobile-friendly sites that make your business easy to find and easy to contact.",
-      "image": "/img/web-design-fort-erie-hero.webp",
+      "image": "/img/web-design/cities/web-design-fort-erie-hero.webp",
       "imageAlt": "Web design services for Fort Erie, Ontario by Infused Agency"
     },
     "blocks": [
@@ -3897,58 +3879,57 @@
         "text": "Sites for Niagara businesses and organizations. Each image links to our work page, where the projects are described in more detail."
       },
       {
-        "type": "image",
-        "src": "/img/fort-erie-web-design-company-kd-flowers.png",
-        "alt": "KD Flowers website by Infused Agency for a Niagara wedding florist"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — wedding florist website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-fort-erie-cass-a-bella-construction.png",
-        "alt": "Website for Cass-A-Bella Construction, a custom home builder working in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — custom builder website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-fort-erie-canadian-mortgage-authority.png",
-        "alt": "Canadian Mortgage Authority website designed by Infused Agency for Niagara mortgage brokers"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — mortgage brokerage website"
-      },
-      {
-        "type": "image",
-        "src": "/img/fort-erie-web-design-donor-compass.png",
-        "alt": "Donor Compass website by Infused Agency for a nonprofit donor-data platform"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — donor-data platform website"
-      },
-      {
-        "type": "image",
-        "src": "/img/fort-erie-website-design-ggs-niagara-landscaping.png",
-        "alt": "GGS Niagara Landscaping site by Infused Agency showing landscape work for a Niagara company"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — landscaping company website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-fort-erie-lincoln-medical-centre.png",
-        "alt": "Lincoln Medical Centre website by Infused Agency for a family physician team in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — family medical practice website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -4117,16 +4098,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -4148,15 +4133,6 @@
           "[SEO in Fort Erie](/seo/fort-erie)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Let’s build something for your business"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us what your Fort Erie business sells and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -4184,7 +4160,7 @@
     "hero": {
       "title": "Grimsby, Ontario Web Design Company",
       "description": "Infused Agency designs and builds websites for businesses in Grimsby, Ontario — the lakeshore shops and restaurants, the trades working the town and the escarpment, and the wine-country businesses a few minutes up the hill. Fast, mobile-friendly sites that make a good first impression and an easy phone call.",
-      "image": "/img/web-design-grimsby-hero.webp",
+      "image": "/img/web-design/cities/web-design-grimsby-hero.webp",
       "imageAlt": "Web design company in Grimsby, Ontario by Infused Agency"
     },
     "blocks": [
@@ -4237,58 +4213,57 @@
         "text": "Sites for Niagara businesses and organizations, from contractors to medical practices. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/web-design-grimsby-canadian-mortgage-authority.png",
-        "alt": "Canadian Mortgage Authority website by Infused Agency for a team of Niagara mortgage brokers"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — mortgage brokerage website"
-      },
-      {
-        "type": "image",
-        "src": "/img/grimsby-web-design-donor-compass.png",
-        "alt": "Donor Compass website by Infused Agency for a donor-data platform serving nonprofits"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — donor-data platform website"
-      },
-      {
-        "type": "image",
-        "src": "/img/grimsby-website-design-ggs-niagara-landscaping.png",
-        "alt": "GGS Niagara Landscaping website built by Infused Agency for a Niagara landscape company"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — landscaping company website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-grimsby-lincoln-medical-centre.png",
-        "alt": "Lincoln Medical Centre website by Infused Agency for family physicians in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — family medical practice website"
-      },
-      {
-        "type": "image",
-        "src": "/img/grimsby-web-design-company-plant-no-01.png",
-        "alt": "Plant No.01 website by Infused Agency for a vegan food factory in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — vegan food factory website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-grimsby-visca-electric.png",
-        "alt": "VISCA Electric website built by Infused Agency for an electrical contractor in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — electrical contractor website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -4457,16 +4432,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
           "[Web design in Fort Erie](/web-design/fort-erie)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -4488,15 +4467,6 @@
           "[SEO in Grimsby](/seo/grimsby)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Let’s build something for your business"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us what your Grimsby business sells and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -4524,7 +4494,7 @@
     "hero": {
       "title": "Niagara Falls, Ontario Web Design Company",
       "description": "Infused Agency designs and builds websites for businesses in Niagara Falls, Ontario — from hotels, attractions and restaurants near the Falls to the trades and professional offices that serve the people who live here. The sites load quickly, work on any device, and make it easy for a visitor or a neighbour to get in touch.",
-      "image": "/img/web-design-niagara-falls-hero.webp",
+      "image": "/img/web-design/cities/web-design-niagara-falls-hero.webp",
       "imageAlt": "Web design company in Niagara Falls, Ontario by Infused Agency"
     },
     "blocks": [
@@ -4577,58 +4547,57 @@
         "text": "A sample of sites for Niagara businesses and organizations. Each one links to our work page, where the projects are described in more detail."
       },
       {
-        "type": "image",
-        "src": "/img/niagara-falls-web-design-visca-electric.png",
-        "alt": "VISCA Electric website by Infused Agency, built for an electrical contractor in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — electrical contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/niagara-falls-website-design-flat-rock-cellars.png",
-        "alt": "Flat Rock Cellars winery website on the Twenty Mile Bench, designed by Infused Agency"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery estate website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-niagara-falls-jerrys-insulating.png",
-        "alt": "Website for Jerry's Insulating, an insulation contractor serving Niagara and Hamilton-Burlington"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — insulation contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/niagara-falls-web-design-company-kd-flowers.png",
-        "alt": "KD Flowers wedding florist website, a boutique Niagara florist's site by Infused Agency"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — wedding florist website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-niagara-falls-cass-a-bella-construction.png",
-        "alt": "Cass-A-Bella Construction website, showing past work for a Niagara custom home builder"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — custom builder website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-niagara-falls-canadian-mortgage-authority.png",
-        "alt": "Canadian Mortgage Authority website for a team of mortgage brokers serving the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — mortgage brokerage website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -4801,16 +4770,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
           "[Web design in Fort Erie](/web-design/fort-erie)",
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -4832,15 +4805,6 @@
           "[Local SEO services](/seo)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Ready to talk about your website?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us what you sell and what your website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -4868,7 +4832,7 @@
     "hero": {
       "title": "Niagara-on-the-Lake Web Design Company",
       "description": "Infused Agency builds websites for the wineries, inns, heritage storefronts and trades of Niagara-on-the-Lake. Sites that look like the businesses behind them, load quickly on a phone, and make it simple for a visitor planning a trip — or a neighbour down the road — to book, buy or get in touch.",
-      "image": "/img/web-design-niagara-on-the-lake-hero.webp",
+      "image": "/img/web-design/cities/web-design-niagara-on-the-lake-hero.webp",
       "imageAlt": "Web design services in Niagara-on-the-Lake by Infused Agency"
     },
     "blocks": [
@@ -4921,58 +4885,57 @@
         "text": "Sites for Niagara businesses and organizations, including a winery on the Twenty Mile Bench. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/niagara-on-the-lake-website-design-flat-rock-cellars.png",
-        "alt": "Website for Flat Rock Cellars, a winery estate on the Twenty Mile Bench in Niagara-on-the-Lake"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery website for the Twenty Mile Bench"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-niagara-on-the-lake-jerrys-insulating.png",
-        "alt": "Jerry's Insulating website by Infused Agency, for an insulation contractor in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — home services website"
-      },
-      {
-        "type": "image",
-        "src": "/img/niagara-on-the-lake-web-design-company-kd-flowers.png",
-        "alt": "KD Flowers website for a boutique wedding florist in Niagara, designed by Infused Agency"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — wedding florist website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-niagara-on-the-lake-cass-a-bella-construction.png",
-        "alt": "Cass-A-Bella Construction website presenting a Niagara custom home builder's projects"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — builder website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-niagara-on-the-lake-canadian-mortgage-authority.png",
-        "alt": "Canadian Mortgage Authority site by Infused Agency for Niagara mortgage brokers"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — brokerage website"
-      },
-      {
-        "type": "image",
-        "src": "/img/niagara-on-the-lake-web-design-donor-compass.png",
-        "alt": "Donor Compass website for a donor-data platform used by nonprofits across North America"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — donor-data platform website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -5145,16 +5108,20 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
           "[Web design in Fort Erie](/web-design/fort-erie)",
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -5176,15 +5143,6 @@
           "[SEO in Niagara-on-the-Lake](/seo/niagara-on-the-lake)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Let’s build something for your business"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us about your winery, inn, shop or trade, and what your website should be doing for it. We will map out what the project needs — no obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -5212,7 +5170,7 @@
     "hero": {
       "title": "Port Colborne Web Design Company",
       "description": "Infused Agency designs and builds websites for businesses in Port Colborne — the lakefront shops and restaurants, the marine services and trades along the canal, and the local businesses that have served South Niagara for years. Fast, mobile-friendly sites that turn searches into visits and calls.",
-      "image": "/img/web-design-port-colborne-hero.webp",
+      "image": "/img/web-design/cities/web-design-port-colborne-hero.webp",
       "imageAlt": "Web design company serving Port Colborne, Ontario by Infused Agency"
     },
     "blocks": [
@@ -5265,58 +5223,57 @@
         "text": "Sites for Niagara businesses and organizations, from landscapers to wineries. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/port-colborne-website-design-ggs-niagara-landscaping.png",
-        "alt": "GGS Niagara Landscaping website by Infused Agency for a Niagara landscape and garden company"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — landscaping company website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-port-colborne-lincoln-medical-centre.png",
-        "alt": "Lincoln Medical Centre website by Infused Agency for family physicians in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — family medical practice website"
-      },
-      {
-        "type": "image",
-        "src": "/img/port-colborne-web-design-company-plant-no-01.png",
-        "alt": "Plant No.01 website by Infused Agency for a vegan food factory in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — vegan food factory website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-port-colborne-visca-electric.png",
-        "alt": "VISCA Electric website built by Infused Agency for an electrical contractor serving Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — electrical contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-port-colborne-flat-rock-cellars.png",
-        "alt": "Flat Rock Cellars website by Infused Agency for a winery in the Niagara Escarpment wine region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery website"
-      },
-      {
-        "type": "image",
-        "src": "/img/port-colborne-web-design-jerrys-insulating.png",
-        "alt": "Jerry's Insulating website by Infused Agency for an insulation contractor in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — insulation contractor website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -5485,7 +5442,7 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
@@ -5493,8 +5450,12 @@
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -5516,15 +5477,6 @@
           "[SEO in Port Colborne](/seo/port-colborne)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Ready to talk about your website?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us about your Port Colborne business and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -5552,7 +5504,7 @@
     "hero": {
       "title": "St. Catharines Web Design Company",
       "description": "Infused Agency builds fast, mobile-friendly websites for businesses in St. Catharines and across Niagara. This page explains how we design and build, what a project with us looks like from the first conversation to launch day, and how to weigh us against the other companies on your list.",
-      "image": "/img/web-design-st-catharines.jpg",
+      "image": "/img/web-design/cities/web-design-st-catharines.jpg",
       "imageAlt": "Web design in St. Catharines by Infused Agency"
     },
     "blocks": [
@@ -5635,9 +5587,13 @@
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
+          "[Web design in Smithville](/web-design/smithville)",
           "[Web design in Thorold](/web-design/thorold)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -5712,94 +5668,57 @@
         "text": "A sample of sites for businesses in and around Niagara. Each one links to our work page, where the projects are described in more detail."
       },
       {
-        "type": "image",
-        "src": "/img/st-catharines-web-design-visca-electric.png",
-        "alt": "Website design for VISCA Electric, an electrical contractor serving St. Catharines and Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — website for a Niagara electrical contractor"
-      },
-      {
-        "type": "image",
-        "src": "/img/st-catharines-website-design-flat-rock-cellars.png",
-        "alt": "Website design for Flat Rock Cellars, a winery on Niagara's Twenty Mile Bench"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery website for the Twenty Mile Bench"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-st-catharines-jerrys-insulating.png",
-        "alt": "Website design for Jerry's Insulating, an insulation contractor serving St. Catharines, Niagara and Hamilton-Burlington"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — website for an insulation contractor"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-st-catharines-kd-flowers.png",
-        "alt": "Website design for KD Flowers, a boutique wedding florist in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — website for a boutique wedding florist"
-      },
-      {
-        "type": "image",
-        "src": "/img/st-catharines-web-design-cass-a-bella-construction.png",
-        "alt": "Website design for Cass-A-Bella Construction, a custom home builder working in St. Catharines and beyond"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — website for a custom home builder"
-      },
-      {
-        "type": "image",
-        "src": "/img/website-design-st-catharines-canadian-mortgage-authority.png",
-        "alt": "Website design for Canadian Mortgage Authority, a team of mortgage brokers serving the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — website for a Niagara mortgage brokerage"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-st-catharines-donor-compass.png",
-        "alt": "Website design for Donor Compass, a donor-data platform for nonprofits across North America"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — website for a nonprofit donor-data platform"
-      },
-      {
-        "type": "image",
-        "src": "/img/st-catharines-custom-web-design-ggs-niagara-landscaping.png",
-        "alt": "Website design for GGS Niagara Landscaping, a landscape maintenance and garden design company"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — website for a Niagara landscaping company"
-      },
-      {
-        "type": "image",
-        "src": "/img/website-design-st-catharines-lincoln-medical-centre.png",
-        "alt": "Website design for Lincoln Medical Centre, a family physician team in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — website for a family medical practice"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-st-catharines-plant-no-01.png",
-        "alt": "Website design for Plant No.01, a vegan food factory located in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — website for a Niagara vegan food factory"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -5933,9 +5852,7 @@
       {
         "type": "list",
         "ordered": false,
-        "items": [
-          "[SEO for wineries in Niagara](/seo/for-wineries-niagara)"
-        ]
+        "items": ["[SEO for wineries in Niagara](/seo/for-wineries-niagara)"]
       },
       {
         "type": "heading",
@@ -5998,9 +5915,7 @@
       {
         "type": "list",
         "ordered": false,
-        "items": [
-          "[SEO for accountants](/seo/for-accountants-niagara)"
-        ]
+        "items": ["[SEO for accountants](/seo/for-accountants-niagara)"]
       },
       {
         "type": "heading",
@@ -6073,7 +5988,7 @@
           },
           {
             "q": "Do you actually work with businesses in St. Catharines?",
-            "a": "Yes — this is our home base. Our office is at St. Catharines, Ontario · Serving the Niagara Region \"web design company St. Catherines\" — a spelling that gets used often — and by every variation of \"web design St. Catharines\" you can imagine. Whatever brought you here, we are down the road."
+            "a": "Yes — St. Catharines is our home base and the city our office is in, and we work with businesses across the Niagara Region from here. Most people find this page by searching for a web design company in St. Catharines or a close variation of it; whatever the search was, the answer is the same: we are local."
           },
           {
             "q": "Do you also handle SEO, or just the website?",
@@ -6086,17 +6001,32 @@
           {
             "q": "Can you redesign my existing site without hurting my rankings?",
             "a": "In most cases, yes — a redesign and keeping your rankings are not a trade-off. Before rebuilding we study what your current site ranks for, keep the purpose and addresses of your working pages intact where possible, and set up redirects for any address that has to change. No one can promise a specific ranking, but a redesign done carefully protects what you already have and usually fixes the problems that were holding the old site back."
+          },
+          {
+            "q": "How long does it take to build a website?",
+            "a": "It depends mostly on the number of pages, how ready your content and photos are, and whether an online store or booking system is part of the build. A straightforward business site can be live within a few weeks of approving the quote; larger projects take longer. You get a clear timeline alongside your written quote, so you know what to expect before any work starts."
+          },
+          {
+            "q": "Will I be able to update the website myself?",
+            "a": "Yes. We build on WordPress precisely so you are not dependent on a developer for every small change. Every WordPress project includes a walkthrough covering how to update pages, posts and photos, and you are welcome to email us for anything bigger — having the company that built your site in St. Catharines means help is close by."
+          },
+          {
+            "q": "Do you write the content, or do I provide it?",
+            "a": "There is no rule. Content is normally something you provide, since you know your business inside out — the services, the photos, the way you talk to customers. If you would rather not write it, we can write your website copy for you at an additional cost, and that is built into the project scope when we quote."
+          },
+          {
+            "q": "Can you build an online store for my business?",
+            "a": "Yes. For product-based businesses we design and build e-commerce stores on Shopify and WooCommerce, with product pages, carts and checkout set up to be quick for customers to use and easy for you to manage day to day."
+          },
+          {
+            "q": "Will my website show up in ChatGPT and other AI searches?",
+            "a": "A growing number of people ask AI assistants for recommendations instead of searching first, and those tools rely on the same foundations as Google: fast pages, clean structure and clear, well-organized content. Every build includes that groundwork plus schema markup so your pages are easy for AI tools to pick up, and our SEO and AI search services continue the work after launch if you want to keep growing there."
+          },
+          {
+            "q": "Do you host the websites you build?",
+            "a": "We do not sell hosting as a separate service. What we do is recommend hosting that suits your site, walk you through setting it up, and help you keep it current after launch. You are never locked into paying us for anything beyond the work you actually need."
           }
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Ready to talk about your website?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us where your business is today and where you want it to be, and we will map out what your project needs. No obligation, no jargon."
       },
       {
         "type": "eyebrow",
@@ -6144,7 +6074,7 @@
     "hero": {
       "title": "Thorold Web Design Company",
       "description": "Infused Agency builds websites for businesses in Thorold and South Niagara — the trades and services that work the canal corridor, the shops and offices downtown, and the families running businesses from the neighbourhoods on either side of the locks. Fast sites that are easy to use on a phone.",
-      "image": "/img/web-design-thorold-hero.webp",
+      "image": "/img/web-design/cities/web-design-thorold-hero.webp",
       "imageAlt": "Web design company serving Thorold, Ontario by Infused Agency"
     },
     "blocks": [
@@ -6197,58 +6127,57 @@
         "text": "Sites for Niagara businesses and organizations, from wineries to trades. Each image links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/thorold-web-design-donor-compass.png",
-        "alt": "Donor Compass website by Infused Agency for a donor-data platform used by Canadian nonprofits"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — donor-data platform website"
-      },
-      {
-        "type": "image",
-        "src": "/img/thorold-website-design-ggs-niagara-landscaping.png",
-        "alt": "GGS Niagara Landscaping website built by Infused Agency for a Niagara landscape company"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — landscaping company website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-company-thorold-lincoln-medical-centre.png",
-        "alt": "Lincoln Medical Centre website by Infused Agency for family physicians in the Niagara region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Lincoln Medical Centre — family medical practice website"
-      },
-      {
-        "type": "image",
-        "src": "/img/thorold-web-design-company-plant-no-01.png",
-        "alt": "Plant No.01 website by Infused Agency for a vegan food factory in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Plant No.01 — vegan food factory website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-thorold-visca-electric.png",
-        "alt": "VISCA Electric website built by Infused Agency for an electrical contractor in Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "VISCA Electric — electrical contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-thorold-flat-rock-cellars.png",
-        "alt": "Flat Rock Cellars website by Infused Agency for a winery in the Niagara Escarpment wine region"
-      },
-      {
-        "type": "paragraph",
-        "text": "Flat Rock Cellars — winery website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -6417,7 +6346,7 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
@@ -6425,8 +6354,12 @@
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
-          "[Web design in Welland](/web-design/welland)"
+          "[Web design in Smithville](/web-design/smithville)",
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in Welland](/web-design/welland)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -6448,15 +6381,6 @@
           "[SEO in Thorold](/seo/thorold)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Let’s build something for your business"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us what your Thorold business sells and what the website should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -6484,7 +6408,7 @@
     "hero": {
       "title": "Welland Web Design Company",
       "description": "Infused Agency designs and builds websites for Welland businesses — the trades and manufacturers along the canal, the family-run shops downtown, and the offices that serve this city every day. Fast, mobile-friendly sites that make it obvious who you are and how to reach you.",
-      "image": "/img/web-design-welland-hero.webp",
+      "image": "/img/web-design/cities/web-design-welland-hero.webp",
       "imageAlt": "Web design company for Welland, Ontario businesses by Infused Agency"
     },
     "blocks": [
@@ -6537,58 +6461,57 @@
         "text": "A sample of sites for Niagara businesses, including contractors, a florist and a landscaping company. Each one links to our work page."
       },
       {
-        "type": "image",
-        "src": "/img/web-design-company-welland-jerrys-insulating.png",
-        "alt": "Website built by Infused Agency for Jerry's Insulating, serving Niagara and Hamilton-Burlington"
-      },
-      {
-        "type": "paragraph",
-        "text": "Jerry's Insulating — insulation contractor website"
-      },
-      {
-        "type": "image",
-        "src": "/img/welland-web-design-company-kd-flowers.png",
-        "alt": "KD Flowers florist website designed by Infused Agency for a Niagara wedding florist"
-      },
-      {
-        "type": "paragraph",
-        "text": "KD Flowers — boutique florist website"
-      },
-      {
-        "type": "image",
-        "src": "/img/custom-website-design-welland-cass-a-bella-construction.png",
-        "alt": "Cass-A-Bella Construction website showing custom building work by a Niagara builder"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cass-A-Bella Construction — custom home builder website"
-      },
-      {
-        "type": "image",
-        "src": "/img/web-design-welland-canadian-mortgage-authority.png",
-        "alt": "Canadian Mortgage Authority website by Infused Agency for mortgage brokers serving Niagara"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canadian Mortgage Authority — mortgage brokerage website"
-      },
-      {
-        "type": "image",
-        "src": "/img/welland-web-design-donor-compass.png",
-        "alt": "Donor Compass website by Infused Agency for a nonprofit donor-data platform"
-      },
-      {
-        "type": "paragraph",
-        "text": "Donor Compass — donor-data platform website"
-      },
-      {
-        "type": "image",
-        "src": "/img/welland-website-design-ggs-niagara-landscaping.png",
-        "alt": "GGS Niagara Landscaping website by Infused Agency for a Niagara landscape company"
-      },
-      {
-        "type": "paragraph",
-        "text": "GGS Niagara Landscaping — landscaping company website"
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
       },
       {
         "type": "eyebrow",
@@ -6757,7 +6680,7 @@
         "type": "list",
         "ordered": false,
         "items": [
-          "[St. Catharines web design](/web-design/st-catharines)",
+          "[Web design in St. Catharines](/web-design/st-catharines)",
           "[Web design in Beamsville](/web-design/beamsville)",
           "[Web design in Crystal Beach](/web-design/crystal-beach)",
           "[Web design in Fonthill](/web-design/fonthill)",
@@ -6765,8 +6688,12 @@
           "[Web design in Grimsby](/web-design/grimsby)",
           "[Web design in Niagara Falls](/web-design/niagara-falls)",
           "[Web design in Niagara-on-the-Lake](/web-design/niagara-on-the-lake)",
+          "[Web design in Pelham](/web-design/pelham)",
           "[Web design in Port Colborne](/web-design/port-colborne)",
-          "[Web design in Thorold](/web-design/thorold)"
+          "[Web design in Smithville](/web-design/smithville)",
+          "[Web design in Thorold](/web-design/thorold)",
+          "[Web design in Wainfleet](/web-design/wainfleet)",
+          "[Web design in West Lincoln](/web-design/west-lincoln)"
         ]
       },
       {
@@ -6788,15 +6715,6 @@
           "[SEO in Welland](/seo/welland)",
           "[Infused Agency home](/)"
         ]
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Ready to talk about your website?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell us what your Welland business sells and what the site should be doing, and we will map out what the project needs. No obligation, no jargon."
       }
     ],
     "breadcrumbs": [
@@ -6810,6 +6728,1246 @@
       },
       {
         "name": "Welland"
+      }
+    ]
+  },
+  {
+    "pathname": "/web-design/pelham",
+    "kind": "web-design",
+    "eyebrow": "Web design",
+    "title": "Web Design Company in Pelham | Infused Agency",
+    "description": "Pelham web design company building fast, mobile-friendly websites for businesses in Fonthill, Fenwick, Ridgeville and the surrounding Township. Book a free consultation.",
+    "canonical": "https://infused.agency/web-design/pelham",
+    "h1": "Pelham Web Design Company",
+    "hero": {
+      "title": "Pelham Web Design Company",
+      "description": "Infused Agency builds websites for businesses across the Township of Pelham — Fonthill’s village core, Fenwick, Ridgeville and the farms and trades in between. Sites that are fast, easy to use on a phone, and honest about what you do.",
+      "image": "/img/web-design/cities/web-design-pelham-hero.webp",
+      "imageAlt": "Web design company serving Pelham, Ontario by Infused Agency"
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "Pelham, Township of Pelham"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design for Pelham businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pelham is a township made of several distinct communities rather than one town. A customer may describe themselves as being in Fonthill, name Fenwick on a form, or simply type “near me” while standing in Ridgeville — and each of those searches behaves differently. A business that only markets itself as “Pelham” can be visible everywhere in theory and nowhere in particular, which is why the structure of your website matters as much as its looks."
+      },
+      {
+        "type": "paragraph",
+        "text": "The local economy is a blend of escarpment agriculture, seasonal visitors who climb the Short Hills Bench for trails and wineries, and the village trade of Fonthill and Fenwick. Whether you run a shop, a professional practice or a service business covering the whole township, your website is usually the first conversation a customer has with you — and it either answers their questions quickly or sends them to the next name on the list."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Where we work"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where we work in Pelham"
+      },
+      {
+        "type": "paragraph",
+        "text": "Our office is in St. Catharines, a short drive down the escarpment from Pelham, and we work with township businesses throughout the year. We can meet in person at your shop, farm or job site, or run the whole project remotely by phone, email and video call — whichever fits the way you like to work."
+      },
+      {
+        "type": "map",
+        "place": "Pelham, Ontario, Canada",
+        "title": "Map of Pelham, Ontario"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Recent projects"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Websites we have designed and built"
+      },
+      {
+        "type": "lead",
+        "text": "A sample of sites for Niagara businesses and organizations. Each one links to our work page, where the projects are described in more detail."
+      },
+      {
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "What you get"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What a Pelham website includes"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Pages built around Pelham’s communities"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because people search for Fonthill, Fenwick and Ridgeville separately, we plan a page structure that says clearly what you do and where you do it — the township, your core village and the neighbours you travel to. A website development company that skips that planning leaves a business competing with itself; we build the map in from day one."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Custom design, no template shortcuts"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every site we design is custom: layout, pages and calls to action planned for your customers, not poured into a stock theme by a web design company that will never meet you."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "WordPress you can update yourself"
+      },
+      {
+        "type": "paragraph",
+        "text": "Content-managed sites are usually WordPress, and we walk you through them before launch — seasonal hours, new services and photos should take minutes, not tickets."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Responsive on every screen"
+      },
+      {
+        "type": "paragraph",
+        "text": "Most Pelham searches happen on a phone half-way down Hwy 20 or on a farm road, so every build is checked across phones, tablets, laptops and desktops before launch."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Search foundations included"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fast load times, mobile optimization, clean structure and schema markup are part of everything we build. That groundwork is what helps your pages surface on Google, and what AI search tools read when someone asks about businesses in Pelham."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each project opens with a free consultation, followed by a written quote for the work it actually needs. If you are comparing web design companies in Pelham, asking who designs the site and what happens after launch is the fastest way to tell proposals apart. The full path from first call to launch day is written out on our [web design services](/web-design) page."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keeping your rankings"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Redesigning a Pelham website without losing rankings"
+      },
+      {
+        "type": "paragraph",
+        "text": "Many township businesses run on a site that has quietly earned steady search traffic for years, so it is sensible to treat a redesign carefully. The risk, however, is smaller than it feels: what search engines value about your pages is their content and structure, and a new design can carry all of that forward."
+      },
+      {
+        "type": "paragraph",
+        "text": "We work it out in advance. Before any rebuild we document what your current site ranks for and why, preserve the web addresses of pages that are earning their keep, and set up redirects where an address has to change. After launch we watch how the site performs and fix anything that slipped — and the slow pages and hard-to-find contact details of the old design get repaired along the way, which usually helps rather than hurts."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you would like an outside opinion on what a redesign would mean for the rankings you hold today, ask us — reviewing existing sites is free of charge and free of obligation."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What it is like to work with us"
+      },
+      {
+        "type": "lead",
+        "text": "A few words from businesses we have worked with, in their own words."
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+        "person": "Lucas Folino",
+        "role": "Owner",
+        "company": "Fred's Concrete",
+        "avatar": "/img/testimonial-lucas-folino-niagara.png",
+        "avatarAlt": "Lucas Folino, owner of Fred's Concrete, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+        "person": "Brandi May",
+        "role": "Owner",
+        "company": "Brandi May Psychotherapy",
+        "avatar": "/img/testimonial-brandi-may-niagara.png",
+        "avatarAlt": "Brandi May, owner of Brandi May Psychotherapy, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.",
+        "person": "Sandro Visca",
+        "role": "Owner",
+        "company": "VISCA Electric",
+        "avatar": "/img/testimonial-sandro-visca-niagara.png",
+        "avatarAlt": "Sandro Visca, owner of VISCA Electric, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "faqs",
+        "items": [
+          {
+            "q": "What does a website cost for a Pelham business?",
+            "a": "There is no standard price, because no two Pelham projects need the same site. What shapes the quote: the number of pages, whether you need a store, booking or forms, how ready your content is, and whether you would like us to write it. After a free consultation we send a written quote that spells out exactly what your project involves — no charge for the consultation, no obligation."
+          },
+          {
+            "q": "Do you work with Pelham businesses in person or remotely?",
+            "a": "Either. Pelham is a short drive from our St. Catharines office, and we are happy to meet owners at their shop, farm, office or job site in Fonthill, Fenwick or Ridgeville. If remote suits you better, projects run smoothly by phone, email and video call — the process and the written quote are exactly the same."
+          },
+          {
+            "q": "Can you handle SEO for my Pelham business as well as the website?",
+            "a": "Yes. Every build includes on-page search foundations: fast pages, clean structure, schema markup and mobile optimization. Ongoing SEO — rankings, map results and AI search visibility — is a dedicated service after launch. Many businesses start with the website and continue with search work; others only need the site."
+          },
+          {
+            "q": "Can my current site be redesigned without losing its search rankings?",
+            "a": "Usually, yes. Before rebuilding we study what your existing site ranks for and why, keep the web addresses of pages that work, and set up redirects for any that must change. No one can promise a specific ranking, but a redesign handled this way protects what you have earned while repairing what was holding the old site back."
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "Across the region"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design across Niagara"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pelham is one of several Niagara communities we build for. The village core of [Fonthill](/web-design/fonthill) sits inside the same township, and the region’s bigger hubs are short drives away. Every web design page we keep for Niagara is linked below."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": []
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keep exploring"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Related pages"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[Web design services](/web-design)",
+          "[Our work](/results)",
+          "[Get a quote](/get-a-quote)",
+          "[SEO in Pelham](/seo/pelham)",
+          "[SEO in Fonthill](/seo/fonthill)"
+        ]
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Web Design",
+        "href": "/web-design"
+      },
+      {
+        "name": "Pelham"
+      }
+    ]
+  },
+  {
+    "pathname": "/web-design/smithville",
+    "kind": "web-design",
+    "eyebrow": "Web design",
+    "title": "Web Design Company in Smithville | Infused Agency",
+    "description": "Smithville web design company building fast, mobile-friendly websites for West Lincoln businesses — farms, Main Street shops and trades. Book a free consultation.",
+    "canonical": "https://infused.agency/web-design/smithville",
+    "h1": "Smithville Web Design Company",
+    "hero": {
+      "title": "Smithville Web Design Company",
+      "description": "Infused Agency builds websites for Smithville businesses and the rest of West Lincoln — the village’s shops and practices, the trades who work the township, and the farm operations that keep it fed. Sites that are fast, mobile-friendly and clear about where you work.",
+      "image": "/img/web-design/cities/web-design-smithville-hero.webp",
+      "imageAlt": "Web design company serving Smithville, Ontario by Infused Agency"
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "Smithville, West Lincoln"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design for Smithville businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "Smithville is the working heart of West Lincoln: a compact village of shops, practices and service businesses surrounded by some of Niagara’s best farmland. Customers here rarely browse — they search, decide and call. A homeowner in the village, a farm operation on the outskirts and a contractor travelling between Grimsby, Welland and Binbrook all start the same way: a quick search on a phone. The website that answers best wins the job."
+      },
+      {
+        "type": "paragraph",
+        "text": "The challenge is geographic rather than competitive. Smithville searches mix with Grimsby and Welland, and a business that says only “West Lincoln” can lose enquiries from customers three minutes away who typed a town name instead. A well-planned website says plainly what you do, which communities you serve and how to reach you — which is the core of every project we take on here."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Where we work"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where we work in Smithville"
+      },
+      {
+        "type": "paragraph",
+        "text": "We are based in St. Catharines, roughly twenty minutes from Smithville, and we work with West Lincoln businesses year-round. Meetings in person at your shop, office or farm are easy to arrange, and every stage of a project can also run by phone, email and video call."
+      },
+      {
+        "type": "map",
+        "place": "Smithville, Ontario, Canada",
+        "title": "Map of Smithville, Ontario"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Recent projects"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Websites we have designed and built"
+      },
+      {
+        "type": "lead",
+        "text": "A sample of sites for Niagara businesses and organizations. Each one links to our work page, where the projects are described in more detail."
+      },
+      {
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "What you get"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What a Smithville website includes"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Service-area clarity built in"
+      },
+      {
+        "type": "paragraph",
+        "text": "West Lincoln is a township, not a town. We plan the pages so a customer in Smithville, Grimsby or Welland can all tell within seconds whether you come to them — and search engines can read the same thing. That structure is what separates a website from a business card."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Trades pages that get the call"
+      },
+      {
+        "type": "paragraph",
+        "text": "The contractors who keep village homes and township farms working need sites that put the work first: services described plainly, areas covered, and a phone number that dials the moment it is tapped."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Custom design, no template shortcuts"
+      },
+      {
+        "type": "paragraph",
+        "text": "As a custom website design company we build every Smithville site from scratch around your brand and your customers — layout, pages and calls to action planned for how people actually search for what you sell."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "WordPress you can update yourself"
+      },
+      {
+        "type": "paragraph",
+        "text": "Content-managed sites are usually WordPress, and we walk you through them before launch — new hours, new services and fresh photos should take minutes, not tickets."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Search foundations included"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fast load times, mobile optimization, clean structure and schema markup are part of every build. That groundwork is what helps your pages surface on Google, and what AI search tools read when someone asks about businesses in Smithville or the wider township."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each project opens with a free consultation and a written quote, because that is the only honest way to price a web development company’s work: against the site you actually need rather than a package somebody else bought. If you would like the full process in detail, it is written out on our [web design services](/web-design) page."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keeping your rankings"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Redesigning a Smithville website without losing rankings"
+      },
+      {
+        "type": "paragraph",
+        "text": "A site that already brings the phone in quietly is something to handle with care, and it is worth saying that plainly: a redesign touches the pages that feed your business. The comfort is that search engines value content and structure, not colours — so every strong page has something a new build can carry forward without a fight."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before anything is rebuilt, we document what your current site ranks for and why, keep the web addresses of pages that are earning their keep, and set up redirects for the ones that must change. After launch we watch how the site performs and fix anything that slipped. In practice the redesign also repairs what was holding the old site back — slow pages, thin service descriptions, contact details that hide on a phone."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you want a second opinion before committing to anything, bring your current site to a free consultation. We will tell you what we see, whether that is a rebuild, a focused update or a site that should be left as it is."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What it is like to work with us"
+      },
+      {
+        "type": "lead",
+        "text": "A few words from businesses we have worked with, in their own words."
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+        "person": "Lucas Folino",
+        "role": "Owner",
+        "company": "Fred's Concrete",
+        "avatar": "/img/testimonial-lucas-folino-niagara.png",
+        "avatarAlt": "Lucas Folino, owner of Fred's Concrete, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+        "person": "Brandi May",
+        "role": "Owner",
+        "company": "Brandi May Psychotherapy",
+        "avatar": "/img/testimonial-brandi-may-niagara.png",
+        "avatarAlt": "Brandi May, owner of Brandi May Psychotherapy, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.",
+        "person": "Sandro Visca",
+        "role": "Owner",
+        "company": "VISCA Electric",
+        "avatar": "/img/testimonial-sandro-visca-niagara.png",
+        "avatarAlt": "Sandro Visca, owner of VISCA Electric, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "faqs",
+        "items": [
+          {
+            "q": "What does a website cost for a Smithville business?",
+            "a": "There is no standard price, because no two Smithville projects are alike. What shapes the quote: the number of pages, whether you need a store, booking or forms, how ready your content is, and whether you would like us to write it. After a free consultation we send a written quote that spells out exactly what your project involves — no charge for the consultation, no obligation."
+          },
+          {
+            "q": "Do you work with Smithville businesses in person or remotely?",
+            "a": "Either. Smithville is about twenty minutes from our St. Catharines office, so meeting at your shop, office or farm is easy to arrange. If remote suits you better, projects run smoothly by phone, email and video call — the written quote and the design process are exactly the same."
+          },
+          {
+            "q": "Can you handle SEO for my Smithville business as well as the website?",
+            "a": "Yes. Every build includes on-page search foundations: fast pages, clean structure, schema markup and mobile optimization. Ongoing SEO — rankings, map results and AI search visibility — is a dedicated service after launch. Many businesses start with the website and continue with search work; others only need the site."
+          },
+          {
+            "q": "Can my current site be redesigned without losing its search rankings?",
+            "a": "Usually, yes. Before rebuilding we study what your existing site ranks for and why, keep the web addresses of pages that work, and set up redirects for any that must change. No one can promise a specific ranking, but a redesign handled this way protects what you have earned while repairing what was holding the old site back."
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "Across the region"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design across Niagara"
+      },
+      {
+        "type": "paragraph",
+        "text": "Smithville is one of several Niagara communities we build for. Down the escarpment sits [Grimsby](/web-design/grimsby), and the city pages for [Welland](/web-design/welland) and [St. Catharines](/web-design/st-catharines) are close by. Every web design page we keep for Niagara is linked below."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": []
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keep exploring"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Related pages"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[Web design services](/web-design)",
+          "[Our work](/results)",
+          "[Get a quote](/get-a-quote)",
+          "[SEO in Smithville](/seo/smithville)",
+          "[SEO in West Lincoln](/seo/west-lincoln)"
+        ]
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Web Design",
+        "href": "/web-design"
+      },
+      {
+        "name": "Smithville"
+      }
+    ]
+  },
+  {
+    "pathname": "/web-design/wainfleet",
+    "kind": "web-design",
+    "eyebrow": "Web design",
+    "title": "Web Design Company in Wainfleet | Infused Agency",
+    "description": "Wainfleet web design company building fast, mobile-friendly websites for farms, lakeside businesses and trades across the township. Book a free consultation.",
+    "canonical": "https://infused.agency/web-design/wainfleet",
+    "h1": "Wainfleet Web Design Company",
+    "hero": {
+      "title": "Wainfleet Web Design Company",
+      "description": "Infused Agency builds websites for Wainfleet businesses — the farm operations that anchor the township, the trades who work around them, and the businesses that serve the Lake Erie shoreline. Sites that are fast, mobile-friendly and clear about what you do.",
+      "image": "/img/web-design/cities/web-design-wainfleet-hero.webp",
+      "imageAlt": "Web design company serving Wainfleet, Ontario by Infused Agency"
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "Wainfleet, Township of Wainfleet"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design for Wainfleet businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wainfleet is one of the quietest corners of Niagara, and that quiet tells you a lot about how to build a website for it. The township runs on agriculture — farms, greenhouses and rural trades — and on the customers who come for the shoreline on the south and the country roads in between. When someone here searches, it is usually on a phone, with a specific need and a short list of options. If your site cannot show what you do and where you travel in a couple of taps, the enquiry goes to whoever can."
+      },
+      {
+        "type": "paragraph",
+        "text": "Distance matters differently here, too. A Wainfleet farm supplier may draw customers from Port Colborne, Welland and Fort Erie; a lakeside business may draw from Toronto visitors planning a weekend. Both need a website that says clearly where customers come from — which is exactly the kind of planning we do before any design work starts."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Where we work"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where we work in Wainfleet"
+      },
+      {
+        "type": "paragraph",
+        "text": "Our office is in St. Catharines, and Wainfleet is a short drive south along Hwy 3. We meet township businesses in person at their farm, yard or shop when it helps, and run the rest of the project remotely by phone, email and video call — either way, the process and the written quote are the same."
+      },
+      {
+        "type": "map",
+        "place": "Wainfleet, Ontario, Canada",
+        "title": "Map of Wainfleet, Ontario"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Recent projects"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Websites we have designed and built"
+      },
+      {
+        "type": "lead",
+        "text": "A sample of sites for Niagara businesses and organizations. Each one links to our work page, where the projects are described in more detail."
+      },
+      {
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "What you get"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What a Wainfleet website includes"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Sites for farms and rural operations"
+      },
+      {
+        "type": "paragraph",
+        "text": "Agricultural and rural businesses need a site that shows the operation, the products or services, and the townships covered — with hours and directions that are obvious on a phone. Real photos and plain descriptions do the selling before anyone calls."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Trades pages that get the call"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rural trades live and die by the phone. Your services, your coverage and a tap-to-call number come first; everything else on the page supports them."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Custom design, no template shortcuts"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every site is designed from scratch around your brand and your customers. One photo is worth more here than a stock template ever was, so we build pages that put your real work up front."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "WordPress you can update yourself"
+      },
+      {
+        "type": "paragraph",
+        "text": "Content-managed sites are usually WordPress, and we walk you through them before launch — seasonal hours, harvest notices and new photos should take minutes, not tickets."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Search foundations included"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fast load times, mobile optimization, clean structure and schema markup are part of every build. That groundwork is what helps your pages surface on Google, and what AI search tools read when someone asks about businesses in Wainfleet."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each project opens with a free consultation and a written quote for the work it actually needs. When owners compare web design companies in rural townships like this one, the deciding questions are usually the same: who designs the site, what happens after launch, and how will my customers find me. We answer all three in writing before you commit. The full process is written out on our [web design services](/web-design) page."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keeping your rankings"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Redesigning a Wainfleet website without losing rankings"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rural sites often carry disproportionate weight: one well-ranked page may bring a large share of a season’s enquiries. The good news is that search engines value content and structure rather than layout, which means a redesign can preserve the rankings your pages have earned while freshening everything around them."
+      },
+      {
+        "type": "paragraph",
+        "text": "We work it out in advance: document what your current site ranks for and why, keep the web addresses of pages that are working, and set up redirects anywhere an address must change. After launch, we monitor how the site performs and repair what slipped — and use the rebuild to fix the slow pages and buried contact details that were costing you enquiries anyway."
+      },
+      {
+        "type": "paragraph",
+        "text": "A free consultation is the lowest-stakes way to see what a redesign would mean for the traffic you hold today. Bring your current site and we will tell you what we see."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What it is like to work with us"
+      },
+      {
+        "type": "lead",
+        "text": "A few words from businesses we have worked with, in their own words."
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+        "person": "Lucas Folino",
+        "role": "Owner",
+        "company": "Fred's Concrete",
+        "avatar": "/img/testimonial-lucas-folino-niagara.png",
+        "avatarAlt": "Lucas Folino, owner of Fred's Concrete, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+        "person": "Brandi May",
+        "role": "Owner",
+        "company": "Brandi May Psychotherapy",
+        "avatar": "/img/testimonial-brandi-may-niagara.png",
+        "avatarAlt": "Brandi May, owner of Brandi May Psychotherapy, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.",
+        "person": "Sandro Visca",
+        "role": "Owner",
+        "company": "VISCA Electric",
+        "avatar": "/img/testimonial-sandro-visca-niagara.png",
+        "avatarAlt": "Sandro Visca, owner of VISCA Electric, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "faqs",
+        "items": [
+          {
+            "q": "What does a website cost for a Wainfleet business?",
+            "a": "There is no standard price, because no two Wainfleet projects need the same site. What shapes the quote: the number of pages, whether you need a store, booking or forms, how ready your content is, and whether you would like us to write it. After a free consultation we send a written quote that spells out exactly what your project involves — no charge for the consultation, no obligation."
+          },
+          {
+            "q": "Do you work with Wainfleet businesses in person or remotely?",
+            "a": "Either. Wainfleet is a short drive south of our St. Catharines office, and we are glad to meet at your farm, yard or shop in person. If remote is easier, projects run smoothly by phone, email and video call — the written quote and the design process are identical either way."
+          },
+          {
+            "q": "Can you handle SEO for my Wainfleet business as well as the website?",
+            "a": "Yes. Every build includes on-page search foundations: fast pages, clean structure, schema markup and mobile optimization. Ongoing SEO — rankings, map results and AI search visibility — is a dedicated service after launch. Many businesses start with the website and continue with search work; others only need the site."
+          },
+          {
+            "q": "Can my current site be redesigned without losing its search rankings?",
+            "a": "Usually, yes. Before rebuilding we study what your existing site ranks for and why, keep the web addresses of pages that work, and set up redirects for any that must change. No one can promise a specific ranking, but a redesign handled this way protects what you have earned while repairing what was holding the old site back."
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "Across the region"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design across Niagara"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wainfleet sits between [Port Colborne](/web-design/port-colborne) and [Welland](/web-design/welland), and the lakeshore towns down to [Fort Erie](/web-design/fort-erie) are close by. Every web design page we keep for Niagara is linked below."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": []
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keep exploring"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Related pages"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[Web design services](/web-design)",
+          "[Our work](/results)",
+          "[Get a quote](/get-a-quote)",
+          "[SEO in Wainfleet](/seo/wainfleet)",
+          "[SEO in Port Colborne](/seo/port-colborne)"
+        ]
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Web Design",
+        "href": "/web-design"
+      },
+      {
+        "name": "Wainfleet"
+      }
+    ]
+  },
+  {
+    "pathname": "/web-design/west-lincoln",
+    "kind": "web-design",
+    "eyebrow": "Web design",
+    "title": "Web Design Company in West Lincoln | Infused Agency",
+    "description": "West Lincoln web design company building fast, mobile-friendly websites for township businesses in Smithville, Wellandport, St. Ann’s and beyond. Book a free consultation.",
+    "canonical": "https://infused.agency/web-design/west-lincoln",
+    "h1": "West Lincoln Web Design Company",
+    "hero": {
+      "title": "West Lincoln Web Design Company",
+      "description": "Infused Agency builds websites for businesses across West Lincoln — Smithville’s village core, Wellandport and St. Ann’s, and the farm-based businesses between them. Sites that are fast, mobile-friendly and clear about the communities you serve.",
+      "image": "/img/web-design/cities/web-design-west-lincoln-hero.webp",
+      "imageAlt": "Web design company serving West Lincoln, Ontario by Infused Agency"
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "West Lincoln, Township of West Lincoln"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design for West Lincoln businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "West Lincoln is a township of several communities, and that shapes almost every buying decision within it. A customer may search from Smithville, name Wellandport or St. Ann’s on a form, or type “near me” from a country road — three searches that look similar but behave differently. A website that only says “West Lincoln” answers none of them precisely; a website planned around the communities you actually serve answers all of them."
+      },
+      {
+        "type": "paragraph",
+        "text": "The township economy runs on agriculture, trades and the small businesses that anchor Main Street Smithville. What they share is a practical customer: someone who searches on a phone, checks a few options, and chooses the business that looks credible and close enough to help. We design and build for that reality first, with the visual polish second — though plenty of that happens too."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Where we work"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where we work in West Lincoln"
+      },
+      {
+        "type": "paragraph",
+        "text": "We are based in St. Catharines, about twenty-five minutes from Smithville, and we work with West Lincoln businesses through the whole year. Meetings in person at your shop, office or farm are easy to arrange, and every project can also be run smoothly by phone, email and video call if that suits you better."
+      },
+      {
+        "type": "map",
+        "place": "West Lincoln, Ontario, Canada",
+        "title": "Map of West Lincoln, Ontario"
+      },
+      {
+        "type": "eyebrow",
+        "text": "Recent projects"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Websites we have designed and built"
+      },
+      {
+        "type": "lead",
+        "text": "A sample of sites for Niagara businesses and organizations. Each one links to our work page, where the projects are described in more detail."
+      },
+      {
+        "type": "gallery",
+        "items": [
+          {
+            "src": "/img/web-design/cass-a-bella-construction.png",
+            "alt": "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+            "name": "Cass-A-Bella Construction",
+            "sector": "Custom home builder"
+          },
+          {
+            "src": "/img/web-design/web-design-creekview-dental.png",
+            "alt": "Creek View Dental website for a dental practice in St. Catharines",
+            "name": "Creek View Dental",
+            "sector": "Dental practice"
+          },
+          {
+            "src": "/img/web-design/web-design-donor-compass.png",
+            "alt": "Donor Compass website for a donor-data platform used by nonprofits",
+            "name": "Donor Compass",
+            "sector": "Nonprofit software"
+          },
+          {
+            "src": "/img/web-design/web-design-ggs-niagara-landscaping.png",
+            "alt": "GGS Niagara Landscaping website showing garden and landscape work",
+            "name": "GGS Niagara Landscaping",
+            "sector": "Landscaping"
+          },
+          {
+            "src": "/img/web-design/web-design-jerrys-insulating.png",
+            "alt": "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+            "name": "Jerry's Insulating",
+            "sector": "Insulation contractor"
+          },
+          {
+            "src": "/img/web-design/web-design-kd-flowers.png",
+            "alt": "KD Flowers website for a boutique wedding florist in the Niagara Region",
+            "name": "KD Flowers",
+            "sector": "Wedding florist"
+          },
+          {
+            "src": "/img/web-design/web-design-lincoln-medical-centre.png",
+            "alt": "Lincoln Medical Centre website for a family medical practice in Niagara",
+            "name": "Lincoln Medical Centre",
+            "sector": "Family medical practice"
+          },
+          {
+            "src": "/img/web-design/web-design-santa-claus-niagara.png",
+            "alt": "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+            "name": "Santa Claus Niagara",
+            "sector": "Seasonal entertainment"
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "What you get"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What a West Lincoln website includes"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Pages planned around the township’s communities"
+      },
+      {
+        "type": "paragraph",
+        "text": "Smithville carries most of the township’s search demand, but Wellandport and St. Ann’s are real searches too. We map the structure first: a township page that explains who you serve, plus focused pages where the demand justifies them. That is how a small business covers a big township without confusing Google or its customers."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Trades pages that get the call"
+      },
+      {
+        "type": "paragraph",
+        "text": "The contractors who keep township homes and farms working need sites that put the work first: services described plainly, areas covered, and a phone number that dials the moment it is tapped."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Custom design, no template shortcuts"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every site is designed from scratch around your brand and your customers — layout, pages and calls to action planned for how people actually search for what you sell in the township."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "WordPress you can update yourself"
+      },
+      {
+        "type": "paragraph",
+        "text": "Content-managed sites are usually WordPress, and we walk you through them before launch — seasonal hours, new services and fresh photos should take minutes, not tickets."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Search foundations included"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fast load times, mobile optimization, clean structure and schema markup are part of every build. That groundwork is what helps your pages surface on Google, and what AI search tools read when someone asks about businesses in West Lincoln."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each project opens with a free consultation and a written quote for the work it actually needs. If you are weighing up website design companies for a township-wide site, the useful test is whether they plan the structure around your communities or around a template. The full path from first call to launch day is written out on our [web design services](/web-design) page."
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keeping your rankings"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Redesigning a West Lincoln website without losing rankings"
+      },
+      {
+        "type": "paragraph",
+        "text": "For an established township business, a redesign touches pages that feed real enquiries, so it deserves care. The reassuring part is that what search engines value — content and structure — can be carried into a new design intact. A redesign does not mean starting the rankings over."
+      },
+      {
+        "type": "paragraph",
+        "text": "Before anything is rebuilt we document what your current site ranks for and why, preserve the web addresses of pages that are earning their keep, and set up redirects where an address has to change. After launch we watch how the site performs and fix anything that slipped — and the rebuild is a chance to repair the slow pages and hidden contact details that were costing you enquiries all along."
+      },
+      {
+        "type": "paragraph",
+        "text": "Want a second opinion first? Bring your current site to a free consultation and we will tell you plainly whether a rebuild, a focused update or nothing at all is the right move."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "What it is like to work with us"
+      },
+      {
+        "type": "lead",
+        "text": "A few words from businesses we have worked with, in their own words."
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency got me a lot more visibility through Google in a short period of time. Which has led to a ton of leads for my business. Very knowledgeable and they walk you through every detail. Would definitely recommend!",
+        "person": "Lucas Folino",
+        "role": "Owner",
+        "company": "Fred's Concrete",
+        "avatar": "/img/testimonial-lucas-folino-niagara.png",
+        "avatarAlt": "Lucas Folino, owner of Fred's Concrete, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+        "person": "Brandi May",
+        "role": "Owner",
+        "company": "Brandi May Psychotherapy",
+        "avatar": "/img/testimonial-brandi-may-niagara.png",
+        "avatarAlt": "Brandi May, owner of Brandi May Psychotherapy, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "testimonial",
+        "quote": "Working with Infused Agency was a pleasure. They were extremely responsive and informative from start to finish. Infused Agency is creative, efficient, and very knowledgeable in their field.",
+        "person": "Sandro Visca",
+        "role": "Owner",
+        "company": "VISCA Electric",
+        "avatar": "/img/testimonial-sandro-visca-niagara.png",
+        "avatarAlt": "Sandro Visca, owner of VISCA Electric, a Niagara client of Infused Agency"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Frequently asked questions"
+      },
+      {
+        "type": "faqs",
+        "items": [
+          {
+            "q": "What does a website cost for a West Lincoln business?",
+            "a": "There is no standard price, because no two West Lincoln projects need the same site. What shapes the quote: the number of pages, whether you need a store, booking or forms, how ready your content is, and whether you would like us to write it. After a free consultation we send a written quote that spells out exactly what your project involves — no charge for the consultation, no obligation."
+          },
+          {
+            "q": "Do you work with West Lincoln businesses in person or remotely?",
+            "a": "Either. Smithville is about twenty-five minutes from our St. Catharines office, and we are glad to meet at your shop, office or farm. If remote suits you better, projects run smoothly by phone, email and video call — the written quote and the design process are the same."
+          },
+          {
+            "q": "Can you handle SEO for my West Lincoln business as well as the website?",
+            "a": "Yes. Every build includes on-page search foundations: fast pages, clean structure, schema markup and mobile optimization. Ongoing SEO — rankings, map results and AI search visibility — is a dedicated service after launch. Many businesses start with the website and continue with search work; others only need the site."
+          },
+          {
+            "q": "Can my current site be redesigned without losing its search rankings?",
+            "a": "Usually, yes. Before rebuilding we study what your existing site ranks for and why, keep the web addresses of pages that work, and set up redirects for any that must change. No one can promise a specific ranking, but a redesign handled this way protects what you have earned while repairing what was holding the old site back."
+          }
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "Across the region"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Web design across Niagara"
+      },
+      {
+        "type": "paragraph",
+        "text": "The [Smithville](/web-design/smithville) page covers the township’s largest community on its own, and the escarpment towns toward [Grimsby](/web-design/grimsby) and [Beamsville](/web-design/beamsville) are among our closest neighbours. Every web design page we keep for Niagara is linked below."
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": []
+      },
+      {
+        "type": "eyebrow",
+        "text": "Keep exploring"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Related pages"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          "[Web design services](/web-design)",
+          "[Our work](/results)",
+          "[Get a quote](/get-a-quote)",
+          "[SEO in West Lincoln](/seo/west-lincoln)",
+          "[SEO in Smithville](/seo/smithville)"
+        ]
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "Web Design",
+        "href": "/web-design"
+      },
+      {
+        "name": "West Lincoln"
       }
     ]
   },

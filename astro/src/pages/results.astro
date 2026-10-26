@@ -5,6 +5,7 @@ import CtaBand from "../components/ui/CtaBand.astro";
 import PageHero from "../components/ui/PageHero.astro";
 import Section from "../components/ui/Section.astro";
 import TestimonialCard from "../components/ui/TestimonialCard.astro";
+import Icon from "../components/ui/Icon.astro";
 import { siteFacts } from "../lib/site";
 import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
 
@@ -50,6 +51,57 @@ const willowCreekTestimonial = {
     "I had a great experience working with JD on my website's SEO. JD was very thorough, knowledgeable, and clearly communicated his process and progress throughout the project. Within a few months, I saw a noticeable increase in visibility and consultation bookings for my therapy practice through Google. I'm very happy with the results and would recommend their services to anyone looking to improve their online presence.",
   source: "https://www.infused.agency",
 };
+
+const portfolio = [
+  {
+    name: "Cass-A-Bella Construction",
+    sector: "Custom home builder",
+    image: "/img/web-design/cass-a-bella-construction.png",
+    alt: "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
+  },
+  {
+    name: "Creek View Dental",
+    sector: "Dental practice",
+    image: "/img/web-design/web-design-creekview-dental.png",
+    alt: "Creek View Dental website for a dental practice in St. Catharines",
+  },
+  {
+    name: "Donor Compass",
+    sector: "Nonprofit software",
+    image: "/img/web-design/web-design-donor-compass.png",
+    alt: "Donor Compass website for a donor-data platform used by nonprofits",
+  },
+  {
+    name: "GGS Niagara Landscaping",
+    sector: "Landscaping",
+    image: "/img/web-design/web-design-ggs-niagara-landscaping.png",
+    alt: "GGS Niagara Landscaping website showing garden and landscape work",
+  },
+  {
+    name: "Jerry's Insulating",
+    sector: "Insulation contractor",
+    image: "/img/web-design/web-design-jerrys-insulating.png",
+    alt: "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+  },
+  {
+    name: "KD Flowers",
+    sector: "Wedding florist",
+    image: "/img/web-design/web-design-kd-flowers.png",
+    alt: "KD Flowers website for a boutique wedding florist in the Niagara Region",
+  },
+  {
+    name: "Lincoln Medical Centre",
+    sector: "Family medical practice",
+    image: "/img/web-design/web-design-lincoln-medical-centre.png",
+    alt: "Lincoln Medical Centre website for a family medical practice in Niagara",
+  },
+  {
+    name: "Santa Claus Niagara",
+    sector: "Seasonal entertainment",
+    image: "/img/web-design/web-design-santa-claus-niagara.png",
+    alt: "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
+  },
+];
 
 const proofStats = (keywords: string) => ({
   stats: [
@@ -341,6 +393,37 @@ const jsonLd = [
     </div>
   </Section>
 
+  <Section
+    tone="tint"
+    id="web-design-portfolio"
+    eyebrow="Web design portfolio"
+    index="07"
+    heading="Websites designed and built"
+    description="A selection of screenshots from our web design work — storefronts, trades, practices and products."
+  >
+    <div class="wd-portfolio reveal-group">
+      {
+        portfolio.map((item) => (
+          <article class="wd-portfolio__card">
+            <div class="wd-portfolio__media">
+              <img src={item.image} alt={item.alt} loading="lazy" decoding="async" />
+            </div>
+            <div class="wd-portfolio__body">
+              <h3>{item.name}</h3>
+              <p>{item.sector}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+    <div class="prose-links wd-portfolio__links">
+      <a class="link-arrow" href="/web-design">
+        See how we design and build websites
+        <Icon name="arrow-right" />
+      </a>
+    </div>
+  </Section>
+
   <CtaBand
     eyebrow="Free quote"
     heading="Your project could be next"
@@ -348,3 +431,98 @@ const jsonLd = [
     ctaLabel="Get a Free Quote"
   />
 </BaseLayout>
+
+<style>
+  .wd-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 0.8rem + 1vw, 1.6rem);
+  }
+
+  .wd-portfolio__card {
+    overflow: hidden;
+    border: var(--border-hairline);
+    border-radius: var(--radius-lg);
+    background: var(--color-card);
+    box-shadow: var(--shadow-xs);
+    transition:
+      border-color var(--duration-card) var(--ease-smooth),
+      box-shadow var(--duration-card) var(--ease-smooth),
+      translate var(--duration-control) var(--ease-smooth);
+  }
+
+  @media (hover: hover) {
+    .wd-portfolio__card:hover {
+      border-color: var(--color-border-strong);
+      box-shadow: var(--shadow-card);
+      translate: 0 -3px;
+    }
+  }
+
+  .wd-portfolio__media {
+    overflow: hidden;
+    border-bottom: var(--border-hairline);
+    background: var(--color-tint);
+  }
+
+  .wd-portfolio__media img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 700ms var(--ease-out);
+  }
+
+  @media (hover: hover) {
+    .wd-portfolio__card:hover .wd-portfolio__media img {
+      transform: scale(1.03);
+    }
+  }
+
+  .wd-portfolio__body {
+    padding: clamp(1rem, 0.8rem + 0.6vw, 1.3rem);
+  }
+
+  .wd-portfolio__body h3 {
+    font-size: var(--text-lg);
+  }
+
+  .wd-portfolio__body p {
+    margin-top: 0.3rem;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .wd-portfolio__links {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: var(--border-hairline);
+  }
+
+  @media (max-width: 980px) {
+    .wd-portfolio {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 600px) {
+    .wd-portfolio {
+      grid-template-columns: 1fr;
+    }
+
+    .wd-portfolio__media img {
+      aspect-ratio: 16 / 11;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wd-portfolio__card:hover {
+      translate: none;
+    }
+
+    .wd-portfolio__card:hover .wd-portfolio__media img {
+      transform: none;
+    }
+  }
+</style>

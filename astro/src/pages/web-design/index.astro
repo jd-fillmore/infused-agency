@@ -6,6 +6,7 @@ import CtaBand from "../../components/ui/CtaBand.astro";
 import Icon from "../../components/ui/Icon.astro";
 import PageHero from "../../components/ui/PageHero.astro";
 import Section from "../../components/ui/Section.astro";
+import { WEB_DESIGN_CITY_LINKS } from "../../lib/legacy-pages.mjs";
 import {
   baseGraph,
   breadcrumbNode,
@@ -128,21 +129,51 @@ const process = [
 const work = [
   {
     name: "Cass-A-Bella Construction",
-    sector: "Custom home renovation",
-    image: "/img/custom-website-design-beamsville-cass-a-bella-construction.png",
-    alt: "Cass-A-Bella Construction website shown on a laptop and phone",
+    sector: "Custom home builder",
+    image: "/img/web-design/cass-a-bella-construction.png",
+    alt: "Cass-A-Bella Construction website designed by Infused Agency for a custom home builder",
   },
   {
-    name: "VISCA Electric",
-    sector: "Electrical services",
-    image: "/img/custom-website-design-crystal-beach-visca-electric.png",
-    alt: "VISCA Electric website shown on a laptop and phone",
+    name: "Creek View Dental",
+    sector: "Dental practice",
+    image: "/img/web-design/web-design-creekview-dental.png",
+    alt: "Creek View Dental website for a dental practice in St. Catharines",
+  },
+  {
+    name: "Donor Compass",
+    sector: "Nonprofit software",
+    image: "/img/web-design/web-design-donor-compass.png",
+    alt: "Donor Compass website for a donor-data platform used by nonprofits",
+  },
+  {
+    name: "GGS Niagara Landscaping",
+    sector: "Landscaping",
+    image: "/img/web-design/web-design-ggs-niagara-landscaping.png",
+    alt: "GGS Niagara Landscaping website showing garden and landscape work",
   },
   {
     name: "Jerry's Insulating",
     sector: "Insulation contractor",
-    image: "/img/crystal-beach-web-design-jerrys-insulating.png",
-    alt: "Jerry's Insulating website shown on a laptop and phone",
+    image: "/img/web-design/web-design-jerrys-insulating.png",
+    alt: "Jerry's Insulating website for an insulation contractor serving Niagara and Hamilton-Burlington",
+  },
+  {
+    name: "KD Flowers",
+    sector: "Wedding florist",
+    image: "/img/web-design/web-design-kd-flowers.png",
+    alt: "KD Flowers website for a boutique wedding florist in the Niagara Region",
+  },
+  {
+    name: "Lincoln Medical Centre",
+    sector: "Family medical practice",
+    image: "/img/web-design/web-design-lincoln-medical-centre.png",
+    alt: "Lincoln Medical Centre website for a family medical practice in Niagara",
+  },
+  {
+    name: "Santa Claus Niagara",
+    sector: "Seasonal entertainment",
+    image: "/img/web-design/web-design-santa-claus-niagara.png",
+    alt: "Santa Claus Niagara website for a professional Santa entertainer serving the Niagara Region",
   },
 ];
 
@@ -306,8 +337,8 @@ const jsonLd = [
               <img src={project.image} alt={project.alt} loading="lazy" decoding="async" />
             </div>
             <div class="wd-work__body">
-              <span class="badge">{project.sector}</span>
               <h3>{project.name}</h3>
+              <p>{project.sector}</p>
             </div>
           </article>
         ))
@@ -321,11 +352,35 @@ const jsonLd = [
     </div>
   </Section>
 
+  <Section
+    tone="surface"
+    eyebrow="Service area"
+    index="06"
+    heading="Serving web design to businesses in Niagara"
+    description="Website design and development for the cities and towns where your customers are already looking."
+  >
+    <div class="reveal">
+      <h3 class="h3">Niagara cities</h3>
+      <ul class="chip-list" style="margin-top: 1rem;">
+        {
+          WEB_DESIGN_CITY_LINKS.map((city) => (
+            <li>
+              <a class="chip" href={city.href}>
+                {city.label}
+                <Icon name="arrow-right" />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </Section>
+
   <section class="section section--warm" id="why-infused">
     <div class="container">
       <div class="manifesto">
         <div class="manifesto__intro reveal">
-          <p class="eyebrow"><span class="eyebrow__index">06</span> Why Infused</p>
+          <p class="eyebrow"><span class="eyebrow__index">07</span> Why Infused</p>
           <h2 class="h2" style="margin-top: 1rem;">A considered build, with the search work already in mind</h2>
           <p style="margin-top: 1.1rem; color: var(--color-muted); max-width: 30rem;">
             We are small enough to stay close to the work and experienced enough
@@ -374,7 +429,7 @@ const jsonLd = [
     <div class="container">
       <div class="faq-layout">
         <div class="faq-layout__intro reveal">
-          <p class="eyebrow"><span class="eyebrow__index">07</span> Questions</p>
+          <p class="eyebrow"><span class="eyebrow__index">08</span> Questions</p>
           <h2 class="h2" style="margin-top: 1rem;">Web design FAQs</h2>
           <p>
             Practical answers for businesses planning a new site or a redesign.
@@ -547,15 +602,12 @@ const jsonLd = [
 
   .wd-work {
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: clamp(1rem, 0.8rem + 1vw, 1.6rem);
   }
 
   .wd-work__card {
-    display: grid;
-    grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr);
-    align-items: center;
-    gap: clamp(1.25rem, 1rem + 2vw, 2.75rem);
-    padding: clamp(1rem, 0.7rem + 1vw, 1.5rem);
+    overflow: hidden;
     border: var(--border-hairline);
     border-radius: var(--radius-lg);
     background: var(--color-card);
@@ -570,39 +622,43 @@ const jsonLd = [
     .wd-work__card:hover {
       border-color: var(--color-border-strong);
       box-shadow: var(--shadow-card);
-      translate: 0 -2px;
+      translate: 0 -3px;
     }
   }
 
   .wd-work__media {
     overflow: hidden;
-    border-radius: var(--radius-md);
+    border-bottom: var(--border-hairline);
     background: var(--color-tint);
   }
 
   .wd-work__media img {
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    object-position: center;
+    object-position: top center;
+    display: block;
     transition: transform 700ms var(--ease-out);
   }
 
   @media (hover: hover) {
     .wd-work__card:hover .wd-work__media img {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
   }
 
   .wd-work__body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
+    padding: clamp(1rem, 0.8rem + 0.6vw, 1.3rem);
   }
 
   .wd-work__body h3 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-lg);
+  }
+
+  .wd-work__body p {
+    margin-top: 0.3rem;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
   }
 
   .wd-work__links {
@@ -620,17 +676,23 @@ const jsonLd = [
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .wd-work__card {
-      grid-template-columns: 1fr;
-    }
-
-    .wd-work__media img {
-      aspect-ratio: 16 / 9;
+    .wd-work {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
   @media (max-width: 760px) {
     .wd-conversion__media img {
+      aspect-ratio: 16 / 11;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .wd-work {
+      grid-template-columns: 1fr;
+    }
+
+    .wd-work__media img {
       aspect-ratio: 16 / 11;
     }
   }

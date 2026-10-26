@@ -204,6 +204,10 @@ export const WEB_DESIGN_CITIES = [
   { slug: "port-colborne", name: "Port Colborne" },
   { slug: "st-catharines", name: "St. Catharines" },
   { slug: "thorold", name: "Thorold" },
+  { slug: "pelham", name: "Pelham" },
+  { slug: "smithville", name: "Smithville" },
+  { slug: "wainfleet", name: "Wainfleet" },
+  { slug: "west-lincoln", name: "West Lincoln" },
   { slug: "welland", name: "Welland" },
 ];
 
