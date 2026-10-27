@@ -1,0 +1,523 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Accordion from "../../components/ui/Accordion.astro";
+import Card from "../../components/ui/Card.astro";
+import CtaBand from "../../components/ui/CtaBand.astro";
+import Icon from "../../components/ui/Icon.astro";
+import PageHero from "../../components/ui/PageHero.astro";
+import Section from "../../components/ui/Section.astro";
+import TestimonialCard from "../../components/ui/TestimonialCard.astro";
+import { siteFacts } from "../../lib/site";
+import legacyPages from "../../data/legacy/bespoke-pages.json";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const pathname = "/seo/for-therapists-los-angeles";
+const title = "SEO & AI SEO for Therapists in Los Angeles";
+const description =
+  "SEO for Los Angeles therapists, plus AI search optimization, AEO and GEO so your practice is found in Google and AI answers. Get a free quote.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: "Los Angeles, CA" },
+];
+
+const image = "/img/seo-for-therapists-los-angeles-california.webp";
+
+// The two legacy therapist reviews live as paragraph blocks on the existing
+// therapist city pages. Brandi May's testimonial is also stored in siteFacts.
+// Nothing below is edited, shortened or invented.
+type LegacyBlock = { type: string; text?: string };
+type TherapistTestimonial = {
+  person: string;
+  role?: string;
+  company?: string;
+  quote: string;
+};
+
+const therapistSource = (
+  legacyPages as Array<{ pathname: string; blocks: LegacyBlock[] }>
+).find((page) => page.pathname === "/seo/for-therapists-syracuse");
+
+const legacyParagraphs = (therapistSource?.blocks ?? [])
+  .filter(
+    (block): block is { type: "paragraph"; text: string } =>
+      block.type === "paragraph" && typeof block.text === "string"
+  )
+  .map((block) => block.text);
+
+function quoteAfter(name: string): string | null {
+  const index = legacyParagraphs.indexOf(name);
+  if (index === -1) return null;
+  const next = legacyParagraphs[index + 1] ?? "";
+  const quote = next.replace(/^["']|["']$/g, "");
+  return quote || null;
+}
+
+const brandi = siteFacts.testimonials.find(
+  (testimonial) => testimonial.id === "brandi-may-psychotherapy"
+);
+const brandiLegacyQuote = quoteAfter("Brandi M.");
+
+const therapistTestimonials: TherapistTestimonial[] = [];
+const nicoleQuote = quoteAfter("Nicole P.");
+if (nicoleQuote) {
+  therapistTestimonials.push({ person: "Nicole P.", quote: nicoleQuote });
+}
+if (brandi) {
+  therapistTestimonials.push({
+    person: brandi.person,
+    role: brandi.role,
+    company: brandi.namedEntity,
+    quote: brandi.quote,
+  });
+} else if (brandiLegacyQuote) {
+  therapistTestimonials.push({ person: "Brandi M.", quote: brandiLegacyQuote });
+}
+const courtneyQuote = quoteAfter("Courtney V.");
+if (courtneyQuote) {
+  therapistTestimonials.push({ person: "Courtney V.", quote: courtneyQuote });
+}
+
+const faqs = [
+  {
+    q: "Can a solo practice rank for \u201ctherapist Los Angeles\u201d?",
+    a: "A solo practice can compete for Los Angeles searches when the site is clear about the work it does and the area it serves. Google rewards useful specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We focus on realistic searches rather than promising a position.",
+  },
+  {
+    q: "Is SEO useful if all sessions are online?",
+    a: "Yes. People still search for a California-licensed therapist, a specific specialty or a clinician who offers telehealth from Los Angeles. The site should say plainly that sessions are online, which parts of California you serve and how the first appointment works.",
+  },
+  {
+    q: "Should the site mention nearby cities such as West Hollywood, Santa Monica or Pasadena?",
+    a: "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every city. If a nearby place produces real demand, it may deserve its own page later, but not one that repeats the same copy.",
+  },
+  {
+    q: "When will I see results?",
+    a: "There is no promised timeline. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself\u2014fixes, new pages and rewritten titles\u2014followed by reports on which searches the pages appear for.",
+  },
+  {
+    q: "How much does it cost?",
+    a: "Pricing is tailored to the practice. A solo therapist with a small site and one location is a different scope from a group with several clinicians, specialties or service areas. We review the site and the opportunity first, then send a free quote with a clear scope. We do not publish package prices or dollar figures.",
+  },
+  {
+    q: "Do you work with group practices?",
+    a: "Yes. Group practices usually need a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for.",
+  },
+  {
+    q: "Does your marketing respect California licensing board and professional ethics rules?",
+    a: "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with its licensing board and professional obligations, and we flag anything that may need a closer review.",
+  },
+  {
+    q: "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+    a: "It means making a practice easy for AI tools to understand and cite: accurate details about specialties, licensure, location and how to book, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are common labels for parts of that work. No one can promise a citation or a position in an AI answer.",
+  },
+];
+
+const relatedContent: {
+  links: Array<{ href: string; label: string }>;
+  areasWeServe: {
+    title: string;
+    teaser: string;
+    href: string;
+  } | null;
+} = {
+  links: [
+    { href: "/seo", label: "SEO services overview" },
+    { href: "/ai-search", label: "AI search optimization" },
+    { href: "/results", label: "Client results" },
+    { href: "/about", label: "About Infused Agency" },
+    { href: "/get-a-quote", label: "Get a Free Quote" },
+  ],
+  // Intentionally empty for Los Angeles. Add { title, teaser, href } when a verified
+  // areas-we-serve page exists; the block will render only when filled.
+  areasWeServe: null,
+};
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "SEO for Therapists in Los Angeles",
+    description,
+    serviceType: "Therapist SEO",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Los Angeles",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "California",
+        },
+      },
+      { "@type": "Place", name: "Downtown Los Angeles" },
+      { "@type": "City", name: "West Hollywood" },
+      { "@type": "City", name: "Santa Monica" },
+      { "@type": "Place", name: "Silver Lake" },
+      { "@type": "Place", name: "Echo Park" },
+      { "@type": "Place", name: "Westwood" },
+      { "@type": "City", name: "Culver City" },
+      { "@type": "City", name: "Pasadena" },
+      { "@type": "City", name: "Long Beach" },
+      { "@type": "Country", name: "United States" },
+    ],
+  }),
+  faqPageNode(pathname, faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  image={image}
+  imageAlt="Downtown Los Angeles skyline at night"
+  jsonLd={jsonLd}
+>
+  <PageHero
+    title="SEO for Therapists in Los Angeles"
+    description="Infused Agency helps private-practice therapists in Los Angeles get found in Google and in AI search tools by people looking for their specialty, their neighborhood, or a California-licensed clinician they can see online. We build the pages, profile details and technical foundations that make a practice easier to find and contact."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Therapist SEO"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <figure class="media-frame" style="margin: 0;">
+        <img
+          src={image}
+          alt="Downtown Los Angeles skyline at night"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="The Los Angeles market"
+    index="01"
+    heading="How people in Los Angeles search for a therapist"
+  >
+    <div class="prose reveal" style="max-width: 56rem;">
+      <p>
+        Therapy searches in Los Angeles rarely look like one broad keyword.
+        Someone may start with a specialty such as trauma, anxiety, couples work,
+        teen counseling or EMDR, add a place like downtown Los Angeles, West
+        Hollywood, Santa Monica or Silver Lake, or filter by insurance or session
+        format. A practice that only says &ldquo;therapy in Los Angeles&rdquo;
+        gives the reader and the search engine very little to work with.
+      </p>
+      <p>
+        We build around those paths. That means a clear homepage, individual
+        specialty pages, and an office or service-area page that explains where
+        sessions happen and whether telehealth is available across California.
+        Internal links connect the specialty, location and intake information, so
+        a visitor can move from &ldquo;this sounds like me&rdquo; to &ldquo;here
+        is how to book&rdquo; without hunting.
+      </p>
+      <p>
+        We also make the site crawlable: clean navigation, descriptive titles and
+        headings that say Los Angeles where it is accurate, fast mobile pages and
+        metadata that matches the content. This Los Angeles page sits alongside
+        the practice site we improve, not instead of it.
+      </p>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    eyebrow="Services"
+    index="02"
+    heading="What the work covers for a Los Angeles practice"
+    description="Six connected pieces, scoped to the practice rather than sold as separate city pages."
+  >
+    <div class="grid grid--3 reveal-group">
+      <Card>
+        <span class="service-card__number">01</span>
+        <h3 class="card__title">Los Angeles search intent and on-page SEO</h3>
+        <p class="card__text">
+          We map the language people use when looking for therapy in Los Angeles,
+          then write titles, headings and page copy that name the specialty and
+          the place without stuffing. A couples counselor in Silver Lake and a
+          psychologist working with clients in Westwood should not share the same
+          page.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">02</span>
+        <h3 class="card__title">Local SEO for the practice</h3>
+        <p class="card__text">
+          We tighten the Google Business Profile, choose honest categories and
+          service areas, and build an office or service-area page that matches
+          how the practice actually works. Consistent name, address and phone
+          details, plus relevant professional directories, help Los Angeles
+          clients confirm they have found a real local practice.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">03</span>
+        <h3 class="card__title">AI search optimization (AI SEO, AEO and GEO)</h3>
+        <p class="card__text">
+          AI assistants and Google&rsquo;s AI Overviews need facts they can
+          extract: who you help, where you are licensed, which specialties you
+          offer and how someone books. We organize the site and structured data
+          so those details are explicit and consistent, then review how
+          assistants describe the practice. No agency can guarantee an AI
+          citation. Answer engine optimization (AEO) and generative engine
+          optimization (GEO) are the labels people use for this work.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">04</span>
+        <h3 class="card__title">Content that answers client questions</h3>
+        <p class="card__text">
+          Specialty pages and short articles can answer the questions people ask
+          before they call: what a first session involves, how insurance works,
+          whether telehealth is available in California, and how to choose a
+          therapist for a particular concern. The writing stays practical and
+          avoids clinical promises. Clear question-and-answer content helps both
+          Google and AI assistants, which is part of answer engine optimization.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">05</span>
+        <h3 class="card__title">Technical fixes</h3>
+        <p class="card__text">
+          We check indexing, page speed, mobile layout, broken links, duplicate
+          titles and crawl paths. A small practice site often carries old service
+          pages, plugin changes and forms that no longer submit. Fixing those
+          basics makes the content easier to find and the next step easier to
+          take.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">06</span>
+        <h3 class="card__title">Credible mentions and monthly upkeep</h3>
+        <p class="card__text">
+          Local visibility grows through believable references: professional
+          directories, community and business listings, local publications,
+          training or association profiles, and genuine reviews. Each month we
+          update availability, add or refine pages, watch the queries that bring
+          inquiries, and fix what has slipped. The work is steady rather than a
+          one-time launch.
+        </p>
+      </Card>
+    </div>
+  </Section>
+
+  <Section
+    tone="warm"
+    eyebrow="AI search"
+    index="03"
+    heading="AI search optimization for Los Angeles therapists"
+  >
+    <div class="prose reveal" style="max-width: 56rem;">
+      <p>
+        When someone asks ChatGPT, Google&rsquo;s AI Overviews or another
+        assistant to recommend a trauma therapist in Los Angeles, or a couples
+        counselor near Santa Monica or Pasadena, the answer is assembled from
+        sites the tool can read and trust. Those tools favor clear, consistent,
+        well-structured pages: who the clinician helps, where they are licensed,
+        what they specialize in and how to get in touch.
+      </p>
+      <p>
+        <a href="/ai-search">AI search optimization</a>, often shortened to AI
+        SEO, is the work of getting a practice understood and cited by those AI
+        search tools. Answer engine optimization (AEO) is the related practice
+        of writing pages that give direct, extractable answers to the questions
+        clients ask. Generative Engine Optimization (GEO) means making sure the
+        practice is described accurately and consistently across the sites AI
+        tools draw from.
+      </p>
+      <p>
+        The labels overlap, and each describes part of the same work as SEO
+        rather than a separate magic service. No one can guarantee a citation or
+        a placement in AI answers. What we can do is make the facts about your
+        Los Angeles practice easy to find, quote and repeat.
+      </p>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Who it's for"
+    index="04"
+    heading="Built for Los Angeles therapists, however you practice"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Infused Agency works with licensed marriage and family therapists
+            (LMFTs), licensed clinical social workers (LCSWs), licensed
+            professional clinical counselors (LPCCs), psychologists and
+            counselors. Some are building a solo practice; others are growing a
+            group, adding associates, or offering online sessions across
+            California.
+          </p>
+          <p>
+            We also work with online-only practices that need to make
+            California licensure and telehealth clear, and with groups that need
+            a coherent structure for several clinicians, specialties and
+            locations. The scope changes with the practice; the standard does
+            not: accurate information, a clear next step and no unsupported
+            claims.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">A good fit if you are</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>Solo and building a credible first impression</li>
+          <li>Online-only and licensed in California</li>
+          <li>Growing a group with several clinicians or specialties</li>
+          <li>Serving Los Angeles, West Hollywood, Santa Monica, Pasadena and Long Beach</li>
+          <li>Looking for inquiries without publishing clinical outcomes</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Why Infused"
+    index="05"
+    heading="Why Los Angeles therapists choose Infused Agency"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Choosing an SEO partner means putting your professional reputation
+            alongside ours. Therapy marketing has to respect both advertising
+            standards and the trust clients place in a clinician. We keep every
+            claim accurate and reviewable, avoid guarantees, and never promise
+            clinical outcomes. The work is to make your specialties easier to
+            find and your practice easier to understand.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid--2" style="grid-template-columns: 1fr;">
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Claims kept accurate and verifiable</h3>
+          <p class="card__text">
+            We write from facts about your practice: who you help, where you are
+            licensed, the specialties you offer and how someone books. Nothing
+            goes live as a ranking claim, credential or result we cannot
+            support.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">No guarantees or clinical promises</h3>
+          <p class="card__text">
+            No agency controls Google&rsquo;s rankings, and SEO should not be
+            sold as a guaranteed outcome. We also avoid language that implies a
+            clinical result or recovery. The focus stays on visibility, clarity
+            and inquiries.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Pages built around specialties and real searches</h3>
+          <p class="card__text">
+            We organize the site around the concerns people actually search
+            for&mdash;trauma, anxiety, couples work, teens, EMDR or another
+            specialty&mdash;and connect that to the places and session formats
+            your practice genuinely offers. Each page gets a clear job without
+            inventing demand.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Ethics-first marketing for a regulated practice</h3>
+          <p class="card__text">
+            Licensing boards and professional codes set the boundaries. We keep
+            marketing language clear and non-misleading, flag anything that may
+            need a closer look, and leave compliance decisions with the practice
+            and its own advisers.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  {
+    therapistTestimonials.length > 0 && (
+      <Section
+        tone="contrast"
+        eyebrow="Testimonials"
+        index="06"
+        heading="What therapist clients say"
+      >
+        <div class="grid grid--3 reveal-group">
+          {therapistTestimonials.map((testimonial) => (
+            <TestimonialCard
+              quote={testimonial.quote}
+              person={testimonial.person}
+              role={testimonial.role}
+              company={testimonial.company}
+            />
+          ))}
+        </div>
+      </Section>
+    )
+  }
+
+  <Section
+    tone="warm"
+    eyebrow="Questions"
+    index="07"
+    heading="Los Angeles therapist SEO questions"
+  >
+    <Accordion items={faqs} />
+  </Section>
+
+  {
+    relatedContent.areasWeServe && (
+      <Section
+        tone="tint"
+        eyebrow="Areas"
+        heading={relatedContent.areasWeServe.title}
+      >
+        <div class="prose reveal" style="max-width: 52rem;">
+          <p>{relatedContent.areasWeServe.teaser}</p>
+          <p>
+            <a href={relatedContent.areasWeServe.href}>Learn more</a>
+          </p>
+        </div>
+      </Section>
+    )
+  }
+
+  <Section
+    tone="contrast"
+    eyebrow="Related"
+    index="08"
+    heading="Explore more"
+    description="Related services, results and company information."
+  >
+    <ul class="chip-list">
+      {
+        relatedContent.links.map((link) => (
+          <li>
+            <a class="chip" href={link.href}>
+              {link.label}
+              <Icon name="arrow-right" />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Win more therapy inquiries in Los Angeles"
+    description="Request a free quote and we will review your website, local visibility and the searches that matter to your practice."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>
