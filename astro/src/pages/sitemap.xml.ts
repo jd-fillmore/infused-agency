@@ -9,7 +9,6 @@ import {
   getNicheCityPages,
   getNicheHub,
   getBespokePages,
-  US_THERAPIST_ROUTES,
   WEB_DESIGN_CITIES,
 } from "../lib/legacy-pages.mjs";
 
@@ -55,7 +54,6 @@ export const GET: APIRoute = () => {
   const nicheHub = getNicheHub();
   if (nicheHub?.urlPath) entries.set(nicheHub.urlPath, undefined);
   for (const page of getBespokePages()) entries.set(page.pathname, undefined);
-  for (const route of US_THERAPIST_ROUTES) entries.set(route.pathname, undefined);
   for (const city of WEB_DESIGN_CITIES) entries.set(`/web-design/${city.slug}`, undefined);
 
   // Exclude noindex/error routes and every retired route, even if a legacy

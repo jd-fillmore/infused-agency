@@ -116,7 +116,6 @@ const AI_SEARCH_CONTENT = {
     { href: "/get-a-quote", label: "Get a free quote", internal: true },
   ],
   industries: [
-    { href: "/therapist-seo", label: "SEO for Therapists in Canada", internal: true },
     { href: "/general-contractor-seo", label: "SEO for General Contractors", internal: true },
   ],
 };

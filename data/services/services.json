@@ -43,7 +43,7 @@
     "titleOverride": null,
     "summary": "Local SEO that lifts your Google Business Profile, Maps presence and city rankings. We build relevance and trust so nearby customers find and contact you.",
     "relatedServices": ["seo", "content-writing", "reputation-management", "franchise-seo"],
-    "relevantVerticals": ["therapists"],
+    "relevantVerticals": [],
     "proofRefs": ["flat-rock-cellars", "delta-energy-solutions", "freds-concrete"]
   },
   {
@@ -88,7 +88,7 @@
     "titleOverride": null,
     "summary": "SEO content writing that ranks and converts. Service pages, location pages and resources that answer real search intent and support your sales pages.",
     "relatedServices": ["seo", "local-seo", "ai-search", "ecommerce-seo"],
-    "relevantVerticals": ["therapists"],
+    "relevantVerticals": [],
     "proofRefs": []
   },
   {
@@ -133,7 +133,7 @@
     "titleOverride": "AI Search Optimization (GEO & AEO) in Ontario | Infused Agency",
     "summary": "AI search optimization for GEO, AEO and LLM SEO. We make your content the answer engines and assistants cite as people search without typing keywords.",
     "relatedServices": ["seo", "content-writing", "technical-seo", "reputation-management"],
-    "relevantVerticals": ["therapists"],
+    "relevantVerticals": [],
     "proofRefs": ["brandi-may-psychotherapy"]
   },
   {
@@ -298,7 +298,7 @@
     "titleOverride": null,
     "summary": "Reputation management that protects how you look online through compliant review generation, careful responses and stronger content across the web.",
     "relatedServices": ["online-reputation-repair", "local-seo", "content-writing", "ai-search"],
-    "relevantVerticals": ["therapists"],
+    "relevantVerticals": [],
     "proofRefs": []
   },
   {

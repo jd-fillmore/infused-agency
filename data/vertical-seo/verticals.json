@@ -1332,57 +1332,6 @@
     "updated": "2026-10-11"
   },
   {
-    "slug": "therapists",
-    "urlSlug": "therapist-seo",
-    "singular": "therapist",
-    "plural": "therapists",
-    "displayName": "Therapists",
-    "category": "Health & Wellness",
-    "industriesBenefit": "Reach prospective clients searching by specialty, modality and location, and turn that trust into booked consultations.",
-    "parentSlug": null,
-    "maxDepth": "city",
-    "primaryKeywords": [
-      "SEO for therapists",
-      "therapist SEO",
-      "counsellor SEO",
-      "psychology practice SEO",
-      "therapy practice marketing"
-    ],
-    "geoScope": {
-      "provinces": "all"
-    },
-    "launchStatus": "live",
-    "serviceEmphasis": [
-      "Google Business Profile and local pack visibility",
-      "Specialty and modality service pages",
-      "Directory competition (Psychology Today and similar listings)",
-      "Intake and booking conversion",
-      "Trust and confidentiality signals in copy",
-      "Province-aware regulation and language context"
-    ],
-    "buyerJourneyNotes": "Therapists and counsellors are usually the business owner and the buyer. They search when their caseload has a gap, when they open a new location, or when a directory listing outranks their own site. They respond to plain-language explanations, confidentiality reassurance, and proof from other practitioners.",
-    "proofRefs": [
-      "brandi-may-psychotherapy"
-    ],
-    "defaultFaqs": [
-      {
-        "q": "How is therapist SEO different from SEO for other local businesses?",
-        "a": "Therapy searches are high-intent and trust-driven. People rarely choose on price; they choose on fit, specialisation, and whether they feel safe. That means service pages need to speak to modality and population, directory listings such as Psychology Today compete for the same terms, and confidentiality has to be handled carefully in everything that is published.",
-        "geoSpecific": false
-      },
-      {
-        "q": "How long does SEO take for a therapy practice?",
-        "a": "Most practices start seeing movement in local visibility within three to six months, with the strongest gains between six and twelve months. Timelines depend on your existing site, how competitive your terms are, and how consistently content and profile work is maintained.",
-        "geoSpecific": false
-      },
-      {
-        "q": "Do you guarantee a number one ranking?",
-        "a": "No ethical provider can guarantee a specific position, because search results change constantly. What we do is follow a proven process, measure the results that matter to a practice such as enquiries and booked consultations, and report them transparently.",
-        "geoSpecific": false
-      }
-    ]
-  },
-  {
     "slug": "tile-contractors",
     "urlSlug": "tile-contractor-seo",
     "singular": "tile contractor",

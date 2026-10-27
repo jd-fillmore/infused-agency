@@ -190,7 +190,7 @@ export function richTextToPlain(text) {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Bespoke JSX pages (static pages, web-design cities, US therapist pages)     */
+/* Bespoke JSX pages (static pages and web-design cities)                      */
 /* -------------------------------------------------------------------------- */
 
 export const WEB_DESIGN_CITIES = [
@@ -221,23 +221,17 @@ export const WEB_DESIGN_CITY_LINKS = [
   ),
 ];
 
-const US_THERAPIST_CITIES = [
-  { slug: "albany", name: "Albany" },
-  { slug: "buffalo", name: "Buffalo" },
-  { slug: "huntington", name: "Huntington" },
-  { slug: "new-york", name: "New York" },
-  { slug: "rochester", name: "Rochester" },
-  { slug: "syracuse", name: "Syracuse" },
-];
-
-export const US_THERAPIST_ROUTES = US_THERAPIST_CITIES.map((city) => ({
-  pathname: `/seo/for-therapists-${city.slug}`,
-  city: city.name,
-}));
-
 /** @returns {any[]} */
 export function getBespokePages() {
-  return memo("bespoke-pages", () => LEGACY_BESPOKE_PAGES);
+  // Legacy data lives beside the surviving Los Angeles therapist page. The
+  // removed city entries (and the Syracuse testimonial source still read by
+  // that page) must never produce routes or sitemap entries themselves, so
+  // they are filtered out here.
+  return memo("bespoke-pages", () =>
+    LEGACY_BESPOKE_PAGES.filter(
+      (page) => !page.pathname.startsWith("/seo/for-therapists-")
+    )
+  );
 }
 
 export function getBespokePage(pathname) {
