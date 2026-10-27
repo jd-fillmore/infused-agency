@@ -15,7 +15,6 @@ Infused is deliberately small — the person you speak with stays close to the w
 ## Industries & Specializations
 
 - [SEO by Industry](https://infused.agency/industries): Industry-specific SEO programmes built around how each sector gets found.
-- [SEO for Therapists in Canada](https://infused.agency/therapist-seo): SEO built specifically for counselling, psychotherapy and psychology practices, with province and city pages across all ten Canadian provinces. [US Therapist SEO](https://infused.agency/therapist-seo/usa) covers select New York State cities.
 - [SEO for Concrete Contractors in Canada](https://infused.agency/seo/for-concrete-contractors): Canada-wide programme with city pages across major markets.
 - [General Contractor SEO in Canada](https://infused.agency/general-contractor-seo): Province and city-level coverage for renovation/building businesses.
 
