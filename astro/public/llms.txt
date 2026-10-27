@@ -9,8 +9,6 @@ Infused is deliberately small — the person you speak with stays close to the w
 - [SEO](https://infused.agency/seo): Local SEO, Google Business Profile optimization, service and location pages, technical SEO and internal linking. AI search visibility is treated as an extension of the same work.
 - [AI Search (GEO, AEO & LLM SEO)](https://infused.agency/ai-search): Makes a business clear, consistent and quotable so AI assistants and answer engines can describe and recommend it accurately.
 - [Web Design & Development](https://infused.agency/web-design): Conversion-focused, SEO-aware websites for businesses across Canada and the United States, scoped and quoted individually.
-- [Website Conversion Rate Optimization](https://infused.agency/website-conversion-optimization): Audits, user research, testing and refinements to turn existing traffic into enquiries.
-- [WordPress Development (Niagara)](https://infused.agency/wordpress-developer-niagara): WordPress builds for Niagara/St. Catharines businesses with training and post-launch support.
 
 ## Industries & Specializations
 

@@ -189,12 +189,12 @@
 /tree-reports /tree-reports 410
 /web-design/website-hosting /web-design/website-hosting 410
 /ecommerce-marketing /ecommerce-marketing 410
-/ecommerce-marketing/ecommerce-optimization /website-conversion-optimization 301
+/ecommerce-marketing/ecommerce-optimization /web-design 301
 /ecommerce-marketing/ecommerce-ppc /ecommerce-marketing/ecommerce-ppc 410
 /ecommerce-marketing/ecommerce-seo /seo 301
 /ecommerce-marketing/shopify-seo /ecommerce-marketing/shopify-seo 410
 /digital-marketing /digital-marketing 410
-/digital-marketing/conversion-rate-optimization /website-conversion-optimization 301
+/digital-marketing/conversion-rate-optimization /web-design 301
 /reputation-management /reputation-management 410
 /reputation-management/online-reputation-repair /reputation-management/online-reputation-repair 410
 /seo/content-writing /seo 301
@@ -203,3 +203,9 @@
 /seo/local-seo /seo 301
 /seo/technical-seo /seo 301
 /seo/white-label /seo/white-label 410
+
+# Removed standalone service pages. /website-conversion-optimization redirects
+# to the closest surviving service page; /wordpress-developer-niagara was
+# removed outright and returns 410 Gone.
+/website-conversion-optimization /web-design 301
+/wordpress-developer-niagara /wordpress-developer-niagara 410

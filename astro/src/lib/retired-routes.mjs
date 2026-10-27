@@ -712,11 +712,11 @@ export const RETIRED_ROUTES = [
   {
     route: "/ecommerce-marketing/ecommerce-optimization",
     disposition: "redirect",
-    destination: "/website-conversion-optimization",
-    replacementLabel: "Website Conversion Optimization",
+    destination: "/web-design",
+    replacementLabel: "Web Design & Development",
     linkList: "rewrite",
     reason:
-      "Store and checkout optimization is now delivered by the surviving conversion optimization service.",
+      "Store and checkout optimization is now delivered within conversion-focused web design.",
   },
   {
     route: "/ecommerce-marketing/ecommerce-ppc",
@@ -752,11 +752,11 @@ export const RETIRED_ROUTES = [
   {
     route: "/digital-marketing/conversion-rate-optimization",
     disposition: "redirect",
-    destination: "/website-conversion-optimization",
-    replacementLabel: "Website Conversion Optimization",
+    destination: "/web-design",
+    replacementLabel: "Web Design & Development",
     linkList: "rewrite",
     reason:
-      "The equivalent conversion optimization page survives at /website-conversion-optimization.",
+      "Conversion optimization is now delivered within conversion-focused web design.",
   },
   {
     route: "/reputation-management",
@@ -815,6 +815,23 @@ export const RETIRED_ROUTES = [
     destination: null,
     linkList: "drop",
     reason: "The white-label fulfilment programme was retired.",
+  },
+  {
+    route: "/website-conversion-optimization",
+    disposition: "redirect",
+    destination: "/web-design",
+    replacementLabel: "Web Design & Development",
+    linkList: "rewrite",
+    reason:
+      "The standalone conversion optimization page was removed. Conversion work is delivered within conversion-focused web design.",
+  },
+  {
+    route: "/wordpress-developer-niagara",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The WordPress Developer Niagara page was removed and no equivalent page exists. WordPress projects are quoted within web design engagements.",
   },
 ];
 
