@@ -3,6 +3,16 @@
 // The legacy Next.js JSON remains untouched. This module applies the corrected
 // and expanded AI search positioning only to the Astro build.
 
+import { AI_SEO_CITIES } from "./city-links.mjs";
+
+const aiSeoCityLinks = AI_SEO_CITIES.map(
+  ({ href, label }) => `[${label}](${href})`
+);
+const aiSeoCitySentence =
+  aiSeoCityLinks.length > 1
+    ? `${aiSeoCityLinks.slice(0, -1).join(", ")} and ${aiSeoCityLinks.at(-1)}`
+    : aiSeoCityLinks[0] ?? "";
+
 const AI_SEARCH_CONTENT = {
   directAnswer:
     "AI search optimization, also called GEO or AEO, is the work of making your business clear and credible enough to appear in AI-generated answers. We improve your entity data, answer-ready content, structured data and trusted signals so tools such as ChatGPT, Gemini and Google AI Overviews can describe and recommend you accurately. No agency can guarantee a citation, but you can improve the conditions that make one likely.",
@@ -72,6 +82,7 @@ const AI_SEARCH_CONTENT = {
       heading: "AI search optimization in the Niagara Region",
       paragraphs: [
         "If your business serves customers across several Niagara municipalities, our [Niagara Region SEO page](/seo/niagara) explains how we connect local search, city pages and AI visibility across the region. It is the regional complement to the town-level pages, not a replacement for them.",
+        `Outside Niagara, we apply the same work in other Ontario markets: ${aiSeoCitySentence}.`,
       ],
     },
   ],

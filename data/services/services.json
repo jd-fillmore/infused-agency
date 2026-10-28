@@ -137,6 +137,38 @@
     "proofRefs": ["brandi-may-psychotherapy"]
   },
   {
+    "slug": "ai-seo-toronto",
+    "url": "/ai-seo-toronto",
+    "name": "AI SEO Toronto",
+    "shortName": "AI SEO Toronto",
+    "group": "seo",
+    "parentUrl": "/seo",
+    "status": "reviewed",
+    "existing": true,
+    "updated": "2026-10-27",
+    "titleOverride": "AI SEO Agency in Toronto | Infused Agency",
+    "summary": "AI SEO services for Toronto businesses: AI search optimization, answer engine optimization (AEO), Generative Engine Optimization (GEO) and reporting.",
+    "relatedServices": ["ai-search", "local-seo", "technical-seo"],
+    "relevantVerticals": [],
+    "proofRefs": []
+  },
+  {
+    "slug": "ai-seo-hamilton",
+    "url": "/ai-seo-hamilton",
+    "name": "AI SEO Hamilton",
+    "shortName": "AI SEO Hamilton",
+    "group": "seo",
+    "parentUrl": "/seo",
+    "status": "reviewed",
+    "existing": true,
+    "updated": "2026-10-27",
+    "titleOverride": "AI SEO Agency Hamilton | Infused Agency",
+    "summary": "AI SEO services for Hamilton businesses: AI search optimization, answer engine optimization (AEO), Generative Engine Optimization (GEO) and reporting.",
+    "relatedServices": ["ai-search", "local-seo", "technical-seo"],
+    "relevantVerticals": [],
+    "proofRefs": []
+  },
+  {
     "slug": "digital-marketing",
     "url": "/digital-marketing",
     "name": "Digital Marketing",

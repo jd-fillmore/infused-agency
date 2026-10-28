@@ -333,13 +333,6 @@ export const RETIRED_ROUTES = [
     reason: "The US therapist city page was removed.",
   },
   {
-    route: "/seo/for-therapists-new-york",
-    disposition: "gone",
-    destination: null,
-    linkList: "drop",
-    reason: "The US therapist city page was removed.",
-  },
-  {
     route: "/seo/for-therapists-rochester",
     disposition: "gone",
     destination: null,
