@@ -8,7 +8,7 @@ import PageHero from "../../components/ui/PageHero.astro";
 import Section from "../../components/ui/Section.astro";
 import TestimonialCard from "../../components/ui/TestimonialCard.astro";
 import { siteFacts } from "../../lib/site";
-import legacyPages from "../../data/legacy/bespoke-pages.json";
+import proofJson from "../../../../data/vertical-seo/proof.json";
 import {
   baseGraph,
   breadcrumbNode,
@@ -30,10 +30,9 @@ const breadcrumbs = [
 
 const image = "/img/seo-for-therapists-los-angeles-california.webp";
 
-// The two legacy therapist reviews live as paragraph blocks on the existing
-// therapist city pages. Brandi May's testimonial is also stored in siteFacts.
+// All three testimonials live in the shared vertical proof data (Brandi May's
+// also stays in siteFacts for the homepage, about and results pages).
 // Nothing below is edited, shortened or invented.
-type LegacyBlock = { type: string; text?: string };
 type TherapistTestimonial = {
   person: string;
   role?: string;
@@ -41,49 +40,52 @@ type TherapistTestimonial = {
   quote: string;
 };
 
-const therapistSource = (
-  legacyPages as Array<{ pathname: string; blocks: LegacyBlock[] }>
-).find((page) => page.pathname === "/seo/for-therapists-syracuse");
+type AttributedTestimonial = {
+  person?: string;
+  role?: string;
+  company?: string;
+  quote?: string;
+};
 
-const legacyParagraphs = (therapistSource?.blocks ?? [])
-  .filter(
-    (block): block is { type: "paragraph"; text: string } =>
-      block.type === "paragraph" && typeof block.text === "string"
-  )
-  .map((block) => block.text);
+type ProofEntry = {
+  id: string;
+  type: string;
+  person?: string;
+  role?: string;
+  namedEntity?: string;
+  quote?: string;
+  verticals?: string[];
+};
 
-function quoteAfter(name: string): string | null {
-  const index = legacyParagraphs.indexOf(name);
-  if (index === -1) return null;
-  const next = legacyParagraphs[index + 1] ?? "";
-  const quote = next.replace(/^["']|["']$/g, "");
-  return quote || null;
-}
+const therapistProof = (proofJson as ProofEntry[]).filter(
+  (entry) =>
+    entry.type === "testimonial" &&
+    (entry.verticals ?? []).includes("therapists")
+);
 
 const brandi = siteFacts.testimonials.find(
   (testimonial) => testimonial.id === "brandi-may-psychotherapy"
 );
-const brandiLegacyQuote = quoteAfter("Brandi M.");
 
-const therapistTestimonials: TherapistTestimonial[] = [];
-const nicoleQuote = quoteAfter("Nicole P.");
-if (nicoleQuote) {
-  therapistTestimonials.push({ person: "Nicole P.", quote: nicoleQuote });
-}
-if (brandi) {
-  therapistTestimonials.push({
-    person: brandi.person,
-    role: brandi.role,
-    company: brandi.namedEntity,
-    quote: brandi.quote,
-  });
-} else if (brandiLegacyQuote) {
-  therapistTestimonials.push({ person: "Brandi M.", quote: brandiLegacyQuote });
-}
-const courtneyQuote = quoteAfter("Courtney V.");
-if (courtneyQuote) {
-  therapistTestimonials.push({ person: "Courtney V.", quote: courtneyQuote });
-}
+const candidates: Array<AttributedTestimonial | undefined> = [
+  therapistProof.find((entry) => entry.id === "nicole-p"),
+  brandi,
+  therapistProof.find((entry) => entry.id === "courtney-v"),
+].map((entry) =>
+  entry
+    ? {
+        person: entry.person,
+        role: entry.role,
+        company: entry.namedEntity,
+        quote: entry.quote,
+      }
+    : undefined
+);
+
+const therapistTestimonials: TherapistTestimonial[] = candidates.filter(
+  (testimonial): testimonial is TherapistTestimonial =>
+    Boolean(testimonial?.person && testimonial.quote)
+);
 
 const faqs = [
   {
@@ -228,6 +230,11 @@ const jsonLd = [
         headings that say Los Angeles where it is accurate, fast mobile pages and
         metadata that matches the content. This Los Angeles page sits alongside
         the practice site we improve, not instead of it.
+      </p>
+      <p>
+        If your practice is outside California, our
+        <a href="/seo/for-therapists-new-york">SEO for therapists in New York</a>
+        page covers that market and its licensing rules.
       </p>
     </div>
   </Section>

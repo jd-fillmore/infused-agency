@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServicePage from "../../templates/ServicePage.astro";
 import { getService, services } from "../../lib/site";
 import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
+import { THERAPIST_SEO_CITIES } from "../../lib/city-links.mjs";
 import {
   baseGraph,
   breadcrumbNode,
@@ -112,8 +113,7 @@ const data = {
     })),
   ],
   industries: [
-    { href: "/therapist-seo", label: "SEO for Therapists in Canada" },
-    { href: "/seo/for-therapists-los-angeles", label: "SEO for Therapists in Los Angeles, CA" },
+    ...THERAPIST_SEO_CITIES.map(({ href, label }) => ({ href, label })),
     { href: "/general-contractor-seo", label: "SEO for General Contractors" },
   ],
   childServices: services

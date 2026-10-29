@@ -1,0 +1,471 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { getIndustryPage } from "../lib/legacy-pages.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/ai-seo-hamilton";
+const title = "Hamilton AI SEO & AI Search Optimization | Infused";
+const description =
+  "AI search optimization for Hamilton businesses across the lower city, Mountain, Ancaster, Dundas and Stoney Creek, with AEO and GEO.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: "Hamilton" },
+];
+
+const image = "/images/ai-seo-hamilton.webp";
+const imageAlt =
+  "AI SEO services for Hamilton businesses serving the lower city, the Mountain and nearby communities";
+
+// The Suk Law result is reused exactly as it appears on the existing
+// /seo/for-law-firms-niagara page. Nothing in this block is edited or invented.
+const sukLaw = getIndustryPage("/seo/for-law-firms-niagara") as
+  | {
+      proof: {
+        heading: string;
+        client: string;
+        subhead?: string;
+        label: string;
+        image?: string;
+        alt?: string;
+        items?: string[];
+      };
+    }
+  | undefined;
+
+if (!sukLaw?.proof) {
+  throw new Error("Missing Suk Law proof block for the Hamilton AI SEO page");
+}
+
+const proof = sukLaw.proof;
+
+const faqs = [
+  {
+    q: "How should a Hamilton business describe serving Ancaster, Dundas and Stoney Creek?",
+    a: "Describe it the way a customer would. If you work out of the lower city and travel to the Mountain, Ancaster, Dundas and Stoney Creek, name those places on one clear coverage page and set the same boundary in your Google Business Profile. Explain any limits, such as a charge beyond Binbrook or a shorter window in Waterdown. A defined footprint is easier for an assistant to repeat than a vague claim to serve the whole region.",
+  },
+  {
+    q: "Why does our Hamilton Google Business Profile keep contradicting our website?",
+    a: "Usually because two people updated different things at different times. A suite number changes, a phone line is replaced, hours shift for the season, and only one listing gets edited. We compare your site, profile and the main directories line by line, decide which version is correct, then bring the others into line. Consistency is less about marketing polish than about giving a tool one set of facts.",
+  },
+  {
+    q: "Is AI SEO for Hamilton contractors different from a clinic's?",
+    a: "The mechanics are shared; the questions are not. A homeowner wants to know whether you reach their street and how soon you can attend. A patient wants hours, parking and whether the practice is accepting referrals. A plant manager wants specifications, capacity and lead times. We shape pages around those separate decisions instead of applying one local-service template to all three.",
+  },
+  {
+    q: "How do we improve our chances of getting recommended by ChatGPT in Hamilton?",
+    a: "We cannot promise that, and neither can any agency. Assistants select their own sources and rewrite answers as models and indexes change. What we can do is make your location, services, hours and credentials unambiguous and consistent, which gives a tool a better chance of describing you correctly if it looks. We report what changed rather than implying control we do not have.",
+  },
+  {
+    q: "How quickly can a Hamilton business see AI search changes?",
+    a: "No reliable date exists. Much depends on how much conflicting information is already online, how competitive your category is and how fast new pages can be written and approved. Work usually starts with corrections and technical repairs because those remove obvious obstacles. After that we watch calls, direction requests and enquiries, and report what moved and what did not.",
+  },
+  {
+    q: "What does local AI search work cost for a Hamilton business?",
+    a: "Scope drives it. A single-location trade with a small site needs different work from a manufacturer with several divisions or a practice with multiple practitioners. We review your pages, profiles and market before quoting, then send a free written proposal. Package prices are not published here because they would misrepresent the range.",
+  },
+  {
+    q: "Do you work with businesses serving Burlington and Grimsby as well as Hamilton?",
+    a: "Yes, where those places form part of a client's real service area. The agency operates from St. Catharines in the Niagara Region and works throughout Hamilton, Halton and Niagara. That can include Burlington, Grimsby, Waterdown, Flamborough and Binbrook, but we only write about a community when the business actually serves it. We do not claim a Hamilton office.",
+  },
+  {
+    q: "What appears in a Hamilton AI search report each month?",
+    a: "We set a baseline first: Search Console data, Google Business Profile calls and direction requests, website enquiries and a written note of how assistants describe the company. Reviews follow an agreed schedule and separate the work we completed from the outcomes we cannot control. If a figure stalls, the report says so and proposes the next step.",
+  },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "AI SEO services in Hamilton",
+    description,
+    serviceType:
+      "AI SEO, AI search optimization, answer engine optimization (AEO) and generative engine optimization (GEO)",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Hamilton",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Ontario",
+        },
+      },
+      { "@type": "City", name: "Burlington" },
+      { "@type": "City", name: "Grimsby" },
+      {
+        "@type": "AdministrativeArea",
+        name: "Ontario",
+        containedInPlace: {
+          "@type": "Country",
+          name: "Canada",
+        },
+      },
+      { "@type": "Country", name: "Canada" },
+    ],
+  }),
+  faqPageNode(pathname, faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  image={image}
+  imageAlt={imageAlt}
+  jsonLd={jsonLd}
+>
+  <PageHero
+    title="AI SEO & Generative Search Optimization in Hamilton"
+    description="A company based in one part of Hamilton often serves customers across the whole city and beyond. We make that footprint, and the services inside it, clear enough for Google and AI assistants to describe accurately, without inventing an address or a local branch."
+    breadcrumbs={breadcrumbs}
+    eyebrow="AI SEO Hamilton"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <h2>Tell us about AI SEO for your Hamilton business</h2>
+      <p>
+        Where do your customers come from, and what do they ask before calling?
+        We will check your site, Google profile and what AI tools say, then
+        prepare a written quote.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> Website and AI answer review</li>
+        <li><Icon name="check" /> Local search comparison</li>
+        <li><Icon name="check" /> Written quote, no obligation</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>
+        Get a Free Quote
+      </Button>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="One city, many maps"
+    index="01"
+    heading="AI search optimization Hamilton: one city, several service areas"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Hamilton is not one market. A plumber working out of the lower city
+            may cover the Mountain, Ancaster, Dundas and Stoney Creek, while a
+            clinic in Ancaster draws patients from Flamborough and a manufacturer
+            on the east side sells to buyers well beyond the city. Each business
+            serves a different map, and an AI tool can only repeat the map it is
+            given.
+          </p>
+          <p>
+            That is where location clarity breaks down. A website lists one
+            address, a Google profile names a different service area, a directory
+            still shows a former suite, and an assistant ends up describing a
+            company that no longer matches reality. For a business covering
+            several communities, small inconsistencies compound quickly.
+          </p>
+          <p>
+            Our work starts with the footprint: which communities you genuinely
+            serve, from which base, with what hours and what limits. We then make
+            the website, profile and directories say the same thing. Burlington
+            and Grimsby appear where they are truly part of the service area, not
+            as decoration.
+          </p>
+          <p>
+            If your customers are spread across the Greater Toronto Area instead,
+            our <a href="/ai-seo-toronto">AI SEO in Toronto</a> page explains how
+            we handle a larger, more crowded map.
+          </p>
+        </div>
+      </div>
+      <figure class="media-frame reveal">
+        <img
+          src={image}
+          alt={imageAlt}
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    eyebrow="Services"
+    index="02"
+    heading="Local SEO and AI search for Hamilton businesses, in six tasks"
+    description="Six connected tasks, chosen for the way a multi-community business actually gets found."
+  >
+    <div class="prose reveal" style="max-width: 56rem; margin-bottom: 2rem;">
+      <p>
+        The labels overlap, but they point at one body of work. AI SEO is the
+        broad goal of being understood by AI-assisted search. AEO, or answer
+        engine optimization, is the writing practice of answering real questions
+        directly, and our AEO services live there. Generative Engine
+        Optimization (GEO) is about the source material an assistant draws on
+        and whether it describes your business correctly; our generative engine
+        optimization services cover that side. None of this replaces SEO.
+      </p>
+    </div>
+    <div class="grid grid--3 reveal-group">
+      <Card>
+        <span class="service-card__number">01</span>
+        <h3 class="card__title">Serving Ancaster, Dundas and Stoney Creek customers with a clear footprint</h3>
+        <p class="card__text">
+          We define your service area by travel time, delivery range or
+          catchment rather than by a list of towns copied from a competitor. That
+          definition then goes on the website, the Google Business Profile and
+          the directories that shape what assistants repeat.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">02</span>
+        <h3 class="card__title">Google Business Profile Hamilton: one consistent profile</h3>
+        <p class="card__text">
+          Name, address, phone, hours, categories and service areas are compared
+          line by line. A second suite number or a disconnected line on a
+          directory is enough to make an AI tool describe the wrong business, so
+          we find the older version and retire it.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">03</span>
+        <h3 class="card__title">AEO services Hamilton for the questions each community asks</h3>
+        <p class="card__text">
+          Whether you reach Waterdown, how quickly someone can get to Binbrook,
+          what a service visit includes, whether a clinic has parking: short
+          factual answers help residents and give assistants clean material to
+          quote. We write them in the order a customer actually asks.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">04</span>
+        <h3 class="card__title">AI SEO for Hamilton contractors, clinics and manufacturers</h3>
+        <p class="card__text">
+          A contractor, a dental practice and a machine shop do not need the same
+          page structure. We write around the decision each customer makes,
+          without inventing demand or duplicating a page for every suburb in the
+          city.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">05</span>
+        <h3 class="card__title">Local structured data behind AI SEO in Hamilton</h3>
+        <p class="card__text">
+          Crawl paths, page speed, internal links and schema for locations,
+          services and questions. The plumbing matters because an assistant
+          cannot quote a page it cannot load or interpret, and a slow booking
+          form loses the customer before the content is read.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">06</span>
+        <h3 class="card__title">GEO services Hamilton: a baseline, then steady review</h3>
+        <p class="card__text">
+          We record what assistants say about your business at the start, re-run
+          the same questions later and watch calls, direction requests and
+          enquiries. Updates follow real changes in your hours, coverage or
+          services rather than a fixed monthly quota.
+        </p>
+      </Card>
+    </div>
+  </Section>
+
+  <Section tone="contrast" eyebrow="Proof" index="03" heading={proof.heading}>
+    <div class="split split--top">
+      <div class="reveal">
+        <span class="badge">{proof.label}</span>
+        <h3 class="h3" style="margin-top: 1rem; color: #ffffff;">{proof.client}</h3>
+        {
+          proof.subhead && (
+            <p class="prose" style="margin-top: 1.1rem; color: var(--color-contrast-muted);">
+              {proof.subhead}
+            </p>
+          )
+        }
+        {
+          proof.items && proof.items.length > 0 && (
+            <ul class="check-list" style="margin-top: 1.1rem;">
+              {proof.items.map((item) => <li>{item}</li>)}
+            </ul>
+          )
+        }
+        <div style="margin-top: 1.75rem;">
+          <Button href="/get-a-quote" variant="gold" arrow>
+            Discuss a similar project
+          </Button>
+        </div>
+      </div>
+      {
+        proof.image && (
+          <figure class="media-frame reveal">
+            <img
+              src={proof.image}
+              alt={proof.alt ?? `${proof.client} SEO results`}
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Who it's for"
+    index="04"
+    heading="Hamilton contractors, clinics and manufacturers: different buying journeys"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            A homeowner on the Mountain wants to know whether a contractor
+            covers their street and how soon someone can attend. A patient in
+            Dundas wants hours, parking and whether a practitioner is accepting
+            new referrals. A plant manager comparing suppliers wants
+            specifications, capacity and lead times. The search behaviour
+            differs, so the page structure should too.
+          </p>
+          <p>
+            We work with trades and contractors, health and professional
+            practices, manufacturers and industrial suppliers, and businesses
+            connected to McMaster and the hospitals. Some are single-location;
+            others cover the whole city and reach into Halton or Niagara. Scope
+            follows the customer, not a template.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">When does AI SEO Hamilton suit a business?</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>You cover several Hamilton communities from one base</li>
+          <li>Your Google profile and website disagree about location or hours</li>
+          <li>You are a trade, clinic or practice that customers compare</li>
+          <li>You manufacture or supply technically complex products</li>
+          <li>You want local visibility without exaggerated claims</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Why Infused"
+    index="05"
+    heading="An AI SEO agency for Hamilton, Ontario, based in St. Catharines"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Infused Agency works from St. Catharines, in the Niagara Region. We
+            support Hamilton businesses from there and travel when a meeting
+            genuinely helps. We do not claim a Hamilton office, and we will not
+            invent one to look local.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid--2" style="grid-template-columns: 1fr;">
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI search optimization Hamilton pages that reflect how you work</h3>
+          <p class="card__text">
+            Service area, hours, equipment, credentials and booking process come
+            from you. We do not add a Hamilton address, a fabricated client or a
+            statistic without a source.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">What decides whether ChatGPT recommends a Hamilton business</h3>
+          <p class="card__text">
+            Assistants choose their own sources. We can make your details easier
+            to read and repeat, but we cannot control whether you appear or how
+            often.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Hamilton AI search reporting that admits stagnation</h3>
+          <p class="card__text">
+            We agree measures first, keep a baseline and show what changed. If a
+            number has not moved, the report says so and explains the next step
+            rather than rearranging the chart.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO vs local SEO: foundations done properly</h3>
+          <p class="card__text">
+            Clear pages, working forms, accurate listings and a fast site still
+            carry most of the result. AI search work is an addition to that base,
+            not a replacement for it.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    tone="warm"
+    eyebrow="Questions"
+    index="06"
+    heading="Local SEO and AI search questions from Hamilton owners"
+  >
+    <Accordion items={faqs} />
+  </Section>
+
+  <Section
+    tone="contrast"
+    eyebrow="Related"
+    index="07"
+    heading="Where to read more about local search and AI answers"
+    description="Related services and contact options."
+  >
+    <ul class="chip-list">
+      <li>
+        <a class="chip" href="/ai-search">
+          AI search optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/seo">
+          SEO services
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/results">
+          Client results
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/get-a-quote">
+          Get a Free Quote
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Start with AI SEO built around Hamilton service areas"
+    description="Tell us which communities you serve and how customers reach you. We will check the site, profile and AI descriptions, then send a written quote."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

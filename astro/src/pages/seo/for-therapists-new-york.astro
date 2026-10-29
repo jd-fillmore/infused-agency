@@ -1,5 +1,527 @@
 ---
-import BespokeRoute from "../../components/routes/BespokeRoute.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Accordion from "../../components/ui/Accordion.astro";
+import Card from "../../components/ui/Card.astro";
+import CtaBand from "../../components/ui/CtaBand.astro";
+import Icon from "../../components/ui/Icon.astro";
+import PageHero from "../../components/ui/PageHero.astro";
+import Section from "../../components/ui/Section.astro";
+import TestimonialCard from "../../components/ui/TestimonialCard.astro";
+import { siteFacts } from "../../lib/site";
+import proofJson from "../../../../data/vertical-seo/proof.json";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const pathname = "/seo/for-therapists-new-york";
+const title = "SEO & AI SEO for New York Therapists | Infused";
+const description =
+  "SEO for New York therapists in a crowded market: AI SEO, answer engine optimization (AEO) and GEO for practices across the city. Free quote.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: "New York, NY" },
+];
+
+const image = "/images/seo-for-therapists-new-york.webp";
+
+// Testimonials come from the shared vertical proof data. Brandi May's quote
+// is also kept in siteFacts for the homepage, about and results pages. None of
+// the wording below is edited, shortened or invented.
+type TherapistTestimonial = {
+  person: string;
+  role?: string;
+  company?: string;
+  quote: string;
+};
+
+type AttributedTestimonial = {
+  person?: string;
+  role?: string;
+  company?: string;
+  quote?: string;
+};
+
+type ProofEntry = {
+  id: string;
+  type: string;
+  person?: string;
+  role?: string;
+  namedEntity?: string;
+  quote?: string;
+  verticals?: string[];
+};
+
+const therapistProof = (proofJson as ProofEntry[]).filter(
+  (entry) =>
+    entry.type === "testimonial" &&
+    (entry.verticals ?? []).includes("therapists")
+);
+
+const brandi = siteFacts.testimonials.find(
+  (testimonial) => testimonial.id === "brandi-may-psychotherapy"
+);
+
+const candidates: Array<AttributedTestimonial | undefined> = [
+  therapistProof.find((entry) => entry.id === "nicole-p"),
+  brandi,
+  therapistProof.find((entry) => entry.id === "courtney-v"),
+].map((entry) =>
+  entry
+    ? {
+        person: entry.person,
+        role: entry.role,
+        company: entry.namedEntity,
+        quote: entry.quote,
+      }
+    : undefined
+);
+
+const therapistTestimonials: TherapistTestimonial[] = candidates.filter(
+  (testimonial): testimonial is TherapistTestimonial =>
+    Boolean(testimonial?.person && testimonial?.quote)
+);
+
+const faqs = [
+  {
+    q: "How does a small private practice get found by clients searching for a therapist?",
+    a: "It gets found by being recognisable rather than broad. A practice that states a clear specialty, the ages or populations it works with, the boroughs it genuinely serves and the way payment works gives a client several honest reasons to choose it. Reviews, a complete profile and a fast site support that identity. We aim at searches a small practice can realistically serve and never promise a position.",
+  },
+  {
+    q: "What should a New York therapy website say about insurance and out-of-network fees?",
+    a: "Put the answer where a reader can find it quickly. A short page or section can explain which plans you are in network with, how you provide superbills, what a client should confirm with their insurer and whether you offer sliding-scale places. Keep every detail current and let the practice approve the wording. Confusion about cost is one of the most common reasons a promising enquiry stops.",
+  },
+  {
+    q: "Does telehealth SEO work for a practice licensed only in New York State?",
+    a: "Yes, but the geography changes. Instead of a waiting room, clients need to know that you hold New York State licensure, which locations you can see remotely, how telehealth sessions are run and what happens if someone lives outside your licensed scope. Pages that answer those points serve both the reader and a search engine trying to match a clinician to a location.",
+  },
+  {
+    q: "Should a therapy practice have separate pages for each New York borough?",
+    a: "Only where you truly work. A practice with a Manhattan office can describe the building, transport and nearby neighbourhoods. A clinician serving clients online across the city may not need five borough pages at all; a single clear service-area explanation can be stronger. We avoid near-identical pages for each borough, because they add little for a reader and can dilute the site.",
+  },
+  {
+    q: "How long before a New York therapy practice sees SEO traction?",
+    a: "There is no dependable date. Google evaluates pages on its own schedule, and a crowded field moves slowly. What we can control is the quality and consistency of the work: clearer titles, repaired technical problems, useful specialty and payment pages, and steady updates. We report on the searches where pages begin to appear rather than promising a month.",
+  },
+  {
+    q: "How much does therapist SEO cost for a New York practice?",
+    a: "Scope decides it. A sole practitioner with a compact site and one office is not the same project as a group with several clinicians, specialties and locations. We look at the current site and the opportunity before quoting, then send a free proposal that describes the work. Package prices and dollar figures are not published on this page.",
+  },
+  {
+    q: "Can group practice SEO help a clinic with several clinicians?",
+    a: "Yes. Groups usually need a structure that keeps the practice's overall offer clear while giving each clinician a useful profile. We can organise specialties, populations, session formats, office access and the route an enquiry takes, so a client reaches the right person without reading a long staff list.",
+  },
+  {
+    q: "How do you handle New York licensing board rules in therapy marketing?",
+    a: "We keep marketing language factual and avoid guarantees, clinical claims and anything a reader could misread as a promise of recovery. A practice must describe its services accurately and follow the rules that apply to it. The practice remains responsible for compliance with New York licensing boards and professional ethics requirements, and we flag wording that may deserve review with its own advisers.",
+  },
+  {
+    q: "Where does answer engine optimization fit in a therapy practice?",
+    a: "AI SEO covers the wider effort of making a practice legible to AI tools: clear statements about specialties, licensure, location, availability and booking, repeated consistently across the site and other credible profiles. Answer engine optimization (AEO) covers the direct answers that tools can extract, while Generative Engine Optimization (GEO) covers how the practice is represented across the sources those tools draw from. No agency can promise that an AI tool will cite a practice or place it in an answer.",
+  },
+];
+
+const relatedContent: {
+  links: Array<{ href: string; label: string }>;
+  areasWeServe: {
+    title: string;
+    teaser: string;
+    href: string;
+  } | null;
+} = {
+  links: [
+    { href: "/seo", label: "SEO services overview" },
+    { href: "/ai-search", label: "AI search optimization" },
+    { href: "/results", label: "Client results" },
+    { href: "/about", label: "About Infused Agency" },
+    { href: "/get-a-quote", label: "Get a Free Quote" },
+  ],
+  // Intentionally empty. Add { title, teaser, href } when a verified
+  // areas-we-serve page exists; the block renders only when filled.
+  areasWeServe: null,
+};
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "SEO for New York therapists",
+    description,
+    serviceType: "Therapist SEO",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "New York",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "New York",
+        },
+      },
+      { "@type": "Place", name: "Manhattan" },
+      { "@type": "Place", name: "Brooklyn" },
+      { "@type": "Place", name: "Queens" },
+      { "@type": "Place", name: "The Bronx" },
+      { "@type": "Place", name: "Staten Island" },
+      { "@type": "Place", name: "Upper West Side" },
+      { "@type": "Place", name: "Williamsburg" },
+      { "@type": "Place", name: "Park Slope" },
+      { "@type": "Place", name: "Astoria" },
+      { "@type": "Place", name: "Chelsea" },
+      { "@type": "Country", name: "United States" },
+    ],
+  }),
+  faqPageNode(pathname, faqs),
+];
 ---
 
-<BespokeRoute pathname="/seo/for-therapists-new-york" />
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  image={image}
+  imageAlt="Placeholder image for SEO for Therapists in New York"
+  jsonLd={jsonLd}
+>
+  <PageHero
+    title="Therapist SEO in New York for practices that need to be found"
+    description="New York City holds an extraordinary number of licensed therapists, so a practice cannot rely on a generic listing to be found. We help LMHCs, LCSWs, LMFTs and licensed psychologists sharpen how they present their specialty, the populations they serve and the boroughs or statewide telehealth coverage they actually offer, so the right client can recognise the fit."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Therapist SEO"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <figure class="media-frame" style="margin: 0;">
+        <img
+          src={image}
+          alt="Placeholder image for SEO for Therapists in New York"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="A crowded field"
+    index="01"
+    heading="Private practice SEO for therapists in a crowded New York market"
+  >
+    <div class="prose reveal" style="max-width: 56rem;">
+      <p>
+        A prospective client in this city usually narrows quickly. They may type
+        a concern such as postpartum anxiety, complex trauma or couples work,
+        then add a borough, a neighbourhood, an insurance carrier or the words
+        &ldquo;out of network&rdquo;. Someone in Astoria and someone on the Upper
+        East Side can use completely different phrasing for the same need.
+      </p>
+      <p>
+        That density cuts both ways. There is demand, but there are also dozens
+        of nearby clinicians who treat the same concern. A page that says only
+        &ldquo;therapy in New York&rdquo; competes with all of them and describes
+        none of them. Specificity gives both a reader and a search engine a
+        reason to keep the practice in view.
+      </p>
+      <p>
+        We map the specialties, populations, session formats and payment
+        arrangements that belong to your practice, then build pages around them.
+        Borough references appear where they are true, not sprinkled across
+        every page. The result should read like a practice with a point of view,
+        because that is what a dense market rewards.
+      </p>
+      <p>
+        If you are also considering a practice outside New York, our
+        <a href="/seo/for-therapists-los-angeles">SEO for therapists in Los Angeles</a>
+        page covers a different licensing and insurance landscape.
+      </p>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    eyebrow="Services"
+    index="02"
+    heading="Therapist website SEO: six parts of the work"
+    description="Six separate workstreams, sized to the practice instead of a batch of lookalike city pages."
+  >
+    <div class="grid grid--3 reveal-group">
+      <Card>
+        <span class="service-card__number">01</span>
+        <h3 class="card__title">SEO for LMHCs and LCSWs: matching specialties to client searches</h3>
+        <p class="card__text">
+          We start from the concerns you actually treat&mdash;perinatal mental
+          health, OCD, family conflict, grief, whatever belongs on your
+          caseload&mdash;and the vocabulary clients use for them. Titles,
+          headings and page copy then say plainly who the work is for, without
+          turning a clinician's page into a keyword list.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">02</span>
+        <h3 class="card__title">Therapist marketing New York with clear insurance and fee answers</h3>
+        <p class="card__text">
+          Cost is often the first filter in New York. Pages that explain which
+          plans you accept, how superbills and out-of-network reimbursement work,
+          and what a client should ask before booking reduce wasted enquiries. We
+          keep the wording factual and let the practice confirm every detail
+          before it goes live.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">03</span>
+        <h3 class="card__title">Google Business Profile for therapists across the five boroughs</h3>
+        <p class="card__text">
+          We refine the Google Business Profile, categories and service areas,
+          and make the location page match reality: an office you actually use, a
+          building entrance clients can find, or a clearly stated telehealth-only
+          arrangement. Manhattan, Brooklyn, Queens, the Bronx and Staten Island
+          are named only where the practice genuinely serves them.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">04</span>
+        <h3 class="card__title">Answer engine optimization for therapists, in plain language</h3>
+        <p class="card__text">
+          Assistants answer questions such as &ldquo;who works with adult ADHD in
+          Brooklyn and takes Aetna?&rdquo; by pulling facts from pages and
+          profiles. We make your licensure, modalities, populations, locations
+          and booking route explicit, then check how ChatGPT, Google's AI
+          Overviews and similar tools describe the practice. AEO (answer engine
+          optimization) and GEO (generative engine optimization) name related
+          pieces of that effort. No citation is promised.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">05</span>
+        <h3 class="card__title">Technical fixes for a therapist website that loses enquiries</h3>
+        <p class="card__text">
+          An outdated site quietly loses people: a contact form that fails, a
+          services menu that has not changed since 2019, duplicate pages for old
+          locations. We audit indexing, mobile speed, titles, links and form
+          behaviour, then fix what stands between an interested reader and a
+          first appointment.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">06</span>
+        <h3 class="card__title">Generative engine optimization for therapists and consistent references</h3>
+        <p class="card__text">
+          Professional directories, association listings, training institutes,
+          community resources and honest reviews all help confirm that a practice
+          is real and current. Each month we revisit availability, add pages
+          where a genuine gap exists, review the searches producing enquiries,
+          and correct details that have drifted.
+        </p>
+      </Card>
+    </div>
+  </Section>
+
+  <Section
+    tone="warm"
+    eyebrow="AI search"
+    index="03"
+    heading="AI SEO for therapists when a New York client asks an assistant"
+  >
+    <div class="prose reveal" style="max-width: 56rem;">
+      <p>
+        Ask an assistant for a therapist who handles religious trauma in Queens,
+        or a psychologist near Grand Central who sees adolescents, and it will
+        assemble an answer from sources it can parse. In a city this dense, the
+        model is effectively choosing among comparable practices, and the one
+        described most clearly has the advantage.
+      </p>
+      <p>
+        <a href="/ai-search">AI search optimization</a>&mdash;AI SEO for
+        short&mdash;is the work of being that clear source. It means stating
+        licensure, specialties, age ranges, languages, insurance and session
+        format in language a tool can extract, and keeping those facts identical
+        on your site, your profile and the directories that mention you. The
+        direct question-and-answer passages fall under AEO, or answer engine
+        optimization, while GEO (generative engine optimization) covers the
+        broader picture of how the practice is represented across the web.
+      </p>
+      <p>
+        None of this guarantees a mention. Assistants change sources and wording
+        without warning, and no agency controls the result. What we can do is
+        remove ambiguity, so a tool that does look at your practice has an
+        accurate description to work from.
+      </p>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Who it's for"
+    index="04"
+    heading="Telehealth therapist SEO across New York State"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            We work with licensed mental health counselors (LMHCs), licensed
+            clinical social workers (LCSWs), licensed marriage and family
+            therapists (LMFTs) and licensed psychologists, from a first year in
+            private practice to established groups with several offices.
+          </p>
+          <p>
+            A solo clinician usually needs a credible front door and a handful of
+            strong specialty pages. A group needs a structure that separates the
+            practice's overall offer from each clinician's profile, so a client
+            can find the right person without reading a staff directory. An
+            online-only practice needs its New York State licensure and telehealth
+            scope stated without ambiguity, especially when someone is searching
+            from Buffalo, Rochester or Long Island.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">Is therapist marketing in New York a fit for your practice?</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>You treat a defined concern and want to own that niche locally</li>
+          <li>You accept insurance, work out of network, or do both</li>
+          <li>You see clients online anywhere in New York State</li>
+          <li>You run a group with several clinicians or locations</li>
+          <li>You want enquiries without clinical outcome claims</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Why Infused"
+    index="05"
+    heading="SEO for psychologists in New York, written within professional rules"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Therapy marketing sits close to professional ethics. New York
+            licensing boards and professional codes govern how a practice may
+            present itself, and a careless claim can damage trust long before it
+            attracts a client. We write within those boundaries; the practice and
+            its advisers remain the ones who decide what is compliant.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid--2" style="grid-template-columns: 1fr;">
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">How to get found by clients searching for a therapist</h3>
+          <p class="card__text">
+            Copy is built from what you can verify: credentials, modalities,
+            populations, office access, fees and insurance arrangements. If a
+            statement cannot be supported, it does not belong on the page.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Therapist SEO in New York with no ranking or outcome promises</h3>
+          <p class="card__text">
+            Search positions and AI mentions are not ours to guarantee, and
+            clinical improvement is not a marketing claim. We describe the work,
+            the process and the reporting honestly.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Where SEO for therapists in Manhattan and Brooklyn belongs</h3>
+          <p class="card__text">
+            Specialty, population, location and payment pages each have a clear
+            job. Internal links move a reader from recognising their situation to
+            understanding the next step, rather than repeating the same paragraph
+            under different borough names.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Therapist website SEO a regulated practice can review</h3>
+          <p class="card__text">
+            We flag phrasing that could read as a testimonial about clinical
+            results, a superlative, or an unsupported credential claim, and
+            suggest wording that stays factual. The practice and its advisers
+            make the final call.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  {
+    therapistTestimonials.length > 0 && (
+      <Section
+        tone="contrast"
+        eyebrow="Testimonials"
+        index="06"
+        heading="Practitioners on private practice SEO that respects their field"
+      >
+        <div class="grid grid--3 reveal-group">
+          {therapistTestimonials.map((testimonial) => (
+            <TestimonialCard
+              quote={testimonial.quote}
+              person={testimonial.person}
+              role={testimonial.role}
+              company={testimonial.company}
+            />
+          ))}
+        </div>
+      </Section>
+    )
+  }
+
+  <Section
+    tone="warm"
+    eyebrow="Questions"
+    index="07"
+    heading="What New York therapists ask about AI SEO"
+  >
+    <Accordion items={faqs} />
+  </Section>
+
+  {
+    relatedContent.areasWeServe && (
+      <Section
+        tone="tint"
+        eyebrow="Areas"
+        heading={relatedContent.areasWeServe.title}
+      >
+        <div class="prose reveal" style="max-width: 52rem;">
+          <p>{relatedContent.areasWeServe.teaser}</p>
+          <p>
+            <a href={relatedContent.areasWeServe.href}>Learn more</a>
+          </p>
+        </div>
+      </Section>
+    )
+  }
+
+  <Section
+    tone="contrast"
+    eyebrow="Related"
+    index="08"
+    heading="Related reading on SEO for a New York therapy practice"
+    description="Services, results and company background."
+  >
+    <ul class="chip-list">
+      {
+        relatedContent.links.map((link) => (
+          <li>
+            <a class="chip" href={link.href}>
+              {link.label}
+              <Icon name="arrow-right" />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Talk to us about SEO for your New York therapy practice"
+    description="Tell us about your practice, the clients you want to see and the boroughs or statewide coverage you offer. We will review the site and listings, then send a free quote."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

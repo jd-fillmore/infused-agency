@@ -12,7 +12,7 @@ const CLIENT_FEEDBACK_HEADING = "What Niagara clients say";
 export const LOCAL_SEO_PAGES = [
   {
     seo: {
-      title: "SEO in Pelham, Ontario | Local SEO & AI Search | Infused",
+      title: "AI SEO Pelham | Generative Search Optimization",
       description:
         "Local SEO for Pelham businesses in Fonthill, Fenwick, Ridgeville and North Pelham. Improve map visibility, service-area pages and AI search visibility. Free quote.",
       canonical: "https://infused.agency/seo/pelham",
@@ -183,7 +183,7 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "SEO in West Lincoln, Ontario | Local SEO & AI Search | Infused",
+      title: "AI SEO West Lincoln | Generative Search Optimization",
       description:
         "Local SEO for West Lincoln businesses in Smithville, Caistor Centre, Grassie, Wellandport and Abingdon. Build service-area visibility and AI search presence. Free quote.",
       canonical: "https://infused.agency/seo/west-lincoln",
@@ -352,7 +352,7 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "SEO in Smithville, Ontario | Local SEO & AI Search | Infused",
+      title: "AI SEO Smithville | Generative Search Optimization",
       description:
         "Local SEO for Smithville, Ontario businesses. Improve Google map visibility, service pages and AI search presence for a growing West Lincoln community. Free quote.",
       canonical: "https://infused.agency/seo/smithville",
@@ -521,7 +521,7 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "SEO in Wainfleet, Ontario | Local SEO & AI Search | Infused",
+      title: "AI SEO Wainfleet | Generative Search Optimization",
       description:
         "Local SEO for Wainfleet businesses and service-area companies. Reach year-round residents, lakeshore and rural customers, and improve AI search visibility. Free quote.",
       canonical: "https://infused.agency/seo/wainfleet",
@@ -690,7 +690,7 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "SEO in St. Catharines, Ontario | Local SEO & AI Search | Infused",
+      title: "AI SEO St. Catharines | Generative Search Optimization",
       description:
         "Local SEO for St. Catharines businesses. Compete in the map pack, strengthen service pages and improve AI search visibility across Niagara's largest city. Free quote.",
       canonical: "https://infused.agency/seo/st-catharines",
@@ -862,7 +862,7 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "SEO in Niagara Falls, Ontario | Local SEO & AI Search | Infused",
+      title: "AI SEO Niagara Falls | Generative Search Optimization",
       description:
         "Local SEO for Niagara Falls businesses serving residents and visitors. Improve map visibility, service pages and AI search presence without chasing empty tourist traffic.",
       canonical: "https://infused.agency/seo/niagara-falls",

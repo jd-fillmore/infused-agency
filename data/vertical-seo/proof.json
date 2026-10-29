@@ -53,8 +53,29 @@
     "id": "brandi-may-psychotherapy",
     "type": "testimonial",
     "namedEntity": "Brandi May Psychotherapy",
-    "person": "Brandi M.",
+    "person": "Brandi May",
+    "role": "Owner",
     "quote": "Infused Agency are not only clear professionals and expert in their fields, but are extremely personable to work with. I would definitely recommend Infused Agency to anyone looking to optimize SEO!",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "therapists"
+    ]
+  },
+  {
+    "id": "courtney-v",
+    "type": "testimonial",
+    "person": "Courtney V.",
+    "quote": "I had a great experience working with Infused agency! They optimized my website, and I saw a significant increase in traffic and rankings. Thanks to their expertise, my business is now reaching more potential clients than ever. Highly recommend for anyone looking for real SEO results!",
+    "source": "https://www.infused.agency",
+    "verticals": [
+      "therapists"
+    ]
+  },
+  {
+    "id": "nicole-p",
+    "type": "testimonial",
+    "person": "Nicole P.",
+    "quote": "I just completed a three month project with Infused Agency and my experience has been great. They are extremely knowledgeable in their field and very personable and easy to work with. I'm looking forward to seeing how their work continues to benefit my therapist practice.",
     "source": "https://www.infused.agency",
     "verticals": [
       "therapists"

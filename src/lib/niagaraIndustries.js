@@ -492,20 +492,9 @@ const NIAGARA_INDUSTRIES = [
     href: "/seo/for-painters-niagara",
     coverage: "Niagara region",
   },
-  {
-    slug: "therapists",
-    displayName: "Therapists",
-    category: "Health & Wellness",
-    benefit:
-      "Show up when clients search for a therapist, counsellor or psychotherapist near them, across Canada.",
-    href: "/therapist-seo",
-    coverage: "Canada-wide",
-  },
 ];
 
-// The industries the homepage features: every Niagara programme. The
-// Canada-wide therapist programme is surfaced separately, so it is excluded
-// from the homepage industries grid.
+// The industries the homepage features: every Niagara programme.
 const HOMEPAGE_INDUSTRY_SLUGS = [
   "concrete-contractors",
   "insulation-contractors",
@@ -538,7 +527,7 @@ const HOMEPAGE_INDUSTRIES = NIAGARA_INDUSTRIES.filter((item) =>
 
 // Shape expected by the vertical nav snapshot (name + url).
 const NIAGARA_INDUSTRY_NAV_LINKS = NIAGARA_INDUSTRIES.map((item) => ({
-  name: `SEO for ${item.displayName}${item.slug === "therapists" ? " in Canada" : " in Niagara"}`,
+  name: `SEO for ${item.displayName} in Niagara`,
   url: item.href,
 }));
 

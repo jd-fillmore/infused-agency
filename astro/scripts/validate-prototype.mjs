@@ -119,7 +119,6 @@ const EXPECTED_TYPES = {
   "/": ["Organization", "WebSite", "WebPage", "FAQPage"],
   "/seo": ["CollectionPage", "BreadcrumbList", "Service"],
   "/seo/port-colborne": ["WebPage", "BreadcrumbList", "Service", "FAQPage"],
-  "/therapist-seo": ["WebPage", "BreadcrumbList", "Service", "FAQPage"],
   "/blog": ["CollectionPage", "BreadcrumbList"],
   "/get-a-quote": ["ContactPage", "BreadcrumbList"],
 };

@@ -359,18 +359,8 @@ function enumeratePages(opts = {}) {
       city: null,
     });
 
-    // Country page (migrated USA page) for therapists.
+    // Country page (USA) for verticals that opt in via countryPages.
     if (vertical.countryPages && vertical.countryPages.includes("usa")) {
-      push({
-        kind: "country",
-        vertical,
-        country: "usa",
-        urlPath: `/${vertical.urlSlug}/usa`,
-        level: "country",
-        province: null,
-        city: null,
-      });
-    } else if (vertical.slug === "therapists") {
       push({
         kind: "country",
         vertical,
@@ -512,8 +502,9 @@ function uniqueFieldCount(page, content) {
   if (geo && geo.advertisingRulesNote) count++;
   if (content && has(content.localInsight)) count++;
   if (content && has(content.proofRefs)) count++;
-  // Province structural signals (documented assumption): regulators are null for
-  // therapists, so capital + indexed cities are counted as genuine unique data.
+  // Province structural signals (documented assumption): regulators are null
+  // for verticals without a Canadian regulator, so capital + indexed cities are
+  // counted as genuine unique data.
   if (page.kind === "province" && page.province) {
     if (page.province.capitalCity) count++;
     if (page.province.languageNote) count++;
@@ -928,131 +919,6 @@ function buildLinks(page, publishedSet) {
   return links;
 }
 
-// ----- legacy page orphan prevention (follow-up Phase 2) -----
-//
-// The legacy /seo/for-therapists-* city pages stay live and indexable until
-// their replacement is published. While live they must remain reachable through
-// a crawlable link from a published page, so we surface them in a "More cities"
-// block on the matching province page (and on the pillar for the US cities,
-// which have no built province pages). Deriving "live" from LEGACY_REDIRECT_MAP
-// vs the published set means a city drops out of the block automatically the
-// moment its redirect activates.
-
-const US_LEGACY_CITIES = [
-  { slug: "albany", name: "Albany" },
-  { slug: "buffalo", name: "Buffalo" },
-  { slug: "huntington", name: "Huntington" },
-  { slug: "new-york", name: "New York" },
-  { slug: "rochester", name: "Rochester" },
-  { slug: "syracuse", name: "Syracuse" },
-];
-
-// Every legacy therapist route, regardless of kind. The React page tree was
-// removed, so the routes are read from the exported manifest maintained by the
-// Astro build (astro/src/data/legacy/therapist-routes.json).
-function legacyTherapistFiles() {
-  const manifest = path.join(
-    process.cwd(),
-    "astro",
-    "src",
-    "data",
-    "legacy",
-    "therapist-routes.json"
-  );
-  if (!fs.existsSync(manifest)) return [];
-  return JSON.parse(fs.readFileSync(manifest, "utf8"));
-}
-
-// The legacy city pages we know how to classify, with their province / region.
-function getLegacyTherapistPages() {
-  if (_cache.legacyPages) return _cache.legacyPages;
-  const provinces = loadProvinces();
-  const cities = loadCities();
-  const us = new Map(US_LEGACY_CITIES.map((c) => [c.slug, c]));
-  const entries = [];
-  for (const file of legacyTherapistFiles()) {
-    const city = cities.find((c) => c.slug === file.slug);
-    if (city) {
-      const province = provinces.find((p) => p.slug === city.provinceSlug);
-      entries.push({
-        slug: file.slug,
-        name: city.name,
-        url: file.url,
-        kind: "city",
-        region: "canada",
-        provinceSlug: city.provinceSlug,
-        abbr: province ? province.abbr : "",
-      });
-    } else if (us.has(file.slug)) {
-      entries.push({
-        slug: file.slug,
-        name: us.get(file.slug).name,
-        url: file.url,
-        kind: "usa-city",
-        region: "usa",
-        provinceSlug: null,
-        abbr: "US",
-      });
-    }
-  }
-  _cache.legacyPages = entries;
-  return entries;
-}
-
-// A legacy page is live while it has no redirect, or its redirect target is not
-// actually published.
-function isLegacyPageLive(url, publishedSet) {
-  const target = LEGACY_REDIRECT_MAP[url];
-  if (!target) return true;
-  if (!publishedSet) return false;
-  return !publishedSet.has(target);
-}
-
-// "More cities" links for a page: province pages list their live legacy cities;
-// the pillar lists the live US city pages.
-function buildLegacyLinks(page, publishedSet) {
-  if (page.vertical.slug !== "therapists") return [];
-  const live = getLegacyTherapistPages().filter((e) =>
-    isLegacyPageLive(e.url, publishedSet)
-  );
-  let relevant = [];
-  if (page.kind === "province") {
-    relevant = live.filter(
-      (e) => e.kind === "city" && e.provinceSlug === page.province.slug
-    );
-  } else if (page.kind === "pillar") {
-    relevant = live.filter((e) => e.kind === "usa-city");
-  } else {
-    return [];
-  }
-  return relevant
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map((e) => ({
-      href: e.url,
-      label: e.region === "usa" ? e.name : `${e.name}, ${e.abbr}`,
-    }));
-}
-
-// Orphan check: every live legacy page must be linked from a published page.
-// Scope: only applies once the therapists vertical is actually released and has
-// a published pillar. Before wave 1 goes live the legacy pages legitimately
-// stay live (no redirect is emitted yet), so there is nothing to be orphaned.
-function findOrphanLiveLegacyPages(publishedRecords, publishedSet) {
-  if (!publishedRecords.some((r) => r.page.vertical.slug === "therapists")) {
-    return [];
-  }
-  const linked = new Set();
-  for (const r of publishedRecords) {
-    for (const l of buildLegacyLinks(r.page, publishedSet)) linked.add(l.href);
-  }
-  const orphans = [];
-  for (const file of legacyTherapistFiles()) {
-    if (!isLegacyPageLive(file.url, publishedSet)) continue;
-    if (!linked.has(file.url)) orphans.push(file.url);
-  }
-  return orphans;
-}
-
 // ----- slug integrity -----
 
 function verifySlugIntegrity() {
@@ -1109,7 +975,6 @@ function buildPageProps(page, publishedSet) {
       : getProofByIds(content ? content.proofRefs : []);
   const breadcrumbs = buildBreadcrumbs(page);
   const links = buildLinks(page, publishedSet);
-  const legacyCities = buildLegacyLinks(page, publishedSet);
   const v = page.vertical;
 
   let provincesIndex = [];
@@ -1187,7 +1052,7 @@ function buildPageProps(page, publishedSet) {
     proof,
     breadcrumbs,
     links,
-    legacyCities,
+    legacyCities: [],
     provincesIndex,
     citiesIndex,
     regulationRows:
@@ -1206,8 +1071,7 @@ function buildPageProps(page, publishedSet) {
 // automatically as new verticals or geo pages go live.
 function buildIndustriesProps() {
   // Niagara-first: the industries surfaced on the homepage and /industries are
-  // the curated bespoke Niagara programmes (plus the Canada-wide therapist
-  // programme). See src/lib/niagaraIndustries.js.
+  // the curated bespoke Niagara programmes. See src/lib/niagaraIndustries.js.
   const { NIAGARA_INDUSTRIES, HOMEPAGE_INDUSTRIES } = require("./niagaraIndustries");
   const shape = (v) => ({
     slug: v.slug,
@@ -1223,62 +1087,6 @@ function buildIndustriesProps() {
   const homepageItems = HOMEPAGE_INDUSTRIES.map(shape);
   const categories = [...new Set(items.map((i) => i.category))].sort();
   return { items, categories, homepageItems };
-}
-
-// ----- legacy redirects (only emitted when the target is published) -----
-
-const LEGACY_REDIRECT_MAP = {
-  "/seo/for-therapists-canada": "/therapist-seo",
-  "/seo/for-therapists-usa": "/therapist-seo/usa",
-  "/seo/for-therapists-ontario": "/therapist-seo/ontario",
-  "/seo/for-therapists-quebec": "/therapist-seo/quebec",
-  "/seo/for-therapists-british-columbia": "/therapist-seo/british-columbia",
-  "/seo/for-therapists-alberta": "/therapist-seo/alberta",
-  "/seo/for-therapists-saskatchewan": "/therapist-seo/saskatchewan",
-  "/seo/for-therapists-manitoba": "/therapist-seo/manitoba",
-  "/seo/for-therapists-nova-scotia": "/therapist-seo/nova-scotia",
-  "/seo/for-therapists-new-brunswick": "/therapist-seo/new-brunswick",
-  "/seo/for-therapists-newfoundland-labrador":
-    "/therapist-seo/newfoundland-and-labrador",
-  "/seo/for-therapists-toronto": "/therapist-seo/ontario/toronto",
-  "/seo/for-therapists-ottawa": "/therapist-seo/ontario/ottawa",
-  "/seo/for-therapists-mississauga": "/therapist-seo/ontario/mississauga",
-  "/seo/for-therapists-brampton": "/therapist-seo/ontario/brampton",
-  "/seo/for-therapists-hamilton": "/therapist-seo/ontario/hamilton",
-  "/seo/for-therapists-montreal": "/therapist-seo/quebec/montreal",
-  "/seo/for-therapists-quebec-city": "/therapist-seo/quebec/quebec-city",
-  "/seo/for-therapists-laval": "/therapist-seo/quebec/laval",
-  "/seo/for-therapists-gatineau": "/therapist-seo/quebec/gatineau",
-  "/seo/for-therapists-longueuil": "/therapist-seo/quebec/longueuil",
-  "/seo/for-therapists-vancouver": "/therapist-seo/british-columbia/vancouver",
-  "/seo/for-therapists-surrey": "/therapist-seo/british-columbia/surrey",
-  "/seo/for-therapists-burnaby": "/therapist-seo/british-columbia/burnaby",
-  "/seo/for-therapists-richmond": "/therapist-seo/british-columbia/richmond",
-  "/seo/for-therapists-abbotsford": "/therapist-seo/british-columbia/abbotsford",
-  "/seo/for-therapists-calgary": "/therapist-seo/alberta/calgary",
-  "/seo/for-therapists-edmonton": "/therapist-seo/alberta/edmonton",
-  "/seo/for-therapists-red-deer": "/therapist-seo/alberta/red-deer",
-  "/seo/for-therapists-lethbridge": "/therapist-seo/alberta/lethbridge",
-  "/seo/for-therapists-airdrie": "/therapist-seo/alberta/airdrie",
-  "/seo/for-therapists-saskatoon": "/therapist-seo/saskatchewan/saskatoon",
-  "/seo/for-therapists-regina": "/therapist-seo/saskatchewan/regina",
-  "/seo/for-therapists-winnipeg": "/therapist-seo/manitoba/winnipeg",
-  "/seo/for-therapists-halifax": "/therapist-seo/nova-scotia/halifax",
-  "/seo/for-therapists-cape-breton": "/therapist-seo/nova-scotia/cape-breton",
-  "/seo/for-therapists-moncton": "/therapist-seo/new-brunswick/moncton",
-  "/seo/for-therapists-saint-john": "/therapist-seo/new-brunswick/saint-john",
-  "/seo/for-therapists-fredericton": "/therapist-seo/new-brunswick/fredericton",
-  "/seo/for-therapists-st-johns": "/therapist-seo/newfoundland-and-labrador/st-johns",
-};
-
-function getPublishedRedirects(publishedSet) {
-  const redirects = [];
-  for (const [source, destination] of Object.entries(LEGACY_REDIRECT_MAP)) {
-    if (publishedSet.has(destination)) {
-      redirects.push({ source, destination, permanent: true });
-    }
-  }
-  return redirects;
 }
 
 function publishedPaths() {
@@ -1325,11 +1133,6 @@ module.exports = {
   nearestDuplicatePairs,
   resetCaches,
   buildLinks,
-  buildLegacyLinks,
-  getLegacyTherapistPages,
-  legacyTherapistFiles,
-  isLegacyPageLive,
-  findOrphanLiveLegacyPages,
   buildBreadcrumbs,
   verifySlugIntegrity,
   isVerticalHref,
@@ -1337,8 +1140,6 @@ module.exports = {
   cityTestimonials,
   regulationRows,
   buildIndustriesProps,
-  LEGACY_REDIRECT_MAP,
-  getPublishedRedirects,
   publishedPaths,
   ALLOWED_STATIC_LINKS,
 };

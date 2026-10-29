@@ -27,13 +27,19 @@ const faqs = (faqBlock?.items ?? []).map((faq: { q: string; a: string }) => ({
   a: faq.a,
 }));
 
+// City names come from the final breadcrumb so headlines can change freely
+// without breaking the structured data.
+const cityName =
+  page.breadcrumbs?.[page.breadcrumbs.length - 1]?.name ??
+  page.h1.replace(/ Web Design Company$/, "").replace(/ SEO Company.*$/, "");
+
 // Regional pages carry their own areaServed list because a single City node
 // cannot describe a service area that spans several municipalities.
 const areaServed =
   page.areaServed ??
   (page.kind === "web-design" || page.kind === "therapist"
     ? [
-        { "@type": "City", name: page.h1.replace(/ Web Design Company$/, "").replace(/ SEO Company.*$/, "") },
+        { "@type": "City", name: cityName },
         {
           "@type": "AdministrativeArea",
           name: page.kind === "therapist" ? "New York" : "Ontario",
