@@ -1,0 +1,38 @@
+# Netlify response headers for the static Astro build.
+# https://docs.netlify.com/routing/headers/
+#
+# HTML pages and other unversioned entry points are deliberately NOT given a
+# long browser cache. Netlify's default (`public, max-age=0, must-revalidate`)
+# keeps them revalidating via ETag, so a new deploy is visible immediately.
+# There is no broad `/*` rule here, so dynamic responses (for example Netlify
+# Forms/function endpoints) keep their own headers.
+
+# Astro/Vite build output. Filenames include a content hash, so the URL changes
+# whenever the bytes change and the response can safely be cached forever.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Unversioned project images. They change rarely, so allow a 30-day browser
+# cache, but do not mark them `immutable`: a replaced image at the same path
+# should be re-fetched once the cache expires.
+/img/*
+  Cache-Control: public, max-age=2592000
+/images/*
+  Cache-Control: public, max-age=2592000
+
+# Root-level icons (favicon, PWA icons). Shorter cache so icon changes roll out.
+/*.png
+  Cache-Control: public, max-age=604800
+/*.ico
+  Cache-Control: public, max-age=604800
+/*.svg
+  Cache-Control: public, max-age=604800
+
+# Web app manifest changes with the app, so keep its browser cache short.
+/site.webmanifest
+  Cache-Control: public, max-age=3600
+
+# Fingerprinted font files. No fonts are currently shipped, but this keeps any
+# future hashed font assets correctly cached without touching HTML or images.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
