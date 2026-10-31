@@ -3,15 +3,30 @@
 // The legacy Next.js JSON remains untouched. This module applies the corrected
 // and expanded AI search positioning only to the Astro build.
 
-import { AI_SEO_CITIES } from "./city-links.mjs";
+import { AI_SEO_CITIES, THERAPIST_SEO_CITIES } from "./city-links.mjs";
+import proofJson from "../../../data/vertical-seo/proof.json";
 
-const aiSeoCityLinks = AI_SEO_CITIES.map(
-  ({ href, label }) => `[${label}](${href})`
-);
-const aiSeoCitySentence =
-  aiSeoCityLinks.length > 1
-    ? `${aiSeoCityLinks.slice(0, -1).join(", ")} and ${aiSeoCityLinks.at(-1)}`
-    : aiSeoCityLinks[0] ?? "";
+const AI_SEARCH_PROOF_IDS = [
+  "brandi-may-psychotherapy",
+  "courtney-v",
+  "nicole-p",
+  "freds-concrete",
+  "visca-electric",
+];
+
+const aiSearchProof = AI_SEARCH_PROOF_IDS.map((id) =>
+  proofJson.find((entry) => entry.id === id)
+).filter(Boolean);
+
+const aiSeoCityLinks = AI_SEO_CITIES.map(({ href, label }) => ({
+  href,
+  label,
+}));
+
+const therapistCityLinks = THERAPIST_SEO_CITIES.map(({ href, label }) => ({
+  href,
+  label,
+}));
 
 const AI_SEARCH_CONTENT = {
   directAnswer:
@@ -56,6 +71,8 @@ const AI_SEARCH_CONTENT = {
     "Answers that cite your content by name",
     "Completed answer spaces for your priority services and locations",
   ],
+  proofEyebrow: "Testimonials",
+  proofHeading: "What clients say about working with Infused",
   sections: [
     {
       heading: "What AI search visibility means for a local business",
@@ -79,11 +96,24 @@ const AI_SEARCH_CONTENT = {
       ],
     },
     {
-      heading: "AI search optimization in the Niagara Region",
+      heading: "AI search optimization in the markets we serve",
       paragraphs: [
-        "If your business serves customers across several Niagara municipalities, our [Niagara Region SEO page](/seo/niagara) explains how we connect local search, city pages and AI visibility across the region. It is the regional complement to the town-level pages, not a replacement for them.",
-        `Outside Niagara, we apply the same work in other Ontario markets: ${aiSeoCitySentence}.`,
+        "If your business serves customers across several Niagara municipalities, our regional SEO work connects local search, city pages and AI visibility across the region. It is the regional complement to the town-level pages, not a replacement for them.",
+        "Outside Niagara, we apply the same approach in other Ontario markets. Therapy practices have their own city pages that combine traditional therapist SEO with AI search guidance.",
       ],
+    },
+  ],
+  linkGroups: [
+    {
+      title: "Regional and city pages",
+      links: [
+        { href: "/seo/niagara", label: "SEO in the Niagara Region" },
+        ...aiSeoCityLinks,
+      ],
+    },
+    {
+      title: "Therapist SEO pages",
+      links: therapistCityLinks,
     },
   ],
   faqs: [
@@ -136,6 +166,7 @@ const OVERRIDES = {
     summary:
       "AI search optimization (GEO and AEO) for businesses across Ontario. We improve your AI search visibility so ChatGPT, Gemini and other assistants can quote and recommend your business accurately.",
     content: AI_SEARCH_CONTENT,
+    proof: aiSearchProof,
     related: AI_SEARCH_CONTENT.related,
     industries: AI_SEARCH_CONTENT.industries,
     showAside: false,

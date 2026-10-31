@@ -18,7 +18,13 @@ interface ServiceContent {
   process: Array<{ title: string; text: string }>;
   deliverables: string[];
   metrics: string[];
+  proofEyebrow?: string;
+  proofHeading?: string;
   sections: Array<{ heading: string; paragraphs: string[] }>;
+  linkGroups?: Array<{
+    title: string;
+    links: Array<{ href: string; label: string }>;
+  }>;
   faqs: Array<{ q: string; a: string }>;
 }
 
@@ -143,15 +149,49 @@ const content = data.content;
 }
 
 {
+  content.linkGroups && content.linkGroups.length > 0 && (
+    <Section
+      tone="tint"
+      eyebrow="Explore"
+      heading="AI search optimization pages by market"
+    >
+      <div class="split split--top">
+        {content.linkGroups.map((group) => (
+          <div class="reveal">
+            <h3 class="h3">{group.title}</h3>
+            <ul class="chip-list" style="margin-top: 1rem;">
+              {group.links.map((link) => (
+                <li>
+                  <a class="chip" href={link.href}>
+                    {link.label}
+                    <Icon name="arrow-right" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+{
   data.proof.length > 0 && (
-    <Section tone="contrast" eyebrow="Proof" heading="Proof from our work">
+    <Section
+      tone="contrast"
+      eyebrow={content.proofEyebrow ?? "Results"}
+      heading={content.proofHeading ?? "Client results and testimonials"}
+    >
       <div class="grid grid--2 reveal-group">
         {data.proof.map((item) => (
           <Card class="card--dark">
-            <h3 class="card__title">{item.namedEntity}</h3>
+            <h3 class="card__title">{item.namedEntity ?? item.person}</h3>
             {item.metric && <p class="proof-stat__value">{item.metric}</p>}
             {item.quote && <p class="card__text">&ldquo;{item.quote}&rdquo;</p>}
-            {item.person && <p class="card__meta">{item.person}</p>}
+            {item.person && item.namedEntity && (
+              <p class="card__meta">{item.person}</p>
+            )}
           </Card>
         ))}
       </div>

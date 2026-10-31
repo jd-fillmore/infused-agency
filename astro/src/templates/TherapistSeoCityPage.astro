@@ -1,0 +1,323 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
+import Section from "../components/ui/Section.astro";
+import TestimonialCard from "../components/ui/TestimonialCard.astro";
+import { siteFacts } from "../lib/site";
+import { seoPricingPlans } from "../lib/pricing";
+import proofJson from "../../../data/vertical-seo/proof.json";
+
+interface TherapistPage {
+  city: string;
+  province: string;
+  provinceAbbr: string;
+  pathname: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  heroDescription: string;
+  marketEyebrow: string;
+  marketHeading: string;
+  marketParagraphs: string[];
+  servicesHeading: string;
+  servicesDescription: string;
+  services: Array<{ title: string; body: string }>;
+  aiHeading: string;
+  aiParagraphs: string[];
+  pricingHeading: string;
+  whoHeading: string;
+  whoParagraphs: string[];
+  fitItems: string[];
+  whyHeading: string;
+  whyParagraph: string;
+  whyCards: Array<{ title: string; body: string }>;
+  /**
+   * Optional because the Canadian pages keep this heading city-neutral: the
+   * quoted therapists are real clients, not local market testimonials. US
+   * pages mirror the Los Angeles template and pass the city through.
+   */
+  testimonialHeading?: string;
+  faqHeading: string;
+  faqs: Array<{ q: string; a: string }>;
+  ctaHeading: string;
+  ctaDescription: string;
+}
+
+type TherapistTestimonial = {
+  person: string;
+  role?: string;
+  company?: string;
+  quote: string;
+};
+
+type AttributedTestimonial = {
+  person?: string;
+  role?: string;
+  company?: string;
+  quote?: string;
+};
+
+type ProofEntry = {
+  id: string;
+  type: string;
+  person?: string;
+  role?: string;
+  namedEntity?: string;
+  quote?: string;
+  verticals?: string[];
+};
+
+// Same real therapist testimonials used on the Los Angeles page. The heading is
+// kept city-neutral because the people quoted are not presented as clients from
+// a particular city.
+const therapistProof = (proofJson as ProofEntry[]).filter(
+  (entry) =>
+    entry.type === "testimonial" &&
+    (entry.verticals ?? []).includes("therapists")
+);
+
+const brandi = siteFacts.testimonials.find(
+  (testimonial) => testimonial.id === "brandi-may-psychotherapy"
+);
+
+const candidates: Array<AttributedTestimonial | undefined> = [
+  therapistProof.find((entry) => entry.id === "nicole-p"),
+  brandi,
+  therapistProof.find((entry) => entry.id === "courtney-v"),
+].map((entry) =>
+  entry
+    ? {
+        person: entry.person,
+        role: entry.role,
+        company: entry.namedEntity,
+        quote: entry.quote,
+      }
+    : undefined
+);
+
+const therapistTestimonials: TherapistTestimonial[] = candidates.filter(
+  (testimonial): testimonial is TherapistTestimonial =>
+    Boolean(testimonial?.person && testimonial.quote)
+);
+
+const relatedLinks = [
+  { href: "/seo", label: "SEO services overview" },
+  { href: "/ai-search", label: "AI search optimization services" },
+  { href: "/results", label: "Client results" },
+  { href: "/about", label: "About Infused Agency" },
+  { href: "/get-a-quote", label: "Get a Free Quote" },
+];
+
+interface Props {
+  page: TherapistPage;
+}
+
+const { page } = Astro.props;
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: `${page.city}, ${page.provinceAbbr}` },
+];
+---
+
+<PageHero
+  title={`AI Search Optimization & SEO for ${page.city} Therapists`}
+  description={page.heroDescription}
+  breadcrumbs={breadcrumbs}
+  eyebrow="Therapist SEO"
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <figure class="media-frame" style="margin: 0;">
+      <img
+        src={page.image}
+        alt={page.imageAlt}
+        loading="eager"
+        decoding="async"
+      />
+    </figure>
+  </Fragment>
+</PageHero>
+
+<Section
+  eyebrow={page.marketEyebrow}
+  index="01"
+  heading={page.marketHeading}
+>
+  <div class="prose reveal" style="max-width: 56rem;">
+    {
+      page.marketParagraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))
+    }
+  </div>
+</Section>
+
+<Section
+  tone="tint"
+  eyebrow="Services"
+  index="02"
+  heading={page.servicesHeading}
+  description={page.servicesDescription}
+>
+  <div class="grid grid--3 reveal-group">
+    {
+      page.services.map((service, index) => (
+        <Card>
+          <span class="service-card__number">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <h3 class="card__title">{service.title}</h3>
+          <p class="card__text">{service.body}</p>
+        </Card>
+      ))
+    }
+  </div>
+</Section>
+
+<Section
+  tone="warm"
+  eyebrow="AI search"
+  index="03"
+  heading={page.aiHeading}
+>
+  <div class="prose reveal" style="max-width: 56rem;">
+    {
+      page.aiParagraphs.map((paragraph) => (
+        <p set:html={paragraph} />
+      ))
+    }
+  </div>
+</Section>
+
+<PricingPlans
+  id="seo-pricing"
+  eyebrow="Pricing"
+  index=""
+  heading={page.pricingHeading}
+  description={seoPricingPlans.description}
+  note={seoPricingPlans.note}
+  plans={seoPricingPlans.plans}
+  ctaLabel="Get a Free Quote"
+/>
+
+<Section
+  eyebrow="Who it's for"
+  index="04"
+  heading={page.whoHeading}
+>
+  <div class="split split--top">
+    <div class="reveal">
+      <div class="prose">
+        {
+          page.whoParagraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))
+        }
+      </div>
+    </div>
+    <aside class="card reveal">
+      <h3 class="card__title">A good fit if you are</h3>
+      <ul class="check-list" style="margin-top: 1rem;">
+        {
+          page.fitItems.map((item) => (
+            <li>{item}</li>
+          ))
+        }
+      </ul>
+    </aside>
+  </div>
+</Section>
+
+<Section
+  eyebrow="Why Infused"
+  index="05"
+  heading={page.whyHeading}
+>
+  <div class="split split--top">
+    <div class="reveal">
+      <div class="prose">
+        <p>{page.whyParagraph}</p>
+      </div>
+    </div>
+    <div class="grid grid--2" style="grid-template-columns: 1fr;">
+      {
+        page.whyCards.map((card) => (
+          <Card class="reveal">
+            <h3 class="card__title" style="margin-top: 0;">
+              {card.title}
+            </h3>
+            <p class="card__text">{card.body}</p>
+          </Card>
+        ))
+      }
+    </div>
+  </div>
+</Section>
+
+{
+  therapistTestimonials.length > 0 && (
+    <Section
+      tone="contrast"
+      eyebrow="Testimonials"
+      index="06"
+      heading={
+        page.testimonialHeading ??
+        "What therapists say about working with an AI SEO agency"
+      }
+    >
+      <div class="grid grid--3 reveal-group">
+        {therapistTestimonials.map((testimonial) => (
+          <TestimonialCard
+            quote={testimonial.quote}
+            person={testimonial.person}
+            role={testimonial.role}
+            company={testimonial.company}
+          />
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+<Section
+  tone="warm"
+  eyebrow="Questions"
+  index="07"
+  heading={page.faqHeading}
+>
+  <Accordion items={page.faqs} />
+</Section>
+
+<Section
+  tone="contrast"
+  eyebrow="Related"
+  index="08"
+  heading="Explore AI search optimization services and client results"
+  description="Related services, results and company information."
+>
+  <ul class="chip-list">
+    {
+      relatedLinks.map((link) => (
+        <li>
+          <a class="chip" href={link.href}>
+            {link.label}
+            <Icon name="arrow-right" />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<CtaBand
+  eyebrow="Free quote"
+  heading={page.ctaHeading}
+  description={page.ctaDescription}
+  ctaLabel="Get a Free Quote"
+/>

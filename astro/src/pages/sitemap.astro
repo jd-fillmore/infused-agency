@@ -12,6 +12,7 @@ import {
   getVerticalPages,
   NIAGARA_CITY_LINKS,
 } from "../lib/legacy-pages.mjs";
+import { THERAPIST_SEO_CITIES } from "../lib/city-links.mjs";
 import {
   baseGraph,
   breadcrumbNode,
@@ -109,6 +110,12 @@ const jsonLd = [
       <li><a class="chip" href="/seo/niagara">SEO in the Niagara Region, ON</a></li>
       {NIAGARA_CITY_LINKS.map((city: any) => (
         <li><a class="chip" href={city.href}>SEO in {city.name}, ON</a></li>
+      ))}
+    </ul>
+    <h3 class="h4" style="margin-top: 2rem;">Therapist SEO pages</h3>
+    <ul class="chip-list">
+      {THERAPIST_SEO_CITIES.map((city: any) => (
+        <li><a class="chip" href={city.href}>{city.label}</a></li>
       ))}
     </ul>
   </Section>

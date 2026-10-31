@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TherapistSeoCityPage from "../templates/TherapistSeoCityPage.astro";
+import { THERAPIST_SEO_CITY_PAGES } from "../data/therapist-seo-cities.mjs";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../lib/schema";
+
+const page = THERAPIST_SEO_CITY_PAGES.edmonton;
+const pathname = page.pathname;
+const title = page.title;
+const description = page.description;
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: `${page.city}, ${page.provinceAbbr}` },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: `SEO for Therapists in ${page.city}`,
+    description,
+    serviceType: "Therapist SEO",
+    areaServed: page.areaServed,
+  }),
+  faqPageNode(pathname, page.faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  image={page.image}
+  imageAlt={page.imageAlt}
+  jsonLd={jsonLd}
+>
+  <TherapistSeoCityPage page={page} />
+</BaseLayout>
