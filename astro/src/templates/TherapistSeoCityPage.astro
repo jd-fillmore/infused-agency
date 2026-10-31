@@ -2,6 +2,7 @@
 import Accordion from "../components/ui/Accordion.astro";
 import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
+import HeroImage from "../components/ui/HeroImage.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
 import PricingPlans from "../components/ui/PricingPlans.astro";
@@ -133,14 +134,7 @@ const breadcrumbs = [
   ctaLabel="Get a Free Quote"
 >
   <Fragment slot="aside">
-    <figure class="media-frame" style="margin: 0;">
-      <img
-        src={page.image}
-        alt={page.imageAlt}
-        loading="eager"
-        decoding="async"
-      />
-    </figure>
+    <HeroImage src={page.image} alt={page.imageAlt} />
   </Fragment>
 </PageHero>
 

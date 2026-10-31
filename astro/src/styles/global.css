@@ -1,4 +1,5 @@
-/* Single global CSS entry point. Order matters: tokens → base → components → motion. */
+/* Single global CSS entry point. Order matters: fonts → tokens → base → components → motion. */
+@import "./fonts.css";
 @import "./tokens.css";
 @import "./base.css";
 @import "./components.css";

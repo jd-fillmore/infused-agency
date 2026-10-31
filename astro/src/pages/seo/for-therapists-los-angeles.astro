@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Accordion from "../../components/ui/Accordion.astro";
 import Card from "../../components/ui/Card.astro";
 import CtaBand from "../../components/ui/CtaBand.astro";
+import HeroImage from "../../components/ui/HeroImage.astro";
 import Icon from "../../components/ui/Icon.astro";
 import PageHero from "../../components/ui/PageHero.astro";
 import PricingPlans from "../../components/ui/PricingPlans.astro";
@@ -184,6 +185,7 @@ const jsonLd = [
   canonical={pathname}
   image={image}
   imageAlt="Downtown Los Angeles skyline at night"
+  preloadImage={image}
   jsonLd={jsonLd}
 >
   <PageHero
@@ -194,14 +196,7 @@ const jsonLd = [
     ctaLabel="Get a Free Quote"
   >
     <Fragment slot="aside">
-      <figure class="media-frame" style="margin: 0;">
-        <img
-          src={image}
-          alt="Downtown Los Angeles skyline at night"
-          loading="eager"
-          decoding="async"
-        />
-      </figure>
+      <HeroImage src={image} alt="Downtown Los Angeles skyline at night" />
     </Fragment>
   </PageHero>
 
@@ -504,7 +499,9 @@ const jsonLd = [
         <div class="prose reveal" style="max-width: 52rem;">
           <p>{relatedContent.areasWeServe.teaser}</p>
           <p>
-            <a href={relatedContent.areasWeServe.href}>Learn more</a>
+            <a href={relatedContent.areasWeServe.href}>
+              Learn more about {relatedContent.areasWeServe.title}
+            </a>
           </p>
         </div>
       </Section>

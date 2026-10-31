@@ -3,6 +3,7 @@ import Accordion from "../components/ui/Accordion.astro";
 import Button from "../components/ui/Button.astro";
 import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
+import HeroImage from "../components/ui/HeroImage.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
 import RichText from "../components/ui/RichText.astro";
@@ -115,14 +116,10 @@ function mapSrc(place: string) {
   {
     page.hero?.image ? (
       <Fragment slot="aside">
-        <figure class="media-frame" style="margin: 0;">
-          <img
-            src={page.hero.image}
-            alt={page.hero.imageAlt ?? page.h1}
-            loading="eager"
-            decoding="async"
-          />
-        </figure>
+        <HeroImage
+          src={page.hero.image}
+          alt={page.hero.imageAlt ?? page.h1}
+        />
       </Fragment>
     ) : (
       <Fragment slot="aside">

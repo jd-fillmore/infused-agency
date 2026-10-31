@@ -817,7 +817,6 @@
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  animation: hero-fade 720ms var(--ease-out) 120ms both;
 }
 
 .hero-kicker__dot {
@@ -852,23 +851,6 @@
 
 .hero-line__inner {
   display: block;
-  animation: hero-rise 820ms var(--ease-out) both;
-}
-
-.hero-line:nth-child(1) .hero-line__inner {
-  animation-delay: 180ms;
-}
-
-.hero-line:nth-child(2) .hero-line__inner {
-  animation-delay: 270ms;
-}
-
-.hero-line:nth-child(3) .hero-line__inner {
-  animation-delay: 360ms;
-}
-
-.hero-line:nth-child(4) .hero-line__inner {
-  animation-delay: 450ms;
 }
 
 .hero-line--accent .hero-line__inner {
@@ -890,7 +872,6 @@
   color: var(--color-contrast-muted);
   font-size: clamp(1rem, 0.95rem + 0.35vw, 1.18rem);
   line-height: 1.65;
-  animation: hero-fade 780ms var(--ease-out) 560ms both;
 }
 
 .hero-actions {
@@ -898,7 +879,6 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: clamp(1.6rem, 1.2rem + 1.2vw, 2.3rem);
-  animation: hero-fade 780ms var(--ease-out) 650ms both;
 }
 
 .hero-trust {
@@ -909,7 +889,6 @@
   padding-top: 1.35rem;
   border-top: 1px solid var(--color-contrast-line);
   list-style: none;
-  animation: hero-fade 780ms var(--ease-out) 740ms both;
 }
 
 .hero-trust li {
@@ -934,7 +913,6 @@
   position: relative;
   min-width: 0;
   padding: 1.5rem 1rem 2.5rem 1.5rem;
-  animation: hero-fade 900ms var(--ease-out) 380ms both;
 }
 
 .hero-visual__orbit {
@@ -1053,15 +1031,14 @@
   border-radius: 3px 3px 0 0;
   background: linear-gradient(180deg, rgba(0, 92, 151, 0.9), rgba(54, 55, 149, 0.35));
   transform-origin: bottom;
-  animation: bar-grow 900ms var(--ease-out) both;
 }
 
-.hero-report__bars span:nth-child(1) { height: 24%; animation-delay: 700ms; }
-.hero-report__bars span:nth-child(2) { height: 38%; animation-delay: 780ms; }
-.hero-report__bars span:nth-child(3) { height: 32%; animation-delay: 860ms; }
-.hero-report__bars span:nth-child(4) { height: 58%; animation-delay: 940ms; }
-.hero-report__bars span:nth-child(5) { height: 72%; animation-delay: 1020ms; }
-.hero-report__bars span:nth-child(6) { height: 100%; animation-delay: 1100ms; background: var(--gradient-brand); }
+.hero-report__bars span:nth-child(1) { height: 24%; }
+.hero-report__bars span:nth-child(2) { height: 38%; }
+.hero-report__bars span:nth-child(3) { height: 32%; }
+.hero-report__bars span:nth-child(4) { height: 58%; }
+.hero-report__bars span:nth-child(5) { height: 72%; }
+.hero-report__bars span:nth-child(6) { height: 100%; background: var(--gradient-brand); }
 
 .hero-report__ai {
   display: inline-flex;
@@ -1328,28 +1305,8 @@
   margin-top: 1.9rem;
 }
 
-/* Shared page-hero entrance: gentle fade-rise with a small stagger. The
-   reduced-motion preference is handled globally in motion.css. */
-.page-hero__copy > * {
-  animation: hero-fade 760ms var(--ease-out) both;
-}
-
-.page-hero__copy > *:nth-child(2) {
-  animation-delay: 90ms;
-}
-
-.page-hero__copy > *:nth-child(3) {
-  animation-delay: 180ms;
-}
-
-.page-hero__copy > *:nth-child(4) {
-  animation-delay: 270ms;
-}
-
-.page-hero__copy > *:nth-child(5) {
-  animation-delay: 360ms;
-}
-
+/* Page hero copy is intentionally static: it must paint as soon as the HTML
+   arrives, without waiting for animations or JavaScript. */
 .page-hero__aside {
   position: relative;
   padding: 1.35rem;

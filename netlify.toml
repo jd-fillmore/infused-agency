@@ -12,3 +12,25 @@
 [build]
   command = "yarn build:astro"
   publish = "astro/dist"
+
+# Static assets are content-stable between deploys. Give browsers a long cache
+# lifetime so repeat visits do not re-download images, fonts or hashed bundles.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, stale-while-revalidate=86400"

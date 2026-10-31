@@ -24,21 +24,21 @@ const trust = [
 ];
 
 const affiliated = [
-  { label: "Niagara Chamber", image: "/img/aff-niagara-chamber.jpg" },
-  { label: "Three Best Rated", image: "/img/aff-three-best-rated.jpg" },
-  { label: "GoodFirms", image: "/img/aff-good-firms.jpg" },
-  { label: "DesignRush", image: "/img/aff-design-rush.png" },
-  { label: "Google Reviews", image: "/img/aff-google-reviews.jpg" },
+  { label: "Niagara Chamber", image: "/img/aff-niagara-chamber.webp" },
+  { label: "Three Best Rated", image: "/img/aff-three-best-rated.webp" },
+  { label: "GoodFirms", image: "/img/aff-good-firms.webp" },
+  { label: "DesignRush", image: "/img/aff-design-rush.webp" },
+  { label: "Google Reviews", image: "/img/aff-google-reviews.webp" },
 ];
 
 const clients = [
-  { name: "Suk Law", image: "/img/feat-suk-law.png" },
-  { name: "Flat Rock Cellars", image: "/img/feat-flat-rock.png" },
-  { name: "Fred's Concrete", image: "/img/feat-fred.png" },
-  { name: "KD Flowers", image: "/img/feat-kd.png" },
-  { name: "Delta Energy Solutions", image: "/img/feat-delta.png" },
-  { name: "Brandi May Psychotherapy", image: "/img/feat-brandi.png" },
-  { name: "Jerry's Insulating", image: "/img/feat-jerry.png" },
+  { name: "Suk Law", image: "/img/feat-suk-law.webp" },
+  { name: "Flat Rock Cellars", image: "/img/feat-flat-rock.webp" },
+  { name: "Fred's Concrete", image: "/img/feat-fred.webp" },
+  { name: "KD Flowers", image: "/img/feat-kd.webp" },
+  { name: "Delta Energy Solutions", image: "/img/feat-delta.webp" },
+  { name: "Brandi May Psychotherapy", image: "/img/feat-brandi.webp" },
+  { name: "Jerry's Insulating", image: "/img/feat-jerry.webp" },
 ];
 
 const services = [
@@ -90,6 +90,10 @@ const proofResults = [
     label: "Google rankings",
     context: "First-page Google rankings for multiple priority keywords, achieved within the first month of SEO work.",
     image: "/img/st-catharines-seo-results.webp",
+    srcset: "/img/st-catharines-seo-results-700.webp 700w, /img/st-catharines-seo-results.webp 1033w",
+    sizes: "(max-width: 720px) 100vw, 645px",
+    width: 1033,
+    height: 579,
     alt: "Search visibility results for Flat Rock Cellars",
   },
   {
@@ -99,6 +103,10 @@ const proofResults = [
     label: "Local visibility",
     context: "Stronger local search visibility after a focused SEO program built around service-area demand.",
     image: "/img/niagara-seo-company-results.webp",
+    srcset: "/img/niagara-seo-company-results-700.webp 700w, /img/niagara-seo-company-results.webp 1033w",
+    sizes: "(max-width: 720px) 100vw, 645px",
+    width: 1033,
+    height: 579,
     alt: "Search visibility results for Delta Energy Solutions",
   },
 ];
@@ -197,7 +205,14 @@ const featuredResult = proofResults[0];
       {
         affiliated.map((item) => (
           <li>
-            <img src={item.image} alt={item.label} loading="lazy" decoding="async" />
+            <img
+              src={item.image}
+              alt={item.label}
+              width="125"
+              height="50"
+              loading="lazy"
+              decoding="async"
+            />
           </li>
         ))
       }
@@ -206,7 +221,14 @@ const featuredResult = proofResults[0];
       {
         clients.map((client) => (
           <li>
-            <img src={client.image} alt={client.name} loading="lazy" decoding="async" />
+            <img
+              src={client.image}
+              alt={client.name}
+              width="148"
+              height="114"
+              loading="lazy"
+              decoding="async"
+            />
           </li>
         ))
       }
@@ -267,7 +289,16 @@ const featuredResult = proofResults[0];
               </div>
             </div>
             <div class="proof-result__media">
-              <img src={result.image} alt={result.alt} loading="lazy" decoding="async" />
+              <img
+                src={result.image}
+                srcset={result.srcset}
+                sizes={result.sizes}
+                alt={result.alt}
+                width={result.width}
+                height={result.height}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </article>
         ))
@@ -429,6 +460,8 @@ const featuredResult = proofResults[0];
       <img
         src="/img/1-design.webp"
         alt="Sketching a website layout during a design session"
+        width="1200"
+        height="900"
         loading="lazy"
         decoding="async"
       />
@@ -467,8 +500,8 @@ const featuredResult = proofResults[0];
           <div class="industry-card__body">
             <h3>{item.title}</h3>
             <p>{item.benefit}</p>
-            <a class="link-arrow" href={item.href} aria-label={`Learn more about SEO for ${item.title}`}>
-              Learn more
+            <a class="link-arrow" href={item.href}>
+              Learn more about SEO for {item.title}
               <Icon name="arrow-right" />
             </a>
           </div>
@@ -525,7 +558,14 @@ const featuredResult = proofResults[0];
         <article class="card card--interactive post-card">
           {post.image && (
             <div class="post-card__image">
-              <img src={post.image} alt={post.title} loading="lazy" decoding="async" />
+              <img
+                src={post.image}
+                alt={post.title}
+                width="1200"
+                height="750"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           )}
           <div class="post-card__body">

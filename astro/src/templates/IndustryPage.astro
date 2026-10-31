@@ -116,7 +116,9 @@ function paragraphs(items?: string[]) {
           <img
             src={data.hero.image}
             alt={data.hero.alt ?? `${data.hero.title} by Infused Agency`}
-            loading="eager"
+            width="1200"
+            height="900"
+            loading="lazy"
             decoding="async"
           />
         </figure>

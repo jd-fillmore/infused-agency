@@ -9,6 +9,9 @@ export default defineConfig({
   trailingSlash: "never",
   build: {
     format: "directory",
+    // Inline the small global stylesheet so the first paint does not wait on a
+    // separate render-blocking CSS request.
+    inlineStylesheets: "always",
   },
   devToolbar: {
     enabled: false,

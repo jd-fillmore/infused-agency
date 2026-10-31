@@ -1,0 +1,19 @@
+/* Self-hosted variable fonts. Keeping these local removes the render-blocking
+   request to fonts.googleapis.com and the extra connection to gstatic.com.
+   `swap` keeps text visible immediately while the font files load. */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("/fonts/inter-latin-var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/manrope-latin-var.woff2") format("woff2");
+}

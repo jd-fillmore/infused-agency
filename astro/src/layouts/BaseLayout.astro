@@ -16,6 +16,7 @@ interface Props {
   geo?: boolean;
   image?: string;
   imageAlt?: string;
+  preloadImage?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
@@ -29,6 +30,7 @@ const {
   geo,
   image,
   imageAlt,
+  preloadImage,
   jsonLd,
 } = Astro.props;
 ---
@@ -42,12 +44,9 @@ const {
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500..700&family=Manrope:wght@400..600&display=swap"
-    />
+    <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
     <SeoHead
       title={title}
       description={description}
@@ -72,20 +71,17 @@ const {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
       /* Scroll reveals ------------------------------------------------------
-         Only elements below the fold are prepared for a reveal. This avoids a
-         flash of hidden content on load and leaves everything visible if the
-         script never runs. */
+         The observer decides what is below the fold instead of reading
+         geometry in JavaScript. Intersecting elements (above the fold) are
+         left visible and unobserved; only off-screen elements get the reveal
+         class, so nothing above the fold can be hidden or measured on load. */
       const revealTargets = Array.from(
         document.querySelectorAll<HTMLElement>(".reveal, .reveal-group")
-      );
-      const belowFold = revealTargets.filter((el) => {
-        const rect = el.getBoundingClientRect();
-        return rect.top >= window.innerHeight * 0.92;
-      });
+      ).filter((el) => !el.closest(".home-hero, .page-hero, .site-header"));
 
-      if (belowFold.length > 0) {
+      if (revealTargets.length > 0) {
         if (reduceMotion || !("IntersectionObserver" in window)) {
-          belowFold.forEach((el) => el.classList.add("is-visible"));
+          revealTargets.forEach((el) => el.classList.add("is-visible"));
         } else {
           try {
             const observer = new IntersectionObserver(
@@ -94,17 +90,17 @@ const {
                   if (entry.isIntersecting) {
                     entry.target.classList.add("is-visible");
                     observer.unobserve(entry.target);
+                    return;
                   }
+                  // Off-screen on first observation: hide until it is reached.
+                  entry.target.classList.add("will-reveal");
                 });
               },
               { rootMargin: "0px 0px -6% 0px", threshold: 0.08 }
             );
-            belowFold.forEach((el) => {
-              el.classList.add("will-reveal");
-              observer.observe(el);
-            });
+            revealTargets.forEach((el) => observer.observe(el));
           } catch {
-            belowFold.forEach((el) => el.classList.add("is-visible"));
+            revealTargets.forEach((el) => el.classList.add("is-visible"));
           }
         }
       }

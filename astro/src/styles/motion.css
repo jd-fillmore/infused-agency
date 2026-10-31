@@ -1,41 +1,9 @@
 /* ==========================================================================
    Motion layer
-   Content is visible by default. Scroll reveals are added by JavaScript only
-   to elements below the fold; if JS fails, nothing is hidden.
+   Hero and other above-the-fold content is always rendered at full opacity.
+   Scroll reveals are added by JavaScript only to elements below the fold; if
+   JS fails, nothing is hidden. Menu keyframes are interaction-only.
    ========================================================================== */
-
-@keyframes hero-rise {
-  from {
-    opacity: 0;
-    transform: translateY(1.15em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes hero-fade {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bar-grow {
-  from {
-    transform: scaleY(0.08);
-    opacity: 0.35;
-  }
-  to {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
 
 @keyframes mega-in {
   from {

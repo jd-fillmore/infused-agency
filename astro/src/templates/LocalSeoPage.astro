@@ -114,7 +114,9 @@ const { data } = Astro.props;
           <img
             src={data.hero.image}
             alt={data.hero.alt ?? `${data.city} local SEO`}
-            loading="eager"
+            width="1200"
+            height="900"
+            loading="lazy"
             decoding="async"
           />
         </figure>

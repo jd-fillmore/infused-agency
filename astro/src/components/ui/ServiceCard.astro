@@ -10,7 +10,8 @@ interface Props {
   featured?: boolean;
 }
 
-const { title, description, href, number, linkLabel = "Learn more", featured = false } = Astro.props;
+const { title, description, href, number, linkLabel, featured = false } = Astro.props;
+const linkText = linkLabel ?? `Learn more about ${title}`;
 ---
 
 <article class:list={["card", "card--interactive", "service-card", featured && "service-card--featured"]}>
@@ -23,8 +24,8 @@ const { title, description, href, number, linkLabel = "Learn more", featured = f
   </h3>
   <p class="service-card__text">{description}</p>
   <div class="service-card__link">
-    <a class="link-arrow" href={href} aria-label={`Learn more about ${title}`}>
-      {linkLabel}
+    <a class="link-arrow" href={href}>
+      {linkText}
       <Icon name="arrow-right" />
     </a>
   </div>

@@ -28,7 +28,15 @@ const [featured, ...remaining] = posts;
       <article class="card featured-post reveal">
         {featured.image && (
           <div class="featured-post__media">
-            <img src={featured.image} alt={featured.title} loading="eager" decoding="async" />
+            <img
+              src={featured.image}
+              alt={featured.title}
+              width="1200"
+              height="675"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            />
           </div>
         )}
         <div class="featured-post__body">
