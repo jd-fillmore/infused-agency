@@ -6,7 +6,9 @@ import Icon from "../components/ui/Icon.astro";
 import Section from "../components/ui/Section.astro";
 import ServiceCard from "../components/ui/ServiceCard.astro";
 import TestimonialCard from "../components/ui/TestimonialCard.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
 import { homeFaqs, siteFacts } from "../lib/site";
+import { seoPricingPlans } from "../lib/pricing";
 import { formatPostDate, type Post } from "../lib/posts";
 
 interface Props {
@@ -440,10 +442,20 @@ const featuredResult = proofResults[0];
   </div>
 </Section>
 
+<PricingPlans
+  eyebrow="Pricing"
+  index="07"
+  heading={seoPricingPlans.heading}
+  description={seoPricingPlans.description}
+  note={seoPricingPlans.note}
+  plans={seoPricingPlans.plans}
+  ctaLabel="Get a Free Quote"
+/>
+
 <Section
   id="industries"
   eyebrow="Industries"
-  index="07"
+  index="08"
   heading="Industries We Work With"
   description="Search work shaped around the trades, professional practices and hospitality businesses we know well."
 >
@@ -469,10 +481,6 @@ const featuredResult = proofResults[0];
       View all industries
       <Icon name="arrow-right" />
     </a>
-    <a class="link-arrow" href="/general-contractor-seo">
-      SEO for general contractors
-      <Icon name="arrow-right" />
-    </a>
   </div>
 </Section>
 
@@ -488,7 +496,7 @@ const featuredResult = proofResults[0];
     <div class="faq-layout">
       <div class="faq-layout__intro reveal">
         <p class="eyebrow">
-          <span class="eyebrow__index">08</span>
+          <span class="eyebrow__index">09</span>
           Questions
         </p>
         <h2 class="h2" style="margin-top: 1rem;">Frequently Asked Questions</h2>
@@ -507,7 +515,7 @@ const featuredResult = proofResults[0];
   id="blog"
   tone="warm"
   eyebrow="Learn"
-  index="09"
+  index="10"
   heading="Blog"
   description="Practical notes on SEO, AI search and web design for growing businesses."
 >

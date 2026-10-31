@@ -2,7 +2,7 @@
 
 > Boutique SEO, AI search and web design agency based in St. Catharines, Ontario, Canada. Infused helps owner-run businesses in trades, professional practices, hospitality and related service industries get found in Google Search, Google Maps and AI-generated answers, and turn that visibility into calls and enquiries. Services include SEO (local and technical), AI search optimization (GEO/AEO/LLM SEO), and conversion-focused web design and development. Works remotely with clients across Canada and the United States.
 
-Infused is deliberately small — the person you speak with stays close to the work from consultation through launch and reporting. Work is planned as a system (SEO, AI search and web design together), with measurement tied to enquiries (calls, quote requests, bookings) rather than vanity traffic. Pricing is quoted individually after a free consultation. No rankings, AI citations or lead counts are guaranteed — outcomes depend on factors outside the agency's control.
+Infused is deliberately small — the person you speak with stays close to the work from consultation through launch and reporting. Work is planned as a system (SEO, AI search and web design together), with measurement tied to enquiries (calls, quote requests, bookings) rather than vanity traffic. SEO packages are published with clear tiers and a 12-month payment plan; web design is scoped and quoted individually after a free consultation. Aside from the published page-1 SEO promise described under Pricing, no rankings, AI citations or lead counts are guaranteed — outcomes depend on factors outside the agency's control.
 
 ## Core Services
 
@@ -10,11 +10,21 @@ Infused is deliberately small — the person you speak with stays close to the w
 - [AI Search (GEO, AEO & LLM SEO)](https://infused.agency/ai-search): Makes a business clear, consistent and quotable so AI assistants and answer engines can describe and recommend it accurately.
 - [Web Design & Development](https://infused.agency/web-design): Conversion-focused, SEO-aware websites for businesses across Canada and the United States, scoped and quoted individually.
 
+## Pricing
+
+- [SEO & Web Design Pricing Packages](https://infused.agency/pricing): Published SEO pricing for small businesses in Ontario. Every SEO package is delivered as a 3-month implementation project, with the investment spread across a 12-month payment plan. The monthly amount is a payment installment toward the project, not an ongoing retainer.
+  - Starter — $329.99/month for 12 months. Comprehensive SEO and AI search strategy, keyword research, on-page and technical SEO, content improvements, off-page SEO and backlink building, performance tracking and reporting.
+  - Professional — $379.99/month for 12 months (Most Popular). Everything in Starter plus expanded keyword and content optimization, Google Business Profile optimization, a broader local and organic strategy, and additional authority-building opportunities.
+  - Premium — $429.99/month for 12 months. Everything in Professional plus a more extensive content and keyword strategy, expanded website optimization, additional off-page SEO and backlink opportunities, and a broader search visibility strategy.
+- Prices are in CAD, before HST. The first and final monthly payments are collected at signup, followed by 10 monthly installments.
+- SEO delivery promise: if the website is not ranking on page 1 of Google for at least one relevant keyword phrase within the first month, payments made are refunded and the remaining installments are cancelled. Keyword phrases are agreed in writing before work begins and measured with standard, non-personalized search results. No guarantee is made for every keyword, for AI citations or for a specific number of leads.
+- Web design pricing is being finalised; web design projects are scoped and quoted individually after a free consultation.
+- AI search optimization (GEO/AEO) uses the same three price tiers, with AI-focused deliverables covering entity consistency, answer-ready content, structured data, citation and mention building, and AI visibility reporting.
+
 ## Industries & Specializations
 
 - [SEO by Industry](https://infused.agency/industries): Industry-specific SEO programmes built around how each sector gets found.
 - [SEO for Concrete Contractors in Canada](https://infused.agency/seo/for-concrete-contractors): Canada-wide programme with city pages across major markets.
-- [General Contractor SEO in Canada](https://infused.agency/general-contractor-seo): Province and city-level coverage for renovation/building businesses.
 
 ## Service Areas (Niagara)
 
@@ -53,7 +63,6 @@ Infused is deliberately small — the person you speak with stays close to the w
 ## Case Studies & Results
 
 - [Results](https://infused.agency/results): Documented client outcomes. Published examples include Flat Rock Cellars (+100% local visibility, 400+ keywords ranked across Google Search/Maps and AI answers within three months), Brandi May Psychotherapy and Willow Creek Counselling (600+ keywords each with reported increased visibility/bookings), Pro Battery Shop (400+ keywords, growth in organic ranking within three months), Timberwolf Carpentry (450+ keywords, thousands of impressions), and Fred's Concrete (500+ keywords, more visibility and leads).
-- [Cass-A-Bella Construction](https://infused.agency/cass-a-bella-construction): Website redesign case study for a custom home builder with reported growth in views and leads.
 
 ## Resources & Guides
 

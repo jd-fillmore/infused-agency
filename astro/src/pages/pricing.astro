@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
+import Section from "../components/ui/Section.astro";
+import { seoPricing } from "../lib/pricing";
+import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
+
+const title = "SEO & Web Design Pricing Packages | Small Businesses in Ontario";
+const description =
+  "SEO and web design pricing for Ontario small businesses: clear 12-month plans from $329.99/month, 3-month implementation, no retainers. Free quote.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Pricing" },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: "/pricing", name: title, description }),
+  breadcrumbNode(breadcrumbs, "/pricing"),
+];
+---
+
+<BaseLayout title={title} description={description} canonical="/pricing" jsonLd={jsonLd}>
+  <PageHero
+    title="Simple, Transparent Pricing"
+    description="Clear packages, a 3-month implementation and a 12-month payment plan — so you know exactly what the work costs before you start."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Pricing"
+    showCta={false}
+  />
+
+  <PricingPlans
+    id="seo-pricing"
+    eyebrow="SEO pricing"
+    index=""
+    heading={seoPricing.heading}
+    description={seoPricing.description}
+    note={seoPricing.note}
+    guarantee={seoPricing.guarantee}
+    plans={seoPricing.plans}
+    ctaLabel="Get a Free Quote"
+  />
+
+  <Section tone="warm" eyebrow="Web design" heading="Web design pricing">
+    <div class="split split--top">
+      <div class="prose reveal">
+        <p>
+          Web design packages are being finalised and will be published here.
+          In the meantime, tell us about your site and we will send a clear
+          written quote for the design and build work you actually need.
+        </p>
+      </div>
+      <div class="reveal">
+        <Button href="/web-design" variant="secondary" arrow>Explore web design</Button>
+      </div>
+    </div>
+  </Section>
+</BaseLayout>

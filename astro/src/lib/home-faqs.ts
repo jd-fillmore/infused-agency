@@ -6,7 +6,7 @@ export interface HomeFaq {
 export const homeFaqs: HomeFaq[] = [
   {
     q: "How much does SEO cost?",
-    a: "It depends on your competition, your website and how many services or areas you cover. We quote each business individually after a free review, so the scope and cost are clear before work begins.",
+    a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is an installment toward the project — not an ongoing monthly retainer.",
   },
   {
     q: "How long does SEO take?",

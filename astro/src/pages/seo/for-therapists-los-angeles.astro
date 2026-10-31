@@ -5,9 +5,11 @@ import Card from "../../components/ui/Card.astro";
 import CtaBand from "../../components/ui/CtaBand.astro";
 import Icon from "../../components/ui/Icon.astro";
 import PageHero from "../../components/ui/PageHero.astro";
+import PricingPlans from "../../components/ui/PricingPlans.astro";
 import Section from "../../components/ui/Section.astro";
 import TestimonialCard from "../../components/ui/TestimonialCard.astro";
 import { siteFacts } from "../../lib/site";
+import { seoPricingPlans } from "../../lib/pricing";
 import proofJson from "../../../../data/vertical-seo/proof.json";
 import {
   baseGraph,
@@ -18,9 +20,9 @@ import {
 } from "../../lib/schema";
 
 const pathname = "/seo/for-therapists-los-angeles";
-const title = "SEO & AI SEO for Therapists in Los Angeles";
+const title = "AI Search Optimization & SEO for Los Angeles Therapists";
 const description =
-  "SEO for Los Angeles therapists, plus AI search optimization, AEO and GEO so your practice is found in Google and AI answers. Get a free quote.";
+  "SEO for Los Angeles therapists, plus AI search optimization services, AEO and GEO so your practice is found in Google and AI answers. Get a free quote.";
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
@@ -106,7 +108,7 @@ const faqs = [
   },
   {
     q: "How much does it cost?",
-    a: "Pricing is tailored to the practice. A solo therapist with a small site and one location is a different scope from a group with several clinicians, specialties or service areas. We review the site and the opportunity first, then send a free quote with a clear scope. We do not publish package prices or dollar figures.",
+    a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), spread across a 12-month payment plan. The monthly amount is an installment toward the project, not an ongoing retainer. A group practice with several clinicians may need a larger scope, which we confirm in a written quote after a free review.",
   },
   {
     q: "Do you work with group practices?",
@@ -132,7 +134,7 @@ const relatedContent: {
 } = {
   links: [
     { href: "/seo", label: "SEO services overview" },
-    { href: "/ai-search", label: "AI search optimization" },
+    { href: "/ai-search", label: "AI search optimization services" },
     { href: "/results", label: "Client results" },
     { href: "/about", label: "About Infused Agency" },
     { href: "/get-a-quote", label: "Get a Free Quote" },
@@ -185,7 +187,7 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <PageHero
-    title="SEO for Therapists in Los Angeles"
+    title="AI Search Optimization & SEO for Los Angeles Therapists"
     description="Infused Agency helps private-practice therapists in Los Angeles get found in Google and in AI search tools by people looking for their specialty, their neighborhood, or a California-licensed clinician they can see online. We build the pages, profile details and technical foundations that make a practice easier to find and contact."
     breadcrumbs={breadcrumbs}
     eyebrow="Therapist SEO"
@@ -206,7 +208,7 @@ const jsonLd = [
   <Section
     eyebrow="The Los Angeles market"
     index="01"
-    heading="How people in Los Angeles search for a therapist"
+    heading="How AI search is changing the way Los Angeles clients find a therapist"
   >
     <div class="prose reveal" style="max-width: 56rem;">
       <p>
@@ -231,11 +233,6 @@ const jsonLd = [
         metadata that matches the content. This Los Angeles page sits alongside
         the practice site we improve, not instead of it.
       </p>
-      <p>
-        If your practice is outside California, our
-        <a href="/seo/for-therapists-new-york">SEO for therapists in New York</a>
-        page covers that market and its licensing rules.
-      </p>
     </div>
   </Section>
 
@@ -243,7 +240,7 @@ const jsonLd = [
     tone="tint"
     eyebrow="Services"
     index="02"
-    heading="What the work covers for a Los Angeles practice"
+    heading="AI search optimization services for a Los Angeles therapy practice"
     description="Six connected pieces, scoped to the practice rather than sold as separate city pages."
   >
     <div class="grid grid--3 reveal-group">
@@ -324,7 +321,7 @@ const jsonLd = [
     tone="warm"
     eyebrow="AI search"
     index="03"
-    heading="AI search optimization for Los Angeles therapists"
+    heading="What an AI search optimization agency does for Los Angeles therapists"
   >
     <div class="prose reveal" style="max-width: 56rem;">
       <p>
@@ -336,27 +333,41 @@ const jsonLd = [
         what they specialize in and how to get in touch.
       </p>
       <p>
-        <a href="/ai-search">AI search optimization</a>, often shortened to AI
-        SEO, is the work of getting a practice understood and cited by those AI
-        search tools. Answer engine optimization (AEO) is the related practice
-        of writing pages that give direct, extractable answers to the questions
-        clients ask. Generative Engine Optimization (GEO) means making sure the
-        practice is described accurately and consistently across the sites AI
-        tools draw from.
+        <a href="/ai-search">AI search optimization</a>, often called AI SEO
+        optimization or simply AI SEO, is the work of getting a practice
+        understood and cited by those AI search tools. Answer engine
+        optimization (AEO) is the related practice of writing pages that give
+        direct, extractable answers to the questions clients ask. The third
+        piece, generative engine optimization (GEO), is what people mean when
+        they search for AI search optimization GEO: making sure the practice is
+        described accurately and consistently across the sites AI tools draw
+        from.
       </p>
       <p>
         The labels overlap, and each describes part of the same work as SEO
         rather than a separate magic service. No one can guarantee a citation or
-        a placement in AI answers. What we can do is make the facts about your
-        Los Angeles practice easy to find, quote and repeat.
+        a placement in AI answers. As an AI search optimization agency, what we
+        can do is make the facts about your Los Angeles practice easy to find,
+        quote and repeat.
       </p>
     </div>
   </Section>
 
+  <PricingPlans
+    id="seo-pricing"
+    eyebrow="Pricing"
+    index=""
+    heading="AI SEO optimization pricing for Los Angeles therapy practices"
+    description={seoPricingPlans.description}
+    note={seoPricingPlans.note}
+    plans={seoPricingPlans.plans}
+    ctaLabel="Get a Free Quote"
+  />
+
   <Section
     eyebrow="Who it's for"
     index="04"
-    heading="Built for Los Angeles therapists, however you practice"
+    heading="An AI SEO agency built for Los Angeles therapists, however you practice"
   >
     <div class="split split--top">
       <div class="reveal">
@@ -395,7 +406,7 @@ const jsonLd = [
   <Section
     eyebrow="Why Infused"
     index="05"
-    heading="Why Los Angeles therapists choose Infused Agency"
+    heading="Why Los Angeles therapists choose Infused for AI search optimization"
   >
     <div class="split split--top">
       <div class="reveal">
@@ -458,7 +469,7 @@ const jsonLd = [
         tone="contrast"
         eyebrow="Testimonials"
         index="06"
-        heading="What therapist clients say"
+        heading="What Los Angeles therapists say about working with an AI SEO agency"
       >
         <div class="grid grid--3 reveal-group">
           {therapistTestimonials.map((testimonial) => (
@@ -478,7 +489,7 @@ const jsonLd = [
     tone="warm"
     eyebrow="Questions"
     index="07"
-    heading="Los Angeles therapist SEO questions"
+    heading="AI search optimization and GEO questions from Los Angeles therapists"
   >
     <Accordion items={faqs} />
   </Section>
@@ -504,7 +515,7 @@ const jsonLd = [
     tone="contrast"
     eyebrow="Related"
     index="08"
-    heading="Explore more"
+    heading="Explore AI search optimization services and client results"
     description="Related services, results and company information."
   >
     <ul class="chip-list">
@@ -523,7 +534,7 @@ const jsonLd = [
 
   <CtaBand
     eyebrow="Free quote"
-    heading="Win more therapy inquiries in Los Angeles"
+    heading="Grow your Los Angeles therapy practice with AI search optimization"
     description="Request a free quote and we will review your website, local visibility and the searches that matter to your practice."
     ctaLabel="Get a Free Quote"
   />

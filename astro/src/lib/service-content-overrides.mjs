@@ -126,9 +126,7 @@ const AI_SEARCH_CONTENT = {
     { href: "/results", label: "Results", internal: true },
     { href: "/get-a-quote", label: "Get a free quote", internal: true },
   ],
-  industries: [
-    { href: "/general-contractor-seo", label: "SEO for General Contractors", internal: true },
-  ],
+  industries: [],
 };
 
 const OVERRIDES = {

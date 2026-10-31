@@ -5,8 +5,10 @@ import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
 import RichText from "../components/ui/RichText.astro";
 import Section from "../components/ui/Section.astro";
+import type { PricingBlock } from "../lib/pricing";
 
 interface ServiceContent {
   directAnswer: string;
@@ -42,9 +44,11 @@ interface Props {
     showAside?: boolean;
     showRelated?: boolean;
   };
+  /** Optional pricing block rendered after the measurement section. */
+  pricing?: PricingBlock;
 }
 
-const { data } = Astro.props;
+const { data, pricing } = Astro.props;
 const content = data.content;
 ---
 
@@ -113,6 +117,20 @@ const content = data.content;
     {content.metrics.map((item) => <li>{item}</li>)}
   </ul>
 </Section>
+
+{pricing && (
+  <PricingPlans
+    id="service-pricing"
+    eyebrow="Pricing"
+    index=""
+    heading={pricing.heading}
+    description={pricing.description}
+    note={pricing.note}
+    guarantee={pricing.guarantee}
+    plans={pricing.plans}
+    ctaLabel={pricing.ctaLabel}
+  />
+)}
 
 {
   content.sections.map((section, index) => (

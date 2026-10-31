@@ -154,7 +154,7 @@ export const LOCAL_SEO_PAGES = [
       },
       {
         q: "What does local SEO cost for a Pelham business?",
-        a: "Pricing depends on your services, competition, website condition and how many communities you want to target. We review the site and Google Business Profile first, then send a written quote with a clear scope. We do not publish invented package prices.",
+        a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is a payment installment toward the project — not an ongoing retainer. After a free review we confirm the right package and any extra scope in a written quote.",
       },
       {
         q: "How long does SEO take in Pelham?",
@@ -328,7 +328,7 @@ export const LOCAL_SEO_PAGES = [
       },
       {
         q: "How much does SEO cost in West Lincoln?",
-        a: "Cost depends on your services, competition, website and how many locations or service lines you target. We review the business first and provide a written quote. We do not use invented pricing or promise a fixed number of leads.",
+        a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is a payment installment toward the project — not an ongoing retainer. After a free review we confirm the right package and any extra scope in a written quote.",
       },
       {
         q: "How long does local SEO take?",
@@ -497,7 +497,7 @@ export const LOCAL_SEO_PAGES = [
       },
       {
         q: "What does local SEO cost in Smithville?",
-        a: "The cost depends on your services, competition, website and how many service lines you want to grow. We provide a written quote after reviewing the business. We do not publish invented package prices.",
+        a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is a payment installment toward the project — not an ongoing retainer. After a free review we confirm the right package and any extra scope in a written quote.",
       },
       {
         q: "How long does SEO take for a Smithville business?",
@@ -666,7 +666,7 @@ export const LOCAL_SEO_PAGES = [
       },
       {
         q: "How much does local SEO cost in Wainfleet?",
-        a: "Pricing depends on your services, competition, website and coverage area. We review the business first and provide a written quote. We do not invent package prices or promise a fixed number of leads.",
+        a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is a payment installment toward the project — not an ongoing retainer. After a free review we confirm the right package and any extra scope in a written quote.",
       },
       {
         q: "How long does SEO take for a Wainfleet business?",
@@ -835,7 +835,7 @@ export const LOCAL_SEO_PAGES = [
       },
       {
         q: "What does local SEO cost in St. Catharines?",
-        a: "Pricing depends on your competition, services, website and how much content is needed. We review the business first and provide a written quote. We do not publish invented package prices or promise a set number of leads.",
+        a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is a payment installment toward the project — not an ongoing retainer. After a free review we confirm the right package and any extra scope in a written quote.",
       },
       {
         q: "How long does SEO take in a competitive city?",
@@ -1007,7 +1007,7 @@ export const LOCAL_SEO_PAGES = [
       },
       {
         q: "What does local SEO cost in Niagara Falls?",
-        a: "Cost depends on your services, competition, website and how many audiences you need to address. We review the business first and provide a written quote. We do not publish invented package prices.",
+        a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is a payment installment toward the project — not an ongoing retainer. After a free review we confirm the right package and any extra scope in a written quote.",
       },
       {
         q: "How long does SEO take in Niagara Falls?",

@@ -89,6 +89,21 @@
 /seo/for-therapists-saint-john /seo/for-therapists-saint-john 410
 /seo/for-therapists-fredericton /seo/for-therapists-fredericton 410
 /seo/for-therapists-st-johns /seo/for-therapists-st-johns 410
+# Removed pages: the New York therapist city page, the Cass-A-Bella case study
+# and every page of the general contractor SEO vertical. No equivalent page
+# survives, so each returns 410 Gone.
+/seo/for-therapists-new-york /seo/for-therapists-new-york 410
+/cass-a-bella-construction /cass-a-bella-construction 410
+/general-contractor-seo /general-contractor-seo 410
+/general-contractor-seo/alberta /general-contractor-seo/alberta 410
+/general-contractor-seo/british-columbia /general-contractor-seo/british-columbia 410
+/general-contractor-seo/manitoba /general-contractor-seo/manitoba 410
+/general-contractor-seo/new-brunswick /general-contractor-seo/new-brunswick 410
+/general-contractor-seo/newfoundland-and-labrador /general-contractor-seo/newfoundland-and-labrador 410
+/general-contractor-seo/nova-scotia /general-contractor-seo/nova-scotia 410
+/general-contractor-seo/ontario /general-contractor-seo/ontario 410
+/general-contractor-seo/quebec /general-contractor-seo/quebec 410
+/general-contractor-seo/saskatchewan /general-contractor-seo/saskatchewan 410
 /seo/for-solar-companies-arizona /seo/for-solar-companies-niagara 301
 /seo/for-solar-companies-chandler /seo/for-solar-companies-niagara 301
 /seo/for-solar-companies-gilbert /seo/for-solar-companies-niagara 301

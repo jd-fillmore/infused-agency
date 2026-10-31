@@ -4,8 +4,10 @@ import Button from "../components/ui/Button.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
 import RichText from "../components/ui/RichText.astro";
 import Section from "../components/ui/Section.astro";
+import { seoPricingPlans } from "../lib/pricing";
 
 interface Props {
   data: {
@@ -152,6 +154,17 @@ const publishedGroups = groups.filter((group) =>
     ))}
   </div>
 </Section>
+
+<PricingPlans
+  id="seo-pricing"
+  eyebrow="Pricing"
+  index=""
+  heading={seoPricingPlans.heading}
+  description={seoPricingPlans.description}
+  note={seoPricingPlans.note}
+  plans={seoPricingPlans.plans}
+  ctaLabel="Get a Free Quote"
+/>
 
 {
   hub.faqs.length > 0 && (

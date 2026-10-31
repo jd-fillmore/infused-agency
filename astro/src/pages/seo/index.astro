@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServicePage from "../../templates/ServicePage.astro";
 import { getService, services } from "../../lib/site";
+import { seoPricing } from "../../lib/pricing";
 import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
 import { THERAPIST_SEO_CITIES } from "../../lib/city-links.mjs";
 import {
@@ -28,7 +29,7 @@ const faqs = [
   },
   {
     q: "Do you guarantee first-page rankings?",
-    a: "No. Search results vary by location, device and query, and no ethical agency controls Google's rankings. We commit to the work, transparent reporting and honest recommendations, not a guaranteed position.",
+    a: "We don't promise a specific position for every keyword — no ethical agency controls Google's results. We do put money behind one outcome: if your website isn't ranking on page 1 of Google for at least one relevant keyword phrase within your first month, we refund the payments you've made and cancel the remaining installments. Keyword phrases are agreed with you before work begins, based on genuine searches your customers use, and rankings are measured with standard, non-personalized results.",
   },
   {
     q: "What is AI search optimization, GEO or AEO?",
@@ -40,7 +41,11 @@ const faqs = [
   },
   {
     q: "How much do SEO services cost?",
-    a: "Pricing depends on your competition, website, services and how many locations you target. We review the business first and send a written quote with a clear scope. We do not publish invented package prices or promise a set number of leads.",
+    a: "SEO is delivered as a 3-month implementation project, with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each package is spread across a 12-month payment plan, so the monthly amount is a payment installment — not an ongoing monthly retainer.",
+  },
+  {
+    q: "If the work is completed in 3 months, why are there 12 payments?",
+    a: "The 12-month schedule is a payment plan, not a service schedule. The SEO implementation and optimization work is completed within the first 3 months. The remaining payments are simply installments toward the original project investment, so the work was finished but the payments continue on the agreed schedule.",
   },
 ];
 
@@ -56,7 +61,7 @@ const data = {
     'For local businesses, the map pack and <a href="/posts/local-seo-tips-niagara">local search results</a> are often the first shortlist. We improve the profile, service pages, location content and reviews that decide whether you appear, then measure the calls and form fills that follow.',
     'If your business serves customers across several Niagara municipalities, our <a href="/seo/niagara">Niagara Region SEO page</a> explains how we connect regional visibility with the town-level pages for St. Catharines, Niagara Falls, Welland and the rest of the peninsula.',
     'Search behaviour is also moving into AI. People ask ChatGPT, Gemini and Google\'s AI Overviews for recommendations, comparisons and explanations, and those tools assemble answers from sources they can read and trust. We treat <a href="/ai-search">AI search optimization</a> as an extension of SEO: clear entity information, answer-ready content and consistent facts across your site and profiles. Some call it GEO (Generative Engine Optimization), AEO (Answer Engine Optimization) or SEO for AI search. The aim is the same: make your business easier to describe, quote and recommend accurately.',
-    "We do not promise a specific ranking, a citation or a number of leads. We build the foundations that give a business a better chance of being found, explain the trade-offs in plain language and report on what actually changed.",
+    "We will not promise where every keyword ranks, a citation or a number of leads. We do put our money behind one outcome: reach page 1 for at least one relevant keyword phrase in your first month, or get your payments refunded. Beyond that guarantee, we build the foundations that give a business a better chance of being found, explain the trade-offs in plain language and report on what actually changed.",
   ],
   approach: [
     {
@@ -105,6 +110,7 @@ const data = {
       body: "We connect search visibility to the actions that matter: calls, form fills, direction requests and booked appointments. Reporting shows what changed and where the next opportunity is.",
     },
   ],
+  pricing: seoPricing,
   cities: [
     { href: "/seo/niagara", label: "Niagara Region" },
     ...NIAGARA_CITY_LINKS.map((city) => ({
@@ -112,10 +118,7 @@ const data = {
       label: `${city.name}, ON`,
     })),
   ],
-  industries: [
-    ...THERAPIST_SEO_CITIES.map(({ href, label }) => ({ href, label })),
-    { href: "/general-contractor-seo", label: "SEO for General Contractors" },
-  ],
+  industries: THERAPIST_SEO_CITIES.map(({ href, label }) => ({ href, label })),
   childServices: services
     .filter((service) => service.parentUrl === "/seo")
     .map((service) => ({ name: service.name, url: service.url }))

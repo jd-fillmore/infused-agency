@@ -8,10 +8,6 @@ export const THERAPIST_SEO_CITIES = [
     href: "/seo/for-therapists-los-angeles",
     label: "SEO for Therapists in Los Angeles, CA",
   },
-  {
-    href: "/seo/for-therapists-new-york",
-    label: "SEO for Therapists in New York, NY",
-  },
 ];
 
 export const AI_SEO_CITIES = [

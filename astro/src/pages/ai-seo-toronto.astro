@@ -6,8 +6,10 @@ import Card from "../components/ui/Card.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
 import Section from "../components/ui/Section.astro";
 import { getIndustryPage } from "../lib/legacy-pages.mjs";
+import { aiSearchPricingPlans } from "../lib/pricing";
 import {
   baseGraph,
   breadcrumbNode,
@@ -76,7 +78,7 @@ const faqs = [
   },
   {
     q: "What does AI SEO cost for a Toronto business?",
-    a: "It varies with the shape of the business. An owner-run service company with one location is a smaller scope than a firm with several branches and a long service catalogue. We review the site, profiles and category before quoting, then send a written proposal with the work set out. No package prices are listed on this page.",
+    a: "AI search is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is an installment toward the project — not an ongoing retainer. A firm with several branches and a long service catalogue may need a larger scope, which we confirm in a written quote after a free review.",
   },
   {
     q: "Do you work with businesses across the GTA, not only downtown Toronto?",
@@ -422,6 +424,17 @@ const jsonLd = [
       </div>
     </div>
   </Section>
+
+  <PricingPlans
+    id="seo-pricing"
+    eyebrow="Pricing"
+    index=""
+    heading={aiSearchPricingPlans.heading}
+    description={aiSearchPricingPlans.description}
+    note={aiSearchPricingPlans.note}
+    plans={aiSearchPricingPlans.plans}
+    ctaLabel="Get a Free Quote"
+  />
 
   <Section
     tone="warm"

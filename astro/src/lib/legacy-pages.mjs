@@ -146,6 +146,9 @@ export function getVerticalPages() {
     return published
       .map((record) => verticalSeo.buildPageProps(record.page, publishedSet))
       .map((page) => rewritePageLinks(page))
+      // Retired vertical routes must never produce a page, sitemap entry or
+      // navigation link, even while the shared data still describes them.
+      .filter((page) => !isRetiredRoute(page.urlPath))
       .sort((a, b) => a.urlPath.localeCompare(b.urlPath));
   });
 }
@@ -226,10 +229,13 @@ export function getBespokePages() {
   // Legacy data lives beside the surviving Los Angeles therapist page. The
   // removed city entries (and the Syracuse testimonial source still read by
   // that page) must never produce routes or sitemap entries themselves, so
-  // they are filtered out here.
+  // they are filtered out here. Any bespoke page registered as retired is
+  // removed by pathname for the same reason.
   return memo("bespoke-pages", () =>
     LEGACY_BESPOKE_PAGES.filter(
-      (page) => !page.pathname.startsWith("/seo/for-therapists-")
+      (page) =>
+        !page.pathname.startsWith("/seo/for-therapists-") &&
+        !isRetiredRoute(page.pathname)
     )
   );
 }

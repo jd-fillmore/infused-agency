@@ -59,7 +59,7 @@ module.exports = {
     },
     {
       q: "How much does SEO cost?",
-      a: "It depends on your market, the size of your service area, and the condition of your current website. We don't publish fixed figures or sell from a price list; after a free consultation we write a clear quote that describes the work and what it costs, and you decide from there.",
+      a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is an installment toward the project — not an ongoing monthly retainer. A contractor covering a large service area or several cities may need a larger scope, which we confirm in a written quote after a free consultation.",
     },
     {
       q: "Will you guarantee the number one ranking on Google?",

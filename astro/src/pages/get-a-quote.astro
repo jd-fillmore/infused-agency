@@ -1,8 +1,5 @@
 ﻿---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Button from "../components/ui/Button.astro";
-import CtaBand from "../components/ui/CtaBand.astro";
-import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
 import Section from "../components/ui/Section.astro";
 import { CALENDLY_URL } from "../lib/site";
@@ -29,80 +26,59 @@ const jsonLd = [
 <BaseLayout title={title} description={description} canonical="/get-a-quote" jsonLd={jsonLd}>
   <PageHero
     title="Get Your Free Quote"
-    description="Transform your online presence with a tailored web and SEO solution."
+    description="Book your free project consultation directly in the calendar below — pick a time that works for you."
     breadcrumbs={[{ name: "Home", href: "/" }, { name: "Get a Quote" }]}
     eyebrow="Start a project"
     showCta={false}
-  >
-  </PageHero>
+  />
 
   <Section tone="warm">
-    <div class="quote-layout">
-      <div class="reveal">
-        <p class="eyebrow"><span class="eyebrow__index">01</span> Let&rsquo;s begin</p>
-        <h2 class="h2" style="margin-top: 1rem;">Let&rsquo;s Elevate Your Brand!</h2>
-        <p class="lead" style="margin-top: 1.25rem;">
-          Our team is ready to start your next web design, SEO or digital
-          marketing project.
-        </p>
-        <p class="lead" style="margin-top: 1rem;">
-          The first step is to get in touch with us to book your free project
-          consultation.
-        </p>
-        <div style="margin-top: 1.9rem;">
-          <Button href={CALENDLY_URL} size="lg" variant="gold" arrow external>
-            Open the booking calendar
-          </Button>
-        </div>
-        <p class="small muted" style="margin-top: 0.9rem;">
-          Booking opens in a new tab.
-        </p>
-
-        <ol class="quote-steps" style="margin-top: 2.5rem;">
-          <li>
-            <span class="quote-steps__index">01</span>
-            <div>
-              <h3>We learn about your business</h3>
-              <p>Your market, your goals and what a good enquiry looks like.</p>
-            </div>
-          </li>
-          <li>
-            <span class="quote-steps__index">02</span>
-            <div>
-              <h3>We review your visibility</h3>
-              <p>Your website, Google Business Profile and the local competition.</p>
-            </div>
-          </li>
-          <li>
-            <span class="quote-steps__index">03</span>
-            <div>
-              <h3>You receive a written quote</h3>
-              <p>A clear scope and a free, no-obligation quote for the work.</p>
-            </div>
-          </li>
-        </ol>
+    <div class="quote-embed reveal">
+      <div class="card card--flush quote-embed__card">
+        <iframe
+          src={CALENDLY_URL}
+          title="Book a free project consultation with Infused Agency"
+          style="width: 100%; height: 740px; border: 0; display: block;"
+        >
+        </iframe>
       </div>
+    </div>
 
-      <aside class="callout reveal" aria-labelledby="quote-aside-title">
-        <span class="card__icon"><Icon name="chat" /></span>
-        <h2 id="quote-aside-title" style="margin-top: 1rem;">What happens next</h2>
-        <ul class="check-list" style="margin-top: 1rem;">
-          <li>We learn about your business, your market and your goals.</li>
-          <li>We review your website, Google Business Profile and competitors.</li>
-          <li>You receive a written scope and a free, no-obligation quote.</li>
-        </ul>
-        <div style="margin-top: 1.25rem;">
-          <Button href={CALENDLY_URL} variant="secondary" arrow external>Book a consultation</Button>
-        </div>
-      </aside>
+    <div class="reveal" style="max-width: 44rem; margin: 3.5rem auto 0;">
+      <ol class="quote-steps">
+        <li>
+          <span class="quote-steps__index">01</span>
+          <div>
+            <h3>We learn about your business</h3>
+            <p>Your market, your goals and what a good enquiry looks like.</p>
+          </div>
+        </li>
+        <li>
+          <span class="quote-steps__index">02</span>
+          <div>
+            <h3>We review your visibility</h3>
+            <p>Your website, Google Business Profile and the local competition.</p>
+          </div>
+        </li>
+        <li>
+          <span class="quote-steps__index">03</span>
+          <div>
+            <h3>You receive a written quote</h3>
+            <p>A clear scope and a free, no-obligation quote for the work.</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </Section>
-
-  <CtaBand
-    heading="Ready to Grow Your Business?"
-    description="Book a free, no-obligation consultation and we'll map out where your next customers come from."
-    ctaLabel="Book a consultation"
-    ctaHref={CALENDLY_URL}
-    ctaExternal
-  />
 </BaseLayout>
+
+<style>
+  .quote-embed {
+    max-width: 58rem;
+    margin-inline: auto;
+  }
+
+  .quote-embed__card {
+    box-shadow: var(--shadow-card);
+  }
+</style>

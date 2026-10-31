@@ -1,0 +1,269 @@
+---
+import Button from "./Button.astro";
+import Icon from "./Icon.astro";
+import Section from "./Section.astro";
+
+interface Plan {
+  name: string;
+  /** Monthly installment amount (the only, most prominent price). */
+  monthly: number;
+  /** Optional lead-in above the feature list, e.g. "Everything in Starter, plus:" */
+  lead?: string;
+  features: string[];
+  featured?: boolean;
+  badge?: string;
+}
+
+interface Props {
+  id?: string;
+  eyebrow?: string;
+  index?: string;
+  heading: string;
+  description: string;
+  /** Extra note shown under the section description. */
+  note?: string;
+  /** Optional delivery guarantee banner shown above the plans. */
+  guarantee?: { title: string; body: string };
+  plans: Plan[];
+  ctaLabel?: string;
+}
+
+const {
+  id = "seo-pricing",
+  eyebrow = "Pricing",
+  index = "02",
+  heading,
+  description,
+  note,
+  guarantee,
+  plans,
+  ctaLabel = "Get a Free Quote",
+} = Astro.props;
+
+const formatCad = (value: number) => `$${value.toLocaleString("en-CA")}`;
+---
+
+<Section
+  tone="contrast"
+  id={id}
+  eyebrow={eyebrow}
+  index={index}
+  heading={heading}
+  description={description}
+>
+  {
+    note && (
+      <p class="pricing-note reveal">
+        <strong>{note}</strong>
+      </p>
+    )
+  }
+
+  {
+    guarantee && (
+      <div class="guarantee reveal">
+        <span class="guarantee__icon"><Icon name="check" /></span>
+        <div>
+          <p class="guarantee__title">{guarantee.title}</p>
+          <p class="guarantee__body">{guarantee.body}</p>
+        </div>
+      </div>
+    )
+  }
+
+  <div class="grid grid--3 pricing-grid reveal-group">
+    {
+      plans.map((plan) => (
+        <article class:list={["card card--dark plan", plan.featured && "plan--featured"]}>
+          <div class="plan__head">
+            {plan.badge && <p class="badge badge--gold plan__badge">{plan.badge}</p>}
+            <h3 class="plan__name">{plan.name}</h3>
+          </div>
+
+          <p class="plan__price">
+            <span class="plan__price-amount">{formatCad(plan.monthly)}</span>
+            <span class="plan__price-unit">/month</span>
+          </p>
+          <p class="plan__term">for 12 months</p>
+          <p class="plan__build"><strong>Implementation:</strong> 3 months</p>
+
+          <ul class="check-list plan__list">
+            {plan.lead && <li class="plan__lead">{plan.lead}</li>}
+            {plan.features.map((feature) => (
+              <li>{feature}</li>
+            ))}
+          </ul>
+
+          <div class="plan__cta">
+            <Button
+              href="/get-a-quote"
+              variant={plan.featured ? "gold" : "light"}
+              block
+            >
+              {ctaLabel}
+            </Button>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</Section>
+
+<style>
+  .pricing-grid {
+    margin-top: 1.5rem;
+  }
+
+  .pricing-note {
+    margin-top: 1.25rem;
+    font-size: var(--text-sm);
+    color: var(--color-gold-bright);
+    letter-spacing: 0.02em;
+  }
+
+  .guarantee {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-contrast-line);
+    border-left: 3px solid var(--color-gold-bright);
+    border-radius: var(--radius-md);
+    background: rgba(226, 192, 68, 0.07);
+  }
+
+  .guarantee__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    margin-top: 0.15rem;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background: var(--color-gold-bright);
+    color: var(--color-navy);
+  }
+
+  .guarantee__icon svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .guarantee__title {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .guarantee__body {
+    margin-top: 0.2rem;
+    font-size: var(--text-sm);
+    line-height: 1.55;
+    color: var(--color-contrast-muted);
+  }
+
+  .plan {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .plan--featured {
+    border-color: var(--color-gold-bright);
+    box-shadow: var(--shadow-deep);
+  }
+
+  .plan__head {
+    min-height: 3.6rem;
+  }
+
+  .plan__badge {
+    margin: 0;
+  }
+
+  .plan__name {
+    margin-top: 0.45rem;
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    letter-spacing: var(--tracking-heading);
+    color: #ffffff;
+  }
+
+  .plan__price {
+    margin-top: 1.1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    color: #ffffff;
+  }
+
+  .plan__price-amount {
+    font-family: var(--font-heading);
+    font-size: clamp(2.25rem, 1.85rem + 1.4vw, 2.9rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  .plan__price-unit {
+    font-size: var(--text-lg);
+    color: var(--color-contrast-muted);
+    font-weight: 500;
+  }
+
+  .plan__term {
+    margin-top: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    letter-spacing: var(--tracking-heading);
+    color: var(--color-gold-bright);
+  }
+
+  .plan__build {
+    margin-top: 0.35rem;
+    font-size: var(--text-sm);
+    color: var(--color-contrast-muted);
+  }
+
+  .plan__build strong {
+    color: var(--color-contrast-ink);
+    font-weight: 600;
+  }
+
+  .plan__list {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--color-contrast-line);
+    flex: 1;
+  }
+
+  .plan__lead {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 600;
+    color: var(--color-contrast-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .plan__lead::before {
+    display: none;
+  }
+
+  .plan__cta {
+    margin-top: 1.6rem;
+  }
+
+  /* Featured card gets extra lift on desktop. Uses the separate `translate`
+     property so the scroll-reveal transform is not overwritten. */
+  @media (min-width: 900px) {
+    .plan--featured {
+      translate: 0 -0.45rem;
+    }
+  }
+</style>
