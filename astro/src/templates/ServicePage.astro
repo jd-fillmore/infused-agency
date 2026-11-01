@@ -34,7 +34,6 @@ interface ServicePageData {
   results: { heading: string; body: string };
   services: Array<{ title: string; body: string }>;
   cities: Array<{ href: string; label: string }>;
-  industries: Array<{ href: string; label: string }>;
   childServices: Array<{ name: string; url: string }>;
   faqs?: Array<{ q: string; a: string }>;
 }
@@ -139,19 +138,19 @@ const { data } = Astro.props;
       </ul>
     </div>
     <div class="reveal">
-      <h3 class="h3">SEO by industry</h3>
-      <ul class="chip-list" style="margin-top: 1rem;">
-        {
-          data.industries.map((industry) => (
-            <li>
-              <a class="chip" href={industry.href}>
-                {industry.label}
-                <Icon name="arrow-right" />
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      <h3 class="h3">Therapists</h3>
+      <div class="prose" style="margin-top: 0.75rem;">
+        <p>
+          We also publish a dedicated programme for therapy practices: local
+          Google SEO plus AI search visibility in ChatGPT and Google AI
+          Overviews, with city-level pages across North America.
+        </p>
+      </div>
+      <div style="margin-top: 1.25rem;">
+        <Button href="/seo/for-therapists" variant="gold" arrow>
+          Explore SEO and AI search optimization for therapists
+        </Button>
+      </div>
     </div>
   </div>
 </Section>

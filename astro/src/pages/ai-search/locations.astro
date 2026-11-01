@@ -1,0 +1,244 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Button from "../../components/ui/Button.astro";
+import CtaBand from "../../components/ui/CtaBand.astro";
+import Icon from "../../components/ui/Icon.astro";
+import PageHero from "../../components/ui/PageHero.astro";
+import Section from "../../components/ui/Section.astro";
+import {
+  baseGraph,
+  breadcrumbNode,
+  serviceNode,
+  webPageNode,
+} from "../../lib/schema";
+
+const pathname = "/ai-search/locations";
+const title =
+  "AI Search Optimization Services Across Canada & the US | Infused Agency";
+const description =
+  "Explore AI search optimization services across Canada and the United States. Improve your visibility in ChatGPT, Google AI Overviews and other AI-powered search platforms.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "AI Search", href: "/ai-search" },
+  { name: "Locations" },
+];
+
+const canadaPages = [
+  {
+    href: "/seo/niagara",
+    label: "AI Search Optimization in the Niagara Region",
+    note: "Regional page covering St. Catharines, Niagara Falls and surrounding municipalities.",
+  },
+  {
+    href: "/ai-seo-toronto",
+    label: "AI search optimization in Toronto",
+  },
+  {
+    href: "/ai-seo-hamilton",
+    label: "AI search optimization in Hamilton",
+  },
+];
+
+const usPages = [
+  {
+    href: "/ai-search-optimization-atlanta",
+    label: "AI search optimization in Atlanta",
+    note: "Metro Atlanta, from Sandy Springs and Marietta to Alpharetta and Johns Creek.",
+  },
+  {
+    href: "/ai-search-optimization-washington-dc",
+    label: "AI search optimization in Washington, DC",
+    note: "The DMV — Washington, Arlington, Alexandria, Bethesda, Rockville, Fairfax and Tysons.",
+  },
+  {
+    href: "/ai-search-optimization-miami",
+    label: "AI search optimization in Miami",
+    note: "South Florida, from Miami Beach and Coral Gables to Fort Lauderdale and Boca Raton.",
+  },
+  {
+    href: "/ai-search-optimization-philadelphia",
+    label: "AI search optimization in Philadelphia",
+    note: "The Delaware Valley, including King of Prussia, Cherry Hill and Wilmington.",
+  },
+  {
+    href: "/ai-search-optimization-phoenix",
+    label: "AI search optimization in Phoenix",
+    note: "The Valley — Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale and Peoria.",
+  },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({
+    url: pathname,
+    name: title,
+    description,
+    type: "CollectionPage",
+  }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "AI search optimization services across Canada and the United States",
+    description:
+      "AI search optimization (GEO and AEO) for businesses across Canada and the United States, improving visibility in ChatGPT, Google AI Overviews and other AI-powered search platforms.",
+    serviceType:
+      "AI search optimization, generative engine optimization (GEO), answer engine optimization (AEO)",
+  }),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="AI Search Optimization Across Canada & the United States"
+    description="Businesses no longer only search — they ask. We work with companies across Canada and the United States to make their services clear, credible and quotable across ChatGPT, Google AI Overviews and the other AI-powered platforms that summarise the web for their customers."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Locations"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <h2>Start with a free quote</h2>
+      <p>
+        Tell us where you operate and what you sell. We will review your
+        search and AI visibility, then send a written quote.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> Website and AI visibility review</li>
+        <li><Icon name="check" /> Local competitor scan</li>
+        <li><Icon name="check" /> Written, no-obligation quote</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>
+        Get a Free Quote
+      </Button>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="What this work is"
+    index="01"
+    heading="One discipline, two kinds of search"
+    description="AI search optimization extends your ordinary SEO to the places where answers are generated."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            People increasingly ask AI assistants for recommendations instead
+            of scrolling through search results, and those assistants
+            assemble answers from businesses whose websites, profiles and
+            directory listings present clear, consistent, verifiable
+            information. Our programme improves the conditions that make a
+            citation likely: entity cleanup, answer-ready content, structured
+            data and a maintained flow of trusted signals.
+          </p>
+          <p>
+            We work remotely with businesses throughout Canada and the United
+            States, and we sign our pages honestly — each location page
+            below describes that market in detail rather than pasting one
+            template over ten cities. No agency can guarantee what ChatGPT or
+            Google AI Overviews will say next, so we never sell a promised
+            citation. What we improve is what you can influence.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">What the pages cover</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>How assistants search, read and quote sources</li>
+          <li>The competition for AI answers in each market</li>
+          <li>Entity, profile and structured data foundations</li>
+          <li>Content built to be extracted and summarized</li>
+          <li>How progress is measured and reported</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    eyebrow="Directory"
+    index="02"
+    heading="AI search optimization pages by market"
+    description="Choose the market closest to yours. Each page follows the same programme, grounded in local competition and search behaviour."
+  >
+    <div style="display: grid; gap: 2.5rem;">
+      <div class="reveal">
+        <h3 class="h3">Canada</h3>
+        <ul class="chip-list" style="margin-top: 1rem;">
+          {
+            canadaPages.map((page) => (
+              <li>
+                <a class="chip" href={page.href}>
+                  {page.label}
+                  <Icon name="arrow-right" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="reveal">
+        <h3 class="h3">United States</h3>
+        <ul class="chip-list" style="margin-top: 1rem;">
+          {
+            usPages.map((page) => (
+              <li>
+                <a class="chip" href={page.href}>
+                  {page.label}
+                  <Icon name="arrow-right" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Explore"
+    index="03"
+    heading="Related services and specialists"
+    description="The wider services and niche work connected to these location pages."
+  >
+    <ul class="chip-list">
+      <li>
+        <a class="chip" href="/ai-search">
+          AI search optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/seo">
+          Search engine optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/seo/for-therapists">
+          SEO & AI Search Optimization for Therapists
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/results">
+          Client results
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/get-a-quote">
+          Get a Free Quote
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Start where your customers ask their questions"
+    description="Request a free quote and we will review how AI assistants currently describe your business, then send back a written quote with a clear scope."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

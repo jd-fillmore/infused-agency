@@ -3,7 +3,6 @@
 // The legacy Next.js JSON remains untouched. This module applies the corrected
 // and expanded AI search positioning only to the Astro build.
 
-import { AI_SEO_CITIES, THERAPIST_SEO_CITIES } from "./city-links.mjs";
 import proofJson from "../../../data/vertical-seo/proof.json";
 
 const AI_SEARCH_PROOF_IDS = [
@@ -17,16 +16,6 @@ const AI_SEARCH_PROOF_IDS = [
 const aiSearchProof = AI_SEARCH_PROOF_IDS.map((id) =>
   proofJson.find((entry) => entry.id === id)
 ).filter(Boolean);
-
-const aiSeoCityLinks = AI_SEO_CITIES.map(({ href, label }) => ({
-  href,
-  label,
-}));
-
-const therapistCityLinks = THERAPIST_SEO_CITIES.map(({ href, label }) => ({
-  href,
-  label,
-}));
 
 const AI_SEARCH_CONTENT = {
   directAnswer:
@@ -98,22 +87,32 @@ const AI_SEARCH_CONTENT = {
     {
       heading: "AI search optimization in the markets we serve",
       paragraphs: [
-        "If your business serves customers across several Niagara municipalities, our regional SEO work connects local search, city pages and AI visibility across the region. It is the regional complement to the town-level pages, not a replacement for them.",
-        "Outside Niagara, we apply the same approach in other Ontario markets. Therapy practices have their own city pages that combine traditional therapist SEO with AI search guidance.",
+        "If your business serves customers across several Niagara municipalities, our <a href=\"/seo/niagara\">regional SEO work in the Niagara Region</a> connects local search, city pages and AI visibility across the region. It is the regional complement to the town-level pages, not a replacement for them.",
+      ],
+    },
+    {
+      heading: "AI Search Optimization Across North America",
+      paragraphs: [
+        "We work with businesses across Canada and the United States, remotely from our base in Ontario. Each market has its own page covering the local competition for AI answers and how the programme applies there — such as <a href=\"/ai-seo-toronto\">Toronto</a>, <a href=\"/ai-seo-hamilton\">Hamilton</a>, <a href=\"/ai-search-optimization-atlanta\">Atlanta</a> and <a href=\"/ai-search-optimization-phoenix\">Phoenix</a>.",
+        "<a href=\"/ai-search/locations\">Explore AI Search Optimization Locations</a> to see every market we currently publish.",
+      ],
+    },
+    {
+      heading: "AI search optimization for therapists",
+      paragraphs: [
+        "Therapy practices get a specialized version of this work, pairing Google SEO with AI visibility in ChatGPT and Google AI Overviews. We publish dedicated therapist location pages across North American cities and centralize them in one place.",
+        "<a href=\"/seo/for-therapists\">Explore SEO and AI Search Optimization for Therapists</a> to see how the programme applies to a practice like yours.",
       ],
     },
   ],
   linkGroups: [
     {
-      title: "Regional and city pages",
+      title: "Key pages",
       links: [
         { href: "/seo/niagara", label: "SEO in the Niagara Region" },
-        ...aiSeoCityLinks,
+        { href: "/ai-search/locations", label: "All AI search optimization locations" },
+        { href: "/seo/for-therapists", label: "SEO & AI search optimization for therapists" },
       ],
-    },
-    {
-      title: "Therapist SEO pages",
-      links: therapistCityLinks,
     },
   ],
   faqs: [
