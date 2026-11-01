@@ -9,7 +9,6 @@ import {
   getNicheCityPages,
   getNiagaraIndustries,
   getServicesData,
-  getVerticalPages,
   NIAGARA_CITY_LINKS,
 } from "../lib/legacy-pages.mjs";
 import { THERAPIST_SEO_CITIES } from "../lib/city-links.mjs";
@@ -26,7 +25,6 @@ const description =
 
 const { groups } = getServicesData();
 const industries = getNiagaraIndustries();
-const verticals = getVerticalPages();
 const bespoke = getBespokePages();
 const posts = getAllPosts();
 const concreteCities = getNicheCityPages();
@@ -53,16 +51,6 @@ const webDesignPages = bespoke.filter((page: any) =>
 
 const servicePages = groups.flatMap((group: any) =>
   group.services.map((service: any) => ({ name: service.name, href: service.url }))
-);
-
-const verticalPillars = verticals.filter(
-  (page: any) => page.urlPath.split("/").filter(Boolean).length === 1
-);
-const verticalProvinces = verticals.filter(
-  (page: any) => page.urlPath.split("/").filter(Boolean).length === 2
-);
-const verticalCities = verticals.filter(
-  (page: any) => page.urlPath.split("/").filter(Boolean).length === 3
 );
 
 const jsonLd = [
@@ -131,27 +119,6 @@ const jsonLd = [
     <ul class="chip-list">
       {industries.map((industry: any) => (
         <li><a class="chip" href={industry.href}>SEO for {industry.displayName} in Niagara</a></li>
-      ))}
-    </ul>
-  </Section>
-
-  <Section heading="Vertical SEO">
-    <h3 class="h4">Pillars</h3>
-    <ul class="chip-list">
-      {verticalPillars.map((page: any) => (
-        <li><a class="chip" href={page.urlPath}>{page.h1}</a></li>
-      ))}
-    </ul>
-    <h3 class="h4" style="margin-top: 2rem;">Provinces and states</h3>
-    <ul class="chip-list">
-      {verticalProvinces.map((page: any) => (
-        <li><a class="chip" href={page.urlPath}>{page.h1}</a></li>
-      ))}
-    </ul>
-    <h3 class="h4" style="margin-top: 2rem;">Cities</h3>
-    <ul class="chip-list">
-      {verticalCities.map((page: any) => (
-        <li><a class="chip" href={page.urlPath}>{page.h1}</a></li>
       ))}
     </ul>
   </Section>

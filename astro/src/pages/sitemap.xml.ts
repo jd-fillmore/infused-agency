@@ -5,7 +5,6 @@ import { RETIRED_ROUTE_PATHS } from "../lib/retired-routes.mjs";
 import {
   getIndustryPages,
   getCitySeoPages,
-  getVerticalPages,
   getNicheCityPages,
   getNicheHub,
   getBespokePages,
@@ -49,7 +48,6 @@ export const GET: APIRoute = () => {
 
   for (const page of getIndustryPages()) entries.set(page.seo.url, undefined);
   for (const page of getCitySeoPages()) entries.set(page.seo.url, undefined);
-  for (const page of getVerticalPages()) entries.set(page.urlPath, undefined);
   for (const page of getNicheCityPages()) entries.set(page.urlPath, undefined);
   const nicheHub = getNicheHub();
   if (nicheHub?.urlPath) entries.set(nicheHub.urlPath, undefined);
