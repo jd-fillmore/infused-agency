@@ -21,6 +21,26 @@ export const THERAPIST_SEO_CITIES = [
     label: "SEO for Therapists in Houston",
   },
   {
+    href: "/ai-seo-for-therapists-atlanta",
+    label: "AI SEO for Therapists in Atlanta",
+  },
+  {
+    href: "/ai-seo-for-therapists-washington-dc",
+    label: "AI SEO for Therapists in Washington, DC",
+  },
+  {
+    href: "/ai-seo-for-therapists-miami",
+    label: "AI SEO for Therapists in Miami",
+  },
+  {
+    href: "/ai-seo-for-therapists-philadelphia",
+    label: "AI SEO for Therapists in Philadelphia",
+  },
+  {
+    href: "/ai-seo-for-therapists-phoenix",
+    label: "AI SEO for Therapists in Phoenix",
+  },
+  {
     href: "/seo-for-therapists-toronto",
     label: "SEO for Therapists in Toronto",
   },
@@ -50,5 +70,25 @@ export const AI_SEO_CITIES = [
   {
     href: "/ai-seo-hamilton",
     label: "AI SEO in Hamilton",
+  },
+  {
+    href: "/ai-search-optimization-atlanta",
+    label: "AI Search Optimization in Atlanta",
+  },
+  {
+    href: "/ai-search-optimization-washington-dc",
+    label: "AI Search Optimization in Washington, DC",
+  },
+  {
+    href: "/ai-search-optimization-miami",
+    label: "AI Search Optimization in Miami",
+  },
+  {
+    href: "/ai-search-optimization-philadelphia",
+    label: "AI Search Optimization in Philadelphia",
+  },
+  {
+    href: "/ai-search-optimization-phoenix",
+    label: "AI Search Optimization in Phoenix",
   },
 ];

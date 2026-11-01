@@ -1,0 +1,505 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
+import Section from "../components/ui/Section.astro";
+import { getIndustryPage } from "../lib/legacy-pages.mjs";
+import { aiSearchPricingPlans } from "../lib/pricing";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/ai-search-optimization-phoenix";
+const title = "AI SEO Phoenix | AI Search Optimization Services";
+const description =
+  "AI SEO for Phoenix businesses competing with near-identical firms: AI search optimization, AEO and GEO across the Valley. Request a free written quote.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: "Phoenix" },
+];
+
+const image = "/images/ai-search-optimization-phoenix.webp";
+const imageAlt =
+  "AI search optimization services for businesses looking for customers in Phoenix and across the Valley";
+
+// The Suk Law result is reused exactly as it appears on the existing
+// /seo/for-law-firms-niagara page. Nothing in this block is edited or invented.
+const sukLaw = getIndustryPage("/seo/for-law-firms-niagara") as
+  | {
+      proof: {
+        heading: string;
+        client: string;
+        subhead?: string;
+        label: string;
+        image?: string;
+        alt?: string;
+        items?: string[];
+      };
+    }
+  | undefined;
+
+if (!sukLaw?.proof) {
+  throw new Error("Missing Suk Law proof block for the Phoenix AI SEO page");
+}
+
+const proof = sukLaw.proof;
+
+const faqs = [
+  {
+    q: "How can a smaller Phoenix business compete for AI search visibility?",
+    a: "The Valley is full of companies that market the same way, which means a precise description can outrun a famous name. A contractor in Peoria who states exactly which trades, which routes and what warranty can be the single clear answer an assistant needs, where a bigger brand stops at slogans.",
+  },
+  {
+    q: "Is AI SEO vs traditional SEO a choice, or do they work together?",
+    a: "They are the same discipline at different depths. Fast pages, clean crawl paths, accurate titles and a live Google Business Profile stay compulsory. The AI layer then pushes further: paragraphs shaped as answers, identical facts on every profile and a schedule for asking assistants the same questions again.",
+  },
+  {
+    q: "How should a multi-location Valley business organise AI search pages?",
+    a: "One page per real location with its own address, hours, phone and catchment &mdash; a Gilbert branch and a Scottsdale branch should not share text with the city name swapped. Offices that accept clients and mailing addresses that do not must be described differently, or assistants will read them as the same.",
+  },
+  {
+    q: "How likely is ChatGPT to recommend our Phoenix business?",
+    a: "No one can guarantee it. Providers choose their sources, change them silently and answer differently month to month. What we can affect is whether your services, coverage and credentials are stated clearly and consistently enough to enter that reasoning, and we document exactly what changed as a result.",
+  },
+  {
+    q: "How long does AI SEO in Phoenix take to show any change?",
+    a: "Nobody can defend a date given in advance. It depends on the state of your site, how contradictory your listings are, how crowded your category is and how fast quality pages can be built. Foundations come first, publishing second, and the same AI questions are re-asked as the work settles.",
+  },
+  {
+    q: "What does AI SEO cost for a Phoenix business?",
+    a: "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project, not a retainer. Companies with several locations may need a larger scope, which we confirm in a written quote after a free review.",
+  },
+  {
+    q: "Do you work with businesses across the Valley, not only downtown Phoenix?",
+    a: "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies throughout Greater Phoenix and elsewhere in the United States. Meetings happen remotely and travel is arranged when useful. We do not claim a Camelback Road office or any storefront we do not operate.",
+  },
+  {
+    q: "How is AI search optimization in Phoenix measured?",
+    a: "Before work begins, the measures are agreed: search visibility, profile actions, calls, form submissions and a written record of how assistants describe the company. Reviews keep returning to that baseline. A stalled measure is reported as stalled, with the next recommendation in the same breath.",
+  },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "AI SEO services in Phoenix",
+    description,
+    serviceType:
+      "AI SEO, AI search optimization, answer engine optimization (AEO) and generative engine optimization (GEO)",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Phoenix",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Arizona",
+        },
+      },
+      { "@type": "City", name: "Scottsdale" },
+      { "@type": "City", name: "Tempe" },
+      { "@type": "City", name: "Mesa" },
+      { "@type": "City", name: "Chandler" },
+      { "@type": "City", name: "Gilbert" },
+      { "@type": "City", name: "Glendale" },
+      { "@type": "City", name: "Peoria" },
+      { "@type": "City", name: "Paradise Valley" },
+      {
+        "@type": "AdministrativeArea",
+        name: "Arizona",
+        containedInPlace: {
+          "@type": "Country",
+          name: "United States",
+        },
+      },
+      { "@type": "Country", name: "United States" },
+    ],
+  }),
+  faqPageNode(pathname, faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  image={image}
+  imageAlt={imageAlt}
+  jsonLd={jsonLd}
+>
+  <PageHero
+    title="AI SEO & Generative Search Optimization in Phoenix"
+    description="The Valley is really eleven cities masquerading as one, and buyers search accordingly. We help Phoenix businesses and their neighbours in Scottsdale, Mesa and Chandler describe their services, coverage and credentials precisely enough that an AI assistant can name yours instead of a lookalike down the freeway."
+    breadcrumbs={breadcrumbs}
+    eyebrow="AI SEO Phoenix"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <h2>Start with a free quote for AI SEO in Phoenix</h2>
+      <p>
+        Tell us about your business and we will review how you appear in
+        Google, the map pack and AI answers, then send a written quote.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> Website and AI visibility review</li>
+        <li><Icon name="check" /> Local competitor scan</li>
+        <li><Icon name="check" /> Written, no-obligation quote</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>
+        Get a Free Quote
+      </Button>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="A competitive field"
+    index="01"
+    heading="Why AI search optimization in Phoenix rewards a clearer offer"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Phoenix grows fast, and fast growth fills every category with
+            companies that sound the same — pools, HVAC, solar,
+            landscaping, logistics &mdash; all claiming to serve "the entire
+            Valley." When every claim is broad, none of them registers, and
+            the buyer sorting through options by himself has had to give up
+            on precision. Assistants have made precision the deciding factor
+            instead.
+          </p>
+          <p>
+            Ask the way a Valley customer actually would: "Which Tempe shop
+            tunes e-bikes on weekends?" "Who does commercial fencing out of
+            Glendale without a lead time of a month?" "Is there an accountant
+            in Chandler who works with restaurants?" The reply is assembled
+            from firms whose services, cities and credentials slot together
+            cleanly &mdash; and firms that wrote none of it get left out.
+          </p>
+          <p>
+            Our work closes that gap: one sharp description per service,
+            geography stated city by city where it is actually true, and
+            claims supported by evidence an assistant can verify. Infused
+            Agency operates from St. Catharines and serves Phoenix businesses
+            remotely; we make no claim to a downtown address.
+          </p>
+          <p>
+            For a comparison with another Sun Belt market, read our
+            <a href="/ai-search-optimization-atlanta">AI search optimization in Atlanta</a>
+            page.
+          </p>
+        </div>
+      </div>
+      <figure class="media-frame reveal">
+        <img
+          src={image}
+          alt={imageAlt}
+          width="1200"
+          height="1800"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    eyebrow="Services"
+    index="02"
+    heading="How an AI SEO agency in Phoenix approaches the work"
+    description="The services below are connected, not a menu of shortcuts, and each one is scoped to how your company actually sells."
+  >
+    <div class="prose reveal" style="max-width: 56rem; margin-bottom: 2rem;">
+      <p>
+        Since Valley buyers cross city limits constantly, the vocabulary
+        needs one clean definition. AI SEO is the overall effort to be
+        understood and quoted by AI-assisted search. Answer engine
+        optimization (AEO) is its writing layer &mdash; direct, extractable
+        answers to the questions buyers actually ask. Generative Engine
+        Optimization (GEO) monitors the wider sources assistants consult and
+        keeps the description of your company consistent across them. All
+        three are extensions of ordinary SEO, not separate products.
+      </p>
+    </div>
+    <div class="grid grid--3 reveal-group">
+      <Card>
+        <span class="service-card__number">01</span>
+        <h3 class="card__title">AI SEO for Valley businesses with interchangeable websites</h3>
+        <p class="card__text">
+          When every pool builder from Surprise to Gilbert promises the best
+          service in Arizona, the words stop meaning anything to a reader or
+          an algorithm. We give each service page its own audience, scope and
+          limits, so an assistant can describe your work without guessing.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">02</span>
+        <h3 class="card__title">AI search optimization for a multi-city market</h3>
+        <p class="card__text">
+          Serving clients from Paradise Valley to Peoria is a fact worth
+          saying well. We write coverage around real routes and travel times,
+          handle summer service patterns honestly, and skip the near-identical
+          pages for every municipality that smaller sites collect.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">03</span>
+        <h3 class="card__title">AEO services Phoenix: profiles that agree with your website</h3>
+        <p class="card__text">
+          Categories, service areas, hours and phone numbers are checked
+          against your site and the local directories. A closed summer-hours
+          note left live in January, or an old Mesa suite number, quietly
+          undermines everything, so we fix contradictions at the source.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">04</span>
+        <h3 class="card__title">How AEO helps Phoenix buyers before they enquire</h3>
+        <p class="card__text">
+          Pricing approach, lead times, warranty terms and what follows a
+          first call can be explained without promises. Plain factual answers
+          give a hesitant reader something solid to weigh, and give an
+          assistant a paragraph it can quote rather than invent.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">05</span>
+        <h3 class="card__title">Technical groundwork for AI SEO in Phoenix</h3>
+        <p class="card__text">
+          Crawlability, internal links, page speed, duplicate metadata and
+          schema for services and locations decide whether the content can be
+          reached at all &mdash; and most local searches happen on phones in
+          June heat, where speed matters double. We fix what blocks access
+          first.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">06</span>
+        <h3 class="card__title">Optimizing for Google AI Overviews: a record over time</h3>
+        <p class="card__text">
+          Before we start, we note what ChatGPT, Gemini and Google's AI
+          Overviews say about your company, then re-check the same questions
+          on a schedule. When a description is wrong, we trace it to the page
+          or profile that supplied it and correct that source directly.
+        </p>
+      </Card>
+    </div>
+  </Section>
+
+  <Section tone="contrast" eyebrow="Proof" index="03" heading={proof.heading}>
+    <div class="split split--top">
+      <div class="reveal">
+        <span class="badge">{proof.label}</span>
+        <h3 class="h3" style="margin-top: 1rem; color: #ffffff;">{proof.client}</h3>
+        {
+          proof.subhead && (
+            <p class="prose" style="margin-top: 1.1rem; color: var(--color-contrast-muted);">
+              {proof.subhead}
+            </p>
+          )
+        }
+        {
+          proof.items && proof.items.length > 0 && (
+            <ul class="check-list" style="margin-top: 1.1rem;">
+              {proof.items.map((item) => <li>{item}</li>)}
+            </ul>
+          )
+        }
+        <div style="margin-top: 1.75rem;">
+          <Button href="/get-a-quote" variant="gold" arrow>
+            Discuss a similar project
+          </Button>
+        </div>
+      </div>
+      {
+        proof.image && (
+          <figure class="media-frame reveal">
+            <img
+              src={proof.image}
+              alt={proof.alt ?? `${proof.client} SEO results`}
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Who it's for"
+    index="04"
+    heading="AI SEO for Valley businesses with several locations"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            A restaurant group with one Arcadia location and a trade company
+            with Scottsdale, Chandler and Glendale operations are solving
+            different puzzles. The single location competes for a
+            neighbourhood's attention. The multi-location firm needs every
+            branch to remain personally findable without the website
+            dissolving into ten interchangeable pages.
+          </p>
+          <p>
+            Our clients are service businesses, professional practices,
+            retailers and B2B suppliers across the Valley &mdash; from
+            owner-run companies to regional operators. The common trait is a
+            considered purchase: the buyer researches, compares, then acts.
+            We scope the work to how that comparison runs in your category,
+            not to a template that presumes otherwise.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">Is an AI SEO agency in Phoenix the right fit?</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>You compete with larger brands on the same searches</li>
+          <li>You serve a radius, a delivery zone or several Valley locations</li>
+          <li>Your services are easy to confuse with a competitor's</li>
+          <li>You want one clear description across site and profiles</li>
+          <li>You need reporting without inflated claims</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Why Infused"
+    index="05"
+    heading="An AI SEO agency serving Phoenix that names what it cannot control"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Infused Agency is based in St. Catharines, in the Niagara Region
+            of Ontario, and partners with Phoenix businesses remotely. That
+            is the candid version of our geography, and it sets the tone:
+            direct communication, written scope and no fabricated Arizona
+            presence.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid--2" style="grid-template-columns: 1fr;">
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO Phoenix content checked against your sources</h3>
+          <p class="card__text">
+            Copy is written from your services, coverage, hours and
+            credentials. No Central Avenue office, no borrowed client logo
+            and no performance figure that cannot be traced to a document you
+            have approved.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO vs traditional SEO: where each one helps</h3>
+          <p class="card__text">
+            Providers select and revise their own sources; everything else is
+            influence, not control. We improve the material they read and
+            keep descriptions consistent, without selling guaranteed rankings.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Measuring how AI tools describe your Phoenix business</h3>
+          <p class="card__text">
+            We record where you appear, what your profiles show and how
+            assistants summarise the company before and during the work.
+            Reports refer back to that baseline instead of a cherry-picked
+            month.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Phoenix SEO fundamentals that AI search still depends on</h3>
+          <p class="card__text">
+            Useful pages, coherent architecture, correct details and a
+            quickly loading site remain what decides most outcomes. AI search
+            work builds on those habits; it does not bypass them.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  <PricingPlans
+    id="seo-pricing"
+    eyebrow="Pricing"
+    index=""
+    heading={aiSearchPricingPlans.heading}
+    description={aiSearchPricingPlans.description}
+    note={aiSearchPricingPlans.note}
+    plans={aiSearchPricingPlans.plans}
+    ctaLabel="Get a Free Quote"
+  />
+
+  <Section
+    tone="warm"
+    eyebrow="Questions"
+    index="06"
+    heading="How to get recommended by ChatGPT: Phoenix questions"
+  >
+    <Accordion items={faqs} />
+  </Section>
+
+  <Section
+    tone="contrast"
+    eyebrow="Related"
+    index="07"
+    heading="Further reading on AI search optimization"
+    description="The services and pages connected to this work."
+  >
+    <ul class="chip-list">
+      <li>
+        <a class="chip" href="/ai-search">
+          AI search optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/ai-search-optimization-washington-dc">
+          AI Search Optimization in Washington, DC
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/ai-seo-for-therapists-phoenix">
+          AI SEO for Therapists in Phoenix
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/results">
+          Client results
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/get-a-quote">
+          Get a Free Quote
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Phoenix AI SEO that starts from facts you can verify"
+    description="Send us your website and the Valley communities you serve, from Scottsdale to Chandler. We will review your search and AI presence, then return a written quote with a clear scope."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

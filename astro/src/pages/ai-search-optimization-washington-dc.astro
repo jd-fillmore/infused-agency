@@ -1,0 +1,501 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import Card from "../components/ui/Card.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import PricingPlans from "../components/ui/PricingPlans.astro";
+import Section from "../components/ui/Section.astro";
+import { getIndustryPage } from "../lib/legacy-pages.mjs";
+import { aiSearchPricingPlans } from "../lib/pricing";
+import {
+  baseGraph,
+  breadcrumbNode,
+  faqPageNode,
+  serviceNode,
+  webPageNode,
+} from "../lib/schema";
+
+const pathname = "/ai-search-optimization-washington-dc";
+const title = "AI SEO Washington DC | AI Search Optimization Services";
+const description =
+  "AI SEO for Washington, DC businesses competing with lookalike firms: AI search optimization, AEO and GEO across the DMV. Request a free written quote.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO", href: "/seo" },
+  { name: "Washington, DC" },
+];
+
+const image = "/images/ai-search-optimization-washington-dc.webp";
+const imageAlt =
+  "AI search optimization services for businesses looking for customers in Washington, DC and the Rosslyn skyline across the Potomac";
+
+// The Suk Law result is reused exactly as it appears on the existing
+// /seo/for-law-firms-niagara page. Nothing in this block is edited or invented.
+const sukLaw = getIndustryPage("/seo/for-law-firms-niagara") as
+  | {
+      proof: {
+        heading: string;
+        client: string;
+        subhead?: string;
+        label: string;
+        image?: string;
+        alt?: string;
+        items?: string[];
+      };
+    }
+  | undefined;
+
+if (!sukLaw?.proof) {
+  throw new Error(
+    "Missing Suk Law proof block for the Washington, DC AI SEO page"
+  );
+}
+
+const proof = sukLaw.proof;
+
+const faqs = [
+  {
+    q: "How can a smaller DC business compete for AI search visibility?",
+    a: "In this market the giants are enormous, but their answers stay generic. A boutique consultancy in Dupont Circle or a specialist shop in Alexandria can be the sharper reply to a precisely framed question &mdash; an exact service, a specific jurisdiction, a named certification. We build the pages that make those differences unmissable.",
+  },
+  {
+    q: "Is AI SEO vs traditional SEO a choice, or do they work together?",
+    a: "One discipline extends the other. Crawlable pages, accurate titles, sensible internal links and a current Google Business Profile still come first. AI work then asks for more from the same material: answers written to be lifted whole, facts kept identical on every profile, and a routine of re-reading what assistants say about you.",
+  },
+  {
+    q: "How should a business spanning DC, Maryland and Virginia organise its AI search pages?",
+    a: "Start with one honest page per real location, with the address, hours and phone belonging to that place. Where you have no office but serve clients &mdash; say, licensed work across Bethesda, Rockville and Fairfax &mdash; describe the service area plainly rather than minting a location page for each suburb.",
+  },
+  {
+    q: "How likely is ChatGPT to recommend our Washington, DC business?",
+    a: "Nobody can promise that, and in a market this crowded nobody should. Providers choose their own sources and revise them silently. Our contribution is making your services, credentials and coverage consistent and quotable, then documenting what changed and what we observed &mdash; without selling a citation.",
+  },
+  {
+    q: "How long does AI SEO in Washington, DC take to show any change?",
+    a: "No honest date exists. It depends on the state of your site, how much your current listings contradict each other, how thick the competition is and how quickly solid pages can be produced. We fix foundations and obvious contradictions first, then publish and re-check the same AI questions over time.",
+  },
+  {
+    q: "What does AI SEO cost for a Washington, DC business?",
+    a: "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project, not a retainer. Firms with several offices and a long service catalogue may need a larger scope, confirmed in a written quote after a free review.",
+  },
+  {
+    q: "Do you work with businesses across the DMV, not just inside the District?",
+    a: "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies throughout Greater Washington and elsewhere in the United States. Meetings run remotely and travel is arranged when it helps. We do not claim a DC address we do not have.",
+  },
+  {
+    q: "How is AI search optimization in Washington, DC measured?",
+    a: "We fix the measures before any work begins: search visibility, profile actions, calls, form submissions and a written record of how assistants describe the company. Reviews return to that baseline. Stalled measures are reported as stalled, with the next recommendation attached.",
+  },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "AI SEO services in Washington, DC",
+    description,
+    serviceType:
+      "AI SEO, AI search optimization, answer engine optimization (AEO) and generative engine optimization (GEO)",
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Washington",
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "District of Columbia",
+        },
+      },
+      { "@type": "City", name: "Arlington", containedInPlace: { "@type": "AdministrativeArea", name: "Virginia" } },
+      { "@type": "City", name: "Alexandria", containedInPlace: { "@type": "AdministrativeArea", name: "Virginia" } },
+      { "@type": "City", name: "Bethesda", containedInPlace: { "@type": "AdministrativeArea", name: "Maryland" } },
+      { "@type": "City", name: "Silver Spring", containedInPlace: { "@type": "AdministrativeArea", name: "Maryland" } },
+      { "@type": "City", name: "Rockville", containedInPlace: { "@type": "AdministrativeArea", name: "Maryland" } },
+      { "@type": "City", name: "Fairfax", containedInPlace: { "@type": "AdministrativeArea", name: "Virginia" } },
+      { "@type": "City", name: "Tysons", containedInPlace: { "@type": "AdministrativeArea", name: "Virginia" } },
+      { "@type": "Country", name: "United States" },
+    ],
+  }),
+  faqPageNode(pathname, faqs),
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  image={image}
+  imageAlt={imageAlt}
+  jsonLd={jsonLd}
+>
+  <PageHero
+    title="AI SEO & Generative Search Optimization in Washington, DC"
+    description="Washington, DC is perhaps America's most competitive professional market, where dozens of firms can credibly claim the same expertise. We help established companies across the DMV cut through that sameness with service pages, profiles and structured facts that assistants can read, check and repeat."
+    breadcrumbs={breadcrumbs}
+    eyebrow="AI SEO Washington, DC"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <h2>Start with a free quote for AI SEO in Washington, DC</h2>
+      <p>
+        Tell us about your business and we will review how you appear in
+        Google, the map pack and AI answers, then send a written quote.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> Website and AI visibility review</li>
+        <li><Icon name="check" /> Local competitor scan</li>
+        <li><Icon name="check" /> Written, no-obligation quote</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>
+        Get a Free Quote
+      </Button>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="A competitive field"
+    index="01"
+    heading="Why AI search optimization in Washington, DC rewards a clearer offer"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Firms in the DMV compete against counterparts in Tysons, Bethesda
+            and Rosslyn that could be described by the same three words. For
+            professional services especially &mdash; law, government
+            contracting, associations, consultancies &mdash; the traditional
+            homepage full of adjectives has stopped doing its job, because
+            buyers and now the software summarising for them need specifics,
+            not posture.
+          </p>
+          <p>
+            Ask an assistant something a DMV buyer would genuinely type:
+            "which cybersecurity firm near Tysons works with federal
+            contractors?" or "who staffs an Arlington office on Fridays?" The
+            answer is built from businesses whose jurisdictions, coverage and
+            credentials line up cleanly. Anything vague gets skipped in
+            favour of what can be verified.
+          </p>
+          <p>
+            That distinction drives how we work: separating what you sell
+            from who it suits, marking the geography &mdash; the District,
+            Northern Virginia, suburban Maryland &mdash; in terms an
+            assistant can reconcile, and anchoring every claim in evidence.
+            Infused Agency operates from St. Catharines and serves the
+            Washington market remotely; we make no claim to a K Street
+            address.
+          </p>
+          <p>
+            Companies further south can compare how the same programme is
+            applied in another capital-region market on our
+            <a href="/ai-search-optimization-atlanta">AI search optimization in Atlanta</a>
+            page.
+          </p>
+        </div>
+      </div>
+      <figure class="media-frame reveal">
+        <img
+          src={image}
+          alt={imageAlt}
+          width="1200"
+          height="1800"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+    </div>
+  </Section>
+
+  <Section
+    tone="tint"
+    eyebrow="Services"
+    index="02"
+    heading="How an AI SEO agency in Washington, DC approaches the work"
+    description="The services below are connected, not a menu of shortcuts, and each one is scoped to how your company actually sells."
+  >
+    <div class="prose reveal" style="max-width: 56rem; margin-bottom: 2rem;">
+      <p>
+        Because buyers here tend to be analytically minded, the vocabulary
+        deserves a straight answer. AI SEO is the umbrella: being understood
+        and quoted by AI-assisted search. Answer engine optimization (AEO) is
+        the writing discipline within it &mdash; direct answers that a tool
+        can extract without improvising. Generative Engine Optimization (GEO)
+        watches the many other sources assistants consult and keeps the
+        description of your company consistent across them. All three stand
+        on ordinary SEO.
+      </p>
+    </div>
+    <div class="grid grid--3 reveal-group">
+      <Card>
+        <span class="service-card__number">01</span>
+        <h3 class="card__title">AI SEO for DC firms with interchangeable websites</h3>
+        <p class="card__text">
+          When a dozen firms from Friendship Heights to Fishers Lane describe
+          themselves with identical sophistication, an assistant has nothing
+          to grip. We rebuild service pages so each offer carries a distinct
+          scope, audience and boundary &mdash; the facts that get you named
+          instead of your neighbour.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">02</span>
+        <h3 class="card__title">AI search optimization across three jurisdictions</h3>
+        <p class="card__text">
+          A company may transact in the District, hold credentials in
+          Maryland and maintain leadership in Virginia. We write coverage
+          that states those facts separately and correctly &mdash; Bethesda,
+          Rockville, Silver Spring, Arlington, Alexandria, Fairfax, Tysons
+          &mdash; wherever each one is genuinely true.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">03</span>
+        <h3 class="card__title">AEO services DC: profiles that agree with your website</h3>
+        <p class="card__text">
+          Categories, service areas, hours and phone numbers are verified
+          against your site and the directories that matter locally. A stale
+          suite number on K Street or a disconnected line in a Tysons listing
+          quietly undermines everything else, so we correct at the source.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">04</span>
+        <h3 class="card__title">How AEO helps DC buyers before they enquire</h3>
+        <p class="card__text">
+          Engagement models, clearances, response times and what follows a
+          first conversation can all be explained without promising results.
+          Crisp informational paragraphs serve the reader and give an
+          assistant material worth quoting verbatim.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">05</span>
+        <h3 class="card__title">Technical groundwork for AI SEO in Washington, DC</h3>
+        <p class="card__text">
+          Crawlability, internal links, page speed, duplicate metadata and
+          schema for services and offices decide whether the content can even
+          be read. We remove what blocks access before writing anything new
+          on top of it.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">06</span>
+        <h3 class="card__title">Optimizing for Google AI Overviews: a record over time</h3>
+        <p class="card__text">
+          We capture what ChatGPT, Gemini and Google's AI Overviews say about
+          your company now, re-ask the same questions on a schedule and trace
+          any inaccuracy back to the page or profile that supplied it. The
+          correction happens where the error lives.
+        </p>
+      </Card>
+    </div>
+  </Section>
+
+  <Section tone="contrast" eyebrow="Proof" index="03" heading={proof.heading}>
+    <div class="split split--top">
+      <div class="reveal">
+        <span class="badge">{proof.label}</span>
+        <h3 class="h3" style="margin-top: 1rem; color: #ffffff;">{proof.client}</h3>
+        {
+          proof.subhead && (
+            <p class="prose" style="margin-top: 1.1rem; color: var(--color-contrast-muted);">
+              {proof.subhead}
+            </p>
+          )
+        }
+        {
+          proof.items && proof.items.length > 0 && (
+            <ul class="check-list" style="margin-top: 1.1rem;">
+              {proof.items.map((item) => <li>{item}</li>)}
+            </ul>
+          )
+        }
+        <div style="margin-top: 1.75rem;">
+          <Button href="/get-a-quote" variant="gold" arrow>
+            Discuss a similar project
+          </Button>
+        </div>
+      </div>
+      {
+        proof.image && (
+          <figure class="media-frame reveal">
+            <img
+              src={proof.image}
+              alt={proof.alt ?? `${proof.client} SEO results`}
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Who it's for"
+    index="04"
+    heading="AI SEO for DMV businesses with several locations"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            A consultancy with one office in Foggy Bottom and a firm with
+            presence in Tysons, Columbia and Alexandria need different
+            architectures. The solo office competes neighbourhood by
+            neighbourhood. The multi-office firm has to keep every branch
+            distinct and traceable without fracturing the brand across three
+            states' worth of search results.
+          </p>
+          <p>
+            Our clients include professional practices, service businesses,
+            retailers and B2B suppliers &mdash; owner-run companies and
+            multi-office operations alike. What they share is a considered
+            purchase: the customer researches, compares and only then acts.
+            We scope the work to the way that comparison actually behaves in
+            your category, not to a template.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">Is an AI SEO agency in Washington, DC the right fit?</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>You compete with larger brands on the same searches</li>
+          <li>You serve a radius, a delivery zone or several DMV locations</li>
+          <li>Your services are easy to confuse with a competitor's</li>
+          <li>You want one clear description across site and profiles</li>
+          <li>You need reporting without inflated claims</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Why Infused"
+    index="05"
+    heading="An AI SEO agency serving Washington, DC that names what it cannot control"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Infused Agency works from St. Catharines, in the Niagara Region
+            of Ontario, with DMV businesses remotely. That is simply where we
+            are, and it defines how we operate: direct communication, a
+            written scope and no invented local footprint in the District or
+            its suburbs.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid--2" style="grid-template-columns: 1fr;">
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO Washington, DC content checked against your sources</h3>
+          <p class="card__text">
+            Every page begins from your services, coverage, hours and
+            credentials. We will not add a Pennsylvania Avenue address, a
+            client logo or a performance figure that cannot be traced to
+            something you have approved in writing.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO vs traditional SEO: where each one helps</h3>
+          <p class="card__text">
+            Providers choose and change their own sources; the rest of us
+            adapt. We improve the material they read and keep it consistent,
+            while declining to sell anyone a guaranteed position.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Measuring how AI tools describe your DC business</h3>
+          <p class="card__text">
+            Before and during the work we record where you appear, what your
+            profiles show and how assistants summarise the company. Reports
+            return to that baseline, not to a favourable snapshot.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Washington, DC SEO fundamentals that AI search still depends on</h3>
+          <p class="card__text">
+            Useful pages, tidy architecture, accurate details and quick load
+            times continue to decide the majority of outcomes. AI search
+            work amplifies those habits rather than replacing them.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  <PricingPlans
+    id="seo-pricing"
+    eyebrow="Pricing"
+    index=""
+    heading={aiSearchPricingPlans.heading}
+    description={aiSearchPricingPlans.description}
+    note={aiSearchPricingPlans.note}
+    plans={aiSearchPricingPlans.plans}
+    ctaLabel="Get a Free Quote"
+  />
+
+  <Section
+    tone="warm"
+    eyebrow="Questions"
+    index="06"
+    heading="How to get recommended by ChatGPT: Washington, DC questions"
+  >
+    <Accordion items={faqs} />
+  </Section>
+
+  <Section
+    tone="contrast"
+    eyebrow="Related"
+    index="07"
+    heading="Further reading on AI search optimization"
+    description="The services and pages connected to this work."
+  >
+    <ul class="chip-list">
+      <li>
+        <a class="chip" href="/ai-search">
+          AI search optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/ai-search-optimization-atlanta">
+          AI Search Optimization in Atlanta
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/ai-seo-for-therapists-washington-dc">
+          AI SEO for Therapists in Washington, DC
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/results">
+          Client results
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/get-a-quote">
+          Get a Free Quote
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Washington, DC AI SEO that starts from facts you can verify"
+    description="Send us your website and the jurisdictions you serve, from Arlington to Bethesda. We will review your search and AI presence, then return a written quote with a clear scope."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>
