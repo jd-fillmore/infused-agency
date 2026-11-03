@@ -18,6 +18,254 @@
 
 export const RETIRED_ROUTES = [
   {
+    route: "/seo/for-concrete-contractors",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/toronto",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/mississauga",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/ottawa",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/hamilton",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/kitchener",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/london-on",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/windsor-on",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/kingston-on",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/montreal",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/quebec-city",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/laval",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/gatineau",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/vancouver",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/surrey",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/burnaby",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/victoria-bc",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/richmond-bc",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/calgary",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/edmonton",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/red-deer",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/lethbridge",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/winnipeg",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/brandon",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/regina",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/saskatoon",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/moncton",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/fredericton",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/halifax",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/st-johns",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
+    route: "/seo/for-concrete-contractors/charlottetown",
+    disposition: "gone",
+    destination: null,
+    linkList: "drop",
+    reason:
+      "The Canada-wide concrete contractor SEO programme (/seo/for-concrete-contractors and its city pages) was removed. Niagara concrete SEO lives on /seo/for-concrete-contractors-niagara.",
+  },
+  {
     route: "/therapist-seo",
     disposition: "gone",
     destination: null,

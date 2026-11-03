@@ -223,3 +223,37 @@
 # removed outright and returns 410 Gone.
 /website-conversion-optimization /web-design 301
 /wordpress-developer-niagara /wordpress-developer-niagara 410
+# Removed the Canada-wide concrete contractor niche programme. The hub and
+# its 30 city pages return 410 Gone; /seo/for-concrete-contractors-niagara
+# (the Niagara industry page) is unchanged.
+/seo/for-concrete-contractors /seo/for-concrete-contractors 410
+/seo/for-concrete-contractors/toronto /seo/for-concrete-contractors/toronto 410
+/seo/for-concrete-contractors/mississauga /seo/for-concrete-contractors/mississauga 410
+/seo/for-concrete-contractors/ottawa /seo/for-concrete-contractors/ottawa 410
+/seo/for-concrete-contractors/hamilton /seo/for-concrete-contractors/hamilton 410
+/seo/for-concrete-contractors/kitchener /seo/for-concrete-contractors/kitchener 410
+/seo/for-concrete-contractors/london-on /seo/for-concrete-contractors/london-on 410
+/seo/for-concrete-contractors/windsor-on /seo/for-concrete-contractors/windsor-on 410
+/seo/for-concrete-contractors/kingston-on /seo/for-concrete-contractors/kingston-on 410
+/seo/for-concrete-contractors/montreal /seo/for-concrete-contractors/montreal 410
+/seo/for-concrete-contractors/quebec-city /seo/for-concrete-contractors/quebec-city 410
+/seo/for-concrete-contractors/laval /seo/for-concrete-contractors/laval 410
+/seo/for-concrete-contractors/gatineau /seo/for-concrete-contractors/gatineau 410
+/seo/for-concrete-contractors/vancouver /seo/for-concrete-contractors/vancouver 410
+/seo/for-concrete-contractors/surrey /seo/for-concrete-contractors/surrey 410
+/seo/for-concrete-contractors/burnaby /seo/for-concrete-contractors/burnaby 410
+/seo/for-concrete-contractors/victoria-bc /seo/for-concrete-contractors/victoria-bc 410
+/seo/for-concrete-contractors/richmond-bc /seo/for-concrete-contractors/richmond-bc 410
+/seo/for-concrete-contractors/calgary /seo/for-concrete-contractors/calgary 410
+/seo/for-concrete-contractors/edmonton /seo/for-concrete-contractors/edmonton 410
+/seo/for-concrete-contractors/red-deer /seo/for-concrete-contractors/red-deer 410
+/seo/for-concrete-contractors/lethbridge /seo/for-concrete-contractors/lethbridge 410
+/seo/for-concrete-contractors/winnipeg /seo/for-concrete-contractors/winnipeg 410
+/seo/for-concrete-contractors/brandon /seo/for-concrete-contractors/brandon 410
+/seo/for-concrete-contractors/regina /seo/for-concrete-contractors/regina 410
+/seo/for-concrete-contractors/saskatoon /seo/for-concrete-contractors/saskatoon 410
+/seo/for-concrete-contractors/moncton /seo/for-concrete-contractors/moncton 410
+/seo/for-concrete-contractors/fredericton /seo/for-concrete-contractors/fredericton 410
+/seo/for-concrete-contractors/halifax /seo/for-concrete-contractors/halifax 410
+/seo/for-concrete-contractors/st-johns /seo/for-concrete-contractors/st-johns 410
+/seo/for-concrete-contractors/charlottetown /seo/for-concrete-contractors/charlottetown 410

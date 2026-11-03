@@ -12,9 +12,9 @@ const CLIENT_FEEDBACK_HEADING = "What Niagara clients say";
 export const LOCAL_SEO_PAGES = [
   {
     seo: {
-      title: "AI SEO Pelham | Generative Search Optimization",
+      title: "AI SEO Agency Pelham | Rank on Google & ChatGPT",
       description:
-        "Local SEO for Pelham businesses in Fonthill, Fenwick, Ridgeville and North Pelham. Improve map visibility, service-area pages and AI search visibility. Free quote.",
+        "Is your Pelham business invisible on Google and ChatGPT? AI SEO agency for local businesses. Local SEO + AI search. Get a free audit.",
       canonical: "https://infused.agency/seo/pelham",
       city: "Pelham",
       region: "Niagara Region, Ontario",
@@ -183,9 +183,9 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "AI SEO West Lincoln | Generative Search Optimization",
+      title: "AI SEO Agency West Lincoln | Rank on Google & ChatGPT",
       description:
-        "Local SEO for West Lincoln businesses in Smithville, Caistor Centre, Grassie, Wellandport and Abingdon. Build service-area visibility and AI search presence. Free quote.",
+        "Is your West Lincoln business invisible on Google and ChatGPT? AI SEO agency for local businesses. Local SEO + AI search. Get a free audit.",
       canonical: "https://infused.agency/seo/west-lincoln",
       city: "West Lincoln",
       region: "Niagara Region, Ontario",
@@ -352,9 +352,9 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "AI SEO Smithville | Generative Search Optimization",
+      title: "AI SEO Agency Smithville | Rank on Google & ChatGPT",
       description:
-        "Local SEO for Smithville, Ontario businesses. Improve Google map visibility, service pages and AI search presence for a growing West Lincoln community. Free quote.",
+        "Is your Smithville business invisible on Google and ChatGPT? AI SEO agency for local businesses. Local SEO + AI search. Get a free audit.",
       canonical: "https://infused.agency/seo/smithville",
       city: "Smithville",
       region: "West Lincoln, Niagara Region, Ontario",
@@ -521,9 +521,9 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "AI SEO Wainfleet | Generative Search Optimization",
+      title: "AI SEO Agency Wainfleet | Rank on Google & ChatGPT",
       description:
-        "Local SEO for Wainfleet businesses and service-area companies. Reach year-round residents, lakeshore and rural customers, and improve AI search visibility. Free quote.",
+        "Is your Wainfleet business invisible on Google and ChatGPT? AI SEO agency for local businesses. Local SEO + AI search. Get a free audit.",
       canonical: "https://infused.agency/seo/wainfleet",
       city: "Wainfleet",
       region: "Niagara Region, Ontario",
@@ -690,9 +690,9 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "AI SEO St. Catharines | Generative Search Optimization",
+      title: "AI SEO Agency St. Catharines | Rank on Google & ChatGPT",
       description:
-        "Local SEO for St. Catharines businesses. Compete in the map pack, strengthen service pages and improve AI search visibility across Niagara's largest city. Free quote.",
+        "Is your St. Catharines business invisible on Google and ChatGPT? AI SEO agency for local businesses. Local SEO + AI search. Get a free audit.",
       canonical: "https://infused.agency/seo/st-catharines",
       city: "St. Catharines",
       region: "Niagara Region, Ontario",
@@ -862,9 +862,9 @@ export const LOCAL_SEO_PAGES = [
   },
   {
     seo: {
-      title: "AI SEO Niagara Falls | Generative Search Optimization",
+      title: "AI SEO Agency Niagara Falls | Rank on Google & ChatGPT",
       description:
-        "Local SEO for Niagara Falls businesses serving residents and visitors. Improve map visibility, service pages and AI search presence without chasing empty tourist traffic.",
+        "Is your Niagara Falls business invisible on Google and ChatGPT? AI SEO agency for local businesses. Local SEO + AI search. Get a free audit.",
       canonical: "https://infused.agency/seo/niagara-falls",
       city: "Niagara Falls",
       region: "Niagara Region, Ontario",

@@ -158,33 +158,6 @@ export function getVerticalPage(pathname) {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Canada-wide concrete niche                                                  */
-/* -------------------------------------------------------------------------- */
-
-export function getNicheHub() {
-  return memo("niche-hub", () => {
-    const niche = legacyRequire("src/lib/canadaNicheSeo.js");
-    return rewritePageLinks(niche.hubPageProps("concrete-contractors").props);
-  });
-}
-
-/** @returns {any[]} */
-export function getNicheCityPages() {
-  return memo("niche-cities", () => {
-    const niche = legacyRequire("src/lib/canadaNicheSeo.js");
-    return niche
-      .publishedCitySlugs("concrete-contractors")
-      .map((slug) => niche.cityPageProps("concrete-contractors", slug).props)
-      .map((page) => rewritePageLinks(page))
-      .sort((a, b) => a.urlPath.localeCompare(b.urlPath));
-  });
-}
-
-export function getNicheCityPage(pathname) {
-  return getNicheCityPages().find((page) => page.urlPath === pathname);
-}
-
-/* -------------------------------------------------------------------------- */
 /* Shared helpers                                                              */
 /* -------------------------------------------------------------------------- */
 

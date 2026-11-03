@@ -6,7 +6,6 @@ import Section from "../components/ui/Section.astro";
 import { getAllPosts } from "../lib/posts";
 import {
   getBespokePages,
-  getNicheCityPages,
   getNiagaraIndustries,
   getServicesData,
   NIAGARA_CITY_LINKS,
@@ -27,7 +26,6 @@ const { groups } = getServicesData();
 const industries = getNiagaraIndustries();
 const bespoke = getBespokePages();
 const posts = getAllPosts();
-const concreteCities = getNicheCityPages();
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
@@ -119,15 +117,6 @@ const jsonLd = [
     <ul class="chip-list">
       {industries.map((industry: any) => (
         <li><a class="chip" href={industry.href}>SEO for {industry.displayName} in Niagara</a></li>
-      ))}
-    </ul>
-  </Section>
-
-  <Section tone="tint" heading="Concrete contractors across Canada">
-    <ul class="chip-list">
-      <li><a class="chip" href="/seo/for-concrete-contractors">SEO for Concrete Contractors in Canada</a></li>
-      {concreteCities.map((page: any) => (
-        <li><a class="chip" href={page.urlPath}>{page.content.seo.title}</a></li>
       ))}
     </ul>
   </Section>
