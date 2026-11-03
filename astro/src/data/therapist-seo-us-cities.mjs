@@ -15,9 +15,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Illinois",
     provinceAbbr: "IL",
     pathname: "/seo-for-therapists-chicago",
-    title: "SEO for Therapists Chicago | AI Search Optimization",
+    title: "SEO for Therapists in Chicago | Get More Client Inquiries",
     description:
-      "SEO for Chicago therapists, with AI search optimization, AEO and GEO. Help your practice get found in Google and AI answers. Request a free quote.",
+      "Is your Chicago therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image: "/img/seo-for-therapists-chicago-illinois.webp",
     imageAlt: "Downtown Chicago skyline at night",
     heroDescription:
@@ -172,9 +172,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Texas",
     provinceAbbr: "TX",
     pathname: "/seo-for-therapists-dallas",
-    title: "SEO for Therapists Dallas | AI Search Optimization",
+    title: "SEO for Therapists in Dallas | Get More Client Inquiries",
     description:
-      "SEO and AI search optimization for Dallas therapists. Improve your visibility in Google and AI answers across Dallas\u2013Fort Worth. Get a free quote.",
+      "Is your Dallas therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image: "/img/seo-for-therapists-dallas-texas.webp",
     imageAlt: "Downtown Dallas skyline at night",
     heroDescription:
@@ -331,9 +331,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Texas",
     provinceAbbr: "TX",
     pathname: "/seo-for-therapists-houston",
-    title: "SEO for Therapists Houston | AI Search Optimization",
+    title: "SEO for Therapists in Houston | Get More Client Inquiries",
     description:
-      "SEO for Houston therapists plus AI search optimization, AEO and GEO, so clients find your practice in Google and AI answers. Get a free quote.",
+      "Is your Houston therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image: "/img/seo-for-therapists-houston-texas.webp",
     imageAlt: "Downtown Houston skyline at night",
     heroDescription:
@@ -491,9 +491,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Georgia",
     provinceAbbr: "GA",
     pathname: "/ai-seo-for-therapists-atlanta",
-    title: "AI SEO for Therapists Atlanta | AI Search Optimization",
+    title: "AI SEO for Therapists in Atlanta | Get Found on ChatGPT",
     description:
-      "AI SEO for Atlanta therapists, including AEO and GEO, so clients find your practice in Google and AI answers. Serving metro Atlanta. Get a free quote.",
+      "Do Atlanta clients ask ChatGPT for a therapist? AI SEO and local SEO to help your practice get found on Google and in AI answers. Free audit.",
     image: "/img/seo-for-therapists-atlanta-georgia.webp",
     imageAlt: "Downtown Atlanta skyline and freeways at night",
     heroDescription:
@@ -650,9 +650,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "District of Columbia",
     provinceAbbr: "DC",
     pathname: "/ai-seo-for-therapists-washington-dc",
-    title: "AI SEO for Therapists Washington DC | AI Search Optimization",
+    title: "AI SEO for Therapists Washington, DC | Get Found on ChatGPT",
     description:
-      "AI SEO and search optimization for therapists in Washington, DC and the DMV. Get found in Google and AI answers across DC, Maryland and Virginia. Free quote.",
+      "Do Washington, DC clients ask ChatGPT for a therapist? AI SEO and local SEO to help your practice get found on Google and in AI answers. Free audit.",
     image: "/img/seo-for-therapists-washington-dc.webp",
     imageAlt:
       "Key Bridge over the Potomac River with the Rosslyn skyline, looking toward Washington, DC",
@@ -810,9 +810,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Florida",
     provinceAbbr: "FL",
     pathname: "/ai-seo-for-therapists-miami",
-    title: "AI SEO for Therapists Miami | AI Search Optimization",
+    title: "AI SEO for Therapists in Miami | Get Found on ChatGPT",
     description:
-      "AI SEO for Miami therapists, with AEO and GEO so clients find your practice in Google and AI answers. Serving Miami-Dade, Broward and Palm Beach. Free quote.",
+      "Do Miami clients ask ChatGPT for a therapist? AI SEO and local SEO to help your practice get found on Google and in AI answers. Free audit.",
     image: "/img/seo-for-therapists-miami-florida.webp",
     imageAlt: "The Miami skyline seen from Biscayne Bay on a clear day",
     heroDescription:
@@ -971,9 +971,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Pennsylvania",
     provinceAbbr: "PA",
     pathname: "/ai-seo-for-therapists-philadelphia",
-    title: "AI SEO for Therapists Philadelphia | AI Search Optimization",
+    title: "AI SEO for Therapists in Philadelphia | Get Found on ChatGPT",
     description:
-      "AI SEO and search optimization for Philadelphia therapists. Get found in Google and AI answers across Philadelphia, the Main Line and South Jersey. Free quote.",
+      "Do Philadelphia clients ask ChatGPT for a therapist? AI SEO and local SEO to help your practice get found on Google and in AI answers. Free audit.",
     image: "/img/seo-for-therapists-philadelphia-pennsylvania.webp",
     imageAlt: "The Philadelphia skyline reflected in the Delaware River",
     heroDescription:
@@ -1131,9 +1131,9 @@ export const THERAPIST_SEO_US_CITY_PAGES = {
     province: "Arizona",
     provinceAbbr: "AZ",
     pathname: "/ai-seo-for-therapists-phoenix",
-    title: "AI SEO for Therapists Phoenix | AI Search Optimization",
+    title: "AI SEO for Therapists in Phoenix | Get Found on ChatGPT",
     description:
-      "AI SEO for Phoenix therapists, with AEO and GEO so clients find your practice in Google and AI answers. Serving the Valley, from Scottsdale to Chandler. Free quote.",
+      "Do Phoenix clients ask ChatGPT for a therapist? AI SEO and local SEO to help your practice get found on Google and in AI answers. Free audit.",
     image: "/img/seo-for-therapists-phoenix-arizona.webp",
     imageAlt: "Downtown Phoenix and the Valley at night",
     heroDescription:

@@ -11,9 +11,9 @@ export const THERAPIST_SEO_CITY_PAGES = {
     province: "Ontario",
     provinceAbbr: "ON",
     pathname: "/seo-for-therapists-toronto",
-    title: "SEO for Toronto Therapists | AI Search Optimization",
+    title: "SEO for Therapists in Toronto | Get More Client Inquiries",
     description:
-      "SEO for Toronto therapists plus AI search optimization, AEO and GEO, so your practice is found in Google and AI answers. Request a free quote.",
+      "Is your Toronto therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image: "/images/ai-search-optimization-and-seo-for-toronto-therapists.webp",
     imageAlt: "AI search optimization SEO services for Toronto therapists",
     heroDescription:
@@ -161,9 +161,9 @@ export const THERAPIST_SEO_CITY_PAGES = {
     province: "British Columbia",
     provinceAbbr: "BC",
     pathname: "/seo-for-therapists-vancouver",
-    title: "SEO for Vancouver Therapists | AI Search Optimization",
+    title: "SEO for Therapists in Vancouver | Get More Client Inquiries",
     description:
-      "SEO and AI search optimization for Vancouver therapists. Help your practice appear in Google and AI answers with clear, ethical local SEO. Get a free quote.",
+      "Is your Vancouver therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image:
       "/images/ai-search-optimization-and-seo-for-vancouver-therapists.webp",
     imageAlt: "AI search optimization SEO services for Vancouver therapists",
@@ -316,9 +316,9 @@ export const THERAPIST_SEO_CITY_PAGES = {
     province: "Alberta",
     provinceAbbr: "AB",
     pathname: "/seo-for-therapists-calgary",
-    title: "SEO for Calgary Therapists | AI Search Optimization",
+    title: "SEO for Therapists in Calgary | Get More Client Inquiries",
     description:
-      "SEO for Calgary therapists with AI search optimization, AEO and GEO, helping your practice show up in Google and AI answers. Ask for a free quote.",
+      "Is your Calgary therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image:
       "/images/ai-search-optimization-and-seo-for-calgary-therapists.webp",
     imageAlt: "AI search optimization SEO services for Calgary therapists",
@@ -467,9 +467,9 @@ export const THERAPIST_SEO_CITY_PAGES = {
     province: "Ontario",
     provinceAbbr: "ON",
     pathname: "/seo-for-therapists-ottawa",
-    title: "SEO for Ottawa Therapists | AI Search Optimization",
+    title: "SEO for Therapists in Ottawa | Get More Client Inquiries",
     description:
-      "SEO and AI search optimization for Ottawa therapists. Improve Google and AI answer visibility with clear, ethical local SEO. Request a free quote.",
+      "Is your Ottawa therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image: "/images/ai-search-optimization-and-seo-for-ottawa-therapists.webp",
     imageAlt: "AI search optimization SEO services for Ottawa therapists",
     heroDescription:
@@ -617,9 +617,9 @@ export const THERAPIST_SEO_CITY_PAGES = {
     province: "Alberta",
     provinceAbbr: "AB",
     pathname: "/seo-for-therapists-edmonton",
-    title: "SEO for Edmonton Therapists | AI Search Optimization",
+    title: "SEO for Therapists in Edmonton | Get More Client Inquiries",
     description:
-      "SEO for Edmonton therapists plus AI search optimization, AEO and GEO, so clients find your practice in Google and AI answers. Get a free quote.",
+      "Is your Edmonton therapy practice hard to find online? SEO and AI search for therapy practices. Get found on Google and ChatGPT. Free audit.",
     image:
       "/images/ai-search-optimization-and-seo-for-edmonton-therapists.webp",
     imageAlt: "AI search optimization SEO services for Edmonton therapists",
