@@ -104,7 +104,13 @@ const siblings = industryData
   : [];
 ---
 
-<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pathname}
+  preloadImage={industryData?.hero?.image}
+  jsonLd={jsonLd}
+>
   {
     cityData ? (
       <LocalSeoPage data={cityData} />

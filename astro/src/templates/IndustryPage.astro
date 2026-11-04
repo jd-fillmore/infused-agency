@@ -118,7 +118,8 @@ function paragraphs(items?: string[]) {
             alt={data.hero.alt ?? `${data.hero.title} by Infused Agency`}
             width="1200"
             height="900"
-            loading="lazy"
+            loading="eager"
+            fetchpriority="high"
             decoding="async"
           />
         </figure>

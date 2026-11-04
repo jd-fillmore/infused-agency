@@ -27,7 +27,7 @@ export interface PricingBlock {
 }
 
 const paymentNote =
-  "No need to pay the entire project cost upfront. Your first and final monthly payments are collected at signup, followed by 10 monthly installments. The monthly amount is a payment installment toward your project — not an ongoing monthly SEO retainer.";
+  "No need to pay the entire project cost upfront. Your first and final monthly payments are collected at signup, followed by 10 monthly installments. The monthly amount is a payment installment toward your project — not an ongoing monthly retainer.";
 
 const seoPlans: PricingPlan[] = [
   {
@@ -36,10 +36,10 @@ const seoPlans: PricingPlan[] = [
     features: [
       "Comprehensive SEO and AI search strategy",
       "Keyword research and opportunity analysis",
-      "Website content and on-page SEO optimization",
-      "Technical SEO review and recommendations",
+      "Website content and on-page optimization",
+      "Technical review and recommendations",
       "Content improvements targeting relevant search opportunities",
-      "Off-page SEO and backlink building",
+      "Off-page authority and backlink building",
       "Performance tracking and reporting",
     ],
   },
@@ -63,7 +63,7 @@ const seoPlans: PricingPlan[] = [
     features: [
       "More extensive content and keyword strategy",
       "Expanded website optimization",
-      "Additional off-page SEO and backlink opportunities",
+      "Additional off-page authority and backlink opportunities",
       "Broader search visibility strategy",
     ],
   },
@@ -104,7 +104,7 @@ const aiSearchPlans: PricingPlan[] = [
       "Structured data and technical review for machine-readable facts",
       "Content improvements targeting the questions buyers ask AI tools",
       "Citation and mention building across trusted sources",
-      "AI visibility tracking and reporting",
+      "Visibility tracking and reporting",
     ],
   },
   {
@@ -115,7 +115,7 @@ const aiSearchPlans: PricingPlan[] = [
     lead: "Everything in Starter, plus:",
     features: [
       "Expanded answer engine optimization (AEO)",
-      "AI-ready Google Business Profile and entity details",
+      "Answer-ready Google Business Profile and entity details",
       "Broader generative engine optimization (GEO)",
       "Additional authority and citation opportunities",
     ],
@@ -128,7 +128,7 @@ const aiSearchPlans: PricingPlan[] = [
       "More extensive answer-ready content and entity strategy",
       "Expanded website and structured data optimization",
       "Additional citation, mention and authority opportunities",
-      "Broader AI answer visibility strategy",
+      "Broader answer visibility strategy",
     ],
   },
 ];

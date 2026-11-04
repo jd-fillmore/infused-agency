@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogPostPage from "../../templates/BlogPostPage.astro";
 import { getAllPosts } from "../../lib/posts";
-import { baseGraph, blogPostingNode, breadcrumbNode, webPageNode } from "../../lib/schema";
+import { authorNode, baseGraph, blogPostingNode, breadcrumbNode, webPageNode } from "../../lib/schema";
 
 export function getStaticPaths() {
   return getAllPosts().map((post) => ({
@@ -19,6 +19,7 @@ const canonical = `/posts/${post.id}`;
 
 const jsonLd = [
   ...baseGraph(),
+  authorNode(),
   webPageNode({ url: canonical, name: title, description }),
   breadcrumbNode(
     [
