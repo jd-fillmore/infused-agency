@@ -6,7 +6,7 @@ export interface HomeFaq {
 export const homeFaqs: HomeFaq[] = [
   {
     q: "How much does SEO cost?",
-    a: "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is an installment toward the project — not an ongoing monthly retainer.",
+    a: "The work is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is an installment toward the project — not an ongoing monthly retainer.",
   },
   {
     q: "How long does SEO take?",
@@ -22,14 +22,14 @@ export const homeFaqs: HomeFaq[] = [
   },
   {
     q: "What is AI SEO?",
-    a: "AI SEO is the practice of making your content, business details and reputation easy for AI systems to understand and quote. It builds on the same foundations as traditional SEO, so AI tools like ChatGPT and Gemini have clear, consistent information to work from.",
+    a: "AI SEO is the practice of making your content, business details and reputation easy for AI systems to understand and quote. It builds on the same foundations as traditional rankings, so tools like ChatGPT and Gemini have clear, consistent information to work from.",
   },
   {
     q: "What is the difference between AEO and GEO?",
-    a: "AEO, or answer engine optimization, focuses on giving assistants a clear, direct answer to a question. GEO, or generative engine optimization, focuses on being named or cited inside an AI-generated response. They overlap, and both sit under the wider AI SEO umbrella.",
+    a: "AEO, or answer engine optimization, focuses on giving assistants a clear, direct answer to a question. GEO, or generative engine optimization, focuses on being named or cited inside an AI-generated response. They overlap, and both sit under the wider answer-engine umbrella.",
   },
   {
     q: "Do you build websites as well as do SEO?",
-    a: "Yes. We design and build websites, and we do SEO and AI search work. Many clients start with a website and add search work, while others only need one or the other.",
+    a: "Yes. We design and build websites, and we handle visibility work. Many clients start with a website and add visibility work, while others only need one or the other.",
   },
 ];

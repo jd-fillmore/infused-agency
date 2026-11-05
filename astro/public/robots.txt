@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# AI/LLM guidance: https://infused.agency/llms.txt
 Sitemap: https://infused.agency/sitemap.xml

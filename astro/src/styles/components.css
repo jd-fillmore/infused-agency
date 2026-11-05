@@ -1899,16 +1899,16 @@
 }
 
 .cta-band__eyebrow {
-  color: var(--color-gold-bright);
+  color: var(--color-gold-soft);
 }
 
 .cta-band .eyebrow {
   margin-top: 0;
-  color: var(--color-gold-bright);
+  color: var(--color-gold-soft);
 }
 
 .cta-band__eyebrow::before {
-  background: var(--color-gold-bright);
+  background: var(--color-gold-soft);
 }
 
 .cta-band h2 {
@@ -1922,7 +1922,7 @@
 .cta-band p {
   max-width: 38rem;
   margin-top: 1rem;
-  color: rgba(238, 242, 249, 0.78);
+  color: var(--color-contrast-ink);
   font-size: var(--text-base);
   line-height: 1.65;
 }

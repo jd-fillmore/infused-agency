@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
+
+const pathname = "/editorial-policy";
+const title = "Editorial Policy | Infused Agency";
+const description =
+  "How Infused Agency creates, reviews and updates the content on this website.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Editorial Policy" },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="How we create and review content"
+    description="A short, plain-language explanation of how the articles and service pages on this site are researched, written and checked."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Editorial policy"
+    showCta={false}
+  />
+
+  <Section>
+    <div class="prose editorial-prose reveal">
+      <p><em>Last reviewed: 2 November 2026.</em></p>
+
+      <h2>Who writes the content</h2>
+      <p>
+        Infused Agency content is written and reviewed by
+        <a href="/about">JD Fillmore</a>, who leads strategy, design and delivery
+        at the agency. Client work and the advice on this site come from hands-on
+        experience with local SEO, search visibility and conversion-focused web
+        design.
+      </p>
+
+      <h2>How we research and write</h2>
+      <p>
+        We start with the questions business owners actually ask, then check the
+        answer against current search documentation, platform guidance and the
+        work we do for clients. We avoid inventing statistics, reviews or case
+        study results. Where an outcome is based on a client report or a
+        documented result, we describe it as such.
+      </p>
+
+      <h2>Use of AI tools</h2>
+      <p>
+        We may use AI tools for drafting, editing or research support. A person
+        reviews the final copy before it is published. AI tools are not used to
+        fabricate credentials, client results or first-hand experience.
+      </p>
+
+      <h2>Review and updates</h2>
+      <p>
+        Service pages and articles are reviewed when the underlying offer,
+        pricing or search guidance changes. Pages show a publication or review
+        date where it helps readers judge how current the information is.
+      </p>
+
+      <h2>Corrections</h2>
+      <p>
+        If you spot an error or something that is out of date, email
+        <a href="mailto:info@infused.agency">info@infused.agency</a> with the page
+        and the correction. We will review it and update the page where needed.
+      </p>
+
+      <h2>Advertising and affiliations</h2>
+      <p>
+        We do not publish paid rankings, sponsored reviews or hidden affiliate
+        recommendations. Any tools or services we mention are included because
+        they are relevant to the work, not because of a payment.
+      </p>
+    </div>
+  </Section>
+</BaseLayout>
+
+<style>
+  .editorial-prose {
+    max-width: 46rem;
+  }
+
+  .editorial-prose h2 {
+    margin-top: 2rem;
+    font-size: var(--text-xl);
+  }
+</style>

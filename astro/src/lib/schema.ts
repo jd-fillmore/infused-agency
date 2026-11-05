@@ -4,26 +4,50 @@ type JsonLdNode = Record<string, unknown>;
 
 const ORGANIZATION_ID = `${SITE}/#organization`;
 const WEBSITE_ID = `${SITE}/#website`;
+const AUTHOR_ID = `${SITE}/about#jd-fillmore`;
 
 export function organizationNode(): JsonLdNode {
   return {
-    "@type": "Organization",
+    // ProfessionalService is a LocalBusiness subtype; keep Organization too so
+    // existing Organization references remain valid.
+    "@type": ["Organization", "ProfessionalService"],
     "@id": ORGANIZATION_ID,
     name: SITE_NAME,
     url: SITE,
+    logo: `${SITE}/icon-512.png`,
+    image: `${SITE}/icon-512.png`,
     telephone: siteFacts.phone,
     email: siteFacts.email,
+    // TODO: add streetAddress here if the business decides to publish one.
     address: {
       "@type": "PostalAddress",
       addressLocality: siteFacts.address.addressLocality,
       addressRegion: siteFacts.address.addressRegion,
       addressCountry: siteFacts.address.addressCountry,
     },
-    areaServed: siteFacts.serviceArea.map((city) => ({
-      "@type": "City",
-      name: city,
-    })),
+    areaServed: [
+      ...siteFacts.serviceArea.map((city) => ({
+        "@type": "City",
+        name: city,
+      })),
+      { "@type": "AdministrativeArea", name: "Niagara Region" },
+    ],
     sameAs: siteFacts.socialProfiles.map((profile) => profile.url),
+  };
+}
+
+export function authorNode(): JsonLdNode {
+  return {
+    "@type": "Person",
+    "@id": AUTHOR_ID,
+    // TODO: confirm the public byline name ("Jarryd" vs "JD Fillmore") before
+    // publishing this schema beyond the existing site identity.
+    name: "JD Fillmore",
+    jobTitle: "Founder & Owner",
+    description:
+      "JD leads strategy, design and delivery at Infused Agency, with hands-on experience in local SEO and conversion-focused web design.",
+    worksFor: { "@id": ORGANIZATION_ID },
+    url: `${SITE}/about`,
   };
 }
 
@@ -134,7 +158,7 @@ export function blogPostingNode(input: {
     dateModified: input.datePublished,
     mainEntityOfPage: url,
     ...(input.image ? { image: `${SITE}${input.image}` } : {}),
-    author: { "@id": ORGANIZATION_ID },
+    author: { "@id": AUTHOR_ID },
     publisher: { "@id": ORGANIZATION_ID },
     inLanguage: "en-CA",
   };

@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { SITE } from "../lib/site";
+import { baseGraph, breadcrumbNode, webPageNode } from "../lib/schema";
+
+const pathname = "/terms-of-service";
+const title = "Terms of Service | Infused Agency";
+const description =
+  "Terms of Service for Infused Agency web design, SEO and AI search services.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "Terms of Service" },
+];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description }),
+  breadcrumbNode(breadcrumbs, pathname),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="Terms of Service"
+    description="The terms that apply to Infused Agency services and proposals."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Legal"
+    showCta={false}
+  />
+
+  <Section>
+    <div class="prose legal-prose reveal">
+      <p><em>Last updated: 2 November 2026.</em></p>
+
+      <h2>1. Agreement</h2>
+      <p>
+        These Terms of Service govern the use of {SITE} and the services provided
+        by Infused Agency (&ldquo;Infused&rdquo;, &ldquo;we&rdquo;,
+        &ldquo;us&rdquo;). By requesting a quote, accepting a proposal or using
+        this website, you agree to these terms.
+      </p>
+
+      <h2>2. Services and proposals</h2>
+      <p>
+        The scope, deliverables, timeline and fees for each project are set out
+        in a written proposal or statement of work. A proposal becomes binding
+        when both parties accept it in writing. Work outside the agreed scope is
+        quoted separately before it begins.
+      </p>
+
+      <h2>3. Fees and payment</h2>
+      <p>
+        Fees are stated in Canadian dollars and are exclusive of applicable
+        taxes unless the proposal says otherwise. Payment schedules are set out
+        in the proposal. Invoices are due on the dates shown. Work may be paused
+        while an invoice remains unpaid.
+      </p>
+
+      <h2>4. Client responsibilities</h2>
+      <p>
+        You agree to provide accurate business information, timely feedback,
+        access to the accounts and materials needed for the work, and the rights
+        required for any content or assets you supply. Delays in feedback or
+        access may affect the timeline.
+      </p>
+
+      <h2>5. Content, accounts and third-party services</h2>
+      <p>
+        You retain ownership of your business content, accounts and data. We may
+        use third-party platforms such as hosting providers, analytics tools,
+        search engines, scheduling tools and AI services to deliver the work.
+        Those services are governed by their own terms, and we are not responsible
+        for their availability or policies.
+      </p>
+
+      <h2>6. Intellectual property</h2>
+      <p>
+        On full payment, you receive the rights to the final deliverables created
+        specifically for your project, as described in the proposal. We retain
+        the right to use our pre-existing tools, methods and generic code, and to
+        show the work in our portfolio unless you ask us not to in writing.
+      </p>
+
+      <h2>7. Results and disclaimers</h2>
+      <p>
+        Search rankings, organic traffic, AI citations and lead volume depend on
+        factors outside our control, including search engine changes, competition
+        and market conditions. Any examples or case studies on this site describe
+        past outcomes and are not a guarantee of future results. Information on
+        this site is provided for general purposes only.
+      </p>
+
+      <h2>8. Limitation of liability</h2>
+      <p>
+        To the extent permitted by law, Infused is not liable for indirect,
+        incidental or consequential losses, including lost profits, lost data or
+        lost business opportunities. Our total liability for a project is limited
+        to the fees paid for that project.
+      </p>
+
+      <h2>9. Termination</h2>
+      <p>
+        Either party may end an engagement as set out in the proposal. Fees for
+        work already completed remain payable. We may suspend or end access to
+        this website or our services if these terms are breached.
+      </p>
+
+      <h2>10. Governing law</h2>
+      <p>
+        These terms are governed by the laws of Ontario, Canada, and the courts
+        of Ontario have exclusive jurisdiction over any dispute, unless another
+        jurisdiction is required by applicable law.
+      </p>
+
+      <h2>11. Contact</h2>
+      <p>
+        Questions about these terms can be sent to
+        <a href="mailto:info@infused.agency">info@infused.agency</a>.
+      </p>
+    </div>
+  </Section>
+</BaseLayout>
+
+<style>
+  .legal-prose {
+    max-width: 46rem;
+  }
+
+  .legal-prose h2 {
+    margin-top: 2rem;
+    font-size: var(--text-xl);
+  }
+</style>

@@ -13,6 +13,25 @@
   command = "yarn build:astro"
   publish = "astro/dist"
 
+# Security headers for every response. Netlify applies the most specific
+# matching rule, so the cache-only rules below still apply to their own paths.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    # HSTS: includeSubDomains is enabled. `preload` is deliberately left out
+    # until every infused.agency subdomain is confirmed HTTPS-only; preload is
+    # hard to undo. To opt in later, append `; preload` to the value below and
+    # submit the domain at https://hstspreload.org/.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Report-Only first because the site currently has one inline <script> and
+    # inline style attributes. Switch the header name to
+    # `Content-Security-Policy` (and remove Report-Only) after reviewing reports.
+    Content-Security-Policy-Report-Only = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; frame-src https://calendly.com https://maps.google.com https://www.google.com; upgrade-insecure-requests"
+
 # Static assets are content-stable between deploys. Give browsers a long cache
 # lifetime so repeat visits do not re-download images, fonts or hashed bundles.
 [[headers]]

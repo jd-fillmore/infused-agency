@@ -19,12 +19,12 @@ const { posts } = Astro.props;
 
 const trust = [
   { icon: "users", label: `${siteFacts.clientsHelped} businesses helped` },
-  { icon: "target", label: "SEO, AI search and web design" },
+  { icon: "target", label: "Search, answer engines and web design" },
   { icon: "globe", label: "Remote across Canada and the U.S." },
 ];
 
 const affiliated = [
-  { label: "Niagara Chamber", image: "/img/aff-niagara-chamber.webp" },
+  { label: "Niagara Chamber", image: "/img/aff-niagara-chamber.webp", eager: true },
   { label: "Three Best Rated", image: "/img/aff-three-best-rated.webp" },
   { label: "GoodFirms", image: "/img/aff-good-firms.webp" },
   { label: "DesignRush", image: "/img/aff-design-rush.webp" },
@@ -48,17 +48,17 @@ const services = [
 ];
 
 const whatWeDo = [
-  { number: "1", title: "Search strategy", href: "/seo", description: "Find the searches that bring the right enquiries." },
+  { number: "1", title: "Visibility strategy", href: "/seo", description: "Find the queries that bring the right enquiries." },
   { number: "2", title: "Technical SEO", href: "/seo", description: "Keep your site fast, crawlable and easy to trust." },
   { number: "3", title: "On-page SEO", href: "/seo", description: "Tighten the pages that drive calls and form fills." },
-  { number: "4", title: "AI search visibility", href: "/ai-search-optimization", description: "Show up in the answers people get from AI tools." },
+  { number: "4", title: "AI search visibility", href: "/ai-search-optimization", description: "Show up in the answers people get from assistants." },
   { number: "5", title: "Web design", href: "/web-design", description: "Turn more visitors into calls and enquiries." },
   { number: "6", title: "Measurement", href: "/results", description: "Track visibility, leads and the work that moved them." },
 ];
 
 const whyInfused = [
   { icon: "target", title: "Work tied to enquiries", text: "Every decision is measured against the calls, forms and customers it brings." },
-  { icon: "spark", title: "SEO and AI search together", text: "One plan that helps you show up in search results and in AI answers." },
+  { icon: "spark", title: "Search and answer engines together", text: "One plan that helps you show up in results and in AI answers." },
   { icon: "code", title: "Web design that earns trust", text: "Clear messaging, intuitive journeys and fast pages that make choosing you easier." },
   { icon: "chat", title: "Straight answers on scope and cost", text: "We quote after a free consultation and tell you if we are not the right fit." },
 ];
@@ -101,7 +101,7 @@ const proofResults = [
     industry: "Electrical & energy",
     metric: "Growth",
     label: "Local visibility",
-    context: "Stronger local search visibility after a focused SEO program built around service-area demand.",
+    context: "Stronger local visibility after a focused SEO program built around service-area demand.",
     image: "/img/niagara-seo-company-results.webp",
     srcset: "/img/niagara-seo-company-results-700.webp 700w, /img/niagara-seo-company-results.webp 1033w",
     sizes: "(max-width: 720px) 100vw, 645px",
@@ -210,7 +210,7 @@ const featuredResult = proofResults[0];
               alt={item.label}
               width="125"
               height="50"
-              loading="lazy"
+              loading={item.eager ? "eager" : "lazy"}
               decoding="async"
             />
           </li>
@@ -241,7 +241,7 @@ const featuredResult = proofResults[0];
   eyebrow="What we do"
   index="01"
   heading="SEO, AI Search and Web Design Services"
-  description="From SEO and AI search optimization to web design, the work is built around calls and enquiries."
+  description="From search and answer optimization to web design, the work is built around calls and enquiries."
 >
   <div class="chapter-services__grid reveal-group">
     {services.map((service, index) => <ServiceCard {...service} featured={index === 0} />)}
@@ -257,8 +257,8 @@ const featuredResult = proofResults[0];
       </p>
       <h2 class="h2" style="margin-top: 1rem; color: #ffffff;">Real results for businesses we work with</h2>
       <p style="margin-top: 1.1rem; color: var(--color-contrast-muted); max-width: 30rem;">
-        Search work should show up in the business, not only in a report. These
-        are documented outcomes from client campaigns, alongside the work that
+        The work should show up in the business, not only in a report. These are
+        documented outcomes from client campaigns, alongside the work that
         helped create them.
       </p>
       <div class="stat" style="margin-top: 2rem;">
@@ -331,7 +331,7 @@ const featuredResult = proofResults[0];
         <h2 class="h2" style="margin-top: 1rem;">Why businesses choose Infused Agency</h2>
         <p style="margin-top: 1.1rem; color: var(--color-muted); max-width: 30rem;">
           A boutique agency with a clear scope, direct communication and a plan
-          built around how your customers actually search.
+          built around how your customers actually look for you.
         </p>
         <div style="margin-top: 1.7rem;">
           <Button href="/about" variant="secondary" arrow>Meet the team</Button>
@@ -360,7 +360,7 @@ const featuredResult = proofResults[0];
   tone="tint"
   eyebrow="Capabilities"
   index="04"
-  heading="Search Foundations Built in the Right Order"
+  heading="Foundations Built in the Right Order"
   description="The strategy, technical work and page-level improvements that help the right people find and choose your business."
 >
   <div class="process-grid reveal-group">
@@ -392,24 +392,24 @@ const featuredResult = proofResults[0];
         </h2>
         <div class="prose" style="margin-top: 1.25rem; color: var(--color-contrast-muted);">
           <p style="color: var(--color-contrast-muted);">
-            AI search optimization is about being found in the answers people get
-            from ChatGPT, Gemini and AI Overviews, not only in a list of links. Our AI
-            SEO services start with the foundations that matter to both people and
-            machines: clear pages, consistent business details and trustworthy
-            signals.
+            Being found in the answers people get from ChatGPT, Gemini and AI
+            Overviews matters as much as a list of links. Our work starts with the
+            foundations that matter to both people and machines: clear pages,
+            consistent business details and trustworthy signals.
           </p>
           <p style="color: var(--color-contrast-muted);">
-            AI SEO is the umbrella term, and you will also see it called SEO for AI.
-            Answer engine optimization (AEO) focuses on the direct answer an assistant
-            gives to a question. Generative engine optimization (GEO) focuses on being
-            named or cited inside an AI-generated response. The three overlap, but
-            they describe different parts of the same work.
+            The umbrella term is often shortened to SEO for AI. Answer engine
+            optimization (AEO) focuses on the direct answer an assistant gives to a
+            question. Generative engine optimization (GEO) focuses on being named or
+            cited inside an AI-generated response. The three overlap, but they
+            describe different parts of the same work.
           </p>
           <p style="color: var(--color-contrast-muted);">
-            As an AI SEO agency, we combine AI SEO optimization, AEO and GEO into one
-            plan. We audit how AI tools describe your business, strengthen the details
-            they rely on, and shape your content into clear answers they can quote.
-            See our <a href="/ai-search-optimization">AI search services</a> for the full picture.
+            We combine AEO, GEO and the search foundations they depend on into one
+            plan. We audit how assistants describe your business, strengthen the
+            details they rely on, and shape your content into clear answers they can
+            quote. See our <a href="/ai-search-optimization">answer-engine services</a>
+            for the full picture.
           </p>
         </div>
         <div style="margin-top: 1.8rem;">
@@ -490,7 +490,7 @@ const featuredResult = proofResults[0];
   eyebrow="Industries"
   index="08"
   heading="Industries We Work With"
-  description="Search work shaped around the trades, professional practices and hospitality businesses we know well."
+  description="Work shaped around the trades, professional practices and hospitality businesses we know well."
 >
   <div class="grid grid--3 reveal-group">
     {
@@ -520,7 +520,7 @@ const featuredResult = proofResults[0];
 <CtaBand
   eyebrow="Free quote"
   heading="Get a Free Quote"
-  description="Tell us about your goals and we will map the search and web design work that fits, with a clear written quote."
+  description="Tell us about your goals and we will map the visibility and web design work that fits, with a clear written quote."
   ctaLabel="Get a Free Quote"
 />
 
@@ -534,8 +534,8 @@ const featuredResult = proofResults[0];
         </p>
         <h2 class="h2" style="margin-top: 1rem;">Frequently Asked Questions</h2>
         <p>
-          Straight answers on search visibility, AI search, web design, timelines
-          and what the work actually involves.
+          Straight answers on visibility, AI answers, web design, timelines and
+          what the work actually involves.
         </p>
         <Button href="/get-a-quote" variant="secondary" arrow>Ask us a question</Button>
       </div>
@@ -550,7 +550,7 @@ const featuredResult = proofResults[0];
   eyebrow="Learn"
   index="10"
   heading="Blog"
-  description="Practical notes on SEO, AI search and web design for growing businesses."
+  description="Practical notes on visibility, answer engines and web design for growing businesses."
 >
   <div class="grid grid--3 reveal-group">
     {

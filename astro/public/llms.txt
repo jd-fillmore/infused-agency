@@ -7,7 +7,7 @@ Infused is deliberately small — the person you speak with stays close to the w
 ## Core Services
 
 - [SEO](https://infused.agency/seo): Local SEO, Google Business Profile optimization, service and location pages, technical SEO and internal linking. AI search visibility is treated as an extension of the same work.
-- [AI Search (GEO, AEO & LLM SEO)](https://infused.agency/ai-search): Makes a business clear, consistent and quotable so AI assistants and answer engines can describe and recommend it accurately.
+- [AI Search (GEO, AEO & LLM SEO)](https://infused.agency/ai-search-optimization): Makes a business clear, consistent and quotable so AI assistants and answer engines can describe and recommend it accurately.
 - [Web Design & Development](https://infused.agency/web-design): Conversion-focused, SEO-aware websites for businesses across Canada and the United States, scoped and quoted individually.
 
 ## Pricing
@@ -77,6 +77,9 @@ Infused is deliberately small — the person you speak with stays close to the w
 
 - [About Infused Agency](https://infused.agency/about)
 - [Get a Free Quote](https://infused.agency/get-a-quote)
+- [Editorial Policy](https://infused.agency/editorial-policy): How content is researched, written, reviewed and corrected.
+- [Privacy Policy](https://infused.agency/privacy-policy)
+- [Terms of Service](https://infused.agency/terms-of-service)
 - Location: St. Catharines, Ontario, Canada (no street address published)
 - Email: info@infused.agency
 - Hours: Monday–Friday, 9 a.m. to 6 p.m. ET

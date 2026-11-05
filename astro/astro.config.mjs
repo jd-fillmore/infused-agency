@@ -9,9 +9,9 @@ export default defineConfig({
   trailingSlash: "never",
   build: {
     format: "directory",
-    // Inline the small global stylesheet so the first paint does not wait on a
-    // separate render-blocking CSS request.
-    inlineStylesheets: "always",
+    // Keep small page-level styles inline, but emit the large global stylesheet
+    // as a hashed, cacheable file instead of inlining ~78 KB into every page.
+    inlineStylesheets: "auto",
   },
   devToolbar: {
     enabled: false,

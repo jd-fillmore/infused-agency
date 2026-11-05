@@ -71,6 +71,11 @@ const formatCad = (value: number) => `$${value.toLocaleString("en-CA")}`;
     )
   }
 
+  <p class="pricing-disclaimer reveal">
+    Results vary by business, market and starting point. Pricing and examples
+    are for general information and are not a guarantee of future outcomes.
+  </p>
+
   <div class="grid grid--3 pricing-grid reveal-group">
     {
       plans.map((plan) => (
@@ -118,6 +123,14 @@ const formatCad = (value: number) => `$${value.toLocaleString("en-CA")}`;
     font-size: var(--text-sm);
     color: var(--color-gold-bright);
     letter-spacing: 0.02em;
+  }
+
+  .pricing-disclaimer {
+    margin-top: 1rem;
+    max-width: 46rem;
+    color: var(--color-contrast-muted);
+    font-size: var(--text-xs);
+    line-height: 1.6;
   }
 
   .guarantee {
