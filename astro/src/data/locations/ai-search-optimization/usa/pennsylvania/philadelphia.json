@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving the Delaware Valley remotely.",
+  "neighbourhoods": [
+    "Center City",
+    "University City",
+    "Fishtown",
+    "Cherry Hill",
+    "King of Prussia"
+  ],
+  "local_market_context": "<p>\n            Between Center City, the Main Line and South Jersey sits one of\n            the country's densest service economies, and much of it competes\n            on credentials that read identically from the outside. When every\n            firm claims board experience, decades of service and five-star\n            reviews, the reader &mdash; and now the assistant summarising for\n            them &mdash; has almost nothing to separate the offers.\n          </p>\n          <p>\n            The questions Philadelphians put to assistants are ruthlessly\n            practical: \"Which Cherry Hill accountant handles nonprofit\n            audits?\" \"Who fabricates one-off steel in Manayunk this month?\"\n            \"Does any Bryn Mawr firm do estate planning for blended\n            families?\" Answers are assembled from companies whose scope,\n            geography and credentials are laid out in reconcilable detail.\n          </p>\n          <p>\n            So that is the work: give each service its own sharp definition,\n            name the geography the practice truly serves &mdash; Ardmore,\n            Conshohocken, Camden, Wilmington &mdash; and make every claim\n            traceable. Infused Agency is based in St. Catharines and serves\n            Philadelphia businesses remotely; there is no invented Old City\n            address behind the site.\n          </p>\n          <p>\n            Businesses looking north-east can compare notes with another\n            East Coast market in our\n            <a href=\"/ai-search-optimization/usa/florida/miami\">AI search optimization in Miami</a>\n            page.\n          </p>",
+  "market_heading": "Why AI search optimization in Philadelphia rewards a clearer offer",
+  "market_eyebrow": "A competitive field",
+  "sources": [
+    "https://www.phila.gov/"
+  ],
+  "hero": {
+    "eyebrow": "AI SEO",
+    "description": "Philadelphia buyers are famously sceptical of glossy marketing and famously loyal to firms that prove themselves. We help businesses from Center City to the King of Prussia corridor state their services, coverage and credentials so precisely that an AI assistant can distinguish them from every firm recycling the same pitch.",
+    "image": "/images/ai-search-optimization-philadelphia.webp",
+    "imageAlt": "AI search optimization services for businesses looking for customers in Philadelphia"
+  },
+  "faq_heading": "How to get recommended by ChatGPT: Philadelphia questions",
+  "faqs": [
+    {
+      "q": "How can a smaller Philadelphia business compete for AI search visibility?",
+      "a": "Big-name firms win on familiarity, which doesn't help when the question is specific. A B2B supplier in Conshohocken or a Fishtown maker with unusual materials can be the clearest reply to a narrow, well-worded question. We write the pages that make those specific strengths impossible for an assistant to overlook."
+    },
+    {
+      "q": "Is AI SEO vs traditional SEO a choice, or do they work together?",
+      "a": "AI search sits on the same foundations. Crawlable pages, sound internal linking, accurate titles and a current Google Business Profile come first; the AI layer then works that same material harder &mdash; answer-shaped paragraphs, identical facts across profiles and scheduled re-checks of what assistants actually report about you."
+    },
+    {
+      "q": "How should a Greater Philadelphia business organise AI search pages across states?",
+      "a": "Honesty is the organising principle. One page per real location with its own address, hours and phone; service-area language for the work you genuinely cover across the King of Prussia corridor, the Main Line, South Jersey and Delaware. Mailing addresses that are not customer-facing should never masquerade as location pages."
+    },
+    {
+      "q": "How likely is ChatGPT to recommend our Philadelphia business?",
+      "a": "Unpromisable, by anyone. Assistants assemble their own shortlists and rewrite their reach without notice. Our contribution is disciplined clarity &mdash; services, coverage and credentials stated consistently everywhere &mdash; plus reporting on exactly what we changed and what the tools subsequently said."
+    },
+    {
+      "q": "How long does AI SEO in Philadelphia take to show any change?",
+      "a": "There is no date anyone can defend in advance. It depends on your starting site, how much your present listings contradict one another, how crowded your category is and how quickly good pages can be produced. Foundations and errors go first, publishing follows, and the same AI questions are re-checked over time."
+    },
+    {
+      "q": "What does AI SEO cost for a Philadelphia business?",
+      "a": "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project rather than an ongoing retainer. Larger firms with several sites may need a bigger scope, confirmed in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with businesses across the Delaware Valley, not just Center City?",
+      "a": "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies from Northwest Philadelphia to Wilmington and elsewhere in the United States. Meetings run remotely and travel is arranged when useful. We never claim an Old City office we do not have."
+    },
+    {
+      "q": "How is AI search optimization in Philadelphia measured?",
+      "a": "Measures are agreed in advance: search visibility, profile actions, calls, form submissions and a written record of how assistants describe the company. Reviews return to that baseline. Where a measure stalls, the report says so plainly and proposes the next step rather than dressing it up."
+    },
+    {
+      "q": "What does GEO mean in AI search optimization?",
+      "a": "GEO stands for generative engine optimization: the work of making a business easy for AI systems such as ChatGPT, Perplexity and Google AI Overviews to understand, quote and cite. It is not geographic targeting, although clear local detail still helps a page appear in location-aware answers."
+    }
+  ],
+  "cta": {
+    "heading": "Philadelphia AI SEO that starts from facts you can verify",
+    "description": "Send us your website and the parts of the region you serve, from Ardmore to Cherry Hill. We will review your search and AI presence, then return a written quote with a clear scope."
+  },
+  "legacy_body": "PhiladelphiaAiSearch",
+  "migrated_from": "/ai-search-optimization-philadelphia"
+}

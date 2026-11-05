@@ -23,3 +23,7 @@ jobs:
         run: yarn build:astro
       - name: Static build validation
         run: yarn validate:astro
+      - name: Visible-markup scan
+        run: yarn check:rendered
+      - name: Redirect verification
+        run: yarn verify:redirects

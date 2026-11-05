@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Los Angeles County remotely.",
+  "neighbourhoods": [
+    "West Hollywood",
+    "Santa Monica",
+    "Pasadena",
+    "Silver Lake",
+    "Culver City"
+  ],
+  "local_market_context": "<p>\n        Therapy searches in Los Angeles rarely look like one broad keyword.\n        Someone may start with a specialty such as trauma, anxiety, couples work,\n        teen counseling or EMDR, add a place like downtown Los Angeles, West\n        Hollywood, Santa Monica or Silver Lake, or filter by insurance or session\n        format. A practice that only says &ldquo;therapy in Los Angeles&rdquo;\n        gives the reader and the search engine very little to work with.\n      </p>\n      <p>\n        We build around those paths. That means a clear homepage, individual\n        specialty pages, and an office or service-area page that explains where\n        sessions happen and whether telehealth is available across California.\n        Internal links connect the specialty, location and intake information, so\n        a visitor can move from &ldquo;this sounds like me&rdquo; to &ldquo;here\n        is how to book&rdquo; without hunting.\n      </p>\n      <p>\n        We also make the site crawlable: clean navigation, descriptive titles and\n        headings that say Los Angeles where it is accurate, fast mobile pages and\n        metadata that matches the content. This Los Angeles page sits alongside\n        the practice site we improve, not instead of it.\n      </p>",
+  "market_heading": "How AI search is changing the way Los Angeles clients find a therapist",
+  "market_eyebrow": "The Los Angeles market",
+  "regulatory_body": {
+    "name": "California Board of Behavioral Sciences (BBS)",
+    "url": "https://www.bbs.ca.gov/"
+  },
+  "sources": [
+    "https://www.bbs.ca.gov/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps private-practice therapists in Los Angeles get found in Google and in AI search tools by people looking for their specialty, their neighborhood, or a California-licensed clinician they can see online. We build the pages, profile details and technical foundations that make a practice easier to find and contact.",
+    "image": "/img/seo-for-therapists-los-angeles-california.webp",
+    "imageAlt": "Los Angeles skyline"
+  },
+  "faq_heading": "AI search optimization and GEO questions from Los Angeles therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Los Angeles”?",
+      "a": "A solo practice can compete for Los Angeles searches when the site is clear about the work it does and the area it serves. Google rewards useful specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We focus on realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for a California-licensed therapist, a specific specialty or a clinician who offers telehealth from Los Angeles. The site should say plainly that sessions are online, which parts of California you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention nearby cities such as West Hollywood, Santa Monica or Pasadena?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every city. If a nearby place produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "There is no promised timeline. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself—fixes, new pages and rewritten titles—followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), spread across a 12-month payment plan. The monthly amount is an installment toward the project, not an ongoing retainer. A group practice with several clinicians may need a larger scope, which we confirm in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Group practices usually need a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect California licensing board and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with its licensing board and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It means making a practice easy for AI tools to understand and cite: accurate details about specialties, licensure, location and how to book, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are common labels for parts of that work. No one can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Los Angeles therapy practice with AI search optimization",
+    "description": "Request a free quote and we will review your website, local visibility and the searches that matter to your practice."
+  },
+  "legacy_body": "LosAngelesTherapists",
+  "migrated_from": "/seo/for-therapists-los-angeles"
+}

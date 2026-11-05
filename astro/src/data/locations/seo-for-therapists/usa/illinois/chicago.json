@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Chicagoland practices remotely.",
+  "neighbourhoods": [
+    "Logan Square",
+    "Hyde Park",
+    "Pilsen",
+    "Lakeview",
+    "Lincoln Park"
+  ],
+  "local_market_context": [
+    "A Chicago therapy search usually carries more than a city name. Someone may be looking for a trauma therapist in Logan Square, couples counseling in Hyde Park, a Spanish-speaking clinician in Pilsen, or an LCSW who sees clients online anywhere in Illinois. Insurance, evening availability and whether the office sits near a train line often matter as much as the therapeutic approach. A page that stops at “therapy in Chicago” leaves most of that search unanswered.",
+    "We build around the way those clients search: a clear homepage, separate pages for the concerns a practice actually treats, and an office or service-area page that explains where sessions happen and whether telehealth reaches the rest of Illinois. Internal links connect the specialty, the clinician and the intake details so someone can move from recognition to booking.",
+    "The technical work follows the same logic. Crawlable navigation, titles and headings that name Chicago or a neighborhood only where it is true, mobile pages that load quickly and metadata that matches the visible content all help. This page supports the practice website we improve; it does not replace it."
+  ],
+  "market_heading": "How AI search is changing the way Chicago clients find a therapist",
+  "market_eyebrow": "The Chicago market",
+  "regulatory_body": {
+    "name": "Illinois Department of Financial and Professional Regulation (IDFPR)",
+    "url": "https://idfpr.illinois.gov/"
+  },
+  "sources": [
+    "https://idfpr.illinois.gov/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Chicago therapists and group practices get found in Google and in AI search tools by people looking for a specialty, a neighborhood, or an Illinois-licensed clinician who offers online sessions. We build the pages, profile details and technical foundation that make a practice easy to understand and contact.",
+    "image": "/img/seo-for-therapists-chicago-illinois.webp",
+    "imageAlt": "Downtown Chicago skyline at night"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Chicago therapy practice",
+    "description": "Six connected services, scoped to the practice rather than sold as a set of duplicate neighborhood pages.",
+    "cards": [
+      {
+        "title": "Chicago search intent and on-page SEO",
+        "body": "We study how people across Chicago describe what they need, from trauma therapy near the lakefront to couples counseling in Lakeview or an online clinician licensed in Illinois. Titles, headings and page copy then speak to those concerns and places without repeating keywords. A practice serving families in Hyde Park and one working with young professionals in the Loop should not be forced into the same page."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We refine the Google Business Profile, choose categories and service areas that reflect the practice, and create an office or service-area page that matches how sessions actually work. Consistent name, address and phone details, along with relevant Illinois professional directories, help Chicago clients confirm they have found a legitimate local practice."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants and AI Overviews need facts they can extract: the clients you support, your Illinois license, the specialties you offer and how someone requests an appointment. We organize the site and its structured data so those details are explicit and consistent, then review how assistants describe the practice. No agency can guarantee an AI citation. Answer engine optimization (AEO) and generative engine optimization (GEO) are the labels used for this work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Specialty pages and short articles can answer what people ask before they call: what a first session looks like, how insurance panels and superbills work in Illinois, whether online sessions are available, and how to choose a therapist for a particular concern. The writing stays practical and avoids clinical promises. Direct, well-organized answers serve readers and the search and AI systems that summarize them."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We review indexing, page speed, mobile layout, broken links, duplicate titles and crawl paths. Practice sites often carry pages for services that ended years ago, leftover plugins and contact forms that no longer submit. Those faults sit between a good page and the person trying to reach it, so they are worth fixing early."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Trust grows through believable references: professional directories, Illinois association profiles, community and business listings, local publications, training details and genuine reviews. Each month we refresh availability, sharpen content, watch the searches that produce inquiries and correct anything that has drifted. Visibility is maintained rather than switched on once."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Chicago therapists",
+    "paragraphs": [
+      "When someone asks ChatGPT, Google’s AI Overviews or another assistant to recommend a trauma therapist in Chicago, or a couples counselor near Lincoln Park or Oak Park, the answer is assembled from sites the tool can read and trust. Those systems favor clear, consistent pages: who the clinician helps, where they are licensed in Illinois, what they specialize in and how to get in touch.",
+      "AI search optimization, often shortened to AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related craft of writing pages that give direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems draw from. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider approach.",
+      "The labels overlap and each describes part of the same SEO work rather than a separate magic service. No one can guarantee a citation or a placement in AI answers. As an AI search optimization agency, what we can do is make the facts about your Chicago practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Chicago therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Chicago therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with licensed clinical social workers, licensed clinical professional counselors, licensed marriage and family therapists, psychologists and counselors across Illinois. Some are building a solo practice; others are expanding a group, adding associates or seeing clients online throughout the state.",
+      "We also work with online-only practices that need Illinois licensure and telehealth explained plainly, and with groups that need a coherent structure for several clinicians, specialties and locations. The scope changes with the practice; the standard does not: accurate information, a clear next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and licensed in Illinois",
+      "Growing a group with several clinicians or specialties",
+      "Serving Chicago, Evanston, Oak Park, Naperville and the surrounding area",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Chicago therapists choose Infused for AI search optimization",
+    "paragraph": "An SEO partner carries your professional reputation alongside its own. Therapy marketing in Illinois has to meet advertising standards and preserve the confidence a client places in a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes. The aim is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We start from verifiable facts about your Chicago practice: the clients you support, your Illinois license, the specialties you offer and how someone requests an appointment. Nothing is published as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google’s rankings, and SEO should not be sold as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "We build around the concerns Chicago clients search for — trauma, anxiety, couples work, teens, EMDR, substance use or another focus — and tie them to the neighborhoods and session formats your practice actually offers. Each page has a clear job without inventing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Illinois licensing rules and professional codes set the boundaries. We keep copy clear and non-misleading, flag anything that may need a closer review, and leave compliance decisions with the practice and its own advisers."
+      }
+    ]
+  },
+  "testimonial_heading": "What Chicago therapists say about working with an AI SEO agency",
+  "faq_heading": "AI search optimization and GEO questions from Chicago therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Chicago”?",
+      "a": "A solo practice can compete for Chicago searches when the site is clear about the work it does and the parts of the city it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We aim at realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for an Illinois-licensed therapist, a particular specialty or a clinician who offers telehealth from Chicago. The site should say plainly that sessions are online, which parts of Illinois you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention Evanston, Oak Park or Naperville?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every suburb or neighborhood. If a nearby community produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "There is no promised timeline. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), spread across a 12-month payment plan. The monthly amount is an installment toward the project, not an ongoing retainer. A group practice with several clinicians may need a larger scope, which we confirm in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Group practices usually need a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect Illinois licensing board and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with Illinois regulators and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It means making a practice easy for AI tools to understand and cite: accurate details about specialties, licensure, location and how to book, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are common labels for parts of that work. No one can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Chicago therapy practice with AI search optimization",
+    "description": "Send us your website and the parts of Chicago your practice serves. We will review your local visibility and the searches worth pursuing, then follow up with a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-chicago"
+}

@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving metro Atlanta remotely.",
+  "neighbourhoods": [
+    "Midtown",
+    "Buckhead",
+    "Decatur",
+    "Sandy Springs",
+    "Alpharetta"
+  ],
+  "local_market_context": "<p>\n            Atlanta has a habit of producing businesses that sound alike:\n            logistics firms \"solving supply chain complexity,\" contractors\n            promising the best work in the Southeast, marketing shops claiming\n            full-service everything. Whoever a buyer asks &mdash; Google or an\n            assistant &mdash; those near-identical claims blur together, and\n            the firms that win are the ones whose offer is concrete enough to\n            be summarised without guesswork.\n          </p>\n          <p>\n            The questions people now put to assistants are extremely specific.\n            \"Who repairs commercial roofs that close on Fridays?\" \"Which\n            Roswell firm builds custom cabinetry for medical offices?\" \"Does\n            anyone near Johns Creek handle fractional CFO work for\n            restaurants?\" A compact answer comes back, drawn from companies\n            whose scope, service area and credentials are stated cleanly.\n          </p>\n          <p>\n            That is the work: sharpen what you sell, mark the geography you\n            actually cover &mdash; from Smyrna and Decatur to Alpharetta and\n            beyond the Perimeter &mdash; and back every claim with evidence an\n            assistant can verify. Infused Agency is based in St. Catharines\n            and serves Atlanta businesses remotely; we do not pretend to keep\n            an office in the city.\n          </p>\n          <p>\n            If your company is in a different Southeast market, the same\n            approach is described on our\n            <a href=\"/ai-search-optimization/usa/district-of-columbia/washington-dc\">AI search optimization in Washington, DC</a>\n            page.\n          </p>",
+  "market_heading": "Why AI search optimization in Atlanta rewards a clearer offer",
+  "market_eyebrow": "A competitive field",
+  "sources": [
+    "https://www.atlantaga.gov/"
+  ],
+  "hero": {
+    "eyebrow": "AI SEO",
+    "description": "Between Atlanta's startup scene and its national chains sits a middle market that still sells on reputation. We help those companies say what they do, who it serves and which suburbs they cover so plainly that an AI assistant can tell them apart from every lookalike on the same search.",
+    "image": "/images/ai-search-optimization-atlanta.webp",
+    "imageAlt": "AI search optimization services for businesses looking for customers in Atlanta and across the metro"
+  },
+  "faq_heading": "How to get recommended by ChatGPT: Atlanta questions",
+  "faqs": [
+    {
+      "q": "How can a smaller Atlanta business compete for AI search visibility?",
+      "a": "Size decides recognition, not relevance. An assistant asked about a niche service in Alpharetta or Decatur needs a clear, verifiable answer, and a focused company can supply it where a national brand gives a vague one. We build the pages and profiles that state your scope precisely enough to be included in that answer."
+    },
+    {
+      "q": "Is AI SEO vs traditional SEO a choice, or do they work together?",
+      "a": "They build on each other, and pretending otherwise sells confusion. Clean crawl paths, accurate titles, real internal links and a maintained Google Business Profile remain the base. AI work then pushes the same facts further: passages written to be lifted, descriptions kept identical across sources and a periodic check on what assistants actually say. We strengthen what is already there."
+    },
+    {
+      "q": "How should a multi-location business around Atlanta organise AI search pages?",
+      "a": "One page per real location, each with its own address, hours, phone and catchment — a Marietta branch and a Johns Creek branch should not read as the same text with the town swapped. Keep service pages separate from geography, and if a location is administrative rather than customer-facing, describe the service area honestly instead."
+    },
+    {
+      "q": "How likely is ChatGPT to recommend our Atlanta business?",
+      "a": "No one can promise it. Assistants choose and rank their own sources, revise answers without warning and sometimes cite a directory nobody intended. What we control is whether your services, coverage and credentials read clearly and reconcile across sources. We report what changed and what we observed — never a promised citation."
+    },
+    {
+      "q": "How long does AI SEO in Atlanta take to show any change?",
+      "a": "Nobody can date it responsibly. The variables are your starting site, how inconsistent your existing listings are, how busy your category is and how quickly useful pages can be produced. We sequence foundations and obvious errors first, then publish pages and re-check the same AI questions as the work settles."
+    },
+    {
+      "q": "What does AI SEO cost for an Atlanta business?",
+      "a": "AI search is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), spread across a 12-month payment plan. The monthly amount is an installment toward the project rather than an ongoing retainer. A company with several locations and a long service catalogue may need a larger scope, which we confirm in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with businesses across metro Atlanta, not only inside the Perimeter?",
+      "a": "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies throughout metro Atlanta and elsewhere in the United States. Meetings happen remotely and travel is arranged when useful. What we never do is claim an Atlanta office or imply a storefront we do not have."
+    },
+    {
+      "q": "How is AI search optimization in Atlanta measured?",
+      "a": "Before starting we record the baseline: search visibility, profile actions, calls, form submissions and a written note of how assistants describe the company. Reviews return to those measures. If one has stalled, the report says so and sets out the next recommendation instead of burying it."
+    },
+    {
+      "q": "What does GEO mean in AI search optimization?",
+      "a": "GEO stands for generative engine optimization: the work of making a business easy for AI systems such as ChatGPT, Perplexity and Google AI Overviews to understand, quote and cite. It is not geographic targeting, although clear local detail still helps a page appear in location-aware answers."
+    }
+  ],
+  "cta": {
+    "heading": "Atlanta AI SEO that starts from facts you can verify",
+    "description": "Send us your website and the parts of the metro you serve, from Decatur to Alpharetta. We will review your search and AI presence, then return a written quote with a clear scope."
+  },
+  "legacy_body": "AtlantaAiSearch",
+  "migrated_from": "/ai-search-optimization-atlanta"
+}

@@ -1,0 +1,71 @@
+---
+/**
+ * Country/region directory used on the two service roots and the master
+ * location index. Lists only live hubs, so it can never link a page that is
+ * not built.
+ */
+import Icon from "../ui/Icon.astro";
+import Section from "../ui/Section.astro";
+import { getServiceConfig, countryPath, liveCitiesInCountry, liveCountries, liveRegions, regionPath, serviceRootPath } from "../../lib/locations.mjs";
+
+interface Props {
+  service: string;
+  tone?: "base" | "tint" | "contrast";
+  heading?: string;
+  description?: string;
+}
+
+const { service, tone = "tint", heading, description } = Astro.props;
+const config = getServiceConfig(service);
+const countries = liveCountries(service);
+const regions = liveRegions(service);
+---
+
+<Section
+  tone={tone}
+  eyebrow="Locations"
+  index=""
+  heading={heading ?? `${config.locationLabel} by location`}
+  description={description ?? "Start with a country, then a region. Only published pages are listed."}
+>
+  <div class="grid grid--2 reveal-group">
+    {
+      countries.map((country: any) => (
+        <div class="card" data-shared>
+          <h3 class="card__title">
+            <a href={countryPath(service, country)}>{country.name}</a>
+          </h3>
+          <p class="card__text">
+            {liveCitiesInCountry(service, country).length} live{" "}
+            {liveCitiesInCountry(service, country).length === 1 ? "page" : "pages"} across{" "}
+            {regions.filter((entry) => entry.country.slug === country.slug).length}{" "}
+            {regions.filter((entry) => entry.country.slug === country.slug).length === 1 ? "region" : "regions"}.
+          </p>
+          <ul class="chip-list" style="margin-top: 1rem;">
+            {
+              regions
+                .filter((entry) => entry.country.slug === country.slug)
+                .map(({ region }) => (
+                  <li>
+                    <a class="chip" href={regionPath(service, country, region)}>
+                      {region.name}
+                      <Icon name="arrow-right" />
+                    </a>
+                  </li>
+                ))
+            }
+          </ul>
+        </div>
+      ))
+    }
+    <div class="card" data-shared>
+      <h3 class="card__title">
+        <a href={serviceRootPath(service)}>{config.name} services</a>
+      </h3>
+      <p class="card__text">
+        The service overview: what the programme covers, how it is priced and
+        what reporting looks like.
+      </p>
+    </div>
+  </div>
+</Section>

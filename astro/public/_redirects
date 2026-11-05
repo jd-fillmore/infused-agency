@@ -1,4 +1,33 @@
 # Generated from docs/astro-rebuild/redirect-register.csv plus planned consolidations
+
+# BEGIN generated location redirects (astro/scripts/generate-redirects.mjs)
+/ai-search /ai-search-optimization 301
+/ai-search-optimization-atlanta /ai-search-optimization/usa/georgia/atlanta 301
+/ai-search-optimization-miami /ai-search-optimization/usa/florida/miami 301
+/ai-search-optimization-philadelphia /ai-search-optimization/usa/pennsylvania/philadelphia 301
+/ai-search-optimization-phoenix /ai-search-optimization/usa/arizona/phoenix 301
+/ai-search-optimization-washington-dc /ai-search-optimization/usa/district-of-columbia/washington-dc 301
+/ai-seo-for-therapists-atlanta /seo-for-therapists/usa/georgia/atlanta 301
+/ai-seo-for-therapists-miami /seo-for-therapists/usa/florida/miami 301
+/ai-seo-for-therapists-philadelphia /seo-for-therapists/usa/pennsylvania/philadelphia 301
+/ai-seo-for-therapists-phoenix /seo-for-therapists/usa/arizona/phoenix 301
+/ai-seo-for-therapists-washington-dc /seo-for-therapists/usa/district-of-columbia/washington-dc 301
+/ai-seo-hamilton /ai-search-optimization/canada/ontario/hamilton 301
+/ai-seo-toronto /ai-search-optimization/canada/ontario/toronto 301
+/seo-for-therapists-calgary /seo-for-therapists/canada/alberta/calgary 301
+/seo-for-therapists-chicago /seo-for-therapists/usa/illinois/chicago 301
+/seo-for-therapists-dallas /seo-for-therapists/usa/texas/dallas 301
+/seo-for-therapists-edmonton /seo-for-therapists/canada/alberta/edmonton 301
+/seo-for-therapists-houston /seo-for-therapists/usa/texas/houston 301
+/seo-for-therapists-ottawa /seo-for-therapists/canada/ontario/ottawa 301
+/seo-for-therapists-toronto /seo-for-therapists/canada/ontario/toronto 301
+/seo-for-therapists-vancouver /seo-for-therapists/canada/british-columbia/vancouver 301
+/seo/for-therapists /seo-for-therapists 301
+/seo/for-therapists-canada /seo-for-therapists/canada 301
+/seo/for-therapists-los-angeles /seo-for-therapists/usa/california/los-angeles 301
+/seo/for-therapists-usa /seo-for-therapists/usa 301
+# END generated location redirects
+
 # Removed therapist SEO programme. Every /therapist-seo route, every US
 # /seo/for-therapists-* city page and every legacy /seo/for-therapists-* URL
 # that redirected into the programme now returns 410 Gone.
@@ -49,8 +78,6 @@
 /seo/for-therapists-huntington /seo/for-therapists-huntington 410
 /seo/for-therapists-rochester /seo/for-therapists-rochester 410
 /seo/for-therapists-syracuse /seo/for-therapists-syracuse 410
-/seo/for-therapists-usa /seo/for-therapists-usa 410
-/seo/for-therapists-canada /seo/for-therapists-canada 410
 /seo/for-therapists-ontario /seo/for-therapists-ontario 410
 /seo/for-therapists-quebec /seo/for-therapists-quebec 410
 /seo/for-therapists-british-columbia /seo/for-therapists-british-columbia 410
@@ -125,7 +152,6 @@
 /web-design-welland /web-design 301
 /caledonia-web-design /web-design 301
 /niagara-web-design /web-design 301
-/seo/niagara / 301
 /st-catharines-seo-company /seo/st-catharines 301
 /st-catharines-seo-company/ /seo/st-catharines 301
 /how-we-work /about 301
@@ -162,9 +188,8 @@
 /ecommerce-web-design-st-catharines / 301
 /wordpress-developer-st-catharines / 301
 /posts/how-can-i-generate-website-traffic-with-0-marketing-budget / 301
-/posts/how-can-i-generate-website-traffic-with-0-marketing-budget / 301
-/ecommerce-web-design-St. Catharines / 301
-/wordpress-developer-St. Catharines / 301
+/ecommerce-web-design-St.%20Catharines / 301
+/wordpress-developer-St.%20Catharines / 301
 /posts/drive-visitors-to-new-website/ /posts/what-is-the-best-method-to-drive-visitors-to-a-new-website 301
 /beamsville /seo/beamsville 301
 /st-catharines /seo/st-catharines 301

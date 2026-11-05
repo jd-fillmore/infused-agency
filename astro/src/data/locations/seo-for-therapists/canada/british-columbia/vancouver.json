@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Metro Vancouver remotely.",
+  "neighbourhoods": [
+    "Kitsilano",
+    "Mount Pleasant",
+    "North Vancouver",
+    "Burnaby",
+    "Richmond"
+  ],
+  "local_market_context": [
+    "A Vancouver therapy search often starts with a place and a concern together: a counsellor in Kitsilano, trauma therapy downtown, couples counselling in North Vancouver, or an online counsellor licensed in British Columbia. People also filter by approach, cost, availability and whether the clinician works with children, teens or adults. A homepage that stops at “therapy in Vancouver” leaves most of that intent unanswered.",
+    "We map those routes and build pages for them: a plain-spoken homepage, specialty pages, and a location or service-area page covering the neighbourhoods and Lower Mainland communities the practice actually serves. Links between those pages and the booking information make the next step obvious.",
+    "We also remove friction for search engines: navigation that can be crawled, headings that use Vancouver and British Columbia accurately, mobile layouts that load quickly, and titles and descriptions that reflect the page. The result is a site that describes the practice clearly rather than repeating a city name."
+  ],
+  "market_heading": "How AI search is changing the way Vancouver clients find a therapist",
+  "market_eyebrow": "The Vancouver market",
+  "regulatory_body": {
+    "name": "BC Association of Clinical Counsellors (BCACC)",
+    "url": "https://bcacc.ca/"
+  },
+  "sources": [
+    "https://bcacc.ca/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Vancouver counsellors and therapy practices become easier to find in Google and in AI search tools when someone searches by concern, neighbourhood or British Columbia registration. We shape the pages, profile details and technical foundations that turn a clear online presence into a conversation.",
+    "image": "/images/ai-search-optimization-and-seo-for-vancouver-therapists.webp",
+    "imageAlt": "AI search optimization SEO services for Vancouver therapists"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Vancouver therapy practice",
+    "description": "Six connected services, planned around the practice instead of sold as separate city pages.",
+    "cards": [
+      {
+        "title": "Vancouver search intent and on-page SEO",
+        "body": "We study how people in Vancouver and the Lower Mainland describe what they need, then shape titles, headings and page copy around those phrases. A counsellor in Kitsilano and a clinician seeing clients in Surrey should not be forced into one generic page. The writing names the specialty and the area without repeating keywords."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We refine the Google Business Profile, choose categories and service areas that reflect reality, and create an office or service-area page that explains where sessions happen. Consistent contact details and relevant British Columbia professional directories help Vancouver clients verify they are looking at a genuine local practice."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI tools need extractable facts: the concerns you work with, your British Columbia registration, your approach and how to book. We make those details explicit in the site and its structured data, then check how assistants describe the practice. Citations cannot be guaranteed. AEO and GEO are the common labels for this part of the work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Useful pages answer the questions that come before a first call: what intake looks like, how extended health benefits and receipts work, whether online sessions are available across BC, and how to choose a counsellor for a specific issue. We keep the language practical and avoid promising clinical outcomes, while giving search engines and AI assistants clear answers to quote."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We look at how search engines reach and render the site: indexing, speed, mobile behaviour, broken links, repeated titles and crawl paths. Practice sites often gather outdated pages, leftover plugins and forms that silently fail. Clearing those problems supports every new page and shortens the distance between a search result and an inquiry."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Trust signals matter as much as pages: professional directories, BC association profiles, community listings, local media, training details and honest reviews. We review availability, improve content, monitor the searches that lead to inquiries and correct drift each month. Local visibility is a practice, not a one-time switch."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Vancouver therapists",
+    "paragraphs": [
+      "Ask an AI assistant for a trauma counsellor in Vancouver, or a couples therapist near Mount Pleasant or North Vancouver, and the reply is built from sources the tool can read and trust. Clear, consistent pages give it the material it needs: who the clinician helps, where they are registered in British Columbia, what they specialise in and how to arrange a first session.",
+      "AI search optimization, or AI SEO, is the work of making a practice understood and cited by those systems. AEO, answer engine optimization, focuses on direct answers that can be lifted from a page. GEO, generative engine optimization, is about consistent, accurate descriptions across the sources AI tools consult. You can read more about our <a href=\"/ai-search-optimization\">AI search optimization services</a>.",
+      "These labels describe overlapping parts of the same SEO discipline, not a separate product with a different guarantee. Nobody can promise a citation or a position in an AI answer. What we can do is make the facts about your Vancouver practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Vancouver therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Vancouver therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with registered clinical counsellors, psychologists, social workers and counselling therapists in British Columbia. Some are establishing a solo practice; others are expanding a group, bringing on associates or seeing clients online across BC.",
+      "Online-only practices need British Columbia registration and telehealth explained plainly. Groups need a structure that makes sense of several clinicians, specialties and locations. The scope follows the practice; the standard stays the same: accurate information, an obvious next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in British Columbia",
+      "Growing a group with several clinicians or specialties",
+      "Serving Vancouver, North Vancouver, Burnaby, Richmond and Surrey",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Vancouver therapists choose Infused for AI search optimization",
+    "paragraph": "Your professional reputation travels with every marketing decision, so the partner you choose matters. Counselling advertising in British Columbia has to be honest and the tone has to respect the trust clients place in a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes. The work is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We work from verified facts about your Vancouver practice: the clients you support, your British Columbia registration, the specialties you offer and how to start. Nothing is published as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "Google’s rankings are outside any agency’s control, and SEO should not be sold as a guaranteed outcome. We also avoid wording that suggests a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "Pages are built around the concerns people search for in Vancouver — trauma, anxiety, couples work, teens, EMDR or another specialty — and tied to the places and session formats your practice really offers. Every page has a clear job without manufacturing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "British Columbia regulatory bodies and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need closer review, and leave compliance decisions with the practice and its advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from Vancouver therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “counsellor Vancouver”?",
+      "a": "A solo practice can compete for Vancouver searches when the site is clear about the work it does and the communities it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We pursue realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for a British Columbia-registered counsellor, a specific specialty or a clinician who offers telehealth from Vancouver. The site should explain that sessions are online, which parts of BC you serve and what the first appointment involves."
+    },
+    {
+      "q": "Should the site mention Kitsilano, Mount Pleasant, Burnaby or Surrey?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every neighbourhood. If a nearby city produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "No timeline is promised. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reporting on the searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "The work is priced as a 3-month implementation project. The three packages are Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), paid across a 12-month plan. Each monthly amount is an installment toward the project rather than an ongoing retainer. A larger group practice may need a broader scope, which we confirm in writing after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. A group practice usually needs a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We plan around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect British Columbia licensing bodies and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with BC regulatory bodies and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It is the practice of making a therapy practice legible to AI tools: accurate, consistent details about specialties, registration, location and booking, written clearly on the site and across profiles. AEO (answer engine optimization) and GEO (generative engine optimization) describe parts of the same work. Nobody can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Vancouver therapy practice with AI search optimization",
+    "description": "Share your website and the Vancouver communities you serve. We will review your local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-vancouver"
+}

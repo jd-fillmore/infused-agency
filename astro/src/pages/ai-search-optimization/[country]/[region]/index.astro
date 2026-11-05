@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import LocationRegionHub from "../../../../templates/LocationRegionHub.astro";
+import {
+  liveRegions,
+  liveCitiesInRegion,
+  readRegionContent,
+  regionPath,
+  countryPath,
+  getServiceConfig,
+} from "../../../../lib/locations.mjs";
+import { locationHubGraph } from "../../../../lib/location-schema";
+import { regionSeo } from "../../../../lib/hub-seo.mjs";
+
+const service = "ai-search-optimization";
+const config = getServiceConfig(service);
+
+export function getStaticPaths() {
+  const service = "ai-search-optimization";
+  return liveRegions(service).map(({ country, region }) => ({
+    params: { country: country.slug, region: region.slug },
+    props: { countrySlug: country.slug, regionSlug: region.slug },
+  }));
+}
+
+const { countrySlug, regionSlug } = Astro.props;
+const entry = liveRegions(service).find(
+  (item) => item.country.slug === countrySlug && item.region.slug === regionSlug
+);
+if (!entry) throw new Error(`Unknown region ${countrySlug}/${regionSlug}`);
+
+const { country, region } = entry;
+const cities = liveCitiesInRegion(service, country, region);
+const hub = readRegionContent(service, country, region);
+if (!hub) throw new Error(`Missing region hub content for ${region.name}`);
+
+const pathname = regionPath(service, country, region);
+const { title, description } = regionSeo(service, region.name, cities.length);
+
+const siblings = liveRegions(service)
+  .filter((item) => item.country.slug === country.slug && item.region.slug !== region.slug)
+  .map((item) => ({
+    href: regionPath(service, item.country, item.region),
+    label: `${item.region.name} AI search optimization`,
+  }));
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: config.rootLabel, href: "/ai-search-optimization" },
+  { name: country.name, href: countryPath(service, country) },
+  { name: region.name },
+];
+
+const jsonLd = locationHubGraph({
+  pathname,
+  title,
+  description,
+  serviceType: config.serviceType,
+  breadcrumbs,
+  areaServed: [
+    {
+      "@type": "AdministrativeArea",
+      name: region.name,
+      containedInPlace: { "@type": "Country", name: country.name },
+    },
+    ...cities.map((record) => ({
+      "@type": "City",
+      name: record.city.name,
+      containedInPlace: { "@type": "AdministrativeArea", name: region.name },
+    })),
+  ],
+});
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <LocationRegionHub
+    service={service}
+    country={country}
+    region={region}
+    cities={cities}
+    hub={hub}
+    siblings={siblings}
+  />
+</BaseLayout>

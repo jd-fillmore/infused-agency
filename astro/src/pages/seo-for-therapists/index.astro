@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Button from "../../components/ui/Button.astro";
+import CtaBand from "../../components/ui/CtaBand.astro";
+import Icon from "../../components/ui/Icon.astro";
+import PageHero from "../../components/ui/PageHero.astro";
+import Section from "../../components/ui/Section.astro";
+import CountryHubLinks from "../../components/locations/CountryHubLinks.astro";
+import { liveCities, serviceRootPath } from "../../lib/locations.mjs";
+import { baseGraph, breadcrumbNode, serviceNode, webPageNode } from "../../lib/schema";
+
+const service = "seo-for-therapists";
+const pathname = serviceRootPath(service);
+const title = "SEO for Therapists | Get More Client Inquiries";
+const description =
+  "SEO and AI search for therapy practices in Canada and the United States. Get found on Google and in AI answers, and turn visibility into inquiries.";
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: "SEO for Therapists" },
+];
+
+const liveCount = liveCities(service).length;
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: title, description, type: "CollectionPage" }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: "SEO and AI search optimization for therapists",
+    description,
+    serviceType: "Therapist SEO, local SEO, AI search optimization (GEO and AEO)",
+  }),
+];
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <PageHero
+    title="SEO for Therapists in Canada and the United States"
+    description="When someone is ready to start therapy, they search two ways: they type into Google, and they ask an AI assistant. Clients now find therapists in both places. We help practices show up in each — with clear service pages, a healthy local profile and content that ChatGPT and Google AI Overviews can read, check and quote."
+    breadcrumbs={breadcrumbs}
+    eyebrow="Therapist SEO"
+    ctaLabel="Get a Free Quote"
+  >
+    <Fragment slot="aside">
+      <h2>Start with a free quote</h2>
+      <p>
+        Tell us about your practice and where you want more clients. We will
+        review your search and AI visibility, then send a written quote.
+      </p>
+      <ul class="page-hero__aside-list">
+        <li><Icon name="check" /> Website and visibility review</li>
+        <li><Icon name="check" /> Local competitor scan</li>
+        <li><Icon name="check" /> Written, no-obligation quote</li>
+      </ul>
+      <Button href="/get-a-quote" variant="gold" block arrow>
+        Get a Free Quote
+      </Button>
+    </Fragment>
+  </PageHero>
+
+  <Section
+    eyebrow="The two halves"
+    index="01"
+    heading="Both kinds of search matter for therapy practices"
+    description="A client can start with either one, and the second often decides who gets called."
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <h3 class="h4" style="margin-top: 0;">Traditional Google SEO</h3>
+          <p>
+            Most people still begin with Google: a search for a specialty, a
+            neighbourhood or an insurance question, followed by a scan of the
+            map pack and a few practice websites. This work covers the
+            foundations — keyword research around the issues you actually
+            treat, service pages that answer real questions, an optimized
+            Google Business Profile and consistent local signals — so
+            potential clients see you when they are ready to enquire.
+          </p>
+          <h3 class="h4" style="margin-top: 0;">AI search optimization</h3>
+          <p>
+            A growing share of people now ask ChatGPT or Gemini for
+            recommendations, and Google AI Overviews summarise results before
+            anyone clicks. Assistants build their answers from sources they
+            can read and trust, so the work is about entity consistency,
+            answer-ready content and structured data. No agency can guarantee
+            an AI citation, but practices that describe their services,
+            coverage and credentials clearly are far more likely to be
+            included.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">How our work plans fit therapy practices</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>Service pages written for the issues you treat</li>
+          <li>Local SEO for your city and surrounding communities</li>
+          <li>Google Business Profile and review signals</li>
+          <li>AI-ready content, schema and entity cleanup</li>
+          <li>Reporting tied to enquiries, not vanity metrics</li>
+        </ul>
+        <p class="card__text" style="margin-top: 1.25rem;">
+          {liveCount} city pages below show exactly how we do this work in a
+          specific market before you commit. We serve every one of them
+          remotely from the Niagara region in Ontario, Canada.
+        </p>
+      </aside>
+    </div>
+  </Section>
+
+  <CountryHubLinks
+    service={service}
+    heading="Therapist SEO pages by location"
+    description="Pick a country, then a region. Each city page covers the competition, the searches people use and the work we do in that market."
+  />
+
+  <Section
+    tone="contrast"
+    eyebrow="Explore"
+    index=""
+    heading="Related services"
+    description="The wider services these therapist pages sit inside."
+  >
+    <ul class="chip-list">
+      <li>
+        <a class="chip" href="/seo">
+          Search engine optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/ai-search-optimization">
+          AI search optimization
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/ai-search/locations">
+          All AI search optimization locations
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/results">
+          Client results
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+      <li>
+        <a class="chip" href="/get-a-quote">
+          Get a Free Quote
+          <Icon name="arrow-right" />
+        </a>
+      </li>
+    </ul>
+  </Section>
+
+  <CtaBand
+    eyebrow="Free quote"
+    heading="Ready to be the practice clients find first?"
+    description="Request a free quote and we will review your search and AI visibility, then send back a written quote with a clear scope for your practice."
+    ctaLabel="Get a Free Quote"
+  />
+</BaseLayout>

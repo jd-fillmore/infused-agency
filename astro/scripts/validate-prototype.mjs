@@ -148,6 +148,24 @@ function run() {
   const htmlRoutes = new Set(htmlFiles.map(routeForFile));
   const notMigrated = new Set();
 
+  // Redirect sources defined by the built _redirects file. An internal link may
+  // resolve to a real redirect instead of a built page, but linking to a legacy
+  // URL should be rare and is reported below.
+  const redirectSources = new Set();
+  const redirectsPath = path.join(distDir, "_redirects");
+  if (fs.existsSync(redirectsPath)) {
+    for (const line of fs.readFileSync(redirectsPath, "utf8").split(/\r?\n/)) {
+      const row = line.trim();
+      if (!row || row.startsWith("#")) continue;
+      const tokens = row.split(/\s+/);
+      if (tokens.length < 2) continue;
+      const status = /^\d{3}$/.test(tokens[tokens.length - 1]) ? tokens[tokens.length - 1] : "301";
+      if (status === "410") continue;
+      redirectSources.add(normalizeRedirectPath(tokens[0]));
+    }
+  }
+  const linkedRedirects = new Set();
+
   // Retired routes must never be emitted as canonical, indexable pages.
   for (const entry of RETIRED_ROUTES) {
     if (builtRouteExists(entry.route, htmlRoutes)) {
@@ -286,6 +304,13 @@ function run() {
 
       if (builtRouteExists(internal, htmlRoutes)) continue;
 
+      // A legacy URL that resolves through a 301 is valid, but flag it so the
+      // link can be updated to its final URL.
+      if (redirectSources.has(normalizeRedirectPath(internal))) {
+        linkedRedirects.add(internal);
+        continue;
+      }
+
       const manifestValue = internal.replace(/\/+$/, "") || "/";
       if (manifestUrls.has(manifestValue)) {
         notMigrated.add(internal);
@@ -314,7 +339,28 @@ function run() {
     if (!sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
       error("sitemap.xml", "missing XML declaration");
     }
-    const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+    const readLocs = (xml) =>
+      [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+    let locs = readLocs(sitemap);
+
+    // The site publishes a sitemap index; gather URLs from its children so
+    // the coverage checks below still see every live route.
+    if (/<sitemapindex[\s>]/.test(sitemap)) {
+      const children = locs.map((loc) => new URL(loc).pathname);
+      locs = [];
+      for (const child of children) {
+        const childFile = path.join(distDir, child.replace(/^\//, ""));
+        if (!fs.existsSync(childFile)) {
+          error("sitemap.xml", `index references a missing child sitemap: ${child}`);
+          continue;
+        }
+        const childXml = fs.readFileSync(childFile, "utf8");
+        if (!childXml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
+          error(child, "missing XML declaration");
+        }
+        locs.push(...readLocs(childXml));
+      }
+    }
     if (locs.length === 0) error("sitemap.xml", "contains no URLs");
     if (new Set(locs).size !== locs.length) error("sitemap.xml", "contains duplicate URLs");
 
@@ -435,6 +481,15 @@ function run() {
         error(path.relative(distDir, cssFile), `missing font asset: ${ref}`);
       }
     }
+  }
+
+  if (linkedRedirects.size > 0) {
+    warn(
+      "internal links",
+      `${linkedRedirects.size} link(s) still point at legacy URLs that resolve only through a redirect: ${[...linkedRedirects]
+        .sort()
+        .join(", ")}`
+    );
   }
 
   if (notMigrated.size > 0) {

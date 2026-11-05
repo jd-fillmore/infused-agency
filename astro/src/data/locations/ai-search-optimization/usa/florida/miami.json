@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving South Florida remotely.",
+  "neighbourhoods": [
+    "Brickell",
+    "Wynwood",
+    "Miami Beach",
+    "Coral Gables",
+    "Doral"
+  ],
+  "local_market_context": "<p>\n            Few American markets stack up competitors the way South Florida\n            does. The same headline service is offered in Miami Beach, Coral\n            Gables, Doral and Boca Raton, often with identical words on the\n            homepage. Add a bilingual audience and a snowbird population that\n            arrives seasonally, and the company whose offer reads in plain,\n            checkable detail has a structural advantage over the company\n            leaning on adjectives.\n          </p>\n          <p>\n            AI queries here are often two questions at once: what you do and\n            in which language or neighbourhood. \"Which CPA in Doral files for\n            seasonal residents?\" \"Is there a Hialeah bakery doing wholesale\n            for events?\" An assistant composes its answer from firms whose\n            languages, audiences and service areas are stated in full &mdash;\n            not a homepage that says only \"serving Greater Miami.\"\n          </p>\n          <p>\n            Our job is to build that clarity: separating each service so it\n            can be summarised on its own, marking geography from Kendall to\n            Hollywood where it is genuinely true, and grounding every claim\n            in something a tool can verify. Infused Agency is based in St.\n            Catharines and serves South Florida businesses remotely; we do\n            not claim an office in Miami.\n          </p>\n          <p>\n            If your business sits elsewhere in the Southeast, see how the\n            same programme reads in another market on our\n            <a href=\"/ai-search-optimization/usa/arizona/phoenix\">AI search optimization in Phoenix</a>\n            page.\n          </p>",
+  "market_heading": "Why AI search optimization in Miami rewards a clearer offer",
+  "market_eyebrow": "A competitive field",
+  "sources": [
+    "https://www.miamigov.com/"
+  ],
+  "hero": {
+    "eyebrow": "AI SEO",
+    "description": "South Florida buyers switch between English and Spanish in a single search, and the businesses that surface in AI answers are the ones whose facts &mdash; services, languages, coverage &mdash; survive both. We help Miami companies from Kendall to Fort Lauderdale state those facts so clearly that assistants quote them exactly.",
+    "image": "/images/ai-search-optimization-miami.webp",
+    "imageAlt": "AI search optimization services for businesses looking for customers in Miami"
+  },
+  "faq_heading": "How to get recommended by ChatGPT: Miami questions",
+  "faqs": [
+    {
+      "q": "How can a smaller Miami business compete for AI search visibility?",
+      "a": "Assistants reward precision, and Miami awards it doubly: the buyer who asked for a bilingual mortgage broker in Hialeah, not a generic lender, wants one clear answer. A smaller company that describes itself in exact terms &mdash; languages, audiences, districts &mdash; can be that answer ahead of any larger rival."
+    },
+    {
+      "q": "Is AI SEO vs traditional SEO a choice, or do they work together?",
+      "a": "There is no fork in the road. Crawlable pages, accurate titles, genuine internal links and a maintained Google Business Profile remain the starting point. AI search work then sharpens the same material: direct answers an assistant can lift, matching descriptions across every profile and a schedule for re-reading what the tools say."
+    },
+    {
+      "q": "How should a multi-location South Florida business organise AI search pages?",
+      "a": "One page per genuine location, each with its own address, hours, phone and catchment. A Coral Gables office and an Aventura office should never share a text with the city name swapped. Where you run no office but serve clients across Broward or Palm Beach, describe the service area plainly rather than inventing suburb pages."
+    },
+    {
+      "q": "How likely is ChatGPT to recommend our Miami business?",
+      "a": "It cannot be promised by anyone. Providers pick their own sources and revise them without warning, and bilingual categories add extra ways to be misread. Our role is to make your services, languages, coverage and credentials consistent and verifiable, then report what changed &mdash; never a guaranteed citation."
+    },
+    {
+      "q": "How long does AI SEO in Miami take to show any change?",
+      "a": "No responsible timeline exists. Outcomes depend on the shape of your current site, how much your listings disagree with each other, the density of your category and how quickly credible pages can be produced. Foundations and contradictions are handled first, then publishing begins and the same AI questions are re-checked periodically."
+    },
+    {
+      "q": "What does AI SEO cost for a Miami business?",
+      "a": "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project rather than an ongoing retainer. A business with several offices and a wide catalogue may need a larger scope, confirmed in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with businesses across South Florida, not only in Miami proper?",
+      "a": "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies from Miami Beach to Boca Raton and elsewhere in the United States. Meetings happen remotely and travel is arranged when useful. We never claim a Brickell office or a storefront we do not operate."
+    },
+    {
+      "q": "How is AI search optimization in Miami measured?",
+      "a": "The measures are agreed before work starts: search visibility, profile actions, calls, form submissions and a written note of how assistants describe the company, in both languages where relevant. Reviews return to those numbers. Anything stalled is reported as stalled with next steps attached."
+    },
+    {
+      "q": "What does GEO mean in AI search optimization?",
+      "a": "GEO stands for generative engine optimization: the work of making a business easy for AI systems such as ChatGPT, Perplexity and Google AI Overviews to understand, quote and cite. It is not geographic targeting, although clear local detail still helps a page appear in location-aware answers."
+    }
+  ],
+  "cta": {
+    "heading": "Miami AI SEO that starts from facts you can verify",
+    "description": "Send us your website and the counties you serve, from Miami-Dade to Palm Beach. We will review your search and AI presence, then return a written quote with a clear scope."
+  },
+  "legacy_body": "MiamiAiSearch",
+  "migrated_from": "/ai-search-optimization-miami"
+}

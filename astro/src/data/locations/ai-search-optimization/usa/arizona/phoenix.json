@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving the Valley remotely.",
+  "neighbourhoods": [
+    "Downtown Phoenix",
+    "Scottsdale",
+    "Tempe",
+    "Mesa",
+    "Chandler"
+  ],
+  "local_market_context": "<p>\n            Phoenix grows fast, and fast growth fills every category with\n            companies that sound the same — pools, HVAC, solar,\n            landscaping, logistics &mdash; all claiming to serve \"the entire\n            Valley.\" When every claim is broad, none of them registers, and\n            the buyer sorting through options by himself has had to give up\n            on precision. Assistants have made precision the deciding factor\n            instead.\n          </p>\n          <p>\n            Ask the way a Valley customer actually would: \"Which Tempe shop\n            tunes e-bikes on weekends?\" \"Who does commercial fencing out of\n            Glendale without a lead time of a month?\" \"Is there an accountant\n            in Chandler who works with restaurants?\" The reply is assembled\n            from firms whose services, cities and credentials slot together\n            cleanly &mdash; and firms that wrote none of it get left out.\n          </p>\n          <p>\n            Our work closes that gap: one sharp description per service,\n            geography stated city by city where it is actually true, and\n            claims supported by evidence an assistant can verify. Infused\n            Agency operates from St. Catharines and serves Phoenix businesses\n            remotely; we make no claim to a downtown address.\n          </p>\n          <p>\n            For a comparison with another Sun Belt market, read our\n            <a href=\"/ai-search-optimization/usa/georgia/atlanta\">AI search optimization in Atlanta</a>\n            page.\n          </p>",
+  "market_heading": "Why AI search optimization in Phoenix rewards a clearer offer",
+  "market_eyebrow": "A competitive field",
+  "sources": [
+    "https://www.phoenix.gov/"
+  ],
+  "hero": {
+    "eyebrow": "AI SEO",
+    "description": "The Valley is really eleven cities masquerading as one, and buyers search accordingly. We help Phoenix businesses and their neighbours in Scottsdale, Mesa and Chandler describe their services, coverage and credentials precisely enough that an AI assistant can name yours instead of a lookalike down the freeway.",
+    "image": "/images/ai-search-optimization-phoenix.webp",
+    "imageAlt": "AI search optimization services for businesses looking for customers in Phoenix"
+  },
+  "faq_heading": "How to get recommended by ChatGPT: Phoenix questions",
+  "faqs": [
+    {
+      "q": "How can a smaller Phoenix business compete for AI search visibility?",
+      "a": "The Valley is full of companies that market the same way, which means a precise description can outrun a famous name. A contractor in Peoria who states exactly which trades, which routes and what warranty can be the single clear answer an assistant needs, where a bigger brand stops at slogans."
+    },
+    {
+      "q": "Is AI SEO vs traditional SEO a choice, or do they work together?",
+      "a": "They are the same discipline at different depths. Fast pages, clean crawl paths, accurate titles and a live Google Business Profile stay compulsory. The AI layer then pushes further: paragraphs shaped as answers, identical facts on every profile and a schedule for asking assistants the same questions again."
+    },
+    {
+      "q": "How should a multi-location Valley business organise AI search pages?",
+      "a": "One page per real location with its own address, hours, phone and catchment &mdash; a Gilbert branch and a Scottsdale branch should not share text with the city name swapped. Offices that accept clients and mailing addresses that do not must be described differently, or assistants will read them as the same."
+    },
+    {
+      "q": "How likely is ChatGPT to recommend our Phoenix business?",
+      "a": "No one can guarantee it. Providers choose their sources, change them silently and answer differently month to month. What we can affect is whether your services, coverage and credentials are stated clearly and consistently enough to enter that reasoning, and we document exactly what changed as a result."
+    },
+    {
+      "q": "How long does AI SEO in Phoenix take to show any change?",
+      "a": "Nobody can defend a date given in advance. It depends on the state of your site, how contradictory your listings are, how crowded your category is and how fast quality pages can be built. Foundations come first, publishing second, and the same AI questions are re-asked as the work settles."
+    },
+    {
+      "q": "What does AI SEO cost for a Phoenix business?",
+      "a": "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project, not a retainer. Companies with several locations may need a larger scope, which we confirm in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with businesses across the Valley, not only downtown Phoenix?",
+      "a": "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies throughout Greater Phoenix and elsewhere in the United States. Meetings happen remotely and travel is arranged when useful. We do not claim a Camelback Road office or any storefront we do not operate."
+    },
+    {
+      "q": "How is AI search optimization in Phoenix measured?",
+      "a": "Before work begins, the measures are agreed: search visibility, profile actions, calls, form submissions and a written record of how assistants describe the company. Reviews keep returning to that baseline. A stalled measure is reported as stalled, with the next recommendation in the same breath."
+    },
+    {
+      "q": "What does GEO mean in AI search optimization?",
+      "a": "GEO stands for generative engine optimization: the work of making a business easy for AI systems such as ChatGPT, Perplexity and Google AI Overviews to understand, quote and cite. It is not geographic targeting, although clear local detail still helps a page appear in location-aware answers."
+    }
+  ],
+  "cta": {
+    "heading": "Phoenix AI SEO that starts from facts you can verify",
+    "description": "Send us your website and the Valley communities you serve, from Scottsdale to Chandler. We will review your search and AI presence, then return a written quote with a clear scope."
+  },
+  "legacy_body": "PhoenixAiSearch",
+  "migrated_from": "/ai-search-optimization-phoenix"
+}

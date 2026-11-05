@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ServiceContentPage from "../../templates/ServiceContentPage.astro";
+import CountryHubLinks from "../../components/locations/CountryHubLinks.astro";
+import { getServicePage } from "../../lib/legacy-pages.mjs";
+import { aiSearchPricing } from "../../lib/pricing";
+import { baseGraph, breadcrumbNode, faqPageNode, serviceNode, webPageNode } from "../../lib/schema";
+
+const service = "ai-search-optimization";
+const pathname = "/ai-search-optimization";
+const data = getServicePage("/ai-search-optimization");
+
+if (!data) {
+  throw new Error("Missing AI search service content for /ai-search-optimization/");
+}
+
+const metaTitle = "AI Search Optimization (GEO & AEO) | Infused Agency";
+const metaDescription =
+  "AI search optimization (GEO and AEO) for businesses across Ontario, served remotely from the Niagara region, so AI assistants quote you accurately.";
+
+const faqs = data.content.faqs.map((faq: { q: string; a: string }) => ({ q: faq.q, a: faq.a }));
+
+const breadcrumbs = [{ name: "Home", href: "/" }, { name: "AI Search Optimization" }];
+
+const jsonLd = [
+  ...baseGraph(),
+  webPageNode({ url: pathname, name: data.title, description: data.summary }),
+  breadcrumbNode(breadcrumbs, pathname),
+  serviceNode({
+    url: pathname,
+    name: data.name,
+    description: data.summary,
+    serviceType: data.group,
+  }),
+  ...(faqs.length ? [faqPageNode(pathname, faqs)] : []),
+];
+---
+
+<BaseLayout title={metaTitle} description={metaDescription} canonical={pathname} jsonLd={jsonLd}>
+  <ServiceContentPage data={data} pricing={aiSearchPricing} />
+  <CountryHubLinks
+    service={service}
+    heading="AI search optimization by location"
+    description="Pick a country, then a region. Every city page is written for its own market and delivered remotely from the Niagara region."
+  />
+</BaseLayout>
