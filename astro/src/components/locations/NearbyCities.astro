@@ -1,0 +1,65 @@
+---
+/**
+ * Nearby-cities block. Reuses the chip list styling already used by the
+ * therapist, AI SEO and Niagara city pages for their related-location links.
+ *
+ * Neighbours are the six closest cities by distance, computed in
+ * src/lib/locations.mjs. A neighbour is a link only when that city has a live
+ * page for the same service; everything else renders as plain text so no page
+ * is ever linked before it exists.
+ */
+import Icon from "../ui/Icon.astro";
+import Section from "../ui/Section.astro";
+
+interface Neighbour {
+  city: { name: string; slug: string };
+  region: { name: string; code: string };
+  country: { name: string };
+  href: string;
+  live: boolean;
+}
+
+interface Props {
+  cityName: string;
+  neighbours: Neighbour[];
+  serviceLabel: string;
+}
+
+const { cityName, neighbours, serviceLabel } = Astro.props;
+const linked = neighbours.filter((neighbour) => neighbour.live);
+---
+
+<Section
+  tone="tint"
+  eyebrow="Nearby"
+  index=""
+  heading={`Cities near ${cityName}`}
+  description={`The closest cities to ${cityName}. We link the ${serviceLabel.toLowerCase()} pages that are published and list the rest for context.`}
+>
+  <ul class="chip-list" data-shared>
+    {
+      neighbours.map((neighbour) => (
+        <li>
+          {neighbour.live ? (
+            <a class="chip" href={neighbour.href}>
+              {neighbour.city.name}, {neighbour.region.code}
+              <Icon name="arrow-right" />
+            </a>
+          ) : (
+            <span class="chip">
+              {neighbour.city.name}, {neighbour.region.code}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+  {
+    linked.length === 0 && (
+      <p class="card__meta" style="margin-top: 1rem;">
+        No neighbouring city has a published page for this service yet. We add
+        these pages in batches, and links appear as each one goes live.
+      </p>
+    )
+  }
+</Section>

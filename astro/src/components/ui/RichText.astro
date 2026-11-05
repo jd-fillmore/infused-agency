@@ -1,46 +1,18 @@
 ---
-interface LinkSegment {
-  type: "link";
-  value: string;
-  href: string;
-}
-
-interface TextSegment {
-  type: "text";
-  value: string;
-}
-
 interface Props {
   text: string;
 }
 
 const { text } = Astro.props;
 
-// Legacy content uses Markdown-style `[label](/href)` tokens inside plain
-// paragraph strings. Split them without rendering arbitrary HTML.
-const segments: Array<LinkSegment | TextSegment> = [];
-const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
-let lastIndex = 0;
-let match: RegExpExecArray | null;
-
-while ((match = pattern.exec(text)) !== null) {
-  if (match.index > lastIndex) {
-    segments.push({ type: "text", value: text.slice(lastIndex, match.index) });
-  }
-  segments.push({ type: "link", value: match[1], href: match[2] });
-  lastIndex = pattern.lastIndex;
-}
-if (lastIndex < text.length) {
-  segments.push({ type: "text", value: text.slice(lastIndex) });
-}
+// Site copy is authored in this repository, so it is trusted. Two link styles
+// exist in it: inline HTML (`<a href="/...">label</a>`, used by the location
+// and service overrides) and legacy Markdown tokens (`[label](/href)`). Both
+// must render as real links, so convert the Markdown tokens to anchors and
+// render the result as HTML rather than escaping it.
+const withLinks = text.replace(
+  /\[([^\]]+)\]\(([^)\s]+)\)/g,
+  (_match, label: string, href: string) => `<a href="${href}">${label}</a>`
+);
 ---
-
-{
-  segments.map((segment) =>
-    segment.type === "link" ? (
-      <a href={segment.href}>{segment.value}</a>
-    ) : (
-      <Fragment>{segment.value}</Fragment>
-    )
-  )
-}
+<Fragment set:html={withLinks} />

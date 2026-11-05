@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving the GTA remotely.",
+  "neighbourhoods": [
+    "Downtown Toronto",
+    "North York",
+    "Scarborough",
+    "Etobicoke",
+    "Vaughan"
+  ],
+  "local_market_context": "<p>\n            Search for almost any service in Toronto and you meet a long column\n            of businesses offering something similar, several of them larger,\n            better known and spending more on advertising. For a smaller firm,\n            the old advantage of a keyword-rich homepage has largely gone. What\n            remains is the ability to be understood quickly and accurately, by a\n            person and by the software that now summarises the options.\n          </p>\n          <p>\n            Buyers increasingly ask an assistant to do the shortlisting. A\n            question such as &ldquo;who handles commercial HVAC in Etobicoke and\n            can come this week?&rdquo; or &ldquo;which Toronto clinic does\n            paediatric assessments?&rdquo; produces a compact answer, not ten\n            blue links. The assistant picks from businesses whose services,\n            coverage, hours and credentials it can find and reconcile.\n          </p>\n          <p>\n            That is where a clear identity matters more than volume. We work on\n            the parts that let an AI tool separate you from a lookalike: what you\n            sell, who it suits, which parts of the GTA you genuinely cover, and\n            the evidence behind your claims. Infused Agency is based in St.\n            Catharines and works with Toronto clients remotely; we do not pretend\n            to have a Toronto office.\n          </p>\n          <p>\n            Businesses serving Hamilton and the western end of Lake Ontario can\n            read how the same work applies there on our\n            <a href=\"/ai-search-optimization/canada/ontario/hamilton\">AI SEO in Hamilton</a> page.\n          </p>",
+  "market_heading": "Why AI search optimization in Toronto rewards a clearer offer",
+  "market_eyebrow": "A competitive field",
+  "sources": [
+    "https://www.toronto.ca/"
+  ],
+  "hero": {
+    "eyebrow": "AI SEO",
+    "description": "Toronto buyers can shortlist a supplier without ever seeing a page of results. We help established and growing businesses state their services, coverage and credentials so plainly that an AI assistant can separate them from the dozens of firms offering something similar.",
+    "image": "/images/ai-seo-toronto.webp",
+    "imageAlt": "AI SEO services for businesses looking for customers in Toronto"
+  },
+  "faq_heading": "How to get recommended by ChatGPT: Toronto questions",
+  "faqs": [
+    {
+      "q": "How can a smaller Toronto business compete for AI search visibility?",
+      "a": "Large brands usually win on recognition, not on precision. A smaller business can be the clearer answer for a narrower question: a specific service, a particular part of the GTA, a faster response or a specialist capability. We build pages that state those differences plainly and support them with verifiable detail, so an assistant has a reason to include you alongside, or instead of, a household name."
+    },
+    {
+      "q": "Is AI SEO vs traditional SEO a choice, or do they work together?",
+      "a": "It builds on it. Crawlable pages, sensible internal links, accurate titles and a maintained Google Business Profile remain the foundation. What changes is the emphasis: passages that answer a question directly, descriptions that stay consistent across sources, and a habit of checking how assistants summarise the company. We would rather strengthen what exists than sell a parallel programme."
+    },
+    {
+      "q": "How should a multi-location GTA business organise AI search pages?",
+      "a": "Start with one page per real location, each carrying its own address, hours, phone number and catchment, then keep service pages separate from geography. A branch in Vaughan and a branch in Scarborough should not share identical copy with the town name changed. If a location is a mailing address rather than a place customers visit, say so honestly and describe the actual service area instead."
+    },
+    {
+      "q": "How likely is ChatGPT to recommend our Toronto business?",
+      "a": "Nobody can promise it. The providers choose their own sources, rank them differently and revise answers without notice. Our job is to make your services, coverage and credentials easy to read and hard to misrepresent. We report what we changed and what we observed, and we do not sell a promised citation, position or enquiry count."
+    },
+    {
+      "q": "How long does AI SEO in Toronto take to show any change?",
+      "a": "The honest answer is that nobody can date it. It depends on the state of your site, how contradictory your existing listings are, how crowded your category is and how quickly useful pages can be produced. We sequence the work so foundations and obvious errors are handled first, then report on changes as they appear."
+    },
+    {
+      "q": "What does AI SEO cost for a Toronto business?",
+      "a": "AI search is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) CAD, all before HST. Each is spread across a 12-month payment plan, so the monthly amount is an installment toward the project — not an ongoing retainer. A firm with several branches and a long service catalogue may need a larger scope, which we confirm in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with businesses across the GTA, not only downtown Toronto?",
+      "a": "No. Infused Agency is based in St. Catharines and works with companies throughout the Greater Toronto Area and elsewhere in Ontario. We handle meetings remotely and travel when it is useful. What we do not do is claim a Toronto office or imply a local storefront we do not have."
+    },
+    {
+      "q": "How is AI search optimization in Toronto measured?",
+      "a": "We agree the measures before starting: search visibility, profile actions, calls, form submissions and a written record of how assistants describe the business. Reviews return to that baseline. If a measure has stalled, the report says so and sets out the next recommendation instead of hiding it."
+    },
+    {
+      "q": "What does GEO mean in AI search optimization?",
+      "a": "GEO stands for generative engine optimization: the work of making a business easy for AI systems such as ChatGPT, Perplexity and Google AI Overviews to understand, quote and cite. It is not geographic targeting, although clear local detail still helps a page appear in location-aware answers."
+    }
+  ],
+  "cta": {
+    "heading": "Toronto AI SEO that starts from facts you can verify",
+    "description": "Send us your website and the areas you serve. We will review your search and AI presence, then return a written quote with a clear scope."
+  },
+  "legacy_body": "TorontoAiSearch",
+  "migrated_from": "/ai-seo-toronto"
+}

@@ -1,0 +1,152 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Edmonton remotely from Niagara.",
+  "neighbourhoods": [
+    "Old Strathcona",
+    "Oliver",
+    "Garneau",
+    "Downtown Edmonton",
+    "Beverly"
+  ],
+  "local_market_context": [
+    "Edmonton therapy searches are usually specific: a psychologist downtown, counselling near Whyte Avenue, trauma therapy in the west end, or an Alberta-licensed clinician who works online with people across the province. Someone may also be filtering by approach, cost, availability or experience with a particular population. A page that only offers “therapy in Edmonton” does little for that person.",
+    "We organise the site around those searches: a clear homepage, specialty pages, and an office or service-area page covering the Edmonton neighbourhoods and nearby communities the practice serves. Internal links connect the concern, the clinician and the practical steps to book.",
+    "We then fix the foundations that let those pages perform: crawlable navigation, descriptive titles and headings, quick mobile layouts and metadata that reflects the content. Edmonton and Alberta are named where they are accurate, not sprinkled through the copy.",
+    "Edmonton is a capital city with a particular shape: government, health and university employment, a dense core around Oliver and downtown, student streets around Garneau and the University of Alberta, and older commercial strips like Old Strathcona along Whyte Avenue. Practices here also draw from St. Albert, Sherwood Park and Spruce Grove, so a site that only names Edmonton can miss the surrounding capital region. Where a clinician genuinely sees clients from those communities, saying so is more useful than another identical page.",
+    "Registration through the College of Alberta Psychologists, and the province's rules for telehealth and advertising, shape how a page can be written: which titles a clinician may use, what a practice may claim and how a first appointment is described. We treat those as constraints rather than marketing opportunities, and keep the wording about services, fees and availability in line with what the practice actually offers.",
+    "Edmonton searches also follow the river valley and the ring roads. Someone in Mill Woods is a long drive from Callingwood, and a page that claims to serve \"all of Edmonton\" without naming a part of town reads as generic to a client who knows the city. Group practices with clinicians in different quadrants are usually better served by one page per real office, plus a service-area statement that matches where sessions actually happen."
+  ],
+  "market_heading": "How AI search is changing the way Edmonton clients find a therapist",
+  "market_eyebrow": "The Edmonton market",
+  "regulatory_body": {
+    "name": "College of Alberta Psychologists (CAP)",
+    "url": "https://www.cap.ab.ca/"
+  },
+  "sources": [
+    "https://www.cap.ab.ca/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Edmonton therapists and group practices become easier to find in Google and in AI answers when people search by concern, neighbourhood or Alberta registration. We build the pages, profile details and technical foundations that make a practice easier to understand and contact.",
+    "image": "/images/ai-search-optimization-and-seo-for-edmonton-therapists.webp",
+    "imageAlt": "AI search optimization SEO services for Edmonton therapists"
+  },
+  "services": {
+    "heading": "AI search optimization services for an Edmonton therapy practice",
+    "description": "Six connected services, scoped to the practice rather than sold as separate location pages.",
+    "cards": [
+      {
+        "title": "Edmonton search intent and on-page SEO",
+        "body": "We map the searches Edmonton clients use, from a psychologist downtown to counselling near Whyte Avenue or an online therapist licensed in Alberta. Then we write titles, headings and page copy that name the concern and the community without repeating keywords. A practice in St. Albert and one in Mill Woods may need different pages, even when they offer similar specialties."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We improve the Google Business Profile, choose categories and service areas honestly, and build an office or service-area page that reflects how the practice works. Consistent name, address and phone details, plus relevant Alberta professional directories, help Edmonton clients confirm they have found a real local practice."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants need facts they can extract: who you help, where you are registered in Alberta, which specialties you offer and how someone books. We organise the site and structured data so those details are explicit and consistent, then review how assistants describe the practice. No agency can guarantee an AI citation. Answer engine optimization (AEO) and generative engine optimization (GEO) are the labels for this work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Specialty pages and short articles can answer the questions people ask before they call: what a first session involves, how benefits and receipts work in Alberta, whether telehealth is available across the province, and how to choose a therapist for a particular concern. The writing stays practical and avoids clinical promises. Clear question-and-answer content helps both Google and AI assistants."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We audit indexing, speed, mobile layout, broken links, duplicate titles, structured data and crawl paths. Practice sites often accumulate retired pages, leftover plugins and forms that quietly stop working. Fixing these basics makes every page easier to find and the path to an appointment easier to follow."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Believable references do the trust work: professional directories, Alberta association profiles, community and business listings, local publications, training profiles and genuine reviews. We refresh availability, refine pages, track the queries that lead to inquiries and correct what has slipped each month. Visibility is maintained, not installed."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Edmonton therapists",
+    "paragraphs": [
+      "When someone asks an AI assistant for a trauma therapist in Edmonton, a counsellor near Whyte Avenue or an online psychologist licensed in Alberta, the response is built from sources the tool can read and trust. Clear, consistent pages give it the facts: who the clinician helps, where they are registered, what they specialise in and how to arrange a first appointment.",
+      "AI search optimization, or AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related practice of writing pages that provide direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems consult. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider programme.",
+      "The labels overlap, and each describes part of the same SEO work rather than a separate magic service. No agency can guarantee a citation or a placement in AI answers. As an AI search optimization agency, what we can do is make the facts about your Edmonton practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Edmonton therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Edmonton therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with Alberta psychologists, registered social workers, counselling therapists and counsellors, from solo clinicians to established groups. Some practices serve a single Edmonton neighbourhood; others see clients online across the province.",
+      "Online-only practices need Alberta registration and telehealth set out clearly. Groups need a structure that makes sense of several clinicians, specialties and locations. The scope follows the practice; the standard stays the same: accurate information, an obvious next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in Alberta",
+      "Growing a group with several clinicians or specialties",
+      "Serving Edmonton, St. Albert, Sherwood Park and the capital region",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Edmonton therapists choose Infused for AI search optimization",
+    "paragraph": "Choosing who handles your search visibility means trusting them with your professional reputation. Therapy marketing in Alberta has to meet advertising standards and preserve the confidence clients place in a clinician. We keep every claim accurate and reviewable, avoid guarantees and never promise clinical outcomes. The work is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We begin with facts about your Edmonton practice: the clients you support, your Alberta registration, the specialties you offer and how to book. Nothing goes live as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "Google’s rankings are outside any agency’s control, and SEO should not be sold as a guaranteed outcome. We also avoid wording that suggests a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "We build pages around the concerns people search for in Edmonton — trauma, anxiety, couples work, teens, EMDR or another specialty — and connect them to the communities and session formats your practice really serves. Each page has a clear job without manufacturing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Alberta regulatory bodies and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need closer review, and leave compliance decisions with the practice and its advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from Edmonton therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “psychologist Edmonton”?",
+      "a": "A solo practice can compete for Edmonton searches when the site is clear about its work and the communities it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We target realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for an Alberta-registered therapist, a specific specialty or a clinician who offers telehealth from Edmonton. The site should state that sessions are online, which parts of Alberta you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention St. Albert, Sherwood Park or Mill Woods?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every quadrant or nearby city. If a community produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "No specific timeline is promised. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "The engagement is a 3-month implementation project with three packages — Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) — paid over 12 monthly installments. The monthly amount is a payment toward the project, not an ongoing retainer. A group practice with several clinicians may need a larger scope, confirmed in writing after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. A group practice often needs a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect Alberta licensing bodies and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with Alberta regulatory bodies and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It is the work of making a practice understandable to AI tools: accurate, consistent details about specialties, Alberta registration, location and booking, written clearly on the site and across profiles. AEO (answer engine optimization) and GEO (generative engine optimization) describe parts of the same effort. Nobody can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Edmonton therapy practice with AI search optimization",
+    "description": "Share your website and the Edmonton areas you serve. We will review your local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-edmonton"
+}

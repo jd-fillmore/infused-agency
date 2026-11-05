@@ -1,0 +1,69 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving the DMV remotely.",
+  "neighbourhoods": [
+    "Downtown DC",
+    "Capitol Hill",
+    "Arlington",
+    "Alexandria",
+    "Bethesda"
+  ],
+  "local_market_context": "<p>\n            Firms in the DMV compete against counterparts in Tysons, Bethesda\n            and Rosslyn that could be described by the same three words. For\n            professional services especially &mdash; law, government\n            contracting, associations, consultancies &mdash; the traditional\n            homepage full of adjectives has stopped doing its job, because\n            buyers and now the software summarising for them need specifics,\n            not posture.\n          </p>\n          <p>\n            Ask an assistant something a DMV buyer would genuinely type:\n            \"which cybersecurity firm near Tysons works with federal\n            contractors?\" or \"who staffs an Arlington office on Fridays?\" The\n            answer is built from businesses whose jurisdictions, coverage and\n            credentials line up cleanly. Anything vague gets skipped in\n            favour of what can be verified.\n          </p>\n          <p>\n            That distinction drives how we work: separating what you sell\n            from who it suits, marking the geography &mdash; the District,\n            Northern Virginia, suburban Maryland &mdash; in terms an\n            assistant can reconcile, and anchoring every claim in evidence.\n            Infused Agency operates from St. Catharines and serves the\n            Washington market remotely; we make no claim to a K Street\n            address.\n          </p>\n          <p>\n            Companies further south can compare how the same programme is\n            applied in another capital-region market on our\n            <a href=\"/ai-search-optimization/usa/georgia/atlanta\">AI search optimization in Atlanta</a>\n            page.\n          </p>",
+  "market_heading": "Why AI search optimization in Washington, DC rewards a clearer offer",
+  "market_eyebrow": "A competitive field",
+  "sources": [
+    "https://dc.gov/"
+  ],
+  "hero": {
+    "eyebrow": "AI SEO",
+    "description": "Washington, DC is perhaps America's most competitive professional market, where dozens of firms can credibly claim the same expertise. We help established companies across the DMV cut through that sameness with service pages, profiles and structured facts that assistants can read, check and repeat.",
+    "image": "/images/ai-search-optimization-washington-dc.webp",
+    "imageAlt": "AI search optimization services for businesses looking for customers in Washington, DC"
+  },
+  "faq_heading": "How to get recommended by ChatGPT: Washington, DC questions",
+  "faqs": [
+    {
+      "q": "How can a smaller DC business compete for AI search visibility?",
+      "a": "In this market the giants are enormous, but their answers stay generic. A boutique consultancy in Dupont Circle or a specialist shop in Alexandria can be the sharper reply to a precisely framed question &mdash; an exact service, a specific jurisdiction, a named certification. We build the pages that make those differences unmissable."
+    },
+    {
+      "q": "Is AI SEO vs traditional SEO a choice, or do they work together?",
+      "a": "One discipline extends the other. Crawlable pages, accurate titles, sensible internal links and a current Google Business Profile still come first. AI work then asks for more from the same material: answers written to be lifted whole, facts kept identical on every profile, and a routine of re-reading what assistants say about you."
+    },
+    {
+      "q": "How should a business spanning DC, Maryland and Virginia organise its AI search pages?",
+      "a": "Start with one honest page per real location, with the address, hours and phone belonging to that place. Where you have no office but serve clients &mdash; say, licensed work across Bethesda, Rockville and Fairfax &mdash; describe the service area plainly rather than minting a location page for each suburb."
+    },
+    {
+      "q": "How likely is ChatGPT to recommend our Washington, DC business?",
+      "a": "Nobody can promise that, and in a market this crowded nobody should. Providers choose their own sources and revise them silently. Our contribution is making your services, credentials and coverage consistent and quotable, then documenting what changed and what we observed &mdash; without selling a citation."
+    },
+    {
+      "q": "How long does AI SEO in Washington, DC take to show any change?",
+      "a": "No honest date exists. It depends on the state of your site, how much your current listings contradict each other, how thick the competition is and how quickly solid pages can be produced. We fix foundations and obvious contradictions first, then publish and re-check the same AI questions over time."
+    },
+    {
+      "q": "What does AI SEO cost for a Washington, DC business?",
+      "a": "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project, not a retainer. Firms with several offices and a long service catalogue may need a larger scope, confirmed in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with businesses across the DMV, not just inside the District?",
+      "a": "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies throughout Greater Washington and elsewhere in the United States. Meetings run remotely and travel is arranged when it helps. We do not claim a DC address we do not have."
+    },
+    {
+      "q": "How is AI search optimization in Washington, DC measured?",
+      "a": "We fix the measures before any work begins: search visibility, profile actions, calls, form submissions and a written record of how assistants describe the company. Reviews return to that baseline. Stalled measures are reported as stalled, with the next recommendation attached."
+    },
+    {
+      "q": "What does GEO mean in AI search optimization?",
+      "a": "GEO stands for generative engine optimization: the work of making a business easy for AI systems such as ChatGPT, Perplexity and Google AI Overviews to understand, quote and cite. It is not geographic targeting, although clear local detail still helps a page appear in location-aware answers."
+    }
+  ],
+  "cta": {
+    "heading": "Washington, DC AI SEO that starts from facts you can verify",
+    "description": "Send us your website and the jurisdictions you serve, from Arlington to Bethesda. We will review your search and AI presence, then return a written quote with a clear scope."
+  },
+  "legacy_body": "WashingtonDcAiSearch",
+  "migrated_from": "/ai-search-optimization-washington-dc"
+}

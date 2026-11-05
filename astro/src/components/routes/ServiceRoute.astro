@@ -16,7 +16,7 @@ if (!data) {
   throw new Error(`Missing service page data for ${pathname}`);
 }
 
-const pricing = pathname === "/ai-search" ? aiSearchPricing : undefined;
+const pricing = pathname === "/ai-search-optimization" ? aiSearchPricing : undefined;
 
 const faqs = data.content.faqs.map((faq: { q: string; a: string }) => ({
   q: faq.q,

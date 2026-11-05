@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving the DC metro remotely.",
+  "neighbourhoods": [
+    "Capitol Hill",
+    "Georgetown",
+    "Arlington",
+    "Alexandria",
+    "Bethesda"
+  ],
+  "local_market_context": [
+    "Nowhere is a therapy search more regional than in the DC area. Clients MOVE constantly, work near federal agencies and commute across the Potomac, so a clinician in Dupont Circle may serve Bethesda, and one in Alexandria may work with clients in Silver Spring. Licensure follows the same pattern: many therapists hold credentials in DC, Maryland and Virginia at once, or see clients online wherever they are licensed. Searches reflect it — anxiety therapy near the Red Line, a trauma specialist in Clarendon, an EMDR clinician who sees federal employees. “therapy in Washington DC” answers none of those layers.",
+    "We design sites around this regional reality: a homepage stating who you work with, specialty pages that match real concern-plus-place searches, and a locations framework that explains offices, service areas and licensing in one place. Separating where you are licensed from where the nearest office actually is saves clients confusion and saves you questions at intake. Then comes the technical base — crawlable navigation, honest titles, quick mobile pages, metadata that agrees with the copy — so search engines and AI tools can lift those facts cleanly.",
+    "This is also one of the most competitive private-pay markets in the country, and the practitioner base is sophisticated. Tysons and Bethesda practices market hard, and many already know SEO. Being genuinely readable to search engines and AI assistants, with claims you can stand behind, is what separates practices that stay visible from those that hope."
+  ],
+  "market_heading": "How AI search is changing the way Washington, DC clients find a therapist",
+  "market_eyebrow": "The Washington, DC market",
+  "regulatory_body": {
+    "name": "DC Board of Professional Counseling",
+    "url": "https://doh.dc.gov/page/board-professional-counseling"
+  },
+  "sources": [
+    "https://doh.dc.gov/page/board-professional-counseling"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps therapists and counseling practices in Washington, DC and across the DMV — Arlington, Alexandria, Bethesda, Silver Spring, Rockville, Fairfax and Tysons — appear where clients are looking, including Google and the AI answers more people now ask first. We build the pages, profile details and technical base that make finding you simple.",
+    "image": "/img/seo-for-therapists-washington-dc.webp",
+    "imageAlt": "Key Bridge over the Potomac River with the Rosslyn skyline, looking toward Washington, DC"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Washington, DC therapy practice",
+    "description": "Six connected areas of work, planned around DMV practices rather than sold as interchangeable location templates.",
+    "cards": [
+      {
+        "title": "DC, Maryland and Virginia search intent and on-page SEO",
+        "body": "We map real searches from Dupont Circle to Rockville and Reston, then write titles, headings and copy that name the concern, the community and the licensure accurately. A clinician serving Chevy Chase is often serving DC too; the site should say so when it is true and stay quiet when it is not. AEDS-focused work with federal employees and contractor populations is treated as its own set of queries rather than an afterthought."
+      },
+      {
+        "title": "Local SEO across three jurisdictions",
+        "body": "Practices in the DMV may have an office in one state, a license in three and clients across all of them. We structure the Google Business Profile, categories, service areas and location pages to separate the office address, the service area (Bethesda, Arlington, Alexandria, Fairfax, Tysons) and where telehealth extends. Relevant DC, Maryland and Virginia directories reinforce the regional picture."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "Assistants need extractable facts: populations served, licensure by state, specialties, fees where you choose to show them and how to book. We make those facts explicit in copy and structured data and then review how ChatGPT, Gemini and Google AI Overviews currently describe comparable practices. AEO and GEO are the labels for this layer of work; citations are not promised to anyone."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "In a market this literate, vague pages get skipped. Clients ask specific things — Great, how do superbills work if I am in Montgomery County, can I see a Virginia-licensed clinician while living in DC, is EMDR or IFS recommended for my concern. We write pages that answer plainly, without clinical claims, and keep the useful answers quotable."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "Years of growth happen quickly in DC, and sites accumulate retired pages, duplicated location content and forms that stopped submitting somewhere along the way. Periodic audits of indexing, speed, mobile layout and crawl paths keep the site a working tool rather than a static brochure."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Reputation in the DMV carries extra weight — clients compare practices quickly and assistants weigh consistent sources. DC, Maryland and Virginia association profiles, employer and EAP directories, trainings, speaking and genuine reviews build the trust picture your practice deserves. Monthly work refreshes availability, sharpens answers, tracks which searches bring inquiries and fixes drift."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Washington, DC therapists",
+    "paragraphs": [
+      "A client may ask an assistant for a trauma therapist in Foggy Bottom, or a couples counselor near Arlington who accepts referral access via EAP. The answer the tool gives is assembled from details it found and trusted online: who the clinician works with, where they are licensed, how appointments happen. Practices with confusing license information, vague copy or unverified facts lose out regardless of clinical quality.",
+      "AI SEO is the practice of making those facts legible and citable. Answer engine optimization (AEO) shapes the answers themselves; generative engine optimization (GEO) keeps the practice consistent across the many places assistants look. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> outline the same thinking applied across industries.",
+      "Nobody can promise you a paragraph in ChatGPT or an AI Overview. What we can do is control the parts that are actually controllable: accurate licensure, clear specialties, honest communities served, easy booking and a technical site those systems can read."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Washington, DC therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Washington, DC therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with psychologists, licensed clinical social workers, LPCs, LMFTs and licensed professional counselors who hold DC credentials, Maryland and Virginia credentials, or all three. Some work from an office in Dupont Circle or Friendship Heights; others are fully online and serve clients throughout the DMV or beyond.",
+      "Solo clinicians often need a first page that matches how sophisticated local clients actually search. Multi-clinician groups need structure that keeps a dozen biographies, specialties and locations coherent. We adjust the scope to the practice and hold one line on quality: truthful claims, easy next steps, no promised results."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and licensed in DC, Maryland or Virginia",
+      "Growing a group with several clinicians or specialties",
+      "Serving Washington, DC, Arlington, Alexandria, Bethesda, Silver Spring, Rockville, Fairfax and Tysons",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why therapists in Washington, DC choose Infused for AI search optimization",
+    "paragraph": "A marketing decision in this market touches both your clinical reputation and your standing across three sets of regulators — the DC board, the Maryland board and the Virginia board, depending on where you are licensed. Advertising keeps to advertising; clinical claims stay out. We work only from what is true about your practice, describe results cautiously and let the strength of clear information do the persuading.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "Licensure is stated exactly — DC, Maryland and Virginia each named where true — with specialties, populations and booking details matching what your practice actually offers. Nothing is published that we cannot trace back to fact."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "Search rankings change and AI assistants are not ours to promise, so we never do. Wording that hints at a clinical result or recovery is avoided equally. The promise behind our work is clarity, accuracy and inquiries, not outcomes beyond them."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "From trauma and anxiety to couples work, teen counseling, EMDR, IFS and HSP-focused practices, we build from the concerns DC-area clients genuinely search for and attach the right communities and formats. Every page has a distinct purpose rather than a formula."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Boards in DC, Maryland and Virginia each hold their own standards, and professional codes set the tone. We keep copy plain-speak and non-misleading, raise anything that could use a second look, and leave final calls squarely with you and, where relevant, your advisers."
+      }
+    ]
+  },
+  "testimonial_heading": "What Washington, DC therapists say about working with an AI SEO agency",
+  "faq_heading": "AI search optimization and GEO questions from Washington, DC therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Washington DC”?",
+      "a": "Yes, by being more specific than “therapist Washington DC”. Specialty pages, complete Google Business Profile details, real client reviews and a quick mobile site do the ranking work. Competition in the DMV is intense but the clients are unusually research-driven, which favors practices with genuinely useful pages."
+    },
+    {
+      "q": "Is SEO useful if I am licensed in DC, Maryland and Virginia?",
+      "a": "It is where licensure often decides whether the client can work with you at all, so make it visible. We build pages that state which states you are licensed in and where telehealth reaches, alongside each specialty and location so the reader matches themselves to you correctly the first time."
+    },
+    {
+      "q": "Should the site mention Arlington, Bethesda or Silver Spring?",
+      "a": "Only where they are genuinely part of your practice — an office location, a service area or where telehealth reaches. A clear service-area page beats a thin duplicate page for every suburb. If a particular community keeps bringing steady demand, its own page may be worth writing later."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "We do not promise dates. Ranking movement depends on the starting site, local competition, reviews and how steadily the work continues. Early progress is usually the fixes themselves, then reports showing which searches are finding which pages."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "The engagement is a 3-month implementation project with Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) packages spread over 12 monthly payments. The monthly figure is an installment, not an ongoing retainer. Practices with several clinicians or locations confirm scope in writing after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Groups in the DC area often need their structure clarified before anything useful can rank: clinician rosters, specialties, office locations across three states and the inquiry paths between them. We plan the site as one coherent whole, without losing individual clinicians in the shuffle."
+    },
+    {
+      "q": "Does your marketing respect DC, Maryland and Virginia licensing boards?",
+      "a": "We avoid guarantees, clinical claims and anything misleading, and keep advertising clearly advertising. You remain responsible for compliance with whichever boards license you, and we flag any copy that could merit closer review by you or your professional advisers."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It is the work of making a practice easy for AI tools to read and cite: specialties, licensure by state, locations and booking details, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are applied labels for parts of this. None of it comes with a guaranteed citation."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Washington, DC therapy practice with AI search optimization",
+    "description": "Share your website and the DMV communities your practice serves — from Arlington and Alexandria to Bethesda, Silver Spring and Tysons. We will review your visibility, mark the searches worth pursuing and send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/ai-seo-for-therapists-washington-dc"
+}

@@ -1,0 +1,128 @@
+---
+import Button from "../components/ui/Button.astro";
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { getServiceConfig, cityPath, countryPath, serviceRootPath, displayName } from "../lib/locations.mjs";
+
+interface Props {
+  service: string;
+  country: any;
+  region: any;
+  cities: any[];
+  hub: {
+    overview: string | string[];
+    city_blurbs: Record<string, string>;
+  };
+  siblings: Array<{ href: string; label: string }>;
+}
+
+const { service, country, region, cities, hub, siblings } = Astro.props;
+const config = getServiceConfig(service);
+const regionName = region.name;
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: config.rootLabel, href: serviceRootPath(service) },
+  { name: country.name, href: countryPath(service, country) },
+  { name: regionName },
+];
+
+const overview = Array.isArray(hub.overview) ? hub.overview : [hub.overview];
+const h1 =
+  service === "ai-search-optimization"
+    ? `AI Search Optimization Services in ${regionName}`
+    : `SEO for Therapists in ${regionName}`;
+---
+
+<PageHero
+  title={h1}
+  description={`${cities.length} ${cities.length === 1 ? "city" : "cities"} in ${regionName} where we have published ${config.locationLabel} pages, served remotely from the Niagara region.`}
+  breadcrumbs={breadcrumbs}
+  eyebrow={config.shortName}
+  ctaLabel="Get a Free Quote"
+>
+  <Fragment slot="aside">
+    <h2>{config.rootLabel} in {regionName}</h2>
+    <p>
+      Every page below is written for its own market. We add cities in batches
+      and only link a page once its content is reviewed and live.
+    </p>
+    <Button href="/get-a-quote" variant="gold" block arrow>Get a Free Quote</Button>
+  </Fragment>
+</PageHero>
+
+<Section eyebrow="Overview" index="01" heading={`${config.name} for ${regionName} businesses`}>
+  <div class="prose reveal" style="max-width: 56rem;">
+    {overview.map((paragraph) => <p>{paragraph}</p>)}
+  </div>
+</Section>
+
+<Section
+  tone="tint"
+  eyebrow="Cities"
+  index="02"
+  heading={`${config.locationLabel} by city in ${regionName}`}
+  description="Each city page covers that market's competition, the neighbourhoods that matter and how the programme applies there."
+>
+  <div class="grid grid--2 reveal-group">
+    {
+      cities.map((record) => (
+        <a class="card" href={cityPath(service, record.country, record.region, record.city)}>
+          <h3 class="card__title">
+            {displayName(record.city)}
+            <Icon name="arrow-right" />
+          </h3>
+          <p class="card__text">{hub.city_blurbs[record.city.slug]}</p>
+        </a>
+      ))
+    }
+  </div>
+</Section>
+
+<Section
+  tone="contrast"
+  eyebrow="Related"
+  index="03"
+  heading={`Other ${config.shortName} locations and services`}
+  description="Move up to the country hub or across to another region."
+>
+  <ul class="chip-list" data-shared>
+    <li>
+      <a class="chip" href={countryPath(service, country)}>
+        {country.name} {config.locationLabel}
+        <Icon name="arrow-right" />
+      </a>
+    </li>
+    <li>
+      <a class="chip" href={serviceRootPath(service)}>
+        {config.name} services
+        <Icon name="arrow-right" />
+      </a>
+    </li>
+    {
+      siblings.map((link) => (
+        <li>
+          <a class="chip" href={link.href}>
+            {link.label}
+            <Icon name="arrow-right" />
+          </a>
+        </li>
+      ))
+    }
+    <li>
+      <a class="chip" href="/ai-search/locations">
+        All AI search optimization locations
+        <Icon name="arrow-right" />
+      </a>
+    </li>
+  </ul>
+</Section>
+
+<CtaBand
+  eyebrow="Free quote"
+  heading={`${config.shortName} for ${regionName} businesses`}
+  description={`Tell us where you operate in ${regionName}. We will review your search and AI visibility, then send a written quote with a clear scope.`}
+  ctaLabel="Get a Free Quote"
+/>

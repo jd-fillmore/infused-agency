@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving the Delaware Valley remotely.",
+  "neighbourhoods": [
+    "Center City",
+    "University City",
+    "Fishtown",
+    "Cherry Hill",
+    "King of Prussia"
+  ],
+  "local_market_context": [
+    "Philadelphia is a walkable city inside a commuter region, and therapy searches carry that shape. Someone in Rittenhouse may want a therapist inside a fifteen-minute walk; someone in Bryn Mawr may search for a specialist along the Main Line rather than come into town; a client in Cherry Hill often stays in New Jersey for licensure reasons without always knowing it. Searches name neighborhood and concern together — trauma therapy in Fishtown, couples counseling near Passyunk, a psychologist who works with Temple students — and a homepage that says only “therapy in Philadelphia” gives them almost nothing.",
+    "We structure sites around how the region actually reads: a homepage that states who you serve, specialty pages for the concerns you treat well, and an office or service-area page that explains the city office, the suburban reach into Ardmore, Bryn Mawr and King of Prussia, and the Pennsylvania, New Jersey or Delaware licenses that shape telehealth. Links carry the reader from a concern to a clinician to a booking step without dead ends.",
+    "Beneath the copy sits the technical substance: crawl paths, mobile speed, metadata matching content, and structured data that makes licensure and locations machine-readable. Competition in Philadelphia is strong in private-pay, and AI assistants increasingly stand between the client and the website — which is exactly why well-scoped, factual pages outperform volume publishing."
+  ],
+  "market_heading": "How AI search is changing the way Philadelphia clients find a therapist",
+  "market_eyebrow": "The Philadelphia market",
+  "regulatory_body": {
+    "name": "Pennsylvania State Board of Social Workers, Marriage and Family Therapists and Professional Counselors",
+    "url": "https://www.pa.gov/agencies/dos"
+  },
+  "sources": [
+    "https://www.pa.gov/agencies/dos"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Philadelphia therapists and counseling practices become easier to find, from Center City and Fishtown to the Main Line suburbs of Ardmore and Bryn Mawr, King of Prussia, Cherry Hill and beyond, in Google and in the AI answers that now sit ahead of results. We take care of the pages, profiles and technical groundwork that make reaching you simple.",
+    "image": "/img/seo-for-therapists-philadelphia-pennsylvania.webp",
+    "imageAlt": "The Philadelphia skyline reflected in the Delaware River"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Philadelphia therapy practice",
+    "description": "Six connected areas of work, shaped around the practice and the region rather than sold as a sheet of interchangeable suburb pages.",
+    "cards": [
+      {
+        "title": "Philadelphia search intent and on-page SEO",
+        "body": "We study how Philadelphians and their near-suburban neighbors phrase searches, from Fishtown and Northern Liberties to West Philadelphia, then tie titles, headings and copy to those phrasings honestly. A Center City practice and a King of Prussia group may share a specialty but serve different geographies, so the build follows the audience rather than a formula."
+      },
+      {
+        "title": "Local SEO across the region",
+        "body": "The Google Business Profile, categories and service areas are corrected to reflect reality — an office at 15th and Locust, a service area through the Main Line, telehealth that reaches wherever licensure allows in Pennsylvania and New Jersey. Consistent contact details and relevant Pennsylvania, New Jersey and Delaware directories strengthen the regional trust picture."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "Assistants occupying the first response a client reads need extractable facts: the clients you support, your Pennsylvania license (and New Jersey or Delaware where true), your specialties and how to arrange a first appointment. We set those facts in copy and structured data, then review how assistants currently describe comparable practices. Answer engine optimization (AEO) and generative engine optimization (GEO) label the approach; citations cannot be guaranteed."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Philadelphia clinicians tend to have deep views on this — how long therapy takes, what the first two sessions look like, how insurance-network boundaries work between Pennsylvania and New Jersey, when EMDR is indicated. We turn that expertise into pages clients genuinely use, keeping them clear and free of clinical promises so both people and AI systems can use them confidently."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "Practice websites in the region, as anywhere, collect old pages, duplicate designs and contact forms that fail quietly. We audit indexing, speed, mobile behavior and crawl paths and fix those before content expansion, because a new page on a broken base compounds slowly and tells the algorithms little."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Reputation here is built through Pennsylvania and New Jersey professional directories, university and training affiliations, community publications, requested interviews and honest reviews. Each month we refresh availability, refine content, monitor which searches bring inquiries and correct anything drifting stale. Visibility in this region behaves like reputation: accumulated, then maintained."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Philadelphia therapists",
+    "paragraphs": [
+      "A client in South Philly may ask for a therapist who takes evening sessions; a client in Conshohocken may ask for a couples counselor near the Route 202 corridor. The assistant fills its answer from facts it found online and believes: who the clinician serves, where they are licensed, whether an office or telehealth fits the question.",
+      "AI search optimization, or AI SEO, means making those facts plain and trustworthy. Answer engine optimization (AEO) crafts direct, liftable answers; generative engine optimization (GEO) keeps the same facts consistent everywhere assistants read them. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain how the work extends beyond therapy practices.",
+      "No honest agency hands over guaranteed citations. What converts in this practice area is disciplined clarity — licensure named accurately, specialties attached to real communities, booking simple to find — so the systems quoting facts about your Philadelphia practice have something true to quote."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Philadelphia therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Philadelphia therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with Pennsylvania-licensed psychologists, licensed clinical social workers, LPCs, LMFTs and counselors, including NJ- and Delaware-licensed clinicians across the river and over the line. Some run a single office in Center City or Fitler Square; others practice online throughout the region; some sit on the Main Line with clients between Ardmore and Valley Forge.",
+      "Solo practices usually need less volume and better focus. Groups with multiple offices need a structure that holds several locations and licensure arrangements at once. We scale to the practice and hold the quality bar constant: facts first, one obvious next step, no guarantees or unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and licensed in Pennsylvania, New Jersey or Delaware",
+      "Growing a group with several clinicians or specialties",
+      "Serving Philadelphia, King of Prussia, Conshohocken, Ardmore, Bryn Mawr, Cherry Hill, Camden and Wilmington",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Philadelphia therapists choose Infused for AI search optimization",
+    "paragraph": "Marketing can erode the professional trust a practice has spent years building, and Pennsylvania, New Jersey and Delaware boards each set their own boundaries on advertising. We commit to claims that are traceable, language that is non-misleading and no language that promises clinical outcomes. That steadiness is exactly what a reputation-based industry needs from a marketing partner.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "Licensure by state, populations served, real communities like Cherry Hill or King of Prussia, and the booking details themselves, each verified before publication. Nothing published stands in place of a credential or an outcome the practice cannot substantiate."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency sets Google's algorithm or commands an assistant's answer, so none of that is ever promised. Phrasing that implies a clinical result or recovery is excluded by policy. The outputs we point to are visibility, clarity and more of the right inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "Trauma, couples work, young adults, EMDR, grief — we anchor pages to the concerns Philadelphia and Main Line and South Jersey clients genuinely search, then connect specialties to the neighborhoods and session formats that are actually yours. Every page earns its slot."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "State boards in Pennsylvania, New Jersey and Delaware, plus professional codes, define the lines. Copy stays clear and non-misleading, uncertain items get flagged for review and the final judgment stays with the practice and its own professional advisers."
+      }
+    ]
+  },
+  "testimonial_heading": "What Philadelphia therapists say about working with an AI SEO agency",
+  "faq_heading": "AI search optimization and GEO questions from Philadelphia therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Philadelphia”?",
+      "a": "Solo practices can hold useful Philadelphia results by being specific: a specialty plus the neighborhoods or communities genuinely served, supported by a full Google Business Profile, real reviews and a fast mobile site. We target the searches that are winnable rather than promising the flagship phrase."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. Clients still search for a Pennsylvania- or New Jersey-licensed therapist, a specialty or a clinician offering telehealth. The site should say plainly that sessions are online, which licenses you hold and where they reach, and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention King of Prussia, Cherry Hill or Bryn Mawr?",
+      "a": "Name those communities where they are genuinely yours — office locations, service areas, licensure reach. An honest service-area page performs better year after year than near-duplicate suburb pages. A community that shows real, steady demand may later justify a page written just for it."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "We do not set the timeline. Movement depends on the starting site, local competition, the review history and how steadily the work continues. The first visible progress tends to be the corrected pages and titles themselves, then reports on which searches now find which pages."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "SEO is a 3-month implementation project with Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) packages, paid over a 12-month plan. The monthly figure is an installment, not a retainer. Groups with several clinicians confirm scope in writing following a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Groups across Philadelphia and the region usually need structure before rankings matter: clinician rosters, specialties, office locations, licensure arrangements and how inquiries route. We plan the site as one coherent whole while keeping every clinician personally findable."
+    },
+    {
+      "q": "Does your marketing respect Pennsylvania and New Jersey licensing boards and professional ethics rules?",
+      "a": "We keep marketing free of guarantees, clinical claims and misleading wording. The practice remains responsible for compliance with each board that licenses it and with professional codes, and we flag anything that deserves a closer review before it ships."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It is the practice of making your specialties, licensure, locations and booking details easy for AI tools to read and cite, consistently and accurately. AEO (answer engine optimization) and generative engine optimization (GEO) label different parts of that work. No one can guarantee a citation or a place in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Philadelphia therapy practice with AI search optimization",
+    "description": "Send us your website and the communities your practice reaches, from Center City and the Main Line to King of Prussia and Cherry Hill. We will review your local visibility and the searches worth pursuing, then follow with a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/ai-seo-for-therapists-philadelphia"
+}

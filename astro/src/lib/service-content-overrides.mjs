@@ -93,7 +93,7 @@ const AI_SEARCH_CONTENT = {
     {
       heading: "AI Search Optimization Across North America",
       paragraphs: [
-        "We work with businesses across Canada and the United States, remotely from our base in Ontario. Each market has its own page covering the local competition for AI answers and how the programme applies there — such as <a href=\"/ai-seo-toronto\">Toronto</a>, <a href=\"/ai-seo-hamilton\">Hamilton</a>, <a href=\"/ai-search-optimization-atlanta\">Atlanta</a> and <a href=\"/ai-search-optimization-phoenix\">Phoenix</a>.",
+        "We work with businesses across Canada and the United States, remotely from our base in Ontario. Each market has its own page covering the local competition for AI answers and how the programme applies there — such as <a href=\"/ai-search-optimization/canada/ontario/toronto\">Toronto</a>, <a href=\"/ai-search-optimization/canada/ontario/hamilton\">Hamilton</a>, <a href=\"/ai-search-optimization/usa/georgia/atlanta\">Atlanta</a> and <a href=\"/ai-search-optimization/usa/arizona/phoenix\">Phoenix</a>.",
         "<a href=\"/ai-search/locations\">Explore AI Search Optimization Locations</a> to see every market we currently publish.",
       ],
     },
@@ -101,7 +101,7 @@ const AI_SEARCH_CONTENT = {
       heading: "AI search optimization for therapists",
       paragraphs: [
         "Therapy practices get a specialized version of this work, pairing Google SEO with AI visibility in ChatGPT and Google AI Overviews. We publish dedicated therapist location pages across North American cities and centralize them in one place.",
-        "<a href=\"/seo/for-therapists\">Explore SEO and AI Search Optimization for Therapists</a> to see how the programme applies to a practice like yours.",
+        "<a href=\"/seo-for-therapists\">Explore SEO and AI Search Optimization for Therapists</a> to see how the programme applies to a practice like yours.",
       ],
     },
   ],
@@ -111,7 +111,7 @@ const AI_SEARCH_CONTENT = {
       links: [
         { href: "/seo/niagara", label: "SEO in the Niagara Region" },
         { href: "/ai-search/locations", label: "All AI search optimization locations" },
-        { href: "/seo/for-therapists", label: "SEO & AI search optimization for therapists" },
+        { href: "/seo-for-therapists", label: "SEO & AI search optimization for therapists" },
       ],
     },
   ],
@@ -159,7 +159,7 @@ const AI_SEARCH_CONTENT = {
 };
 
 const OVERRIDES = {
-  "/ai-search": {
+  "/ai-search-optimization": {
     title: "AI Search Optimization (GEO & AEO) in Ontario | Infused Agency",
     h1: "AI Search Optimization",
     summary:

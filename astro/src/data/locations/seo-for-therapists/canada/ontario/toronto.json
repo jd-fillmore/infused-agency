@@ -1,0 +1,151 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Toronto and the GTA remotely.",
+  "neighbourhoods": [
+    "Downtown Toronto",
+    "Leslieville",
+    "North York",
+    "Scarborough",
+    "Etobicoke",
+    "The Annex"
+  ],
+  "local_market_context": [
+    "Therapy searches in Toronto are rarely broad. Someone might look for a trauma therapist downtown, couples counselling in Leslieville, CBT for anxiety in North York, or an Ontario-registered clinician who works online. They may narrow by insurance, session format, language or a life stage such as teens or new parents. A page that only says “therapy in Toronto” gives both the reader and the search engine too little to work with.",
+    "We build around those paths: a clear homepage, separate specialty pages, and an office or service-area page that explains where sessions happen and whether telehealth reaches the rest of Ontario. Internal links carry someone from a concern they recognise to the intake details they need, without making them hunt through the site.",
+    "The technical side matters too. Clean navigation, descriptive titles and headings that name Toronto or the GTA only where it is true, fast mobile pages and metadata that matches the content all help. This page is a companion to the practice site we improve, not a replacement for it.",
+    "Toronto is not one market. Old Toronto, North York, Scarborough and Etobicoke behave differently in search: a downtown practice competes with hundreds of listings within walking distance, while a practice in Scarborough or Etobicoke is often chosen for proximity, language or a specific community. Many Toronto clinicians also draw clients from Mississauga, Vaughan and Markham, where the drive decides who gets called. We write for the part of the city a practice actually serves instead of repeating the word Toronto on every page."
+  ],
+  "market_heading": "How AI search is changing the way Toronto clients find a therapist",
+  "market_eyebrow": "The Toronto market",
+  "regulatory_body": {
+    "name": "College of Registered Psychotherapists of Ontario (CRPO)",
+    "url": "https://www.crpo.ca/"
+  },
+  "sources": [
+    "https://www.crpo.ca/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Toronto therapists and group practices show up in Google and in AI assistants when people search by concern, neighbourhood or Ontario registration. We build the page structure, profile details and technical groundwork that make a practice easier to understand, trust and contact.",
+    "image": "/images/ai-search-optimization-and-seo-for-toronto-therapists.webp",
+    "imageAlt": "AI search optimization SEO services for Toronto therapists"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Toronto therapy practice",
+    "description": "Six connected pieces, scoped to the practice rather than sold as separate city pages.",
+    "cards": [
+      {
+        "title": "Toronto search intent and on-page SEO",
+        "body": "We map the language Toronto clients use when they look for therapy, then write titles, headings and page copy that name the concern and the place without stuffing. A couples counsellor in Leslieville and a psychologist working with clients in North York should not share the same page."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We tighten the Google Business Profile, choose honest categories and service areas, and build an office or service-area page that matches how the practice works. Consistent name, address and phone details, plus relevant Ontario professional directories, help Toronto clients confirm they have found a real local practice."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants and Google AI Overviews need facts they can extract: who you help, where you are registered, which specialties you offer and how someone books. We organise the site and structured data so those details are explicit and consistent, then review how assistants describe the practice. No agency can guarantee an AI citation. Answer engine optimization (AEO) and generative engine optimization (GEO) are the labels for this work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Specialty pages and short articles can answer the questions people ask before they call: what a first session involves, how insurance and receipts work in Ontario, whether telehealth is available, and how to choose a therapist for a particular concern. The writing stays practical and avoids clinical promises. Clear question-and-answer content helps both Google and AI assistants."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "Indexing, page speed, mobile layout, broken links, duplicate titles and crawl paths all get a review. A small practice site often carries retired service pages, plugin changes and forms that no longer submit. Those faults are easy to postpone and costly to ignore, because they sit between a well-written page and the person trying to reach it."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Visibility also depends on believable references: professional directories, Ontario association profiles, community and business listings, local publications, training profiles and genuine reviews. Every month we refresh availability, sharpen pages, follow the queries that produce inquiries and repair anything that has slipped. Progress is maintained rather than switched on once."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Toronto therapists",
+    "paragraphs": [
+      "When someone asks ChatGPT, Google’s AI Overviews or another assistant to recommend a trauma therapist in Toronto, or a couples counsellor near the Annex or Leslieville, the answer is assembled from sites the tool can read and trust. Those systems favour clear, consistent pages: who the clinician helps, where they are registered, what they specialise in and how to get in touch.",
+      "AI search optimization, often shortened to AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related craft of writing pages that give direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems draw from. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider approach.",
+      "The labels overlap and each describes part of the same SEO work rather than a separate magic service. No one can guarantee a citation or a placement in AI answers. As an AI search optimization agency, what we can do is make the facts about your Toronto practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Toronto therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Toronto therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with registered psychotherapists, registered social workers, psychologists and counsellors across Ontario. Some are building a solo practice; others are growing a group, adding associates or offering online sessions throughout the province.",
+      "We also work with online-only practices that need Ontario registration and telehealth made clear, and with groups that need a coherent structure for several clinicians, specialties and locations. The scope changes with the practice; the standard does not: accurate information, a clear next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in Ontario",
+      "Growing a group with several clinicians or specialties",
+      "Serving Toronto, North York, Scarborough, Etobicoke and the GTA",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Toronto therapists choose Infused for AI search optimization",
+    "paragraph": "An SEO partner sits close to your professional reputation. Therapy marketing has to satisfy Ontario advertising standards while earning the trust a client brings to a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes. The aim is simple: make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We write from facts about your Toronto practice: who you help, where you are registered, the specialties you offer and how someone books. Nothing goes live as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google’s rankings, and SEO should not be sold as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "We organise the site around the concerns people actually search for in Toronto — trauma, anxiety, couples work, teens, EMDR or another specialty — and connect that to the places and session formats your practice genuinely offers. Each page gets a clear job without inventing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Ontario regulatory colleges and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need a closer look, and leave compliance decisions with the practice and its own advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from Toronto therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Toronto”?",
+      "a": "A solo practice can compete for Toronto searches when the site is clear about the work it does and the part of the city it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We aim at realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for an Ontario-registered therapist, a particular specialty or a clinician who offers telehealth from Toronto. The site should say plainly that sessions are online, which parts of Ontario you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention North York, Scarborough, Etobicoke or Mississauga?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every community. If a nearby place produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "There is no promised timeline. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "SEO is delivered as a 3-month implementation project with three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), spread across a 12-month payment plan. The monthly amount is an installment toward the project, not an ongoing retainer. A group practice with several clinicians may need a larger scope, confirmed in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Group practices usually need a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect Ontario licensing bodies and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with Ontario regulatory colleges and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It means making a practice easy for AI tools to understand and cite: accurate details about specialties, registration, location and how to book, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are common labels for parts of that work. No one can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Toronto therapy practice with AI search optimization",
+    "description": "Tell us where your practice is today. We will review your website, local visibility and the Toronto searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-toronto"
+}

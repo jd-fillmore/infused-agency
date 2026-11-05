@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Calgary and area remotely.",
+  "neighbourhoods": [
+    "Beltline",
+    "Kensington",
+    "Inglewood",
+    "Mission",
+    "Bridgeland"
+  ],
+  "local_market_context": [
+    "Calgary clients tend to search with a concern, a quadrant or a nearby community in mind: a psychologist in the Beltline, couples counselling in Kensington, trauma therapy in northwest Calgary, or an Alberta-licensed counsellor who offers online sessions. They may also look for a specific approach, a faith perspective, a language or support for a particular age group. A single “therapy in Calgary” page cannot speak to all of that.",
+    "We build the structure that can: a clear homepage, focused specialty pages, and an office or service-area page that explains where sessions take place and which parts of Alberta telehealth covers. Internal links connect the concern, the clinician and the practical details such as fees and booking.",
+    "On the technical side, we look at crawl paths, page speed, mobile layout and metadata. Titles and headings should name Calgary or a nearby community only when the practice genuinely serves it. That keeps the site useful to people and understandable to search engines."
+  ],
+  "market_heading": "How AI search is changing the way Calgary clients find a therapist",
+  "market_eyebrow": "The Calgary market",
+  "regulatory_body": {
+    "name": "College of Alberta Psychologists (CAP)",
+    "url": "https://www.cap.ab.ca/"
+  },
+  "sources": [
+    "https://www.cap.ab.ca/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Calgary therapists, counsellors and group practices appear in Google and in AI answers when people search by concern, community or Alberta registration. We build the pages, profile details and technical structure that make a practice easier to find, understand and book.",
+    "image": "/images/ai-search-optimization-and-seo-for-calgary-therapists.webp",
+    "imageAlt": "AI search optimization SEO services for Calgary therapists"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Calgary therapy practice",
+    "description": "Six connected services, scoped to the practice rather than sold as separate location pages.",
+    "cards": [
+      {
+        "title": "Calgary search intent and on-page SEO",
+        "body": "We research the words Calgary clients use, then write titles, headings and pages that connect a concern to a quadrant or community without forcing keywords into every sentence. A counsellor in Kensington and a psychologist serving Airdrie should have pages that reflect different audiences and locations."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We improve the Google Business Profile, set categories and service areas honestly, and build an office or service-area page that matches the practice. Consistent name, address and phone details, together with Alberta professional directories, help Calgary clients confirm the practice is real and nearby."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants look for facts they can pull out and repeat: who you support, your Alberta registration, the specialties you offer and how to start. We structure the site and its data so those facts are clear and consistent, then review how assistants describe you. No one can promise an AI citation. AEO and GEO are the usual names for the work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Specialty pages and articles can answer the questions people ask before booking: what the first appointment covers, how benefits and receipts work, whether online sessions are available across Alberta, and how to choose a therapist for a particular concern. We write plainly and avoid clinical promises. That clarity serves readers, Google and AI tools at once."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We examine indexing, speed, mobile usability, broken links, duplicate metadata and crawl paths. Older practice sites often hold retired pages, plugin leftovers and contact forms that stopped working quietly. Repairing these foundations supports the content work and removes avoidable friction between a search and a booked conversation."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "References do much of the trust-building: professional directories, Alberta association profiles, business and community listings, local media, training profiles and genuine reviews. We keep availability current, refine pages, watch the terms that produce inquiries and fix what has drifted. Each month should leave the site a little clearer than the last."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Calgary therapists",
+    "paragraphs": [
+      "When a Calgary client asks an AI assistant for a trauma therapist in the Beltline, a couples counsellor in Kensington or an online psychologist licensed in Alberta, the answer comes from sources the tool can read and trust. Clear, consistent pages tell it who the clinician helps, where they are registered, what they specialise in and how to book.",
+      "AI search optimization, or AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related practice of writing pages with direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems use. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> cover the broader programme.",
+      "The terms overlap, and each describes part of the same SEO work rather than a separate magic service. No agency can guarantee a citation or a placement in AI answers. As an AI search optimization agency, we can make the facts about your Calgary practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Calgary therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Calgary therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with psychologists, registered social workers, counselling therapists and counsellors in Alberta. Some are building a solo practice; others are growing a group, adding associates or offering online sessions across the province.",
+      "We also help online-only practices make Alberta registration and telehealth clear, and help groups create a coherent structure for several clinicians, specialties and locations. The scope changes with the practice; the standard does not: accurate information, a clear next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in Alberta",
+      "Growing a group with several clinicians or specialties",
+      "Serving Calgary, Airdrie, Cochrane and Okotoks",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Calgary therapists choose Infused for AI search optimization",
+    "paragraph": "Bringing in an SEO partner means putting your professional reputation alongside theirs. Therapy marketing in Alberta has to meet advertising standards and preserve the trust clients place in a clinician. We keep every claim accurate and reviewable, avoid guarantees and never promise clinical outcomes. The purpose is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We start from facts about your Calgary practice: who you help, your Alberta registration, the specialties you provide and how a client books. Nothing goes live as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google’s rankings, so SEO should not be sold as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "We organise pages around the concerns people search for in Calgary — trauma, anxiety, couples work, teens, EMDR or another specialty — and connect them to the communities and session formats your practice genuinely serves. Each page gets a clear job without inventing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Alberta regulatory bodies and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need a closer look, and leave compliance decisions with the practice and its own advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from Calgary therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “psychologist Calgary”?",
+      "a": "A solo practice can compete for Calgary searches when the site is clear about its work and the communities it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We target realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for an Alberta-registered therapist, a specific specialty or a clinician who offers telehealth from Calgary. The site should state that sessions are online, which parts of Alberta you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention nearby communities such as Airdrie or Cochrane?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every quadrant or suburb. If a nearby community produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "We do not promise a timeline. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "Pricing is structured as a 3-month implementation project across three packages: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), with payments spread over 12 months. The monthly figure is an installment toward the project, not a recurring retainer. A group with several clinicians may require a larger scope, confirmed in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Groups often need a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect Alberta licensing bodies and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with Alberta regulatory bodies and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It means giving AI tools a clear, consistent picture of the practice: specialties, Alberta registration, location and booking, expressed accurately on the site and across profiles. AEO (answer engine optimization) and generative engine optimization (GEO) are labels for parts of that work. No agency can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Calgary therapy practice with AI search optimization",
+    "description": "Send us your site and the Calgary areas you serve. We will review your local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-calgary"
+}

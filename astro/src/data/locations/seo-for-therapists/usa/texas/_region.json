@@ -1,0 +1,10 @@
+{
+  "overview": [
+    "Texas therapy demand sprawls: Dallas and Houston each contain dozens of distinct submarkets, and clients routinely search across metro boundaries. Clear service-area and telehealth language matters as much as the specialty pages themselves.",
+    "We serve both metros remotely, with content written for how people search in each city rather than one template renamed."
+  ],
+  "city_blurbs": {
+    "dallas": "Fast-growing northern suburbs and a client base that compares practices across the metroplex.",
+    "houston": "A large, car-dependent market where service radius and online availability decide who gets called."
+  }
+}

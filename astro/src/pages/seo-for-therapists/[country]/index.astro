@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import LocationCountryHub from "../../../templates/LocationCountryHub.astro";
+import {
+  liveCountries,
+  liveRegions,
+  countryPath,
+  readCountryContent,
+  getServiceConfig,
+  liveCitiesInCountry,
+} from "../../../lib/locations.mjs";
+import { locationHubGraph } from "../../../lib/location-schema";
+import { countrySeo } from "../../../lib/hub-seo.mjs";
+
+const service = "seo-for-therapists";
+const config = getServiceConfig(service);
+
+export function getStaticPaths() {
+  const service = "seo-for-therapists";
+  return liveCountries(service).map((country: any) => ({
+    params: { country: country.slug },
+    props: { countrySlug: country.slug },
+  }));
+}
+
+const { countrySlug } = Astro.props;
+const country = liveCountries(service).find((entry: any) => entry.slug === countrySlug);
+if (!country) throw new Error(`Unknown country ${countrySlug}`);
+
+const regions = liveRegions(service).filter((entry: any) => entry.country.slug === country.slug);
+const hub = readCountryContent(service, country);
+if (!hub) throw new Error(`Missing country hub content for ${country.name}`);
+
+const pathname = countryPath(service, country);
+const cityCount = liveCitiesInCountry(service, country).length;
+
+const { title, description } = countrySeo(service, country.name, cityCount, regions.length);
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: config.rootLabel, href: "/seo-for-therapists" },
+  { name: country.name },
+];
+
+const jsonLd = locationHubGraph({
+  pathname,
+  title,
+  description,
+  serviceType: config.serviceType,
+  breadcrumbs,
+  areaServed: [
+    { "@type": "Country", name: country.name },
+    ...regions.map(({ region }) => ({
+      "@type": "AdministrativeArea",
+      name: region.name,
+      containedInPlace: { "@type": "Country", name: country.name },
+    })),
+  ],
+});
+---
+
+<BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
+  <LocationCountryHub service={service} country={country} regions={regions} hub={hub} />
+</BaseLayout>

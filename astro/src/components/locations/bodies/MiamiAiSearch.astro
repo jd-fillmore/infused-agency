@@ -1,0 +1,301 @@
+---
+import Button from "../../../components/ui/Button.astro";
+import Card from "../../../components/ui/Card.astro";
+import PricingPlans from "../../../components/ui/PricingPlans.astro";
+import Section from "../../../components/ui/Section.astro";
+import { getIndustryPage } from "../../../lib/legacy-pages.mjs";
+import { aiSearchPricingPlans } from "../../../lib/pricing";
+
+const image = "/images/ai-search-optimization-miami.webp";
+const imageAlt =
+  "AI search optimization services for businesses looking for customers in Miami and across South Florida";
+
+// The Suk Law result is reused exactly as it appears on the existing
+// /seo/for-law-firms-niagara page. Nothing in this block is edited or invented.
+const sukLaw = getIndustryPage("/seo/for-law-firms-niagara") as
+  | {
+      proof: {
+        heading: string;
+        client: string;
+        subhead?: string;
+        label: string;
+        image?: string;
+        alt?: string;
+        items?: string[];
+      };
+    }
+  | undefined;
+
+if (!sukLaw?.proof) {
+  throw new Error("Missing Suk Law proof block for the Miami AI SEO page");
+}
+
+const proof = sukLaw.proof;
+
+const faqs = [
+  {
+    q: "How can a smaller Miami business compete for AI search visibility?",
+    a: "Assistants reward precision, and Miami awards it doubly: the buyer who asked for a bilingual mortgage broker in Hialeah, not a generic lender, wants one clear answer. A smaller company that describes itself in exact terms &mdash; languages, audiences, districts &mdash; can be that answer ahead of any larger rival.",
+  },
+  {
+    q: "Is AI SEO vs traditional SEO a choice, or do they work together?",
+    a: "There is no fork in the road. Crawlable pages, accurate titles, genuine internal links and a maintained Google Business Profile remain the starting point. AI search work then sharpens the same material: direct answers an assistant can lift, matching descriptions across every profile and a schedule for re-reading what the tools say.",
+  },
+  {
+    q: "How should a multi-location South Florida business organise AI search pages?",
+    a: "One page per genuine location, each with its own address, hours, phone and catchment. A Coral Gables office and an Aventura office should never share a text with the city name swapped. Where you run no office but serve clients across Broward or Palm Beach, describe the service area plainly rather than inventing suburb pages.",
+  },
+  {
+    q: "How likely is ChatGPT to recommend our Miami business?",
+    a: "It cannot be promised by anyone. Providers pick their own sources and revise them without warning, and bilingual categories add extra ways to be misread. Our role is to make your services, languages, coverage and credentials consistent and verifiable, then report what changed &mdash; never a guaranteed citation.",
+  },
+  {
+    q: "How long does AI SEO in Miami take to show any change?",
+    a: "No responsible timeline exists. Outcomes depend on the shape of your current site, how much your listings disagree with each other, the density of your category and how quickly credible pages can be produced. Foundations and contradictions are handled first, then publishing begins and the same AI questions are re-checked periodically.",
+  },
+  {
+    q: "What does AI SEO cost for a Miami business?",
+    a: "AI search is delivered as a 3-month implementation project with three packages &mdash; Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) &mdash; spread across a 12-month payment plan. The monthly amount is an installment toward the project rather than an ongoing retainer. A business with several offices and a wide catalogue may need a larger scope, confirmed in a written quote after a free review.",
+  },
+  {
+    q: "Do you work with businesses across South Florida, not only in Miami proper?",
+    a: "Yes. Infused Agency is based in St. Catharines, Ontario, and works with companies from Miami Beach to Boca Raton and elsewhere in the United States. Meetings happen remotely and travel is arranged when useful. We never claim a Brickell office or a storefront we do not operate.",
+  },
+  {
+    q: "How is AI search optimization in Miami measured?",
+    a: "The measures are agreed before work starts: search visibility, profile actions, calls, form submissions and a written note of how assistants describe the company, in both languages where relevant. Reviews return to those numbers. Anything stalled is reported as stalled with next steps attached.",
+  },
+];
+
+---
+
+<Section
+    tone="tint"
+    eyebrow="Services"
+    index="02"
+    heading="How an AI SEO agency in Miami approaches the work"
+    description="The services below are connected, not a menu of shortcuts, and each one is scoped to how your company actually sells."
+  >
+    <div class="prose reveal" style="max-width: 56rem; margin-bottom: 2rem;">
+      <p>
+        One honest summary prevents vendor confusion. AI SEO is the overall
+        effort to be understood and quoted by AI-assisted search. Answer
+        engine optimization (AEO) is its writing layer &mdash; direct,
+        extractable answers to what buyers ask, in the languages they ask.
+        Generative Engine Optimization (GEO) covers the wider network of
+        sources assistants consult and how consistently your company is
+        described across them. Every one of these extends ordinary SEO
+        rather than replacing it.
+      </p>
+    </div>
+    <div class="grid grid--3 reveal-group">
+      <Card>
+        <span class="service-card__number">01</span>
+        <h3 class="card__title">AI SEO for South Florida businesses with interchangeable offers</h3>
+        <p class="card__text">
+          From Brickell to Boca Raton, entire industries describe themselves
+          in sweeping terms &mdash; "premium service," "family-owned,"
+          "serving all of South Florida." We rewrite each service page with
+          its own scope, audience and limits so an assistant can tell your
+          company apart from the one down the road.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">02</span>
+        <h3 class="card__title">AI search optimization across a tri-county market</h3>
+        <p class="card__text">
+          Clients in Aventura and clients in Kendall are different customers,
+          and someone in Fort Lauderdale may never drive south. We write
+          coverage around real distances, offices and delivery patterns &mdash;
+          not a carbon-copy page for every municipality.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">03</span>
+        <h3 class="card__title">AEO services Miami: profiles that agree with your website</h3>
+        <p class="card__text">
+          Categories, service areas, hours and phone details are reconciled
+          between your site and the directories in use locally. A winter
+          hours note nobody updated in June, or an old number from a Miramar
+          suite, is enough to make a tool hesitate, so contradictions are
+          traced and corrected at the source.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">04</span>
+        <h3 class="card__title">How AEO helps Miami buyers before they enquire</h3>
+        <p class="card__text">
+          Pricing approach, bilingual availability, lead times and what
+          happens after a first call can be stated factually. Short
+          informational answers are read by people looking for reassurance,
+          and the same paragraphs are what an assistant can quote without
+          embellishment.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">05</span>
+        <h3 class="card__title">Technical groundwork for AI SEO in Miami</h3>
+        <p class="card__text">
+          Crawlability, internal links, page speed, duplicate metadata and
+          schema for services and locations gate everything else &mdash; and
+          many local buyers are on phones in traffic, so performance weighs
+          even more. We clear what blocks access before adding anything.
+        </p>
+      </Card>
+      <Card>
+        <span class="service-card__number">06</span>
+        <h3 class="card__title">Optimizing for Google AI Overviews: a record over time</h3>
+        <p class="card__text">
+          We log what ChatGPT, Gemini and Google's AI Overviews currently say
+          about your company &mdash; in Spanish and English &mdash; then
+          re-ask on a schedule. A misdescribed service is traced back to the
+          page or profile that produced it and fixed where it lives.
+        </p>
+      </Card>
+    </div>
+  </Section>
+
+  <Section tone="contrast" eyebrow="Proof" index="03" heading={proof.heading}>
+    <div class="split split--top">
+      <div class="reveal">
+        <span class="badge">{proof.label}</span>
+        <h3 class="h3" style="margin-top: 1rem; color: #ffffff;">{proof.client}</h3>
+        {
+          proof.subhead && (
+            <p class="prose" style="margin-top: 1.1rem; color: var(--color-contrast-muted);">
+              {proof.subhead}
+            </p>
+          )
+        }
+        {
+          proof.items && proof.items.length > 0 && (
+            <ul class="check-list" style="margin-top: 1.1rem;">
+              {proof.items.map((item) => <li>{item}</li>)}
+            </ul>
+          )
+        }
+        <div style="margin-top: 1.75rem;">
+          <Button href="/get-a-quote" variant="gold" arrow>
+            Discuss a similar project
+          </Button>
+        </div>
+      </div>
+      {
+        proof.image && (
+          <figure class="media-frame reveal">
+            <img
+              src={proof.image}
+              alt={proof.alt ?? `${proof.client} SEO results`}
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        )
+      }
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Who it's for"
+    index="04"
+    heading="AI SEO for South Florida businesses with several locations"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            A shop with one address in Wynwood and a group with offices in
+            Coral Gables, Doral and Aventura need different site structures.
+            The first has to win a neighbourhood conversation. The second
+            needs each branch's facts kept distinct and true without
+            fragmenting the company into separate, thin web presences.
+          </p>
+          <p>
+            We work with service businesses, professional practices,
+            retailers and B2B suppliers from Miami-Dade to Palm Beach County
+            &mdash; owner-run firms and multi-office teams alike. What unites
+            them is a considered purchase: the buyer compares options before
+            calling, booking or signing. The work is scoped to how that
+            comparison behaves in your category, not to a fixed checklist.
+          </p>
+        </div>
+      </div>
+      <aside class="card reveal">
+        <h3 class="card__title">Is an AI SEO agency in Miami the right fit?</h3>
+        <ul class="check-list" style="margin-top: 1rem;">
+          <li>You compete with larger brands on the same searches</li>
+          <li>You serve a radius, a delivery zone or several county locations</li>
+          <li>Your services are easy to confuse with a competitor's</li>
+          <li>You want one clear description across site and profiles</li>
+          <li>You need reporting without inflated claims</li>
+        </ul>
+      </aside>
+    </div>
+  </Section>
+
+  <Section
+    eyebrow="Why Infused"
+    index="05"
+    heading="An AI SEO agency serving Miami that names what it cannot control"
+  >
+    <div class="split split--top">
+      <div class="reveal">
+        <div class="prose">
+          <p>
+            Infused Agency is based in St. Catharines, in the Niagara Region
+            of Ontario, and works with South Florida businesses remotely.
+            That is the honest account of where we are and how we operate:
+            direct communication, a written scope and no imagined Miami
+            address.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid--2" style="grid-template-columns: 1fr;">
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO Miami content checked against your sources</h3>
+          <p class="card__text">
+            Copy is assembled from your services, coverage, hours and
+            credentials &mdash; in both languages where you truly operate. We
+            do not invent a Biscayne Boulevard address or a performance
+            figure you have not approved.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">AI SEO vs traditional SEO: where each one helps</h3>
+          <p class="card__text">
+            Google, OpenAI and their peers decide which sources they trust
+            and change those decisions freely. We improve what they read and
+            keep it consistent; we sell no guaranteed placement.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Measuring how AI tools describe your Miami business</h3>
+          <p class="card__text">
+            We record where you appear, what your profiles show and how
+            assistants summarise you before and during the work. Reports come
+            back against that baseline rather than the most convenient
+            snapshot.
+          </p>
+        </Card>
+        <Card class="reveal">
+          <h3 class="card__title" style="margin-top: 0;">Miami SEO fundamentals that AI search still depends on</h3>
+          <p class="card__text">
+            Useful pages, an architecture that makes sense, accurate details
+            and fast mobile loads still carry most of the result. AI search
+            work extends those habits rather than inventing a shortcut.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Section>
+
+  <PricingPlans
+    id="seo-pricing"
+    eyebrow="Pricing"
+    index=""
+    heading={aiSearchPricingPlans.heading}
+    description={aiSearchPricingPlans.description}
+    note={aiSearchPricingPlans.note}
+    plans={aiSearchPricingPlans.plans}
+    ctaLabel="Get a Free Quote"
+  />

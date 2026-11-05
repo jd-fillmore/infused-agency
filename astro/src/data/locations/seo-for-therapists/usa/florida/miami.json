@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving South Florida remotely.",
+  "neighbourhoods": [
+    "Miami Beach",
+    "Coral Gables",
+    "Brickell",
+    "Wynwood",
+    "Coconut Grove"
+  ],
+  "local_market_context": [
+    "Miami therapy searches carry culture and language in them by default. A client may want a Spanish-speaking couples counselor in Hialeah, a Haitian Creole clinician in Little Haiti, an anxiety specialist near Brickell working with professionals in finance, or a teen therapist serving families between Kendall and Pinecrest. The tri-county spread of the market matters too: people in Fort Lauderdale, Hollywood and Boca Raton often look for telehealth first because distances make weekly in-person sessions impractical. A generic Miami homepage quietly fails most of those readers.",
+    "We build the site to carry that specificity: specialty pages written for the populations and languages a practice actually serves, and an office or service-area page laying out where sessions happen, whether online sessions cover Florida and how licensure limits the reach. Internal links connect the specialty, the clinician and the booking step so nobody has to reverse-engineer how to start.",
+    "Then the technical layer: crawlable navigation, fast mobile pages, titles that name Miami or a neighborhood only where true, and metadata agreeing with the visible copy. Seasonal movement in South Florida — snowbirds returning in winter, students arriving with the university calendar — makes a current, accurate site matter more here than in markets with steadier demand."
+  ],
+  "market_heading": "How AI search is changing the way Miami clients find a therapist",
+  "market_eyebrow": "The Miami market",
+  "regulatory_body": {
+    "name": "Florida Board of Clinical Social Work, Marriage & Family Therapy and Mental Health Counseling",
+    "url": "https://floridasmentalhealthprofessionals.gov/"
+  },
+  "sources": [
+    "https://floridasmentalhealthprofessionals.gov/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps therapists, counselors and group practices in Miami and across South Florida — Miami Beach, Coral Gables, Doral, Hialeah, Kendall, Aventura, Fort Lauderdale, Hollywood and Boca Raton — reach the clients already searching for them, in Google and in the AI answers a growing share of clients ask first.",
+    "image": "/img/seo-for-therapists-miami-florida.webp",
+    "imageAlt": "The Miami skyline seen from Biscayne Bay on a clear day"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Miami therapy practice",
+    "description": "Six connected services, built around the practice and its languages rather than sold as cartographic keyword work.",
+    "cards": [
+      {
+        "title": "Miami search intent and on-page SEO",
+        "body": "We study the real blend of English and Spanish searches that describe therapy across Miami-Dade, Broward and Palm Beach, then shape titles, headings and copy around them. A Brickell practice serving transplants and a Coral Gables practice serving bilingual families are different audiences with overlapping keywords and different priorities; the writing should show the difference instead of averaging it."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "Google Business Profile, categories and service areas are corrected to represent the practice honestly, whether the office is in Miami Beach, Doral or Aventura or the whole thing runs online across Florida. Name-address-phone consistency, relevant Florida directories and honest service-area details give both searchers and AI systems a coherent picture of who you are."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "Assistants working on behalf of a Miami client need facts they can lift without guessing: the languages you work in, the populations you serve, your Florida license, and how someone books. We make those facts explicit in copy and structured data and then check how assistants describe similar practices today. AEO (answer engine optimization) and GEO (generative engine optimization) name the craft; citations cannot be promised."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Bilingual or Spanish-language pages where they are real, plus articles covering what clients ask before booking: how the first session works, how insurance and superbills function in Florida, which concerns the practice treats well and what telehealth covers distance-wise. Practical, claim-free answers get read — and get quoted by assistants."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "Old pages from past marketing, duplicate location content, broken forms and slow mobile pages blunt everything else. We audit indexing, speed and crawl paths and clear the faults first, so the new pages go onto a base that actually performs for South Florida searchers on phones."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Trust in this market is built through a patchwork of sources: Florida professional directories, community organizations, university and training ties, local press and genuine reviews from both language communities. Monthly upkeep refreshes availability, tightens answers, tracks which searches create inquiries and mends anything that slipped."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Miami therapists",
+    "paragraphs": [
+      "Someone in Kendall might ask an assistant for a Spanish-speaking therapist who does EMDR; someone in Coral Gables might ask for a psychologist who works with teens on weekends. The assistant assembles its answer from what it can read and trust about each practice: populations served, languages, Florida licensure, booking details. Practices whose information is thin or inconsistent simply do not appear in the reply.",
+      "Making your facts legible to those tools is what AI search optimization, or AI SEO, means. Answer engine optimization (AEO) writes pages as direct, extractable answers; generative engine optimization (GEO) keeps the practice described accurately wherever assistants gather sources. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the broader program beyond therapy.",
+      "There is no honest way to promise an AI citation. These labels overlap and describe parts of one discipline — clear, verifiable information presented for both people and machines. What we control is how findable, consistent and quotable your Miami practice is when the question arrives."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Miami therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Miami therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with Florida psychologists, licensed clinical social workers, licensed mental health counselors, marriage and family therapists and counselors throughout South Florida. Some practice bilingually; some see clients mainly by telehealth across the state; some run groups spanning Kendall to Boca Raton.",
+      "Online-only practices benefit most from telehealth language that says where sessions reach and how Florida licensure works. Groups need structure that keeps every clinician, language and specialty findable. The scope follows the practice; the standard holds everywhere: accurate information, a clear next step, no claims you could not defend."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and licensed in Florida",
+      "Growing a group with several clinicians or specialties",
+      "Serving Miami, Miami Beach, Coral Gables, Doral, Hialeah, Kendall, Aventura, Fort Lauderdale, Hollywood and Boca Raton",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Miami therapists choose Infused for AI search optimization",
+    "paragraph": "Clients bring real need and, often, real urgency, and a full third of the market navigates therapy content in more than one language. Florida counseling promotion has to stay inside advertising norms, which effectively rules out guarantees and clinical claims. Everything we publish stays anchored in verifiable facts about your practice so your specialties become easier to find and your professionalism shows through the copy.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "Languages spoken, populations served, your Florida license, cities like Coral Gables or Fort Lauderdale where you genuinely work — each claim is checkable before it goes live. Nothing is dressed up as a credential, ranking claim or result the practice cannot show."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "Positions in Google are not for sale and AI answers are not agencies to promise. Marketing that implies a clinical outcome or recovery is off the table too. What we aim for instead is visibility, clear writing and more of the right inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "Anxiety, couples work, teen counseling, EMDR, trauma, parenting, men's groups — we anchor the site to the concerns South Florida clients actually search and attach the languages, neighborhoods and formats offered in reality. Every page is doing a job for a real reader."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Florida boards and professional codes set the shape of honest promotion. We write plainly, flag anything that might warrant a second look, and leave compliance judgment with the practice and its own professional advisers."
+      }
+    ]
+  },
+  "testimonial_heading": "What Miami therapists say about working with an AI SEO agency",
+  "faq_heading": "AI search optimization and GEO questions from Miami therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Miami”?",
+      "a": "Solo practices succeed in Miami by being more specific than the headline term: a specialty plus a language plus the communities and formats you actually serve. Focused pages, a complete Google Business Profile, real reviews and a fast mobile site do the ranking work. We target searches you can realistically win rather than promising the one big phrase."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Very much, in a tri-county market where distances make telehealth the default for many. The site should state that sessions are online, which parts of Florida you reach under your license, and what the first appointment looks like, then attach specialties so the search still finds you."
+    },
+    {
+      "q": "Should the site mention Coral Gables, Hialeah or Fort Lauderdale?",
+      "a": "Mention the communities where your practice genuinely operates or reaches by telehealth, woven naturally into the service-area page and the copy where relevant. A truthful service-area section outperforms thin near-duplicate pages for every suburb, and a community with steady real demand may later earn an honest page of its own."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "No dates can be promised. Progress depends on the starting site, the neighborhood of competition, the review picture and how consistently the monthly work continues. The first visible change is usually the corrected site itself, followed by reports on which searches are reaching which pages."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "SEO is delivered as a 3-month implementation project: Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month), spread across a 12-month payment plan. Each monthly amount is an installment toward the project rather than a retainer. Larger group practices confirm scope in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Groups, especially multilingual ones across Miami, Fort Lauderdale and Boca Raton, need clear structure: who each clinician is, what languages they work in, where and how they see clients and how inquiries are routed. The site can serve the whole group while keeping each clinician independently findable."
+    },
+    {
+      "q": "Does your marketing respect Florida licensing board and professional ethics rules?",
+      "a": "We keep marketing free of guarantees, clinical claims and misleading wording, consistent with Florida board standards. The practice remains responsible for compliance with Florida regulators and professional obligations, and we flag anything that could benefit from closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It means arranging the facts of a practice — specialties, licensure, languages, locations, booking — so AI tools can read, trust and quote them. AEO (answer engine optimization) and generative engine optimization (GEO) are the usual labels for parts of that work. Nobody can truthfully promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Miami therapy practice with AI search optimization",
+    "description": "Tell us about your practice and the South Florida communities you serve, from Miami Beach and Kendall to Fort Lauderdale and Boca Raton. We will review your visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/ai-seo-for-therapists-miami"
+}

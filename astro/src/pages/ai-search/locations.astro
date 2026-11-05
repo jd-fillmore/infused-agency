@@ -1,4 +1,6 @@
 ---
+// Master location index. It links only to the two service roots and their
+// live country hubs, so it can never point at a page that is not built.
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Button from "../../components/ui/Button.astro";
 import CtaBand from "../../components/ui/CtaBand.astro";
@@ -6,92 +8,52 @@ import Icon from "../../components/ui/Icon.astro";
 import PageHero from "../../components/ui/PageHero.astro";
 import Section from "../../components/ui/Section.astro";
 import {
-  baseGraph,
-  breadcrumbNode,
-  serviceNode,
-  webPageNode,
-} from "../../lib/schema";
+  liveCountries,
+  liveCitiesInCountry,
+  countryPath,
+  serviceRootPath,
+  getServiceConfig,
+  SERVICES,
+} from "../../lib/locations.mjs";
+import { baseGraph, breadcrumbNode, serviceNode, webPageNode } from "../../lib/schema";
 
 const pathname = "/ai-search/locations";
-const title =
-  "AI Search Optimization Services Across Canada & the US | Infused Agency";
+const title = "AI Search Optimization Locations | Canada & the US | Infused";
 const description =
-  "Explore AI search optimization services across Canada and the United States. Improve your visibility in ChatGPT, Google AI Overviews and other AI-powered search platforms.";
+  "Every country and service where we publish AI search optimization and therapist SEO pages. Start with a service, then a country hub.";
 
 const breadcrumbs = [
   { name: "Home", href: "/" },
-  { name: "AI Search", href: "/ai-search" },
+  { name: "AI Search Optimization", href: "/ai-search-optimization" },
   { name: "Locations" },
 ];
 
-const canadaPages = [
-  {
-    href: "/seo/niagara",
-    label: "AI Search Optimization in the Niagara Region",
-    note: "Regional page covering St. Catharines, Niagara Falls and surrounding municipalities.",
-  },
-  {
-    href: "/ai-seo-toronto",
-    label: "AI search optimization in Toronto",
-  },
-  {
-    href: "/ai-seo-hamilton",
-    label: "AI search optimization in Hamilton",
-  },
-];
-
-const usPages = [
-  {
-    href: "/ai-search-optimization-atlanta",
-    label: "AI search optimization in Atlanta",
-    note: "Metro Atlanta, from Sandy Springs and Marietta to Alpharetta and Johns Creek.",
-  },
-  {
-    href: "/ai-search-optimization-washington-dc",
-    label: "AI search optimization in Washington, DC",
-    note: "The DMV — Washington, Arlington, Alexandria, Bethesda, Rockville, Fairfax and Tysons.",
-  },
-  {
-    href: "/ai-search-optimization-miami",
-    label: "AI search optimization in Miami",
-    note: "South Florida, from Miami Beach and Coral Gables to Fort Lauderdale and Boca Raton.",
-  },
-  {
-    href: "/ai-search-optimization-philadelphia",
-    label: "AI search optimization in Philadelphia",
-    note: "The Delaware Valley, including King of Prussia, Cherry Hill and Wilmington.",
-  },
-  {
-    href: "/ai-search-optimization-phoenix",
-    label: "AI search optimization in Phoenix",
-    note: "The Valley — Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale and Peoria.",
-  },
-];
+const groups = SERVICES.map((config) => ({
+  config,
+  countries: liveCountries(config.slug).map((country: any) => ({
+    country,
+    count: liveCitiesInCountry(config.slug, country).length,
+    href: countryPath(config.slug, country),
+  })),
+}));
 
 const jsonLd = [
   ...baseGraph(),
-  webPageNode({
-    url: pathname,
-    name: title,
-    description,
-    type: "CollectionPage",
-  }),
+  webPageNode({ url: pathname, name: title, description, type: "CollectionPage" }),
   breadcrumbNode(breadcrumbs, pathname),
   serviceNode({
     url: pathname,
-    name: "AI search optimization services across Canada and the United States",
-    description:
-      "AI search optimization (GEO and AEO) for businesses across Canada and the United States, improving visibility in ChatGPT, Google AI Overviews and other AI-powered search platforms.",
-    serviceType:
-      "AI search optimization, generative engine optimization (GEO), answer engine optimization (AEO)",
+    name: "Location directory for AI search optimization and therapist SEO",
+    description,
+    serviceType: "AI search optimization, therapist SEO",
   }),
 ];
 ---
 
 <BaseLayout title={title} description={description} canonical={pathname} jsonLd={jsonLd}>
   <PageHero
-    title="AI Search Optimization Across Canada & the United States"
-    description="Businesses no longer only search — they ask. We work with companies across Canada and the United States to make their services clear, credible and quotable across ChatGPT, Google AI Overviews and the other AI-powered platforms that summarise the web for their customers."
+    title="AI Search Optimization Locations"
+    description="We publish location pages a batch at a time. This index lists only the services and countries with pages that are live today; regions and cities sit one level below each country hub."
     breadcrumbs={breadcrumbs}
     eyebrow="Locations"
     ctaLabel="Get a Free Quote"
@@ -99,8 +61,8 @@ const jsonLd = [
     <Fragment slot="aside">
       <h2>Start with a free quote</h2>
       <p>
-        Tell us where you operate and what you sell. We will review your
-        search and AI visibility, then send a written quote.
+        Tell us where you operate and what you sell. We will review your search
+        and AI visibility, then send a written quote.
       </p>
       <ul class="page-hero__aside-list">
         <li><Icon name="check" /> Website and AI visibility review</li>
@@ -114,96 +76,57 @@ const jsonLd = [
   </PageHero>
 
   <Section
-    eyebrow="What this work is"
+    eyebrow="Services"
     index="01"
-    heading="One discipline, two kinds of search"
-    description="AI search optimization extends your ordinary SEO to the places where answers are generated."
+    heading="Two services, one location system"
+    description="Same hierarchical structure, separate content. A city can be live for one service and still a draft for the other."
   >
-    <div class="split split--top">
-      <div class="reveal">
-        <div class="prose">
-          <p>
-            People increasingly ask AI assistants for recommendations instead
-            of scrolling through search results, and those assistants
-            assemble answers from businesses whose websites, profiles and
-            directory listings present clear, consistent, verifiable
-            information. Our programme improves the conditions that make a
-            citation likely: entity cleanup, answer-ready content, structured
-            data and a maintained flow of trusted signals.
-          </p>
-          <p>
-            We work remotely with businesses throughout Canada and the United
-            States, and we sign our pages honestly — each location page
-            below describes that market in detail rather than pasting one
-            template over ten cities. No agency can guarantee what ChatGPT or
-            Google AI Overviews will say next, so we never sell a promised
-            citation. What we improve is what you can influence.
-          </p>
-        </div>
-      </div>
-      <aside class="card reveal">
-        <h3 class="card__title">What the pages cover</h3>
-        <ul class="check-list" style="margin-top: 1rem;">
-          <li>How assistants search, read and quote sources</li>
-          <li>The competition for AI answers in each market</li>
-          <li>Entity, profile and structured data foundations</li>
-          <li>Content built to be extracted and summarized</li>
-          <li>How progress is measured and reported</li>
-        </ul>
-      </aside>
+    <div class="prose reveal" style="max-width: 56rem;">
+      <p>
+        Every location page follows the same four-level URL pattern, for example
+        <a href="/ai-search-optimization/canada/ontario/toronto"
+          >/ai-search-optimization/canada/ontario/toronto</a
+        >. We serve all of these markets remotely from the Niagara region in
+        Ontario, Canada, and no page claims a local office anywhere else.
+      </p>
+    </div>
+  </Section>
+
+  <Section tone="tint" eyebrow="Directory" index="02" heading="Countries we publish">
+    <div class="grid grid--2 reveal-group">
+      {
+        groups.map(({ config, countries }) => (
+          <div class="card">
+            <h3 class="card__title">
+              <a href={serviceRootPath(config.slug)}>{config.name}</a>
+            </h3>
+            <p class="card__text">{config.locationLabel} across:</p>
+            <ul class="chip-list" style="margin-top: 0.75rem;">
+              {countries.map(({ country, count, href }: any) => (
+                <li>
+                  <a class="chip" href={href}>
+                    {country.name} ({count})
+                    <Icon name="arrow-right" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </div>
   </Section>
 
   <Section
-    tone="tint"
-    eyebrow="Directory"
-    index="02"
-    heading="AI search optimization pages by market"
-    description="Choose the market closest to yours. Each page follows the same programme, grounded in local competition and search behaviour."
-  >
-    <div style="display: grid; gap: 2.5rem;">
-      <div class="reveal">
-        <h3 class="h3">Canada</h3>
-        <ul class="chip-list" style="margin-top: 1rem;">
-          {
-            canadaPages.map((page) => (
-              <li>
-                <a class="chip" href={page.href}>
-                  {page.label}
-                  <Icon name="arrow-right" />
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div class="reveal">
-        <h3 class="h3">United States</h3>
-        <ul class="chip-list" style="margin-top: 1rem;">
-          {
-            usPages.map((page) => (
-              <li>
-                <a class="chip" href={page.href}>
-                  {page.label}
-                  <Icon name="arrow-right" />
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
-  </Section>
-
-  <Section
-    eyebrow="Explore"
+    tone="contrast"
+    eyebrow="Related"
     index="03"
     heading="Related services and specialists"
-    description="The wider services and niche work connected to these location pages."
+    description="The wider services connected to these location pages."
   >
     <ul class="chip-list">
       <li>
-        <a class="chip" href="/ai-search">
+        <a class="chip" href="/ai-search-optimization">
           AI search optimization
           <Icon name="arrow-right" />
         </a>
@@ -215,8 +138,8 @@ const jsonLd = [
         </a>
       </li>
       <li>
-        <a class="chip" href="/seo/for-therapists">
-          SEO & AI Search Optimization for Therapists
+        <a class="chip" href="/seo-for-therapists">
+          SEO for therapists
           <Icon name="arrow-right" />
         </a>
       </li>

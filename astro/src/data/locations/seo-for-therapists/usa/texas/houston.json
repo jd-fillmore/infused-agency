@@ -1,0 +1,152 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Greater Houston remotely.",
+  "neighbourhoods": [
+    "Montrose",
+    "The Heights",
+    "Museum District",
+    "Sugar Land",
+    "Katy"
+  ],
+  "local_market_context": [
+    "Houston therapy searches often pair a concern with a place: a trauma therapist in Montrose, couples counseling in The Woodlands, bilingual counseling in Spring Branch, or a Texas-licensed clinician who works online across the metro. Distance and traffic make proximity and telehealth practical considerations, and people also filter by insurance, cost and availability. A page that offers only “therapy in Houston” answers very little of that.",
+    "We organize the site around those searches: a plain-spoken homepage, specialty pages, and an office or service-area page covering the neighborhoods and suburbs the practice genuinely serves. Internal links connect the concern, the clinician and the practical steps to book, including whether sessions are in person or online.",
+    "We then fix the foundations that let those pages perform: crawlable navigation, descriptive titles and headings, fast mobile layouts and metadata that reflects the content. Houston and its neighborhoods are named where they are accurate, not sprinkled through the copy.",
+    "Houston is a metro built around driving. The Texas Medical Center, downtown, the Energy Corridor and the Galleria each pull clients from different directions, and a practice in Montrose, the Heights or the Museum District draws from a far wider catchment than its zip code suggests. Suburban demand arrives from Sugar Land, Katy, Pearland and The Woodlands, where the drive into the loop is a real decision. That makes an honest service-area statement, clear telehealth options and neighborhood-level pages more useful than one generic \"Houston therapy\" page.",
+    "Licensure runs through the Texas Behavioral Health Executive Council, and the size of the metro means language and specialty carry weight: bilingual counseling in Spring Branch, couples work in the Heights, trauma care near the Medical Center. Pages that state those specifics plainly give both Google and AI assistants something concrete to match against a search, instead of a paragraph that could describe any clinic anywhere.",
+    "Session format is worth stating plainly too. A practice that meets clients online across Texas competes for different searches than an office in the Heights with parking and evening appointments, and the same is true of a group with clinicians in Sugar Land and Katy. Hours, accessibility, insurance panels and whether a clinician is accepting new clients answer the questions that otherwise stall an inquiry."
+  ],
+  "market_heading": "How AI search is changing the way Houston clients find a therapist",
+  "market_eyebrow": "The Houston market",
+  "regulatory_body": {
+    "name": "Texas Behavioral Health Executive Council (BHEC)",
+    "url": "https://bhec.texas.gov/"
+  },
+  "sources": [
+    "https://bhec.texas.gov/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Houston therapists and group practices become easier to find in Google and in AI answers when people search by concern, neighborhood or Texas licensure. We shape the pages, profile details and technical groundwork that support real inquiries.",
+    "image": "/img/seo-for-therapists-houston-texas.webp",
+    "imageAlt": "Downtown Houston skyline at night"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Houston therapy practice",
+    "description": "Six connected services, scoped to the practice rather than sold as separate location pages.",
+    "cards": [
+      {
+        "title": "Houston search intent and on-page SEO",
+        "body": "We study the searches Houston clients use, from a psychologist in the Heights to counseling near the Museum District or an online therapist licensed in Texas. Then we write titles, headings and page copy that name the concern and the community without repeating keywords. A practice in Katy and one in Pearland may need different pages, even when they offer similar specialties."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We improve the Google Business Profile, choose categories and service areas honestly, and build an office or service-area page that reflects how the practice works. Consistent name, address and phone details, plus relevant Texas professional directories, help Houston clients confirm they have found a real local practice."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants need facts they can extract: who you help, where you are licensed in Texas, which specialties you offer and how someone books. We organize the site and structured data so those details are explicit and consistent, then review how assistants describe the practice. No agency can guarantee an AI citation. Answer engine optimization (AEO) and generative engine optimization (GEO) are the labels for this work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Specialty pages and short articles can answer the questions people ask before they call: what a first session involves, how insurance and superbills work in Texas, whether telehealth is available across the metro, and how to choose a therapist for a particular concern. The writing stays practical and avoids clinical promises. Clear question-and-answer content helps both Google and AI assistants."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We audit indexing, speed, mobile layout, broken links, duplicate titles, structured data and crawl paths. Practice sites often accumulate retired pages, leftover plugins and forms that quietly stop working. Fixing these basics makes every page easier to find and the path to an appointment easier to follow."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Believable references do the trust work: professional directories, Texas association profiles, community and business listings, local publications, training profiles and genuine reviews. We refresh availability, refine pages, track the queries that lead to inquiries and correct what has slipped each month. Visibility is maintained, not installed."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Houston therapists",
+    "paragraphs": [
+      "When someone asks an AI assistant for a trauma therapist in Houston, a counselor near Montrose or an online psychologist licensed in Texas, the response is built from sources the tool can read and trust. Clear, consistent pages give it the facts: who the clinician helps, where they are licensed, what they specialize in and how to arrange a first appointment.",
+      "AI search optimization, or AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related practice of writing pages that provide direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems consult. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider program.",
+      "The labels overlap, and each describes part of the same SEO work rather than a separate magic service. No agency can guarantee a citation or a placement in AI answers. As an AI search optimization agency, what we can do is make the facts about your Houston practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Houston therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Houston therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with Texas licensed professional counselors, clinical social workers, marriage and family therapists, psychologists and counselors, from solo clinicians to established groups. Some practices serve a single Houston neighborhood; others see clients online across the metro and beyond.",
+      "Online-only practices need Texas licensure and telehealth set out clearly. Groups need a structure that makes sense of several clinicians, specialties and locations. The scope follows the practice; the standard stays the same: accurate information, an obvious next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and licensed in Texas",
+      "Growing a group with several clinicians or specialties",
+      "Serving Houston, Sugar Land, Katy, Pearland and the surrounding area",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Houston therapists choose Infused for AI search optimization",
+    "paragraph": "Choosing who handles your search visibility means trusting them with your professional reputation. Therapy marketing in Texas has to meet advertising standards and preserve the confidence clients place in a clinician. We keep every claim accurate and reviewable, avoid guarantees and never promise clinical outcomes. The work is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We begin with facts about your Houston practice: the clients you support, your Texas license, the specialties you offer and how to book. Nothing goes live as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google’s rankings, and SEO should not be presented as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "We organize the site around the concerns people search for in Houston — trauma, anxiety, couples work, teens, EMDR or another specialty — and tie them to the neighborhoods and session formats your practice actually offers. Each page gets a clear job without inventing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Texas regulatory bodies and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need a closer look, and leave compliance decisions with the practice and its own advisers."
+      }
+    ]
+  },
+  "testimonial_heading": "What Houston therapists say about working with an AI SEO agency",
+  "faq_heading": "AI search optimization and GEO questions from Houston therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Houston”?",
+      "a": "A solo practice can compete for Houston searches when the site is clear about its work and the neighborhoods it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We aim at realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for a Texas-licensed therapist, a specific specialty or a clinician who offers telehealth from Houston. The site should explain that sessions are online, which parts of the metro and state you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention Sugar Land, Katy or The Woodlands?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every suburb. If a community produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "There is no guaranteed schedule. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "SEO is sold as a 3-month implementation project, with Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) packages spread across a 12-month payment plan. The monthly amount is an installment toward the project rather than an ongoing retainer. A larger group practice may need a wider scope, which we confirm in a written quote after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Group practices usually need a clearer structure: who each clinician is, which specialties, populations and languages they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect Texas licensing boards and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with Texas regulators and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It means making a practice easy for AI tools to understand and cite: accurate details about specialties, licensure, location and how to book, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are common labels for parts of that work. No one can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Houston therapy practice with AI search optimization",
+    "description": "Tell us about your practice and the Houston communities you serve. We will review your website, local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-houston"
+}

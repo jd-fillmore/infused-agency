@@ -1,0 +1,107 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import LocationCityPage from "../../../../templates/LocationCityPage.astro";
+import {
+  liveCities,
+  getServiceConfig,
+  readCityContent,
+  seoFor,
+  nearbyCities,
+  cityPath,
+  countryPath,
+  regionPath,
+  serviceRootPath,
+  isLive,
+  cityContentExists,
+  displayName,
+} from "../../../../lib/locations.mjs";
+import { locationCityGraph } from "../../../../lib/location-schema";
+
+const service = "ai-search-optimization";
+const config = getServiceConfig(service);
+
+export function getStaticPaths() {
+  const service = "ai-search-optimization";
+  return liveCities(service).map((record) => ({
+    params: {
+      country: record.country.slug,
+      region: record.region.slug,
+      city: record.city.slug,
+    },
+    props: { record },
+  }));
+}
+
+const { record } = Astro.props;
+const { country, region, city } = record;
+const content = readCityContent(service, country, region, city);
+if (!content) throw new Error(`Missing content for ${city.name}`);
+
+const seo = seoFor(service, record, content);
+const pathname = cityPath(service, country, region, city);
+const neighbours = nearbyCities(service, record, 6);
+
+const otherService = "seo-for-therapists";
+const sibling =
+  isLive(city, otherService) && cityContentExists(otherService, country, region, city)
+    ? {
+        href: cityPath(otherService, country, region, city),
+        label: `${getServiceConfig(otherService).name} in ${displayName(city)}`,
+      }
+    : null;
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: config.rootLabel, href: serviceRootPath(service) },
+  { name: country.name, href: countryPath(service, country) },
+  { name: region.name, href: regionPath(service, country, region) },
+  { name: displayName(city) },
+];
+
+const areaServed = [
+  {
+    "@type": "City",
+    name: displayName(city),
+    containedInPlace: { "@type": "AdministrativeArea", name: region.name },
+  },
+  {
+    "@type": "AdministrativeArea",
+    name: region.name,
+    containedInPlace: { "@type": "Country", name: country.name },
+  },
+  ...neighbours.filter((neighbour) => neighbour.live).map((neighbour) => ({
+    "@type": "City",
+    name: neighbour.city.name,
+  })),
+  { "@type": "Country", name: country.name },
+];
+
+const jsonLd = locationCityGraph({
+  pathname,
+  title: seo.title,
+  description: seo.description,
+  h1: seo.h1,
+  serviceType: config.serviceType,
+  breadcrumbs,
+  areaServed,
+  faqs: content.faqs,
+});
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  canonical={pathname}
+  image={content.hero?.image}
+  imageAlt={content.hero?.imageAlt}
+  jsonLd={jsonLd}
+>
+  <LocationCityPage
+    service={service}
+    record={record}
+    content={content}
+    seo={seo}
+    neighbours={neighbours}
+    sibling={sibling}
+  />
+</BaseLayout>

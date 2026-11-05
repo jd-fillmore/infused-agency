@@ -1,0 +1,149 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Dallas and Fort Worth remotely.",
+  "neighbourhoods": [
+    "Uptown",
+    "Deep Ellum",
+    "Bishop Arts District",
+    "Plano",
+    "Frisco"
+  ],
+  "local_market_context": [
+    "Therapy searches across Dallas rarely stay inside the city limits. Someone might look for a trauma therapist in Uptown, couples counseling in Plano, teen counseling in Richardson, or a Texas-licensed clinician who offers telehealth anywhere in the Metroplex. They may narrow by insurance, evening hours, a faith-based approach or experience with a particular population. A homepage that says only “therapy in Dallas” gives the reader and the search engine too little to work with.",
+    "We build pages for those routes: a clear homepage, focused specialty pages, and an office or service-area page covering the communities the practice actually serves, with plain details about in-person and online sessions across Texas. Links between specialty, location and intake make the next step easy to find.",
+    "We also make the site easy to crawl and read: sensible navigation, descriptive titles and headings, quick mobile layouts and metadata that reflects each page. Dallas and the surrounding Metroplex are named where they are accurate, not repeated as keywords."
+  ],
+  "market_heading": "How AI search is changing the way Dallas clients find a therapist",
+  "market_eyebrow": "The Dallas market",
+  "regulatory_body": {
+    "name": "Texas Behavioral Health Executive Council (BHEC)",
+    "url": "https://bhec.texas.gov/"
+  },
+  "sources": [
+    "https://bhec.texas.gov/"
+  ],
+  "hero": {
+    "eyebrow": "Therapist SEO",
+    "description": "Infused Agency helps Dallas therapists and counseling practices appear in Google and in AI search tools when people search by concern, by suburb or by Texas license. We build the pages, profile details and technical foundation that turn a practice’s online presence into a first appointment.",
+    "image": "/img/seo-for-therapists-dallas-texas.webp",
+    "imageAlt": "Downtown Dallas skyline at night"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Dallas therapy practice",
+    "description": "Six connected pieces, planned around the practice rather than sold as separate suburb pages.",
+    "cards": [
+      {
+        "title": "Dallas search intent and on-page SEO",
+        "body": "We map how people in Dallas and the wider Metroplex describe what they need, then shape titles, headings and page copy around those concerns. A practice near SMU and a group in Frisco may serve different clients, even when both offer anxiety therapy. The writing names the specialty and the area without stuffing."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We tighten the Google Business Profile, choose honest categories and service areas, and build an office or service-area page that reflects how the practice operates. Consistent contact details and relevant Texas professional directories help Dallas clients verify they have found a genuine local practice."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI tools need extractable facts: who you help, where you are licensed in Texas, which specialties you offer and how a client books. We make those details explicit in the site and structured data, then check how assistants describe the practice. Citations cannot be guaranteed. AEO and GEO are the common labels for this part of the work."
+      },
+      {
+        "title": "Content that answers client questions",
+        "body": "Useful pages answer the questions that come before a first call: what intake involves, how insurance and superbills work in Texas, whether online sessions are available across the state, and how to choose a therapist for a specific issue. We keep the language practical and avoid promising clinical outcomes while giving search engines and AI assistants clear answers to quote."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We look at how search engines reach and render the site: indexing, speed, mobile behavior, broken links, repeated titles and crawl paths. Practice sites often gather outdated pages, leftover plugins and forms that silently fail. Clearing those problems supports every new page and shortens the distance between a search result and an inquiry."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Credibility depends on real references: professional directories, Texas association profiles, community listings, local media, training details and honest reviews. We review availability, improve content, monitor the searches that lead to inquiries and correct drift each month. Local visibility is a practice, not a one-time switch."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Dallas therapists",
+    "paragraphs": [
+      "Ask an AI assistant for a trauma therapist in Dallas, a couples counselor near Oak Lawn or a bilingual clinician in Arlington, and the reply is assembled from sources the tool can read and trust. Clear, consistent pages give it the material it needs: who the clinician helps, where they are licensed in Texas, what they specialize in and how to arrange a first session.",
+      "AI search optimization, often shortened to AI SEO, is the work of making a practice understood and cited by those systems. AEO, answer engine optimization, focuses on direct answers that can be lifted from a page. GEO, generative engine optimization, is about accurate, consistent descriptions across the sources AI tools consult. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider approach.",
+      "These labels describe overlapping parts of the same SEO discipline, not a separate product with a different guarantee. Nobody can promise a citation or a position in an AI answer. What we can do is make the facts about your Dallas practice easy to find, quote and repeat."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Dallas therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Dallas therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with licensed professional counselors, licensed clinical social workers, licensed marriage and family therapists, psychologists and counselors throughout Texas. Some are establishing a solo practice; others are growing a group, bringing on associates or seeing clients online across the state.",
+      "Online-only practices need Texas licensure and telehealth explained clearly. Groups need a structure that makes sense of several clinicians, specialties and locations. The scope follows the practice; the standard stays the same: accurate information, an obvious next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and licensed in Texas",
+      "Growing a group with several clinicians or specialties",
+      "Serving Dallas, Plano, Frisco, Arlington and the Dallas–Fort Worth area",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Dallas therapists choose Infused for AI search optimization",
+    "paragraph": "Your professional reputation travels with every marketing decision, so the partner you choose matters. Counseling advertising in Texas has to be honest, and the tone has to respect the trust clients place in a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes. The work is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We work from verified facts about your Dallas practice: the clients you support, your Texas license, the specialties you offer and how to start. Nothing is published as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "Google’s rankings are outside any agency’s control, and SEO should not be sold as a guaranteed outcome. We also avoid wording that suggests a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around specialties and real searches",
+        "body": "We build pages around the concerns people search for in Dallas — trauma, anxiety, couples work, teens, EMDR or another specialty — and connect them to the communities and session formats your practice really serves. Each page has a clear job without manufacturing demand."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Texas licensing boards and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need closer review, and leave compliance decisions with the practice and its advisers."
+      }
+    ]
+  },
+  "testimonial_heading": "What Dallas therapists say about working with an AI SEO agency",
+  "faq_heading": "AI search optimization and GEO questions from Dallas therapists",
+  "faqs": [
+    {
+      "q": "Can a solo practice rank for “therapist Dallas”?",
+      "a": "A solo practice can compete for Dallas searches when the site clearly explains its work and the communities it serves. Google rewards focused specialty pages, a complete Google Business Profile, genuine reviews and a fast mobile site. We target realistic searches rather than promising a position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Yes. People still search for a Texas-licensed therapist, a specific specialty or a clinician who offers telehealth from Dallas. The site should state that sessions are online, which parts of Texas you serve and how the first appointment works."
+    },
+    {
+      "q": "Should the site mention Plano, Frisco or Arlington?",
+      "a": "Name the places the practice genuinely serves on the office or service-area page. A clear service-area section is more useful than a thin duplicate page for every suburb in the Metroplex. If a community produces real demand, it may deserve its own page later, but not one that repeats the same copy."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "No specific timeline is promised. Google sets the pace, and rankings depend on the starting site, the competition, the review profile and how consistently the work is maintained. The first visible progress is the work itself — fixes, new pages and rewritten titles — followed by reports on which searches the pages appear for."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "The engagement is a 3-month implementation project with three packages — Starter ($329.99/month), Professional ($379.99/month) and Premium ($429.99/month) — paid over 12 monthly installments. The monthly amount is a payment toward the project, not an ongoing retainer. A group practice with several clinicians may need a larger scope, confirmed in writing after a free review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. A group practice often needs a clearer structure: who each clinician is, which specialties and populations they serve, where sessions happen and how inquiries are routed. We can plan the site around the group as a whole without losing the individual clinicians a client may be looking for."
+    },
+    {
+      "q": "Does your marketing respect Texas licensing boards and professional ethics rules?",
+      "a": "We avoid guarantees, clinical claims and misleading wording. Marketing should describe the practice accurately, not promise a ranking or an outcome. The practice remains responsible for its own compliance with Texas regulators and professional obligations, and we flag anything that may need a closer review."
+    },
+    {
+      "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
+      "a": "It is the work of making a practice understandable to AI tools: accurate, consistent details about specialties, Texas licensure, location and booking, written clearly on the site and across profiles. AEO (answer engine optimization) and GEO (generative engine optimization) describe parts of the same effort. Nobody can promise a citation or a position in an AI answer."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Dallas therapy practice with AI search optimization",
+    "description": "Share your website and the Dallas–Fort Worth communities you serve. We will review your local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-dallas"
+}

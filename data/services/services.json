@@ -123,7 +123,7 @@
   },
   {
     "slug": "ai-search",
-    "url": "/ai-search",
+    "url": "/ai-search-optimization",
     "name": "AI Search",
     "shortName": "AI Search",
     "group": "seo",
@@ -138,7 +138,7 @@
   },
   {
     "slug": "ai-seo-toronto",
-    "url": "/ai-seo-toronto",
+    "url": "/ai-search-optimization/canada/ontario/toronto",
     "name": "AI SEO Toronto",
     "shortName": "AI SEO Toronto",
     "group": "seo",
@@ -154,7 +154,7 @@
   },
   {
     "slug": "ai-seo-hamilton",
-    "url": "/ai-seo-hamilton",
+    "url": "/ai-search-optimization/canada/ontario/hamilton",
     "name": "AI SEO Hamilton",
     "shortName": "AI SEO Hamilton",
     "group": "seo",

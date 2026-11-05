@@ -5,7 +5,7 @@
 // community and carries its own market context, service framing and FAQs.
 // They are merged into the legacy city-page adapter at build time.
 
-const AI_LINK = { href: "/ai-search", label: "AI search optimization" };
+const AI_LINK = { href: "/ai-search-optimization", label: "AI search optimization" };
 const SEO_LINK = { href: "/seo", label: "SEO services" };
 const CLIENT_FEEDBACK_HEADING = "What Niagara clients say";
 

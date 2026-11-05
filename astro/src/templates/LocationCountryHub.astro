@@ -1,0 +1,96 @@
+---
+import CtaBand from "../components/ui/CtaBand.astro";
+import Icon from "../components/ui/Icon.astro";
+import PageHero from "../components/ui/PageHero.astro";
+import Section from "../components/ui/Section.astro";
+import { getServiceConfig, regionPath, serviceRootPath } from "../lib/locations.mjs";
+
+interface Props {
+  service: string;
+  country: any;
+  regions: Array<{ region: any; cities: any[] }>;
+  hub: { intro: string };
+}
+
+const { service, country, regions, hub } = Astro.props;
+const config = getServiceConfig(service);
+const countryLabel = country.name === "United States" ? "the United States" : country.name;
+const h1 =
+  service === "ai-search-optimization"
+    ? `AI Search Optimization Services Across ${country.name === "United States" ? "the United States" : country.name}`
+    : `SEO for Therapists Across ${country.name === "United States" ? "the United States" : country.name}`;
+
+const breadcrumbs = [
+  { name: "Home", href: "/" },
+  { name: config.rootLabel, href: serviceRootPath(service) },
+  { name: country.name },
+];
+---
+
+<PageHero
+  title={h1}
+  description={hub.intro}
+  breadcrumbs={breadcrumbs}
+  eyebrow={config.shortName}
+  ctaLabel="Get a Free Quote"
+/>
+
+<Section eyebrow="Regions" index="01" heading={`${config.locationLabel} by region in ${countryLabel}`}>
+  <div class="grid grid--2 reveal-group">
+    {
+      regions.map(({ region, cities }) => (
+        <a class="card" href={regionPath(service, country, region)}>
+          <h3 class="card__title">
+            {region.name}
+            <Icon name="arrow-right" />
+          </h3>
+          <p class="card__text">
+            {cities.length} live {cities.length === 1 ? "page" : "pages"}:{" "}
+            {cities.map((record) => record.city.name).join(", ")}.
+          </p>
+        </a>
+      ))
+    }
+  </div>
+</Section>
+
+<Section tone="tint" eyebrow="Service" index="02" heading="How the programme works">
+  <div class="split split--top">
+    <div class="prose reveal">
+      <p>
+        Every location page follows the same programme, scoped to the market it
+        describes: search and AI visibility work, a maintained profile, content
+        written for the questions buyers actually ask and honest reporting.
+      </p>
+      <p>
+        We serve all of these cities remotely from the Niagara region in
+        Ontario, Canada. There is no local office in {countryLabel}, and no page
+        here claims one.
+      </p>
+    </div>
+    <aside class="callout reveal">
+      <h3>Where to go next</h3>
+      <ul class="chip-list" style="margin-top: 1rem;">
+        <li>
+          <a class="chip" href={serviceRootPath(service)}>
+            {config.name} services
+            <Icon name="arrow-right" />
+          </a>
+        </li>
+        <li>
+          <a class="chip" href="/ai-search/locations">
+            All AI search optimization locations
+            <Icon name="arrow-right" />
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</Section>
+
+<CtaBand
+  eyebrow="Free quote"
+  heading={`${config.shortName} across ${countryLabel}`}
+  description="Send us your website and the areas you serve. We will review your search and AI visibility, then return a written quote."
+  ctaLabel="Get a Free Quote"
+/>
