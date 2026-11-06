@@ -12,8 +12,12 @@ import {
   regionPath,
   serviceRootPath,
   isLive,
+  isSkipped,
   cityContentExists,
   displayName,
+  builtCities,
+  statusOf,
+  PRODUCTION_BUILD,
 } from "../../../../lib/locations.mjs";
 import { locationCityGraph } from "../../../../lib/location-schema";
 
@@ -22,7 +26,7 @@ const config = getServiceConfig(service);
 
 export function getStaticPaths() {
   const service = "seo-for-therapists";
-  return liveCities(service).map((record) => ({
+  return builtCities(service).map((record) => ({
     params: {
       country: record.country.slug,
       region: record.region.slug,
@@ -36,6 +40,11 @@ const { record } = Astro.props;
 const { country, region, city } = record;
 const content = readCityContent(service, country, region, city);
 if (!content) throw new Error(`Missing content for ${city.name}`);
+
+// Review pages are reachable by URL only: noindexed, never in the sitemap,
+// never linked from other pages, and flagged with a visible banner unless the
+// build is for production (where they are excluded entirely).
+const isReviewPage = statusOf(city, service) === "review";
 
 const seo = seoFor(service, record, content);
 const pathname = cityPath(service, country, region, city);
@@ -91,11 +100,20 @@ const jsonLd = locationCityGraph({
 <BaseLayout
   title={seo.title}
   description={seo.description}
-  canonical={pathname}
+  canonical={isReviewPage ? null : pathname}
+  noindex={isReviewPage}
   image={content.hero?.image}
   imageAlt={content.hero?.imageAlt}
   jsonLd={jsonLd}
 >
+  {
+    isReviewPage && !PRODUCTION_BUILD && (
+      <div class="review-banner" slot="banner">
+        REVIEW PAGE – not published. This page is in review and is excluded from production builds and
+        sitemaps.
+      </div>
+    )
+  }
   <LocationCityPage
     service={service}
     record={record}

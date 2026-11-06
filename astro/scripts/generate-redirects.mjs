@@ -65,7 +65,7 @@ fs.writeFileSync(path.join(ROOT, "REDIRECTS.md"), markdown);
 
 const block = `${MARK_START}\n${entries.map((entry) => `${entry.from} ${entry.to} 301`).join("\n")}\n${MARK_END}\n`;
 
-let redirects = fs.existsSync(REDIRECT_FILE) ? fs.readFileSync(REDIRECT_FILE, "utf8") : "";
+let redirects = fs.existsSync(REDIRECT_FILE) ? fs.readFileSync(REDIRECT_FILE, "utf8").replace(/\r\n/g, "\n") : "";
 
 // Strip any previously generated block. The markers contain regex
 // metacharacters (parentheses, slashes), so this is a plain string cut rather

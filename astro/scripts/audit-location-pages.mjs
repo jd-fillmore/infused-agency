@@ -58,8 +58,16 @@ for (const file of pages) {
   const html = fs.readFileSync(file, "utf8");
   const url = toUrl(file);
 
-  const canon = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1] ?? "";
-  if (!canon.endsWith(url)) errors.push(`${url}: canonical is ${canon}`);
+  const noindex = /<meta name="robots" content="noindex, nofollow"/.test(html);
+  if (noindex) {
+    // Review pages: reachable by URL only. They must not emit a canonical
+    // (a canonical would cancel the noindex) and must be noindexed.
+    if (/rel="canonical"/.test(html)) errors.push(`${url}: noindex (review) page must not emit a canonical`);
+    if (!noindex) errors.push(`${url}: review page is not noindexed`);
+  } else {
+    const canon = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1] ?? "";
+    if (!canon.endsWith(url)) errors.push(`${url}: canonical is ${canon}`);
+  }
 
   const title = decode(html.match(/<title>([^<]*)<\/title>/)?.[1] ?? "");
   if (title.length > 60) errors.push(`${url}: title ${title.length} chars`);
@@ -99,6 +107,24 @@ for (const file of pages) {
 }
 
 console.log(`audited ${pages.length} location pages (city + hub + service roots)`);
+
+// Review-status pages are noindexed and must never appear in a production
+// build (CONTEXT=production on Netlify).
+const noindexPages = pages.filter((file) =>
+  /<meta name="robots" content="noindex, nofollow"/.test(fs.readFileSync(file, "utf8"))
+);
+if (noindexPages.length > 0 && process.env.CONTEXT === "production") {
+  errors.push(
+    ...noindexPages.map((file) => `${toUrl(file)}: review page built in a production build`)
+  );
+} else if (noindexPages.length > 0) {
+  console.log(
+    `review pages built (non-production): ${noindexPages.length} ${JSON.stringify(
+      noindexPages.map(toUrl)
+    )}`
+  );
+}
+
 if (errors.length) {
   console.log(`${errors.length} issue(s):\n - ${errors.slice(0, 25).join("\n - ")}`);
   process.exitCode = 1;

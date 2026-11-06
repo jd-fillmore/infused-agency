@@ -18,6 +18,12 @@ import {
   RETIRED_ROUTE_PATHS,
   getRetiredRoute,
 } from "../src/lib/retired-routes.mjs";
+import {
+  SERVICE_SLUGS,
+  reviewCities,
+  cityPath,
+  PRODUCTION_BUILD,
+} from "../src/lib/locations.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..", "..");
@@ -193,19 +199,25 @@ function run() {
     const h1Count = (html.match(/<h1\b/g) ?? []).length;
     if (h1Count !== 1) error(rel, `expected one H1, found ${h1Count}`);
 
-    // Canonical and robots.
+    // Canonical and robots. Review-status location pages build outside
+    // production and are published noindex, nofollow without a canonical, so
+    // even a deploy preview cannot be indexed.
+    const robots = html.match(/<meta name="robots" content="([^"]*)"/)?.[1] ?? "";
+    const isReviewPage = !isNoindex && robots.startsWith("noindex");
     const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
     if (isNoindex) {
       if (canonical) error(rel, "noindex error page must not emit a canonical");
+    } else if (isReviewPage) {
+      if (canonical) error(rel, "noindex (review) page must not emit a canonical");
+      if (robots !== "noindex, nofollow") error(rel, `unexpected robots value: "${robots}"`);
     } else if (!canonical) {
       error(rel, "missing canonical");
     } else if (canonical !== expectedCanonical(route)) {
       error(rel, `canonical mismatch: ${canonical} (expected ${expectedCanonical(route)})`);
     }
 
-    const robots = html.match(/<meta name="robots" content="([^"]*)"/)?.[1] ?? "";
     if (isNoindex && !robots.includes("noindex")) error(rel, "error page is not noindex");
-    if (!isNoindex && robots !== "index, follow") {
+    if (!isNoindex && !isReviewPage && robots !== "index, follow") {
       error(rel, `unexpected robots value: "${robots}"`);
     }
 
@@ -339,26 +351,32 @@ function run() {
     if (!sitemap.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
       error("sitemap.xml", "missing XML declaration");
     }
+    if (/<\s*sitemapindex[\s>]/.test(sitemap)) {
+      error("sitemap.xml", "must be a single flat urlset — no sitemap index");
+    }
+    // The single sitemap must stay within search-engine limits. Past this
+    // point it has to be split into multiple sitemaps plus an index.
+    if (sitemap.length > 45 * 1024 * 1024) {
+      error(
+        "sitemap.xml",
+        `size limit exceeded (${(Buffer.byteLength(sitemap, "utf8") / 1024 / 1024).toFixed(1)} MB > 45 MB) — split the sitemap at this point`
+      );
+    }
     const readLocs = (xml) =>
       [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
     let locs = readLocs(sitemap);
 
-    // The site publishes a sitemap index; gather URLs from its children so
-    // the coverage checks below still see every live route.
-    if (/<sitemapindex[\s>]/.test(sitemap)) {
-      const children = locs.map((loc) => new URL(loc).pathname);
-      locs = [];
-      for (const child of children) {
-        const childFile = path.join(distDir, child.replace(/^\//, ""));
-        if (!fs.existsSync(childFile)) {
-          error("sitemap.xml", `index references a missing child sitemap: ${child}`);
-          continue;
-        }
-        const childXml = fs.readFileSync(childFile, "utf8");
-        if (!childXml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')) {
-          error(child, "missing XML declaration");
-        }
-        locs.push(...readLocs(childXml));
+    if (locs.length > 45000) {
+      error(
+        "sitemap.xml",
+        `URL limit exceeded (${locs.length} > 45000) — split the sitemap at this point`
+      );
+    }
+    // No child sitemap files may be published alongside the single sitemap.
+    // Old child sitemaps 301 to /sitemap.xml instead (see _redirects).
+    for (const name of fs.readdirSync(distDir)) {
+      if (/^sitemap-.+\.xml$/.test(name)) {
+        error("dist", `obsolete child sitemap published: /${name} (single /sitemap.xml only)`);
       }
     }
     if (locs.length === 0) error("sitemap.xml", "contains no URLs");
@@ -387,8 +405,54 @@ function run() {
     }
 
     for (const route of htmlRoutes) {
-      if (!NOINDEX_ROUTES.has(route) && !sitemapRoutes.has(route)) {
-        error("sitemap.xml", `indexable route missing from sitemap: ${route}`);
+      if (NOINDEX_ROUTES.has(route) || sitemapRoutes.has(route)) continue;
+      const coverFile = path.join(distDir, route.slice(1), "index.html");
+      const coverHtml = fs.existsSync(coverFile) ? fs.readFileSync(coverFile, "utf8") : "";
+      // Review pages are deliberately absent from the sitemap (noindexed).
+      if (coverHtml.includes('<meta name="robots" content="noindex, nofollow"')) continue;
+      error("sitemap.xml", `indexable route missing from sitemap: ${route}`);
+    }
+  }
+
+  // Review-page safety gate. Review-status location pages build everywhere
+  // except production, so even a deploy preview can ship them. The page route
+  // emits noindex/nofollow for them, the sitemap never lists them and the
+  // nearest-city/hub uses liveCities() so no internal links ever target them.
+  // This gate enforces all of that, and refuses any review page in a build
+  // that would actually reach the production host.
+  const reviewPaths = [];
+  for (const serviceSlug of SERVICE_SLUGS) {
+    for (const { country, region, city } of reviewCities(serviceSlug)) {
+      reviewPaths.push(cityPath(serviceSlug, country, region, city));
+    }
+  }
+  for (const reviewPath of reviewPaths) {
+    const reviewFile = path.join(distDir, reviewPath.slice(1), "index.html");
+    if (!fs.existsSync(reviewFile)) continue;
+    const reviewHtml = fs.readFileSync(reviewFile, "utf8");
+    if (!reviewHtml.includes('content="noindex, nofollow"')) {
+      error(reviewPath, "review page is missing the noindex, nofollow robots meta");
+    }
+    if (PRODUCTION_BUILD) {
+      error(reviewPath, "review page built in a production build");
+    }
+  }
+  if (fs.existsSync(sitemapFile)) {
+    const sitemapText = fs.readFileSync(sitemapFile, "utf8");
+    for (const reviewPath of reviewPaths) {
+      if (sitemapText.includes(`<loc>${SITE}${reviewPath}</loc>`)) {
+        error("sitemap.xml", `review page listed in the sitemap: ${reviewPath}`);
+      }
+    }
+  }
+  for (const route of htmlRoutes) {
+    if (reviewPaths.includes(route)) continue;
+    const linkedFile = path.join(distDir, route.slice(1), "index.html");
+    if (!fs.existsSync(linkedFile)) continue;
+    const html = fs.readFileSync(linkedFile, "utf8");
+    for (const reviewPath of reviewPaths) {
+      if (html.includes(`href="${reviewPath}"`)) {
+        error(route, `single review page linked from other pages: ${reviewPath}`);
       }
     }
   }

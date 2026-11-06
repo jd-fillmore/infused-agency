@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Components — Phase 3.2 visual system
+   Components â€” Phase 3.2 visual system
    ========================================================================== */
 
 /* Buttons ----------------------------------------------------------------- */
@@ -3888,3 +3888,17 @@
   object-fit: cover;
 }
 
+
+/* Review banner ------------------------------------------------------------
+   Shown (non-production builds only) on review-status location pages, which
+   are noindexed and excluded from production builds and sitemaps. */
+.review-banner {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  background: #b45309;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+}

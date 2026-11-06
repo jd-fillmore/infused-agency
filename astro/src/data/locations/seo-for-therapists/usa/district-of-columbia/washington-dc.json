@@ -64,7 +64,9 @@
     "paragraphs": [
       "A client may ask an assistant for a trauma therapist in Foggy Bottom, or a couples counselor near Arlington who accepts referral access via EAP. The answer the tool gives is assembled from details it found and trusted online: who the clinician works with, where they are licensed, how appointments happen. Practices with confusing license information, vague copy or unverified facts lose out regardless of clinical quality.",
       "AI SEO is the practice of making those facts legible and citable. Answer engine optimization (AEO) shapes the answers themselves; generative engine optimization (GEO) keeps the practice consistent across the many places assistants look. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> outline the same thinking applied across industries.",
-      "Nobody can promise you a paragraph in ChatGPT or an AI Overview. What we can do is control the parts that are actually controllable: accurate licensure, clear specialties, honest communities served, easy booking and a technical site those systems can read."
+      "Nobody can promise you a paragraph in ChatGPT or an AI Overview. What we can do is control the parts that are actually controllable: accurate licensure, clear specialties, honest communities served, easy booking and a technical site those systems can read.",
+      "Washington, DC searches often cross jurisdictions: a therapist on Capitol Hill, a couples counsellor in Bethesda, or a clinician licensed in DC who sees Arlington and Alexandria clients online. ChatGPT, Google AI Overviews and Perplexity answer from practice pages, district and state directories, and profiles, so a page that blurs DC, Maryland and Virginia creates uncertainty.",
+      "We make the licensing jurisdiction, service area, specialties and telehealth coverage explicit, then add structured data and pages that answer the questions clients ask before booking. Citations are aligned across the relevant directories. GEO is the consistency work behind those descriptions; a citation or ranking is never guaranteed."
     ]
   },
   "pricing_heading": "AI SEO optimization pricing for Washington, DC therapy practices",
@@ -138,6 +140,10 @@
     {
       "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
       "a": "It is the work of making a practice easy for AI tools to read and cite: specialties, licensure by state, locations and booking details, written clearly and kept consistent. AEO (answer engine optimization) and generative engine optimization (GEO) are applied labels for parts of this. None of it comes with a guaranteed citation."
+    },
+    {
+      "q": "Do DC clients ask AI tools for a therapist licensed in a specific jurisdiction?",
+      "a": "Sometimes, especially when they live in Maryland or Virginia and see a DC-based clinician online. Clear jurisdictional details help. We state the license and coverage plainly, but no agency can guarantee how ChatGPT or another assistant will interpret or cite the practice."
     }
   ],
   "cta": {

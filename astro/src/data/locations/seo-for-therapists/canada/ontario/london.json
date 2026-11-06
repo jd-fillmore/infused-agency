@@ -1,0 +1,160 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Wortley Village to Masonville.",
+  "neighbourhoods": [
+    "Wortley Village",
+    "Old North",
+    "Byron",
+    "Masonville",
+    "Hyde Park"
+  ],
+  "local_market_context": [
+    "London searches carry the shape of the city: a student near Western looking for anxiety counselling, a nurse at University Hospital who needs an evening appointment, a family in Byron searching for a child therapist, or a couple in Wortley Village looking for someone within walking distance. People also search by approach and by whether the clinician is registered in Ontario. A page that says only \"therapy in London\" leaves all of that unanswered, and it can even be confused with London, England.",
+    "The local market is smaller than the Greater Toronto Area but not empty. Established clinics, campus counselling services and hospital-affiliated programs occupy many broad searches, while private practitioners often rely on referrals and a single homepage. A practice that separates its specialties and explains its part of the city can compete without pretending to be a large clinic.",
+    "Technical details matter in a university and hospital town where schedules are irregular. Pages need to be quick on a phone, session times and formats need to be visible, and the site should say plainly whether it serves students, health workers or families. Naming Old North or Masonville is useful where the practice truly sees clients there, not as a keyword garnish."
+  ],
+  "market_heading": "How London, Ontario clients find a therapist",
+  "market_eyebrow": "The London market",
+  "regulatory_body": {
+    "name": "College of Registered Psychotherapists of Ontario (CRPO)",
+    "url": "https://www.crpo.ca"
+  },
+  "sources": [
+    "https://www.crpo.ca",
+    "https://cpbao.ca",
+    "https://www.ocswssw.org"
+  ],
+  "hero": {
+    "description": "Infused Agency helps London, Ontario therapists and group practices get found in Google and in AI answers when people search by concern, neighbourhood, campus or Ontario registration. We build the page structure, profile details and technical groundwork that make a practice clear to someone deciding whom to call.",
+    "image": "/images/ai-search-optimization-and-seo-for-toronto-therapists.webp",
+    "imageAlt": "A phone showing an AI assistant, representing AI search visibility for London, Ontario therapy practices"
+  },
+  "services": {
+    "heading": "AI search optimization services for a London therapy practice",
+    "description": "Six connected pieces, scoped to the practice rather than sold as separate city pages.",
+    "cards": [
+      {
+        "title": "London search intent and on-page SEO",
+        "body": "We study how people in London, Ontario describe what they need, including campus, hospital, neighbourhood and family context. Then we shape titles, headings and page copy around those searches. A clinician working with graduate students near Western and a couples counsellor in Old North should not share identical copy."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We tighten the Google Business Profile, choose honest categories and service areas, and build an office or service-area page that matches how sessions actually work. Consistent contact details and relevant Ontario directories help London clients confirm they have found a real local practice, not a directory listing or a Toronto clinic with a location page."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants need facts they can extract: who you help, where you are registered, your specialties and how someone books. We make those details explicit in the site and structured data, then review how assistants describe the practice. No agency can guarantee an AI citation. AEO and GEO are the labels people use for this work."
+      },
+      {
+        "title": "Content that answers London client questions",
+        "body": "Specialty pages can answer what a first session involves, whether receipts work for student or employee benefit plans, whether online sessions reach the rest of Ontario, and how to choose a therapist for a particular concern. We keep the language practical and avoid clinical promises while giving Google and AI tools clear answers."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We review indexing, page speed, mobile layout, broken links, duplicate titles and crawl paths. A practice site in London can accumulate retired pages, plugin changes and forms that no longer submit. Those issues are easy to postpone and costly to ignore, because they stand between a strong page and the person searching for it."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Credibility is earned through real references: Ontario professional directories, association profiles, community and business listings, local publications, training profiles and genuine reviews. Each month we refresh availability, improve pages, follow the queries that bring inquiries and repair anything that has slipped."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for London therapists",
+    "paragraphs": [
+      "Ask an assistant for a trauma therapist near Wortley Village, a counsellor who understands graduate student life at Western, or an Ontario-registered clinician who offers online sessions across the province, and the answer is built from sources the tool can read and trust. Those systems look for clear pages: who the clinician helps, where they are registered, what they specialise in and how to get in touch.",
+      "AI search optimization, or AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related craft of writing pages with direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems draw from. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider approach.",
+      "The labels overlap and describe parts of the same SEO work rather than a separate magic service. No one can guarantee a citation or a placement in AI answers. What we can do is make the facts about your London practice easy to find, quote and repeat.",
+      "London, Ontario searches may start with Wortley Village, Masonville, a Western schedule or a hospital shift, and increasingly they are typed into ChatGPT, Google AI Overviews or Perplexity rather than Google alone. The tools answer from practice sites, Ontario directories and profiles, and they can confuse London, Ontario with London, England when the page is vague about geography.",
+      "We keep the Ontario facts explicit: registration, city and province, the populations served and how to book. Structured data reinforces the location, while content answers questions about student life, hospital schedules and family counselling. GEO is the ongoing alignment of those descriptions across directories. No agency can guarantee a citation or a position."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for London therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for London therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with registered psychotherapists, registered social workers, psychologists and counsellors in Ontario, including practices serving students, hospital staff, families and newcomers in London and Middlesex County. Some are building a solo practice; others are growing a group, adding associates or offering online sessions across the province.",
+      "We also work with online-only practices that need Ontario registration and telehealth made clear, and with groups that need a coherent structure for several clinicians, specialties and locations. The scope changes with the practice; the standard does not: accurate information, a clear next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in Ontario",
+      "Growing a group with several clinicians or specialties",
+      "Serving London, Wortley Village, Byron, Masonville and Hyde Park",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why London therapists choose Infused for AI search optimization",
+    "paragraph": "An SEO partner should strengthen your professional reputation, not put it at risk. Therapy marketing has to meet Ontario advertising standards and respect the trust a client places in a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes. The goal is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We write from facts about your London practice: who you help, your Ontario registration, the specialties you offer and how someone books. Nothing is published as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google's rankings, and SEO should not be presented as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around real London searches",
+        "body": "We organise pages around the concerns people search for in London, such as anxiety, trauma, couples work, student mental health, grief or another specialty, and connect them to the communities and session formats your practice genuinely serves."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Ontario regulatory colleges and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need a closer look, and leave compliance decisions with the practice and its advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from London therapists",
+  "faqs": [
+    {
+      "q": "How do we avoid being confused with London, England?",
+      "a": "Use \"London, Ontario\" in the title, the meta description and the first paragraph, and include Ontario in the structured data. Local signals such as a Canadian address, Ontario registration and nearby place names help search engines place the practice correctly. The page should read naturally rather than repeating the province in every sentence."
+    },
+    {
+      "q": "Can a solo practice rank for \"therapist London Ontario\"?",
+      "a": "A small practice can win the searches that name a part of London, a campus population or a specific concern. The broadest city term is harder and usually less valuable. We set targets around what a solo clinician can actually serve, then measure enquiries rather than a vanity position."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "A London clinician who works online should still say where they are based and which parts of Ontario they serve. Students, hospital staff and shift workers often prefer video, so the page should explain availability and the first appointment rather than hiding it in a booking widget."
+    },
+    {
+      "q": "Should the site mention Western, Wortley Village or Masonville?",
+      "a": "Name the places and communities the practice genuinely serves on the office or service-area page. Referring to Western makes sense if you actually work with students or staff; naming Wortley Village makes sense if clients can reach you there. A clear service-area section is better than a thin page for every neighbourhood."
+    },
+    {
+      "q": "When will I see results?",
+      "a": "London is a referral town, so search visibility often grows alongside referrals rather than replacing them. We track which queries begin to surface and which produce enquiries. We do not attach a date to either, because Google and the local competition set that pace."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "Pricing is a three-month implementation split across twelve payments: $329.99, $379.99 or $429.99 a month depending on the package. The installment is the payment plan for the project, not an ongoing fee. A group with several clinicians is quoted separately after the review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. A London group might combine psychologists, social workers and psychotherapists, each with a different scope. We make those distinctions visible, give every clinician a page of their own where it helps, and route enquiries to the right intake."
+    },
+    {
+      "q": "How do you handle Ontario registration and advertising rules?",
+      "a": "We name each profession accurately and link the relevant college, rather than using therapist as a catch-all. Advertising avoids guarantees and outcome claims. The practice stays responsible for its own compliance, and we escalate anything that looks uncertain."
+    },
+    {
+      "q": "What is AI search optimization for therapists?",
+      "a": "It means removing ambiguity for a machine reader: who the clinician is, which college they belong to, which concerns they treat and how to book. AEO and GEO are shorthand for related work. No one can guarantee that an assistant will cite the page."
+    },
+    {
+      "q": "Does AI search optimization help London, Ontario practices avoid UK confusion?",
+      "a": "Clear geography helps both people and machines. We put London, Ontario in the title, the opening copy, the service area and the structured data, then keep directories consistent. That reduces ambiguity, but no agency can guarantee how an assistant will interpret or cite the practice."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your London therapy practice with AI search optimization",
+    "description": "Tell us about your practice and the London communities you serve. We will review your website, local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-london"
+}

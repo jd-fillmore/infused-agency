@@ -64,7 +64,9 @@
     "paragraphs": [
       "Ask an AI assistant for a trauma therapist in Dallas, a couples counselor near Oak Lawn or a bilingual clinician in Arlington, and the reply is assembled from sources the tool can read and trust. Clear, consistent pages give it the material it needs: who the clinician helps, where they are licensed in Texas, what they specialize in and how to arrange a first session.",
       "AI search optimization, often shortened to AI SEO, is the work of making a practice understood and cited by those systems. AEO, answer engine optimization, focuses on direct answers that can be lifted from a page. GEO, generative engine optimization, is about accurate, consistent descriptions across the sources AI tools consult. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider approach.",
-      "These labels describe overlapping parts of the same SEO discipline, not a separate product with a different guarantee. Nobody can promise a citation or a position in an AI answer. What we can do is make the facts about your Dallas practice easy to find, quote and repeat."
+      "These labels describe overlapping parts of the same SEO discipline, not a separate product with a different guarantee. Nobody can promise a citation or a position in an AI answer. What we can do is make the facts about your Dallas practice easy to find, quote and repeat.",
+      "Dallas searches often cross city lines: a trauma therapist in Uptown, couples counselling in Plano, teen counselling in Richardson, or a Texas-licensed clinician who works online across the Metroplex. ChatGPT, Google AI Overviews and Perplexity pull from practice pages, Texas directories and profiles, so a homepage that never names the suburb or the license gives them little to quote.",
+      "We make the practice's geography and credentials explicit, add structured data for the clinicians and services, and answer the practical questions about insurance, telehealth and first sessions. Directory citations are checked against the same facts. GEO is the work of keeping those descriptions consistent; an AI citation is never promised."
     ]
   },
   "pricing_heading": "AI SEO optimization pricing for Dallas therapy practices",
@@ -138,6 +140,10 @@
     {
       "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
       "a": "It is the work of making a practice understandable to AI tools: accurate, consistent details about specialties, Texas licensure, location and booking, written clearly on the site and across profiles. AEO (answer engine optimization) and GEO (generative engine optimization) describe parts of the same effort. Nobody can promise a citation or a position in an AI answer."
+    },
+    {
+      "q": "Do Dallas clients use ChatGPT or Perplexity to shortlist therapists?",
+      "a": "Some do, especially when they are comparing suburbs, insurance coverage or telehealth. Assistants summarise what they can verify, so clear Texas licensure, service areas and specialties help. No agency can guarantee inclusion, and the practice should keep its own directory details current."
     }
   ],
   "cta": {

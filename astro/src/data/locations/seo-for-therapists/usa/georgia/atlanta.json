@@ -64,7 +64,9 @@
     "paragraphs": [
       "Picture a new Atlantan asking an assistant for a couples counselor in Decatur, or a teen therapist with Saturday openings near Alpharetta. The tool responds with details it has read and trusted: who the clinician serves, whether they are licensed in Georgia, and how an appointment can be requested. Practices whose facts are scattered, thin or outdated simply never enter the answer.",
       "AI search optimization, usually shortened to AI SEO, is the craft of making those facts easy to lift. Answer engine optimization (AEO) shapes pages into direct, extractable answers, while generative engine optimization (GEO) keeps the practice described consistently across the sources assistants consult. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> describe the broader program in plain language.",
-      "These are overlapping names for one discipline, not separate products with separate guarantees. Nobody can promise a quote or ranking inside an AI answer. What an agency can do is make the real facts of your Atlanta practice readable, repeatable and easy for the systems to cite."
+      "These are overlapping names for one discipline, not separate products with separate guarantees. Nobody can promise a quote or ranking inside an AI answer. What an agency can do is make the real facts of your Atlanta practice readable, repeatable and easy for the systems to cite.",
+      "Atlanta clients ask about a trauma therapist near the BeltLine, an EMDR clinician in Decatur, a multicultural counsellor in Old Fourth Ward, or a Georgia-licensed therapist with Saturday openings in Sandy Springs. ChatGPT, Google AI Overviews and Perplexity answer from practice sites, Georgia directories and profiles, so a page that never names the Perimeter city is easy to overlook.",
+      "We make the practice's Georgia license, specialties, populations and service area explicit, add structured data, and answer the questions that precede a first session. Directory citations are checked for the same facts. GEO is the work of keeping that description stable across sources; no AI citation or ranking is guaranteed."
     ]
   },
   "pricing_heading": "AI SEO optimization pricing for Atlanta therapy practices",
@@ -138,6 +140,10 @@
     {
       "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
       "a": "It is the steady work of making a practice legible to AI tools: accurate, consistent details about specialties, Georgia licensure, location and booking that assistants can quote. AEO (answer engine optimization) and generative engine optimization (GEO) label parts of that work. No citation or AI answer can be promised by anyone."
+    },
+    {
+      "q": "Can AI search optimization help Atlanta therapists appear in ChatGPT?",
+      "a": "It can improve the practice's chances by making Georgia licensure, specialties, locations and booking details clear and consistent. ChatGPT and other assistants choose their own sources, so no one can promise a citation. We measure how the practice is described and fix what is missing."
     }
   ],
   "cta": {
