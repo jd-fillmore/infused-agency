@@ -64,7 +64,9 @@
     "paragraphs": [
       "Ask an AI assistant for a trauma counsellor in Vancouver, or a couples therapist near Mount Pleasant or North Vancouver, and the reply is built from sources the tool can read and trust. Clear, consistent pages give it the material it needs: who the clinician helps, where they are registered in British Columbia, what they specialise in and how to arrange a first session.",
       "AI search optimization, or AI SEO, is the work of making a practice understood and cited by those systems. AEO, answer engine optimization, focuses on direct answers that can be lifted from a page. GEO, generative engine optimization, is about consistent, accurate descriptions across the sources AI tools consult. You can read more about our <a href=\"/ai-search-optimization\">AI search optimization services</a>.",
-      "These labels describe overlapping parts of the same SEO discipline, not a separate product with a different guarantee. Nobody can promise a citation or a position in an AI answer. What we can do is make the facts about your Vancouver practice easy to find, quote and repeat."
+      "These labels describe overlapping parts of the same SEO discipline, not a separate product with a different guarantee. Nobody can promise a citation or a position in an AI answer. What we can do is make the facts about your Vancouver practice easy to find, quote and repeat.",
+      "In Vancouver, a search might be framed around Kitsilano or Mount Pleasant, a BC registration, a specific approach, or a clinician who sees clients online across the Lower Mainland. People increasingly put those questions to ChatGPT, Google AI Overviews and Perplexity, which assemble a shortlist from practice sites, directories and profiles rather than a single map result.",
+      "We make the practice legible to those systems by fixing inconsistent addresses and service areas, publishing specialties and populations in plain language, adding structured data, and answering the questions that precede a first call. Generative engine optimization, or GEO, is the ongoing work of keeping those descriptions aligned; it is not a promise of placement."
     ]
   },
   "pricing_heading": "AI SEO optimization pricing for Vancouver therapy practices",
@@ -138,6 +140,10 @@
     {
       "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
       "a": "It is the practice of making a therapy practice legible to AI tools: accurate, consistent details about specialties, registration, location and booking, written clearly on the site and across profiles. AEO (answer engine optimization) and GEO (generative engine optimization) describe parts of the same work. Nobody can promise a citation or a position in an AI answer."
+    },
+    {
+      "q": "Do Vancouver clients use AI tools like ChatGPT to choose a therapist?",
+      "a": "Some do, especially when they want a specialty, a language or a BC-registered clinician and do not want to open ten tabs. Assistants summarise what they can verify. A practice with clear pages and consistent directory details gives them more to work with, though no agency can guarantee an answer."
     }
   ],
   "cta": {

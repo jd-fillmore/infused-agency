@@ -1,0 +1,159 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Walkerville to Essex County remotely.",
+  "neighbourhoods": [
+    "Walkerville",
+    "Riverside",
+    "Forest Glade",
+    "Sandwich"
+  ],
+  "local_market_context": [
+    "Windsor searches often carry the rhythm of the local economy. A shift worker in Riverside looks for an afternoon appointment; a family in Forest Glade searches after a layoff; a couple in Walkerville wants a counsellor who understands a cross-border commute; and a Francophone resident may add language to the query. People also name the wider region, searching for a therapist in Tecumseh, LaSalle or Amherstburg rather than Windsor itself.",
+    "The market is smaller than the Greater Toronto Area, and fewer local practices have invested in their websites. That creates an opening, but not an easy one. Hospital programs, community agencies, employee assistance plans and national directories still occupy many broad searches, while private clinicians often depend on referrals and a single page. A practice that explains its specialties and its real service area can stand out without competing for the whole province.",
+    "Technical details should reflect a border city. Searchers may be in Michigan, but an Ontario practice can only serve clients under its Ontario registration and professional obligations. The site should be explicit about who it can see, where sessions happen and whether online appointments are available across Ontario. Clear, honest geography prevents wasted enquiries and builds the right kind of local visibility."
+  ],
+  "market_heading": "How Windsor-Essex clients find a therapist",
+  "market_eyebrow": "The Windsor market",
+  "regulatory_body": {
+    "name": "College of Registered Psychotherapists of Ontario (CRPO)",
+    "url": "https://www.crpo.ca"
+  },
+  "sources": [
+    "https://www.crpo.ca",
+    "https://cpbao.ca",
+    "https://www.ocswssw.org"
+  ],
+  "hero": {
+    "description": "Infused Agency helps Windsor therapists and counselling practices appear in Google and in AI search when people in Windsor-Essex look for a specialty, a neighbourhood, a language or an Ontario-registered clinician. We build the pages, profile details and technical foundations that make a practice easier to understand and contact.",
+    "image": "/images/ai-search-optimization-and-seo-for-toronto-therapists.webp",
+    "imageAlt": "A phone showing an AI assistant, representing AI search visibility for Windsor therapy practices"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Windsor therapy practice",
+    "description": "Six connected pieces, scoped to the practice rather than sold as separate city pages.",
+    "cards": [
+      {
+        "title": "Windsor search intent and on-page SEO",
+        "body": "We map how people in Windsor and Essex County describe what they need, including neighbourhood, shift schedule, language and family situation. Then we write titles, headings and page copy that answer those searches. A clinician working with first responders and a counsellor focused on couples in Walkerville should not share the same generic page."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We tighten the Google Business Profile, choose categories that reflect the real work, and set service areas honestly. An office or service-area page explains where sessions happen, how parking works and whether telehealth reaches the rest of Ontario. Consistent details across Ontario directories help a client confirm the practice is legitimate."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants need facts they can extract: who you help, where you are registered, your specialties and how someone books. We make those details explicit in the site and structured data, then review how assistants describe the practice. No agency can guarantee an AI citation. AEO and GEO are the labels for this work."
+      },
+      {
+        "title": "Content that answers Windsor client questions",
+        "body": "Useful pages answer what a first session involves, how extended health benefits and receipts work, whether evening or weekend sessions exist, whether counselling is available in French, and how to choose a therapist for shift work, grief or a family concern. We write practically and avoid clinical promises."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We review indexing, page speed, mobile layout, broken links, duplicate titles, structured data and crawl paths. Practice sites often hold retired pages, plugin changes and forms that quietly stopped submitting. Fixing those basics supports every new page and removes friction between a search result and the person ready to ask for help."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "Credibility comes from real references: Ontario professional directories, association profiles, community and business listings, local media, training details and genuine reviews. Each month we refresh availability, improve pages, follow the queries that lead to inquiries and repair what has drifted."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Windsor therapists",
+    "paragraphs": [
+      "When someone asks an assistant for a grief counsellor in Walkerville, a couples therapist near Riverside or an Ontario-registered clinician who offers online sessions across Essex County, the answer is built from sources the tool can read and trust. Those systems look for clear pages: who the clinician helps, where they are registered, what they specialise in and how to get in touch.",
+      "AI search optimization, or AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related craft of writing pages with direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems draw from. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the wider approach.",
+      "The labels overlap and describe parts of the same SEO work rather than a separate magic service. No one can guarantee a citation or a placement in AI answers. What we can do is make the facts about your Windsor practice easy to find, quote and repeat.",
+      "Windsor-Essex questions often reflect shift work, family businesses and the border: a grief counsellor in Walkerville, couples counselling in Riverside, or a French-speaking clinician who sees Tecumseh clients. ChatGPT, Google AI Overviews and Perplexity answer from practice sites, Ontario directories and profiles, so unclear Ontario registration or a vague service area is costly.",
+      "We make the Ontario facts explicit, including who the practice can serve and where sessions happen, then add structured data and answer-ready content for the questions people actually ask. Directory citations are checked for consistency. GEO is the ongoing work of keeping those descriptions aligned; it cannot guarantee a citation or a particular placement."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Windsor therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Windsor therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with registered psychotherapists, registered social workers, psychologists and counsellors in Ontario, including practices serving Windsor, LaSalle, Tecumseh and Amherstburg. Some are building a solo practice; others are growing a group, adding associates or offering online sessions throughout the province.",
+      "We also work with online-only practices that need Ontario registration and telehealth made clear, and with groups that need a coherent structure for several clinicians, specialties and locations. The scope changes with the practice; the standard does not: accurate information, a clear next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in Ontario",
+      "Growing a group with several clinicians or specialties",
+      "Serving Windsor, Walkerville, Riverside, Forest Glade and Tecumseh",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Windsor therapists choose Infused for AI search optimization",
+    "paragraph": "An SEO partner should strengthen your professional reputation, not put it at risk. Therapy marketing has to meet Ontario advertising standards and respect the trust a client places in a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We write from facts about your Windsor practice: who you help, your Ontario registration, the specialties you offer and how someone books. Nothing is published as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google's rankings, and SEO should not be presented as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around real Windsor searches",
+        "body": "We organise pages around the concerns people search for in Windsor-Essex, such as grief, anxiety, trauma, couples work, shift-work stress or another specialty, and connect them to the communities and session formats your practice genuinely serves."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Ontario regulatory colleges and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need a closer look, and leave compliance decisions with the practice and its advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from Windsor therapists",
+  "faqs": [
+    {
+      "q": "Can a Windsor practice attract clients from LaSalle or Tecumseh?",
+      "a": "Yes, if the service area is stated honestly and the page gives those clients a reason to choose you. A clear service-area section, accurate driving and parking details, and content that reflects Essex County can help. Separate pages for each municipality only make sense when the practice has something distinct to say."
+    },
+    {
+      "q": "How should we handle searches from Michigan?",
+      "a": "Be explicit about who you can serve. An Ontario-registered clinician is accountable to Ontario colleges and professional obligations, and cross-border clients raise licensing and privacy questions that a marketing page should not gloss over. Clear wording prevents wasted enquiries and protects the practice."
+    },
+    {
+      "q": "Should the site mention French-language counselling?",
+      "a": "Only if the clinician can genuinely provide it and the practice is prepared to serve Francophone clients. If so, say so plainly and explain how a first session works. A single word in a list is weaker than a short, accurate description of the service."
+    },
+    {
+      "q": "Can a solo practice rank for \"therapist Windsor\"?",
+      "a": "A solo practice can compete for Windsor-Essex searches when the page is clear about the work and the municipalities served. The broadest city term is only one target; a concern plus a place is often more realistic. We measure enquiries rather than promising a position."
+    },
+    {
+      "q": "When will we see results?",
+      "a": "Windsor-Essex is a smaller market, so a clear page can sometimes move faster than in Toronto, but no date is promised. We report the queries that begin to appear and the enquiries that follow, and we keep adjusting the pages as the local competition responds."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "Three months of implementation, paid over twelve installments: Starter $329.99 a month, Professional $379.99, Premium $429.99. The monthly amount is a payment toward the project, not a retainer. A group with several clinicians gets a written scope after the review."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. A Windsor-Essex group may serve several municipalities and need to make that geography obvious. We structure the site so clients in Tecumseh or LaSalle can see whether they are in range, and so each clinician remains findable."
+    },
+    {
+      "q": "How do you handle Ontario registration and advertising rules?",
+      "a": "We use the colleges' terminology, make Ontario registration explicit, and avoid advertising that promises an outcome. Cross-border questions are treated carefully because licensure and privacy obligations do not stop at the river. The practice remains responsible for compliance."
+    },
+    {
+      "q": "What is AI search optimization for therapists?",
+      "a": "It means giving an assistant accurate facts about the practice: which Ontario college the clinician belongs to, which concerns are treated, where sessions happen and how to book. AEO and GEO are related labels. A citation is never guaranteed."
+    },
+    {
+      "q": "How should a Windsor practice handle AI searches from across the border?",
+      "a": "Be explicit about Ontario registration and who can be served. AI tools may surface the practice to Michigan searchers, but licensure and privacy obligations still apply. Clear wording prevents wasted enquiries, and no agency can guarantee how an assistant will present a cross-border practice."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Windsor therapy practice with AI search optimization",
+    "description": "Share your website and the Windsor-Essex communities you serve. We will review your local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-windsor"
+}

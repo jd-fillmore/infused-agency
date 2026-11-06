@@ -1,0 +1,160 @@
+{
+  "title_override": null,
+  "description_override": null,
+  "city_hook": "Serving Woodbridge to Maple remotely.",
+  "neighbourhoods": [
+    "Woodbridge",
+    "Maple",
+    "Thornhill",
+    "Kleinburg",
+    "Concord"
+  ],
+  "local_market_context": [
+    "Vaughan is less one market than a collection of communities, and therapy searches follow the map. Someone in Woodbridge looks for a family counsellor who understands a multi-generational household; a parent in Maple searches for help with a teenager; a couple in Thornhill wants a therapist near Bathurst Street; and a professional near Vaughan Metropolitan Centre wants evening online sessions. The village name often appears in the query before the clinical concern does.",
+    "Competition is dense. Private practices cluster around Woodbridge, Maple and Thornhill, and Toronto or Richmond Hill clinics reach into the same searches with location pages of their own. Many local practices still rely on a single homepage and referrals, which leaves specialty and village-level searches open to a clinician who writes clearly about both.",
+    "Technical accuracy matters because Vaughan's communities share borders with Toronto, Richmond Hill and King. The site should state the real office location, parking and transit options, and whether sessions are in person or online. Naming Kleinburg or Concord helps only if the practice genuinely serves those areas. A misleading map pin is a quick way to lose the trust the page was trying to build."
+  ],
+  "market_heading": "How Vaughan clients search for a therapist",
+  "market_eyebrow": "The Vaughan market",
+  "regulatory_body": {
+    "name": "College of Registered Psychotherapists of Ontario (CRPO)",
+    "url": "https://www.crpo.ca"
+  },
+  "sources": [
+    "https://www.crpo.ca",
+    "https://cpbao.ca",
+    "https://www.ocswssw.org"
+  ],
+  "hero": {
+    "description": "Infused Agency helps Vaughan therapists and counselling groups become easier to find in Google and in AI answers when someone searches by village, concern, language or Ontario registration. We build the pages, profile details and technical foundations that turn a clear online presence into a conversation.",
+    "image": "/images/ai-search-optimization-and-seo-for-toronto-therapists.webp",
+    "imageAlt": "A phone showing an AI assistant, representing AI search visibility for Vaughan therapy practices"
+  },
+  "services": {
+    "heading": "AI search optimization services for a Vaughan therapy practice",
+    "description": "Six connected pieces, scoped to the practice rather than sold as separate village pages.",
+    "cards": [
+      {
+        "title": "Vaughan search intent and on-page SEO",
+        "body": "We map the language Vaughan clients use, including village, family stage, language and session format. Then we shape titles, headings and page copy around those searches. A counsellor working with couples in Woodbridge and a clinician focused on teen anxiety in Maple should have pages that reflect different audiences and locations."
+      },
+      {
+        "title": "Local SEO for the practice",
+        "body": "We tighten the Google Business Profile, choose categories that match the real work, and set service areas honestly. An office or service-area page explains where sessions happen, how parking works and whether telehealth reaches the rest of Ontario. Consistent details across Ontario directories help a family confirm the practice is legitimate."
+      },
+      {
+        "title": "AI search optimization (AI SEO, AEO and GEO)",
+        "body": "AI assistants need facts they can extract: who you help, where you are registered, the languages and specialties you offer and how someone books. We make those details explicit in the site and structured data, then review how assistants describe the practice. No agency can guarantee an AI citation. AEO and GEO are the labels for this work."
+      },
+      {
+        "title": "Content that answers Vaughan client questions",
+        "body": "Pages that answer real questions earn their place: what a first session involves, how extended health benefits and receipts work, whether sessions are offered in Italian or Hebrew, how online appointments function, and how to choose a therapist for a teenager or an older parent. We write practically and avoid clinical promises."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "We review indexing, mobile speed, broken links, duplicate titles, structured data and crawl paths. Practice sites often hold retired service pages, plugin changes and forms that quietly stopped sending enquiries. Repairing those basics supports every new page and shortens the distance between a search result and a family ready to call."
+      },
+      {
+        "title": "Credible mentions and monthly upkeep",
+        "body": "References do much of the trust-building: Ontario professional directories, association profiles, community and business listings, local media, training details and genuine reviews. Each month we refresh availability, improve weak pages, follow the queries that lead to inquiries and fix what has slipped."
+      }
+    ]
+  },
+  "ai": {
+    "heading": "What an AI search optimization agency does for Vaughan therapists",
+    "paragraphs": [
+      "When someone asks an assistant for a family therapist in Woodbridge, a couples counsellor in Thornhill or an Ontario-registered clinician who offers evening sessions from Maple, the answer is assembled from sources the tool can read and trust. Clear, consistent pages tell it who the clinician helps, where they are registered, what they specialise in and how to book.",
+      "AI search optimization, or AI SEO, is the work of getting a practice understood and cited by those tools. Answer engine optimization (AEO) is the related practice of writing pages with direct, extractable answers. Generative engine optimization (GEO) is about keeping the practice described accurately across the sources AI systems use. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the broader programme.",
+      "The terms overlap and describe parts of the same SEO work rather than a separate service with a different guarantee. No one can promise a citation or a position in an AI answer. What we can do is make the facts about your Vaughan practice easy to find, quote and repeat.",
+      "Vaughan clients ask about Woodbridge, Maple or Thornhill, a family counsellor who understands a multi-generational household, or a clinician who offers evening video sessions. ChatGPT, Google AI Overviews and Perplexity answer from practice pages, Ontario directories and review profiles, so a site that never names the village or the population gives the tool little to work with.",
+      "Our AI search optimization work states the practice's real service area, Ontario registration, languages and family specialties, then supports those facts with structured data and answer-ready pages. We reconcile directory citations so the same story appears everywhere. GEO is the label for that consistency work; a citation or ranking is never guaranteed."
+    ]
+  },
+  "pricing_heading": "AI SEO optimization pricing for Vaughan therapy practices",
+  "who": {
+    "heading": "An AI SEO agency built for Vaughan therapists, however you practice",
+    "paragraphs": [
+      "Infused Agency works with registered psychotherapists, registered social workers, psychologists and counsellors in Ontario, including practices serving Vaughan's English, Italian, Hebrew and Russian-speaking communities. Some are solo clinicians; others are growing groups with associates or offering online sessions across the province.",
+      "We also help online-only practices make Ontario registration and telehealth clear, and help groups organise several clinicians, specialties, languages and locations without losing the individual relationships clients are looking for. The scope follows the practice; the standard stays the same: accurate information, a clear next step and no unsupported claims."
+    ],
+    "fitItems": [
+      "Solo and building a credible first impression",
+      "Online-only and registered in Ontario",
+      "Growing a group with several clinicians or languages",
+      "Serving Vaughan, Woodbridge, Maple, Thornhill and Kleinburg",
+      "Looking for inquiries without publishing clinical outcomes"
+    ]
+  },
+  "why": {
+    "heading": "Why Vaughan therapists choose Infused for AI search optimization",
+    "paragraph": "An SEO partner sits close to your professional reputation, and therapy marketing has to satisfy Ontario advertising standards while earning the trust a family brings to a clinician. We keep claims accurate and reviewable, avoid guarantees and never promise clinical outcomes. The aim is to make your specialties easier to find and your practice easier to understand.",
+    "cards": [
+      {
+        "title": "Claims kept accurate and verifiable",
+        "body": "We write from facts about your Vaughan practice: who you help, your Ontario registration, the languages and specialties you offer and how someone books. Nothing goes live as a ranking claim, credential or result we cannot support."
+      },
+      {
+        "title": "No guarantees or clinical promises",
+        "body": "No agency controls Google's rankings, and SEO should not be sold as a guaranteed outcome. We also avoid language that implies a clinical result or recovery. The focus stays on visibility, clarity and inquiries."
+      },
+      {
+        "title": "Pages built around real Vaughan searches",
+        "body": "We organise pages around the concerns people search for in Vaughan, such as family conflict, teen anxiety, couples work, grief, burnout or another specialty, and connect them to the villages and session formats your practice genuinely serves."
+      },
+      {
+        "title": "Ethics-first marketing for a regulated practice",
+        "body": "Ontario regulatory colleges and professional codes set the boundaries. We keep marketing language clear and non-misleading, flag anything that may need a closer look, and leave compliance decisions with the practice and its advisers."
+      }
+    ]
+  },
+  "testimonial_heading": null,
+  "faq_heading": "AI search optimization and GEO questions from Vaughan therapists",
+  "faqs": [
+    {
+      "q": "Should we target Woodbridge and Maple separately?",
+      "a": "Only if the practice serves both areas and has something specific to say about each. A clear service-area section is more useful than two thin pages that repeat the same copy. If one village produces real demand and you see clients there, a dedicated page can earn its place later."
+    },
+    {
+      "q": "How do we reach multi-generational families?",
+      "a": "Write about the situations families actually bring: an adult child arranging care for a parent, grandparents involved in child-rearing, or a couple navigating expectations across generations. Specific, respectful pages tend to attract those enquiries. Avoid stereotyping a community or promising that one approach fits every family."
+    },
+    {
+      "q": "Can a Vaughan practice compete with Toronto clinics?",
+      "a": "Yes, especially for searches that name Woodbridge, Maple, Thornhill or a nearby community. A clear local page, a complete Google Business Profile and genuine reviews can outperform a Toronto clinic with a thin location page. The advantage comes from specificity, not from trying to outrank the whole region for a broad term."
+    },
+    {
+      "q": "Is SEO useful if all sessions are online?",
+      "a": "Online care is common in Vaughan, but the page still needs a location and a registration. Say where the practice is based, which parts of Ontario it serves and how a video first session works, so a family can decide without emailing to ask."
+    },
+    {
+      "q": "When will we see results?",
+      "a": "Vaughan is a competitive search market, so progress usually arrives in stages: technical fixes first, then impressions, then enquiries. We do not promise a timeline. We show which village-level and specialty queries start to appear and what we are changing next."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "The engagement is a three-month build paid over twelve months: $329.99, $379.99 or $429.99 per month by package. The monthly figure is an installment toward the project, not a retainer. Groups with several clinicians are scoped and quoted in writing."
+    },
+    {
+      "q": "Do you work with group practices?",
+      "a": "Yes. Vaughan groups often span several villages and languages. We plan the site around the group's real structure, then make each clinician findable without losing the practice's overall identity."
+    },
+    {
+      "q": "How do you handle Ontario registration and advertising rules?",
+      "a": "We use each college's terms, avoid treating therapist as a synonym for every profession, and keep advertising free of guarantees. The practice remains accountable for its own compliance, and we raise anything that may need legal or professional advice."
+    },
+    {
+      "q": "What is AI search optimization for therapists?",
+      "a": "It means giving an assistant clear, consistent facts about the practice: who is registered with which college, which concerns and languages are covered, where sessions happen and how to book. AEO and GEO describe parts of that work. Citations cannot be guaranteed."
+    },
+    {
+      "q": "Do Vaughan clients ask AI tools for a family therapist?",
+      "a": "Some do, particularly when they want a specific village, language or family focus. Clear pages and consistent listings give ChatGPT, Google AI Overviews and Perplexity better material to quote. The practice still has to earn the trust behind the enquiry, and no agency can guarantee an AI recommendation."
+    }
+  ],
+  "cta": {
+    "heading": "Grow your Vaughan therapy practice with AI search optimization",
+    "description": "Share your website and the Vaughan communities you serve. We will review your local visibility and the searches worth pursuing, then send a clear quote."
+  },
+  "legacy_body": null,
+  "migrated_from": "/seo-for-therapists-vaughan"
+}

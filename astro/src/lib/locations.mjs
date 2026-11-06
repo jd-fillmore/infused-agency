@@ -56,20 +56,15 @@ const SERVICE_LIST = [
     requiresRegulatoryBody: true,
     sitemapKeys: { canada: "therapists-canada", usa: "therapists-us" },
     titleTemplates: [
-      (city) => `${city} SEO for Therapists | Get More Client Inquiries`,
-      (city) => `${city} SEO for Therapists | Get More Clients`,
-      (city) => `${city} SEO for Therapists`,
+      (city) => `SEO & AI Search Optimization for Therapists in ${city}`,
+      (city) => `${city} SEO & AI Search Optimization for Therapists`,
+      (city) => `${city} SEO & AI Search for Therapists | More Clients`,
+      (city) => `${city} SEO & AI Search for Therapists`,
     ],
-    h1: (city) => `SEO for Therapists in ${city}`,
+    h1: (city) => `SEO and AI Search Optimization for Therapists in ${city}`,
     descriptionTemplates: [
       (city) =>
-        `SEO for therapists in ${city}. Improve local Google visibility and your Google Business Profile so your practice wins more client inquiries.`,
-      (city) =>
-        `Therapist SEO in ${city}. Get found on Google and in AI answers with local SEO, GEO and a stronger practice profile.`,
-      (city) =>
-        `SEO for therapists in ${city}: local SEO, Google Business Profile work and AI search visibility that bring in more inquiries.`,
-      (city) =>
-        `SEO for therapists in ${city}. Local SEO, profile work and AI search visibility that produce more client inquiries.`,
+        `${city} therapy practices: SEO and AI search optimization so clients find you in Google and AI tools like ChatGPT.`,
     ],
     variantKeyword: "local SEO, GEO",
     outcome: "more client inquiries",
@@ -160,6 +155,46 @@ export function isLive(city, serviceSlug) {
 /** A skipped city is deferred: kept in the data file, but never built or linked. */
 export function isSkipped(city, serviceSlug) {
   return statusOf(city, serviceSlug) === "skip";
+}
+
+/**
+ * Netlify sets CONTEXT=production only on production builds. Deploy previews,
+ * branch deploys and local dev/preview leave it unset.
+ */
+export const PRODUCTION_BUILD = process.env.CONTEXT === "production";
+
+/**
+ * Review pages build by default so `npm run dev`, `npm run build` + `preview`
+ * and Netlify deploy previews can show them for review. They are excluded
+ * exactly where a search engine could see them: a Netlify production build, or
+ * an explicit EXCLUDE_REVIEW=1. INCLUDE_REVIEW=1 still forces them in (and the
+ * validate gate will then refuse a production build that contains them).
+ */
+export const REVIEW_EXCLUDED = PRODUCTION_BUILD || process.env.EXCLUDE_REVIEW === "1";
+
+export const INCLUDE_REVIEW = process.env.INCLUDE_REVIEW === "1" || !REVIEW_EXCLUDED;
+
+/** Cities whose pages get built. "live" always; "review" unless excluded. */
+export function builtCities(serviceSlug) {
+  if (!INCLUDE_REVIEW) return liveCities(serviceSlug);
+  return allCities().filter((record) => ["live", "review"].includes(statusOf(record.city, serviceSlug)));
+}
+
+/**
+ * Review-status cities that a build would actually create pages for (content
+ * file present). Used by the validation gate to audit review leakage.
+ */
+export function reviewCities(serviceSlug) {
+  return allCities().filter(
+    (record) =>
+      statusOf(record.city, serviceSlug) === "review" &&
+      cityContentExists(serviceSlug, record.country, record.region, record.city)
+  );
+}
+
+/** Cities included in validation. Matches builtCities unless overridden. */
+export function validatedCities(serviceSlug) {
+  return builtCities(serviceSlug);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -555,7 +590,7 @@ export function validateLocations() {
   const descriptions = new Map();
 
   for (const serviceSlug of SERVICE_SLUGS) {
-    const live = liveCities(serviceSlug);
+    const live = validatedCities(serviceSlug);
     for (const record of live) {
       const content = readCityContent(serviceSlug, record.country, record.region, record.city);
       errors.push(...validateContentFile(serviceSlug, record, content));

@@ -57,7 +57,7 @@
               "lng": -79.6441,
               "phase": 2,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
               }
             },
@@ -68,7 +68,7 @@
               "lng": -79.7624,
               "phase": 2,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
               }
             },
@@ -95,9 +95,10 @@
               "lng": -81.2453,
               "phase": 2,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
-              }
+              },
+              "title_name": "London, ON"
             },
             {
               "name": "Markham",
@@ -106,7 +107,7 @@
               "lng": -79.337,
               "phase": 2,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
               }
             },
@@ -117,7 +118,7 @@
               "lng": -79.4983,
               "phase": 2,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
               }
             },
@@ -128,7 +129,7 @@
               "lng": -80.4925,
               "phase": 3,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
               }
             },
@@ -139,7 +140,7 @@
               "lng": -83.0364,
               "phase": 3,
               "status": {
-                "seo-for-therapists": "draft",
+                "seo-for-therapists": "review",
                 "ai-search-optimization": "draft"
               }
             }

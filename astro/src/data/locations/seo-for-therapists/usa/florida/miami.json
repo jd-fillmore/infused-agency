@@ -64,7 +64,9 @@
     "paragraphs": [
       "Someone in Kendall might ask an assistant for a Spanish-speaking therapist who does EMDR; someone in Coral Gables might ask for a psychologist who works with teens on weekends. The assistant assembles its answer from what it can read and trust about each practice: populations served, languages, Florida licensure, booking details. Practices whose information is thin or inconsistent simply do not appear in the reply.",
       "Making your facts legible to those tools is what AI search optimization, or AI SEO, means. Answer engine optimization (AEO) writes pages as direct, extractable answers; generative engine optimization (GEO) keeps the practice described accurately wherever assistants gather sources. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> explain the broader program beyond therapy.",
-      "There is no honest way to promise an AI citation. These labels overlap and describe parts of one discipline — clear, verifiable information presented for both people and machines. What we control is how findable, consistent and quotable your Miami practice is when the question arrives."
+      "There is no honest way to promise an AI citation. These labels overlap and describe parts of one discipline — clear, verifiable information presented for both people and machines. What we control is how findable, consistent and quotable your Miami practice is when the question arrives.",
+      "Miami clients may ask for a bilingual trauma therapist in Coral Gables, a couples counsellor in Brickell, or a Florida-licensed clinician who sees Miami Beach clients online. ChatGPT, Google AI Overviews and Perplexity answer from practice pages, Florida directories and profiles, so language and licensure details need to be unambiguous.",
+      "We make the practice's Florida license, languages, specialties and service area consistent, add structured data, and answer the practical questions about insurance, telehealth and first sessions. Directory citations are checked against the same facts. GEO is the label for that ongoing consistency; no citation or placement is promised."
     ]
   },
   "pricing_heading": "AI SEO optimization pricing for Miami therapy practices",
@@ -138,6 +140,10 @@
     {
       "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
       "a": "It means arranging the facts of a practice — specialties, licensure, languages, locations, booking — so AI tools can read, trust and quote them. AEO (answer engine optimization) and generative engine optimization (GEO) are the usual labels for parts of that work. Nobody can truthfully promise a citation or a position in an AI answer."
+    },
+    {
+      "q": "Will AI search optimization help a bilingual Miami practice get found?",
+      "a": "It can help when the languages, licensure and service area are stated clearly and consistently across the site and directories. It cannot guarantee a mention in ChatGPT or Perplexity. We focus on accurate, quotable facts and report how the practice is described."
     }
   ],
   "cta": {

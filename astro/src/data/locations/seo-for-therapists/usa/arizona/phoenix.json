@@ -64,7 +64,9 @@
     "paragraphs": [
       "A client in Chandler might ask an assistant for a teen therapist with Saturday hours; someone in Paradise Valley might ask for a psychologist who treats anxiety and works with executives. The reply is assembled from what the tool can read and trust about each practice — populations, licensure, areas, formats. Practices with scattered or buried facts never enter that response.",
       "AI search optimization, or AI SEO, is the discipline of putting your facts in that reachable position. Answer engine optimization (AEO) structures the answers; generative engine optimization (GEO) keeps the practice described consistently across the sources assistants consult. Our <a href=\"/ai-search-optimization\">AI search optimization services</a> extend the same approach to businesses of any kind.",
-      "Guarantees are not part of this work and never should be. What can be improved is within your control: correct licensure named, specialties attached to the Valley cities and session formats you serve, booking easy to find and a site the machines find easy to read."
+      "Guarantees are not part of this work and never should be. What can be improved is within your control: correct licensure named, specialties attached to the Valley cities and session formats you serve, booking easy to find and a site the machines find easy to read.",
+      "Phoenix clients ask about a trauma therapist in Arcadia, a couples counsellor in Scottsdale, or an Arizona-licensed clinician who sees Tempe and Gilbert clients online. ChatGPT, Google AI Overviews and Perplexity answer from practice pages, Arizona directories and profiles, so unclear geography or licensure makes the practice harder to place.",
+      "We make the Arizona license, specialties, service area and session formats explicit, add structured data, and answer the questions clients ask before booking. Directory citations are checked for consistency. GEO is the ongoing work of keeping those descriptions aligned; no citation or specific ranking is promised."
     ]
   },
   "pricing_heading": "AI SEO optimization pricing for Phoenix therapy practices",
@@ -138,6 +140,10 @@
     {
       "q": "What is AI search optimization (AI SEO, AEO, GEO) for therapists?",
       "a": "It means presenting the facts of a practice — specialties, Arizona licensure, cities, booking — clearly and consistently enough that AI tools can read, trust and repeat them. Answer engine optimization (AEO) and generative engine optimization (GEO) are familiar labels for parts of this. No citation can be guaranteed by anyone."
+    },
+    {
+      "q": "Do Phoenix clients use AI assistants to find a therapist nearby?",
+      "a": "Some do, particularly when comparing Scottsdale, Tempe or online options. Clear Arizona licensure, location and specialty details help assistants describe the practice accurately. No agency can guarantee a citation, and we report what actually changes."
     }
   ],
   "cta": {
