@@ -24,7 +24,6 @@ Run these from the repository root.
 | `yarn check:astro` | Astro type and content checks (`check` is reserved by Yarn 1) |
 | `yarn validate:astro` | Validate the built HTML, links, schema, sitemap and redirects |
 | `yarn verify:astro` | `check:astro` + `build:astro` + `validate:astro` |
-| `yarn deploy:check` | Report whether a launch wave is scheduled for today |
 
 `yarn validate:astro` requires a completed build in `astro/dist`.
 

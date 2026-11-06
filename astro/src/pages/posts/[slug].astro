@@ -2,7 +2,14 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogPostPage from "../../templates/BlogPostPage.astro";
 import { getAllPosts } from "../../lib/posts";
-import { authorNode, baseGraph, blogPostingNode, breadcrumbNode, webPageNode } from "../../lib/schema";
+import {
+  authorNode,
+  baseGraph,
+  blogPostingNode,
+  breadcrumbNode,
+  faqPageNode,
+  webPageNode,
+} from "../../lib/schema";
 
 export function getStaticPaths() {
   return getAllPosts().map((post) => ({
@@ -12,6 +19,24 @@ export function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+
+// Up to three other posts from the same cluster, never this post. Manually
+// assigned `related` slugs sort first; the rest follow newest-first.
+const manual = post.related ?? [];
+const related = getAllPosts()
+  .filter(
+    (candidate) =>
+      candidate.id !== post.id && candidate.cluster && candidate.cluster === post.cluster
+  )
+  .sort((a, b) => {
+    const rankA = manual.indexOf(a.id);
+    const rankB = manual.indexOf(b.id);
+    if (rankA !== -1 && rankB !== -1) return rankA - rankB;
+    if (rankA !== -1) return -1;
+    if (rankB !== -1) return 1;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  })
+  .slice(0, 3);
 
 const title = `${post.title} | Infused Agency`;
 const description = post.excerpt;
@@ -36,6 +61,7 @@ const jsonLd = [
     datePublished: post.date,
     image: post.image,
   }),
+  ...(post.faqs?.length ? [faqPageNode(canonical, post.faqs)] : []),
 ];
 ---
 
@@ -49,5 +75,5 @@ const jsonLd = [
   preloadImage={post.image}
   jsonLd={jsonLd}
 >
-  <BlogPostPage post={post} />
+  <BlogPostPage post={post} related={related} />
 </BaseLayout>

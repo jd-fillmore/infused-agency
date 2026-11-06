@@ -1,0 +1,37 @@
+---
+import Icon from "../ui/Icon.astro";
+import Section from "../ui/Section.astro";
+import { formatPostDate, type Post } from "../../lib/posts";
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+---
+
+{
+  posts.length > 0 && (
+    <Section eyebrow="Keep reading" heading="Related articles" tone="tint">
+      <div class="grid grid--3">
+        {posts.map((post) => (
+          <article class="card card--interactive post-card">
+            <div class="post-card__body">
+              <p class="post-card__date">{formatPostDate(post.date)}</p>
+              <h3 class="post-card__title">
+                <a href={`/posts/${post.id}`}>{post.title}</a>
+              </h3>
+              <p class="post-card__excerpt">{post.excerpt}</p>
+              <div class="card__footer">
+                <a class="link-arrow" href={`/posts/${post.id}`}>
+                  Read article
+                  <Icon name="arrow-right" />
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </Section>
+  )
+}

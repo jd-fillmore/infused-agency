@@ -10,7 +10,7 @@
 
 # The repository root is the Yarn workspace root; Astro is rooted in astro/.
 [build]
-  command = "yarn build:astro"
+  command = "yarn build:astro && yarn check:blog"
   publish = "astro/dist"
 
 # Security headers for every response. Netlify applies the most specific
