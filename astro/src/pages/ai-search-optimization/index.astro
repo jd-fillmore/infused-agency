@@ -3,7 +3,6 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServiceContentPage from "../../templates/ServiceContentPage.astro";
 import CountryHubLinks from "../../components/locations/CountryHubLinks.astro";
 import { getServicePage } from "../../lib/legacy-pages.mjs";
-import { aiSearchPricing } from "../../lib/pricing";
 import { baseGraph, breadcrumbNode, faqPageNode, serviceNode, webPageNode } from "../../lib/schema";
 
 const service = "ai-search-optimization";
@@ -37,7 +36,7 @@ const jsonLd = [
 ---
 
 <BaseLayout title={metaTitle} description={metaDescription} canonical={pathname} jsonLd={jsonLd}>
-  <ServiceContentPage data={data} pricing={aiSearchPricing} />
+  <ServiceContentPage data={data} />
   <CountryHubLinks
     service={service}
     heading="AI search optimization by location"

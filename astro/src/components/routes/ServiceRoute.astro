@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServiceContentPage from "../../templates/ServiceContentPage.astro";
 import { getServicePage } from "../../lib/legacy-pages.mjs";
-import { aiSearchPricing } from "../../lib/pricing";
 import { baseGraph, breadcrumbNode, faqPageNode, serviceNode, webPageNode } from "../../lib/schema";
 
 interface Props {
@@ -15,8 +14,6 @@ const data = getServicePage(pathname);
 if (!data) {
   throw new Error(`Missing service page data for ${pathname}`);
 }
-
-const pricing = pathname === "/ai-search-optimization" ? aiSearchPricing : undefined;
 
 const faqs = data.content.faqs.map((faq: { q: string; a: string }) => ({
   q: faq.q,
@@ -43,5 +40,5 @@ const jsonLd = [
   canonical={pathname}
   jsonLd={jsonLd}
 >
-  <ServiceContentPage data={data} pricing={pricing} />
+  <ServiceContentPage data={data} />
 </BaseLayout>

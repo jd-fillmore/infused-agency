@@ -1,10 +1,10 @@
 ---
 import Button from "../../../components/ui/Button.astro";
 import Card from "../../../components/ui/Card.astro";
-import PricingPlans from "../../../components/ui/PricingPlans.astro";
+
 import Section from "../../../components/ui/Section.astro";
 import { getIndustryPage } from "../../../lib/legacy-pages.mjs";
-import { aiSearchPricingPlans } from "../../../lib/pricing";
+
 
 const image = "/images/ai-search-optimization-washington-dc.webp";
 const imageAlt =
@@ -290,13 +290,4 @@ const faqs = [
     </div>
   </Section>
 
-  <PricingPlans
-    id="seo-pricing"
-    eyebrow="Pricing"
-    index=""
-    heading={aiSearchPricingPlans.heading}
-    description={aiSearchPricingPlans.description}
-    note={aiSearchPricingPlans.note}
-    plans={aiSearchPricingPlans.plans}
-    ctaLabel="Get a Free Quote"
-  />
+

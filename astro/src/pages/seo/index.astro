@@ -2,7 +2,6 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServicePage from "../../templates/ServicePage.astro";
 import { getService, services } from "../../lib/site";
-import { seoPricing } from "../../lib/pricing";
 import { NIAGARA_CITY_LINKS } from "../../lib/legacy-pages.mjs";
 import {
   baseGraph,
@@ -110,7 +109,6 @@ const data = {
       body: "We connect search visibility to the actions that matter: calls, form fills, direction requests and booked appointments. Reporting shows what changed and where the next opportunity is.",
     },
   ],
-  pricing: seoPricing,
   cities: [
     { href: "/seo/niagara", label: "Niagara Region" },
     ...NIAGARA_CITY_LINKS.map((city) => ({
