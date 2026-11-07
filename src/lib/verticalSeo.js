@@ -22,12 +22,12 @@ const _cache = {};
 // processes. The cache is compact: each page's
 // content is stored once, keyed by URL, with its final failures, and the
 // published/failed/draft/skip sets are stored as URL lists (no record
-// duplication, no shingles). The key hashes the gate version, the as-of date,
-// the core data files, and the content/geo files of *released* verticals only —
-// unreleased content cannot change the result, so editing it never invalidates
-// the cache or slows a build.
+// duplication, no shingles). The key hashes the gate version, the core data
+// files, and the content/geo files of *released* verticals only — content for
+// held verticals cannot change the result, so editing it never invalidates the
+// cache or slows a build.
 
-const GATE_VERSION = "2026-10-11.3";
+const GATE_VERSION = "2026-11-06.1";
 const GATE_CACHE_FILE = path.join(process.cwd(), ".cache", "vertical-seo-gate.json");
 
 function walkJsonFiles(dir, out) {
@@ -39,9 +39,9 @@ function walkJsonFiles(dir, out) {
   }
 }
 
-function buildGateCacheKey(asOf, releasedSlugs) {
+function buildGateCacheKey(releasedSlugs) {
   const h = crypto.createHash("sha256");
-  h.update(`GATE_VERSION:${GATE_VERSION}\0AS_OF:${asOf || ""}\0`);
+  h.update(`GATE_VERSION:${GATE_VERSION}\0`);
   const files = [
     path.join(DATA_DIR, "launch.json"),
     path.join(DATA_DIR, "verticals.json"),
@@ -108,13 +108,12 @@ function readGateCache(key) {
   }
 }
 
-function writeGateCache(key, asOf, result) {
+function writeGateCache(key, result) {
   try {
     fs.mkdirSync(path.dirname(GATE_CACHE_FILE), { recursive: true });
     const blob = {
       version: GATE_VERSION,
       key,
-      asOf,
       createdAt: new Date().toISOString(),
       timings: result.timings || null,
       result: serializeGateResult(result),
@@ -575,10 +574,9 @@ function nearestDuplicatePairs(records, limit = 10) {
 
 function computePublished(opts = {}) {
   const includeDrafts = opts.includeDrafts === true;
-  const asOf = opts.asOf || launch.asOfDate();
-  const memoKey = `${asOf}|${includeDrafts ? "drafts" : "live"}`;
+  const memoKey = includeDrafts ? "drafts" : "live";
   const tStart = Date.now();
-  const released = launch.releasedSlugs(asOf);
+  const released = launch.releasedSlugs();
 
   const withTimings = (result, source, base) => {
     // Prefer an explicit base (cache blob timings); otherwise fall back to the
@@ -614,9 +612,9 @@ function computePublished(opts = {}) {
   // Cross-process disk cache (shared by the Astro build and the scripts):
   // .cache/vertical-seo-gate.json.
   if (!includeDrafts && opts.cacheRef !== false) {
-    const key = buildGateCacheKey(asOf, released);
+    const key = buildGateCacheKey(released);
     const cached = readGateCache(key);
-    if (cached && cached.asOf === asOf) {
+    if (cached) {
       return memoize(
         withTimings(hydrateGateResult(cached.result), "cache", cached.timings)
       );
@@ -709,7 +707,7 @@ function computePublished(opts = {}) {
     ...gateFailed.filter((g) => !failed.find((f) => f.page.urlPath === g.page.urlPath)),
   ];
 
-  // Whole-vertical skip (launch wave 4): a released vertical publishes only if
+  // Whole-vertical skip: a released vertical publishes only if
   // every one of its pages passes the quality gate. A single failing page skips
   // the entire vertical, and the skip is reported with the failing rules.
   // Structural problems (malformed data, broken links on a published page)
@@ -750,7 +748,6 @@ function computePublished(opts = {}) {
     drafts,
     includeDrafts,
     released: [...released].sort(),
-    asOf,
     scoringPairs,
     timings: {
       source: "computed",
@@ -764,7 +761,7 @@ function computePublished(opts = {}) {
 
   if (!includeDrafts) {
     _cache.publishedMemo = { ...(_cache.publishedMemo || {}), [memoKey]: result };
-    if (_cache.cacheKey) writeGateCache(_cache.cacheKey, asOf, result);
+    if (_cache.cacheKey) writeGateCache(_cache.cacheKey, result);
   }
   return result;
 }

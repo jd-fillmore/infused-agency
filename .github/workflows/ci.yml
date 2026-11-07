@@ -21,6 +21,8 @@ jobs:
         run: yarn check:astro
       - name: Production build
         run: yarn build:astro
+      - name: Blog content gate
+        run: yarn check:blog
       - name: Static build validation
         run: yarn validate:astro
       - name: Visible-markup scan

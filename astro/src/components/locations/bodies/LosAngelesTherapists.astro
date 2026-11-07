@@ -1,10 +1,10 @@
 ---
 import Card from "../../../components/ui/Card.astro";
-import PricingPlans from "../../../components/ui/PricingPlans.astro";
+
 import Section from "../../../components/ui/Section.astro";
 import TestimonialCard from "../../../components/ui/TestimonialCard.astro";
 import { siteFacts } from "../../../lib/site";
-import { seoPricingPlans } from "../../../lib/pricing";
+
 import proofJson from "../../../../../data/vertical-seo/proof.json";
 
 const image = "/img/seo-for-therapists-los-angeles-california.webp";
@@ -254,23 +254,13 @@ const relatedContent: {
         sources; no AI citation or ranking is guaranteed.
       </p>
     </div>
-  </Section>
-  <PricingPlans
-    id="seo-pricing"
-    eyebrow="Pricing"
-    index=""
-    heading="AI SEO optimization pricing for Los Angeles therapy practices"
-    description={seoPricingPlans.description}
-    note={seoPricingPlans.note}
-    plans={seoPricingPlans.plans}
-    ctaLabel="Get a Free Quote"
-  />
+</Section>
 
-  <Section
-    eyebrow="Who it's for"
-    index="04"
-    heading="An AI SEO agency built for Los Angeles therapists, however you practice"
-  >
+<Section
+  eyebrow="Who it's for"
+  index="04"
+  heading="An AI SEO agency built for Los Angeles therapists, however you practice"
+>
     <div class="split split--top">
       <div class="reveal">
         <div class="prose">

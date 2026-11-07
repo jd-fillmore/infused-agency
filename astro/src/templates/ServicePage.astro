@@ -4,7 +4,6 @@ import Button from "../components/ui/Button.astro";
 import Card from "../components/ui/Card.astro";
 import Icon from "../components/ui/Icon.astro";
 import PageHero from "../components/ui/PageHero.astro";
-import PricingPlans from "../components/ui/PricingPlans.astro";
 import Section from "../components/ui/Section.astro";
 import CtaBand from "../components/ui/CtaBand.astro";
 
@@ -14,22 +13,6 @@ interface ServicePageData {
   breadcrumbs: Array<{ name: string; href?: string }>;
   introHeadingHtml: string;
   introParagraphs: string[];
-  /** Optional pricing block; rendered between intro and process sections. */
-  pricing?: {
-    heading: string;
-    description: string;
-    note?: string;
-    guarantee?: { title: string; body: string };
-    plans: Array<{
-      name: string;
-      monthly: number;
-      lead?: string;
-      features: string[];
-      featured?: boolean;
-      badge?: string;
-    }>;
-    ctaLabel?: string;
-  };
   approach: Array<{ icon: string; title: string; body: string }>;
   results: { heading: string; body: string };
   services: Array<{ title: string; body: string }>;
@@ -64,21 +47,6 @@ const { data } = Astro.props;
     </div>
   </div>
 </Section>
-
-{
-  data.pricing && (
-    <PricingPlans
-      eyebrow="Pricing"
-      index="02"
-      heading={data.pricing.heading}
-      description={data.pricing.description}
-      note={data.pricing.note}
-      guarantee={data.pricing.guarantee}
-      plans={data.pricing.plans}
-      ctaLabel={data.pricing.ctaLabel}
-    />
-  )
-}
 
 <Section
   eyebrow="Process"
